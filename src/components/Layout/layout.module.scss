@@ -1,0 +1,19 @@
+.layout {
+  &.info_page {
+    color: #EBEBEB;
+  }
+}
+
+.content {
+  //padding-top: 50px;
+  flex-grow: 1;
+}
+
+@media (min-width: 768px) {
+  .layout {
+    display: block;
+  }
+  .content {
+    //flex-grow: none;
+  }
+}
