@@ -9,7 +9,6 @@ sections:
 - type: document
   path: content/data/homeData.json
   label: home
-  match: "**/*"
 - type: directory
   path: content/posts
   label: Blog Posts
