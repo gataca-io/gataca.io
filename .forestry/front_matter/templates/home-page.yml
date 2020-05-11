@@ -34,6 +34,32 @@ fields:
         required: true
         wysiwyg: false
 
+- type: field_group
+  name: partnerSection
+  label: Partners
+  fields:
+    - name: title
+      type: textarea
+      default: ''
+      config:
+        required: true
+        wysiwyg: false
+    - name: partners
+      type: field_group_list
+      default: ''
+      config:
+      fields:
+        - type: text
+            name: title
+            label: Partner Title
+            config:
+              required: false
+        - type: file
+            name: partner-image
+            label: partner-image
+              config:
+              required: true
+
 
 pages:
 - content/data/homeData.json
