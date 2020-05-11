@@ -2,63 +2,58 @@
 label: Home Page
 hide_body: false
 fields:
-
 - type: field_group
   name: introSection
   label: Intro
   fields:
-    - name: mainTitle
-      type: textarea
-      default: ''
-      config:
-        required: true
-        wysiwyg: false
-#        schema:
-#          format: html-blocks
-    - name: mainSubtitle
-      type: textarea
-      default: ''
-      config:
-        required: true
-        wysiwyg: false
-    - name: mainParagraph
-      type: textarea
-      default: ''
-      config:
-        required: true
-        wysiwyg: false
-    - name: ctaText
-      type: textarea
-      default: ''
-      config:
-        required: true
-        wysiwyg: false
-
+  - name: mainTitle
+    type: textarea
+    default: ''
+    config:
+      required: true
+      wysiwyg: false
+  - name: mainSubtitle
+    type: textarea
+    default: ''
+    config:
+      required: true
+      wysiwyg: false
+  - name: mainParagraph
+    type: textarea
+    default: ''
+    config:
+      required: true
+      wysiwyg: false
+  - name: ctaText
+    type: textarea
+    default: ''
+    config:
+      required: true
+      wysiwyg: false
 - type: field_group
   name: partnerSection
   label: Partners
   fields:
-    - name: title
-      type: textarea
-      default: ''
+  - name: title
+    type: textarea
+    default: ''
+    config:
+      required: true
+      wysiwyg: false
+  - name: partners
+    type: field_group_list
+    default: ''
+    config: 
+    fields:
+    - type: text
+      name: title
+      label: Partner Title
+      config:
+        required: false
+    - type: file
+      name: partner-image
+      label: partner-image
       config:
         required: true
-        wysiwyg: false
-    - name: partners
-      type: field_group_list
-      default: ''
-      config:
-      fields:
-        - type: text
-          name: title
-          label: Partner Title
-          config:
-            required: false
-        - type: file
-          name: partner-image
-          label: partner-image
-          config:
-            required: true
-
 pages:
 - content/data/homeData.json
