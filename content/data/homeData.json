@@ -6,11 +6,16 @@
     "ctaText": "Speak to out team"
   },
   "partnerSection": {
-    "title": "",
+    "title": "Hola",
     "partners": [
       {
+        "title": "Partner One",
+        "partner-image": "/content/images/partner-MIT.svg"
+      },
+      {
         "title": "",
-        "imgUrl": ""
+        "imgUrl": "",
+        "partner-image": ""
       }
     ]
   },
