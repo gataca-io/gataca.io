@@ -12,36 +12,7 @@
     }
 }
 
-.introSection {
-    min-height: 80vh;
-    //background-color: purple;
-        display: flex;
-    justify-content: center;
-        align-items: center;
-    &__container {
-        display: flex;
-    //background-color: red;
-        max-width: 760px;
-    img{
-        width: 310px;
-    }
-        section{
-            padding-top: 1rem;
-            margin-left: 2rem;
-            h1 {
-                font-weight: 600;
-                span {
-                font-weight: 300;
-                    color: lightgray;
-                    font-size: 1.7rem;
-                }
-            }
-            p {
-                font-size: 1rem;
-            }
-        }
-    }
-}
+
 
 @media (min-width: 768px) {
     .home {

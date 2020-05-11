@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import headerStyles from "./header.module.scss"
-import logo from "./../../../content/images/logo.svg"
+import logo from "@images/logo.svg"
 
 export default function Header(props) {
   return (

@@ -1,0 +1,14 @@
+---
+label: Home Page
+hide_body: true
+fields:
+  - name: mainTitle
+    type: textarea
+    default: ''
+    config:
+      required: true
+      wysiwyg: false
+      schema:
+        format: html-blocks
+pages:
+  - content/data/homeData.json
