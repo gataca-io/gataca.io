@@ -2,13 +2,38 @@
 label: Home Page
 hide_body: false
 fields:
-- name: mainTitle
-  type: textarea
-  default: ''
-  config:
-    required: true
-    wysiwyg: false
-    schema:
-      format: html-blocks
+
+- type: field_group
+  name: introSection
+  label: Intro
+  fields:
+    - name: mainTitle
+      type: textarea
+      default: ''
+      config:
+        required: true
+        wysiwyg: false
+#        schema:
+#          format: html-blocks
+    - name: mainSubtitle
+      type: textarea
+      default: ''
+      config:
+        required: true
+        wysiwyg: false
+    - name: mainParagraph
+      type: textarea
+      default: ''
+      config:
+        required: true
+        wysiwyg: false
+    - name: ctaText
+      type: textarea
+      default: ''
+      config:
+        required: true
+        wysiwyg: false
+
+
 pages:
 - content/data/homeData.json
