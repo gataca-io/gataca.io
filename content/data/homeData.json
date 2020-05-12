@@ -10,14 +10,23 @@
     "partners": [
       {
         "title": "Mit Management Sloan School",
-        "partner-image": "/content/images/partner-MIT.svg"
+        "partnerImage": "/content/images/partner-MIT.svg"
       },
       {
         "title": "",
-        "imgUrl": "",
-        "partner-image": ""
+        "partnerImage": ""
       }
     ]
   },
-  "mainTitle": "hola"
+  "digitalIdentities": {
+    "title": "Digital Identities",
+    "description": "“We use identity credentials daily to access local citizen services, prove employment status or file an insurance claim. But as we have rapidly transformed our lives online, identification and authentication systems have not kept up.”",
+    "elements": [
+      {
+        "title": "FAST & EASY",
+        "image": "/content/images/partner-MIT.svg",
+        "description": "This is a description"
+      }
+    ]
+  }
 }

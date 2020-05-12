@@ -21,6 +21,7 @@ module.exports = {
     "gatsby-plugin-typescript",
     "gatsby-plugin-ts-loader",
     "gatsby-transformer-yaml",
+    `gatsby-transformer-json`,
     `gatsby-plugin-styled-components`,
     {
       resolve: "gatsby-source-filesystem",

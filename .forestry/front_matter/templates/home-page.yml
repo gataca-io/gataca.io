@@ -2,6 +2,8 @@
 label: Home Page
 hide_body: false
 fields:
+
+  #   --- intro section
 - type: field_group
   name: introSection
   label: Intro
@@ -30,12 +32,14 @@ fields:
     config:
       required: true
       wysiwyg: false
+
+#   --- partners section
 - type: field_group
   name: partnerSection
   label: Partners
   fields:
   - name: title
-    type: textarea
+    type: text
     default: ''
     config:
       required: true
@@ -43,7 +47,7 @@ fields:
   - name: partners
     type: field_group_list
     default: ''
-    config: 
+    config:
     fields:
     - type: text
       name: title
@@ -51,8 +55,46 @@ fields:
       config:
         required: false
     - type: file
-      name: partner-image
-      label: partner-image
+      name: partneImage
+      label: Partner Image
+      config:
+        required: true
+
+#   --- digital identities section
+- type: field_group
+  name: digitalIdentities
+  label: Partners
+  fields:
+  - name: title
+    type: text
+    default: ''
+    config:
+      required: true
+      wysiwyg: false
+  - name: description
+    type: textarea
+    default: ''
+    config:
+      required: true
+      wysiwyg: false
+  - name: elements
+    type: field_group_list
+    default: ''
+    config:
+    fields:
+    - type: text
+      name: title
+      label: Image
+      config:
+        required: false
+    - type: file
+      name: image
+      label: Image
+      config:
+        required: true
+    - type: text
+      name: description
+      label: Description
       config:
         required: true
 pages:
