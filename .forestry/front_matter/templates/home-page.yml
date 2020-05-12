@@ -2,8 +2,6 @@
 label: Home Page
 hide_body: false
 fields:
-
-  #   --- intro section
 - type: field_group
   name: introSection
   label: Intro
@@ -32,8 +30,6 @@ fields:
     config:
       required: true
       wysiwyg: false
-
-#   --- partners section
 - type: field_group
   name: partnerSection
   label: Partners
@@ -47,7 +43,7 @@ fields:
   - name: partners
     type: field_group_list
     default: ''
-    config:
+    config: 
     fields:
     - type: text
       name: title
@@ -59,8 +55,6 @@ fields:
       label: Partner Image
       config:
         required: true
-
-#   --- digital identities section
 - type: field_group
   name: digitalIdentities
   label: Partners
@@ -80,7 +74,7 @@ fields:
   - name: elements
     type: field_group_list
     default: ''
-    config:
+    config: 
     fields:
     - type: text
       name: title
