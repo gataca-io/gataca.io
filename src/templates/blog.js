@@ -1,5 +1,5 @@
 import React from "react"
-import Layout from "../components/Layout/Layout"
+import Layout from "./../layouts/Layout"
 import { graphql, Link } from "gatsby"
 import useBlogData from '../static_queries/useBlogData'
 import blogTemplateStyles from "../styles/templates/blog.module.scss"
@@ -79,3 +79,4 @@ export const getPostData = graphql`
     }
   }
 `
+

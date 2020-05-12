@@ -13,9 +13,19 @@ module.exports = {
     primaryColor: config.primary_color,
     infoData: infoData,
   },
+  
   plugins: [
     'gatsby-plugin-tslint',
-    "gatsby-plugin-sass",
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        postCssPlugins: [
+          require("tailwindcss"),
+          require("./tailwind.config.js"), // Optional: Load custom Tailwind CSS configuration
+        ],
+      },
+    },
+    // `gatsby-plugin-postcss`,
     "gatsby-transformer-remark",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-typescript",
@@ -23,6 +33,18 @@ module.exports = {
     "gatsby-transformer-yaml",
     `gatsby-transformer-json`,
     `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-source-wordpress`,
+      options: {
+        // your WordPress source
+        baseUrl: `gataca.io`,
+        protocol: `https`,
+        // is it hosted on wordpress.com, or self-hosted?
+        hostingWPCOM: false,
+        // does your site use the Advanced Custom Fields Plugin?
+        useACF: false
+      }
+    },
     {
       resolve: "gatsby-source-filesystem",
       options: {

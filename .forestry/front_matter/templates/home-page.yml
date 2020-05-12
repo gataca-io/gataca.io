@@ -80,6 +80,7 @@ fields:
   - name: elements
     type: field_group_list
     default: ''
+    label:
     config:
     fields:
     - type: text

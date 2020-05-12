@@ -17,13 +17,17 @@ export default function PartnersSection(props) {
 }
 
 export const query = graphql`
-    query {
-        file(relativePath: { eq: "blog/avatars/kyle-mathews.jpeg" }) {
-            childImageSharp {
-                # Specify the image processing specifications right in the query.
-                # Makes it trivial to update as your page's design changes.
-                fixed(width: 125, height: 125) {
-                    ...GatsbyImageSharpFixed
+    query digitalIdenties {
+        allDataJson(filter: {}) {
+            nodes {
+                digitalIdentities {
+                    title
+                    description
+                    elements {
+                        description
+                        image
+                        title
+                    }
                 }
             }
         }

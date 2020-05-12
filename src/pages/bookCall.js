@@ -1,5 +1,5 @@
 import React from "react"
-import Layout from "../components/Layout/Layout"
+import Layout from "../layouts/Layout"
 import infoStyles from "../styles/pages/info.module.scss"
 import useSiteMetaData from "../static_queries/useSiteMetadata"
 
