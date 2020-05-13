@@ -1,7 +1,7 @@
 import partnersStyles  from "./partners.module.scss"
 import React from "react"
 
-export default function PartnersSection(props) {
+export default function Partners(props) {
   return (
     <section className={partnersStyles.partnersStyles}>
       <section className={partnersStyles}>
@@ -17,16 +17,14 @@ export default function PartnersSection(props) {
 }
 
 export const query = graphql`
-    query digitalIdenties {
+    query partners {
         allDataJson(filter: {}) {
             nodes {
-                digitalIdentities {
+                partnerSection {
                     title
-                    description
-                    elements {
-                        description
-                        image
+                    partners {
                         title
+                        partnerImage
                     }
                 }
             }

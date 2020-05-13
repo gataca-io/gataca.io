@@ -4,7 +4,7 @@ import homeData  from "@data/homeData.json"
 import React from "react"
 
 
-export default function IntroSection(props) {
+export default function Intro(props) {
   return (
       <section className={introStyles.introSection}>
         <div className={introStyles.introSection__container}>

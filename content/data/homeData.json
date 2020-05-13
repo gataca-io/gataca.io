@@ -10,21 +10,19 @@
     "partners": [
       {
         "title": "New York times",
-        "partneImage": "/content/images/EXihgPiXsAQmNEk.jpeg"
+        "partnerImage": "/content/images/EXihgPiXsAQmNEk.jpeg"
       },
       {
         "title": "Mit Management Sloan School",
-        "partnerImage": "/content/images/partner-MIT.svg",
-        "partneImage": ""
+        "partnerImage": "/content/images/partner-MIT.svg"
       },
       {
         "title": "",
-        "partnerImage": "",
-        "partneImage": ""
+        "partnerImage": ""
       }
     ]
   },
-  "digitalIdentities": {
+  "bulletsSection": {
     "title": "Digital Identities",
     "description": "“We use identity credentials daily to access local citizen services, prove employment status or file an insurance claim. But as we have rapidly transformed our lives online, identification and authentication systems have not kept up.”",
     "elements": [

@@ -33,7 +33,7 @@ fields:
       required: true
       wysiwyg: false
 
-#   --- partners section
+#   --- Partners Section
 - type: field_group
   name: partnerSection
   label: Partners
@@ -60,9 +60,9 @@ fields:
       config:
         required: true
 
-#   --- digital identities section
+#   --- Bullets Information Section
 - type: field_group
-  name: digitalIdentities
+  name: bulletsSection
   label: Partners
   fields:
   - name: title
