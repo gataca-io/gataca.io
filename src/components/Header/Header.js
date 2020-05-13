@@ -17,10 +17,10 @@ export default function Header(props) {
         <div className={headerStyles.header__left}>
         <Link to="/">
           <img src={logo}/>
-          <h2>{props.title}</h2>
+          <h1>{props.title}</h1>
         </Link>
         </div>
-        <div className={headerStyles.header__right}>
+        <div className={headerStyles.header__right} >
           <h3>
             <Link
               to={
@@ -33,10 +33,10 @@ export default function Header(props) {
           <h3>
             <Link
               to={
-                '/insights'
+                '/stories'
               }
             >
-              Insights
+              Stories
             </Link>
           </h3>
           <h3>

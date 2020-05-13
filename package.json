@@ -14,10 +14,16 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
     "forestry-preview": "gatsby develop -p 8080 -H 0.0.0.0",
     "cy:open": "cypress open",
-    "test:e2e": "start-server-and-test develop http://localhost:8000 cy:open"
+    "test:e2e": "start-server-and-test develop http://localhost:8000 cy:open",
+    "storybook": "NODE_ENV=production start-storybook -s public",
+    "build-storybook": "NODE_ENV=production build-storybook -s public"
   },
   "dependencies": {
+    "babel-plugin-remove-graphql-queries": "^2.9.1",
     "babel-plugin-styled-components": "^1.10.7",
+    "carbon-components": "^10.11.2",
+    "carbon-components-react": "^7.11.3",
+    "carbon-icons": "^7.0.7",
     "gatsby": "^2.13.9",
     "gatsby-image": "^2.2.8",
     "gatsby-plugin-alias-imports": "^1.0.5",
@@ -40,16 +46,23 @@
     "gatsby-transformer-remark": "^2.6.1",
     "gatsby-transformer-sharp": "^2.2.1",
     "gatsby-transformer-yaml": "^2.2.4",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.14.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
     "start-server-and-test": "^1.11.0",
+    "storybook": "^5.3.18",
     "styled-components": "^5.1.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@storybook/addon-actions": "^5.3.18",
+    "@storybook/addon-links": "^5.3.18",
+    "@storybook/addons": "^5.3.18",
+    "@storybook/react": "^5.3.18",
+    "babel-loader": "^8.1.0",
     "gatsby-plugin-tslint": "^0.0.2",
-    "prettier": "^1.18.2",
+    "prettier": "^2.0.5",
     "tailwindcss": "^1.4.6",
     "tslint": "^6.1.2",
     "tslint-loader": "^3.5.4"

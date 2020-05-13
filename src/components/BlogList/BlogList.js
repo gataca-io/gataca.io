@@ -3,30 +3,28 @@ import { Link } from "gatsby"
 import useBlogData from "../../static_queries/useBlogData"
 import blogListStyles from "./bloglist.module.scss"
 import Img from 'gatsby-image'
+import SafeImage from "../SafeImage"
 
 export default function BlogList() {
-  const blogData = useBlogData()
-  function renderBlogData() {
+  const data = useBlogData()
+  const wordpressBlogData = data.edges;
+  
+  function renderWorpressBlogData() {
     return (
       <div>
-        {blogData
-          .filter(blog => blog.node.frontmatter.title !== "")
+        {wordpressBlogData
+          .filter(blog => blog.node.title !== "")
           .map(blog => {
             return (
-              <Link to={`/blog/${blog.node.fields.slug}`} key={blog.node.id}>
-                <li className={blogListStyles.li} key={blog.node.fields.slug}>
+              <Link to={`/stories/${blog.node.slug}`} key={blog.node.id}>
+                <li className={blogListStyles.li} key={blog.node.slug}>
                   <div className={blogListStyles.list__hero}>
-                    <Img
-                      fluid={
-                        blog.node.frontmatter.hero_image.childImageSharp.fluid
-                      }
-                      alt={blog.node.frontmatter.title}
-                    />
+                    <SafeImage media={blog.node.featured_media}></SafeImage>
                   </div>
                   <div className={blogListStyles.list__info}>
-                    <h2>{blog.node.frontmatter.title}</h2>
-                    <h3>{blog.node.frontmatter.date}</h3>
-                    <p>{blog.node.excerpt}</p>
+                    <h2>{blog.node.title}</h2>
+                    <h3>{blog.node.date}</h3>
+                    <p dangerouslySetInnerHTML={{ __html: blog.node.excerpt }}></p>
                   </div>
                 </li>
               </Link>
@@ -35,9 +33,10 @@ export default function BlogList() {
       </div>
     )
   }
+  
   return (
     <section>
-      <ul className={blogListStyles.list}>{renderBlogData()}</ul>
+      <ul className={blogListStyles.list}>{renderWorpressBlogData()}</ul>
     </section>
   )
 }

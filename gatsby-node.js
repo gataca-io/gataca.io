@@ -44,4 +44,32 @@ module.exports.createPages = async ({ graphql, actions }) => {
       },
     })
   })
+  
+  
+  //dynamically create pages here
+  //get path to template
+  //get slugs
+  const responseWp = await graphql(`
+    query {
+      allWordpressPost {
+        edges {
+          node {
+            slug
+          }
+        }
+      }
+    }
+  `)
+  
+  //create new pages with unique slug
+  responseWp.data.allWordpressPost.edges.forEach(edge => {
+    createPage({
+      component: blogTemplate,
+      path: `/stories/${edge.node.slug}`,
+      context: {
+        slug: edge.node.slug,
+      },
+    })
+  })
 }
+
