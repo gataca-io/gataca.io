@@ -6,15 +6,21 @@
     "ctaText": "Speak to out team"
   },
   "partnerSection": {
-    "title": "Hola",
+    "title": "Partner",
     "partners": [
       {
+        "title": "New York times",
+        "partneImage": "/content/images/EXihgPiXsAQmNEk.jpeg"
+      },
+      {
         "title": "Mit Management Sloan School",
-        "partnerImage": "/content/images/partner-MIT.svg"
+        "partnerImage": "/content/images/partner-MIT.svg",
+        "partneImage": ""
       },
       {
         "title": "",
-        "partnerImage": ""
+        "partnerImage": "",
+        "partneImage": ""
       }
     ]
   },

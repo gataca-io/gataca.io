@@ -45,7 +45,6 @@ module.exports.createPages = async ({ graphql, actions }) => {
     })
   })
   
-  
   //dynamically create pages here
   //get path to template
   //get slugs
