@@ -1,3 +1,4 @@
+
 const path = require("path")
 
 module.exports.onCreateNode = ({ node, actions }) => {
@@ -15,7 +16,7 @@ module.exports.onCreateNode = ({ node, actions }) => {
   }
 }
 
-module.exports.createPages = async ({ graphql, actions }) => {
+module.exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
   //dynamically create pages here
   //get path to template
@@ -23,7 +24,10 @@ module.exports.createPages = async ({ graphql, actions }) => {
   //get slugs
   const response = await graphql(`
     query {
-      allMarkdownRemark {
+      allMarkdownRemark(
+          sort: { fields: [frontmatter___date], order: DESC }
+          limit: 1000
+        ) {
         edges {
           node {
             fields {
@@ -34,7 +38,30 @@ module.exports.createPages = async ({ graphql, actions }) => {
       }
     }
   `)
-  //create new pages with unique slug
+  
+  if (response.errors) {
+    reporter.panicOnBuild(`Error while running GraphQL query.`)
+    return
+  }
+  
+  // Create blog-list preview pages
+  const posts = response.data.allMarkdownRemark.edges
+  const postsPerPage = 6
+  const numPages = Math.ceil(posts.length / postsPerPage)
+  Array.from({ length: numPages }).forEach((_, i) => {
+    createPage({
+      path: i === 0 ? `/blog` : `/blog/${i + 1}`,
+      component: blogMdTemplate,
+      context: {
+        limit: postsPerPage,
+        skip: i * postsPerPage,
+        numPages,
+        currentPage: i + 1,
+      },
+    })
+  })
+  
+  // Create new Unique pages with unique slug
   response.data.allMarkdownRemark.edges.forEach(edge => {
     createPage({
       component: blogMdTemplate,
@@ -44,12 +71,13 @@ module.exports.createPages = async ({ graphql, actions }) => {
       },
     })
   })
+
   
-  
-  const blogTemplate = path.resolve("./src/templates/blog.js")
   //dynamically create pages here
   //get path to template
   //get slugs
+  
+  const blogWpTemplate = path.resolve("./src/templates/blog.js")
   const responseWp = await graphql(`
     query {
       allWordpressPost {
@@ -62,10 +90,27 @@ module.exports.createPages = async ({ graphql, actions }) => {
     }
   `)
   
+  // Create blog-list preview pages
+  const postsWp = responseWp.data.allWordpressPost.edges
+  const postsWpPerPage = 6
+  const numWpPages = Math.ceil(posts.length / postsPerPage)
+  Array.from({ length: numPages }).forEach((_, i) => {
+    createPage({
+      path: i === 0 ? `/stories` : `/stories/${i + 1}`,
+      component: blogWpTemplate,
+      context: {
+        limit: postsPerPage,
+        skip: i * postsPerPage,
+        numPages,
+        currentPage: i + 1,
+      },
+    })
+  })
+  
   //create new pages with unique slug
   responseWp.data.allWordpressPost.edges.forEach(edge => {
     createPage({
-      component: blogTemplate,
+      component: blogWpTemplate,
       path: `/stories/${edge.node.slug}`,
       context: {
         slug: edge.node.slug,
@@ -73,4 +118,5 @@ module.exports.createPages = async ({ graphql, actions }) => {
     })
   })
 }
+
 

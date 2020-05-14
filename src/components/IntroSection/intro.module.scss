@@ -4,6 +4,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url("./../../../content/images/introPattern.svg");
+    //background-image: url("./../../../content/images/introPattern.svg"), linear-gradient(45deg, var(--white) 0%, var(--white) 100%);
+    //background-image: url("./../../../content/images/introPattern.svg"), -moz-linear-gradient(45deg, var(--white) 0%, var(--white) 100%);
+    //background-image: url("./../../../content/images/introPattern.svg"), -webkit-linear-gradient(45deg, var(--white) 0%, var(--white) 100%);
+    background-repeat: repeat;
+    background-blend-mode: soft-light;
     &__container {
         display: flex;
         max-width: 760px;

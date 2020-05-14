@@ -10,15 +10,15 @@
     "partners": [
       {
         "title": "New York times",
-        "partnerImage": "/content/images/EXihgPiXsAQmNEk.jpeg"
+        "image": "/content/images/EXihgPiXsAQmNEk.jpeg"
       },
       {
         "title": "Mit Management Sloan School",
-        "partnerImage": "/content/images/partner-MIT.svg"
+        "image": "/content/images/partner-MIT.svg"
       },
       {
         "title": "",
-        "partnerImage": ""
+        "image": ""
       }
     ]
   },
@@ -64,7 +64,7 @@
       }
     ],
     "graph": "/content/images/explainedPlatform.svg",
-    "endBullet" : {
+    "endBullet": {
       "title": "PRIVACY BY DESIGN",
       "image": "/content/images/partner-MIT.svg",
       "description": "Gataca embraces privacy-by-design and never stores information about an individual’s identity."

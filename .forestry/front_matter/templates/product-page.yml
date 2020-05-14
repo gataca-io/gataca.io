@@ -1,0 +1,74 @@
+---
+label: Products Page
+hide_body: false
+fields:
+
+  #   --- intro section
+  - type: field_group
+    name: introProductsSection
+    label: Intro Products Section
+    fields:
+      - name: title
+        type: textarea
+        default: ''
+        config:
+          required: false
+          wysiwyg: false
+      - name: description
+        type: textarea
+        label: Description
+        default: ''
+        config:
+          required: false
+          wysiwyg: true
+
+  #   --- Products Section
+  - type: field_group_list
+    name: productsData
+    label: Products Section
+    fields:
+      - name: title
+        type: text
+        label: Product Name
+        default: ''
+        config:
+          required: false
+          wysiwyg: false
+      - name: icon
+        type: file
+        label: Product Icon
+        default: ''
+        config:
+          required: false
+          wysiwyg: false
+      - name: description
+        type: textarea
+        label: Product Description
+        default: ''
+        config:
+          required: false
+          wysiwyg: true
+      - name: bullets
+        type: field_group_list
+        default: ''
+        label: Product Detail Bullets
+        config:
+        fields:
+          - type: text
+            name: title
+            label: Bullet Title
+            config:
+              required: false
+          - type: text
+            name: description
+            label: Bullet Description
+            config:
+              required: false
+          - type: file
+            name: image
+            label: Product Image
+            config:
+              required: false
+
+pages:
+  - content/data/productData.json

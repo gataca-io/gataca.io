@@ -1,0 +1,41 @@
+
+.container {
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    max-width: var(--max-width);
+}
+
+.introSection{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.detailContainer{
+    display: flex;
+    justify-content: center;
+    .bulletsContainer {
+        margin-right: 2rem;
+    }
+    .mainImage{
+        height: 500px;
+        width: 400px;
+        background-color: var(--bg-grey);
+    }
+}
+
+.selectedProductIconContainer{
+    height: 100px;
+    width: 100px;
+    background-color: var(--white);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--darkblue);
+    margin: 2rem 0;
+}

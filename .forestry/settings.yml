@@ -2,13 +2,40 @@
 new_page_extension: md
 auto_deploy: false
 admin_path: ''
-webhook_url: 
+webhook_url:
 sections:
+
+#  CONTENT MANAGEMENT
 - type: heading
-  label: Content
+  label: Web Content
 - type: document
   path: content/data/homeData.json
-  label: home
+  label: "- Home -"
+- type: document
+  path: content/data/productsData.json
+  label: "- Products -"
+- type: document
+  path: content/data/aboutData.json
+  label: "- About -"
+- type: document
+  path: content/data/carrersData.json
+  label: "- Carrers -"
+
+#- type: document
+#  path: content/data/authors.yaml
+#  label: Author List
+#- type: document
+#  path: content/data/info.json
+#  label: Info Page
+
+# META CONTENT
+- type: heading
+  label: Meta Content
+- type: document
+  path: config.json
+  label: Site Info
+
+#  MARKDOWN POSTS
 - type: directory
   path: content/posts
   label: Blog Posts
@@ -16,18 +43,8 @@ sections:
   match: "**/*"
   new_doc_ext: md
   templates:
-  - blog-post
-- type: document
-  path: content/data/authors.yaml
-  label: Author List
-- type: document
-  path: content/data/info.json
-  label: Info Page
-- type: heading
-  label: General Config
-- type: document
-  path: config.json
-  label: Site Info
+    - blog-post
+
 upload_dir: content/images
 public_path: "/content/images"
 front_matter_path: ''

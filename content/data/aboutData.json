@@ -1,0 +1,25 @@
+{
+  "introSection": {
+    "title": "About",
+    "description": "Gataca is a cybersecurity company founded in Boston, MA, at the heart of MIT’s entrepreneurship and innovation ecosystem. It started as an academic research study seeking to reduce the risk of doing business online, at MIT’s Media Lab in 2017. As victims of the Equifax data breach later that year, the topic became very personal.\nWe learned that decentralized computing architectures are an innovative solution to transfer the control of private information to end-users or what many refer to as self-sovereign identity. But the full potential of decentralized identities exceeded privacy protection to commercial applications such as frictionless onboarding experiences, efficient Know-Your-Customer (KYC) compliance, and drastic reductions in identity-theft rates.\nWe built Gataca because we knew we could provide a faster, cheaper and more secure way for individuals and companies to do business online through decentralized digital identities."
+  },
+  "awards": [
+    {
+      "title": "",
+      "link": ""
+    }
+  ],
+  "teamData": [
+    {
+      "name": "",
+      "bio": "",
+      "photo": "",
+      "links": [
+        {
+          "name": "linkedIn",
+          "url": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,19 +1,12 @@
-const config = require("./content/data/config.json")
 const configMeta = require("./content/data/config-metaData.json")
-const infoData = require("./content/data/info.json")
 
 module.exports = {
   //this makes the site config available to forestry cms
   siteMetadata: {
-    metaTitle: configMeta.title,
+    metaTitle: configMeta.metaTitle,
     metaDescription: configMeta.description,
-    title: config.title,
-    about: config.about,
-    contact: config.contact,
-    primaryColor: config.primary_color,
-    infoData: infoData,
+    title: configMeta.title
   },
-  
   plugins: [
     'gatsby-plugin-tslint',
     `gatsby-plugin-sass`,

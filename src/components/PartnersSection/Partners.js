@@ -18,19 +18,3 @@ export default function Partners(props) {
     </section>
   )
 }
-
-export const query = graphql`
-    query partners {
-        allDataJson(filter: {}) {
-            nodes {
-                partnerSection {
-                    title
-                    partners {
-                        title
-                        partnerImage
-                    }
-                }
-            }
-        }
-    }
-`

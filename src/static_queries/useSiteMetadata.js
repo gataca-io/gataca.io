@@ -7,20 +7,11 @@ export default function useSiteMetadata() {
         siteMetadata {
           title
           metaTitle
-            metaDescription
-          infoData {
-            contact {
-              email
-              github_handle
-              twitter_handle
-            }
-            cta
-            description
-            background_color
-          }
+          metaDescription
         }
       }
     }
   `)
   return data.site.siteMetadata
 }
+

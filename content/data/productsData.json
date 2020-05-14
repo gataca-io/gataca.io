@@ -1,0 +1,77 @@
+{
+  "introProductsSection": {
+    "title": "PRODUCTS",
+    "description": "Gataca has built three components to connect the secure digital ID ecosystem. We help issuers transform their credentials into identity wallets in citizens and customers mobile phones that they can use to access services, from e-government through to car sharing."
+  },
+  "productsData": [
+    {
+      "title": "Credentials",
+      "icon": "/content/images/EXihgPiXsAQmNEk.jpeg",
+      "description": "Provides all the tools necessary to issue and validate identity credentials according to W3C standards for global interoperability",
+      "bullets": [
+        {
+          "title": "BULLET ONE",
+          "image": "/content/images/partner-MIT.svg",
+          "description": "This is a description"
+        },
+        {
+          "title": "BULLET TWO",
+          "image": "/content/images/partner-MIT.svg",
+          "description": "This is a description"
+        },
+        {
+          "title": "BULLET THREE",
+          "image": "/content/images/partner-MIT.svg",
+          "description": "This is a description"
+        }
+      ],
+      "mainImage": ""
+    },
+    {
+      "title": "Connect",
+      "icon": "/content/images/EXihgPiXsAQmNEk.jpeg",
+      "description": "Allows users to store identity credentials from any issuer worldwide and seamlessly authenticate to digital services from their mobile phone",
+      "bullets": [
+        {
+          "title": "BULLET ONE",
+          "image": "/content/images/partner-MIT.svg",
+          "description": "This is a description"
+        },
+        {
+          "title": "BULLET TWO",
+          "image": "/content/images/partner-MIT.svg",
+          "description": "This is a description"
+        },
+        {
+          "title": "BULLET THREE",
+          "image": "/content/images/partner-MIT.svg",
+          "description": "This is a description"
+        }
+      ],
+      "mainImage": ""
+    },
+    {
+      "title": "Identity",
+      "icon": "/content/images/EXihgPiXsAQmNEk.jpeg",
+      "description": "Allows users to store identity credentials from any issuer worldwide and seamlessly authenticate to digital services from their mobile phone",
+      "bullets": [
+        {
+          "title": "BULLET ONE",
+          "image": "/content/images/partner-MIT.svg",
+          "description": "This is a description"
+        },
+        {
+          "title": "BULLET TWO",
+          "image": "/content/images/partner-MIT.svg",
+          "description": "This is a description"
+        },
+        {
+          "title": "BULLET THREE",
+          "image": "/content/images/partner-MIT.svg",
+          "description": "This is a description"
+        }
+      ],
+      "mainImage": ""
+    }
+  ]
+}

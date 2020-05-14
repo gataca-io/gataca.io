@@ -1,0 +1,24 @@
+{
+  "faqSection" : {
+    "title": "F.A.Q.",
+    "icon": "",
+    "questions": [
+      {
+        "title" : "Does Gataca use crytocurrencies?",
+        "response": "Lorem Ipsum this is an answer"
+      },
+      {
+        "title" : "Does Gataca use crytocurrencies?",
+        "response": "Lorem Ipsum this is an answer"
+      },
+      {
+        "title" : "Does Gataca use crytocurrencies?",
+        "response": "Lorem Ipsum this is an answer"
+      },
+      {
+        "title" : "Does Gataca use crytocurrencies?",
+        "response": "Lorem Ipsum this is an answer"
+      }
+    ]
+  }
+}

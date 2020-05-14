@@ -19,6 +19,7 @@
     "build-storybook": "NODE_ENV=production build-storybook -s public"
   },
   "dependencies": {
+    "@carbon/icons-react": "^10.10.2",
     "babel-plugin-remove-graphql-queries": "^2.9.1",
     "babel-plugin-styled-components": "^1.10.7",
     "carbon-components": "^10.11.2",
