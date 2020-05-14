@@ -45,7 +45,7 @@ module.exports.createPages = async ({ graphql, actions, reporter }) => {
   }
   
   // Create blog-list preview pages
-  const posts = response.data.allMarkdownRemark.edges
+/*  const posts = response.data.allMarkdownRemark.edges
   const postsPerPage = 6
   const numPages = Math.ceil(posts.length / postsPerPage)
   Array.from({ length: numPages }).forEach((_, i) => {
@@ -59,7 +59,7 @@ module.exports.createPages = async ({ graphql, actions, reporter }) => {
         currentPage: i + 1,
       },
     })
-  })
+  })*/
   
   // Create new Unique pages with unique slug
   response.data.allMarkdownRemark.edges.forEach(edge => {
@@ -90,7 +90,7 @@ module.exports.createPages = async ({ graphql, actions, reporter }) => {
     }
   `)
   
-  // Create blog-list preview pages
+/*  // Create blog-list preview pages
   const postsWp = responseWp.data.allWordpressPost.edges
   const postsWpPerPage = 6
   const numWpPages = Math.ceil(posts.length / postsPerPage)
@@ -105,7 +105,7 @@ module.exports.createPages = async ({ graphql, actions, reporter }) => {
         currentPage: i + 1,
       },
     })
-  })
+  })*/
   
   //create new pages with unique slug
   responseWp.data.allWordpressPost.edges.forEach(edge => {
