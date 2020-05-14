@@ -6,7 +6,7 @@ fields:
   #   --- intro section
 - type: field_group
   name: introSection
-  label: Intro
+  label: Intro Section
   fields:
   - name: mainTitle
     type: textarea
@@ -36,7 +36,7 @@ fields:
 #   --- Partners Section
 - type: field_group
   name: partnerSection
-  label: Partners
+  label: Partners Section
   fields:
   - name: title
     type: text
@@ -102,7 +102,7 @@ fields:
 #   --- Bullets + Graph Section
 - type: field_group
   name: bulletsEnhancedSection
-  label: Bullets Enhanced
+  label: Bullets Enhanced Section
   fields:
   - name: title
     type: text
