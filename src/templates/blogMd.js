@@ -1,14 +1,15 @@
 import React from "react"
 import Layout from "./../layouts/Layout"
 import { graphql, Link } from "gatsby"
-import useBlogData from '../static_queries/useBlogData'
+import useBlogData from '../static_queries/useMdBlogData'
 import blogTemplateStyles from "../styles/templates/blog.module.scss"
 //this component handles the blur img & fade-ins
 import Img from 'gatsby-image'
 
-export default function Blog(props) {
+export default function BlogMd(props) {
   const data = props.data.markdownRemark
   const allBlogData = useBlogData()
+  console.log(data);
   const nextSlug = getNextSlug(data.fields.slug)
 
   function getNextSlug(slug) {

@@ -1,9 +1,29 @@
 .partnersStyles {
     background-color: var(--bg-grey);
+    border-top: 2px solid var(--darkblue);
     display: flex;
     justify-content: space-around;
 }
 
-.element {
+.container {
+    display: flex;
+    width: calc(100% - var(--baseMargin));
+    justify-content: center;
+    align-items: center;
+    padding: var(--doubleBaseMargin);
+    min-height: 200px;
+    div {
+        margin: 0 var(--baseMargin);
+    }
+}
 
+.partnerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    p{
+        font-size: 0.65rem;
+        opacity: 0.6;
+    }
 }

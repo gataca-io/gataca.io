@@ -76,7 +76,7 @@ fields:
     default: ''
     config:
       required: true
-      wysiwyg: false
+      wysiwyg: true
   - name: elements
     type: field_group_list
     default: ''
@@ -98,5 +98,80 @@ fields:
       label: Description
       config:
         required: true
+
+#   --- Bullets + Graph Section
+- type: field_group
+  name: bulletsEnhancedSection
+  label: Partners
+  fields:
+  - name: title
+    type: text
+    default: ''
+    config:
+      required: true
+      wysiwyg: false
+  - name: description
+    type: textarea
+    default: ''
+    config:
+      required: true
+      wysiwyg: true
+  - name: elements
+    type: field_group_list
+    default: ''
+    label:
+    config:
+    fields:
+    - type: text
+      name: title
+      label: Image
+      config:
+        required: false
+    - type: file
+      name: image
+      label: Image
+      config:
+        required: true
+    - type: text
+      name: description
+      label: Description
+      config:
+        required: true
+  - name: graph
+    type: file
+    default: ''
+    config:
+      required: true
+      wysiwyg: false
+
+  #   --- cta section
+- type: field_group
+  name: ctaSection
+  label: Intro
+  fields:
+    - name: mainTitle
+      type: textarea
+      default: ''
+      config:
+        required: true
+        wysiwyg: false
+    - name: mainSubtitle
+      type: textarea
+      default: ''
+      config:
+        required: true
+        wysiwyg: false
+    - name: mainParagraph
+      type: textarea
+      default: ''
+      config:
+        required: true
+        wysiwyg: false
+    - name: ctaText
+      type: textarea
+      default: ''
+      config:
+        required: true
+        wysiwyg: false
 pages:
 - content/data/homeData.json

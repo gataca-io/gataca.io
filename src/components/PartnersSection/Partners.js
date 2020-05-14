@@ -4,14 +4,17 @@ import React from "react"
 export default function Partners(props) {
   return (
     <section className={partnersStyles.partnersStyles}>
-      <section className={partnersStyles}>
+      <div className={partnersStyles.container}>
+        <div>
+          <p>{props.data.title}</p>
+        </div>
         {props.data.partners.map(el=>{
-          return <div>
-            <h5>{el.title}</h5>
+          return <div className={partnersStyles.partnerContainer}>
             <img src={el.partnerImage}/>
+            <p>{el.title}</p>
           </div>
         })}
-      </section>
+      </div>
     </section>
   )
 }

@@ -3,6 +3,7 @@ import Header from "../components/Header/Header"
 import Helmet from "react-helmet"
 import useSiteMetadata from "../static_queries/useSiteMetadata"
 import layoutStyles from "./layout.module.scss"
+import Footer from "../components/FooterSection/Footer"
 
 export default function Layout(props) {
   const { metaTitle, metaDescription, title } = useSiteMetadata()
@@ -22,6 +23,8 @@ export default function Layout(props) {
       </Helmet>
       <Header page={props.page} title={title} />
       <div className={layoutStyles.content}>{props.children}</div>
+  
+      <Footer/>
     </section>
   )
 }

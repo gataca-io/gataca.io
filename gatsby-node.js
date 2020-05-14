@@ -19,7 +19,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   //dynamically create pages here
   //get path to template
-  const blogTemplate = path.resolve("./src/templates/blog.js")
+  const blogMdTemplate = path.resolve("./src/templates/blogMd.js")
   //get slugs
   const response = await graphql(`
     query {
@@ -37,7 +37,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
   //create new pages with unique slug
   response.data.allMarkdownRemark.edges.forEach(edge => {
     createPage({
-      component: blogTemplate,
+      component: blogMdTemplate,
       path: `/blog/${edge.node.fields.slug}`,
       context: {
         slug: edge.node.fields.slug,
@@ -45,6 +45,8 @@ module.exports.createPages = async ({ graphql, actions }) => {
     })
   })
   
+  
+  const blogTemplate = path.resolve("./src/templates/blog.js")
   //dynamically create pages here
   //get path to template
   //get slugs

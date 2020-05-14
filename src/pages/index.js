@@ -7,7 +7,6 @@ import Partners from "../components/PartnersSection/Partners"
 import Bullets from "../components/BulletsSection/Bullets"
 import BulletsPlusGraph from "../components/BulletsPlusGraphSection/BulletsPlusGraph"
 import Cta from "../components/CtaSection/Cta"
-import Footer from "../components/FooterSection/Footer"
 
 export default function IndexPage() {
   return (
@@ -17,9 +16,8 @@ export default function IndexPage() {
         <Intro data={homeData.introSection}/>
         <Partners data={homeData.partnerSection}/>
         <Bullets data={homeData.bulletsSection}/>
-        <BulletsPlusGraph data={homeData.mainSection}/>
-        <Cta data={homeData.mainSection}/>
-        <Footer/>
+        <BulletsPlusGraph data={homeData.bulletsEnhancedSection}/>
+        <Cta data={homeData.ctaSection}/>
         
       </article>
     </Layout>

@@ -1,4 +1,15 @@
 .base{
     background-color: var(--darkblue);
     height: 60vh;
+    display: flex;
+    padding: 2rem;
+    width: 100%;
+    *{
+        color: var(--white);
+    }
+}
+
+.container {
+    display: flex;
+    max-width: var(--max-width);
 }

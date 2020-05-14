@@ -17,7 +17,7 @@ export default function Header(props) {
         <div className={headerStyles.header__left}>
         <Link to="/">
           <img src={logo}/>
-          <h1>{props.title}</h1>
+          <h2>{props.title}</h2>
         </Link>
         </div>
         <div className={headerStyles.header__right} >

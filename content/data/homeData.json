@@ -6,7 +6,7 @@
     "ctaText": "Speak to out team"
   },
   "partnerSection": {
-    "title": "Partner",
+    "title": "Trusted by",
     "partners": [
       {
         "title": "New York times",
@@ -23,14 +23,56 @@
     ]
   },
   "bulletsSection": {
-    "title": "Digital Identities",
-    "description": "“We use identity credentials daily to access local citizen services, prove employment status or file an insurance claim. But as we have rapidly transformed our lives online, identification and authentication systems have not kept up.”",
+    "title": "Identity Management",
+    "description": "We use identity credentials daily to access local citizen services, prove employment status or file an insurance claim. But as we have rapidly transformed our lives online, identification and authentication systems have not kept up.\n\nGataca’s identity management solution is designed for the digital age. ",
     "elements": [
       {
-        "title": "FAST & EASY",
+        "title": "BULLET ONE",
+        "image": "/content/images/partner-MIT.svg",
+        "description": "This is a description"
+      },
+      {
+        "title": "BULLET TWO",
+        "image": "/content/images/partner-MIT.svg",
+        "description": "This is a description"
+      },
+      {
+        "title": "BULLET THREE",
         "image": "/content/images/partner-MIT.svg",
         "description": "This is a description"
       }
     ]
+  },
+  "bulletsEnhancedSection": {
+    "title": "DECENTRALIZED IDENTITY PLATFORM",
+    "description": "Gataca has built a user-centric digital identity layer for the Internet with government-grade security and a simple single-sign-on to superpower your credentials. Our identity management platform enables fast, secure, and compliant data exchange between credential issuers, users, and service providers.",
+    "elements": [
+      {
+        "title": "BULLET ONE",
+        "image": "/content/images/partner-MIT.svg",
+        "description": "This is a description"
+      },
+      {
+        "title": "BULLET TWO",
+        "image": "/content/images/partner-MIT.svg",
+        "description": "This is a description"
+      },
+      {
+        "title": "BULLET THREE",
+        "image": "/content/images/partner-MIT.svg",
+        "description": "This is a description"
+      }
+    ],
+    "graph": "/content/images/explainedPlatform.svg",
+    "endBullet" : {
+      "title": "PRIVACY BY DESIGN",
+      "image": "/content/images/partner-MIT.svg",
+      "description": "Gataca embraces privacy-by-design and never stores information about an individual’s identity."
+    }
+  },
+  "ctaSection": {
+    "title": "Call to action text",
+    "description": "Start reducing costs and transforming customer and citizen experiences with Gataca’s decentralized digital identity solution",
+    "ctaText": "Speak to out team"
   }
 }
