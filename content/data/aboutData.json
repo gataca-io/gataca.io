@@ -5,14 +5,22 @@
   },
   "awards": [
     {
-      "title": "",
+      "title": "Award Title",
+      "link": ""
+    },
+    {
+      "title": "Award Title Two",
+      "link": ""
+    },
+    {
+      "title": "Award Title Two",
       "link": ""
     }
   ],
   "teamData": [
     {
-      "name": "",
-      "bio": "",
+      "name": "Samuel",
+      "bio": "Lorem Ipsum",
       "photo": "",
       "links": [
         {

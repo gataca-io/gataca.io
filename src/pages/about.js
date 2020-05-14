@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout"
 import aboutStyles from "../styles/pages/about.module.scss"
 import useSiteMetaData from "../static_queries/useSiteMetadata"
 import aboutData  from "./../../content/data/aboutData.json"
+import { Accordion, AccordionItem } from "carbon-components-react"
 
 function IntroSection(props) {
   return (
@@ -21,6 +22,15 @@ export default function About() {
           <IntroSection data={aboutData.introSection}/>
           <div>
             <h1>Awards & Milestones</h1>
+            <div>
+              {aboutData.awards.map(award => {
+                return (
+                  <p>
+                      {award.title}
+                  </p>
+                )
+              })}
+            </div>
           </div>
           <div>
             <h1>Team</h1>
