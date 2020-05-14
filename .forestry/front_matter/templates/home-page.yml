@@ -12,25 +12,25 @@ fields:
     type: textarea
     default: ''
     config:
-      required: true
+      required: false
       wysiwyg: false
   - name: mainSubtitle
     type: textarea
     default: ''
     config:
-      required: true
+      required: false
       wysiwyg: false
   - name: mainParagraph
     type: textarea
     default: ''
     config:
-      required: true
+      required: false
       wysiwyg: false
   - name: ctaText
     type: textarea
     default: ''
     config:
-      required: true
+      required: false
       wysiwyg: false
 
 #   --- Partners Section
@@ -42,7 +42,7 @@ fields:
     type: text
     default: ''
     config:
-      required: true
+      required: false
       wysiwyg: false
   - name: partners
     type: field_group_list
@@ -58,24 +58,24 @@ fields:
       name: partneImage
       label: Partner Image
       config:
-        required: true
+        required: false
 
 #   --- Bullets Information Section
 - type: field_group
   name: bulletsSection
-  label: Partners
+  label: Bullets Section
   fields:
   - name: title
     type: text
     default: ''
     config:
-      required: true
+      required: false
       wysiwyg: false
   - name: description
     type: textarea
     default: ''
     config:
-      required: true
+      required: false
       wysiwyg: true
   - name: elements
     type: field_group_list
@@ -92,29 +92,29 @@ fields:
       name: image
       label: Image
       config:
-        required: true
+        required: false
     - type: text
       name: description
       label: Description
       config:
-        required: true
+        required: false
 
 #   --- Bullets + Graph Section
 - type: field_group
   name: bulletsEnhancedSection
-  label: Partners
+  label: Bullets Enhanced
   fields:
   - name: title
     type: text
     default: ''
     config:
-      required: true
+      required: false
       wysiwyg: false
   - name: description
     type: textarea
     default: ''
     config:
-      required: true
+      required: false
       wysiwyg: true
   - name: elements
     type: field_group_list
@@ -131,47 +131,47 @@ fields:
       name: image
       label: Image
       config:
-        required: true
+        required: false
     - type: text
       name: description
       label: Description
       config:
-        required: true
+        required: false
   - name: graph
     type: file
     default: ''
     config:
-      required: true
+      required: false
       wysiwyg: false
 
   #   --- cta section
 - type: field_group
   name: ctaSection
-  label: Intro
+  label: Cta Section
   fields:
     - name: mainTitle
       type: textarea
       default: ''
       config:
-        required: true
+        required: false
         wysiwyg: false
     - name: mainSubtitle
       type: textarea
       default: ''
       config:
-        required: true
+        required: false
         wysiwyg: false
     - name: mainParagraph
       type: textarea
       default: ''
       config:
-        required: true
+        required: false
         wysiwyg: false
     - name: ctaText
       type: textarea
       default: ''
       config:
-        required: true
+        required: false
         wysiwyg: false
 pages:
 - content/data/homeData.json
