@@ -2,68 +2,63 @@
 label: About Page
 hide_body: false
 fields:
-
-  #   --- intro section
-  - type: field_group
-    name: aboutSection
-    label: About Intro Section
+- type: field_group
+  name: aboutSection
+  label: About Intro Section
+  fields:
+  - name: title
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+  - name: description
+    type: textarea
+    label: Description
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+- type: field_group_list
+  name: teamData
+  label: Team Section
+  fields:
+  - name: name
+    type: text
+    label: Gato
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+  - name: photo
+    type: file
+    label: Photo
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+  - name: bio
+    type: textarea
+    label: Product Description
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+  - name: links
+    type: field_group_list
+    default: ''
+    label: Links
+    config: 
     fields:
-      - name: title
-        type: textarea
-        default: ''
-        config:
-          required: false
-          wysiwyg: false
-      - name: description
-        type: textarea
-        label: Description
-        default: ''
-        config:
-          required: false
-          wysiwyg: true
-
-  #   --- Team Section
-  - type: field_group_list
-    name: teamData
-    label: Team Section
-    fields:
-      - name: name
-        type: text
-        label: Gato
-        default: ''
-        config:
-          required: false
-          wysiwyg: false
-      - name: photo
-        type: file
-        label: Photo
-        default: ''
-        config:
-          required: false
-          wysiwyg: false
-      - name: bio
-        type: textarea
-        label: Product Description
-        default: ''
-        config:
-          required: false
-          wysiwyg: true
-      - name: links
-        type: field_group_list
-        default: ''
-        label: Links
-        config:
-        fields:
-          - type: text
-            name: name
-            label: Url name
-            config:
-              required: false
-          - type: text
-            name: url
-            label: Url Uri
-            config:
-              required: false
-
+    - type: text
+      name: name
+      label: Url name
+      config:
+        required: false
+    - type: text
+      name: url
+      label: Url Uri
+      config:
+        required: false
 pages:
-  - content/data/aboutData.json
+- content/data/aboutData.json

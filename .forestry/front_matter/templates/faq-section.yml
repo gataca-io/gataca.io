@@ -2,31 +2,26 @@
 label: Faq Section
 hide_body: false
 fields:
-
-  #   --- Faq section
-  - type: field_group
-    name: introProductsSection
-    label: Intro Products Section
-    fields:
-      - name: icon
-        type: file
-        default: ''
-        config:
-          required: false
-          wysiwyg: false
-      - name: title
-        type: text
-        default: ''
-        config:
-          required: false
-          wysiwyg: false
-      - name: description
-        type: textarea
-        label: Description
-        default: ''
-        config:
-          required: false
-          wysiwyg: true
-
-pages:
-  - content/data/faqData.json
+- type: field_group
+  name: introProductsSection
+  label: Intro Products Section
+  fields:
+  - name: icon
+    type: file
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+  - name: title
+    type: text
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+  - name: description
+    type: textarea
+    label: Description
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
