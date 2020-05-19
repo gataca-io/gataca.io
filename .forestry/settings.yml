@@ -32,7 +32,7 @@ sections:
 - type: heading
   label: Meta Content
 - type: document
-  path: config.json
+  path: config-metaData.json
   label: Site Info
 
 #  MARKDOWN POSTS

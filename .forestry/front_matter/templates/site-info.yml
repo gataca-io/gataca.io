@@ -1,5 +1,5 @@
 ---
-label: Site Config
+label: Site Config & Meta
 hide_body: true
 fields:
 - type: text
@@ -9,5 +9,7 @@ fields:
   name: description
   label: description
 - type: text
-  name: repository_url
-  label: repository_url
+  name: metaTitle
+  label: meta title
+pages:
+  - content/data/config-metaData.json
