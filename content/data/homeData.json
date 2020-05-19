@@ -6,8 +6,12 @@
     "ctaText": "Speak to out team"
   },
   "partnerSection": {
-    "title": "Trusted by",
+    "title": "Trusted by:",
     "partners": [
+      {
+        "title": "",
+        "image": "/content/images/partner-MIT.svg"
+      },
       {
         "title": "New York times",
         "image": "/content/images/EXihgPiXsAQmNEk.jpeg"
