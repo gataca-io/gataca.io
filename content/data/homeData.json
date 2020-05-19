@@ -1,13 +1,17 @@
 {
   "introSection": {
-    "mainTitle": "GATACA",
-    "mainSubtitle": "Start reducing costs and transforming customer and citizen experiences with Gataca’s decentralized digital identity solution",
+    "mainTitle": "GATAC",
+    "mainSubtitle": "lkajnsdl",
     "mainParagraph": "We provide your organization or community with the necesary tools to manage secure 100% digital identification systems.",
     "ctaText": "Speak to out team"
   },
   "partnerSection": {
-    "title": "Trusted by",
+    "title": "Trusted by:",
     "partners": [
+      {
+        "title": "",
+        "image": "/content/images/partner-MIT.svg"
+      },
       {
         "title": "New York times",
         "image": "/content/images/EXihgPiXsAQmNEk.jpeg"
@@ -64,11 +68,13 @@
       }
     ],
     "graph": "/content/images/explainedPlatform.svg",
-    "endBullet": {
-      "title": "PRIVACY BY DESIGN",
-      "image": "/content/images/partner-MIT.svg",
-      "description": "Gataca embraces privacy-by-design and never stores information about an individual’s identity."
-    }
+    "endBullet": [
+      {
+        "title": "PRIVACY BY DESIGN",
+        "image": "/content/images/partner-MIT.svg",
+        "description": "Gataca embraces privacy-by-design and never stores information about an individual’s identity."
+      }
+    ]
   },
   "ctaSection": {
     "title": "Call to action text",

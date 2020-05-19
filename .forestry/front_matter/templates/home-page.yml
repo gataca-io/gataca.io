@@ -2,8 +2,6 @@
 label: Home Page
 hide_body: false
 fields:
-
-  #   --- intro section
 - type: field_group
   name: introSection
   label: Intro Section
@@ -32,8 +30,6 @@ fields:
     config:
       required: false
       wysiwyg: false
-
-#   --- Partners Section
 - type: field_group
   name: partnerSection
   label: Partners Section
@@ -47,7 +43,7 @@ fields:
   - name: partners
     type: field_group_list
     default: ''
-    config:
+    config: 
     fields:
     - type: text
       name: title
@@ -59,8 +55,6 @@ fields:
       label: Partner Image
       config:
         required: false
-
-#   --- Bullets Information Section
 - type: field_group
   name: bulletsSection
   label: Bullets Section
@@ -80,8 +74,8 @@ fields:
   - name: elements
     type: field_group_list
     default: ''
-    label:
-    config:
+    label: 
+    config: 
     fields:
     - type: text
       name: title
@@ -98,8 +92,6 @@ fields:
       label: Description
       config:
         required: false
-
-#   --- Bullets + Graph Section
 - type: field_group
   name: bulletsEnhancedSection
   label: Bullets Enhanced Section
@@ -119,8 +111,8 @@ fields:
   - name: elements
     type: field_group_list
     default: ''
-    label:
-    config:
+    label: 
+    config: 
     fields:
     - type: text
       name: title
@@ -147,46 +139,44 @@ fields:
     type: field_group_list
     default: ''
     label: End Bullet
-    config:
+    config: 
     fields:
-      - type: text
-        name: title
-        label: Image
-        config:
-          required: false
-      - type: file
-        name: image
-        label: Image
-        config:
-          required: false
-      - type: text
-        name: description
-        label: Description
-        config:
-          required: false
-
-  #   --- cta section
+    - type: text
+      name: title
+      label: Image
+      config:
+        required: false
+    - type: file
+      name: image
+      label: Image
+      config:
+        required: false
+    - type: text
+      name: description
+      label: Description
+      config:
+        required: false
 - type: field_group
   name: ctaSection
   label: Cta Section
   fields:
-    - name: title
-      type: textarea
-      default: ''
-      config:
-        required: false
-        wysiwyg: false
-    - name: description
-      type: textarea
-      default: ''
-      config:
-        required: false
-        wysiwyg: true
-    - name: ctaText
-      type: textarea
-      default: ''
-      config:
-        required: false
-        wysiwyg: false
+  - name: title
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+  - name: description
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+  - name: ctaText
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
 pages:
 - content/data/homeData.json
