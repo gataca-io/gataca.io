@@ -13,6 +13,14 @@ sections:
   path: content/data/productsData.json
   label: "- Products -"
   match: "**/*"
+- type: document
+  path: content/data/aboutData.json
+  label: "- About -"
+  match: "**/*"
+- type: document
+  path: content/data/carrersData.json
+  label: "- Carrers -"
+  match: "**/*"
 - type: heading
   label: Web Content
 upload_dir: content/images
