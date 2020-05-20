@@ -12,27 +12,23 @@ sections:
 - type: document
   path: content/data/productsData.json
   label: "- Products -"
-  match: "**/*"
 - type: document
   path: content/data/aboutData.json
   label: "- About -"
-  match: "**/*"
 - type: document
   path: content/data/carrersData.json
   label: "- Carrers -"
-  match: "**/*"
 - type: heading
   label: Web Content
 - type: document
   path: config-metaData.json
   label: Site Info
-  match: "**/*"
 - type: directory
   path: content/posts
   label: Blog Posts
   create: documents
   match: "**/*"
-  new_doc_ext: ".md"
+  new_doc_ext: md
 upload_dir: content/images
 public_path: "/content/images"
 front_matter_path: ''
