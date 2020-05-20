@@ -9,6 +9,9 @@ sections:
 - type: document
   path: content/data/homeData.json
   label: "- Home -"
+- type: document
+  path: content/data/productsData.json
+  label: "- Products -"
   match: "**/*"
 - type: heading
   label: Web Content
