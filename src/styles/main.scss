@@ -4,6 +4,10 @@
 @import 'node_modules/carbon-components/scss/components/tabs/tabs';
 @import 'node_modules/carbon-components/scss/components/accordion/accordion';
 @import 'node_modules/carbon-components/scss/components/button/button';
+@import 'node_modules/carbon-components/scss/components/ui-shell/header';
+@import 'node_modules/carbon-components/scss/components/ui-shell/header-panel';
+@import 'node_modules/carbon-components/scss/components/ui-shell/side-nav';
+@import 'node_modules/carbon-components/scss/components/ui-shell/theme';
 
 // We use 16 columns variant
 $feature-flags: (
@@ -16,3 +20,4 @@ $feature-flags: (
 
 @import "reset";
 @import "global";
+@import './../components/HeaderSection/headerOverride';
