@@ -5,6 +5,12 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: heading
+  label: Meta Content
+- type: document
+  path: content/data/homeData.json
+  label: "- Home -"
+  match: "**/*"
+- type: heading
   label: Web Content
 upload_dir: content/images
 public_path: "/content/images"
