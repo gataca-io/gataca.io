@@ -1,3 +1,5 @@
+@import "../../styles/aux/media-mixins";
+
 .introSection {
     min-height: 85vh;
     //background-color: purple;
@@ -13,9 +15,6 @@
     &__container {
         display: flex;
         max-width: 760px;
-        img{
-            width: 220px;
-        }
         section{
             padding-top: 1rem;
             margin-left: 2rem;
@@ -31,5 +30,26 @@
                 font-size: 1rem;
             }
         }
+    }
+}
+
+.ctaButton {
+    background-color: var(--darkblue);
+}
+
+.phoneContainer{
+    background-color: blue;
+    padding: -1rem;
+    position: relative;
+    width: 300px;
+    height: 370px;
+    img{
+        border-radius: 20px;
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 310px;
+        background-color: red;
+        margin: 0;
     }
 }

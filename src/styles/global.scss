@@ -4,12 +4,15 @@
 :root {
   --darkblue: #181B5E;
   --bg-grey: #F9F9F9;
+  --light-grey: #afafaf;
+  --grey: #6d6d6d;
   --white: white;
   --topbar-height: 70px;
   --baseMargin: 20px;
   --doubleBaseMargin: 40px;
   --borderRadius: 10px;
   --max-width: 760px;
+  --border-ga: 2px solid #181B5E;
 }
 
 body {
@@ -57,7 +60,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   letter-spacing: 2px;
   line-height: 1.2;
 }
@@ -71,10 +74,10 @@ h3 {
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   letter-spacing: -.5px;
   line-height: 1.5;
-  color: #464646;
+  color: var(--grey);
 }
 
 // gatsby-image plugin container-----------------
@@ -95,7 +98,7 @@ p {
 
   h2 {
     font-size: 1.5rem;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     line-height: 1.1667;
   }
 

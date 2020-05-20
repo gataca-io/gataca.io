@@ -11,17 +11,17 @@
       "bullets": [
         {
           "title": "BULLET ONE",
-          "image": "/content/images/partner-MIT.svg",
+          "image": "../images/partner-MIT.svg",
           "description": "This is a description"
         },
         {
           "title": "BULLET TWO",
-          "image": "/content/images/partner-MIT.svg",
+          "image": "../images/partner-MIT.svg",
           "description": "This is a description"
         },
         {
           "title": "BULLET THREE",
-          "image": "/content/images/partner-MIT.svg",
+          "image": "../images/partner-MIT.svg",
           "description": "This is a description"
         }
       ],
@@ -73,5 +73,10 @@
       ],
       "mainImage": ""
     }
-  ]
+  ],
+  "endBullet":         {
+    "title": "BULLET CENTER",
+    "image": "/content/images/partner-MIT.svg",
+    "description": "This is a description"
+  }
 }

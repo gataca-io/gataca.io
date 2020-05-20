@@ -10,10 +10,12 @@ import FaqSection from "../components/faqSection/FaqSection"
 
 function IntroSection(props) {
   return (
-    <div className={productStyles.container}>
-      <h2>{props.data.title}</h2>
-      <p>{props.data.description}</p>
-    </div>
+    <section className={productStyles.introContainer}>
+      <div>
+        <h2>{props.data.title}</h2>
+        <p>{props.data.description}</p>
+      </div>
+    </section>
   )
 }
 
@@ -25,6 +27,7 @@ export default function Products(props) {
       <section className={productStyles.base}>
         <IntroSection data={productsData.introProductsSection}/>
         <ProductsSelector data={productsData.productsData}/>
+        <BulletCenter data={productsData.endBullet}/>
         <FaqSection data={faqData.faqSection}/>
       </section>
     </Layout>
@@ -39,25 +42,25 @@ export const query = graphql`
                     title
                     description
                 }
-                productsData {
-                    title
-                    icon
-                    description
-                    mainImage
-                    bullets {
-                        title
-                        image
-                        description
-                    }
-                }
-                faqSection {
-                    title
-                    icon
-                    questions {
-                        title
-                        response
-                    }
-                }
+#                productsData {
+#                    title
+#                    icon
+#                    description
+#                    mainImage
+#                    bullets {
+#                        title
+#                        image
+#                        description
+#                    }
+#                }
+#                faqSection {
+#                    title
+#                    icon
+#                    questions {
+#                        title
+#                        response
+#                    }
+#                }
             }
         }
     }

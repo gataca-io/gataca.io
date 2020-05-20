@@ -1,7 +1,18 @@
+@import "./aux/media-mixins";
+
 // Carbon Components used
 @import 'node_modules/carbon-components/scss/components/tabs/tabs';
 @import 'node_modules/carbon-components/scss/components/accordion/accordion';
+@import 'node_modules/carbon-components/scss/components/button/button';
 
+// We use 16 columns variant
+$feature-flags: (
+        grid-columns-16: true,
+);
+
+@import 'node_modules/carbon-components/scss/globals/grid/grid';
+@import 'node_modules/carbon-components/scss/globals/scss/spacing';
+@import 'node_modules/carbon-components/scss/globals/scss/mixins';
 
 @import "reset";
 @import "global";

@@ -5,11 +5,13 @@ module.exports = {
   siteMetadata: {
     metaTitle: configMeta.metaTitle,
     metaDescription: configMeta.description,
-    title: configMeta.title
+    title: configMeta.title,
+    siteUrl: `https://www.gataca.io`,
   },
   plugins: [
     'gatsby-plugin-tslint',
-    `gatsby-plugin-sass`,
+    'gatsby-plugin-sass',
+    'gatsby-plugin-sitemap',
     "gatsby-transformer-remark",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-typescript",

@@ -11,10 +11,10 @@ import Cta from "../components/CtaSection/Cta"
 export default function IndexPage() {
   return (
     <Layout page="home" bgColor="inherit" className={homeStyles.base}>
-      <article className={homeStyles.home}>
+      <article className={homeStyles.home} >
         
         <Intro data={homeData.introSection}/>
-        <Partners data={homeData.partnerSection}/>
+        <Partners info={homeData.partnersSection} />
         <Bullets data={homeData.bulletsSection}/>
         <BulletsPlusGraph data={homeData.bulletsEnhancedSection}/>
         <Cta data={homeData.ctaSection}/>

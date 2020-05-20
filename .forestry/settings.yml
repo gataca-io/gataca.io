@@ -2,7 +2,7 @@
 new_page_extension: md
 auto_deploy: false
 admin_path: ''
-webhook_url: 
+webhook_url:
 sections:
 - type: heading
   label: Web Content
@@ -21,7 +21,7 @@ sections:
 - type: heading
   label: Meta Content
 - type: document
-  path: config-metaData.json
+  path: content/data/config-metaData.json
   label: Site Info
 - type: directory
   path: content/posts

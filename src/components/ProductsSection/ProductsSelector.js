@@ -1,15 +1,15 @@
 import productSelStyles from "./productsSelector.module.scss"
 import { Tab, Tabs } from "carbon-components-react"
 import React from "react"
-import BulletCenter from "../BulletCenter"
 import BulletOne from "../BulletOne"
 
 export default function ProductsSelector(props) {
   return (
-    <section className={productSelStyles.container}>
+    <section className={productSelStyles.base}>
+      <div className={productSelStyles.container}>
       <Tabs
         ariaLabel="listbox"
-        className="some-class"
+        className={productSelStyles.tabs}
         iconDescription="show menu options"
         // onKeyDown={}
         // onSelectionChange={}
@@ -57,7 +57,9 @@ export default function ProductsSelector(props) {
             </Tab>
           )
         })}
+        
       </Tabs>
+      </div>
     </section>
   )
 }
