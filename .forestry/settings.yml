@@ -3,43 +3,15 @@ new_page_extension: md
 auto_deploy: false
 admin_path: ''
 webhook_url: 
-sections:
-- type: heading
-  label: Web Content
-- type: document
-  path: content/data/homeData.json
-  label: "- Home -"
-- type: document
-  path: content/data/productsData.json
-  label: "- Products -"
-- type: document
-  path: content/data/aboutData.json
-  label: "- About -"
-- type: document
-  path: content/data/carrersData.json
-  label: "- Carrers -"
-- type: heading
-  label: Meta Content
-- type: document
-  path: config-metaData.json
-  label: Site Info
-- type: directory
-  path: content/posts
-  label: Blog Posts
-  create: documents
-  match: "**/*"
-  new_doc_ext: md
-  templates:
-  - blog-post
-upload_dir: content/images
-public_path: "/content/images"
+sections: 
+upload_dir: uploads
+public_path: "/uploads"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
 build:
-  preview_output_directory: public
-  install_dependencies_command: yarn install
+  install_dependencies_command: npm install
   preview_docker_image: node:10
   mount_path: "/srv"
-  working_dir: "/srv/public"
-  instant_preview_command: yarn forestry-preview
+  working_dir: "/srv"
+  instant_preview_command: npm run forestry:preview
