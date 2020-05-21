@@ -1,9 +1,9 @@
 {
   "introSection": {
-    "mainTitle": "GATAC",
+    "mainTitle": "GATACA",
     "mainSubtitle": "lkajnsdl",
-    "mainParagraph": "We provide your organization or community with the necesary tools to manage secure 100% digital identification systems.",
-    "ctaText": "Speak to out team"
+    "mainParagraph": "We provide your organization with the tools to manage secure digital identification systems.",
+    "ctaText": "Speak to our team"
   },
   "partnerSection": {
     "title": "Trusted by:",
@@ -28,7 +28,7 @@
   },
   "bulletsSection": {
     "title": "Identity Management",
-    "description": "We use identity credentials daily to access local citizen services, prove employment status or file an insurance claim. But as we have rapidly transformed our lives online, identification and authentication systems have not kept up.\n\nGataca’s identity management solution is designed for the digital age. ",
+    "description": "We use identity credentials daily to access local citizen services, prove employment status, or file an insurance claim. But as we have rapidly transformed our lives online, identification and authentication systems have not kept up.<br><br>We designed Gataca’s identity management solution for the digital age.",
     "elements": [
       {
         "title": "BULLET ONE",

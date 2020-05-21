@@ -5,7 +5,7 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: heading
-  label: Web Content
+  label: Meta Content
 - type: document
   path: content/data/homeData.json
   label: "- Home -"
@@ -19,7 +19,7 @@ sections:
   path: content/data/carrersData.json
   label: "- Carrers -"
 - type: heading
-  label: Meta Content
+  label: Web Content
 - type: document
   path: config-metaData.json
   label: Site Info
@@ -29,8 +29,6 @@ sections:
   create: documents
   match: "**/*"
   new_doc_ext: md
-  templates:
-  - blog-post
 upload_dir: content/images
 public_path: "/content/images"
 front_matter_path: ''
@@ -41,5 +39,5 @@ build:
   install_dependencies_command: yarn install
   preview_docker_image: node:10
   mount_path: "/srv"
-  working_dir: "/srv/public"
-  instant_preview_command: yarn forestry-preview
+  working_dir: "/srv"
+  instant_preview_command: yarn forestry:preview
