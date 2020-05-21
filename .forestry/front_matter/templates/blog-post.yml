@@ -38,7 +38,7 @@ fields:
     label: RRSS Images
     description: Images to show when shared on each social network with each different
       format.<br>Twitter, LinkedIn, Whatsapp, each one is different.
-  label: Meta Data
+  label: Post Meta Data
 - type: text
   name: title
   label: title
