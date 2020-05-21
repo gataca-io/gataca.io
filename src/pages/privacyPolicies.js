@@ -19,31 +19,7 @@ export default function PrivacyPolicies() {
   return (
     <Layout>
       <section className={aboutStyles.base}>
-        <IntroSection data={aboutData.introSection}/>
-        <div>
-          <h1>Team</h1>
-          <div>
-            {aboutData.teamData.map(gato => {
-              return (
-                <p>
-                  {gato.name}
-                </p>
-              )
-            })}
-          </div>
-        </div>
-        <div>
-          <h1>Awards & Milestones</h1>
-          <div>
-            {aboutData.awards.map(award => {
-              return (
-                <p>
-                  {award.title}
-                </p>
-              )
-            })}
-          </div>
-        </div>
+        <h2> Privacy Polcies</h2>
       </section>
     </Layout>
   )

@@ -18,7 +18,7 @@ function renderPartners({ data, info }) {
           {partnersData.partners.map(el=>{
             return (
               <div className={`bx--col-lg-3 bx--col-md-2 bx--col-sm-2 ${partnersStyles.partnerContainer}`}>
-                <img src={el.image.publicURL} alt={el.title}/>
+                {/*<img src={el.image.publicURL} alt={el.title}/>*/}
               </div>
             )
           })}`
