@@ -24,16 +24,12 @@
         "image": "../images/partner-MIT.svg"
       },
       {
-        "title": "New York times",
-        "image": "../images/EXihgPiXsAQmNEk.jpeg"
+        "title": "",
+        "image": "../images/partner-MIT.svg"
       },
       {
         "title": "Mit Management Sloan School",
         "image": "../images/partner-MIT.svg"
-      },
-      {
-        "title": "",
-        "image": ""
       }
     ]
   },
@@ -48,7 +44,7 @@
       },
       {
         "title": "BULLET TWO",
-        "image": "/content/images/partner-MIT.svg",
+        "image": "./images/partner-MIT.svg",
         "description": "This is a description"
       },
       {
