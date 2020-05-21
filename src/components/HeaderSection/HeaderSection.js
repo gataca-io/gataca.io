@@ -56,42 +56,42 @@ export default function HeaderSection(props) {
               />
   
               <div className={headerStyles.right} >
-                <h3>
                   <Link
                     to={
                       '/products'
                     }
                   >
-                    Products
-                  </Link>
-                </h3>
                 <h3>
+                    Products
+                </h3>
+                  </Link>
                   <Link
                     to={
-                      '/stories'
+                      '/insights'
                     }
                   >
-                    Stories
-                  </Link>
-                </h3>
                 <h3>
+                    Insights
+                </h3>
+                  </Link>
                   <Link
                     to={
                       '/about'
                     }
                   >
+                <h3>
                     About
-                  </Link>
                 </h3>
-                <h3 className={headerStyles.header__cta}>
+                  </Link>
                   <Link
                     to={
                       '/bookCall'
                     }
                   >
+                <h3 className={headerStyles.header__cta}>
                     Book a call
-                  </Link>
                 </h3>
+                  </Link>
               </div>
               
             </div>
