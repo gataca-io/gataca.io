@@ -7,13 +7,17 @@
     width: 100%;
 }
 
-.container {
-    padding: 5rem 0;
+.introContainer {
+    background-color: var(--bg-grey);
+    width: 100%;
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    max-width: var(--max-width);
+    & > div {
+        padding: 5rem 0;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        max-width: var(--max-width);
+    }
 }
 

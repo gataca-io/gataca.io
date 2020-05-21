@@ -1,0 +1,194 @@
+---
+label: Home Page
+hide_body: false
+fields:
+- type: field_group
+  name: introSection
+  label: Intro Section
+  fields:
+  - name: mainTitle
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+  - name: mainSubtitle
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+  - name: mainParagraph
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+  - name: ctaText
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+  - name: credentials
+    type: field_group_list
+    default: Credentials List to show
+    label:
+    config:
+    fields:
+      - type: text
+        name: title
+        label: Image
+        config:
+          required: false
+
+- type: field_group
+  name: partnerSection
+  label: Partners Section
+  fields:
+  - name: title
+    type: text
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+  - name: partners
+    type: field_group_list
+    default: ''
+    config:
+    fields:
+    - type: text
+      name: title
+      label: Partner Title
+      config:
+        required: false
+    - type: file
+      name: image
+      label: Partner Image
+      config:
+        required: false
+- type: field_group
+  name: bulletsSection
+  label: Bullets Section
+  fields:
+  - name: title
+    type: text
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+  - name: description
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+  - name: elements
+    type: field_group_list
+    default: ''
+    label:
+    config:
+    fields:
+    - type: text
+      name: title
+      label: Image
+      config:
+        required: false
+    - type: file
+      name: image
+      label: Image
+      config:
+        required: false
+    - type: text
+      name: description
+      label: Description
+      config:
+        required: false
+- type: field_group
+  name: bulletsEnhancedSection
+  label: Bullets Enhanced Section
+  fields:
+  - name: title
+    type: text
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+  - name: description
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+  - name: elements
+    type: field_group_list
+    default: ''
+    label:
+    config:
+    fields:
+    - type: text
+      name: title
+      label: Image
+      config:
+        required: false
+    - type: file
+      name: image
+      label: Image
+      config:
+        required: false
+    - type: text
+      name: description
+      label: Description
+      config:
+        required: false
+  - name: graph
+    type: file
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+  - name: endBullet
+    type: field_group_list
+    default: ''
+    label: End Bullet
+    config:
+    fields:
+    - type: text
+      name: title
+      label: Image
+      config:
+        required: false
+    - type: file
+      name: image
+      label: Image
+      config:
+        required: false
+    - type: text
+      name: description
+      label: Description
+      config:
+        required: false
+- type: field_group
+  name: ctaSection
+  label: Cta Section
+  fields:
+  - name: title
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+  - name: description
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+  - name: ctaText
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+pages:
+- content/data/homeData.json

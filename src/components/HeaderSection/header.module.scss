@@ -1,3 +1,5 @@
+@import "../../styles/aux/media-mixins";
+
 .header {
   position: fixed;
   top: 0;
@@ -5,11 +7,16 @@
   width: 100%;
   height: var(--topbar-height);
   background-color: var(--white);
+  z-index: 10;
+  svg {
+    fill: var(--darkblue);
+  }
   h1, h2, h3 {
     margin-bottom: 0;
   }
-  &__nav {
+  .nav {
     height: 100%;
+    width: 100%;
     padding: 0 1.5rem;
     border-bottom: 1px solid #EBEBEB;
     display: flex;
@@ -20,7 +27,7 @@
       margin-bottom: 0;
     }
   }
-  &__left {
+  .left {
     a{
     display: flex;
     align-items: center;
@@ -30,12 +37,15 @@
       }
     }
   }
-  &__right {
+  .right {
+      display: none;
+    @include media-for-tablet-portrait-up {
     display: flex;
     align-items: center;
     color: var(--darkblue);
     & > * {
       margin-left: 2rem;
+    }
     }
   }
   &__cta {
@@ -45,6 +55,18 @@
       background-color: var(--bg-grey);
       color: black;
     }
+  }
+}
+
+.sideNav {
+    display: block;
+  span{
+    font-family: "Work Sans", "Helvetica Neue", Helvetica, sans-serif ;
+    font-weight: normal;
+    font-size: medium;
+  }
+  @include media-for-tablet-portrait-up {
+display: none;
   }
 }
 

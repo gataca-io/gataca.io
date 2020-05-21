@@ -1,7 +1,7 @@
 import footerStyles  from "./footer.module.scss"
 import React from "react"
 
-export default function Footer(props) {
+export default function FooterSection(props) {
   return (
     <section className={footerStyles.base}>
       <div className={footerStyles.container}>

@@ -1,20 +1,32 @@
 
-.container {
+.base {
     padding: 5rem 0;
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
     align-items: center;
-    max-width: var(--max-width);
+    background-color: var(--bg-grey);
+    width: 100%;
+    border-bottom: 2px solid var(--darkblue);
+    .container{
+        background-color: var(--white);
+        //max-width: var(--max-width);
+        width: 100%;
+    }
 }
+    .tabs {
+        background-color: var(--bg-grey);
+        padding-bottom: 2px;
+        border-bottom: var(--border-ga);
+        width: 100%;
+    }
 
 .introSection{
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-
 
 .detailContainer{
     display: flex;

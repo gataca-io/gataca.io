@@ -1,19 +1,35 @@
-.partnersStyles {
+@import "../../styles/aux/media-mixins";
+
+.base {
     background-color: var(--bg-grey);
     border-top: 2px solid var(--darkblue);
-    display: flex;
-    justify-content: space-around;
+    //display: flex;
+    //justify-content: center;
+    //padding: var(--doubleBaseMargin);
 }
 
 .container {
+    //width: calc(100% - var(--baseMargin));
     display: flex;
-    width: calc(100% - var(--baseMargin));
+    align-items: center;
+    justify-content: center;
+    min-height: 250px;
+    &> div {
+        width: 100%;
+    }
+}
+
+.introText {
+    display: flex;
     justify-content: center;
     align-items: center;
-    padding: var(--doubleBaseMargin);
-    min-height: 200px;
-    div {
-        margin: 0 var(--baseMargin);
+    margin: var(--doubleBaseMargin) 0;
+    @include media-for-desktop-up {
+        margin:0;
+    }
+    p{
+        color: var(--light-grey);
+        margin: 0;
     }
 }
 
@@ -21,9 +37,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    margin: var(--doubleBaseMargin) 0;
+    @include media-for-desktop-up {
+        margin:0;
+    }
+    img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        min-width: 100px;
+        opacity: 0.7;
+    }
     p{
         font-size: 0.65rem;
         opacity: 0.6;
+        margin: 0;
     }
 }

@@ -8,6 +8,10 @@
     padding: 3rem 0;
 }
 
+.container {
+    border-left: 1px solid var(--light-grey);
+}
+
 .header{
     display: flex;
     justify-content: center;
