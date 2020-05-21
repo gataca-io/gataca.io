@@ -1,20 +1,35 @@
+@import "../../styles/aux/media-mixins";
+
 .base{
-    background-color: var(--white);
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding: 3rem 0;
+    @include media-for-tablet-portrait-up {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 3rem 0;
+        background-color: var(--white);
+    }
+}
+
+.iconContainer{
+    img{
+        background-color: var(--bg-grey);
+        height: 50px;
+        width: 50px;
+    }
 }
 
 .container {
+    border-left: none;
+@include media-for-tablet-portrait-up {
     border-left: 1px solid var(--light-grey);
+}
 }
 
 .header{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
     align-items: center;
     max-width: var(--max-width);
@@ -22,8 +37,11 @@
 }
 
 .bulletsContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 3rem 0;
+    padding: 2rem;
+    @include media-for-tablet-portrait-up {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 3rem 0;
+    }
 }

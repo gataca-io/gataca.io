@@ -5,7 +5,9 @@ import Img from "gatsby-image"
 
 function renderPartners({ data, info }) {
   // filter Query to get to data
-  data = data.allDataJson.nodes.filter(node => {return node ? !!node.partnersSection : null})
+  data = data.allDataJson.nodes.filter(node => {
+    return node ? !!node.partnersSection : null
+  })
   const partnersData = data[0].partnersSection;
   
   return (

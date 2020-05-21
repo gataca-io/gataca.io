@@ -52,4 +52,4 @@ fields:
       format.<br>Twitter, LinkedIn, Whatsapp, each one is different.
   label: Site Main Meta Data
 pages:
-- content/data/config-metaData.json
+- content/data/configMetaData.json

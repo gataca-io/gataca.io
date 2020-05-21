@@ -7,40 +7,57 @@
     justify-content: center;
     align-items: center;
     background-image: url("./../../../content/images/introPattern.svg");
-    //background-image: url("./../../../content/images/introPattern.svg"), linear-gradient(45deg, var(--white) 0%, var(--white) 100%);
-    //background-image: url("./../../../content/images/introPattern.svg"), -moz-linear-gradient(45deg, var(--white) 0%, var(--white) 100%);
-    //background-image: url("./../../../content/images/introPattern.svg"), -webkit-linear-gradient(45deg, var(--white) 0%, var(--white) 100%);
     background-repeat: repeat;
     background-blend-mode: soft-light;
-    &__container {
+    .container {
         display: flex;
         max-width: 760px;
-        section{
-            padding-top: 1rem;
-            margin-left: 2rem;
-            h1 {
-                font-weight: 600;
-                span {
-                    font-weight: 300;
-                    color: lightgray;
-                    font-size: 1.7rem;
-                }
-            }
-            p {
-                font-size: 1rem;
-            }
+    }
+}
+
+.rowContainer{
+        display: block;
+    @include media-for-tablet-portrait-up {
+        display: flex;
+    }
+}
+
+.info {
+    padding-top: 1rem;
+    margin: 0 2rem;
+    h1 {
+        font-weight: 800;
+        margin-bottom: 0.7rem;
+        span {
+            font-weight: 600;
+            color: var(--light-grey);
+            opacity: 0.7;
+            font-size: 1.2rem;
+            letter-spacing: 1.5px;
         }
+    }
+    p {
+        font-size: 0.8rem;
+        color: var(--light-grey);
+    }
+    h3{
+        font-family: var(--font-subtitle)
     }
 }
 
 .ctaButton {
     background-color: var(--darkblue);
+    font-weight: bold;
+    text-transform: capitalize;
 }
 
-.phoneContainer{
+.phoneDesktopContainer{
     position: relative;
     height: 470px;
     width: 100%;
+    @include media-for-phone-only {
+        display: none;
+    }
     .imageContainer{
         border-radius: 20px;
         top: 0;
@@ -85,6 +102,40 @@
         p{
             font-size: 0.6rem;
             color: var(--darkblue);
+        }
+    }
+}
+
+
+.phoneMobileContainer{
+
+    //display: flex;
+    //justify-content: center;
+    //width: 100vw;
+    height: 300px;
+    @include media-for-tablet-portrait-up {
+        display: none;
+    }
+    .phoneContainer{
+        position: relative;
+        height: 300px;
+        max-width: 100%;
+        overflow: hidden;
+        margin-top: var(--doubleBaseMargin);
+        .imageContainer{
+        max-width: calc(100% - 100px);
+            border-radius: 20px;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            position: absolute;
+            width: 100%;
+            background-color: white;
+            margin: 0;
+            z-index: 11;
+            img {
+                width: 100%;
+            }
         }
     }
 }

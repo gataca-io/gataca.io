@@ -1,6 +1,12 @@
 .bx--side-nav--ux{
+    top: var(--topbar-height-mobile);
+    @include media-for-tablet-portrait-up {
     top: var(--topbar-height);
+    }
 }
 .bx--side-nav__overlay{
+        top: var(--topbar-height-mobile);
+    @include media-for-tablet-portrait-up {
     top: var(--topbar-height);
+    }
 }

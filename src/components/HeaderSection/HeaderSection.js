@@ -33,7 +33,6 @@ const Fade16 = () => (
   </svg>
 );
 
-
 export default function HeaderSection(props) {
   return (
     <HeaderContainer
@@ -83,15 +82,11 @@ export default function HeaderSection(props) {
                     About
                 </h3>
                   </Link>
-                  <Link
-                    to={
-                      '/bookCall'
-                    }
-                  >
-                <h3 className={headerStyles.header__cta}>
-                    Book a call
-                </h3>
-                  </Link>
+                  <a href={props.link.bookACallUrl} target="_blank">
+                    <h3 className={headerStyles.header__cta}>
+                        Book a call
+                    </h3>
+                  </a>
               </div>
               
             </div>
@@ -109,11 +104,11 @@ export default function HeaderSection(props) {
                     About
                   </SideNavLink>
                 </Link>
-                <Link to={'/bookCall'}>
+                <a href={props.link.bookACallUrl} target="_blank">
                   <SideNavLink href="">
                     Book a call
                   </SideNavLink>
-                </Link>
+                </a>
               </SideNavItems>
             </SideNav>
 

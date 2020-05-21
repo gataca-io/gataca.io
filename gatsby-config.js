@@ -1,4 +1,4 @@
-const configMeta = require("./content/data/config-metaData.json")
+const configMeta = require("./content/data/configMetaData.json")
 
 module.exports = {
   //this makes the site config available to forestry cms
