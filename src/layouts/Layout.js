@@ -5,6 +5,7 @@ import useSiteMetadata from "../static_queries/useSiteMetadata"
 import layoutStyles from "./layout.module.scss"
 import FooterSection from "../components/FooterSection/FooterSection"
 import configMetaData from "../../content/data/configMetaData.json"
+import footerSectionData from "../../content/data/footerSectionData.json"
 
 export default function Layout(props) {
   const { metaTitle, metaDescription, title } = useSiteMetadata()
@@ -43,7 +44,7 @@ export default function Layout(props) {
         <HeaderSection title={title} link={configMetaData.bookACallUrl}/>
         
         <div className={layoutStyles.content}>{props.children}</div>
-        <FooterSection/>
+        <FooterSection data={footerSectionData}/>
     </section>
   )
 }

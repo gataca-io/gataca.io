@@ -1,0 +1,29 @@
+{
+    "findUs": [
+      {
+        "city" : "Madrid",
+        "Street": "Lorem Ipsum this is an answer"
+      },
+      {
+        "city" : "Madrid",
+        "Street": "Lorem Ipsum this is an answer"
+      }
+    ],
+    "rrss": [
+      {
+        "name": "twitter",
+        "icon": "twitter",
+        "url": "twitter"
+      },
+      {
+        "name": "linkedIn",
+        "icon": "twitter",
+        "url": "twitter"
+      },
+      {
+        "name": "medium",
+        "icon": "twitter",
+        "url": "twitter"
+      }
+    ]
+}
