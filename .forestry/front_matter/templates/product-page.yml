@@ -8,10 +8,11 @@ fields:
   fields:
   - name: title
     type: text
-    default: ''
+    default: PRODUCTS
     config:
       required: false
       wysiwyg: false
+    label: Title
   - name: description
     type: textarea
     label: Description
@@ -19,6 +20,8 @@ fields:
     config:
       required: false
       wysiwyg: true
+      schema:
+        format: markdown
 - type: field_group_list
   name: productsData
   label: Products Section
@@ -44,11 +47,13 @@ fields:
     config:
       required: false
       wysiwyg: true
+      schema:
+        format: markdown
   - name: bullets
     type: field_group_list
     default: ''
     label: Product Detail Bullets
-    config:
+    config: 
     fields:
     - type: text
       name: title

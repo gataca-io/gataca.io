@@ -37,4 +37,4 @@ fields:
         required: false
         wysiwyg: true
 pages:
-  - content/data/faqData.json
+- content/data/faqData.json
