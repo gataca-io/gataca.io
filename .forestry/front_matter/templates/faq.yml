@@ -6,14 +6,14 @@ fields:
   name: faqSection
   label: F.A.Q. Section
   fields:
-  - name: title
-    type: text
+  - name: icon
+    type: file
     default: ''
     config:
       required: false
       wysiwyg: false
-  - name: icon
-    type: file
+  - name: title
+    type: text
     default: ''
     config:
       required: false
@@ -36,3 +36,5 @@ fields:
       config:
         required: false
         wysiwyg: true
+pages:
+  - content/data/faqData.json
