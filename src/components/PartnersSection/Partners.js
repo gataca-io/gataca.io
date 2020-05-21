@@ -25,6 +25,7 @@ function renderPartners({ data, info }) {
         </div>
     </div>
     </section>
+    
   )
 }
 

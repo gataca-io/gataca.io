@@ -12,13 +12,12 @@ export default function IndexPage() {
   return (
     <Layout page="home" bgColor="inherit" className={homeStyles.base}>
       <article className={homeStyles.home} >
-        
+        home
         <IntroSection data={homeData.introSection}/>
         <Partners info={homeData.partnersSection} />
         <Bullets data={homeData.bulletsSection}/>
         <BulletsPlusGraph data={homeData.bulletsEnhancedSection}/>
         <Cta data={homeData.ctaSection}/>
-        
       </article>
     </Layout>
   )
