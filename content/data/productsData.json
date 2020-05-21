@@ -6,7 +6,7 @@
   "productsData": [
     {
       "title": "Credentials",
-      "icon": "/content/images/EXihgPiXsAQmNEk.jpeg",
+      "icon": "../images/EXihgPiXsAQmNEk.jpeg",
       "description": "Provides all the tools necessary to issue and validate identity credentials according to W3C standards for global interoperability",
       "bullets": [
         {
@@ -74,7 +74,7 @@
       "mainImage": ""
     }
   ],
-  "endBullet":         {
+  "endBullet": {
     "title": "BULLET CENTER",
     "image": "/content/images/partner-MIT.svg",
     "description": "This is a description"
