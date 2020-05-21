@@ -2,6 +2,21 @@
 label: Products Page
 hide_body: false
 fields:
+- name: metas
+  type: field_group
+  config: {}
+  fields:
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+  - name: description
+    type: text
+    config:
+      required: false
+    label: Description
+  label: Metas
 - type: field_group
   name: introProductsSection
   label: Intro Section
