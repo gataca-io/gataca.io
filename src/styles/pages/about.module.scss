@@ -8,14 +8,41 @@
 }
 
 .container {
-    padding: 5rem 0;
+    padding: 5rem 2rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
     align-items: center;
-    max-width: var(--max-width);
     background-color: var(--bg-grey);
     border-bottom: var(--border-ga);
+    width: 100%;
+    &>div{
+        max-width: var(--max-width);
+    }
 }
 
+.teamContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 3rem 0;
+    img{
+        background-color: var(--light-grey);
+        height: 150px;
+        width: 200px;
+    };
+}
+
+.awardsContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color: var(--bg-grey);
+    padding: 3rem 0;
+    width: 100%;
+}

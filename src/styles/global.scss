@@ -73,7 +73,7 @@ h3 {
   font-weight: normal;
 }
 
-p {
+p, span {
   font-size: 1rem;
   letter-spacing: -.5px;
   line-height: 1.5;
@@ -108,7 +108,7 @@ p {
     font-weight: normal;
   }
 
-  p {
+  p, span {
     line-height: 1.4375;
   }
 }

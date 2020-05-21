@@ -60,6 +60,11 @@
 
 .sideNav {
     display: block;
+  span{
+    font-family: "Work Sans", "Helvetica Neue", Helvetica, sans-serif ;
+    font-weight: normal;
+    font-size: medium;
+  }
   @include media-for-tablet-portrait-up {
 display: none;
   }

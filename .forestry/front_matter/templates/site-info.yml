@@ -11,5 +11,8 @@ fields:
 - type: text
   name: metaTitle
   label: meta title
+- type: text
+  name: bookACallUrl
+  label: CTA Hubspot url
 pages:
   - content/data/config-metaData.json

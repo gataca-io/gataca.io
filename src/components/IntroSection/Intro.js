@@ -1,17 +1,34 @@
 import introStyles from "./intro.module.scss"
 import iphoneImg from "@images/iphone.svg"
-import homeData  from "@data/homeData.json"
 import React from "react"
 import { Button } from "carbon-components-react"
 
+function Credentials ({credentials}) {
+  return (
+    <div className={introStyles.credentialsContainer}>
+      {credentials.map(cred=>{
+      return (
+        <div className={introStyles.credential}>
+        <p>{cred.title}</p>
+      </div>
+      )
+      })}
+    </div>
+  )
+}
 
-export default function Intro(props) {
+export default function IntroSection(props) {
   return (
       <section className={introStyles.introSection}>
         <div className={introStyles.introSection__container}>
       
           <div className={introStyles.phoneContainer}>
-            <img src={iphoneImg}/>
+            <div className={introStyles.imageContainer}>
+              <img src={iphoneImg}/>
+              <div className={introStyles.appContainer}>
+                <Credentials credentials={props.data.credentials}/>
+              </div>
+            </div>
           </div>
           
           <section className={introStyles.introSection__info}>

@@ -27,7 +27,6 @@ export default function Products(props) {
       <section className={productStyles.base}>
         <IntroSection data={productsData.introProductsSection}/>
         <ProductsSelector data={productsData.productsData}/>
-        <BulletCenter data={productsData.endBullet}/>
         <FaqSection data={faqData.faqSection}/>
       </section>
     </Layout>

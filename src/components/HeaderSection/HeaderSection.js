@@ -159,12 +159,21 @@ export default function HeaderSection(props) {
             <SideNav className={headerStyles.sideNav}
                      aria-label="Side navigation" expanded={isSideNavExpanded}>
               <SideNavItems>
-                <SideNavLink href="">
-                  Products
-                </SideNavLink>
-                <SideNavLink href="">
-                  About
-                </SideNavLink>
+                <Link to={'/products'}>
+                  <SideNavLink href="">
+                    Products
+                  </SideNavLink>
+                </Link>
+                <Link to={'/about'}>
+                  <SideNavLink href="">
+                    About
+                  </SideNavLink>
+                </Link>
+                <Link to={'/bookCall'}>
+                  <SideNavLink href="">
+                    Book a call
+                  </SideNavLink>
+                </Link>
               </SideNavItems>
             </SideNav>
 

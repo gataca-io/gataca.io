@@ -2,8 +2,10 @@
 label: About Page
 hide_body: false
 fields:
+
+#   INTRO SECTION
 - type: field_group
-  name: aboutSection
+  name: introSection
   label: About Intro Section
   fields:
   - name: title
@@ -19,8 +21,10 @@ fields:
     config:
       required: false
       wysiwyg: true
+
+#  TEAM SECTION
 - type: field_group_list
-  name: teamData
+  name: team
   label: Team Section
   fields:
   - name: name
@@ -48,7 +52,7 @@ fields:
     type: field_group_list
     default: ''
     label: Links
-    config: 
+    config:
     fields:
     - type: text
       name: name
@@ -60,5 +64,42 @@ fields:
       label: Url Uri
       config:
         required: false
+
+  #   AWARDS SECTION
+- type: field_group
+  name: awardsDataSection
+  label: Awards Section
+  fields:
+    - name: title
+      type: text
+      default: ''
+      config:
+        required: false
+        wysiwyg: false
+    - type: field_group_list
+      name: awards
+      label: Awards list
+      fields:
+        - name: title
+          type: text
+          label: Gato
+          default: ''
+          config:
+            required: false
+            wysiwyg: false
+        - name: link
+          type: text
+          label: Product Description
+          default: ''
+          config:
+            required: false
+            wysiwyg: true
+        - name: photo
+          type: file
+          label: Photo
+          default: ''
+          config:
+            required: false
+            wysiwyg: false
 pages:
 - content/data/aboutData.json

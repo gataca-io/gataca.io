@@ -3,7 +3,18 @@
     "mainTitle": "GATACA",
     "mainSubtitle": "Change description",
     "mainParagraph": "We provide your organization or community with the necesary tools to manage secure 100% digital identification systems.",
-    "ctaText": "Speak to out team"
+    "ctaText": "Speak to out team",
+    "credentials": [
+      {
+        "title": "Credential One"
+      },
+      {
+        "title": "Credential Two"
+      },
+      {
+        "title": "Credential Three"
+      }
+    ]
   },
   "partnersSection": {
     "title": "Trusted by:",
@@ -53,28 +64,28 @@
     "elements": [
       {
         "title": "BULLET ONE",
-        "image": "/content/images/partner-MIT.svg",
+        "image": "../images/partner-MIT.svg",
         "description": "This is a description"
       },
       {
         "title": "BULLET TWO",
-        "image": "/content/images/partner-MIT.svg",
+        "image": "../images/partner-MIT.svg",
         "description": "This is a description"
       },
       {
         "title": "BULLET THREE",
-        "image": "/content/images/partner-MIT.svg",
+        "image": "../images/partner-MIT.svg",
         "description": "This is a description"
       }
     ],
     "graph": "/content/images/explainedPlatform.svg",
-    "endBullet": [
+    "endBullet":
       {
         "title": "PRIVACY BY DESIGN",
-        "image": "/content/images/partner-MIT.svg",
+        "image": "../images/partner-MIT.svg",
         "description": "Gataca embraces privacy-by-design and never stores information about an individual’s identity."
       }
-    ]
+
   },
   "ctaSection": {
     "title": "Call to action text",
