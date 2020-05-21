@@ -3,11 +3,11 @@ label: Products Page
 hide_body: false
 fields:
 - type: field_group
-  name: Products Section
-  label: Intro Products Section
+  name: introProductsSection
+  label: Intro Section
   fields:
   - name: title
-    type: textarea
+    type: text
     default: ''
     config:
       required: false
@@ -20,7 +20,7 @@ fields:
       required: false
       wysiwyg: true
 - type: field_group_list
-  name: Products Info
+  name: productsData
   label: Products Section
   fields:
   - name: title
@@ -48,7 +48,7 @@ fields:
     type: field_group_list
     default: ''
     label: Product Detail Bullets
-    config: 
+    config:
     fields:
     - type: text
       name: title
@@ -65,3 +65,10 @@ fields:
       label: Product Image
       config:
         required: false
+  - name: mainImage
+    type: file
+    label: Main Product Image
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
