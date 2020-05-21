@@ -12,6 +12,7 @@ fields:
     config:
       required: false
       wysiwyg: false
+    label: Title
   - name: description
     type: textarea
     label: Description
@@ -19,6 +20,8 @@ fields:
     config:
       required: false
       wysiwyg: true
+      schema:
+        format: html-blocks
 - type: field_group_list
   name: team
   label: Team Section
@@ -44,6 +47,8 @@ fields:
     config:
       required: false
       wysiwyg: true
+      schema:
+        format: html-blocks
   - name: links
     type: field_group_list
     default: ''
@@ -70,6 +75,7 @@ fields:
     config:
       required: false
       wysiwyg: false
+    label: Title
   - type: field_group_list
     name: awards
     label: Awards list
