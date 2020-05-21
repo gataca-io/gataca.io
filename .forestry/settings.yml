@@ -2,7 +2,7 @@
 new_page_extension: md
 auto_deploy: false
 admin_path: ''
-webhook_url:
+webhook_url: 
 sections:
 - type: heading
   label: Web Content
@@ -16,7 +16,7 @@ sections:
   path: content/data/aboutData.json
   label: "- About -"
 - type: document
-  path: content/data/faqJson.json
+  path: content/data/faqData.json
   label: "- Faq -"
 - type: heading
   label: Meta Content

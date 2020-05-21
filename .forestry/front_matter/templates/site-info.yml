@@ -15,5 +15,4 @@ fields:
   name: bookACallUrl
   label: CTA Hubspot url
 pages:
-  - content/data/config-metaData.json
-
+- content/data/config-metaData.json
