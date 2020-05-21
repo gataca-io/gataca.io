@@ -4,13 +4,13 @@ hide_body: true
 fields:
 - type: text
   name: title
-  label: title
+  label: Header Title [Gataca]
 - type: text
   name: description
-  label: description
+  label: Main Web Meta-description
 - type: text
   name: metaTitle
-  label: meta title
+  label: Main web meta-title
 - type: text
   name: bookACallUrl
   label: CTA Hubspot url
