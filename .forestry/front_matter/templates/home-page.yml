@@ -12,35 +12,47 @@ fields:
     config:
       required: false
       wysiwyg: false
+    label: Main Title
   - name: mainSubtitle
     type: textarea
     default: ''
     config:
       required: false
-      wysiwyg: false
+      wysiwyg: true
+      schema:
+        format: html-blocks
+    label: Main Subtitle
   - name: mainParagraph
     type: textarea
     default: ''
     config:
       required: false
-      wysiwyg: false
+      wysiwyg: true
+      schema:
+        format: html
+    label: Main Paragraph
   - name: ctaText
     type: textarea
     default: ''
     config:
       required: false
       wysiwyg: false
+    label: CTA text [Button]
   - name: credentials
     type: field_group_list
     default: Credentials List to show
-    label: 
-    config: 
+    label: Credentials
+    config:
+      labelField: title
+      min: 3
+      max: 6
     fields:
     - type: text
       name: title
-      label: Image
       config:
-        required: false
+        required: true
+      label: Credential Title
+    description: Credentials shown inside the phone. Don't put more than 5 elements
 - type: field_group
   name: partnerSection
   label: Partners Section
@@ -49,8 +61,9 @@ fields:
     type: text
     default: ''
     config:
-      required: false
+      required: true
       wysiwyg: false
+    label: Title
   - name: partners
     type: field_group_list
     default: ''
@@ -66,6 +79,8 @@ fields:
       label: Partner Image
       config:
         required: false
+    label: Partners List
+    description: Each one of the partners information
 - type: field_group
   name: bulletsSection
   label: Bullets Section
@@ -76,16 +91,19 @@ fields:
     config:
       required: false
       wysiwyg: false
+    label: Title
   - name: description
     type: textarea
     default: ''
     config:
       required: false
       wysiwyg: true
+      schema:
+        format: html-blocks
+    label: Description
   - name: elements
     type: field_group_list
     default: ''
-    label: 
     config: 
     fields:
     - type: text
@@ -103,6 +121,7 @@ fields:
       label: Description
       config:
         required: false
+    label: Bullets
 - type: field_group
   name: bulletsEnhancedSection
   label: Bullets Enhanced Section
@@ -113,17 +132,22 @@ fields:
     config:
       required: false
       wysiwyg: false
+    label: Title
   - name: description
     type: textarea
     default: ''
     config:
       required: false
       wysiwyg: true
+      schema:
+        format: html-blocks
+    label: Description
   - name: elements
     type: field_group_list
     default: ''
-    label: 
-    config: 
+    label: Bullets
+    config:
+      max: 3
     fields:
     - type: text
       name: title
@@ -146,6 +170,7 @@ fields:
     config:
       required: false
       wysiwyg: false
+    label: Main Graphic
   - name: endBullet
     type: field_group_list
     default: ''
@@ -177,17 +202,22 @@ fields:
     config:
       required: false
       wysiwyg: false
+    label: Section Title
   - name: description
     type: textarea
     default: ''
     config:
       required: false
       wysiwyg: true
+      schema:
+        format: html-blocks
+    label: Section Description
   - name: ctaText
     type: textarea
     default: ''
     config:
       required: false
       wysiwyg: false
+    label: Cta button text
 pages:
 - content/data/homeData.json
