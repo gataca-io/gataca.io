@@ -16,20 +16,20 @@
       }
     ]
   },
-  "partnerSection": {
+  "partnersSection": {
     "title": "Trusted by:",
     "partners": [
       {
         "title": "",
-        "image": "/content/images/partner-MIT.svg"
+        "image": "../images/partner-MIT.svg"
       },
       {
         "title": "New York times",
-        "image": "/content/images/EXihgPiXsAQmNEk.jpeg"
+        "image": "../images/EXihgPiXsAQmNEk.jpeg"
       },
       {
         "title": "Mit Management Sloan School",
-        "image": "/content/images/partner-MIT.svg"
+        "image": "../images/partner-MIT.svg"
       },
       {
         "title": "",

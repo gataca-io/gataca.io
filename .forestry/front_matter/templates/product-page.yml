@@ -3,7 +3,7 @@ label: Products Page
 hide_body: false
 fields:
 - type: field_group
-  name: introProductsSection
+  name: Products Section
   label: Intro Products Section
   fields:
   - name: title
@@ -20,7 +20,7 @@ fields:
       required: false
       wysiwyg: true
 - type: field_group_list
-  name: productsData
+  name: Products Info
   label: Products Section
   fields:
   - name: title
