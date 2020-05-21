@@ -21,7 +21,7 @@ fields:
       required: false
       wysiwyg: true
       schema:
-        format: markdown
+        format: html-blocks
 - type: field_group_list
   name: productsData
   label: Products Section
