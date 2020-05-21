@@ -25,3 +25,4 @@ fields:
     config:
       required: false
       wysiwyg: true
+

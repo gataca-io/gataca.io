@@ -16,8 +16,8 @@ sections:
   path: content/data/aboutData.json
   label: "- About -"
 - type: document
-  path: content/data/carrersData.json
-  label: "- Carrers -"
+  path: content/data/faqJson.json
+  label: "- Faq -"
 - type: heading
   label: Meta Content
 - type: document
