@@ -5,7 +5,7 @@ admin_path: ''
 webhook_url:
 sections:
 - type: heading
-  label: Meta Content
+  label: Web Content
 - type: document
   path: content/data/homeData.json
   label: "- Home -"
@@ -19,7 +19,7 @@ sections:
   path: content/data/faqJson.json
   label: "- Faq -"
 - type: heading
-  label: Web Content
+  label: Meta Content
 - type: document
   path: content/data/config-metaData.json
   label: Site Info

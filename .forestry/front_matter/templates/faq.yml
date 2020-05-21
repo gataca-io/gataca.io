@@ -1,0 +1,38 @@
+---
+label: Faq Section
+hide_body: false
+fields:
+  - type: field_group
+    name: faqSection
+    label: F.A.Q. Section
+    fields:
+      - name: title
+        type: text
+        default: ''
+        config:
+          required: false
+          wysiwyg: false
+      - name: icon
+        type: file
+        default: ''
+        config:
+          required: false
+          wysiwyg: false
+      - type: field_group_list
+        name: questions
+        label: Questions
+        fields:
+          - name: title
+            type: text
+            label: Product Name
+            default: ''
+            config:
+              required: false
+              wysiwyg: false
+          - name: response
+            type: textarea
+            label: Product Description
+            default: ''
+            config:
+              required: false
+              wysiwyg: true
