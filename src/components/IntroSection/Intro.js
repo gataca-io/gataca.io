@@ -42,7 +42,7 @@ export default function IntroSection(props) {
               <div className={introStyles.phoneContainer}>
                 <img className={introStyles.imageContainer} src={iphoneImg}/>
                 <Credentials credentials={props.data.credentials}/>
-                <AppFooter />
+                {/*<AppFooter />*/}
                 {/*<div className={introStyles.appContainer}>*/}
                 {/*</div>*/}
               </div>
