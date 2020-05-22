@@ -1,33 +1,49 @@
 import footerStyles  from "./footer.module.scss"
 import React from "react"
 
-export default function FooterSection(props) {
+export default function FooterSection({ data }) {
   return (
     <section className={footerStyles.base}>
       <div className={footerStyles.container}>
-        <h2>Footer Title</h2>
-        <div className={footerStyles.findUs}>
-          <div>
-              <h3>Madrid</h3>
-              <p>c/moreno nieto, 2</p>
-              <p>28005 Madrid, Spain</p>
+        
+          <div className={footerStyles.findUs}>
+            <h2>{data.title}</h2>
+            <div className={footerStyles.email}>
+              <a href={'mailto:' + data.contant_email}></a>
+                <p>{data.contant_email}</p>
             </div>
-          <div>
-            <h3>Boston</h3>
-            <p>139 Charles St. Suite 355</p>
-            <p>Boston, MA (02114) USA</p>
+            <div>
+              {data.findUs.map(el=>{
+                return (
+                  <div>
+                    <h3>{el.city}</h3>
+                    <p>{el.street}</p>
+                    <p>{el.street_code}</p>
+                  </div>
+                )
+              })}
+            </div>
+          </div>
+          
+          <div className={footerStyles.followUs}>
+            <h2>{data.title_2}</h2>
+            <div>
+            
+            {data.rrss.map(el=>{
+              return <div className={footerStyles.rrss_icon}>
+                <a href={el.url} target="_blank">
+                  <img src={el.icon} alt={el.name}/>
+                </a>
+              </div>
+            })}
+            </div>
           </div>
         </div>
-        <div className={footerStyles.followUs}>
-          {props.data.findUs.map(el=>{
-            return <div>
-              <a href={el.url} target="_blank">
-                <img src={el.icon} />
-              </a>
-            </div>
-          })}
-        </div>
-      </div>
+        
+          <div className={footerStyles.copyright}>
+            <p>{data.copyright}</p>
+          </div>
+        
     </section>
   )
 }

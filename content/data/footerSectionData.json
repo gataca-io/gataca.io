@@ -1,29 +1,30 @@
 {
-    "findUs": [
+  "title": "Find Us",
+  "title_2": "Follow Us",
+  "contant_email": "hello@gataca.io",
+  "copyright": "© 2020 - All rights reserved Gataca",
+  "findUs": [
       {
         "city" : "Madrid",
-        "Street": "Lorem Ipsum this is an answer"
+        "street": "c/moreno nieto, 2",
+        "street_code": "28005 Madrid, Spain"
       },
       {
-        "city" : "Madrid",
-        "Street": "Lorem Ipsum this is an answer"
+        "city" : "Boston",
+        "street": "139 Charles St. Suite 355",
+        "street_code": "Boston, MA (02114) USA"
       }
     ],
     "rrss": [
       {
         "name": "twitter",
-        "icon": "twitter",
-        "url": "twitter"
+        "icon": "../images/twitter.svg",
+        "url": "https://twitter.com/gataca_id"
       },
       {
         "name": "linkedIn",
-        "icon": "twitter",
-        "url": "twitter"
-      },
-      {
-        "name": "medium",
-        "icon": "twitter",
-        "url": "twitter"
+        "icon": "../images/linkedin.svg",
+        "url": "https://www.linkedin.com/company/gataca/"
       }
     ]
 }
