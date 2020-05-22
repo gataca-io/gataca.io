@@ -61,30 +61,30 @@
     ]
   },
   "bulletsEnhancedSection": {
-    "title": "DECENTRALIZED IDENTITY PLATFORM",
+    "title": "DECENTRALIZED \nIDENTITY PLATFORM",
     "description": "Gataca has built a user-centric digital identity layer for the Internet with government-grade security and a simple single-sign-on to superpower your credentials. Our identity management platform enables fast, secure, and compliant data exchange between credential issuers, users, and service providers.",
     "elements": [
       {
-        "title": "BULLET ONE",
-        "image": "/content/images/partner-MIT.svg",
-        "description": "This is a description"
+        "image": "../images/stamp.svg",
+        "title": "VALIDATED CREDENTIALS",
+        "description": "Issuers can create and validate secure, W3C verifiable and contactless digital credentials."
       },
       {
-        "title": "BULLET TWO",
-        "image": "/content/images/partner-MIT.svg",
-        "description": "This is a description"
+        "image": "../images/compliant.svg",
+        "title": "PASSWORD-FREE",
+        "description": "Users are powered with an ID wallet in their phones and digitally verified ID credentials to enjoy passwordless, privacy-preserving access to digital services in under 30 seconds"
       },
       {
-        "title": "BULLET THREE",
-        "image": "/content/images/partner-MIT.svg",
-        "description": "This is a description"
+        "image": "../images/secure.svg",
+        "title": "CUT COSTS",
+        "description": "Service providers can offer an authentication alternative that users love while cutting KYC and GDPR compliance cost and reducing data breach risks "
       }
     ],
     "graph": "/content/images/explainedPlatform.svg",
     "endBullet": [
       {
         "title": "PRIVACY BY DESIGN",
-        "image": "/content/images/partner-MIT.svg",
+        "image": "../images/secure.svg",
         "description": "Gataca embraces privacy-by-design and never stores information about an individual’s identity."
       }
     ]

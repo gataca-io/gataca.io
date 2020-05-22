@@ -9,21 +9,6 @@ import footerSectionData from "../../content/data/footerSectionData.json"
 
 export default function Layout(props) {
   const { metaTitle, metaDescription, title } = useSiteMetadata()
-  window.onblur=function(){
-    //change favicon
-      var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
-      link.type = 'image/x-icon';
-      link.rel = 'shortcut icon';
-      link.href = 'static/favicon_dark.ico';
-      document.getElementsByTagName('head')[0].appendChild(link);
-  }
-  window.onfocus=function(){
-      var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
-      link.type = 'image/x-icon';
-      link.rel = 'shortcut icon';
-      link.href = 'static/favicon.ico';
-      document.getElementsByTagName('head')[0].appendChild(link);
-  }
   
   return (
       <section

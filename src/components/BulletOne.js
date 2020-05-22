@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 const Bullet = styled.div`
   padding: var(--baseMargin);
+  max-width: 300px;
   h4 {
   color: var(--darkblue);
   }
