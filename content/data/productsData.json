@@ -6,17 +6,17 @@
   "productsData": [
     {
       "title": "Credentials",
-      "icon": "../images/EXihgPiXsAQmNEk.jpeg",
+      "icon": "../images/fast.svg",
       "description": "Provides all the tools necessary to issue and validate identity credentials according to W3C standards for global interoperability",
       "bullets": [
         {
           "title": "SECURED",
-          "image": "../images/par  tner-MIT.svg",
+          "image": "../images/fast.svg",
           "description": "Biometric technologies guarantee that credentials are managed by the true owner"
         },
         {
           "title": "CERTIFIED",
-          "image": "../images/partner-MIT.svg",
+          "image": "../images/fast.svg",
           "description": "Postquantum cryptography provide government-level security for the issuing Authority"
         }
       ],
@@ -24,17 +24,17 @@
     },
     {
       "title": "Connect",
-      "icon": "/content/images/EXihgPiXsAQmNEk.jpeg",
+      "icon": "../images/fast.svg",
       "description": "Combines the security levels of government-issued IDs with single-sign-on authentication capabilities\n",
       "bullets": [
         {
           "title": "Automatic KYC/GDPR compliance\n",
-          "image": "/content/images/partner-MIT.svg",
+          "image": "../images/fast.svg",
           "description": "Keep peace of mind for GDPR and KYC compliance"
         },
         {
           "title": "Identity fraud reduction\n",
-          "image": "/content/images/partner-MIT.svg",
+          "image": "../images/fast.svg",
           "description": "Reduce risk of identity fraud with guaranteed data authenticity and ownership"
         }
       ],
@@ -42,22 +42,22 @@
     },
     {
       "title": "Identity",
-      "icon": "/content/images/EXihgPiXsAQmNEk.jpeg",
+      "icon": "../images/fast.svg",
       "description": "Allows users to store identity credentials from any issuer worldwide and seamlessly authenticate to digital services from their mobile phone",
       "bullets": [
         {
           "title": "REAL IDENTITY",
-          "image": "/content/images/partner-MIT.svg",
+          "image": "../images/fast.svg",
           "description": "Link of real person with facial recognition, anti-spoofing and liveness detection capabilities"
         },
         {
           "title": "VALIDATED CREDENTIALS",
-          "image": "/content/images/partner-MIT.svg",
+          "image": "../images/fast.svg",
           "description": "Certified validation of credentials with Trusted Authorities"
         },
         {
           "title": "ENHANCED SECURITY",
-          "image": "/content/images/partner-MIT.svg",
+          "image": "../images/fast.svg",
           "description": "Data and certification integrity with post-quantum cryptography"
         }
       ],
@@ -66,7 +66,7 @@
   ],
   "endBullet": {
     "title": "BULLET CENTER",
-    "image": "/content/images/partner-MIT.svg",
+    "image": "../images/fast.svg",
     "description": "This is a description"
   }
 }
