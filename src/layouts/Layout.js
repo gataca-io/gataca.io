@@ -43,7 +43,7 @@ export default function Layout(props) {
           <meta name="theme-color" content="#ffffff"/>
         </Helmet>
         
-        <HeaderSection title={title} link={configMetaData.bookACallUrl}/>
+        <HeaderSection title={title} link={configMetaData}/>
         
         <div className={layoutStyles.content}>{props.children}</div>
         <FooterSection data={footerSectionData}/>

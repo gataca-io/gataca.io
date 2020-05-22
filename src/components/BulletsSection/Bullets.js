@@ -1,20 +1,21 @@
-import partnersStyles  from "./bullets.module.scss"
+import bulletsStyles  from "./bullets.module.scss"
+import bulletsMobileStyles  from "./bullets_mobile.module.scss"
 import React from "react"
 import BulletOne from "../BulletOne"
 
 function RenderMobile(props) {
-  return <section className={partnersStyles.baseMobile}>
-    <div className={`${ partnersStyles.container }`}>
+  return <section className={bulletsMobileStyles.baseMobile}>
+    <div className={`${ bulletsMobileStyles.container }`}>
       
-      <div className={partnersStyles.header}>
-        <div className={partnersStyles.iconContainer}>
+      <div className={bulletsMobileStyles.header}>
+        <div className={bulletsMobileStyles.iconContainer}>
           <img src={props.data.icon} />
           <h2>{props.data.title}</h2>
         </div>
         <p dangerouslySetInnerHTML={{ __html: props.data.description}}></p>
       </div>
       
-      <div className={partnersStyles.bulletsContainer}>
+      <div className={bulletsMobileStyles.bulletsContainer}>
         {props.data.elements.map(el => {
           return (
             <BulletOne data={el}></BulletOne>
@@ -28,26 +29,26 @@ function RenderMobile(props) {
 
 function RenderDesktop(props) {
   return (
-    <section className={partnersStyles.baseDesktop}>
-    <div className={`bx--grid ${ partnersStyles.container }`}>
+    <section className={bulletsStyles.baseDesktop}>
+    <div className={`bx--grid ${ bulletsStyles.container }`}>
       
-      <div className={`bx--row ${ partnersStyles.subContainer }`}>
+      <div className={`bx--row ${ bulletsStyles.subContainer }`}>
         
-        <div className={`bx--col-lg-4 ${ partnersStyles.leftContainer }`}>
-          <div className={partnersStyles.topAdjust}>
+        <div className={`bx--col-lg-4 ${ bulletsStyles.leftContainer }`}>
+          <div className={bulletsStyles.topAdjust}>
             <img src={props.data.icon} />
           </div>
         </div>
         
-        <div className={`bx--col-lg-12 ${ partnersStyles.rightContainer }`}>
-            <div className={partnersStyles.header}>
-              <div className={partnersStyles.iconContainer}>
+        <div className={`bx--col-lg-12 ${ bulletsStyles.rightContainer }`}>
+            <div className={bulletsStyles.header}>
+              <div className={bulletsStyles.iconContainer}>
                 <h2>{props.data.title}</h2>
               </div>
               <p dangerouslySetInnerHTML={{ __html: props.data.description}}></p>
             </div>
             
-            <div className={partnersStyles.bulletsContainer}>
+            <div className={bulletsStyles.bulletsContainer}>
               {props.data.elements.map(el => {
                 return (
                   <BulletOne data={el}></BulletOne>

@@ -1,40 +1,81 @@
 import bulletsGraph  from "./BulletsPlusGraph.module.scss"
+import bulletsGraphMobile  from "./BulletsPlusGraph_mobile.module.scss"
 import React from "react"
 import BulletOne from "../BulletOne"
 import graph from "@images/explainedPlatform.svg"
 import BulletCenter from "../BulletCenter"
 
 function RenderMobile({ data }) {
-  return null;
+  return (
+    <section className={bulletsGraphMobile.base}>
+      <div className={bulletsGraphMobile.leftTriangle}>
+        <svg width="249" height="247" viewBox="0 0 249 247" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M249 4.37465e-06L0 247L-1.07967e-05 1.52588e-05L249 4.37465e-06Z" fill="white"/>
+        </svg>
+      </div>
+      <div className={bulletsGraphMobile.rightBottomTriangle}>
+        <svg width="207" height="210" viewBox="0 0 207 210" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2.50422e-06 210L207 0L207 210L2.50422e-06 210Z" fill="white"/>
+        </svg>
+      </div>
+      <div className={bulletsGraphMobile.header}>
+        <img src={data.icon} />
+        <h2 dangerouslySetInnerHTML={{ __html: data.title }}></h2>
+        <p dangerouslySetInnerHTML={{ __html: data.description }}></p>
+      </div>
+      <div className={bulletsGraphMobile.bulletsContainer}>
+        {data.elements.map(el => {
+          return (
+            <BulletOne data={el}/>
+          )
+        })}
+      </div>
+      <div>
+        <img src={graph}/>
+      </div>
+      <div className={bulletsGraphMobile.endBullet}>
+        <BulletOne data={data.endBullet}/>
+      </div>
+    </section>
+  )
 }
 
 function RenderDesktop({ data }) {
   return (
     <section className={bulletsGraph.base}>
-    <div className={bulletsGraph.leftTriangle}>
-      <svg width="249" height="247" viewBox="0 0 249 247" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M249 4.37465e-06L0 247L-1.07967e-05 1.52588e-05L249 4.37465e-06Z" fill="white"/>
-      </svg>
-    </div>
-    <div className={bulletsGraph.header}>
-      <img src={data.icon} />
-      <h2>{data.title}</h2>
-      <p dangerouslySetInnerHTML={{ __html: data.description }}></p>
-    </div>
-    <div className={bulletsGraph.bulletsContainer}>
-      {data.elements.map(el => {
-        return (
-          <BulletOne data={el}/>
-        )
-      })}
-    </div>
-    <div>
-      <img src={graph}/>
-    </div>
-    <div>
-      <BulletCenter data={data.endBullet}/>
-    </div>
-  </section>
+      
+      {/*TRIANGLES*/}
+      <div className={bulletsGraph.leftTriangle}>
+        <svg width="249" height="247" viewBox="0 0 249 247" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M249 4.37465e-06L0 247L-1.07967e-05 1.52588e-05L249 4.37465e-06Z" fill="white"/>
+        </svg>
+      </div>
+      <div className={bulletsGraph.rightBottomTriangle}>
+        <svg width="207" height="210" viewBox="0 0 207 210" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2.50422e-06 210L207 0L207 210L2.50422e-06 210Z" fill="white"/>
+        </svg>
+      </div>
+      
+      {/*CONTENT*/}
+      <div className={bulletsGraph.header}>
+        <img src={data.icon} />
+        <h2 dangerouslySetInnerHTML={{ __html: data.title }}></h2>
+        <p dangerouslySetInnerHTML={{ __html: data.description }}></p>
+      </div>
+      <div className={bulletsGraph.bulletsContainer}>
+        {data.elements.map(el => {
+          return (
+            <BulletOne data={el}/>
+          )
+        })}
+      </div>
+      <div>
+        <img src={graph}/>
+      </div>
+      <div className={bulletsGraph.endBullet}>
+        <BulletCenter data={data.endBullet}/>
+      </div>
+    </section>
   )
 }
 

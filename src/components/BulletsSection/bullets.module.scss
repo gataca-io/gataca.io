@@ -1,32 +1,5 @@
 @import "../../styles/aux/media-mixins";
 
-.baseMobile{
-    padding: 2rem;
-    @include media-for-tablet-portrait-up {
-        display: none;
-    }
-    .iconContainer{
-        img{
-            height: 50px;
-            width: 50px;
-            @include media-for-phone-only {
-                transform: rotate(1.5707963268rad);
-            }
-        }
-    }
-    .container {
-        border-left: none;
-    }
-    .header{
-        margin: 3rem 0;
-    }
-    .bulletsContainer {
-        &>div{
-            padding-left: 0;
-        }
-    }
-}
-
 .baseDesktop {
     width: 100%;
     padding: 3rem 0;

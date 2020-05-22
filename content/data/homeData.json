@@ -40,7 +40,7 @@
   },
   "bulletsSection": {
     "title": "IDENTITY MANAGEMENT",
-    "icon": "../images/triangle.svg",
+    "icon": "../images/3-triangle.svg",
     "description": "We use identity credentials daily to access local citizen services, prove employment status or file an insurance claim. But as we have rapidly transformed our lives online, identification and authentication systems have not kept up.\n\nGataca’s identity management solution is designed for the digital age. ",
     "elements": [
       {
@@ -61,7 +61,8 @@
     ]
   },
   "bulletsEnhancedSection": {
-    "title": "DECENTRALIZED \nIDENTITY PLATFORM",
+    "icon": "../images/4-square.svg",
+    "title": "DECENTRALIZED <br> IDENTITY PLATFORM",
     "description": "Gataca has built a user-centric digital identity layer for the Internet with government-grade security and a simple single-sign-on to superpower your credentials. Our identity management platform enables fast, secure, and compliant data exchange between credential issuers, users, and service providers.",
     "elements": [
       {
@@ -81,17 +82,16 @@
       }
     ],
     "graph": "/content/images/explainedPlatform.svg",
-    "endBullet": [
+    "endBullet":
       {
-        "title": "PRIVACY BY DESIGN",
         "image": "../images/secure.svg",
+        "title": "PRIVACY BY DESIGN",
         "description": "Gataca embraces privacy-by-design and never stores information about an individual’s identity."
       }
-    ]
   },
   "ctaSection": {
-    "title": "Call to action text",
-    "description": "Start reducing costs and transforming customer and citizen experiences with Gataca’s decentralized digital identity solution",
+    "title": "Ready to start?",
+    "description": "We",
     "ctaText": "Speak to out team"
   }
 }

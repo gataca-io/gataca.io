@@ -1,20 +1,26 @@
+@import "../../styles/aux/media-mixins";
+
 .base{
     background-color: var(--white);
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
     width: 100%;
+    @include media-for-tablet-portrait-up {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .container {
-    padding: 5rem 0;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
     max-width: var(--max-width);
+    padding: 5rem 2rem;
+    @include media-for-tablet-portrait-up {
+        padding: 5rem 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .question {

@@ -9,6 +9,9 @@
     width: 100%;
     padding: 3rem 0;
     position: relative;
+    @include media-for-phone-only {
+        display: none;
+    }
 }
 
 .header{
@@ -19,6 +22,9 @@
     align-items: center;
     max-width: var(--max-width);
     text-align: center;
+    img {
+        margin-bottom: 3em;
+    }
 }
 
 .bulletsContainer {
@@ -27,6 +33,13 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    &>div {
+        background-color: white;
+        border-radius: 10px;
+        padding: 2rem;
+        margin: 0 1rem;
+        min-height: 270px;
+    }
 }
 
 .leftTriangle{
@@ -41,4 +54,14 @@
             height: 100%;
         }
     }
+}
+
+.rightBottomTriangle {
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+}
+
+.endBullet {
+    margin: 3rem 0 1rem 0 ;
 }
