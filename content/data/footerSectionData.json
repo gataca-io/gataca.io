@@ -4,27 +4,27 @@
   "contant_email": "hello@gataca.io",
   "copyright": "© 2020 - All rights reserved Gataca",
   "findUs": [
-      {
-        "city" : "Madrid",
-        "street": "c/moreno nieto, 2",
-        "street_code": "28005 Madrid, Spain"
-      },
-      {
-        "city" : "Boston",
-        "street": "139 Charles St. Suite 355",
-        "street_code": "Boston, MA (02114) USA"
-      }
-    ],
-    "rrss": [
-      {
-        "name": "twitter",
-        "icon": "../images/twitter.svg",
-        "url": "https://twitter.com/gataca_id"
-      },
-      {
-        "name": "linkedIn",
-        "icon": "../images/linkedin.svg",
-        "url": "https://www.linkedin.com/company/gataca/"
-      }
-    ]
+    {
+      "city": "Madrid",
+      "street": "c/Moreno Nieto, 2",
+      "street_code": "28005 Madrid, Spain"
+    },
+    {
+      "city": "Boston",
+      "street": "139 Charles St. Suite 355",
+      "street_code": "Boston, MA (02114) USA"
+    }
+  ],
+  "rrss": [
+    {
+      "name": "twitter",
+      "icon": "../images/twitter.svg",
+      "url": "https://twitter.com/gataca_id"
+    },
+    {
+      "name": "linkedIn",
+      "icon": "../images/linkedin.svg",
+      "url": "https://www.linkedin.com/company/gataca/"
+    }
+  ]
 }
