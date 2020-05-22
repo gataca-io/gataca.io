@@ -9,6 +9,22 @@ import footerSectionData from "../../content/data/footerSectionData.json"
 
 export default function Layout(props) {
   const { metaTitle, metaDescription, title } = useSiteMetadata()
+  window.onblur=function(){
+    //change favicon
+      var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+      link.type = 'image/x-icon';
+      link.rel = 'shortcut icon';
+      link.href = 'static/favicon_dark.ico';
+      document.getElementsByTagName('head')[0].appendChild(link);
+  }
+  window.onfocus=function(){
+      var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+      link.type = 'image/x-icon';
+      link.rel = 'shortcut icon';
+      link.href = 'static/favicon.ico';
+      document.getElementsByTagName('head')[0].appendChild(link);
+  }
+  
   return (
       <section
         className={`${layoutStyles.layout} ${
@@ -41,6 +57,7 @@ export default function Layout(props) {
           <meta name="msapplication-TileImage" content="/ms-icon-144x144.png"/>
           <meta name="theme-color" content="#ffffff"/>
         </Helmet>
+        
         <HeaderSection title={title} link={configMetaData.bookACallUrl}/>
         
         <div className={layoutStyles.content}>{props.children}</div>

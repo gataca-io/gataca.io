@@ -18,6 +18,9 @@ sections:
 - type: document
   path: content/data/faqData.json
   label: "- Faq -"
+- type: document
+  path: content/data/footerSectionData.json
+  label: "- Footer -"
 - type: heading
   label: Meta Content
 - type: document
@@ -30,7 +33,7 @@ sections:
   match: "**/*"
   new_doc_ext: md
 upload_dir: content/images
-public_path: "../images"
+public_path: "../../static"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"

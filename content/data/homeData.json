@@ -1,15 +1,16 @@
 {
   "introSection": {
     "mainTitle": "GATACA",
+    "mainTitleSubheading": "platform",
     "mainSubtitle": "Start reducing costs and transforming customer and citizen experiences with Gataca’s decentralized digital identity solution",
     "mainParagraph": "We provide your organization or community with the necesary tools to manage secure 100% digital identification systems.",
     "ctaText": "SPEAK TO OUR TEAM",
     "credentials": [
       {
-        "title": "Credential One"
+        "title": "Correos Log In"
       },
       {
-        "title": "Credential Two"
+        "title": "Dni"
       },
       {
         "title": "Credential Three"
@@ -25,32 +26,37 @@
       },
       {
         "title": "",
-        "image": "../images/partner-MIT.svg"
+        "image": "../images/correos.svg"
       },
       {
         "title": "Mit Management Sloan School",
         "image": "../images/partner-MIT.svg"
+      },
+      {
+        "title": "",
+        "image": "../images/correos.svg"
       }
     ]
   },
   "bulletsSection": {
     "title": "IDENTITY MANAGEMENT",
+    "icon": "../images/triangle.svg",
     "description": "We use identity credentials daily to access local citizen services, prove employment status or file an insurance claim. But as we have rapidly transformed our lives online, identification and authentication systems have not kept up.\n\nGataca’s identity management solution is designed for the digital age. ",
     "elements": [
       {
-        "title": "BULLET ONE",
-        "image": "/content/images/partner-MIT.svg",
-        "description": "This is a description"
+        "image": "../images/fast.svg",
+        "title": "FAST & EASY",
+        "description": "One-click onboarding\nPortable and reusable\nUp-to-date\nGlobally interoperable and scalable\n"
       },
       {
-        "title": "BULLET TWO",
-        "image": "./images/partner-MIT.svg",
-        "description": "This is a description"
+        "image": "../images/compliant.svg",
+        "title": "COMPLIANT",
+        "description": "Official, W3C verifiable\ncredential issuance\nKYC and GDPR compliant\nSelf-sovereign data control\nData exchange minimization\n\n"
       },
       {
-        "title": "BULLET THREE",
-        "image": "/content/images/partner-MIT.svg",
-        "description": "This is a description"
+        "image": "../images/secure.svg",
+        "title": "SECURE",
+        "description": "Blockchain-enabled\nCryptographically signed\nBiometrically enhanced\nPost-quantum cryptograph"
       }
     ]
   },

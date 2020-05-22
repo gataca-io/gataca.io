@@ -11,7 +11,7 @@ import IntroSection from "../components/IntroSection/Intro"
 
 export default function IndexPage() {
   return (
-    <Layout page="home" bgColor="inherit" className={homeStyles.base}>
+    <Layout className={homeStyles.base}>
       <article className={homeStyles.home} >
         <IntroSection data={homeData.introSection} link={configMetaData.bookACallUrl}/>
         <Partners info={homeData.partnersSection} />

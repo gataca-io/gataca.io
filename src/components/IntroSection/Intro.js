@@ -17,6 +17,20 @@ function Credentials ({credentials}) {
   )
 }
 
+function AppFooter () {
+  return (
+    <div className={introStyles.appFooter}>
+      <div className={introStyles.tabs}></div>
+      <div className={introStyles.tabs}>
+        <div className={introStyles.circle}>
+          <img />
+        </div>
+      </div>
+      <div className={introStyles.tabs}></div>
+  </div>
+  )
+}
+
 export default function IntroSection(props) {
   return (
       <section className={introStyles.introSection}>
@@ -25,16 +39,17 @@ export default function IntroSection(props) {
           <div className={` ${ introStyles.rowContainer }`}>
           
             <div className={` ${ introStyles.phoneDesktopContainer }`}>
-              <div className={introStyles.imageContainer}>
-                <img src={iphoneImg}/>
-                <div className={introStyles.appContainer}>
-                  <Credentials credentials={props.data.credentials}/>
-                </div>
+              <div className={introStyles.phoneContainer}>
+                <img className={introStyles.imageContainer} src={iphoneImg}/>
+                <Credentials credentials={props.data.credentials}/>
+                <AppFooter />
+                {/*<div className={introStyles.appContainer}>*/}
+                {/*</div>*/}
               </div>
             </div>
             
             <section className={introStyles.info}>
-              <h1>{props.data.mainTitle} <span>platform</span></h1>
+              <h1>{props.data.mainTitle} <span>{props.data.mainTitleSubheading }</span></h1>
               <h3>{props.data.mainSubtitle} </h3>
               <p>{props.data.mainParagraph} </p>
               <a href={props.link} target="_blank">
@@ -56,9 +71,8 @@ export default function IntroSection(props) {
               <div className={ introStyles.phoneContainer }>
                 <div className={introStyles.imageContainer}>
                   <img src={iphoneImg}/>
-                  <div className={introStyles.appContainer}>
                     <Credentials credentials={props.data.credentials}/>
-                  </div>
+                    {/*<AppFooter />*/}
                 </div>
               </div>
             </div>
