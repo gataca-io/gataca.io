@@ -10,19 +10,14 @@
       "description": "Provides all the tools necessary to issue and validate identity credentials according to W3C standards for global interoperability",
       "bullets": [
         {
-          "title": "BULLET ONE",
-          "image": "../images/partner-MIT.svg",
-          "description": "This is a description"
+          "title": "SECURED",
+          "image": "../images/par  tner-MIT.svg",
+          "description": "Biometric technologies guarantee that credentials are managed by the true owner"
         },
         {
-          "title": "BULLET TWO",
+          "title": "CERTIFIED",
           "image": "../images/partner-MIT.svg",
-          "description": "This is a description"
-        },
-        {
-          "title": "BULLET THREE",
-          "image": "../images/partner-MIT.svg",
-          "description": "This is a description"
+          "description": "Postquantum cryptography provide government-level security for the issuing Authority"
         }
       ],
       "mainImage": ""
@@ -30,22 +25,17 @@
     {
       "title": "Connect",
       "icon": "/content/images/EXihgPiXsAQmNEk.jpeg",
-      "description": "Allows users to store identity credentials from any issuer worldwide and seamlessly authenticate to digital services from their mobile phone",
+      "description": "Combines the security levels of government-issued IDs with single-sign-on authentication capabilities\n",
       "bullets": [
         {
-          "title": "BULLET ONE",
+          "title": "Automatic KYC/GDPR compliance\n",
           "image": "/content/images/partner-MIT.svg",
-          "description": "This is a description"
+          "description": "Keep peace of mind for GDPR and KYC compliance"
         },
         {
-          "title": "BULLET TWO",
+          "title": "Identity fraud reduction\n",
           "image": "/content/images/partner-MIT.svg",
-          "description": "This is a description"
-        },
-        {
-          "title": "BULLET THREE",
-          "image": "/content/images/partner-MIT.svg",
-          "description": "This is a description"
+          "description": "Reduce risk of identity fraud with guaranteed data authenticity and ownership"
         }
       ],
       "mainImage": ""
@@ -56,19 +46,19 @@
       "description": "Allows users to store identity credentials from any issuer worldwide and seamlessly authenticate to digital services from their mobile phone",
       "bullets": [
         {
-          "title": "BULLET ONE",
+          "title": "REAL IDENTITY",
           "image": "/content/images/partner-MIT.svg",
-          "description": "This is a description"
+          "description": "Link of real person with facial recognition, anti-spoofing and liveness detection capabilities"
         },
         {
-          "title": "BULLET TWO",
+          "title": "VALIDATED CREDENTIALS",
           "image": "/content/images/partner-MIT.svg",
-          "description": "This is a description"
+          "description": "Certified validation of credentials with Trusted Authorities"
         },
         {
-          "title": "BULLET THREE",
+          "title": "ENHANCED SECURITY",
           "image": "/content/images/partner-MIT.svg",
-          "description": "This is a description"
+          "description": "Data and certification integrity with post-quantum cryptography"
         }
       ],
       "mainImage": ""

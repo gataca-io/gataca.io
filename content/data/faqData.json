@@ -1,22 +1,38 @@
 {
   "faqSection" : {
     "title": "F.A.Q.",
-    "icon": "",
+    "icon": "../images/faq-square.svg",
     "questions": [
       {
         "title" : "Does Gataca use crytocurrencies?",
         "response": "Lorem Ipsum this is an answer"
       },
       {
-        "title" : "Does Gataca use crytocurrencies?",
+        "title" : "What blockchain does Gataca connect with?",
         "response": "Lorem Ipsum this is an answer"
       },
       {
-        "title" : "Does Gataca use crytocurrencies?",
+        "title" : "What does cryptographically signed mean?\n",
         "response": "Lorem Ipsum this is an answer"
       },
       {
-        "title" : "Does Gataca use crytocurrencies?",
+        "title" : "What is a verifiable credential?",
+        "response": "Lorem Ipsum this is an answer"
+      },
+      {
+        "title" : "How does Gataca comply with GDPR?",
+        "response": "Lorem Ipsum this is an answer"
+      },
+      {
+        "title" : "Is Gataca an Identity Provider?",
+        "response": "Lorem Ipsum this is an answer"
+      },
+      {
+        "title" : "What happens if a user loses their phone with their ID wallet?",
+        "response": "Lorem Ipsum this is an answer"
+      },
+      {
+        "title" : "How much does Gataca cost?",
         "response": "Lorem Ipsum this is an answer"
       }
     ]

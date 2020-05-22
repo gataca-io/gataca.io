@@ -8,9 +8,9 @@ import partnersStyles from "../components/PartnersSection/partners.module.scss"
 
 function IntroSection(props) {
   return (
-    <div className={aboutStyles.container}>
+    <div className={aboutStyles.introContainer}>
       <div className={`bx--grid`}>
-        <h1>{props.data.title}</h1>
+        <h2>{props.data.title}</h2>
         <p>{props.data.description}</p>
       </div>
     </div>
@@ -19,27 +19,30 @@ function IntroSection(props) {
 
 function TeamSection({ data }) {
   return(
-    <section className={aboutStyles.teamContainer}>
-    <h1>{data.title}</h1>
-    <div>
-      {data.team.map(gato => {
-        return (
-          <div>
-            <img src={gato.photo}/>
-            <p>{gato.name}</p>
-            <p>{gato.bio}</p>
-            <div>
-              {gato.links.map(link=>{
-                return <div>
-              
+    <section className={`bx--grid ${ aboutStyles.teamContainer }`}>
+      
+      <h2>{data.title}</h2>
+      <p>{data.description}</p>
+      <div className={`bx--row ${ aboutStyles.row }`}>
+          {data.team.map(gato => {
+            return (
+              <div className={`bx--col-sm-16 ${ aboutStyles.personContainer }`}>
+                <img src={gato.photo}/>
+                <p>{gato.name}</p>
+                <p>{gato.bio}</p>
+                <div>
+                  {gato.links.map(link=>{
+                    return <div>
+                  
+                    </div>
+                  })}
                 </div>
-              })}
-            </div>
-          </div>
-        )
-      })}
-    </div>
-  </section>
+              </div>
+            )
+          })}
+      </div>
+      
+    </section>
   )
 }
 
@@ -47,7 +50,7 @@ function AwardsSection({data}) {
   return (
     <section className={aboutStyles.awardsContainer}>
       <div>
-        <h1>{data.title}</h1>
+        <h2>{data.title}</h2>
         <div >
           {data.awards.map(award => {
             return (

@@ -1,3 +1,5 @@
+@import "../../styles/aux/media-mixins";
+
 .base{
     background-color: var(--white);
     width: 100%;
@@ -12,8 +14,11 @@
     width: calc(100% - var(--baseMargin));
     justify-content: center;
     align-items: center;
-    padding: var(--doubleBaseMargin);
+    padding: 10px;
     min-height: 200px;
+    @include media-for-tablet-portrait-up {
+        max-width: var(--max-width);
+    }
     div {
         margin: 0 var(--baseMargin);
     }
@@ -21,20 +26,11 @@
         margin: 2rem 0;
         text-align: center;
         img{
-           background-color: var(--bg-grey);
-            height: 75px;
-            width: 75px;
+            height: 55px;
+            width: 55px;
         }
     }
-}
-
-.partnerContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    p{
-        font-size: 0.65rem;
-        opacity: 0.6;
+    .bx--accordion{
+        width: 100%;
     }
 }

@@ -30,6 +30,13 @@ fields:
     label: Title
   - name: description
     type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+    label: Team Intro
+  - name: description
+    type: textarea
     label: Description
     default: ''
     config:
@@ -68,7 +75,7 @@ fields:
     type: field_group_list
     default: ''
     label: Links
-    config: 
+    config:
     fields:
     - type: text
       name: name

@@ -10,3 +10,9 @@
     top: var(--topbar-height);
     }
 }
+
+.bx--header__action {
+    @include media-for-tablet-portrait-up {
+        display: none !important;
+    }
+}

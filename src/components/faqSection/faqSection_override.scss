@@ -1,0 +1,13 @@
+.bx--accordion{
+    width: 100%;
+}
+
+.bx--accordion__item {
+    transition: all 110ms cubic-bezier(0.2, 0, 0.38, 0.9);
+    border-top: 1px solid var(--darkblue) !important;
+    overflow: visible;
+    padding: 20px 0;
+    &:last-child {
+        border-bottom: 1px solid var(--darkblue) !important;
+    }
+}

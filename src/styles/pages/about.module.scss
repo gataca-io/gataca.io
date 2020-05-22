@@ -1,3 +1,5 @@
+@import "../../styles/aux/media-mixins";
+
 .base{
     background-color: var(--white);
     display: flex;
@@ -7,33 +9,63 @@
     width: 100%;
 }
 
-.container {
-    padding: 5rem 2rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
+.introContainer {
     background-color: var(--bg-grey);
     border-bottom: var(--border-ga);
     width: 100%;
-    &>div{
+    @include media-for-tablet-portrait-up {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    & > div {
         max-width: var(--max-width);
+        padding: var(--baseSpacing);
+        @include media-for-phone-only {
+            padding: var(--baseSpacing);
+        }
     }
 }
 
 .teamContainer {
+    margin: 3rem 1rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    text-align: center;
-    align-items: center;
-    margin: 3rem 0;
+    @include media-for-tablet-portrait-up {
+        max-width: var(--max-width);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    p{
+
+    }
+    .personContainer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        @include media-for-tablet-portrait-up {
+            width: inherit;
+        }
+    }
     img{
         background-color: var(--light-grey);
-        height: 150px;
+        height: 250px;
         width: 200px;
+        object-fit: cover;
+        margin: 1rem;
     };
+    .row {
+        //padding: var(--baseSpacing);
+    }
 }
 
 .awardsContainer {

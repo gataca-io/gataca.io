@@ -1,3 +1,5 @@
+@import "../../styles/aux/media-mixins";
+
 .base{
     background-color: var(--white);
     display: flex;
@@ -10,14 +12,18 @@
 .introContainer {
     background-color: var(--bg-grey);
     width: 100%;
-    display: flex;
-    justify-content: center;
-    & > div {
-        padding: 5rem 0;
+    @include media-for-tablet-portrait-up {
+        display: flex;
+        justify-content: center;
         flex-direction: column;
         text-align: center;
         align-items: center;
+    }
+    & > div {
+        padding: var(--baseSpacing);
         max-width: var(--max-width);
+        @include media-for-phone-only {
+            padding: var(--baseSpacing);
+        }
     }
 }
-
