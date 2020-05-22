@@ -2,6 +2,34 @@
 label: Footer Section
 hide_body: false
 fields:
+  - name: title
+    type: text
+    label: Find us section
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+  - name: title_2
+    type: text
+    label: Follow us section
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+  - name: contant_email
+    type: text
+    label: Contact Email
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+  - name: copyright
+    type: text
+    label: Copyright section
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
   - type: field_group_list
     name: findUs
     label: Contact Info
@@ -14,6 +42,13 @@ fields:
           required: false
           wysiwyg: false
       - name: street
+        type: text
+        label: Street
+        default: ''
+        config:
+          required: false
+          wysiwyg: true
+      - name: street_code
         type: text
         label: Street
         default: ''
