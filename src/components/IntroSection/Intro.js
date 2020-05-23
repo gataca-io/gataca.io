@@ -50,7 +50,7 @@ export default function IntroSection(props) {
             
             <section className={introStyles.info}>
               <h1>{props.data.mainTitle} <span>{props.data.mainTitleSubheading }</span></h1>
-              <h3>{props.data.mainSubtitle} </h3>
+              <h3 dangerouslySetInnerHTML={{ __html: props.data.mainSubtitle }}> </h3>
               <p>{props.data.mainParagraph} </p>
               <a href={props.link} target="_blank">
                 <Button
