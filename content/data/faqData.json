@@ -1,38 +1,38 @@
 {
-  "faqSection" : {
+  "faqSection": {
     "title": "F.A.Q.",
     "icon": "../images/faq-square.svg",
     "questions": [
       {
-        "title" : "Does Gataca use crytocurrencies?",
+        "title": "What blockchain technology does Gataca use?",
+        "response": "<p>Gataca is blockchain agnostic and can integrate with any blockchain infrastructure the client chooses.</p><p><br></p>"
+      },
+      {
+        "title": "Does Gataca use cryptocurrencies?",
+        "response": "<p>No. Gataca uses cryptography to secure information.</p><p><br></p>"
+      },
+      {
+        "title": "What does cryptographically signed mean?\n",
         "response": "Lorem Ipsum this is an answer"
       },
       {
-        "title" : "What blockchain does Gataca connect with?",
+        "title": "What is a verifiable credential?",
         "response": "Lorem Ipsum this is an answer"
       },
       {
-        "title" : "What does cryptographically signed mean?\n",
+        "title": "How does Gataca comply with GDPR?",
         "response": "Lorem Ipsum this is an answer"
       },
       {
-        "title" : "What is a verifiable credential?",
+        "title": "Is Gataca an Identity Provider?",
         "response": "Lorem Ipsum this is an answer"
       },
       {
-        "title" : "How does Gataca comply with GDPR?",
+        "title": "What happens if a user loses their phone with their ID wallet?",
         "response": "Lorem Ipsum this is an answer"
       },
       {
-        "title" : "Is Gataca an Identity Provider?",
-        "response": "Lorem Ipsum this is an answer"
-      },
-      {
-        "title" : "What happens if a user loses their phone with their ID wallet?",
-        "response": "Lorem Ipsum this is an answer"
-      },
-      {
-        "title" : "How much does Gataca cost?",
+        "title": "How much does Gataca cost?",
         "response": "Lorem Ipsum this is an answer"
       }
     ]
