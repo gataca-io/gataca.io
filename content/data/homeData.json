@@ -3,7 +3,7 @@
     "mainTitle": "GATACA",
     "mainTitleSubheading": "platform",
     "mainSubtitle": "Start reducing costs and transforming customer and citizen experiences with Gataca’s decentralized digital identity solution",
-    "mainParagraph": "We provide your organization or community with the necesary tools to manage secure 100% digital identification systems.",
+    "mainParagraph": "We provide your organization with the tools to manage secure digital identification systems.",
     "ctaText": "SPEAK TO OUR TEAM",
     "credentials": [
       {
@@ -82,16 +82,23 @@
       }
     ],
     "graph": "/content/images/explainedPlatform.svg",
-    "endBullet":
+    "endBullet": [
       {
         "image": "../images/secure.svg",
         "title": "PRIVACY BY DESIGN",
         "description": "Gataca embraces privacy-by-design and never stores information about an individual’s identity."
       }
+    ]
   },
   "ctaSection": {
     "title": "Ready to start?",
     "description": "We provide personalised consultancy to bring your digital identity platform ecosystem to life.",
     "ctaText": "Arrange a call"
+  },
+  "partnerSection": {
+    "title": "",
+    "partners": [
+
+    ]
   }
 }
