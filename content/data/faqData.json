@@ -16,8 +16,8 @@
         "response": "<p>Need an answer</p>"
       },
       {
-        "title": "What is a verifiable credential?",
-        "response": "Lorem Ipsum this is an answer"
+        "title": "Does Gataca store information about the user’s identity?",
+        "response": "<p>No. Gataca embraces privacy-by-design and never stores information about an individual’s identity.</p><p><br></p>"
       },
       {
         "title": "How does Gataca comply with GDPR?",
