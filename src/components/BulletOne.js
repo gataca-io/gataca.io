@@ -23,10 +23,10 @@ const Bullet = styled.div`
 `
 const BulletIcon = styled.div`
     display: flex;
-    justify-content: center;
+    justify-content: ${props => props.right ? "flex-end" : props.left ? "flex-start" : props.center ? "center" : "flex-start"};;
     align-items: flex-start;
     height: 45px;
-    width: 45px;
+    width: 100%;
     margin-bottom: 1rem;
     padding: 3px 3px 3px 0;
 `
@@ -35,7 +35,7 @@ export default function BulletOne(props) {
   const {image, title, description} = props.data;
   return (
     <Bullet>
-      <BulletIcon>
+      <BulletIcon right={props.right} left={props.left} center={props.center}>
         <img src={image}/>
       </BulletIcon>
       <h4>{title}</h4>

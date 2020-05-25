@@ -43,7 +43,7 @@ export default function ProductsSelector(props) {
                 <div className={productSelStyles.bulletsContainer}>
                   {product.bullets.map(bullet => {
                     return (
-                      <BulletOne data={bullet}/>
+                      <BulletOne  right data={bullet}/>
                     )
                   })}
                 </div>
