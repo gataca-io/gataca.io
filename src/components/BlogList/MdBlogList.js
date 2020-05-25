@@ -10,13 +10,13 @@ export default function BlogList() {
   const blogData = useBlogData()
   function renderBlogData() {
     return (
-      <div className={`bx--grid ${blogListStyles.mainContainer}`}>
-      <div className={`bx--row ${blogListStyles.row}`}>
+      <React.Fragment>
+      {/*<div className={`bx--row ${blogListStyles.row}`}>*/}
         {blogData
           .filter(blog => blog.node.frontmatter.title !== "")
           .map(blog => {
             return (
-              <Link className={`bx--col-lg-4 bx--col-md-8 bx--col-sm-12 ${blogListStyles.a}`} to={`/insights/${blog.node.fields.slug}`} key={blog.node.id}>
+              <Link className={`${blogListStyles.post}`} to={`/insights/${blog.node.fields.slug}`} key={blog.node.id}>
                 <li className={`${blogListStyles.li}`} key={blog.node.fields.slug}>
                   <div className={blogListStyles.list__hero}>
                     <Img
@@ -35,13 +35,13 @@ export default function BlogList() {
               </Link>
             )
           })}
-      </div>
-      </div>
+      {/*</div>*/}
+      </React.Fragment>
     )
   }
   return (
     <section>
-      <ul className={blogListStyles.list}>{renderBlogData()}</ul>
+      <ul className={`${blogListStyles.mainContainer}`}>{renderBlogData()}</ul>
     </section>
   )
 }

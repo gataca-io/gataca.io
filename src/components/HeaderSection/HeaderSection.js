@@ -89,6 +89,11 @@ export default function HeaderSection(props) {
                     Products
                   </SideNavLink>
                 </Link>
+                <Link to={'/insights'}>
+                  <SideNavLink href="">
+                    Insights
+                  </SideNavLink>
+                </Link>
                 <Link to={'/about'}>
                   <SideNavLink href="">
                     About

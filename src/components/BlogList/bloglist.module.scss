@@ -2,12 +2,17 @@
   //display: flex;
   background-color: var(--bg-grey);
   padding: var(--baseSpacing);
+  column-width: 350px;
+  column-gap: var(--doubleBaseMargin);
+  //width: 90%;
+  max-width: var(--max-width-lg);
+  margin: 50px auto;
   li {
     opacity: inherit;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    min-height: 38vh;
+    //min-height: 38vh;
     margin-bottom: 0;
     background-color: var(--white);
   }
@@ -23,6 +28,10 @@
   .list__info{
     padding: 1rem;
   }
+}
+
+.post {
+  margin-bottom: var(--doubleBaseMargin);
 }
 
 
