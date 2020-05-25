@@ -1,6 +1,6 @@
 
 .base {
-    padding: 5rem 0;
+    padding: 5rem 0 0 0;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -13,6 +13,7 @@
         background-color: var(--white);
         //max-width: var(--max-width);
         width: 100%;
+        padding-bottom: 5rem;
     }
 }
     .tabs {
@@ -20,6 +21,8 @@
         padding-bottom: 2px;
         border-bottom: var(--border-ga);
         width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
 .introSection{
@@ -33,6 +36,7 @@
     justify-content: center;
     .bulletsContainer {
         margin-right: 2rem;
+        text-align: right;
     }
     .mainImage{
         height: 500px;
@@ -42,6 +46,17 @@
 }
 
 .selectedProductIconContainer{
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        top: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 2px;
+        height: 50px;
+        background-color: var(--darkblue);
+    }
     height: 100px;
     width: 100px;
     background-color: var(--white);
@@ -50,4 +65,7 @@
     align-items: center;
     border: 2px solid var(--darkblue);
     margin: 2rem 0;
+    img {
+        margin-bottom: 0;
+    }
 }

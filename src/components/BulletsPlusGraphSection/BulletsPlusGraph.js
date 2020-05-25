@@ -4,6 +4,7 @@ import React from "react"
 import BulletOne from "../BulletOne"
 import graph from "@images/explainedPlatform.svg"
 import BulletCenter from "../BulletCenter"
+import { DangerSetH2Html, DangerSetPHtml } from "../auxiliary/aux"
 
 function RenderMobile({ data }) {
   return (
@@ -19,9 +20,9 @@ function RenderMobile({ data }) {
         </svg>
       </div>
       <div className={bulletsGraphMobile.header}>
-        <img src={data.icon} />
-        <h2 dangerouslySetInnerHTML={{ __html: data.title }}/>
-        <p dangerouslySetInnerHTML={{ __html: data.description }}/>
+        <img src={data.icon}  alt={data.title}/>
+        <DangerSetH2Html data={data.title }/>
+        <DangerSetPHtml data={data.description}/>
       </div>
       <div className={bulletsGraphMobile.bulletsContainer}>
         {data.elements.map(el => {
@@ -58,9 +59,9 @@ function RenderDesktop({ data }) {
       
       {/*CONTENT*/}
       <div className={bulletsGraph.header}>
-        <img src={data.icon} />
-        <h2 dangerouslySetInnerHTML={{ __html: data.title }}/>
-        <p dangerouslySetInnerHTML={{ __html: data.description }}/>
+        <img src={data.icon}  alt={data.title}/>
+        <DangerSetH2Html data={data.title}/>
+        <DangerSetPHtml data={data.description}/>
       </div>
       <div className={bulletsGraph.bulletsContainer}>
         {data.elements.map(el => {

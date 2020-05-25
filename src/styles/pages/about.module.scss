@@ -13,6 +13,7 @@
     background-color: var(--bg-grey);
     border-bottom: var(--border-ga);
     width: 100%;
+    min-height: 40vh;
     @include media-for-tablet-portrait-up {
         display: flex;
         justify-content: center;

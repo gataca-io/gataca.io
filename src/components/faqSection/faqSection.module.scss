@@ -1,11 +1,11 @@
 @import "../../styles/aux/media-mixins";
 
 .base{
-    background-color: var(--white);
+    background-color: var(--bg-grey);
     width: 100%;
     display: flex;
     justify-content: center;
-    margin: 3rem 0;
+    padding: 3rem 0;
 }
 
 .container {

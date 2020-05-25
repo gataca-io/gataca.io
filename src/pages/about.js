@@ -6,12 +6,12 @@ import aboutData  from "./../../content/data/aboutData.json"
 import { Accordion, AccordionItem } from "carbon-components-react"
 import partnersStyles from "../components/PartnersSection/partners.module.scss"
 
-function IntroSection(props) {
+function IntroSection({ data }) {
   return (
     <div className={aboutStyles.introContainer}>
       <div className={`bx--grid`}>
-        <h2>{props.data.title}</h2>
-        <p>{props.data.description}</p>
+        <h2>{data.title}</h2>
+        <p dangerouslySetInnerHTML={{ __html: data.description }}/>
       </div>
     </div>
   )
@@ -22,7 +22,8 @@ function TeamSection({ data }) {
     <section className={`bx--grid ${ aboutStyles.teamContainer }`}>
       
       <h2>{data.title}</h2>
-      <p dangerouslySetInnerHTML={{ __html: data.description }}></p>
+      <p dangerouslySetInnerHTML={{ __html: data.description }}/>
+      
       <div className={`bx--row ${ aboutStyles.row }`}>
           {data.team.map(gato => {
             return (

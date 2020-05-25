@@ -1,15 +1,14 @@
 import React from "react"
 import Layout from "../layouts/Layout"
-import infoStyles from "../styles/pages/info.module.scss"
 import useSiteMetaData from "../static_queries/useSiteMetadata"
-import BlogList from "../components/BlogList/BlogList"
+import MdBlogList from "../components/BlogList/MdBlogList"
 
 export default function Insights() {
   const { infoData } = useSiteMetaData()
   return (
     <Layout>
       <section>
-        <BlogList />
+        <MdBlogList />
       </section>
     </Layout>
   )

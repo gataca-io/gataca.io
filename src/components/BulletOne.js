@@ -35,7 +35,7 @@ export default function BulletOne(props) {
   const {image, title, description} = props.data;
   return (
     <Bullet>
-      <BulletIcon>
+      <BulletIcon right={props.right} left={props.left} center={props.center}>
         <img src={image}/>
       </BulletIcon>
       <h4>{title}</h4>

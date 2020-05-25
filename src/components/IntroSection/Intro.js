@@ -2,6 +2,7 @@ import introStyles from "./intro.module.scss"
 import iphoneImg from "@images/iphone.svg"
 import React from "react"
 import { Button } from "carbon-components-react"
+import { DangerSetH3Html } from "../auxiliary/aux"
 
 function Credentials ({credentials}) {
   return (
@@ -17,21 +18,19 @@ function Credentials ({credentials}) {
   )
 }
 
-/*
 function AppFooter () {
   return (
     <div className={introStyles.appFooter}>
-      <div className={introStyles.tabs}/>
+      <div className={introStyles.tabs}></div>
       <div className={introStyles.tabs}>
         <div className={introStyles.circle}>
           <img />
         </div>
       </div>
-      <div className={introStyles.tabs}/>
+      <div className={introStyles.tabs}></div>
   </div>
   )
 }
-*/
 
 export default function IntroSection({ data }) {
   return (
@@ -51,10 +50,10 @@ export default function IntroSection({ data }) {
             </div>
             
             <section className={introStyles.info}>
-              <h1>{data.mainTitle} <span>{data.mainTitleSubheading }</span></h1>
-              <h3 dangerouslySetInnerHTML={{ __html: data.mainSubtitle }}> </h3>
-              <p>{data.mainParagraph} </p>
-              <a href={link} target="_blank">
+              <h1>{props.data.mainTitle} <span>{props.data.mainTitleSubheading }</span></h1>
+              <h3>{props.data.mainSubtitle}</h3>
+              <p>{props.data.mainParagraph} </p>
+              <a href={props.link} target="_blank">
                 <Button
                   className={introStyles.ctaButton}
                   disabled={false}

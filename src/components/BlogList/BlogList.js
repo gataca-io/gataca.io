@@ -1,3 +1,4 @@
+/*
 import React from "react"
 import { Link } from "gatsby"
 import useBlogData from "../../static_queries/useMdBlogData"
@@ -19,12 +20,12 @@ export default function BlogList() {
               <Link to={`/insights/${blog.node.slug}`} key={blog.node.id}>
                 <li className={blogListStyles.li} key={blog.node.slug}>
                   <div className={blogListStyles.list__hero}>
-                    <SafeImage media={blog.node.featured_media}></SafeImage>
+                    <SafeImage media={blog.node.featured_media}/>
                   </div>
                   <div className={blogListStyles.list__info}>
                     <h2>{blog.node.title}</h2>
                     <h3>{blog.node.date}</h3>
-                    <p dangerouslySetInnerHTML={{ __html: blog.node.excerpt }}></p>
+                    <p dangerouslySetInnerHTML={{ __html: blog.node.excerpt }}/>
                   </div>
                 </li>
               </Link>
@@ -41,3 +42,4 @@ export default function BlogList() {
   )
 }
 
+*/
