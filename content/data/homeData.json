@@ -51,7 +51,7 @@
       {
         "image": "../images/compliant.svg",
         "title": "COMPLIANT",
-        "description": "Official, W3C verifiable\ncredential issuance\nKYC and GDPR compliant\nSelf-sovereign data control\nData exchange minimization\n\n"
+        "description": "<ul><li><p>Official, W3C verifiable credential issuance </p></li><li><p>KYC and GDPR compliant </p></li><li><p>Self-sovereign data control </p></li><li><p>Data exchange minimisation</p></li></ul>"
       },
       {
         "image": "../images/secure.svg",
