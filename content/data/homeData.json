@@ -63,7 +63,7 @@
   "bulletsEnhancedSection": {
     "icon": "../images/4-square.svg",
     "title": "DECENTRALIZED <br> IDENTITY PLATFORM",
-    "description": "Gataca has built a user-centric digital identity layer for the Internet with government-grade security and a simple single-sign-on to superpower your credentials. Our identity management platform enables fast, secure, and compliant data exchange between credential issuers, users, and service providers.",
+    "description": "<p>Gataca has built a user-centric digital identity platform with government-grade security and a simple single-sign-on to superpower your credentials. Our identity management platform enables fast, secure, and compliant data exchange between credential issuers, users, and service providers.</p>",
     "elements": [
       {
         "image": "../images/stamp.svg",
