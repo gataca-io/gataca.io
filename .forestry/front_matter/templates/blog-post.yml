@@ -46,13 +46,13 @@ fields:
   type: select
   default: ''
   config:
-    required: true
+    required: false
     options: []
     source:
       type: documents
-      section: author-list
+      section: ''
       file: content/data/authors.yaml
-      path: authors
+      path: ''
   label: author
   description: Enter author of post
 - name: date
