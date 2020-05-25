@@ -7,9 +7,9 @@ meta_data:
   title: On the Geneology of Morals
   description: On the Geneology of Morals - description
   rrss_images:
-    twitter: ''
-    facebook_and_whatsapp: ''
-    linkedin: ''
+    twitter: "../../static/sonja-punz-N47B_zibNGo-unsplash.jpg"
+    facebook_and_whatsapp: "../../static/sonja-punz-N47B_zibNGo-unsplash.jpg"
+    linkedin: "../../static/sonja-punz-N47B_zibNGo-unsplash.jpg"
 
 ---
 So all respect to the good spirits that may govern in these historians of morality! But it’s certainly a pity that they lack the historical spirit itself, that they’ve been left in the lurch by all the good spirits of history! Collectively they all think essentially unhistorically, in the traditional manner of philosophers. Of that there is no doubt. The incompetence of their genealogies of morals reveals itself at the very beginning, where the issue is to determine the origin of the idea and of the judgment “good.”
