@@ -32,7 +32,7 @@ function AppFooter () {
   )
 }
 
-export default function IntroSection({ data }) {
+export default function IntroSection({ data, link }) {
   return (
       <section className={introStyles.introSection}>
         <div className={` ${ introStyles.container }`}>
