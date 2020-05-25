@@ -9,7 +9,7 @@
       },
       {
         "title": "Does Gataca use cryptocurrencies?",
-        "response": "<p>No. Gataca uses cryptography to secure information. We chose ED25519 cryptography because of its properties of security, lightness, and performance, particularly on mobile phones.</p><p><br></p>"
+        "response": "<p>No. Gataca uses cryptography to secure information, just like when you use a digital signature. We chose ED25519 cryptography because of its properties of security, lightness, and performance, particularly on mobile phones.</p><p><br></p>"
       },
       {
         "title": "Does Gataca store information about the user’s identity?",
@@ -18,10 +18,6 @@
       {
         "title": "How does Gataca comply with GDPR?",
         "response": "<p>Need to write an answer.</p>"
-      },
-      {
-        "title": "Is Gataca an Identity Provider?",
-        "response": "<p>Need to write an answer</p>"
       },
       {
         "title": "What happens if a user loses their phone with their ID wallet?",
