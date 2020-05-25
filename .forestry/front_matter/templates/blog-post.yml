@@ -46,13 +46,13 @@ fields:
   type: select
   default: ''
   config:
-    required: true
+    required: false
     options: []
     source:
       type: documents
-      section: author-list
+      section: ''
       file: content/data/authors.yaml
-      path: authors
+      path: ''
   label: author
   description: Enter author of post
 - name: date
@@ -74,6 +74,7 @@ fields:
   default: "/content/images/sarah-dorweiler-9Z1KRIfpBTM-unsplash.jpg"
 pages:
 - content/posts/an-essay-on-walking.md
+- content/posts/decentralized-identity-projects-and-pilots.md
 - content/posts/ne-te-quaesiveris-extra.md
 - content/posts/on-the-geneology-of-morals.md
 - content/posts/song-of-myself.md
