@@ -41,7 +41,7 @@ export default function BlogMd(props) {
           className={blogTemplateStyles.blog__body}
           dangerouslySetInnerHTML={{ __html: data.html }}
         ></div>
-        <div className={blogTemplateStyles.blog__footer}>
+        {/*<div className={blogTemplateStyles.blog__footer}>
           <h2>
             Written By: {data.frontmatter.author}
           </h2>
@@ -50,7 +50,7 @@ export default function BlogMd(props) {
               <path d="M23.021,12.294l-8.714-8.715l-1.414,1.414l7.007,7.008H2.687v2h17.213l-7.007,7.006l1.414,1.414l8.714-8.713  C23.411,13.317,23.411,12.685,23.021,12.294z"/>
             </svg>
           </Link>
-        </div>
+        </div>*/}
       </article>
     </Layout>
   )
