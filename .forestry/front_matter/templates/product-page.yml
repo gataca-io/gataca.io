@@ -68,7 +68,7 @@ fields:
     type: field_group_list
     default: ''
     label: Product Detail Bullets
-    config: 
+    config:
     fields:
     - type: text
       name: title
@@ -80,6 +80,9 @@ fields:
       label: Bullet Description
       config:
         required: false
+        wysiwyg: true
+        schema:
+          format: html-blocks
     - type: file
       name: image
       label: Product Image

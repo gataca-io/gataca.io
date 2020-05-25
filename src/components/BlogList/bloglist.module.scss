@@ -2,11 +2,13 @@
   //display: flex;
   background-color: var(--bg-grey);
   padding: var(--baseSpacing);
-  column-width: 350px;
-  column-gap: var(--doubleBaseMargin);
+  //column-width: 350px;
+  //column-gap: var(--doubleBaseMargin);
   //width: 90%;
   max-width: var(--max-width-lg);
   margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
   li {
     opacity: inherit;
     display: flex;
@@ -32,6 +34,8 @@
 
 .post {
   margin-bottom: var(--doubleBaseMargin);
+  max-width: calc(25% - 40px);
+  margin: 20px;
 }
 
 

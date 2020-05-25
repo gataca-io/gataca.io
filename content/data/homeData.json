@@ -18,7 +18,7 @@
     ]
   },
   "partnersSection": {
-    "title": "Associations:",
+    "title": "Trusted by:",
     "partners": [
       {
         "title": "",
@@ -39,9 +39,9 @@
     ]
   },
   "bulletsSection": {
-    "title": "IDENTITY MANAGEMENT MADE FOR DIGITAL",
+    "title": "DIGITAL IDENTITY MANAGEMENT",
     "icon": "../images/3-triangle.svg",
-    "description": "<p>We use identity credentials daily to access local citizen services, prove employment status, or file an insurance claim. But as we have rapidly transformed our lives online, identification and authentication systems have not kept up. Gataca’s identity management platform is designed for the digital age.</p>",
+    "description": "<p>We use identity credentials daily to access local citizen services, prove our qualifications, or file an insurance claim. But as we have rapidly transformed our lives online, identification and authentication systems have not kept up. Gataca's identity management platform is designed for the digital age.</p>",
     "elements": [
       {
         "image": "../images/fast.svg",
@@ -98,7 +98,10 @@
   "partnerSection": {
     "title": "",
     "partners": [
-
+      {
+        "title": "",
+        "image": ""
+      }
     ]
   }
 }
