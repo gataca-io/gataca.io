@@ -9,7 +9,7 @@
       },
       {
         "title": "Does Gataca use cryptocurrencies?",
-        "response": "<p>No. Gataca uses cryptography to secure information. We chose for ED25519 because of its properties of security, lightness, and performance, particularly on mobile phones.</p><p><br></p>"
+        "response": "<p>No. Gataca uses cryptography to secure information. We chose ED25519 cryptography because of its properties of security, lightness, and performance, particularly on mobile phones.</p><p><br></p>"
       },
       {
         "title": "Does Gataca store information about the user’s identity?",
