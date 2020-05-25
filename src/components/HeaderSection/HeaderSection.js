@@ -2,23 +2,13 @@ import React, { Fragment } from "react"
 import { Link } from "gatsby"
 import headerStyles from "./header.module.scss"
 import logo from "@images/logo.svg"
-import Search20 from "@carbon/icons-react/lib/search/20";
-import Notification20 from "@carbon/icons-react/lib/notification/20";
-import AppSwitcher20 from "@carbon/icons-react/lib/app-switcher/20";
 import HeaderContainer from "carbon-components-react/lib/components/UIShell/HeaderContainer";
 import {
-  Content,
   Header,
   HeaderMenuButton,
-  HeaderName,
-  HeaderGlobalBar,
-  HeaderGlobalAction,
-  SkipToContent,
   SideNav,
   SideNavItems,
   SideNavLink,
-  SideNavMenu,
-  SideNavMenuItem
 } from "carbon-components-react/lib/components/UIShell";
 
 const Fade16 = () => (

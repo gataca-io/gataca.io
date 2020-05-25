@@ -17,21 +17,23 @@ function Credentials ({credentials}) {
   )
 }
 
+/*
 function AppFooter () {
   return (
     <div className={introStyles.appFooter}>
-      <div className={introStyles.tabs}></div>
+      <div className={introStyles.tabs}/>
       <div className={introStyles.tabs}>
         <div className={introStyles.circle}>
           <img />
         </div>
       </div>
-      <div className={introStyles.tabs}></div>
+      <div className={introStyles.tabs}/>
   </div>
   )
 }
+*/
 
-export default function IntroSection(props) {
+export default function IntroSection({ data }) {
   return (
       <section className={introStyles.introSection}>
         <div className={` ${ introStyles.container }`}>
@@ -41,7 +43,7 @@ export default function IntroSection(props) {
             <div className={` ${ introStyles.phoneDesktopContainer }`}>
               <div className={introStyles.phoneContainer}>
                 <img className={introStyles.imageContainer} src={iphoneImg}/>
-                <Credentials credentials={props.data.credentials}/>
+                <Credentials credentials={data.credentials}/>
                 {/*<AppFooter />*/}
                 {/*<div className={introStyles.appContainer}>*/}
                 {/*</div>*/}
@@ -49,10 +51,10 @@ export default function IntroSection(props) {
             </div>
             
             <section className={introStyles.info}>
-              <h1>{props.data.mainTitle} <span>{props.data.mainTitleSubheading }</span></h1>
-              <h3 dangerouslySetInnerHTML={{ __html: props.data.mainSubtitle }}> </h3>
-              <p>{props.data.mainParagraph} </p>
-              <a href={props.link} target="_blank">
+              <h1>{data.mainTitle} <span>{data.mainTitleSubheading }</span></h1>
+              <h3 dangerouslySetInnerHTML={{ __html: data.mainSubtitle }}> </h3>
+              <p>{data.mainParagraph} </p>
+              <a href={link} target="_blank">
                 <Button
                   className={introStyles.ctaButton}
                   disabled={false}
@@ -62,16 +64,16 @@ export default function IntroSection(props) {
                   size="default"
                   tabIndex={0}
                   type="button"
-                > {props.data.ctaText}</Button>
+                > {data.ctaText}</Button>
               </a>
-              <img src={props.data.superImagen}/>
+              <img src={data.superImagen}/>
             </section>
     
             <div className={ introStyles.phoneMobileContainer}>
               <div className={ introStyles.phoneContainer }>
                 <div className={introStyles.imageContainer}>
                   <img src={iphoneImg}/>
-                    <Credentials credentials={props.data.credentials}/>
+                    <Credentials credentials={data.credentials}/>
                     {/*<AppFooter />*/}
                 </div>
               </div>

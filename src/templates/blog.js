@@ -1,3 +1,4 @@
+/*
 import React, { Fragment } from "react"
 import Layout from "./../layouts/Layout"
 import { graphql, Link } from "gatsby"
@@ -89,3 +90,4 @@ export const getPostData = graphql`
   }
 `
 
+*/

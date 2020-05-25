@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import useBlogData from "../../static_queries/useBlogData"
+import useBlogData from "../../static_queries/useMdBlogData"
 import blogListStyles from "./bloglist.module.scss"
 import Img from 'gatsby-image'
 import SafeImage from "../SafeImage"
@@ -16,7 +16,7 @@ export default function BlogList() {
           .filter(blog => blog.node.title !== "")
           .map(blog => {
             return (
-              <Link to={`/stories/${blog.node.slug}`} key={blog.node.id}>
+              <Link to={`/insights/${blog.node.slug}`} key={blog.node.id}>
                 <li className={blogListStyles.li} key={blog.node.slug}>
                   <div className={blogListStyles.list__hero}>
                     <SafeImage media={blog.node.featured_media}></SafeImage>

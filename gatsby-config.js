@@ -26,7 +26,7 @@ module.exports = {
         defaultQuality: 75
       }
     },
-    {
+/*    {
       resolve: `gatsby-source-wordpress`,
       options: {
         // your WordPress source
@@ -47,7 +47,7 @@ module.exports = {
           wpcom_pass: process.env.WORDPRESS_PASSWORD
         }
       }
-    },
+    },*/
     {
       resolve: "gatsby-source-filesystem",
       options: {

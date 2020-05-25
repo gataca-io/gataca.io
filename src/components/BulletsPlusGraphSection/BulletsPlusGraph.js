@@ -20,8 +20,8 @@ function RenderMobile({ data }) {
       </div>
       <div className={bulletsGraphMobile.header}>
         <img src={data.icon} />
-        <h2 dangerouslySetInnerHTML={{ __html: data.title }}></h2>
-        <p dangerouslySetInnerHTML={{ __html: data.description }}></p>
+        <h2 dangerouslySetInnerHTML={{ __html: data.title }}/>
+        <p dangerouslySetInnerHTML={{ __html: data.description }}/>
       </div>
       <div className={bulletsGraphMobile.bulletsContainer}>
         {data.elements.map(el => {
@@ -59,8 +59,8 @@ function RenderDesktop({ data }) {
       {/*CONTENT*/}
       <div className={bulletsGraph.header}>
         <img src={data.icon} />
-        <h2 dangerouslySetInnerHTML={{ __html: data.title }}></h2>
-        <p dangerouslySetInnerHTML={{ __html: data.description }}></p>
+        <h2 dangerouslySetInnerHTML={{ __html: data.title }}/>
+        <p dangerouslySetInnerHTML={{ __html: data.description }}/>
       </div>
       <div className={bulletsGraph.bulletsContainer}>
         {data.elements.map(el => {

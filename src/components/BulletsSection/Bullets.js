@@ -12,13 +12,13 @@ function RenderMobile(props) {
           <img src={props.data.icon} />
           <h2>{props.data.title}</h2>
         </div>
-        <p dangerouslySetInnerHTML={{ __html: props.data.description}}></p>
+        <p dangerouslySetInnerHTML={{ __html: props.data.description }}/>
       </div>
       
       <div className={bulletsMobileStyles.bulletsContainer}>
         {props.data.elements.map(el => {
           return (
-            <BulletOne data={el}></BulletOne>
+            <BulletOne data={el}/>
           )
         })}
       </div>

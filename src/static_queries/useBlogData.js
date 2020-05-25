@@ -1,3 +1,4 @@
+/*
 import { graphql, useStaticQuery } from "gatsby"
 
 export default function useBlogData() {
@@ -31,3 +32,4 @@ export default function useBlogData() {
 }
 
 
+*/

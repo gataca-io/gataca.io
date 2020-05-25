@@ -39,7 +39,7 @@ export default function BulletOne(props) {
         <img src={image}/>
       </BulletIcon>
       <h4>{title}</h4>
-      <p dangerouslySetInnerHTML={{ __html: description }}></p>
+      <p dangerouslySetInnerHTML={{ __html: description }}/>
     </Bullet>
   )
 }
