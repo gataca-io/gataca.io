@@ -1,3 +1,5 @@
+@import "../../styles/aux/media-mixins";
+
 .mainContainer {
   //display: flex;
   background-color: var(--bg-grey);
@@ -6,7 +8,7 @@
   //column-gap: var(--doubleBaseMargin);
   //width: 90%;
   max-width: var(--max-width-lg);
-  margin: 50px auto;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   li {
@@ -33,11 +35,22 @@
 }
 
 .post {
-  margin-bottom: var(--doubleBaseMargin);
-  max-width: calc(25% - 40px);
-  margin: 20px;
+    margin-bottom: var(--doubleBaseMargin);
+    margin: 0px;
+    width: 100%;
+  @include media-for-tablet-portrait-up {
+    margin: 20px;
+    max-width: calc(50% - 40px);
+  }
+  @include media-for-desktop-up {
+    margin: 20px;
+    max-width: calc(33.33% - 40px);
+  }
+  @include media-for-big-desktop-up{
+    margin: 20px;
+    max-width: calc(25% - 40px);
+  }
 }
-
 
 /*
 
