@@ -14,5 +14,7 @@ author: ''
 ---
 We are so proud to be working alongside these organizations to move identity management into the digital age. If you would like to add another pilot/project, please do it [here](https://gataca.io/submit-a-decentralized-identity-pilot-or-project/). Thank you for being a part of our community.
 
-<div> <iframe width="100%" height="792" src="https://datastudio.google.com/embed/reporting/1_rmz0-tjHXEK_JmLi8W4iDK7Ea9cVYXV/page/Gb2JB" frameborder="0" style="border:0" allowfulls_reen></ifra_me>
+<div> 
+
+<iframe width="100%" height="792" src="https://datastudio.google.com/embed/reporting/1_rmz0-tjHXEK_JmLi8W4iDK7Ea9cVYXV/page/Gb2JB" frameborder="0" style="border:0" allowfulls_reen></ifra_me>
 </div>
