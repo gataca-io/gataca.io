@@ -21,9 +21,7 @@ export default function FaqSection(props) {
                 }}
                 title={question.title}
               >
-                <p>
-                  {question.response}
-                </p>
+                <p dangerouslySetInnerHTML={{ __html: question.response }}></p>
               </AccordionItem>
             )
           })}

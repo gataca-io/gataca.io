@@ -22,7 +22,7 @@ function TeamSection({ data }) {
     <section className={`bx--grid ${ aboutStyles.teamContainer }`}>
       
       <h2>{data.title}</h2>
-      <p>{data.description}</p>
+      <p dangerouslySetInnerHTML={{ __html: data.description }}></p>
       <div className={`bx--row ${ aboutStyles.row }`}>
           {data.team.map(gato => {
             return (

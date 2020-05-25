@@ -26,9 +26,6 @@ export default function ProductsSelector(props) {
               href={"/" + product.title}
               id="tab-1"
               label={product.title}
-              // onClick={}
-              // onKeyDown={""}
-              // renderContent={""}
               role="presentation"
               selected={false}
               tabIndex={0}
@@ -40,7 +37,7 @@ export default function ProductsSelector(props) {
                 <h2>
                   {product.title}
                 </h2>
-                <p>{product.description}</p>
+                <p dangerouslySetInnerHTML={{ __html: product.description }}></p>
               </div>
               <div className={productSelStyles.detailContainer}>
                 <div className={productSelStyles.bulletsContainer}>

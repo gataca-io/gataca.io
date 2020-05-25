@@ -13,7 +13,7 @@ export default function BulletTwo(props) {
       <Bullet>
         <img src={image}/>
         <h4>{title}</h4>
-        <p>{description}</p>
+        <p dangerouslySetInnerHTML={{ __html: description }}></p>
       </Bullet>
   )
 }

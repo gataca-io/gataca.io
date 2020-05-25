@@ -3,12 +3,12 @@ import React from "react"
 import { Button } from "carbon-components-react"
 import introStyles from "../IntroSection/intro.module.scss"
 
-export default function Cta(props) {
+export default function Cta({ data }) {
   return (
     <section className={ctaStyles.base}>
       <div className={ctaStyles.container}>
-        <h2>{props.data.title}</h2>
-        <p>{props.data.description}</p>
+        <h2>{data.title}</h2>
+        <p dangerouslySetInnerHTML={{ __html: data.description }}></p>
         <Button
           className={introStyles.ctaButton}
           disabled={false}
@@ -20,7 +20,7 @@ export default function Cta(props) {
           size="default"
           tabIndex={0}
           type="button"
-        > {props.data.ctaText}</Button>
+        > {data.ctaText}</Button>
       </div>
     </section>
   )
