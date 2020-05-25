@@ -18,7 +18,7 @@
     ]
   },
   "partnersSection": {
-    "title": "Associations:",
+    "title": "Trusted by:",
     "partners": [
       {
         "title": "",
@@ -98,7 +98,10 @@
   "partnerSection": {
     "title": "",
     "partners": [
-
+      {
+        "title": "",
+        "image": ""
+      }
     ]
   }
 }
