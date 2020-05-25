@@ -2,6 +2,7 @@ import introStyles from "./intro.module.scss"
 import iphoneImg from "@images/iphone.svg"
 import React from "react"
 import { Button } from "carbon-components-react"
+import { DangerSetH3Html } from "../auxiliary/aux"
 
 function Credentials ({credentials}) {
   return (
@@ -17,7 +18,7 @@ function Credentials ({credentials}) {
   )
 }
 
-function AppFooter () {
+/*function AppFooter () {
   return (
     <div className={introStyles.appFooter}>
       <div className={introStyles.tabs}></div>
@@ -29,7 +30,7 @@ function AppFooter () {
       <div className={introStyles.tabs}></div>
   </div>
   )
-}
+}*/
 
 export default function IntroSection(props) {
   return (
@@ -50,7 +51,7 @@ export default function IntroSection(props) {
             
             <section className={introStyles.info}>
               <h1>{props.data.mainTitle} <span>{props.data.mainTitleSubheading }</span></h1>
-              <h3 dangerouslySetInnerHTML={{ __html: props.data.mainSubtitle }}> </h3>
+              <h3>{props.data.mainSubtitle}</h3>
               <p>{props.data.mainParagraph} </p>
               <a href={props.link} target="_blank">
                 <Button

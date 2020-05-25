@@ -2,23 +2,24 @@ import bulletsStyles  from "./bullets.module.scss"
 import bulletsMobileStyles  from "./bullets_mobile.module.scss"
 import React from "react"
 import BulletOne from "../BulletOne"
+import { DangerSetPHtml } from "../auxiliary/aux"
 
-function RenderMobile(props) {
+function RenderMobile({ data }) {
   return <section className={bulletsMobileStyles.baseMobile}>
     <div className={`${ bulletsMobileStyles.container }`}>
       
       <div className={bulletsMobileStyles.header}>
         <div className={bulletsMobileStyles.iconContainer}>
-          <img src={props.data.icon} />
-          <h2>{props.data.title}</h2>
+          <img src={data.icon}  alt={data.title}/>
+          <h2>{data.title}</h2>
         </div>
-        <p dangerouslySetInnerHTML={{ __html: props.data.description}}></p>
+        <DangerSetPHtml data={data.description}/>
       </div>
       
       <div className={bulletsMobileStyles.bulletsContainer}>
-        {props.data.elements.map(el => {
+        {data.elements.map(el => {
           return (
-            <BulletOne data={el}></BulletOne>
+            <BulletOne data={el}/>
           )
         })}
       </div>
@@ -27,7 +28,7 @@ function RenderMobile(props) {
   </section>
 }
 
-function RenderDesktop(props) {
+function RenderDesktop({ data }) {
   return (
     <section className={bulletsStyles.baseDesktop}>
     <div className={`bx--grid ${ bulletsStyles.container }`}>
@@ -36,22 +37,22 @@ function RenderDesktop(props) {
         
         <div className={`bx--col-lg-4 ${ bulletsStyles.leftContainer }`}>
           <div className={bulletsStyles.topAdjust}>
-            <img src={props.data.icon} />
+            <img src={data.icon} />
           </div>
         </div>
         
         <div className={`bx--col-lg-12 ${ bulletsStyles.rightContainer }`}>
             <div className={bulletsStyles.header}>
               <div className={bulletsStyles.iconContainer}>
-                <h2>{props.data.title}</h2>
+                <h2>{data.title}</h2>
               </div>
-              <p dangerouslySetInnerHTML={{ __html: props.data.description}}></p>
+              <DangerSetPHtml data={data.description}/>
             </div>
             
             <div className={bulletsStyles.bulletsContainer}>
-              {props.data.elements.map(el => {
+              {data.elements.map(el => {
                 return (
-                  <BulletOne data={el}></BulletOne>
+                  <BulletOne data={el}/>
                 )
               })}
             </div>

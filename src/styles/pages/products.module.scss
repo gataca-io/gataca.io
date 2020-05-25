@@ -11,6 +11,7 @@
 
 .introContainer {
     background-color: var(--bg-grey);
+    min-height: 40vh;
     width: 100%;
     @include media-for-tablet-portrait-up {
         display: flex;

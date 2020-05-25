@@ -26,7 +26,7 @@ module.exports = {
         defaultQuality: 75
       }
     },
-    {
+/*    {
       resolve: `gatsby-source-wordpress`,
       options: {
         // your WordPress source
@@ -47,7 +47,7 @@ module.exports = {
           wpcom_pass: process.env.WORDPRESS_PASSWORD
         }
       }
-    },
+    },*/
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -115,7 +115,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
-        id: "YOUR_GOOGLE_TAGMANAGER_ID",
+        id: "GTM-MZBWZT9",
       
         // Include GTM in development.
         // Defaults to false meaning GTM will only be loaded in production.
@@ -127,16 +127,16 @@ module.exports = {
         defaultDataLayer: { platform: "gatsby" },
       
         // Specify optional GTM environment details.
-        gtmAuth: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_AUTH_STRING",
-        gtmPreview: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_PREVIEW_NAME",
-        dataLayerName: "YOUR_DATA_LAYER_NAME",
+        // gtmAuth: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_AUTH_STRING",
+        // gtmPreview: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_PREVIEW_NAME",
+        // dataLayerName: "YOUR_DATA_LAYER_NAME",
       },
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // The property ID; the tracking code won't be generated without it
-        trackingId: "YOUR_GOOGLE_ANALYTICS_TRACKING_ID",
+        trackingId: "UA-167544566-1",
         // Defines where to place the tracking script - `true` in the head and `false` in the body
         head: false,
         // Setting this parameter is optional

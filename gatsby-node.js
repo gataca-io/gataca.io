@@ -65,7 +65,7 @@ module.exports.createPages = async ({ graphql, actions, reporter }) => {
   response.data.allMarkdownRemark.edges.forEach(edge => {
     createPage({
       component: blogMdTemplate,
-      path: `/blog/${edge.node.fields.slug}`,
+      path: `/insights/${edge.node.fields.slug}`,
       context: {
         slug: edge.node.fields.slug,
       },
@@ -77,7 +77,7 @@ module.exports.createPages = async ({ graphql, actions, reporter }) => {
   //get path to template
   //get slugs
   
-  const blogWpTemplate = path.resolve("./src/templates/blog.js")
+/*  const blogWpTemplate = path.resolve("./src/templates/blog.js")
   const responseWp = await graphql(`
     query {
       allWordpressPost {
@@ -88,7 +88,7 @@ module.exports.createPages = async ({ graphql, actions, reporter }) => {
         }
       }
     }
-  `)
+  `)*/
   
 /*  // Create blog-list preview pages
   const postsWp = responseWp.data.allWordpressPost.edges
@@ -108,7 +108,7 @@ module.exports.createPages = async ({ graphql, actions, reporter }) => {
   })*/
   
   //create new pages with unique slug
-  responseWp.data.allWordpressPost.edges.forEach(edge => {
+/*  responseWp.data.allWordpressPost.edges.forEach(edge => {
     createPage({
       component: blogWpTemplate,
       path: `/stories/${edge.node.slug}`,
@@ -116,7 +116,7 @@ module.exports.createPages = async ({ graphql, actions, reporter }) => {
         slug: edge.node.slug,
       },
     })
-  })
+  })*/
 }
 
 
