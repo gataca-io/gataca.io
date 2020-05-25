@@ -24,7 +24,7 @@ export default function ProductsSelector(props) {
           return (
             <Tab
               href={"/" + product.title}
-              id="tab-1"
+              id={product.title}
               label={product.title}
               role="presentation"
               selected={false}

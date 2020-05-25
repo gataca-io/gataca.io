@@ -29,6 +29,11 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    max-width: var(--max-width);
+    margin: 0 auto 5rem auto;
+    p{
+
+    }
 }
 
 .detailContainer{
@@ -53,7 +58,7 @@
         top: -50px;
         left: 50%;
         transform: translateX(-50%);
-        width: 2px;
+        width: 3px;
         height: 50px;
         background-color: var(--darkblue);
     }
