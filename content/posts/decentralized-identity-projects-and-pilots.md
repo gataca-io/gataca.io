@@ -1,6 +1,6 @@
 ---
 date: 2020-05-25T16:33:41.000+00:00
-hero_image: "../../static/vincent-burkhead-LhlxYMfnTF0-unsplash.jpg"
+hero_image: "../../static/building_image-min.jpg"
 meta_data:
   title: ''
   description: ''
