@@ -8,7 +8,7 @@ meta_data:
     twitter: ''
     facebook_and_whatsapp: ''
     linkedin: ''
-title: Submit a decentralized identity pilot of project
+title: Submit a decentralized identity pilot or project
 author: ''
 
 ---
