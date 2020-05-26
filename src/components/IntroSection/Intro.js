@@ -3,16 +3,15 @@ import iphoneImg from "@images/iphone.svg"
 import React from "react"
 import { Button } from "carbon-components-react"
 import { DangerSetH3Html } from "../auxiliary/aux"
+import Credential from "../Credential/Credential"
 
 function Credentials ({credentials}) {
   return (
     <div className={introStyles.credentialsContainer}>
       {credentials.map(cred=>{
       return (
-        <div className={introStyles.credential}>
-        <p>{cred.title}</p>
-      </div>
-      )
+          <Credential cred={cred}/>
+        )
       })}
     </div>
   )

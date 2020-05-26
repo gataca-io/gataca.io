@@ -41,7 +41,10 @@
         color: var(--light-grey);
     }
     h3{
-        font-family: var(--font-subtitle)
+        font-family: var(--font-subtitle);
+        font-weight: 600;
+        font-size: 1.1rem;
+        letter-spacing: 1px;
     }
 }
 
@@ -55,6 +58,7 @@
     position: relative;
     height: 540px;
     width: 100%;
+    min-width: 270px;
     display: flex;
     justify-content: center;
     @include media-for-phone-only {
@@ -89,27 +93,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 75px;
+    padding-top: 80px;
     position: absolute;
     top: 0;
-    right: -3px;
+    right: -4px;
     z-index: 8;
     height: 100%;
     width: 100%;
     background-color: transparent;
-    .credential{
-        width: 80%;
-        border-radius: 8px;
-        padding: 0.5rem;
-        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.08);
-        height: 50px;
-        margin-bottom: 0.4rem;
-        background-color: var(--white);
-        p{
-            font-size: 0.6rem;
-            color: var(--darkblue);
-        }
-    }
 }
 
 .appFooter{

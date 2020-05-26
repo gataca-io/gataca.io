@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import useBlogData from "../../static_queries/useMdBlogData"
 import blogListStyles from "./bloglist.module.scss"
+import StackGrid, { transitions } from "react-stack-grid";
 
 import Img from "gatsby-image"
 
@@ -23,6 +24,11 @@ export default function BlogList() {
     return (
       <React.Fragment>
         {/*<div className={`bx--row ${blogListStyles.row}`}>*/}
+        <StackGrid
+          columnWidth={320}
+          gutterWidth={20}
+          gutterHeight={20}
+        >
         {blogData
           .filter(blog => blog.node.frontmatter.title !== "")
           .map(blog => {
@@ -41,6 +47,7 @@ export default function BlogList() {
               </Link>
             )
           })}
+        </StackGrid>
         {/*</div>*/}
       </React.Fragment>
     )
@@ -48,7 +55,7 @@ export default function BlogList() {
   
   return (
     <section>
-      <ul className={`${blogListStyles.mainContainer}`}>{renderBlogData()}</ul>
+      <div className={`${blogListStyles.mainContainer}`}>{renderBlogData()}</div>
     </section>
   )
 }

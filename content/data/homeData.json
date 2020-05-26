@@ -7,13 +7,42 @@
     "ctaText": "SPEAK TO OUR TEAM",
     "credentials": [
       {
-        "title": "Correos Log In"
+        "category": "Goverment",
+        "subcategory": "Spain ID",
+        "credential_name": "This is a very long credential name so see how it performs",
+        "icon": "../images/goverment.svg",
+        "level": 1,
+        "status": "Valid",
+        "openStatus": "Public",
+        "fontColor": "",
+        "bgColor": ""
       },
       {
-        "title": "Dni"
+        "category": "Company Employee",
+        "subcategory": "CEO",
+        "credential_name": "Short one",
+        "icon": "../images/correos.svg",
+        "level": 3,
+        "status": "Invalid",
+        "openStatus": "Private"
       },
       {
-        "title": "Credential Three"
+        "category": "Email",
+        "subcategory": "",
+        "credential_name": "sergio@gataca.io",
+        "icon": "../images/mail.svg",
+        "level": 0,
+        "status": "Valid",
+        "openStatus": "Public"
+      },
+      {
+        "category": "University",
+        "subcategory": "Identification",
+        "credential_name": "Architect",
+        "icon": "../images/building.svg",
+        "level": 2,
+        "status": "Valid",
+        "openStatus": "Private"
       }
     ]
   },
