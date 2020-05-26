@@ -68,7 +68,7 @@
       {
         "image": "../images/stamp.svg",
         "title": "CREDENTIAL ISSUERS",
-        "description": "Issuers can create and validate secure, W3C verifiable and contactless digital credentials."
+        "description": "<p>Issuers can create and validate secure</p><p>W3C verifiable</p><p>Contactless digital credentials.</p>"
       },
       {
         "image": "../images/compliant.svg",
