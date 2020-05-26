@@ -68,14 +68,14 @@ fields:
     type: field_group_list
     default: ''
     label: Product Detail Bullets
-    config: 
+    config:
     fields:
     - type: text
       name: title
       label: Bullet Title
       config:
         required: false
-    - type: text
+    - type: textarea
       name: description
       label: Bullet Description
       config:
