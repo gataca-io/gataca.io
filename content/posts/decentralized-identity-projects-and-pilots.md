@@ -16,6 +16,6 @@ We are so proud to be working alongside these organizations to move identity man
 
 <div>
 
-<iframe width="1056" height="792" src="https://datastudio.google.com/embed/reporting/1_rmz0-tjHXEK_JmLi8W4iDK7Ea9cVYXV/page/Gb2JB" frameborder="0" style="border:0" allowfulls_reen></ifra_me> 
+<iframe width="1056" height="792" src="https://datastudio.google.com/embed/reporting/15e44ee6-eb08-428c-8725-b35f70f3ede1/page/Gb2JB" frameborder="0" style="border:0" allowfulls_reen></ifra_me> 
 
 </div>
