@@ -6,32 +6,7 @@ import blogTemplateStyles from "../styles/templates/blog.module.scss"
 //this component handles the blur img & fade-ins
 import Img from 'gatsby-image'
 import Helmet from "react-helmet"
-
-function buildMetaTitle(title) {
-  if (!!title) {
-    return <title>{props.title}</title>
-  } else {
-    return null;
-  }
-}
-
-function buildMetaDescription(description) {
-  if (!!description) {
-    return <meta name="description" content={props.description}/>
-  } else {
-    return null;
-  }
-}
-
-function buildMetas(metas) {
-  if (!!metas) {
-    return <Helmet>
-      {buildMetaTitle(metas.title)}
-      {buildMetaDescription(metas.description)}
-    </Helmet>
-  }
-}
-
+import { BuildHelmet } from "../components/auxiliary/HelmetBuilder"
 
 export default function BlogMd(props) {
   const data = props.data.markdownRemark
@@ -53,7 +28,7 @@ export default function BlogMd(props) {
 
   return (
     <Layout>
-      {buildMetas(data.frontmatter.meta_data)}
+      <BuildHelmet metas={props.data.markdownRemark.meta_data}/>
       <article className={blogTemplateStyles.blog}>
         <figure className={blogTemplateStyles.blog__hero}>
           <Img

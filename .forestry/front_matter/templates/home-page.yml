@@ -72,7 +72,7 @@ fields:
   - name: partners
     type: field_group_list
     default: ''
-    config: 
+    config:
     fields:
     - type: text
       name: title
@@ -109,7 +109,7 @@ fields:
   - name: elements
     type: field_group_list
     default: ''
-    config: 
+    config:
     fields:
     - type: text
       name: title
@@ -183,10 +183,10 @@ fields:
       wysiwyg: false
     label: Main Graphic
   - name: endBullet
-    type: field_group_list
+    type: field_group
     default: ''
     label: End Bullet
-    config: 
+    config:
     fields:
     - type: text
       name: title

@@ -61,8 +61,8 @@
         // adjust bullets
         &>div {
             padding-left: 0;
-            max-width: 200px;
-            margin-right: var(--doubleBaseMargin);
+            min-width: 250px;
+            margin-right: var(--baseMargin);
         }
     }
 }

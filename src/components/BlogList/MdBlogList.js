@@ -2,16 +2,27 @@ import React from "react"
 import { Link } from "gatsby"
 import useBlogData from "../../static_queries/useMdBlogData"
 import blogListStyles from "./bloglist.module.scss"
-import SafeImage from "../SafeImage"
 
-import Img from 'gatsby-image'
+import Img from "gatsby-image"
+
+function BuildImage(image) {
+  console.log(image)
+  const imageEl = image.hero_image;
+  return !!imageEl ? <Img
+    fluid={
+      imageEl.childImageSharp.fluid
+    }
+    alt={image.title}
+  /> : null
+}
 
 export default function BlogList() {
   const blogData = useBlogData()
+  
   function renderBlogData() {
     return (
       <React.Fragment>
-      {/*<div className={`bx--row ${blogListStyles.row}`}>*/}
+        {/*<div className={`bx--row ${blogListStyles.row}`}>*/}
         {blogData
           .filter(blog => blog.node.frontmatter.title !== "")
           .map(blog => {
@@ -19,12 +30,7 @@ export default function BlogList() {
               <Link className={`${blogListStyles.post}`} to={`/insights/${blog.node.fields.slug}`} key={blog.node.id}>
                 <li className={`${blogListStyles.li}`} key={blog.node.fields.slug}>
                   <div className={blogListStyles.list__hero}>
-                    <Img
-                      fluid={
-                        blog.node.frontmatter.hero_image.childImageSharp.fluid
-                      }
-                      alt={blog.node.frontmatter.title}
-                    />
+                    {BuildImage(blog.node.frontmatter)}
                   </div>
                   <div className={blogListStyles.list__info}>
                     <h2>{blog.node.frontmatter.title}</h2>
@@ -35,10 +41,11 @@ export default function BlogList() {
               </Link>
             )
           })}
-      {/*</div>*/}
+        {/*</div>*/}
       </React.Fragment>
     )
   }
+  
   return (
     <section>
       <ul className={`${blogListStyles.mainContainer}`}>{renderBlogData()}</ul>

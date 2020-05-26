@@ -25,16 +25,22 @@ fields:
       config:
         maxSize: 64
       label: Twitter
+      description: Use at least images 1080 minimun width
+      default: "../images/sarah-dorweiler-9Z1KRIfpBTM-unsplash.jpg"
     - name: facebook_and_whatsapp
       type: file
       config:
         maxSize: 64
       label: Facebook & Whatsapp
+      description: Use at least images 1080 minimun width
+      default: "../images/sarah-dorweiler-9Z1KRIfpBTM-unsplash.jpg"
     - name: linkedin
       type: file
       config:
-        maxSize: 64
+        maxSize: 5
       label: linkedin
+      description: Use at least images 1200 minimun width 627 height - recomended ratio [1.91:1] | MAX file size 5mb
+      default: "../images/sarah-dorweiler-9Z1KRIfpBTM-unsplash.jpg"
     label: RRSS Images
     description: Images to show when shared on each social network with each different
       format.<br>Twitter, LinkedIn, Whatsapp, each one is different.
@@ -61,8 +67,8 @@ fields:
   description: Date post was created
   config:
     required: false
-    date_format: 
-    time_format: 
+    date_format:
+    time_format:
     display_utc: false
   default: now
 - name: hero_image
@@ -71,7 +77,7 @@ fields:
     maxSize: '10'
   label: hero image
   description: Enter hero image for blog post here
-  default: "/content/images/sarah-dorweiler-9Z1KRIfpBTM-unsplash.jpg"
+  default: "../images/sarah-dorweiler-9Z1KRIfpBTM-unsplash.jpg"
 pages:
 - content/posts/an-essay-on-walking.md
 - content/posts/decentralized-identity-projects-and-pilots.md

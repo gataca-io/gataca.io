@@ -24,9 +24,10 @@ $feature-flags: (
 @import './../components/faqSection/faqSection_override';
 @import './../components/ProductsSection/productsection_override';
 
-
 section > iframe {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    width: calc(100vw - 40px);
+    height: auto;
 }

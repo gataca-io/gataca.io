@@ -18,23 +18,27 @@
     ]
   },
   "partnersSection": {
-    "title": "Trusted by:",
+    "title": "Associations:",
     "partners": [
       {
         "title": "",
-        "image": "../images/partner-MIT.svg"
+        "image": "../images/alastria.svg"
       },
       {
-        "title": "",
-        "image": "../images/correos.svg"
+        "title": "MIT Delta",
+        "image": "../images/mit_delta.svg"
       },
       {
-        "title": "Mit Management Sloan School",
-        "image": "../images/partner-MIT.svg"
+        "title": "Telefónica Open Future",
+        "image": "../images/telefonica.svg"
       },
       {
-        "title": "",
-        "image": "../images/correos.svg"
+        "title": "SeedRocket",
+        "image": "../images/seedrocket.svg"
+      },
+      {
+        "title": "MIT Sandbox",
+        "image": "../images/mit_sandbox.svg"
       }
     ]
   },
@@ -82,13 +86,12 @@
       }
     ],
     "graph": "/content/images/explainedPlatform.svg",
-    "endBullet": [
+    "endBullet":
       {
         "image": "../images/secure.svg",
         "title": "PRIVACY BY DESIGN",
         "description": "Gataca embraces privacy-by-design and never stores information about an individual’s identity."
       }
-    ]
   },
   "ctaSection": {
     "title": "Ready to start?",

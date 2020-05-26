@@ -18,15 +18,6 @@ export default function useBlogData() {
                   }
                 }
               }
-              meta_data {
-                  description
-                  title
-                  rrss_images {
-                      facebook_and_whatsapp
-                      linkedin
-                      twitter
-                  }
-              }
             }
             excerpt(pruneLength: 200)
             fields {

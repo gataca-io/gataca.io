@@ -13,13 +13,13 @@ function renderPartners({ data, info }) {
   return (
     <section className={`${partnersStyles.base}`}>
       <div className={`bx--grid ${partnersStyles.container}`}>
-        <div className={`bx--row`} >
-          <div className={`bx--col-lg-4 bx--col-md-16 ${partnersStyles.introText}`} >
+        <div className={`bx--row ${partnersStyles.row}`} >
+          <div className={`bx--col-lg-16 bx--col-md-16 ${partnersStyles.introText}`} >
             <p>{partnersData.title}</p>
           </div>
           {partnersData.partners.map(el=>{
             return (
-              <div className={`bx--col-lg-3 bx--col-md-2 bx--col-sm-2 ${partnersStyles.partnerContainer}`}>
+              <div className={`bx--col-lg-3 bx--col-md-3 bx--col-sm-2 ${partnersStyles.partnerContainer}`}>
                 <img src={el.image.publicURL} alt={el.title}/>
               </div>
             )

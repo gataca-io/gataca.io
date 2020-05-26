@@ -20,6 +20,16 @@ const Bullet = styled.div`
     font-size: 0.8rem;
     color: var(--grey);
   }
+  .description{
+    p{
+      margin-bottom: 0.4rem;
+    }
+    ul{
+      li{
+        margin-bottom: 0.4rem;
+      }
+    }
+  }
 `
 const BulletIcon = styled.div`
     display: flex;
@@ -39,7 +49,7 @@ export default function BulletOne(props) {
         <img src={image}/>
       </BulletIcon>
       <h4>{title}</h4>
-      <p dangerouslySetInnerHTML={{ __html: description }}/>
+      <div className="description" dangerouslySetInnerHTML={{ __html: description }}/>
     </Bullet>
   )
 }
