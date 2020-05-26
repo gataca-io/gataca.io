@@ -39,7 +39,8 @@ fields:
       config:
         maxSize: 5
       label: linkedin
-      description: Use at least images 1200 minimun width 627 height - recomended ratio [1.91:1] | MAX file size 5mb
+      description: Use at least images 1200 minimun width 627 height - recomended
+        ratio [1.91:1] | MAX file size 5mb
       default: "../images/sarah-dorweiler-9Z1KRIfpBTM-unsplash.jpg"
     label: RRSS Images
     description: Images to show when shared on each social network with each different
@@ -67,8 +68,8 @@ fields:
   description: Date post was created
   config:
     required: false
-    date_format:
-    time_format:
+    date_format: 
+    time_format: 
     display_utc: false
   default: now
 - name: hero_image
