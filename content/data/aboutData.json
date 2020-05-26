@@ -68,17 +68,22 @@
     "title": "Awards & Milestones",
     "awards": [
       {
-        "title": "Award Title",
+        "title": "MIT Sandbox Innovation Grant Recipient",
         "link": "",
         "photo": ""
       },
       {
-        "title": "Award Title Two",
+        "title": "Finalist MIT FinTech competition",
         "link": "",
         "photo": ""
       },
       {
-        "title": "Award Title Two",
+        "title": "MIT Delta V Accelerator participant",
+        "link": "",
+        "photo": ""
+      },
+      {
+        "title": "Microsoft Patent Program",
         "link": "",
         "photo": ""
       }
