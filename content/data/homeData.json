@@ -56,7 +56,7 @@
       {
         "image": "../images/secure.svg",
         "title": "SECURE",
-        "description": "Blockchain-enabled\nCryptographically signed\nBiometrically enhanced\nPost-quantum cryptograph"
+        "description": "<p>Blockchain-enabled </p><p>Cryptographically signed </p><p>Biometrically enhanced </p><p>Post-quantum cryptograph</p>"
       }
     ]
   },
