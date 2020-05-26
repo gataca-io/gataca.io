@@ -85,7 +85,7 @@ fields:
           format: html-blocks
     - type: file
       name: image
-      label: Product Image
+      label: Bullet Icon
       config:
         required: false
   - name: mainImage
