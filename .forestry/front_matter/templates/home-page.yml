@@ -47,17 +47,47 @@ fields:
     type: field_group_list
     default: Credentials List to show
     label: Credentials
+    description: Credentials shown inside the phone. Don't put more than 5 elements
     config:
       labelField: title
       min: 3
       max: 6
     fields:
     - type: text
-      name: title
+      name: category
       config:
         required: true
       label: Credential Title
-    description: Credentials shown inside the phone. Don't put more than 5 elements
+    - type: text
+      name: subcategory
+      config:
+        required: true
+      label: Credential Title
+    - type: text
+      name: credential_name
+      config:
+        required: true
+      label: Credential Title
+    - type: number
+      name: level
+      config:
+        required: true
+      label: Credential Title
+    - type: text
+      name: status
+      config:
+        required: true
+      label: Credential Title
+    - type: text
+      name: openStatus
+      config:
+        required: true
+      label: Credential Title
+    - type: file
+      name: icon
+      config:
+        required: true
+      label: Credential Title
 - type: field_group
   name: partnerSection
   label: Partners Section
@@ -72,7 +102,7 @@ fields:
   - name: partners
     type: field_group_list
     default: ''
-    config: 
+    config:
     fields:
     - type: text
       name: title
@@ -109,7 +139,7 @@ fields:
   - name: elements
     type: field_group_list
     default: ''
-    config: 
+    config:
     fields:
     - type: text
       name: title
@@ -186,7 +216,7 @@ fields:
     type: field_group
     default: ''
     label: End Bullet
-    config: 
+    config:
     fields:
     - type: text
       name: title
