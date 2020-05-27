@@ -25,6 +25,10 @@ If you would like to add another pilot/project, please do it [here](https://prev
       width: calc(100vw - 40px);    
       height: auto;
     }
+    .iframeContainer {
+    	height: 900px;
+        padding: 50px 0;
+    }
 
 </style>
 
