@@ -1,7 +1,7 @@
 {
   "introProductsSection": {
     "title": "PRODUCTS",
-    "description": "Gataca has built three components to connect the secure digital ID ecosystem. We help issuers transform their CREDENTIALS into IDENTITY wallets in citizens and customers mobile phones that they can CONNECT to services, from e-government through to car sharing."
+    "description": "Gataca has built three components to connect the secure digital ID ecosystem. We help issuers transform their CREDENTIALS into IDENTITY wallets in citizens and customers mobile phones that they can then CONNECT to services, from e-government through to car sharing."
   },
   "productsData": [
     {
@@ -17,7 +17,7 @@
         {
           "title": "CERTIFIED",
           "image": "../images/verified.svg",
-          "description": "Post-quantum cryptography provides government-level security for the issuing Authority"
+          "description": "Post-quantum cryptography provides government-level security for the issuing authority"
         }
       ],
       "mainImage": ""
@@ -30,12 +30,12 @@
         {
           "title": "REAL IDENTITY",
           "image": "../images/fingerprint.svg",
-          "description": "Link of real person with facial recognition, anti-spoofing and liveness detection capabilities"
+          "description": "Established connection between physical attributes and wallet user through biometric verification"
         },
         {
           "title": "VALIDATED CREDENTIALS",
           "image": "../images/validated.svg",
-          "description": "Certified validation of credentials with Trusted Authorities"
+          "description": "Certified validation of credentials by Trusted Authorities"
         },
         {
           "title": "ENHANCED SECURITY",
