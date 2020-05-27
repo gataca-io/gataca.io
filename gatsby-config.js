@@ -104,14 +104,14 @@ module.exports = {
         }
       },
     },
-    {
+/*    {
       resolve: "gatsby-plugin-hubspot",
       options: {
         trackingCode: "4728390",
         respectDNT: true,
         productionOnly: true,
       },
-    },
+    },*/
     {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {

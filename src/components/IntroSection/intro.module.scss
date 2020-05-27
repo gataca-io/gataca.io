@@ -37,14 +37,29 @@
         }
     }
     p {
-        font-size: 0.8rem;
-        color: var(--light-grey);
+        font-size: 0.7rem;
+        color: var(--darkblue);
+        max-width: 50%;
+        @include media-for-phone-only {
+            max-width: 100%;
+        }
     }
-    h3{
+    h3 {
         font-family: var(--font-subtitle);
-        font-weight: 600;
-        font-size: 1.1rem;
         letter-spacing: 1px;
+        font-weight: 400;
+        font-size: 1.4rem;
+        background-color: white;
+        border: 1px solid var(--darkblue);
+        box-shadow: 0 2px 10px #00000017;
+        padding: 20px;
+        color: var(--darkblue);
+        @include media-for-phone-only {
+            font-weight: 600;
+            border: 1px solid var(--darkblue);
+            padding: 15px;
+            font-size: 1rem;
+        }
     }
 }
 

@@ -5,38 +5,41 @@
   },
   "teamDataSection": {
     "title": "The team",
-    "description": "Gataca is a cybersecurity company founded in Boston, MA, at the heart of MIT’s entrepreneurship and innovation ecosystem. It started as an academic research study seeking to reduce the risk of doing business online, at MIT’s Media Lab in 2017.",
+    "description": "",
     "team": [
       {
         "name": "Irene",
-        "bio": "Lorem Ipsum",
+        "bio": "CEO",
         "photo": "../images/Irene.png",
         "links": [
           {
             "name": "linkedIn",
-            "url": ""
+            "url": "",
+            "icon": "../images/linkedin_blue.svg"
           }
         ]
       },
       {
         "name": "Samuel",
-        "bio": "Lorem Ipsum",
+        "bio": "CTO",
         "photo": "../images/Samuel.png",
         "links": [
           {
             "name": "linkedIn",
-            "url": ""
+            "url": "",
+            "icon": "../images/linkedin_blue.svg"
           }
         ]
       },
       {
         "name": "Jose",
-        "bio": "Lorem Ipsum",
+        "bio": "CSO",
         "photo": "../images/Jose.png",
         "links": [
           {
             "name": "linkedIn",
-            "url": ""
+            "url": "",
+            "icon": "../images/linkedin_blue.svg"
           }
         ]
       },
@@ -47,7 +50,8 @@
         "links": [
           {
             "name": "linkedIn",
-            "url": ""
+            "url": "",
+            "icon": "../images/linkedin_blue.svg"
           }
         ]
       },
@@ -58,7 +62,8 @@
         "links": [
           {
             "name": "linkedIn",
-            "url": ""
+            "url": "",
+            "icon": "../images/linkedin_blue.svg"
           }
         ]
       }

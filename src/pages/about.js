@@ -5,6 +5,7 @@ import useSiteMetaData from "../static_queries/useSiteMetadata"
 import aboutData  from "./../../content/data/aboutData.json"
 import { Accordion, AccordionItem } from "carbon-components-react"
 import partnersStyles from "../components/PartnersSection/partners.module.scss"
+import linkedInIcon from "../../static/images/linkedin.svg"
 
 function IntroSection({ data }) {
   return (
@@ -24,19 +25,21 @@ function TeamSection({ data }) {
       <h2>{data.title}</h2>
       <p dangerouslySetInnerHTML={{ __html: data.description }}/>
       
-      <div className={`bx--row ${ aboutStyles.row }`}>
+      <div className={`bx--row ${ aboutStyles.teamSection }`}>
           {data.team.map(gato => {
             return (
               <div className={`bx--col-sm-16 ${ aboutStyles.personContainer }`}>
                 <img src={gato.photo}/>
-                <p>{gato.name}</p>
-                <p>{gato.bio}</p>
-                <div>
-                  {gato.links.map(link=>{
-                    return <div>
-                  
-                    </div>
-                  })}
+                <div className={aboutStyles.infoPerson}>
+                  <h3>{gato.name}</h3>
+                  <p>{gato.bio}</p>
+                  <div className={aboutStyles.rrssSection}>
+                    {gato.links.map(link=>{
+                      return <a href={link.url}>
+                          <img src={link.icon}/>
+                      </a>
+                    })}
+                  </div>
                 </div>
               </div>
             )
