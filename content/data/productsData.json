@@ -30,7 +30,7 @@
         {
           "title": "REAL IDENTITY",
           "image": "../images/fingerprint.svg",
-          "description": "Link of real person with facial recognition, anti-spoofing and liveness detection capabilities"
+          "description": "Established connection between physical attributes and wallet user through biometric verification"
         },
         {
           "title": "VALIDATED CREDENTIALS",
