@@ -76,12 +76,12 @@ fields:
     - type: text
       name: status
       config:
-        required: true
+        required: false
       label: Status
     - type: text
       name: openStatus
       config:
-        required: true
+        required: false
       label: Private | Public
     - type: file
       name: icon
@@ -102,7 +102,7 @@ fields:
   - name: partners
     type: field_group_list
     default: ''
-    config:
+    config: 
     fields:
     - type: text
       name: title
@@ -139,7 +139,7 @@ fields:
   - name: elements
     type: field_group_list
     default: ''
-    config:
+    config: 
     fields:
     - type: text
       name: title
@@ -216,7 +216,7 @@ fields:
     type: field_group
     default: ''
     label: End Bullet
-    config:
+    config: 
     fields:
     - type: text
       name: title
