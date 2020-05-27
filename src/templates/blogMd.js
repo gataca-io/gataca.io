@@ -1,4 +1,4 @@
-import React from "react"
+import React, { Fragment } from "react"
 import Layout from "./../layouts/Layout"
 import { graphql, Link } from "gatsby"
 import useBlogData from '../static_queries/useMdBlogData'
@@ -7,6 +7,18 @@ import blogTemplateStyles from "../styles/templates/blog.module.scss"
 import Img from 'gatsby-image'
 import Helmet from "react-helmet"
 import { BuildHelmet } from "../components/auxiliary/HelmetBuilder"
+
+function buildHeroImage(frontmatter) {
+  const heroImage = frontmatter.hero_image;
+  return !!heroImage ? (
+  <figure className={blogTemplateStyles.blog__hero}>
+    <Img
+      fluid={frontmatter.hero_image.childImageSharp.fluid}
+      alt={frontmatter.title}
+    />
+  </figure>
+  ) : <Fragment/>
+}
 
 export default function BlogMd(props) {
   const data = props.data.markdownRemark
@@ -30,12 +42,8 @@ export default function BlogMd(props) {
     <Layout>
       <BuildHelmet metas={props.data.markdownRemark.meta_data}/>
       <article className={blogTemplateStyles.blog}>
-        <figure className={blogTemplateStyles.blog__hero}>
-          <Img
-            fluid={data.frontmatter.hero_image.childImageSharp.fluid}
-            alt={data.frontmatter.title}
-          />
-        </figure>
+        {/*HERO IMAGE*/}
+        {buildHeroImage(data.frontmatter)}
         <div className={blogTemplateStyles.blog__info}>
           <h1>{data.frontmatter.title}</h1>
           <h3>{data.frontmatter.date}</h3>
