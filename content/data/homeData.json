@@ -15,7 +15,8 @@
         "status": "Valid",
         "openStatus": "Public",
         "fontColor": "",
-        "bgColor": ""
+        "bgColor": "",
+        "title": ""
       },
       {
         "category": "Company Employee",
@@ -24,7 +25,8 @@
         "icon": "../images/correos.svg",
         "level": 3,
         "status": "Invalid",
-        "openStatus": "Private"
+        "openStatus": "Private",
+        "title": ""
       },
       {
         "category": "Email",
@@ -33,7 +35,8 @@
         "icon": "../images/mail.svg",
         "level": 0,
         "status": "Valid",
-        "openStatus": "Public"
+        "openStatus": "Public",
+        "title": ""
       },
       {
         "category": "University",
@@ -42,7 +45,8 @@
         "icon": "../images/building.svg",
         "level": 2,
         "status": "Valid",
-        "openStatus": "Private"
+        "openStatus": "Private",
+        "title": ""
       }
     ]
   },
@@ -89,7 +93,7 @@
       {
         "image": "../images/secure.svg",
         "title": "SECURE",
-        "description": "<p>Blockchain-enabled </p><p>Cryptographically signed </p><p>Biometrically enhanced </p><p>Post-quantum cryptograph</p>"
+        "description": "<p>Blockchain-enabled</p><p>Cryptographically signed</p><p>Biometrically enhanced</p><p>Post-quantum cryptography</p>"
       }
     ]
   },
@@ -115,12 +119,11 @@
       }
     ],
     "graph": "/content/images/explainedPlatform.svg",
-    "endBullet":
-      {
-        "image": "../images/secure.svg",
-        "title": "PRIVACY BY DESIGN",
-        "description": "Gataca embraces privacy-by-design and never stores information about an individual’s identity."
-      }
+    "endBullet": {
+      "image": "../images/secure.svg",
+      "title": "PRIVACY BY DESIGN",
+      "description": "Gataca embraces privacy-by-design and never stores information about an individual’s identity."
+    }
   },
   "ctaSection": {
     "title": "Ready to start?",
