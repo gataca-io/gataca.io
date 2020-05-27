@@ -57,37 +57,37 @@ fields:
       name: category
       config:
         required: true
-      label: Credential Title
+      label: Category
     - type: text
       name: subcategory
       config:
         required: true
-      label: Credential Title
+      label: Subcategory
     - type: text
       name: credential_name
       config:
         required: true
-      label: Credential Title
+      label: Credential Name
     - type: number
       name: level
       config:
         required: true
-      label: Credential Title
+      label: Credential Level
     - type: text
       name: status
       config:
         required: true
-      label: Credential Title
+      label: Status
     - type: text
       name: openStatus
       config:
         required: true
-      label: Credential Title
+      label: Private | Public
     - type: file
       name: icon
       config:
-        required: true
-      label: Credential Title
+        required: false
+      label: Icon
 - type: field_group
   name: partnerSection
   label: Partners Section
