@@ -18,6 +18,6 @@ If you would like to add another pilot/project, please do it [here](https://prev
 
 <section>
 
-<iframe width="1056" height="792" src="https://datastudio.google.com/embed/reporting/1_rmz0-tjHXEK_JmLi8W4iDK7Ea9cVYXV/page/Gb2JB" frameborder="0" style="border:0" allowfulls_reen></ifra_me>
+<iframe width="100%" height="792" src="https://datastudio.google.com/embed/reporting/1_rmz0-tjHXEK_JmLi8W4iDK7Ea9cVYXV/page/Gb2JB" frameborder="0" style="border:0" allowfulls_reen></ifra_me>
 
 </section>
