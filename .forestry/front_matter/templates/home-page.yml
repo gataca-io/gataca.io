@@ -61,7 +61,7 @@ fields:
     - type: text
       name: subcategory
       config:
-        required: true
+        required: false
       label: Subcategory
     - type: text
       name: credential_name
