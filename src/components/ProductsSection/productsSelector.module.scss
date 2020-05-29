@@ -31,6 +31,31 @@
     flex-direction: column;
     max-width: 400px;
     margin: 0 auto 5rem auto;
+    padding-top: 1.9rem;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 2px;
+        height: 30px;
+        background-color: var(--darkblue);
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        top: 27px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 7px;
+        height: 7px;
+        //background-color: var(--white);
+        background-color: var(--darkblue);
+        border: 2px solid var(--darkblue);
+        border-radius: 20px;
+    }
     p{
 
     }
@@ -52,28 +77,6 @@
 
 .selectedProductIconContainer{
     position: relative;
-    &::after {
-        content: "";
-        position: absolute;
-        top: -50px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 2px;
-        height: 50px;
-        background-color: var(--darkblue);
-    }
-    &::before {
-        content: "";
-        position: absolute;
-        top: 0px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 15px;
-        height: 15px;
-        background-color: var(--white);
-        border: 2px solid var(--darkblue);
-        border-radius: 20px;
-    }
     height: 100px;
     width: 100px;
     background-color: var(--white);

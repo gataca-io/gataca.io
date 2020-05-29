@@ -26,10 +26,12 @@ export default function ProductsSelector(props) {
               href={"/" + product.title}
               id={product.title}
               label={product.title}
+              className="tabStyle"
               role="presentation"
               selected={false}
               tabIndex={0}
             >
+              
               <div className={productSelStyles.introSection}>
                 <div className={productSelStyles.selectedProductIconContainer}>
                   <img src={product.icon}/>

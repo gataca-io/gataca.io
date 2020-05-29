@@ -49,6 +49,7 @@
         }
       }
       h1, h2, h3 {
+        font-size: 1.2rem;
         @include media-for-tablet-portrait-up {
           display: block;
         }

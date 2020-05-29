@@ -11,3 +11,20 @@
         width: 100%;
     }
 }
+
+.bx--tab-content {
+    padding-top: 0 !important;
+}
+
+.bx--tabs__nav-link {
+    &:focus, &::selection, &:active {
+        border: 2px solid var(--darkblue) !important;
+    }
+}
+
+.bx--tabs__nav-item--selected {
+    a{
+        border-bottom: 2px solid var(--darkblue) !important;
+        color: var(--darkblue) !important;
+    }
+}
