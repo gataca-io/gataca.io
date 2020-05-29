@@ -3,7 +3,7 @@
 .base{
     background-color: var(--bg-grey);
     width: 100%;
-    padding: var(--baseSpacing);
+    padding: var(--baseSpacing) 0 0 0;
     position: relative;
     @include media-for-tablet-portrait-up {
         display: none;
@@ -17,6 +17,7 @@
 
 .bulletsContainer {
     margin: 3rem 0;
+    padding: 0 var(--baseSpacing);
     &>div{
         padding-left: 0;
     }
@@ -49,7 +50,8 @@
 }
 
 .endBullet {
-    margin: 3rem 0 1rem 0 ;
+    padding: 0 var(--baseSpacing) var(--doubleBaseMargin) var(--baseSpacing);
+    margin: 2rem 0 1rem 0 ;
     &>div {
         padding-left: 0;
         max-width: 65vw;

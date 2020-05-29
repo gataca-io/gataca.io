@@ -7,17 +7,8 @@ import faqData  from "./../../content/data/faqData.json"
 import ProductsSelector from "../components/ProductsSection/ProductsSelector"
 import BulletCenter from "../components/BulletCenter"
 import FaqSection from "../components/faqSection/FaqSection"
+import HeadLineSection from "../components/HeadLineSection/HeadLineSection"
 
-function IntroSection(props) {
-  return (
-    <section className={productStyles.introContainer}>
-      <div>
-        <h2>{props.data.title}</h2>
-        <p>{props.data.description}</p>
-      </div>
-    </section>
-  )
-}
 
 export default function Products(props) {
   const { infoData } = useSiteMetaData()
@@ -25,7 +16,7 @@ export default function Products(props) {
   return (
     <Layout>
       <section className={productStyles.base}>
-        <IntroSection data={productsData.introProductsSection}/>
+        <HeadLineSection title={productsData.introProductsSection.title} description={productsData.introProductsSection.description}/>
         <ProductsSelector data={productsData.productsData}/>
         <FaqSection data={faqData.faqSection}/>
       </section>

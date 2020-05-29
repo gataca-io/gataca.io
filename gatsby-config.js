@@ -7,6 +7,7 @@ module.exports = {
     metaDescription: configMeta.description,
     title: configMeta.title,
     siteUrl: `https://www.gataca.io`,
+    twitterHandler: `@gataca_id`,
   },
   plugins: [
     'gatsby-plugin-tslint',

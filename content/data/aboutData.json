@@ -1,4 +1,8 @@
 {
+  "metas": {
+    "title": "About | Gataca",
+    "description": ""
+  },
   "introSection": {
     "title": "ABOUT",
     "description": "<p>Gataca is a cybersecurity company founded in Boston, MA, at the heart of MIT’s entrepreneurship and innovation ecosystem. It started as an academic research study seeking to reduce the risk of doing business online. As victims of the Equifax data breach later that year, the topic became very personal.</p><p>We built Gataca because we knew there had to be a better way to protect our data.</p>"
@@ -74,46 +78,40 @@
     "awards": [
       {
         "title": "1st prize in RACE by European Blockchain Convention",
-        "link": "Awarded first place in the February 2020 edition of RACE by EBC, the European Blockchain Convention's startup competition, where 10 of the most promising Blockchain startups in the Nordic Countries and Europe presented their projects. (Link:https://eblockchainconvention.com/race-by-ebc/)",
-        "photo": ""
+        "description": "Awarded first place in the February 2020 edition of RACE by EBC, the European Blockchain Convention's startup competition, where 10 of the most promising Blockchain startups in the Nordic Countries and Europe presented their projects. (description:https://eblockchainconvention.com/race-by-ebc/)",
+        "photo": "",
+        "link": ""
       },
       {
         "title": "Top 10 finalist at Seed Rocket Start-Up Competition",
-        "link": "",
-        "photo": ""
-      },
-      {
-        "title": "Microsoft Patent Program Award",
-        "link": "",
-        "photo": ""
+        "description": "Named top ten start-up in Seed Rocket Accelerator Program, giving access to office space at Google Campus in Madrid as well as awesome networking and mentorship. https://www.seedrocket.com/",
+        "photo": "../images/seedrocket.svg",
+        "link": ""
       },
       {
         "title": "Telefonica Open Future Incubator Participant",
-        "link": "",
-        "photo": ""
+        "description": "One of twenty start-ups annually awarded access to work in Telefonica's Incubator description: https://www.openfuture.org/hubs/gran-via-espana-open-future",
+        "photo": "../images/telefonica.svg",
+        "link": ""
       },
       {
         "title": "MIT Delta V Accelerator Participant",
-        "link": "",
-        "photo": ""
+        "description": "Accelerated by MIT's flagship entrepreneurial program (https://entrepreneurship.mit.edu/accelerator/program/)",
+        "photo": "../images/mit_delta.svg",
+        "link": ""
       },
       {
         "title": "MIT FinTech competition Finalist",
-        "link": "",
-        "photo": ""
+        "description": "Annual FinTech Competition at largest student organized FinTech Conference in the USA description: http://www.mitfintech.com/pitch-competition",
+        "photo": "",
+        "link": ""
       },
       {
         "title": "MIT Sandbox Innovation Grant Recipient",
-        "link": "",
-        "photo": ""
+        "description": "Awarded grant from MIT Innovation Sandbox, a program for MIT students to pursue entrepreneurial ideas (http://sandbox.mit.edu/)",
+        "photo": "../images/mit_sandbox.svg",
+        "link": ""
       }
     ]
-  },
-  "metas": {
-    "title": "",
-    "description": ""
-  },
-  "team": [
-
-  ]
+  }
 }

@@ -1,7 +1,7 @@
 {
   "introProductsSection": {
     "title": "PRODUCTS",
-    "description": "Gataca has built three components to connect the secure digital ID ecosystem. We help issuers transform their CREDENTIALS into IDENTITY wallets in citizens and customers mobile phones that they can then CONNECT to services, from e-government through to car sharing."
+    "description": "Gataca has built three components to connect the secure digital ID ecosystem. We help issuers transform their CREDENTIALS into IDENTITY wallets in customers' mobile phones that they can then CONNECT to digital services, from e-government through to car sharing."
   },
   "productsData": [
     {
@@ -20,7 +20,7 @@
           "description": "Post-quantum cryptography provides government-level security for the issuing authority"
         }
       ],
-      "mainImage": ""
+      "mainImage": "../images/identity.svg"
     },
     {
       "title": "Identity",
@@ -28,22 +28,22 @@
       "description": "Allows users to store identity credentials from any issuer worldwide and seamlessly authenticate to digital services from their mobile phone",
       "bullets": [
         {
-          "title": "REAL IDENTITY",
+          "title": "PASSWORD FREE",
           "image": "../images/fingerprint.svg",
-          "description": "Established connection between physical attributes and wallet user through biometric verification"
+          "description": "Passwordless and privacy-preserving authentication"
         },
         {
           "title": "VALIDATED CREDENTIALS",
           "image": "../images/validated.svg",
-          "description": "Certified validation of credentials by Trusted Authorities"
+          "description": "Certified validation of credentials by Trusted Authorities "
         },
         {
           "title": "ENHANCED SECURITY",
           "image": "../images/secure.svg",
-          "description": "Data and certification integrity with post-quantum cryptography"
+          "description": "Data and certification integrity with post-quantum cryptography "
         }
       ],
-      "mainImage": ""
+      "mainImage": "../images/identity.svg"
     },
     {
       "title": "Connect",
@@ -53,7 +53,7 @@
         {
           "title": "Automatic KYC/GDPR compliance",
           "image": "../images/people.svg",
-          "description": "Keep peace of mind for GDPR and KYC compliance"
+          "description": "Keep peace of mind for GDPR and KYC compliance "
         },
         {
           "title": "Identity fraud reduction",
@@ -61,7 +61,7 @@
           "description": "Reduce risk of identity fraud with guaranteed data authenticity and ownership"
         }
       ],
-      "mainImage": ""
+      "mainImage": "../images/identity.svg"
     }
   ],
   "endBullet": {

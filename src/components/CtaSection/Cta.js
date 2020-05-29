@@ -8,7 +8,7 @@ export default function Cta({ data }) {
     <section className={ctaStyles.base}>
       <div className={ctaStyles.container}>
         <h2>{data.title}</h2>
-        <div dangerouslySetInnerHTML={{ __html: data.description }}/>
+        <div className={ctaStyles.subContainer} dangerouslySetInnerHTML={{ __html: data.description }}/>
         <Button
           className={introStyles.ctaButton}
           disabled={false}

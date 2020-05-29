@@ -1,0 +1,20 @@
+@import "../../styles/aux/media-mixins";
+
+.base{
+        border-top: none;
+        border-bottom: none;
+    @include media-for-phone-only{
+        border-top: 2px solid var(--darkblue);
+        border-bottom: 2px solid var(--darkblue);
+    }
+    .mainImageMobile {
+        @include media-for-tablet-portrait-up {
+            display: none;
+        }
+    }
+    .mainImage {
+        @include media-for-phone-only {
+            display: none;
+        }
+    }
+}

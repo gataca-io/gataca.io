@@ -7767,6 +7767,13 @@ gatsby-plugin-google-analytics@^2.3.1:
     "@babel/runtime" "^7.9.6"
     minimatch "3.0.4"
 
+gatsby-plugin-google-marketing-platform@^0.1.20:
+  version "0.1.20"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-marketing-platform/-/gatsby-plugin-google-marketing-platform-0.1.20.tgz#86c8ea07fec52c51ff6c8363997d73887a8ea09c"
+  integrity sha512-B9jRWTrRU3o1S3qqBwnwForpywNeSCyn9skMY58O35aBoVmSiue6ZTpo399JwSR8AJjYzyCyZI6q8CD48480BQ==
+  dependencies:
+    common-tags "^1.8.0"
+
 gatsby-plugin-google-tagmanager@^2.3.1:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-google-tagmanager/-/gatsby-plugin-google-tagmanager-2.3.1.tgz#377824a10eacaf209b962527750647d2562bb8a5"

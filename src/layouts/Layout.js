@@ -6,6 +6,7 @@ import layoutStyles from "./layout.module.scss"
 import FooterSection from "../components/FooterSection/FooterSection"
 import configMetaData from "../../content/data/configMetaData.json"
 import footerSectionData from "../../content/data/footerSectionData.json"
+import { BuildHelmet } from "../components/auxiliary/HelmetBuilder"
 
 export default function Layout(props) {
   const { metaTitle, metaDescription, title } = useSiteMetadata()

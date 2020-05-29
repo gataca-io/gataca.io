@@ -2,9 +2,10 @@ import bulletsGraph  from "./BulletsPlusGraph.module.scss"
 import bulletsGraphMobile  from "./BulletsPlusGraph_mobile.module.scss"
 import React from "react"
 import BulletOne from "../BulletOne"
-import graph from "@images/explainedPlatform.svg"
+
 import BulletCenter from "../BulletCenter"
 import { DangerSetH2Html, DangerSetPHtml } from "../auxiliary/aux"
+import MainImage from "../MainImage/MainImage"
 
 function RenderMobile({ data }) {
   return (
@@ -32,7 +33,8 @@ function RenderMobile({ data }) {
         })}
       </div>
       <div>
-        <img src={graph}/>
+        {/*<img src={graph}/>*/}
+        <MainImage/>
       </div>
       <div className={bulletsGraphMobile.endBullet}>
         <BulletOne data={data.endBullet}/>
@@ -71,7 +73,7 @@ function RenderDesktop({ data }) {
         })}
       </div>
       <div>
-        <img src={graph}/>
+        <MainImage/>
       </div>
       <div className={bulletsGraph.endBullet}>
         <BulletCenter data={data.endBullet}/>

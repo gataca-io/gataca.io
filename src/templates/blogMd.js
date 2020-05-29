@@ -1,46 +1,54 @@
 import React, { Fragment } from "react"
 import Layout from "./../layouts/Layout"
 import { graphql, Link } from "gatsby"
-import useBlogData from '../static_queries/useMdBlogData'
+import useBlogData from "../static_queries/useMdBlogData"
 import blogTemplateStyles from "../styles/templates/blog.module.scss"
 //this component handles the blur img & fade-ins
-import Img from 'gatsby-image'
+import Img from "gatsby-image"
 import Helmet from "react-helmet"
 import { BuildHelmet } from "../components/auxiliary/HelmetBuilder"
 
 function buildHeroImage(frontmatter) {
-  const heroImage = frontmatter.hero_image;
+  const heroImage = frontmatter.hero_image
   return !!heroImage ? (
-  <figure className={blogTemplateStyles.blog__hero}>
-    <Img
-      fluid={frontmatter.hero_image.childImageSharp.fluid}
-      alt={frontmatter.title}
-    />
-  </figure>
+    <figure className={blogTemplateStyles.blog__hero}>
+      <Img
+        fluid={frontmatter.hero_image.childImageSharp.fluid}
+        alt={frontmatter.title}
+      />
+    </figure>
   ) : <Fragment/>
 }
 
 export default function BlogMd(props) {
   const data = props.data.markdownRemark
   const allBlogData = useBlogData()
-  console.log(data);
+  console.log(data)
   const nextSlug = getNextSlug(data.fields.slug)
-
+  
   function getNextSlug(slug) {
     const allSlugs = allBlogData.map(blog => {
       return blog.node.fields.slug
     })
     const nextSlug = allSlugs[allSlugs.indexOf(slug) + 1]
-    if(nextSlug !== undefined && nextSlug !== '') {
+    if (nextSlug !== undefined && nextSlug !== "") {
       return nextSlug
     } else {
       return allSlugs[0]
     }
   }
-
+  
+  console.log("METADATA 1 => ", data)
+  console.log("METADATA => ", data.frontmatter.meta_data)
   return (
     <Layout>
-      <BuildHelmet metas={props.data.markdownRemark.meta_data}/>
+      <BuildHelmet
+        title={data.frontmatter.meta_data.title}
+        description={data.frontmatter.meta_data.description}
+        // facebookImg={data.frontmatter.meta_data.rrss_images.facebook_and_whatsapp.publicUrl}
+        // linkedInImg={data.frontmatter.meta_data.rrss_images.linkedin.publicUrl}
+        // twitterImg={data.frontmatter.meta_data.rrss_images.twitter.publicUrl}
+      />
       <article className={blogTemplateStyles.blog}>
         {/*HERO IMAGE*/}
         {buildHeroImage(data.frontmatter)}
@@ -70,25 +78,40 @@ export default function BlogMd(props) {
 //dynamic page query, must occur within each post context
 //$slug is made available by context from createPages call in gatsby-node.js
 export const getPostData = graphql`
-  query($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      fields {
-        slug
-      }
-      frontmatter {
-        title
-        author
-        date(formatString: "MMMM Do, YYYY")
-        hero_image {
-          childImageSharp {
-            fluid(maxWidth: 1500) {
-              ...GatsbyImageSharpFluid
+    query($slug: String!) {
+        markdownRemark(fields: { slug: { eq: $slug } }) {
+            fields {
+                slug
             }
-          }
+            frontmatter {
+                title
+                date(formatString: "MMMM Do, YYYY")
+                hero_image {
+                    childImageSharp {
+                        fluid(maxWidth: 1500) {
+                            ...GatsbyImageSharpFluid
+                        }
+                    }
+                    publicURL
+                }
+                meta_data {
+                    description
+                    title
+#                    rrss_images {
+#                        facebook_and_whatsapp {
+#                            publicURL
+#                        }
+#                        linkedin {
+#                            publicURL
+#                        }
+#                        twitter {
+#                            publicURL
+#                        }
+#                    }
+                }
+            }
+            html
         }
-      }
-      html
     }
-  }
 `
 

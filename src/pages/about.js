@@ -55,12 +55,19 @@ function AwardsSection({data}) {
     <section className={aboutStyles.awardsContainer}>
       <div>
         <h2>{data.title}</h2>
-        <div >
+        <div>
           {data.awards.map(award => {
             return (
-              <p>
-                {award.title}
-              </p>
+              <div className={aboutStyles.award}>
+                <div>
+                  <img src={award.photo}/>
+                </div>
+                <h3>
+                  {award.title}
+                </h3>
+                <div dangerouslySetInnerHTML={{__html:award.description}}>
+                </div>
+              </div>
             )
           })}
         </div>

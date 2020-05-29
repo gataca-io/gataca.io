@@ -33,7 +33,7 @@
         "subcategory": "",
         "credential_name": "sergio@gataca.io",
         "icon": "../images/mail.svg",
-        "level": 0,
+        "level": 1,
         "status": "Valid",
         "openStatus": "Public",
         "title": ""
@@ -88,7 +88,7 @@
       {
         "image": "../images/compliant.svg",
         "title": "COMPLIANT",
-        "description": "<ul><li><p>Official, W3C verifiable credential issuance </p></li><li><p>KYC and GDPR compliant </p></li><li><p>Self-sovereign data control </p></li><li><p>Data exchange minimisation</p></li></ul>"
+        "description": "<ul><li><p>Official, W3C verifiable credential issuance</p></li><li><p>KYC and GDPR compliant</p></li><li><p>Self-sovereign data control</p></li><li><p>Data exchange minimization</p></li></ul>"
       },
       {
         "image": "../images/secure.svg",

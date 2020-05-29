@@ -25,15 +25,34 @@ $feature-flags: (
 @import './../components/ProductsSection/productsection_override';
 
 
-// overrides
+// overrides posts
 .iframeContainer {
-    height: 900px;
+    height: 1130px;
     padding: 50px 0;
+    @include media-for-phone-only {
+        display: none;
+    }
     iframe {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
         width: calc(100vw - 120px);
+        height: 100%;
+    }
+}
+
+.iframeContainer_mobile {
+    height: 1000px;
+    width: 100%;
+    padding: 50px 0;
+    @include media-for-tablet-portrait-up {
+        display: none;
+    }
+    iframe {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: calc(100vw - 20px);
         height: 100%;
     }
 }
