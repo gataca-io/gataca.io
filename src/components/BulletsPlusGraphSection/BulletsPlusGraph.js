@@ -33,7 +33,6 @@ function RenderMobile({ data }) {
         })}
       </div>
       <div>
-        {/*<img src={graph}/>*/}
         <MainImage/>
       </div>
       <div className={bulletsGraphMobile.endBullet}>

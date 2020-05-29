@@ -8,6 +8,8 @@
         border-bottom: 2px solid var(--darkblue);
     }
     .mainImageMobile {
+        width: 100%;
+        margin: 0;
         @include media-for-tablet-portrait-up {
             display: none;
         }

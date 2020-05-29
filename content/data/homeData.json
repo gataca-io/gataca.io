@@ -122,7 +122,7 @@
     "endBullet": {
       "image": "../images/secure.svg",
       "title": "PRIVACY BY DESIGN",
-      "description": "Gataca embraces privacy-by-design and never stores information about an individual’s identity."
+      "description": "<p>Gataca embraces privacy-by-design and never stores information about an individual’s identity.</p>"
     }
   },
   "ctaSection": {
