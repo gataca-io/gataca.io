@@ -55,10 +55,12 @@ function AwardsSection({data}) {
     <section className={aboutStyles.awardsContainer}>
       <div>
         <h2>{data.title}</h2>
-        <div>
+        <div className={aboutStyles.awards}>
           {data.awards.map(award => {
             return (
+                <a href={award.link} target="_blank">
               <div className={aboutStyles.award}>
+                
                 <div>
                   <img src={award.photo}/>
                 </div>
@@ -68,6 +70,7 @@ function AwardsSection({data}) {
                 <div dangerouslySetInnerHTML={{__html:award.description}}>
                 </div>
               </div>
+                </a>
             )
           })}
         </div>
