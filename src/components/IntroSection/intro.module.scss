@@ -158,13 +158,13 @@
 
 
 .phoneMobileContainer{
-    height: 500px;
     @include media-for-tablet-portrait-up {
         display: none;
     }
     .phoneContainer{
         position: relative;
-        height: 300px;
+        min-height: 300px;
+        height: 100%;
         max-width: 100%;
         overflow: hidden;
         margin-top: var(--doubleBaseMargin);
