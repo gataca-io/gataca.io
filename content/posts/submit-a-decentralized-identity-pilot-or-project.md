@@ -1,5 +1,5 @@
 ---
-date: 2020-05-26T05:46:57.000+00:00
+date: 2020-05-11T05:46:57Z
 hero_image: "/content/images/sonja-punz-N47B_zibNGo-unsplash.jpg"
 meta_data:
   title: Gataca | Submit a decentralized identity pilot or project
