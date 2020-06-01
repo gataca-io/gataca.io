@@ -1,57 +1,58 @@
 import React from "react"
 import Layout from "../layouts/Layout"
+import { graphql, Link, navigate } from "gatsby"
 import productStyles from "../styles/pages/products.module.scss"
 import useSiteMetaData from "../static_queries/useSiteMetadata"
 import productsData  from "./../../content/data/productsData.json"
 import faqData  from "./../../content/data/faqData.json"
-import ProductsSelector from "../components/ProductsSection/ProductsSelector"
-import BulletCenter from "../components/BulletCenter"
-import FaqSection from "../components/faqSection/FaqSection"
-import HeadLineSection from "../components/HeadLineSection/HeadLineSection"
+import identify  from "./../../content/data/identify.json"
+import credentials  from "./../../content/data/credentials.json"
+import connect  from "./../../content/data/connect.json"
+import LayoutProducts from "../layouts/LayoutProducts"
+import { Tab, Tabs } from "carbon-components-react"
+import IdentifyComponent from "../components/ProductsSection/IdentifyComponent"
+import ConnectComponent from "../components/ProductsSection/ConnectComponent"
+import CredentialsComponent from "../components/ProductsSection/CredentialsComponent"
 
 
 export default function Products(props) {
   const { infoData } = useSiteMetaData()
   console.log('PRODUCTS PAGE DATA => ',props.data);
   return (
-    <Layout>
-      <section className={productStyles.base}>
-        <HeadLineSection title={productsData.introProductsSection.title} description={productsData.introProductsSection.description}/>
-        <ProductsSelector data={productsData.productsData}/>
-        <FaqSection data={faqData.faqSection}/>
-      </section>
-    </Layout>
+    <LayoutProducts>
+        <Tab
+          href={"/" + credentials.title}
+          id={credentials.title}
+          label="crendentials"
+          className="tabStyle"
+          role="presentation"
+          selected={false}
+          tabIndex={0}
+        >
+          <CredentialsComponent product={credentials}/>
+        </Tab>
+          <Tab
+            href={"/" + identify.title}
+            id={identify.title}
+            label="identify"
+            className="tabStyle"
+            role="presentation"
+            selected={false}
+            tabIndex={1}
+          >
+            <IdentifyComponent product={identify}/>
+          </Tab>
+        <Tab
+          href={"/" + connect.title}
+          id={connect.title}
+          label="connect"
+          className="tabStyle"
+          role="presentation"
+          selected={false}
+          tabIndex={2}
+        >
+          <ConnectComponent product={connect}/>
+        </Tab>
+    </LayoutProducts>
   )
 }
-
-export const query = graphql`
-    query productsPage {
-        allDataJson(filter: {}) {
-            nodes {
-                introProductsSection {
-                    title
-                    description
-                }
-#                productsData {
-#                    title
-#                    icon
-#                    description
-#                    mainImage
-#                    bullets {
-#                        title
-#                        image
-#                        description
-#                    }
-#                }
-#                faqSection {
-#                    title
-#                    icon
-#                    questions {
-#                        title
-#                        response
-#                    }
-#                }
-            }
-        }
-    }
-`

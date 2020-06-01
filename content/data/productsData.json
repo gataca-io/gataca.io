@@ -7,17 +7,17 @@
     {
       "title": "Credentials",
       "icon": "../images/building.svg",
-      "description": "Provides all the tools necessary to issue and validate identity credentials according to W3C standards for global interoperability",
+      "description": "<p>Provides all the tools necessary to issue and validate identity credentials according to W3C standards for global interoperability</p>",
       "bullets": [
         {
           "title": "SECURED",
           "image": "../images/secure.svg",
-          "description": "Biometric technologies guarantee that credentials are managed by the true owner"
+          "description": "<p>Biometric technologies guarantee that credentials are managed by the true owner</p>"
         },
         {
           "title": "CERTIFIED",
           "image": "../images/verified.svg",
-          "description": "Post-quantum cryptography provides government-level security for the issuing authority"
+          "description": "<p>Post-quantum cryptography provides government-level security for the issuing authority</p>"
         }
       ],
       "mainImage": "../images/identity.svg"
@@ -25,22 +25,22 @@
     {
       "title": "Identity",
       "icon": "../images/phone-small.svg",
-      "description": "Allows users to store identity credentials from any issuer worldwide and seamlessly authenticate to digital services from their mobile phone",
+      "description": "<p>Allows users to store identity credentials from any issuer worldwide and seamlessly authenticate to digital services from their mobile phone</p>",
       "bullets": [
         {
           "title": "PASSWORD FREE",
           "image": "../images/fingerprint.svg",
-          "description": "Passwordless and privacy-preserving authentication"
+          "description": "<p>Passwordless and privacy-preserving authentication</p>"
         },
         {
           "title": "VALIDATED CREDENTIALS",
           "image": "../images/validated.svg",
-          "description": "Certified validation of credentials by Trusted Authorities "
+          "description": "<p>Certified validation of credentials by Trusted Authorities</p>"
         },
         {
           "title": "ENHANCED SECURITY",
           "image": "../images/secure.svg",
-          "description": "Data and certification integrity with post-quantum cryptography "
+          "description": "<p>Data and certification integrity with post-quantum cryptography</p>"
         }
       ],
       "mainImage": "../images/identity.svg"
@@ -48,17 +48,17 @@
     {
       "title": "Connect",
       "icon": "../images/validated.svg",
-      "description": "Combines the security levels of government-issued IDs with single-sign-on authentication capabilities\n",
+      "description": "<p>Combines the security levels of government-issued IDs with single-sign-on authentication capabilities</p>",
       "bullets": [
         {
           "title": "Automatic KYC/GDPR compliance",
           "image": "../images/people.svg",
-          "description": "Keep peace of mind for GDPR and KYC compliance "
+          "description": "<p>Keep peace of mind for GDPR and KYC compliance</p>"
         },
         {
           "title": "Identity fraud reduction",
           "image": "../images/fast.svg",
-          "description": "Reduce risk of identity fraud with guaranteed data authenticity and ownership"
+          "description": "<p>Reduce risk of identity fraud with guaranteed data authenticity and ownership</p>"
         }
       ],
       "mainImage": "../images/identity.svg"
@@ -67,6 +67,6 @@
   "endBullet": {
     "title": "BULLET CENTER",
     "image": "../images/fast.svg",
-    "description": "This is a description"
+    "description": "<p>This is a description"
   }
 }

@@ -17,6 +17,11 @@ module.exports.onCreateNode = ({ node, actions }) => {
 }
 
 module.exports.createPages = async ({ graphql, actions, reporter }) => {
+  actions.createRedirect({
+    fromPath: `/products`,
+    toPath: `/identify`,
+    isPermanent: `true`,
+  })
   const { createPage } = actions
   //dynamically create pages here
   //get path to template

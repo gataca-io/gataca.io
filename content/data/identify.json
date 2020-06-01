@@ -1,0 +1,23 @@
+{
+  "title": "Identity",
+  "icon": "../images/phone-small.svg",
+  "description": "<p>Allows users to store identity credentials from any issuer worldwide and seamlessly authenticate to digital services from their mobile phone</p>",
+  "bullets": [
+    {
+      "title": "PASSWORD FREE",
+      "image": "../images/fingerprint.svg",
+      "description": "<p>Passwordless and privacy-preserving authentication</p>"
+    },
+    {
+      "title": "VALIDATED CREDENTIALS",
+      "image": "../images/validated.svg",
+      "description": "<p>Certified validation of credentials by Trusted Authorities</p>"
+    },
+    {
+      "title": "ENHANCED SECURITY",
+      "image": "../images/secure.svg",
+      "description": "<p>Data and certification integrity with post-quantum cryptography</p>"
+    }
+  ],
+  "mainImage": "../images/identity.svg"
+}

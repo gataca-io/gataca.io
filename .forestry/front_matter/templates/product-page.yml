@@ -1,5 +1,5 @@
 ---
-label: Products Page
+label: Crendentials Page
 hide_body: false
 fields:
 - name: metas
@@ -39,7 +39,7 @@ fields:
         format: html-blocks
 - type: field_group_list
   name: productsData
-  label: Products Section
+  label: Crendentials Section
   fields:
   - name: title
     type: text
@@ -68,7 +68,7 @@ fields:
     type: field_group_list
     default: ''
     label: Product Detail Bullets
-    config: 
+    config:
     fields:
     - type: text
       name: title

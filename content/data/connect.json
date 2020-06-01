@@ -1,0 +1,19 @@
+{
+  "title": "Connect",
+  "icon": "../images/validated.svg",
+  "description": "<p>Combines the security levels of government-issued IDs with single-sign-on authentication capabilities</p>",
+  "bullets": [
+    {
+      "title": "Automatic KYC/GDPR compliance",
+      "image": "../images/people.svg",
+      "description": "<p>Keep peace of mind for GDPR and KYC compliance</p>"
+    },
+    {
+      "title": "Identity fraud reduction",
+      "image": "../images/fast.svg",
+      "description": "<p>Reduce risk of identity fraud with guaranteed data authenticity and ownership</p>"
+    }
+  ],
+  "secondaryDescription": "<p>Combines the security levels of government-issued IDs with single-sign-on authentication capabilities</p>",
+  "mainImage": "../images/panel-connect.svg"
+}

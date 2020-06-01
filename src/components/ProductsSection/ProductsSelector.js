@@ -2,6 +2,7 @@ import productSelStyles from "./productsSelector.module.scss"
 import { Tab, Tabs } from "carbon-components-react"
 import React from "react"
 import BulletOne from "../BulletOne"
+import IdentifyComponent from "./IdentifyComponent"
 
 export default function ProductsSelector(props) {
   return (
@@ -20,43 +21,40 @@ export default function ProductsSelector(props) {
         triggerHref="#"
         type="default"
       >
-        {props.data.map(product => {
-          return (
-            <Tab
-              href={"/" + product.title}
-              id={product.title}
-              label={product.title}
-              className="tabStyle"
-              role="presentation"
-              selected={false}
-              tabIndex={0}
-            >
-              
-              <div className={productSelStyles.introSection}>
-                <div className={productSelStyles.selectedProductIconContainer}>
-                  <img src={product.icon}/>
-                </div>
-                <h2>
-                  {product.title}
-                </h2>
-                <p dangerouslySetInnerHTML={{ __html: product.description }}/>
-              </div>
-              <div className={productSelStyles.detailContainer}>
-                <div className={productSelStyles.bulletsContainer}>
-                  {product.bullets.map(bullet => {
-                    return (
-                      <BulletOne right data={bullet}/>
-                    )
-                  })}
-                </div>
-                <div className={productSelStyles.mainImage}>
-                  <img src={product.mainImage}/>
-                </div>
-              </div>
-            </Tab>
-          )
-        })}
-        
+        <Tab
+          href={"/crendentials"}
+          id="crendentials"
+          label="crendentials"
+          className="tabStyle"
+          role="presentation"
+          selected={false}
+          tabIndex={0}
+        >
+          <IdentifyComponent product={props.data[1]}/>
+        </Tab>
+        <Tab
+          href={"/identify"}
+          id="identify"
+          label="identify"
+          className="tabStyle"
+          role="presentation"
+          selected={false}
+          tabIndex={1}
+        >
+          <IdentifyComponent product={props.data[1]}/>
+        </Tab>
+        <Tab
+          href={"/connect"}
+          id="connect"
+          label="connect"
+          className="tabStyle"
+          role="presentation"
+          selected={false}
+          tabIndex={2}
+        >
+          <IdentifyComponent product={props.data[1]}/>
+        </Tab>
+    
       </Tabs>
       </div>
     </section>

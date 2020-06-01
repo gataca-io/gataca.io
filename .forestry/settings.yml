@@ -11,7 +11,7 @@ sections:
   label: "- Home -"
 - type: document
   path: content/data/productsData.json
-  label: "- Products -"
+  label: "- Crendentials -"
 - type: document
   path: content/data/aboutData.json
   label: "- About -"

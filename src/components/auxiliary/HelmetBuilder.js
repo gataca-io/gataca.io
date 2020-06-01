@@ -27,8 +27,10 @@ export const BuildHelmet = ({title, description, facebookImg, twitterImg, linked
         }
     `,
   );
-  
-  const url = `${site.siteMetadata.siteUrl}${window.location.pathname}`
+  let url = `${site.siteMetadata.siteUrl}`;
+  if (typeof window !== 'undefined') {
+    url = `${site.siteMetadata.siteUrl}${window.location.pathname}`
+  }
   const twitterHandler = `${site.siteMetadata.twitterHandler}`
   
   return (

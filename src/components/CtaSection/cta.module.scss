@@ -25,7 +25,9 @@
 
 .subContainer {
     max-width: 400px;
-    text-align: center;
+    @include media-for-tablet-portrait-up {
+        text-align: center;
+    }
 }
 
 .question {

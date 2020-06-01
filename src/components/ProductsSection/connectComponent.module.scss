@@ -1,4 +1,3 @@
-
 .base {
     padding: 0 0 0 0;
     display: flex;
@@ -18,14 +17,14 @@
         padding-bottom: 5rem;
     }
 }
-    .tabs {
-        background-color: var(--bg-grey);
-        padding-bottom: 2px;
-        border-bottom: var(--border-ga);
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
+.tabs {
+    background-color: var(--bg-grey);
+    padding-bottom: 2px;
+    border-bottom: var(--border-ga);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
 .introSection{
     display: flex;
@@ -66,14 +65,37 @@
 .detailContainer{
     display: flex;
     justify-content: center;
+    flex-direction: column;
     .bulletsContainer {
-        margin-right: 2rem;
-        text-align: right;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 2rem 0;
     }
     .mainImage{
-        height: 500px;
-        width: 400px;
+        max-width: var(--max-width);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
         //background-color: var(--bg-grey);
+        svg {
+            margin: 3rem 0;
+        }
+        .secondImage{
+            max-width: 350px;
+        }
+        .panel{
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.09);
+        }
+    }
+}
+
+.secondaryDescription{
+    padding: 3rem 0;
+    p{
+        padding: 1rem;
+        max-width: var(--max-width);
     }
 }
 
