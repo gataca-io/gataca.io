@@ -9,7 +9,7 @@ meta_data:
     facebook_and_whatsapp: ''
     linkedin: ''
 title: Decentralized identity projects and pilots
-author: 'Lou Anderson'
+author: ''
 
 ---
 There are many initiatives around the world exploring decentralized digital identity. Even though we are a part of the industry, we found it hard to find an overview. So we built one.
