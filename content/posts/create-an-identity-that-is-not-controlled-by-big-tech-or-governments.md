@@ -7,7 +7,7 @@ meta_data:
   title: ''
   description: ''
 date: 2020-06-01T06:36:02Z
-hero_image: "../../static/jj-ying-7JX0-bfiuxQ-unsplash.jpg"
+hero_image: "/content/images/jj-ying-7JX0-bfiuxQ-unsplash.jpg"
 title: Create an identity that is not controlled by big tech or governments
 author: ''
 
