@@ -4,6 +4,10 @@
     "icon": "../images/faq-square.svg",
     "questions": [
       {
+        "title": "Do you store personal information on the blockchain?",
+        "response": "<p>No, we do not. The most common error is to publish the hash of identity credentials on a blockchain to ensure the integrity of data.</p>"
+      },
+      {
         "title": "What blockchain technology does Gataca use?",
         "response": "<p>Gataca is blockchain agnostic and can integrate with any blockchain infrastructure the client chooses.</p><p><br></p>"
       },
