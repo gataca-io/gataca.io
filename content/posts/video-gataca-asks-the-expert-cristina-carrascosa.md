@@ -6,8 +6,8 @@ meta_data:
     linkedin: "../images/sarah-dorweiler-9Z1KRIfpBTM-unsplash.jpg"
   title: ''
   description: ''
-date: 2020-05-28T06:13:43Z
-hero_image: "/content/images/sonja-punz-N47B_zibNGo-unsplash.jpg"
+date: 2020-05-28T06:13:43.000+00:00
+hero_image: "/static/anomaly-oRskqiH7FNc-unsplash.jpg"
 title: "[VIDEO] Gataca asks the Expert: Cristina Carrascosa"
 author: ''
 
