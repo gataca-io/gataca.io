@@ -7,7 +7,7 @@
     {
       "title": "Credentials",
       "icon": "../images/building.svg",
-      "description": "<p>Provides all the tools necessary to issue and validate identity credentials according to W3C standards for global interoperability</p>",
+      "description": "<p>Tools to issue verifiable digital credentials according to W3C standards for global interoperability</p>",
       "bullets": [
         {
           "title": "SECURED",
