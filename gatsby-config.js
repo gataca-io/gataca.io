@@ -21,6 +21,7 @@ module.exports = {
     `gatsby-transformer-json`,
     `gatsby-plugin-styled-components`,
     "gatsby-transformer-sharp",
+    `gatsby-plugin-transition-link`,
     {
       resolve: "gatsby-plugin-sharp",
       options: {

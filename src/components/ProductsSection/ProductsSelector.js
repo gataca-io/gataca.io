@@ -1,8 +1,8 @@
-import productSelStyles from "./productsSelector.module.scss"
 import { Tab, Tabs } from "carbon-components-react"
 import React from "react"
 import BulletOne from "../BulletOne"
 import IdentifyComponent from "./IdentifyComponent"
+import productSelStyles from "./productsSelector.module.scss"
 
 export default function ProductsSelector(props) {
   return (

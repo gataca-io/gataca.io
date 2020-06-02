@@ -1,4 +1,5 @@
 .blog {
+  padding-bottom: var(--baseSpacing);
   h1 {
     margin-bottom: 0.7rem;
   }
@@ -31,7 +32,7 @@
 
 .blog__body {
   width: 100%;
-  padding: 0 1.25rem;
+  padding: 5rem 1.25rem;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -89,7 +90,8 @@
   }
   .blog__body {
     max-width: 800px;
-    padding: 0 2rem;
+    padding: 2rem 2rem;
+
     h1, h2, h3, h4, h5, h6 {
       padding: 1.5rem;
     }

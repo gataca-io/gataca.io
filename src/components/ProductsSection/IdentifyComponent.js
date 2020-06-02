@@ -12,7 +12,7 @@ export default function IdentifyComponent({ product }) {
         <h2>
           {product.title}
         </h2>
-        <p dangerouslySetInnerHTML={{ __html: product.description }}/>
+        <div dangerouslySetInnerHTML={{ __html: product.description }}/>
       </div>
       <div className={productSelStyles.detailContainer}>
         <div className={productSelStyles.bulletsContainer}>

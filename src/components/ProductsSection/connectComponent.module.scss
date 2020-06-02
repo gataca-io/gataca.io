@@ -1,3 +1,5 @@
+@import "../../styles/aux/media-mixins";
+
 .base {
     padding: 0 0 0 0;
     display: flex;
@@ -31,9 +33,11 @@
     align-items: center;
     flex-direction: column;
     max-width: 400px;
-    margin: 0 auto 5rem auto;
+    margin: 0 auto 3rem auto;
     padding-top: 1.9rem;
+    padding-bottom:2rem;
     position: relative;
+    border-bottom: 2px solid var(--bg-grey);
     &::after {
         content: "";
         position: absolute;
@@ -58,7 +62,6 @@
         border-radius: 20px;
     }
     p{
-
     }
 }
 
@@ -71,6 +74,16 @@
         justify-content: center;
         text-align: center;
         padding: 2rem 0;
+        @include media-for-phone-only {
+            flex-direction: column;
+            text-align: left;
+            &>div {
+                    padding-left: 0;
+                &>div{
+                    justify-content: flex-start;
+                }
+            }
+        }
     }
     .mainImage{
         max-width: var(--max-width);
@@ -93,6 +106,9 @@
 
 .secondaryDescription{
     padding: 3rem 0;
+    @include media-for-phone-only {
+        text-align: left;
+    }
     p{
         padding: 1rem;
         max-width: var(--max-width);
@@ -109,6 +125,7 @@
     align-items: center;
     border: 2px solid var(--darkblue);
     margin: 2rem 0;
+
     img {
         margin-bottom: 0;
     }

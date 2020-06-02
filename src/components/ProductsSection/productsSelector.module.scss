@@ -1,6 +1,7 @@
+@import "../../styles/aux/media-mixins";
 
 .base {
-    padding: 0 0 0 0;
+    padding: 0 2rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -10,9 +11,12 @@
     width: 100%;
     border-bottom: 2px solid var(--darkblue);
     overflow: hidden;
+    @include media-for-phone-only {
+        //text-align: left;
+        padding: 0 2rem;
+    }
     .container{
         background-color: var(--white);
-        //max-width: var(--max-width);
         width: 100%;
         margin: 0;
         padding-bottom: 5rem;
@@ -32,9 +36,11 @@
     align-items: center;
     flex-direction: column;
     max-width: 400px;
-    margin: 0 auto 5rem auto;
+    margin: 0 auto 3rem auto;
     padding-top: 1.9rem;
+    padding-bottom:2rem;
     position: relative;
+    border-bottom: 2px solid var(--bg-grey);
     &::after {
         content: "";
         position: absolute;
@@ -66,14 +72,42 @@
 .detailContainer{
     display: flex;
     justify-content: center;
+    width: 100%;
+    @include media-for-phone-only {
+        flex-direction: column;
+        align-items: flex-start;
+    }
     .bulletsContainer {
-        margin-right: 2rem;
+        margin: 0;
         text-align: right;
+        @include media-for-phone-only {
+            text-align: left;
+            flex-direction: column;
+            align-items: flex-start;
+            &>div {
+                padding: 0;
+                &>div{
+                    justify-content: flex-start;
+                }
+            }
+        }
     }
     .mainImage{
         height: 500px;
         width: 400px;
         //background-color: var(--bg-grey);
+        @include media-for-phone-only {
+            padding-top: 2rem;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            overflow: hidden;
+            height: 300px;
+            img{
+                width: 80%;
+            }
+        }
     }
 }
 

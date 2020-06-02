@@ -1,10 +1,11 @@
 import connectStyles from "./connectComponent.module.scss"
 import React from "react"
 import BulletOne from "../BulletOne"
+import productSelStyles from "./productsSelector.module.scss"
 
 export default function ConnectComponent({ product }) {
   return (
-    <section className={connectStyles.base}>
+    <section className={productSelStyles.base}>
       <div className={connectStyles.introSection}>
         <div className={connectStyles.selectedProductIconContainer}>
           <img src={product.icon} alt={product.title}/>
@@ -25,8 +26,7 @@ export default function ConnectComponent({ product }) {
         <div className={connectStyles.mainImage}>
           <img className={connectStyles.panel} src={product.mainImage} alt={product.title}/>
         </div>
-        <div className={connectStyles.secondaryDescription}>
-          <p dangerouslySetInnerHTML={{ __html: product.secondaryDescription }}/>
+        <div className={connectStyles.secondaryDescription} dangerouslySetInnerHTML={{ __html: product.secondaryDescription }}>
         </div>
       </div>
     </section>

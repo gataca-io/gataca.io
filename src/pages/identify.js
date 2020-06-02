@@ -15,6 +15,8 @@ import IdentifyComponent from "../components/ProductsSection/IdentifyComponent"
 import credentials from "../../content/data/credentials.json"
 import identify from "../../content/data/identify.json"
 import connect from "../../content/data/connect.json"
+import CredentialsComponent from "../components/ProductsSection/CredentialsComponent"
+import ConnectComponent from "../components/ProductsSection/ConnectComponent"
 
 
 export default function Identify(props) {
@@ -23,19 +25,19 @@ export default function Identify(props) {
   return (
     <LayoutProducts>
       <Tab
-        href="/crendentials"
-        id="crendentials"
+        href={"/" + credentials.title}
+        id={credentials.title}
         label="crendentials"
         className="tabStyle"
         role="presentation"
         selected={false}
         tabIndex={0}
       >
-        <IdentifyComponent product={credentials}/>
+        <CredentialsComponent product={credentials}/>
       </Tab>
       <Tab
-        href="/identify/"
-        id="identify"
+        href={"/" + identify.title}
+        id={identify.title}
         label="identify"
         className="tabStyle"
         role="presentation"
@@ -45,15 +47,15 @@ export default function Identify(props) {
         <IdentifyComponent product={identify}/>
       </Tab>
       <Tab
-        href="/connect"
-        id="connect"
+        href={"/" + connect.title}
+        id={connect.title}
         label="connect"
         className="tabStyle"
         role="presentation"
         selected={false}
         tabIndex={2}
       >
-        <IdentifyComponent product={connect}/>
+        <ConnectComponent product={connect}/>
       </Tab>
     </LayoutProducts>
   )

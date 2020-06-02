@@ -1,10 +1,12 @@
 import credentialsStyles from "./credentialsComponent.module.scss"
 import React from "react"
 import BulletOne from "../BulletOne"
+import connectStyles from "./connectComponent.module.scss"
+import productSelStyles from "./productsSelector.module.scss"
 
 export default function CredentialsComponent({ product }) {
   return (
-    <section className={credentialsStyles.base}>
+    <section className={productSelStyles.base}>
       <div className={credentialsStyles.introSection}>
         <div className={credentialsStyles.selectedProductIconContainer}>
           <img src={product.icon} alt={product.title}/>
@@ -12,7 +14,7 @@ export default function CredentialsComponent({ product }) {
         <h2>
           {product.title}
         </h2>
-        <p dangerouslySetInnerHTML={{ __html: product.description }}/>
+        <div dangerouslySetInnerHTML={{ __html: product.description }}/>
       </div>
       <div className={credentialsStyles.detailContainer}>
         <div className={credentialsStyles.bulletsContainer}>
@@ -23,8 +25,7 @@ export default function CredentialsComponent({ product }) {
           })}
         </div>
         <div className={credentialsStyles.mainImage}>
-          <img src={product.mainImage} alt={product.title}/>
-  
+          <img className={connectStyles.panel} src={product.mainImage} alt={product.title}/>
           <div className={credentialsStyles.sectionOne}>
             <BulletOne left data={product.bulletOne}/>
             

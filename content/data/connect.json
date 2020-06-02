@@ -5,15 +5,15 @@
   "bullets": [
     {
       "title": "Automatic KYC/GDPR compliance",
-      "image": "../images/people.svg",
+      "image": "../images/people-flag.svg",
       "description": "<p>Keep peace of mind for GDPR and KYC compliance</p>"
     },
     {
       "title": "Identity fraud reduction",
-      "image": "../images/fast.svg",
+      "image": "../images/face_04.svg",
       "description": "<p>Reduce risk of identity fraud with guaranteed data authenticity and ownership</p>"
     }
   ],
-  "secondaryDescription": "<p>Combines the security levels of government-issued IDs with single-sign-on authentication capabilities</p>",
+  "secondaryDescription": "<p>Generate a W3C-compliant DID and associated cryptographic Keypair:</p> <p>• Configure and display a unique QR code per session containing service access requirements pertaining to personal information.</p> <p>• Collect VCs from GATACA Identities and validate cryptographic signatures</p><p>• Collect, sign and manage users’s consent objects related to the authorized use of users’\npersonal information.</p>",
   "mainImage": "../images/panel-connect.svg"
 }

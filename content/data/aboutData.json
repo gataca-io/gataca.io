@@ -49,7 +49,7 @@
       },
       {
         "name": "Sergio",
-        "bio": "Lorem Ipsum",
+        "bio": "Visual Developer",
         "photo": "../images/Sergio.png",
         "links": [
           {
@@ -61,7 +61,7 @@
       },
       {
         "name": "Lou",
-        "bio": "Lorem Ipsum",
+        "bio": "Head of growth",
         "photo": "../images/Lou.png",
         "links": [
           {

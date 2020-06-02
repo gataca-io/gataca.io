@@ -8,8 +8,8 @@
     "credentials": [
       {
         "category": "Goverment",
-        "subcategory": "Spain ID",
-        "credential_name": "This is a very long credential name so see how it performs",
+        "subcategory": "National ID",
+        "credential_name": "394846728 Y",
         "icon": "../images/goverment.svg",
         "level": 1,
         "status": "Valid",
@@ -20,8 +20,8 @@
       },
       {
         "category": "Company Employee",
-        "subcategory": "CEO",
-        "credential_name": "Short one",
+        "subcategory": "Manager",
+        "credential_name": "John Doe",
         "icon": "../images/correos.svg",
         "level": 3,
         "status": "Invalid",
@@ -31,8 +31,8 @@
       {
         "category": "Email",
         "subcategory": "",
-        "credential_name": "sergio@gataca.io",
-        "icon": "../images/mail.svg",
+        "credential_name": "john@gataca.io",
+        "icon": "../images/read_email_circle.svg",
         "level": 1,
         "status": "Valid",
         "openStatus": "Public",
@@ -40,7 +40,7 @@
       },
       {
         "category": "University",
-        "subcategory": "Identification",
+        "subcategory": "Bachelor degree",
         "credential_name": "Architect",
         "icon": "../images/building.svg",
         "level": 2,

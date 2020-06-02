@@ -10,7 +10,7 @@ export default function Cta({ data }) {
         <h2>{data.title}</h2>
         <div className={ctaStyles.subContainer} dangerouslySetInnerHTML={{ __html: data.description }}/>
         <Button
-          className={introStyles.ctaButton}
+          className={ctaStyles.ctaButton}
           disabled={false}
           iconDescription="Button icon"
           kind="primary"

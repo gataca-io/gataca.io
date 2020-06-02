@@ -5,7 +5,6 @@ import useBlogData from "../static_queries/useMdBlogData"
 import blogTemplateStyles from "../styles/templates/blog.module.scss"
 //this component handles the blur img & fade-ins
 import Img from "gatsby-image"
-import Helmet from "react-helmet"
 import { BuildHelmet } from "../components/auxiliary/HelmetBuilder"
 
 function buildHeroImage(frontmatter) {
@@ -23,7 +22,6 @@ function buildHeroImage(frontmatter) {
 export default function BlogMd(props) {
   const data = props.data.markdownRemark
   const allBlogData = useBlogData()
-  console.log(data)
   const nextSlug = getNextSlug(data.fields.slug)
   
   function getNextSlug(slug) {
@@ -38,8 +36,6 @@ export default function BlogMd(props) {
     }
   }
   
-  console.log("METADATA 1 => ", data)
-  console.log("METADATA => ", data.frontmatter.meta_data)
   return (
     <Layout>
       <BuildHelmet
@@ -60,6 +56,7 @@ export default function BlogMd(props) {
           className={blogTemplateStyles.blog__body}
           dangerouslySetInnerHTML={{ __html: data.html }}
         ></div>
+        
         {/*<div className={blogTemplateStyles.blog__footer}>
           <h2>
             Written By: {data.frontmatter.author}
