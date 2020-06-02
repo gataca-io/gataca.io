@@ -5,7 +5,7 @@
     "questions": [
       {
         "title": "Do you store personal information on the blockchain?",
-        "response": "<p>No, we do not. The most common error is to publish the hash of identity credentials on a blockchain to ensure the integrity of data.</p>"
+        "response": "<p>No. We do not publish the hash of identity credentials on a blockchain.</p>"
       },
       {
         "title": "What blockchain technology does Gataca use?",
