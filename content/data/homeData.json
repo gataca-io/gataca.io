@@ -110,12 +110,12 @@
       {
         "image": "../images/compliant.svg",
         "title": "END-USERS",
-        "description": "<p>Users are powered with an ID wallet in their phones and digitally verified ID credentials to enjoy passwordless privacy-preserving access to digital services in under 30 seconds</p>"
+        "description": "<p>Users are powered with an ID wallet in their phones and digitally verified ID credentials to enjoy passwordless privacy-preserving access to digital services in under 30 seconds.</p>"
       },
       {
         "image": "../images/secure.svg",
         "title": "SERVICE PROVIDERS",
-        "description": "<p>Service providers can offer an authentication alternative that users love while cutting KYC and GDPR compliance cost and reducing data breach risks</p>"
+        "description": "<p>Service providers can offer an authentication alternative that users love while cutting KYC and GDPR compliance cost and reducing data breach risks.</p>"
       }
     ],
     "graph": "/content/images/explainedPlatform.svg",
