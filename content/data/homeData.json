@@ -120,7 +120,7 @@
     ],
     "graph": "/content/images/explainedPlatform.svg",
     "endBullet": {
-      "image": "../images/secure.svg",
+      "image": "../images/privacy.svg",
       "title": "PRIVACY BY DESIGN",
       "description": "<p>Gataca embraces privacy-by-design and never stores information about an individual’s identity.</p>"
     }
