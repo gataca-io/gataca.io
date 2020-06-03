@@ -2,9 +2,10 @@
 
 .baseDesktop {
     width: 100%;
-    padding: 3rem 0;
+    padding: 5rem 0;
     background-color: var(--white);
     @include media-for-phone-only {
+        padding: 3rem 0;
        display: none;
     }
     .container{

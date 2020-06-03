@@ -12,7 +12,7 @@ function IntroSection({ data }) {
     <div className={aboutStyles.introContainer}>
       <div className={`bx--grid`}>
         <h2>{data.title}</h2>
-        <p dangerouslySetInnerHTML={{ __html: data.description }}/>
+        <div dangerouslySetInnerHTML={{ __html: data.description }}/>
       </div>
     </div>
   )
