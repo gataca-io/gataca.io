@@ -23,7 +23,6 @@ sections:
 - type: document
   path: content/data/productsData.json
   label: " - Products Page -"
-  match: "**/*"
 - type: document
   path: content/data/identify.json
   label: "- Identity -"
