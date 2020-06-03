@@ -19,16 +19,6 @@
         "title": ""
       },
       {
-        "category": "Company Employee",
-        "subcategory": "Manager",
-        "credential_name": "John Doe",
-        "icon": "../images/correos.svg",
-        "level": 3,
-        "status": "Invalid",
-        "openStatus": "Private",
-        "title": ""
-      },
-      {
         "category": "Email",
         "subcategory": "",
         "credential_name": "john@gataca.io",
