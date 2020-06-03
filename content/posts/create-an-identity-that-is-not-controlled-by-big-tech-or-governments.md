@@ -6,7 +6,7 @@ meta_data:
     linkedin: "../images/sarah-dorweiler-9Z1KRIfpBTM-unsplash.jpg"
   title: ''
   description: ''
-date: 2020-06-01T06:36:02Z
+date: 2020-06-01T06:36:02.000+00:00
 hero_image: "/content/images/jj-ying-7JX0-bfiuxQ-unsplash.jpg"
 title: Create an identity that is not controlled by big tech or governments
 author: ''
@@ -18,7 +18,7 @@ In the last couple of years, a new technological approach that inverts the funda
 
 The innovation lies in the capability to obtain digital credentials in a standard format that everyone recognizes and trusts. This includes credentials from universities for your qualifications, airports for your safe traveler pass, or employers for building access. Instead of hundreds of siloed and scattered identities, each servicing a specific purpose, there will be a comprehensive identity **controlled by the user**. In addition, decentralized identity providers do not store and manage identity information in a central database. Instead, users receive it directly from issuers, store it in their phones, and choose whom they share it with. This will minimize the risk of information tampering and massive hacking attacks.
 
-> The idea of using one single identity to access any and all of these services sounds exciting, particularly because its design ensures privacy and security, and because there is no giant company or government managing and controlling your data.
+</h1>The idea of using one single identity to access any and all of these services sounds exciting, particularly because its design ensures privacy and security, and because there is no giant company or government managing and controlling your data.</h1>
 
 There is a growing consensus that decentralized digital identities will extend globally and will become the new authentication standard. Many countries are already deploying decentralized digital identity [projects](http://gataca.io/decentralized-identity-projects-and-pilots) leveraging existing technology providers and [W3C](https://www.w3.org/) standards or running their own implementation efforts.
 
