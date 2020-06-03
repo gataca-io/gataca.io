@@ -110,15 +110,24 @@ module.exports = {
       resolve: 'gatsby-plugin-google-marketing-platform',
       options: {
         dataLayer: {
+          // Preset dataLayer values
           gaPropertyId: 'UA-133561010-1',
         },
         tagmanager: {
-          id: 'GTM-5V6SH7N'
+          id: 'GTM-5V6SH7N',
+          params: {
+            // GTM URL Parameters
+            // Ex: https://www.googletagmanager.com/gtm.js?id=[ID]&gtm_cookies_win=x
+            gtm_cookies_win: 'x'
+          }
         },
         analytics: {
-          id: 'GTM-NWKJ6PR'
+          id: 'UA-133561010-1',
+        },
+        optimize: {
+          id: 'GTM-NWKJ6PR',
         }
-      },
+      }
     },
     {
       resolve: `gatsby-plugin-alias-imports`,
