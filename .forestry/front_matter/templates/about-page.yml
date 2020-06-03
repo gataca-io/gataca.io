@@ -88,7 +88,7 @@ fields:
       type: field_group_list
       default: ''
       label: Links
-      config: 
+      config:
       fields:
       - type: text
         name: name
@@ -138,7 +138,7 @@ fields:
           format: html-blocks
     - name: photo
       type: file
-      label: Photo
+      label: Award Image
       default: ''
       config:
         required: false

@@ -41,7 +41,9 @@ fields:
     default: ''
     config:
       required: false
-      wysiwyg: false
+      wysiwyg: true
+      schema:
+        format: html-blocks
     label: CTA text [Button]
   - name: credentials
     type: field_group_list
@@ -102,7 +104,7 @@ fields:
   - name: partners
     type: field_group_list
     default: ''
-    config: 
+    config:
     fields:
     - type: text
       name: title
@@ -139,7 +141,7 @@ fields:
   - name: elements
     type: field_group_list
     default: ''
-    config: 
+    config:
     fields:
     - type: text
       name: title
@@ -216,7 +218,7 @@ fields:
     type: field_group
     default: ''
     label: End Bullet
-    config: 
+    config:
     fields:
     - type: text
       name: title
