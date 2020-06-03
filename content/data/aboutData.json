@@ -96,7 +96,7 @@
       },
       {
         "title": "MIT Delta V Accelerator Participant",
-        "description": "Accelerated by MIT's flagship entrepreneurial program",
+        "description": "<p>Accelerated by MIT's flagship entrepreneurial program.</p>",
         "photo": "../images/mit_delta.svg",
         "link": "https://entrepreneurship.mit.edu/accelerator/program/"
       },
@@ -108,7 +108,7 @@
       },
       {
         "title": "MIT Sandbox Innovation Grant Recipient",
-        "description": "Awarded grant from MIT Innovation Sandbox, a program for MIT students to pursue entrepreneurial ideas",
+        "description": "<p>Awarded grant from MIT Innovation Sandbox, a program for MIT students to pursue entrepreneurial ideas.</p>",
         "photo": "../images/mit_sandbox.svg",
         "link": "http://sandbox.mit.edu/"
       }
