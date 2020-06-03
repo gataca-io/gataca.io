@@ -1,5 +1,5 @@
 ---
-label: Crendentials Page
+label: Identity Page
 hide_body: false
 fields:
 - name: metas
@@ -68,7 +68,7 @@ fields:
     type: field_group_list
     default: ''
     label: Product Detail Bullets
-    config: 
+    config:
     fields:
     - type: text
       name: title

@@ -3,67 +3,6 @@
     "title": "PRODUCTS",
     "description": "<p>Gataca has built three components to connect the secure digital ID ecosystem. We help issuers transform their CREDENTIALS into IDENTITY wallets in customers' mobile phones that they can then CONNECT to digital services, from e-government through to car sharing.</p>"
   },
-  "productsData": [
-    {
-      "title": "Credentials",
-      "icon": "../images/building.svg",
-      "description": "<p>Tools to issue verifiable digital credentials according to W3C standards for global interoperability</p>",
-      "bullets": [
-        {
-          "title": "SECURED",
-          "image": "../images/secure.svg",
-          "description": "<p>Biometric technologies guarantee that credentials are managed by the true owner</p>"
-        },
-        {
-          "title": "CERTIFIED",
-          "image": "../images/verified.svg",
-          "description": "<p>Post-quantum cryptography provides government-level security for the issuing authority</p>"
-        }
-      ],
-      "mainImage": "../images/identity.svg"
-    },
-    {
-      "title": "Identity",
-      "icon": "../images/phone-small.svg",
-      "description": "<p>Mobile wallet that allows users to store identity credentials from any issuer worldwide and seamlessly authenticate to digital services</p>",
-      "bullets": [
-        {
-          "title": "PASSWORD FREE",
-          "image": "../images/fingerprint.svg",
-          "description": "<p>Passwordless and privacy-preserving authentication</p>"
-        },
-        {
-          "title": "VALIDATED CREDENTIALS",
-          "image": "../images/validated.svg",
-          "description": "<p>Certified validation of credentials by Trusted Authorities</p>"
-        },
-        {
-          "title": "ENHANCED SECURITY",
-          "image": "../images/secure.svg",
-          "description": "<p>Data and certification integrity with post-quantum cryptography</p>"
-        }
-      ],
-      "mainImage": "../images/identity.svg"
-    },
-    {
-      "title": "Connect",
-      "icon": "../images/validated.svg",
-      "description": "<p>Authentication tools that combine the security levels of government-issued IDs with single-sign-on capabilities</p>",
-      "bullets": [
-        {
-          "title": "Automatic KYC/GDPR compliance",
-          "image": "../images/people.svg",
-          "description": "<p>Keep peace of mind for GDPR and KYC compliance</p>"
-        },
-        {
-          "title": "Identity fraud reduction",
-          "image": "../images/fast.svg",
-          "description": "<p>Reduce risk of identity fraud with guaranteed data authenticity and ownership</p>"
-        }
-      ],
-      "mainImage": "../images/identity.svg"
-    }
-  ],
   "endBullet": {
     "title": "BULLET CENTER",
     "image": "../images/fast.svg",
