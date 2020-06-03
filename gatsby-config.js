@@ -110,7 +110,7 @@ module.exports = {
       resolve: 'gatsby-plugin-google-marketing-platform',
       options: {
         dataLayer: {
-          gaPropertyId: 'UA/133561010-1',
+          gaPropertyId: 'UA-133561010-1',
         },
         tagmanager: {
           id: 'GTM-5V6SH7N'
