@@ -46,7 +46,8 @@ function RenderDesktop({ data }) {
               <div className={bulletsStyles.iconContainer}>
                 <h2>{data.title}</h2>
               </div>
-              <DangerSetPHtml data={data.description}/>
+              {/*<DangerSetPHtml data={data.description}/>*/}
+              <div dangerouslySetInnerHTML={{ __html: data.description }}/>
             </div>
             
             <div className={bulletsStyles.bulletsContainer}>
