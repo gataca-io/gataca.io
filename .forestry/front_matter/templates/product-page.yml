@@ -38,4 +38,4 @@ fields:
       schema:
         format: html-blocks
 pages:
-  - content/data/productsData.json
+- content/data/productsData.json
