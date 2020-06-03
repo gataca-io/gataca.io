@@ -13,7 +13,8 @@ function RenderMobile({ data }) {
           <img src={data.icon}  alt={data.title}/>
           <h2>{data.title}</h2>
         </div>
-        <DangerSetPHtml data={data.description}/>
+        {/*<DangerSetPHtml data={data.description}/>*/}
+        <div dangerouslySetInnerHTML={{ __html: data.description }}/>
       </div>
       
       <div className={bulletsMobileStyles.bulletsContainer}>
