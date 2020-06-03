@@ -10,9 +10,6 @@ sections:
   path: content/data/homeData.json
   label: "- Home -"
 - type: document
-  path: content/data/productsData.json
-  label: "- Crendentials -"
-- type: document
   path: content/data/aboutData.json
   label: "- About -"
 - type: document
@@ -21,6 +18,19 @@ sections:
 - type: document
   path: content/data/footerSectionData.json
   label: "- Footer -"
+- type: heading
+  label: Products
+- type: document
+  path: content/data/identify.json
+  label: "- Identity -"
+  match: "**/*"
+- type: document
+  path: content/data/credentials.json
+  label: "- Crendentials -"
+- type: document
+  path: content/data/connect.json
+  label: " - Connect -"
+  match: "**/*"
 - type: heading
   label: Meta Content
 - type: document
