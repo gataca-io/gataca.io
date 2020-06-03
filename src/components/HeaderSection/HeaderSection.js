@@ -3,6 +3,8 @@ import { Link } from "gatsby"
 import headerStyles from "./header.module.scss"
 import logo from "@images/logo.svg"
 import HeaderContainer from "carbon-components-react/lib/components/UIShell/HeaderContainer";
+import configMetaData from "./../../../content/data/configMetaData.json"
+
 import {
   Header,
   HeaderMenuButton,
@@ -72,7 +74,7 @@ export default function HeaderSection(props) {
                     About
                 </h3>
                   </Link>
-                  <a href={props.link.bookACallUrl} target="_blank">
+                  <a href={configMetaData.bookACallUrl} target="_blank">
                     <h3 className={headerStyles.header__cta}>
                         Book a call
                     </h3>
