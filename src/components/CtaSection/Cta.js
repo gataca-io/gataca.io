@@ -2,7 +2,7 @@ import ctaStyles  from "./cta.module.scss"
 import React from "react"
 import { Button } from "carbon-components-react"
 import introStyles from "../IntroSection/intro.module.scss"
-import configMetaData from "content/data/configMetaData.json"
+import configMetaData from "./../../../content/data/configMetaData.json"
 import Link from "gatsby-link"
 export default function Cta({ data }) {
   return (
