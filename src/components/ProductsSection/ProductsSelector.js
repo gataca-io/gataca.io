@@ -33,8 +33,8 @@ export default function ProductsSelector(props) {
           <IdentifyComponent product={props.data[1]}/>
         </Tab>
         <Tab
-          href={"/identify"}
-          id="identify"
+          href={"/identity"}
+          id="identity"
           label="identify"
           className="tabStyle"
           role="presentation"
