@@ -31,7 +31,7 @@
       {
         "category": "University",
         "subcategory": "Bachelor degree",
-        "credential_name": "Architect",
+        "credential_name": "Architecture",
         "icon": "../images/building.svg",
         "level": 2,
         "status": "Valid",
