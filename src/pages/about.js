@@ -6,6 +6,7 @@ import aboutData  from "./../../content/data/aboutData.json"
 import { Accordion, AccordionItem } from "carbon-components-react"
 import partnersStyles from "../components/PartnersSection/partners.module.scss"
 import linkedInIcon from "../../static/images/linkedin.svg"
+import TeamSection from "../components/TeamSection/TeamSection"
 
 function IntroSection({ data }) {
   return (
@@ -18,37 +19,37 @@ function IntroSection({ data }) {
   )
 }
 
-function TeamSection({ data }) {
-  return(
-    <section className={`bx--grid ${ aboutStyles.teamContainer }`}>
-      
-      <h2>{data.title}</h2>
-      <p dangerouslySetInnerHTML={{ __html: data.description }}/>
-      
-      <div className={`bx--row ${ aboutStyles.teamSection }`}>
-          {data.team.map(gato => {
-            return (
-              <div className={`bx--col-sm-16 ${ aboutStyles.personContainer }`}>
-                <img src={gato.photo}/>
-                <div className={aboutStyles.infoPerson}>
-                  <h3>{gato.name}</h3>
-                  <p>{gato.bio}</p>
-                  <div className={aboutStyles.rrssSection}>
-                    {gato.links.map(link=>{
-                      return <a href={link.url}>
-                          <img src={link.icon}/>
-                      </a>
-                    })}
-                  </div>
-                </div>
-              </div>
-            )
-          })}
-      </div>
-      
-    </section>
-  )
-}
+// function TeamSection({ data }) {
+//   return(
+//     <section className={`bx--grid ${ aboutStyles.teamContainer }`}>
+//
+//       <h2>{data.title}</h2>
+//       <p dangerouslySetInnerHTML={{ __html: data.description }}/>
+//
+//       <div className={`bx--row ${ aboutStyles.teamSection }`}>
+//           {data.team.map(gato => {
+//             return (
+//               <div className={`bx--col-sm-16 ${ aboutStyles.personContainer }`}>
+//                 <img src={gato.photo}/>
+//                 <div className={aboutStyles.infoPerson}>
+//                   <h3>{gato.name}</h3>
+//                   <p>{gato.bio}</p>
+//                   <div className={aboutStyles.rrssSection}>
+//                     {gato.links.map(link=>{
+//                       return <a href={link.url}>
+//                           <img src={link.icon}/>
+//                       </a>
+//                     })}
+//                   </div>
+//                 </div>
+//               </div>
+//             )
+//           })}
+//       </div>
+//
+//     </section>
+//   )
+// }
 
 function AwardsSection({data}) {
   return (
@@ -85,7 +86,8 @@ export default function About() {
       <Layout>
         <section className={aboutStyles.base}>
           <IntroSection data={aboutData.introSection}/>
-          <TeamSection data={aboutData.teamDataSection}/>
+          {/*<TeamSection data={aboutData.teamDataSection}/>*/}
+          <TeamSection/>
           <AwardsSection data={aboutData.awardsDataSection}/>
         </section>
     </Layout>
