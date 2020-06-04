@@ -13,8 +13,8 @@ function RenderTeamSection({ data }) {
   return(
     <section className={`bx--grid ${ teamSectionStyles.teamContainer }`}>
       
-      <h2>{data.title}</h2>
-      <p dangerouslySetInnerHTML={{ __html: data.description }}/>
+      <h2>{teamData.title}</h2>
+      <p dangerouslySetInnerHTML={{ __html: teamData.description }}/>
       
       <div className={`bx--row ${ teamSectionStyles.teamSection }`}>
         {teamData.team.map(gato => {
