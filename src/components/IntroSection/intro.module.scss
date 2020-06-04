@@ -89,11 +89,59 @@
         height: calc(100% - 12px);
         width: calc(100% - 31px);
         background-color: var(--bg-grey);
-        margin: 4px 0 0 0;
+        margin: 4px 0 0 10px;
         z-index: 11;
-        margin-left: 10px;
         display: flex;
         justify-content: center;
+    }
+}
+
+.phoneMobileContainer{
+    @include media-for-tablet-portrait-up {
+        display: none;
+    }
+    .phoneMobilesubContainer{
+        position: relative;
+        min-height: 380px;
+        height: 100%;
+        max-width: 100%;
+        overflow: hidden;
+        margin-top: var(--doubleBaseMargin);
+        background-color: var(--bg-grey);
+        .imageContainer{
+            max-width: calc(100% - 100px);
+            border-radius: 20px;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            position: absolute;
+            width: 100%;
+            margin: 0;
+            z-index: 11;
+            &>img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+.credentialsContainer{
+    //height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 80px;
+    right: -4px;
+    z-index: 8;
+    height: 100%;
+    width: 100%;
+    @include media-for-phone-only {
+        top: 105px;
+    }
+    @include media-for-small-phone-only {
+        top: 83px;
     }
 }
 
@@ -106,21 +154,6 @@
     z-index: 13;
     margin: 0;
     height: 100%;
-}
-
-.credentialsContainer{
-    //height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 26%;
-    position: absolute;
-    top: 0;
-    right: -4px;
-    z-index: 8;
-    height: 100%;
-    width: 100%;
-    background-color: transparent;
 }
 
 .appFooter{
@@ -158,35 +191,3 @@
         }
     }
 }
-
-
-
-.phoneMobileContainer{
-    @include media-for-tablet-portrait-up {
-        display: none;
-    }
-    .phoneContainer{
-        position: relative;
-        min-height: 380px;
-        height: 100%;
-        max-width: 100%;
-        overflow: hidden;
-        margin-top: var(--doubleBaseMargin);
-        .imageContainer{
-            max-width: calc(100% - 100px);
-            border-radius: 20px;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            position: absolute;
-            width: 100%;
-            background-color: white;
-            margin: 0;
-            z-index: 11;
-            &>img {
-                width: 100%;
-            }
-        }
-    }
-}
-
