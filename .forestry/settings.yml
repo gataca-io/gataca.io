@@ -18,6 +18,9 @@ sections:
 - type: document
   path: content/data/footerSectionData.json
   label: "- Footer -"
+- type: document
+  path: content/data/insightsData.json
+  label: "- Insights Page -"
 - type: heading
   label: Products
 - type: document

@@ -1,13 +1,13 @@
 {
   "metas": {
-    "title": "Products | Secure Digital ID",
+    "title": "Insights | Secure Digital ID",
     "description": "Reduce costs and transform customer experiences with Gataca’s decentralized digital identity technology",
     "facebookImage": "",
     "linkedInImage": "",
     "twitterImage": ""
   },
-  "introProductsSection": {
-    "title": "PRODUCTS",
+  "introSection": {
+    "title": "INSIGHTS",
     "description": "<p>Gataca has built three components to connect the secure digital ID ecosystem. We help issuers transform their CREDENTIALS into IDENTITY wallets in customers' mobile phones that they can then CONNECT to digital services, from e-government through to car sharing.</p>"
   }
 }

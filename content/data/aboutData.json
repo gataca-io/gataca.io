@@ -79,7 +79,7 @@
       {
         "title": "1st prize in RACE by European Blockchain Convention",
         "description": "<p>Awarded first place in the February 2020 edition of RACE by EBC, the European Blockchain Convention's startup competition, where ten of the most promising Blockchain startups from the Nordics and Europe presented their projects.</p>",
-        "photo": "/static/cropped-ebc-logo-red-scaled-1.png",
+        "photo": "../images/cropped-ebc-logo-red-scaled-1.png",
         "link": "https://eblockchainconvention.com/race-by-ebc/"
       },
       {
@@ -103,7 +103,7 @@
       {
         "title": "MIT FinTech competition Finalist",
         "description": "<p>Selected as a finalist for MIT's Annual FinTech Competition, the largest student-organized FinTech Conference in the USA.</p>",
-        "photo": "/static/ft_cutout_red-01.png",
+        "photo": "../images/ft_cutout_red-01.png",
         "link": "http://www.mitfintech.com/pitch-competition"
       },
       {
