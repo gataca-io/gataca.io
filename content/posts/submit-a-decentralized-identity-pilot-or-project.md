@@ -1,6 +1,6 @@
 ---
 date: 2020-05-11T05:46:57.000+00:00
-hero_image: "/content/images/nick-fewings-r5guaf1pe3g-unsplash.jpg"
+hero_image: "/content/images/joel-filipe-zmrmfulofus-unsplash.jpg"
 meta_data:
   title: Gataca | Submit a decentralized identity pilot or project
   description: The number of decentralized identity pilots and projects has grown
