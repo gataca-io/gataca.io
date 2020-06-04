@@ -1,4 +1,5 @@
 ---
+hero_image: "/content/images/joel-filipe-zmrmfulofus-unsplash.jpg"
 meta_data:
   rrss_images:
     twitter: "../images/sarah-dorweiler-9Z1KRIfpBTM-unsplash.jpg"
@@ -7,7 +8,6 @@ meta_data:
   title: ''
   description: ''
 date: 2020-06-01T06:36:02.000+00:00
-hero_image: "/static/joel-filipe-zmrmfulofus-unsplash.jpg"
 title: Create an identity that is not controlled by big tech or governments
 author: ''
 
