@@ -1,36 +1,41 @@
 import { graphql, StaticQuery } from "gatsby"
 import React, { Fragment } from "react"
-import aboutStyles from "../../styles/pages/about.module.scss"
+import teamSectionStyles from "./teamSection.module.scss"
 import Img from "gatsby-image"
 
 function RenderTeamSection({ data }) {
   data = data.allDataJson.edges.filter(edge => {
     return edge ? !! edge.node.teamDataSection : null
   })
-  const teamData = data;
+  const teamData = data[0].node.teamDataSection;
   console.log(teamData);
   
-  return( <Fragment/>
-/*    <section className={`bx--grid ${ aboutStyles.teamContainer }`}>
+  return(
+    <section className={`bx--grid ${ teamSectionStyles.teamContainer }`}>
       
       <h2>{data.title}</h2>
       <p dangerouslySetInnerHTML={{ __html: data.description }}/>
       
-      <div className={`bx--row ${ aboutStyles.teamSection }`}>
+      <div className={`bx--row ${ teamSectionStyles.teamSection }`}>
         {teamData.team.map(gato => {
           return (
-            <div className={`bx--col-sm-16 ${ aboutStyles.personContainer }`}>
+            <div className={`bx--col-sm-16 ${ teamSectionStyles.personContainer }`}>
               <Img
-                fluid={teamData.hero_image.childImageSharp.fluid}
-                alt={teamData.title}
+                className={teamSectionStyles.imgStyles}
+                fluid={gato.photo.childImageSharp.fluid}
+                title={gato.title}
+                alt={gato.title}
+                fadeIn={true}
+                durationFadeIn={500}
+                // objectFit="cover"
               />
-              <div className={aboutStyles.infoPerson}>
+              <div className={teamSectionStyles.infoPerson}>
                 <h3>{gato.name}</h3>
                 <p>{gato.bio}</p>
-                <div className={aboutStyles.rrssSection}>
+                <div className={teamSectionStyles.rrssSection}>
                   {gato.links.map(link=>{
                     return <a href={link.url}>
-                      <img src={link.icon}/>
+                      <img src={link.icon.publicURL}/>
                     </a>
                   })}
                 </div>
@@ -40,7 +45,7 @@ function RenderTeamSection({ data }) {
         })}
       </div>
     
-    </section>*/
+    </section>
   )
 }
 
@@ -62,6 +67,9 @@ export default function TeamSection( ) {
                         links {
                           name
                           url
+                          icon {
+                            publicURL
+                          }
                         }
                         photo {
                           childImageSharp {
