@@ -2,7 +2,7 @@
 new_page_extension: md
 auto_deploy: false
 admin_path: ''
-webhook_url: 
+webhook_url:
 sections:
 - type: heading
   label: Web Content
@@ -49,8 +49,8 @@ sections:
   create: documents
   match: "**/*"
   new_doc_ext: md
-upload_dir: static
-public_path: "/static"
+upload_dir: content/images
+public_path: "/content/images"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
