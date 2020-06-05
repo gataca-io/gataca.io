@@ -1,5 +1,5 @@
 ---
-hero_image: "/content/images/joel-filipe-zmrmfulofus-unsplash.jpg"
+hero_image: "/content/images/ashley-whitlatch-ydj7s5ih1vy-unsplash.jpg"
 meta_data:
   rrss_images:
     twitter: "../images/sarah-dorweiler-9Z1KRIfpBTM-unsplash.jpg"
