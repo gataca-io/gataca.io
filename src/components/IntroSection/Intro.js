@@ -65,11 +65,13 @@ export default function IntroSection({ data, link }) {
             </section>
     
             <div className={ introStyles.phoneMobileContainer}>
-              <div className={ introStyles.phoneMobilesubContainer }>
+              <div className={ introStyles.phoneMobileSubContainer }>
                 <div className={introStyles.imageContainer}>
+                  <div className={introStyles.backgroundMobileContainer}>
+                  
+                  </div>
                   <img src={iphoneImg}/>
-                    <Credentials credentials={data.credentials}/>
-                    {/*<AppFooter />*/}
+                  <Credentials credentials={data.credentials}/>
                 </div>
               </div>
             </div>

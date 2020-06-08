@@ -19,8 +19,8 @@ function renderPartners({ data, info }) {
           </div>
           {partnersData.partners.map(el=>{
             return (
-              <a href={el.url} target="_blank">
-                <div className={`bx--col-lg-3 bx--col-md-3 bx--col-sm-2 ${partnersStyles.partnerContainer}`}>
+              <a className={`bx--col-lg-3 bx--col-md-3 bx--col-sm-2 ${partnersStyles.partnerContainer}`} href={el.url} target="_blank">
+                <div>
                   <img src={el.image.publicURL} alt={el.title}/>
                 </div>
               </a>

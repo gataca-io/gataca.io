@@ -100,14 +100,28 @@
     @include media-for-tablet-portrait-up {
         display: none;
     }
-    .phoneMobilesubContainer{
+    .phoneMobileSubContainer{
         position: relative;
         min-height: 380px;
         height: 100%;
         max-width: 100%;
         overflow: hidden;
         margin-top: var(--doubleBaseMargin);
-        background-color: var(--bg-grey);
+
+        .backgroundMobileContainer{
+            position: absolute;
+            top: 0;
+            left: 0;
+            /* min-height: 380px; */
+            height: 500px;
+            width: calc(100% - 15px);
+            /* padding-left: 20px; */
+            margin-left: 14px;
+            max-width: 100%;
+            border-radius: 50px;
+            background-color: var(--bg-grey);
+            z-index: 5;
+        }
         .imageContainer{
             max-width: calc(100% - 100px);
             border-radius: 20px;
@@ -120,6 +134,8 @@
             z-index: 11;
             &>img {
                 width: 100%;
+                z-index: 12;
+                position: absolute;
             }
         }
     }
