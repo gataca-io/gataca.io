@@ -106,7 +106,7 @@ fields:
     default: ''
     label: Partners List
     description: Each one of the partners information
-    config:
+    config: 
     fields:
     - type: text
       name: title
@@ -146,7 +146,7 @@ fields:
   - name: elements
     type: field_group_list
     default: ''
-    config:
+    config: 
     fields:
     - type: text
       name: title
@@ -223,7 +223,7 @@ fields:
     type: field_group
     default: ''
     label: End Bullet
-    config:
+    config: 
     fields:
     - type: text
       name: title
