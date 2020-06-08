@@ -27,7 +27,7 @@ $feature-flags: (
 
 // overrides posts
 .iframeContainer {
-    height: 1130px;
+    height: 1300px;
     padding: 50px 0;
     @include media-for-phone-only {
         display: none;
@@ -37,7 +37,8 @@ $feature-flags: (
         left: 50%;
         transform: translateX(-50%);
         width: calc(100vw - 120px);
-        height: 1130px;
+        height: 1300px;
+        padding-bottom: 5rem;
     }
 }
 

@@ -44,23 +44,28 @@
     "title": "Associations:",
     "partners": [
       {
-        "title": "",
+        "title": "Alastria",
+        "url": "",
         "image": "../images/alastria.svg"
       },
       {
         "title": "MIT Delta",
+        "url": "",
         "image": "../images/mit_delta.svg"
       },
       {
         "title": "Telefónica Open Future",
+        "url": "",
         "image": "../images/telefonica.svg"
       },
       {
         "title": "SeedRocket",
+        "url": "",
         "image": "../images/seedrocket.svg"
       },
       {
-        "title": "MIT Sandbox",
+        "title": "DIF Identity foundation",
+        "url": "https://identity.foundation/",
         "image": "../images/mit_sandbox.svg"
       }
     ]

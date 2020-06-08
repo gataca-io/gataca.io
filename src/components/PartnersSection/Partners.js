@@ -19,9 +19,11 @@ function renderPartners({ data, info }) {
           </div>
           {partnersData.partners.map(el=>{
             return (
-              <div className={`bx--col-lg-3 bx--col-md-3 bx--col-sm-2 ${partnersStyles.partnerContainer}`}>
-                <img src={el.image.publicURL} alt={el.title}/>
-              </div>
+              <a href={el.url} target="_blank">
+                <div className={`bx--col-lg-3 bx--col-md-3 bx--col-sm-2 ${partnersStyles.partnerContainer}`}>
+                  <img src={el.image.publicURL} alt={el.title}/>
+                </div>
+              </a>
             )
           })}`
         </div>
@@ -43,6 +45,7 @@ export default function Partners({ info }) {
                                 title
                                 partners {
                                     title
+                                    url
                                     image {
                                         publicURL
                                         relativePath
