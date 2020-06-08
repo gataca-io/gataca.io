@@ -12,37 +12,37 @@
     "description": "",
     "team": [
       {
-        "name": "Irene",
+        "name": "Irene Hernandez",
         "bio": "CEO",
         "photo": "../images/Irene.png",
         "links": [
           {
             "name": "linkedIn",
-            "url": "",
+            "url": "https://www.linkedin.com/in/irenehernandez/",
             "icon": "../images/linkedin_blue.svg"
           }
         ]
       },
       {
-        "name": "Samuel",
+        "name": "Samuel Gómez",
         "bio": "CTO",
         "photo": "../images/Samuel.png",
         "links": [
           {
             "name": "linkedIn",
-            "url": "",
+            "url": "https://www.linkedin.com/in/samuelgoes/",
             "icon": "../images/linkedin_blue.svg"
           }
         ]
       },
       {
-        "name": "Jose",
+        "name": "Jose San Juan",
         "bio": "CSO",
         "photo": "../images/Jose.png",
         "links": [
           {
             "name": "linkedIn",
-            "url": "",
+            "url": "https://www.linkedin.com/in/jsanjup/",
             "icon": "../images/linkedin_blue.svg"
           }
         ]
@@ -60,13 +60,13 @@
         ]
       },
       {
-        "name": "Lou",
+        "name": "Louise Anderson",
         "bio": "Head of growth",
         "photo": "../images/Lou.png",
         "links": [
           {
             "name": "linkedIn",
-            "url": "",
+            "url": "https://www.linkedin.com/in/klouiseanderson/",
             "icon": "../images/linkedin_blue.svg"
           }
         ]
