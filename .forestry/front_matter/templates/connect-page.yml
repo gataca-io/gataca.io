@@ -24,12 +24,12 @@ fields:
     required: false
     wysiwyg: true
     schema:
-      format: markdown
+      format: html-blocks
 - name: bullets
   type: field_group_list
   default: ''
   label: Product Detail Bullets
-  config: 
+  config:
   fields:
   - type: text
     name: title
