@@ -1,7 +1,7 @@
 {
   "title": "Connect",
   "icon": "../images/connectBuilding.svg",
-  "description": "#### Combines the security levels of government-issued IDs with single-sign-on authentication capabilities",
+  "description": "Combines the security levels of government-issued IDs with single-sign-on authentication capabilities",
   "bullets": [
     {
       "title": "Automatic KYC/GDPR compliance",
