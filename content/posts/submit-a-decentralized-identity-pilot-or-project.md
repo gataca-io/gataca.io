@@ -1,6 +1,6 @@
 ---
 date: 2020-05-11T05:46:57.000+00:00
-hero_image: "/static/uploads/mockaroon-yquelg7fmr4-unsplash.jpg"
+hero_image: "/content/images/mockaroon-yquelg7fmr4-unsplash.jpg"
 meta_data:
   title: Gataca | Submit a decentralized identity pilot or project
   description: The number of decentralized identity pilots and projects has grown
