@@ -31,7 +31,7 @@ function RenderTeamSection({ data }) {
               />
               <div className={teamSectionStyles.infoPerson}>
                 <h3>{gato.name}</h3>
-                <p>{gato.bio}</p>
+                <div dangerouslySetInnerHTML={{__html:gato.bio}}></div>
                 <div className={teamSectionStyles.rrssSection}>
                   {gato.links.map(link=>{
                     return <a href={link.url}>
