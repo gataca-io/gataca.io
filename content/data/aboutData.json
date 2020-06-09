@@ -13,7 +13,7 @@
     "team": [
       {
         "name": "Irene Hernandez",
-        "bio": "CEO",
+        "bio": "<p>CEO</p>",
         "photo": "../images/Irene.png",
         "links": [
           {
@@ -25,7 +25,7 @@
       },
       {
         "name": "Samuel Gómez",
-        "bio": "CTO",
+        "bio": "<p>CTO</p>",
         "photo": "../images/Samuel.png",
         "links": [
           {
@@ -37,7 +37,7 @@
       },
       {
         "name": "Jose San Juan",
-        "bio": "CSO",
+        "bio": "<p>CSO</p>",
         "photo": "../images/Jose.png",
         "links": [
           {
@@ -61,7 +61,7 @@
       },
       {
         "name": "Louise Anderson",
-        "bio": "Head of growth",
+        "bio": "<p>Head of growth</p>",
         "photo": "../images/Lou.png",
         "links": [
           {
