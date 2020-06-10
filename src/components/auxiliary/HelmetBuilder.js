@@ -31,7 +31,7 @@ export const BuildHelmet = ({title, description, facebookImg, twitterImg, linked
   let url = `${site.siteMetadata.siteUrl}`;
   if (typeof window !== 'undefined') {
     url = `${site.siteMetadata.siteUrl}${window.location.pathname}`
-    console.log(url);
+    console.log('HELMET URL => ',url);
   }
   const twitterHandler = `${site.siteMetadata.twitterHandler}`
   

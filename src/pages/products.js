@@ -20,12 +20,6 @@ export default function Products(props) {
   console.log('PRODUCTS PAGE DATA => ',props.data);
   return (
     <LayoutProducts>
-        <BuildHelmet
-          title={productsData.metas.title}
-          description={productsData.metas.description}
-          twitterImg={productsData.metas.twitterImage}
-          facebookImg={productsData.metas.facebookImage}
-        />
         <Tab
           href={"/" + credentials.title}
           id={credentials.title}
