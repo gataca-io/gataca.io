@@ -7,6 +7,9 @@ import { Accordion, AccordionItem } from "carbon-components-react"
 import partnersStyles from "../components/PartnersSection/partners.module.scss"
 import linkedInIcon from "../../static/images/linkedin.svg"
 import TeamSection from "../components/TeamSection/TeamSection"
+import { BuildHelmet } from "../components/auxiliary/HelmetBuilder"
+import productsData from "../../content/data/productsData.json"
+import LayoutProducts from "../layouts/LayoutProducts"
 
 function IntroSection({ data }) {
   return (
@@ -84,6 +87,10 @@ export default function About() {
   const { infoData } = useSiteMetaData()
   return (
       <Layout>
+        <BuildHelmet
+          title={aboutData.metas.title}
+          description={aboutData.metas.description}
+        />
         <section className={aboutStyles.base}>
           <IntroSection data={aboutData.introSection}/>
           {/*<TeamSection data={aboutData.teamDataSection}/>*/}

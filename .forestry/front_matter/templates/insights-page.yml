@@ -1,5 +1,5 @@
 ---
-label: Products Page
+label: Insights Page
 hide_body: false
 fields:
 - name: metas
@@ -33,12 +33,12 @@ fields:
     label: Twitter Image
   label: Metas
 - type: field_group
-  name: introProductsSection
+  name: introSection
   label: Intro Section
   fields:
   - name: title
     type: text
-    default: PRODUCTS
+    default: Insights
     config:
       required: false
       wysiwyg: false
@@ -53,4 +53,4 @@ fields:
       schema:
         format: html-blocks
 pages:
-- content/data/productsData.json
+- content/data/insightsData.json

@@ -13,13 +13,19 @@ import { Tab, Tabs } from "carbon-components-react"
 import IdentifyComponent from "../components/ProductsSection/IdentifyComponent"
 import ConnectComponent from "../components/ProductsSection/ConnectComponent"
 import CredentialsComponent from "../components/ProductsSection/CredentialsComponent"
-
+import { BuildHelmet } from "../components/auxiliary/HelmetBuilder"
 
 export default function Products(props) {
   const { infoData } = useSiteMetaData()
   console.log('PRODUCTS PAGE DATA => ',props.data);
   return (
     <LayoutProducts>
+        <BuildHelmet
+          title={productsData.metas.title}
+          description={productsData.metas.description}
+          twitterImg={productsData.metas.twitterImage}
+          facebookImg={productsData.metas.facebookImage}
+        />
         <Tab
           href={"/" + credentials.title}
           id={credentials.title}

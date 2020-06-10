@@ -31,6 +31,7 @@ export const BuildHelmet = ({title, description, facebookImg, twitterImg, linked
   let url = `${site.siteMetadata.siteUrl}`;
   if (typeof window !== 'undefined') {
     url = `${site.siteMetadata.siteUrl}${window.location.pathname}`
+    console.log(url);
   }
   const twitterHandler = `${site.siteMetadata.twitterHandler}`
   
@@ -61,10 +62,6 @@ export const BuildHelmet = ({title, description, facebookImg, twitterImg, linked
     <meta name="twitter:image" content={twitterImg}/>
     
     {/*LINKED IN*/}
-    <meta property="og:title" content={title}/>
-    <meta property="og:image" content={linkedInImg}/>
-    <meta property="og:description" content={description}/>
-    <meta property="og:url" content={url} />
   
       <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png"/>
       <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png"/>
