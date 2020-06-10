@@ -49,7 +49,7 @@ export default function HeaderSection(props) {
               <div className={headerStyles.right} >
                   <Link
                     to={
-                      '/products'
+                      '/products/'
                     }
                   >
                 <h3>
@@ -58,7 +58,7 @@ export default function HeaderSection(props) {
                   </Link>
                   <Link
                     to={
-                      '/insights'
+                      '/insights/'
                     }
                   >
                 <h3>
@@ -67,7 +67,7 @@ export default function HeaderSection(props) {
                   </Link>
                   <Link
                     to={
-                      '/about'
+                      '/about/'
                     }
                   >
                 <h3>
@@ -86,17 +86,17 @@ export default function HeaderSection(props) {
             <SideNav className={headerStyles.sideNav}
                      aria-label="Side navigation" expanded={isSideNavExpanded}>
               <SideNavItems>
-                <Link to={'/products'}>
+                <Link to={'/products/'}>
                   <SideNavLink href="">
                     Products
                   </SideNavLink>
                 </Link>
-                <Link to={'/insights'}>
+                <Link to={'/insights/'}>
                   <SideNavLink href="">
                     Insights
                   </SideNavLink>
                 </Link>
-                <Link to={'/about'}>
+                <Link to={'/about/'}>
                   <SideNavLink href="">
                     About
                   </SideNavLink>
