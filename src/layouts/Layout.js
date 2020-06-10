@@ -23,7 +23,10 @@ export default function Layout(props) {
         
         <HeaderSection title={title} link={configMetaData}/>
         
-        <div className={layoutStyles.content}>{props.children}</div>
+        <div className={layoutStyles.content}>
+          {props.children}
+        </div>
+        
         <FooterSection data={footerSectionData}/>
     </section>
   )

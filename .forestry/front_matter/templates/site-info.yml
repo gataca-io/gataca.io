@@ -14,42 +14,30 @@ fields:
 - type: text
   name: bookACallUrl
   label: CTA Hubspot url
-- name: meta_data
-  type: field_group
-  config: {}
-  fields:
-  - name: title
-    type: text
-    config:
-      required: false
-    label: Title
-  - name: description
-    type: text
-    config:
-      required: false
-    label: Description
-  - name: rrss_images
-    type: field_group
-    config: {}
-    fields:
-    - name: twitter
-      type: file
-      config:
-        maxSize: 64
-      label: Twitter
-    - name: facebook_and_whatsapp
-      type: file
-      config:
-        maxSize: 64
-      label: Facebook & Whatsapp
-    - name: linkedin
-      type: file
-      config:
-        maxSize: 64
-      label: linkedin
-    label: RRSS Images
-    description: Images to show when shared on each social network with each different
-      format.<br>Twitter, LinkedIn, Whatsapp, each one is different.
-  label: Site Main Meta Data
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: description
+  type: text
+  config:
+    required: false
+  label: Description
+- name: twitterImage
+  type: file
+  config:
+    maxSize: 64
+  label: Twitter
+- name: facebookImage
+  type: file
+  config:
+    maxSize: 64
+  label: Facebook & Whatsapp
+- name: linkedInImage
+  type: file
+  config:
+    maxSize: 64
+  label: linkedIn
 pages:
 - content/data/configMetaData.json
