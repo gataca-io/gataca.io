@@ -17,6 +17,9 @@ export default function IndexPage() {
       <BuildHelmet
         title={configMetaData.title}
         description={configMetaData.description}
+        twitterImg={configMetaData.twitterImage}
+        facebookImg={configMetaData.facebookImage}
+        linkedInImg={configMetaData.linkedInImage}
       />
       <article className={homeStyles.home} >
         <IntroSection data={homeData.introSection} link={configMetaData.bookACallUrl}/>
