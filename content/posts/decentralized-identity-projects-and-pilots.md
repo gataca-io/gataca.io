@@ -5,9 +5,9 @@ meta_data:
   title: Decentralized identity projects and pilots
   description: Decentralized identity projects and pilots
   rrss_images:
-    twitter: ''
-    facebook_and_whatsapp: ''
-    linkedin: ''
+    twitter: "/static/images/decentralized-digital-identity-pilots.png"
+    facebook_and_whatsapp: "/static/images/decentralized-digital-identity-pilots.png"
+    linkedin: "/static/images/decentralized-digital-identity-pilots.png"
 title: Decentralized identity projects and pilots
 author: ''
 
