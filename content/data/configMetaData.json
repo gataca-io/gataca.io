@@ -2,8 +2,8 @@
   "title": "GATACA",
   "metaTitle": "Gataca | Decentralized Identity Management",
   "description": "Gataca is a cybersecurity company that provides fast, compliant and secure digital identity technology solutions.",
-  "facebookImage": "/static/images/testimage.png",
-  "linkedInImage": "/static/images/testimage.png",
-  "twitterImage": "/static/images/testimage.png",
+  "facebookImage": "../images/testimage.png",
+  "linkedInImage": "../images/testimage.png",
+  "twitterImage": "../images/testimage.png",
   "bookACallUrl": "https://meetings.hubspot.com/irene10"
 }
