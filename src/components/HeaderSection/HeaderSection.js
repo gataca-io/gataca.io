@@ -101,7 +101,7 @@ export default function HeaderSection(props) {
                     About
                   </SideNavLink>
                 </Link>
-                <a href={props.link.bookACallUrl} target="_blank">
+                <a href={configMetaData.bookACallUrl} target="_blank">
                   <SideNavLink href="">
                     Book a call
                   </SideNavLink>
