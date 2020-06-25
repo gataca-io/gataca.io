@@ -93,6 +93,12 @@
   "ctaSection": {
     "title": "Ready to start?",
     "description": "<p>Learn about how decentralized digital identity can transform your customers' experiences</p>",
-    "ctaText": "Book a call"
+    "ctaText": "Book a demo"
+  },
+  "partnersSection": {
+    "title": "",
+    "partners": [
+
+    ]
   }
 }
