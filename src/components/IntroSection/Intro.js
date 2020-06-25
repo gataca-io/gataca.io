@@ -2,7 +2,6 @@ import introStyles from "./intro.module.scss"
 import iphoneImg from "@images/iphone.svg"
 import React from "react"
 import { Button } from "carbon-components-react"
-import { DangerSetH3Html } from "../auxiliary/aux"
 import Credential from "../Credential/Credential"
 
 function Credentials ({credentials}) {

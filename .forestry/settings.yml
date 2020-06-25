@@ -2,7 +2,7 @@
 new_page_extension: md
 auto_deploy: false
 admin_path: "/static/admin"
-webhook_url: 
+webhook_url:
 sections:
 - type: heading
   label: Web Content
@@ -31,7 +31,7 @@ sections:
   label: "- Identity -"
 - type: document
   path: content/data/credentials.json
-  label: "- Crendentials -"
+  label: "- Certify -"
 - type: document
   path: content/data/connect.json
   label: " - Connect -"

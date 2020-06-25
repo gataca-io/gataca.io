@@ -1,5 +1,5 @@
 import { graphql, StaticQuery } from "gatsby"
-import React, { Fragment } from "react"
+import React  from "react"
 import teamSectionStyles from "./teamSection.module.scss"
 import Img from "gatsby-image"
 

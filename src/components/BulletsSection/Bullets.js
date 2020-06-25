@@ -2,7 +2,6 @@ import bulletsStyles  from "./bullets.module.scss"
 import bulletsMobileStyles  from "./bullets_mobile.module.scss"
 import React from "react"
 import BulletOne from "../BulletOne"
-import { DangerSetPHtml } from "../auxiliary/aux"
 
 function RenderMobile({ data }) {
   return <section className={bulletsMobileStyles.baseMobile}>

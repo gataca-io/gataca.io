@@ -1,0 +1,32 @@
+{
+  "partnersSection": {
+    "title": "Associations:",
+    "partners": [
+      {
+        "title": "Alastria",
+        "url": "https://alastria.io/en/",
+        "image": "../images/alastria.svg"
+      },
+      {
+        "title": "MIT Delta",
+        "url": "https://entrepreneurship.mit.edu/accelerator/program/",
+        "image": "../images/mit_delta.svg"
+      },
+      {
+        "title": "Telefónica Open Future",
+        "url": "https://www.openfuture.org/hubs/gran-via-espana-open-future",
+        "image": "../images/telefonica.svg"
+      },
+      {
+        "title": "SeedRocket",
+        "url": "https://www.seedrocket.com/",
+        "image": "../images/seedrocket.svg"
+      },
+      {
+        "title": "DIF Identity foundation",
+        "url": "https://identity.foundation/",
+        "image": "../images/logo_dif.png"
+      }
+    ]
+  }
+}

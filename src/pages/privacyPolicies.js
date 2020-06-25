@@ -2,8 +2,6 @@ import React from "react"
 import Layout from "../layouts/Layout"
 import aboutStyles from "../styles/pages/about.module.scss"
 import useSiteMetaData from "../static_queries/useSiteMetadata"
-import aboutData  from "./../../content/data/aboutData.json"
-import { Accordion, AccordionItem } from "carbon-components-react"
 
 function IntroSection(props) {
   return (

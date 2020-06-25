@@ -1,19 +1,13 @@
 import React from "react"
-import Layout from "../layouts/Layout"
-import { graphql, Link, navigate } from "gatsby"
-import productStyles from "../styles/pages/products.module.scss"
 import useSiteMetaData from "../static_queries/useSiteMetadata"
-import productsData  from "./../../content/data/productsData.json"
-import faqData  from "./../../content/data/faqData.json"
 import identify  from "./../../content/data/identify.json"
 import credentials  from "./../../content/data/credentials.json"
 import connect  from "./../../content/data/connect.json"
 import LayoutProducts from "../layouts/LayoutProducts"
-import { Tab, Tabs } from "carbon-components-react"
+import { Tab } from "carbon-components-react"
 import IdentifyComponent from "../components/ProductsSection/IdentifyComponent"
 import ConnectComponent from "../components/ProductsSection/ConnectComponent"
 import CredentialsComponent from "../components/ProductsSection/CredentialsComponent"
-import { BuildHelmet } from "../components/auxiliary/HelmetBuilder"
 
 export default function Products(props) {
   const { infoData } = useSiteMetaData()

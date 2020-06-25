@@ -20,8 +20,8 @@ module.exports.onCreateNode = ({ node, actions }) => {
 
 module.exports.createPages = async ({ graphql, actions, reporter }) => {
   actions.createRedirect({
-    fromPath: `/products`,
-    toPath: `/identify`,
+    fromPath: `/products/`,
+    toPath: `/wallet/`,
     isPermanent: `true`,
   })
   const { createPage } = actions

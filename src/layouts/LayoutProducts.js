@@ -1,6 +1,5 @@
 import React from "react"
 import HeaderSection from "../components/HeaderSection/HeaderSection"
-import Helmet from "react-helmet"
 import useSiteMetadata from "../static_queries/useSiteMetadata"
 import layoutStyles from "./layout.module.scss"
 import FooterSection from "../components/FooterSection/FooterSection"
@@ -12,10 +11,10 @@ import HeadLineSection from "../components/HeadLineSection/HeadLineSection"
 import faqData from "../../content/data/faqData.json"
 import FaqSection from "../components/faqSection/FaqSection"
 import productSelStyles from "../components/ProductsSection/productsSelector.module.scss"
-import { Tab, Tabs } from "carbon-components-react"
+import { Tabs } from "carbon-components-react"
 
 export default function LayoutProducts(props) {
-  const { metaTitle, metaDescription, title } = useSiteMetadata()
+  const { title } = useSiteMetadata()
   
   return (
     <section

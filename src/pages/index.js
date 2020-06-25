@@ -8,7 +8,6 @@ import Bullets from "../components/BulletsSection/Bullets"
 import BulletsPlusGraph from "../components/BulletsPlusGraphSection/BulletsPlusGraph"
 import Cta from "../components/CtaSection/Cta"
 import IntroSection from "../components/IntroSection/Intro"
-import Helmet from "react-helmet"
 import { BuildHelmet } from "../components/auxiliary/HelmetBuilder"
 
 export default function IndexPage() {

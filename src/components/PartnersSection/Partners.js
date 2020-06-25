@@ -1,7 +1,6 @@
 import partnersStyles  from "./partners.module.scss"
 import React from "react"
 import { graphql, Link, StaticQuery } from "gatsby"
-import Img from "gatsby-image"
 
 function renderPartners({ data, info }) {
   // filter Query to get to data
