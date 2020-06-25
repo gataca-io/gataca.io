@@ -13,7 +13,7 @@
       },
       {
         "title": "Does Gataca store information about the user’s identity?",
-        "response": "<p>No. Gataca embraces privacy-by-design and never stores information about an individual’s identity.</p>"
+        "response": "<p>No. Gataca embraces privacy-by-design: users store their identity credentials locally in their wallets and they decide who they share them with. </p>"
       },
       {
         "title": "Does Gataca use cryptocurrencies?",
@@ -21,11 +21,11 @@
       },
       {
         "title": "How does Gataca comply with GDPR?",
-        "response": "<p>Yes. Consent proofs are GDPR compliant, automatically managed by the platform, and technically enforced.</p>"
+        "response": "<p>Users are in full control of their private information, have revocation capabilities all in one place and technically enforced consent proofs.</p>"
       },
       {
         "title": "What happens if a user loses their phone with their ID wallet?",
-        "response": "<p>We automate ongoing a back-up process for our users. If they lose their phone, they just need to reinstall the application, using their private key and recovery code.</p>"
+        "response": "<p>We automate an ongoing back-up process for our users. If they lose their phone, they just need to reinstall the application, using their private key and recovery code.</p>"
       }
     ]
   }
