@@ -16,7 +16,7 @@ fields:
   config:
     required: false
     wysiwyg: false
-- name: contant_email
+- name: contact_email
   type: text
   label: Contact Email
   default: ''

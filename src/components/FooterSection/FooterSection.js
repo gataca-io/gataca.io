@@ -10,8 +10,8 @@ export default function FooterSection( ) {
           <div className={footerStyles.findUs}>
             <h2>{data.title}</h2>
             <div className={footerStyles.email}>
-              <a href={'mailto:' + data.contant_email}>
-                <p>{data.contant_email}</p>
+              <a href={'mailto:' + data.contact_email}>
+                <p>{data.contact_email}</p>
               </a>
             </div>
             <div>
