@@ -58,18 +58,6 @@
             "icon": "../images/linkedin_blue.svg"
           }
         ]
-      },
-      {
-        "name": "Louise Anderson",
-        "bio": "<p>Head of growth</p>",
-        "photo": "../images/Lou.png",
-        "links": [
-          {
-            "name": "linkedIn",
-            "url": "https://www.linkedin.com/in/klouiseanderson/",
-            "icon": "../images/linkedin_blue.svg"
-          }
-        ]
       }
     ]
   },
