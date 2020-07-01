@@ -7,7 +7,7 @@ meta_data:
   title: ''
   description: ''
 date: 2020-07-01T15:34:29Z
-hero_image: "/static/images/img_0154.JPG"
+hero_image: "/content/static/images/img_0154.JPG"
 title: I got GATACAed
 author: ''
 
