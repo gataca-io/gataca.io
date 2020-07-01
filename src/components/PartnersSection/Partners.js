@@ -24,11 +24,10 @@ function renderPartners({ data, info }) {
                 </div>
               </a>
             )
-          })}`
+          })}
         </div>
     </div>
     </section>
-    
   )
 }
 
