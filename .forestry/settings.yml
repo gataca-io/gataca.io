@@ -28,7 +28,7 @@ sections:
   label: " - Products Page -"
 - type: document
   path: content/data/identify.json
-  label: "- Identity -"
+  label: "- Wallet -"
 - type: document
   path: content/data/credentials.json
   label: "- Certify -"
