@@ -1,7 +1,7 @@
 {
   "title": "Connect",
   "icon": "../images/connectBuilding.svg",
-  "description": "Combines the security levels of government-issued IDs with single-sign-on authentication capabilities",
+  "description": "<p>User authentication tools that combine trust levels of government-issued IDs with single-sign-on capabilities</p>",
   "bullets": [
     {
       "title": "Automatic KYC/GDPR compliance",
@@ -12,6 +12,11 @@
       "title": "Identity fraud reduction",
       "image": "../images/face_04.svg",
       "description": "<p>Reduce risk of identity fraud with guaranteed data authenticity and ownership</p>"
+    },
+    {
+      "title": "Higher conversion rates",
+      "description": "<p>Improve your user onboarding experience with 1-click authentication and improve your conversion rates</p>",
+      "image": "/static/images/multiple-actions-add-copy.png"
     }
   ],
   "secondaryDescription": "<p></p>",
