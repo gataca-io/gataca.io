@@ -8,7 +8,6 @@ function renderPartners({ data, info }) {
     return node ? !!node.partnersSection : null
   })
   const partnersData = data[0].partnersSection;
-  
   return (
     <section className={`${partnersStyles.base}`}>
       <div className={`bx--grid ${partnersStyles.container}`}>
