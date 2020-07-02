@@ -14,7 +14,7 @@ export default function IndexPage() {
   return (
     <Layout className={homeStyles.base}>
       <BuildHelmet
-        title={configMetaData.title}
+        title={configMetaData.metaTitle}
         description={configMetaData.description}
         twitterImg={configMetaData.twitterImage}
         facebookImg={configMetaData.facebookImage}

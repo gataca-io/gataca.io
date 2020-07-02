@@ -21,6 +21,7 @@ export default function HeaderSection(props) {
           <Header aria-label="Open menu" className={headerStyles.header}>
   
             <div className={headerStyles.nav}>
+              
               <div className={headerStyles.left}>
                 <Link to="/">
                   <img src={logo} alt={'Gataca'}/>
@@ -71,8 +72,11 @@ export default function HeaderSection(props) {
               
             </div>
             
-            <SideNav className={headerStyles.sideNav}
-                     aria-label="Side navigation" expanded={isSideNavExpanded}>
+            <SideNav
+               className={headerStyles.sideNav}
+               aria-label="Side navigation"
+               expanded={isSideNavExpanded}>
+              
               <SideNavItems>
                   <SideNavLink href="/products/">
                     Products
@@ -87,6 +91,7 @@ export default function HeaderSection(props) {
                   Book a call
                 </SideNavLink>
               </SideNavItems>
+              
             </SideNav>
 
           </Header>

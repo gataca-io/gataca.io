@@ -19,7 +19,7 @@ export default function Layout(props) {
         }}
       >
         
-        <HeaderSection title={title} link={configMetaData}/>
+        <HeaderSection title={configMetaData.title} link={configMetaData}/>
         
         <div className={layoutStyles.content}>
           {props.children}
