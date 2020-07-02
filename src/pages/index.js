@@ -22,7 +22,7 @@ export default function IndexPage() {
       />
       <article className={homeStyles.home} >
         <IntroSection data={homeData.introSection} link={configMetaData.bookACallUrl}/>
-        <Partners info={homeData.partnersSection} />
+        <Partners/>
         <Bullets data={homeData.bulletsSection}/>
         <BulletsPlusGraph data={homeData.bulletsEnhancedSection}/>
         <Cta data={homeData.ctaSection}/>

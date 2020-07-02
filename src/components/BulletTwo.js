@@ -11,9 +11,9 @@ export default function BulletTwo(props) {
   const {image, title, description} = props.data;
   return (
       <Bullet>
-        <img src={image}/>
+        <img src={image} alt={title}/>
         <h4>{title}</h4>
-        <div dangerouslySetInnerHTML={{ __html: description }}></div>
+        <div dangerouslySetInnerHTML={{ __html: description }}/>
       </Bullet>
   )
 }

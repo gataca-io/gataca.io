@@ -1,8 +1,8 @@
 import React from "react"
-import useSiteMetaData from "../static_queries/useSiteMetadata"
+// import useSiteMetaData from "../static_queries/useSiteMetadata"
 import identify  from "./../../content/data/identify.json"
 import LayoutProducts from "../layouts/LayoutProducts"
-import { Tab, Tabs } from "carbon-components-react"
+import { Tab } from "carbon-components-react"
 import IdentifyComponent from "../components/ProductsSection/IdentifyComponent"
 import credentials from "../../content/data/credentials.json"
 import connect from "../../content/data/connect.json"
@@ -11,8 +11,6 @@ import ConnectComponent from "../components/ProductsSection/ConnectComponent"
 
 
 export default function Certify(props) {
-  const { infoData } = useSiteMetaData()
-  console.log('PRODUCTS PAGE DATA => ',props.data);
   return (
     <LayoutProducts>
       <Tab
@@ -22,7 +20,7 @@ export default function Certify(props) {
         className="tabStyle"
         role="presentation"
         selected={false}
-        tabIndex={0}
+        tabIndex={-2}
       >
         <CredentialsComponent product={credentials}/>
       </Tab>
@@ -33,7 +31,7 @@ export default function Certify(props) {
         className="tabStyle"
         role="presentation"
         selected={false}
-        tabIndex={1}
+        tabIndex={-1}
       >
         <IdentifyComponent product={identify}/>
       </Tab>
@@ -44,7 +42,7 @@ export default function Certify(props) {
         className="tabStyle"
         role="presentation"
         selected={false}
-        tabIndex={2}
+        tabIndex={0}
       >
         <ConnectComponent product={connect}/>
       </Tab>

@@ -31,11 +31,11 @@ function RenderTeamSection({ data }) {
               />
               <div className={teamSectionStyles.infoPerson}>
                 <h3>{gato.name}</h3>
-                <div dangerouslySetInnerHTML={{__html:gato.bio}}></div>
+                <div dangerouslySetInnerHTML={{ __html: gato.bio }}/>
                 <div className={teamSectionStyles.rrssSection}>
                   {gato.links.map(link=>{
-                    return <a href={link.url}>
-                      <img src={link.icon.publicURL}/>
+                    return <a href={link.url} target="_blank" rel="noreferrer" >
+                      <img src={link.icon.publicURL} alt={link.url}/>
                     </a>
                   })}
                 </div>

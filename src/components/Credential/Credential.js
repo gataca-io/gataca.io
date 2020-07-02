@@ -10,7 +10,7 @@ export default function Credential(props) {
   return (
     <div className={CredentialStyles.credential}>
       <div className={CredentialStyles.leftContainer}>
-        <img src={cred.icon}/>
+        <img src={cred.icon} alt={cred.credential_name}/>
       </div>
       <div className={CredentialStyles.content}>
         <p className={CredentialStyles.category}>{cred.category}</p>

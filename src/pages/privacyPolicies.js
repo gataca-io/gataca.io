@@ -1,8 +1,9 @@
 import React from "react"
 import Layout from "../layouts/Layout"
 import aboutStyles from "../styles/pages/about.module.scss"
-import useSiteMetaData from "../static_queries/useSiteMetadata"
+// import useSiteMetaData from "../static_queries/useSiteMetadata"
 
+/*
 function IntroSection(props) {
   return (
     <div className={aboutStyles.container}>
@@ -11,9 +12,9 @@ function IntroSection(props) {
     </div>
   )
 }
+*/
 
 export default function PrivacyPolicies() {
-  const { infoData } = useSiteMetaData()
   return (
     <Layout>
       <section className={aboutStyles.base}>

@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import useBlogData from "../../static_queries/useMdBlogData"
 import blogListStyles from "./bloglist.module.scss"
-import StackGrid, { transitions } from "react-stack-grid";
+import StackGrid from "react-stack-grid";
 import { SizeMe } from "react-sizeme"
 
 import Img from "gatsby-image"

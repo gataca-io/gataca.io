@@ -1,9 +1,9 @@
 import React from "react"
 import Layout from "../layouts/Layout"
-import useSiteMetaData from "../static_queries/useSiteMetadata"
+// import useSiteMetaData from "../static_queries/useSiteMetadata"
 
 export default function BookCall() {
-  const { infoData } = useSiteMetaData()
+  // const { infoData } = useSiteMetaData()
   return (
     <Layout>
       <section>

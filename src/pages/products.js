@@ -1,5 +1,5 @@
 import React from "react"
-import useSiteMetaData from "../static_queries/useSiteMetadata"
+// import useSiteMetaData from "../static_queries/useSiteMetadata"
 import identify  from "./../../content/data/identify.json"
 import credentials  from "./../../content/data/credentials.json"
 import connect  from "./../../content/data/connect.json"
@@ -10,7 +10,7 @@ import ConnectComponent from "../components/ProductsSection/ConnectComponent"
 import CredentialsComponent from "../components/ProductsSection/CredentialsComponent"
 
 export default function Products(props) {
-  const { infoData } = useSiteMetaData()
+  // const { infoData } = useSiteMetaData()
   console.log('PRODUCTS PAGE DATA => ',props.data);
   return (
     <LayoutProducts>
@@ -21,7 +21,7 @@ export default function Products(props) {
           className="tabStyle"
           role="presentation"
           selected={false}
-          tabIndex={0}
+          tabIndex={-2}
         >
           <CredentialsComponent product={credentials}/>
         </Tab>
@@ -32,7 +32,7 @@ export default function Products(props) {
             className="tabStyle"
             role="presentation"
             selected={false}
-            tabIndex={1}
+            tabIndex={-1}
           >
             <IdentifyComponent product={identify}/>
           </Tab>
@@ -43,7 +43,7 @@ export default function Products(props) {
           className="tabStyle"
           role="presentation"
           selected={false}
-          tabIndex={2}
+          tabIndex={0}
         >
           <ConnectComponent product={connect}/>
         </Tab>

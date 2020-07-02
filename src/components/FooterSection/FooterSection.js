@@ -17,7 +17,7 @@ export default function FooterSection( ) {
             <div>
               {data.findUs.map(el=>{
                 return (
-                  <div>
+                  <div key={el.city}>
                     <h3>{el.city}</h3>
                     <p>{el.street}</p>
                     <p>{el.street_code}</p>
@@ -32,8 +32,8 @@ export default function FooterSection( ) {
             <div>
             
             {data.rrss.map(el=>{
-              return <div className={footerStyles.rrss_icon}>
-                <a href={el.url} target="_blank">
+              return <div key={el.name} className={footerStyles.rrss_icon}>
+                <a href={el.url} target="_blank" rel="noreferrer" >
                   <img src={el.icon} alt={el.name}/>
                 </a>
               </div>

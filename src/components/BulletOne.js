@@ -46,7 +46,7 @@ export default function BulletOne(props) {
   return (
     <Bullet>
       <BulletIcon right={props.right} left={props.left} center={props.center}>
-        <img src={image}/>
+        <img src={image} alt={title}/>
       </BulletIcon>
       <h4>{title}</h4>
       <div className="description" dangerouslySetInnerHTML={{ __html: description }}/>

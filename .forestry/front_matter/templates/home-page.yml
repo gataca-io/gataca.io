@@ -91,39 +91,6 @@ fields:
         required: false
       label: Icon
 - type: field_group
-  name: partnersSection
-  label: Partners Section
-  fields:
-  - name: title
-    type: text
-    default: ''
-    config:
-      required: false
-      wysiwyg: false
-    label: Title
-  - name: partners
-    type: field_group_list
-    default: ''
-    label: Partners List
-    description: Each one of the partners information
-    config: 
-    fields:
-    - type: text
-      name: title
-      label: Partner Title
-      config:
-        required: false
-    - type: text
-      name: url
-      label: Partner Url link
-      config:
-        required: false
-    - type: file
-      name: image
-      label: Partner Image
-      config:
-        required: false
-- type: field_group
   name: bulletsSection
   label: Bullets Section
   fields:
@@ -146,7 +113,7 @@ fields:
   - name: elements
     type: field_group_list
     default: ''
-    config: 
+    config:
     fields:
     - type: text
       name: title
@@ -223,7 +190,7 @@ fields:
     type: field_group
     default: ''
     label: End Bullet
-    config: 
+    config:
     fields:
     - type: text
       name: title

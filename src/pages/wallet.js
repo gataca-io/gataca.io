@@ -1,5 +1,5 @@
 import React from "react"
-import useSiteMetaData from "../static_queries/useSiteMetadata"
+// import useSiteMetaData from "../static_queries/useSiteMetadata"
 import LayoutProducts from "../layouts/LayoutProducts"
 import { Tab } from "carbon-components-react"
 import IdentifyComponent from "../components/ProductsSection/IdentifyComponent"
@@ -11,7 +11,7 @@ import ConnectComponent from "../components/ProductsSection/ConnectComponent"
 
 
 export default function Wallet(props) {
-  const { infoData } = useSiteMetaData()
+  // const { infoData } = useSiteMetaData()
   console.log('PRODUCTS PAGE DATA => ',props.data);
   return (
     <LayoutProducts>
@@ -22,7 +22,7 @@ export default function Wallet(props) {
         className="tabStyle"
         role="presentation"
         selected={false}
-        tabIndex={0}
+        tabIndex={-2}
       >
         <CredentialsComponent product={credentials}/>
       </Tab>
@@ -33,7 +33,7 @@ export default function Wallet(props) {
         className="tabStyle"
         role="presentation"
         selected={false}
-        tabIndex={1}
+        tabIndex={-1}
       >
         <IdentifyComponent product={identify}/>
       </Tab>
@@ -44,7 +44,7 @@ export default function Wallet(props) {
         className="tabStyle"
         role="presentation"
         selected={false}
-        tabIndex={2}
+        tabIndex={0}
       >
         <ConnectComponent product={connect}/>
       </Tab>

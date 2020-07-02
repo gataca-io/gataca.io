@@ -1,6 +1,6 @@
 import partnersStyles  from "./partners.module.scss"
 import React from "react"
-import { graphql, Link, StaticQuery } from "gatsby"
+import { graphql, StaticQuery } from "gatsby"
 
 function renderPartners({ data, info }) {
   // filter Query to get to data
@@ -17,7 +17,7 @@ function renderPartners({ data, info }) {
           </div>
           {partnersData.partners.map(el=>{
             return (
-              <a className={`bx--col-lg-3 bx--col-md-3 bx--col-sm-2 ${partnersStyles.partnerContainer}`} href={el.url} target="_blank">
+              <a className={`bx--col-lg-3 bx--col-md-3 bx--col-sm-2 ${partnersStyles.partnerContainer}`} href={el.url} target="_blank" rel="noreferrer" key={el.title}>
                 <div>
                   <img src={el.image.publicURL} alt={el.title}/>
                 </div>

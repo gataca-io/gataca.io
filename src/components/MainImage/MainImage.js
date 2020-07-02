@@ -7,8 +7,8 @@ import graphMobile from "@images/explainedPlatform_mobile.svg"
 export default function MainImage () {
   return (
     <div className={mainStyles.base}>
-      <img className={mainStyles.mainImage} src={graph}/>
-      <img className={mainStyles.mainImageMobile} src={graphMobile}/>
+      <img className={mainStyles.mainImage} src={graph} alt={''}/>
+      <img className={mainStyles.mainImageMobile} src={graphMobile} alt={''}/>
     </div>
   )
 }

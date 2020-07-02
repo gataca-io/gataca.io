@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../layouts/Layout"
 import aboutStyles from "../styles/pages/about.module.scss"
-import useSiteMetaData from "../static_queries/useSiteMetadata"
+// import useSiteMetaData from "../static_queries/useSiteMetadata"
 import aboutData  from "./../../content/data/aboutData.json"
 import TeamSection from "../components/TeamSection/TeamSection"
 import { BuildHelmet } from "../components/auxiliary/HelmetBuilder"
@@ -25,11 +25,11 @@ function AwardsSection({data}) {
         <div className={aboutStyles.awards}>
           {data.awards.map(award => {
             return (
-                <a href={award.link} target="_blank">
+                <a href={award.link} target="_blank" rel="noreferrer">
               <div className={aboutStyles.award}>
                 
                 <div className={aboutStyles.photoContainer}>
-                  <img src={award.photo}/>
+                  <img src={award.photo} alt={award.title}/>
                 </div>
                 <h3>
                   {award.title}
@@ -47,7 +47,7 @@ function AwardsSection({data}) {
 }
 
 export default function About() {
-  const { infoData } = useSiteMetaData()
+  // const { infoData } = useSiteMetaData()
   return (
       <Layout>
         <BuildHelmet

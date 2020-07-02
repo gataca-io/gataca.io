@@ -9,7 +9,7 @@ export default function Cta({ data }) {
       <div className={ctaStyles.container}>
         <h2>{data.title}</h2>
         <div className={ctaStyles.subContainer} dangerouslySetInnerHTML={{ __html: data.description }}/>
-        <a target="_blank" href={configMetaData.bookACallUrl}>
+        <a target="_blank" rel="noreferrer" href={configMetaData.bookACallUrl}>
           <Button
             className={ctaStyles.ctaButton}
             disabled={false}

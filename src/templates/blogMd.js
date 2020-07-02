@@ -1,7 +1,7 @@
 import React, { Fragment } from "react"
 import Layout from "./../layouts/Layout"
-import { graphql, Link } from "gatsby"
-import useBlogData from "../static_queries/useMdBlogData"
+import { graphql } from "gatsby"
+// import useBlogData from "../static_queries/useMdBlogData"
 import blogTemplateStyles from "../styles/templates/blog.module.scss"
 //this component handles the blur img & fade-ins
 import Img from "gatsby-image"
@@ -21,7 +21,7 @@ function buildHeroImage(frontmatter) {
 
 export default function BlogMd(props) {
   const data = props.data.markdownRemark
-  const allBlogData = useBlogData()
+/*  const allBlogData = useBlogData()
   const nextSlug = getNextSlug(data.fields.slug)
   
   function getNextSlug(slug) {
@@ -34,7 +34,7 @@ export default function BlogMd(props) {
     } else {
       return allSlugs[0]
     }
-  }
+  }*/
   
   return (
     <Layout>

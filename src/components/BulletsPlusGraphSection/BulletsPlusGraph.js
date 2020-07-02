@@ -4,7 +4,7 @@ import React from "react"
 import BulletOne from "../BulletOne"
 
 import BulletCenter from "../BulletCenter"
-import { DangerSetH2Html, DangerSetPHtml } from "../auxiliary/aux"
+import { DangerSetH2Html } from "../auxiliary/aux"
 import MainImage from "../MainImage/MainImage"
 
 function RenderMobile({ data }) {
@@ -29,7 +29,7 @@ function RenderMobile({ data }) {
       <div className={bulletsGraphMobile.bulletsContainer}>
         {data.elements.map(el => {
           return (
-            <BulletOne data={el}/>
+            <BulletOne data={el} key={el.title}/>
           )
         })}
       </div>
@@ -69,7 +69,7 @@ function RenderDesktop({ data }) {
       <div className={bulletsGraph.bulletsContainer}>
         {data.elements.map(el => {
           return (
-            <BulletOne data={el}/>
+            <BulletOne data={el} key={el.title}/>
           )
         })}
       </div>

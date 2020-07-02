@@ -9,26 +9,27 @@ function Credentials ({credentials}) {
     <div className={introStyles.credentialsContainer}>
       {credentials.map(cred=>{
       return (
-          <Credential cred={cred}/>
+          <Credential key={cred.credential_name} cred={cred}/>
         )
       })}
     </div>
   )
 }
 
-function AppFooter () {
+/*function AppFooter () {
   return (
     <div className={introStyles.appFooter}>
-      <div className={introStyles.tabs}></div>
+      <div className={introStyles.tabs}/>
       <div className={introStyles.tabs}>
         <div className={introStyles.circle}>
-          <img />
+          <img  alt={''}/>
         </div>
       </div>
-      <div className={introStyles.tabs}></div>
+      <div className={introStyles.tabs}/>
   </div>
   )
-}
+}*/
+
 
 export default function IntroSection({ data, link }) {
   return (
@@ -39,7 +40,7 @@ export default function IntroSection({ data, link }) {
           
             <div className={` ${ introStyles.phoneDesktopContainer }`}>
               <div className={introStyles.phoneContainer}>
-                <img className={introStyles.imageContainer} src={iphoneImg}/>
+                <img className={introStyles.imageContainer} src={iphoneImg} alt={data.mainSubtitle}/>
                 <Credentials credentials={data.credentials}/>
               </div>
             </div>
@@ -48,7 +49,7 @@ export default function IntroSection({ data, link }) {
               <h1>{data.mainTitle} <span>{data.mainTitleSubheading }</span></h1>
               <h3>{data.mainSubtitle}</h3>
               <p>{data.mainParagraph} </p>
-              <a href={link} target="_blank">
+              <a href={link} target="_blank" rel="noreferrer" >
                 <Button
                   className={introStyles.ctaButton}
                   disabled={false}
@@ -60,7 +61,6 @@ export default function IntroSection({ data, link }) {
                   type="button"
                 > {data.ctaText}</Button>
               </a>
-              <img src={data.superImagen}/>
             </section>
     
             <div className={ introStyles.phoneMobileContainer}>
@@ -69,7 +69,7 @@ export default function IntroSection({ data, link }) {
                   <div className={introStyles.backgroundMobileContainer}>
                   
                   </div>
-                  <img src={iphoneImg}/>
+                  <img src={iphoneImg} alt={data.mainSubtitle}/>
                   <Credentials credentials={data.credentials}/>
                 </div>
               </div>

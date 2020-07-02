@@ -41,10 +41,10 @@ export default function BulletCenter(props) {
   return (
     <Bullet>
       <BulletIcon>
-        <img src={image}/>
+        <img src={image} alt={title}/>
       </BulletIcon>
       <h4>{title}</h4>
-      <div dangerouslySetInnerHTML={{ __html: description }}></div>
+      <div dangerouslySetInnerHTML={{ __html: description }}/>
     </Bullet>
   )
 }

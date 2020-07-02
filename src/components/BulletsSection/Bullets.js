@@ -19,7 +19,7 @@ function RenderMobile({ data }) {
       <div className={bulletsMobileStyles.bulletsContainer}>
         {data.elements.map(el => {
           return (
-            <BulletOne data={el}/>
+            <BulletOne data={el} key={el.title}/>
           )
         })}
       </div>
@@ -37,7 +37,7 @@ function RenderDesktop({ data }) {
         
         <div className={`bx--col-lg-4 ${ bulletsStyles.leftContainer }`}>
           <div className={bulletsStyles.topAdjust}>
-            <img src={data.icon} />
+            <img src={data.icon}  alt={data.title}/>
           </div>
         </div>
         
@@ -53,7 +53,7 @@ function RenderDesktop({ data }) {
             <div className={bulletsStyles.bulletsContainer}>
               {data.elements.map(el => {
                 return (
-                  <BulletOne data={el}/>
+                  <BulletOne data={el} key={el.title}/>
                 )
               })}
             </div>
