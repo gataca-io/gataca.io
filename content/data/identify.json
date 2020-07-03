@@ -1,22 +1,22 @@
 {
   "title": "Wallet",
   "icon": "../images/phone-small.svg",
-  "description": "<p>Allows users to store identity credentials from any issuer worldwide and seamlessly authenticate to digital services from their mobile phone</p>",
+  "description": "<p>Mobile ID wallet that allows users to store identity credentials from any issuer worldwide and seamlessly authenticate to digital services by scanning QR codes</p>",
   "bullets": [
     {
-      "title": "PASSWORD FREE",
-      "image": "../images/fingerprint.svg",
-      "description": "<p>Passwordless and privacy-preserving authentication</p>"
+      "title": "HASSLE-FREE AUTHENTICATION",
+      "image": "/static/images/touch-finger.png",
+      "description": "<p>Passwordless, instant and privacy-preserving authentication that offers control over shared personal information all in one place</p>"
     },
     {
-      "title": "VALIDATED CREDENTIALS",
+      "title": "TRUSTED IDENTITY",
       "image": "../images/validated.svg",
-      "description": "<p>Certified validation of credentials by Trusted Authorities</p>"
+      "description": "<p>ID Credentials are created according to a global Internet standard and certified by Trusted Authorities so that they can be trusted everywhere</p>"
     },
     {
       "title": "ENHANCED SECURITY",
       "image": "../images/secure.svg",
-      "description": "<p>Data and certification integrity with post-quantum cryptography</p>"
+      "description": "<p>Data and ID credentials are protected with biometrics and post-quantum cryptography for maximum protection</p>"
     }
   ],
   "mainImage": "../images/identity.svg"
