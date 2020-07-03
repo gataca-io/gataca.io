@@ -13,7 +13,7 @@ export default function ConnectComponent({ product }) {
         <h2>
           {product.title}
         </h2>
-        <p dangerouslySetInnerHTML={{ __html: product.description }}/>
+        <div dangerouslySetInnerHTML={{ __html: product.description }}/>
       </div>
       <div className={connectStyles.detailContainer}>
         <div className={connectStyles.bulletsContainer}>
