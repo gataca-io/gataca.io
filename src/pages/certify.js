@@ -16,7 +16,7 @@ export default function Certify(props) {
       <Tab
         href={"/" + credentials.title}
         id={credentials.title}
-        label="crendentials"
+        label={credentials.title}
         className="tabStyle"
         role="presentation"
         selected={false}
@@ -27,7 +27,7 @@ export default function Certify(props) {
       <Tab
         href={"/" + identify.title}
         id={identify.title}
-        label="identify"
+        label={identify.title}
         className="tabStyle"
         role="presentation"
         selected={false}
@@ -38,7 +38,7 @@ export default function Certify(props) {
       <Tab
         href={"/" + connect.title}
         id={connect.title}
-        label="connect"
+        label={connect.title}
         className="tabStyle"
         role="presentation"
         selected={false}

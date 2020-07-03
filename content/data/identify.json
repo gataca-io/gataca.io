@@ -5,7 +5,7 @@
   "bullets": [
     {
       "title": "HASSLE-FREE AUTHENTICATION",
-      "image": "/static/images/touch-finger.png",
+      "image": "../images/touch-finger.png",
       "description": "<p>Passwordless, instant and privacy-preserving authentication that offers control over shared personal information all in one place</p>"
     },
     {
