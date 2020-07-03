@@ -16,7 +16,7 @@
     {
       "title": "Higher conversion rates",
       "description": "<p>Improve your user onboarding experience with 1-click authentication and improve your conversion rates</p>",
-      "image": "/static/images/multiple-actions-add-copy.png"
+      "image": "../images/multiple-actions-add-copy.png"
     }
   ],
   "secondaryDescription": "<p></p>",
