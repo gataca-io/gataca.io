@@ -15,4 +15,4 @@ author: ''
 ---
 Gataca chats to [Marcos Allende](https://www.linkedin.com/in/marcosallendelo/) about his efforts leading real blockchain-based  projects in Latin America, including perspectives on the future of decentralized digital identities.
 
-<iframe src="[https://player.vimeo.com/video/438155664](https://player.vimeo.com/video/438155664 "https://player.vimeo.com/video/438155664")" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<iframe src="[https://player.vimeo.com/video/438155664](https://player.vimeo.com/video/438155664 "https://player.vimeo.com/video/438155664")[?texttrack=en]()" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
