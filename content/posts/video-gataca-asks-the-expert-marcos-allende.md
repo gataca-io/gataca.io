@@ -19,4 +19,3 @@ Gataca chats to [Marcos Allende](https://www.linkedin.com/in/marcosallendelo/) a
 <div class='embed-container'>
 <iframe src='https://player.vimeo.com/video/4381556643' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 </div>
-
