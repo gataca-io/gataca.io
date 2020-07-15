@@ -188,6 +188,17 @@ module.exports = {
           "js",
         ],
       }
-    }
+    },
+    {
+      resolve: "gatsby-remark-embed-video",
+      options: {
+        width: 800,
+        ratio: 1.77,
+        height: 400,
+        related: false,
+        noIframeBorder: true
+      }
+    },
+    "gatsby-remark-responsive-iframe"
   ],
 }

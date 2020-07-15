@@ -32,6 +32,41 @@ $feature-flags: (
     @include media-for-phone-only {
         display: none;
     }
+
+    iframe {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: calc(100vw - 120px);
+        height: 1300px;
+        padding-bottom: 5rem;
+    }
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+}
+
+.embed-container iframe, .embed-container object, .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.iframeVideoContainer {
+    width: 100%;
+    padding: 50px 0;
+    @include media-for-phone-only {
+        display: none;
+    }
+
     iframe {
         position: absolute;
         left: 50%;
@@ -48,6 +83,7 @@ $feature-flags: (
     @include media-for-tablet-portrait-up {
         display: none;
     }
+
     iframe {
         position: absolute;
         left: 50%;
@@ -73,7 +109,7 @@ $feature-flags: (
 }
 
 
-.cta_blog{
+.cta_blog {
     padding: 5rem 0;
     width: 100%;
     text-align: center;

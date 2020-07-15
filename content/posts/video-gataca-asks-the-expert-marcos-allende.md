@@ -8,11 +8,15 @@ meta_data:
   description: Gataca chats to Marcos Allende about his efforts leading real blockchain-based  projects
     in Latin America
 date: 2020-07-14T10:24:41Z
-hero_image: "/static/images/marcosflyer.png"
+hero_image: "/content/images/marcosflyer.png"
 title: "[VIDEO] Gataca asks the Expert: Marcos Allende"
 author: ''
 
 ---
 Gataca chats to [Marcos Allende](https://www.linkedin.com/in/marcosallendelo/) about his efforts leading real blockchain-based  projects in Latin America, including perspectives on the future of decentralized digital identities.
 
-<iframe src="[https://player.vimeo.com/video/438155664](https://player.vimeo.com/video/438155664 "https://player.vimeo.com/video/438155664")[?texttrack=en]()" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+<div class='embed-container'>
+<iframe src='https://player.vimeo.com/video/4381556643' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+</div>
+
