@@ -1,9 +1,9 @@
 ---
 meta_data:
   rrss_images:
-    twitter: "/static/images/marcosflyer.png"
-    facebook_and_whatsapp: "/static/images/marcosflyer.png"
-    linkedin: "/static/images/marcosflyer.png"
+    twitter: "/content/images/marcosflyer.png"
+    facebook_and_whatsapp: "/content/images/marcosflyer.png"
+    linkedin: "/content/images/marcosflyer.png"
   title: 'Gataca Asks the Expert: Marcos Allende'
   description: Gataca chats to Marcos Allende about his efforts leading real blockchain-based  projects
     in Latin America

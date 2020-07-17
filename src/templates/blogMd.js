@@ -41,9 +41,9 @@ export default function BlogMd(props) {
       <BuildHelmet
         title={data.frontmatter.meta_data.title}
         description={data.frontmatter.meta_data.description}
-        // facebookImg={data.frontmatter.meta_data.rrss_images.facebook_and_whatsapp.publicUrl}
-        // linkedInImg={data.frontmatter.meta_data.rrss_images.linkedin.publicUrl}
-        // twitterImg={data.frontmatter.meta_data.rrss_images.twitter.publicUrl}
+        facebookImg={data.frontmatter.meta_data.rrss_images.facebook_and_whatsapp.publicUrl}
+        linkedInImg={data.frontmatter.meta_data.rrss_images.linkedin.publicUrl}
+        twitterImg={data.frontmatter.meta_data.rrss_images.twitter.publicUrl}
       />
       <article className={blogTemplateStyles.blog}>
         {/*HERO IMAGE*/}
