@@ -36,14 +36,18 @@ export default function BlogMd(props) {
     }
   }*/
   
+  function passImageIfExist(image) {
+    return !!image ? image.publicUrl : null;
+  }
+  
   return (
     <Layout>
       <BuildHelmet
         title={data.frontmatter.meta_data.title}
         description={data.frontmatter.meta_data.description}
-        facebookImg={data.frontmatter.meta_data.rrss_images.facebook_and_whatsapp.publicUrl}
-        linkedInImg={data.frontmatter.meta_data.rrss_images.linkedin.publicUrl}
-        twitterImg={data.frontmatter.meta_data.rrss_images.twitter.publicUrl}
+        facebookImg={passImageIfExist(data.frontmatter.meta_data.rrss_images.facebook_and_whatsapp)}
+        linkedInImg={passImageIfExist(data.frontmatter.meta_data.rrss_images.linkedin)}
+        twitterImg={passImageIfExist(data.frontmatter.meta_data.rrss_images.twitter)}
       />
       <article className={blogTemplateStyles.blog}>
         {/*HERO IMAGE*/}
