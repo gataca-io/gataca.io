@@ -23,23 +23,23 @@ fields:
     - name: twitter
       type: file
       config:
-        maxSize: 64
+        maxSize: 15
       label: Twitter
-      description: Use at least images 1080 minimun width
+      description: Max 1MB
       default: "../images/sarah-dorweiler-9Z1KRIfpBTM-unsplash.jpg"
     - name: facebook_and_whatsapp
       type: file
       config:
-        maxSize: 64
+        maxSize: 15
       label: Facebook & Whatsapp
-      description: Use at least images 1080 minimun width
+      description: Max 1MB
       default: "../images/sarah-dorweiler-9Z1KRIfpBTM-unsplash.jpg"
     - name: linkedin
       type: file
       config:
-        maxSize: 5
+        maxSize: 15
       label: linkedin
-      description: Use at least images 1200 minimun width 627 height - recomended
+      description: Max 1MB
         ratio [1.91:1] | MAX file size 5mb
       default: "../images/sarah-dorweiler-9Z1KRIfpBTM-unsplash.jpg"
     label: RRSS Images
@@ -68,8 +68,8 @@ fields:
   description: Date post was created
   config:
     required: false
-    date_format: 
-    time_format: 
+    date_format:
+    time_format:
     display_utc: false
   default: now
 - name: hero_image
