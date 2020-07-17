@@ -94,17 +94,17 @@ export const getPostData = graphql`
                 meta_data {
                     description
                     title
-#                    rrss_images {
-#                        facebook_and_whatsapp {
-#                            publicURL
-#                        }
-#                        linkedin {
-#                            publicURL
-#                        }
-#                        twitter {
-#                            publicURL
-#                        }
-#                    }
+                    rrss_images {
+                        facebook_and_whatsapp {
+                            publicURL
+                        }
+                        linkedin {
+                            publicURL
+                        }
+                        twitter {
+                            publicURL
+                        }
+                    }
                 }
             }
             html
