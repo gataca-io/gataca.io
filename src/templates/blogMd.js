@@ -37,7 +37,7 @@ export default function BlogMd(props) {
   }*/
   
   function passImageIfExist(image) {
-    return !!image ? image.publicUrl : null;
+    return !!image ? image.publicURL : null;
   }
   
   return (
