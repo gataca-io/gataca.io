@@ -15,8 +15,6 @@ author: ''
 ---
 Gataca chats to [Cristina Carrascosa](https://www.linkedin.com/in/cristina-carrascosa-cobos-llm-a3632863/) about her work with the EU Blockchain Observatory, blockchain start-ups "lawyering-up" and the collaboration needed to create a global digital identity.
 
-
 <div class='embed-container'>
-<iframe src='https://player.vimeo.com/video/420195442' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+<iframe src='https://player.vimeo.com/video/420195442?texttrack=en' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 </div>
-
