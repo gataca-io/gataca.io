@@ -19,4 +19,4 @@ In this interview we answer key questions such as: "When decentralized identitie
 
 Enjoy!
 
-<div class='embed-container'><iframe src='[https://player.vimeo.com/video/438295156?texttrack=en](https://player.vimeo.com/video/438295156?texttrack=en)' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+<div class='embed-container'> <iframe src='[https://player.vimeo.com/video/438295156](https://player.vimeo.com/video/438295156 "https://player.vimeo.com/video/438295156")' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> </div>
