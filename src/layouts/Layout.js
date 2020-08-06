@@ -7,7 +7,7 @@ import configMetaData from "../../content/data/configMetaData.json"
 
 
 export default function Layout(props) {
-  const { title } = useSiteMetadata()
+  // const { title } = useSiteMetadata()
   
   return (
       <section

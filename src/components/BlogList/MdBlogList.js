@@ -2,13 +2,13 @@ import React from "react"
 import { Link } from "gatsby"
 import useBlogData from "../../static_queries/useMdBlogData"
 import blogListStyles from "./bloglist.module.scss"
-import StackGrid from "react-stack-grid";
+import StackGrid from "react-stack-grid"
 import { SizeMe } from "react-sizeme"
 
 import Img from "gatsby-image"
 
 function BuildImage(image) {
-  const imageEl = image.hero_image;
+  const imageEl = image.hero_image
   return !!imageEl ? <Img
     fluid={
       imageEl.childImageSharp.fluid
@@ -25,28 +25,43 @@ export default function BlogList(props) {
       <SizeMe>
         {({ size }) => {
           return <StackGrid
-            columnWidth={size.width <= 672 ? '100%' : '25%'}
-            gutterWidth={size.width <= 672 ? 5 : 20}
-            gutterHeight={size.width <= 672 ? 5 : 20}
+            columnWidth={
+              (size.width >= 672 && size.width <= 1100) ? "50%"
+                : size.width <= 672 ? "100%"
+                : "33%"
+            }
+            gutterWidth={
+              (size.width >= 672 && size.width <= 1100) ? 15 :
+                size.width <= 672 ? 5 :
+                  20
+            }
+            gutterHeight={
+              (size.width >= 672 && size.width <= 1100) ? 15 :
+                size.width <= 672 ? 5 :
+                  20
+            }
           >
-          {blogData
-            .filter(blog => blog.node.frontmatter.title !== "")
-            .map(blog => {
-              return (
-                <Link className={`${blogListStyles.post}`} to={`/insights/${blog.node.fields.slug}`} key={blog.node.id}>
-                  <li className={`${blogListStyles.li}`} key={blog.node.fields.slug}>
-                    <div className={blogListStyles.list__hero}>
-                      {BuildImage(blog.node.frontmatter)}
-                    </div>
-                    <div className={blogListStyles.list__info}>
-                      <h2>{blog.node.frontmatter.title}</h2>
-                      <h3>{blog.node.frontmatter.date}</h3>
-                      <p>{blog.node.excerpt}</p>
-                    </div>
-                  </li>
-                </Link>
-              )
-            })}
+            {blogData
+              .filter(blog => blog.node.frontmatter.title !== "")
+              .map(blog => {
+                return (
+                  <div className={`${blogListStyles.post}`}>
+                    <Link to={`/insights/${blog.node.fields.slug}`}
+                          key={blog.node.id}>
+                      <li className={`${blogListStyles.li}`} key={blog.node.fields.slug}>
+                        <div className={blogListStyles.list__hero}>
+                          {BuildImage(blog.node.frontmatter)}
+                        </div>
+                        <div className={blogListStyles.list__info}>
+                          <h2>{blog.node.frontmatter.title}</h2>
+                          <h3>{blog.node.frontmatter.date}</h3>
+                          <p>{blog.node.excerpt}</p>
+                        </div>
+                      </li>
+                    </Link>
+                  </div>
+                )
+              })}
           </StackGrid>
         }}
       </SizeMe>

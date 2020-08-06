@@ -59,6 +59,7 @@ b,
 strong {
   font-weight: inherit;
   font-weight: bolder;
+  letter-spacing: 0.5px;
 }
 dfn {
   font-style: italic;
@@ -515,6 +516,19 @@ li {
 }
 ol li {
   padding-left: 0;
+}
+ol {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+}
+ol li {
+  counter-increment: my-awesome-counter;
+  position: relative;
+}
+ol li::before {
+  content: counter(my-awesome-counter) ". ";
+  left: -20px;
+  position: absolute;
 }
 ul li {
   padding-left: 0;
