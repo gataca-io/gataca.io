@@ -45,9 +45,11 @@
     margin-bottom: 0;
   }
   h1, h2, h3, h4, h5, h6 {
-    font-weight: normal;
-    padding: 1.5rem 1rem 1.5rem 0;
     line-height: 1.2;
+    padding: 1.5rem 1rem 1.5rem 0;
+    color: var(--darkblue);
+    font-weight: 600;
+    letter-spacing: 1px;
   }
   p, li {
     color: #464646;
@@ -94,7 +96,10 @@
     padding: 2rem 2rem;
 
     h1, h2, h3, h4, h5, h6 {
-      padding: 1.5rem;
+      padding: 1.5rem 1rem 1.5rem 0;
+      color: var(--darkblue);
+      font-weight: 600;
+      letter-spacing: 1px;
     }
     span {
       width: 100%;
