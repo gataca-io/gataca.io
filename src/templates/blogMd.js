@@ -21,23 +21,24 @@ function buildHeroImage(frontmatter) {
 
 export default function BlogMd(props) {
   const data = props.data.markdownRemark
-/*  const allBlogData = useBlogData()
-  const nextSlug = getNextSlug(data.fields.slug)
   
-  function getNextSlug(slug) {
-    const allSlugs = allBlogData.map(blog => {
-      return blog.node.fields.slug
-    })
-    const nextSlug = allSlugs[allSlugs.indexOf(slug) + 1]
-    if (nextSlug !== undefined && nextSlug !== "") {
-      return nextSlug
-    } else {
-      return allSlugs[0]
-    }
-  }*/
+  /*  const allBlogData = useBlogData()
+    const nextSlug = getNextSlug(data.fields.slug)
+    
+    function getNextSlug(slug) {
+      const allSlugs = allBlogData.map(blog => {
+        return blog.node.fields.slug
+      })
+      const nextSlug = allSlugs[allSlugs.indexOf(slug) + 1]
+      if (nextSlug !== undefined && nextSlug !== "") {
+        return nextSlug
+      } else {
+        return allSlugs[0]
+      }
+    }*/
   
   function passImageIfExist(image) {
-    return !!image ? image.publicURL : null;
+    return !!image ? image.publicURL : null
   }
   
   return (
@@ -59,7 +60,7 @@ export default function BlogMd(props) {
         <div
           className={blogTemplateStyles.blog__body}
           dangerouslySetInnerHTML={{ __html: data.html }}
-        ></div>
+        />
         
         {/*<div className={blogTemplateStyles.blog__footer}>
           <h2>

@@ -31,14 +31,10 @@ export default function BlogList(props) {
                 : "33%"
             }
             gutterWidth={
-              (size.width >= 672 && size.width <= 1100) ? 15 :
-                size.width <= 672 ? 5 :
-                  20
+              20
             }
             gutterHeight={
-              (size.width >= 672 && size.width <= 1100) ? 15 :
-                size.width <= 672 ? 5 :
-                  20
+              20
             }
           >
             {blogData
@@ -70,7 +66,13 @@ export default function BlogList(props) {
   
   return (
     <section>
-      <div className={`${blogListStyles.mainContainer}`}>{renderBlogData()}</div>
+      <div className={`${blogListStyles.mainContainer}`}>
+        {
+          // setTimeout(el => {
+            renderBlogData()
+          // }, 100)
+        }
+      </div>
     </section>
   )
 }
