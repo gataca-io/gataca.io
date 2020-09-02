@@ -41,9 +41,8 @@ export default function BlogList(props) {
               .filter(blog => blog.node.frontmatter.title !== "")
               .map(blog => {
                 return (
-                  <div className={`${blogListStyles.post}`}>
-                    <Link to={`/insights/${blog.node.fields.slug}`}
-                          key={blog.node.id}>
+                  <div className={`${blogListStyles.post}`} key={blog.node.id}>
+                    <Link to={`/insights/${blog.node.fields.slug}`}>
                       <li className={`${blogListStyles.li}`} key={blog.node.fields.slug}>
                         <div className={blogListStyles.list__hero}>
                           {BuildImage(blog.node.frontmatter)}
