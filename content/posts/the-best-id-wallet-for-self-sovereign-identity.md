@@ -1,13 +1,13 @@
 ---
 meta_data:
   rrss_images:
-    twitter: "/static/images/screenshot-2020-10-09-at-18-40-25.png"
+    twitter: "/static/images/screenshot-2020-10-09-at-18-48-28.png"
     facebook_and_whatsapp: "../images/sarah-dorweiler-9Z1KRIfpBTM-unsplash.jpg"
-    linkedin: "/static/images/screenshot-2020-10-09-at-18-40-25.png"
+    linkedin: "/static/images/screenshot-2020-10-09-at-18-48-28.png"
   title: The best ID wallet for self sovereign identity
   description: ''
 date: 2020-10-09T16:07:53Z
-hero_image: "/static/images/screenshot-2020-10-09-at-18-40-25.png"
+hero_image: "/static/images/screenshot-2020-10-09-at-18-48-28.png"
 title: The best ID wallet for self sovereign identity
 author: ''
 
