@@ -28,7 +28,7 @@ Our SSI technology platform for decentralized identity and access management has
 * GATACA Certify: tools for Trusted Authorities to issue W3C-compliant verifiable credentials
 * GATACA Connect: single-sign-on authentication tools for businesses to accept decentralized digital IDs for authentication.
 
-We were born with a strong sense of global interoperability, so we designed our technology to be blockchain-agnostic. Wait, what? Don't worry, all that matters is that we can integrate our technology with any government', industry consortium' or business organization's  infrastructure. All so that you can enjoy secure and fast onboarding and authentication services.
+We were born with a strong sense of global interoperability, so we designed our technology to be blockchain-agnostic. Wait, what? Don't worry, all that matters is that we can integrate our technology with any government', industry consortium' or business organization's  infrastructure, so that you can enjoy fast onboarding and secure authentication services.
 
 We are now working on building open APIs to enable a greater level of interoperability. We'll keep you posted.
 
