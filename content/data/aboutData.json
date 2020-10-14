@@ -65,6 +65,12 @@
     "title": "Awards & Milestones",
     "awards": [
       {
+        "title": "NGI ESSIF-Lab",
+        "description": "<p>Awardee of the NGI ESSIF-Lab, a project funded by the European Commission to advance decentralized digital identities for faster and safer electronic transactions</p>",
+        "photo": "/static/images/essif-lab-logo.jpg",
+        "link": "https://www.ngi.eu/ngi-projects/essif-lab/"
+      },
+      {
         "title": "South Summit - Connectivity & Data Winner",
         "description": "<p>Winner of the vertical Connectivity &amp; Data, one of the nine winners chosen out of 3,700+ startups</p>",
         "photo": "/static/images/winners_2020_connectivity.svg",
