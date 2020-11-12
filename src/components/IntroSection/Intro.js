@@ -69,8 +69,8 @@ export default function IntroSection({ data, link }) {
                   <div className={introStyles.backgroundMobileContainer}>
                   
                   </div>
-                  <img src={iphoneImg} alt={data.mainSubtitle}/>
                   <Credentials credentials={data.credentials}/>
+                  <img src={iphoneImg} alt={data.mainSubtitle}/>
                 </div>
               </div>
             </div>
