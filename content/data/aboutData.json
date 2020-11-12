@@ -65,6 +65,12 @@
     "title": "Awards & Milestones",
     "awards": [
       {
+        "title": "Block.IS Awardee",
+        "description": "<p>This project has indirectly received funding from the European Union’s Horizon 2020 research and innovation programme under project Block.IS (grant agreement No 824509)</p>",
+        "photo": "/static/images/blockis.png",
+        "link": "https://blockis.eu/"
+      },
+      {
         "title": "NGI ESSIF-Lab awardee ",
         "description": "<p>Best graded proposal out of 20 awardees of the NGI ESSIF-Lab, a project funded by the European Commission to advance decentralized digital identities for faster and safer electronic transactions</p>",
         "photo": "../images/essif-lab-logo.jpg",
