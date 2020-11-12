@@ -3,11 +3,6 @@
     "title": "Associations:",
     "partners": [
       {
-        "title": "Alastria",
-        "url": "https://alastria.io/en/",
-        "image": "../images/alastria.svg"
-      },
-      {
         "title": "MIT Delta",
         "url": "https://entrepreneurship.mit.edu/accelerator/program/",
         "image": "../images/mit_delta.svg"
