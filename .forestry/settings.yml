@@ -51,7 +51,7 @@ sections:
   new_doc_ext: md
 - type: directory
   path: content/mdpages
-  label: Raw new pages
+  label: Pages
   create: documents
   match: "**/*"
   new_doc_ext: md
