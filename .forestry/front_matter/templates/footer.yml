@@ -93,7 +93,7 @@ fields:
       wysiwyg: false
   - name: url
     type: text
-    label: "link to follow (if is internal set it relative, eg: './privacy-policy'"
+    label: 'link to follow (if is internal set it relative, eg: ''./privacy-policy'''
     default: ''
     config:
       required: false

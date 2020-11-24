@@ -1,7 +1,7 @@
 ---
 meta_data:
-  rrss_images:
-  title: 'Privacy Policy'
+  rrss_images: 
+  title: Privacy Policy
   description: ''
 date: 2020-06-01T06:36:02.000+00:00
 title: Privacy policy
@@ -16,11 +16,6 @@ Gataca C Corp
 Boston, MA 02115, USA
 info (at) gataca.io
 
-
-CEO
-Irene
-
-
 Tax ID XXXXXX
 VAT No. XXXXXXX
 
@@ -30,12 +25,12 @@ We can be reached via email: info (at) Gataca . com
 Personal data we collect
 IP address;
 opt-ins;
-email address(es)*;
-name(s)*;
+email address(es)_;
+name(s)_;
 opens (newsletter-only).
 This covers the data you provide us voluntarily via our contact and newsletter sign-up forms, and data that may be processed on the basis of the cookie settings you have made. You are under no obligation to provide your personal data. If you do not provide your personal data, however, we will not be able to provide the service for which they are required.
 
-*Requires form submission.
+\*Requires form submission.
 
 Consent to collect
 We store data from users that have submitted information via our contact form and email newsletter sign-up form.
@@ -49,13 +44,6 @@ Your data, your rights
 Services and third parties where Gataca stores data
 Gataca relies on a limited number of third-party services to maintain its own services. Gataca never shares or resell any of its data. We store certain user data on the following third-party services (which offer secure, privacy-focused storage solutions):
 
-— MailerLite
-
-We currently distribute electronic communications (e.g. newsletters, announcements, general updates) to our subscribers via MailerLite, an email marketing service provider. We use MailerLite to store the email address(es) and opt-in IP(s) of any users who provide sufficient consent to receive email communications from us (as outlined under “Consent to collect“). MailerLite provides recipient action history and account statistics reporting (e.g. opens, clicks, unsubscribes) for any emails sent using the service.
-
-Length of data collection
-Gataca will keep identifiable data for an undetermined amount of time or until the user asks us to anonymize and / or delete his data.
-
 Who has access to your data?
 Data at Gataca is not shared with or sold to any third party.
 
@@ -63,7 +51,7 @@ Gataca staff and contractors retain access to users’ data for the exclusive pu
 
 No personal identifiable data is stored on staff or contractor computers on a permanent basis. Contractors are requested to delete this data at the end of their work agreement.
 
-###Cookies
+\###Cookies
 We do not currently utilize any cookies on our website.
 
 How do we use cookies?
