@@ -63,7 +63,7 @@ export default function HeaderSection(props) {
                     About
                 </h3>
                 </Link>
-                  <a href={configMetaData.bookACallUrl} target="_blank" >
+                  <a href={configMetaData.bookACallUrl} rel="noreferrer" target="_blank" >
                     <h3 className={headerStyles.header__cta}>
                         Book a demo
                     </h3>

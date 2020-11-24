@@ -26,5 +26,11 @@
       "icon": "../images/linkedin.svg",
       "url": "https://www.linkedin.com/company/gataca/"
     }
+  ],
+  "links": [
+    {
+      "text": "Privacy Policy",
+      "url": "./privacy-policy"
+    }
   ]
 }

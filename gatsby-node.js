@@ -14,6 +14,7 @@ module.exports.onCreateNode = ({ node, actions }) => {
       name: "slug",
       value: slug,
     })
+    console.log('MD NODE SLUG => ', slug)
   }
   fmImagesToRelative(node);
 }
@@ -29,10 +30,11 @@ module.exports.createPages = async ({ graphql, actions, reporter }) => {
   //get path to template
   const blogMdTemplate = path.resolve("./src/templates/blogMd.js")
   //get slugs
-  const response = await graphql(`
+  const queryPosts = await graphql(`
     query {
       allMarkdownRemark(
           sort: { fields: [frontmatter___date], order: DESC }
+          filter: {fileAbsolutePath: {regex: "/posts/.*\\\\.md$/"}}
           limit: 1000
         ) {
         edges {
@@ -44,9 +46,10 @@ module.exports.createPages = async ({ graphql, actions, reporter }) => {
         }
       }
     }
+    
   `)
   
-  if (response.errors) {
+  if (queryPosts.errors) {
     reporter.panicOnBuild(`Error while running GraphQL query.`)
     return
   }
@@ -68,8 +71,8 @@ module.exports.createPages = async ({ graphql, actions, reporter }) => {
     })
   })*/
   
-  // Create new Unique pages with unique slug
-  response.data.allMarkdownRemark.edges.forEach(edge => {
+  // Create new Unique pages for each post with unique slug
+  queryPosts.data.allMarkdownRemark.edges.forEach(edge => {
     createPage({
       component: blogMdTemplate,
       path: `/insights/${edge.node.fields.slug}`,
@@ -77,8 +80,43 @@ module.exports.createPages = async ({ graphql, actions, reporter }) => {
         slug: edge.node.fields.slug,
       },
     })
+    console.log('POST CREATED => ', edge.node.fields.slug)
   })
-
+  
+  const queryMdPages = await graphql(`
+    query {
+       allMarkdownRemark(
+        sort: { order: DESC, fields: [frontmatter___date]},
+        filter: {fileAbsolutePath: {regex: "/mdpages/.*\\\\.md$/"}}
+      ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+        }
+      }
+    }
+}
+  `)
+  
+  if (queryMdPages.errors) {
+    reporter.panicOnBuild(`Error while running GraphQL query.`)
+    return
+  }
+  
+  // Create new Unique pages for each post with unique slug
+  queryMdPages.data.allMarkdownRemark.edges.forEach(edge => {
+    createPage({
+      component: blogMdTemplate,
+      path: `/${edge.node.fields.slug}`,
+      context: {
+        slug: edge.node.fields.slug,
+      },
+    })
+    console.log('PAGE CREATED => ', edge.node.fields.slug)
+  })
+  
   
   //dynamically create pages here
   //get path to template

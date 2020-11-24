@@ -80,5 +80,23 @@ fields:
     config:
       required: false
       wysiwyg: false
+- type: field_group_list
+  name: links
+  label: Footer links
+  fields:
+  - name: text
+    type: text
+    label: Text shown
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+  - name: url
+    type: text
+    label: "link to follow (if is internal set it relative, eg: './privacy-policy'"
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
 pages:
 - content/data/footerSectionData.json

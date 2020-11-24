@@ -1,24 +1,25 @@
 @import "../styles/aux/media-mixins";
 
 .layout {
-  &.info_page {
-    color: #EBEBEB;
-  }
+    &.info_page {
+        color: #EBEBEB;
+    }
 }
 
 .content {
-  padding-top: var(--topbar-height-mobile);
-  @include media-for-tablet-portrait-up {
-    padding-top: var(--topbar-height);
-  }
-  flex-grow: 1;
+    padding-top: var(--topbar-height-mobile);
+    @include media-for-tablet-portrait-up {
+        padding-top: var(--topbar-height);
+    }
+    flex-grow: 1;
 }
 
+
 @media (min-width: 768px) {
-  .layout {
-    display: block;
-  }
-  .content {
-    //flex-grow: none;
-  }
+    .layout {
+        display: block;
+    }
+    .content {
+        //flex-grow: none;
+    }
 }

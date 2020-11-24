@@ -2,7 +2,7 @@
 new_page_extension: md
 auto_deploy: false
 admin_path: "/static/admin"
-webhook_url: 
+webhook_url:
 sections:
 - type: heading
   label: Web Content
@@ -28,7 +28,7 @@ sections:
   label: Products
 - type: document
   path: content/data/productsData.json
-  label: " - Products Page -"
+  label: "- Products Page -"
 - type: document
   path: content/data/identify.json
   label: "- Wallet -"
@@ -46,6 +46,12 @@ sections:
 - type: directory
   path: content/posts
   label: Blog Posts
+  create: documents
+  match: "**/*"
+  new_doc_ext: md
+- type: directory
+  path: content/mdpages
+  label: Raw new pages
   create: documents
   match: "**/*"
   new_doc_ext: md

@@ -1,9 +1,9 @@
 import React from "react"
 import HeaderSection from "../components/HeaderSection/HeaderSection"
-import useSiteMetadata from "../static_queries/useSiteMetadata"
 import layoutStyles from "./layout.module.scss"
 import FooterSection from "../components/FooterSection/FooterSection"
 import configMetaData from "../../content/data/configMetaData.json"
+import CookieConsent from "react-cookie-consent"
 
 
 export default function Layout(props) {
@@ -26,6 +26,21 @@ export default function Layout(props) {
         </div>
         
         <FooterSection />
+  
+        <CookieConsent
+          location="bottom"
+          buttonText="Accept"
+          cookieName="myAwesomeCookieName2"
+          style={{ background: "white",
+            color: "rgb(24, 27, 94)",
+            borderTop: "1px solid rgb(24, 27, 94)",
+          }}
+          buttonStyle={{ color: "white", fontSize: "13px", backgroundColor: "rgb(24, 27, 94)" }}
+          expires={150}
+        >
+          {configMetaData.cookies}{" "}
+        </CookieConsent>
+        
     </section>
   )
 }
