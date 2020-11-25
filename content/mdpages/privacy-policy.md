@@ -3,7 +3,7 @@ meta_data:
   rrss_images: 
   title: Privacy Policy
   description: ''
-date: 2020-06-01T06:36:02.000+00:00
+date: 2020-06-01T06:36:02Z
 title: Privacy policy
 author: ''
 
@@ -17,7 +17,6 @@ Boston, MA 02115, USA
 info (at) gataca.io
 
 Tax ID XXXXXX
-VAT No. XXXXXXX
 
 How to contact us
 We can be reached via email: info (at) Gataca . com
