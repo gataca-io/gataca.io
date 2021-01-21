@@ -17,16 +17,16 @@
       },
       "bullets": [
         {
-          "bullet": "Bullet 1"
+          "bulletText": "Bullet 1"
         },
         {
-          "bullet": "Bullet 1"
+          "bulletText": "Bullet 1"
         },
         {
-          "bullet": "Bullet 1"
+          "bulletText": "Bullet 1"
         },
         {
-          "bullet": "Bullet 1"
+          "bulletText": "Bullet 1"
         }
       ]
     },
