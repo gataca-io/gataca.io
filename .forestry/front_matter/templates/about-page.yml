@@ -2,153 +2,153 @@
 label: About Page
 hide_body: false
 fields:
-- name: metas
-  type: field_group
-  config: {}
-  fields:
-  - name: title
-    type: text
-    config:
-      required: false
-    label: Title
-  - name: description
-    type: text
-    config:
-      required: false
-    label: Description
-  label: Metas
-- type: field_group
-  name: introSection
-  label: About Intro Section
-  fields:
-  - name: title
-    type: textarea
-    default: ''
-    config:
-      required: false
-      wysiwyg: false
-    label: Title
-  - name: description
-    type: textarea
-    label: Description
-    default: ''
-    config:
-      required: false
-      wysiwyg: true
-      schema:
-        format: html-blocks
-- type: field_group
-  name: teamDataSection
-  label: Team Section
-  fields:
-  - name: title
-    type: text
-    label: Gato
-    default: ''
-    config:
-      required: false
-      wysiwyg: false
-  - name: description
-    type: textarea
-    label: Team Description
-    default: ''
-    config:
-      required: false
-      wysiwyg: true
-      schema:
-        format: html-blocks
-  - type: field_group_list
-    name: team
+  - name: metas
+    type: field_group
+    config: { }
+    fields:
+      - name: title
+        type: text
+        config:
+          required: false
+        label: Title
+      - name: description
+        type: text
+        config:
+          required: false
+        label: Description
+    label: Metas
+  - type: field_group
+    name: introSection
+    label: About Intro Section
+    fields:
+      - name: title
+        type: textarea
+        default: ''
+        config:
+          required: false
+          wysiwyg: false
+        label: Title
+      - name: description
+        type: textarea
+        label: Description
+        default: ''
+        config:
+          required: false
+          wysiwyg: true
+          schema:
+            format: html-blocks
+  - type: field_group
+    name: teamDataSection
     label: Team Section
     fields:
-    - name: name
-      type: text
-      label: Gato
-      default: ''
-      config:
-        required: false
-        wysiwyg: false
-    - name: photo
-      type: file
-      label: Photo
-      default: ''
-      config:
-        required: false
-        wysiwyg: false
-    - name: bio
-      type: textarea
-      label: Product Description
-      default: ''
-      config:
-        required: false
-        wysiwyg: true
-        schema:
-          format: html-blocks
-    - name: links
-      type: field_group_list
-      default: ''
-      label: Links
-      config: 
-      fields:
-      - type: text
-        name: name
-        label: Url name
+      - name: title
+        type: text
+        label: Gato
+        default: ''
         config:
           required: false
-      - type: text
-        name: url
-        label: Url Uri
+          wysiwyg: false
+      - name: description
+        type: textarea
+        label: Team Description
+        default: ''
         config:
           required: false
-      - type: file
-        name: icon
-        label: Link Icon
-        config:
-          required: false
-- type: field_group
-  name: awardsDataSection
-  label: Awards Section
-  fields:
-  - name: title
-    type: text
-    default: ''
-    config:
-      required: false
-      wysiwyg: false
-    label: Title
-  - type: field_group_list
-    name: awards
-    label: Awards list
+          wysiwyg: true
+          schema:
+            format: html-blocks
+      - type: field_group_list
+        name: team
+        label: Team Section
+        fields:
+          - name: name
+            type: text
+            label: Gato
+            default: ''
+            config:
+              required: false
+              wysiwyg: false
+          - name: photo
+            type: file
+            label: Photo
+            default: ''
+            config:
+              required: false
+              wysiwyg: false
+          - name: bio
+            type: textarea
+            label: Product Description
+            default: ''
+            config:
+              required: false
+              wysiwyg: true
+              schema:
+                format: html-blocks
+          - name: links
+            type: field_group_list
+            default: ''
+            label: Links
+            config:
+            fields:
+              - type: text
+                name: name
+                label: Url name
+                config:
+                  required: false
+              - type: text
+                name: url
+                label: Url Uri
+                config:
+                  required: false
+              - type: file
+                name: icon
+                label: Link Icon
+                config:
+                  required: false
+  - type: field_group
+    name: awardsDataSection
+    label: Awards Section
     fields:
-    - name: title
-      type: text
-      label: Award Title
-      default: ''
-      config:
-        required: false
-        wysiwyg: false
-    - name: description
-      type: textarea
-      label: Award Description
-      default: ''
-      config:
-        required: false
-        wysiwyg: true
-        schema:
-          format: html-blocks
-    - name: photo
-      type: file
-      label: Award Image
-      default: ''
-      config:
-        required: false
-        wysiwyg: false
-    - name: link
-      type: text
-      label: Award URL link
-      default: ''
-      config:
-        required: false
-        wysiwyg: false
+      - name: title
+        type: text
+        default: ''
+        config:
+          required: false
+          wysiwyg: false
+        label: Title
+      - type: field_group_list
+        name: awards
+        label: Awards list
+        fields:
+          - name: title
+            type: text
+            label: Award Title
+            default: ''
+            config:
+              required: false
+              wysiwyg: false
+          - name: description
+            type: textarea
+            label: Award Description
+            default: ''
+            config:
+              required: false
+              wysiwyg: true
+              schema:
+                format: html-blocks
+          - name: photo
+            type: file
+            label: Award Image
+            default: ''
+            config:
+              required: false
+              wysiwyg: false
+          - name: link
+            type: text
+            label: Award URL link
+            default: ''
+            config:
+              required: false
+              wysiwyg: false
 pages:
-- content/data/aboutData.json
+  - content/data/aboutData.json

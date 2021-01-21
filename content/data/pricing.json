@@ -1,0 +1,78 @@
+{
+  "metas": {
+    "title": "Pricing & Plans | Build with us",
+    "description": "Start your SSI environment fast and easy"
+  },
+  "introSection": {
+    "title": "PRICING & PLANS",
+    "description": "<p>Our plans and pricing. Start and test free and pay on deploy</p>"
+  },
+  "pricingSlots": [
+    {
+      "title": "Sandbox",
+      "description": "<p>Testing environment that will let you experience SSI on your own and start evaluating the technology to implement it later.<p>",
+      "cta": {
+        "text": "Sign up" ,
+        "url": "/app.gataca.io"
+      },
+      "bullets": [
+        {
+          "bullet": "Bullet 1"
+        },
+        {
+          "bullet": "Bullet 1"
+        },
+        {
+          "bullet": "Bullet 1"
+        },
+        {
+          "bullet": "Bullet 1"
+        }
+      ]
+    },
+    {
+      "title": "Production",
+      "description": "<p>Testing environment that will let you experience SSI on your own and start evaluating the technology to implement it later.<p>",
+      "cta": {
+        "text": "Sign up" ,
+        "url": "/app.gataca.io"
+      },
+      "bullets": [
+        {
+          "bulletText": "Bullet 1"
+        },
+        {
+          "bulletText": "Bullet 1"
+        },
+        {
+          "bulletText": "Bullet 1"
+        },
+        {
+          "bulletText": "Bullet 1"
+        }
+      ]
+    },
+    {
+      "title": "Custom",
+      "description": "<p>Testing environment that will let you experience SSI on your own and start evaluating the technology to implement it later.<p>",
+      "cta": {
+        "text": "Sign up" ,
+        "url": "/app.gataca.io"
+      },
+      "bullets": [
+        {
+          "bulletText": "Bullet 1"
+        },
+        {
+          "bulletText": "Bullet 1"
+        },
+        {
+          "bulletText": "Bullet 1"
+        },
+        {
+          "bulletText": "Bullet 1"
+        }
+      ]
+    }
+  ]
+}
