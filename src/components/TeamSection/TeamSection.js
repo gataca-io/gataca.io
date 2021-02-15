@@ -22,7 +22,7 @@ function RenderTeamSection({ data }) {
             <div className={`bx--col-sm-16 ${ teamSectionStyles.personContainer }`}>
               <Img
                 className={teamSectionStyles.imgStyles}
-                fluid={gato.photo.childImageSharp.fluid}
+                fluid={gato.photo}
                 title={gato.title}
                 alt={gato.title}
                 fadeIn={true}
@@ -35,7 +35,7 @@ function RenderTeamSection({ data }) {
                 <div className={teamSectionStyles.rrssSection}>
                   {gato.links.map(link=>{
                     return <a href={link.url} target="_blank" rel="noreferrer" >
-                      <img src={link.icon.publicURL} alt={link.url}/>
+                      <img src={link.icon} alt={link.url}/>
                     </a>
                   })}
                 </div>
@@ -67,17 +67,9 @@ export default function TeamSection( ) {
                         links {
                           name
                           url
-                          icon {
-                            publicURL
-                          }
+                          icon
                         }
-                        photo {
-                          childImageSharp {
-                            fluid(maxWidth: 400) {
-                                ...GatsbyImageSharpFluid
-                            }
-                          }
-                        }
+                        photo
                       }
                     }
                   }
