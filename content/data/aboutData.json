@@ -13,13 +13,13 @@
     "team": [
       {
         "name": "Chiara Casoni",
-        "photo": "/static/images/1533912554134.jpeg",
+        "photo": "../images/1533912554134.jpeg",
         "bio": "<p>Digital Marketing Specialist</p>",
         "links": [
           {
             "name": "linkedin",
             "url": "https://www.linkedin.com/in/chiaracasoni/",
-            "icon": "/static/images/linkedin_blue.svg"
+            "icon": "../images/linkedin_blue.svg"
           }
         ]
       },
