@@ -12,18 +12,6 @@
     "description": "",
     "team": [
       {
-        "name": "Chiara Casoni",
-        "photo": "../images/1533912554134.jpeg",
-        "bio": "<p>Digital Marketing Specialist</p>",
-        "links": [
-          {
-            "name": "linkedin",
-            "url": "https://www.linkedin.com/in/chiaracasoni/",
-            "icon": "../images/linkedin_blue.svg"
-          }
-        ]
-      },
-      {
         "name": "Irene Hernandez",
         "bio": "<p>CEO</p>",
         "photo": "../images/Irene.png",
@@ -67,6 +55,18 @@
           {
             "name": "linkedIn",
             "url": "https://www.linkedin.com/in/sergiogordo",
+            "icon": "../images/linkedin_blue.svg"
+          }
+        ]
+      },
+      {
+        "name": "Chiara Casoni",
+        "photo": "../images/1533912554134.jpeg",
+        "bio": "<p>Digital Marketing Specialist</p>",
+        "links": [
+          {
+            "name": "linkedin",
+            "url": "https://www.linkedin.com/in/chiaracasoni/",
             "icon": "../images/linkedin_blue.svg"
           }
         ]
