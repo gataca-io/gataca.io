@@ -6,6 +6,7 @@ import { BuildHelmet } from "../components/auxiliary/HelmetBuilder"
 import Img from "gatsby-image"
 import { Button } from "carbon-components-react"
 import teamSectionStyles from "../components/TeamSection/teamSection.module.scss"
+import { navigate } from "gatsby"
 
 function IntroSection({ data }) {
   return (
@@ -38,7 +39,10 @@ function PricingSection({ data }) {
                     </ul>
                   </div>
                 </div>
-                <Button href={plan.cta.link}>
+                <Button
+                  onClick={() => {
+                    navigate(plan.cta.url)
+                  }}>
                   {plan.cta.text}
                 </Button>
               </div>

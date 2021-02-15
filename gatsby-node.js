@@ -1,6 +1,5 @@
 
 const path = require("path")
-const { fmImagesToRelative } = require('gatsby-remark-relative-images');
 
 module.exports.onCreateNode = ({ node, actions }) => {
   // Transform the new node here and create a new node or
@@ -16,7 +15,6 @@ module.exports.onCreateNode = ({ node, actions }) => {
     })
     console.log('MD NODE SLUG => ', slug)
   }
-  fmImagesToRelative(node);
 }
 
 module.exports.createPages = async ({ graphql, actions, reporter }) => {
