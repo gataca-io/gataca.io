@@ -1,9 +1,9 @@
 ---
 meta_data:
   rrss_images:
-    twitter: "/static/images/essif-lab-phase-3-blog-post-unsplash.png"
-    facebook_and_whatsapp: "/static/images/essif-lab-phase-3-blog-post-unsplash.png"
-    linkedin: "/static/images/essif-lab-phase-3-blog-post-unsplash.png"
+    twitter: "/static/images/christian-lue-8yw6tsb8tnc-unsplash.jpg"
+    facebook_and_whatsapp: "/static/images/christian-lue-8yw6tsb8tnc-unsplash.jpg"
+    linkedin: "/static/images/christian-lue-8yw6tsb8tnc-unsplash.jpg"
   title: NGI ESSIF-Lab, a program funded by the European Commission, Doubles Down
     its Bet on GATACA
   description: GATACA selected as one of the 5 best-in-class teams of the Business
