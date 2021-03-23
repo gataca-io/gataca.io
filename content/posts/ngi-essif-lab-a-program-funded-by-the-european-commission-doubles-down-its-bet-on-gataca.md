@@ -9,7 +9,7 @@ meta_data:
   description: GATACA selected as one of the 5 best-in-class teams of the Business
     Oriented Call within eSSIF-Lab
 date: 2021-03-23T13:12:32Z
-hero_image: "../images/sarah-dorweiler-9Z1KRIfpBTM-unsplash.jpg"
+hero_image: "/static/images/essif-lab-phase-3-blog-post-unsplash.png"
 title: NGI ESSIF-Lab, a program funded by the European Commission, Doubles Down its
   Bet on GATACA
 author: ''
