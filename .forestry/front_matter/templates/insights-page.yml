@@ -54,3 +54,4 @@ fields:
         format: html-blocks
 pages:
 - content/data/insightsData.json
+- content/posts/eSSIF-Lab Phase 3.md
