@@ -63,6 +63,8 @@ sections:
   create: documents
   match: "**/*"
   new_doc_ext: md
+  templates:
+  - blog-post
 upload_dir: static/images
 public_path: "/static/images"
 front_matter_path: ''
