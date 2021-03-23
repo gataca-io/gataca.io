@@ -2,7 +2,7 @@
 meta_data:
   rrss_images:
     twitter: "/static/images/essif-lab-phase-3-blog-post-unsplash.png"
-    facebook_and_whatsapp: "../images/sarah-dorweiler-9Z1KRIfpBTM-unsplash.jpg"
+    facebook_and_whatsapp: "/static/images/essif-lab-phase-3-blog-post-unsplash.png"
     linkedin: "/static/images/essif-lab-phase-3-blog-post-unsplash.png"
   title: NGI ESSIF-Lab, a program funded by the European Commission, Doubles Down
     its Bet on GATACA
