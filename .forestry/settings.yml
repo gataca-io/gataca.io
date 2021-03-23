@@ -39,7 +39,7 @@ sections:
   path: content/data/connect.json
   label: " - Connect -"
 - type: heading
-  label: Meta Content
+  label: Content
 - type: document
   path: content/data/configMetaData.json
   label: Site Info
@@ -49,6 +49,8 @@ sections:
   create: documents
   match: "**/*"
   new_doc_ext: md
+  templates:
+  - blog-post
 - type: directory
   path: content/mdpages
   label: Pages
