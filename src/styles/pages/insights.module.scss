@@ -2,3 +2,36 @@
     background-color: var(--bg-grey);
     width: 100%;
 }
+
+.introSection{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto 3rem auto;
+    padding-top: 1.9rem;
+    padding-bottom:2rem;
+    position: relative;
+    border-bottom: 2px solid var(--bg-grey);
+    text-align: center;
+    p:last-child{
+
+    }
+}
+
+.ctaSection {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto 3rem auto;
+    a{
+        background-color: var(--darkblue);
+        text-align: center;
+        padding: 0 40px;
+    }
+    p{
+        margin-top: 1rem;
+        font-size: 0.7rem;
+    }
+}

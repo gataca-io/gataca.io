@@ -60,7 +60,6 @@ export const BuildHelmet = ({
       {/*<meta property="og:image:width"              content="pixels" /> CHANGE AMMOUT*/}
       {/*<meta property="og:image:height"              content="pixels" /> CHANGE AMMOUT*/}
       {/*<meta property="og:image:type"              content="image/jpeg | image/gif | image/png" /> CHANGE AMMOUT*/}
-
       {/*TWITTER*/}
 
       <meta name="twitter:card" content="summary" />

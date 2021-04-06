@@ -16,12 +16,14 @@ function buildHeroImage(frontmatter) {
         alt={frontmatter.title}
       />
     </figure>
-  ) : <Fragment/>
+  ) : (
+    <Fragment />
+  )
 }
 
 export default function BlogMd(props) {
   const data = props.data.markdownRemark
-  
+
   /*  const allBlogData = useBlogData()
     const nextSlug = getNextSlug(data.fields.slug)
     
@@ -36,19 +38,26 @@ export default function BlogMd(props) {
         return allSlugs[0]
       }
     }*/
-  
+
   function passImageIfExist(image) {
+    console.log(image)
     return !!image ? image.publicURL : null
   }
-  
+
   return (
     <Layout>
       <BuildHelmet
         title={data.frontmatter.meta_data.title}
         description={data.frontmatter.meta_data.description}
-        facebookImg={passImageIfExist(data.frontmatter.meta_data.rrss_images.facebook_and_whatsapp)}
-        linkedInImg={passImageIfExist(data.frontmatter.meta_data.rrss_images.linkedin)}
-        twitterImg={passImageIfExist(data.frontmatter.meta_data.rrss_images.twitter)}
+        facebookImg={passImageIfExist(
+          data.frontmatter.meta_data.rrss_images.facebook_and_whatsapp
+        )}
+        linkedInImg={passImageIfExist(
+          data.frontmatter.meta_data.rrss_images.linkedin
+        )}
+        twitterImg={passImageIfExist(
+          data.frontmatter.meta_data.rrss_images.twitter
+        )}
       />
       <article className={blogTemplateStyles.blog}>
         {/*HERO IMAGE*/}
@@ -61,7 +70,7 @@ export default function BlogMd(props) {
           className={blogTemplateStyles.blog__body}
           dangerouslySetInnerHTML={{ __html: data.html }}
         />
-        
+
         {/*<div className={blogTemplateStyles.blog__footer}>
           <h2>
             Written By: {data.frontmatter.author}
@@ -80,40 +89,39 @@ export default function BlogMd(props) {
 //dynamic page query, must occur within each post context
 //$slug is made available by context from createPages call in gatsby-node.js
 export const getPostData = graphql`
-    query($slug: String!) {
-        markdownRemark(fields: { slug: { eq: $slug } }) {
-            fields {
-                slug
+  query($slug: String!) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      fields {
+        slug
+      }
+      frontmatter {
+        title
+        date(formatString: "MMMM Do, YYYY")
+        hero_image {
+          childImageSharp {
+            fluid(maxWidth: 1500) {
+              ...GatsbyImageSharpFluid
             }
-            frontmatter {
-                title
-                date(formatString: "MMMM Do, YYYY")
-                hero_image {
-                    childImageSharp {
-                        fluid(maxWidth: 1500) {
-                            ...GatsbyImageSharpFluid
-                        }
-                    }
-                    publicURL
-                }
-                meta_data {
-                    description
-                    title
-                    rrss_images {
-                        facebook_and_whatsapp {
-                            publicURL
-                        }
-                        linkedin {
-                            publicURL
-                        }
-                        twitter {
-                            publicURL
-                        }
-                    }
-                }
-            }
-            html
+          }
+          publicURL
         }
+        meta_data {
+          description
+          title
+          rrss_images {
+            facebook_and_whatsapp {
+              publicURL
+            }
+            linkedin {
+              publicURL
+            }
+            twitter {
+              publicURL
+            }
+          }
+        }
+      }
+      html
     }
+  }
 `
-

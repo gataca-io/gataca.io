@@ -7,7 +7,13 @@
     "twitterImage": ""
   },
   "introSection": {
-    "title": "INSIGHTS",
-    "description": "<p></p>"
+    "title": "GATACA FILES",
+    "description": "Connecting, educating, and empowering users to take back control of their data.",
+    "mission": "Gataca is a cybersecurity startup that has been helping users and businesses guarantee the privacy and security of their data through its blockchain technology for the last X years."
+  },
+  "cta": {
+    "text": "Join our community for free now",
+    "link": "https://share.hsforms.com/1JzwVnN5kTTiD6uY-vrxycg2tcg6",
+    "descripion": "We share relevant content for every level. If you are interested, just join us and discover all the secrets inside Gataca Files"
   }
 }

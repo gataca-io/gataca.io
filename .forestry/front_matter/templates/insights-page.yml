@@ -49,8 +49,38 @@ fields:
     default: ''
     config:
       required: false
-      wysiwyg: true
-      schema:
-        format: html-blocks
+      wysiwyg: false
+  - name: mission
+    type: textarea
+    label: mission
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+- type: field_group
+  name: cta
+  label: Intro Section
+  fields:
+  - name: text
+    type: text
+    label: cta text
+    default: Insights
+    config:
+      required: false
+      wysiwyg: false
+  - name: link
+    type: text
+    label: cta link
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+  - name: descripion
+    type: text
+    label: Under cta description
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
 pages:
 - content/data/insightsData.json
