@@ -230,5 +230,5 @@ You are advised to review this Privacy Policy periodically for any changes. Chan
 
 If you have any questions about this Privacy Policy, please contact us:
 
-* By email: info@gataca.io
+* By email: gdpr@gataca.io
 * By visiting this page on our website: www.gataca.io/privacypolicy
