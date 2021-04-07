@@ -24,21 +24,6 @@ function buildHeroImage(frontmatter) {
 export default function BlogMd(props) {
   const data = props.data.markdownRemark
 
-  /*  const allBlogData = useBlogData()
-    const nextSlug = getNextSlug(data.fields.slug)
-    
-    function getNextSlug(slug) {
-      const allSlugs = allBlogData.map(blog => {
-        return blog.node.fields.slug
-      })
-      const nextSlug = allSlugs[allSlugs.indexOf(slug) + 1]
-      if (nextSlug !== undefined && nextSlug !== "") {
-        return nextSlug
-      } else {
-        return allSlugs[0]
-      }
-    }*/
-
   function passImageIfExist(image) {
     console.log(image)
     return !!image ? image.publicURL : null

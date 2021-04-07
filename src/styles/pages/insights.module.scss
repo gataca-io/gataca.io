@@ -1,20 +1,25 @@
+@import "./../aux/media-mixins";
+
 .base {
     background-color: var(--bg-grey);
     width: 100%;
 }
 
-.introSection{
+.introSection {
     display: flex;
     align-items: center;
     flex-direction: column;
     max-width: 400px;
     margin: 0 auto 3rem auto;
-    padding-top: 1.9rem;
-    padding-bottom:2rem;
+    padding: 2rem 2rem;
     position: relative;
     border-bottom: 2px solid var(--bg-grey);
     text-align: center;
-    p:last-child{
+    @include media-for-tablet-portrait-up {
+        padding: 2rem 0rem;
+    }
+
+    p:last-child {
 
     }
 }
@@ -24,13 +29,19 @@
     align-items: center;
     flex-direction: column;
     max-width: 400px;
-    margin: 0 auto 3rem auto;
-    a{
+    margin: 3rem auto 3rem auto;
+    padding: 0rem 2rem;
+    @include media-for-tablet-portrait-up {
+        padding: 2rem 0rem;
+    }
+
+    a {
         background-color: var(--darkblue);
         text-align: center;
         padding: 0 40px;
     }
-    p{
+
+    p {
         margin-top: 1rem;
         font-size: 0.7rem;
     }

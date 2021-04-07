@@ -1,0 +1,73 @@
+@import "../../styles/aux/media-mixins";
+
+.base {
+    //background-color: var(--bg-grey);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 160px;
+    &> div {
+        width: 100%;
+    }
+}
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.introText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 20px 0;
+    @include media-for-desktop-up {
+        margin: 0 0 40px 0;
+        //margin:0;
+    }
+    p{
+        color: var(--light-grey);
+        margin: 0;
+        font-weight: bold;
+        opacity: 0.35;
+        letter-spacing: 1px;
+    }
+}
+
+.partnerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: var(--doubleBaseMargin) 0;
+    max-height: 60px;
+    opacity: 0.5;
+    filter: grayscale(100%);
+    &>div {
+        display: flex;
+        justify-content: center;
+    }
+    @include media-for-desktop-up {
+        margin:0;
+    }
+    &:hover {
+        opacity: 0.8;
+        filter: grayscale(20%);
+    }
+    img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        max-height: 60px;
+        max-width: 70%;
+        opacity: 0.9;
+    }
+    p{
+        font-size: 0.65rem;
+        opacity: 0.6;
+        margin: 0;
+    }
+}

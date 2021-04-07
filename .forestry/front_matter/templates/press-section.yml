@@ -3,7 +3,7 @@ label: Press Section
 hide_body: false
 fields:
 - type: field_group
-  name: partnersSection
+  name: pressSection
   label: Press Section
   fields:
   - name: title
