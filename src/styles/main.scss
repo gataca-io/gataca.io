@@ -23,6 +23,7 @@ $feature-flags: (
 @import './../components/HeaderSection/headerOverride';
 @import './../components/faqSection/faqSection_override';
 @import './../components/ProductsSection/productsection_override';
+@import './overrides';
 
 
 // overrides posts
@@ -115,7 +116,16 @@ $feature-flags: (
 }
 
 .tabStyle {
+    &, button {
+        width: 33% !important;
+        @include media-for-tablet-portrait-up {
+            width: 200px !important;
+        }
+    }
+
     button {
-        text-align: center ;
+        text-align: center !important;
+        border-bottom: none !important;
+        outline: none !important;
     }
 }

@@ -24,6 +24,8 @@
     & > div {
         max-width: var(--max-width);
         padding: var(--baseSpacing);
+        margin: 3rem auto 3rem auto;
+        padding: 2rem 2rem;
         @include media-for-phone-only {
             padding: var(--baseSpacing);
         }
