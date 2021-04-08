@@ -27,12 +27,15 @@ export default function Insights() {
         <p>{insightsMetaData.introSection.mission}</p>
       </section>
       
-      <Press/>
-      
       <section className={insightsStyles.ctaSection}>
           <Button target="_blank" href={insightsMetaData.cta.link}>{insightsMetaData.cta.text}</Button>
           <p>*{insightsMetaData.cta.descripion}</p>
       </section>
+      
+      <div className={insightsStyles.pressSection}>
+      
+      <Press/>
+      </div>
       
       <section className={insightsStyles.base}>
         <MdBlogList/>

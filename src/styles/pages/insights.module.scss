@@ -28,16 +28,19 @@
     align-items: center;
     flex-direction: column;
     max-width: 400px;
-    margin: 3rem auto 3rem auto;
+    margin: 2rem auto;
     padding: 0rem 2rem;
     @include media-for-tablet-portrait-up {
-        padding: 2rem 0rem;
+        padding: 1rem 0rem;
     }
 
     a {
         background-color: var(--darkblue);
         text-align: center;
+        min-width: 300px;
         padding: 0 40px;
+        display: flex;
+        justify-content: center;
     }
 
     p {
@@ -46,4 +49,8 @@
         font-size: 0.7rem;
         opacity: 0.7;
     }
+}
+
+.pressSection{
+    margin: 3rem 0;
 }
