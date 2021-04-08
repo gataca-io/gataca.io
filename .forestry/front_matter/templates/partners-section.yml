@@ -18,7 +18,7 @@ fields:
     default: ''
     label: Press List
     description: Each one of the partners information
-    config:
+    config: 
     fields:
     - type: text
       name: title

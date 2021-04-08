@@ -61,6 +61,8 @@ The draft then became the ground work and inspiration to launch the Verifier Uni
 
 ## What’s next for GATACA and eSSIF-Lab?
 
-The kick-off meeting for eSSIF-Lab IOC will take place on April 7th, however we have already initiated collaboration with relevant players in the space to continue the development of VUI.   
-  
+The kick-off meeting for eSSIF-Lab IOC will take place on April 7th, however we have already initiated collaboration with relevant players in the space to continue the development of VUI.
+
 Stay tuned for updates!
+
+Photo by [Guillaume Périgois](https://unsplash.com/@guillaumeperigois "https://unsplash.com/@guillaumeperigois") on [Unsplash](https://unsplash.com/s/photos/european-union?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText "https://unsplash.com/s/photos/european-union?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText")
