@@ -19,24 +19,23 @@ hero_image: "/static/images/early-adopters-program-european-commission-gataca-bl
 * SGAD (Secretaria General de Administración Digital), the government body responsible for the digital transformation of public administration and the Spanish representative for EBP, is coordinating this initiative
 * GATACA contributes to the program as a primary SSI technology provider
 
-  # What is the Early Adopters Program?
+# What is the early adopters program?
 
-    
-  First things first! The European Commission’s Early Adopter Program is an initiative comprised of a few European countries eager to become pioneers in implementing [EBSI](https://gataca.io/insights/gataca-helps-ebsi-define-a-european-self-sovereign-identity-framework "https://gataca.io/insights/gataca-helps-ebsi-define-a-european-self-sovereign-identity-framework") use cases (**Academic Diplomas, Self-Sovereign Identity, Notarisation, and Trusted Data Sharing**). The earlier players in the Early Adopters Program include Spain, Netherlands, Germany, Austria, Italy, and France:
-  * **Spain** - Self-Sovereign Identity + Academic Diploma
-  * **Netherlands** - Development of a national ID Wallet
-  * **Germany** - Academic Diploma (primary & secondary schools)
-  * **Austria** - Academic Diploma
-  * **Italy** - Academic Diploma
-  * **France** - Notarization
+First things first! The European Commission’s Early Adopter Program is an initiative comprised of a few European countries eager to become pioneers in implementing [EBSI](https://gataca.io/insights/gataca-helps-ebsi-define-a-european-self-sovereign-identity-framework "https://gataca.io/insights/gataca-helps-ebsi-define-a-european-self-sovereign-identity-framework") use cases (**Academic Diplomas, Self-Sovereign Identity, Notarisation, and Trusted Data Sharing**). The earlier players in the Early Adopters Program include Spain, Netherlands, Germany, Austria, Italy, and France:
 
-  Nonetheless, other European countries and organizations are already embarking on this journey.
+* **Spain** - Self-Sovereign Identity + Academic Diploma
+* **Netherlands** - Development of a national ID Wallet
+* **Germany** - Academic Diploma (primary & secondary schools)
+* **Austria** - Academic Diploma
+* **Italy** - Academic Diploma
+* **France** - Notarisation
 
-  As one can see, the first services being deployed are within the Academic Diploma use case exploiting SSI architectures. Spain, in particular, has chosen to pursue both academic diplomas and self-sovereign identity, and GATACA has joined their project as one of their main technology providers.
+Nonetheless, other European countries and organizations are already embarking on this journey.
+
+As one can see, the first services being deployed are within the Academic Diploma use case exploiting SSI architectures. Spain, in particular, has chosen to pursue both academic diplomas and self-sovereign identity, and GATACA has joined their project as one of their main technology providers.
 
 ### What does this mean exactly?
 
-  
 In Spain, three universities will pioneer the issuance of digital Academic Diplomas. The issuance will be performed 100% online, where students will authenticate themselves using a digital ID previously issued by FNMT (the Royal Mint of Spain) and stored in their mobile wallets.
 
 The Spanish representatives of the initiative coordinated by SGAD are FNMT, CRUE (an organization representing 76 universities), Red.es/RedIRIS, Universidad Carlos III de Madrid, Universidad Rovira i Virgili and Universidad de Murcia.
@@ -49,7 +48,6 @@ Through collaboration amongst all entities, GATACA will integrate its product su
 
 ## What Early Adopters Program phase is GATACA in right now?
 
-  
 The participants have already agreed on an architecture design and, as soon as the 2nd version of EBSI specifications are released, **GATACA will integrate its technology with the European registries.**
 
 GATACA wallet has already integrated with an SSI eIDAS bridge, a service to allow credential validation using eIDAS eSeals, and thanks to this program it will become one of the first wallets that is fully compliant with EBSI specs.
