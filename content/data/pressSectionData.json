@@ -1,26 +1,41 @@
 {
   "pressSection": {
-    "title": "Published by:",
+    "title": "In the news",
     "pressReleases": [
       {
-        "title": "MIT Delta",
-        "url": "https://entrepreneurship.mit.edu/accelerator/program/",
-        "image": "../images/mit_delta.svg"
+        "title": "MIT Sloan",
+        "url": "https://mitsloan.mit.edu/alumni/gatacas-verifiable-route-to-financial-identity-confirmation-and-security",
+        "image": "../images/Logo_MITSloan.png"
       },
       {
-        "title": "Telefónica Open Future",
-        "url": "https://www.openfuture.org/hubs/gran-via-espana-open-future",
-        "image": "../images/telefonica.svg"
+        "title": "Forbes",
+        "url": "https://forbes.es/empresas/85464/21-change-makers-para-2021/",
+        "image": "../images/logo_forbes.png"
       },
       {
-        "title": "SeedRocket",
-        "url": "https://www.seedrocket.com/",
-        "image": "../images/seedrocket.svg"
+        "title": "Business Insider",
+        "url": "https://www.businessinsider.es/12-startups-ciberseguridad-espanolas-seguir-2021-766623?amp=1",
+        "image": "../images/logo_Business_Insider.png"
       },
       {
-        "title": "DIF Identity foundation",
-        "url": "https://identity.foundation/",
-        "image": "../images/logo_dif.png"
+        "title": "ElReferente",
+        "url": "https://elreferente.es/tecnologicos/las-mujeres-emprendedoras-de-referencia-en-espana-en-2020/",
+        "image": "../images/logo_elreferene.png"
+      },
+      {
+        "title": "Blockchain Economia",
+        "url": "https://www.blockchaineconomia.es/id-interoperable-gataca/",
+        "image": "../images/logo_blockchainEconomia.png"
+      },
+      {
+        "title": "MIT Sloan Technology Review",
+        "image": "../images/logo_MITSloanTechReview.png",
+        "url": "https://mitsloan.mit.edu/ideas-made-to-matter/startup-will-make-verifying-data-easier-companies"
+      },
+      {
+        "title": "Emprendedores",
+        "url": "https://www.emprendedores.es/ideas-de-negocio/emprendedoras-espanolas-exito-tendencia-negocios/",
+        "image": "../images/logo_emprendedores.png"
       }
     ]
   }
