@@ -37,9 +37,8 @@ export default function Layout(props) {
         
         <FooterSection />
   
-        <CookieConsent
+{/*        <CookieConsent
           location="bottom"
-          debug={true}
           buttonText="Accept"
           declineButtonText={"Decline"}
           onAccept={() =>{
@@ -65,7 +64,7 @@ export default function Layout(props) {
           
           {configMetaData.cookies}{" "}
         </CookieConsent>
-        
+        */}
     </section>
   )
 }
