@@ -9,6 +9,16 @@ import CookieConsent from "react-cookie-consent"
 export default function Layout(props) {
   // const { title } = useSiteMetadata()
   
+  const removeCookies = () => {
+    const _hsp = window._hsp = window._hsp || [];
+    document.getElementById("removeCookies").onclick = function() {
+      _hsp.push(['revokeCookieConsent']);
+    };
+    document.cookie = '_ga' + '=; Path=/; Domain=.example.com; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+    document.cookie = '_gid' + '=; Path=/; Domain=.example.com; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+    document.cookie = 'gataca_io_accepted' + '=; Path=/; Domain=.example.com; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+  }
+  
   return (
       <section
         className={`${layoutStyles.layout} ${
@@ -29,15 +39,29 @@ export default function Layout(props) {
   
         <CookieConsent
           location="bottom"
+          debug={true}
           buttonText="Accept"
-          cookieName="myAwesomeCookieName2"
+          declineButtonText={"Decline"}
+          onAccept={() =>{
+          
+          }}
+          onDecline={() => {
+            removeCookies();
+          }}
+          cookieName="gataca_io_accepted"
+          enableDeclineButton
           style={{ background: "white",
             color: "rgb(24, 27, 94)",
-            borderTop: "1px solid rgb(24, 27, 94)",
+            border: "1px solid rgb(24, 27, 94)",
+            boxShadow: "0px 5px 10px #00000010",
+            maxWidth: 400,
+            margin: 50
           }}
           buttonStyle={{ color: "white", fontSize: "13px", backgroundColor: "rgb(24, 27, 94)" }}
+          declineButtonStyle={{ color: "rgb(24, 27, 94)", fontSize: "13px", backgroundColor: "white" }}
           expires={150}
         >
+          
           {configMetaData.cookies}{" "}
         </CookieConsent>
         

@@ -50,7 +50,7 @@
         justify-content: center;
     }
     @include media-for-desktop-up {
-        margin:0;
+        margin:2rem;
     }
     &:hover {
         opacity: 0.8;
@@ -70,4 +70,10 @@
         opacity: 0.6;
         margin: 0;
     }
+}
+
+.pressContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }

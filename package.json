@@ -28,13 +28,14 @@
 		"carbon-components": "^10.11.2",
 		"carbon-components-react": "^7.11.3",
 		"carbon-icons": "^7.0.7",
+		"classnames": "^2.3.1",
 		"gatsby": "^2.21.30",
 		"gatsby-cli": "^2.12.21",
 		"gatsby-image": "^2.2.8",
 		"gatsby-plugin-alias-imports": "^1.0.5",
 		"gatsby-plugin-google-analytics": "^2.3.3",
 		"gatsby-plugin-google-tagmanager": "^2.3.4",
-		"gatsby-plugin-hubspot": "^1.3.3",
+		"gatsby-plugin-hubspot": "^1.3.5",
 		"gatsby-plugin-mdx": "^1.5.0",
 		"gatsby-plugin-postcss": "^2.3.1",
 		"gatsby-plugin-react-helmet": "^3.1.0",
@@ -82,5 +83,8 @@
 		"tslint": "^6.1.2",
 		"tslint-loader": "^3.5.4"
 	},
-	"keywords": [ "gatsby", "forestry" ]
+	"keywords": [
+		"gatsby",
+		"forestry"
+	]
 }

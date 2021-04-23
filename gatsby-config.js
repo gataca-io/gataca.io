@@ -155,28 +155,6 @@ module.exports = {
         defaultQuality: 75
       }
     },
-/*    {
-      resolve: `gatsby-source-wordpress`,
-      options: {
-        // your WordPress source
-        baseUrl: `gataca.io`,
-        protocol: `https`,
-        // is it hosted on wordpress.com, or self-hosted?
-        hostingWPCOM: false,
-        // does your site use the Advanced Custom Fields Plugin?
-        useACF: true,
-        auth: {
-          //Create a file named .env in root folder of your project
-          //And add there your clientId, clientSecret, WordPressUser and WordPressPassword
-          //More info about environment variables: https://www.gatsbyjs.org/docs/environment-variables
-          //More info about communicate with wordpress.com API: https://developer.wordpress.com/apps/
-          wpcom_app_clientId: process.env.WORDPRESS_CLIENT_ID,
-          wpcom_app_clientSecret: process.env.WORDPRESS_CLIENT_SECRET,
-          wpcom_user: process.env.WORDPRESS_USER,
-          wpcom_pass: process.env.WORDPRESS_PASSWORD
-        }
-      }
-    },*/
     {
       resolve: 'gatsby-wpgraphql-inline-images',
       options: {
@@ -218,6 +196,14 @@ module.exports = {
         noIframeBorder: true
       }
     },
-    "gatsby-remark-responsive-iframe"
+    "gatsby-remark-responsive-iframe",
+    {
+      resolve: "gatsby-plugin-hubspot",
+      options: {
+        trackingCode: "4728390",
+        respectDNT: true,
+        productionOnly: true,
+      },
+    },
   ],
 }

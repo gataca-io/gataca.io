@@ -34,7 +34,7 @@ fields:
   label: Metas
 - type: field_group
   name: introSection
-  label: Intro Section
+  label: Intro content
   fields:
   - name: title
     type: text
@@ -59,7 +59,7 @@ fields:
       wysiwyg: false
 - type: field_group
   name: cta
-  label: Intro Section
+  label: Cta subscription content
   fields:
   - name: text
     type: text

@@ -46,7 +46,7 @@ export default function IntroSection({ data, link }) {
             </div>
             
             <section className={introStyles.info}>
-              <h1>{data.mainTitle} <span>{data.mainTitleSubheading }</span></h1>
+              <h1>{data.mainTitle} <span>{data.mainTitleSubheading}</span></h1>
               <h3>{data.mainSubtitle}</h3>
               <p>{data.mainParagraph} </p>
               <a href={link} target="_blank" rel="noreferrer" >
