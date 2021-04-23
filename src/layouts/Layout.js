@@ -55,6 +55,7 @@ export default function Layout(props) {
             border: "1px solid rgb(24, 27, 94)",
             boxShadow: "0px 5px 10px #00000010",
             maxWidth: 400,
+            lineHeight:1.3,
             margin: 50
           }}
           buttonStyle={{ color: "white", fontSize: "13px", backgroundColor: "rgb(24, 27, 94)" }}
