@@ -23,20 +23,22 @@ Kaliya is an internationally recognized expert in the self-sovereign identity an
 
 In this interview, we not only **discuss the role and goal of initiatives such as the CCI and** [**Good Health Pass Collaborative**](https://www.goodhealthpass.org/ "https://www.goodhealthpass.org/")**, but we also briefly touch upon the challenges surrounding these projects including interoperability issues and privacy concerns**. Below we provide a sneak peek into Kaliya’s response to our questions, however if you wish to view the full video at once, scroll to the bottom of the post!
 
+**What are the advantages of using Self-Sovereign Identity (SSI) technology for Covid credentials?**
+
+<iframe src="https://player.vimeo.com/video/541529889" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+**What are the main factors are affecting interoperability between Covid health pass providers?**
+
 <iframe src="https://player.vimeo.com/video/541530523" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 
-* **What are the advantages of using Self-Sovereign Identity (SSI) technology for Covid credentials?**
+**What is the current situation in the US as it relates to Covid health passes projects and their interoperability?**
 
-  <iframe src="https://player.vimeo.com/video/541529889" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-* **What are the main factors are affecting interoperability between Covid health pass providers?**
+<iframe src="https://player.vimeo.com/video/541531383" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 
-  <iframe src="https://player.vimeo.com/video/541530523" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-* **What is the current situation in the US as it relates to Covid health passes projects and their interoperability?**
+**What’s your take on the privacy concerns surrounding Covid credentials?**
 
-  <iframe src="https://player.vimeo.com/video/541531383" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-* **What’s your take on the privacy concerns surrounding Covid credentials?**
-
-  <iframe src="https://player.vimeo.com/video/541572028" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+* <iframe src="https://player.vimeo.com/video/541572028" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+* 
 
 **Full Interview**:
 
