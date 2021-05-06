@@ -65,6 +65,8 @@ export default function Layout(props) {
           {configMetaData.cookies}{" "}
         </CookieConsent>
         */}
+        
+        
     </section>
   )
 }

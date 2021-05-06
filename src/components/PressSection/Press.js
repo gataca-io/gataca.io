@@ -26,8 +26,8 @@ function renderPartners({ data, info }) {
                   key={el.title}
                 >
                   <div>
-                    {console.log("image", el.image)}
-                    <img src={el.image} alt={el.title}/>
+                    {/*{console.log("image", el.image)}*/}
+                    <img src={el.image.publicURL} alt={el.title}/>
                   </div>
                 </a>
               )
@@ -51,7 +51,9 @@ export default function Press({ info }) {
                 pressReleases {
                   title
                   url
-                  image
+                  image {
+                    publicURL
+                  }
                 }
               }
             }

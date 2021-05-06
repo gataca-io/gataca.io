@@ -14,7 +14,7 @@
       {
         "name": "Irene Hernandez",
         "bio": "<p>CEO</p>",
-        "photo": "/static/images/dsc09829.jpg",
+        "photo": "../images/dsc09829.jpg",
         "links": [
           {
             "name": "linkedIn",
@@ -26,7 +26,7 @@
       {
         "name": "Samuel Gómez",
         "bio": "<p>CTO</p>",
-        "photo": "/static/images/dsc09879.jpg",
+        "photo": "../images/dsc09879.jpg",
         "links": [
           {
             "name": "linkedIn",
@@ -38,7 +38,7 @@
       {
         "name": "Jose San Juan",
         "bio": "<p>CSO</p>",
-        "photo": "/static/images/dsc09804.jpg",
+        "photo": "../images/dsc09804.jpg",
         "links": [
           {
             "name": "linkedIn",
@@ -50,7 +50,7 @@
       {
         "name": "Sergio Gordo",
         "bio": "<p>Product designer &amp; Visual Developer</p>",
-        "photo": "/static/images/dsc09739.jpg",
+        "photo": "../images/dsc09739.jpg",
         "links": [
           {
             "name": "linkedIn",
@@ -61,7 +61,7 @@
       },
       {
         "name": "Chiara Casoni",
-        "photo": "/static/images/dsc09789.jpg",
+        "photo": "../images/dsc09789.jpg",
         "bio": "<p>Digital Marketing Specialist</p>",
         "links": [
           {
@@ -73,7 +73,7 @@
       },
       {
         "name": "Daniel Moledo",
-        "photo": "/static/images/dsc09710.png",
+        "photo": "../images/dsc09710.png",
         "bio": "<p>Backend Developer</p>",
         "links": [
           {

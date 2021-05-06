@@ -35,7 +35,7 @@ function RenderTeamSection({ data }) {
                 <div className={teamSectionStyles.rrssSection}>
                   {gato.links.map(link=>{
                     return <a href={link.url} target="_blank" rel="noreferrer" >
-                      <img src={link.icon.publicURL} alt={link.url}/>
+                      {link.icon && <img src={link.icon.publicURL} alt={link.url}/>}
                     </a>
                   })}
                 </div>
