@@ -12,7 +12,7 @@ author: ''
 
 Effective date: February 05, 2019
 
-Gataca, Inc. ("us", "we", or "our") operates the www.gatacaid.com website and the Gataca mobile application (hereinafter referred to as the "Service").
+Gataca, Inc. and its subsidiary Gataca España S.L. ("Gataca","us", "we", or "our") operate the www.gataca.io website and the Gataca mobile application (hereinafter referred to as the "Service").
 
 This page informs you of our policies regarding the collection, use and disclosure of personal data when you use our Service and the choices you have associated with that data.
 
@@ -22,7 +22,7 @@ We use your data to provide and improve the Service. By using the Service, you a
 
 * **Service**
 
-  Service means the www.gatacaid.com website and the Gataca mobile application operated by Gataca, Inc.
+  Service means the www.gataca.io website and the Gataca mobile application operated by Gataca. 
 * **Personal Data**
 
   Personal Data means data about a living individual who can be identified from those data (or from those and other information either in our possession or likely to come into our possession).
@@ -54,15 +54,16 @@ We collect several different types of information for various purposes to provid
 
 #### Personal Data
 
-While using our Service, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you ("Personal Data"). Personally identifiable information may include, but is not limited to:
+While using our Service, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you ("Personal Data"). Personally identifiable information requested to you may include, but is not limited to:
 
 * Email address
 * First name and last name
+* Company
 * Phone number
 * Address, State, Province, ZIP/Postal code, City
 * Cookies and Usage Data
 
-We may use your Personal Data to contact you with newsletters, marketing or promotional materials and other information that may be of interest to you. You may opt out of receiving any, or all, of these communications from us by following the unsubscribe link or the instructions provided in any email we send.
+We may use your Personal Data to contact you with marketing or promotional materials and other information that may be of interest to you. We will not use your data for marketing or promotional purposes unless you opt in, and you may opt out of receiving any, or all, of these communications from us by following the unsubscribe link or the instructions provided in any email we send.
 
 #### Usage Data
 
@@ -88,7 +89,7 @@ Examples of Cookies we use:
 
 ## Use of Data
 
-Gataca, Inc. uses the collected data for various purposes:
+Gataca uses the collected data for various purposes:
 
 * To provide and maintain our Service
 * To notify you about changes to our Service
@@ -103,7 +104,7 @@ Gataca, Inc. uses the collected data for various purposes:
 
 If you are from the European Economic Area (EEA), Gataca, Inc. legal basis for collecting and using the personal information described in this Privacy Policy depends on the Personal Data we collect and the specific context in which we collect it.
 
-Gataca, Inc. may process your Personal Data because:
+Gataca may process your Personal Data because:
 
 * We need to perform a contract with you
 * You have given us permission to do so
@@ -131,7 +132,7 @@ Gataca, Inc. will take all the steps reasonably necessary to ensure that your da
 
 ### Business Transaction
 
-If Gataca, Inc. is involved in a merger, acquisition or asset sale, your Personal Data may be transferred. We will provide notice before your Personal Data is transferred and becomes subject to a different Privacy Policy.
+If Gataca is involved in a merger, acquisition or asset sale, your Personal Data may be transferred. We will provide notice before your Personal Data is transferred and becomes subject to a different Privacy Policy.
 
 ### Disclosure for Law Enforcement
 
@@ -159,7 +160,7 @@ You can enable or disable Do Not Track by visiting the Preferences or Settings p
 
 ## Your Data Protection Rights under the General Data Protection Regulation (GDPR)
 
-If you are a resident of the European Economic Area (EEA), you have certain data protection rights. Gataca, Inc. aims to take reasonable steps to allow you to correct, amend, delete or limit the use of your Personal Data.
+If you are a resident of the European Economic Area (EEA), you have certain data protection rights. Gataca aims to take reasonable steps to allow you to correct, amend, delete or limit the use of your Personal Data.
 
 If you wish to be informed about what Personal Data we hold about you and if you want it to be removed from our systems, please contact us.
 
