@@ -77,6 +77,7 @@ fields:
   description: Enter hero image for blog post here
 pages:
 - content/posts/create-an-identity-that-is-not-controlled-by-big-tech-or-governments.md
+- content/posts/decentralized-finance-self-sovereign-identity-a-tale-of-decentralization-a-new-paradigm-of-trust.md
 - content/posts/decentralized-identity-projects-and-pilots.md
 - content/posts/gataca-helps-ebsi-define-a-european-self-sovereign-identity-framework.md
 - content/posts/gataca-joins-the-european-commission-s-early-adopters-program-as-the-ssi-technology-provider-in-the-spanish-group.md
