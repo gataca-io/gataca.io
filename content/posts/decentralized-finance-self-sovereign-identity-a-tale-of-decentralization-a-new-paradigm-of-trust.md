@@ -37,7 +37,7 @@ Introducing decentralized KYC checks also unlocks value by:
 
 * Opening the path for more DeFi services by offering users a certain level of trust or reputation
 * Providing one KYC across all-platforms, eliminating end-user frustration
-* Enabling users the ability to revoke the platform’s access to their information at any time
+* Enabling users the ability to revoke a platform’s access to their information at any time
 * Safeguarding access to users whose identity has been verified
 * Tackling the young trader demographic problem
 * Eliminating design vulnerabilities in current authentication protocols
