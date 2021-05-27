@@ -6,11 +6,16 @@ import blogTemplateStyles from "../styles/templates/blog.module.scss"
 //this component handles the blur img & fade-ins
 import Img from "gatsby-image"
 import { BuildHelmet } from "../components/auxiliary/HelmetBuilder"
+import cx from "classnames"
+
+const slug = "decentralized-finance-self-sovereign-identity-a-tale-of-decentralization-a-new-paradigm-of-trust"
 
 function buildHeroImage(frontmatter) {
   const heroImage = frontmatter.hero_image
   return !!heroImage ? (
-    <figure className={blogTemplateStyles.blog__hero}>
+    <figure className={cx(
+      frontmatter.slug === slug ? blogTemplateStyles.blog__hero_bottom : null,
+      blogTemplateStyles.blog__hero)}>
       <Img
         fluid={frontmatter.hero_image.childImageSharp.fluid}
         alt={frontmatter.title}
