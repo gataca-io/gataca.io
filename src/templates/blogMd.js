@@ -6,6 +6,9 @@ import blogTemplateStyles from "../styles/templates/blog.module.scss"
 //this component handles the blur img & fade-ins
 import Img from "gatsby-image"
 import { BuildHelmet } from "../components/auxiliary/HelmetBuilder"
+import cx from "classnames"
+
+const slug = "decentralized-finance-self-sovereign-identity-a-tale-of-decentralization-a-new-paradigm-of-trust"
 
 const slug = "decentralized-finance-self-sovereign-identity-a-tale-of-decentralization-a-new-paradigm-of-trust"
 
