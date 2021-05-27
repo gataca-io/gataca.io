@@ -14,8 +14,8 @@ function buildHeroImage(frontmatter, slug) {
   const heroImage = frontmatter.hero_image
   return !!heroImage ? (
     <figure className={cx(
-      slug === definedSlug ? blogTemplateStyles.blog__hero_bottom : null,
-      blogTemplateStyles.blog__hero)}>
+      slug === definedSlug ? blogTemplateStyles.blog__hero_bottom : blogTemplateStyles.blog__hero,
+)}>
       <Img
         fluid={frontmatter.hero_image.childImageSharp.fluid}
         alt={frontmatter.title}
