@@ -1,5 +1,5 @@
 ---
-date: 2021-05-27T07:03:34Z
+date: 2021-05-27T07:03:34.000+00:00
 meta_data:
   title: ''
   description: ''
@@ -10,14 +10,14 @@ meta_data:
 title: 'Decentralized Finance & Self-sovereign Identity: A tale of decentralization,
   a new paradigm of trust'
 author: ''
-hero_image: "/static/images/defi-ssi-blog-post-2-pic.jpg"
+hero_image: "/static/images/defi-ssi-blockchain-blog-post-1.jpg"
 
 ---
 DeFi’s the talk of the town. And while the self-sovereign identity market is still gaining traction, bridging these two concepts has the potential to spur global economic growth.
 
 Because of the lack of literature, and the desire to educate our users of the endless possibilities of SSI, we decided to publish this article. **We are aware that DeFi’s growth is explosive and inevitable yet its growth needs to be sustainable and responsible. This can be done with SSI.**
 
-The main idea behind decentralized digital identity, also known as self-sovereign identity or SSI, is giving users back control over their personal information. What does this really mean? Basically, users should be able to have complete control over where their personal data -- usernames, email, address, sex, nationality, etc -- is shared, who has access to it and what entities do with it.
+The main idea behind decentralized digital identity, also known as self-sovereign identity or SSI, is giving users back control over their personal information. What does this really mean? Basically, users should be able to have complete control over where their personal data -- usernames, email, address, sex, nationality, etc. -- is shared, who has access to it and what entities do with it.
 
 Now let’s break down DeFi: it's the upcoming industry that replicates traditional finance market processes, such as borrowing and lending, into a decentralized and blockchain enabled system using smart contract functions. While SSI focuses on giving users control of their data, DeFi’s goal is to give users access and control of their finances. Both have a goal of creating new sources of financial opportunities for the global population.
 
