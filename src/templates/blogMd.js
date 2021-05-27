@@ -10,6 +10,8 @@ import cx from "classnames"
 
 const slug = "decentralized-finance-self-sovereign-identity-a-tale-of-decentralization-a-new-paradigm-of-trust"
 
+const slug = "decentralized-finance-self-sovereign-identity-a-tale-of-decentralization-a-new-paradigm-of-trust"
+
 function buildHeroImage(frontmatter) {
   const heroImage = frontmatter.hero_image
   return !!heroImage ? (
@@ -25,6 +27,7 @@ function buildHeroImage(frontmatter) {
     <Fragment />
   )
 }
+
 
 export default function BlogMd(props) {
   const data = props.data.markdownRemark
