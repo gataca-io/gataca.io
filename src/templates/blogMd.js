@@ -8,15 +8,13 @@ import Img from "gatsby-image"
 import { BuildHelmet } from "../components/auxiliary/HelmetBuilder"
 import cx from "classnames"
 
-const slug = "decentralized-finance-self-sovereign-identity-a-tale-of-decentralization-a-new-paradigm-of-trust"
+const definedSlug = "decentralized-finance-self-sovereign-identity-a-tale-of-decentralization-a-new-paradigm-of-trust"
 
-const slug = "decentralized-finance-self-sovereign-identity-a-tale-of-decentralization-a-new-paradigm-of-trust"
-
-function buildHeroImage(frontmatter) {
+function buildHeroImage(frontmatter, slug) {
   const heroImage = frontmatter.hero_image
   return !!heroImage ? (
     <figure className={cx(
-      frontmatter.slug === slug ? blogTemplateStyles.blog__hero_bottom : null,
+      slug === definedSlug ? blogTemplateStyles.blog__hero_bottom : null,
       blogTemplateStyles.blog__hero)}>
       <Img
         fluid={frontmatter.hero_image.childImageSharp.fluid}
@@ -27,7 +25,6 @@ function buildHeroImage(frontmatter) {
     <Fragment />
   )
 }
-
 
 export default function BlogMd(props) {
   const data = props.data.markdownRemark
@@ -54,7 +51,7 @@ export default function BlogMd(props) {
       />
       <article className={blogTemplateStyles.blog}>
         {/*HERO IMAGE*/}
-        {buildHeroImage(data.frontmatter)}
+        {buildHeroImage(data.frontmatter, data.fields.slug)}
         <div className={blogTemplateStyles.blog__info}>
           <h1>{data.frontmatter.title}</h1>
           <h3>{data.frontmatter.date}</h3>
