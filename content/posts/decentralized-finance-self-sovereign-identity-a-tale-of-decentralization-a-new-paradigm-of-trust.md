@@ -10,7 +10,7 @@ meta_data:
 title: 'Decentralized Finance & Self-sovereign Identity: A tale of decentralization,
   a new paradigm of trust'
 author: ''
-hero_image: "/static/images/defi-ssi-blockchain-blog-post-1.jpg"
+hero_image: "/static/images/defi-ssi-blockchain-blog-post.jpg"
 
 ---
 DeFi’s the talk of the town. And while the self-sovereign identity market is still gaining traction, bridging these two concepts has the potential to spur global economic growth.
