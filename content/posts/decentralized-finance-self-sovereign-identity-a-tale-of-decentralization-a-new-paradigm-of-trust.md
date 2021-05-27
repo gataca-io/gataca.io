@@ -4,9 +4,9 @@ meta_data:
   title: ''
   description: ''
   rrss_images:
-    twitter: ''
-    facebook_and_whatsapp: ''
-    linkedin: ''
+    twitter: "/static/images/defi-ssi-blockchain-blog-post.jpg"
+    facebook_and_whatsapp: "/static/images/defi-ssi-blockchain-blog-post.jpg"
+    linkedin: "/static/images/defi-ssi-blockchain-blog-post.jpg"
 title: 'Decentralized Finance & Self-sovereign Identity: A tale of decentralization,
   a new paradigm of trust'
 author: ''
