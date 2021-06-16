@@ -4,9 +4,9 @@ meta_data:
   title: ''
   description: ''
   rrss_images:
-    twitter: ''
+    twitter: "/static/images/priit_martinson_flyer.png"
     facebook_and_whatsapp: ''
-    linkedin: ''
+    linkedin: "/static/images/priit_martinson_flyer.png"
 title: " [VIDEO] Gataca asks the Expert: Priit Martinson on Estonia’s Digital Transformation"
 author: ''
 hero_image: "/static/images/priit_martinson_flyer.png"
