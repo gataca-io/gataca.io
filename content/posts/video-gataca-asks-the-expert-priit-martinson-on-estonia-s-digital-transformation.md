@@ -36,7 +36,7 @@ _(To view the full video, keep on scrolling!)_
 * **(32:12)** Spotlight: the current most popular SSI use case.
 * **(33:10)** Concluding comments: top e-services used in Estonia & key services needed to start an e-State.
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="[https://player.vimeo.com/video/563189150?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479](https://player.vimeo.com/video/563189150?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479 "https://player.vimeo.com/video/563189150?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479")" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Gataca Asks The Expert: Priit Martinson"></iframe></div><script src="[https://player.vimeo.com/api/player.js](https://player.vimeo.com/api/player.js "https://player.vimeo.com/api/player.js")"></script>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/563189150?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Gataca Asks The Expert: Priit Martinson"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 **Chat with us -** We’d love to chat with you. Let us know your perspective and comments on this topic, or anything Digital Identity related. Join our [Telegram ](https://t.me/digitalidentityinsights)group.
 
