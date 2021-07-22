@@ -5,12 +5,13 @@ meta_data:
     6 key points
   description: ''
   rrss_images:
-    twitter: ''
-    facebook_and_whatsapp: ''
-    linkedin: ''
-title: ''
+    twitter: "/static/images/oliver-cole-cb55wrgmdp8-unsplash-2.jpg"
+    facebook_and_whatsapp: "/static/images/oliver-cole-cb55wrgmdp8-unsplash-2.jpg"
+    linkedin: "/static/images/oliver-cole-cb55wrgmdp8-unsplash-2.jpg"
+title: Here’s what the new eIDAS proposal really means for the SSI community in 6
+  key points
 author: ''
-hero_image: ''
+hero_image: "/static/images/oliver-cole-cb55wrgmdp8-unsplash-2.jpg"
 
 ---
 > _“Every time an App or website asks us to create a new digital identity or to easily log on via a big platform, we have no idea what happens to our data in reality. That is why the Commission will soon propose a secure European e-identity. One that we trust and that any citizen can use anywhere in Europe to do anything from paying your taxes to renting a bicycle. A technology where we can control ourselves what data and how data is used.”_
@@ -25,7 +26,7 @@ Below, we’ve outlined 6 critical points extracted from the eIDAS amendment and
 
 _Please note, the new eIDAS regulation proposal is currenlty under revision by Member States and is subject to change._
 
-## Key point #1: **All EU Member States must provide a digital wallet to its citizens**
+## **Key point #1**: All EU Member States must provide a digital wallet to its citizens
 
 **Where**: Article 6a
 
@@ -51,7 +52,7 @@ This scenario also raises a critical concern. If the SSI community, which is str
 
 Lastly, **option (c)**. While most participants in the SSI community would point this option as their preferred choice, is does not come without risks for them. In this scenario, specialized providers (i.e. all SSI technology startups) will still have to earn the “EU Digital Identity Wallet Trust Mark”, which is great and necessary. However, if this process is designed in such a way that is not easily accessible (cost and resource-wise) to these small, innovative technology companies, we may as well be handing over this market to the large online platforms the Regulation is trying to defend citizens from in the first place.
 
-## Key point #2: **The creation and verification of verifiable credentials (referred as electronic attestations of attributes in the Regulation), and the registry of electronic data in a DLT are now regulated Trust Services.**
+## Key point #2: The creation and verification of verifiable credentials (referred as electronic attestations of attributes in the Regulation), and the registry of electronic data in a DLT are now regulated Trust Services.
 
 **Where**: Article 3, Point 16.
 
@@ -71,7 +72,7 @@ To Europeans, this means that EBSI, the european blockchain network led by the E
 
 Another aspect worth highlighting is the decoupling of the EU Wallet from the issuance of verifiable credentials. One may conclude from the Regulation that Verifiable Credentials could be issued by any Trust Service provider, including non qualified providers, but that such provider does not necessarily have to make these credentials compatible with EU Wallets. As a result, we could imagine organizations from both the private and public sector willing to keep some kind of control over issued credentials and make them only available via their own Apps or Websites. This would indeed hinder the potential of EU Wallets to become the single, user-controlled repository of all our personal information (which is one of its primary purposes). The EU Wallet and issuance of electronic attestations is also decoupled from the blockchain trust service, throwing strong uncertainty as to whether EBSI and ESSIF are intended to become the technological framework for the European Digital Identity.
 
-## Key point #3: **The wallet will be allowed for use in the private sector, and will be mandatory for private relying parties providing services where strong user authentication for online identification is required (including large online platforms).**
+## **Key point #3:** The wallet will be allowed for use in the private sector, and will be mandatory for private relying parties providing services where strong user authentication for online identification is required (including large online platforms).
 
 Where: Article 12b
 
@@ -81,7 +82,7 @@ Where: Article 12b
 
 **Opportunity:** Adoption is all that matters. We could design the most secure, privacy-preserving, user friendly identity framework, but if it can only be used in limited cases, it will be a good-for-nothing Regulation. One of the key success factors for Estonia’s eID system (watch our Ask The Expert series on the subject [here](https://gataca.io/insights/video-gataca-asks-the-expert-priit-martinson-on-estonia-s-digital-transformation "https://gataca.io/insights/video-gataca-asks-the-expert-priit-martinson-on-estonia-s-digital-transformation")) was the involvement of the private sector early on, particularly the banking industry. Making the EU Wallets not only mandatory for Member States to provide, but also for critical industries in the private sector to accept, is certainly one of the greatest hopes for its success. This provision is of particular interest to SSI providers, as it **guarantees a market.** All these industries, including companies like Google, Amazon, or Facebook, will be forced to accept the use of EU Wallets for authentication and may also seize an opportunity to offer the issuance of Credentials as a new revenue stream. For those purposes, they’ll demand technology or/and services currently provided by specialized SSI companies, potentially leading to acquisitions and mergers, and a clearer exit strategy for investors.
 
-## Key point #4: The possibility for European countries to accept Credentials from abroad, even from non-EU countries, without the need for peer agreements.
+## **Key point #4:** The possibility for European countries to accept Credentials from abroad, even from non-EU countries, without the need for peer agreements.
 
 Where: Article 12c, 14, 24
 
@@ -101,7 +102,7 @@ What does this mean for the SSI community? Easier interoperability and an even b
 
 A brighter view of this issue could benefit EU wallet providers should regulation in non-EU countries prosper soon. If EU wallet providers, unlike non-EU wallet providers, are born requiring to be issued under a notified electronic identification scheme of level of assurance ‘high’, EU wallet providers could hold a competitive advantage in non-EU countries, as both users and service providers will most likely have a preference towards wallets with higher levels of trustworthiness and assurance.
 
-## Key point #5: **All wallets must technically enable selective disclosure of attributes to relying parties**
+## **Key point #5:** All wallets must technically enable selective disclosure of attributes to relying parties
 
 Where: Point (29)
 
@@ -115,7 +116,7 @@ An elegant and efficient way to implement selective disclosure is with the use o
 
 Most worrying is the fact that the lack of specifications for the implementation of selective disclosure mechanisms has led the SSI industry to offer multiple solutions that are not compatible among themselves. Unless the Regulation comes with clear and concise specifications for this aspect, we risk the achievement of interoperability at international level.
 
-## Key point #6: **Wallets must enable the storage of qualified and non qualified credentials, and allow signatures with Qualified Electronic Signature.**
+## **Key point #6:** Wallets must enable the storage of qualified and non qualified credentials, and allow signatures with Qualified Electronic Signature.
 
 Where: Article 6a (b)
 
