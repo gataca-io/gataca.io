@@ -11,7 +11,7 @@ meta_data:
 title: Here’s what the new eIDAS proposal really means for the SSI community in 6
   key points
 author: ''
-hero_image: "/static/images/oliver-cole-cb55wrgmdp8-unsplash-2.jpg"
+hero_image: "/static/images/eidas-proposal-european-commission-post.jpg"
 
 ---
 * SSI principles are all over the new eIDAS proposal, yet its technology agnostic nature shreds doubts as to wether ESSIF, the European SSI framework developed under the European Commission’s EBSI Program, will become the technology framework of choice for governments.
@@ -152,4 +152,4 @@ The proposal has just been submitted for revision and approval, so we still have
 
 * [Amending Regulation (EU) No 910/2014 as regards establishing a framework for a European digital Identity (eIDAS Draft).](https://ec.europa.eu/info/strategy/priorities-2019-2024/europe-fit-digital-age/european-digital-identity "https://ec.europa.eu/info/strategy/priorities-2019-2024/europe-fit-digital-age/european-digital-identity")
 
-Photo by [Oliver Cole](https://unsplash.com/@oliver_photographer) on [Unsplash](https://unsplash.com/)
+Photo by [Robin Worrall](https://unsplash.com/@robin_rednine) on [Unsplash](https://unsplash.com/)
