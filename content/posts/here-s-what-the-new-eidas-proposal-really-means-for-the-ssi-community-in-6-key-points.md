@@ -14,6 +14,10 @@ author: ''
 hero_image: "/static/images/oliver-cole-cb55wrgmdp8-unsplash-2.jpg"
 
 ---
+* SSI principles are all over the new eIDAS proposal, yet its technology agnostic nature shreds doubts as to wether ESSIF, the European SSI framework developed under the European Commission’s EBSI Program, will become the technology framework of choice for governments.
+* A more thorough analysis of the proposal evidences both opportunities and threads for the SSI community
+* We’ve analyzed 6 critical points and provided an impact assessment.
+
 > _“Every time an App or website asks us to create a new digital identity or to easily log on via a big platform, we have no idea what happens to our data in reality. That is why the Commission will soon propose a secure European e-identity. One that we trust and that any citizen can use anywhere in Europe to do anything from paying your taxes to renting a bicycle. A technology where we can control ourselves what data and how data is used.”_
 
 On June 6th, the European Commission announced the launch of a European Digital Identity together with an improvement proposal to the current eIDAS regulation. Check out [Adrian Doerk](https://ssi-ambassador.medium.com/digital-identity-wallet-a-place-for-your-self-sovereign-identity-5dfbd3d48a74 "https://ssi-ambassador.medium.com/digital-identity-wallet-a-place-for-your-self-sovereign-identity-5dfbd3d48a74")’s clear & concise summary of the proposal and introduction into the new #EUDigitalIdentity wallet - also referred to as EU Wallet from now on.
@@ -38,7 +42,7 @@ _Please note, the new eIDAS regulation proposal is currenlty under revision by M
 >
 > (b) under a mandate from a Member State;
 >
-> (c) independently but recognised by a Member State.
+> (c) independently but recognised by a Member State."
 
 A Member State could therefore choose one of three paths: to provide their own Wallet, either via (a) an in-house development or (b) mandating the task to a specific (public or private) Wallet provider, or (c) creating an open market for private Wallet providers and certify a number of solutions.
 
@@ -56,11 +60,11 @@ Lastly, **option (c)**. While most participants in the SSI community would point
 
 **Where**: Article 3, Point 16.
 
-> ‘trust service’ means an electronic service normally provided against payment which consists of:
+> "‘trust service’ means an electronic service normally provided against payment which consists of:
 >
 > (a) the creation, verification, and validation of \[…\] electronic attestation of attributes and certificates related to those services; \[…\]
 >
-> (f) the recording of electronic data into an electronic ledger.’;
+> (f) the recording of electronic data into an electronic ledger.’;"
 
 **Opportunities**. Categorizing these services as Trust Services incentivizes Issuers from both the public and private sector to generate Credentials following a common regulatory and technical framework and to leverage blockchain technologies. This sets up the required regulatory framework by infusing trust in the market for the use of Verifiable Credentials and blockchain networks, as these can **no longer be denied legal effect on the grounds that it is in an electronic form or that it does not meet the requirements for qualified electronic attestation of attributes or for qualified electronic ledgers.**
 
@@ -76,17 +80,17 @@ Another aspect worth highlighting is the decoupling of the EU Wallet from the is
 
 Where: Article 12b
 
-> Where private relying parties providing services are required by national or Union law, to use strong user authentication for online identification, or where strong user authentication is required by contractual obligation, **including in the areas of transport, energy, banking and financial services, social security, health, drinking water, postal services, digital infrastructure, education or telecommunications**, private relying parties shall also accept the use of European Digital Identity Wallets issued in accordance with Article 6a.
+> "Where private relying parties providing services are required by national or Union law, to use strong user authentication for online identification, or where strong user authentication is required by contractual obligation, **including in the areas of transport, energy, banking and financial services, social security, health, drinking water, postal services, digital infrastructure, education or telecommunications**, private relying parties shall also accept the use of European Digital Identity Wallets issued in accordance with Article 6a.
 >
-> Where very large online platforms as defined in Regulation \[reference DSA Regulation\] Article 25.1. require users to authenticate to access online services, they shall also accept the use of European Digital Identity Wallets issued in accordance with Article 6a strictly upon voluntary request of the user and in respect of the minimum attributes necessary for the specific online service for which authentication is requested, such as proof of age.
+> Where very large online platforms as defined in Regulation \[reference DSA Regulation\] Article 25.1. require users to authenticate to access online services, they shall also accept the use of European Digital Identity Wallets issued in accordance with Article 6a strictly upon voluntary request of the user and in respect of the minimum attributes necessary for the specific online service for which authentication is requested, such as proof of age."
 
 **Opportunity:** Adoption is all that matters. We could design the most secure, privacy-preserving, user friendly identity framework, but if it can only be used in limited cases, it will be a good-for-nothing Regulation. One of the key success factors for Estonia’s eID system (watch our Ask The Expert series on the subject [here](https://gataca.io/insights/video-gataca-asks-the-expert-priit-martinson-on-estonia-s-digital-transformation "https://gataca.io/insights/video-gataca-asks-the-expert-priit-martinson-on-estonia-s-digital-transformation")) was the involvement of the private sector early on, particularly the banking industry. Making the EU Wallets not only mandatory for Member States to provide, but also for critical industries in the private sector to accept, is certainly one of the greatest hopes for its success. This provision is of particular interest to SSI providers, as it **guarantees a market.** All these industries, including companies like Google, Amazon, or Facebook, will be forced to accept the use of EU Wallets for authentication and may also seize an opportunity to offer the issuance of Credentials as a new revenue stream. For those purposes, they’ll demand technology or/and services currently provided by specialized SSI companies, potentially leading to acquisitions and mergers, and a clearer exit strategy for investors.
 
 ## **Key point #4:** The possibility for European countries to accept Credentials from abroad, even from non-EU countries, without the need for peer agreements.
 
-Where: Article 12c, 14, 24
+**Where**: Article 12c, 14, 24
 
-> Article 12c. “Where electronic identification \[…\] is required under national law or by administrative practice to access an online service provided by a public sector body in a Member State, the electronic identification means, issued in another Member State shall be recognised in the first Member State for the purposes of cross-border authentication for that online service, provided that the following conditions are met \[…\]”
+> "Article 12c. “Where electronic identification \[…\] is required under national law or by administrative practice to access an online service provided by a public sector body in a Member State, the electronic identification means, issued in another Member State shall be recognised in the first Member State for the purposes of cross-border authentication for that online service, provided that the following conditions are met \[…\]”
 >
 > Article 14 - “\[…\] trust services provided by providers established in the third country concerned shall be considered equivalent to qualified trust services provided by qualified trust service providers established in the Union.’;
 >
@@ -104,7 +108,7 @@ A brighter view of this issue could benefit EU wallet providers should regulatio
 
 ## **Key point #5:** All wallets must technically enable selective disclosure of attributes to relying parties
 
-Where: Point (29)
+**Where**: Point (29)
 
 > “The European Digital Identity Wallet should technically enable the selective disclosure of attributes to relying parties. This feature should become a basic design feature thereby reinforcing convenience and personal data protection including minimisation of processing of personal data.”
 
@@ -118,7 +122,7 @@ Most worrying is the fact that the lack of specifications for the implementation
 
 ## **Key point #6:** Wallets must enable the storage of qualified and non qualified credentials, and allow signatures with Qualified Electronic Signature.
 
-Where: Article 6a (b)
+**Where**: Article 6a (b)
 
 > “European Digital Identity Wallets shall enable the user to:
 >
@@ -136,6 +140,8 @@ We could go on with our impact assessment, but the one thing is clear: the new p
 
 The proposal has just been submitted for revision and approval, so we still have long ways to go before mass adoption is achieved in the region. Nonetheless, the announcement by Vice President Margrethe Vestager and Commissioner Thierry Breton was a giant leap towards the digital self sovereignty of European citizens. What are your thoughts?
 
+***
+
 **Chat with us -** We’d love to chat with you. Let us know your thoughts on this topic, or anything Digital Identity related. Join our [Telegram ](https://t.me/digitalidentityinsights "https://t.me/digitalidentityinsights")group.
 
 **Download the GATACA Wallet -** Step into the future, and try out our digital ID wallet. Envision yourself being in control over your personal data and identity. (Available on [IOS](https://apps.apple.com/us/app/gataca/id1498607616 "https://apps.apple.com/us/app/gataca/id1498607616") & [Android](https://play.google.com/store/apps/details?id=com.gataca.identity "https://play.google.com/store/apps/details?id=com.gataca.identity"))
@@ -145,3 +151,5 @@ The proposal has just been submitted for revision and approval, so we still have
 **Sources:**
 
 * [Amending Regulation (EU) No 910/2014 as regards establishing a framework for a European digital Identity (eIDAS Draft).](https://ec.europa.eu/info/strategy/priorities-2019-2024/europe-fit-digital-age/european-digital-identity "https://ec.europa.eu/info/strategy/priorities-2019-2024/europe-fit-digital-age/european-digital-identity")
+
+Photo by [Oliver Cole](https://unsplash.com/@oliver_photographer) on [Unsplash](https://unsplash.com/)
