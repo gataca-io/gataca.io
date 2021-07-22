@@ -76,7 +76,7 @@ fields:
   label: hero image
   description: Enter hero image for blog post here
 pages:
-- content/drafts/New eIDAS Proposal.md
+- content/drafts/eIDASProposal.md
 - content/posts/create-an-identity-that-is-not-controlled-by-big-tech-or-governments.md
 - content/posts/decentralized-finance-self-sovereign-identity-a-tale-of-decentralization-a-new-paradigm-of-trust.md
 - content/posts/decentralized-identity-projects-and-pilots.md
