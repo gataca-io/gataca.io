@@ -10,6 +10,18 @@
 
 }
 
+blockquote {
+  padding: var(--baseSpacingHalf) var(--baseSpacing);
+  border-left: 1px solid var(--darkblue);
+  margin: 0 1.45rem 1.45rem;
+  background-color: var(--bg-grey);
+  border-radius: 0 10px 10px 0;
+  p{
+    font-size: 0.9rem;
+  }
+}
+
+
 .blog__hero {
   min-height: 300px;
   height: 60vh;
