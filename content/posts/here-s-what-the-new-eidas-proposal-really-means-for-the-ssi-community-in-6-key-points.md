@@ -5,9 +5,9 @@ meta_data:
     6 key points
   description: ''
   rrss_images:
-    twitter: "/static/images/oliver-cole-cb55wrgmdp8-unsplash-2.jpg"
-    facebook_and_whatsapp: "/static/images/oliver-cole-cb55wrgmdp8-unsplash-2.jpg"
-    linkedin: "/static/images/oliver-cole-cb55wrgmdp8-unsplash-2.jpg"
+    twitter: "/static/images/eidas-proposal-european-commission-post.jpg"
+    facebook_and_whatsapp: "/static/images/eidas-proposal-european-commission-post.jpg"
+    linkedin: "/static/images/eidas-proposal-european-commission-post.jpg"
 title: Here’s what the new eIDAS proposal really means for the SSI community in 6
   key points
 author: ''
