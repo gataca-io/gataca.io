@@ -1,12 +1,18 @@
 ---
-title: TERMS OF USE GATACA WALLET
-icon: ''
-description: ''
-bullets: []
-mainImage: ''
+date: 2021-08-30T14:08:46Z
+meta_data:
+  title: ''
+  description: ''
+  rrss_images:
+    twitter: ''
+    facebook_and_whatsapp: ''
+    linkedin: ''
+title: Terms of Use - Gataca Wallet
+author: ''
+hero_image: ''
 
 ---
-# TERMS OF SERVICE 
+# TERMS OF SERVICE
 
 ## GATACA Wallet
 
@@ -30,11 +36,11 @@ By clicking on “Create Wallet,” or “Open your Wallet” or by using our Se
 
 If you do not agree to all the Terms, the Privacy Policy and, where applicable, the cookies policy, you shall refrain from using THE SERVICE.
 
-### 3. GRANT OF LICENSE 
+### 3. GRANT OF LICENSE
 
 GATACA hereby grants each User a non-exclusive, non-transferable, revocable license to access the Wallet throughout the Terms applicable to such User as it may exist from time to time and to use any systems and/or communications links furnished by GATACA to Users from time to time solely for the purpose of allowing Users, at their election and without obligation, to use the Wallet.
 
-### 4. ACCOUNT REGISTRATION AND USER DATA 
+### 4. ACCOUNT REGISTRATION AND USER DATA
 
 GATACA cannot and will not be liable for any loss or damage arising from your failure to comply with this section.
 
