@@ -32,13 +32,13 @@ These Terms of Service (“**Terms**”) apply to your access to and use of the 
 
 By clicking on “Create Wallet,” or “Open your Wallet” or by using our Service**,** whether an individual or a legal entity, you are granted the status of user (hereinafter, the "**User**" or “**you**”), and necessarily implies full, complete and unreserved acceptance of each and every one of the conditions included in this document, our Privacy Policy and, if applicable, our Website’s Cookies Policy.
 
-If you do not agree to all the Terms, the Privacy Policy and, where applicable, the website’s cookies policy, you shall refrain from using THE SERVICE.
+IF YOU DO NOT AGREE TO ALL THE TERMS, THE PRIVACY POLICY AND, WHERE APPLICABLE, THE WEBSITE'S COOKIES POLICY, YOU SHALL REFRAIN FROM USING THE SERVICE.
 
 ### 3. GRANT OF LICENSE TO USE THE WALLET
 
 GATACA hereby grants each User a non-exclusive, non-transferable, revocable license to access the Wallet throughout the Terms applicable to such User as it may exist from time to time and to use any systems and/or communications links furnished by GATACA to Users from time to time solely for the purpose of allowing Users, at their election and without obligation, to use the Wallet.
 
-### 4. ACCOUNT REGISTRATION AND USER DATA 
+### 4. ACCOUNT REGISTRATION AND USER DATA
 
 GATACA cannot and will not be liable for any loss or damage arising from your failure to comply with this section.
 
@@ -60,7 +60,7 @@ You agree to (a) keep your private keys confidential and to not share it with an
 
 With the Wallet you can download, create, store, share and manage personal information in electronic format, following the [Verifiable Credentials data model](https://www.w3.org/TR/vc-data-model/) specified by the W3C (“**Credentials**”). You may (a) download Credentials into your Wallet that contain claims about you and are attested by third-parties, (b) create your own Credentials from the limited set of Credential types offered in the Wallet and (c) share any of the Credentials stored in your Wallet with third parties that have Credential validation capabilities.
 
-GATACA does not have access to, nor collects data about downloaded Credentials attested by Third Parties or self-attested CREDENTIALS THAT ARE NOT VALIDATED BY GATACA. GATACA does not have access to, nor collects data about how Credentials are used or shared with Third Parties.
+GATACA DOES NOT HAVE ACCESS TO, NOR COLLECTS DATA ABOUT DOWNLOADED CREDENTIALS ATTESTED BY THIRD PARTIES OR SELF-ATTESTED CREDENTIALS THAT ARE NOT VALIDATED BY GATACA. GATACA DOES NOT HAVE ACCESS TO, NOR COLLECTS DATA ABOUT HOW CREDENTIALS ARE USED OR SHARED WITH THIRD PARTIES. 
 
 Notwithstanding the foregoing, you acknowledge and accept that GATACA stores information (a) about Credentials that are issued by GATACA, for the sole purpose of providing the Service and (B) about Credentials that you explicitly consent to sharing with GATACA for the purpose of accessing other services provided by GATACA.
 
@@ -82,7 +82,7 @@ GATACA makes no representation or warranty regarding the veracity or accuracy of
 
 Your DIDs, your cryptographic key pairs, Credentials licitly obtained and stored in your Wallet, and your backup files are referred to here as “User Data”.
 
-You acknowledge and accept that you are solely responsible for the custody of your User Data.
+YOU ACKNOWLEDGE AND ACCEPT THAT YOU ARE SOLELY RESPONSIBLE FOR THE CUSTODY OF YOUR USER DATA. 
 
 You have the ability to delete all User Data from your device via the Wallet interface.
 
@@ -158,7 +158,7 @@ GATACA will not be held liable for any total/partial loss of User Data.
 
 #### 8.1 Warranties
 
-You understand and agree that your use of the Service is at your sole risk. GATACA makes no warranties of any kind, including but not limited to with respect to the Service and the Contents, whether express, implied, statutory, of merchantability, non-infringement or otherwise.
+YOU UNDERSTAND AND AGREE THAT YOUR USE OF THE SERVICE IT AT YOUR SOLE RISK. GATACA makes no warranties of any kind, including but not limited to with respect to the Service and the Contents, whether express, implied, statutory, of merchantability, non-infringement or otherwise.
 
 #### 8.2 Liabilities
 
