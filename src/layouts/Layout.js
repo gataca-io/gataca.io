@@ -84,6 +84,7 @@ export default function Layout(props) {
       if (hubspotBanner) {
         hubspotBanner.onclick = function() {
           deleteAllCookies()
+          removeAnalyticsCookies()
           _hsp.push(["revokeCookieConsent"])
         }
       }
