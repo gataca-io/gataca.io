@@ -77,10 +77,6 @@ export default function Layout(props) {
       }
     }
     
-    if (getCookie('_ga')) {
-      removeAnalyticsCookies()
-    }
-    
     const _hsp = window._hsp = window._hsp || []
     window.onload = function() {
       const hubspotBanner = document.getElementById("hs-eu-decline-button")
