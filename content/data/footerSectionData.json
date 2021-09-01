@@ -6,8 +6,8 @@
   "findUs": [
     {
       "city": "Madrid",
-      "street": "c/Moreno Nieto, 2",
-      "street_code": "28005 Madrid, Spain"
+      "street": "Calle de la Sierra de Atapuerca, 13",
+      "street_code": "28050 Madrid, Spain"
     },
     {
       "city": "Boston",
@@ -31,6 +31,14 @@
     {
       "text": "Privacy Policy",
       "url": "https://www.gataca.io/privacy-policy"
+    },
+    {
+      "text": "Cookie policy",
+      "url": "https://gataca.io/cookie-policy"
+    },
+    {
+      "text": "Terms of Use",
+      "url": "https://gataca.io/terms-of-use-gataca-wallet"
     }
   ]
 }
