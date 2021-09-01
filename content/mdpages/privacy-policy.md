@@ -8,8 +8,6 @@ title: Privacy policy
 author: ''
 
 ---
-# PRIVACY POLICY
-
 Effective date: August 31, 2021
 
 At GATACA, we know that you care about your personal data and want you to know how we will process it. With our Privacy Policy (“**Policy**”) we aim to explain in a clear and transparent manner, how and when we collect, share and protect your personal data.
@@ -125,7 +123,6 @@ We use Amazon Web Services to store technical data. We only use servers located 
 
 ## 7. What are the purposes and legal basIs for the processing of your data?
 
-| --- | --- |
 | :--- | :---: |
 | PROCESSING & PURPOSE | LEGAL BASIS |
 | To provide you access to our Services and execute the legal contracts that govern the use of our Services we collect and process your identity, contact, technical, browsing, ordering, and payment data | Legitimate interest. Consent of the User |
