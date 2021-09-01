@@ -123,6 +123,7 @@ We use Amazon Web Services to store technical data. We only use servers located 
 
 ## 7. What are the purposes and legal basIs for the processing of your data?
 
+|   |   |
 | :--- | :---: |
 | PROCESSING & PURPOSE | LEGAL BASIS |
 | To provide you access to our Services and execute the legal contracts that govern the use of our Services we collect and process your identity, contact, technical, browsing, ordering, and payment data | Legitimate interest. Consent of the User |
