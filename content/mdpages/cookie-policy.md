@@ -1,5 +1,5 @@
 ---
-date: 2021-09-01T14:10:06Z
+date: 2021-09-01T14:10:06.000+00:00
 meta_data:
   title: ''
   description: ''
@@ -62,7 +62,7 @@ In addition to those cookies strictly necessary for web browsing, such as sessio
 
 You can find out the list of cookies used by the Site in the cookie configuration centre.
 
-GATACA’s first-party cookies are necessary cookies[\[PM8\]](#_msocom_8) . Their purpose is to allow users to browse through the Site and use the different options or services that exist on it, including those that GATACA uses to allow the management and operation of the Site and to enable its functions and services, such as, for example, controlling traffic and data communication, identifying the session, accessing restricted access areas, etc. These cookies are necessary for the Site to function.
+GATACA’s first-party cookies are necessary cookies. Their purpose is to allow users to browse through the Site and use the different options or services that exist on it, including those that GATACA uses to allow the management and operation of the Site and to enable its functions and services, such as, for example, controlling traffic and data communication, identifying the session, accessing restricted access areas, etc. These cookies are necessary for the Site to function.
 
 With regard to the following third-party cookies, GATACA is not responsible for the content and veracity of their privacy and/or cookie policies. We currently use the following Third Parties for third-party cookies:
 
@@ -112,7 +112,7 @@ The cookie retention periods will depend on the type of cookie and its owner. Yo
 
 ## 8. THIRD PARTY AND INTERNATIONAL TRANSFERS
 
-Users can obtain information about transfers to third countries that, if any, are made by the third parties identified in this cookie policy in their corresponding policies (see the links provided in section 4 in relation to third party cookies). 
+Users can obtain information about transfers to third countries that, if any, are made by the third parties identified in this cookie policy in their corresponding policies (see the links provided in section 4 in relation to third party cookies).
 
 Your data may also be communicated to competent authorities in the exercise of their functions.
 
