@@ -58,11 +58,11 @@ Behavioural advertising cookies: such cookies allow the effective management of 
 
 ### 4. WHAT COOKIES DO WE USE?
 
-In addition to those cookies strictly necessary for web browsing, such as session cookies, this Site uses analytics and advertising cookies, first-party and third-party (such as Google Analytics), which allow information to be stored in the user's browser, which can be restored on subsequent visits. Details of the characteristics of each of these cookies are described below.
+In addition to those cookies strictly necessary for web browsing, such as session cookies, this Site uses technical and third-party cookies (such as Google Analytics), which allow information to be stored in the user's browser, which can be restored on subsequent visits. Details of the characteristics of each of these cookies are described below.
 
 You can find out the list of cookies used by the Site in the cookie configuration centre.
 
-GATACA’s first-party cookies are necessary cookies. Their purpose is to allow users to browse through the Site and use the different options or services that exist on it, including those that GATACA uses to allow the management and operation of the Site and to enable its functions and services, such as, for example, controlling traffic and data communication, identifying the session, accessing restricted access areas, etc. These cookies are necessary for the Site to function.
+Some of the third-party cookies are technical cookies. Their purpose is to allow users to browse through the Site and use the different options or services that exist on it, including those used to allow the management and operation of the Site and to enable its functions and services, such as, for example, controlling traffic and data communication, identifying the session, accessing restricted access areas, etc. These cookies are necessary for the Site to function.
 
 With regard to the following third-party cookies, GATACA is not responsible for the content and veracity of their privacy and/or cookie policies. We currently use the following Third Parties for third-party cookies:
 
