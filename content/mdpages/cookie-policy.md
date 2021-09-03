@@ -1,5 +1,4 @@
 ---
-date: 2021-09-01T14:10:06Z
 meta_data:
   title: ''
   description: ''

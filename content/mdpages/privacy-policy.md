@@ -3,7 +3,6 @@ meta_data:
   rrss_images: 
   title: Privacy Policy
   description: ''
-date: 2020-06-01T06:36:02.000+00:00
 title: Privacy policy
 author: ''
 

@@ -54,7 +54,6 @@ export default function BlogMd(props) {
         {buildHeroImage(data.frontmatter, data.fields.slug)}
         <div className={blogTemplateStyles.blog__info}>
           <h1>{data.frontmatter.title}</h1>
-          {data.frontmatter.date && <h3>{data.frontmatter.date}</h3>}
         </div>
         <div
           className={blogTemplateStyles.blog__body}
