@@ -39,7 +39,8 @@ fields:
       label: linkedin
       description: Max 1MB ratio [1.91:1] MAX file size 5mb
     label: RRSS Images
-    description: Images to show when shared on each social network with each different format.<br>Twitter, LinkedIn, Whatsapp, each one is different.
+    description: Images to show when shared on each social network with each different
+      format.<br>Twitter, LinkedIn, Whatsapp, each one is different.
   label: Post Meta Data
 - type: text
   name: title

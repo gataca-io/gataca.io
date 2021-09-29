@@ -65,8 +65,8 @@ fields:
   description: Date post was created
   config:
     required: false
-    date_format:
-    time_format:
+    date_format: 
+    time_format: 
     display_utc: false
   default: now
 - name: hero_image
