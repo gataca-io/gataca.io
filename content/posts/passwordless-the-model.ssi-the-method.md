@@ -9,7 +9,7 @@ meta_data:
     linkedin: "/static/images/password-less-authentication-sign-in-blog.jpg"
 title: Passwordless, the model. SSI, the method.
 author: ''
-hero_image: "/static/images/password-less-authentication-sign-in-blog.jpg"
+hero_image: "/static/images/password-less-authentication-sign-in.jpg"
 
 ---
 # What is Passwordless Authentication?
