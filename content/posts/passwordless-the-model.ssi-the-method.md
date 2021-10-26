@@ -30,13 +30,13 @@ There’s a clear difference between a user’s responsibility in both password-
 
 ## Types of Passwordless Authentication
 
-### One-time password (OTP)
+#### One-time password (OTP)
 
 Due to their operation, Passwordless systems need a secure channel, through which system and user can communicate, guaranteeing the transmission of the secret. Some of the most widespread types are:
 
 Secrets sent by SMS or emails, makes use of these channels as a way of communicating one-time passwords (OTP) or special links. Given the ubiquity of cell phones or email, it is one of the most common implementations.
 
-### Single Sign-on (SSO)
+#### Single Sign-on (SSO)
 
 Another popular implementation is known as SSO. Systems that use this flow employ a trusted third party, who does the work of identifying the user on their systems and provides the user profile information to the new system.
 
