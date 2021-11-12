@@ -53,6 +53,8 @@
 
     .informativeCont {
         text-align: left;
+        display: flex;
+        flex-direction: column;
         max-width: 50%;
         width: 100%;
         padding-right: var(--baseSpacingDouble);
