@@ -74,7 +74,7 @@ const RelatedPosts = ({}) => {
               .map((blog) => {
                 return (
                   <div className={styles.post} key={blog.node.id}>
-                    <Link to={`/insights/${blog.node.fields.slug}`}>
+                    <Link to={`/blog/${blog.node.fields.slug}`}>
                       <li key={blog.node.fields.slug}>
                         <div className={styles.list__hero}>
                           {BuildImage(blog.node.frontmatter)}
