@@ -1,16 +1,32 @@
 {
+  "bigCtaSection": {
+    "title": "An identity layer for the internet",
+    "description": "Self-sovereign identity technology that helps organizations transform user and citizen experiences.",
+    "subDescription": "Explore our products",
+    "subDescription_old": "We've developed the tools to achieve hyper-secure digital identification in 1-click, while reducing compliance costs and identity fraud.",
+    "ctaText": "Get in touch",
+    "ctaUrl": "/products"
+  },
+  "newIntroSection": {
+    "image": "/faces/allFaces.svg",
+    "images": [
+      "/faces/women_one.svg",
+      "/faces/men_one.svg",
+      "/faces/men_two.svg",
+      "/faces/women_two.svg"
+    ]
+  },
   "introSection": {
-    "mainTitle": "",
+    "mainTitle": "Start using identity credentials",
     "mainTitleSubheading": "",
-    "mainSubtitle": "Start reducing costs and transforming customer and citizen experiences with Gataca’s decentralized digital identity platform",
-    "mainParagraph": "We provide your organization with the tools to manage secure digital identification systems.",
-    "ctaText": "SPEAK TO OUR TEAM",
+    "mainParagraph": "One single digital identity that is owned and controlled by the user and managed via an ID wallet as a privacy-preserving master key for the Internet.<br><br>Encrypted. Hypersecure. Standardized. Free.",
+    "ctaText": "Download our wallet",
     "credentials": [
       {
         "category": "Goverment",
         "subcategory": "National ID",
         "credential_name": "394846728 Y",
-        "icon": "../images/goverment.svg",
+        "icon": "/images/goverment.svg",
         "level": 1,
         "status": "Valid",
         "openStatus": "Public",
@@ -22,7 +38,7 @@
         "category": "Email",
         "subcategory": "",
         "credential_name": "john@gataca.io",
-        "icon": "../images/read_email_circle.svg",
+        "icon": "/images/read_email_circle.svg",
         "level": 1,
         "status": "Valid",
         "openStatus": "Public",
@@ -32,7 +48,7 @@
         "category": "University",
         "subcategory": "Bachelor Degree",
         "credential_name": "Architecture",
-        "icon": "../images/building.svg",
+        "icon": "/images/building.svg",
         "level": 2,
         "status": "Valid",
         "openStatus": "Private",
@@ -42,57 +58,107 @@
   },
   "bulletsSection": {
     "title": "DIGITAL IDENTITY MANAGEMENT",
-    "icon": "../images/3-triangle.svg",
+    "icon": "/images/3-triangle.svg",
     "description": "<p>We use identity credentials daily to access local citizen services, prove our qualifications, or file an insurance claim. But as we have rapidly transformed our lives online, identification and authentication systems have not kept up. Gataca's identity management platform is designed for the digital age.</p>",
     "elements": [
       {
-        "image": "../images/fast.svg",
+        "image": "/images/fast.svg",
         "title": "FAST & EASY",
         "description": "<ul><li><p>One-click onboarding</p></li><li><p>Portable and reusable</p></li><li><p>Up-to-date</p></li><li><p>Globally interoperable and scalable</p></li></ul>"
       },
       {
-        "image": "../images/compliant.svg",
+        "image": "/images/compliant.svg",
         "title": "COMPLIANT",
         "description": "<ul><li><p>Official, W3C verifiable credential issuance</p></li><li><p>KYC and GDPR compliant</p></li><li><p>Self-sovereign data control</p></li><li><p>Data exchange minimization</p></li></ul>"
       },
       {
-        "image": "../images/secure.svg",
+        "image": "/images/secure.svg",
         "title": "SECURE",
         "description": "<p>Blockchain-enabled</p><p>Cryptographically signed</p><p>Biometrically enhanced</p><p>Post-quantum cryptography</p>"
       }
     ]
   },
+  "credentials": {
+    "title": "Credentials",
+    "elements": [
+      "Unified commuting",
+      "Smart building access",
+      "National ID",
+      "Passport",
+      "Driver’s licence",
+      "Commuting card",
+      "Birth certificate",
+      "Marriage certificate",
+      "Criminal record certificate",
+      "Business license."
+    ]
+  },
   "bulletsEnhancedSection": {
-    "icon": "../images/4-square.svg",
+    "icon": "/images/4-square.svg",
     "title": "DECENTRALIZED <br> IDENTITY PLATFORM",
     "description": "<p>Gataca has built a user-centric digital identity platform with government-grade security and a simple single-sign-on to superpower your credentials. Our identity management platform enables fast, secure, and compliant data exchange between credential issuers, users, and service providers.</p>",
     "elements": [
       {
-        "image": "../images/stamp.svg",
+        "image": "/images/stamp.svg",
         "title": "CREDENTIAL ISSUERS",
         "description": "<p>Issuers can create and validate secure W3C verifiable contactless digital credentials.</p>"
       },
       {
-        "image": "../images/compliant.svg",
+        "image": "/images/compliant.svg",
         "title": "END-USERS",
         "description": "<p>Users are powered with an ID wallet in their phones and digitally verified ID credentials to enjoy passwordless, privacy-preserving access to digital services in under 30 seconds.</p>"
       },
       {
-        "image": "../images/secure.svg",
+        "image": "/images/secure.svg",
         "title": "SERVICE PROVIDERS",
         "description": "<p>Service providers can offer an authentication alternative that users love while cutting KYC and GDPR compliance costs and reducing data breach risks.</p>"
       }
     ],
     "graph": "/content/images/explainedPlatform.svg",
     "endBullet": {
-      "image": "../images/privacy.svg",
+      "image": "/images/privacy.svg",
       "title": "PRIVACY BY DESIGN",
       "description": "<p>Gataca embraces privacy-by-design and never stores information about an individual’s identity.</p>"
     }
   },
+  "ctaSection_one": {
+    "title": "A solution for all stakeholders in your ecosystem, \ndesigned for organizations of all sizes",
+    "ctaText": "Explore others sectors",
+    "ctaUrl": "/products"
+  },
+  "carrousel": {
+    "title": "Goverments & Universities are leading the path to Self-Sovereign-Identity",
+    "ctaText": "Explore others sectors",
+    "ctaUrl": "/use-cases",
+    "list": [
+      {
+        "title": "E-Government services that work",
+        "shortDescription": "<p>Improves citizen’s day to day lives by providing seamless onboarding experiences and securing online transactions.</p>",
+        "description": "<p>Governments leverage the GATACA technology to issue digital government documents and authenticate citizens into eGov services. Citizens store and share credentials via their digital Wallet.</p>",
+        "icon": "/images/building.svg",
+        "link": "/use-cases/government",
+        "image": "/illustrations/government_digitalization.svg"
+      },
+      {
+        "title": "Succeed in digital campus flows",
+        "shortDescription": "<p>The GATACA technology enables the higher education sector to maintain their competitive edge by increasing student, staff, and partner experience with digital processes and transactions.</p>",
+        "description": "<p>Forward-thinking institutions have realized how SSI technology can take their innovation to the next level to attract a larger student & staff base.  Universities are pioneering use cases such as the issuance of digital student IDs, academic diplomas and microcredentials.</p>",
+        "icon": "/icons/education_cert.svg",
+        "link": "/use-cases/education",
+        "image": "/illustrations/online_learning.svg"
+      }
+    ]
+  },
+  "ctaSection_three": {
+    "title": "For Developers",
+    "icon": "/icons/file-code.svg",
+    "description": "<p>We prioritize security and simplicity on all levels, from design processes to programming to implementation. Explore our Developer’s section where we provide robust yet easy to understand technicial documentation including user manuals, introduction to our architecture and APIs.</p>",
+    "ctaText": "Explore our Technical Documentation",
+    "ctaUrl": "/developers"
+  },
   "ctaSection": {
-    "title": "Ready to start?",
+    "title": "Ready for a new identity model?",
     "description": "<p>Learn about how decentralized digital identity can transform your customers' experiences</p>",
-    "ctaText": "Book a demo"
+    "ctaText": "Get started"
   }
 }

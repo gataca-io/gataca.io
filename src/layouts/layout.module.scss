@@ -7,9 +7,11 @@
 }
 
 .content {
-    padding-top: var(--topbar-height-mobile);
+    //padding-top: var(--topbar-height-mobile);
+    display: flex;
+    flex-direction: column;
     @include media-for-tablet-portrait-up {
-        padding-top: var(--topbar-height);
+        //padding-top: var(--topbar-height);
     }
     flex-grow: 1;
 }

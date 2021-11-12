@@ -1,0 +1,25 @@
+@import "../../styles/aux/media-mixins";
+
+
+.textIntro{
+    margin-bottom: var(--baseSpacingHalf);
+}
+.marketsContainer {
+    display: flex;
+    a {
+        height: auto;
+        img{
+            margin-bottom: 0;
+        }
+        @include media-for-phone-only {
+            margin-bottom: var(--baseSpacing);
+        }
+    }
+    a:first-child {
+        margin-right: var(--baseSpacingHalf);
+    }
+
+    @include media-for-phone-only {
+        //display: block;
+    }
+}

@@ -1,5 +1,5 @@
 ---
-label: Insights Page
+label: Blog Page
 hide_body: false
 fields:
 - name: metas
@@ -38,7 +38,7 @@ fields:
   fields:
   - name: title
     type: text
-    default: Insights
+    default: Blog
     config:
       required: false
       wysiwyg: false
@@ -59,12 +59,12 @@ fields:
       wysiwyg: false
 - type: field_group
   name: cta
-  label: Cta subscription content
+  label: TextHightlightSection subscription content
   fields:
   - name: text
     type: text
     label: cta text
-    default: Insights
+    default: Blog
     config:
       required: false
       wysiwyg: false

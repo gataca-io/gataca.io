@@ -1,0 +1,340 @@
+@import "../../styles/aux/media-mixins";
+
+.headLineContainer {
+    padding-top: calc(var(--topbar-height));
+    background-image: url("./../../../content/images/introPattern.svg");
+    background-repeat: repeat;
+    background-blend-mode: soft-light;
+    border-bottom: 2px solid rgba(183, 183, 183, 0.33);
+    position: relative;
+    @include media-for-phone-only {
+        padding-top: calc(var(--topbar-height-mobile) + var(--baseSpacing));
+    }
+}
+
+.sectionStyle {
+    background-image: url("./../../../content/images/introPattern.svg");
+    background-repeat: repeat;
+    background-blend-mode: soft-light;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--baseSpacing);
+    flex-direction: column;
+    width: 100%;
+    border-bottom: 2px solid var(--darkblue);
+
+    @include media-for-tablet-portrait-up {
+        display: flex;
+        justify-content: center;
+        padding: var(--baseSpacing);
+    }
+
+    & > div {
+        width: 100%;
+        @include media-for-tablet-portrait-up {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            max-width: var(--max-width);
+        }
+    }
+
+    .gradient {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        max-width: 100% !important;
+        height: 100%;
+        background: rgb(255, 255, 255);
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.4556197478991597) 0%, rgba(255, 255, 255, 1) 80%);
+        z-index: 0;
+    }
+}
+
+.sectorsBulletStyle{
+    backdrop-filter: blur(2px);
+    background: linear-gradient(
+                35deg,
+                rgba(255, 255, 255, 0.4) 20%,
+                rgba(255, 255, 255, 0.16320028) 100%
+    );
+    box-shadow: 0px 7px 14px #00000012;
+    border: 2px solid rgba(255, 255, 255, 0.42);
+    padding: var(--baseSpacing);
+    border-radius: 30px;
+    @include media-for-phone-only {
+        padding: var(--baseSpacingHalf);
+    }
+    h5{
+        padding-bottom: var(--baseSpacing);
+    }
+}
+
+.line {
+    height: 1px;
+    background-color: var(--darkblue);
+    width: 40%;
+    opacity: 0.2;
+    margin-top: var(--baseSpacing);
+    margin-bottom: var(--baseSpacingDouble);
+}
+
+.credentialFloating {
+    position: absolute;
+    bottom: -199px;
+    left: 120px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+    .mainImg {
+        height: 100px;
+    }
+
+    .arrow {
+        height: 100px;
+    }
+}
+
+.qrFloating {
+    position: absolute;
+    bottom: -140px;
+    left: 120px;
+    height: 121px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    z-index: 10;
+
+    .qr {
+        height: 150px;
+    }
+
+    .arrow {
+        height: 100px;
+    }
+
+    .arrowCurved {
+        position: absolute;
+        bottom: -60px;
+        right: -240px;
+    }
+
+    .arrowCurvedTwo {
+        position: absolute;
+        top: -228px;
+        height: 200px;
+        left: -210px;
+    }
+}
+
+.productFlow {
+    display: flex;
+    width: 100%;
+    position: relative;
+    justify-content: space-around;
+    padding: calc(var(--baseSpacingDouble) * 2) 0;
+    border-bottom: 3px solid rgba(24, 27, 94, 0.1);
+
+    &:first-child {
+        padding-top: var(--baseSpacing) !important;
+    }
+
+    &:last-child {
+        border-bottom: none;
+    }
+
+    .productImageContainer {
+        padding: var(--baseSpacing);
+        width: 50%;
+
+        img {
+            height: 90%;
+            box-shadow: var(--shadow);
+        }
+    }
+
+    .productWalletImageContainer {
+        overflow: hidden;
+        position: relative;
+        margin: 0 50px;
+        width: calc(50% - 100px);
+        border-bottom: 2px solid var(--darkblue);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & > div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 80%;
+            height: 218%;
+            margin-left: 40px;
+            display: flex;
+            justify-content: center;
+        }
+
+        img {
+            width: 80%;
+        }
+    }
+
+    .productTextContainer {
+        padding: var(--baseSpacing);
+        width: 50%;
+        text-align: left;
+    }
+}
+
+.sectionStyleWraps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--baseSpacing) var(--baseSpacing);
+    flex-direction: column;
+    border-bottom: 2px solid rgba(183, 183, 183, 0.53);
+    box-shadow: var(--shadow);
+    z-index: 10;
+
+    h2 {
+        text-align: center;
+        margin: var(--baseSpacing) var(--baseSpacing);
+    }
+
+    & > div {
+        max-width: var(--max-width-l);
+        display: flex;
+        flex-wrap: wrap;
+
+        & > div {
+            width: 33%;
+            @include media-for-phone-only {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.headlineContainer {
+    padding: var(--baseSpacingDouble) 0;
+    background-image: url("../../../content/images/crossPattern.svg");
+    background-repeat: repeat;
+    background-blend-mode: soft-light;
+}
+
+.imagesRowContainer {
+    background-image: url("../../../content/images/crossPattern.svg");
+    background-repeat: repeat;
+    background-blend-mode: soft-light;
+    border-bottom: 2px solid rgba(183, 183, 183, 0.53);
+
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //background-color: var(--bg-grey);
+    margin: 0 0 calc(var(--baseSpacing) * 4) 0;
+    padding-top: var(--baseSpacingDouble);
+    z-index: 2;
+
+    & > div {
+        z-index: 2;
+        justify-content: center;
+        display: flex;
+
+        img {
+            &:first-child, &:last-child {
+                box-shadow: 0px 7px 14px #00000012;
+            }
+
+            height: 500px;
+            margin: 0 var(--baseSpacing);
+        }
+    }
+}
+
+
+.circleTop {
+    position: absolute;
+    bottom: 22%;
+    right: 79px;
+    height: 90px;
+    width: 90px;
+    background: white;
+    background: linear-gradient(
+                    304deg, rgba(255, 255, 255, 0.4029586835) 0%, rgba(255, 255, 255, 0.106320028) 92%);
+    box-shadow: -10px 15px 12px #00000012;
+    border-radius: 200px;
+    border: 3px solid var(--coral);
+    z-index: 15;
+    backdrop-filter: blur(3px);
+    @include media-for-phone-only {
+        height: 70px;
+        width: 70px;
+    }
+}
+
+.circle2 {
+    position: absolute;
+    bottom: -10%;
+    left: 12%;
+    height: 100px;
+    width: 100px;
+    /*    background: white;
+        background: linear-gradient(
+                        304deg, rgba(255, 255, 255, 0.4029586835) 0%, rgba(255, 255, 255, 0.106320028) 92%);
+                        */
+    box-shadow: 0px 7px 12px #00000012;
+    border-radius: 200px;
+    border: 2px solid var(--darkblue);
+    z-index: 12;
+    backdrop-filter: blur(3px);
+}
+
+.circle3 {
+    position: absolute;
+    top: -10%;
+    right: 20%;
+    height: 100px;
+    width: 100px;
+    /*    background: white;
+        background: linear-gradient(
+                        304deg, rgba(255, 255, 255, 0.4029586835) 0%, rgba(255, 255, 255, 0.106320028) 92%);
+                        */
+    box-shadow: 0px 7px 12px #00000012;
+    border-radius: 200px;
+    border: 2px solid var(--coral);
+    z-index: 12;
+    backdrop-filter: blur(2px);
+    @include media-for-phone-only {
+        height: 70px;
+        width: 70px;
+    }
+}
+
+
+.circle4 {
+    position: absolute;
+    bottom: 15%;
+    right: 49px;
+    height: 30px;
+    width: 30px;
+    /*    background: white;
+        background: linear-gradient(
+                        304deg, rgba(255, 255, 255, 0.4029586835) 0%, rgba(255, 255, 255, 0.106320028) 92%);
+                        */
+    opacity: 0.5;
+    box-shadow: 0px 3px 12px #00000012;
+    border-radius: 200px;
+    border: 2px solid var(--darkblue);
+    z-index: 12;
+    backdrop-filter: blur(2px);
+}

@@ -12,7 +12,6 @@ export default function useBlogData() {
             id
             frontmatter {
               date(formatString: "MMMM Do, YYYY")
-#              author
               title
               hero_image {
                 childImageSharp {

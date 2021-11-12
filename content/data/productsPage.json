@@ -1,0 +1,118 @@
+{
+  "metas": {
+    "title": "Products | Secure Digital ID",
+    "description": "Reduce costs and transform customer experiences with Gataca’s decentralized digital identity technology",
+    "facebookImage": "",
+    "linkedInImage": "",
+    "twitterImage": ""
+  },
+  "introProductsSection": {
+    "title": "Solutions for all stakeholders",
+    "description": "<p>Self sovereign identity</br>Designed for the digital age</p>"
+  },
+  "productsImages": [
+    {
+      "link": "/images/panel-credentials.svg",
+      "title": "Certify"
+    },
+    {
+      "link": "/images/identity.svg",
+      "title": "Identity"
+    },
+    {
+      "link": "/images/panel-connect.svg",
+      "title": "Connect"
+    }
+  ],
+  "theEcosystem": {
+    "title": "The Ecosystem",
+    "icon": "/images/3-triangle.svg",
+    "description": "",
+    "bullets": [
+      {
+        "image": "/images/building.svg",
+        "title": "ISSUERS",
+        "description": "<p>One-click onboarding\nPortable and reusable\nUp-to-date\nGlobally interoperable and scalable\n</p>"
+      },
+      {
+        "image": "/images/people.svg",
+        "title": "USERS",
+        "description": "<p>Official, W3C verifiable\ncredential issuance\nKYC and GDPR compliant\nSelf-sovereign data control\nData exchange minimization\n\n</p>"
+      },
+      {
+        "image": "/images/connectBuilding.svg",
+        "title": "VERIFIERS",
+        "description": "<p>Blockchain-enabled\nCryptographically signed\nBiometrically enhanced\nPost-quantum cryptograph</p>"
+      }
+    ]
+  },
+  "findYourSolution": {
+    "mainTitle": "Find your perfect fit",
+    "certify": {
+      "product": "GATACA Certify",
+      "title": "Issue identity credentials",
+      "description": "Credential issuance tool that enables Trusted Authorities to issue verifiable digital identity credentials.<br><br> Leverage our government-grade secure technology to streamline authentication processes and issue credentials directly to a digital identity wallet. No paperwork needed.",
+      "ctaText": "get GATACA Certify",
+      "image": "/images/panel-credentials.svg",
+      "ctaLink": "/products/certify"
+    },
+    "wallet": {
+      "product": "GATACA Wallet",
+      "title": "Power your users with an ID wallet",
+      "description": "Your new identity wallet providing unlimited, encrypted storage of identity credentials. A master key to all digital services worldwide.<br><br>National IDs. Vaccination passes. Insurance cards. Academic diplomas. All in one place.",
+      "ctaText": "get GATACA Wallet",
+      "image": "/images/credentialsThirdImage.svg",
+      "ctaLink": "/products/wallet"
+    },
+    "connect": {
+      "product": "GATACA Connect",
+      "title": "Seamlessly authenticate your users",
+      "description": "Single sign-on authentication and credential verification tools for Service Providers<br><br>Improve user experience by offering instant, passworld-less, biometric-enabled access to digital services.<br> Privacy & security guaranteed.",
+      "ctaText": "get GATACA Connect",
+      "image": "/images/panel-connect.svg",
+      "ctaLink": "/products/connect"
+    },
+    "certifyToWallet": {
+      "image": "/images/credentialsSecondImage.svg"
+    },
+    "walletToConnect": {
+      "image": "/images/qrLogin.png"
+    }
+  },
+  "why": {
+    "title": "Why GATACA",
+    "bullets": [
+      {
+        "image": "/icons/blockslock.svg",
+        "title": "LEDGER-AGNOSTIC",
+        "description": "<p>We offer a blockchain-agnostic platform that enables you to use your own network and interconnect with other blockchain network providers</p>"
+      },
+      {
+        "image": "/icons/briefcase.svg",
+        "title": "ALIGNED WITH EBSI",
+        "description": "<p>Our platform is the first to be integrated with EBSI, the European blockchain network.</p>"
+      },
+      {
+        "image": "/icons/headlock.svg",
+        "title": "NO VENDOR LOCK-IN",
+        "description": "<p>We believe in Internet Standards and Open APIs to deliver portability and interoperability, so clients never be tied to a single vendor.</p>"
+      },
+      {
+        "image": "/icons/expandable.svg",
+        "title": "FLEXIBILITY & CONTROL",
+        "description": "<p>Our products can be configured to your own needs. They can be implemented on-premise for full control our clients may use GaaS, our SaaS platform for faster roll out.</p>"
+      },
+      {
+        "image": "/icons/secure.svg",
+        "title": "PRIVACY BY DESING",
+        "description": "<p>We offer a blockchain-agnostic platform that enables you to use your own network and interconnect with other blockchain network providers</p>"
+      },
+      {
+        "image": "/icons/lock.svg",
+        "title": "SECURITY BY DESIGN",
+        "description": "<p>We offer a blockchain-agnostic platform that enables you to use your own network and interconnect with other blockchain network providers</p>"
+      }
+    ]
+  }
+}
+

@@ -1,0 +1,42 @@
+.bullet {
+    padding: var(--baseMargin);
+    max-width: 500px;
+    width: 300px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .bulletMainContainer {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        h4 {
+            color: var(--darkblue);
+        }
+
+        h4 {
+            margin-bottom: 0.7rem;
+        }
+
+        p {
+            font-size: 0.8rem;
+            color: var(--grey);
+        }
+    }
+
+    .bulletIcon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 45px !important;
+        width: 45px !important;
+        margin-bottom: 1rem;
+        padding: 3px 3px 3px 0;
+        position: relative;
+        img{
+            height: 40px;
+        }
+    }
+}

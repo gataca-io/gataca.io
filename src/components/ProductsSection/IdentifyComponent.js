@@ -1,6 +1,6 @@
 import productSelStyles from "./productsSelector.module.scss"
 import React from "react"
-import BulletOne from "../BulletOne"
+import BulletOne from "../BulletOne/BulletOne"
 
 export default function IdentifyComponent({ product }) {
   return (

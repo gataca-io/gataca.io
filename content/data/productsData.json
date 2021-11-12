@@ -1,13 +1,42 @@
 {
-  "metas": {
-    "title": "Products | Secure Digital ID",
-    "description": "Reduce costs and transform customer experiences with Gataca’s decentralized digital identity technology",
-    "facebookImage": "",
-    "linkedInImage": "",
-    "twitterImage": ""
-  },
-  "introProductsSection": {
-    "title": "PRODUCTS",
-    "description": "<p>Gataca has built three components to connect the secure digital ID ecosystem. We help issuers transform their CREDENTIALS into IDENTITY wallets in customers' mobile phones that they can then CONNECT to digital services, from e-government through to car sharing.</p>"
-  }
+  "title": "Our Self-Sovereign-Identity product suite",
+  "products": [
+    {
+      "link": "/products",
+      "image": "/images/phone-small.svg",
+      "title": "All products",
+      "ctaText": "Explore our product suite",
+      "shortDescription": "<p>Explore our product suite.</p>"
+    },
+    {
+      "link": "/products/certify",
+      "image": "/illustrations/validateFingerprint.svg",
+      "subtitle": "Issue identity credentials",
+      "title": "Certify",
+      "ctaText": "Explore",
+      "icon": "/icons/certify_emit.svg",
+      "shortDescription": "<p>Credential issuance tool that enables trusted authorities to issue verifiable credentials.</p>",
+      "description": "<p>Credential issuance tool that enables Trusted Authorities to issue verifiable digital identity credentials.\nLeverage our government-grade secure technology to streamline authentication processes and issue credentials directly to a digital identity wallet. No paperwork needed.</p>"
+    },
+    {
+      "link": "/products/wallet",
+      "image": "/illustrations/wallet.svg",
+      "icon": "/icons/wallet_smartphone.svg",
+      "subtitle": "Power your users with an ID wallet",
+      "title": "Wallet",
+      "ctaText": "Explore",
+      "shortDescription": "<p>Mobile ID wallet to store your identity credentials.</p>",
+      "description": "<p>Your new identity wallet providing unlimited, encrypted storage of identity credentials. A master key to all digital services worldwide.\n\nNational IDs. Vaccination passes. Insurance cards. Academic diplomas.\nAll in one place.\n</p>"
+    },
+    {
+      "link": "/products/connect",
+      "image": "/illustrations/validateFingerprint.svg",
+      "icon": "/icons/connect_validate.svg",
+      "subtitle": "Seamlessly authenticate your users",
+      "title": "Connect",
+      "ctaText": "Explore",
+      "shortDescription": "<p>Single sign-on authentication and credential verification tools for Service Providers.</p>",
+      "description": "<p>Single sign-on authentication and credential verification tools for Service Providers\n\nImprove user experience by offering instant, passworld-less, biometric-enabled access to digital services. Privacy & security guaranteed.</p>"
+    }
+  ]
 }

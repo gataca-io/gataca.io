@@ -1,0 +1,55 @@
+.bullet {
+    padding: var(--baseMargin);
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+
+    .bulletOneCta {
+        bottom: 20px;
+        right: 20px;
+        padding: var(--baseMargin);
+        cursor: pointer;
+    }
+
+    .bulletMainContainer {
+        h4 {
+            color: var(--darkblue);
+        }
+
+        h4, img {
+            margin-bottom: 0.7rem;
+        }
+
+        img {
+            height: 100%;
+
+            svg {
+                fill: var(--darkblue);
+            }
+        }
+
+        p {
+            font-size: 0.8rem;
+            color: var(--grey);
+        }
+
+        .bullet-description {
+            p {
+                margin-bottom: 0.4rem;
+            }
+
+            ul {
+                li {
+                    margin-bottom: 0.4rem;
+                }
+            }
+        }
+
+        .bullet-centered {
+            text-align: center;
+        }
+    }
+}

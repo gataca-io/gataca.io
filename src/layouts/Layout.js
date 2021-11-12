@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 import HeaderSection from "../components/HeaderSection/HeaderSection"
 import layoutStyles from "./layout.module.scss"
 import FooterSection from "../components/FooterSection/FooterSection"
@@ -97,53 +97,26 @@ export default function Layout(props) {
   
   
   return (
-    <section
-      className={`${layoutStyles.layout} ${
-        props.page === "info" &&
-        layoutStyles.info_page}`}
-      style={{
-        backgroundColor: props.bgColor,
-      }}
-    >
-      
-      <HeaderSection title={configMetaData.title} link={configMetaData}/>
-      
-      <div className={layoutStyles.content}>
-        {props.children}
-      </div>
-      
-      <FooterSection/>
-      
-      {/*        <CookieConsent
-          location="bottom"
-          buttonText="Accept"
-          declineButtonText={"Decline"}
-          onAccept={() =>{
-          
-          }}
-          onDecline={() => {
-            removeCookies();
-          }}
-          cookieName="gataca_io_accepted"
-          enableDeclineButton
-          style={{ background: "white",
-            color: "rgb(24, 27, 94)",
-            border: "1px solid rgb(24, 27, 94)",
-            boxShadow: "0px 5px 10px #00000010",
-            maxWidth: 400,
-            lineHeight:1.3,
-            margin: 50
-          }}
-          buttonStyle={{ color: "white", fontSize: "13px", backgroundColor: "rgb(24, 27, 94)" }}
-          declineButtonStyle={{ color: "rgb(24, 27, 94)", fontSize: "13px", backgroundColor: "white" }}
-          expires={150}
-        >
-          
-          {configMetaData.cookies}{" "}
-        </CookieConsent>
-        */}
-    
-    
+      <section
+        className={`${layoutStyles.layout} ${
+          props.page === "info" &&
+          layoutStyles.info_page}`}
+        style={{
+          backgroundColor: props.bgColor,
+        }}
+      >
+        
+        <HeaderSection
+          location={props.location}
+          title={configMetaData.title}
+          link={configMetaData}/>
+        
+        <div className={layoutStyles.content}>
+          {props.children}
+        </div>
+        
+        <FooterSection />
+  
     </section>
   )
 }

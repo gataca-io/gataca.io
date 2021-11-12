@@ -1,0 +1,311 @@
+@import "../../styles/aux/media-mixins";
+
+.sectionStyle {
+    display: flex;
+    justify-content: center;
+    padding: var(--baseSpacingDouble) 0;
+    @include media-for-phone-only {
+        padding: var(--baseSpacing) 0;
+    }
+    //background-color: var(--bg-grey);
+    & > div {
+        padding: var(--baseSpacingDouble);
+        max-width: var(--max-width);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: linear-gradient(
+                        45deg,
+                        rgba(255, 255, 255, 0.90) 0%,
+                        rgba(255, 255, 255, 0.2632002801120453) 60%
+        );
+
+        //box-shadow: 0px 15px 20px #
+        border: 2px solid #ffffff6b;
+        backdrop-filter: blur(1px);
+        box-shadow: var(--shadow);
+        border-radius: 40px;
+        @include media-for-phone-only {
+            border-radius: 20px;
+            padding: var(--baseSpacing);
+            margin: var(--baseSpacing);
+        }
+    }
+
+    img {
+        width: 50%;
+        margin-bottom: var(--baseSpacingDouble);
+        @include media-for-phone-only {
+            width: 80%;
+        }
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+
+    .sectionTitleContainer {
+        display: flex;
+        margin-top: var(--baseSpacingDouble);
+    }
+}
+
+
+.chipsSection {
+    display: flex;
+    justify-content: center;
+    padding: var(--baseSpacingDouble) 0;
+    background-color: var(--white);
+    border-bottom: 2px solid rgba(183, 183, 183, 0.33);
+
+    & > div {
+        padding: 0 var(--baseSpacing);
+        max-width: var(--max-width);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h3 {
+            font-weight: bold;
+            text-align: center;
+            letter-spacing: 0.1rem;
+        }
+    }
+
+    .chipsContainer {
+        margin: var(--baseSpacingDouble) 0;
+        display: flex;
+
+        @include media-for-phone-only {
+            width: 100%;
+            justify-content: center;
+            margin: var(--baseSpacingHalf) 0;
+            flex-wrap: wrap;
+        }
+
+        .chip {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 250px;
+            height: 100px;
+            //box-shadow: var(--shadow-small);
+            background-color: #f3f3f3;
+            border-radius: 10px;
+            margin: 0 var(--baseSpacingMicro);
+            //border: 1px solid var(--darkblue);
+            @include media-for-phone-only {
+                margin: 0 var(--baseSpacingMicro) var(--baseSpacingMicro) 0;
+                width: calc(50% - var(--baseSpacingMicro) * 2);
+                height: 50px;
+                flex-wrap: wrap;
+            }
+
+            p {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 0.8rem;
+                font-weight: bold;
+                letter-spacing: 0.1rem;
+                color: var(--darkblue);
+                width: 100%;
+                margin: 0;
+                @include media-for-phone-only {
+                    //padding: var(--baseSpacingMicro) var(--baseSpacingHalf);
+                    width: 180px;
+                    font-size: 0.7rem;
+                }
+            }
+        }
+
+    }
+
+    .dots {
+        font-size: 3rem;
+        opacity: 0.3;
+        margin: var(--baseSpacing) 0;
+    }
+}
+
+.line {
+    height: 1px;
+    background-color: var(--darkblue);
+    width: 40%;
+    opacity: 0.2;
+    margin-top: var(--baseSpacing);
+    margin-bottom: var(--baseSpacing);
+}
+
+.headlineContainer {
+    padding: var(--baseSpacingDouble) 0;
+    background-image: url("./../../../content/images/introPattern.svg");
+    background-repeat: repeat;
+    background-blend-mode: soft-light;
+    border-bottom: 2px solid rgba(183, 183, 183, 0.33);
+    position: relative;
+    @include media-for-phone-only {
+        padding-top: calc(var(--topbar-height-mobile) + var(--baseSpacing));
+    }
+}
+
+.sectionProblem {
+    background-image: url("./../../../content/images/introPattern.svg");
+    background-repeat: repeat;
+    background-blend-mode: soft-light;
+    border-bottom: 2px solid rgba(183, 183, 183, 0.33);
+    width: 100%;
+}
+
+.introSection {
+    display: flex;
+    justify-content: center;
+    padding: var(--baseSpacingDouble) 0;
+    height: 250px;
+    position: relative;
+    margin: 0 var(--baseSpacing);
+
+    & > div {
+        position: absolute;
+        top: -120px;
+        backdrop-filter: blur(4px);
+        //border-radius: 20px;
+        background-size: cover;
+        border: 2px solid #ffffff6b;
+        background: linear-gradient(60deg, rgba(255, 255, 255, 0.8029586834733894) 0%, rgba(255, 255, 255, 0.40632002801120453) 92%) no-repeat center;
+        padding: var(--baseSpacing);
+        max-width: var(--max-width-sm);
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        box-shadow: var(--shadow-big);
+        border-radius: 20px;
+    }
+}
+
+.detailContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: var(--baseSpacing) 0;
+
+    & > div {
+        max-width: var(--max-width);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        h2 {
+            margin-bottom: var(--baseSpacing)
+        }
+    }
+
+    .bulletsContainer {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 2rem 0;
+        @include media-for-phone-only {
+            flex-direction: column;
+            text-align: left;
+            & > div {
+                & > div {
+                    justify-content: flex-start;
+                }
+            }
+        }
+    }
+}
+
+
+.circle2 {
+    position: absolute;
+    top: -10%;
+    left: 26%;
+    height: 100px;
+    width: 100px;
+    /*    background: white;
+        background: linear-gradient(
+                        304deg, rgba(255, 255, 255, 0.4029586835) 0%, rgba(255, 255, 255, 0.106320028) 92%);
+                        */
+    box-shadow: 0px 7px 12px #00000012;
+    border-radius: 200px;
+    border: 2px solid var(--darkblue);
+    z-index: 12;
+    backdrop-filter: blur(4px);
+}
+
+.circle3 {
+    position: absolute;
+    bottom: 10%;
+    right: 30%;
+    height: 100px;
+    width: 100px;
+    /*    background: white;
+        background: linear-gradient(
+                        304deg, rgba(255, 255, 255, 0.4029586835) 0%, rgba(255, 255, 255, 0.106320028) 92%);
+                        */
+    box-shadow: 0px 12px 12px #00000012;
+    border-radius: 200px;
+    border: 2px solid var(--coral);
+    z-index: 12;
+    backdrop-filter: blur(2px);
+    @include media-for-phone-only {
+        height: 70px;
+        width: 70px;
+        left: 3%;
+    }
+}
+
+
+.circle4 {
+    position: absolute;
+    bottom: 15%;
+    right: 49px;
+    height: 40px;
+    width: 40px;
+    /*    background: white;
+        background: linear-gradient(
+                        304deg, rgba(255, 255, 255, 0.4029586835) 0%, rgba(255, 255, 255, 0.106320028) 92%);
+                        */
+    opacity: 0.4;
+    box-shadow: 0px 3px 12px #00000012;
+    border-radius: 200px;
+    border: 2px solid var(--darkblue);
+    z-index: 12;
+    backdrop-filter: blur(2px);
+    @include media-for-phone-only {
+        bottom: 35%;
+        left: 5%;
+    }
+}
+
+
+.circle5 {
+    position: absolute;
+    top: 25%;
+    left: 49px;
+    height: 70px;
+    width: 70px;
+    background: linear-gradient(
+                    304deg, rgba(255, 255, 255, 0.4029586835) 0%, rgba(255, 255, 255, 0.106320028) 92%);
+    opacity: 0.4;
+    box-shadow: 0px 3px 12px #00000012;
+    border-radius: 200px;
+    border: 2px solid var(--darkblue);
+    z-index: 12;
+    backdrop-filter: blur(4px);
+    @include media-for-phone-only {
+        top: 35%;
+        left: 75%;
+    }
+}
+
+

@@ -1,0 +1,45 @@
+@import "../../styles/aux/media-mixins";
+
+.mainContainer{
+    padding: var(--baseSpacingDouble) 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.elementsContainer {
+    padding: 0 var(--baseSpacing);
+    display: flex;
+    justify-content: center;
+}
+
+.bulletCont {
+    border-radius: var(--baseSpacing);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.09);
+    margin-right: var(--baseSpacing);
+    min-width: 200px;
+    width: 20vw;
+    position: relative;
+
+    .bulletOneCta {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    @include media-for-phone-only {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: var(--baseSpacing);
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

@@ -9,7 +9,7 @@
     background-blend-mode: soft-light;
     overflow: hidden;
     @include media-for-tablet-portrait-up {
-        min-height: 85vh;
+        padding: var(--baseSpacingDouble) 0;
     }
     .container {
         display: flex;
@@ -67,7 +67,7 @@
 
 .phoneDesktopContainer{
     position: relative;
-    height: 540px;
+    height: 640px;
     width: 100%;
     min-width: 270px;
     display: flex;
@@ -97,7 +97,7 @@
         height: 100%;
         max-width: 100%;
         overflow: hidden;
-        margin-top: var(--doubleBaseMargin);
+        margin-top: var(--baseSpacingDouble);
 
         .backgroundMobileContainer{
             position: absolute;

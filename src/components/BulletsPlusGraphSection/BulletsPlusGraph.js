@@ -1,9 +1,9 @@
 import bulletsGraph  from "./BulletsPlusGraph.module.scss"
 import bulletsGraphMobile  from "./BulletsPlusGraph_mobile.module.scss"
 import React from "react"
-import BulletOne from "../BulletOne"
+import BulletOne from "../BulletOne/BulletOne"
 
-import BulletCenter from "../BulletCenter"
+import BulletCenter from "../BulletCenter/BulletCenter"
 import { DangerSetH2Html } from "../auxiliary/aux"
 import MainImage from "../MainImage/MainImage"
 

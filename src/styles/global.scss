@@ -1,25 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Work+Sans:wght@100;400;500&family=Nixie+One&display=swap');
 
 :root {
-  --black: rgba(51, 51, 51, 0.1);
+  --black: rgba(51, 51, 51);
   --darkblue: rgb(24, 27, 94);
+  --coral: #FF7E79;
   --bg-grey: #F9F9F9;
   --light-grey: #afafaf;
   --grey: #6d6d6d;
   --white: white;
-  --topbar-height: 70px;
+  --transparent: transparent;
+  --topbar-height: 4.4rem;
   --topbar-height-mobile: 50px;
   --baseMargin: 20px;
-  --doubleBaseMargin: 40px;
+  --baseSpacingDouble: 4rem;
   --baseSpacing: 2rem;
   --baseSpacingHalf: 1rem;
+  --baseSpacingMicro: 0.5rem;
   --borderRadius: 10px;
+  --shadow-small: 0px 2px 3px rgba(0, 0, 0, 0.14);
+  --shadow: 0px 3px 5px rgba(0, 0, 0, 0.13);
+  --shadow-big: 0px 7px 14px #00000012;
+  --max-width-sm: 500px;
   --max-width: 760px;
-  --max-width-lg: 1584px;
+  --max-width-l: 1100px;
+  --max-width-xl: 1584px;
   --border-ga: 2px solid #181B5E;
   --font-main: "Work Sans", "Helvetica Neue", Helvetica, sans-serif;
   --font-subtitle: "Nixie One", "Serif", Helvetica, sans-serif;
-  --font-header:  "Orbitron", "Helvetica Neue", Helvetica, sans-serif
+  --font-header:  "Work Sans", "Helvetica Neue", Helvetica, sans-serif;
+  --font-logo:  "Orbitron", "Helvetica Neue", Helvetica, sans-serif
 }
 
 body {
@@ -33,14 +42,12 @@ a {
   text-decoration: none;
   color: inherit;
   transition: opacity .2s ease;
-  color: var(--darkblue);
 }
 
 a:hover {
-  transition: opacity .2s ease;
-  opacity: .5;
   text-decoration-color: inherit;
 }
+
 ul {
   list-style: none;
   margin: 0;
@@ -49,11 +56,15 @@ ul {
 //TYPOGRAPHY-------------------------------------
 
 h3, h4, h5, h6, p{
-  font-family: "Work Sans","Helvetica Neue", Helvetica, sans-serif;
+  font-family:var(--font-main)
+}
+
+h3, h4, h5 {
+  color: var(--darkblue);
 }
 
 h1, h2,  {
-  font-family: "Orbitron","Helvetica Neue", Helvetica, sans-serif;
+  font-family: var(--font-header);
   color: var(--darkblue);
 }
 
@@ -63,20 +74,21 @@ h1, h2 {
 
 h1 {
   font-size: 2rem;
-  letter-spacing: 2px;
-  line-height: 1.1875;
+  letter-spacing: 0.05rem;
+  line-height: 2.1rem;
 }
 
 h2 {
   font-size: 1.8rem;
-  letter-spacing: 2px;
-  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 2.1rem;
 }
 
 h3 {
   font-size: 1.2rem;
   letter-spacing: -.5px;
-  line-height: 1.1875;
+  line-height: 1.6rem;
   //color: #A0A0A0;
   font-weight: normal;
 }
@@ -109,12 +121,12 @@ p, span, li {
   h1 {
     font-size: 1.5rem;
     letter-spacing: 2px;
-    line-height: 1.1875;
+    //line-height: 1.1875;
   }
 
   h2 {
     font-size: 1.3rem;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     line-height: 1.1667;
   }
 

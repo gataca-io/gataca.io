@@ -150,5 +150,50 @@ fields:
       config:
         required: false
         wysiwyg: false
+- type: field_group
+  name: clientsDataSection
+  label: Clients Section
+  fields:
+  - name: title
+    type: text
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+    label: Title
+  - name: description
+    type: text
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: html-blocks
+    label: Title
+  - type: field_group_list
+    name: clients
+    label: Clients list
+    fields:
+    - name: title
+      type: text
+      label: Award Title
+      default: ''
+      config:
+        required: false
+        wysiwyg: false
+    - name: photo
+      type: file
+      label: Award Image
+      default: ''
+      config:
+        required: false
+        wysiwyg: false
+    - name: link
+      type: text
+      label: Award URL link
+      default: ''
+      config:
+        required: false
+        wysiwyg: false
 pages:
 - content/data/aboutData.json

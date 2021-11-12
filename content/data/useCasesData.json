@@ -1,0 +1,28 @@
+{
+  "title": "Sectors",
+  "list": [
+    {
+      "title": "Sectors",
+      "shortDescription": "<p>Discover how GATACA can help your industry.</p>",
+      "description": "<p>Credential issuance tool that enables Trusted Authorities to issue verifiable digital identity credentials.\nLeverage our government-grade secure technology to streamline authentication processes and issue credentials directly to a digital identity wallet. No paperwork needed.</p>",
+      "link": "/use-cases",
+      "image": "/images/building.svg"
+    },
+    {
+      "title": "Government",
+      "shortDescription": "<p>Improves citizen’s day to day lives by providing seamless onboarding experiences and securing online transactions.</p>",
+      "description": "<p>Governments leverage GATACA Certify for the issuance of digital credentials such as verifiable IDs, driver's licenses, passports, birth certificates, business licenses and so much more, and use Connect for government grade secure authentication of citizens into eGovernment services. Citizens use their Wallet to receive and share these digital credentials with third parties for instant authentication and identity verification.</p>",
+      "icon": "/images/building.svg",
+      "link": "/use-cases/government",
+      "image": "/illustrations/government_digitalization.svg"
+    },
+    {
+      "title": "Education",
+      "shortDescription": "<p>Maintain a competitive edge by increasing student, staff, and partner experience with digital processes and transactions.</p>",
+      "description": "<p>Forward-thinking institutions have realized how SSI technology can take their innovation to the next level. Universities are pioneering SSI use cases such as the issuance of digital student IDs, academic diplomas, microcredentials, and transcripts. Students use these credentials stored in their digital wallet to access online portals, buildings or labs, apply to further education, enroll in exchange programs and much more without the use paper-based documents.</p>",
+      "icon": "/icons/education_cert.svg",
+      "link": "/use-cases/education",
+      "image": "/illustrations/online_learning.svg"
+    }
+  ]
+}

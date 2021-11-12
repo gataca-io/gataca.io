@@ -1,7 +1,7 @@
 import { configure } from "@storybook/react"
 import { action } from "@storybook/addon-actions"
 
-// automatically import all files ending in *.insights.js
+// automatically import all files ending in *.blog.js
 configure(require.context("../src", true, /\.stories\.js$/), module)
 
 // Gatsby's Link overrides:
