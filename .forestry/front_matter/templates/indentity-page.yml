@@ -28,7 +28,7 @@ fields:
 - name: bullets
   type: field_group_list
   default: ''
-  label: Product Detail Bullets
+  label: Product Detail BulletsSection
   config: 
   fields:
   - type: text
@@ -57,4 +57,4 @@ fields:
     required: false
     wysiwyg: false
 pages:
-- content/data/identify.json
+- content/data/wallet.json

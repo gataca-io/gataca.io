@@ -2,6 +2,7 @@
 
 .base {
     //background-color: var(--bg-grey);
+    padding: var(--baseSpacingDouble) 0;
 }
 
 .container {
@@ -41,7 +42,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: var(--doubleBaseMargin) 0;
+    margin: var(--baseSpacingDouble) 0;
     max-height: 60px;
     opacity: 0.5;
     filter: grayscale(100%);

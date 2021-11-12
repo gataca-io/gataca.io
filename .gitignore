@@ -69,4 +69,6 @@ yarn-error.log
 .yarn-integrity
 
 public/**/*
+
+# Local Netlify folder
 .netlify

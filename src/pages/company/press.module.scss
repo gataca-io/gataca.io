@@ -1,0 +1,27 @@
+.mainContainer {
+    padding: var(--baseSpacing) 0;
+}
+
+.textContainer {
+    padding: var(--baseSpacingDouble);
+    padding-top: calc(var(--topbar-height) + var(--baseSpacing));
+    text-align: center;
+}
+
+.imageSection {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: var(--baseSpacingDouble);
+    &>div{
+        padding: var(--baseSpacing);
+        border-radius: 40px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--bg-grey);
+        height: 400px;
+        width: 400px;
+    }
+}

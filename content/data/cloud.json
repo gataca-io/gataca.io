@@ -1,0 +1,54 @@
+{
+  "product": "Cloud",
+  "title": "All things Identity, in the cloud",
+  "subtitle": " GATACA Cloud is a marketplace of SSI-based applications in SaaS version. Accessible for buisinesses of all sizes.",
+  "ctaText": "Try our BETA",
+  "icon": "/images/cloud.svg",
+  "description": "<p>GATACA Cloud will serve as a single entry point for clients to contract and manage applications in the cloud. Our EBSI-compliant, sector-focused applications will enable companies to execute faster pilots and integrations of SSI.</p>",
+  "bullets_one": {
+    "title": "",
+    "bullets": [
+      {
+        "title": "ACCESSIBLE",
+        "image": "/icons/website.svg",
+        "description": "<p>If on-premise is not your thing, we've got you covered.</p>"
+      },
+      {
+        "title": "FLEXIBLE",
+        "image": "/icons/flexible.svg",
+        "description": "<p>Choose the applications you wish to contract, forget the rest.</p>"
+      },
+      {
+        "title": "SECURE",
+        "image": "/icons/secure.svg",
+        "description": "<p>Our privacy-preserving & government grade secure features still apply.</p>"
+      },
+      {
+        "title": "EFFICIENT",
+        "image": "/images/verified.svg",
+        "description": "<p>Enjoy a seamless contract, integration, and execution of services.</p>"
+      }
+    ]
+  },
+  "bulletsSection_two": {
+    "title": "OUR APPS",
+    "bullets": [
+      {
+        "title": "Vouch",
+        "image": "/images/secure.svg",
+        "description": "<p>An OIDC-enabled authentication component.</p>"
+      },
+      {
+        "title": "Certify GO",
+        "image": "/images/verified.svg",
+        "description": "<p>Issuance of verifiable credentials as-a-service.</p>"
+      }
+    ]
+  },
+  "ctaSection": {
+    "title": "Curious to see it in action?",
+    "description": "Check out the GATACA Cloud sandbox",
+    "ctaText": "Try our BETA",
+    "ctaUrl": ""
+  }
+}

@@ -1,0 +1,41 @@
+@import "../../styles/aux/media-mixins";
+
+.baseSection{
+    width: 100%;
+    padding: 4rem 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    .heading{
+        padding: 2rem;
+    }
+    &>div {
+        max-width: var(--max-width-l);
+    }
+}
+
+.stepsContainer{
+    display: flex;
+    justify-content: space-between;
+    @include media-for-phone-only {
+        justify-content: inherit;
+        flex-direction: column;
+    }
+    .step {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        //justify-content: center;
+        img {
+            background-color: var(--bg-grey);
+            min-height: 200px;
+            min-width: 200px;
+            height: 200px;
+            width: 200px;
+        }
+        p {
+            margin: 1rem 0;
+        }
+    }
+}

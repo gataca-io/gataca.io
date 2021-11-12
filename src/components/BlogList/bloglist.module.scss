@@ -5,9 +5,9 @@
     background-color: var(--bg-grey);
     padding: var(--baseSpacing);
     //column-width: 350px;
-    //column-gap: var(--doubleBaseMargin);
+    //column-gap: var(--baseSpacingDouble);
     //width: 90%;
-    max-width: var(--max-width-lg);
+    max-width: var(--max-width-xl);
     margin: 0 auto;
 
     li {
@@ -60,6 +60,9 @@
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0px 1px 10px rgba(0,0,0,0.02);
+    @include media-for-phone-only {
+        //margin-bottom: var(--baseSpacing);
+    }
     &:hover{
         box-shadow: 0px 1px 13px rgba(0,0,0,0.05);
     }

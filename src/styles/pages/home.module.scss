@@ -1,18 +1,172 @@
+@import "../../styles/aux/media-mixins";
+
 .base {
+    padding-top: var(--topbar-height-mobile);
+    @include media-for-tablet-portrait-up {
+        padding-top: var(--topbar-height);
+    }
+}
+
+.productsSectionStyle {
+    text-align: center;
+    padding: var(--baseSpacingDouble) 0;
+    filter: drop-shadow(0 0px 0px #333);
+    z-index: 10;
+
+    .title {
+        padding: var(--baseSpacingDouble) var(--baseSpacing);
+    }
+
+    @include media-for-tablet-portrait-up {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
 
 }
 
-.home {
-
+.line {
+    height: 1px;
+    background-color: var(--darkblue);
+    width: 25%;
+    opacity: 0.1;
+    margin-bottom: var(--baseSpacing);
 }
+
+.sectionPress {
+    box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.15);
+    border-bottom: 2px solid rgba(183, 183, 183, 0.53);
+    z-index: 10;
+}
+
+.productBullet {
+    justify-content: space-between;
+    margin: var(--baseSpacing);
+    @include media-for-phone-only {
+        margin: var(--baseSpacingHalf);
+    }
+
+    & a:hover {
+        /*        backdrop-filter: blur(5px);
+                background: linear-gradient(
+                                180deg,
+                                rgba(255, 255, 255, 0.9) 20%,
+                                rgba(255, 255, 255, 0.56320028) 100%
+                );
+                box-shadow: 0px 7px 14px #00000012;
+                border: 1px solid var(--darkblue);*/
+        text-decoration: underline;
+    }
+
+    h4 {
+        letter-spacing: 0.1rem;
+        font-size: 1.3rem;
+    }
+
+    h5 {
+        position: relative;
+        padding-bottom: var(--baseSpacing);
+
+        &::before {
+            position: absolute;
+            bottom: 0;
+            left: -50%;
+            height: 1px;
+            width: 200px;
+            background-color: #181B5E61;
+        }
+    }
+
+    a {
+        padding: var(--baseSpacingMicro) var(--baseSpacing);
+        border-radius: 5px;
+    }
+}
+
+.productBulletsContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    @include media-for-tablet-portrait-up {
+        max-width: var(--max-width-xl);
+    }
+}
+
+.ctaButton {
+    background-color: var(--darkblue);
+    font-weight: bold;
+    text-transform: capitalize;
+    border-radius: 10px;
+    color: var(--white);
+    margin: var(--baseSpacing);
+
+    &:hover {
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.18);
+    }
+
+    padding: 1rem 3rem;
+}
+
+
+.chipsSection {
+    display: flex;
+    justify-content: center;
+    padding: var(--baseSpacingDouble) 0;
+    background-color: var(--white);
+    border-bottom: 2px solid rgba(183, 183, 183, 0.33);
+    box-shadow: 0px 6px 7px rgba(0, 0, 0, 0.16);
+    z-index:10;
+    & > div {
+        padding: 0 var(--baseSpacing);
+        max-width: var(--max-width);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h3 {
+            font-weight: bold;
+            letter-spacing: 0.1rem;
+        }
+    }
+
+    .chipsContainer {
+        display: flex;
+
+        .chip {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            box-shadow: var(--shadow);
+            background-color: var(--white);
+            border-radius: 20px;
+            margin: 0 var(--baseSpacingMicro);
+            border: 2px solid rgba(24, 27, 94, 0.25);
+        }
+
+        p {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.8rem;
+            font-weight: bold;
+            letter-spacing: 0.1rem;
+            color: var(--grey);
+            opacity: 0.6;
+            margin: 0;
+            padding: var(--baseSpacing) var(--baseSpacingHalf);
+        }
+    }
+}
+
 
 @media (min-width: 768px) {
     .home {
         //padding: 2rem;
         & > div {
-            display: flex;
-            max-height: 960px;
-            section{
+            section {
                 margin-left: 2rem;
             }
         }

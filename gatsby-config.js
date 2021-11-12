@@ -2,12 +2,16 @@ const configMeta = require("./content/data/configMetaData.json")
 
 module.exports = {
   //this makes the site config available to forestry cms
+  flags: {
+    DEV_SSR: false,
+    FAST_REFRESH: true
+  },
   siteMetadata: {
     metaTitle: configMeta.metaTitle,
     metaDescription: configMeta.description,
     title: configMeta.title,
-    siteUrl: `https://www.gataca.io`,
-    twitterHandler: `@gataca_id`,
+    siteUrl: "https://www.gataca.io",
+    twitterHandler: "@gataca_id",
   },
   plugins: [
     {

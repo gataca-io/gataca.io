@@ -7,6 +7,18 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    padding-top: calc(var(--topbar-height) + var(--baseSpacing))
+}
+
+.headlineContainer {
+    background-image: url("./../../../content/images/introPattern.svg");
+    background-repeat: repeat;
+    background-blend-mode: soft-light;
+    position: relative;
+    height: 40vh;
+    @include media-for-phone-only {
+        padding-top: calc(var(--topbar-height-mobile) + var(--baseSpacing));
+    }
 }
 
 .introContainer {
@@ -38,7 +50,6 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
-    background-color: var(--bg-grey);
     padding: 3rem 2rem;
     width: 100%;
     @include media-for-phone-only {
@@ -46,7 +57,7 @@
         text-align: left;
     }
     &>div {
-        max-width: var(--max-width-lg);
+        max-width: var(--max-width-xl);
         width: 100%;
         display: flex;
         justify-content: center;

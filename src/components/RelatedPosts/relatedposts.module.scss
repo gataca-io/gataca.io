@@ -1,0 +1,64 @@
+@import "../../styles/aux/media-mixins";
+
+.mainContainer {
+    width: 100%;
+    height: auto;
+    padding: var(--baseSpacingDouble) var(--baseSpacing);
+    background-color: var(--bg-grey)
+}
+
+.headerContainer{
+    text-align: center;
+}
+
+.post {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.02);
+    //@include media-for-phone-only{
+    //    padding-bottom: var(--baseSpacing);
+    //}
+    &:hover {
+        box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.05);
+    }
+
+    .list__hero {
+        div {
+            picture {
+                height: 250px;
+                opacity: 0.9;
+                transition: opacity 0.3s ease;
+            }
+        }
+    }
+
+    p {
+        font-size: 0.8rem;
+        max-width: 900px;
+    }
+
+    .list__info {
+        padding: 1rem;
+    }
+
+    li {
+        opacity: inherit;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        //min-height: 38vh;
+        margin-bottom: 0;
+        background-color: var(--white);
+    }
+
+    .date {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        font-size: 0.7rem;
+        text-align: right;
+        opacity: 0.6;
+    }
+}

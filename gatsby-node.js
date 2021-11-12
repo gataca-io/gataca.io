@@ -74,7 +74,7 @@ module.exports.createPages = async ({ graphql, actions, reporter }) => {
   queryPosts.data.allMarkdownRemark.edges.forEach(edge => {
     createPage({
       component: blogMdTemplate,
-      path: `/insights/${edge.node.fields.slug}`,
+      path: `/blog/${edge.node.fields.slug}`,
       context: {
         slug: edge.node.fields.slug,
       },

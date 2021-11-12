@@ -25,32 +25,26 @@ export default function LayoutProducts(props) {
         backgroundColor: props.bgColor,
       }}
     >
-      <BuildHelmet
-        title={productsData.metas.title}
-        description={productsData.metas.description}
-        twitterImg={productsData.metas.twitterImage}
-        facebookImg={productsData.metas.facebookImage}
-        linkedInImg={productsData.metas.facebookImage}
-      />
-      <HeaderSection title={title} link={configMetaData}/>
-      
       <div className={layoutStyles.content}>
-        <HeadLineSection title={productsData.introProductsSection.title} description={productsData.introProductsSection.description}/>
-            <Tabs
-              ariaLabel="listbox"
-              className={productSelStyles.tabs}
-              iconDescription="show menu options"
-              // onKeyDown={}
-              // onSelectionChange={}
-              role="navigation"
-              selected={1}
-              selectionMode="automatic"
-              tabContentClassName="tab-content"
-              triggerHref="#"
-              type="default"
-            >
-              {props.children}
-            </Tabs>
+        <HeadLineSection
+          title={productsData.introProductsSection.title
+          }
+          description={productsData.introProductsSection.description}/>
+        <Tabs
+          ariaLabel="listbox"
+          className={productSelStyles.tabs}
+          iconDescription="show menu options"
+          // onKeyDown={}
+          // onSelectionChange={}
+          role="navigation"
+          selected={1}
+          selectionMode="automatic"
+          tabContentClassName="tab-content"
+          triggerHref="#"
+          type="default"
+        >
+          {props.children}
+        </Tabs>
         <FaqSection data={faqData.faqSection}/>
       </div>
       <FooterSection data={footerSectionData}/>

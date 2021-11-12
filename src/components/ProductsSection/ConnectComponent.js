@@ -1,6 +1,6 @@
 import connectStyles from "./connectComponent.module.scss"
 import React from "react"
-import BulletOne from "../BulletOne"
+import BulletOne from "../BulletOne/BulletOne"
 import productSelStyles from "./productsSelector.module.scss"
 
 export default function ConnectComponent({ product }) {

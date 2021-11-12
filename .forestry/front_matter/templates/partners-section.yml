@@ -1,10 +1,10 @@
 ---
-label: Press Section
+label: Clients Section
 hide_body: false
 fields:
 - type: field_group
   name: partnersSection
-  label: Press Section
+  label: Clients Section
   fields:
   - name: title
     type: text
@@ -16,7 +16,7 @@ fields:
   - name: partners
     type: field_group_list
     default: ''
-    label: Press List
+    label: Clients List
     description: Each one of the partners information
     config: 
     fields:

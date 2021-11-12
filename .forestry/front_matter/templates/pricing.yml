@@ -43,7 +43,7 @@ fields:
   fields:
   - name: text
     type: text
-    label: Cta text
+    label: TextHightlightSection text
     default: ''
     config:
       required: false

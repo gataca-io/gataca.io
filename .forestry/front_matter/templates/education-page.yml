@@ -1,0 +1,333 @@
+---
+label: Education Use Case Page
+hide_body: false
+fields:
+- name: metas
+  type: field_group
+  config: {}
+  fields:
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+  - name: description
+    type: text
+    config:
+      required: false
+    label: Description
+  - name: facebookImage
+    type: file
+    config:
+      required: false
+    label: LinkedIn Image
+  - name: linkedInImage
+    type: file
+    config:
+      required: false
+    label: Facebook Image
+  - name: twitterImage
+    type: file
+    config:
+      required: false
+    label: Twitter Image
+  label: Metas
+- type: field_group
+  name: headline
+  label: Headline
+  fields:
+  - name: title
+    type: text
+    default: Education
+    config:
+      required: false
+      wysiwyg: false
+    label: Title
+  - name: title
+    type: text
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+    label: Title
+  - name: description
+    type: textarea
+    label: Description
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: html-blocks
+- type: field_group
+  name: bigBulletsSection
+  label: Main Section
+  fields:
+  - name: title
+    type: text
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+    label: Title
+  - name: description
+    type: textarea
+    label: Description
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: html-blocks
+  - name: bullets
+    type: field_group_list
+    default: ''
+    label: Features List
+    description: ''
+    config: 
+    fields:
+    - type: text
+      name: title
+      label: Title
+      config:
+        required: false
+    - name: subtitle
+      type: textarea
+      label: Description
+      default: ''
+      config:
+        required: false
+        wysiwyg: true
+        schema:
+          format: html-blocks
+    - name: description
+      type: textarea
+      label: Description
+      default: ''
+      config:
+        required: false
+        wysiwyg: true
+        schema:
+          format: html-blocks
+    - type: file
+      name: icon
+      label: Partner Image
+      config:
+        required: false
+    - type: file
+      name: image
+      label: Partner Image
+      config:
+        required: false
+- type: field_group
+  name: transformBulletsSection
+  label: Evolve
+  fields:
+  - name: title
+    type: text
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+    label: Title
+  - name: description
+    type: textarea
+    label: Description
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: html-blocks
+  - name: arrowBullets
+    type: field_group_list
+    default: ''
+    label: Transformed features
+    description: ''
+    config: 
+    fields:
+    - name: list
+      type: field_group_list
+      default: ''
+      label: Feature
+      description: ''
+      config: 
+    - type: text
+      name: title
+      label: Feature title
+      config:
+        required: false
+    - name: description
+      type: textarea
+      label: Feature description
+      default: ''
+      config:
+        required: false
+        wysiwyg: true
+        schema:
+          format: html-blocks
+    - type: file
+      name: icon
+      label: Partner Image
+      config:
+        required: false
+    - type: file
+      name: image
+      label: Partner Image
+      config:
+        required: false
+- type: field_group
+  name: textBulletsPlusIconsSection_one
+  label: How it works
+  fields:
+  - name: title
+    type: text
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+    label: Title
+  - name: textBullets
+    type: field_group_list
+    default: ''
+    label: Features List
+    description: ''
+    config: 
+    fields:
+    - type: text
+      name: title
+      label: Partner Title
+      config:
+        required: false
+    - type: file
+      name: icon
+      label: Partner Image
+      config:
+        required: false
+- type: field_group
+  name: bulletsSection
+  label: The impact?
+  fields:
+  - name: title
+    type: text
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+    label: Title
+  - name: description
+    type: textarea
+    label: Description
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: html-blocks
+  - name: bullets
+    type: field_group_list
+    default: ''
+    label: Features List
+    description: ''
+    config: 
+    fields:
+    - name: title
+      type: text
+      label: Title
+      config:
+        required: false
+    - name: description
+      type: textarea
+      label: Description
+      default: ''
+      config:
+        required: false
+        wysiwyg: true
+        schema:
+          format: html-blocks
+    - type: file
+      name: image
+      label: Partner Image
+      config:
+        required: false
+- type: field_group
+  name: textBulletsPlusIconsSection
+  label: Our principles
+  fields:
+  - name: title
+    type: text
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+    label: Title
+  - name: textBullets
+    type: field_group_list
+    default: ''
+    label: Features List
+    description: ''
+    config: 
+    fields:
+    - type: text
+      name: title
+      label: Partner Title
+      config:
+        required: false
+    - type: file
+      name: icon
+      label: Partner Image
+      config:
+        required: false
+    - type: file
+      name: icon
+      label: Partner Image
+      config:
+        required: false
+- type: field_group
+  name: bulletsSection_three
+  label: Our Solution in Action
+  fields:
+  - name: title
+    type: text
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+    label: Title
+  - name: description
+    type: textarea
+    label: Description
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: html-blocks
+  - name: bullets
+    type: field_group_list
+    default: ''
+    label: Features List
+    description: ''
+    config: 
+    fields:
+    - name: title
+      type: text
+      label: Title
+      config:
+        required: false
+    - name: description
+      type: textarea
+      label: Description
+      default: ''
+      config:
+        required: false
+        wysiwyg: true
+        schema:
+          format: html-blocks
+    - type: file
+      name: image
+      label: Partner Image
+      config:
+        required: false
+pages:
+- content/data/education.json

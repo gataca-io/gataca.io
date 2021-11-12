@@ -59,7 +59,7 @@ export default function IntroSection({ data, link }) {
                   size="default"
                   tabIndex={0}
                   type="button"
-                > {data.ctaText}</Button>
+                >{data.ctaText}</Button>
               </a>
             </section>
     

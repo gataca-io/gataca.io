@@ -92,7 +92,7 @@ fields:
       label: Icon
 - type: field_group
   name: bulletsSection
-  label: Bullets Section
+  label: BulletsSection Section
   fields:
   - name: title
     type: text
@@ -133,10 +133,10 @@ fields:
         wysiwyg: true
         schema:
           format: html-blocks
-    label: Bullets
+    label: BulletsSection
 - type: field_group
   name: bulletsEnhancedSection
-  label: Bullets Enhanced Section
+  label: BulletsSection Enhanced Section
   fields:
   - name: title
     type: text
@@ -157,7 +157,7 @@ fields:
   - name: elements
     type: field_group_list
     default: ''
-    label: Bullets
+    label: BulletsSection
     config:
       max: 3
     fields:
@@ -212,7 +212,7 @@ fields:
           format: html-blocks
 - type: field_group
   name: ctaSection
-  label: Cta Section
+  label: TextHightlightSection Section
   fields:
   - name: title
     type: textarea
@@ -236,6 +236,6 @@ fields:
     config:
       required: false
       wysiwyg: false
-    label: Cta button text
+    label: TextHightlightSection button text
 pages:
 - content/data/homeData.json

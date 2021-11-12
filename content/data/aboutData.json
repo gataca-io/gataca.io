@@ -7,9 +7,28 @@
     "title": "ABOUT",
     "description": "<p>Gataca is a cybersecurity company founded in Boston, MA, at the heart of MIT’s entrepreneurship and innovation ecosystem. It started as an academic research study seeking to reduce the risk of doing business online. As victims of the Equifax data breach later that year, the topic became very personal.</p><p>We built Gataca because we knew there had to be a better way to protect our data.</p>"
   },
+  "bigBulletsSection": {
+    "title": "Our mission",
+    "bullets": [
+      {
+        "icon": "/illustrations/secure_internet.svg",
+        "image": "/illustrations/secure_internet.svg",
+        "title": "We’re building an identity layer for a better, more secure Internet",
+        "subtitle": "<p>Costly regulation compliance, lack of citizen eID adoption, and identity fraud.</p>",
+        "description": "<p>Our mission is to give users back control of their data and ensure their safety online.<br><br>Since its inception at MIT in 2017, GATACA has developed a comprehensive blockchain-based SSI solution that offers a single user-centric digital identity layer for the Internet with government-grade security and simple single-sign-on capabilities.</p>"
+      },
+      {
+        "icon": "/illustrations/smartphone_digit.svg",
+        "image": "/illustrations/smartphone_digit.svg",
+        "title": "Simplicity. Usability. Security.",
+        "shortDescription": "<p>Full stack, self -sovereign identity platform.</p>",
+        "description": "<p>Our suite of products combine key principles of simplicity and usability with advanced cryptography and blockchain technologies. Them provide hypersecure access to both private and public digital services.<br><br>Governments, universities and businesses choose GATACA without trading quality for efficiency.</p>"
+      }
+    ]
+  },
   "teamDataSection": {
-    "title": "The team",
-    "description": "",
+    "title": "Meet the team",
+    "description": "<p>Behind our success is the GATACA team, comprised of a diverse and dynamic group with ceaseless determination and expertise in many fields including entrepreneurship, blockchain, cybersecurity and economics.</p>",
     "team": [
       {
         "name": "Irene Hernandez",
@@ -141,6 +160,32 @@
         "description": "<p>Awarded grant from MIT Innovation Sandbox, a program for MIT students to pursue entrepreneurial ideas.</p>",
         "photo": "../images/mit_sandbox.svg",
         "link": "http://sandbox.mit.edu/"
+      }
+    ]
+  },
+  "clientsDataSection": {
+    "title": "Clients & Partners",
+    "description": "<p>In a little over 3 years, the GATACA team has closed 10 contracts with key European public administrations and private organizations.</p>",
+    "clients": [
+      {
+        "title": "Early Adopters Program - Spain",
+        "photo": "../images/European_Commission.svg",
+        "link": "https://ec.europa.eu/cefdigital/wiki/display/CEFDIGITAL/Early+Adopters+Programme"
+      },
+      {
+        "title": "UNA Europa",
+        "photo": "../images/una_europa.svg",
+        "link": "https://www.ngi.eu/ngi-projects/essif-lab/"
+      },
+      {
+        "title": "European Commission",
+        "photo": "../images/European_Commission.svg",
+        "link": "https://southsummit.co/en/startup-competition-en/"
+      },
+      {
+        "title": "DIF",
+        "photo": "../images/logo_dif.png",
+        "link": "https://identity.foundation/"
       }
     ]
   }

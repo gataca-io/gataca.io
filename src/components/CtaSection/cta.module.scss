@@ -1,7 +1,6 @@
 @import "../../styles/aux/media-mixins";
 
 .base{
-    background-color: var(--white);
     width: 100%;
     @include media-for-tablet-portrait-up {
         display: flex;
@@ -15,6 +14,7 @@
     max-width: var(--max-width);
     padding: 5rem 2rem;
     @include media-for-tablet-portrait-up {
+        text-align: center;
         padding: 5rem 0;
         display: flex;
         justify-content: center;
@@ -23,8 +23,21 @@
     }
 }
 
+.iconContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    margin: var(--baseSpacing);
+    img{
+        height: 80%;
+    }
+}
+
 .subContainer {
     max-width: 400px;
+    margin: var(--baseSpacing) 0;
     @include media-for-tablet-portrait-up {
         text-align: center;
     }
@@ -38,7 +51,39 @@
     background-color: var(--darkblue);
     font-weight: bold;
     text-transform: capitalize;
+    border-radius: 10px;
+    &:hover {
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.18);
+    }
     @include media-for-tablet-portrait-up {
         padding: 1rem 3rem;
+    }
+    @include media-for-phone-only {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        width: 100%;
+    }
+}
+
+.endCtaButton {
+    background-color: var(--darkblue);
+    font-weight: bold;
+    text-transform: capitalize;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 52px;
+    width: 320px;
+    padding: 0;
+    &:hover {
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.18);
+    }
+    @include media-for-phone-only {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        width: 100%;
     }
 }

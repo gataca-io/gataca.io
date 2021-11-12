@@ -44,7 +44,7 @@ export default function BlogList(props) {
                 .map(blog => {
                   return (
                     <div className={`${blogListStyles.post}`} key={blog.node.id}>
-                      <Link to={`/insights/${blog.node.fields.slug}`}>
+                      <Link to={`/blog/${blog.node.fields.slug}`}>
                         <li className={`${blogListStyles.li}`} key={blog.node.fields.slug}>
                           <div className={blogListStyles.list__hero}>
                             {BuildImage(blog.node.frontmatter)}

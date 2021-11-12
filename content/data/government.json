@@ -1,0 +1,178 @@
+{
+  "metas": {
+    "title": "Government",
+    "description": "The future of e-governance lies in digital identities",
+    "facebookImage": "",
+    "linkedInImage": "",
+    "twitterImage": ""
+  },
+  "headline": {
+    "title": "Government",
+    "subtitle": "The future of e-governance lies in digital identities",
+    "description": "<p>GATACA’s decentralized digital identity technology improves citizen’s day to day lives by providing seamless onboarding experiences and securing online transactions.</p>",
+    "ctaText": "Get in touch",
+    "ctaLink": "/company/contact"
+  },
+  "theResult": {
+    "icon": "/images/phone-small.svg",
+    "link": "/use-cases/education",
+    "head": "The result",
+    "image": "/images/phone-small.svg",
+    "title": "Start saving time and money, while improving citizens' day to day lives",
+    "shortDescription": "<p>Full stack, self -sovereign identity platform.</p>",
+    "description": "<p>SSI technology saves government resources in the credential issuance, sharing, and validation steps and stimulates economic activity by facilitating processes such as opening a bank account, renovating an ID, or even filing taxes.</p>"
+  },
+  "theProblem": {
+    "icon": "/images/building.svg",
+    "link": "/use-cases/government",
+    "head": "The problem",
+    "image": "/illustrations/people_arguing.svg",
+    "title": "Costly regulation compliance, lack of citizen eID adoption, and identity fraud",
+    "subtitle": "<p>Costly regulation compliance, lack of citizen eID adoption, and identity fraud.</p>",
+    "description": "<p>Governments worlwide are committed to the digitization of their economy but struggle with citizen eID adoption, the gateway to these services, and high GDPR & KYC regulation compliance costs.\n\nThis is mainly because current eID systems & processes are long, complex, lack the interoperability, privacy, and security citizens need, and make identity fraud ever more common.</p>"
+  },
+  "theSolution": {
+    "icon": "/images/phone-small.svg",
+    "link": "/use-cases/education",
+    "head": "The solution",
+    "image": "/illustrations/people_success.svg",
+    "title": "Full stack, self -sovereign identity platform",
+    "shortDescription": "<p>Full stack, self -sovereign identity platform.</p>",
+    "description": "<p>We equip authorities with tools to issue digitized, standardized, and secure government documents such as a national ID, passport, driver’s or business licenses in seconds. These Verifiable Credentials (or VCs) are instantly and securely sent to the citizen’s digital Wallet, where they control who can access their data.\n\nOur single sign-on authentication tool enables citizen access to any digital service, from eGovernment to healthcare, using their VCs which drasticly reduces onboarding time and offers instant access to affiliated service providers..</p>"
+  },
+  "textBulletsSection": {
+    "title": "The road to digitisation",
+    "textBullets": [
+      {
+        "text": "Forget paper-based documents and complex public service processes. Digital IDs enable one-click applications, registrations, payments, access, and so much more."
+      }
+    ]
+  },
+  "bulletsSection": {
+    "bullets": [
+      {
+        "image": "",
+        "title": "Credentials",
+        "description": "<p>Unified commuting (rental cars, rental bikes) <br>Smart building access<br>National ID<br>Passport<br>Driver’s licence<br>Commuting card<br>Birth certificate<br>Marriage certificate<br>Criminal record certificate<br>Business license.</p>"
+      },
+      {
+        "image": "",
+        "title": "Use Cases",
+        "description": "<p>ID card renewal<br>Income tax payment<br>Business registration<br>Public job/training application<br>Social benefits and pensions application<br>Grant application<br>Fine payment<br>Car registration<br>Police declaration<br>Public librbary access</p>"
+      }
+    ]
+  },
+  "useCases": {
+    "title": "All your citizen identification needs, covered",
+    "elements": [
+      "ID card",
+      "Income tax",
+      "Business reg",
+      "Social benefits",
+      "Grant application",
+      "Fine payment",
+      "Car registration",
+      "Police declaration",
+      "Public library"
+    ]
+  },
+  "credentials": {
+    "title": "Credentials",
+    "elements": [
+      "National ID",
+      "Passport",
+      "Driver’s licence",
+      "Commuting card",
+      "Birth certificate",
+      "Marriage certificate",
+      "Business license"
+    ]
+  },
+  "textBulletsPlusIconsSection": {
+    "title": "How it works",
+    "textBullets": [
+      {
+        "icon": "/icons/building_services.svg",
+        "text": "Governments agencies issue verifiable credentials to citizens via Certify (link)"
+      },
+      {
+        "icon": "/icons/phone_buzzing.svg",
+        "text": "Citizens securely store credentials on a Wallet, their digital vault and masterkey to all digital services."
+      },
+      {
+        "icon": "/icons/show_phone.svg",
+        "text": "Citizens verify their identities by giving service providers and government agencies access to the required credentials or information stored on their wallet via Connect. (link)"
+      }
+    ]
+  },
+  "bulletsSection_two": {
+    "title": "The Impact",
+    "icon": "/images/building.svg",
+    "description": "",
+    "bullets": [
+      {
+        "image": "/icons/revenue_streams.svg",
+        "title": "New revenue streams",
+        "description": "<p>In addition to increase opportunities for citizens, the issuance of digital credentials represents a new revenue stream for public entities and a cost reduction in the process.</p>"
+      },
+      {
+        "image": "/icons/secure.svg",
+        "title": "Privacy Protection",
+        "description": "<p>With eIDs citizens have control their personal information and enhanced privacy. From their Wallet, Citizens can control who has access to their personal information and can revoke access anytime.</p>"
+      },
+      {
+        "image": "/images/building.svg",
+        "title": "Social Inclusion",
+        "description": "<p>Lack of identification limits the capacity of underserved communities to grow finacially and contribute to GDP. Access to eIDs provides citizens with unlimited opportunities from opening a bank account to launching a business.</p>"
+      }
+    ]
+  },
+  "textBulletsPlusIconsSection_two": {
+    "title": "Our Principles",
+    "textBullets": [
+      {
+        "icon": "/icons/government.svg",
+        "title": "Governments agencies issue verifiable credentials to citizens via Certify (link)",
+        "text": "We give you the option to implement our technology on premise or Cloud, and provide sandbox environements for easier testing."
+      },
+      {
+        "icon": "/icons/user_network.svg",
+        "title": "Interoperability",
+        "text": "In addition to being ledger-agnostic, GATACA promotes interoperability in the SSI industry as a standards leader."
+      },
+      {
+        "icon": "/icons/legal.svg",
+        "title": "Compliance",
+        "text": "Our technology includes GDPR by design, SSI eIDAS bridge, and is integrated with EBSI."
+      }
+    ]
+  },
+  "bulletsSection_three": {
+    "title": "Our Solution in Action",
+    "icon": "/images/3-triangle.svg",
+    "description": "",
+    "bullets": [
+      {
+        "image": "/images/european_comission.svg",
+        "title": "European Commission",
+        "description": "<p>GATACA has been twice contracted as a domain expert advisor to support the European Commission in defining ESSIF, the European Self-Sovereign Identity Framework.</p>"
+      },
+      {
+        "image": "",
+        "title": "Early Adopters Programme - Spain",
+        "description": "<p>GATACA has joined the Spanish group comprised of 5 entities which are currently implementing our technology to deploy the academic use case in the country.</p>"
+      },
+      {
+        "image": "",
+        "title": "National Pilot",
+        "description": "<p>GATACA has closed a strategic contract with a European public administration to deploy a large-scale pilot of our digital identity platform.</p>"
+      }
+    ]
+  },
+  "ctaSection": {
+    "title": "Start digitising your economy ",
+    "ctaText": "Book a meeting",
+    "ctaLink": "/company/contact"
+  }
+}
+

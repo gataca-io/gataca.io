@@ -8,16 +8,23 @@
 .introSection {
     display: flex;
     align-items: center;
+    justify-content: center;
+    width: 100%;
     flex-direction: column;
-    max-width: 600px;
-    margin: 3rem auto 3rem auto;
     padding: 2rem 2rem;
     position: relative;
-    border-bottom: 2px solid var(--bg-grey);
+    //border-bottom: 2px solid var(--darkblue);
     text-align: center;
+    background-color: var(--bg-grey);
+    &>div{
+        padding-top: calc(var(--topbar-height-mobile) + var(--baseSpacing));
+        max-width: 600px;
+    }
     @include media-for-tablet-portrait-up {
         padding: 2rem 0rem;
+        padding-top: calc(var(--topbar-height) + var(--baseSpacing));
     }
+
     p:last-child {
 
     }
@@ -26,12 +33,19 @@
 .ctaSection {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
-    max-width: 400px;
-    margin: 2rem auto;
     padding: 0rem 2rem;
+    background-color: var(--bg-grey);
+    &>div{
+        max-width: 400px;
+        padding:  var(--baseSpacingHalf) 0;
+        @include media-for-tablet-portrait-up {
+            padding:  var(--baseSpacing) 0;
+        }
+    }
     @include media-for-tablet-portrait-up {
-        padding: 1rem 0rem;
+        padding:  var(--baseSpacingHalf) 0;
     }
 
     a {
@@ -44,6 +58,7 @@
     }
 
     p {
+        color: var(--darkblue);
         max-width: 300px;
         margin-top: 1rem;
         font-size: 0.7rem;
@@ -51,6 +66,6 @@
     }
 }
 
-.pressSection{
+.pressSection {
     margin: 3rem 0;
 }
