@@ -71,9 +71,9 @@ export default function IndexPage() {
             {
               productsList.map(bullet => {
                 return <BulletCenter
+                  key={bullet.title}
                   bulletContainerStyles={homeStyles.productBullet}
                   data={{
-                    key: bullet.title,
                     title: bullet.title,
                     image: bullet.icon,
                     subtitle: bullet.subtitle,

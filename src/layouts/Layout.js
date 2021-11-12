@@ -29,46 +29,30 @@ export default function Layout(props) {
     }
   }
   
-  const getCookie = (name) => {
-    if (typeof document !== `undefined`) {
-      const dc = document.cookie
-      const prefix = name + "="
-      let end = document.cookie.indexOf(";", begin)
-      let begin = dc.indexOf("; " + prefix)
-      if (begin === -1) {
-        begin = dc.indexOf(prefix)
-        if (begin !== 0) return null
-      } else {
-        begin += 2
-        if (end === -1) {
-          end = dc.length
-        }
-      }
-      // because unescape has been deprecated, replaced with decodeURI
-      //return unescape(dc.substring(begin + prefix.length, end));
-      return decodeURI(dc.substring(begin + prefix.length, end))
-    }
+  function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
   }
   
-  
-  const hubspotStateCookie = getCookie("__hs_cookie_cat_pref")
-  
-  
   useEffect(() => {
+    const hubspotStateCookie = getCookie("__hs_cookie_cat_pref")
+    console.log("HUBSPOT COOKIE => ", hubspotStateCookie)
     if (hubspotStateCookie) {
       const cookieStructure = hubspotStateCookie.split(",")
       console.log("COOKIE STRUCTURE => ", cookieStructure)
       // Analytics
       if (cookieStructure && cookieStructure.length > 0) {
-        if (cookieStructure[0].includes("false")) {
+        if (cookieStructure[0] && cookieStructure[0].includes("false")) {
           removeAnalyticsCookies()
           // Functionality
-        } else if (cookieStructure[1].includes("false")) {
+        } else if (cookieStructure[1] && cookieStructure[1].includes("false")) {
           
           // Advertisementent
-        } else if (cookieStructure[2].includes("false")) {
+        } else if (cookieStructure[2] && cookieStructure[2].includes("false")) {
         
         } else if (
+          cookieStructure[2] && cookieStructure[1] && cookieStructure[0] &&
           cookieStructure[0].includes("false") &&
           cookieStructure[1].includes("false") &&
           cookieStructure[2].includes("false")
@@ -94,7 +78,7 @@ export default function Layout(props) {
     return () => {
     
     }
-  }, [hubspotStateCookie])
+  }, [])
   
   
   return (

@@ -37,7 +37,7 @@ const GreatElementsSection: React.FC<ICarouselBulletsSectionProps> = (props) => 
         {
           bullets.map(((bullet, i) => {
             return (
-              <SizeMe>
+              <SizeMe key={i}>
                 {({ size }: any): any => {
                   return (
                     <div

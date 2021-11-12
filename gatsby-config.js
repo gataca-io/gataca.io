@@ -209,5 +209,6 @@ module.exports = {
         productionOnly: false,
       },
     },
+    'gatsby-plugin-remove-console',
   ],
 }

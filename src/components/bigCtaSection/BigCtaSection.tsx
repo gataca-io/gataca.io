@@ -17,30 +17,6 @@ const BigCtaSection: React.FC<IBigCtaSectionProps> = ({}) => {
     <React.Fragment>
       <section className={styles.mainSection}>
 
-        {/*        <div className={styles.overBackground}/>
-        <div className={styles.container}>
-          <div className={styles.faceOne}/>
-          <div className={styles.faceTwo}/>
-          <div className={styles.faceThree}/>
-          <div className={styles.circleTop}/>
-          <div className={styles.circle2}/>
-          <div className={styles.circle3}/>
-          <div className={styles.circle4}/>
-          <div className={styles.blurredBox}></div>
-          <img src={"/glassy/glassySquare.svg"} alt={""}/>
-          <div className={styles.textBox}>
-            <h1>{homeData.bigCtaSection.title}</h1>
-            <h3>{homeData.bigCtaSection.description}</h3>
-            <p>{homeData.bigCtaSection.subDescription}</p>
-          </div>
-
-          <div className={styles.textBox}>
-            <h1>{homeData.bigCtaSection.title}</h1>
-            <h3>{homeData.bigCtaSection.description}</h3>
-            <p>{homeData.bigCtaSection.subDescription}</p>
-          </div>
-        </div>*/}
-
         <div className={styles.subContainer}>
 
           <div className={styles.hero_container_mobile}>
@@ -49,8 +25,10 @@ const BigCtaSection: React.FC<IBigCtaSectionProps> = ({}) => {
             <div className={styles.circle4}/>
             <div className={styles.circle5}/>
             <div className={styles.gridContainer_mobile}>
-              {homeData.newIntroSection.images.map(img => {
-                return <div className={styles.imageContainerMobile}>
+              {homeData.newIntroSection.images.map((img, i) => {
+                return <div
+                  key={i}
+                  className={styles.imageContainerMobile}>
                   <img src={img} alt={""}/>
                 </div>
               })
@@ -85,8 +63,8 @@ const BigCtaSection: React.FC<IBigCtaSectionProps> = ({}) => {
             <div className={styles.circle4}/>
             <div className={styles.circle5}/>
             <div className={styles.gridContainer}>
-              {homeData.newIntroSection.images.map(img => {
-                return <div className={styles.imageContainer}>
+              {homeData.newIntroSection.images.map((img, i) => {
+                return <div key={i} className={styles.imageContainer}>
                   <img src={img} alt={""}/>
                 </div>
               })
