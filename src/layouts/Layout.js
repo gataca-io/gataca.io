@@ -52,25 +52,29 @@ export default function Layout(props) {
   
   
   const hubspotStateCookie = getCookie("__hs_cookie_cat_pref")
+  
+  
   useEffect(() => {
     if (hubspotStateCookie) {
       const cookieStructure = hubspotStateCookie.split(",")
-      console.log(cookieStructure)
+      console.log("COOKIE STRUCTURE => ", cookieStructure)
       // Analytics
-      if (cookieStructure[0].includes("false")) {
-        removeAnalyticsCookies()
-        // Functionality
-      } else if (cookieStructure[1].includes("false")) {
+      if (cookieStructure && cookieStructure.length > 0) {
+        if (cookieStructure[0].includes("false")) {
+          removeAnalyticsCookies()
+          // Functionality
+        } else if (cookieStructure[1].includes("false")) {
+          
+          // Advertisementent
+        } else if (cookieStructure[2].includes("false")) {
         
-        // Advertisementent
-      } else if (cookieStructure[2].includes("false")) {
-      
-      } else if (
-        cookieStructure[0].includes("false") &&
-        cookieStructure[1].includes("false") &&
-        cookieStructure[2].includes("false")
-      ) {
-        deleteAllCookies()
+        } else if (
+          cookieStructure[0].includes("false") &&
+          cookieStructure[1].includes("false") &&
+          cookieStructure[2].includes("false")
+        ) {
+          deleteAllCookies()
+        }
       }
     }
     
@@ -94,26 +98,26 @@ export default function Layout(props) {
   
   
   return (
-      <section
-        className={`${layoutStyles.layout} ${
-          props.page === "info" &&
-          layoutStyles.info_page}`}
-        style={{
-          backgroundColor: props.bgColor,
-        }}
-      >
-        
-        <HeaderSection
-          location={props.location}
-          title={configMetaData.title}
-          link={configMetaData}/>
-        
-        <div className={layoutStyles.content}>
-          {props.children}
-        </div>
-        
-        <FooterSection />
-  
+    <section
+      className={`${layoutStyles.layout} ${
+        props.page === "info" &&
+        layoutStyles.info_page}`}
+      style={{
+        backgroundColor: props.bgColor,
+      }}
+    >
+      
+      <HeaderSection
+        location={props.location}
+        title={configMetaData.title}
+        link={configMetaData}/>
+      
+      <div className={layoutStyles.content}>
+        {props.children}
+      </div>
+      
+      <FooterSection/>
+    
     </section>
   )
 }
