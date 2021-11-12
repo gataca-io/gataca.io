@@ -35,12 +35,12 @@ export default function Wallet(props) {
         {/*<ProductHeadline text={wallet.product}/>*/}
         <section className={styles.introContainer}>
           <ProductIntroSection
+            title={wallet.title}
             subtitle={wallet.subtitle}
             ctaText={wallet.ctaText}
             // icon={wallet.icon}
             image={wallet.mainImage}
             product={wallet.product}
-            title={wallet.title}
             description={wallet.description}
             imageContStyles={styles.walletImageContainer}
             customCta={

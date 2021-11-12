@@ -43,7 +43,7 @@ const UseCases: React.FC<IUseCasesProps> = ({}) => {
         <HeadLineSection
           big
           title={useCasesPageData.introProductsSection.title}
-          description={useCasesPageData.introProductsSection.description}
+          subtitle={useCasesPageData.introProductsSection.description}
         />
       </section>
 

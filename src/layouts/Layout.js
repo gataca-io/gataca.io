@@ -1,14 +1,11 @@
-import React from "react"
+import React, { useEffect } from "react"
 import HeaderSection from "../components/HeaderSection/HeaderSection"
 import layoutStyles from "./layout.module.scss"
 import FooterSection from "../components/FooterSection/FooterSection"
 import configMetaData from "../../content/data/configMetaData.json"
-import CookieConsent from "react-cookie-consent"
 
 
 export default function Layout(props) {
-  // const { title } = useSiteMetadata()
-  
   
   const removeAnalyticsCookies = () => {
     console.log("removeAnalitics")
@@ -22,11 +19,11 @@ export default function Layout(props) {
   const deleteAllCookies = () => {
     console.log("deleteAllCookies")
     if (typeof document !== `undefined`) {
-      var cookies = document.cookie.split(";")
-      for (var i = 0; i < cookies.length; i++) {
-        var cookie = cookies[i]
-        var eqPos = cookie.indexOf("=")
-        var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie
+      const cookies = document.cookie.split(";")
+      for (let i = 0; i < cookies.length; i++) {
+        const cookie = cookies[i]
+        const eqPos = cookie.indexOf("=")
+        const name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie
         document.cookie = name + "=; Path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT"
       }
     }
@@ -34,16 +31,16 @@ export default function Layout(props) {
   
   const getCookie = (name) => {
     if (typeof document !== `undefined`) {
-      var dc = document.cookie
-      var prefix = name + "="
-      var begin = dc.indexOf("; " + prefix)
-      if (begin == -1) {
+      const dc = document.cookie
+      const prefix = name + "="
+      let end = document.cookie.indexOf(";", begin)
+      let begin = dc.indexOf("; " + prefix)
+      if (begin === -1) {
         begin = dc.indexOf(prefix)
-        if (begin != 0) return null
+        if (begin !== 0) return null
       } else {
         begin += 2
-        var end = document.cookie.indexOf(";", begin)
-        if (end == -1) {
+        if (end === -1) {
           end = dc.length
         }
       }

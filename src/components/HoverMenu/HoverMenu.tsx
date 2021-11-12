@@ -7,7 +7,8 @@ import cx from "classnames"
 
 type IHoverMenuProps = {
   isVisible: boolean,
-  isBlog: boolean,
+  isBlog?: boolean,
+  isOpaque?: boolean,
   changeVisibility: any,
   hoverElement: string,
   list: Array<{
@@ -26,7 +27,7 @@ const ArrowUp = styled.div`
   border-bottom: 10px solid var(--white);
   position: absolute;
   left: 38%;
-  z-index:101;
+  z-index: 101;
   top: calc(var(--topbar-height));
 `
 
@@ -34,7 +35,7 @@ const HoverMenu: React.FC<IHoverMenuProps> = (
   props,
 ) => {
 
-  let { list, isBlog, isVisible, changeVisibility, hoverElement } = props
+  let { list, isBlog, isOpaque, isVisible, changeVisibility, hoverElement } = props
 
   useEffect(() => {
 
@@ -48,14 +49,22 @@ const HoverMenu: React.FC<IHoverMenuProps> = (
 
   return isVisible ? (
     <React.Fragment>
-      {!isBlog && <ArrowUp/>}
+      {!isOpaque ? <ArrowUp/> : !isBlog && !isOpaque ? <ArrowUp/> : null}
+
       <div
-        className={cx(styles.hoverMenu, isBlog && styles.menuSolid)}
+        className={cx(
+          styles.hoverMenu,
+          isBlog && styles.menuSolid,
+          isOpaque && styles.menuDownPage,
+        )}
         onMouseLeave={() => changeVisibility(hoverElement)}>
 
         {list.map(el => {
           const content = (
-            <div className={styles.menuElement}>
+            <div className={cx(
+              styles.menuElement,
+              isBlog && styles.menuElementBlog,
+            )}>
               {el.icon && <div className={styles.imageContainer}>
                 <img src={el.icon} alt={el.title}/>
               </div>}

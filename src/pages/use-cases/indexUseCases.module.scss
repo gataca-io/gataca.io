@@ -25,10 +25,11 @@
     width: 100%;
     border-bottom: 2px solid var(--darkblue);
 
+        padding: var(--baseSpacing);
     @include media-for-tablet-portrait-up {
         display: flex;
         justify-content: center;
-        padding: var(--baseSpacing);
+        padding: calc(var(--baseSpacingDouble)*2) var(--baseSpacing);
     }
 
     & > div {
@@ -292,7 +293,7 @@
         background: linear-gradient(
                         304deg, rgba(255, 255, 255, 0.4029586835) 0%, rgba(255, 255, 255, 0.106320028) 92%);
                         */
-    box-shadow: 0px 7px 12px #00000012;
+    box-shadow: 0px 25px 20px #00000012;
     border-radius: 200px;
     border: 2px solid var(--darkblue);
     z-index: 12;
@@ -331,8 +332,8 @@
         background: linear-gradient(
                         304deg, rgba(255, 255, 255, 0.4029586835) 0%, rgba(255, 255, 255, 0.106320028) 92%);
                         */
-    opacity: 0.5;
-    box-shadow: 0px 3px 12px #00000012;
+    opacity: 0.8;
+    box-shadow: 0px 10px 12px #00000012;
     border-radius: 200px;
     border: 2px solid var(--darkblue);
     z-index: 12;

@@ -2,7 +2,7 @@
   "product": "Wallet",
   "title": " Your masterkey to the internet",
   "icon": "/images/phone-small.svg",
-  "subtitle": "<h3>One single digital identity that is owned and controlled by the user and managed via an ID wallet as a privacy-preserving master key for the Internet. <br><br>Encrypted. Hypersecure. Standardized. Free.</h3>",
+  "subtitle": "<h3>Say hello to instant passwordless onboarding and increased customer conversion rates. <br>Encrypted. Hypersecure. Standardized. Free.</h3><p>Powered by digital identity credentials</p>",
   "ctaText": "Book a demo",
   "androidMarketImage": "/images/androidAppStoreIcon.svg",
   "iosMarketImage": "/images/iosAppStoreIcon.svg",
@@ -16,7 +16,7 @@
     "list": [
       {
         "title": "DIGITIZED",
-        "image": "/images/touch-finger.png",
+        "image": "/icons/global.svg",
         "description": "<p>Following the W3C Verifiable Credentials standard so they can be used worldwide.</p>"
       },
       {

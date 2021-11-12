@@ -36,7 +36,7 @@ export default function Products(props) {
           <HeadLineSection
             big
             title={productsPage.introProductsSection.title}
-            description={productsPage.introProductsSection.description}
+            subtitle={productsPage.introProductsSection.description}
           />
         </section>
         

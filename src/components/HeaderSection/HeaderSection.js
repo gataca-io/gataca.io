@@ -22,7 +22,7 @@ import HoverMenu from "../HoverMenu/HoverMenu"
 import cx from "classnames"
 
 export default function HeaderSection(props) {
-  const [isTopbarOpaque, setIsTopbarOpaque] = useState(false)
+  const [isTopBarOpaque, setisTopBarOpaque] = useState(false)
   const [hoverList, setHoverList] = useState({
     products: false,
     useCases: false,
@@ -101,7 +101,7 @@ export default function HeaderSection(props) {
       const isShow = currPos.y < -300
       // console.log(isShow)
       // if (isShow !== hideOnScroll) setHideOnScroll(isShow)
-      setIsTopbarOpaque(isShow)
+      setisTopBarOpaque(isShow)
     },
     [],
     false,
@@ -124,12 +124,15 @@ export default function HeaderSection(props) {
         return <HeaderContainer
           render={({ isSideNavExpanded, onClickSideNavExpand }) => (
             <Fragment>
-              <Header aria-label="Open menu" className={headerStyles.header}>
+              <Header aria-label="Open menu" className={cx(
+                headerStyles.header,
+                path && headerStyles.headerBlog
+              )}>
                 
                 <div className={cx(
                   headerStyles.nav,
                   path ? headerStyles.navSolid :
-                    isTopbarOpaque ? headerStyles.navOpaque :
+                    isTopBarOpaque ? headerStyles.navOpaque :
                       null,
                 )}>
                   
@@ -169,6 +172,7 @@ export default function HeaderSection(props) {
                         {
                           el.list && <HoverMenu
                             isBlog={path}
+                            isOpaque={isTopBarOpaque}
                             isVisible={hoverList[el.id]}
                             hoverElement={el.id}
                             changeVisibility={changeHoverVisibility}

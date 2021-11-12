@@ -8,6 +8,8 @@ import insightsMetaData from "../../content/data/insightsData.json"
 import { Button } from "carbon-components-react"
 import PressSection from "../components/PressSection/PressSection"
 import ctaStyles from "../components/CtaSection/cta.module.scss"
+import HeadLineSection from "../components/HeadLineSection/HeadLineSection"
+import productsPage from "../../content/data/productsPage.json"
 
 export default function Blog({location}) {
   return (
@@ -21,14 +23,20 @@ export default function Blog({location}) {
       />
       
       <section className={insightsStyles.introSection}>
-        <div>
+{/*        <div>
         
         <h2>
           {insightsMetaData.introSection.title}
         </h2>
         <p>{insightsMetaData.introSection.description}</p>
         <p>{insightsMetaData.introSection.mission}</p>
-        </div>
+        </div>*/}
+        <HeadLineSection
+          big
+          title={insightsMetaData.introSection.title}
+          subtitle={insightsMetaData.introSection.description}
+          description={insightsMetaData.introSection.mission}
+        />
       </section>
       
       <section className={insightsStyles.ctaSection}>

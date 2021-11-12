@@ -60,6 +60,9 @@
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0px 1px 10px rgba(0,0,0,0.02);
+    @include media-for-phone-only {
+        //margin-bottom: var(--baseSpacing);
+    }
     &:hover{
         box-shadow: 0px 1px 13px rgba(0,0,0,0.05);
     }
