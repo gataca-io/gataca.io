@@ -8,7 +8,7 @@ function renderClients({ data, info }) {
     return node ? !!node.clientsDataSection : null
   })
   const partnersData = data[0].clientsDataSection
-  console.log(partnersData)
+  // console.log(partnersData)
   return (
     <section className={`${clientStyles.base}`}>
       <div className={`bx--grid ${clientStyles.container}`}>

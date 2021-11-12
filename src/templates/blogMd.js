@@ -30,7 +30,7 @@ export default function BlogMd(props) {
   const data = props.data.markdownRemark
 
   function passImageIfExist(image) {
-    console.log(image)
+    // console.log(image)
     return !!image ? image.publicURL : null
   }
 

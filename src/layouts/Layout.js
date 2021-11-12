@@ -8,7 +8,7 @@ import configMetaData from "../../content/data/configMetaData.json"
 export default function Layout(props) {
   
   const removeAnalyticsCookies = () => {
-    console.log("removeAnalitics")
+    // console.log("removeAnalitics")
     document.cookie = "_ga" + "=; Path=/; Domain=.gataca.io; Expires=Thu, 01 Jan 1970 00:00:01 GMT;"
     document.cookie = "_gid" + "=; Path=/; Domain=.gataca.io; Expires=Thu, 01 Jan 1970 00:00:01 GMT;"
     document.cookie = "gataca_io_accepted" + "=; Path=/; Domain=.gataca.io; Expires=Thu, 01 Jan 1970 00:00:01 GMT;"
@@ -17,7 +17,7 @@ export default function Layout(props) {
   }
   
   const deleteAllCookies = () => {
-    console.log("deleteAllCookies")
+    // console.log("deleteAllCookies")
     if (typeof document !== `undefined`) {
       const cookies = document.cookie.split(";")
       for (let i = 0; i < cookies.length; i++) {
@@ -37,10 +37,10 @@ export default function Layout(props) {
   
   useEffect(() => {
     const hubspotStateCookie = getCookie("__hs_cookie_cat_pref")
-    console.log("HUBSPOT COOKIE => ", hubspotStateCookie)
+    // console.log("HUBSPOT COOKIE => ", hubspotStateCookie)
     if (hubspotStateCookie) {
       const cookieStructure = hubspotStateCookie.split(",")
-      console.log("COOKIE STRUCTURE => ", cookieStructure)
+      // console.log("COOKIE STRUCTURE => ", cookieStructure)
       // Analytics
       if (cookieStructure && cookieStructure.length > 0) {
         if (cookieStructure[0] && cookieStructure[0].includes("false")) {
@@ -65,7 +65,7 @@ export default function Layout(props) {
     const _hsp = window._hsp = window._hsp || []
     window.onload = function() {
       const hubspotBanner = document.getElementById("hs-eu-decline-button")
-      console.log(hubspotBanner)
+      // console.log(hubspotBanner)
       if (hubspotBanner) {
         hubspotBanner.onclick = function() {
           deleteAllCookies()

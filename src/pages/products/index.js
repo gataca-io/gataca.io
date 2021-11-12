@@ -19,7 +19,7 @@ import { SizeMe } from "react-sizeme"
 export default function Products(props) {
   // const [productsList, setProductsList] = useState(productsData.products.slice(1))
   // const { infoData } = useSiteMetaData()
-  console.log("PRODUCTS PAGE DATA => ", props.data)
+  // console.log("PRODUCTS PAGE DATA => ", props.data)
   return (
     <Layout>
       {productsPage && <article>

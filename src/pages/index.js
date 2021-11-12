@@ -26,7 +26,7 @@ export default function IndexPage() {
   const [useCasesList, setUseCasesList] = useState(useCasesData.list.slice(1))
   const [productsList, setProductsList] = useState(productsData.products.slice(1))
   
-  console.log(useCasesList)
+  // console.log(useCasesList)
   
   // useEffect(() => {
   //

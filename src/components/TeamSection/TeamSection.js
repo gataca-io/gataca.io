@@ -8,7 +8,7 @@ function RenderTeamSection({ data }) {
     return edge ? !! edge.node.teamDataSection : null
   })
   const teamData = data[0].node.teamDataSection;
-  console.log(teamData);
+  // console.log(teamData);
   
   return(
     <section className={`bx--grid ${ teamSectionStyles.teamContainer }`}>

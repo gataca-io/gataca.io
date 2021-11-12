@@ -42,7 +42,7 @@ const HoverMenu: React.FC<IHoverMenuProps> = (
   }, [])
 
   const linkClick = (url: string | undefined) => {
-    console.log(hoverElement)
+    // console.log(hoverElement)
     const nav = navigate(url ? url : "")
     changeVisibility(hoverElement)
   }

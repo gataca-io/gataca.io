@@ -15,7 +15,7 @@ import Credential from "../../components/Credential/Credential"
 
 export default function Wallet(props) {
   // const { infoData } = useSiteMetaData()
-  console.log("PRODUCTS PAGE DATA => ", props.data)
+  // console.log("PRODUCTS PAGE DATA => ", props.data)
   const walletCtas = (
     <>
       <div className={styles.marketsContainer}>

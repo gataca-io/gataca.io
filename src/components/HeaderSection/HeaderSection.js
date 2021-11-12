@@ -110,7 +110,6 @@ export default function HeaderSection(props) {
   )
   
   useEffect(() => {
-    console.log(props.location)
     return () => {
     }
   }, [props.location])
@@ -118,9 +117,7 @@ export default function HeaderSection(props) {
   return (
     <Location>{
       locationProps => {
-        console.log(locationProps);
         const path = locationProps.location.pathname && locationProps.location.pathname.split('/').includes('blog');
-        console.log(path);
         return <HeaderContainer
           render={({ isSideNavExpanded, onClickSideNavExpand }) => (
             <Fragment>
