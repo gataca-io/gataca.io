@@ -17,7 +17,6 @@ The foundation concepts of SSI were officially brought to life when the Credenti
 
 ## An introduction to DIDs
 
-  
 How do third party service providers prove that the a digital identity holder is truly who he is? What _identifies_ the user?
 
 In order to truly have a decentralized, secure, and trustworthy digital identification system, the internet requires decentralized identifiers (like decentralized URLs) to help users represent who they are in any context without referring back to centralized identity registries such as the government for ID attributes, google for email and password, phone provider for your telephone number, etc.
@@ -120,7 +119,8 @@ Have a specific topic you’d like us to cover? Email us at [hello@gataca.io](ma
 
 ***
 
-##### Sources  
+##### Sources
+
 [https://didproject.azurewebsites.net/docs/verifiable-credentials.html](https://didproject.azurewebsites.net/docs/verifiable-credentials.html "https://didproject.azurewebsites.net/docs/verifiable-credentials.html")
 
 [https://www.w3.org/TR/vc-data-model/#introduction](https://www.w3.org/TR/vc-data-model/#introduction "https://www.w3.org/TR/vc-data-model/#introduction")
