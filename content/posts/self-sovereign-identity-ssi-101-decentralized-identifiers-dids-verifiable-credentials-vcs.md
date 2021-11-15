@@ -80,25 +80,25 @@ Let’s put things into real-life perspective with an academic diploma VC exampl
 * **Sovereign:** VCs allows the user to be sovereign in the sharing of said credential and a receiver to be sovereign in the validation of its authenticity without having to consult the issuer.
 * **Privacy-preserving:** Verifiable credentials, such as National IDs, can be shared partially (only specific claims), to enable minimum disclosure. This means that for a user to prove their age they can send a Verifiable Presentation of their date of birth, rather than the entire ID VC.
 * **Portable:** Users are not limited to using the VC within the issuer’s ecosystem (for ex. a national ID within e-government services). Rather, VCs can be used to prove user’s identity across all systems such as banking, education, real estate, etc. In the aforementioned cases, a digital national ID VC could be used to access your bank (banking), enroll in a masters (education) or purchase a property online (real estate).
-* **Standardized:** VCs follow the W3C Verifiable Credentials standard so they can be used and recognized worldwide. Think of it as the passport standard. The international community agreed to a passport standard format that, regardless who issues it, can be read and accepted globally, by all governments. 
+* **Standardized:** VCs follow the W3C Verifiable Credentials standard so they can be used and recognized worldwide. Think of it as the passport standard. The international community agreed to a passport standard format that, regardless who issues it, can be read and accepted globally, by all governments.
 
 ### Verifiable Presentations
 
 Along with VCs, comes the **Verifiable Presentation (VP)** concept: a pack of claims extracted from one or more Verifiable Credentials from the same or different issuers (If Verifiable Credentials are presented directly, they become Verifiable Presentations). With VPs, “holders can freely choose which information (from underlying VCs) they include in a Verifiable Presentation and thus, share with a relying party” ([European Comission](https://ec.europa.eu/cefdigital/wiki/display/EBSIDOC/Verifiable+Presentation+API+and+Library)). For example, in order to apply to a masters degree using SSI technology,  a user needs to share multiple attributes (or personal information) from multiple issuers. These can include an academic diploma and transcript from their previous educational institution, and a personal ID information from the government. Basically, a Verifiable Presentation is the simple, tamper-proof, and previously-verified version of the tedious attachments you would send to the masters institution to prove your qualifications for the application (ie. copy of passport, official transcript & diploma, copy of CV).
 
-DIDs, VCs, and VPs not only facilitate the process of sending your personal information to verifiers, but drastically reduce the turnaround time for verification. Continuing the example of the academic diploma, once the user send the Verifiable Presentation to the Master’s application, the information sent would be verified instantly by a computer thanks to the already verified, cryptographically-signed Verifiable Credentials which are automatically paired to a DID to prove the sender is the subject of the information. 
+DIDs, VCs, and VPs not only facilitate the process of sending your personal information to verifiers, but drastically reduce the turnaround time for verification. Continuing the example of the academic diploma, once the user send the Verifiable Presentation to the Master’s application, the information sent would be verified instantly by a computer thanks to the already verified, cryptographically-signed Verifiable Credentials which are automatically paired to a DID to prove the sender is the subject of the information.
 
 ## Putting it all together: the Verifiable Credential Flow
 
 To connect the dots the VC flow between stakeholders, we must first depict where each of the 3 main stakeholders in the SSI ecosystem stand: Issuers (issue VCs), Holders (store & share VCs), and Verifiers (verify VCs).
 
-The diagram below illustrates the flow of a Verifiable Credential between SSI stakeholders, also known as the Trust Triangle. 
+The diagram below illustrates the flow of a Verifiable Credential between SSI stakeholders, also known as the Trust Triangle.
 
 ![](/images/vc_trust_triangle.png)
 
 **Example - Opening or Accessing a Bank Account:**
 
-1.  Government (issuer) issues a national ID Verifiable Credential that is sent directly to the user’s digital ID wallet.
+1. Government (issuer) issues a national ID Verifiable Credential that is sent directly to the user’s digital ID wallet.
 2. Once national ID VC is stored in user’s ID wallet, the user then proceeds to send the Bank (verifier) a Verifiable Presentation signed by him/herself that contains the identity information required by the bank for authentication.
 3. Afterwards, the Bank verifies the user & issuer’s cryptographic signatures in the VP and VC respectively, through blockchain.
 4. Following verification, the user is granted access to their account in the bank’s online platform.
@@ -107,7 +107,7 @@ The best part: this all happens in seconds!
 
 ## Conclusion
 
-While  the adoption of DIDs and the Verifiable Credential trust ecosystem is just gaining traction, it has already provided a sneak peek into what a robust, user-centric, and secure internet will look like. Users will no longer have to depend on federated identity providers such as Google or Facebook that threaten user digital identity by having one single point of failure (the internet recently experienced this when [Facebook, Whatsapp, and Instagram shut down for hours, leaving its users in the air](https://www.nytimes.com/2021/10/04/technology/facebook-down.html)), rather they will be able to control and own their digital identity enabling richer and more secure digital experiences. 
+While  the adoption of DIDs and the Verifiable Credential trust ecosystem is just gaining traction, it has already provided a sneak peek into what a robust, user-centric, and secure internet will look like. Users will no longer have to depend on federated identity providers such as Google or Facebook that threaten user digital identity by having one single point of failure (the internet recently experienced this when [Facebook, Whatsapp, and Instagram shut down for hours, leaving its users in the air](https://www.nytimes.com/2021/10/04/technology/facebook-down.html)), rather they will be able to control and own their digital identity enabling richer and more secure digital experiences.
 
 The publication of these two standards in 2018 and 2019 respectively constituted the fundamental technological base for the development of an international ecosystem of technologists, technology companies, policy makers, governments and corporations fostering the concept of SSI worldwide. DIDs have yet to be approved by the W3C as a Web standard, yet when approved, they would be the first new identifier the W3C would approve since the URL.
 
@@ -125,10 +125,10 @@ Have a specific topic you’d like us to cover? Email us at [hello@gataca.io](ma
 
 [https://didproject.azurewebsites.net/docs/verifiable-credentials.html](https://didproject.azurewebsites.net/docs/verifiable-credentials.html "https://didproject.azurewebsites.net/docs/verifiable-credentials.html")
 
-[https://www.w3.org/TR/vc-data-model/#introduction](https://www.w3.org/TR/vc-data-model/#introduction "https://www.w3.org/TR/vc-data-model/#introduction") 
+[https://www.w3.org/TR/vc-data-model/#introduction](https://www.w3.org/TR/vc-data-model/#introduction "https://www.w3.org/TR/vc-data-model/#introduction")
 
-[https://medium.com/metadium/decentralized-identifiers-the-easy-guide-fb96429e8b24](https://medium.com/metadium/decentralized-identifiers-the-easy-guide-fb96429e8b24 "https://medium.com/metadium/decentralized-identifiers-the-easy-guide-fb96429e8b24") 
+[https://medium.com/metadium/decentralized-identifiers-the-easy-guide-fb96429e8b24](https://medium.com/metadium/decentralized-identifiers-the-easy-guide-fb96429e8b24 "https://medium.com/metadium/decentralized-identifiers-the-easy-guide-fb96429e8b24")
 
-[https://ssi-ambassador.medium.com/an-introduction-to-self-sovereign-identity-ssi-916eb42f0490](https://ssi-ambassador.medium.com/an-introduction-to-self-sovereign-identity-ssi-916eb42f0490 "https://ssi-ambassador.medium.com/an-introduction-to-self-sovereign-identity-ssi-916eb42f0490") 
+[https://ssi-ambassador.medium.com/an-introduction-to-self-sovereign-identity-ssi-916eb42f0490](https://ssi-ambassador.medium.com/an-introduction-to-self-sovereign-identity-ssi-916eb42f0490 "https://ssi-ambassador.medium.com/an-introduction-to-self-sovereign-identity-ssi-916eb42f0490")
 
-[https://ec.europa.eu/cefdigital/wiki/display/EBSIDOC/Verifiable+Presentation+API+and+Library](https://ec.europa.eu/cefdigital/wiki/display/EBSIDOC/Verifiable+Presentation+API+and+Library "https://ec.europa.eu/cefdigital/wiki/display/EBSIDOC/Verifiable+Presentation+API+and+Library") 
+[https://ec.europa.eu/cefdigital/wiki/display/EBSIDOC/Verifiable+Presentation+API+and+Library](https://ec.europa.eu/cefdigital/wiki/display/EBSIDOC/Verifiable+Presentation+API+and+Library "https://ec.europa.eu/cefdigital/wiki/display/EBSIDOC/Verifiable+Presentation+API+and+Library")
