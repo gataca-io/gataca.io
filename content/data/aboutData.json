@@ -96,7 +96,7 @@
         "bio": "<p>Backend Developer</p>",
         "links": [
           {
-            "name": "LinkedIn",
+            "name": "linkedin",
             "url": "https://www.linkedin.com/in/daniel-moledo-garcia-655004192/",
             "icon": "/static/images/linkedin_blue.svg"
           }
