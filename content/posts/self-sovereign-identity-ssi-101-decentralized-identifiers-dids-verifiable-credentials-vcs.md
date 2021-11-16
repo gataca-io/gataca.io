@@ -1,5 +1,5 @@
 ---
-date: 2021-11-15T20:18:42Z
+date: 2021-11-15T20:18:42.000+00:00
 meta_data:
   title: ''
   description: ''
@@ -24,7 +24,7 @@ In order to truly have a decentralized, secure, and trustworthy digital identifi
 The first fundamental concept, and W3C standard draft, within the SSI paradigm is the Decentralized Identifier (DID), an identifier for any participant (individual, entity, or thing) in the SSI ecosystem. More specifically, a DID is a globally unique identifier (URI), like a URL (or web address), that:
 
 1. **does not require a centralized authority for their generation or registration as they are registered through distributed ledger technologies (DLT);**
-2. **is unique globally and for all contexts regardless of where they are to be used (as opposed to a username which is only used for the service in question)**
+2. **is unique globally and for all contexts regardless of where they are to be used (as opposed to a username which is only used for the service in question).**
 
 So, what’s behind a DID?
 
