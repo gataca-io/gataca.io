@@ -10,7 +10,7 @@ meta_data:
 title: 'Self-Sovereign Identity (SSI) 101: Decentralized Identifiers (DIDs) & Verifiable
   Credentials (VCs)'
 author: ''
-hero_image: "/static/images/pexels-dom-j-45113.jpg"
+hero_image: "/static/images/vaccination-certificate-european-green-pass-2021-09-04-10-23-45-utc.jpg"
 
 ---
 The foundation concepts of SSI were officially brought to life when the Credentials Community Group was created under the international organization [World Wide Web Consortium (W3C)]() that generates recommendations and standards for the Internet. The group, of which the founder of [GATACA ]()is a part, defined two fundamental standards for the development of a new decentralized identity architecture: Decentralized Identifiers (DIDs) and Verifiable Credentials (VCs). Not only are these the foundation for the self sovereign identity authentication paradigm, but also for a user-centric, secure, and privacy-preserving Web 4.0. VCs and DIDs have been accepted and adopted by governments and business worldwide implementing self-sovereign identity ecosystems. In this article, we provide a quick, easy to understand guide on these two concepts.
