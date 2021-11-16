@@ -31,7 +31,6 @@ const ImageContainer = styled.div<IBigBulletProps>`
   display: flex;
   justify-content: center;
   align-items: center;
-
   img {
     margin: 0;
   }

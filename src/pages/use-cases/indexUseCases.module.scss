@@ -25,11 +25,11 @@
     width: 100%;
     border-bottom: 2px solid var(--darkblue);
 
-        padding: var(--baseSpacing);
+    padding: var(--baseSpacing);
     @include media-for-tablet-portrait-up {
         display: flex;
         justify-content: center;
-        padding: calc(var(--baseSpacingDouble)*2) var(--baseSpacing);
+        padding: calc(var(--baseSpacingDouble) * 2) var(--baseSpacing);
     }
 
     & > div {
@@ -55,21 +55,25 @@
     }
 }
 
-.sectorsBulletStyle{
+.sectorsBulletStyle {
     backdrop-filter: blur(2px);
     background: linear-gradient(
-                35deg,
-                rgba(255, 255, 255, 0.4) 20%,
-                rgba(255, 255, 255, 0.16320028) 100%
+                    35deg,
+                    rgba(255, 255, 255, 0.4) 20%,
+                    rgba(255, 255, 255, 0.16320028) 100%
     );
     box-shadow: 0px 7px 14px #00000012;
     border: 2px solid rgba(255, 255, 255, 0.42);
     padding: var(--baseSpacing);
     border-radius: 30px;
     @include media-for-phone-only {
-        padding: var(--baseSpacingHalf);
+        padding: var(--baseSpacingMicro);
+        &>div:first-child {
+            width:calc(100% -  var(--baseSpacingHalf)*2);
+        }
     }
-    h5{
+
+    h5 {
         padding-bottom: var(--baseSpacing);
     }
 }
@@ -81,6 +85,12 @@
     opacity: 0.2;
     margin-top: var(--baseSpacing);
     margin-bottom: var(--baseSpacingDouble);
+}
+
+.bulletStyle {
+    @include media-for-phone-only {
+        margin: var(--baseSpacingHalf) 0;
+    }
 }
 
 .credentialFloating {

@@ -6,12 +6,16 @@
     padding: var(--baseSpacing) var(--baseSpacing) var(--baseSpacingDouble) var(--baseSpacing);
     position: relative;
 
-    & > div {
+    .subContainer {
         max-width: var(--max-width);
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        @include media-for-phone-only {
+            padding: var(--baseSpacing);
+            width: 100%;
+        }
     }
 }
 
@@ -24,8 +28,6 @@
 }
 
 .bigBulletsContainer {
-    //border-radius: var(--baseSpacing);
-    //border: 1px solid var(--grey);
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -33,21 +35,20 @@
     border-radius: var(--baseSpacing);
     padding: var(--baseSpacing);
     position: relative;
-    /*    &:first-child {
-            &::before {
-                position: absolute;
-                bottom: -30px;
-                left: 50%;
-                height: 2px;
-                width: 50%;
-                background-color: var(--darkblue);
-            }
-        }*/
+
+    @include media-for-phone-only {
+        padding: var(--baseSpacingMicro);
+        width: 100%;
+        text-align: left;
+    }
 
     h3 {
         text-align: center;
         max-width: calc(var(--max-width) - 150px);
         margin: 0 0 var(--baseSpacing) 0;
+        @include media-for-phone-only {
+            text-align: left;
+        }
     }
 
     & > div:first-child {
@@ -103,6 +104,12 @@
         flex-direction: column;
         box-shadow: var(--shadow-big);
         border-radius: 20px;
+        @include media-for-phone-only {
+            text-align: left;
+            p{
+                text-align: justify;
+            }
+        }
     }
 }
 
@@ -192,7 +199,7 @@
     @include media-for-phone-only {
         height: 70px;
         width: 70px;
-        left: 3%;
+        left: 23%;
     }
 }
 
@@ -232,7 +239,8 @@
     backdrop-filter: blur(4px);
     @include media-for-phone-only {
         bottom: 35%;
-        left: 5%;
+        right: 5%;
+        display: none;
     }
 }
 
@@ -267,8 +275,8 @@
     z-index: 12;
     backdrop-filter: blur(4px);
     @include media-for-phone-only {
-        bottom: 35%;
-        left: 5%;
+        top: 2%;
+        left: 7%;
     }
 }
 

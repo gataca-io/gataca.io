@@ -1,3 +1,5 @@
+@import "../../styles/aux/media-mixins";
+
 .bullet {
     padding: var(--baseMargin);
     max-width: 500px;
@@ -6,12 +8,21 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    @include media-for-phone-only {
+        padding: var(--baseMarginHalf);
+        align-items: flex-start;
+    }
 
     .bulletMainContainer {
         text-align: center;
         display: flex;
         align-items: center;
         flex-direction: column;
+        @include media-for-phone-only {
+            text-align: left;
+            align-items: flex-start;
+        }
+
         h4 {
             color: var(--darkblue);
         }
@@ -35,7 +46,8 @@
         margin-bottom: 1rem;
         padding: 3px 3px 3px 0;
         position: relative;
-        img{
+
+        img {
             height: 40px;
         }
     }
