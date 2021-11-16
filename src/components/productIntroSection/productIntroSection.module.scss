@@ -182,6 +182,13 @@
     @include media-for-tablet-portrait-up {
         padding: 1rem 3rem;
     }
+    @include media-for-phone-only{
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
 }
 
 .paragraph {

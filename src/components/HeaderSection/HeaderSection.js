@@ -203,15 +203,17 @@ export default function HeaderSection(props) {
                       target="_blank"
                       rel="noreferrer"
                     >
+                      <p className={headerStyles.cta}>
                       Get in touch
+                      </p>
                     </SideNavLink>
                     
                     <div className={headerStyles.sideNavDivider}/>
                     
-                    <div className={headerStyles.sideNavHeadline}>
-                      Products
-                    </div>
                     
+                    <SideNavLink className={headerStyles.sideNavHeadline} href="/products/certify">
+                      Products
+                    </SideNavLink>
                     <SideNavLink href="/products/certify">
                       Certify
                     </SideNavLink>
@@ -223,18 +225,27 @@ export default function HeaderSection(props) {
                     </SideNavLink>
                     
                     <div className={headerStyles.sideNavDivider}/>
-                    
-                    <SideNavLink href="/use-cases">
+  
+                    <SideNavLink className={headerStyles.sideNavHeadline} href="/use-cases">
                       Sectors
                     </SideNavLink>
-                    
+  
+                    <SideNavLink href="/use-cases/government">
+                      Government
+                    </SideNavLink>
+                    <SideNavLink href="/use-cases/education">
+                      Education
+                    </SideNavLink>
                     <div className={headerStyles.sideNavDivider}/>
                     
                     <SideNavLink href="/blog/">
                       Blog
                     </SideNavLink>
-                    <SideNavLink href="/about/">
+                    <SideNavLink href="/company/about/">
                       About
+                    </SideNavLink>
+                    <SideNavLink href="/company/press/">
+                      Press
                     </SideNavLink>
                   
                   </SideNavItems>

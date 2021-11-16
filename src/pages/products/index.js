@@ -204,6 +204,7 @@ export default function Products(props) {
             {
               productsPage.why.bullets.map(bullet => {
                 return <BulletCenter
+                  bulletContainerStyles={styles.bulletStyle}
                   key={bullet.title}
                   data={bullet}/>
               })

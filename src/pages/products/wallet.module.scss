@@ -118,12 +118,13 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: calc(var(--baseSpacingDouble) * 2) 0;
+    padding: calc(var(--baseSpacingDouble) * 2) var(--baseSpacing);
     box-shadow: var(--shadow);
 
     @include media-for-phone-only {
-        padding: var(--baseSpacingDouble) 0;
+        padding: var(--baseSpacingDouble) var(--baseSpacing);
         flex-direction: column;
+        text-align: left;
         align-items: flex-start;
     }
 
@@ -135,10 +136,19 @@
         width: 100%;
         justify-content: center;
         @include media-for-phone-only {
-            text-align: center;
+            text-align: left;
+            display: block;
+            justify-content: flex-start
         }
     }
 
+
+}
+
+.bulletStyle {
+    @include media-for-phone-only {
+        margin: var(--baseSpacingHalf) 0;
+    }
 }
 
 .mainImagesContainer {
@@ -263,6 +273,7 @@
 
     .chipsContainer {
         display: flex;
+
         .chip {
             position: relative;
             width: 250px;
@@ -273,7 +284,8 @@
             display: flex;
             text-align: left;
             margin: 0 var(--baseSpacingMicro);
-            &>div {
+
+            & > div {
                 width: 100% !important;
                 height: 100% !important;
             }

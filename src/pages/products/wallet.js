@@ -74,7 +74,9 @@ export default function Wallet(props) {
           <div className={styles.bulletsContainer}>
             {wallet.bullets.list.map(bullet => {
               return (
-                <BulletCenter data={bullet}/>
+                <BulletCenter
+                  bulletContainerStyles={styles.bulletStyle}
+                  data={bullet}/>
               )
             })}
           </div>

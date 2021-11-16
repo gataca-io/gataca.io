@@ -206,6 +206,12 @@
         background-color: var(--bg-grey);
         margin: var(--baseSpacingHalf)
     }
+    .cta {
+        border: 1px solid var(--darkblue);
+        color: var(--darkblue);
+        border-radius: 5px;
+        padding: 3px 10px;
+    }
 
     span {
         font-family: "Work Sans", "Helvetica Neue", Helvetica, sans-serif;

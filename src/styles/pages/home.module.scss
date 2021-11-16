@@ -9,18 +9,26 @@
 
 .productsSectionStyle {
     text-align: center;
-    padding: var(--baseSpacingDouble) 0;
+    display: flex;
+    flex-direction: column;
+    padding: var(--baseSpacing);
     filter: drop-shadow(0 0px 0px #333);
     z-index: 10;
+    @include media-for-phone-only {
+        text-align: left;
+    }
 
     .title {
-        padding: var(--baseSpacingDouble) var(--baseSpacing);
+        @include media-for-phone-only {
+            text-align: left;
+        }
     }
 
     @include media-for-tablet-portrait-up {
         display: flex;
         align-items: center;
         flex-direction: column;
+        padding: var(--baseSpacingDouble);
     }
 
 }
@@ -31,6 +39,9 @@
     width: 25%;
     opacity: 0.1;
     margin-bottom: var(--baseSpacing);
+    @include media-for-phone-only {
+        display: none;
+    }
 }
 
 .sectionPress {
@@ -43,18 +54,10 @@
     justify-content: space-between;
     margin: var(--baseSpacing);
     @include media-for-phone-only {
-        margin: var(--baseSpacingHalf);
+        margin: var(--baseSpacingHalf) 0;
     }
 
     & a:hover {
-        /*        backdrop-filter: blur(5px);
-                background: linear-gradient(
-                                180deg,
-                                rgba(255, 255, 255, 0.9) 20%,
-                                rgba(255, 255, 255, 0.56320028) 100%
-                );
-                box-shadow: 0px 7px 14px #00000012;
-                border: 1px solid var(--darkblue);*/
         text-decoration: underline;
     }
 
@@ -91,6 +94,11 @@
     @include media-for-tablet-portrait-up {
         max-width: var(--max-width-xl);
     }
+    @include media-for-phone-only {
+        justify-content: flex-start;
+        margin: var(--baseSpacingHalf) 0;
+    }
+
 }
 
 .ctaButton {
@@ -100,6 +108,13 @@
     border-radius: 10px;
     color: var(--white);
     margin: var(--baseSpacing);
+
+    @include media-for-phone-only {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: calc(100% - var(--baseSpacing)*2);
+    }
 
     &:hover {
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.18);
@@ -116,7 +131,8 @@
     background-color: var(--white);
     border-bottom: 2px solid rgba(183, 183, 183, 0.33);
     box-shadow: 0px 6px 7px rgba(0, 0, 0, 0.16);
-    z-index:10;
+    z-index: 10;
+
     & > div {
         padding: 0 var(--baseSpacing);
         max-width: var(--max-width);

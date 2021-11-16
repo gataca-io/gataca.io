@@ -46,7 +46,6 @@ const Education: React.FC<IEducationProps> = ({}) => {
         />
       </section>
 
-
       <section className={styles.introSection}>
         <div>
           <h2>{data.theResult.title}</h2>
@@ -61,7 +60,7 @@ const Education: React.FC<IEducationProps> = ({}) => {
       <section className={styles.sectionStyle}>
         <div className={styles.circle6}/>
         <div className={styles.circle7}/>
-        <div>
+        <div className={styles.subContainer}>
           {
             data.bigBulletsSection.bullets.map((bullet, i) => {
               return <BigBullet
