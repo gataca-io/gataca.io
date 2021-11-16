@@ -50,7 +50,7 @@ export const BuildHelmet: React.FC<IHelmet> = (props) => {
       <meta property="og:type" content="article"/>
       <meta property="og:title" content={title}/>
       <meta property="og:description" content={description}/>
-      <meta property="og:image" content={facebookImg}/>
+      <meta property="og:image" content={'https://gataca.io' + facebookImg}/>
       {/*<meta property="og:image:width"              content="pixels" /> CHANGE AMMOUT*/}
       {/*<meta property="og:image:height"              content="pixels" /> CHANGE AMMOUT*/}
       {/*<meta property="og:image:type"              content="image/jpeg | image/gif | image/png" /> CHANGE AMMOUT*/}
@@ -59,7 +59,7 @@ export const BuildHelmet: React.FC<IHelmet> = (props) => {
       <meta name="twitter:card" content="summary"/>
       <meta name="twitter:title" content={title}/>
       <meta name="twitter:description" content={description}/>
-      <meta name="twitter:image" content={twitterImg}/>
+      <meta name="twitter:image" content={'https://gataca.io' + twitterImg}/>
       <meta name="twitter:site" content={url}/>
       <meta name="twitter:creator" content={twitterHandler}/>
 
