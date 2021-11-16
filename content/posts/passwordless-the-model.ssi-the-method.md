@@ -1,8 +1,9 @@
 ---
 date: 2021-10-25T16:38:37.000+00:00
 meta_data:
-  title: ''
-  description: ''
+  title: Passwordless, the model. SSI, the method.
+  description: The average user has around 100 passwords, according to a study conducted
+    by NordPass in 2020 , an ...
   rrss_images:
     twitter: "/static/images/password-less-authentication-sign-in-blog.jpg"
     facebook_and_whatsapp: "/static/images/password-less-authentication-sign-in-blog.jpg"
