@@ -1,4 +1,5 @@
 .blog {
+  padding-top:  calc(var(--topbar-height) + var(baseSpacing));
   padding-bottom: var(--baseSpacing);
   h1 {
     margin-bottom: 0.7rem;

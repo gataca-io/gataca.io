@@ -10,7 +10,7 @@ meta_data:
 title: 'Self-Sovereign Identity (SSI) 101: Decentralized Identifiers (DIDs) & Verifiable
   Credentials (VCs)'
 author: ''
-hero_image: "/images/pexels-dom-j-45113.jpg"
+hero_image: "/static/images/pexels-dom-j-45113.jpg"
 
 ---
 The foundation concepts of SSI were officially brought to life when the Credentials Community Group was created under the international organization [World Wide Web Consortium (W3C)]() that generates recommendations and standards for the Internet. The group, of which the founder of [GATACA ]()is a part, defined two fundamental standards for the development of a new decentralized identity architecture: Decentralized Identifiers (DIDs) and Verifiable Credentials (VCs). Not only are these the foundation for the self sovereign identity authentication paradigm, but also for a user-centric, secure, and privacy-preserving Web 4.0. VCs and DIDs have been accepted and adopted by governments and business worldwide implementing self-sovereign identity ecosystems. In this article, we provide a quick, easy to understand guide on these two concepts.
@@ -34,7 +34,7 @@ In other words, think of a user DID as the “username” that is tied cryptogra
 
 Now onto technicalities. What does a DID look like? The DID data model is composed of three parts: the Scheme, DID method, and DID Method-specific Identifier.
 
-![](/images/did_example.png)
+![](/did_example.png)
 
 * **DID Scheme:** All DIDs begin with “_did:”_
 * **DID method**: This field specifies how to deal with this DID. When reading this part of the DID, computers understand where to go fetch the DID. For example, GATACA’s DID method is denominated `"gatc"`
@@ -42,7 +42,7 @@ Now onto technicalities. What does a DID look like? The DID data model is compos
 
 The diagram below exemplifies how a DID interacts with DID documents (which stores public keys) and DLTs.
 
-![](/images/dids_flow.png)
+![](/dids_flow.png)
 
 (For full documentation on GATACA’s DID method, click [here](https://github.com/gataca-io/gataca-did-method "https://github.com/gataca-io/gataca-did-method").)
 
@@ -66,7 +66,7 @@ There are 3 components in a VC:
 2. **Claims**: A statements about a subject (individual, legal entity, or thing).
 3. **Proofs**: cryptographic signatures tied to private keys that prove the user sharing the VC is the subject of the information.
 
-![](/images/vcs_datamodel.png)
+![](/vcs_datamodel.png)
 
 Let’s put things into real-life perspective with an academic diploma VC example.
 
@@ -94,7 +94,7 @@ To connect the dots the VC flow between stakeholders, we must first depict where
 
 The diagram below illustrates the flow of a Verifiable Credential between SSI stakeholders, also known as the Trust Triangle.
 
-![](/images/vc_trust_triangle.png)
+![](/vc_trust_triangle.png)
 
 **Example - Opening or Accessing a Bank Account:**
 
