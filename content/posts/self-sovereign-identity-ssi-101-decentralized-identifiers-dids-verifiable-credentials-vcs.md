@@ -1,8 +1,9 @@
 ---
 date: 2021-11-15T20:18:42.000+00:00
 meta_data:
-  title: ''
-  description: ''
+  title: 'Self-Sovereign Identity (SSI) 101: Decentralized Identifiers (DIDs) & Verifiable
+Credentials (VCs)'
+  description: 'The foundation concepts of SSI were officially brought to life when the Credentials Community Group was created under the international organization...'
   rrss_images:
     twitter: "/static/images/vaccination-certificate-european-green-pass-2021-09-04-10-23-45-utc.jpg"
     facebook_and_whatsapp: "/static/images/vaccination-certificate-european-green-pass-2021-09-04-10-23-45-utc.jpg"
