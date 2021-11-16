@@ -89,8 +89,9 @@
     justify-content: center;
     padding: var(--baseSpacingDouble) 0;
     max-width: var(--max-width);
+
     @include media-for-phone-only {
-        padding: 0 var(--baseSpacingHalf);
+        padding: var(--baseSpacingDouble) var(--baseSpacingHalf) 0 var(--baseSpacingHalf);
     }
     & > div {
         max-width: var(--max-width-l);
@@ -216,6 +217,7 @@
         padding: 1rem;
         @include media-for-phone-only {
             max-height: 250px;
+            width: 100%;
         }
     }
 }
@@ -243,9 +245,6 @@
         margin-right: var(--baseSpacing);
         min-width: 200px;
         width: 20vw;
-        //display: flex;
-        //justify-content: space-between;
-        //flex-direction: column;
         &:last-child {
             margin-right: 0;
         }

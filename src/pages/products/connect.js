@@ -15,9 +15,6 @@ export default function Connect(props) {
     <Layout>
       <article className={styles.base}>
         
-        {/*        <ProductHeadline
-          text={connect.product}
-        />*/}
         <section className={styles.introSectionContainer}>
           <ProductIntroSection
             subtitle={connect.subtitle}
@@ -56,11 +53,8 @@ export default function Connect(props) {
           </div>
         </section>
         
-        {/*        <TextHightlightSection
-          backColor
-          title={connect.textHighlight.title}/>*/}
-        
         <section className={styles.growthSection}>
+        
         <div className={styles.line}/>
           <ExplainedInfographics
             title={connect.explainSection.title}

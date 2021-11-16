@@ -12,8 +12,6 @@ import BulletCenter from "../../components/BulletCenter/BulletCenter"
 import CtaSection from "../../components/CtaSection/CtaSection"
 import configMetaData from "../../../content/data/configMetaData.json"
 import Blurrycircle from "../../components/blurryCircle/blurryCircle"
-import GreatElementsSection from "../../components/GreatElementsSection/GreatElementsSection"
-import homeData from "../../../content/data/homeData.json"
 
 type IUseCasesProps = {}
 
@@ -23,7 +21,6 @@ const UseCases: React.FC<IUseCasesProps> = ({}) => {
   useEffect(() => {
 
   }, [])
-
 
   return (
     <Layout>
@@ -54,6 +51,7 @@ const UseCases: React.FC<IUseCasesProps> = ({}) => {
           {
             useCasesPageData.allCases.bullets.map(bullet => {
               return <BulletCenter
+                bulletContainerStyles={styles.bulletStyle}
                 key={bullet.title}
                 data={bullet}/>
             })
@@ -91,7 +89,6 @@ const UseCases: React.FC<IUseCasesProps> = ({}) => {
           }
         </div>
       </section>
-
 
 
       <CtaSection

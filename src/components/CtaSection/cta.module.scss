@@ -77,7 +77,13 @@
     height: 52px;
     width: 320px;
     padding: 0;
+    margin: 0;
+    color: var(--white);
+    border: 2px solid var(--darkblue);
     &:hover {
+        color: var(--darkblue);
+        background-color: var(--bg-grey);
+        border: 2px solid var(--darkblue);
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.18);
     }
     @include media-for-phone-only {

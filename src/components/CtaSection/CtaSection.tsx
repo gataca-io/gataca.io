@@ -35,13 +35,6 @@ const CtaSection: React.FC<CtaSectionProps> = (props) => {
           >
             <Button
               className={ctaStyles.endCtaButton}
-              disabled={false}
-              iconDescription="Button icon"
-              kind="primary"
-              renderIcon={undefined}
-              size="default"
-              tabIndex={0}
-              type="button"
             > {ctaText}</Button>
           </Link>
         }

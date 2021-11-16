@@ -32,7 +32,7 @@
       {
         "image": "/images/building.svg",
         "title": "ISSUERS",
-        "description": "<p>One-click onboarding\nPortable and reusable\nUp-to-date\nGlobally interoperable and scalable\n</p>"
+        "description": "<p>One-click onboarding\nPortable and reusable\nUp-to-date\nGlobally interoperable and scalable</p>"
       },
       {
         "image": "/images/people.svg",
@@ -85,7 +85,7 @@
       {
         "image": "/icons/blockslock.svg",
         "title": "LEDGER-AGNOSTIC",
-        "description": "<p>We offer a blockchain-agnostic platform that enables you to use your own network and interconnect with other blockchain network providers</p>"
+        "description": "<p>We offer a blockchain-agnostic platform that enables you to use your own network and interconnect with other blockchain network providers.</p>"
       },
       {
         "image": "/icons/briefcase.svg",
@@ -105,12 +105,12 @@
       {
         "image": "/icons/secure.svg",
         "title": "PRIVACY BY DESING",
-        "description": "<p>We offer a blockchain-agnostic platform that enables you to use your own network and interconnect with other blockchain network providers</p>"
+        "description": "<p>We offer a blockchain-agnostic platform that enables you to use your own network and interconnect with other blockchain network providers.</p>"
       },
       {
         "image": "/icons/lock.svg",
         "title": "SECURITY BY DESIGN",
-        "description": "<p>We offer a blockchain-agnostic platform that enables you to use your own network and interconnect with other blockchain network providers</p>"
+        "description": "<p>We offer a blockchain-agnostic platform that enables you to use your own network and interconnect with other blockchain network providers.</p>"
       }
     ]
   }

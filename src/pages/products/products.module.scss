@@ -182,7 +182,8 @@
         width: 50%;
         text-align: left;
         position: relative;
-        h3{
+
+        h3 {
             padding-left: var(--baseSpacing);
             position: absolute;
             top: -0px;
@@ -197,6 +198,7 @@
                 position: relative;
             }
         }
+
         @include media-for-phone-only {
             padding: var(--baseSpacingHalf) var(--baseSpacing);
             width: 100%;
@@ -227,30 +229,33 @@
         display: flex;
         flex-wrap: wrap;
 
-        & > div {
-            width: calc(33% - var(--baseSpacing));
-            //background-color: var(--white);
-            background: linear-gradient(
-                            45deg,
-                            rgba(255, 255, 255, 0.90) 0%,
-                            rgba(255, 255, 255, 0.2632002801120453) 60%
-            );
+    }
+}
 
-            //box-shadow: 0px 15px 20px #
-            border: 2px solid #ffffff6b;
-            backdrop-filter: blur(1px);
-            margin: var(--baseSpacingHalf);
-            box-shadow: var(--shadow);
-            border-radius: 40px;
-            display: flex;
-            padding-top: var(--baseSpacingDouble);
-            @include media-for-phone-only {
-                justify-content: center;
-                align-items: center;
-                margin: 0 var(--baseSpacing) var(--baseSpacing) var(--baseSpacing);
-                width: 100%;
-            }
-        }
+.bulletStyle {
+    width: calc(33% - var(--baseSpacing));
+    //background-color: var(--white);
+    background: linear-gradient(
+                    45deg,
+                    rgba(255, 255, 255, 0.90) 0%,
+                    rgba(255, 255, 255, 0.2632002801120453) 60%
+    );
+
+    //box-shadow: 0px 15px 20px #
+    border: 2px solid #ffffff6b;
+    backdrop-filter: blur(1px);
+    margin: var(--baseSpacingHalf);
+    box-shadow: var(--shadow);
+    border-radius: 40px;
+    display: flex;
+    padding-top: var(--baseSpacingDouble);
+
+    @include media-for-phone-only {
+        padding: calc(var(--baseSpacing)*1.5) var(--baseSpacing) var(--baseSpacingHalf) var(--baseSpacing);
+        justify-content: center;
+        align-items: center;
+        margin: 0 var(--baseSpacing) var(--baseSpacing) var(--baseSpacing);
+        width: 100%;
     }
 }
 
@@ -280,6 +285,9 @@
         z-index: 2;
         justify-content: center;
         display: flex;
+        @include media-for-phone-only {
+            height: 70vh;
+        }
 
         img {
             &:first-child, &:last-child {
@@ -288,6 +296,11 @@
 
             height: 500px;
             margin: 0 var(--baseSpacing);
+            @include media-for-phone-only {
+                height: 100%;
+                max-height: 70vh;
+                margin: 0 var(--baseSpacingMicro);
+            }
         }
     }
 }
