@@ -2,8 +2,9 @@
 date: 2021-11-15T20:18:42.000+00:00
 meta_data:
   title: 'Self-Sovereign Identity (SSI) 101: Decentralized Identifiers (DIDs) & Verifiable
-Credentials (VCs)'
-  description: 'The foundation concepts of SSI were officially brought to life when the Credentials Community Group was created under the international organization...'
+    Credentials (VCs)'
+  description: The foundation concepts of SSI were officially brought to life when
+    the Credentials Community Group was created under the international organization...
   rrss_images:
     twitter: "/static/images/vaccination-certificate-european-green-pass-2021-09-04-10-23-45-utc.jpg"
     facebook_and_whatsapp: "/static/images/vaccination-certificate-european-green-pass-2021-09-04-10-23-45-utc.jpg"
@@ -14,7 +15,9 @@ author: ''
 hero_image: "/static/images/vaccination-certificate-european-green-pass-2021-09-04-10-23-45-utc.jpg"
 
 ---
-The foundation concepts of SSI were officially brought to life when the Credentials Community Group was created under the international organization [World Wide Web Consortium (W3C)]() that generates recommendations and standards for the Internet. The group, of which the founder of [GATACA ]()is a part, defined two fundamental standards for the development of a new decentralized identity architecture: Decentralized Identifiers (DIDs) and Verifiable Credentials (VCs). Not only are these the foundation for the self sovereign identity authentication paradigm, but also for a user-centric, secure, and privacy-preserving Web 4.0. VCs and DIDs have been accepted and adopted by governments and business worldwide implementing self-sovereign identity ecosystems. In this article, we provide a quick, easy to understand guide on these two concepts.
+The foundation concepts of SSI were officially brought to life when the Credentials Community Group was created under the international organization [World Wide Web Consortium (W3C)]() that generates recommendations and standards for the Internet. The group, of which the founder of [GATACA ]()is a part, defined two fundamental standards for the development of a new decentralized identity architecture: Decentralized Identifiers (DIDs) and Verifiable Credentials (VCs). Not only are these the foundation for the self sovereign identity authentication paradigm, but also for a user-centric, secure, and privacy-preserving Web 4.0. VCs and DIDs have been accepted and adopted by governments and business worldwide implementing self-sovereign identity ecosystems.
+
+In this article, we provide a quick, easy to understand guide on these two concepts.
 
 ## An introduction to DIDs
 
@@ -55,7 +58,7 @@ We use identity credentials daily to access local citizen services, prove our qu
 
 Luckily, the answer is no! Thanks to Blockchain and Distributed Ledger technologies identity verification innovation has finally been brought up to par with our technology-driven world. Introducing: Verifiable Credentials.
 
-Verifiable credentials (or VCs) are a standard format for the digital representation of credentials (documents that collect attributes about a subject) that are cryptographically secure, verifiable through machines, and that guarantee privacy by enabling methods such as minimum disclosure. VCs can be used to describe identity credentials, such as a an academic diploma, driver’s licenses, passports, insurance cards, vaccination records (and so much more), and they contain metadata properties that reference the holder (or user), the issuer, associated DIDs, the issue date, and the expiration date.
+**Verifiable credentials (or VCs) are a standard format for the digital representation of credentials (documents that collect attributes about a subject) that are cryptographically secure, verifiable through machines, and that guarantee privacy by enabling methods such as minimum disclosure.** VCs can be used to describe identity credentials, such as a an academic diploma, driver’s licenses, passports, insurance cards, vaccination records (and so much more), and they contain metadata properties that reference the holder (or user), the issuer, associated DIDs, the issue date, and the expiration date.
 
 With VCs, credential holders (that’s you!) can easily manage and share their identity credentials from the comfort of a digital ID wallet and use them to instantly prove their identity and access digital services (ex. opening a bank account online or applying for a masters) or in-person businesses (ex. accessing university labs/buildings or retailer loyalty programs). Similarly, organizations (ie. banks, government agencies, universities, etc) are able to streamline onboarding & authentication processes and automatically verify user identities without having to manually consult issuing entities (ie. governments, universities, etc) to prove its legal validity.
 
@@ -85,9 +88,9 @@ Let’s put things into real-life perspective with an academic diploma VC exampl
 
 ### Verifiable Presentations
 
-Along with VCs, comes the **Verifiable Presentation (VP)** concept: a pack of claims extracted from one or more Verifiable Credentials from the same or different issuers (If Verifiable Credentials are presented directly, they become Verifiable Presentations). With VPs, “holders can freely choose which information (from underlying VCs) they include in a Verifiable Presentation and thus, share with a relying party” ([European Comission](https://ec.europa.eu/cefdigital/wiki/display/EBSIDOC/Verifiable+Presentation+API+and+Library)). For example, in order to apply to a masters degree using SSI technology,  a user needs to share multiple attributes (or personal information) from multiple issuers. These can include an academic diploma and transcript from their previous educational institution, and a personal ID information from the government. Basically, a Verifiable Presentation is the simple, tamper-proof, and previously-verified version of the tedious attachments you would send to the masters institution to prove your qualifications for the application (ie. copy of passport, official transcript & diploma, copy of CV).
+Along with VCs, comes the **Verifiable Presentation (VP)** concept: **a pack of claims extracted from one or more Verifiable Credentials from the same or different issuers** (If Verifiable Credentials are presented directly, they become Verifiable Presentations). With VPs, “holders can freely choose which information (from underlying VCs) they include in a Verifiable Presentation and thus, share with a relying party” ([European Comission](https://ec.europa.eu/cefdigital/wiki/display/EBSIDOC/Verifiable+Presentation+API+and+Library)). For example, in order to apply to a masters degree using SSI technology,  a user needs to share multiple attributes (or personal information) from multiple issuers. These can include an academic diploma and transcript from their previous educational institution, and a personal ID information from the government. Basically, a Verifiable Presentation is the simple, tamper-proof, and previously-verified version of the tedious attachments you would send to the masters institution to prove your qualifications for the application (ie. copy of passport, official transcript & diploma, copy of CV).
 
-DIDs, VCs, and VPs not only facilitate the process of sending your personal information to verifiers, but drastically reduce the turnaround time for verification. Continuing the example of the academic diploma, once the user send the Verifiable Presentation to the Master’s application, the information sent would be verified instantly by a computer thanks to the already verified, cryptographically-signed Verifiable Credentials which are automatically paired to a DID to prove the sender is the subject of the information.
+**DIDs, VCs, and VPs not only facilitate the process of sending your personal information to verifiers, but drastically reduce the turnaround time for verification.** Continuing the example of the academic diploma, once the user send the Verifiable Presentation to the Master’s application, the information sent would be verified instantly by a computer thanks to the already verified, cryptographically-signed Verifiable Credentials which are automatically paired to a DID to prove the sender is the subject of the information.
 
 ## Putting it all together: the Verifiable Credential Flow
 
