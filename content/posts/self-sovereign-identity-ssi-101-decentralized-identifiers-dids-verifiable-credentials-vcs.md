@@ -9,8 +9,8 @@ meta_data:
     twitter: "/static/images/vaccination-certificate-european-green-pass-2021-09-04-10-23-45-utc.jpg"
     facebook_and_whatsapp: "/static/images/vaccination-certificate-european-green-pass-2021-09-04-10-23-45-utc.jpg"
     linkedin: "/static/images/vaccination-certificate-european-green-pass-2021-09-04-10-23-45-utc.jpg"
-title: 'Self-Sovereign Identity (SSI) 101: Decentralized Identifiers (DIDs) & Verifiable
-  Credentials (VCs)'
+title: 'SSI Essentials: What are Decentralized Identifiers (DIDs) & Verifiable Credentials
+  (VCs)?'
 author: ''
 hero_image: "/static/images/vaccination-certificate-european-green-pass-2021-09-04-10-23-45-utc.jpg"
 
