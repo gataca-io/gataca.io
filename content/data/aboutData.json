@@ -168,6 +168,11 @@
     "description": "<p>The GATACA team has closed contracts with key European public administrations and private organizations. A few references below </p>",
     "clients": [
       {
+        "title": "Idemia",
+        "photo": "/static/images/idemia_horizontal-baseline_cmyk_violet88.png",
+        "link": "https://www.idemia.com/"
+      },
+      {
         "title": "Early Adopters Program - Spain",
         "photo": "../images/European_Commission.svg",
         "link": "https://ec.europa.eu/cefdigital/wiki/display/CEFDIGITAL/Early+Adopters+Programme"
