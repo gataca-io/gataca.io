@@ -23,6 +23,7 @@ export default function Connect(props) {
             image={connect.mainImage}
             product={connect.product}
             title={connect.title}
+            imageContStyles={styles.imageContainer}
             description={connect.description}
           />
         </section>

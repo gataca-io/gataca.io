@@ -28,7 +28,6 @@ function renderClients({ data, info }) {
                   key={el.title}
                 >
                   <div>
-                    {/*{console.log("image", el.image)}*/}
                     <img src={el.photo.publicURL} alt={el.title}/>
                   </div>
                   <p>{el.title}</p>

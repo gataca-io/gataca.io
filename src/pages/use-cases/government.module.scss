@@ -167,7 +167,10 @@
     height: 250px;
     position: relative;
     margin: 0 var(--baseSpacing);
-
+    @include media-for-phone-only() {
+        height: 100px;
+        margin-top: 50px;
+    }
     & > div {
         position: absolute;
         top: -120px;
@@ -184,6 +187,12 @@
         flex-direction: column;
         box-shadow: var(--shadow-big);
         border-radius: 20px;
+
+        p{
+            @include media-for-phone-only() {
+                display: none;
+            }
+        }
     }
 }
 
