@@ -20,9 +20,30 @@
 
 .bigBulletContainer {
     margin: var(--baseSpacing) 0;
-        //padding: var(--baseSpacingHalf);
-    @include media-for-tablet-portrait-up {
+    //padding: var(--baseSpacingHalf);
         display: flex;
+    @include media-for-tablet-portrait-up {
+        margin: var(--baseSpacingMicro) 0;
+    }
+    @include media-for-phone-only() {
+        width: 100%;
+        margin: var(--baseSpacingMicro) 0;
+    }
+
+    & > div {
+        @include media-for-phone-only() {
+            margin: var(--baseSpacingMicro) 0;
+        }
+    }
+
+    & > div:first-child {
+        display: flex;
+        @include media-for-phone-only() {
+            width: 60%;
+            img {
+                width: 70%;
+            }
+        }
     }
 }
 

@@ -35,7 +35,7 @@ function AwardsSection({ data }) {
               <a href={award.link} target="_blank" rel="noreferrer">
                 <div className={aboutStyles.award}>
                   <div className={aboutStyles.photoContainer}>
-                    <img src={award.photo} alt={award.title}/>
+                    <img src={award.photo.publicURL} alt={award.title}/>
                   </div>
                   <h3>
                     {award.title}

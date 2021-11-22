@@ -13,7 +13,6 @@
         align-items: center;
         flex-direction: column;
         @include media-for-phone-only {
-            padding: var(--baseSpacing);
             width: 100%;
         }
     }
@@ -48,6 +47,14 @@
         margin: 0 0 var(--baseSpacing) 0;
         @include media-for-phone-only {
             text-align: left;
+            margin: 0;
+            padding-right: 0 !important;
+        }
+    }
+
+    & > div {
+        @include media-for-phone-only {
+            margin: var(--baseSpacingMicro);
         }
     }
 
@@ -63,6 +70,9 @@
         display: flex;
         flex-direction: column;
         margin: var(--baseSpacing) var(--baseSpacing) 0 var(--baseSpacing);
+        @include media-for-phone-only {
+            margin: var(--baseSpacingHalf);
+        }
     }
 }
 
@@ -85,7 +95,10 @@
     height: 250px;
     position: relative;
     margin: 0 var(--baseSpacing);
-
+    @include media-for-phone-only() {
+        height: 100px;
+        margin-top: 50px;
+    }
     & > div {
         position: absolute;
         top: -120px;
@@ -107,7 +120,8 @@
         @include media-for-phone-only {
             text-align: left;
             p{
-                text-align: justify;
+                display: none;
+
             }
         }
     }

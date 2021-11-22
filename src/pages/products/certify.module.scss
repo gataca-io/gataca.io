@@ -55,6 +55,17 @@
     }
 }
 
+.imageContainer{
+    @include media-for-phone-only() {
+        display: flex;
+        align-items: flex-start;
+        img {
+            height: auto;
+            width: 100%;
+        }
+    }
+}
+
 .stepsContainer {
     display: flex;
     justify-content: center;
