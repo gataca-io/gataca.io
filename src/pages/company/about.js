@@ -6,12 +6,9 @@ import aboutData from "../../../content/data/aboutData.json"
 import TeamSection from "../../components/TeamSection/TeamSection"
 import { BuildHelmet } from "../../components/auxiliary/HelmetBuilder"
 import styles from "../use-cases/education.module.scss"
-import data from "../../../content/data/education.json"
-import BigBullet from "../../components/BigBullet/BigBullet"
 import Clients from "../../components/ClientsSection/Clients"
 import HeadLineSection from "../../components/HeadLineSection/HeadLineSection"
 import GreatElementsSection from "../../components/GreatElementsSection/GreatElementsSection"
-import homeData from "../../../content/data/homeData.json"
 
 function IntroSection({ data }) {
   return (
@@ -35,7 +32,7 @@ function AwardsSection({ data }) {
               <a href={award.link} target="_blank" rel="noreferrer">
                 <div className={aboutStyles.award}>
                   <div className={aboutStyles.photoContainer}>
-                    <img src={award.photo.publicURL} alt={award.title}/>
+                    <img src={award.photo} alt={award.title}/>
                   </div>
                   <h3>
                     {award.title}
