@@ -46,6 +46,7 @@ function AwardsSection({ data }) {
         </div>
       </div>
     </section>
+    
   )
 }
 
