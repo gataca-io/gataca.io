@@ -71,6 +71,7 @@
         color: var(--grey);
         font-size: 0.95rem;
         @include media-for-phone-only {
+            display: none;
         }
     }
 

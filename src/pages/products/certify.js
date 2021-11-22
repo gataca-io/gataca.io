@@ -28,6 +28,7 @@ export default function Certify(props) {
             image={certify.mainImage}
             product={certify.product}
             title={certify.title}
+            imageContStyles={styles.imageContainer}
             description={certify.description}
           />
         </section>

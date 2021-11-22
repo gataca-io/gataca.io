@@ -50,7 +50,7 @@ const Government: React.FC<IGovernmentProps> = ({}) => {
       <section className={styles.introSection}>
         <div>
           <h2>{data.theResult.title}</h2>
-          <p dangerouslySetInnerHTML={{ __html: data.theResult.description }}/>
+          <div dangerouslySetInnerHTML={{ __html: data.theResult.description }}/>
         </div>
       </section>
 
