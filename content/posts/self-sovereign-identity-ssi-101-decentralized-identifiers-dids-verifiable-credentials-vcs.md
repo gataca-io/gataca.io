@@ -21,7 +21,7 @@ In this article, we provide a quick, easy to understand guide on these two conce
 
 ## An introduction to DIDs
 
-How do third party service providers prove that the a digital identity holder is truly who he is? What _identifies_ the user?
+How do third party service providers prove that the digital identity holder is truly who he is? What _identifies_ the user?
 
 In order to truly have a decentralized, secure, and trustworthy digital identification system, the internet requires decentralized identifiers (like decentralized URLs) to help users represent who they are in any context without referring back to centralized identity registries such as the government for ID attributes, google for email and password, phone provider for your telephone number, etc.
 
