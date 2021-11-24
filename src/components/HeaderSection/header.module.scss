@@ -68,6 +68,15 @@
         border-right: 1px solid var(--darkblue);
     }
 
+    .navMobileOpen{
+        opacity: 1 !important;
+        width: 100vw;
+        height: calc(var(--topbar-height-mobile) + 1px);
+        border-bottom-left-radius: 0px !important;
+        border-bottom-right-radius: 0px !important;
+        background-color: white !important;
+        box-shadow: none !important;
+    }
 
     .navOpaque {
         //backdrop-filter: blur(5px);

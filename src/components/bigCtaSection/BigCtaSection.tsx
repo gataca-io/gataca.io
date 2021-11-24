@@ -43,16 +43,9 @@ const BigCtaSection: React.FC<IBigCtaSectionProps> = ({}) => {
             {/*<p>{homeData.bigCtaSection.subDescription}</p>*/}
             <Link to={homeData.bigCtaSection.ctaUrl}>
 
-              <Button
+              <button
                 className={styles.ctaButton}
-                disabled={false}
-                iconDescription="Button icon"
-                kind="primary"
-                renderIcon={undefined}
-                size="default"
-                tabIndex={0}
-                type="button"
-              > {homeData.bigCtaSection.subDescription}</Button>
+              > {homeData.bigCtaSection.subDescription}</button>
             </Link>
           </div>
 

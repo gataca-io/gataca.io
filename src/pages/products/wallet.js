@@ -54,6 +54,7 @@ export default function Wallet(props) {
           <div>
             <h2>{wallet.credentials.title}</h2>
             <div className={styles.chipsContainer}>
+              <div>
               {wallet.credentials.list.map(cred => {
                 return (
                   <div className={styles.chip}>
@@ -61,6 +62,7 @@ export default function Wallet(props) {
                   </div>
                 )
               })}
+              </div>
             </div>
           </div>
         </section>

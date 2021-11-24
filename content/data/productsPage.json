@@ -85,32 +85,32 @@
       {
         "image": "/icons/blockslock.svg",
         "title": "LEDGER-AGNOSTIC",
-        "description": "<p>We offer a blockchain-agnostic platform that enables you to use your own network and interconnect with other blockchain network providers.</p>"
+        "description": "<p>We offer a blockchain-agnostic platform that enables you to use your own network and interconnect with other blockchain network providers</p>"
       },
       {
         "image": "/icons/briefcase.svg",
         "title": "ALIGNED WITH EBSI",
-        "description": "<p>Our platform is the first to be integrated with EBSI, the European blockchain network.</p>"
+        "description": "<p>Our platform is the first to be integrated with EBSI, the European blockchain network</p>"
       },
       {
         "image": "/icons/headlock.svg",
         "title": "NO VENDOR LOCK-IN",
-        "description": "<p>We believe in Internet Standards and Open APIs to deliver portability and interoperability, so clients never be tied to a single vendor.</p>"
+        "description": "<p>We believe in Internet Standards and Open APIs to deliver portability and interoperability, so clients never be tied to a single vendor</p>"
       },
       {
         "image": "/icons/expandable.svg",
         "title": "FLEXIBILITY & CONTROL",
-        "description": "<p>Our products can be configured to your own needs. They can be implemented on-premise for full control our clients may use GaaS, our SaaS platform for faster roll out.</p>"
+        "description": "<p>Our products can be configured to your own needs. They can be implemented on-premise for full control our clients may use GaaS, our SaaS platform for faster roll out</p>"
       },
       {
         "image": "/icons/secure.svg",
         "title": "PRIVACY BY DESING",
-        "description": "<p>We offer a blockchain-agnostic platform that enables you to use your own network and interconnect with other blockchain network providers.</p>"
+        "description": "<p>We offer a blockchain-agnostic platform that enables you to use your own network and interconnect with other blockchain network providers</p>"
       },
       {
         "image": "/icons/lock.svg",
         "title": "SECURITY BY DESIGN",
-        "description": "<p>We offer a blockchain-agnostic platform that enables you to use your own network and interconnect with other blockchain network providers.</p>"
+        "description": "<p>We offer a blockchain-agnostic platform that enables you to use your own network and interconnect with other blockchain network providers</p>"
       }
     ]
   }

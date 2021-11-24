@@ -130,7 +130,7 @@ export default function HeaderSection(props) {
                   headerStyles.nav,
                   path ? headerStyles.navSolid :
                     isTopBarOpaque ? headerStyles.navOpaque :
-                      null,
+                      null, isSideNavExpanded && headerStyles.navMobileOpen
                 )}>
                   
                   <div className={headerStyles.left}>
@@ -211,7 +211,7 @@ export default function HeaderSection(props) {
                     <div className={headerStyles.sideNavDivider}/>
                     
                     
-                    <SideNavLink className={headerStyles.sideNavHeadline} href="/products/certify">
+                    <SideNavLink className={headerStyles.sideNavHeadline} href="/products">
                       Products
                     </SideNavLink>
                     <SideNavLink href="/products/certify">

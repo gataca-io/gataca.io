@@ -272,8 +272,15 @@
     }
 
     .chipsContainer {
-        display: flex;
-
+        display: block;
+        overflow: scroll;
+        width: 100%;
+        &>div {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            width: calc(250px * 7)
+        }
         .chip {
             position: relative;
             width: 250px;
