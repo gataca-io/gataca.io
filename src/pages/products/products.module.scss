@@ -251,7 +251,7 @@
     padding-top: var(--baseSpacingDouble);
 
     @include media-for-phone-only {
-        padding: calc(var(--baseSpacing)*1.5) var(--baseSpacing) var(--baseSpacingHalf) var(--baseSpacing);
+        padding: 3rem var(--baseSpacing) var(--baseSpacingHalf) var(--baseSpacing);
         justify-content: center;
         align-items: center;
         margin: 0 var(--baseSpacing) var(--baseSpacing) var(--baseSpacing);
