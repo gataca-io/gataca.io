@@ -127,13 +127,13 @@
     .productImageContainer {
         padding: var(--baseSpacing);
         width: 50%;
+
         @include media-for-phone-only {
             padding: var(--baseSpacingHalf) var(--baseSpacing);
             width: 100%;
         }
 
         img {
-            height: 90%;
             box-shadow: var(--shadow);
         }
     }
