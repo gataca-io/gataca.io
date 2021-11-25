@@ -273,8 +273,13 @@
 
     .chipsContainer {
         display: block;
-        overflow: scroll;
+        overflow-x: scroll;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
         width: 100%;
+        &::-webkit-scrollbar {
+            display: none;
+        }
         &>div {
             justify-content: center;
             align-items: center;

@@ -215,6 +215,7 @@
     background-image: url("./../../../content/images/introPattern.svg");
     background-repeat: repeat;
     background-blend-mode: soft-light;
+
     @include media-for-phone-only {
         padding: var(--baseSpacing) 0;
     }
@@ -228,12 +229,11 @@
         max-width: var(--max-width-l);
         display: flex;
         flex-wrap: wrap;
-
     }
 }
 
 .bulletStyle {
-    width: calc(33% - var(--baseSpacing));
+    width: calc(33% - 2rem);
     //background-color: var(--white);
     background: linear-gradient(
                     45deg,
@@ -248,10 +248,12 @@
     box-shadow: var(--shadow);
     border-radius: 40px;
     display: flex;
-    padding-top: var(--baseSpacingDouble);
+    //padding-top: var(--baseSpacingDouble);
+    padding: 30px var(--baseMargin) var(--baseMargin) 25px;
 
     @include media-for-phone-only {
-        padding: 3rem var(--baseSpacing) var(--baseSpacingHalf) var(--baseSpacing);
+    border-radius: 30px;
+        //padding: 3rem var(--baseSpacing) var(--baseSpacingHalf) var(--baseSpacing);
         justify-content: center;
         align-items: center;
         margin: 0 var(--baseSpacing) var(--baseSpacing) var(--baseSpacing);
@@ -280,7 +282,9 @@
     margin: 0 0 calc(var(--baseSpacing) * 4) 0;
     padding-top: var(--baseSpacingDouble);
     z-index: 2;
-
+    @include media-for-phone-only-X {
+        height: 380px;
+    }
     & > div {
         z-index: 2;
         justify-content: center;

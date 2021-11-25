@@ -4,6 +4,14 @@
 @mixin media-for-phone-only {
     @media (max-width: 672px) { @content; }
 }
+@mixin media-for-phone-only-X {
+    @media only screen
+    and (max-width : 672px)
+    and (device-height : 812px)
+    and (-webkit-device-pixel-ratio : 3) {
+        @content;
+    }
+}
 @mixin media-for-tablet-portrait-up {
     @media (min-width: 672px) { @content; }
 }

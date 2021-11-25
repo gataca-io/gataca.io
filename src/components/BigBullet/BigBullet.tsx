@@ -108,6 +108,7 @@ const BigBullet: React.FC<IBigBulletProps> = (
             {image && <img src={image} alt={title}/>}
           </ImageContainer>
         }
+
       </div>
     </React.Fragment>
   )
