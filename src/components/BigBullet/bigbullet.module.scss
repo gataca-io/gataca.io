@@ -37,7 +37,7 @@
     }
 
     & > div:first-child {
-        display: flex;
+        //display: flex;
         @include media-for-phone-only() {
             width: 60%;
             img {

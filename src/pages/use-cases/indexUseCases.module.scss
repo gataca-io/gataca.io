@@ -66,10 +66,18 @@
     border: 2px solid rgba(255, 255, 255, 0.42);
     padding: var(--baseSpacing);
     border-radius: 30px;
+
     @include media-for-phone-only {
-        padding: var(--baseSpacingMicro);
+        padding: var(--baseSpacing);
+        display: flex;
+        flex-direction: column;
+        margin-top: var(--baseSpacing);
         &>div:first-child {
-            width:calc(100% -  var(--baseSpacingHalf)*2);
+            width: 100%;
+            margin-bottom: var(--baseSpacing);
+            img{
+                width: 100%;
+            }
         }
     }
 
