@@ -21,6 +21,7 @@
         @include media-for-phone-only {
             text-align: left;
             align-items: flex-start;
+            padding: var(--baseMargin);
         }
 
         h4 {

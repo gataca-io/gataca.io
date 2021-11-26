@@ -8,13 +8,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: calc(var(--baseSpacingDouble) * 2) 0 var(--baseSpacingDouble) 0;
+    padding: 18rem 0 var(--baseSpacingDouble) 0;
     flex-direction: column;
     width: 100%;
     box-shadow: var(--shadow);
 
     @include media-for-phone-only {
-        padding: var(--baseSpacing) 0 var(--baseSpacing) 0;
+        padding: 10rem 0 var(--baseSpacing) 0;
     }
 
     & > div {
@@ -252,7 +252,7 @@
     padding: 30px var(--baseMargin) var(--baseMargin) 25px;
 
     @include media-for-phone-only {
-    border-radius: 30px;
+        border-radius: 30px;
         //padding: 3rem var(--baseSpacing) var(--baseSpacingHalf) var(--baseSpacing);
         justify-content: center;
         align-items: center;
@@ -266,43 +266,56 @@
     background-image: url("../../../content/images/crossPattern.svg");
     background-repeat: repeat;
     background-blend-mode: soft-light;
+    position: relative;
+    border-bottom: 2px solid rgba(183, 183, 183, 0.53);
+    padding-bottom: 20rem;
+
+    @include media-for-phone-only {
+        padding-bottom: 8rem;
+    }
+
+    @include media-for-small-phone-only {
+        //padding-bottom: 4rem;
+    }
 }
 
 .imagesRowContainer {
-    background-image: url("../../../content/images/crossPattern.svg");
-    background-repeat: repeat;
-    background-blend-mode: soft-light;
-    border-bottom: 2px solid rgba(183, 183, 183, 0.53);
-
-    height: 250px;
+    position: absolute;
+    bottom: -8rem;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     justify-content: center;
     align-items: center;
-    //background-color: var(--bg-grey);
-    margin: 0 0 calc(var(--baseSpacing) * 4) 0;
-    padding-top: var(--baseSpacingDouble);
-    z-index: 2;
+
     @include media-for-phone-only-X {
-        height: 380px;
+    bottom: -4rem;
+        //height: 380px;
     }
+
     & > div {
         z-index: 2;
         justify-content: center;
         display: flex;
+        width: 354vw;
+
         @include media-for-phone-only {
-            height: 70vh;
+            height: 45vh;
         }
 
         img {
             &:first-child, &:last-child {
                 box-shadow: 0px 7px 14px #00000012;
+                border: 2px solid rgb(211, 211, 211);
             }
 
+            border-radius: 15px;
             height: 500px;
+                overflow: hidden;
             margin: 0 var(--baseSpacing);
             @include media-for-phone-only {
-                height: 100%;
-                max-height: 70vh;
+                width: 100%;
+                max-height: 45vh;
                 margin: 0 var(--baseSpacingMicro);
             }
         }

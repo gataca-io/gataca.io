@@ -3,9 +3,11 @@
 .headLineContainer {
     min-height: calc(var(--topbar-height-mobile) + var(--baseSpacingHalf) + 40vh);
     width: 100%;
+
     @include media-for-phone-only {
         padding: 0 var(--baseSpacing);
     }
+
     @include media-for-tablet-portrait-up {
         min-height: calc(var(--topbar-height) + var(--baseSpacing) + 40vh);
         display: flex;
@@ -64,6 +66,10 @@
         //box-shadow: var(--shadow);
         @include media-for-phone-only {
         }
+        @include media-for-small-phone-only {
+            line-height: 1.3rem;
+            font-size: 1rem;
+        }
     }
 
     .description {
@@ -78,9 +84,14 @@
     .bigHeadline {
         font-weight: bold;
         font-size: 3rem;
-        text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.12);
+        text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.10);
         @include media-for-phone-only {
             font-size: 2rem;
+            text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.10);
+        }
+        @include media-for-small-phone-only {
+            font-size: 1.7rem;
+            line-height: 1.95rem;
         }
     }
 }

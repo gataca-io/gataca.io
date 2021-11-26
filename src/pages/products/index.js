@@ -38,16 +38,18 @@ export default function Products(props) {
             title={productsPage.introProductsSection.title}
             subtitle={productsPage.introProductsSection.description}
           />
+          
+          {/*PRODUCT IMAGES*/}
+          <section className={styles.imagesRowContainer}>
+            <div>
+              {productsPage.productsImages.map(p => {
+                return <img src={p.link} alt={p.title}/>
+              })}
+            </div>
+          </section>
+          
         </section>
         
-        {/*PRODUCT IMAGES*/}
-        <section className={styles.imagesRowContainer}>
-          <div>
-            {productsPage.productsImages.map(p => {
-              return <img src={p.link} alt={p.title}/>
-            })}
-          </div>
-        </section>
         
         {/*THE ECOSYSTEM*/}
         {/*        <section className={styles.sectionStyleWraps}>
