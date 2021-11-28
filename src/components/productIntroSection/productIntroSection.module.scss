@@ -201,7 +201,8 @@
     justify-content: center;
     position: absolute;
     bottom: -90px;
-    left:0;
+    left: 50%;
+    transform: translateX(-50%);
     margin: var(--baseSpacing);
     color: var(--darkblue);
     z-index: 14;
@@ -218,6 +219,8 @@
     border: 2px solid #ffffff6b;
     backdrop-filter: blur(7px);
     @include media-for-phone-only {
+        left: 0;
+        transform: none;
         padding: var(--baseSpacingHalf) var(--baseSpacing);
         background: linear-gradient(
                         45deg,
