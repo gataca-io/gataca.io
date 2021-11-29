@@ -91,7 +91,7 @@ Below you can visualize GATACA’s full-stack product suite which includes each 
 
 ## Benefits: short term vs. long term
 
-A user-centric Digital Identity model has extensive benefits for individuals and businesses alike. In the short term, the implementation of Decentralized Identities lays down a mmeansto reduce administrative and compliance costs as well as operational costs related to security for public administrations and online service providers. Some of the benefits of implementing SSI technology include:
+A user-centric Digital Identity model has extensive benefits for individuals and businesses alike. In the short term, the implementation of Decentralized Identities lays down a means to reduce administrative and compliance costs as well as operational costs related to security for public administrations and online service providers. Some of the benefits of implementing SSI technology include:
 
 * **Decreased Identity fraud (identity theft)** through the elimination of centralized databases & passwords and with the introduction of tamper-proof verifiable credentials and government-grade secure ID Wallets.
 * **Improved conversion rates/reduced onboarding abandonment rates** through one-click onboarding and authentication processes that enhance customer experience. Customers forget about lengthy Know-Your-Customer (KYC) forms that force them to manually fill in the required information.
@@ -148,3 +148,9 @@ We see and feel the global SSI momentum. As we see with European local governmen
 At GATACA we’re ready to make this a reality. We’ve not only built a full-stack SSI product suite with solutions for all actors, but we’re also implementing it across governments and universities in Europe. Are you ready for a new identity model?
 
 Book a demo and see what all the fuss is about (we promise it won’t let you down). [Get in touch!](https://gataca.io/company/contact)
+
+**Chat with us -** We’d love to chat with you. Let us know your perspective and comments on this topic, or anything Digital Identity related. Join our [Telegram ](https://t.me/digitalidentityinsights)group.
+
+**Stay in the loop -** Keep yourself updated on GATACA developments and how digital identities will transform our digital lives [here](https://gataca.io/insights/decentralized-finance-self-sovereign-identity-a-tale-of-decentralization-a-new-paradigm-of-trust).
+
+Have a specific topic you’d like us to cover? Email us at [hello@gataca.io](mailto:hello@gataca.io "mailto:hello@gataca.io") - we’ll break it down for you in our upcoming blog articles.
