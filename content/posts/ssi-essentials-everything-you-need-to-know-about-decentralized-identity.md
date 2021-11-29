@@ -10,7 +10,7 @@ meta_data:
     linkedin: ''
 title: 'SSI Essentials: Everything you need to know about Decentralized Identity'
 author: ''
-hero_image: "/static/images/identity_architectures_history.png"
+hero_image: "/static/images/identity-architectures-history.png"
 
 ---
 _14 min read_
@@ -41,7 +41,7 @@ Big tech companies attempted to tackle all three issues by developing **federate
 
 (More on passwordless authentication [here](https://gataca.io/blog/passwordless-the-model.ssi-the-method))
 
-![](/static/images/identity_architectures_history.png)
+![](/static/images/identity-architectures-history.png)
 
 ## The SSI ecosystem & trust triangle
 
