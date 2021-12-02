@@ -35,9 +35,9 @@ The aforementioned methods of authentication (usernames, passwords, handing over
 
 Big tech companies attempted to tackle all three issues by developing **federated models of identity management**: single sign-on authentication methods such as those of Google or Facebook (ie. “Log in with Google”). With federated models, users delegate their identity management to big techs, who receive the power to manage our access to third-party services (ie. Google manages your access to Spotify), while accumulating more and more information about our consumer profile (now Google has access to your Spotify data & behavior). On one hand, this model can drastically improve user experience by allowing users to instantly sign up through their established service accounts, but on the other, it **exacerbates privacy and security risks by further centralizing user data in their databases.**
 
-**Then comes the self-sovereign identity (SSI)**, or decentralized identity, paradigm, a new era of trust. The father of the SSI concept, Christopher Allen, refers to SSI as a new sort of identity-based on individual control and human rights ([Coindesk](https://www.coindesk.com/policy/2021/04/26/self-sovereign-identity-5-years-on/)); **essentially, it promises to give users back control of their data, and businesses peace of mind.** How is this possible? Decentralized technologies have provided the foundation to develop a novel, trust, and global authentication layer for the internet and revolutionize digital relationships and interactions between individuals, organizations, and things.
+**Then comes the self-sovereign identity (SSI)**, or decentralized identity, paradigm, a new era of trust. The father of the SSI concept, Christopher Allen, refers to SSI as a new sort of identity based on individual control and human rights ([Coindesk](https://www.coindesk.com/policy/2021/04/26/self-sovereign-identity-5-years-on/)); **essentially, it promises to give users back control of their data, and businesses peace of mind.** How is this possible? Decentralized technologies have provided the foundation to develop a novel, trust, and global authentication layer for the internet and revolutionize digital relationships and interactions between individuals, organizations, and things.
 
-**_This user-centric identity model enables users to manage their personal information and access all digital services via one single identity, password-free._** 
+**_This user-centric identity model enables users to manage their personal information and access all digital services via one single identity, password-free._**
 
 (More on passwordless authentication [here](https://gataca.io/blog/passwordless-the-model.ssi-the-method))
 
@@ -52,7 +52,7 @@ Digital relationships and transactions rely upon trust, but with the abrupt laun
 Below we define the roles of these agents:
 
 * **Issuers**: Entities that are authorized to issue specific Identity credentials such as universities (issuing student IDs and academic diplomas), governments (national IDs, driver’s licenses, passports, birth certificates, certificate of car ownership), financial institutions (credit scores), hospitals (medical records), employers (employee cards), etc.
-* **Users (holders)**: Individuals or organizations subject of such Identity credentials (that’s you!). That is, the credential owners, who store, manage, and share these credentials through the use of a digital ID Wallet.
+* **Users (holders)**: Individuals or organizations subject of such Identity credentials (that’s you!). That is, the credential owners who store, manage, and share these credentials through the use of a digital ID Wallet.
 * **Verifiers**: Verifiers are service providers that require identity verification and authentication for access to their services (ie. banks, retail stores, insurance companies, hospitals, universities, etc). An example of a Verifier is an employer that asks Alice for an authentic Academic Diploma for job qualification.
 
 Now that we have the players and their roles have been established, let’s explore the backbone of the SSI technology: Blockchain (or Distributed Ledger Technologies, DLTs), DIDs, and VCs.
@@ -95,7 +95,7 @@ A user-centric Digital Identity model has extensive benefits for individuals and
 
 * **Decreased Identity fraud (identity theft)** through the elimination of centralized databases & passwords and with the introduction of tamper-proof verifiable credentials and government-grade secure ID Wallets.
 * **Improved conversion rates/reduced onboarding abandonment rates** through one-click onboarding and authentication processes that enhance customer experience. Customers forget about lengthy Know-Your-Customer (KYC) forms that force them to manually fill in the required information.
-* **Increased efficiency** for organizations as resources are no longer used to manually verify individual credential authenticity and legitimacy. For example, university administrative staff no longer need manually and physically verify that the applicant’s degree is legitimate.
+* **Increased efficiency** for organizations as resources are no longer used to manually verify individual credential authenticity and legitimacy. For example, university administrative staff no longer need to manually and physically verify that the applicant’s degree is legitimate.
 * **New revenue streams** (for governments and universities) with the issuance of verifiable credentials such as eIDs and digital academic diplomas and transcripts.
 * **Boosted privacy & security** through the use of advanced cryptography and blockchain technology.
 
@@ -113,7 +113,7 @@ Given the regulatory and technological landscape, the current SSI industry pione
 
 Similarly, **universities are implementing SSI in their digital and physical ecosystem to take their innovation game to the next level and attract a larger student base**. These entities are pioneering use cases such as the issuance of student IDs, academic diplomas, micro-credentials, transcripts, etc. These credentials enable instant student authentication in digital campuses, access to buildings/labs, fast-tracked application processes, easier implementation of exchange programs, and so much more.
 
-SSI has the potential to **revolutionize the financial industry through eKYCs, one-click customer onboarding, and instant credit/loans**. Identity fraud risk and KYC regulation in the banking sector results in complex and long user onboarding processes, while conversion rates drop. Those days will be soon be long gone. With SSI, customers will now be able to share previously verified and cryptographically signed identity documents with their banks, and experience instant, user-friendly onboarding in seconds (rather than days).
+SSI has the potential to **revolutionize the financial industry through eKYCs, one-click customer onboarding, and instant credit/loans**. Identity fraud risk and KYC regulation in the banking sector results in complex and long user onboarding processes, while conversion rates drop. Those days will soon be long gone. With SSI, customers will now be able to share previously verified and cryptographically signed identity documents with their banks, and experience instant, user-friendly onboarding in seconds (rather than days).
 
 ### Follow-up sectors
 
@@ -141,7 +141,7 @@ Of course, at the core of SSI, we have the **technology providers**. In the past
 
 Due to the European Commission’s commitment towards digital transformation and blockchain use cases, Europe has positioned itself as one of the most advanced regions globally for SSI.
 
-The European commitment took a firm step towards digital identity on June 3, 2021 with the announcement,t in a press release by the Vice-President of the European Commission, Margrethe Vestager, and the Commissioner for the Internal Market, Thierry Breton, who announced the construction of a single European digital identity and for this purpose presented a proposal to amend the eIDAS regulation fully aligned with the principles of decentralized identity. The proposed modification of the eIDAS regulation was born in response to the mandate of the EC President (Ursula Von Der Layen) on September 16, 2020, where she announced the need for a new form of European identity [(we break down the proposal for you here](https://gataca.io/blog/here-s-what-the-new-eidas-proposal-really-means-for-the-ssi-community-in-6-key-points "https://gataca.io/blog/here-s-what-the-new-eidas-proposal-really-means-for-the-ssi-community-in-6-key-points")).
+The European commitment took a firm step towards digital identity on June 3, 2021, with the announcement in a press release by the Vice-President of the European Commission, Margrethe Vestager, and the Commissioner for the Internal Market, Thierry Breton, who announced the construction of a single European digital identity and for this purpose presented a proposal to amend the eIDAS regulation fully aligned with the principles of decentralized identity. The proposed modification of the eIDAS regulation was born in response to the mandate of the EC President (Ursula Von Der Layen) on September 16, 2020, where she announced the need for a new form of European identity [(we break down the proposal for you here](https://gataca.io/blog/here-s-what-the-new-eidas-proposal-really-means-for-the-ssi-community-in-6-key-points "https://gataca.io/blog/here-s-what-the-new-eidas-proposal-really-means-for-the-ssi-community-in-6-key-points")).
 
 This announcement triggered several key announcements in favor of SSI by strategic Member States: on July 29, 2021, the Spanish and German governments announced a cooperation pact for the development of a decentralized, cross-border digital identity ecosystem based on the principles of self-sovereign identity. On September 22, the Finnish government joined the coalition by signing another collaboration pact and a day later, on September 23, 2021, the Dutch government also joined the coalition in another communiqué.
 
@@ -149,7 +149,7 @@ The growing interest of governments and companies in this solution has favored t
 
 ## Future outlook
 
-Self-sovereign identity technologies have the potential to become the linchpin of economic growth. If we think about it, all businesses need to authenticate their users, and with the exacerbation of digital transformation, the need to securely and efficiently authenticate users has become urgent for client satisfaction. After all, Revenues and client satisfaction go hand-in-hand.
+Self-sovereign identity technologies have the potential to become the linchpin of economic growth. If we think about it, all businesses need to authenticate their users, and with the exacerbation of digital transformation, the need to securely and efficiently authenticate users has become urgent for client satisfaction. After all, revenues and client satisfaction go hand-in-hand.
 
 We see and feel the global SSI momentum. As we see with European local governments, other nations such as Korea, Ethiopia, Canada, and India are already pioneering this technology in various use cases. We know SSI mass adoption is a matter of “when”, not “if”, yet as with all technologically disruptive technologies - we expect another couple of years before we achieve it. Nonetheless, we are positive it will happen sooner than everyone initially thought. Governments and businesses are already aware of the increased risks and costs of identity theft, the lack of data privacy granted by tech giants, and of course, the need for an authentication system that is up to par with our technology-driven society.
 
@@ -157,7 +157,7 @@ At GATACA we’re ready to make this a reality. We’ve not only built a full-st
 
 Book a demo and see what all the fuss is about (we promise it won’t let you down). [Get in touch!](https://gataca.io/company/contact)
 
-**Chat with us -** We’d love to chat with you. Let us know your perspective and comments on this topic, or anything Digital Identity-related. Join our [Telegram ](https://t.me/digitalidentityinsights)group.
+**Chat with us -** We’d love to chat with you. Let us know your perspective and comments on this topic or anything Digital Identity-related. Join our [Telegram ](https://t.me/digitalidentityinsights)group.
 
 **Stay in the loop -** Keep yourself updated on GATACA developments and how digital identities will transform our digital lives [here](https://gataca.io/insights/decentralized-finance-self-sovereign-identity-a-tale-of-decentralization-a-new-paradigm-of-trust).
 
