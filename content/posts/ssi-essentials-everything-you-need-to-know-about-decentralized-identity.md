@@ -35,9 +35,9 @@ The aforementioned methods of authentication (usernames, passwords, handing over
 
 Big tech companies attempted to tackle all three issues by developing **federated models of identity management**: single sign-on authentication methods such as those of Google or Facebook (ie. “Log in with Google”). With federated models, users delegate their identity management to big techs, who receive the power to manage our access to third-party services (ie. Google manages your access to Spotify), while accumulating more and more information about our consumer profile (now Google has access to your Spotify data & behavior). On one hand, this model can drastically improve user experience by allowing users to instantly sign up through their established service accounts, but on the other, it **exacerbates privacy and security risks by further centralizing user data in their databases.**
 
-**Then comes the self-sovereign identity (SSI)**, or decentralized identity, paradigm, a new era of trust. The father of the SSI concept, Christopher Allen, refers to SSI as a new sort of identity based on individual control and human rights ([Coindesk](https://www.coindesk.com/policy/2021/04/26/self-sovereign-identity-5-years-on/)); **essentially, it promises to give users back control of their data, and businesses peace of mind.** How is this possible? Decentralized technologies have provided the foundation to develop a novel, trust, and global authentication layer for the internet and revolutionize digital relationships and interactions between individuals, organizations, and things.
+**Then comes the self-sovereign identity (SSI)**, or decentralized identity, paradigm, a new era of trust. The father of the SSI concept, Christopher Allen, refers to SSI as a new sort of identity-based on individual control and human rights ([Coindesk](https://www.coindesk.com/policy/2021/04/26/self-sovereign-identity-5-years-on/)); **essentially, it promises to give users back control of their data, and businesses peace of mind.** How is this possible? Decentralized technologies have provided the foundation to develop a novel, trust, and global authentication layer for the internet and revolutionize digital relationships and interactions between individuals, organizations, and things.
 
-##### This user-centric identity model enables users to manage their personal information and access all digital services via one single identity, password-free.
+#### This user-centric identity model enables users to manage their personal information and access all digital services via one single identity, password-free.
 
 (More on passwordless authentication [here](https://gataca.io/blog/passwordless-the-model.ssi-the-method))
 
@@ -125,7 +125,7 @@ When we mentioned that SSI applications were unlimited, we meant it. Other poten
 * **Corporations**: Businesses can now issue digital employee cards to employees or authorized partner certifications to suppliers, who in turn use these to enjoy frictionless access into company systems and/or buildings. Businesses can also leverage our technology to issue credentials to their clients such as membership & loyalty cards and provide a unique, stress-free customer journey.
 * **Real Estate**: In the real estate sector, secure identity verification is essential, however current methods demand too many resources and rely on antiquated methods. SSI technology allows users to instantly and securely verify their identities in seconds which optimizes and secures online or P2P buy/sell and renting situations and makes building access more efficient.
 
-## SSI Market Dynamics
+## Market Dynamics
 
 The SSI market has three types of players: standardization bodies, regulatory bodies, and technology providers.
 
