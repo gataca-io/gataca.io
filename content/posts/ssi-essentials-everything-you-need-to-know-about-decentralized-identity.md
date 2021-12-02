@@ -13,7 +13,7 @@ author: ''
 hero_image: "/static/images/identity_architectures_history_2.png"
 
 ---
-_14 min read_
+_11 min read_
 
 Every 60 seconds a person’s online identity is hacked or stolen. We hear these statements often, but what does it really mean to get hacked in this context?
 
