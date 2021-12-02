@@ -5,9 +5,9 @@ meta_data:
   description: Get caught up with the technology that will change the way we interact
     online, in less than 15 minutes.
   rrss_images:
-    twitter: ''
-    facebook_and_whatsapp: ''
-    linkedin: ''
+    twitter: "/static/images/identity_architectures_history_2.png"
+    facebook_and_whatsapp: "/static/images/identity_architectures_history_2.png"
+    linkedin: "/static/images/identity_architectures_history_2.png"
 title: 'SSI Essentials: Everything you need to know about Decentralized Identity'
 author: ''
 hero_image: "/static/images/identity_architectures_history_2.png"
