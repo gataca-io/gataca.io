@@ -1,5 +1,5 @@
 ---
-date: 2021-11-29T13:58:41Z
+date: 2021-11-29T13:58:41.000+00:00
 meta_data:
   title: 'SSI Essentials: Everything you need to know about Decentralized Identities'
   description: Get caught up with the technology that will change the way we interact
@@ -10,7 +10,7 @@ meta_data:
     linkedin: ''
 title: 'SSI Essentials: Everything you need to know about Decentralized Identity'
 author: ''
-hero_image: "/static/images/identity_architectures_history.png"
+hero_image: "/static/images/identity_architectures_history_2.png"
 
 ---
 _14 min read_
@@ -31,7 +31,7 @@ Let’s take a step back: have you ever thought about what’s happening to your
 
 The aforementioned methods of authentication (usernames, passwords, handing over your personal information into a corporate abyss) are based on **centralized models**, characterized by users having to give up their personal information repeated times without control. These models are not just an inconvenience for users, but for organizations as well. Public and private entities concentrate millions of records and sensitive user information in their databases, making them very attractive targets for hackers. Consequently, these organizations must invest millions of Euros in security systems, GDPR compliance, and very complex authentication processes to combat cyberattacks and identity fraud. Despite these investments, should a cybersecurity attack occur, businesses are left with high fines and a damaged reputation.
 
-##### To date, no identity system has been able to resolve the tradeoff between privacy, security, and user experience.
+#### To date, no identity system has been able to resolve the tradeoff between privacy, security, and user experience.
 
 Big tech companies attempted to tackle all three issues by developing **federated models of identity management**: single sign-on authentication methods such as those of Google or Facebook (ie. “Log in with Google”). With federated models, users delegate their identity management to big techs, who receive the power to manage our access to third-party services (ie. Google manages your access to Spotify), while accumulating more and more information about our consumer profile (now Google has access to your Spotify data & behavior). On one hand, this model can drastically improve user experience by allowing users to instantly sign up through their established service accounts, but on the other, it **exacerbates privacy and security risks by further centralizing user data in their databases.**
 
@@ -107,7 +107,15 @@ SSI technology applications are unlimited. Think about it: in our increasingly d
 
 ![](../images/use_cases.png)
 
-Follow-up sectors
+### The pioneers
+
+Given the regulatory and technological landscape, the current SSI industry pioneers are governments, universities, and banks. With this technology, **governments can issue easy-to-use, hyper-secure digital ID documents for citizens as well as authenticate them instantly into eGov services,** a process that has been lacking usability for decades. Furthermore, these eIDs can also be used to access any other private service (such as banking, education, or healthcare), making SSI a key driver of digital transformation and economic growth.
+
+Similarly, **universities are implementing SSI in their digital and physical ecosystem to take their innovation game to the next level and attract a larger student base**. These entities are pioneering use cases such as the issuance of student IDs, academic diplomas, micro-credentials, transcripts, etc. These credentials enable instant student authentication in digital campuses, access to buildings/labs, fast-tracked application processes, easier implementation of exchange programs, and so much more.
+
+SSI has the potential to **revolutionize the financial industry through eKYCs, one-click customer onboarding, and instant credit/loans**. Identity fraud risk and KYC regulation in the banking sector results in complex and long user onboarding processes, while conversion rates drop. Those days will be soon be long gone. With SSI, customers will now be able to share previously verified and cryptographically signed identity documents with their banks, and experience instant, user-friendly onboarding in seconds (rather than days).
+
+### Follow-up sectors
 
 When we mentioned that SSI applications were unlimited, we meant it. Other potential use cases include:
 
@@ -117,7 +125,7 @@ When we mentioned that SSI applications were unlimited, we meant it. Other poten
 * **Corporations**: Businesses can now issue digital employee cards to employees or authorized partner certifications to suppliers, who in turn use these to enjoy frictionless access into company systems and/or buildings. Businesses can also leverage our technology to issue credentials to their clients such as membership & loyalty cards and provide a unique, stress-free customer journey.
 * **Real Estate**: In the real estate sector, secure identity verification is essential, however current methods demand too many resources and rely on antiquated methods. SSI technology allows users to instantly and securely verify their identities in seconds which optimizes and secures online or P2P buy/sell and renting situations and makes building access more efficient.
 
-## Market Dynamics
+## SSI Market Dynamics
 
 The SSI market has three types of players: standardization bodies, regulatory bodies, and technology providers.
 
@@ -129,7 +137,7 @@ Of course, at the core of SSI, we have the **technology providers**. In the past
 
 ![](../images/ssi_value_chain.png)
 
-Recent Progress in Europe
+### Recent Progress in Europe
 
 Due to the European Commission’s commitment towards digital transformation and blockchain use cases, Europe has positioned itself as one of the most advanced regions globally for SSI.
 
@@ -149,7 +157,7 @@ At GATACA we’re ready to make this a reality. We’ve not only built a full-st
 
 Book a demo and see what all the fuss is about (we promise it won’t let you down). [Get in touch!](https://gataca.io/company/contact)
 
-**Chat with us -** We’d love to chat with you. Let us know your perspective and comments on this topic, or anything Digital Identity related. Join our [Telegram ](https://t.me/digitalidentityinsights)group.
+**Chat with us -** We’d love to chat with you. Let us know your perspective and comments on this topic, or anything Digital Identity-related. Join our [Telegram ](https://t.me/digitalidentityinsights)group.
 
 **Stay in the loop -** Keep yourself updated on GATACA developments and how digital identities will transform our digital lives [here](https://gataca.io/insights/decentralized-finance-self-sovereign-identity-a-tale-of-decentralization-a-new-paradigm-of-trust).
 
