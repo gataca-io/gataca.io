@@ -53,7 +53,7 @@ export default function ImagesPlusCta({ data, link }) {
               <h3>{data.mainSubtitle}</h3>
               <p dangerouslySetInnerHTML={{ __html: data.mainParagraph }}/>
               <Walletctas
-                ctaAndroidLink={configData.ctaAndroidLink}
+                ctaAndroidLink={configData.androidLink}
                 ctaIosLink={configData.iosLink}
               />
             </section>
