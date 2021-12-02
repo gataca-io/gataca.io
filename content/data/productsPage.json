@@ -67,7 +67,7 @@
     "connect": {
       "product": "GATACA Connect",
       "title": "Seamlessly authenticate your users",
-      "description": "Single sign-on authentication and credential verification tools for Service Providers<br><br>Improve user experience by offering instant, passworld-less, biometric-enabled access to digital services.<br> Privacy & security guaranteed.",
+      "description": "Single sign-on authentication and credential verification tools for Service Providers.<br><br>Improve user experience by offering instant, passworld-less, biometric-enabled access to digital services.<br> Privacy & security guaranteed.",
       "ctaText": "get GATACA Connect",
       "image": "/images/panel-connect.svg",
       "ctaLink": "/products/connect"

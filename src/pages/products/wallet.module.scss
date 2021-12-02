@@ -253,13 +253,14 @@
     padding: calc(var(--baseSpacingDouble) * 2) 0;
     background-color: var(--bg-grey);
     width: 100%;
+
     @include media-for-phone-only {
         padding-bottom: var(--baseSpacingDouble);
     }
 
     & > div {
         padding: 0 var(--baseSpacing);
-        max-width: var(--max-width);
+        //max-width: var(--max-width);
         display: flex;
         justify-content: center;
         align-items: center;

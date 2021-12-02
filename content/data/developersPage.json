@@ -1,7 +1,7 @@
 {
   "metas": {
     "title": "Start building, we manage identity ",
-    "description": "The GATACA technology enables a way of sharing information in a secure, simple and friendly way to any of the industry sectors. Here, Gataca share all the information necessary to understand how this technology works and how to integrate with your systems.\n",
+    "description": "The GATACA technology enables a way of sharing information in a secure, simple and friendly way to any of the industry sectors. Here, Gataca share all the information necessary to understand how this technology works and how to integrate with your systems",
     "facebookImage": "",
     "linkedInImage": "",
     "twitterImage": ""
@@ -10,7 +10,7 @@
     "icon": "/icons/file-code.svg",
     "title": "Developers",
     "subtitle": "Manuals, resources and information about the Gataca technology.",
-    "description": "<p>The GATACA technology enables a way of sharing information in a secure, simple and friendly way to any of the industry sectors. Here, Gataca share all the information necessary to understand how this technology works and how to integrate with your systems.</p>"
+    "description": "<p>The GATACA technology enables a way of sharing information in a secure, simple and friendly way to any of the industry sectors. Here, Gataca share all the information necessary to understand how this technology works and how to integrate with your systems</p>"
   },
   "bigBulletsSection": {
     "bullets": [

@@ -8,12 +8,12 @@
   },
   "introSection": {
     "title": "Blog",
-    "description": "Connecting, educating, and empowering users to take back control of their data.",
-    "mission": "Gataca is a cybersecurity startup that has been helping users and businesses guarantee the privacy and security of their data through its blockchain technology for the last 4 years."
+    "description": "Connecting, educating, and empowering users to take back control of their data",
+    "mission": "Gataca is a cybersecurity startup that has been helping users and businesses guarantee the privacy and security of their data through its blockchain technology for the last 4 years"
   },
   "cta": {
     "text": "Stay in the loop",
     "link": "https://bit.ly/34gz1rK",
-    "descripion": "Stay updated on GATACA & relevant digital identity news."
+    "descripion": "Stay updated on GATACA & relevant digital identity news"
   }
 }

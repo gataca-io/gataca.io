@@ -8,21 +8,21 @@
   "iosMarketImage": "/images/iosAppStoreIcon.svg",
   "ctaAndroidLink": "https://play.google.com/store/apps/details?id=com.gataca.identity",
   "ctaIosLink": "https://apps.apple.com/us/app/gataca/id1498607616",
-  "description": "<p>The GATACA Wallet enables users to securely store identity credentials and manage access to these right from their phone. These credentials may include:</p>",
-  "lineText": "With the GATACA wallet, users are in control of their personal data.\n Send and receive credentials, anytime, anywhere.",
+  "description": "<p>The GATACA Wallet enables users to securely store identity credentials and manage access to these right from their phone. These credentials may include</p>",
+  "lineText": "With the GATACA wallet, users are in control of their personal data.\n Send and receive credentials, anytime, anywhere",
   "bullets": {
-    "title": "Users are in control of their personal data.",
-    "subtitle": "Send and receive credentials, anytime, anywhere.",
+    "title": "Users are in control of their personal data",
+    "subtitle": "Send and receive credentials, anytime, anywhere",
     "list": [
       {
         "title": "DIGITIZED",
         "image": "/icons/global.svg",
-        "description": "<p>Following the W3C Verifiable Credentials standard so they can be used worldwide.</p>"
+        "description": "<p>Following the W3C Verifiable Credentials standard so they can be used worldwide</p>"
       },
       {
         "title": "VERIFIABLE",
         "image": "/images/validated.svg",
-        "description": "<p>Trusted Authorities signs them cryptographically so they can be trusted by everyone.</p>"
+        "description": "<p>Trusted Authorities signs them cryptographically so they can be trusted by everyone</p>"
       },
       {
         "title": "SECURED",
@@ -128,7 +128,7 @@
       },
       {
         "image": "/images/wallet_03_scan.svg",
-        "text": "Password-free access to digital services, biometric enabled.",
+        "text": "Password-free access to digital services, biometric enabled",
         "alt": "Identity"
       }
     ]

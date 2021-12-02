@@ -5,29 +5,29 @@
   "ctaText": "Request a demo",
   "ctaLink": "/company/contact",
   "icon": "/images/building.svg",
-  "description": "<p>GATACA Certify is a Digital ID credentials issuance tool to create, validate, and digitally sign identity credentials according to W3C standards for global interoperability.</p>",
+  "description": "<p>GATACA Certify is a Digital ID credentials issuance tool to create, validate, and digitally sign identity credentials according to W3C standards for global interoperability</p>",
   "bulletsSection": {
     "title": "Identity credential management",
     "bullets": [
       {
         "title": "ISSUE",
         "image": "/icons/credential_bookmark.svg",
-        "description": "<p>Create, sign, and issue Verifiable Credentials.</p>"
+        "description": "<p>Create, sign, and issue Verifiable Credentials</p>"
       },
       {
         "title": "MANAGE",
         "image": "/icons/list_credentials.svg",
-        "description": "<p>Suspend or revoke issued Verifiable Credentials.</p>"
+        "description": "<p>Suspend or revoke issued Verifiable Credentials</p>"
       },
       {
         "title": "VALIDATE",
         "image": "/icons/validate_credentials.svg",
-        "description": "<p>Validate third party Verifiable Credentials.</p>"
+        "description": "<p>Validate third party Verifiable Credentials</p>"
       },
       {
         "title": "CREATE",
         "image": "/icons/credentials_model.svg",
-        "description": "<p>Create Verifiable Credential Schemas in public or private catalogues.</p>"
+        "description": "<p>Create Verifiable Credential Schemas in public or private catalogues</p>"
       }
     ]
   },
@@ -37,22 +37,22 @@
       {
         "title": "MULTI-TENANT",
         "image": "/images/secure.svg",
-        "description": "<p>Granular product parametrization to adapt to your processes, organization structure and needs.</p>"
+        "description": "<p>Granular product parametrization to adapt to your processes, organization structure and needs</p>"
       },
       {
         "title": "ADMINISTRATION PANEL",
         "image": "/images/verified.svg",
-        "description": "<p>Configuration and management and track of credentials.</p>"
+        "description": "<p>Configuration and management and track of credentials</p>"
       },
       {
         "title": "MULTI-LEDGER",
         "image": "/icons/recycle.svg",
-        "description": "<p>So that you may register your DIDs and Credential Schemas in the blockchain of your choice.</p>"
+        "description": "<p>So that you may register your DIDs and Credential Schemas in the blockchain of your choice</p>"
       },
       {
         "title": "GOVERNMENT GRADE SECURITY",
         "image": "/icons/hypersecure.svg",
-        "description": "<p>Cryptography and blockchain technology provide advanced security for the issuing authority.</p>"
+        "description": "<p>Cryptography and blockchain technology provide advanced security for the issuing authority</p>"
       }
     ]
   },
@@ -67,7 +67,7 @@
   "bulletTwo": {
     "title": "2. Issue Credential",
     "image": "/images/credential_issued.svg",
-    "description": "<p>The credential is issued and the end-user notified.</p>"
+    "description": "<p>The credential is issued and the end-user notified</p>"
   },
   "stepsSection": {
     "title": "Issuance process",
@@ -82,7 +82,7 @@
     "bulletTwo": {
       "title": "2. Issue Credential",
       "image": "/images/credential_issued.svg",
-      "description": "<p>The credential is issued and the end-user notified.</p>"
+      "description": "<p>The credential is issued and the end-user notified</p>"
     },
     "steps": [
       {
@@ -101,23 +101,23 @@
   },
   "explainSection": {
     "infographic": "/illustrations/people_jumping.svg",
-    "title": "Accelerating economic growth, \nprotecting citizens.",
+    "title": "Accelerating economic growth, \nprotecting citizens",
     "bullets": [
       {
         "title": "Identity fraud reduction",
-        "description": "By accepting previously verified credentials, entities guarantee the information received is trustworthy & accurate."
+        "description": "By accepting previously verified credentials, entities guarantee the information received is trustworthy & accurate"
       },
       {
         "title": "Privacy protection",
-        "description": "We provide users with control over their personal information, so they feel comfortable using your services.."
+        "description": "We provide users with control over their personal information, so they feel comfortable using your services"
       },
       {
         "title": "Digital transformation",
-        "description": "Our technology enables accessible & sustainable digital transformation and creates seamless digital experiences for your clients.."
+        "description": "Our technology enables accessible & sustainable digital transformation and creates seamless digital experiences for your clients"
       },
       {
         "title": "New revenue streams",
-        "description": "Diversify your revenue streams through credential issuance models."
+        "description": "Diversify your revenue streams through credential issuance models"
       }
     ]
   },

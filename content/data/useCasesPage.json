@@ -8,7 +8,7 @@
   },
   "introProductsSection": {
     "title": "Sectors",
-    "description": "Designed for all industries.\nCustomized to your needs."
+    "description": "Designed for all industries<br>Customized to your needs"
   },
   "textBulletsSection": {
     "title": "We believe in world class user experience.",
@@ -80,7 +80,7 @@
       },
       {
         "image": "/icons/house.svg",
-        "title": "Real State",
+        "title": "Real Estate",
         "subtitle": "Optimize transactions",
         "description": "<p>In the real estate sector, secure identity verification is essential, however current methods demand too many resources and rely on antiquated methods. SSI technology allows users to instantly and securely verify their identites in seconds which optimizes and secures online or P2P buy/sell and renting situations, and makes building access more efficient.</p>"
       },

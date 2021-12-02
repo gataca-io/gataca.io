@@ -14,21 +14,21 @@
         "icon": "/illustrations/secure_internet.svg",
         "image": "/illustrations/secure_internet.svg",
         "title": "We’re building an identity layer for a better, more secure Internet",
-        "subtitle": "<p>Costly regulation compliance, lack of citizen eID adoption, and identity fraud.</p>",
-        "description": "<p>Our mission is to give users back control of their data and ensure their safety online.<br><br>Since its inception at MIT in 2017, GATACA has developed a comprehensive blockchain-based SSI solution that offers a single user-centric digital identity layer for the Internet with government-grade security and simple single-sign-on capabilities.</p>"
+        "subtitle": "<p>Costly regulation compliance, lack of citizen eID adoption, and identity fraud</p>",
+        "description": "<p>Our mission is to give users back control of their data and ensure their safety online.<br><br>Since its inception at MIT in 2017, GATACA has developed a comprehensive blockchain-based SSI solution that offers a single user-centric digital identity layer for the Internet with government-grade security and simple single-sign-on capabilities</p>"
       },
       {
         "icon": "/illustrations/smartphone_digit.svg",
         "image": "/illustrations/smartphone_digit.svg",
         "title": "Simplicity. Usability. Security.",
-        "shortDescription": "<p>Full stack, self -sovereign identity platform.</p>",
-        "description": "<p>Our suite of products combine key principles of simplicity and usability with advanced cryptography and blockchain technologies. Them provide hypersecure access to both private and public digital services.<br><br>Governments, universities and businesses choose GATACA without trading quality for efficiency.</p>"
+        "shortDescription": "<p>Full stack, self -sovereign identity platform</p>",
+        "description": "<p>Our suite of products combine key principles of simplicity and usability with advanced cryptography and blockchain technologies. Them provide hypersecure access to both private and public digital services.<br><br>Governments, universities and businesses choose GATACA without trading quality for efficiency</p>"
       }
     ]
   },
   "teamDataSection": {
     "title": "Meet the team",
-    "description": "<p>Behind our success is the GATACA team, comprised of a diverse and dynamic group with ceaseless determination and expertise in many fields including entrepreneurship, blockchain, cybersecurity and economics.</p>",
+    "description": "<p>Behind our success is the GATACA team, comprised of a diverse and dynamic group with ceaseless determination and expertise in many fields including entrepreneurship, blockchain, cybersecurity and economics</p>",
     "team": [
       {
         "name": "Irene Hernandez",
@@ -127,20 +127,20 @@
       },
       {
         "title": "1st prize in RACE by European Blockchain Convention",
-        "description": "<p>Awarded first place in the February 2020 edition of RACE by EBC, the European Blockchain Convention's startup competition, where ten of the most promising Blockchain startups from the Nordics and Europe presented their projects.</p>",
+        "description": "<p>Awarded first place in the February 2020 edition of RACE by EBC, the European Blockchain Convention's startup competition, where ten of the most promising Blockchain startups from the Nordics and Europe presented their projects</p>",
         "photo": "/images/cropped-ebc-logo-red-scaled-1.png",
         "link": "https://eblockchainconvention.com/race-by-ebc/"
       },
       {
         "title": "Top 10 finalist at Seed Rocket Start-Up Competition",
-        "description": "<p>Named a top ten start-up in Seed Rocket Accelerator Program, giving access to office space at Google Campus in Madrid as well as valuable networking and mentorship opportunities.</p>",
+        "description": "<p>Named a top ten start-up in Seed Rocket Accelerator Program, giving access to office space at Google Campus in Madrid as well as valuable networking and mentorship opportunities</p>",
         "photo": "/images/seedrocket.svg",
         "link": "https://www.seedrocket.com/"
       },
 
       {
         "title": "Telefonica Open Future Incubator Participant",
-        "description": "<p>One of twenty start-ups awarded access to work in Telefonica's Incubator in Madrid.</p>",
+        "description": "<p>One of twenty start-ups awarded access to work in Telefonica's Incubator in Madrid</p>",
         "photo": "/images/telefonica.svg",
         "link": "https://www.openfuture.org/hubs/gran-via-espana-open-future"
       },
@@ -152,13 +152,13 @@
       },
       {
         "title": "MIT FinTech competition Finalist",
-        "description": "<p>Selected as a finalist for MIT's Annual FinTech Competition, the largest student-organized FinTech Conference in the USA.</p>",
+        "description": "<p>Selected as a finalist for MIT's Annual FinTech Competition, the largest student-organized FinTech Conference in the USA</p>",
         "photo": "/images/ft_cutout_red-01.png",
         "link": "http://www.mitfintech.com/pitch-competition"
       },
       {
         "title": "MIT Sandbox Innovation Grant Recipient",
-        "description": "<p>Awarded grant from MIT Innovation Sandbox, a program for MIT students to pursue entrepreneurial ideas.</p>",
+        "description": "<p>Awarded grant from MIT Innovation Sandbox, a program for MIT students to pursue entrepreneurial ideas</p>",
         "photo": "/images/mit_sandbox.svg",
         "link": "http://sandbox.mit.edu/"
       }
@@ -166,7 +166,7 @@
   },
   "clientsDataSection": {
     "title": "Clients & Partners",
-    "description": "<p>The GATACA team has closed contracts with key European public administrations and private organizations. A few references below.</p>",
+    "description": "<p>The GATACA team has closed contracts with key European public administrations and private organizations. A few references below</p>",
     "clients": [
       {
         "title": "Idemia",

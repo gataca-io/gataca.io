@@ -15,8 +15,8 @@
       "title": "Certify",
       "ctaText": "Explore",
       "icon": "/icons/certify_emit.svg",
-      "shortDescription": "<p>Credential issuance tool that enables trusted authorities to issue verifiable credentials.</p>",
-      "description": "<p>Credential issuance tool that enables Trusted Authorities to issue verifiable digital identity credentials.\nLeverage our government-grade secure technology to streamline authentication processes and issue credentials directly to a digital identity wallet. No paperwork needed.</p>"
+      "shortDescription": "<p>Credential issuance tool that enables trusted authorities to issue verifiable credentials</p>",
+      "description": "<p>Credential issuance tool that enables Trusted Authorities to issue verifiable digital identity credentials.\nLeverage our government-grade secure technology to streamline authentication processes and issue credentials directly to a digital identity wallet. No paperwork needed</p>"
     },
     {
       "link": "/products/wallet",
@@ -25,8 +25,8 @@
       "subtitle": "Power your users with an ID wallet",
       "title": "Wallet",
       "ctaText": "Explore",
-      "shortDescription": "<p>Mobile ID wallet to store your identity credentials.</p>",
-      "description": "<p>Your new identity wallet providing unlimited, encrypted storage of identity credentials. A master key to all digital services worldwide.\n\nNational IDs. Vaccination passes. Insurance cards. Academic diplomas.\nAll in one place.\n</p>"
+      "shortDescription": "<p>Mobile ID wallet to store your identity credentials</p>",
+      "description": "<p>Your new identity wallet providing unlimited, encrypted storage of identity credentials. A master key to all digital services worldwide.\n\nNational IDs. Vaccination passes. Insurance cards. Academic diplomas.\nAll in one place</p>"
     },
     {
       "link": "/products/connect",
@@ -35,8 +35,8 @@
       "subtitle": "Seamlessly authenticate your users",
       "title": "Connect",
       "ctaText": "Explore",
-      "shortDescription": "<p>Single sign-on authentication and credential verification tools for Service Providers.</p>",
-      "description": "<p>Single sign-on authentication and credential verification tools for Service Providers\n\nImprove user experience by offering instant, passworld-less, biometric-enabled access to digital services. Privacy & security guaranteed.</p>"
+      "shortDescription": "<p>Single sign-on authentication and credential verification tools for Service Providers</p>",
+      "description": "<p>Single sign-on authentication and credential verification tools for Service Providers\n\nImprove user experience by offering instant, passworld-less, biometric-enabled access to digital services. Privacy & security guaranteed</p>"
     }
   ]
 }

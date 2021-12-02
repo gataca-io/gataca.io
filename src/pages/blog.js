@@ -23,14 +23,6 @@ export default function Blog({location}) {
       />
       
       <section className={insightsStyles.introSection}>
-{/*        <div>
-        
-        <h2>
-          {insightsMetaData.introSection.title}
-        </h2>
-        <p>{insightsMetaData.introSection.description}</p>
-        <p>{insightsMetaData.introSection.mission}</p>
-        </div>*/}
         <HeadLineSection
           big
           title={insightsMetaData.introSection.title}
