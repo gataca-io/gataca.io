@@ -31,13 +31,13 @@ Let’s take a step back: have you ever thought about what’s happening to your
 
 The aforementioned methods of authentication (usernames, passwords, handing over your personal information into a corporate abyss) are based on **centralized models**, characterized by users having to give up their personal information repeated times without control. These models are not just an inconvenience for users, but for organizations as well. Public and private entities concentrate millions of records and sensitive user information in their databases, making them very attractive targets for hackers. Consequently, these organizations must invest millions of Euros in security systems, GDPR compliance, and very complex authentication processes to combat cyberattacks and identity fraud. Despite these investments, should a cybersecurity attack occur, businesses are left with high fines and a damaged reputation.
 
-#### To date, no identity system has been able to resolve the tradeoff between privacy, security, and user experience.
+**_To date, no identity system has been able to resolve the tradeoff between privacy, security, and user experience._**
 
 Big tech companies attempted to tackle all three issues by developing **federated models of identity management**: single sign-on authentication methods such as those of Google or Facebook (ie. “Log in with Google”). With federated models, users delegate their identity management to big techs, who receive the power to manage our access to third-party services (ie. Google manages your access to Spotify), while accumulating more and more information about our consumer profile (now Google has access to your Spotify data & behavior). On one hand, this model can drastically improve user experience by allowing users to instantly sign up through their established service accounts, but on the other, it **exacerbates privacy and security risks by further centralizing user data in their databases.**
 
 **Then comes the self-sovereign identity (SSI)**, or decentralized identity, paradigm, a new era of trust. The father of the SSI concept, Christopher Allen, refers to SSI as a new sort of identity-based on individual control and human rights ([Coindesk](https://www.coindesk.com/policy/2021/04/26/self-sovereign-identity-5-years-on/)); **essentially, it promises to give users back control of their data, and businesses peace of mind.** How is this possible? Decentralized technologies have provided the foundation to develop a novel, trust, and global authentication layer for the internet and revolutionize digital relationships and interactions between individuals, organizations, and things.
 
-#### This user-centric identity model enables users to manage their personal information and access all digital services via one single identity, password-free.
+**_This user-centric identity model enables users to manage their personal information and access all digital services via one single identity, password-free._** 
 
 (More on passwordless authentication [here](https://gataca.io/blog/passwordless-the-model.ssi-the-method))
 
