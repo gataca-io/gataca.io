@@ -41,7 +41,7 @@ Big tech companies attempted to tackle all three issues by developing **federate
 
 (More on passwordless authentication [here](https://gataca.io/blog/passwordless-the-model.ssi-the-method))
 
-![](/static/images/identity_architectures_history.png)
+![](../images/identity_architectures_history.png)
 
 ## The SSI ecosystem & trust triangle
 
@@ -75,7 +75,7 @@ Unlike private keys, public keys are stored in the blockchain enhancing their re
 
 The diagram below illustrates the triangle of trust and the components that go along with it.
 
-![](/static/images/vc_trust_triangle.png)
+![](../images/vc_trust_triangle.png)
 
 ## SSI product suites: what do they look like?
 
@@ -87,7 +87,7 @@ Naturally, SSI-based identity technology products are what power the trust trian
 
 Below you can visualize GATACA’s full-stack product suite which includes each of the aforementioned components and how each product relates with each SSI agent (a real-life technology version of the trust triangle).
 
-![](/static/images/gataca_product_suite.png)
+![](../images/gataca_product_suite.png)
 
 ## Benefits: short term vs. long term
 
@@ -105,7 +105,7 @@ Nonetheless, the SSI vision and philosophy goes beyond instant benefits for the 
 
 SSI technology applications are unlimited. Think about it: in our increasingly digital world, every single industry needs to authenticate users, clients, citizens, employees, or providers. Digital transformation is beyond a reality and SSI helps make it a sustainable one.
 
-![](/static/images/use_cases.png)
+![](../images/use_cases.png)
 
 Follow-up sectors
 
@@ -127,7 +127,7 @@ Likewise, **regulatory bodies** are essential to establish a common ground for g
 
 Of course, at the core of SSI, we have the **technology providers**. In the past couple of years, the SSI space has experienced an exponential increase in emerging players, which as a consequence has increased market saturation across all continents. While SSI tech providers have the common goal of giving users back control of their data, there are notable differences in different business models, technical implementations, and industry targets.
 
-![](/static/images/ssi_value_chain.png)
+![](../images/ssi_value_chain.png)
 
 Recent Progress in Europe
 
