@@ -130,22 +130,22 @@
       {
         "image": "/icons/revenue_streams.svg",
         "title": "New revenue streams",
-        "description": "<p>Diversify reveue streams through the issuance of verifiable credentials helps keep Universities and partners afloat..</p>"
+        "description": "<p>Diversify reveue streams through the issuance of verifiable credentials helps keep Universities and partners afloat</p>"
       },
       {
         "image": "/icons/expenses.svg",
         "title": "Cut \ncosts",
-        "description": "<p>Minimize the amount of resources used and cut costs by enabling self service digital credential requests for students, staff and partners.</p>"
+        "description": "<p>Minimize the amount of resources used and cut costs by enabling self service digital credential requests for students, staff and partners</p>"
       },
       {
         "image": "/icons/faceID.svg",
         "title": "Reduce identity & academic fraud",
-        "description": "<p>Quickly and accurately verify student and staff identities via digital, encrypted & standardized Verifiable Credentials.</p>"
+        "description": "<p>Quickly and accurately verify student and staff identities via digital, encrypted & standardized Verifiable Credentials</p>"
       },
       {
         "image": "/icons/decrease.svg",
         "title": "Decrease economic risk",
-        "description": "<p>Attract a larger student base by becoming a reference for innovation and best-in-class student experience.</p>"
+        "description": "<p>Attract a larger student base by becoming a reference for innovation and best-in-class student experience</p>"
       }
     ],
     "description": ""
@@ -155,17 +155,17 @@
     "textBullets": [
       {
         "title": "Flexibility, control & ease-of-use",
-        "text": "We give you the option to implement our technology on premise or Cloud, and provide sandbox environements for easier testing.",
+        "text": "We give you the option to implement our technology on premise or Cloud, and provide sandbox environements for easier testing",
         "icon": ""
       },
       {
         "title": "Interoperability\n",
-        "text": "In addition to being ledger-agnostic, GATACA promotes interoperability in the SSI industry as a standards leader.",
+        "text": "In addition to being ledger-agnostic, GATACA promotes interoperability in the SSI industry as a standards leader",
         "icon": ""
       },
       {
         "title": "Compliance",
-        "text": "Our technology includes GDPR by design, SSI eIDAS bridge, and is integrated with EBSI.",
+        "text": "Our technology includes GDPR by design, SSI eIDAS bridge, and is integrated with EBSI",
         "icon": ""
       }
     ]
@@ -177,12 +177,12 @@
       {
         "image": "/images/una_europa.svg",
         "title": "UNA Europa",
-        "description": "<p>GATACA is working with UNA Europa, a European university consortia of 8 universities to deploy the Academic Diploma use case for in a cross-border erasmus exchange scenario.</p>"
+        "description": "<p>GATACA is working with UNA Europa, a European university consortia of 8 universities to deploy the Academic Diploma use case for in a cross-border erasmus exchange scenario</p>"
       },
       {
         "image": "/images/European_Commission.svg",
         "title": "Early Adopters Programme - Spain",
-        "description": "<p><a href=\"https://gataca.io/blog/gataca-joins-the-european-commission-s-early-adopters-program-as-the-ssi-technology-provider-in-the-spanish-group\" title=\"\">GATACA has joined the Spanish group</a> comprised of 5 entities, including the Royal Mint of Spain and 3 Spanish universities, which are currently implementing our technology to deploy the academic use case in the country.</p>"
+        "description": "<p><a href=\"https://gataca.io/blog/gataca-joins-the-european-commission-s-early-adopters-program-as-the-ssi-technology-provider-in-the-spanish-group\" title=\"\">GATACA has joined the Spanish group</a> comprised of 5 entities, including the Royal Mint of Spain and 3 Spanish universities, which are currently implementing our technology to deploy the academic use case in the country</p>"
       }
     ]
   },

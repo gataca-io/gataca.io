@@ -50,7 +50,7 @@
 .ctaButton {
     background-color: var(--darkblue);
     font-weight: bold;
-    text-transform: capitalize;
+
     border-radius: 10px;
     &:hover {
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.18);
@@ -69,7 +69,7 @@
 .endCtaButton {
     background-color: var(--darkblue);
     font-weight: bold;
-    text-transform: capitalize;
+
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -80,6 +80,7 @@
     margin: 0;
     color: var(--white);
     border: 2px solid var(--darkblue);
+
     &:hover {
         color: var(--darkblue);
         background-color: var(--bg-grey);

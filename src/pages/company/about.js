@@ -46,13 +46,11 @@ function AwardsSection({ data }) {
         </div>
       </div>
     </section>
-    
+  
   )
 }
 
-const defaultProps = {
-
-}
+const defaultProps = {}
 
 const About = () => {
   // const { infoData } = useSiteMetaData()
@@ -73,6 +71,7 @@ const About = () => {
           title={aboutData.bigBulletsSection.title}
         />
       </section>
+      
       <section>
         <GreatElementsSection
           bullets={aboutData.bigBulletsSection.bullets}
@@ -80,8 +79,8 @@ const About = () => {
       </section>
       
       <section className={aboutStyles.base}>
-      
-{/*
+        
+        {/*
         <section className={styles.sectionStyle}>
           <div>
             {
@@ -98,7 +97,7 @@ const About = () => {
           </div>
         </section>
 */}
-
+        
         {/*<IntroSection data={aboutData.introSection}/>*/}
         {/*<TeamSection data={aboutData.teamDataSection}/>*/}
         
@@ -110,6 +109,6 @@ const About = () => {
   )
 }
 
-About.defaultProps = defaultProps;
+About.defaultProps = defaultProps
 
-export default About;
+export default About

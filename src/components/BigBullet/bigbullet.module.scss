@@ -4,7 +4,7 @@
 .ctaButton {
     background-color: var(--darkblue);
     font-weight: bold;
-    text-transform: capitalize;
+
     border-radius: 15px;
 
     @include media-for-tablet-portrait-up {

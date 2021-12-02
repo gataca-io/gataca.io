@@ -15,14 +15,14 @@
         "image": "/illustrations/secure_internet.svg",
         "title": "We’re building an identity layer for a better, more secure Internet",
         "subtitle": "<p>Costly regulation compliance, lack of citizen eID adoption, and identity fraud</p>",
-        "description": "<p>Our mission is to give users back control of their data and ensure their safety online.<br><br>Since its inception at MIT in 2017, GATACA has developed a comprehensive blockchain-based SSI solution that offers a single user-centric digital identity layer for the Internet with government-grade security and simple single-sign-on capabilities</p>"
+        "description": "<p>Our mission is to give users back control of their data and ensure their safety online.<br><br>Since its inception at MIT in 2017, GATACA has developed a comprehensive blockchain-based SSI solution that offers a single user-centric digital identity layer for the Internet with government-grade security and simple single-sign-on capabilities.</p>"
       },
       {
         "icon": "/illustrations/smartphone_digit.svg",
         "image": "/illustrations/smartphone_digit.svg",
         "title": "Simplicity. Usability. Security.",
         "shortDescription": "<p>Full stack, self -sovereign identity platform</p>",
-        "description": "<p>Our suite of products combine key principles of simplicity and usability with advanced cryptography and blockchain technologies. Them provide hypersecure access to both private and public digital services.<br><br>Governments, universities and businesses choose GATACA without trading quality for efficiency</p>"
+        "description": "<p>Our suite of products combine key principles of simplicity and usability with advanced cryptography and blockchain technologies. Them provide hypersecure access to both private and public digital services.<br><br>Governments, universities and businesses choose GATACA without trading quality for efficiency.</p>"
       }
     ]
   },
@@ -146,7 +146,7 @@
       },
       {
         "title": "MIT Delta V Accelerator Participant",
-        "description": "<p>Accelerated by MIT's flagship entrepreneurial program.</p>",
+        "description": "<p>Accelerated by MIT's flagship entrepreneurial program</p>",
         "photo": "/images/mit_delta.svg",
         "link": "https://entrepreneurship.mit.edu/accelerator/program/"
       },
@@ -166,7 +166,7 @@
   },
   "clientsDataSection": {
     "title": "Clients & Partners",
-    "description": "<p>The GATACA team has closed contracts with key European public administrations and private organizations. A few references below</p>",
+    "description": "<p>The GATACA team has closed contracts with key European public administrations and private organizations</p>",
     "clients": [
       {
         "title": "Idemia",

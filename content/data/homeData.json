@@ -153,7 +153,7 @@
     "title": "For Developers",
     "icon": "/icons/file-code.svg",
     "description": "<p>We prioritize security and simplicity on all levels, from design processes to programming to implementation. Explore our Developer’s section where we provide robust yet easy to understand technicial documentation including user manuals, introduction to our architecture and APIs.</p>",
-    "ctaText": "Explore our Technical Documentation",
+    "ctaText": "Explore our technical documentation",
     "ctaUrl": "/developers"
   },
   "ctaSection": {

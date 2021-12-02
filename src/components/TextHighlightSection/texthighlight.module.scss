@@ -37,7 +37,7 @@
 .ctaButton {
     background-color: var(--darkblue);
     font-weight: bold;
-    text-transform: capitalize;
+
     @include media-for-tablet-portrait-up {
         padding: 1rem 3rem;
     }
