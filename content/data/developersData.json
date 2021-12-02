@@ -3,14 +3,14 @@
   "content": [
     {
       "title": "Developers",
-      "shortDescription": "<p>Resources to guide you through our technology implementation.</p>",
-      "description": "<p>Credential issuance tool that enables Trusted Authorities to issue verifiable digital identity credentials.\nLeverage our government-grade secure technology to streamline authentication processes and issue credentials directly to a digital identity wallet. No paperwork needed.</p>",
+      "shortDescription": "<p>Resources to guide you through our technology implementation</p>",
+      "description": "<p>Credential issuance tool that enables Trusted Authorities to issue verifiable digital identity credentials.\nLeverage our government-grade secure technology to streamline authentication processes and issue credentials directly to a digital identity wallet. No paperwork needed</p>",
       "link": "/developers",
       "image": "/images/building.svg"
     },
     {
       "title": "General documentation",
-      "shortDescription": "<p>Knowledge database about all GATACA's technology layer.</p>",
+      "shortDescription": "<p>Knowledge database about all GATACA's technology layer</p>",
       "description": "<p>Your new identity wallet providing unlimited, encrypted storage of identity credentials. A master key to all digital services worldwide.\n\nNational IDs. Vaccination passes. Insurance cards. Academic diplomas.\nAll in one place.\n</p>",
       "link": "https://gataca.atlassian.net/wiki/spaces/developers/overview",
       "image": "/images/phone-small.svg",
@@ -18,8 +18,8 @@
     },
     {
       "title": "APIs",
-      "shortDescription": "<p>Essential documentation to help you work with our SSI APIs.</p>",
-      "description": "<p>Credential issuance tool that enables Trusted Authorities to issue verifiable digital identity credentials.\nLeverage our government-grade secure technology to streamline authentication processes and issue credentials directly to a digital identity wallet. No paperwork needed.</p>",
+      "shortDescription": "<p>Essential documentation to help you work with our SSI APIs</p>",
+      "description": "<p>Credential issuance tool that enables Trusted Authorities to issue verifiable digital identity credentials.\nLeverage our government-grade secure technology to streamline authentication processes and issue credentials directly to a digital identity wallet. No paperwork needed</p>",
       "icon": "/icons/file-code-search-1.svg",
       "link": "https://api.gataca.io/",
       "image": "/images/building.svg"

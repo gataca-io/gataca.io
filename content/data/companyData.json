@@ -3,7 +3,7 @@
   "content": [
     {
       "title": "About",
-      "shortDescription": "<p>Get to know our mission & vision.</p>",
+      "shortDescription": "<p>Get to know our mission & vision</p>",
       "description": "<p></p>",
       "icon": "/icons/team.svg",
       "link": "/company/about",
@@ -11,16 +11,16 @@
     },
     {
       "title": "Press",
-      "shortDescription": "<p>Resources for press and media.</p>",
-      "description": "<p>Credential issuance tool that enables Trusted Authorities to issue verifiable digital identity credentials.\nLeverage our government-grade secure technology to streamline authentication processes and issue credentials directly to a digital identity wallet. No paperwork needed.</p>",
+      "shortDescription": "<p>Resources for press and media</p>",
+      "description": "<p>Credential issuance tool that enables Trusted Authorities to issue verifiable digital identity credentials.\nLeverage our government-grade secure technology to streamline authentication processes and issue credentials directly to a digital identity wallet. No paperwork needed</p>",
       "icon":  "/icons/press.svg",
       "link": "/company/press",
       "image": "/images/building.svg"
     },
     {
       "title": "Contact",
-      "shortDescription": "<p>Start conversation.</p>",
-      "description": "<p>Your new identity wallet providing unlimited, encrypted storage of identity credentials. A master key to all digital services worldwide.\n\nNational IDs. Vaccination passes. Insurance cards. Academic diplomas.\nAll in one place.\n</p>",
+      "shortDescription": "<p>Start conversation</p>",
+      "description": "<p>Your new identity wallet providing unlimited, encrypted storage of identity credentials. A master key to all digital services worldwide.\n\nNational IDs. Vaccination passes. Insurance cards. Academic diplomas.\nAll in one place</p>",
       "icon": "/icons/fast_envelope.svg",
       "link": "/company/contact",
       "image": "/images/phone-small.svg"
