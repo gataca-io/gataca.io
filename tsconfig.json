@@ -65,12 +65,14 @@
     /* Advanced Options */
     "skipLibCheck": true,                     /* Skip type checking of declaration files. */
     "forceConsistentCasingInFileNames": true,  /* Disallow inconsistently-cased references to the same file. */
-    "plugins": [{ "name": "typescript-plugin-css-modules" }]
+    "plugins": [{ "name": "typescript-plugin-css-modules" }],
+//    "types" : ["/main.d.ts"]
   },
   "include": [
     "src"
   ],
   "exclude": [
 //    "src/styles/css-modules.d.ts"
-  ]
+  ],
+
 }

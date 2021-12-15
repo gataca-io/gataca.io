@@ -35,6 +35,16 @@ export default function IndexPage() {
   // }, [])
   
   
+  const triggerGAEvent = (event) =>{
+    if (!window) {
+      return;
+    }
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      'event': event
+    });
+  }
+  
   return (
     <Layout>
       

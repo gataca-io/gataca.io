@@ -7,7 +7,23 @@ import { Link } from "gatsby"
 
 type IBigCtaSectionProps = {}
 
+
 const BigCtaSection: React.FC<IBigCtaSectionProps> = ({}) => {
+
+  const triggerGAEvent = (event: string) => {
+
+    // @ts-ignore
+    if (!window && !!window.datalayer) {
+      return;
+    }
+    // @ts-ignore
+    window.dataLayer = window.dataLayer || [];
+    // @ts-ignore
+    window.dataLayer.push({
+      'event': event
+    });
+
+  }
 
   useEffect(() => {
 
@@ -41,7 +57,7 @@ const BigCtaSection: React.FC<IBigCtaSectionProps> = ({}) => {
             <h1>{homeData.bigCtaSection.title}</h1>
             <h3>{homeData.bigCtaSection.description}</h3>
             {/*<p>{homeData.bigCtaSection.subDescription}</p>*/}
-            <Link to={homeData.bigCtaSection.ctaUrl}>
+            <Link onClick={() => triggerGAEvent('Home => Products')} to={homeData.bigCtaSection.ctaUrl}>
 
               <button
                 className={styles.ctaButton}
