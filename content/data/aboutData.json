@@ -137,7 +137,6 @@
         "photo": "/images/seedrocket.svg",
         "link": "https://www.seedrocket.com/"
       },
-
       {
         "title": "Telefonica Open Future Incubator Participant",
         "description": "<p>One of twenty start-ups awarded access to work in Telefonica's Incubator in Madrid</p>",
@@ -169,11 +168,15 @@
     "description": "<p>The GATACA team has closed contracts with key European public administrations and private organizations</p>",
     "clients": [
       {
+        "title": "Universitat Rovira i Virgili",
+        "photo": "/static/images/urv-logo-color.png",
+        "link": "https://www.urv.cat/en/"
+      },
+      {
         "title": "Idemia",
         "photo": "../images/idemia_horizontal-baseline_cmyk_violet88.png",
         "link": "https://www.idemia.com/"
       },
-
       {
         "title": "Early Adopters Program - Spain",
         "photo": "../images/European_Commission.svg",
