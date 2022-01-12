@@ -169,32 +169,32 @@
     "clients": [
       {
         "title": "Universitat Rovira i Virgili",
-        "photo": "/static/images/urv-logo-color.png",
+        "photo": "/images/urv-logo-color.png",
         "link": "https://www.urv.cat/en/"
       },
       {
         "title": "Idemia",
-        "photo": "../images/idemia_horizontal-baseline_cmyk_violet88.png",
+        "photo": "/images/idemia_horizontal-baseline_cmyk_violet88.png",
         "link": "https://www.idemia.com/"
       },
       {
         "title": "Early Adopters Program - Spain",
-        "photo": "../images/European_Commission.svg",
+        "photo": "/images/European_Commission.svg",
         "link": "https://ec.europa.eu/cefdigital/wiki/display/CEFDIGITAL/Early+Adopters+Programme"
       },
       {
         "title": "UNA Europa",
-        "photo": "../images/una_europa.svg",
+        "photo": "/images/una_europa.svg",
         "link": "https://www.ngi.eu/ngi-projects/essif-lab/"
       },
       {
         "title": "European Commission",
-        "photo": "../images/European_Commission.svg",
+        "photo": "/images/European_Commission.svg",
         "link": "https://southsummit.co/en/startup-competition-en/"
       },
       {
         "title": "DIF",
-        "photo": "../images/logo_dif.png",
+        "photo": "/images/logo_dif.png",
         "link": "https://identity.foundation/"
       }
     ]

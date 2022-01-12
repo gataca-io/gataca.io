@@ -160,18 +160,6 @@ module.exports = {
       }
     },
     {
-      resolve: 'gatsby-wpgraphql-inline-images',
-      options: {
-        wordPressUrl: 'https://gataca.io/',
-        uploadsUrl: 'https://gataca.io/wp-content/uploads/',
-        processPostTypes: ['Page', 'Post', 'CustomPost'],
-        graphqlTypeName: 'WPGraphQL',
-        httpHeaders: {
-          Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
-        }
-      },
-    },
-    {
       resolve: `gatsby-plugin-alias-imports`,
       options: {
         alias: {
