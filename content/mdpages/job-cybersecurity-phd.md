@@ -6,11 +6,13 @@ meta_data:
     twitter: ''
     facebook_and_whatsapp: ''
     linkedin: ''
-title: Job - Cybersecurity PHD
+title: ''
 author: ''
 hero_image: "/images/christopher-gower-m_hrflhgabo-unsplash.jpg"
 
 ---
+## Job opening - Cybersecurity PHD
+
 **Who are we?**
 
 GATACA is a cybersecurity company that provides self-sovereign identity technology. We power users with a mobile ID wallet to enjoy passwordless, hyper-secure and privacy-preserving access to digital services worldwide. Read more about what we do here: [https://bit.ly/31Us3Ln](https://bit.ly/31Us3Ln "https://bit.ly/31Us3Ln")
