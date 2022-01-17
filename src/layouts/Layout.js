@@ -4,7 +4,7 @@ import layoutStyles from "./layout.module.scss"
 import FooterSection from "../components/FooterSection/FooterSection"
 import configMetaData from "../../content/data/configMetaData.json"
 
-
+import mixpanel from 'mixpanel-browser';
 export default function Layout(props) {
   
   const removeAnalyticsCookies = () => {
@@ -36,6 +36,8 @@ export default function Layout(props) {
   }
   
   useEffect(() => {
+    mixpanel.init('358bba736311028757bfcda6b89b3983', {debug: true});
+    mixpanel.track('Sign up');
     const hubspotStateCookie = getCookie("__hs_cookie_cat_pref")
     // console.log("HUBSPOT COOKIE => ", hubspotStateCookie)
     if (hubspotStateCookie) {
