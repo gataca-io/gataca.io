@@ -1,11 +1,11 @@
 ---
 meta_data:
   title: Job opening - Cybersecurity PHD
-  description: ''
+  description: Job opening - Cybersecurity PHD
   rrss_images:
-    twitter: ''
+    twitter: "/images/christopher-gower-m_hrflhgabo-unsplash.jpg"
     facebook_and_whatsapp: ''
-    linkedin: ''
+    linkedin: "/images/christopher-gower-m_hrflhgabo-unsplash.jpg"
 title: ''
 author: ''
 hero_image: "/images/christopher-gower-m_hrflhgabo-unsplash.jpg"
