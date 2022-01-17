@@ -6,7 +6,7 @@ meta_data:
     twitter: "/images/christopher-gower-m_hrflhgabo-unsplash.jpg"
     facebook_and_whatsapp: ''
     linkedin: "/images/christopher-gower-m_hrflhgabo-unsplash.jpg"
-title: Job - Frontend Developer
+title: ''
 author: ''
 hero_image: "/images/christopher-gower-m_hrflhgabo-unsplash.jpg"
 
