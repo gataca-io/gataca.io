@@ -105,12 +105,12 @@
       {
         "image": "/icons/secure.svg",
         "title": "PRIVACY BY DESING",
-        "description": "<p>We offer a blockchain-agnostic platform that enables you to use your own network and interconnect with other blockchain network providers</p>"
+        "description": "<p>We combine strong privacy by design principles with the best end-user experience to increase user loyalty</p>"
       },
       {
         "image": "/icons/lock.svg",
         "title": "SECURITY BY DESIGN",
-        "description": "<p>We offer a blockchain-agnostic platform that enables you to use your own network and interconnect with other blockchain network providers</p>"
+        "description": "<p>User data and ID credentials are protected with biometrics and post-quantum cryptography for maximum protection</p>"
       }
     ]
   }
