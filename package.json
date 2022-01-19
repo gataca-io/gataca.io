@@ -61,6 +61,7 @@
 		"gatsby-transformer-sharp": "^2.2.1",
 		"gatsby-transformer-yaml": "^2.2.4",
 		"gatsby-wpgraphql-inline-images": "^0.2.5",
+		"mixpanel-browser": "^2.43.0",
 		"react": "^16.8.6",
 		"react-cookie-consent": "^6.1.0",
 		"react-dom": "^16.8.6",

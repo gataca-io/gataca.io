@@ -4,7 +4,6 @@ import layoutStyles from "./layout.module.scss"
 import FooterSection from "../components/FooterSection/FooterSection"
 import configMetaData from "../../content/data/configMetaData.json"
 
-
 export default function Layout(props) {
   
   const removeAnalyticsCookies = () => {
