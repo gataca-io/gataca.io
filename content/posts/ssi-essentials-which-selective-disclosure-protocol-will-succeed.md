@@ -6,9 +6,9 @@ meta_data:
   description: An overview of the basics of Selective Disclosure and the most popular
     methods explored by SSI providers to achieve it.
   rrss_images:
-    twitter: "/static/images/zkp.jpg"
-    facebook_and_whatsapp: "/static/images/zkp.jpg"
-    linkedin: "/static/images/zkp.jpg"
+    twitter: "/static/images/zkp_rrss.jpg"
+    facebook_and_whatsapp: "/static/images/zkp_rrss.jpg"
+    linkedin: "/static/images/zkp_rrss.jpg"
 title: 'SSI essentials: Zero Knowledge Proof (ZKP) and Selective Disclosure, till
   death do us part?'
 author: ''
