@@ -1,5 +1,5 @@
 ---
-date: 2022-01-24T15:46:42Z
+date: 2022-01-24T15:46:42.000+00:00
 meta_data:
   title: 'SSI essentials: Zero Knowledge Proof (ZKP) and Selective Disclosure, till
     death do us part?'
@@ -54,7 +54,7 @@ As a result, credential holders can reveal and confirm certain claims of a VC gr
 
 ![](../images/zkp_blog_img3.png)
 
-Note that this approach is compatible with multi-claim credentials, as a Credential Group could be composed of both monoclaim and multi-claim credentials, with the only caveat being that the claims contained in multi-claim credentials could not be selectively disclosed. This feature is useful for 2 reasons:
+Note that this approach is compatible with multi-claim credentials, since a Credential Group could be composed of both monoclaim and multi-claim credentials, with the only caveat being that the claims contained in multi-claim credentials could not be selectively disclosed. This feature is useful for 2 reasons:
 
 * to implement selective disclosure while keeping compatibility with existing schemas and frameworks that do not yet support selective disclosure (e.g. EBSI)
 * to enable an Issuer to link claims - that is to avoid sharing them independently- (e.g. a driver’s license number and its expiration date), while enabling selective disclosure on other claims
