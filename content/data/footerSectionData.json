@@ -17,6 +17,11 @@
   ],
   "rrss": [
     {
+      "name": "Youtube",
+      "icon": "/images/youtube.png",
+      "url": "https://www.youtube.com/channel/UCcjJqmCa1UmbbS8ZpM8kkAQ"
+    },
+    {
       "name": "twitter",
       "icon": "/images/twitter.svg",
       "url": "https://twitter.com/gataca_id"
