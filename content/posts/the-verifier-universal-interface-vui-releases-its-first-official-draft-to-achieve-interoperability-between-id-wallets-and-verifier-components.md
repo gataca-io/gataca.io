@@ -33,7 +33,7 @@ VUI identifies a minimum set of 6 APIs to offer an end-to-end credential verific
 5. Issuer resolution
 6. Schema resolution
 
-![](/images/vui-verifier-api-structure.jpg)
+![](/images/vui_blog_architecture.png)
 
 Since both DID Registry & Status resolution APIs have advanced pre-defined work, we set out to build a team to work on the remaining interfaces. In just one year, the VUI working group, composed of 12 SSI organizations, has been able to define APIs for Data Agreements, Presentation Exchange, and Issuer Resolution. It is important to note that our delivery for the Presentation Exchange API was an extension of the existing work based on WACI. As for the remaining API, Schema resolution, future work of VUI will involve its definition as it is only one without a definition proposal or an existing normative reference.
 
@@ -93,11 +93,11 @@ Issuer Resolution: [https://gataca-io.github.io/vui/issuerResolution](https://ga
 
 **API Swaggers** - Since the Presentation Exchange and Data Agreements APIs are intrinsically related, we have consolidated them into one swagger. The Issuer Resolution swagger link can be found below.
 
-Presentation Exchange & Data Agreements: [My New API](https://gataca-io.github.io/vui-core/issuerResolution.html)
+Presentation Exchange & Data Agreements: [My New API](https://gataca-io.github.io/vui-core)
 
 Issuer resolution: [My New API](https://gataca-io.github.io/vui-core/issuerResolution.html)
 
-**VUI-core library** - Consists of an open-source library that implements the above-mentioned APIs. While they do not obtain the complete functionality of a verifier, they offer the core implementation of these APIs. 
+**VUI-core library** - Consists of an open-source library that implements the above-mentioned APIs. While they do not obtain the complete functionality of a verifier, they offer the core implementation of these APIs.
 
 [https://github.com/gataca-io/vui-core](https://github.com/gataca-io/vui-core "https://github.com/gataca-io/vui-core")
 
