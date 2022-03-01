@@ -56,7 +56,7 @@
       }
     ]
   },
-  "mainImage": "/images/panel-crendentials.svg",
+  "mainImage": "/images/panel-credentials.svg",
   "secondImage": "/images/credentialsSecondImage.svg",
   "thirdImage": "/images/credentialsThirdImage.svg",
   "bulletOne": {
@@ -71,7 +71,7 @@
   },
   "stepsSection": {
     "title": "Issuance process",
-    "mainImage": "/images/panel-crendentials.svg",
+    "mainImage": "/images/panel-credentials.svg",
     "secondImage": "/images/credentialsSecondImage.svg",
     "thirdImage": "/images/credentialsThirdImage.svg",
     "bulletOne": {

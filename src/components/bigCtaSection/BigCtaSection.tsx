@@ -1,33 +1,12 @@
 import React, { useState, useEffect } from "react"
 import homeData from "../../../content/data/homeData.json"
 import styles from "./bigcta.module.scss"
-import ctaStyles from "../CtaSection/cta.module.scss"
-import { Button } from "carbon-components-react"
 import { Link } from "gatsby"
 
 type IBigCtaSectionProps = {}
 
-
 const BigCtaSection: React.FC<IBigCtaSectionProps> = ({}) => {
 
-  const triggerGAEvent = (event: string) => {
-
-    // @ts-ignore
-    if (!window && !!window.datalayer) {
-      return;
-    }
-    // @ts-ignore
-    window.dataLayer = window.dataLayer || [];
-    // @ts-ignore
-    window.dataLayer.push({
-      'event': event
-    });
-
-  }
-
-  useEffect(() => {
-
-  }, [])
 
   return (
     <React.Fragment>
@@ -57,8 +36,7 @@ const BigCtaSection: React.FC<IBigCtaSectionProps> = ({}) => {
             <h1>{homeData.bigCtaSection.title}</h1>
             <h3>{homeData.bigCtaSection.description}</h3>
             {/*<p>{homeData.bigCtaSection.subDescription}</p>*/}
-            <Link onClick={() => triggerGAEvent('Home => Products')} to={homeData.bigCtaSection.ctaUrl}>
-
+            <Link to={homeData.bigCtaSection.ctaUrl}>
               <button
                 className={styles.ctaButton}
               > {homeData.bigCtaSection.subDescription}</button>
