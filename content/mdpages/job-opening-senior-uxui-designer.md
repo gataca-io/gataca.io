@@ -11,6 +11,7 @@ author: ''
 hero_image: "/images/rawpixel-559744-unsplash-1.jpg"
 
 ---
+
 ## Job opening - Senior UX/UI Designer
 
 **Who are we?**
