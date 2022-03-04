@@ -1,13 +1,13 @@
 ---
-date: 2022-03-04T12:21:09Z
+date: 2022-03-04T12:21:09.000+00:00
 meta_data:
   title: The GATACA Wallet becomes one of the first EBSI conformant Wallets in Europe
   description: Our GATACA Wallet has successfully passed the WTC, becoming one of
     the first EBSI conformant Wallets in the region
   rrss_images:
-    twitter: ''
-    facebook_and_whatsapp: ''
-    linkedin: ''
+    twitter: "/images/ebsi-wct-blog-image.jpg"
+    facebook_and_whatsapp: "/images/ebsi-wct-blog-image.jpg"
+    linkedin: "/images/ebsi-wct-blog-image.jpg"
 title: The GATACA Wallet becomes one of the first EBSI conformant Wallets in Europe
 author: ''
 hero_image: "/images/ebsi-wct-blog-image.jpg"
