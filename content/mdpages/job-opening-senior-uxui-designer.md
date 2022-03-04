@@ -36,7 +36,7 @@ To **work on the evolution of a self-sovereign identity (SSI) platform** and hel
 * **Develop the products and/or features designed** when needed (both web and mobile). Participate in code reviews for others' work
 * **Conduct usability testing**
 
-**Who do we need? 🤼‍♀️** 
+**Who do we need? 🤼‍♀️**
 
 Skills:
 
@@ -64,7 +64,7 @@ Background:
   * Proficiency with HTML, CSS, and JavaScript
   * Experience with React & React Native programming library
 
-**What do we offer? 🤝** 
+**What do we offer? 🤝**
 
 * Gross salary range 35-45K€
 * Contract type: full-time
@@ -77,7 +77,7 @@ Background:
 * Birthdays off
 * 23 working days per year of vacation
 
-**Where, when? 📪** 
+**Where, when? 📪**
 
 We enjoy beautiful offices in a co-working space in **Madrid**, where we have access to all sort of conveniences: plenty of space for us, an auditorium, 2 meeting rooms equipped with nice tech, a kitchen where you can cook or store a few things, locks, security, and inspiring neighbors.
 
@@ -85,7 +85,7 @@ During Covid, we’ve prioritized remote work as a first option and some team me
 
 Schedule: **Mon to Fri. Flexible schedule.**
 
-**Application ✍** 
+**Application ✍**
 
 * Deadline: March 11th, 2022
 * Apply here →  [https://share.hsforms.com](https://share.hsforms.com/1yawkLpg1RRGq7cR23b_Wyg2tcg6 "https://share.hsforms.com/1yawkLpg1RRGq7cR23b_Wyg2tcg6")
