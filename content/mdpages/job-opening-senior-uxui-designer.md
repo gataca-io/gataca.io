@@ -1,16 +1,17 @@
 ---
 meta_data:
-  title: ''
-  description: ''
+  title: Job opening - Senior UX/UI Designer
+  description: Job opening - Senior UX/UI Designer
   rrss_images:
-    twitter: ''
+    twitter: "/images/rawpixel-559744-unsplash-1.jpg"
     facebook_and_whatsapp: ''
-    linkedin: ''
-title: Job opening - Senior UXUI Designer
+    linkedin: "/images/rawpixel-559744-unsplash-1.jpg"
+title: Job opening - Senior UX/UI Designer
 author: ''
 hero_image: "/images/rawpixel-559744-unsplash-1.jpg"
 
 ---
+
 
 ## Job opening - Senior UX/UI Designer
 
