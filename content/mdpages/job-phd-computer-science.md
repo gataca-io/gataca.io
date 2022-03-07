@@ -3,12 +3,12 @@ meta_data:
   title: Job - PHD Computer Science
   description: Job- PHD Computer Science
   rrss_images:
-    twitter: "/images/rawpixel-559744-unsplash.jpg"
+    twitter: "/static/images/rawpixel-559744-unsplash.jpg"
     facebook_and_whatsapp: "/images/rawpixel-559744-unsplash.jpg"
-    linkedin: "/images/rawpixel-559744-unsplash.jpg"
+    linkedin: "/static/images/rawpixel-559744-unsplash.jpg"
 title: Job - PHD Computer Science
 author: ''
-hero_image: "/images/rawpixel-559744-unsplash.jpg"
+hero_image: "/static/images/rawpixel-559744-unsplash.jpg"
 
 ---
 ### **Who are we?**
