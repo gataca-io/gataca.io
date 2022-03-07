@@ -1,14 +1,14 @@
 ---
 meta_data:
-  title: Job opening - Senior UX/UI Designer
-  description: Job opening - Senior UX/UI Designer
+  title: Job - Senior UX/UI Designer
+  description: Job - Senior UX/UI Designer
   rrss_images:
-    twitter: "/images/rawpixel-559744-unsplash-1.jpg"
-    facebook_and_whatsapp: "/images/rawpixel-559744-unsplash-1.jpg"
-    linkedin: "/images/rawpixel-559744-unsplash-1.jpg"
-title: Job opening - Senior UX/UI Designer
+    twitter: "/images/rawpixel-559744-unsplash.jpg"
+    facebook_and_whatsapp: "/images/rawpixel-559744-unsplash.jpg"
+    linkedin: "/images/rawpixel-559744-unsplash.jpg"
+title: Job - Senior UX/UI Designer
 author: ''
-hero_image: "/images/rawpixel-559744-unsplash-1.jpg"
+hero_image: "/images/rawpixel-559744-unsplash.jpg"
 
 ---
 ### **Who are we?**
