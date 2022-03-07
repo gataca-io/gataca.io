@@ -11,11 +11,7 @@ author: ''
 hero_image: "/images/rawpixel-559744-unsplash-1.jpg"
 
 ---
-
-
-## Job opening - Senior UX/UI Designer
-
-**Who are we?**
+### **Who are we?**
 
 GATACA is a cybersecurity company that provides self-sovereign identity technology. We power users with a mobile ID wallet to enjoy passwordless, hyper-secure and privacy-preserving access to digital services worldwide. Read more about what we do [here](https://gataca.io/blog/ssi-essentials-everything-you-need-to-know-about-decentralized-identity).
 
@@ -23,7 +19,7 @@ Since its inception at MIT in 2018, GATACA has received several European grants,
 
 If you want to join a growing startup with an ambitious goal, keep reading.
 
-**What will you do? 💻**
+### **What will you do? 💻**
 
 To **work on the evolution of a self-sovereign identity (SSI) platform** and help scale it to serve millions of users with maximum guarantees of privacy and security. For this purpose, we need a person who will be responsible for the **design of digital GATACA’s user experiences** across our website, SaaS solution and mobile App, and the **implementation of UX/UI best practices and principles across all our digital products** (both B2B and B2C). You will:
 
@@ -38,9 +34,9 @@ To **work on the evolution of a self-sovereign identity (SSI) platform** and hel
 * **Develop the products and/or features designed** when needed (both web and mobile). Participate in code reviews for others' work
 * **Conduct usability testing**
 
-**Who do we need? 🤼‍♀️**
+### **Who do we need? 🤼‍♀️**
 
-Skills:
+**Skills:**
 
 * You enjoy solving complex technical problems. Can’t stop until you find a solution.
 * You are comfortable working with abstract problem statements and enjoy giving them shape to find tangible solutions
@@ -52,7 +48,7 @@ Skills:
 * You are comfortable with deadlines
 * You are persistent and keep a positive attitude in adversity
 
-Background:
+**Background:**
 
 * **>3 years of work experience in UX / UI Design or a similar role**
 * Strong knowledge of **UX design methodologies**, understanding of **best practices and contemporary design patterns**
@@ -66,7 +62,7 @@ Background:
   * Proficiency with HTML, CSS, and JavaScript
   * Experience with React & React Native programming library
 
-**What do we offer? 🤝**
+### **What do we offer? 🤝**
 
 * Gross salary range 35-45K€
 * Contract type: full-time
@@ -79,11 +75,11 @@ Background:
 * Birthdays off
 * 23 working days per year of vacation
 
-**Where, when? 📪**
+### **Where, when? 📪**
 
 We enjoy beautiful offices in a co-working space in **Madrid**, where we have access to all sort of conveniences: plenty of space for us, an auditorium, 2 meeting rooms equipped with nice tech, a kitchen where you can cook or store a few things, locks, security, and inspiring neighbors.
 
-During Covid, we’ve prioritized remote work as a first option and some team members are enjoying it, so we’ll keep a balance moving forward. We like to meet at least once a week, but flexibility and work-life balance remain a priority.
+During Covid, we’ve prioritized remote work as a first option and some team members are enjoying it, so we’ll keep a balance moving forward. We like to meet at least once a week, but flexibility and work-life balance remain a priority. 
 
 Schedule: **Mon to Fri. Flexible schedule.**
 

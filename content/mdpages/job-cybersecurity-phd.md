@@ -1,21 +1,18 @@
 ---
 meta_data:
-  title: Job opening - Cybersecurity PHD
-  description: Job opening - Cybersecurity PHD
+  title: Job opening - PHD Computer Science
+  description: Job opening - PHD Computer Science
   rrss_images:
     twitter: "/static/images/christopher-gower-m_hrflhgabo-unsplash.jpg"
-    facebook_and_whatsapp: ''
+    facebook_and_whatsapp: "/images/christopher-gower-m_hrflhgabo-unsplash.jpg"
     linkedin: "/static/images/christopher-gower-m_hrflhgabo-unsplash.jpg"
-
-title: 'Job opening - Cybersecurity PHD'
-description: 'Job opening - Cybersecurity PHD'
+title: Job opening - PHD Computer Science
+description: Job opening - Cybersecurity PHD
 author: ''
 hero_image: "/static/images/christopher-gower-m_hrflhgabo-unsplash.jpg"
 
 ---
-## Job opening - Cybersecurity PHD
-
-**Who are we?**
+### **Who are we?**
 
 GATACA is a cybersecurity company that provides self-sovereign identity technology. We power users with a mobile ID wallet to enjoy passwordless, hyper-secure and privacy-preserving access to digital services worldwide. Read more about what we do here: [https://bit.ly/31Us3Ln](https://bit.ly/31Us3Ln "https://bit.ly/31Us3Ln")
 
@@ -23,7 +20,7 @@ Since its inception at MIT in 2018, GATACA has received several European grants,
 
 If you want to join a growing startup with an ambitious goal, keep reading!
 
-**What will you do? 💻**
+### **What will you do? 💻**
 
 To **work on the evolution of a self-sovereign identity (SSI) platform** and help scale it to serve millions of users with maximum guarantees of privacy and security. For this purpose, we need a person who can perform research, design and software development functions specializing in cybersecurity and cryptography. You will:
 
@@ -35,32 +32,9 @@ To **work on the evolution of a self-sovereign identity (SSI) platform** and hel
 * **Develop & maintain research, design and technical documentation.**
 * Design and prepare **security tests** to apply in Continuous Integration.
 
-In 1 month ...
+### **Who do we need? 🤼♀️**
 
-You’ll be welcomed with open arms. From day one, GATACA has prepared an onboarding schedule where you will get a 360 view of the mission of the company, of our clients and of the different areas of the product. You will meet all GATACA team members over breakfast and you will learn what each person does and the technical and business challenges in individual sessions. We will have small tasks prepared for you to become familiar with our technology.
-
-In 3 months...
-
-You will begin to really understand the architecture of our product, you will assume complex tasks and you will contribute to technical decisions both about the product and in cybersecurity issues. You are expected to start generating tangible impact and deliver the first results, such as designing solutions to specific problems. Your first big assignment will arrive.
-
-In 12 months ...
-
-You will be fully integrated into GATACA and it is expected that you’ll have become a technical reference in international standardization forums. You first big project will be life. You will be autonomous, proactive, resourceful, and excited about the company’s future. You will help continue building a great team and preserve the innovative spirit of the company.
-
-**Who will you work closest with? 🕺**
-
-You will be in a dynamic and international environment. Our goal is to make our team as international and diverse as possible, as we believe that it is the key to success. Your colleagues will still be mostly Spanish native speakers, but your clients and other interlocutors will be mostly from other parts of the world. You will need a fluent level of English, since you will use it in your day-to-day life.
-
-You will join as part of the technical team with the following key people:
-
-* Samuel Gomez (CTO) - [https://www.linkedin.com/in/samuelgoes/](https://www.linkedin.com/in/samuelgoes/ "https://www.linkedin.com/in/samuelgoes/")
-* Jose (CSO) - [https://www.linkedin.com/in/jsanjup/](https://www.linkedin.com/in/jsanjup/ "https://www.linkedin.com/in/jsanjup/")
-* Daniel (Backend engineer) - [https://www.linkedin.com/in/daniel-moledo-garcia-655004192/](https://www.linkedin.com/in/daniel-moledo-garcia-655004192/ "https://www.linkedin.com/in/daniel-moledo-garcia-655004192/")
-* Sergio (UX/UI, Frontend engineer) - [https://www.linkedin.com/in/sergiogordo/](https://www.linkedin.com/in/sergiogordo/ "https://www.linkedin.com/in/sergiogordo/")
-
-**Who do we need? 🤼♀️**
-
-Background:
+**Background:**
 
 * Necessary:
 * **A COMPLETED PHD in computer science, computer engineering, software engineering, or any related disciplines (THIS IS A HARD REQUIREMENT, PLEASE DON'T APPLY IF YOU DON'T MEET THIS CRITERIA)**
@@ -71,7 +45,7 @@ Background:
 * Experience with blockchain technologies
 * Experience with authentication protocols
 
-Skills:
+**Skills:**
 
 * You enjoy solving complex technical problems. Can’t stop until you find a solution.
 * You are comfortable working with abstract problem statements and enjoy giving them shape to find tangible solutions
@@ -83,7 +57,7 @@ Skills:
 * You are comfortable with deadlines
 * You are persistent and keep a positive attitude in adversity
 
-**What do we offer? 🤝**
+### **What do we offer? 🤝**
 
 * Gross salary range 45-50K€
 * Contract type: full-time
@@ -96,15 +70,15 @@ Skills:
 * Birthdays off
 * 23 working days per year of vacation
 
-**Where, when? 📪**
+### **Where, when? 📪**
 
 We enjoy beautiful offices in a co-working space in Madrid, where we have access to all sort of conveniences: plenty of space for us, an auditorium, 2 meeting rooms equipped with nice tech, a kitchen where you can cook or store a few things, locks, security, and inspiring neighbors.
 
-During Covid, we’ve prioritized remote work as a first option and some team members are enjoying it, so we’ll keep a balance moving forward. We like to meet at least once a week, but flexibility and work-life balance remain a priority.
+During Covid, we’ve prioritized remote work as a first option and some team members are enjoying it, so we’ll keep a balance moving forward. We like to meet at least once a week, but flexibility and work-life balance remain a priority. Full Remote is also a possibility.
 
 Schedule: **Mon to Fri. Flexible schedule**
 
 **Application ✍**
 
-* Deadline: January 21, 2022
+* Deadline: Mar 11, 2022
 * Apply here → [https://bit.ly/3Kbejxc](https://bit.ly/3Kbejxc "https://bit.ly/3Kbejxc")
