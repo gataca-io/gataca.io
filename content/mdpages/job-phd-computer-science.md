@@ -57,7 +57,7 @@ To **work on the evolution of a self-sovereign identity (SSI) platform** and hel
 
 ### **What do we offer? 🤝**
 
-* Gross salary range 45-50K€
+* Gross salary range 45-55K€
 * Contract type: full-time
 * Stock Options in the company - we want all employees to be also owners.
 * Highly innovative and motivating project
