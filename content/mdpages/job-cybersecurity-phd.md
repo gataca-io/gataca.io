@@ -22,11 +22,10 @@ If you want to join a growing startup with an ambitious goal, keep reading!
 
 ### **What will you do? 💻**
 
-To **work on the evolution of a self-sovereign identity (SSI) platform** and help scale it to serve millions of users with maximum guarantees of privacy and security. For this purpose, we need a person who can perform research, design and software development functions specializing in cybersecurity and cryptography. You will:
+To **work on the evolution of a self-sovereign identity (SSI) platform** and help scale it to serve millions of users with maximum guarantees of privacy and security. For this purpose, we need a person who can perform research, design and software development functions. You will:
 
-* **Solve complex technical problems related to the fields of security, cryptography, and privacy, and will design solutions from scratch**, always thinking about how to maximize security and usability simultaneously.
-* Ensure GATACA is the most secure SSI platform worldwide. For this purpose, you’ll **challenge and optimize current cryptographic & security mechanisms**.
-* Collaborate with the executives across the team to **define the cybersecurity strategy.**
+* **Solve complex technical problems related to the fields of computer science, security, and privacy, and will design solutions from scratch**, always thinking about how to maximize security and usability simultaneously.
+* Ensure GATACA is the most secure SSI platform worldwide. For this purpose, you’ll **challenge and optimize current technical architecture & security mechanisms**.
 * You’ll help **develop backend technology**, writing server-side code, developing rapid prototypes, evolving current products, and creating robust production applications.
 * **Advocate for the technology in technical forums.** We expect you to become a reference in cryptography and cybersecurity in SSI-related international forums.
 * **Develop & maintain research, design and technical documentation.**
@@ -38,12 +37,12 @@ To **work on the evolution of a self-sovereign identity (SSI) platform** and hel
 
 * Necessary:
 * **A COMPLETED PHD in computer science, computer engineering, software engineering, or any related disciplines (THIS IS A HARD REQUIREMENT, PLEASE DON'T APPLY IF YOU DON'T MEET THIS CRITERIA)**
-* Proven academic and/or professional specialization in applications security, cryptography, network security, or systems security.
 * Experience implementing and coding server side applications
 * Strong written and verbal communication skills in English
 * Bonus points:
-* Experience with blockchain technologies
-* Experience with authentication protocols
+  * Proven academic and/or professional specialization in applications security, cryptography, network security, or systems security.
+  * Experience with blockchain technologies
+  * Experience with authentication protocols
 
 **Skills:**
 
