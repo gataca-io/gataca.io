@@ -6,7 +6,7 @@ meta_data:
   imageData: "/images/c80a1da80dc9e4c2c291364547d81161-2.jpeg"
 title: ''
 author: ''
-hero_image: ''
+hero_image: "/images/a61e859878da9719eb557433b467f807.jpeg"
 
 ---
 hello this is a test
