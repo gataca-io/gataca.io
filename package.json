@@ -11,7 +11,7 @@
 		"develop": "yarn dev",
 		"format": "prettier --write src/**/*.{js,jsx}",
 		"start": "yarn dev",
-		"upload": "yarn build && netlify deploy -p --open",
+		"upload": "yarn build-conditional && netlify deploy -p --open",
 		"serve": "gatsby serve",
 		"test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
 		"forestry-preview": "gatsby develop -p 8080 -H 0.0.0.0",
