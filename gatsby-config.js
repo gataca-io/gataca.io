@@ -38,7 +38,7 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "static_images",
+        name: "images",
         path: `${__dirname}/static/images`
       }
     },
@@ -63,18 +63,23 @@ module.exports = {
           {
             resolve: "gatsby-remark-relative-images",
             options: {
-              // [Optional] The root of "media_folder" in your config.yml
-              // Defaults to "static"
-              staticFolderName: 'static/images',
-              // [Optional] Include the following fields, use dot notation for nested fields
-              // All fields are included by default
-              include: ['featured'],
-              // [Optional] Exclude the following fields, use dot notation for nested fields
-              // No fields are excluded by default
-              exclude: ['featured.skip'],
+              // // [Optional] The root of "media_folder" in your config.yml
+              // // Defaults to "static"
+              staticFolderName: '/',
+              // // [Optional] Include the following fields, use dot notation for nested fields
+              // // All fields are included by default
+              // include: ['featured'],
+              // // [Optional] Exclude the following fields, use dot notation for nested fields
+              // // No fields are excluded by default
+              // exclude: ['featured.skip'],
             },
           },
-          "gatsby-remark-normalize-paths",
+          {
+            resolve: "gatsby-remark-normalize-paths",
+            options: {
+              // pathFields: ["image", "cover"],
+            },
+          },
           {
             resolve: "gatsby-remark-images",
             options: {
@@ -85,6 +90,7 @@ module.exports = {
         ],
       },
     },
+
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {

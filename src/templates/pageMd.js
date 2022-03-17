@@ -97,16 +97,13 @@ export const getPostData = graphql`
         meta_data {
           description
           title
-          rrss_images {
-            facebook_and_whatsapp {
-              publicURL
+          imageData {
+            childImageSharp {
+              fluid(maxWidth: 1500) {
+                ...GatsbyImageSharpFluid
+              }
             }
-            linkedin {
-              publicURL
-            }
-            twitter {
-              publicURL
-            }
+            publicURL
           }
         }
       }
