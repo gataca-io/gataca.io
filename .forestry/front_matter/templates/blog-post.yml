@@ -58,5 +58,4 @@ fields:
   label: hero image
   description: Enter hero image for blog post here
 pages:
-- content/posts/test_two.md
-- content/posts/testing.md
+- content/posts/test.md
