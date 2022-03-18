@@ -4,7 +4,7 @@ meta_data:
   description: Job - Senior UX/UI Designer
   rrss_images:
     twitter: "/static/images/rawpixel-559744-unsplash.jpg"
-    facebook_and_whatsapp: "/images/rawpixel-559744-unsplash.jpg"
+    facebook_and_whatsapp: "/static/images/rawpixel-559744-unsplash.jpg"
     linkedin: "/static/images/rawpixel-559744-unsplash.jpg"
 title: Job - Senior UX/UI Designer
 author: ''
