@@ -14,3 +14,5 @@ lkasjfñklasjfñlkasjñflkjaslñkjfas
 lkjadsfkladslkf
 
 ![](/images/d6ea757f627301f42eb295c9838aeed3.jpeg)
+
+![](/static/images/ebsi-wct-blog-image.jpg)
