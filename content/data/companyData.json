@@ -19,11 +19,11 @@
     },
     {
       "title": "Jobs",
-      "shortDescription": "<p>Resources for press and media</p>",
+      "shortDescription": "<p>Come and build with us</p>",
       "description": "<p>Credential issuance tool that enables Trusted Authorities to issue verifiable digital identity credentials.\nLeverage our government-grade secure technology to streamline authentication processes and issue credentials directly to a digital identity wallet. No paperwork needed</p>",
-      "icon":  "/icons/press.svg",
+      "icon":  "/icons/web-build.svg",
       "link": "/company/jobs",
-      "image": "/images/building.svg"
+      "image": "/icons/web-build.svg"
     },
     {
       "title": "Contact",
