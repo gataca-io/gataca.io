@@ -40,13 +40,13 @@ export default function BlogMd(props) {
         title={data.frontmatter.meta_data.title}
         description={data.frontmatter.meta_data.description}
         facebookImg={passImageIfExist(
-          data.frontmatter.meta_data.rrss_images.facebook_and_whatsapp
+          data.frontmatter.meta_data.image ? data.frontmatter.meta_data.image : "",
         )}
         linkedInImg={passImageIfExist(
-          data.frontmatter.meta_data.rrss_images.linkedin
+          data.frontmatter.meta_data.image ? data.frontmatter.meta_data.image : "",
         )}
         twitterImg={passImageIfExist(
-          data.frontmatter.meta_data.rrss_images.twitter
+          data.frontmatter.meta_data.image ? data.frontmatter.meta_data.image : "",
         )}
       />
       <article className={blogTemplateStyles.blog}>

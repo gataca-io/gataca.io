@@ -27,6 +27,12 @@ module.exports = {
         name: `md-pages`,
         path: `${__dirname}/content/mdpages`,
       },
+    },    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `md-pages`,
+        path: `${__dirname}/content/jobs`,
+      },
     },
     {
       resolve: "gatsby-source-filesystem",

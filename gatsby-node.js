@@ -116,6 +116,40 @@ module.exports.createPages = async ({ graphql, actions, reporter }) => {
     console.log('PAGE CREATED => ', edge.node.fields.slug)
   })
   
+  const queryJobs = await graphql(`
+    query {
+       allMarkdownRemark(
+        sort: { order: DESC, fields: [frontmatter___date]},
+        filter: {fileAbsolutePath: {regex: "/jobs/.*\\\\.md$/"}}
+      ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+        }
+      }
+    }
+}
+  `)
+  
+  if (queryJobs.errors) {
+    reporter.panicOnBuild(`Error while running GraphQL query.`)
+    return
+  }
+  
+  // Create new Unique pages for each post with unique slug
+  queryJobs.data.allMarkdownRemark.edges.forEach(edge => {
+    createPage({
+      component: pageMdTemplate,
+      path: `/jobs/${edge.node.fields.slug}`,
+      context: {
+        slug: edge.node.fields.slug,
+      },
+    })
+    console.log('JOBS CREATED => ', edge.node.fields.slug)
+  })
+  
   
   //dynamically create pages here
   //get path to template
