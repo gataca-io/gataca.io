@@ -2,7 +2,7 @@
 
 .headLineContainer {
     padding-top: calc(var(--topbar-height));
-    background-image: url("./../../../content/images/introPattern.svg");
+    background-image: url("./../../../static/images/introPattern.svg");
     background-repeat: repeat;
     background-blend-mode: soft-light;
     border-bottom: 2px solid rgba(183, 183, 183, 0.33);
@@ -13,7 +13,7 @@
 }
 
 .sectionStyle {
-    background-image: url("./../../../content/images/introPattern.svg");
+    background-image: url("./../../../static/images/introPattern.svg");
     background-repeat: repeat;
     background-blend-mode: soft-light;
     position: relative;
@@ -244,13 +244,13 @@
 
 .headlineContainer {
     padding: var(--baseSpacingDouble) 0;
-    background-image: url("../../../content/images/crossPattern.svg");
+    background-image: url("../../../static/images/crossPattern.svg");
     background-repeat: repeat;
     background-blend-mode: soft-light;
 }
 
 .imagesRowContainer {
-    background-image: url("../../../content/images/crossPattern.svg");
+    background-image: url("../../../static/images/crossPattern.svg");
     background-repeat: repeat;
     background-blend-mode: soft-light;
     border-bottom: 2px solid rgba(183, 183, 183, 0.53);

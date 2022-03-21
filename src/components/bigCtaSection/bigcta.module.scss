@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("./../../../content/images/crossPattern.svg");
+    background-image: url("./../../../static/images/crossPattern.svg");
     background-repeat: repeat;
     background-blend-mode: soft-light;
     overflow: hidden;
@@ -244,7 +244,7 @@
         height: 100%;
         width: 100%;
         z-index: 10;
-        background-image: url("./../../../content/images/introPattern_white.svg");
+        background-image: url("./../../../static/images/introPattern_white.svg");
         opacity: 0.5;
         background-repeat: repeat;
         background-blend-mode: soft-light;
@@ -295,7 +295,7 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url("./../../../content/images/faces/face_two.svg");
+    background-image: url("./../../../static/images/faces/face_two.svg");
 }
 
 .faceThree {
@@ -308,7 +308,7 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url("./../../../content/images/faces/face_three.svg");
+    background-image: url("./../../../static/images/faces/face_three.svg");
 }
 
 @keyframes circleTopMove {
