@@ -71,7 +71,7 @@ module.exports = {
             options: {
               // // [Optional] The root of "media_folder" in your config.yml
               // // Defaults to "static"
-              staticFolderName: '/',
+              staticFolderName: 'static',
               // // [Optional] Include the following fields, use dot notation for nested fields
               // // All fields are included by default
               // include: ['featured'],
