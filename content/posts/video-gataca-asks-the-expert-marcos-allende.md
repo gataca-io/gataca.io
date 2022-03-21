@@ -8,7 +8,7 @@ meta_data:
   description: Gataca chats to Marcos Allende about his efforts leading real blockchain-based  projects
     in Latin America
 date: 2020-07-14T10:24:41.000+00:00
-hero_image: "/content/images/marcosflyer.png"
+hero_image: "/static/images/marcosflyer.png"
 title: "[VIDEO] Gataca asks the Expert: Marcos Allende"
 author: ''
 

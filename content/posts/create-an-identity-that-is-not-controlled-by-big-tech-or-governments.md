@@ -1,5 +1,5 @@
 ---
-hero_image: "/content/images/ashley-whitlatch-ydj7s5ih1vy-unsplash.jpg"
+hero_image: "/static/images/ashley-whitlatch-ydj7s5ih1vy-unsplash.jpg"
 meta_data:
   title: ''
   description: ''

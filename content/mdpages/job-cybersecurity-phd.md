@@ -3,13 +3,13 @@ meta_data:
   title: Job - PHD Computer Science
   description: Job - PHD Computer Science
   rrss_images:
-    twitter: "/static/images/christopher-gower-unsplash.jpg"
-    facebook_and_whatsapp: "/static/images/christopher-gower-unsplash.jpg"
-    linkedin: "/static/images/christopher-gower-unsplash.jpg"
+    twitter: ""
+    facebook_and_whatsapp: ""
+    linkedin: ""
 title: Job opening - PHD Computer Science
 description: Job opening - Cybersecurity PHD
 author: ''
-hero_image: "/static/images/christopher-gower-unsplash.jpg"
+hero_image: ""
 
 ---
 ### **Who are we?**

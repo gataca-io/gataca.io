@@ -8,7 +8,7 @@ meta_data:
   description: Gataca chats to Cristina Carrascosa about her work with the EU Blockchain
     Observatory
 date: 2020-05-28T06:13:43.000+00:00
-hero_image: "/content/images/carrascosaflyer.png"
+hero_image: "/static/images/carrascosaflyer.png"
 title: "[VIDEO] Gataca asks the Expert: Cristina Carrascosa"
 author: ''
 

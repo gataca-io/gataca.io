@@ -1,6 +1,6 @@
 ---
 date: 2020-05-26T05:46:57Z
-hero_image: "/content/images/sarah-dorweiler-9Z1KRIfpBTM-unsplash.jpg"
+hero_image: "/static/images/sarah-dorweiler-9Z1KRIfpBTM-unsplash.jpg"
 meta_data:
   title: ''
   description: ''

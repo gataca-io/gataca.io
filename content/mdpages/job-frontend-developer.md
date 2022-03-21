@@ -3,13 +3,13 @@ meta_data:
   title: Job - Frontend Developer
   description: Job - Frontend Developer
   rrss_images:
-    twitter: "/static/images/christopher-gower-unsplash.jpg"
-    facebook_and_whatsapp: "/static/images/christopher-gower-unsplash.jpg"
-    linkedin: "/static/images/christopher-gower-unsplash.jpg"
+    twitter: ""
+    facebook_and_whatsapp: ""
+    linkedin: ""
 title: Job - Frontend Developer
 description: Job Opening at GATACA - Frontend Developer
 author: ''
-hero_image: "/static/images/christopher-gower-unsplash.jpg"
+hero_image: ""
 
 ---
 ## Job opening - Frontend Developer
