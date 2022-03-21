@@ -6,8 +6,8 @@ meta_data:
     twitter: "/static/images/christopher-gower-unsplash.jpg"
     facebook_and_whatsapp: "/static/images/christopher-gower-unsplash.jpg"
     linkedin: "/static/images/christopher-gower-unsplash.jpg"
-title: Job - Frontend Developer
-description: Job Opening at GATACA - Frontend Developer
+title: Frontend Developer (React + React Native)
+description: Come and drive with us building the front-face of SSI. 
 author: ''
 hero_image: "/static/images/christopher-gower-unsplash.jpg"
 

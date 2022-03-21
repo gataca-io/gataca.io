@@ -6,7 +6,8 @@ meta_data:
     twitter: "/static/images/rawpixel-559744-unsplash.jpg"
     facebook_and_whatsapp: "/static/images/rawpixel-559744-unsplash.jpg"
     linkedin: "/static/images/rawpixel-559744-unsplash.jpg"
-title: Job - Senior UX/UI Designer
+title: Senior UX/UI Designer
+description: Build & help the future users comprehend and use the technology stack of SSI
 author: ''
 hero_image: "/static/images/rawpixel-559744-unsplash.jpg"
 

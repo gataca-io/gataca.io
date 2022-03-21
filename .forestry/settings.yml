@@ -98,7 +98,7 @@ sections:
   templates:
   - markdown-page
 - type: directory
-  path: content/jobs.tsx
+  path: content/jobs
   label: Jobs
   create: documents
   match: "**/*"

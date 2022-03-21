@@ -1,0 +1,75 @@
+---
+label: Blog Post
+hide_body: false
+fields:
+- name: meta_data
+  type: field_group
+  config: {}
+  fields:
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+  - name: description
+    type: text
+    config:
+      required: false
+    label: Description
+  - name: rrss_images
+    type: field_group
+    config: {}
+    fields:
+    - name: twitter
+      type: file
+      config:
+        maxSize: 15
+      label: Twitter
+      description: Max 1MB
+    - name: facebook_and_whatsapp
+      type: file
+      config:
+        maxSize: 15
+      label: Facebook & Whatsapp
+      description: Max 1MB
+    - name: linkedin
+      type: file
+      config:
+        maxSize: 15
+      label: linkedin
+      description: Max 1MB ratio [1.91:1] MAX file size 5mb
+    label: RRSS Images
+    description: Images to show when shared on each social network with each different
+      format.<br>Twitter, LinkedIn, Whatsapp, each one is different.
+  label: Post Meta Data
+- type: text
+  name: title
+  label: title
+- name: author
+  type: select
+  default: ''
+  config:
+    required: false
+    options: []
+    source:
+      type: documents
+      section: ''
+      file: content/data/authors.yaml
+      path: ''
+  label: author
+  description: Enter author of post
+  hidden: true
+- name: hero_image
+  type: file
+  config:
+    maxSize: '10'
+  label: hero image
+  description: Enter hero image for blog post here
+pages:
+- content/drafts/eIDASProposal.md
+- content/mdpages/cookie-policy.md
+- content/mdpages/job-cybersecurity-phd.md
+- content/mdpages/job-frontend-developer.md
+- content/mdpages/job-opening-senior-uxui-designer.md
+- content/mdpages/job-phd-computer-science.md
+- content/mdpages/terms-of-use-gataca-wallet.md

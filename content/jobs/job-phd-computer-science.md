@@ -6,7 +6,8 @@ meta_data:
     twitter: "/static/images/rawpixel-559744-unsplash.jpg"
     facebook_and_whatsapp: "/static/images/rawpixel-559744-unsplash.jpg"
     linkedin: "/static/images/rawpixel-559744-unsplash.jpg"
-title: Job - PHD Computer Science
+title: PHD Computer Science
+description: Get into an state of the art technology stack to push forward SSI (self sovereign identity) 
 author: ''
 hero_image: "/static/images/rawpixel-559744-unsplash.jpg"
 
