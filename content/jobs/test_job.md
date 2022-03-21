@@ -14,3 +14,5 @@ hero_image: "/static/images/nuitsonores.png"
 hello
 
 ![](/static/images/borrar.jpeg)
+
+![](/static/images/borrar-1.jpeg)![](/static/images/borrar_2.jpeg)
