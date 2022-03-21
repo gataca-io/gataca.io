@@ -77,9 +77,21 @@ module.exports = {
               // include: ['featured'],
               // // [Optional] Exclude the following fields, use dot notation for nested fields
               // // No fields are excluded by default
-              // exclude: ['featured.skip'],
+              exclude: ['twitter', 'facebook_and_whatsapp', 'linkedin', 'hero_image'],
             },
           },
+  
+/*          meta_data:
+title: Job - Frontend Developer
+description: Job - Frontend Developer
+rrss_images:
+  twitter: ""
+facebook_and_whatsapp: ""
+linkedin: ""
+title: Frontend Developer (React + React Native)
+description: Come and drive with us building the front-face of SSI.
+  author: ''
+hero_image: ""*/
           {
             resolve: "gatsby-remark-normalize-paths",
             options: {
