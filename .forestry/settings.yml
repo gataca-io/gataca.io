@@ -104,7 +104,8 @@ sections:
   match: "**/*"
   new_doc_ext: md
   templates:
-  - markdown-page
+  - jobs-page
+
 upload_dir: static/images
 public_path: "/static/images"
 front_matter_path: ''
