@@ -58,7 +58,11 @@ export default function Blog({location}) {
       </section>
       
       <section className={insightsStyles.ctaSection}>
-        <Button target="_blank" href={insightsMetaData.cta.link}>{insightsMetaData.cta.text}</Button>
+      <Button
+          className={ctaStyles.ctaButton}
+          target="_blank"
+          href={insightsMetaData.cta.link}
+        > {insightsMetaData.cta.text} </Button>
         <p>*{insightsMetaData.cta.descripion}</p>
       </section>
     
