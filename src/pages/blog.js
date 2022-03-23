@@ -6,10 +6,8 @@ import insightsStyles from "./../styles/pages/insights.module.scss"
 import { BuildHelmet } from "../components/auxiliary/HelmetBuilder"
 import insightsMetaData from "../../content/data/insightsData.json"
 import { Button } from "carbon-components-react"
-import PressSection from "../components/PressSection/PressSection"
 import ctaStyles from "../components/CtaSection/cta.module.scss"
 import HeadLineSection from "../components/HeadLineSection/HeadLineSection"
-import productsPage from "../../content/data/productsPage.json"
 
 export default function Blog({location}) {
   return (
@@ -48,10 +46,6 @@ export default function Blog({location}) {
         <p>*{insightsMetaData.cta.descripion}</p>
         </div>
       </section>
-      
-      <div className={insightsStyles.pressSection}>
-        <PressSection/>
-      </div>
       
       <section className={insightsStyles.base}>
         <MdBlogList/>
