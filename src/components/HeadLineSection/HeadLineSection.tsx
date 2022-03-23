@@ -3,6 +3,7 @@ import React from "react"
 import { Link } from "gatsby"
 import styles from "../BigBullet/bigbullet.module.scss"
 import { Button } from "carbon-components-react"
+import ctaStyles from "../../components/CtaSection/cta.module.scss"
 
 interface IHeadLineSectionProps {
   title: string;
@@ -11,7 +12,9 @@ interface IHeadLineSectionProps {
   description?: string;
   big?: boolean,
   ctaText?: string,
-  ctaLink?: string
+  ctaLink?: string,
+  darkButton?: boolean,
+  imagePath?: string
 }
 
 const defaultProps = {}
@@ -19,7 +22,7 @@ const defaultProps = {}
 const HeadLineSection: React.FC<IHeadLineSectionProps> = (
   props,
 ) => {
-  const { title, subtitle, description, icon, big, ctaText, ctaLink } = props
+  const { title, subtitle, description, icon, big, ctaText, ctaLink, darkButton, imagePath } = props
   return (
     <section className={headlineStyles.headLineContainer}>
       <div>
@@ -36,7 +39,7 @@ const HeadLineSection: React.FC<IHeadLineSectionProps> = (
         {ctaText && ctaLink && <Link
           to={ctaLink}>
           <Button
-            className={headlineStyles.ctaButton}
+            className={darkButton ? headlineStyles.darkButton : headlineStyles.ctaButton}
             disabled={false}
             iconDescription="Button icon"
             kind="primary"
@@ -46,6 +49,11 @@ const HeadLineSection: React.FC<IHeadLineSectionProps> = (
             type="button"
           >{ctaText}</Button>
         </Link>}
+
+        <div className={imagePath ? headlineStyles.imageContainer : ''}>
+          <img src={imagePath}/>
+        </div>
+
       </div>
     </section>
   )
