@@ -1,10 +1,12 @@
 ---
-date: 2021-05-27T07:03:34.000+00:00 title: 'Decentralized Finance & Self-sovereign Identity: A tale of decentralization,
+date: 2021-05-27T07:03:34.000+00:00
+title: 'Decentralized Finance & Self-sovereign Identity: A tale of decentralization'
 meta_data:
-title: 'Decentralized Finance & Self-sovereign Identity: A tale of decentralization, a new paradigm of trust'
+twitter: "/static/images/defi-ssi-blockchain-blog-post.jpg"
+facebook_and_whatsapp: "/static/images/defi-ssi-blockchain-blog-post.jpg"
+linkedin: "/static/images/defi-ssi-blockchain-blog-post.jpg"
 description: 'DeFi’s the talk of the town. And while the self-sovereign identity market is still gaining traction,
-bridging these two concepts has the potential to spur global economic growth', imageData: "
-/static/images/defi-ssi-blockchain-blog-post.jpg"
+bridging these two concepts has the potential to spur global economic growth'
 
 author: ''
 hero_image: "/static/images/defi-ssi-blockchain-blog-post.jpg"

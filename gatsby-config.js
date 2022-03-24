@@ -62,6 +62,13 @@ module.exports = {
         path: `${__dirname}/content/images`,
       },
     },
+    "gatsby-transformer-sharp",
+    {
+      resolve: "gatsby-plugin-sharp",
+      options: {
+        defaultQuality: 75
+      }
+    },
     {
       resolve: "gatsby-transformer-remark",
       options: {
@@ -71,7 +78,7 @@ module.exports = {
             options: {
               // // [Optional] The root of "media_folder" in your config.yml
               // // Defaults to "static"
-              staticFolderName: 'static',
+              staticFolderName: '',
               // // [Optional] Include the following fields, use dot notation for nested fields
               // // All fields are included by default
               // include: ['featured'],
@@ -80,18 +87,6 @@ module.exports = {
               exclude: ['twitter', 'facebook_and_whatsapp', 'linkedin', 'hero_image'],
             },
           },
-  
-/*          meta_data:
-title: Job - Frontend Developer
-description: Job - Frontend Developer
-rrss_images:
-  twitter: ""
-facebook_and_whatsapp: ""
-linkedin: ""
-title: Frontend Developer (React + React Native)
-description: Come and drive with us building the front-face of SSI.
-  author: ''
-hero_image: ""*/
           {
             resolve: "gatsby-remark-normalize-paths",
             options: {
@@ -175,14 +170,7 @@ hero_image: ""*/
     "gatsby-transformer-yaml",
     `gatsby-transformer-json`,
     `gatsby-plugin-styled-components`,
-    "gatsby-transformer-sharp",
     `gatsby-plugin-transition-link`,
-    {
-      resolve: "gatsby-plugin-sharp",
-      options: {
-        defaultQuality: 75
-      }
-    },
     {
       resolve: `gatsby-plugin-alias-imports`,
       options: {
