@@ -84,7 +84,12 @@ module.exports = {
               // include: ['featured'],
               // // [Optional] Exclude the following fields, use dot notation for nested fields
               // // No fields are excluded by default
-              exclude: ['twitter', 'facebook_and_whatsapp', 'linkedin', 'hero_image'],
+              exclude: [
+                'meta_data.twitter',
+                'meta_data.facebook_and_whatsapp',
+                'meta_data.linkedin',
+                'hero_image'
+              ],
             },
           },
           {
