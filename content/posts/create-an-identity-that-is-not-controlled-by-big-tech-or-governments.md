@@ -1,5 +1,5 @@
 ---
-hero_image: "../images/ashley-whitlatch-ydj7s5ih1vy-unsplash.jpg"
+hero_image: "/content/images/ashley-whitlatch-ydj7s5ih1vy-unsplash.jpg"
 meta_data:
   title: ''
   description: ''
@@ -7,7 +7,6 @@ meta_data:
 date: 2020-06-01T06:36:02.000+00:00
 title: Create an identity that is not controlled by big tech
 author: ''
-
 
 ---
 Traditionally, governments have been the main and most trusted providers of identity proofs, all in physical format. National ID cards, passports, and driver’s licenses are such examples. Around 2005, some nations started digital identity programs with the main purpose of providing online access to government services. Today over 80% of countries with national ID schemes are running some sort of eID program.
