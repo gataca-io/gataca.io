@@ -9,12 +9,12 @@ fields:
   - name: title
     type: text
     config:
-      required: false
+      required: true
     label: Title
   - name: description
     type: text
     config:
-      required: false
+      required: true
     label: Description
   - name: rrss_images
     type: field_group
@@ -64,14 +64,15 @@ fields:
   label: date
   description: Date post was created
   config:
-    required: false
-    date_format: 
-    time_format: 
+    required: true
+    date_format:
+    time_format:
     display_utc: false
   default: now
 - name: hero_image
   type: file
   config:
+    required: true
     maxSize: '10'
   label: hero image
   description: Enter hero image for blog post here

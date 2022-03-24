@@ -9,12 +9,12 @@ fields:
   - name: title
     type: text
     config:
-      required: false
+      required: true
     label: Title
   - name: description
     type: text
     config:
-      required: false
+      required: true
     label: Description
   - name: rrss_images
     type: field_group
