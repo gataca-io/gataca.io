@@ -15,38 +15,38 @@ function buildHeroImage(frontmatter, slug) {
   return !!heroImage ? (
     <figure className={cx(
       slug === definedSlug ? blogTemplateStyles.blog__hero_bottom : blogTemplateStyles.blog__hero,
-)}>
+    )}>
       <Img
         fluid={frontmatter.hero_image.childImageSharp.fluid}
         alt={frontmatter.title}
       />
     </figure>
   ) : (
-    <Fragment />
+    <Fragment/>
   )
 }
 
 export default function BlogMd(props) {
   const data = props.data.markdownRemark
-
+  
   function passImageIfExist(image) {
     // console.log(image)
     return !!image ? image.publicURL : null
   }
-
+  
   return (
     <Layout>
       <BuildHelmet
         title={data.frontmatter.meta_data.title}
         description={data.frontmatter.meta_data.description}
         facebookImg={passImageIfExist(
-          data.frontmatter.meta_data.image ? data.frontmatter.meta_data.image : "",
+          data.frontmatter.meta_data.rrss_images.facebook_and_whatsapp ? data.frontmatter.meta_data.rrss_images.facebook_and_whatsapp : "",
         )}
         linkedInImg={passImageIfExist(
-          data.frontmatter.meta_data.image ? data.frontmatter.meta_data.image : "",
+          data.frontmatter.meta_data.rrss_images.linkedin ? data.frontmatter.meta_data.rrss_images.linkedin : "",
         )}
         twitterImg={passImageIfExist(
-          data.frontmatter.meta_data.image ? data.frontmatter.meta_data.image : "",
+          data.frontmatter.meta_data.rrss_images.twitter ? data.frontmatter.meta_data.rrss_images.twitter : "",
         )}
       />
       <article className={blogTemplateStyles.blog}>
@@ -59,7 +59,7 @@ export default function BlogMd(props) {
           className={blogTemplateStyles.blog__body}
           dangerouslySetInnerHTML={{ __html: data.html }}
         />
-
+        
         {/*<div className={blogTemplateStyles.blog__footer}>
           <h2>
             Written By: {data.frontmatter.author}
@@ -78,36 +78,54 @@ export default function BlogMd(props) {
 //dynamic page query, must occur within each post context
 //$slug is made available by context from createPages call in gatsby-node.js
 export const getPostData = graphql`
-  query($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      fields {
-        slug
-      }
-      frontmatter {
-        title
-        date(formatString: "MMMM Do, YYYY")
-        hero_image {
-          childImageSharp {
-            fluid(maxWidth: 1500) {
-              ...GatsbyImageSharpFluid
+    query($slug: String!) {
+        markdownRemark(fields: { slug: { eq: $slug } }) {
+            fields {
+                slug
             }
-          }
-          publicURL
-        }
-        meta_data {
-          description
-          title
-          imageData {
-            childImageSharp {
-              fluid(maxWidth: 1500) {
-                ...GatsbyImageSharpFluid
-              }
+            frontmatter {
+                title
+                date(formatString: "MMMM Do, YYYY")
+                hero_image {
+                    childImageSharp {
+                        fluid(maxWidth: 1500) {
+                            ...GatsbyImageSharpFluid
+                        }
+                    }
+                    publicURL
+                }
+                meta_data {
+                    description
+                    title
+                    rrss_images {
+                        twitter {
+                            childImageSharp {
+                                fluid(maxWidth: 1500) {
+                                    ...GatsbyImageSharpFluid
+                                }
+                            }
+                            publicURL
+                        }
+                        facebook_and_whatsapp {
+                            childImageSharp {
+                                fluid(maxWidth: 1500) {
+                                    ...GatsbyImageSharpFluid
+                                }
+                            }
+                            publicURL
+                        }
+                        linkedin {
+                            childImageSharp {
+                                fluid(maxWidth: 1500) {
+                                    ...GatsbyImageSharpFluid
+                                }
+                            }
+                            publicURL
+                        }
+                    }
+                }
             }
-            publicURL
-          }
+            html
         }
-      }
-      html
     }
-  }
 `

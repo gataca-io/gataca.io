@@ -65,7 +65,7 @@ export default function BlogMd(props) {
           className={blogTemplateStyles.blog__body}
           dangerouslySetInnerHTML={{ __html: data.html }}
         />
-        
+      
       </article>
     </Layout>
   )
@@ -74,36 +74,54 @@ export default function BlogMd(props) {
 //dynamic page query, must occur within each post context
 //$slug is made available by context from createPages call in gatsby-node.js
 export const getPostData = graphql`
-  query($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      fields {
-        slug
-      }
-      frontmatter {
-        title
-        date(formatString: "MMMM Do, YYYY")
-        hero_image {
-          childImageSharp {
-            fluid(maxWidth: 1500) {
-              ...GatsbyImageSharpFluid
+    query($slug: String!) {
+        markdownRemark(fields: { slug: { eq: $slug } }) {
+            fields {
+                slug
             }
-          }
-          publicURL
-        }
-        meta_data {
-          description
-          title
-          imageData {
-            childImageSharp {
-              fluid(maxWidth: 1500) {
-                ...GatsbyImageSharpFluid
-              }
+            frontmatter {
+                title
+                date(formatString: "MMMM Do, YYYY")
+                hero_image {
+                    childImageSharp {
+                        fluid(maxWidth: 1500) {
+                            ...GatsbyImageSharpFluid
+                        }
+                    }
+                    publicURL
+                }
+                meta_data {
+                    description
+                    title
+                    rrss_images {
+                        twitter {
+                            childImageSharp {
+                                fluid(maxWidth: 1500) {
+                                    ...GatsbyImageSharpFluid
+                                }
+                            }
+                            publicURL
+                        }
+                        facebook_and_whatsapp {
+                            childImageSharp {
+                                fluid(maxWidth: 1500) {
+                                    ...GatsbyImageSharpFluid
+                                }
+                            }
+                            publicURL
+                        }
+                        linkedin {
+                            childImageSharp {
+                                fluid(maxWidth: 1500) {
+                                    ...GatsbyImageSharpFluid
+                                }
+                            }
+                            publicURL
+                        }
+                    }
+                }
             }
-            publicURL
-          }
+            html
         }
-      }
-      html
     }
-  }
 `
