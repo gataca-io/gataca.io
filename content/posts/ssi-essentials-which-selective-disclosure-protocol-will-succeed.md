@@ -9,7 +9,7 @@ meta_data:
     twitter: "/static/images/zkp_rrss.jpg"
     facebook_and_whatsapp: "/static/images/zkp_rrss.jpg"
     linkedin: "/static/images/zkp_rrss.jpg"
-title: 'SSI essentials: Zero Knowledge Proof (ZKP) and Selective Disclosure, till
+title: 'SSI Essentials: Zero Knowledge Proof (ZKP) and Selective Disclosure, till
   death do us part?'
 author: ''
 hero_image: "/static/images/zkp.jpg"
