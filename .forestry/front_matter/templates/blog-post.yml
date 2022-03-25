@@ -65,8 +65,8 @@ fields:
   description: Date post was created
   config:
     required: true
-    date_format:
-    time_format:
+    date_format: 
+    time_format: 
     display_utc: false
   default: now
 - name: hero_image
@@ -76,5 +76,3 @@ fields:
     maxSize: '10'
   label: hero image
   description: Enter hero image for blog post here
-pages:
-- content/posts/test.md
