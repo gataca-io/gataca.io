@@ -76,6 +76,8 @@
         line-height: 1.3rem;
         color: var(--grey);
         font-size: 0.95rem;
+        padding: 5px;
+        background-color: #efefef;
         @include media-for-phone-only {
             display: none;
         }
@@ -125,4 +127,33 @@
         margin: 0;
         width: 100%;
     }
+}
+
+.darkButton {
+    background-color: var(--darkblue);
+    font-weight: bold;
+    border-radius: 15px;
+    margin: var(--baseSpacing);
+
+    @include media-for-tablet-portrait-up {
+        padding: 1rem 2rem 1rem 2rem;
+    }
+
+    @include media-for-phone-only {
+        display: flex;
+        justify-content: center;
+        padding: 1rem 2rem;
+        margin: 0;
+        width: 100%;
+    }
+}
+
+.imageContainer {
+    margin: var(--baseSpacing) 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    max-height: 400px;
 }

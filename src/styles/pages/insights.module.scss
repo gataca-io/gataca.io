@@ -15,7 +15,9 @@
     position: relative;
     //border-bottom: 2px solid var(--darkblue);
     text-align: center;
-    background-color: var(--bg-grey);
+    background-image: url("./../../../static/images/introPattern.svg");
+    background-repeat: repeat;
+    background-blend-mode: soft-light;
     &>div{
         padding-top: calc(var(--topbar-height-mobile) + var(--baseSpacing));
         max-width: 600px;
