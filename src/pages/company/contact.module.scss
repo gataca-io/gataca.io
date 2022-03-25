@@ -17,7 +17,9 @@
     &>div {
         max-width: var(--max-width-l);
     }
-    background-color: var(--bg-grey);
+    background-image: url("./../../../static/images/introPattern.svg");
+    background-repeat: repeat;
+    background-blend-mode: soft-light;
     width: 100%;
 }
 
