@@ -16,13 +16,31 @@ fields:
     config:
       required: true
     label: Description
-  - name: imageData
-    type: file
-    config:
-      maxSize: 15
-      required: true
-    label: Twitter
-    description: Max 1MB
+  - name: rrss_images
+    type: field_group
+    config: {}
+    fields:
+    - name: twitter
+      type: file
+      config:
+        maxSize: 15
+      label: Twitter
+      description: Max 1MB
+    - name: facebook_and_whatsapp
+      type: file
+      config:
+        maxSize: 15
+      label: Facebook & Whatsapp
+      description: Max 1MB
+    - name: linkedin
+      type: file
+      config:
+        maxSize: 15
+      label: linkedin
+      description: Max 1MB ratio [1.91:1] MAX file size 5mb
+    label: RRSS Images
+    description: Images to show when shared on each social network with each different
+      format.<br>Twitter, LinkedIn, Whatsapp, each one is different.
   label: Post Meta Data
 - type: text
   name: title
@@ -46,14 +64,15 @@ fields:
   label: date
   description: Date post was created
   config:
-    required: false
-    date_format: 
-    time_format: 
+    required: true
+    date_format:
+    time_format:
     display_utc: false
   default: now
 - name: hero_image
   type: file
   config:
+    required: true
     maxSize: '10'
   label: hero image
   description: Enter hero image for blog post here

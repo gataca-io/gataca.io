@@ -2,7 +2,7 @@
 new_page_extension: md
 auto_deploy: false
 admin_path: "/static/admin"
-webhook_url:
+webhook_url: 
 sections:
 - type: heading
   label: Base content
@@ -98,13 +98,13 @@ sections:
   templates:
   - markdown-page
 - type: directory
-  path: content/jobs.tsx
+  path: content/jobs
   label: Jobs
   create: documents
   match: "**/*"
   new_doc_ext: md
   templates:
-  - markdown-page
+  - jobs-page
 upload_dir: static/images
 public_path: "/static/images"
 front_matter_path: ''

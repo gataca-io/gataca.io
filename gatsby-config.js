@@ -62,24 +62,37 @@ module.exports = {
         path: `${__dirname}/content/images`,
       },
     },
+    "gatsby-transformer-sharp",
+    {
+      resolve: "gatsby-plugin-sharp",
+      options: {
+        defaultQuality: 75
+      }
+    },
     {
       resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
-          {
-            resolve: "gatsby-remark-relative-images",
-            options: {
-              // // [Optional] The root of "media_folder" in your config.yml
-              // // Defaults to "static"
-              staticFolderName: '/',
-              // // [Optional] Include the following fields, use dot notation for nested fields
-              // // All fields are included by default
-              // include: ['featured'],
-              // // [Optional] Exclude the following fields, use dot notation for nested fields
-              // // No fields are excluded by default
-              // exclude: ['featured.skip'],
-            },
-          },
+          // {
+          //   resolve: "gatsby-remark-relative-images",
+          //   options: {
+          //     // // [Optional] The root of "media_folder" in your config.yml
+          //     // // Defaults to "static"
+          //     staticFolderName: '',
+          //     // // [Optional] Include the following fields, use dot notation for nested fields
+          //     // // All fields are included by default
+          //     // include: ['featured'],
+          //     // // [Optional] Exclude the following fields, use dot notation for nested fields
+          //     // // No fields are excluded by default
+          //     exclude: [
+          //       'hero_image',
+          //       'meta_data.twitter',
+          //       'meta_data.facebook_and_whatsapp',
+          //       'meta_data.linkedin',
+          //       'hero_image'
+          //     ],
+          //   },
+          // },
           {
             resolve: "gatsby-remark-normalize-paths",
             options: {
@@ -163,14 +176,7 @@ module.exports = {
     "gatsby-transformer-yaml",
     `gatsby-transformer-json`,
     `gatsby-plugin-styled-components`,
-    "gatsby-transformer-sharp",
     `gatsby-plugin-transition-link`,
-    {
-      resolve: "gatsby-plugin-sharp",
-      options: {
-        defaultQuality: 75
-      }
-    },
     {
       resolve: `gatsby-plugin-alias-imports`,
       options: {

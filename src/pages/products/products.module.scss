@@ -1,7 +1,7 @@
 @import "../../styles/aux/media-mixins";
 
 .sectionStyle {
-    //background-image: url("./../../content/images/introPattern.svg");
+    //background-image: url("./../../static/images/introPattern.svg");
     //background-repeat: repeat;
     //background-blend-mode: soft-light;
     position: relative;
@@ -212,7 +212,7 @@
     align-items: center;
     padding: var(--baseSpacingDouble) var(--baseSpacing);
     flex-direction: column;
-    background-image: url("./../../../content/images/introPattern.svg");
+    background-image: url("./../../../static/images/introPattern.svg");
     background-repeat: repeat;
     background-blend-mode: soft-light;
 
@@ -263,7 +263,7 @@
 
 .headlineContainer {
     padding: var(--baseSpacingDouble) 0;
-    background-image: url("../../../content/images/crossPattern.svg");
+    background-image: url("../../../static/images/crossPattern.svg");
     background-repeat: repeat;
     background-blend-mode: soft-light;
     position: relative;

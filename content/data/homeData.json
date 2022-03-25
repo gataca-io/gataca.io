@@ -114,7 +114,7 @@
         "description": "<p>Service providers can offer an authentication alternative that users love while cutting KYC and GDPR compliance costs and reducing data breach risks.</p>"
       }
     ],
-    "graph": "/content/images/explainedPlatform.svg",
+    "graph": "/static/images/explainedPlatform.svg",
     "endBullet": {
       "image": "/images/privacy.svg",
       "title": "PRIVACY BY DESIGN",
