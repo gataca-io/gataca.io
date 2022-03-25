@@ -6,7 +6,7 @@ meta_data:
     twitter: "/static/images/christopher-gower-unsplash.jpg"
     facebook_and_whatsapp: "/static/images/christopher-gower-unsplash.jpg"
     linkedin: "/static/images/christopher-gower-unsplash.jpg"
-title: Job opening - PHD Computer Science
+title: PHD Computer Science (Closed)
 description: Job opening - Cybersecurity PHD
 author: ''
 hero_image: "/static/images/christopher-gower-unsplash.jpg"
