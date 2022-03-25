@@ -76,6 +76,8 @@
         line-height: 1.3rem;
         color: var(--grey);
         font-size: 0.95rem;
+        padding: 5px;
+        background-color: #efefef;
         @include media-for-phone-only {
             display: none;
         }
