@@ -6,8 +6,8 @@ meta_data:
     twitter: "/static/images/christopher-gower-unsplash.jpg"
     facebook_and_whatsapp: "/static/images/christopher-gower-unsplash.jpg"
     linkedin: "/static/images/christopher-gower-unsplash.jpg"
-title: Job - Frontend Developer
-description: Job Opening at GATACA - Frontend Developer
+title: Frontend Developer
+description: Come and build with us with front-face of Self Sovereign Identity
 author: ''
 hero_image: "/static/images/christopher-gower-unsplash.jpg"
 
