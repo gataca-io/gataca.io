@@ -33,6 +33,11 @@ export default function BlogMd(props) {
     return !!image ? image.publicURL : null
   }
   
+  const openGraphImg = data?.frontmatter?.meta_data?.rrss_images?.facebook_and_whatsapp ? data?.frontmatter?.meta_data?.rrss_images?.facebook_and_whatsapp : "";
+  const twitterImg = data?.frontmatter?.meta_data?.rrss_images?.twitter ? data.frontmatter.meta_data.rrss_images.twitter : "";
+  const linkedImg = data?.frontmatter?.meta_data?.rrss_images?.linkedin ? data.frontmatter.meta_data.rrss_images.linkedin : "";
+  console.log(openGraphImg, twitterImg, linkedImg);
+  
   return (
     <Layout>
       
@@ -43,15 +48,9 @@ export default function BlogMd(props) {
         description={
           data.frontmatter.meta_data.description
         }
-        facebookImg={passImageIfExist(
-          data.frontmatter.meta_data.image ? data.frontmatter.meta_data.image : "",
-        )}
-        linkedInImg={passImageIfExist(
-          data.frontmatter.meta_data.image ? data.frontmatter.meta_data.image : "",
-        )}
-        twitterImg={passImageIfExist(
-          data.frontmatter.meta_data.image ? data.frontmatter.meta_data.image : "",
-        )}
+        facebookImg={passImageIfExist(openGraphImg)}
+        linkedInImg={passImageIfExist(linkedImg)}
+        twitterImg={passImageIfExist(twitterImg)}
       />
       
       <article className={blogTemplateStyles.blog}>
