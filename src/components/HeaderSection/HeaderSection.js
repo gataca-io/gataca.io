@@ -161,7 +161,7 @@ export default function HeaderSection(props) {
                         <Link
                           to={el.route ? "/" + el.route + "/" : null}
                         >
-                          <p>
+                          <p className={headerStyles.productName}>
                             {el.name}
                           </p>
                         </Link>
