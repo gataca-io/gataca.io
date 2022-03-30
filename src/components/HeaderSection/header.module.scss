@@ -151,12 +151,12 @@
                 width: 100%;
                 cursor: pointer;
 
-                &>p {
+                &>.productName {
                     letter-spacing: 0.05rem;
                 }
 
                 &:hover {
-                    p {
+                    .productName {
                         font-weight: bold !important;
                     }
                 }
