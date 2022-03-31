@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import styles from "./jobs.module.scss"
-import pressData from "../../../content/data/pressPage.json"
+import jobsPageData from "../../../content/data/jobsData.json"
 import Layout from "../../layouts/Layout"
 import HeadLineSection from "../../components/HeadLineSection/HeadLineSection"
 import useJobsData from "../../static_queries/useJobsData"
@@ -26,15 +26,26 @@ export default function Jobs() {
           />
         </div>
         <section className={styles.jobSection}>
-          {jobsData.map((el: any) => {
+          {jobsData
+          ? jobsData.map((el: any) => {
             return <Link to={"/jobs/" + el.node.fields.slug}>
               <div>
               <h3>{el.node.frontmatter.title}</h3>
               <p>{el.node.frontmatter.description}</p>
-              {/*<p>{el.node.frontmatter.date}</p>*/}
+              <p className={styles.date}>{el.node.frontmatter.date}</p>
               </div>
             </Link>
-          })}
+          })
+          : 
+          <div>
+            
+          <p className={styles.paragraph}>{jobsPageData.apply.text}</p>
+          {/* <Link to={'./'}>
+              <button
+                className={styles.ctaButton}
+              > {jobsPageData.apply.button}</button>
+          </Link> */}
+          </div>}
         </section>
       </div>
     </Layout>

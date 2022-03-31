@@ -8,6 +8,8 @@ meta_data:
     linkedin: "/static/images/rawpixel-559744-unsplash.jpg"
 title: Job - PHD Computer Science
 author: ''
+active:
+date: '2022-02-07T12:00:00.000+00:00'
 hero_image: "/static/images/rawpixel-559744-unsplash.jpg"
 
 ---

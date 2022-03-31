@@ -9,6 +9,8 @@ meta_data:
 title: Job opening - PHD Computer Science
 description: Job opening - Cybersecurity PHD
 author: ''
+active: 
+date: 2022-02-07T00:00:00.000+00:00
 hero_image: "/static/images/christopher-gower-unsplash.jpg"
 
 ---

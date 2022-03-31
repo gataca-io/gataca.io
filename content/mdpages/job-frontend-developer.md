@@ -9,6 +9,8 @@ meta_data:
 title: Job - Frontend Developer
 description: Job Opening at GATACA - Frontend Developer
 author: ''
+active: 
+date: 2022-01-10T00:00:00.000+00:00
 hero_image: "/static/images/christopher-gower-unsplash.jpg"
 
 ---

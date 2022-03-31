@@ -6,9 +6,12 @@ meta_data:
     twitter: "/static/images/christopher-gower-unsplash.jpg"
     facebook_and_whatsapp: "/static/images/christopher-gower-unsplash.jpg"
     linkedin: "/static/images/christopher-gower-unsplash.jpg"
+  date: 2022-02-10T11:00:36Z
 title: Frontend Developer (Closed)
 description: Come and build with us with front-face of Self Sovereign Identity
 author: ''
+active: 
+date: '2022-02-10T12:00:00.000+00:00'
 hero_image: "/static/images/christopher-gower-unsplash.jpg"
 
 ---
