@@ -8,9 +8,11 @@ export default function useJobsData() {
                   order: DESC,
                   fields: [frontmatter___date]
               },
-              filter: {
-                  fileAbsolutePath: {regex: "/jobs/.*\\\\.md$/"}
-              }
+              filter: 
+                {
+                    fileAbsolutePath: {regex: "/jobs/.*\\\\.md$/"},
+                    frontmatter: {active: { eq: true }}
+                }
           ) {
               edges {
                   node {
@@ -20,7 +22,8 @@ export default function useJobsData() {
                       frontmatter {
                           title
                           description
-                          date
+                          active
+                          date(formatString: "MMMM Do, YYYY")
                       }
                   }
               }
