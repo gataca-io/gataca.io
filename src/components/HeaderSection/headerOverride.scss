@@ -1,18 +1,18 @@
 .bx--side-nav--ux{
     top: var(--topbar-height-mobile);
-    @include media-for-tablet-portrait-up {
+    @include media-for-tablet {
     top: var(--topbar-height);
     }
 }
 .bx--side-nav__overlay{
         top: var(--topbar-height-mobile);
-    @include media-for-tablet-portrait-up {
+    @include media-for-tablet {
     top: var(--topbar-height);
     }
 }
 
 .bx--header__action {
-    @include media-for-tablet-portrait-up {
+    @include media-for-tablet {
         display: none !important;
     }
 }
