@@ -6,5 +6,9 @@
   "introSection": {
     "title": "Jobs",
     "description": "<p>Gataca is a cybersecurity company founded in Boston, MA, at the heart of MIT’s entrepreneurship and innovation ecosystem. It started as an academic research study seeking to reduce the risk of doing business online. As victims of the Equifax data breach later that year, the topic became very personal.</p><p>We built Gataca because we knew there had to be a better way to protect our data.</p>"
+  },
+  "apply": {
+    "text": "Sorry. We are currently not hiring.",
+    "button": "General apply"
   }
 }

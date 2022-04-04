@@ -8,6 +8,8 @@ meta_data:
     linkedin: "/static/images/rawpixel-559744-unsplash.jpg"
 title: Job - Senior UX/UI Designer
 author: ''
+active: true
+date: '2022-02-28T00:00:00.000+00:00'
 hero_image: "/static/images/rawpixel-559744-unsplash.jpg"
 
 ---

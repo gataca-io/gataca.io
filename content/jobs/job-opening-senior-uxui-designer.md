@@ -9,6 +9,8 @@ meta_data:
 title: Senior UX/UI Designer
 description: Help us design build the user experience of Self Sovereign Identity
 author: ''
+active: true
+date: '2022-02-28T12:00:00.000+00:00'
 hero_image: "/static/images/rawpixel-559744-unsplash.jpg"
 
 ---
