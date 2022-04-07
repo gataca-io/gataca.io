@@ -67,13 +67,13 @@
         ]
       },
       {
-        "name": "Sergio Gordo",
-        "bio": "<p>Product designer &amp; Visual Developer</p>",
-        "photo": "../images/dsc09739.jpg",
+        "name": "Ángela Benavente",
+        "bio": "<p>Frontend Developer</p>",
+        "photo": "/static/images/img_7606.png",
         "links": [
           {
             "name": "linkedIn",
-            "url": "https://www.linkedin.com/in/sergiogordo",
+            "url": "https://www.linkedin.com/in/%C3%A1ngela-benavente-almaz%C3%A1n-436003174/",
             "icon": "../images/linkedin_blue.svg"
           }
         ]
