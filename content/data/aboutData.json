@@ -69,7 +69,11 @@
       {
         "name": "Ángela Benavente",
         "bio": "<p>Frontend Developer</p>",
+<<<<<<< HEAD
         "photo": "/static/images/img_7606.JPG",
+=======
+        "photo": "../images/img_7606.png",
+>>>>>>> 051d6a3 (team(aboutData): images paths)
         "links": [
           {
             "name": "linkedIn",
@@ -98,7 +102,7 @@
           {
             "name": "linkedin",
             "url": "https://www.linkedin.com/in/daniel-moledo-garcia-655004192/",
-            "icon": "/static/images/linkedin_blue.svg"
+            "icon": "../images/linkedin_blue.svg"
           }
         ]
       }
