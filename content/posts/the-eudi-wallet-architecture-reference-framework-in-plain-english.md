@@ -28,7 +28,7 @@ General points:
 
 ![](/static/images/eidas2-0timeline.png)
 
-With the expected launch date of the EUDI Wallet being Q1 2024, the eIDAS 2.0 toolbox and regulation are being worked on by the **eIDAS expert group** comprised of representatives from the 27 member states; the process is being organized in **4 sub-working groups**, each concerned with a separate feature or functionality of the toolbox. 
+With the expected launch date of the EUDI Wallet being Q1 2024, the eIDAS 2.0 toolbox and regulation are being worked on by the **eIDAS expert group** comprised of representatives from the 27 member states; the process is being organized in **4 sub-working groups**, each concerned with a separate feature or functionality of the toolbox.
 
 At the same time, the European Commission is incentivizing Member States to start adopting the new regulation by means of a €37M [grant](https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/digital-2022-deploy-02-electronic-id) to support the implementation of 4 large-scale pilots. Worth highlighting [Digital Credentials for Europe (DC4EU)](https://www.dc4eu.eu/), a 22-member consortium that will present two use cases in addition to the onboarding of a base identity: Educational credentials & professional qualifications and Social Security.
 
@@ -50,24 +50,16 @@ In this next section, we’ll dive into the most important functional requiremen
 
 For more complicated section titles, we included an alternative, simpler title which catches the gist of the original titles' intention.
 
-**Section 4.1**
-
-_Original_ _section_ _title:_
-
-> Store person identification data, qualified electronic attestation of attributes, and electronic attestation of attributes
+#### **Section 4.1:** Store person identification data, qualified electronic attestation of attributes, and electronic attestation of attributes
 
 _Plain English section summary:_
 
 **Storing personal data in the Wallet**
 
-* Wallets have to be able to store and manage personal data on their smartphone (locally) or remotely (in-cloud). 
+* Wallets have to be able to store and manage personal data on their smartphone (locally) or remotely (in-cloud).
 * As in SSI, users have to be able to receive their Verifiable Credentials, store them in their Wallet, and share these credentials without having to ask the issuer.
 
-**Section 4.2**
-
-_Original_ _section title:_
-
-> Request and obtain person identification data, qualified electronic attestation of attributes and electronic attestation of attributes
+#### **Section 4.2:** Request and obtain person identification data, qualified electronic attestation of attributes and electronic attestation of attributes
 
 _Plain English section summary:_
 
@@ -76,11 +68,7 @@ _Plain English section summary:_
 * Wallet must allow organizations to request and obtain user personal data during onboarding/authentication. For example Bank asks user for a National ID verifiable credential in the “create your bank account process”.
 * Users should be able to request personal data credentials from issuers. Users should also be able to delete data from their wallets.
 
-**Section 4.3**
-
-_Original_ _section title:_
-
-> Cryptographic Functions
+#### **Section 4.3:** Cryptographic functions
 
 _Plain English section summary:_
 
@@ -89,25 +77,17 @@ _Plain English section summary:_
 * This section mainly emphasizes the correct use of cryptographic functions  (keys, computation, environments). The Wallet should be able to  create, store, use and delete cryptographic material (ie. keys).
 * Users should have secure access to cryptographic functions (ie. cryptographic keys) wherever they are hosted.
 
-**Section 4.4**
-
-_Original_ _section title:_
-
-> Mutual Authentication
+#### **Section 4.4:** Mutual authentication
 
 _Plain English section summary:_
 
 **Entities, users, and wallets authenticating each other**
 
 * EUDI Wallet must be able to recognize and identify organizations it is interacting with, and vice versa. For example, when logging into a student portal, Alice’s wallet must be able to recognize the student portal, and the student portal must be able to recognize Alice’s Wallet and that it is certified.
-* These actions should be possible both online and offline. 
+* These actions should be possible both online and offline.
 * There must be a standard specified as EU level interoperability is required.
 
-**Section 4.5**
-
-_Original_ _section title:_
-
-> Selection, combination and sharing of person identification data, qualified electronic attestation of attributes and electronic attestation of attributes
+#### **Section 4.5:** Selection, combination and sharing of person identification data, qualified electronic attestation of attributes and electronic attestation of attributes
 
 _Plain English section summary:_
 
@@ -120,11 +100,7 @@ _Plain English section summary:_
 * In an offline (in-person) scenario, if a user shares  their attributes which are not directly linked to their EUDI Wallet (for example the Covid Health Certificate), they may have to support it with additional documentation.
 * In an online scenario, when proving their identity through the sharing of personal data via their Wallet, users must be able to prove they control or have access to the cryptographic keys linked to the information being shared. “My keys, my Wallet, my info”
 
-**Section 4.6**
-
-_Original_ _section title:_
-
-> User interface for user awareness and authorization mechanism
+#### **Section 4.6:** User interface for user awareness and authorization mechanism
 
 _Plain English section summary:_
 
@@ -134,17 +110,13 @@ _Plain English section summary:_
 * User should be able to clearly know/see:
   * Who they’re interacting with (issuers, verifiers, wallets, registries etc)
   * The reason third parties request particular information
-  * Their data protection rights 
+  * Their data protection rights
   * Which data is mandatory in order to be authenticated and which is optional
   * The history or log of events of the wallet’s use (for ex. when they’ve shared a credential, been issued a credential, linked to a service)
-* The Wallet should follow privacy and security-by-design principles, which includes specifically requesting users to clearly express their consent to sharing information. 
+* The Wallet should follow privacy and security-by-design principles, which includes specifically requesting users to clearly express their consent to sharing information.
 * The Wallet has to allow two-factor authentication
 
-**Section 4.7**
-
-_Original_ _section title:_
-
-> Sign by means of qualified electronic signature or seal
+#### **Section 4.7:** Sign by means of qualified electronic signature or seal
 
 _Plain English section summary:_
 
@@ -158,7 +130,7 @@ The first outline for the European Digital Identity Architecture and Reference F
 
 The reference framework currently emphasizes data privacy, highlighting selective disclosure protocols, and interoperability, requiring it at a European level at minimum - two essential characteristics for the usability and security of the EUDI Wallet. We will have to wait for further details on how exactly European interoperability will be guaranteed, which is a long-time goal SSI enthusiasts have been working on. Other key points we're hoping the updated document expands on are high Level of Assurance (LOA), two factor authentication (2FA), and security requirements. We were able to catch a glimpse of these, however little was mentioned when it came to their development and implementation.
 
-As for governance, we’re especially curious to see how the potential complexity of the EUDI Wallet certification process driven by these factors, along with the selectivity from Member States, can threaten the competitiveness of the Wallet provider market. 
+As for governance, we’re especially curious to see how the potential complexity of the EUDI Wallet certification process driven by these factors, along with the selectivity from Member States, can threaten the competitiveness of the Wallet provider market.
 
 We’re looking forward to seeing eIDAS 2.0 Toolbox progress as well as adapting the GATACA Wallet to its specifications.
 
