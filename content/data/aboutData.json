@@ -103,26 +103,26 @@
         ]
       },
       {
-        "photo": "/static/images/img_3055.png",
+        "photo": "../images/img_3055.png",
         "bio": "<p>UX/UI Designer</p>",
         "links": [
           {
             "name": "linkedin",
             "url": "https://www.linkedin.com/in/estefan%C3%ADa-zambrano-rivas-a28b28116/",
-            "icon": "/static/images/linkedin_blue.svg"
+            "icon": "../images/linkedin_blue.svg"
           }
         ],
         "name": "Estefanía Zambrano"
       },
       {
         "name": "Jorge Navas",
-        "photo": "/static/images/img_3058.png",
+        "photo": "../images/img_3058.png",
         "bio": "<p>DevOps</p>",
         "links": [
           {
             "name": "linkedin",
             "url": "https://www.linkedin.com/in/jorge-navas-d%C3%ADaz-8b422643/",
-            "icon": "/static/images/linkedin_blue.svg"
+            "icon": "../images/linkedin_blue.svg"
           }
         ]
       }
