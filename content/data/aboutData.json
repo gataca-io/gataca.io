@@ -31,18 +31,6 @@
     "description": "<p>Behind our success is the GATACA team, comprised of a diverse and dynamic group with ceaseless determination and expertise in many fields including entrepreneurship, blockchain, cybersecurity and economics</p>",
     "team": [
       {
-        "name": "Jorge Navas",
-        "photo": "/static/images/img_3058.png",
-        "bio": "<p>DevOps</p>",
-        "links": [
-          {
-            "name": "",
-            "url": "https://www.linkedin.com/in/jorge-navas-d%C3%ADaz-8b422643/",
-            "icon": ""
-          }
-        ]
-      },
-      {
         "name": "Irene Hernandez",
         "bio": "<p>CEO</p>",
         "photo": "../images/dsc09829.jpg",
@@ -119,12 +107,24 @@
         "bio": "<p>UX/UI Designer</p>",
         "links": [
           {
-            "name": "",
+            "name": "linkedin",
             "url": "https://www.linkedin.com/in/estefan%C3%ADa-zambrano-rivas-a28b28116/",
-            "icon": ""
+            "icon": "/static/images/linkedin_blue.svg"
           }
         ],
         "name": "Estefanía Zambrano"
+      },
+      {
+        "name": "Jorge Navas",
+        "photo": "/static/images/img_3058.png",
+        "bio": "<p>DevOps</p>",
+        "links": [
+          {
+            "name": "linkedin",
+            "url": "https://www.linkedin.com/in/jorge-navas-d%C3%ADaz-8b422643/",
+            "icon": "/static/images/linkedin_blue.svg"
+          }
+        ]
       }
     ]
   },
