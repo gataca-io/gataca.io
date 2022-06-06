@@ -26,12 +26,6 @@ fields:
       time_format: 
       display_utc: false
     default: now
-  - name: active
-    type: boolean
-    label: Status
-    description: Is this job opportunity active?
-    default: true
-    hidden: false
   - name: rrss_images
     type: field_group
     config: {}
@@ -58,6 +52,12 @@ fields:
     description: Images to show when shared on each social network with each different
       format.<br>Twitter, LinkedIn, Whatsapp, each one is different.
   label: Post Meta Data
+- name: active
+  type: boolean
+  label: Status
+  description: Is this job opportunity active?
+  default: true
+  hidden: false
 - type: text
   name: title
   label: title

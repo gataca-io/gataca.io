@@ -1,13 +1,13 @@
 ---
 meta_data:
   date: 2022-06-06T09:24:18Z
-  active: true
   title: Digital Marketing Specialist Job Posting
   description: The GATACA team is growing.
   rrss_images:
     twitter: ''
     facebook_and_whatsapp: ''
     linkedin: ''
+active: true
 title: Digital Marketing Specialist
 author: ''
 hero_image: "/static/images/rawpixel-559744-unsplash.jpg"
