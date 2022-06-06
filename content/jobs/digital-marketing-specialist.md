@@ -8,7 +8,7 @@ meta_data:
     linkedin: ''
   date: 2022-06-05T23:00:00Z
 title: Digital Marketing Specialist
-description: The GATACA team is growing.
+description: Help us take the GATACA brand to the next level
 author: ''
 active: true
 date: '2022-06-06T09:24:18.000+00:00'
