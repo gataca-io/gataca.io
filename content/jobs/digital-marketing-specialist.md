@@ -1,15 +1,16 @@
 ---
 meta_data:
-  date: 2022-06-06T09:24:18Z
-  title: Digital Marketing Specialist Job Posting
-  description: The GATACA team is growing.
+  title: Job - Senior UX/UI Designer
+  description: Job - Senior UX/UI Designer
   rrss_images:
     twitter: ''
     facebook_and_whatsapp: ''
     linkedin: ''
-active: true
 title: Digital Marketing Specialist
+description: The GATACA team is growing.
 author: ''
+active: true
+date: 2022-06-06T09:24:18Z
 hero_image: "/static/images/rawpixel-559744-unsplash.jpg"
 
 ---
