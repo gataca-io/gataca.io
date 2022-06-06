@@ -6,7 +6,7 @@ meta_data:
     twitter: ''
     facebook_and_whatsapp: ''
     linkedin: ''
-  date: 2022-06-05T23:00:00Z
+  date: 2022-06-05T23:00:00.000+00:00
 title: Digital Marketing Specialist
 description: Help us take the GATACA brand to the next level
 author: ''
@@ -38,18 +38,18 @@ To **work on the evolution of a self-sovereign identity (SSI) platform** and hel
 * Research, propose, and perform A/B testing to measure new acquisition and retention strategies
 * Design and execute paid media campaigns with a given budget
 
-## Who are we looking for? 🔎 
+## Who are we looking for? 🔎
 
-### Skills👷‍♂️ 
+### Skills👷‍♂️
 
 * Excellent English & Spanish written and verbal communication skills - please provide some references of content you generated in the past.
 * Solid knowledge of website and marketing analytics tools (e.g., Google Analytics, Google Data Studio, Google Tag manager, Google optimize, SEMRush, etc.)
 * Experience working with paid media tools and channels
 * Bonus: Experience working with Adobe illustrator and video editing experience
 
-### Background 🌎 
+### Background 🌎
 
-* 2+ years working experience in a marketing, digital marketing, or similar role (B2B experience in a tech company preferred) 
+* 2+ years working experience in a marketing, digital marketing, or similar role (B2B experience in a tech company preferred)
 * _Bonus_: Growth Hacking methodology experience
 
 ### Attitude 🕵
@@ -78,4 +78,4 @@ To **work on the evolution of a self-sovereign identity (SSI) platform** and hel
 ## Application **✍**
 
 * Deadline: July 31st, 2022
-* **Apply here →** [**https://share.hsforms.co**](https://share.hsforms.co "https://share.hsforms.co")
+* **Apply** [**HERE**](https://share.hsforms.com/1yawkLpg1RRGq7cR23b_Wyg2tcg6)**!**
