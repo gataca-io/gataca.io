@@ -42,7 +42,8 @@ To **work on the evolution of a self-sovereign identity (SSI) platform** and hel
 
 ### Skills👷‍♂️
 
-* Excellent English & Spanish written and verbal communication skills - please provide some references of content you generated in the past.
+* Bilingual (English & Spanish)
+* Excellent written communication skills - please provide some references of content you generated in the past.
 * Solid knowledge of website and marketing analytics tools (e.g., Google Analytics, Google Data Studio, Google Tag manager, Google optimize, SEMRush, etc.)
 * Experience working with paid media tools and channels
 * Bonus: Experience working with Adobe illustrator and video editing experience
