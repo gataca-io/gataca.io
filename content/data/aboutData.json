@@ -192,6 +192,11 @@
     "description": "<p>The GATACA team has closed contracts with key European public administrations and private organizations</p>",
     "clients": [
       {
+        "title": "Red.es",
+        "photo": "/static/images/logo_redes.png",
+        "link": "https://red.es/es"
+      },
+      {
         "title": "Bankinter",
         "photo": "/static/images/logo_bankinter.png",
         "link": "https://www.bankinter.com/"
