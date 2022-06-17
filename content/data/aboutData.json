@@ -193,12 +193,12 @@
     "clients": [
       {
         "title": "Red.es",
-        "photo": "/static/images/logo_redes.png",
+        "photo": "/images/logo_redes.png",
         "link": "https://red.es/es"
       },
       {
         "title": "Bankinter",
-        "photo": "/static/images/logo_bankinter.png",
+        "photo": "/images/logo_bankinter.png",
         "link": "https://www.bankinter.com/"
       },
       {
