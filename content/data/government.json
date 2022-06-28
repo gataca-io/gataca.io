@@ -44,12 +44,22 @@
     "title": "The road to digitisation",
     "textBullets": [
       {
-        "text": "Forget paper-based documents and complex public service processes. Digital IDs enable one-click applications, registrations, payments, access, and so much more."
+        "text": "Forget paper-based documents and complex public service processes. Digital IDs enable one-click applications, registrations, payments, access, and so much more.",
+        "title": "",
+        "icon": ""
       }
     ]
   },
   "bigBulletsSection": {
     "bullets": [
+      {
+        "title": "Test",
+        "head": "<p>test</p>",
+        "description": "<p>test</p>",
+        "subtitle": "<p>test</p>",
+        "icon": "",
+        "image": ""
+      },
       {
         "icon": "/images/building.svg",
         "link": "/use-cases/government",
@@ -66,9 +76,12 @@
         "image": "/illustrations/people_success.svg",
         "title": "Full stack, self -sovereign identity platform",
         "shortDescription": "<p>Full stack, self -sovereign identity platform.</p>",
-        "description": "<p>We equip authorities with tools to issue digitized, standardized, and secure government documents such as a national ID, passport, driver’s or business licenses in seconds. These Verifiable Credentials (or VCs) are instantly and securely sent to the citizen’s digital Wallet, where they control who can access their data.\n\nOur single sign-on authentication tool enables citizen access to any digital service, from eGovernment to healthcare, using their VCs which drasticly reduces onboarding time and offers instant access to affiliated service providers..</p>"
+        "description": "<p>We equip authorities with tools to issue digitized, standardized, and secure government documents such as a national ID, passport, driver’s or business licenses in seconds. These Verifiable Credentials (or VCs) are instantly and securely sent to the citizen’s digital Wallet, where they control who can access their data.\n\nOur single sign-on authentication tool enables citizen access to any digital service, from eGovernment to healthcare, using their VCs which drasticly reduces onboarding time and offers instant access to affiliated service providers..</p>",
+        "subtitle": ""
       }
-    ]
+    ],
+    "title": "",
+    "description": ""
   },
   "useCases": {
     "title": "All your citizen identification needs, covered",
@@ -101,15 +114,18 @@
     "textBullets": [
       {
         "icon": "/icons/building_services.svg",
-        "text": "Governments agencies issue verifiable credentials to citizens via Certify (link)"
+        "text": "Governments agencies issue verifiable credentials to citizens via Certify (link)",
+        "title": ""
       },
       {
         "icon": "/icons/phone_buzzing.svg",
-        "text": "Citizens securely store credentials on a Wallet, their digital vault and masterkey to all digital services."
+        "text": "Citizens securely store credentials on a Wallet, their digital vault and masterkey to all digital services.",
+        "title": ""
       },
       {
         "icon": "/icons/show_phone.svg",
-        "text": "Citizens verify their identities by giving service providers and government agencies access to the required credentials or information stored on their wallet via Connect. (link)"
+        "text": "Citizens verify their identities by giving service providers and government agencies access to the required credentials or information stored on their wallet via Connect. (link)",
+        "title": ""
       }
     ]
   },
@@ -181,6 +197,12 @@
     "title": "Start digitising your economy ",
     "ctaText": "Book a meeting",
     "ctaLink": "/company/contact"
+  },
+  "bulletsSection": {
+    "title": "",
+    "description": "",
+    "bullets": [
+
+    ]
   }
 }
-
