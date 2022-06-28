@@ -91,9 +91,9 @@ fields:
       label: Title
       config:
         required: false
-    - name: subtitle
+    - name: head
       type: textarea
-      label: Description
+      label: Head
       default: ''
       config:
         required: false
@@ -109,14 +109,23 @@ fields:
         wysiwyg: true
         schema:
           format: html-blocks
+    - name: subtitle
+      type: textarea
+      label: Subtitle
+      default: ''
+      config:
+        required: false
+        wysiwyg: true
+        schema:
+          format: html-blocks
     - type: file
       name: icon
-      label: Partner Image
+      label: Icon
       config:
         required: false
     - type: file
       name: image
-      label: Partner Image
+      label: Image
       config:
         required: false
 - type: field_group
