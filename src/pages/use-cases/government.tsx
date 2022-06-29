@@ -67,7 +67,7 @@ const Government: React.FC<IGovernmentProps> = ({}) => {
       </section>
 
       <section className={styles.sectionProblem}>
-      {data.bigBulletsSection.bullets.map(bullet => {
+      {data.firstSection.bullets.map(bullet => {
           return (
             <section className={styles.sectionStyle}>
               <div>
@@ -187,16 +187,16 @@ const Government: React.FC<IGovernmentProps> = ({}) => {
       </section>*/}
 
       <ExplainedInfographics
-        title={data.explainSection.title}
-        bullets={data.explainSection.bullets}
-        infographic={data.explainSection.image}
+        title={data.secondSection.title}
+        bullets={data.secondSection.bullets}
+        infographic={data.secondSection.image}
       />
 
       <CtaSection
         backgroundColor={"var(--bg-grey)"}
-        ctaUrl={data.ctaSection.ctaLink}
-        ctaText={data.ctaSection.ctaText}
-        title={data.ctaSection.title}
+        ctaUrl={data.bottomSection.buttonLink}
+        ctaText={data.bottomSection.buttonText}
+        title={data.bottomSection.title}
       />
 
     </Layout>

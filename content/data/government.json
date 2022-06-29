@@ -21,7 +21,25 @@
     "shortDescription": "<p>Full stack, self -sovereign identity platform.</p>",
     "description": "<p>SSI technology saves government resources in the credential issuance, sharing, and validation steps and stimulates economic activity by facilitating processes such as opening a bank account, renovating an ID, or even filing taxes.</p>"
   },
-  "explainSection": {
+  "firstSection": {
+    "bullets": [
+      {
+        "head": "The problem",
+        "image": "/illustrations/people_arguing.svg",
+        "title": "Costly regulation compliance, lack of citizen eID adoption, and identity fraud",
+        "description": "<p>Governments worlwide are committed to the digitization of their economy but struggle with citizen eID adoption, the gateway to these services, and high GDPR & KYC regulation compliance costs.\n\nThis is mainly because current eID systems & processes are long, complex, lack the interoperability, privacy, and security citizens need, and make identity fraud ever more common.</p>"
+      },
+      {
+        "head": "The solution",
+        "image": "/illustrations/people_success.svg",
+        "title": "Full stack, self -sovereign identity platform",
+        "description": "<p>We equip authorities with tools to issue digitized, standardized, and secure government documents such as a national ID, passport, driver’s or business licenses in seconds. These Verifiable Credentials (or VCs) are instantly and securely sent to the citizen’s digital Wallet, where they control who can access their data.\n\nOur single sign-on authentication tool enables citizen access to any digital service, from eGovernment to healthcare, using their VCs which drasticly reduces onboarding time and offers instant access to affiliated service providers..</p>"
+      }
+    ],
+    "title": " ",
+    "description": ""
+  },
+  "secondSection": {
     "image": "/illustrations/people_jumping.svg",
     "title": "Accelerating economic growth, \nprotecting citizens",
     "bullets": [
@@ -42,31 +60,6 @@
         "description": "Diversify your revenue streams through credential issuance models"
       }
     ]
-  },
-  "bigBulletsSection": {
-    "bullets": [
-      {
-        "icon": "/images/building.svg",
-        "link": "/use-cases/government",
-        "head": "The problem",
-        "image": "/illustrations/people_arguing.svg",
-        "title": "Costly regulation compliance, lack of citizen eID adoption, and identity fraud",
-        "subtitle": "<p>Costly regulation compliance, lack of citizen eID adoption, and identity fraud.</p>",
-        "description": "<p>Governments worlwide are committed to the digitization of their economy but struggle with citizen eID adoption, the gateway to these services, and high GDPR & KYC regulation compliance costs.\n\nThis is mainly because current eID systems & processes are long, complex, lack the interoperability, privacy, and security citizens need, and make identity fraud ever more common.</p>"
-      },
-      {
-        "icon": "/images/phone-small.svg",
-        "link": "/use-cases/education",
-        "head": "The solution",
-        "image": "/illustrations/people_success.svg",
-        "title": "Full stack, self -sovereign identity platform",
-        "shortDescription": "<p>Full stack, self -sovereign identity platform.</p>",
-        "description": "<p>We equip authorities with tools to issue digitized, standardized, and secure government documents such as a national ID, passport, driver’s or business licenses in seconds. These Verifiable Credentials (or VCs) are instantly and securely sent to the citizen’s digital Wallet, where they control who can access their data.\n\nOur single sign-on authentication tool enables citizen access to any digital service, from eGovernment to healthcare, using their VCs which drasticly reduces onboarding time and offers instant access to affiliated service providers..</p>",
-        "subtitle": ""
-      }
-    ],
-    "title": " ",
-    "description": ""
   },
   "useCases": {
     "title": "All your citizen identification needs, covered",
@@ -178,16 +171,9 @@
       }
     ]
   },
-  "ctaSection": {
-    "title": "Start digitising your economy ",
-    "ctaText": "Book a meeting",
-    "ctaLink": "/company/contact"
-  },
-  "bulletsSection": {
-    "title": "",
-    "description": "",
-    "bullets": [
-
-    ]
+  "bottomSection": {
+    "title": "Start innovating today",
+    "buttonText": "Book a meeting",
+    "buttonLink": "/company/contact"
   }
 }

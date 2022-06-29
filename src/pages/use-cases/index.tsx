@@ -1,17 +1,15 @@
-import React, { useState, useEffect } from "react"
-import Layout from "../../layouts/Layout"
-import TextBulletsSection from "../../components/TextBulletsSection/TextBulletsSection"
-import { BuildHelmet } from "../../components/auxiliary/HelmetBuilder"
-import HeadLineSection from "../../components/HeadLineSection/HeadLineSection"
-import useCasesPageData from "../../../content/data/useCasesPage.json"
-import useCasesData from "../../../content/data/useCasesData.json"
+import React, {useEffect, useState} from "react";
+import useCasesData from "../../../content/data/useCasesData.json";
+import useCasesPageData from "../../../content/data/useCasesPage.json";
+import {BuildHelmet} from "../../components/auxiliary/HelmetBuilder";
+import BigBullet from "../../components/BigBullet/BigBullet";
+import Blurrycircle from "../../components/blurryCircle/blurryCircle";
+import BulletCenter from "../../components/BulletCenter/BulletCenter";
+import CtaSection from "../../components/CtaSection/CtaSection";
+import HeadLineSection from "../../components/HeadLineSection/HeadLineSection";
+import Layout from "../../layouts/Layout";
+import styles from "./indexUseCases.module.scss";
 
-import styles from "./indexUseCases.module.scss"
-import BigBullet from "../../components/BigBullet/BigBullet"
-import BulletCenter from "../../components/BulletCenter/BulletCenter"
-import CtaSection from "../../components/CtaSection/CtaSection"
-import configMetaData from "../../../content/data/configMetaData.json"
-import Blurrycircle from "../../components/blurryCircle/blurryCircle"
 
 type IUseCasesProps = {}
 
@@ -39,17 +37,17 @@ const UseCases: React.FC<IUseCasesProps> = ({}) => {
         <Blurrycircle size={200}/>
         <HeadLineSection
           big
-          title={useCasesPageData.introProductsSection.title}
-          subtitle={useCasesPageData.introProductsSection.description}
+          title={useCasesPageData.headline.title}
+          subtitle={useCasesPageData.headline.subtitle}
         />
       </section>
 
       <section className={styles.sectionStyleWraps}>
-        <h2>{useCasesPageData.allCases.title}</h2>
+        <h2>{useCasesPageData.firstSection.title}</h2>
         <div className={styles.line}/>
         <div>
           {
-            useCasesPageData.allCases.bullets.map(bullet => {
+            useCasesPageData.firstSection.bullets.map(bullet => {
               return <BulletCenter
                 bulletContainerStyles={styles.bulletStyle}
                 key={bullet.title}
@@ -71,11 +69,11 @@ const UseCases: React.FC<IUseCasesProps> = ({}) => {
 
       <section className={styles.sectionStyle}>
         <div>
-          <h2>{useCasesPageData.bigBulletsSection.title}</h2>
-          <h3>{useCasesPageData.bigBulletsSection.subtitle}</h3>
+          <h2>{useCasesPageData.secondSection.title}</h2>
+          <h3>{useCasesPageData.secondSection.subtitle}</h3>
           {/*<div className={styles.line}/>*/}
           {
-            useCasesPageData.bigBulletsSection.bullets.map((bullet: any) => {
+            useCasesPageData.secondSection.bullets.map((bullet: any) => {
               return <BigBullet
                 bulletsStyles={styles.sectorsBulletStyle}
                 key={bullet.title}
@@ -92,10 +90,10 @@ const UseCases: React.FC<IUseCasesProps> = ({}) => {
 
 
       <CtaSection
-        ctaText={useCasesPageData.ctaSection.ctaText}
-        ctaUrl={configMetaData.bookACallUrl}
-        title={useCasesPageData.ctaSection.title}
-        description={useCasesPageData.ctaSection.description}
+        ctaText={useCasesPageData.bottomSection.buttonText}
+        ctaUrl={useCasesPageData.bottomSection.buttonLink}
+        title={useCasesPageData.bottomSection.title}
+        description={useCasesPageData.bottomSection.subtitle}
       />
 
     </Layout>

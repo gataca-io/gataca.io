@@ -86,10 +86,7 @@ fields:
         format: html-blocks
 - name: useCases
   type: field_group
-  default: ''
   label: Use Cases
-  description: ''
-  config:
   fields:
   - type: text
     name: title
@@ -109,29 +106,17 @@ fields:
       config:
         required: true
 - type: field_group
-  name: bigBulletsSection
-  label: Features
+  name: firstSection
+  label: First Section
   fields:
-  - name: title
-    type: text
-    default: ''
-    config:
-      required: false
-      wysiwyg: false
-    label: Title
-  - name: image
-    type: file
-    label: Image
-    default: ''
-    config:
-      required: false
-      wysiwyg: false
   - name: bullets
     type: field_group_list
     default: ''
     label: List
     description: ''
-    config: 
+    config:
+      required: false
+      wysiwyg: false
     fields:
     - type: text
       name: title
@@ -152,26 +137,14 @@ fields:
       config:
         required: false
         wysiwyg: true
-    - name: subtitle
-      type: textarea
-      label: Subtitle
-      default: ''
-      config:
-        required: false
-        wysiwyg: true
-    - type: file
-      name: icon
-      label: Icon
-      config:
-        required: false
     - type: file
       name: image
       label: Image
       config:
         required: false
 - type: field_group
-  name: explainSection
-  label: Explain Section
+  name: secondSection
+  label: Second Section
   fields:
   - name: title
     type: text
@@ -206,5 +179,30 @@ fields:
       config:
         required: false
         wysiwyg: true
+- type: field_group
+  name: bottomSection
+  label: Bottom Section
+  fields:
+  - name: title
+    label: Title
+    type: text
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+  - name: buttonText
+    label: Button Text
+    type: text
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+  - name: buttonLink
+    label: Button Link
+    type: text
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
 pages:
 - content/data/government.json

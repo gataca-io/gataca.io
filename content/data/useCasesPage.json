@@ -6,53 +6,30 @@
     "linkedInImage": "",
     "twitterImage": ""
   },
-  "introProductsSection": {
+  "headline": {
     "title": "Sectors",
-    "description": "Designed for all industries<br>Customized to your needs"
+    "subtitle": "Designed for all industries<br>Customized to your needs"
   },
-  "textBulletsSection": {
-    "title": "We believe in world class user experience.",
-    "textBullets": [
-      {
-        "text": "Secure. Passwordless. Privacy-by-design."
-      },
-      {
-        "text": "GATACA helps users experience onborading processes they'll love and takes away the complexity of KYC and GDPR ompliance for businesses."
-      },
-      {
-        "text": "Our suite of products contains solutions for all stakeholders in the ecosystem and is applicable to all sectors."
-      },
-      {
-        "text": "From banking to  travel & transportation to DeFi."
-      }
-    ]
-  },
-  "bigBulletsSection": {
+  "secondSection": {
     "title": "Ecosystem pioneers",
     "subtitle": "These players are already implementing GATACA technology",
     "bullets": [
       {
-        "icon": "/images/building.svg",
         "link": "/use-cases/government",
         "image": "/illustrations/government_digitalization.svg",
         "title": "GOVERNMENT",
-        "subtitle": "<p>Secure & sustainable digital transformation.</p>",
         "description": "<p>Governments leverage GATACA Certify for the issuance of digital credentials such as verifiable IDs, driver's licenses, passports, birth certificates, business licenses and so much more, and use Connect for government grade secure authentication of citizens into eGovernment services. Citizens use their Wallet to receive and share these digital credentials with third parties for instant authentication and identity verification.</p>"
       },
       {
-        "icon": "/images/phone-small.svg",
         "link": "/use-cases/education",
         "image": "/illustrations/online_learning.svg",
         "title": "EDUCATION",
-        "shortDescription": "<p>Capture new talent with cutting-edge innovation.</p>",
         "description": "<p>Forward-thinking institutions have realized how SSI technology can take their innovation to the next level. Universities are pioneering SSI use cases such as the issuance of digital student IDs, academic diplomas, microcredentials, and transcripts. Students use these credentials stored in their digital wallet to access online portals, buildings or labs, apply to further education, enroll in exchange programs and much more without the use paper-based documents.</p>"
       }
     ]
   },
-  "allCases": {
+  "firstSection": {
     "title": "Our techonlogy is aplicable to all sectors",
-    "icon": "/images/3-triangle.svg",
-    "description": "",
     "bullets": [
       {
         "image": "/icons/bank.svg",
@@ -92,10 +69,11 @@
       }
     ]
   },
-  "ctaSection": {
+  "bottomSection": {
     "title": "It doesn't stop here",
-    "description": "Chat with our team and see how GATACA caters to your specific business needs",
-    "ctaText": "Get in touch"
+    "subtitle": "Chat with our team and see how GATACA caters to your specific business needs",
+    "buttonText": "Get in touch",
+    "buttonLink": "/company/contact"
   }
 }
 
