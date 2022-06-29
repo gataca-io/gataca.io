@@ -9,11 +9,10 @@
   "headline": {
     "title": "Government",
     "subtitle": "The future of e-governance lies in digital identities",
-    "description": "<p>GATACA’s decentralized digital identity technology improves citizen’s day to day lives by providing seamless onboarding experiences and securing online transactions.</p>",
-    "ctaText": "Get in touch",
-    "ctaLink": "/company/contact"
+    "buttonText": "Get in touch",
+    "buttonLink": "/company/contact"
   },
-  "theResult": {
+  "intro": {
     "icon": "/images/phone-small.svg",
     "link": "/use-cases/education",
     "head": "The result",
@@ -22,44 +21,30 @@
     "shortDescription": "<p>Full stack, self -sovereign identity platform.</p>",
     "description": "<p>SSI technology saves government resources in the credential issuance, sharing, and validation steps and stimulates economic activity by facilitating processes such as opening a bank account, renovating an ID, or even filing taxes.</p>"
   },
-  "theProblem": {
-    "icon": "/images/building.svg",
-    "link": "/use-cases/government",
-    "head": "The problem",
-    "image": "/illustrations/people_arguing.svg",
-    "title": "Costly regulation compliance, lack of citizen eID adoption, and identity fraud",
-    "subtitle": "<p>Costly regulation compliance, lack of citizen eID adoption, and identity fraud.</p>",
-    "description": "<p>Governments worlwide are committed to the digitization of their economy but struggle with citizen eID adoption, the gateway to these services, and high GDPR & KYC regulation compliance costs.\n\nThis is mainly because current eID systems & processes are long, complex, lack the interoperability, privacy, and security citizens need, and make identity fraud ever more common.</p>"
-  },
-  "theSolution": {
-    "icon": "/images/phone-small.svg",
-    "link": "/use-cases/education",
-    "head": "The solution",
-    "image": "/illustrations/people_success.svg",
-    "title": "Full stack, self -sovereign identity platform",
-    "shortDescription": "<p>Full stack, self -sovereign identity platform.</p>",
-    "description": "<p>We equip authorities with tools to issue digitized, standardized, and secure government documents such as a national ID, passport, driver’s or business licenses in seconds. These Verifiable Credentials (or VCs) are instantly and securely sent to the citizen’s digital Wallet, where they control who can access their data.\n\nOur single sign-on authentication tool enables citizen access to any digital service, from eGovernment to healthcare, using their VCs which drasticly reduces onboarding time and offers instant access to affiliated service providers..</p>"
-  },
-  "textBulletsSection": {
-    "title": "The road to digitisation",
-    "textBullets": [
+  "explainSection": {
+    "image": "/illustrations/people_jumping.svg",
+    "title": "Accelerating economic growth, \nprotecting citizens",
+    "bullets": [
       {
-        "text": "Forget paper-based documents and complex public service processes. Digital IDs enable one-click applications, registrations, payments, access, and so much more.",
-        "title": "",
-        "icon": ""
+        "title": "Identity fraud reduction",
+        "description": "By accepting previously verified credentials, entities guarantee the information received is trustworthy & accurate"
+      },
+      {
+        "title": "Privacy protection",
+        "description": "We provide users with control over their personal information, so they feel comfortable using your services"
+      },
+      {
+        "title": "Digital transformation",
+        "description": "Our technology enables accessible & sustainable digital transformation and creates seamless digital experiences for your clients"
+      },
+      {
+        "title": "New revenue streams",
+        "description": "Diversify your revenue streams through credential issuance models"
       }
     ]
   },
   "bigBulletsSection": {
     "bullets": [
-      {
-        "title": "Test",
-        "head": "<p>test</p>",
-        "description": "<p>test</p>",
-        "subtitle": "<p>test</p>",
-        "icon": "",
-        "image": ""
-      },
       {
         "icon": "/images/building.svg",
         "link": "/use-cases/government",
@@ -86,15 +71,15 @@
   "useCases": {
     "title": "All your citizen identification needs, covered",
     "elements": [
-      "ID card",
-      "Income tax",
-      "Business reg",
-      "Social benefits",
-      "Grant application",
-      "Fine payment",
-      "Car registration",
-      "Police declaration",
-      "Public library"
+      {"text": "ID card"},
+      {"text": "Income tax"},
+      {"text": "Business reg"},
+      {"text": "Social benefits"},
+      {"text": "Grant application"},
+      {"text": "Fine payment"},
+      {"text": "Car registration"},
+      {"text": "Police declaration"},
+      {"text": "Public library"}
     ]
   },
   "credentials": {

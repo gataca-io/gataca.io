@@ -1,5 +1,4 @@
 import React, {useEffect} from "react"; // we need this to make JSX compile
-import certify from "../../../content/data/certify.json";
 import data from "../../../content/data/government.json";
 import {BuildHelmet} from "../../components/auxiliary/HelmetBuilder";
 import CtaSection from "../../components/CtaSection/CtaSection";
@@ -38,15 +37,15 @@ const Government: React.FC<IGovernmentProps> = ({}) => {
           big
           title={data.headline.title}
           subtitle={data.headline.subtitle}
-          ctaText={data.headline.ctaText}
-          ctaLink={data.headline.ctaLink}
+          ctaText={data.headline.buttonText}
+          ctaLink={data.headline.buttonLink}
         />
       </section>
 
       <section className={styles.introSection}>
         <div>
-          <h2>{data.theResult.title}</h2>
-          <div dangerouslySetInnerHTML={{ __html: data.theResult.description }}/>
+          <h2>{data.intro.title}</h2>
+          <div dangerouslySetInnerHTML={{ __html: data.intro.description }}/>
         </div>
       </section>
 
@@ -59,7 +58,7 @@ const Government: React.FC<IGovernmentProps> = ({}) => {
             {data.useCases.elements.map(el => {
               return (
                 <div className={styles.chip}>
-                  <p>{el}</p>
+                  <p>{el.text}</p>
                 </div>
               )
             })}
@@ -188,9 +187,9 @@ const Government: React.FC<IGovernmentProps> = ({}) => {
       </section>*/}
 
       <ExplainedInfographics
-        title={certify.explainSection.title}
-        bullets={certify.explainSection.bullets}
-        infographic={certify.explainSection.infographic}
+        title={data.explainSection.title}
+        bullets={data.explainSection.bullets}
+        infographic={data.explainSection.image}
       />
 
       <CtaSection
