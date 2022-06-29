@@ -1,18 +1,13 @@
-import React, { useState, useEffect } from "react" // we need this to make JSX compile
-import Layout from "../../layouts/Layout"
-import HeadLineSection from "../../components/HeadLineSection/HeadLineSection"
-import data from "../../../content/data/government.json"
-import { BuildHelmet } from "../../components/auxiliary/HelmetBuilder"
+import React, {useEffect} from "react"; // we need this to make JSX compile
+import data from "../../../content/data/government.json";
+import {BuildHelmet} from "../../components/auxiliary/HelmetBuilder";
+import CtaSection from "../../components/CtaSection/CtaSection";
+import ExplainedInfographics from "../../components/ExplainedInfoGraphics/ExplainedInfographics";
+import HeadLineSection from "../../components/HeadLineSection/HeadLineSection";
+import Layout from "../../layouts/Layout";
+import styles from "./government.module.scss";
 
-import styles from "./government.module.scss"
-import BigBullet from "../../components/BigBullet/BigBullet"
-import TextBulletsSection from "../../components/TextBulletsSection/TextBulletsSection"
-import BulletsSection from "../../components/BulletsSection/BulletsSection"
-import CtaSection from "../../components/CtaSection/CtaSection"
 
-import BulletOne from "../../components/BulletOne/BulletOne"
-import ExplainedInfographics from "../../components/ExplainedInfoGraphics/ExplainedInfographics"
-import certify from "../../../content/data/certify.json"
 
 type IGovernmentProps = {}
 
@@ -42,15 +37,15 @@ const Government: React.FC<IGovernmentProps> = ({}) => {
           big
           title={data.headline.title}
           subtitle={data.headline.subtitle}
-          ctaText={data.headline.ctaText}
-          ctaLink={data.headline.ctaLink}
+          ctaText={data.headline.buttonText}
+          ctaLink={data.headline.buttonLink}
         />
       </section>
 
       <section className={styles.introSection}>
         <div>
-          <h2>{data.theResult.title}</h2>
-          <div dangerouslySetInnerHTML={{ __html: data.theResult.description }}/>
+          <h2>{data.intro.title}</h2>
+          <div dangerouslySetInnerHTML={{ __html: data.intro.description }}/>
         </div>
       </section>
 
@@ -63,7 +58,7 @@ const Government: React.FC<IGovernmentProps> = ({}) => {
             {data.useCases.elements.map(el => {
               return (
                 <div className={styles.chip}>
-                  <p>{el}</p>
+                  <p>{el.text}</p>
                 </div>
               )
             })}
@@ -72,8 +67,19 @@ const Government: React.FC<IGovernmentProps> = ({}) => {
       </section>
 
       <section className={styles.sectionProblem}>
-
-        <section className={styles.sectionStyle}>
+      {data.firstSection.bullets.map(bullet => {
+          return (
+            <section className={styles.sectionStyle}>
+              <div>
+                <img src={bullet.image} alt={bullet.title}/>
+                <h3>{bullet.head}</h3>
+                <h2>{bullet.title}</h2>
+                <p dangerouslySetInnerHTML={{ __html: bullet.description }}/>
+              </div>
+            </section>
+          )
+        })}
+        {/* <section className={styles.sectionStyle}>
           <div>
             <img src={data.theProblem.image} alt={data.theProblem.title}/>
             <h3>{data.theProblem.head}</h3>
@@ -89,7 +95,7 @@ const Government: React.FC<IGovernmentProps> = ({}) => {
             <h2>{data.theSolution.title}</h2>
             <p dangerouslySetInnerHTML={{ __html: data.theSolution.description }}/>
           </div>
-        </section>
+        </section> */}
 
       </section>
 
@@ -181,16 +187,16 @@ const Government: React.FC<IGovernmentProps> = ({}) => {
       </section>*/}
 
       <ExplainedInfographics
-        title={certify.explainSection.title}
-        bullets={certify.explainSection.bullets}
-        infographic={certify.explainSection.infographic}
+        title={data.secondSection.title}
+        bullets={data.secondSection.bullets}
+        infographic={data.secondSection.image}
       />
 
       <CtaSection
         backgroundColor={"var(--bg-grey)"}
-        ctaUrl={data.ctaSection.ctaLink}
-        ctaText={data.ctaSection.ctaText}
-        title={data.ctaSection.title}
+        ctaUrl={data.bottomSection.buttonLink}
+        ctaText={data.bottomSection.buttonText}
+        title={data.bottomSection.title}
       />
 
     </Layout>

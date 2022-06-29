@@ -37,19 +37,44 @@ fields:
   label: Headline
   fields:
   - name: title
+    label: Title
     type: text
-    default: Education
+    default: Government
     config:
       required: false
       wysiwyg: false
-    label: Title
-  - name: title
+  - name: subtitle
+    label: Subtitle
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+  - name: buttonText
+    label: Button Text
     type: text
     default: ''
     config:
       required: false
       wysiwyg: false
+  - name: buttonLink
+    label: Button Link
+    type: text
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+- type: field_group
+  name: intro
+  label: Intro
+  fields:
+  - name: title
+    type: text
     label: Title
+    default: Government
+    config:
+      required: false
+      wysiwyg: false
   - name: description
     type: textarea
     label: Description
@@ -59,276 +84,91 @@ fields:
       wysiwyg: true
       schema:
         format: html-blocks
-- type: field_group
-  name: bigBulletsSection
-  label: Features
+- name: useCases
+  type: field_group
+  label: Use Cases
   fields:
-  - name: title
-    type: text
-    default: ''
-    config:
-      required: false
-      wysiwyg: false
+  - type: text
+    name: title
     label: Title
-  - name: description
-    type: textarea
-    label: Description
-    default: ''
     config:
       required: false
-      wysiwyg: true
-      schema:
-        format: html-blocks
-  - name: bullets
+  - name: elements
     type: field_group_list
     default: ''
-    label: Features List
+    label: Use cases list
     description: ''
     config: 
     fields:
-    - type: text
-      name: title
-      label: Title
-      config:
-        required: false
-    - name: subtitle
-      type: textarea
-      label: Description
-      default: ''
-      config:
-        required: false
-        wysiwyg: true
-        schema:
-          format: html-blocks
-    - name: description
-      type: textarea
-      label: Description
-      default: ''
-      config:
-        required: false
-        wysiwyg: true
-        schema:
-          format: html-blocks
-    - type: file
-      name: icon
-      label: Partner Image
-      config:
-        required: false
-    - type: file
-      name: image
-      label: Partner Image
-      config:
-        required: false
-- type: field_group
-  name: textBulletsSection
-  label: The road to digitisation
-  fields:
-  - name: title
-    type: text
-    default: ''
-    config:
-      required: false
-      wysiwyg: false
-    label: Title
-  - name: textBullets
-    type: field_group_list
-    default: ''
-    label: Features List
-    description: ''
-    config: 
-    fields:
-    - type: text
-      name: title
-      label: Partner Title
-      config:
-        required: false
-    - type: file
-      name: icon
-      label: Partner Image
-      config:
-        required: false
-- type: field_group
-  name: bulletsSection
-  label: The impact?
-  fields:
-  - name: title
-    type: text
-    default: ''
-    config:
-      required: false
-      wysiwyg: false
-    label: Title
-  - name: description
-    type: textarea
-    label: Description
-    default: ''
-    config:
-      required: false
-      wysiwyg: true
-      schema:
-        format: html-blocks
-  - name: bullets
-    type: field_group_list
-    default: ''
-    label: Features List
-    description: ''
-    config: 
-    fields:
-    - name: title
-      type: text
-      label: Title
-      config:
-        required: false
-    - name: description
-      type: textarea
-      label: Description
-      default: ''
-      config:
-        required: false
-        wysiwyg: true
-        schema:
-          format: html-blocks
-    - type: file
-      name: image
-      label: Partner Image
-      config:
-        required: false
-- type: field_group
-  name: textBulletsPlusIconsSection
-  label: How it works
-  fields:
-  - name: title
-    type: text
-    default: ''
-    config:
-      required: false
-      wysiwyg: false
-    label: Title
-  - name: textBullets
-    type: field_group_list
-    default: ''
-    label: Features List
-    description: ''
-    config: 
-    fields:
-    - type: text
-      name: title
-      label: Partner Title
-      config:
-        required: false
-    - type: file
-      name: icon
-      label: Partner Image
-      config:
-        required: false
-- type: field_group
-  name: bulletsSection_two
-  label: The Impact
-  fields:
-  - name: title
-    type: text
-    default: ''
-    config:
-      required: false
-      wysiwyg: false
-    label: Title
-  - name: description
-    type: textarea
-    label: Description
-    default: ''
-    config:
-      required: false
-      wysiwyg: true
-      schema:
-        format: html-blocks
-  - name: bullets
-    type: field_group_list
-    default: ''
-    label: Features List
-    description: ''
-    config: 
-    fields:
-    - name: title
-      type: text
-      label: Title
-      config:
-        required: false
-    - name: description
-      type: textarea
-      label: Description
-      default: ''
-      config:
-        required: false
-        wysiwyg: true
-        schema:
-          format: html-blocks
-    - type: file
-      name: image
-      label: Partner Image
-      config:
-        required: false
-- type: field_group
-  name: textBulletsPlusIconsSection_two
-  label: Our Principles
-  fields:
-  - name: title
-    type: text
-    default: ''
-    config:
-      required: false
-      wysiwyg: false
-    label: Title
-  - name: textBullets
-    type: field_group_list
-    default: ''
-    label: Features List
-    description: ''
-    config: 
-    fields:
-    - type: text
-      name: title
-      label: Partner Title
-      config:
-        required: false
     - type: text
       name: text
-      label: Partner Title
+      label: Text
+      config:
+        required: true
+- type: field_group
+  name: firstSection
+  label: First Section
+  fields:
+  - name: bullets
+    type: field_group_list
+    default: ''
+    label: List
+    description: ''
+    config:
+      required: false
+      wysiwyg: false
+    fields:
+    - type: text
+      name: title
+      label: Title
       config:
         required: false
+    - name: head
+      type: textarea
+      label: Head
+      default: ''
+      config:
+        required: false
+        wysiwyg: true
+    - name: description
+      type: textarea
+      label: Description
+      default: ''
+      config:
+        required: false
+        wysiwyg: true
     - type: file
-      name: icon
-      label: Partner Image
+      name: image
+      label: Image
       config:
         required: false
 - type: field_group
-  name: bulletsSection_three
-  label: Our Solution in Action
+  name: secondSection
+  label: Second Section
   fields:
   - name: title
     type: text
+    label: Title
     default: ''
     config:
       required: false
       wysiwyg: false
-    label: Title
-  - name: description
-    type: textarea
-    label: Description
+  - name: image
+    type: file
+    label: Image
     default: ''
     config:
       required: false
-      wysiwyg: true
-      schema:
-        format: html-blocks
+      wysiwyg: false
   - name: bullets
     type: field_group_list
     default: ''
-    label: Features List
+    label: Parts List
     description: ''
     config: 
     fields:
-    - name: title
-      type: text
+    - type: text
+      name: title
       label: Title
       config:
         required: false
@@ -339,12 +179,30 @@ fields:
       config:
         required: false
         wysiwyg: true
-        schema:
-          format: html-blocks
-    - type: file
-      name: image
-      label: Partner Image
-      config:
-        required: false
+- type: field_group
+  name: bottomSection
+  label: Bottom Section
+  fields:
+  - name: title
+    label: Title
+    type: text
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+  - name: buttonText
+    label: Button Text
+    type: text
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+  - name: buttonLink
+    label: Button Link
+    type: text
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
 pages:
 - content/data/government.json
