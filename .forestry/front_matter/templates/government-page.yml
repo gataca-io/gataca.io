@@ -85,29 +85,29 @@ fields:
       schema:
         format: html-blocks
 - name: useCases
+  type: field_group
+  default: ''
+  label: Use Cases
+  description: ''
+  config:
+  fields:
+  - type: text
+    name: title
+    label: Title
+    config:
+      required: false
+  - name: elements
     type: field_group_list
     default: ''
-    label: Use Cases
+    label: Use cases list
     description: ''
     config: 
     fields:
     - type: text
-      name: title
-      label: Title
+      name: text
+      label: Text
       config:
-        required: false
-    - name: elements
-        type: field_group_list
-        default: ''
-        label: Use cases list
-        description: ''
-        config: 
-        fields:
-        - type: text
-          name: text
-          label: Text
-          config:
-            required: true
+        required: true
 - type: field_group
   name: bigBulletsSection
   label: Features
@@ -120,12 +120,12 @@ fields:
       wysiwyg: false
     label: Title
   - name: image
-      type: file
-      label: Image
-      default: ''
-      config:
-        required: false
-        wysiwyg: false
+    type: file
+    label: Image
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
   - name: bullets
     type: field_group_list
     default: ''
@@ -181,12 +181,12 @@ fields:
       required: false
       wysiwyg: false
   - name: image
-      type: file
-      label: Image
-      default: ''
-      config:
-        required: false
-        wysiwyg: false
+    type: file
+    label: Image
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
   - name: bullets
     type: field_group_list
     default: ''
