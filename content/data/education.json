@@ -9,11 +9,10 @@
   "headline": {
     "title": "Education",
     "subtitle": "Grow your student base, lead with innovation",
-    "description": "<p>The GATACA technology enables the higher education sector to maintain their competitive edge by increasing student, staff, and partner experience with digital processes and transactions.</p>",
-    "ctaText": "Get in touch",
-    "ctaLink": "/company/contact"
+    "buttonText": "Get in touch",
+    "buttonLink": "/company/contact"
   },
-  "theResult": {
+  "intro": {
     "icon": "/images/phone-small.svg",
     "link": "/use-cases/education",
     "head": "The result",
@@ -22,86 +21,23 @@
     "shortDescription": "<p>Full stack, self -sovereign identity platform.</p>",
     "description": "<p>With GATACA, Universities can  spur digital transformation in the their whole ecosystem. Indirect partners such as healthcare services and rental buildings can leverage SSI technology to streamline student applications and increase conversion rates</p>"
   },
-  "bigBulletsSection": {
+  "firstSection": {
     "bullets": [
       {
-        "icon": "/images/building.svg",
-        "link": "/use-cases/government",
         "image": "/illustrations/people_fraud.svg",
         "title": "Academic fraud & complex verification processes",
-        "subtitle": "<p>Costly regulation compliance, lack of citizen eID adoption, and identity fraud.</p>",
         "description": "<p>To reduce academic fraud, Universities follow time & resource consuming processes to verify student identities and certifications (diplomas, transcripts, etc).\n\nMeanwhile, students and alumni engage in complex application processes for programs and jobs, often not completing them because of missing documents, outdated information and negative user experiences.</p>"
       },
       {
-        "icon": "/images/phone-small.svg",
-        "link": "/use-cases/education",
         "image": "/illustrations/learning.svg",
         "title": "Academic verifiable credentials: easy to issue & share, always up-to-date",
-        "shortDescription": "<p>Full stack, self -sovereign identity platform.</p>",
-        "description": "<p>With our technology, University staff operations flow seamlessly. Universities can securely issue, updated, and verify digital academic credentials such as diplomas, transcripts, and student IDs.\n\nFrom their digital Wallet, students use these credentials to apply for jobs and programs, in seconds, while alleviating the burden of paperwork for verifiers.</p>",
-        "subtitle": ""
-      }
-    ],
-    "title": "",
-    "description": ""
-  },
-  "transformBulletsSection": {
-    "title": "Putting universities at the front end of digital innovation",
-    "description": "The first credential use cases for self-sovereign identity have been established in the education sector, yet there's more to come.",
-    "arrowBullets": [
-      {
-        "list": [
-          {
-            "title": "Issuance of academic diploma and microcredentials",
-            "description": "<p>Digital, standard, and verified versions of academic credentials stored in the student's ID wallet</p>"
-          },
-          {
-            "title": "Optimized  application processes\n",
-            "description": "<p>Quick application to other education courses,  exchange programs, jobs, grants, student discounts, etc.</p>"
-          }
-        ],
-        "title": "",
-        "description": "",
-        "icon": "",
-        "image": ""
-      },
-      {
-        "list": [
-          {
-            "title": "Issuance of academic transcript\n",
-            "description": "<p>Digital, standard, and verified versions of academic transcripts stored in the student's ID wallet</p>"
-          },
-          {
-            "title": "Unified records in exchange programs",
-            "description": "<p>Trasncript records are interoperable at global level for better implementation of exchange programs.</p>"
-          }
-        ],
-        "title": "",
-        "description": "",
-        "icon": "",
-        "image": ""
-      },
-      {
-        "list": [
-          {
-            "title": "Issuance of digital student ID",
-            "description": "<p>Digital, standard, and verified versions of academic credentials stored in the student's ID wallet</p>"
-          },
-          {
-            "title": "Student access to university services",
-            "description": "<p>ID wallet as single key for instant, secure, and passwordless access in portals, IT systems and buildings.</p>"
-          }
-        ],
-        "title": "",
-        "description": "",
-        "icon": "",
-        "image": ""
+        "description": "<p>With our technology, University staff operations flow seamlessly. Universities can securely issue, updated, and verify digital academic credentials such as diplomas, transcripts, and student IDs.\n\nFrom their digital Wallet, students use these credentials to apply for jobs and programs, in seconds, while alleviating the burden of paperwork for verifiers.</p>"
       }
     ]
   },
-  "textBulletsPlusIconsSection_one": {
+  "secondSection": {
     "title": "How it works",
-    "textBullets": [
+    "steps": [
       {
         "icon": "/images/verified.svg",
         "text": "Students request their eduactional institution to issue their digital academic diploma via the insititution’s website",
@@ -124,7 +60,7 @@
       }
     ]
   },
-  "bulletsSection": {
+  "thirdSectionTop": {
     "title": "The Impact",
     "bullets": [
       {
@@ -147,32 +83,10 @@
         "title": "Decrease economic risk",
         "description": "<p>Attract a larger student base by becoming a reference for innovation and best-in-class student experience</p>"
       }
-    ],
-    "description": ""
-  },
-  "textBulletsPlusIconsSection": {
-    "title": "Our Principles",
-    "textBullets": [
-      {
-        "title": "Flexibility, control & ease-of-use",
-        "text": "We give you the option to implement our technology on premise or Cloud, and provide sandbox environements for easier testing",
-        "icon": ""
-      },
-      {
-        "title": "Interoperability\n",
-        "text": "In addition to being ledger-agnostic, GATACA promotes interoperability in the SSI industry as a standards leader",
-        "icon": ""
-      },
-      {
-        "title": "Compliance",
-        "text": "Our technology includes GDPR by design, SSI eIDAS bridge, and is integrated with EBSI",
-        "icon": ""
-      }
     ]
   },
-  "bulletsSection_three": {
+  "thirdSectionBottom": {
     "title": "Our Solution in Action",
-    "description": "",
     "bullets": [
       {
         "image": "/images/una_europa.svg",
@@ -186,9 +100,9 @@
       }
     ]
   },
-  "ctaSection": {
+  "bottomSection": {
     "title": "Start innovating today",
-    "ctaText": "Book a meeting",
-    "ctaLink": "/company/contact"
+    "buttonText": "Book a meeting",
+    "buttonLink": "/company/contact"
   }
 }

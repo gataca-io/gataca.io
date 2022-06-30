@@ -177,12 +177,12 @@ export default function HeaderSection(props) {
                         }
                       </div>
                     })}
-                  
+
                   </div>
                   <div className={headerStyles.right}>
                     {/*                <a>
                   <p>
-                  
+
                   </p>
                 </a>*/}
                     <Link to={configMetaData.bookACallUrl}>
@@ -192,7 +192,7 @@ export default function HeaderSection(props) {
                     </Link>
                   </div>
                 </div>
-                
+
                 <SideNav
                   className={headerStyles.sideNav}
                   aria-label="Side navigation"
@@ -207,10 +207,9 @@ export default function HeaderSection(props) {
                       Get in touch
                       </p>
                     </SideNavLink>
-                    
+
                     <div className={headerStyles.sideNavDivider}/>
-                    
-                    
+
                     <SideNavLink className={headerStyles.sideNavHeadline} href="/products">
                       Products
                     </SideNavLink>
@@ -229,15 +228,26 @@ export default function HeaderSection(props) {
                     <SideNavLink className={headerStyles.sideNavHeadline} href="/use-cases">
                       Sectors
                     </SideNavLink>
-  
                     <SideNavLink href="/use-cases/government">
                       Government
                     </SideNavLink>
                     <SideNavLink href="/use-cases/education">
                       Education
                     </SideNavLink>
+
                     <div className={headerStyles.sideNavDivider}/>
-                    
+
+                    <SideNavLink className={headerStyles.sideNavHeadline} href="/developers">
+                      Developers
+                    </SideNavLink>
+                    <SideNavLink href="https://gataca.atlassian.net/wiki/spaces/developers/overview" target={'_blank'}>
+                      General documentation
+                    </SideNavLink>
+                    <SideNavLink href="https://api.gataca.io/" target={'_blank'}>
+                      APIs
+                    </SideNavLink>
+
+                    <div className={headerStyles.sideNavDivider}/>
                     <SideNavLink href="/blog/">
                       Blog
                     </SideNavLink>
@@ -246,6 +256,12 @@ export default function HeaderSection(props) {
                     </SideNavLink>
                     <SideNavLink href="/company/press/">
                       Press
+                    </SideNavLink>
+                    <SideNavLink href="/company/jobs/">
+                      Jobs
+                    </SideNavLink>
+                    <SideNavLink href="/company/contact/">
+                      Contact
                     </SideNavLink>
                   
                   </SideNavItems>

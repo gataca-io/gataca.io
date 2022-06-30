@@ -1,7 +1,7 @@
 .hoverMenu {
     position: absolute;
     left: -70%;
-    top: calc(var(--topbar-height) + 10px);
+    top: calc(var(--topbar-height));
     //transform: translateX(50%);
     backdrop-filter: blur(10px);
     opacity: 1;
