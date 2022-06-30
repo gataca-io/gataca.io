@@ -241,6 +241,8 @@ export default function HeaderSection(props) {
                     <SideNavLink href="/blog/">
                       Blog
                     </SideNavLink>
+
+                    <div className={headerStyles.sideNavDivider}/>
                     <SideNavLink href="/company/about/">
                       About
                     </SideNavLink>
