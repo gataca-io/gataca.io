@@ -246,6 +246,9 @@ export default function HeaderSection(props) {
                     <SideNavLink href="/company/about/">
                       About
                     </SideNavLink>
+                    <SideNavLink href="/company/jobs/">
+                      Jobs
+                    </SideNavLink>
                     <SideNavLink href="/company/press/">
                       Press
                     </SideNavLink>
