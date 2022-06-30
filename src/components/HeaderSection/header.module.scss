@@ -210,7 +210,9 @@
 }
 
 .sideNav {
+    overflow-y: scroll;
     display: block;
+    padding-bottom: 1rem;
 
     .sideNavHeadline {
         opacity: 0.5;

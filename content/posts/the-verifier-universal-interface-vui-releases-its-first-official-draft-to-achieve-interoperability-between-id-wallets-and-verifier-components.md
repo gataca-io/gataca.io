@@ -34,7 +34,7 @@ VUI identifies a minimum set of 6 APIs to offer an end-to-end credential verific
 5. Issuer resolution
 6. Schema resolution
 
-![](/vui-verifier-api-structure.jpg)
+![](/static/images/vui-verifier-api-structure.jpg)
 
 Since both DID Registry & Status resolution APIs have advanced pre-defined work, we set out to build a team to work on the remaining interfaces. In just one year, the VUI working group, composed of 12 SSI organizations, has been able to define APIs for Data Agreements, Presentation Exchange, and Issuer Resolution. It is important to note that our delivery for the Presentation Exchange API was an extension of the existing work based on WACI. As for the remaining API, Schema resolution, future work of VUI will involve its definition as it is only one without a definition proposal or an existing normative reference.
 
