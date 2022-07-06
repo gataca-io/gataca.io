@@ -19,19 +19,21 @@
     "image": "/images/phone-small.svg",
     "title": "Transform student & staff experiences and generate new opportunities for the entire ecosystem",
     "shortDescription": "<p>Full stack, self -sovereign identity platform.</p>",
-    "description": "<p>With GATACA, Universities can  spur digital transformation in the their whole ecosystem. Indirect partners such as healthcare services and rental buildings can leverage SSI technology to streamline student applications and increase conversion rates</p>"
+    "description": "<p>With GATACA, Universities can spur digital transformation in the their whole ecosystem. Indirect partners such as healthcare services and rental buildings can leverage SSI technology to streamline student applications and increase conversion rates.</p>"
   },
   "firstSection": {
     "bullets": [
       {
         "image": "/illustrations/people_fraud.svg",
-        "title": "Academic fraud & complex verification processes",
-        "description": "<p>To reduce academic fraud, Universities follow time & resource consuming processes to verify student identities and certifications (diplomas, transcripts, etc).\n\nMeanwhile, students and alumni engage in complex application processes for programs and jobs, often not completing them because of missing documents, outdated information and negative user experiences.</p>"
+        "title": "Soving academic fraud & complex verification processes",
+        "description": "<p>To reduce academic fraud, Universities follow time & resource consuming processes to verify student identities and certifications (diplomas, transcripts, etc).\n\nMeanwhile, students and alumni engage in complex application processes for programs and jobs, often not completing them because of missing documents, outdated information and negative user experiences.</p>",
+        "icon": ""
       },
       {
         "image": "/illustrations/learning.svg",
         "title": "Academic verifiable credentials: easy to issue & share, always up-to-date",
-        "description": "<p>With our technology, University staff operations flow seamlessly. Universities can securely issue, updated, and verify digital academic credentials such as diplomas, transcripts, and student IDs.\n\nFrom their digital Wallet, students use these credentials to apply for jobs and programs, in seconds, while alleviating the burden of paperwork for verifiers.</p>"
+        "description": "<p>With our technology, University staff operations flow seamlessly. Universities can securely issue, updated, and verify digital academic credentials such as diplomas, transcripts, and student IDs.\n\nFrom their digital Wallet, students use these credentials to apply for jobs and programs, in seconds, while alleviating the burden of paperwork for verifiers.</p>",
+        "icon": ""
       }
     ]
   },
@@ -98,7 +100,9 @@
         "title": "Early Adopters Programme - Spain",
         "description": "<p><a href=\"https://gataca.io/blog/gataca-joins-the-european-commission-s-early-adopters-program-as-the-ssi-technology-provider-in-the-spanish-group\" title=\"\">GATACA has joined the Spanish group</a> comprised of 5 entities, including the Royal Mint of Spain and 3 Spanish universities, which are currently implementing our technology to deploy the academic use case in the country</p>"
       }
-    ]
+    ],
+    "description": "",
+    "image": ""
   },
   "bottomSection": {
     "title": "Start innovating today",
