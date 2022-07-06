@@ -200,7 +200,6 @@ fields:
     default: ''
     label: List
     description: ''
-    fields:
   - name: title
     type: text
     label: Title

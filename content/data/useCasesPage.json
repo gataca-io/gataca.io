@@ -12,7 +12,7 @@
   },
   "secondSection": {
     "title": "Ecosystem pioneers",
-    "subtitle": "These players are already implementing GATACA technology",
+    "subtitle": "These players are already implementing GATACA's technology",
     "bullets": [
       {
         "link": "/use-cases/government",
@@ -40,7 +40,7 @@
       {
         "image": "/icons/defi_bitcoin.svg",
         "title": "Crypto / Defi",
-        "subtitle": "Attract new clients with a layer of trust",
+        "subtitle": "Easy entry & navigation into the crypto space",
         "description": "<p>Decentralized digital identities may trigger mass adoption for the Decentralized Finance (DeFi) and cryptocurrency space by providing a layer of trust between users, providers, and regulators in the form of eKYC for crypto/ICOs and instant, compliant, and secure onboarding into crypto/DeFi platforms.</p>"
       },
       {
@@ -76,4 +76,3 @@
     "buttonLink": "/company/contact"
   }
 }
-
