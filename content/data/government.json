@@ -24,16 +24,16 @@
   "firstSection": {
     "bullets": [
       {
-        "head": "The problem",
+        "head": "The challenge",
         "image": "/illustrations/people_arguing.svg",
         "title": "Costly regulation compliance, lack of citizen eID adoption, and identity fraud",
-        "description": "<p>Governments worlwide are committed to the digitization of their economy but struggle with citizen eID adoption, the gateway to these services, and high GDPR & KYC regulation compliance costs.\n\nThis is mainly because current eID systems & processes are long, complex, lack the interoperability, privacy, and security citizens need, and make identity fraud ever more common.</p>"
+        "description": "Governments worldwide are committed to the digitization of their economy but struggle with citizen eID adoption, the gateway to these services, and high GDPR &amp; KYC regulation compliance costs. This is caused by long, complex eID systems &amp; processes that lack the interoperability, privacy, and security citizens need, and make identity fraud ever more common."
       },
       {
         "head": "The solution",
         "image": "/illustrations/people_success.svg",
-        "title": "Full stack, self -sovereign identity platform",
-        "description": "<p>We equip authorities with tools to issue digitized, standardized, and secure government documents such as a national ID, passport, driver’s or business licenses in seconds. These Verifiable Credentials (or VCs) are instantly and securely sent to the citizen’s digital Wallet, where they control who can access their data.\n\nOur single sign-on authentication tool enables citizen access to any digital service, from eGovernment to healthcare, using their VCs which drasticly reduces onboarding time and offers instant access to affiliated service providers..</p>"
+        "title": "Full stack, self-sovereign identity platform",
+        "description": "We equip authorities with tools to issue digitized, standardized, and secure government documents such as a national ID, passport, driver’s or business license in seconds. These Verifiable Credentials (or VCs) are instantly and securely sent to the citizen’s digital Wallet, where they control who can access their data. Our single sign-on authentication tool enables citizen access to any digital service, from eGovernment to healthcare, using their VCs which drastically reduces onboarding time and offers instant access to affiliated service providers."
       }
     ],
     "title": " ",
@@ -64,15 +64,33 @@
   "useCases": {
     "title": "All your citizen identification needs, covered",
     "elements": [
-      {"text": "ID card"},
-      {"text": "Income tax"},
-      {"text": "Business reg"},
-      {"text": "Social benefits"},
-      {"text": "Grant application"},
-      {"text": "Fine payment"},
-      {"text": "Car registration"},
-      {"text": "Police declaration"},
-      {"text": "Public library"}
+      {
+        "text": "ID card"
+      },
+      {
+        "text": "Income tax"
+      },
+      {
+        "text": "Business reg"
+      },
+      {
+        "text": "Social benefits"
+      },
+      {
+        "text": "Grant application"
+      },
+      {
+        "text": "Fine payment"
+      },
+      {
+        "text": "Car registration"
+      },
+      {
+        "text": "Police declaration"
+      },
+      {
+        "text": "Public library"
+      }
     ]
   },
   "credentials": {
