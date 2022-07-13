@@ -38,7 +38,7 @@ In other words, think of a user DID as the “username” that is tied cryptogra
 
 Now onto technicalities. What does a DID look like? The DID data model is composed of three parts: the Scheme, DID method, and DID Method-specific Identifier.
 
-![](/did_example.png)
+![](/static/images/did_example.png)
 
 * **DID Scheme:** All DIDs begin with “_did:”_
 * **DID method**: This field specifies how to deal with this DID. When reading this part of the DID, computers understand where to go fetch the DID. For example, GATACA’s DID method is denominated `"gatc"`
@@ -46,7 +46,7 @@ Now onto technicalities. What does a DID look like? The DID data model is compos
 
 The diagram below exemplifies how a DID interacts with DID documents (which store public keys) and DLTs.
 
-![](/dids_flow.png)
+![](/static/images/dids_flow.png)
 
 (For full documentation on GATACA’s DID method, click [here](https://github.com/gataca-io/gataca-did-method "https://github.com/gataca-io/gataca-did-method").)
 
@@ -70,7 +70,7 @@ There are 3 components in a VC:
 2. **Claims**: A statement about a subject (individual, legal entity, or thing).
 3. **Proofs**: cryptographic signatures tied to private keys that prove the user sharing the VC is the subject of the information.
 
-![](/vcs_datamodel.png)
+![](/static/images/vcs_datamodel.png)
 
 Let’s put things into real-life perspective with an academic diploma VC example.
 
@@ -98,7 +98,7 @@ To connect the dots on the VC flow between stakeholders, we must first depict wh
 
 The diagram below illustrates the flow of a Verifiable Credential between SSI stakeholders, also known as the Trust Triangle.
 
-![](/vc_trust_triangle.png)
+![](/static/images/vc_trust_triangle.png)
 
 **Example - Opening or Accessing a Bank Account:**
 
