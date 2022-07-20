@@ -6,9 +6,9 @@ meta_data:
     method v2, which changes the role of blockchain in SSI technology as we know it
     - so we decided to write about it. '
   rrss_images:
-    twitter: ''
-    facebook_and_whatsapp: ''
-    linkedin: ''
+    twitter: "/static/images/ebsi_did_v2_blog.png"
+    facebook_and_whatsapp: "/static/images/ebsididv2_blogmainpic.jpg"
+    linkedin: "/static/images/ebsididv2_blogmainpic.jpg"
 title: 'EBSI DID v2: A test to SSI usability and its use of blockchain technology'
 author: ''
 hero_image: "/static/images/ebsididv2_blogmainpic.jpg"
@@ -35,7 +35,7 @@ This connection between DIDs, DID documents, and DLTs has been standard in the S
 
 **However, European regulators deemed DIDs personal information and the storage of DID documents in the blockchain non GDPR-friendly for natural persons.** In response, the EBSI group has proposed EBSI DID v2 (see below), which eliminates the use of blockchain to register DID documents of natural persons, and therefore removes the link between a natural persons' DID and DLTs. In this new DID method**,** the public key can be derived from the DID itself, so that no registry of public keys is necessary.
 
-![](/static/images/ebsi_did_v2_blog.jpg)
+![](/static/images/ebsi_did_v2_blog.png)
 
 Original DID methods include a scheme, a DID method, and a DID method-specific identifier. In v1, the Identifier section is comprised of a random set of numbers (think of it as a holder’s URL). In v2, the identifier now includes a JWK thumbprint with the holder’s Public Key.
 
