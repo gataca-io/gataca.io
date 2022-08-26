@@ -16,7 +16,6 @@ hero_image: "/static/images/walletblog_mainpic.png"
 ---
 **How do we prove who we are online? Where does the information we use to prove who we are get stored?**
 
-  
 These questions are at the core of the digital identity revolution happening today. As the world turns digital and identity fraud becomes more common, digital services have had to implement longer, more complex methods of identity verification in an effort to reduce cyberattacks. To add to user frustration, the management of their data, has become more insecure. Users have no control over who has access to their data or where it is being used.
 
 Not only is user experience on the decline, but online security & privacy are also deteriorating, ironic isn't it? Wasn’t the goal of adding additional authentication steps boost security and privacy?
@@ -29,12 +28,11 @@ A Digital ID Wallet is the mobile or web application version of your physical wa
 
 1. **Acting as secure digital vault for all your personal data**: A digital ID wallet enables users to store all their identity documents (such as national ID card, driver’s license, academic diploma or membership cards) in an encrypted, digital format. These digital identity documents are called [Verifiable Credentials](https://gataca.io/blog/self-sovereign-identity-ssi-101-decentralized-identifiers-dids-verifiable-credentials-vcs "https://gataca.io/blog/self-sovereign-identity-ssi-101-decentralized-identifiers-dids-verifiable-credentials-vcs") in SSI wallets.
 2. **Proving who you are**: With digital ID wallets users have all of their data in their hands (literally) so they can easily share single attributes and/or complete verifiable credentials in one click to prove they are who they claim to be. This eliminates the use of usernames and passwords forever. Digital ID Wallet = master key to all digital services.
-
-**Managing linked services**: Users are finally able to control and manage who has access to their data. This means they are able to both grant and revoke access to their data, as well as clearly view all the given consents to “linked services”, AKA services who are currently accessing their data.
+3. **Managing linked services**: Users are finally able to control and manage who has access to their data. This means they are able to both grant and revoke access to their data, as well as clearly view all the given consents to “linked services”, AKA services who are currently accessing their data.
 
 ![](/static/images/digital_wallets_blog_appstore.png)
 
-Standards and specifications: which ones should ID Wallets follow?
+## Standards and specifications: which ones should ID Wallets follow?
 
 Multiple international standardization bodies are attempting to standardize the way ID wallets work, while simultaneously regulatory bodies focus on the development or support of standards for the local/regional wallets they plan to provide. This adds to the intricacy of Digital ID Wallets, and the uncertainty of which standards or protocols will prevail at a global level.
 
