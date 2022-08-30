@@ -1,0 +1,244 @@
+---
+label: Financial
+hide_body: false
+fields:
+- name: metas
+  type: field_group
+  label: Metas
+  config: {}
+  fields:
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+  - name: description
+    type: text
+    config:
+      required: false
+    label: Description
+  - name: facebookImage
+    type: file
+    config:
+      required: false
+    label: LinkedIn Image
+  - name: linkedInImage
+    type: file
+    config:
+      required: false
+    label: Facebook Image
+  - name: twitterImage
+    type: file
+    config:
+      required: false
+    label: Twitter Image
+- type: field_group
+  name: headline
+  label: Headline
+  fields:
+  - name: title
+    label: Title
+    type: text
+    default: Financial
+    config:
+      required: false
+      wysiwyg: false
+  - name: subtitle
+    label: Subtitle
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+  - name: buttonText
+    label: Button Text
+    type: text
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+  - name: buttonLink
+    label: Button Link
+    type: text
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+- type: field_group
+  name: intro
+  label: Intro
+  fields:
+  - name: title
+    type: text
+    label: Title
+    default: Financial
+    config:
+      required: false
+      wysiwyg: false
+  - name: description
+    type: textarea
+    label: Description
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: html-blocks
+- type: field_group
+  name: firstSection
+  label: First Section
+  fields:
+  - name: bullets
+    type: field_group_list
+    default: ''
+    label: Bullets
+    description: ''
+    config:
+      required: false
+      wysiwyg: false
+    fields:
+    - type: text
+      name: title
+      label: Title
+      config:
+        required: false
+    - name: description
+      type: textarea
+      label: Description
+      default: ''
+      config:
+        required: false
+        wysiwyg: true
+    - type: file
+      name: image
+      label: Image
+      config:
+        required: false
+- type: field_group
+  name: secondSection
+  label: Second Section
+  fields:
+    - name: title
+      label: Title
+      type: text
+      default: ''
+      config:
+        required: false
+        wysiwyg: false
+    - name: useCases
+      type: field_group_list
+      default: ''
+      label: Elements List
+      description: ''
+      config: 
+      fields:
+      - type: file
+        name: icon
+        label: Icon
+        config:
+          required: false
+      - type: text
+        name: title
+        label: Text
+        config:
+          required: false
+- type: field_group
+  name: thirdSection
+  label: Third Section
+  fields:
+    - name: topItems
+      type: field_group_list
+      default: ''
+      label: Top Items
+      description: ''
+      config: 
+      fields:
+      - name: title
+        label: Title
+        type: text
+        default: ''
+        config:
+          required: false
+          wysiwyg: false
+      - name: items
+        type: field_group_list
+        default: ''
+        label: Items
+        description: ''
+        config: 
+        fields:
+        - type: file
+          name: image
+          label: Image
+          config:
+            required: false
+        - name: title
+          label: Title
+          type: text
+          default: ''
+          config:
+            required: false
+            wysiwyg: false
+    - name: bottomItems
+      type: field_group_list
+      default: ''
+      label: Bottom Items
+      description: ''
+      config: 
+      fields:
+      - name: title
+        label: Title
+        type: text
+        default: ''
+        config:
+          required: false
+          wysiwyg: false
+      - name: items
+        type: field_group_list
+        default: ''
+        label: Items
+        description: ''
+        config: 
+        fields:
+        - type: file
+          name: image
+          label: Icon
+          config:
+            required: false
+        - type: text
+          name: title
+          label: Title
+          config:
+            required: false
+        - type: text
+          name: description
+          label: Description
+          config:
+            required: false
+- type: field_group
+  name: bottomSection
+  label: Bottom Section
+  fields:
+  - name: title
+    label: Title
+    type: text
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+  - name: buttonText
+    label: Button Text
+    type: text
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+  - name: buttonLink
+    label: Button Link
+    type: text
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+pages:
+- content/data/financialPageData.json

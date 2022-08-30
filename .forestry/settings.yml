@@ -49,6 +49,9 @@ sections:
 - type: document
   path: content/data/education.json
   label: "- Education"
+- type: document
+  path: content/data/financialDataPage.json
+  label: "- Financial"
 - type: heading
   label: Developers
 - type: document

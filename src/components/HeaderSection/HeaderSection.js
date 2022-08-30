@@ -236,6 +236,9 @@ export default function HeaderSection(props) {
                     <SideNavLink href="/use-cases/education">
                       Education
                     </SideNavLink>
+                    <SideNavLink href="/use-cases/financial">
+                      Financial
+                    </SideNavLink>
                     <div className={headerStyles.sideNavDivider}/>
                     
                     <SideNavLink href="/blog/">
