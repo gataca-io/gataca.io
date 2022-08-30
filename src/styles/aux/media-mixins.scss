@@ -18,6 +18,9 @@
 @mixin media-for-tablet {
     @media (min-width: 775px) { @content; }
 }
+@mixin media-for-tablet-l-portrait-up {
+    @media (min-width: 820px) { @content; }
+}
 @mixin media-for-tablet-landscape-up {
     @media (min-width: 1056px) { @content; }
 }

@@ -1,0 +1,28 @@
+<svg width="45" height="44" viewBox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_b_2923_30581)">
+<rect x="0.5" width="44" height="44" rx="12" fill="url(#paint0_linear_2923_30581)" fill-opacity="0.8"/>
+<g clip-path="url(#clip0_2923_30581)">
+<path d="M32 15.5H13C11.8954 15.5 11 16.3954 11 17.5V29.5C11 30.6046 11.8954 31.5 13 31.5H32C33.1046 31.5 34 30.6046 34 29.5V17.5C34 16.3954 33.1046 15.5 32 15.5Z" stroke="#181B5E" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M19 15.5V14C19 13.6022 19.158 13.2206 19.4393 12.9393C19.7206 12.658 20.1022 12.5 20.5 12.5H24.5C24.8978 12.5 25.2794 12.658 25.5607 12.9393C25.842 13.2206 26 13.6022 26 14V15.5" stroke="#181B5E" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M25.5 21C24.9731 20.9997 24.4553 21.1381 23.9989 21.4014C23.5425 21.6648 23.1635 22.0437 22.9 22.5H17L15.5 24L17 25.5H22.9C23.1633 25.956 23.5419 26.3347 23.9979 26.598C24.4538 26.8613 24.9711 26.9999 25.4976 27C26.0241 27.0001 26.5414 26.8616 26.9975 26.5984C27.4535 26.3353 27.8323 25.9567 28.0957 25.5008C28.3591 25.0449 28.4979 24.5277 28.4981 24.0012C28.4983 23.4747 28.3599 22.9574 28.0969 22.5012C27.8338 22.0451 27.4554 21.6663 26.9995 21.4028C26.5437 21.1392 26.0265 21.0003 25.5 21Z" stroke="#181B5E" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M25.5 24.25C25.3619 24.25 25.25 24.1381 25.25 24C25.25 23.8619 25.3619 23.75 25.5 23.75" stroke="#181B5E"/>
+<path d="M25.5 24.25C25.6381 24.25 25.75 24.1381 25.75 24C25.75 23.8619 25.6381 23.75 25.5 23.75" stroke="#181B5E"/>
+</g>
+<rect x="1" y="0.5" width="43" height="43" rx="11.5" stroke="white"/>
+</g>
+<defs>
+<filter id="filter0_b_2923_30581" x="-11.5" y="-12" width="68" height="68" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImage" stdDeviation="6"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2923_30581"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2923_30581" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear_2923_30581" x1="-3.6073" y1="-5.75965" x2="73.9709" y2="9.61026" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+<clipPath id="clip0_2923_30581">
+<rect width="24" height="24" fill="white" transform="translate(10.5 10)"/>
+</clipPath>
+</defs>
+</svg>
