@@ -13,9 +13,11 @@ hero_image: ''
 ---
 Effective date: August 31st, 2022
 
+GATACA Wallet – Terms of Service
+
 PLEASE READ THESE TERMS AND CONDITIONS CAREFULLY BEFORE STARTING TO USE THE GATACA WALLET
 
-# 1 INTRODUCTION
+# 1 Introduction
 
 These specific Terms of Service (“**Terms**”) is a legal agreement between you and GATACA for the use of our Wallet.
 
@@ -25,7 +27,7 @@ The Wallet and its electronic interactions with any products and services provid
 
 The Service includes code, images, text, and other materials or third-party content (collectively the “**Contents**”).
 
-# 2 ACCEPTANCE OF TERMS
+# 2 Acceptance of terms
 
 To use the Service, you must review and accept these Terms. By clicking on “Create Wallet,” or “Open your Wallet”, indicating acceptance electronically, or by accessing or using our Service, you agree to a full, complete and unreserved acceptance of each and every one of the terms included in these Terms. You must be over 14 to be able to access or use the Services.
 
@@ -43,13 +45,13 @@ These Terms includes by reference:
 
 IF YOU DO NOT AGREE TO ALL THESE TERMS, YOU SHALL REFRAIN FROM USING THE SERVICE.
 
-# 3 YOUR RIGHTS TO USE THE SERVICE
+# 3 Your rights to use the service
 
 The Service is protected by copyright, trade secret, and other intellectual property laws. You are only granted the right to use the Service and only for the purposes described by GATACA.
 
 Until termination of these Terms and as long as you comply with these Terms, GATACA grants to you a non-exclusive, non-transferable, revocable license to you for the purpose of using the Wallet, at your election and without obligation. GATACA reserves all other rights in the Service.
 
-# 4 SECURITY RISKS & DOWNTIME
+# 4 Security risks & downtime
 
 ## 4.1 Security
 
@@ -71,7 +73,7 @@ GATACA will have no liability for any damage, liabilities, losses (including any
 
 GATACA, in an effort to mitigate risk inherent to Service errors or to improve the Wallet capabilities, will release from time to time, with or without notice, new releases of the Service. You understand and acknowledge that such modifications may require you to upgrade your hardware or software in order to use the Service.
 
-# 5 WARRANTIES, LIABILITY AND INDEMNITY
+# 5 Warranties, liability and indemnity
 
 ## 5.1 Warranties
 
@@ -89,7 +91,7 @@ You agree to defend, indemnify, and hold GATACA harmless, including its subsidia
 
 GATACA will not be liable for any failure or delay in its performance under the terms of these Terms due to any cause beyond its reasonable control, including acts of war, acts of God, pandemia, labor shortages or disputes, governmental acts or failure or degradation of the Internet or telecommunications services. GATACA will give you prompt notice of such cause and will make commercially reasonable efforts to promptly correct such failure or delay in performance.
 
-# 6 USER DATA
+# 6 User Data
 
 Your DIDs, your cryptographic key pairs, Credentials licitly obtained and stored in your Wallet, and your backup files and any other data, included but not limited to End User Personal Data that the End User provides to us or to our Clients, are referred to here as “User Data”. Where User Data includes Personal Data, clause 7 below (Data Protection) of these Terms will apply.
 
@@ -121,11 +123,11 @@ GATACA makes no representation or warranty regarding the veracity or accuracy of
 
 Notwithstanding the foregoing, you acknowledge and accept that GATACA stores information (a) about Credentials that are issued by GATACA, for the sole purpose of providing the Service and (b) about Credentials that you explicitly consent to sharing with GATACA.
 
-# 7 DATA PROTECTION
+# 7 Data protection
 
 In accordance with the applicable data protection regulations, all Personal Data provided while using the Service will be processed in accordance with the provisions of the [Privacy Policy](https://gataca.io/privacy-policy) and, where applicable, the [Cookies Policy](https://gataca.io/cookie-policy). By using the Service, you acknowledge and accept the processing of such personal data and declare that all information or data provided is true, current and corresponds to reality.
 
-# 8 AMENDMENT AND TERMINATION
+# 8 Amendment and termination
 
 We may revise these Terms from time to time. If we do, those revised Terms will supersede prior versions. Unless we say otherwise, revisions will be effective upon the effective date indicated at the top of these Terms. We will strive to provide you electronic notice of any material revisions. For other revisions, we will update the effective date of these Terms at the top of the page.
 
@@ -135,13 +137,13 @@ GATACA may choose to unilaterally interrupt, suspend or terminate access to the 
 
 GATACA will, if possible, give notice of such circumstances (suspension, interruption or termination of access to the Contents) by including the information referred to through the means of communication it deems appropriate for its wider circulation.
 
-# 9 AGREEMENT IN ITS ENTIRETY
+# 9 Agreement in its entirety
 
 These Terms and any document expressly referred to in these Terms constitute the integral agreement between you and GATACA in relation to the subject matter of these terms and conditions and supersede all other prior agreements, understandings or promises made between you and GATACA orally or in writing in relation to the subject matter of these Terms.
 
 In the case of any conflict between the [Generic Terms of Service](https://gataca.io/generic-terms-of-service) and these Terms, the latter shall prevail.
 
-# 10 APPLICABLE LAW AND JURISDICTION
+# 10 Applicable law and jurisdiction
 
 All the conditions included in this document are governed by Spanish law. Should any dispute arise, please try contacting our support team first to resolve the dispute before bringing a formal legal case.
 
