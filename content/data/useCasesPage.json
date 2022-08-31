@@ -18,19 +18,19 @@
         "link": "/use-cases/government",
         "image": "/illustrations/government_digitalization.svg",
         "title": "GOVERNMENT",
-        "description": "<p>Governments leverage GATACA Certify for the issuance of digital credentials such as verifiable IDs, driver's licenses, passports, birth certificates, business licenses and so much more, and use Connect for government grade secure authentication of citizens into eGovernment services. Citizens use their Wallet to receive and share these digital credentials with third parties for instant authentication and identity verification.</p>"
+        "description": "Governments leverage our credential issuance and authentication tools to streamline citizen's experience with e-government services and increase eID adoption rates. They issue digital credentials such as verifiable IDs, driver's &amp; business licenses, and birth certificates, to citizens' mobile ID Wallet, where the user manages access to their personal data."
       },
       {
         "link": "/use-cases/education",
         "image": "/illustrations/online_learning.svg",
         "title": "EDUCATION",
-        "description": "<p>Forward-thinking institutions have realized how SSI technology can take their innovation to the next level. Universities are pioneering SSI use cases such as the issuance of digital student IDs, academic diplomas, microcredentials, and transcripts. Students use these credentials stored in their digital wallet to access online portals, buildings or labs, apply to further education, enroll in exchange programs and much more without the use paper-based documents.</p>"
+        "description": "Universities are pioneering SSI use cases such as the issuance of digital student IDs, academic diplomas, micro-credentials, and transcripts. Students use these credentials stored in their digital wallet to access online portals, buildings or labs, apply to other programs, and so much more without the use paper-based documents."
       },
       {
         "link": "/use-cases/financial",
         "image": "/illustrations/chart-development.svg",
-        "title": "FINANCIAL",
-        "description": "<p>Leverage 1-click, compliant KYC to unlock user value and increase conversion rates</p>"
+        "title": "FINANCE",
+        "description": "The Traditional Banking, Fintech, DeFi and Crypto sector suffer from onboarding dropout rates and truly secure in-app transactions. By leveraging 1-click, compliant KYC, all these platforms can unlock new user value, increase conversion rates, and provide a government-grade secure experience."
       }
     ]
   },
