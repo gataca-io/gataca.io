@@ -1,96 +1,94 @@
 @import "../../styles/aux/media-mixins";
 
-.base{
-    width: 100%;
-    @include media-for-tablet-portrait-up {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
+.base {
+  width: 100%;
+  @include media-for-tablet-portrait-up {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .container {
-    max-width: var(--max-width);
-    padding: 5rem 2rem;
-    @include media-for-tablet-portrait-up {
-        text-align: center;
-        padding: 5rem 0;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
+  max-width: var(--max-width);
+  padding: 5rem 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  @include media-for-tablet-portrait-up {
+    padding: 5rem 0;
+  }
 }
 
-.iconContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60px;
-    width: 60px;
-    margin: var(--baseSpacing);
-    img{
-        height: 80%;
-    }
+.iconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 60px;
+  margin: var(--baseSpacing);
+  img {
+    height: 80%;
+  }
 }
 
 .subContainer {
-    max-width: 400px;
-    margin: var(--baseSpacing) 0;
-    @include media-for-tablet-portrait-up {
-        text-align: center;
-    }
+  max-width: 400px;
+  margin: var(--baseSpacing) 0;
+  @include media-for-tablet-portrait-up {
+    text-align: center;
+  }
 }
 
 .question {
-
 }
 
 .ctaButton {
-    background-color: var(--darkblue);
-    font-weight: bold;
+  background-color: var(--darkblue);
+  font-weight: bold;
 
-    border-radius: 10px;
-    &:hover {
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.18);
-    }
-    @include media-for-tablet-portrait-up {
-        padding: 1rem 3rem;
-    }
-    @include media-for-phone-only {
-        display: flex;
-        justify-content: center;
-        padding: 0;
-        width: 100%;
-    }
+  border-radius: 10px;
+  &:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.18);
+  }
+  @include media-for-tablet-portrait-up {
+    padding: 1rem 3rem;
+  }
+  @include media-for-phone-only {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    width: 100%;
+  }
 }
 
 .endCtaButton {
-    background-color: var(--darkblue);
-    font-weight: bold;
+  background-color: var(--darkblue);
+  font-weight: bold;
 
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 52px;
-    width: 320px;
-    padding: 0;
-    margin: 0;
-    color: var(--white);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 52px;
+  width: 320px;
+  padding: 20px;
+  margin: 0;
+  color: var(--white);
+  border: 2px solid var(--darkblue);
+
+  &:hover {
+    color: var(--darkblue);
+    background-color: var(--bg-grey);
     border: 2px solid var(--darkblue);
-
-    &:hover {
-        color: var(--darkblue);
-        background-color: var(--bg-grey);
-        border: 2px solid var(--darkblue);
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.18);
-    }
-    @include media-for-phone-only {
-        display: flex;
-        justify-content: center;
-        padding: 0;
-        width: 100%;
-    }
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.18);
+  }
+  @include media-for-phone-only {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
 }
