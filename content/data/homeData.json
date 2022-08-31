@@ -133,7 +133,7 @@
     "list": [
       {
         "title": "E-Government services that work",
-        "shortDescription": "<p>Improves citizen’s day to day lives by providing seamless onboarding experiences and securing online transactions.</p>",
+        "shortDescription": "<p>Improve citizen’s day to day lives by providing seamless onboarding experiences and securing online transactions.</p>",
         "description": "<p>Governments leverage the GATACA technology to issue digital government documents and authenticate citizens into eGov services. Citizens store and share credentials via their digital Wallet.</p>",
         "icon": "/images/building.svg",
         "link": "/use-cases/government",

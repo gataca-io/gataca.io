@@ -10,7 +10,7 @@
     },
     {
       "title": "Government",
-      "shortDescription": "<p>Improves citizen’s day to day lives by providing seamless onboarding experiences and securing online transactions</p>",
+      "shortDescription": "<p>Improve citizen’s day to day lives by providing seamless onboarding experiences and securing online transactions</p>",
       "description": "<p>Governments leverage GATACA Certify for the issuance of digital credentials such as verifiable IDs, driver's licenses, passports, birth certificates, business licenses and so much more, and use Connect for government grade secure authentication of citizens into eGovernment services. Citizens use their Wallet to receive and share these digital credentials with third parties for instant authentication and identity verification</p>",
       "icon": "/images/building.svg",
       "link": "/use-cases/government",
@@ -22,6 +22,14 @@
       "description": "<p>Forward-thinking institutions have realized how SSI technology can take their innovation to the next level. Universities are pioneering SSI use cases such as the issuance of digital student IDs, academic diplomas, microcredentials, and transcripts. Students use these credentials stored in their digital wallet to access online portals, buildings or labs, apply to further education, enroll in exchange programs and much more without the use paper-based documents</p>",
       "icon": "/icons/education_cert.svg",
       "link": "/use-cases/education",
+      "image": "/illustrations/online_learning.svg"
+    },
+    {
+      "title": "Financial",
+      "shortDescription": "<p>Leverage 1-click, compliant KYC to unlock user value and increase conversion rates</p>",
+      "description": "<p>Our one-click, compliant & secure identity verification will unlock user value for all financial services by removing a substantial barrier to entry for new users and boosting privacy and trust for existing ones.</p>",
+      "icon": "/icons/financial.svg",
+      "link": "/use-cases/financial",
       "image": "/illustrations/online_learning.svg"
     }
   ]

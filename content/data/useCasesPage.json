@@ -25,6 +25,12 @@
         "image": "/illustrations/online_learning.svg",
         "title": "EDUCATION",
         "description": "<p>Forward-thinking institutions have realized how SSI technology can take their innovation to the next level. Universities are pioneering SSI use cases such as the issuance of digital student IDs, academic diplomas, microcredentials, and transcripts. Students use these credentials stored in their digital wallet to access online portals, buildings or labs, apply to further education, enroll in exchange programs and much more without the use paper-based documents.</p>"
+      },
+      {
+        "link": "/use-cases/financial",
+        "image": "/illustrations/chart-development.svg",
+        "title": "FINANCIAL",
+        "description": "<p>Leverage 1-click, compliant KYC to unlock user value and increase conversion rates</p>"
       }
     ]
   },
