@@ -50,6 +50,9 @@ sections:
   path: content/data/education.json
   label: "- Education"
 - type: document
+  path: content/data/financialPageData.json
+  label: "- Financial"
+- type: document
   path: content/data/financialDataPage.json
   label: "- Financial"
 - type: heading
