@@ -215,9 +215,11 @@
     flex-direction: column;
     box-shadow: var(--shadow-big);
     border-radius: 20px;
-    @include media-for-phone-only {
-      text-align: left;
-      &__text {
+
+    &__text {
+      margin-bottom: 0 !important;
+      margin-top: 1.45rem;
+      @include media-for-phone-only {
         display: none;
       }
     }

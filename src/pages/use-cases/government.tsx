@@ -1,25 +1,19 @@
-import React, {useEffect} from "react"; // we need this to make JSX compile
-import data from "../../../content/data/government.json";
-import {BuildHelmet} from "../../components/auxiliary/HelmetBuilder";
-import CtaSection from "../../components/CtaSection/CtaSection";
-import ExplainedInfographics from "../../components/ExplainedInfoGraphics/ExplainedInfographics";
-import HeadLineSection from "../../components/HeadLineSection/HeadLineSection";
-import Layout from "../../layouts/Layout";
-import styles from "./government.module.scss";
-
-
+import React, { useEffect } from "react" // we need this to make JSX compile
+import data from "../../../content/data/government.json"
+import { BuildHelmet } from "../../components/auxiliary/HelmetBuilder"
+import CtaSection from "../../components/CtaSection/CtaSection"
+import ExplainedInfographics from "../../components/ExplainedInfoGraphics/ExplainedInfographics"
+import HeadLineSection from "../../components/HeadLineSection/HeadLineSection"
+import Layout from "../../layouts/Layout"
+import styles from "./government.module.scss"
 
 type IGovernmentProps = {}
 
 const Government: React.FC<IGovernmentProps> = ({}) => {
-
-  useEffect(() => {
-
-  }, [])
+  useEffect(() => {}, [])
 
   return (
     <Layout>
-
       <BuildHelmet
         title={data.metas.title}
         description={data.metas.description}
@@ -29,10 +23,10 @@ const Government: React.FC<IGovernmentProps> = ({}) => {
       />
 
       <section className={styles.headlineContainer}>
-        <div className={styles.circle2}/>
-        <div className={styles.circle3}/>
-        <div className={styles.circle4}/>
-        <div className={styles.circle5}/>
+        <div className={styles.circle2} />
+        <div className={styles.circle3} />
+        <div className={styles.circle4} />
+        <div className={styles.circle5} />
         <HeadLineSection
           big
           title={data.headline.title}
@@ -45,7 +39,7 @@ const Government: React.FC<IGovernmentProps> = ({}) => {
       <section className={styles.introSection}>
         <div>
           <h2>{data.intro.title}</h2>
-          <div dangerouslySetInnerHTML={{ __html: data.intro.description }}/>
+          <p dangerouslySetInnerHTML={{ __html: data.intro.description }} />
         </div>
       </section>
 
@@ -55,7 +49,7 @@ const Government: React.FC<IGovernmentProps> = ({}) => {
           <h3>{data.useCases.title}</h3>
           {/*<div className={styles.line}/>*/}
           <div className={styles.chipsContainer}>
-            {data.useCases.elements.map(el => {
+            {data.useCases.elements.map((el) => {
               return (
                 <div className={styles.chip}>
                   <p>{el.text}</p>
@@ -67,14 +61,14 @@ const Government: React.FC<IGovernmentProps> = ({}) => {
       </section>
 
       <section className={styles.sectionProblem}>
-      {data.firstSection.bullets.map(bullet => {
+        {data.firstSection.bullets.map((bullet) => {
           return (
             <section className={styles.sectionStyle}>
               <div>
-                <img src={bullet.image} alt={bullet.title}/>
+                <img src={bullet.image} alt={bullet.title} />
                 <h3>{bullet.head}</h3>
                 <h2>{bullet.title}</h2>
-                <p dangerouslySetInnerHTML={{ __html: bullet.description }}/>
+                <p dangerouslySetInnerHTML={{ __html: bullet.description }} />
               </div>
             </section>
           )
@@ -96,7 +90,6 @@ const Government: React.FC<IGovernmentProps> = ({}) => {
             <p dangerouslySetInnerHTML={{ __html: data.theSolution.description }}/>
           </div>
         </section> */}
-
       </section>
 
       {/*CREDENTIALS AND USE CASES*/}
@@ -117,7 +110,6 @@ const Government: React.FC<IGovernmentProps> = ({}) => {
         </div>
       </section>*/}
 
-
       {/*DIGITISATION*/}
       {/*      <TextBulletsSection
         backgroundColor={"var(--bg-grey)"}
@@ -136,7 +128,6 @@ const Government: React.FC<IGovernmentProps> = ({}) => {
       {/*    <BulletsSection
         centeredBullets
         bullets={data.bulletsSection_two.bullets}/>*/}
-
 
       {/*THE IMPACT*/}
       {/*      <section className={styles.detailContainer}>
@@ -198,7 +189,6 @@ const Government: React.FC<IGovernmentProps> = ({}) => {
         ctaText={data.bottomSection.buttonText}
         title={data.bottomSection.title}
       />
-
     </Layout>
   )
 }
