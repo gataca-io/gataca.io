@@ -29,7 +29,7 @@ export default function HeaderSection(props) {
     developers: false,
     company: false,
   })
-  
+
   const hoverElement = (element) => {
     let reset = {
       products: false,
@@ -43,25 +43,23 @@ export default function HeaderSection(props) {
     // console.log("HoverElement => ", element, !hoverList[element])
     setHoverList(reset)
   }
-  
-  const changeHoverVisibility = useCallback(
-    (element) => {
-      if (hoverList[element]) {
-        return
-      }
-      
-      let reset = {
-        products: false,
-        useCases: false,
-        developers: false,
-        company: false,
-      }
-      reset[element] = !hoverList[element]
-      // console.log("ChangeHoverVisibility", element, !hoverList[element])
-      setHoverList(reset)
-    },
-  )
-  
+
+  const changeHoverVisibility = useCallback((element) => {
+    if (hoverList[element]) {
+      return
+    }
+
+    let reset = {
+      products: false,
+      useCases: false,
+      developers: false,
+      company: false,
+    }
+    reset[element] = !hoverList[element]
+    // console.log("ChangeHoverVisibility", element, !hoverList[element])
+    setHoverList(reset)
+  })
+
   const menuList = [
     {
       name: "Products",
@@ -93,7 +91,7 @@ export default function HeaderSection(props) {
       list: companyData.content,
     },
   ]
-  
+
   useScrollPosition(
     ({ prevPos, currPos }) => {
       // console.log("CURRENT => ", currPos)
@@ -106,181 +104,188 @@ export default function HeaderSection(props) {
     [],
     false,
     false,
-    300,
+    300
   )
-  
-  useEffect(() => {
-    return () => {
-    }
-  }, [props.location])
-  
-  return (
-    <Location>{
-      locationProps => {
-        const path = locationProps.location.pathname && locationProps.location.pathname.split('/').includes('blog');
-        return <HeaderContainer
-          render={({ isSideNavExpanded, onClickSideNavExpand }) => (
-            <Fragment>
-              <Header aria-label="Open menu" className={cx(
-                headerStyles.header,
-                path && headerStyles.headerBlog
-              )}>
-                
-                <div className={cx(
-                  headerStyles.nav,
-                  path ? headerStyles.navSolid :
-                    isTopBarOpaque ? headerStyles.navOpaque :
-                      null, isSideNavExpanded && headerStyles.navMobileOpen
-                )}>
-                  
-                  <div className={headerStyles.left}>
-                    <Link to="/">
-                      <img src={logo} alt={"Gataca"}/>
-                      <h2>{props.title}</h2>
-                    </Link>
-                  </div>
-                  
-                  <HeaderMenuButton
-                    aria-label="Open menu"
-                    onClick={onClickSideNavExpand}
-                    isActive={isSideNavExpanded}
-                  />
-                  
-                  <div className={headerStyles.center}>
-                    {menuList.map(el => {
-                      return <div
-                        key={el.id}
-                        className={headerStyles.productsMenu}
-                        onMouseEnter={() => {
-                          hoverElement(el.id)
-                        }}
-                        onMouseLeave={() => {
-                          hoverElement()
-                        }}
-                      >
-                        <Link
-                          to={el.route ? "/" + el.route + "/" : null}
-                        >
-                          <p className={headerStyles.productName}>
-                            {el.name}
-                          </p>
-                        </Link>
-                        
-                        {
-                          el.list && <HoverMenu
-                            isBlog={path}
-                            isOpaque={isTopBarOpaque}
-                            isVisible={hoverList[el.id]}
-                            hoverElement={el.id}
-                            changeVisibility={changeHoverVisibility}
-                            list={el.list}/>
-                        }
-                      </div>
-                    })}
 
-                  </div>
-                  <div className={headerStyles.right}>
-                    {/*                <a>
+  useEffect(() => {
+    return () => {}
+  }, [props.location])
+
+  return (
+    <Location>
+      {(locationProps) => {
+        const path =
+          locationProps.location.pathname &&
+          locationProps.location.pathname.split("/").includes("blog")
+        return (
+          <HeaderContainer
+            render={({ isSideNavExpanded, onClickSideNavExpand }) => (
+              <Fragment>
+                <Header
+                  aria-label="Open menu"
+                  className={cx(
+                    headerStyles.header,
+                    path && headerStyles.headerBlog
+                  )}
+                >
+                  <div
+                    className={cx(
+                      headerStyles.nav,
+                      path
+                        ? headerStyles.navSolid
+                        : isTopBarOpaque
+                        ? headerStyles.navOpaque
+                        : null,
+                      isSideNavExpanded && headerStyles.navMobileOpen
+                    )}
+                  >
+                    <div className={headerStyles.left}>
+                      <Link to="/">
+                        <img src={logo} alt={"Gataca"} />
+                        <h2>{props.title}</h2>
+                      </Link>
+                    </div>
+
+                    <HeaderMenuButton
+                      aria-label="Open menu"
+                      onClick={onClickSideNavExpand}
+                      isActive={isSideNavExpanded}
+                    />
+
+                    <div className={headerStyles.center}>
+                      {menuList.map((el) => {
+                        return (
+                          <div
+                            key={el.id}
+                            className={headerStyles.productsMenu}
+                            onMouseEnter={() => {
+                              hoverElement(el.id)
+                            }}
+                            onMouseLeave={() => {
+                              hoverElement()
+                            }}
+                          >
+                            <Link to={el.route ? "/" + el.route + "/" : null}>
+                              <p className={headerStyles.productName}>
+                                {el.name}
+                              </p>
+                            </Link>
+
+                            {el.list && (
+                              <HoverMenu
+                                isBlog={path}
+                                isOpaque={isTopBarOpaque}
+                                isVisible={hoverList[el.id]}
+                                hoverElement={el.id}
+                                changeVisibility={changeHoverVisibility}
+                                list={el.list}
+                              />
+                            )}
+                          </div>
+                        )
+                      })}
+                    </div>
+                    <div className={headerStyles.right}>
+                      {/*                <a>
                   <p>
 
                   </p>
                 </a>*/}
-                    <Link to={configMetaData.bookACallUrl}>
-                      <h3 className={headerStyles.header__cta}>
-                        Get in touch
-                      </h3>
-                    </Link>
+                      <Link to={configMetaData.bookACallUrl}>
+                        <h3 className={headerStyles.header__cta}>
+                          Get in touch
+                        </h3>
+                      </Link>
+                    </div>
                   </div>
-                </div>
 
-                <SideNav
-                  className={headerStyles.sideNav}
-                  aria-label="Side navigation"
-                  expanded={isSideNavExpanded}>
-                  <SideNavItems>
-                    <SideNavLink
-                      href={configMetaData.bookACallUrl}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <p className={headerStyles.cta}>
-                      Get in touch
-                      </p>
-                    </SideNavLink>
+                  <SideNav
+                    className={headerStyles.sideNav}
+                    aria-label="Side navigation"
+                    expanded={isSideNavExpanded}
+                  >
+                    <SideNavItems>
+                      <SideNavLink
+                        href={configMetaData.bookACallUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <p className={headerStyles.cta}>Get in touch</p>
+                      </SideNavLink>
 
-                    <div className={headerStyles.sideNavDivider}/>
+                      <div className={headerStyles.sideNavDivider} />
 
-                    <SideNavLink className={headerStyles.sideNavHeadline} href="/products">
-                      Products
-                    </SideNavLink>
-                    <SideNavLink href="/products/certify">
-                      Certify
-                    </SideNavLink>
-                    <SideNavLink href="/products/connect">
-                      Connect
-                    </SideNavLink>
-                    <SideNavLink href="/products/wallet">
-                      Wallet
-                    </SideNavLink>
-                    
-                    <div className={headerStyles.sideNavDivider}/>
-  
-                    <SideNavLink className={headerStyles.sideNavHeadline} href="/use-cases">
-                      Sectors
-                    </SideNavLink>
-                    <SideNavLink href="/use-cases/government">
-                      Government
-                    </SideNavLink>
-                    <SideNavLink href="/use-cases/education">
-                      Education
-                    </SideNavLink>
-                    <SideNavLink href="/use-cases/financial">
-                      Financial
-                    </SideNavLink>
+                      <SideNavLink
+                        className={headerStyles.sideNavHeadline}
+                        href="/products"
+                      >
+                        Products
+                      </SideNavLink>
+                      <SideNavLink href="/products/certify">
+                        Certify
+                      </SideNavLink>
+                      <SideNavLink href="/products/connect">
+                        Connect
+                      </SideNavLink>
+                      <SideNavLink href="/products/wallet">Wallet</SideNavLink>
 
-                    <div className={headerStyles.sideNavDivider}/>
-                    <SideNavLink className={headerStyles.sideNavHeadline} href="/developers">
-                      Developers
-                    </SideNavLink>
-                    <SideNavLink href="https://gataca.atlassian.net/wiki/spaces/developers/overview" target={'_blank'}>
-                      General documentation
-                    </SideNavLink>
-                    <SideNavLink href="https://api.gataca.io/" target={'_blank'}>
-                      APIs
-                    </SideNavLink>
+                      <div className={headerStyles.sideNavDivider} />
 
-                    <div className={headerStyles.sideNavDivider}/>
-                    <SideNavLink href="/blog/">
-                      Blog
-                    </SideNavLink>
+                      <SideNavLink
+                        className={headerStyles.sideNavHeadline}
+                        href="/use-cases"
+                      >
+                        Sectors
+                      </SideNavLink>
+                      <SideNavLink href="/use-cases/government">
+                        Government
+                      </SideNavLink>
+                      <SideNavLink href="/use-cases/education">
+                        Education
+                      </SideNavLink>
+                      <SideNavLink href="/use-cases/financial">
+                        Finance
+                      </SideNavLink>
 
-                    <div className={headerStyles.sideNavDivider}/>
-                    <SideNavLink href="/company/about/">
-                      About
-                    </SideNavLink>
-                    <SideNavLink href="/company/jobs/">
-                      Jobs
-                    </SideNavLink>
-                    <SideNavLink href="/company/press/">
-                      Press
-                    </SideNavLink>
-                    <SideNavLink href="/company/jobs/">
-                      Jobs
-                    </SideNavLink>
-                    <SideNavLink href="/company/contact/">
-                      Contact
-                    </SideNavLink>
-                  
-                  </SideNavItems>
-                
-                </SideNav>
-              
-              </Header>
-            </Fragment>
-          )}
-        />
-      }
-    }
+                      <div className={headerStyles.sideNavDivider} />
+                      <SideNavLink
+                        className={headerStyles.sideNavHeadline}
+                        href="/developers"
+                      >
+                        Developers
+                      </SideNavLink>
+                      <SideNavLink
+                        href="https://gataca.atlassian.net/wiki/spaces/developers/overview"
+                        target={"_blank"}
+                      >
+                        General documentation
+                      </SideNavLink>
+                      <SideNavLink
+                        href="https://api.gataca.io/"
+                        target={"_blank"}
+                      >
+                        APIs
+                      </SideNavLink>
+
+                      <div className={headerStyles.sideNavDivider} />
+                      <SideNavLink href="/blog/">Blog</SideNavLink>
+
+                      <div className={headerStyles.sideNavDivider} />
+                      <SideNavLink href="/company/about/">About</SideNavLink>
+                      <SideNavLink href="/company/jobs/">Jobs</SideNavLink>
+                      <SideNavLink href="/company/press/">Press</SideNavLink>
+                      <SideNavLink href="/company/jobs/">Jobs</SideNavLink>
+                      <SideNavLink href="/company/contact/">
+                        Contact
+                      </SideNavLink>
+                    </SideNavItems>
+                  </SideNav>
+                </Header>
+              </Fragment>
+            )}
+          />
+        )
+      }}
     </Location>
   )
 }

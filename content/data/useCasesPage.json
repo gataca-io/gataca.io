@@ -18,19 +18,19 @@
         "link": "/use-cases/government",
         "image": "/illustrations/government_digitalization.svg",
         "title": "GOVERNMENT",
-        "description": "Governments leverage our credential issuance and authentication tools to streamline citizen's experience with e-government services and increase eID adoption rates. They issue digital credentials such as verifiable IDs, driver's &amp; business licenses, and birth certificates, to citizens' mobile ID Wallet, where the user manages access to their personal data."
+        "description": "<p>Governments leverage our credential issuance and authentication tools to streamline citizen's experience with e-government services and increase eID adoption rates. They issue digital credentials such as verifiable IDs, driver's &amp; business licenses, and birth certificates, to citizens' mobile ID Wallet, where the user manages access to their personal data.</p>"
       },
       {
         "link": "/use-cases/education",
         "image": "/illustrations/online_learning.svg",
         "title": "EDUCATION",
-        "description": "Universities are pioneering SSI use cases such as the issuance of digital student IDs, academic diplomas, micro-credentials, and transcripts. Students use these credentials stored in their digital wallet to access online portals, buildings or labs, apply to other programs, and so much more without the use paper-based documents."
+        "description": "<p>Universities are pioneering SSI use cases such as the issuance of digital student IDs, academic diplomas, micro-credentials, and transcripts. Students use these credentials stored in their digital wallet to access online portals, buildings or labs, apply to other programs, and so much more without the use paper-based documents.</p>"
       },
       {
         "link": "/use-cases/financial",
         "image": "/illustrations/chart-development.svg",
         "title": "FINANCE",
-        "description": "The Traditional Banking, Fintech, DeFi and Crypto sector suffer from onboarding dropout rates and truly secure in-app transactions. By leveraging 1-click, compliant KYC, all these platforms can unlock new user value, increase conversion rates, and provide a government-grade secure experience."
+        "description": "<p>The Traditional Banking, Fintech, DeFi and Crypto sector suffer from onboarding dropout rates and truly secure in-app transactions. By leveraging 1-click, compliant KYC, all these platforms can unlock new user value, increase conversion rates, and provide a government-grade secure experience.</p>"
       }
     ]
   },
