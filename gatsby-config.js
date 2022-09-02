@@ -4,7 +4,7 @@ module.exports = {
   //this makes the site config available to forestry cms
   flags: {
     DEV_SSR: false,
-    FAST_REFRESH: true
+    FAST_REFRESH: true,
   },
   siteMetadata: {
     metaTitle: configMeta.metaTitle,
@@ -27,7 +27,8 @@ module.exports = {
         name: `md-pages`,
         path: `${__dirname}/content/mdpages`,
       },
-    },    {
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `md-pages`,
@@ -38,15 +39,15 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "posts",
-        path: `${__dirname}/content/posts`
-      }
+        path: `${__dirname}/content/posts`,
+      },
     },
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
-        path: `${__dirname}/static/images`
-      }
+        path: `${__dirname}/static/images`,
+      },
     },
     {
       resolve: "gatsby-source-filesystem",
@@ -66,8 +67,8 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sharp",
       options: {
-        defaultQuality: 75
-      }
+        defaultQuality: 75,
+      },
     },
     {
       resolve: "gatsby-transformer-remark",
@@ -132,7 +133,7 @@ module.exports = {
         // Set Variation ID. 0 for original 1,2,3....
         // variationId: "YOUR_GOOGLE_OPTIMIZE_VARIATION_ID",
         // Defers execution of google analytics script after page load
-        defer: false,
+        defer: true,
         // Any additional optional fields
         sampleRate: 5,
         siteSpeedSampleRate: 10,
@@ -143,23 +144,23 @@ module.exports = {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
         id: "GTM-5V6SH7N",
-      
+
         // Include GTM in development.
         //
         // Defaults to false meaning GTM will only be loaded in production.
         includeInDevelopment: true,
-      
+
         // datalayer to be set before GTM is loaded
         // should be an object or a function that is executed in the browser
         //
         // Defaults to null
         defaultDataLayer: { platform: "gatsby" },
-      
+
         // Specify optional GTM environment details.
         // gtmAuth: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_AUTH_STRING",
         // gtmPreview: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_PREVIEW_NAME",
         // dataLayerName: "YOUR_DATA_LAYER_NAME",
-      
+
         // Name of the event that is triggered
         // on every Gatsby route change.
         //
@@ -167,9 +168,9 @@ module.exports = {
         // routeChangeEventName: "YOUR_ROUTE_CHANGE_EVENT_NAME",
       },
     },
-    'gatsby-plugin-tslint',
-    'gatsby-plugin-sass',
-    'gatsby-plugin-sitemap',
+    "gatsby-plugin-tslint",
+    "gatsby-plugin-sass",
+    "gatsby-plugin-sitemap",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-typescript",
     "gatsby-plugin-ts-loader",
@@ -191,10 +192,8 @@ module.exports = {
           "@images": "content/images",
           "@posts": "content/posts",
         },
-        extensions: [
-          "js",
-        ],
-      }
+        extensions: ["js"],
+      },
     },
     {
       resolve: "gatsby-remark-embed-video",
@@ -203,8 +202,8 @@ module.exports = {
         ratio: 1.77,
         height: 400,
         related: false,
-        noIframeBorder: true
-      }
+        noIframeBorder: true,
+      },
     },
     "gatsby-remark-responsive-iframe",
     {
@@ -215,6 +214,6 @@ module.exports = {
         productionOnly: false,
       },
     },
-    'gatsby-plugin-remove-console',
+    "gatsby-plugin-remove-console",
   ],
 }
