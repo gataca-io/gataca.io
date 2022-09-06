@@ -6,7 +6,7 @@ meta_data:
     twitter: ''
     facebook_and_whatsapp: ''
     linkedin: ''
-title: Terms of Service Wallet
+title: Terms of Service - Gataca Wallet
 author: ''
 hero_image: ''
 
