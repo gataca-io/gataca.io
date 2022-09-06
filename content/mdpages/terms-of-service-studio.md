@@ -6,7 +6,7 @@ meta_data:
     twitter: ''
     facebook_and_whatsapp: ''
     linkedin: ''
-title: Terms of Service Studio
+title: Gataca Studio - Terms of Service
 author: ''
 hero_image: ''
 
