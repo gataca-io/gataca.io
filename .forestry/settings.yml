@@ -2,115 +2,115 @@
 new_page_extension: md
 auto_deploy: false
 admin_path: "/static/admin"
-webhook_url:
+webhook_url: 
 sections:
-  - type: heading
-    label: Base content
-  - type: document
-    path: content/data/homeData.json
-    label: "- Home -"
-  - type: document
-    path: content/data/aboutData.json
-    label: "- About -"
-  - type: document
-    path: content/data/insightsData.json
-    label: "- Blog Page -"
-  - type: heading
-    label: products
-  - type: document
-    path: content/data/productsData.json
-    label: "- Products list -"
-  - type: document
-    path: content/data/productsPage.json
-    label: "- Products -"
-  - type: document
-    path: content/data/wallet.json
-    label: "- Wallet -"
-  - type: document
-    path: content/data/certify.json
-    label: "- Certify -"
-  - type: document
-    path: content/data/connect.json
-    label: "- Connect -"
-  - type: document
-    path: content/data/cloud.json
-    label: "- Cloud -"
-  - type: heading
-    label: use-cases
-  - type: document
-    path: content/data/useCasesData.json
-    label: "- Use Cases list -"
-  - type: document
-    path: content/data/useCasesPage.json
-    label: "- Use Cases"
-  - type: document
-    path: content/data/government.json
-    label: "- Government"
-  - type: document
-    path: content/data/education.json
-    label: "- Education"
-  - type: document
-    path: content/data/financialPageData.json
-    label: "- Finance"
-  - type: heading
-    label: Developers
-  - type: document
-    path: content/data/developersData.json
-    label: "- Developers links list -"
-  - type: heading
-    label: Other pieces
-  - type: document
-    path: content/data/footerSectionData.json
-    label: "- Footer"
-  - type: document
-    path: content/data/pressSectionData.json
-    label: "- Clients Releases -"
-  - type: document
-    path: content/data/faqData.json
-    label: "- Faq -"
-  - type: document
-    path: content/data/partnersSectionData.json
-    label: "- Partners -"
-  - type: heading
-    label: Web content
-  - type: document
-    path: content/data/configMetaData.json
-    label: Site Info
-  - type: directory
-    path: content/posts
-    label: Blog Posts
-    create: documents
-    match: "**/*"
-    new_doc_ext: md
-    templates:
-      - blog-post
-  - type: directory
-    path: content/drafts
-    label: Blog Drafts
-    create: documents
-    match: "**/*"
-    new_doc_ext: md
-    templates:
-      - blog-post
-  - type: directory
-    path: content/mdpages
-    label: Pages
-    create: documents
-    match: "**/*"
-    new_doc_ext: md
-    templates:
-      - markdown-page
-  - type: directory
-    path: content/jobs
-    label: Jobs
-    create: documents
-    match: "**/*"
-    new_doc_ext: md
-    templates:
-      - jobs-page
+- type: heading
+  label: Base content
+- type: document
+  path: content/data/homeData.json
+  label: "- Home -"
+- type: document
+  path: content/data/aboutData.json
+  label: "- About -"
+- type: document
+  path: content/data/insightsData.json
+  label: "- Blog Page -"
+- type: heading
+  label: products
+- type: document
+  path: content/data/productsData.json
+  label: "- Products list -"
+- type: document
+  path: content/data/productsPage.json
+  label: "- Products -"
+- type: document
+  path: content/data/wallet.json
+  label: "- Wallet -"
+- type: document
+  path: content/data/certify.json
+  label: "- Certify -"
+- type: document
+  path: content/data/connect.json
+  label: "- Connect -"
+- type: document
+  path: content/data/cloud.json
+  label: "- Cloud -"
+- type: heading
+  label: use-cases
+- type: document
+  path: content/data/useCasesData.json
+  label: "- Use Cases list -"
+- type: document
+  path: content/data/useCasesPage.json
+  label: "- Use Cases"
+- type: document
+  path: content/data/government.json
+  label: "- Government"
+- type: document
+  path: content/data/education.json
+  label: "- Education"
+- type: document
+  path: content/data/financialPageData.json
+  label: "- Finance"
+- type: heading
+  label: Developers
+- type: document
+  path: content/data/developersData.json
+  label: "- Developers links list -"
+- type: heading
+  label: Other pieces
+- type: document
+  path: content/data/footerSectionData.json
+  label: "- Footer"
+- type: document
+  path: content/data/pressSectionData.json
+  label: "- Clients Releases -"
+- type: document
+  path: content/data/faqData.json
+  label: "- Faq -"
+- type: document
+  path: content/data/partnersSectionData.json
+  label: "- Partners -"
+- type: heading
+  label: Web content
+- type: document
+  path: content/data/configMetaData.json
+  label: Site Info
+- type: directory
+  path: content/posts
+  label: Blog Posts
+  create: documents
+  match: "**/*"
+  new_doc_ext: md
+  templates:
+  - blog-post
+- type: directory
+  path: content/drafts
+  label: Blog Drafts
+  create: documents
+  match: "**/*"
+  new_doc_ext: md
+  templates:
+  - blog-post
+- type: directory
+  path: content/mdpages
+  label: Pages
+  create: documents
+  match: "**/*"
+  new_doc_ext: md
+  templates:
+  - markdown-page
+- type: directory
+  path: content/jobs
+  label: Jobs
+  create: documents
+  match: "**/*"
+  new_doc_ext: md
+  templates:
+  - jobs-page
 upload_dir: static/images
 public_path: "/static/images"
-front_matter_path: ""
+front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
 build:

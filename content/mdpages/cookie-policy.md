@@ -11,77 +11,79 @@ author: ''
 hero_image: ''
 
 ---
-Effective date: August 31, 2021
+Etffective date: September 6th, 2022
 
-In this Cookie Policy we will explain what cookies are, what they are used for, and how to manage them. We also aim to show you what types of cookies are used, and for what purpose, by the party responsible for the website [www.gataca.io](http://www.gataca.io) through which you have accessed this Cookie Policy (the “Site").
+PLEASE READ CAREFULLY THIS COOKIE POLICY BEFORE USING THE SERVICES.
 
-Please read carefully this Cookie Policy.
+In this Cookie Policy we will explain what cookies are, what they are used for, and how to manage them. We also aim to show you what types of cookies and for what purpose GATACA uses cookies.
 
-## 1. DATA CONTROLLER
+This Policy applies to the Website, Gataca Studio, the Wallet and any other products and services (collectively, “**Services**”) provided by GATACA and defined in the GATACA Generic Terms of Service.
 
-Gataca España S.L.U. (hereinafter, "**GATACA**") in its capacity as Data Controller is a Spanish limited liability company with tax identification number B88524525 and duly registered in the Commercial Register of Madrid.
+# 1 Who are we?
 
-## 2. WHAT IS A COOKIE?
+Gataca España S.L.U. (referred to as "**GATACA**", "**we**", "**our**", or "**us**")) in its capacity as Data Controller is a Spanish limited liability company with tax identification number B88524525 and duly registered in the Commercial Register of Madrid.
 
-Cookies are small files, downloaded on your device (such as your mobile, computer or tablet) when you access the Site. Cookies are used to guarantee the quality, usability and correct functionality of websites, as well as to store and recover information about browsing habits and to personalise their content and may sometimes be used to recognise the user of a website.
+# 2 What is a cookie?
 
-Cookies are therefore essential to the functioning of the Site, and in no way constitute a risk to your computer or your device. Moreover, they can help us to identify possible improvements to the Site and to detect website malfunctions.
+Cookies are small files, downloaded on your device (such as your mobile, computer or tablet) when you access the Services. Cookies are used to guarantee the quality, usability and correct functionality of Services, as well as to store and recover information about browsing habits and to personalise their content and may sometimes be used to recognise the user of a website.
 
-## 3. TYPE OF COOKIES
+Cookies are therefore essential to the functioning of the Services, and in no way constitute a risk to your computer or your device. Moreover, they can help us to identify possible improvements to the Services and to detect website malfunctions.
+
+# 3 Type of cookies
 
 Cookies can be classified into different types, according to different criteria:
 
-### 3.1 Types of cookies by the entity that manages them
+## 3.1 Types of cookies by the entity that manages them
 
-First-party cookies: those cookies sent to users’ devices from a device or domain managed by the editor of the Site itself and from which the service requested by users is provided.
+First-party cookies: those cookies sent to users’ devices from a device or domain managed by the editor of the Services itself and from which the Service requested by users is provided.
 
-Third-party cookies: those cookies sent to users’ devices from a device or domain not managed by the editor of the Site, but by another entity that processes any data obtained through cookies.
+Third-party cookies: those cookies sent to users’ devices from a device or domain not managed by the editor of the Services, but by another entity that processes any data obtained through cookies.
 
-### 3.2 Types of cookies by how long they remain active on your device
+## 3.2 Types of cookies by their purpose
 
-Session cookies: those designed to collect and store data while users access the Site. They are regularly used to store information that is only relevant with regard to the provision of the service requested by users in a single situation (for example, a list of purchased products) and which disappear once the session is closed.
+Functional cookies: such cookies allow you to browse and use the Services.
 
-Persistent cookies: such cookies remain stored in your terminal device until it reaches a defined period of time defined by the cookie manager, which can range from a few minutes to several years. They may be used for a variety of purposes including remembering your preferences and choices when using a site or for target advertising.
+Analytical cookies: such cookies allow the cookies manager to perform follow-up and analysis of the user behaviour at the Services to which such cookies are linked; this includes a quantitative measurement of the impact of an advertisement. Any information collected by means of this type of cookies is used to measure activity on any website, application or platform, for the purposes of introducing improvements in function of the analysis of the data regarding the Services use made by users.
 
-### 3.3 Types of cookies by their purpose
+Advertisement Cookies: such cookies allow the management of the advertising spaces that, where appropriate, have been included on the Services.
 
-Functional/technical cookies: such cookies allow you to browse the Site. Technical cookies will allow you to use the different functionalities and services of the Site, for example, the login with your identifier.
+Preference Cookies: such cookies allow us to remember information that affects the behaviour and design of the website, such as your preferred language or region of residence.
 
-Preference or personalisation cookies: such cookies allow to remember information so that you can access the Site with features that may differentiate your experience from those of other users, such as, for example, the appearance or content of the Site, which may vary depending on the type of browser you use or the region from which it is accessed.
+# 4 What cookies do we use?
 
-Analytics or measurement cookies: such cookies allow the cookies manager to perform follow-up and analysis of the user behaviour at the websites to which such cookies are linked; this includes a quantitative measurement of the impact of an advertisement. Any information collected by means of this type of cookies is used to measure activity on any website, application or platform, for the purposes of introducing improvements in function of the analysis of the data regarding the service use made by users.
+In addition to those cookies strictly necessary for the provisioning of the Services, our Services use analytical cookies and may use advertisement cookies.
 
-Advertising Cookies: such cookies allow the management, in the most efficient way possible, of the advertising spaces that, where appropriate, have been included on the Site.
+First-party cookies are all cookies necessary for the Services to function.
 
-Behavioural advertising cookies: such cookies allow the effective management of advertising spaces that may have been included on the Site, through the storage of information on your behaviour obtained by the continuous observation of your browsing habits, which allows the development of a specific profile to display advertising based on the same.
+Details of the characteristics of third-party cookies are described below.
 
-### 4. WHAT COOKIES DO WE USE?
+| --- | --- | --- | --- | --- | --- |
+| Cookie name | Location | Purpose | Description | Entity | Active time |
+| _ga | Website | Analytical | To control unique visits. A cookie will be installed the first time a user logs into the website using a browser. When this user visits the website again using the same browser, the cookie distinguishes that it is the same user. Only if the user changes their browser will they be considered a different user. | Google Analytics | 2yr |
+| _gid | Website | Analytical. | It is used to profile users | Google Analytics | 24h |
+| _gat _ <property-id> | Website | Analytical | to limit the request rate (to read and filter requests from bots) | Google Analytics | 1 min |
+| fs_uid | Website | Analytical | To track different sessions | Fullstory | While session is active |
+| _hssc | Website | Analytical | To track different sessions | Hubspot | 30 min |
+| _hssrc | Website | Analytical | To track different sessions | Hubspot | While session is active |
+| _hstc | Website | Analytical | To track different visitors | Hubspot | 6 mo |
+| _hs_cookie_ cat_pref | Website | Preference | To record the categories a visitor consented to | Hubspot | 6 mo |
+| hubspotutk | Website | Analytical | To keep track of a visitor's identity. It is passed to HubSpot on form submission and used when deduplicating contacts. | Hubspot | 6 mo |
 
-In addition to those cookies strictly necessary for web browsing, such as session cookies, this Site uses analytics and advertising cookies, first-party and third-party (such as Google Analytics), which allow information to be stored in the user's browser, which can be restored on subsequent visits. Details of the characteristics of each of these cookies are described below.
+Regarding third-party cookies, please visit the following links for further information:
 
-You can find out the list of cookies used by the Site in the cookie configuration centre.
+· Google Analytics: [https://marketingplatform.google.com/about/analytics/terms/us/](https://marketingplatform.google.com/about/analytics/terms/us/ "https://marketingplatform.google.com/about/analytics/terms/us/")
 
-GATACA’s first-party cookies are necessary cookies[\[PM8\]](#_msocom_8) . Their purpose is to allow users to browse through the Site and use the different options or services that exist on it, including those that GATACA uses to allow the management and operation of the Site and to enable its functions and services, such as, for example, controlling traffic and data communication, identifying the session, accessing restricted access areas, etc. These cookies are necessary for the Site to function.
+· Fullstory,: [https://www.fullstory.com/legal/privacy-policy/](https://www.fullstory.com/legal/privacy-policy/ "https://www.fullstory.com/legal/privacy-policy/")
 
-With regard to the following third-party cookies, GATACA is not responsible for the content and veracity of their privacy and/or cookie policies. We currently use the following Third Parties for third-party cookies:
+· HubSpot: [https://legal.hubspot.com/privacy-policy](https://legal.hubspot.com/privacy-policy "https://legal.hubspot.com/privacy-policy")
 
-* Google Analytics to collect Usage Data through the Website. You can find more information about Google Analytics’ use of your personal data here: [https://marketingplatform.google.com/about/analytics/terms/us/](https://marketingplatform.google.com/about/analytics/terms/us/ "https://marketingplatform.google.com/about/analytics/terms/us/")
-* Fullstory, a data analytics software, to better understand how you are using our Website. You can find more information about Fullstory’s use of your personal data here: [https://www.fullstory.com/legal/privacy-policy/](https://www.fullstory.com/legal/privacy-policy/ "https://www.fullstory.com/legal/privacy-policy/")
-* HubSpot, a customer relationship management software in order to collect Usage Data through the Website. You can find more information about Hubspot’s use of your Personal Data here: [https://legal.hubspot.com/privacy-policy](https://legal.hubspot.com/privacy-policy "https://legal.hubspot.com/privacy-policy")
+# 5 How to manage cookies on our services?
 
-## 5. HOW TO MANAGE COOKIES ON OUR SITE?
+The first time you visit our Services, you can accept or reject the use of cookies through GATACA’s Cookie Management Centre.
 
-### 5.1 Managing cookies through GATACA’s Cookie Management Centre
+Once you accept our cookies, you can delete them directly through the cookie management options of your browser.
 
-You can enable or reject the use of cookies through GATACA’s Cookie Management Centre, which you can access either through the basic cookie information message that appears when you first visit the Site.
-
-In the GATACA’s Cookie Management Centre you will be able to consent to the use of cookies, as well as withdraw any consent already given, at any time and as many times as you wish.
-
-Please note that if you accept third-party cookies, you can also delete them, if you wish, directly through the cookie management options of your browser, as explained in the following point 5.2.
-
-### 5.2 Managing cookies through your browser
-
-You can also allow, block or delete the cookies installed on your computer at any time through the options provided by your browser. Please note that if you disable all cookies, some of the functionalities or content of the Site may be affected.
+You can allow, block or delete the cookies installed on your computer at any time through the options provided by your browser. Please note that if you disable all cookies, some of the functionalities or content of the Services may be affected.
 
 Here's how to do it:
 
@@ -99,26 +101,18 @@ Here's how to do it:
 
 \- If you use **Android**: click on Menu > Settings > Security and Privacy > activate or deactivate the "Accept cookies" checkbox > Restart the browser for the changes to take effect.
 
-\- If you use **Windows Phone**: in Internet Explorer, click on More > Settings. You can also access Internet Explorer settings via Settings in the list of applications. Select or deselect the "Allow cookies" option.
+# 6 Third Party and international transfers
 
-## 6. LEGAL BASIS
+First-party cookies are stored in servers located in the European Economic Area (EEA).
 
-The processing of your personal data is necessary for the purposes indicated above in section 4, and its legal basis is the consent of the user, which he/she gives when he/she accepts its use through the button provided for this purpose. In any case, in accordance with the provisions of section 5 above, users may revoke such consent at any time.
-
-## 7. HOW LONG ARE COOKIES STORED?
-
-The cookie retention periods will depend on the type of cookie and its owner. You can find more information about these periods in section 4 of this policy.
-
-## 8. THIRD PARTY AND INTERNATIONAL TRANSFERS
-
-Users can obtain information about transfers to third countries that, if any, are made by the third parties identified in this cookie policy in their corresponding policies (see the links provided in section 4 in relation to third party cookies). 
+Users can obtain information about transfers to third countries that, if any, are made by the third parties identified in this cookie policy in their corresponding policies.
 
 Your data may also be communicated to competent authorities in the exercise of their functions.
 
-## 9. ADDITIONAL INFORMATION
+# 7 Additional information
 
 You can find additional information about the processing of your data, in particular about your rights and how to exercise them, in GATACA's Privacy Policy, which you will find available through the following link [https://gataca.io/privacy-policy](https://gataca.io/privacy-policy "https://gataca.io/privacy-policy")
 
-## 10. CONTACT US
+# 8 Contact
 
 If you have any questions about this Cookie Policy, please contact us by e-mail: gdpr@gataca.io
