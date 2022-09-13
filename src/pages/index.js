@@ -20,34 +20,38 @@ import BulletOne from "../components/BulletOne/BulletOne"
 import { Link } from "gatsby"
 import GreatElementsSection from "../components/GreatElementsSection/GreatElementsSection"
 import data from "../../content/data/government.json"
+import PreLaunchModal from "../components/modals/PreLaunchModal/PreLaunchModal"
+import LaunchModal from "../components/modals/LaunchModal/LaunchModal"
+
+import preLaunchModaldata from "../../content/data/prelaunchModalData.json"
+import launchModaldata from "../../content/data/launchModalData.json"
 
 export default function IndexPage() {
-  
   const [useCasesList, setUseCasesList] = useState(useCasesData.list.slice(1))
-  const [productsList, setProductsList] = useState(productsData.products.slice(1))
-  
-  // console.log(useCasesList)
-  
-  // useEffect(() => {
-  //
-  //   return () => {
-  //   }
-  // }, [])
-  
-  
-  const triggerGAEvent = (event) =>{
+  const [productsList, setProductsList] = useState(
+    productsData.products.slice(1)
+  )
+
+  const preLaunchModalSeen = sessionStorage.getItem("prelaunchSeen")
+  const launchModalSeen = sessionStorage.getItem("launchSeen")
+
+  const [showPreLaunchModal, setPreLaunchModal] = useState(!preLaunchModalSeen)
+  const [showLaunchModal, setLaunchModal] = useState(!launchModalSeen)
+
+  const triggerGAEvent = (event) => {
     if (!window) {
-      return;
+      return
     }
-    window.dataLayer = window.dataLayer || [];
+    window.dataLayer = window.dataLayer || []
     window.dataLayer.push({
-      'event': event
-    });
+      event: event,
+    })
   }
-  
+
+  const hideModal = () => {}
+
   return (
     <Layout>
-      
       <BuildHelmet
         title={configMetaData.metaTitle}
         description={configMetaData.description}
@@ -55,32 +59,37 @@ export default function IndexPage() {
         facebookImg={configMetaData.facebookImage}
         linkedInImg={configMetaData.linkedInImage}
       />
-      
+
       <article className={homeStyles.home}>
-        
-        <BigCtaSection/>
-        
+        {showPreLaunchModal && preLaunchModaldata?.active ? (
+          <PreLaunchModal hideModal={setPreLaunchModal} />
+        ) : null}
+        {showLaunchModal && launchModaldata?.active ? (
+          <LaunchModal hideModal={setLaunchModal} />
+        ) : null}
+        <BigCtaSection />
+
         <section className={homeStyles.sectionPress}>
-          <PressSection/>
+          <PressSection />
         </section>
-        
+
         <section className={homeStyles.sectionWallet}>
           <ImagesPlusCta
             data={homeData.introSection}
             link={configMetaData.bookACallUrl}
           />
         </section>
-        
+
         {/* CTA Solutions */}
-        
+
         {/* Go to products */}
         <section className={homeStyles.productsSectionStyle}>
           <h2 className={homeStyles.title}>{productsData.title}</h2>
-          <div className={homeStyles.line}/>
+          <div className={homeStyles.line} />
           <div className={homeStyles.productBulletsContainer}>
-            {
-              productsList.map(bullet => {
-                return <BulletCenter
+            {productsList.map((bullet) => {
+              return (
+                <BulletCenter
                   key={bullet.title}
                   bulletContainerStyles={homeStyles.productBullet}
                   data={{
@@ -90,14 +99,14 @@ export default function IndexPage() {
                     description: bullet.description,
                   }}
                 />
-              })
-            }
+              )
+            })}
           </div>
           <Link className={homeStyles.ctaButton} to={"/products"}>
             Find your solution
           </Link>
         </section>
-        
+
         {/* World class user experience */}
         {/*        <CtaSection
           backgroundColor={"var(--bg-grey)"}
@@ -105,7 +114,7 @@ export default function IndexPage() {
           ctaUrl={homeData.ctaSection_two.ctaUrl}
           ctaText={homeData.ctaSection_two.ctaText}
         />*/}
-        
+
         {/* Carousel bullets */}
         {/*        <CarouselBulletsSection
           title={homeData.carrousel.title}
@@ -113,15 +122,15 @@ export default function IndexPage() {
           allCtaText={homeData.carrousel.ctaText}
           allCtaLink={homeData.carrousel.ctaUrl}
         />*/}
-        
+
         <GreatElementsSection
           title={homeData.carrousel.title}
           bullets={homeData.carrousel.list}
           allCtaText={homeData.carrousel.ctaText}
           allCtaLink={homeData.carrousel.ctaUrl}
         />
-  
-{/*        USE CASES
+
+        {/*        USE CASES
         <section className={homeStyles.chipsSection}>
           <div>
             <h3>{data.useCases.title}</h3>
@@ -139,7 +148,7 @@ export default function IndexPage() {
           </div>
         </section>
   */}
-  
+
         {/* For developers */}
         <CtaSection
           backgroundColor={"var(--bg-grey)"}
@@ -149,7 +158,7 @@ export default function IndexPage() {
           ctaUrl={homeData.ctaSection_three.ctaUrl}
           ctaText={homeData.ctaSection_three.ctaText}
         />
-        
+
         {/*
           <BulletsSection
             bullets={homeData.bulletsSection.elements}
@@ -158,12 +167,12 @@ export default function IndexPage() {
             mainDescription={homeData.bulletsSection.description}
           />
         */}
-        
+
         {/*
           <BulletsPlusGraph data={homeData.bulletsEnhancedSection}/>
         */}
-        
-        <RelatedPosts/>
+
+        <RelatedPosts />
       </article>
     </Layout>
   )
