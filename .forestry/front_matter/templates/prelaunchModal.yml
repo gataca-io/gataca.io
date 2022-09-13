@@ -1,0 +1,67 @@
+---
+label: Pre launch modal
+hide_body: false
+fields:
+  - name: active
+    type: boolean
+    label: Active
+    description: Is this modal active?
+    default: false
+  - name: tag
+    type: text
+    label: Tag
+    default: "Coming fall 2022"
+    config:
+      required: false
+      wysiwyg: false
+  - name: title
+    type: text
+    label: Title
+    default: "Gataca Studio is launching soon"
+    config:
+      required: false
+      wysiwyg: false
+  - name: firstParagraph
+    type: text
+    label: First paragraph
+    default: "The low-code self-sovereign identity solution that converts propspectd into customers in seconds, designed for businesses of all sizes."
+    config:
+      required: false
+      wysiwyg: false
+  - name: secondParagraph
+    type: text
+    label: Second paragraph
+    default: "Meet Gataca Studio."
+    config:
+      required: false
+      wysiwyg: false
+  - name: leftButton
+    type: text
+    label: Left Button
+    default: "Learn More"
+    config:
+      required: false
+      wysiwyg: false
+  - name: leftButtonLink
+    type: text
+    label: Left Button Link
+    default: ""
+    config:
+      required: false
+      wysiwyg: false
+  - name: rightButton
+    type: text
+    label: Right Button
+    default: "Get early access"
+    config:
+      required: false
+      wysiwyg: false
+  - name: rightButtonLink
+    type: text
+    label: Right Button Link
+    default: ""
+    config:
+      required: false
+      wysiwyg: false
+pages:
+  - content/data/prelaunchModalData.json
