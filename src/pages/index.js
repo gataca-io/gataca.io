@@ -37,17 +37,13 @@ export default function IndexPage() {
   const [showPreLaunchModal, setPreLaunchModal] = useState(false)
   const [showLaunchModal, setLaunchModal] = useState(false)
 
-  window.onload = function () {
-    preLaunchModalSeen =
-      typeof window !== "undefined"
-        ? sessionStorage.getItem("prelaunchSeen")
-        : false
-    launchModalSeen =
-      typeof window !== "undefined"
-        ? sessionStorage.getItem("launchSeen")
-        : false
-    setPreLaunchModal(!preLaunchModalSeen)
-    setLaunchModal(!launchModalSeen)
+  if (typeof window !== "undefined") {
+    window.onload = function () {
+      preLaunchModalSeen = sessionStorage?.getItem("prelaunchSeen") || false
+      launchModalSeen = sessionStorage?.getItem("launchSeen") || false
+      setPreLaunchModal(!preLaunchModalSeen)
+      setLaunchModal(!launchModalSeen)
+    }
   }
 
   const triggerGAEvent = (event) => {
