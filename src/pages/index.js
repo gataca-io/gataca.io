@@ -13,7 +13,6 @@ import CarouselBulletsSection from "../components/CarouselBulletsSection/Carouse
 import ImagesPlusCta from "../components/ImagePlusCtaSection/ImagePlusCta"
 import BigCtaSection from "../components/bigCtaSection/BigCtaSection"
 import RelatedPosts from "../components/RelatedPosts/RelatedPosts"
-import { useEffect } from "@storybook/addons"
 import developersPageData from "../../content/data/developersPage.json"
 import styles from "../components/bigCtaSection/bigcta.module.scss"
 import BulletOne from "../components/BulletOne/BulletOne"
@@ -32,11 +31,24 @@ export default function IndexPage() {
     productsData.products.slice(1)
   )
 
-  const preLaunchModalSeen = sessionStorage.getItem("prelaunchSeen")
-  const launchModalSeen = sessionStorage.getItem("launchSeen")
+  let preLaunchModalSeen
+  let launchModalSeen
 
-  const [showPreLaunchModal, setPreLaunchModal] = useState(!preLaunchModalSeen)
-  const [showLaunchModal, setLaunchModal] = useState(!launchModalSeen)
+  const [showPreLaunchModal, setPreLaunchModal] = useState(false)
+  const [showLaunchModal, setLaunchModal] = useState(false)
+
+  window.onload = function () {
+    preLaunchModalSeen =
+      typeof window !== "undefined"
+        ? sessionStorage.getItem("prelaunchSeen")
+        : false
+    launchModalSeen =
+      typeof window !== "undefined"
+        ? sessionStorage.getItem("launchSeen")
+        : false
+    setPreLaunchModal(!preLaunchModalSeen)
+    setLaunchModal(!launchModalSeen)
+  }
 
   const triggerGAEvent = (event) => {
     if (!window) {
