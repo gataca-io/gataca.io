@@ -44,8 +44,8 @@ Having a quality authentication solution can significantly improve your customer
 
 Something’s cooking at GATACA! Stay tuned for a big announcement from the GATACA team in the coming weeks. Hint: The issuance and verification of identity credentials has never been easier for businesses and their customers.
 
-**Chat with us -** We’d love to chat with you. Let us know your perspective and comments on this topic or anything Digital Identity-related. Join our [Telegram ](https://t.me/digitalidentityinsights "https://t.me/digitalidentityinsights")group.
+**Chat with us -** We’d love to chat with you. Let us know your perspective and comments on this topic or anything Digital Identity-related. Join our [Telegram](https://t.me/digitalidentityinsights "https://t.me/digitalidentityinsights") group or email us at [hello@gataca.io]().  
 
 **Stay in the loop -** Keep yourself updated on GATACA developments and how digital identities will transform our digital lives through our social media channels [here](https://gataca.io/insights/decentralized-finance-self-sovereign-identity-a-tale-of-decentralization-a-new-paradigm-of-trust "https://gataca.io/insights/decentralized-finance-self-sovereign-identity-a-tale-of-decentralization-a-new-paradigm-of-trust").
 
-Have a specific topic you’d like us to cover? Email us at [hello@gataca.io](mailto:hello@gataca.io "mailto:hello@gataca.io") - we’ll break it down for you in our upcoming blog articles.
+_The Cybernews team constantly shares the latest news and reports on everything you can imagine. From exclusive interviews to_ [_VPN discount coupons_](https://cybernews.com/vpn-coupons/nordvpn-coupon-codes/)_, they really have it all, so don’t hesitate to check them out._
