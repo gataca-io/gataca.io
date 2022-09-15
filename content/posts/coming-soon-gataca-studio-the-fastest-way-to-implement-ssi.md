@@ -25,7 +25,7 @@ Now, we’re just weeks away from launching Gataca Studio, the low-code SSI solu
 
 * **Enables instant & reusable KYC** through [passwordless authentication](https://gataca.io/blog/passwordless-the-model.ssi-the-method/ "https://gataca.io/blog/passwordless-the-model.ssi-the-method/") and strategic partnership integrations
 * **Streamlines the issuance and verification of** [**verifiable credentials**](https://gataca.io/blog/self-sovereign-identity-ssi-101-decentralized-identifiers-dids-verifiable-credentials-vcs "https://gataca.io/blog/self-sovereign-identity-ssi-101-decentralized-identifiers-dids-verifiable-credentials-vcs"), as well as the management of users in one place
-* **Is fully integrated with the EBSI**, European blockchain network, infrastructure while maintaining its blockchain agnostic capabilities
+* **Is fully integrated with the EBSI**, the European blockchain network, while maintaining its blockchain agnostic capabilities
 
 Through these features, Gataca Studio will become **the bridge between potential clients and businesses**. Instant & reusable KYC will provide instant conversion rates, unlocking higher revenues, longer customer LTV, and attracting new customers. Secure SSI authentication is not limited to onboarding processes, it can also be easily added to in-app activities and purchases to eliminate the possibility of fake transactions, giving end-users confidence, businesses peace of mind, without compromising usability. This is thanks to the government-grade security and GDPR compliance engrained in Gataca Studio-powered transactions which significantly reduce identity fraud, a growing concern in our increasingly digital lives.
 
