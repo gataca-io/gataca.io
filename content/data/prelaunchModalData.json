@@ -1,11 +1,11 @@
 {
-  "active": false,
+  "active": true,
   "tag": "Coming fall 2022",
-  "title": "GATACA Studio is launching soon",
+  "title": "Gataca Studio is launching soon",
   "firstParagraph": "A low-code self-sovereign identity platform designed for businesses of all sizes",
-  "secondParagraph": "Meet GATACA Studio",
+  "secondParagraph": "Meet Gataca Studio",
   "leftButton": "Learn More",
-  "leftButtonLink": "/company/contact",
+  "leftButtonLink": "https://gataca.io/blog/coming-soon-gataca-studio-the-fastest-way-to-implement-ssi?utm_source=web&utm_medium=popup&utm_campaign=gataca_studio_prelaunch",
   "rightButton": "Get early access",
-  "rightButtonLink": "/company/contact"
+  "rightButtonLink": "https://share.hsforms.com/1lUaPxb5qTUaSYWwNfLpiIQ2tcg6"
 }
