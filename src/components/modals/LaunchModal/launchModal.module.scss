@@ -15,7 +15,7 @@
 .launchModal {
   position: fixed;
   z-index: 99999;
-  width: 1078px;
+  width: 900px;
   max-width: 93%;
   background-color: var(--darkblue);
   margin: auto;
@@ -41,7 +41,7 @@
   @include media-for-tablet-l-portrait-up {
     flex-direction: column;
     height: fit-content;
-    height: 648px;
+    height: 626px;
     padding: 0 50px;
   }
   &__content {
@@ -131,8 +131,7 @@
           line-height: 42px;
         }
         @media (min-width: 550px) {
-          font-size: 40px;
-          line-height: 56px;
+          line-height: 51px;
           font-size: 39px;
           margin-top: 0;
         }
