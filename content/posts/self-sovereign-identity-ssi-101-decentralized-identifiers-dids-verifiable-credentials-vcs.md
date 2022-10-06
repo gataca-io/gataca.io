@@ -115,10 +115,6 @@ While the adoption of DIDs and the Verifiable Credential trust ecosystem is just
 
 The publication of these two standards in 2018 and 2019 respectively constituted the fundamental technological base for the development of an international ecosystem of technologists, technology companies, policymakers, governments, and corporations fostering the concept of SSI worldwide. DIDs have yet to be approved by the W3C as a Web standard, yet when approved, they would be the first new identifier the W3C would approve since the URL.
 
-For an informational webinar on the objections made by Google, Apple, and Mozilla on the approval of DIDs as a W3C URI standard, we recommend watching the following [webinar](https://www.evernym.com/dids-webinar/).
-
-Photo by [Dom J](https://www.pexels.com/@dom-j-7304?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels) on [Pexels](https://www.pexels.com/photo/uk-driving-license-45113/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels)
-
 **Chat with us -** We’d love to chat with you. Let us know your perspective and comments on this topic or anything Digital Identity-related. Join our [Telegram ](https://t.me/digitalidentityinsights)group.
 
 **Stay in the loop -** Keep yourself updated on GATACA developments and how digital identities will transform our digital lives [here](https://gataca.io/insights/decentralized-finance-self-sovereign-identity-a-tale-of-decentralization-a-new-paradigm-of-trust).
