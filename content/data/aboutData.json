@@ -125,6 +125,18 @@
             "icon": "../images/linkedin_blue.svg"
           }
         ]
+      },
+      {
+        "name": "Esther Saurí",
+        "bio": "",
+        "links": [
+          {
+            "name": "",
+            "url": "https://www.linkedin.com/in/esther-sauri-carbonell/",
+            "icon": "/static/images/linkedin_blue.svg"
+          }
+        ],
+        "photo": "/static/images/1641903273176b.jpg"
       }
     ]
   },
