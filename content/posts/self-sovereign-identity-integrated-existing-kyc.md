@@ -42,8 +42,6 @@ Some KYC providers are already looking into SSI as part of their strategic produ
 
 As issuers, KYC providers can attest to the authenticity and ownership of this KYC credential, transfer this to a user and manage the status lifecycle, including revocation mechanisms to force its renewal according to local laws.
 
-![Trust triangle - Reusable KYC](/static/images/vc_trust_triangle.png "Trust triangle - Reusable KYC")
-
 The issuance of these verifiable credentials can be issued at any time in the current process or triggered proactively by a user.
 
 So, what are the benefits of integrating SSI into a KYC process?
