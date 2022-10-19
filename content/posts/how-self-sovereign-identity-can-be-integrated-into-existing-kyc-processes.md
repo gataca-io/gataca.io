@@ -78,7 +78,7 @@ However, current KYC procedures to check alerts, such as potential positives for
 
 The concept of reusable KYC can improve the current business model by increasing effectively reducing such operational costs, increasing the profit margin, and adding recurrent revenues to verify KYC credentials.
 
-The operational cost of a KYC process falls remarkably as the same user data (ie. passport scan, liveness detection test, etc) no longer needs to be verified multiple times across different services. 
+The operational cost of a KYC process falls remarkably as the same user data (ie. passport scan, liveness detection test, etc) no longer needs to be verified multiple times across different services.
 
 As a result, KYC providers can charge a lower price per verification with a higher margin instead of a high transaction-based price with lower margins. Naturally, these lower prices would be welcomed by third-party verifiers, such as banks, as their high KYC costs would also be reduced.
 
