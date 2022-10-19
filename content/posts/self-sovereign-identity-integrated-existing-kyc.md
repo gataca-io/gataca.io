@@ -6,12 +6,12 @@ meta_data:
     of reusable KYC.  Self-Sovereign Identity (SSI) is a new identity model that can
     help solve the existing KYC challenges.
   rrss_images:
-    twitter: "/static/images/kyc-check.png"
-    facebook_and_whatsapp: "/static/images/kyc-check.png"
-    linkedin: "/static/images/kyc-check.png"
+    twitter: "/static/images/kycblogsocialmediapic.png"
+    facebook_and_whatsapp: "/static/images/kycblogsocialmediapic.png"
+    linkedin: "/static/images/kycblogsocialmediapic.png"
 title: How Self-Sovereign Identity can be integrated into existing KYC processes
 author: ''
-hero_image: "/static/images/kyc-check.png"
+hero_image: "/static/images/kycblogmainpic.png"
 
 ---
 Today, most of the risks consumers face from cyber criminals are tied back to credentials or data theft.
