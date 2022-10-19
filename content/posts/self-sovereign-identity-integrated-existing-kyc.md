@@ -98,8 +98,6 @@ Until now, the implementation of Self-Sovereign Identity technology involved com
 
 Gataca Studio is a low-code decentralized identity verification platform designed for businesses that wish to implement full-stack SSI tech with little integration effort.
 
-![Gataca Studio - Reusable KYC](/static/images/copy-of-aesthetic-women-desktop-wallpaper-1.png "Gataca Studio - Reusable KYC")
-
 Through a monthly subscription, KYC providers can implement SSI into their solution in just a few clicks. The platform’s intuitive, user-friendly interface and W3C standard-compliant core:
 
 * **Enables instant & reusable KYC** through [passwordless authentication](https://gataca.io/blog/passwordless-the-model.ssi-the-method/ "https://gataca.io/blog/passwordless-the-model.ssi-the-method/") and strategic partnership integrations
