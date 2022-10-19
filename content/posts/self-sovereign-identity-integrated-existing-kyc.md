@@ -92,7 +92,7 @@ With Self-Sovereign Identity, data is decentralized and stored by users in their
 
 Moreover, as SSI technology is cryptographically secured and private by design, it reduces identity fraud drastically and complies with data protection regulations.
 
-## Meet Gataca
+## Meet Gataca Studio
 
 Until now, the implementation of Self-Sovereign Identity technology involved complex workflows requiring many hours of consultation and expert deployment guidance, creating a massive barrier to adoption. **Gataca Studio crushes this barrier.**
 
