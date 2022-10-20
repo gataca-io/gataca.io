@@ -128,15 +128,15 @@
       },
       {
         "name": "Esther Saurí",
-        "bio": "",
+        "photo": "../images/1641903273176b.jpg",
+        "bio": "<p>Digital Marketing Specialist<p>",
         "links": [
           {
-            "name": "",
+            "name": "linkedin",
             "url": "https://www.linkedin.com/in/esther-sauri-carbonell/",
-            "icon": "/static/images/linkedin_blue.svg"
+            "icon": "../images/linkedin_blue.svg"
           }
-        ],
-        "photo": "/static/images/1641903273176b.jpg"
+        ]
       }
     ]
   },
