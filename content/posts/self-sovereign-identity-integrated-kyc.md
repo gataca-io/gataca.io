@@ -1,15 +1,15 @@
 ---
 date: 2022-10-19T15:48:16Z
 meta_data:
-  title: How Self-Sovereign Identity can be integrated into existing KYC processes
-  description: The inevitable trend in the KYC market is user-centricity and reusable
-    KYC.  Self-Sovereign Identity (SSI) is a new identity model that can help solve
-    the existing KYC challenges.
+  title: How Self-Sovereign Identity can be integrated into KYC processes
+  description: The upcoming trend in the KYC market is user-centricity and reusable
+    KYC. Self-Sovereign Identity is a new identity model helping solve the existing
+    challenges.
   rrss_images:
     twitter: "/static/images/kycblogsocialmediapic.png"
     facebook_and_whatsapp: "/static/images/kycblogsocialmediapic.png"
     linkedin: "/static/images/kycblogsocialmediapic.png"
-title: How Self-Sovereign Identity can be integrated into existing KYC processes
+title: How Self-Sovereign Identity can be integrated into KYC processes
 author: ''
 hero_image: "/static/images/kycblogmainpic.png"
 
@@ -42,7 +42,7 @@ Some KYC providers are already looking into SSI as part of their strategic produ
 
 As issuers, KYC providers can attest to the authenticity and ownership of this KYC credential, transfer this to a user and manage the status lifecycle, including revocation mechanisms to force its renewal according to local laws.
 
-![](/static/images/trusttriangle.png)
+![Trust triangle - Self Sovereign Identity and KYC ](/static/images/trusttriangle.png "Trust triangle - Self-Sovereign Identity and KYC ")
 
 The issuance of these verifiable credentials can be issued at any time in the current process or triggered proactively by a user.
 
@@ -97,6 +97,8 @@ Moreover, as SSI technology is cryptographically secured and private by design, 
 Until now, the implementation of Self-Sovereign Identity technology involved complex workflows requiring many hours of consultation and expert deployment guidance, creating a massive barrier to adoption. **Gataca Studio crushes this barrier.**
 
 Gataca Studio is a low-code decentralized identity verification platform designed for businesses that wish to implement full-stack SSI tech with little integration effort.
+
+![Gataca Studio - Self Sovereign Identity and KYC ](/static/images/copy-of-aesthetic-women-desktop-wallpaper-1.png "Gataca Studio - Self Sovereign Identity and KYC ")
 
 Through a monthly subscription, KYC providers can implement SSI into their solution in just a few clicks. The platform’s intuitive, user-friendly interface and W3C standard-compliant core:
 
