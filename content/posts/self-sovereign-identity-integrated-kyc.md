@@ -1,5 +1,5 @@
 ---
-date: 2022-10-19T15:48:16Z
+date: 2022-10-19T15:48:16.000+00:00
 meta_data:
   title: How Self-Sovereign Identity can be integrated into KYC processes
   description: The upcoming trend in the KYC market is user-centricity and reusable
@@ -30,7 +30,7 @@ This is possible by cryptographically verifying and storing the completed KYC re
 
 While the concept of reusable KYC can pose a risk to the current KYC business model, novel commercial approaches are being explored where KYC providers greatly stand to benefit in the long run. Here is where Self-Sovereign Identity comes into action, helping the sector move toward a more sustainable business model.
 
-**Self-Sovereign Identity** is a nascent technology combining the simplicity and usability of a single sign-on with advanced cryptography and blockchain technologies that provide government-grade secured access to digital services.
+**Self-Sovereign Identity** is a nascent technology combining the simplicity and usability of a single sign-on with advanced cryptography that provide government-grade secured access to digital services.
 
 ## Why should KYC solutions integrate SSI technology?
 
