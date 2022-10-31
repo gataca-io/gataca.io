@@ -1,5 +1,5 @@
 ---
-date: 2022-09-15T11:17:04Z
+date: 2022-09-15T11:17:04.000+00:00
 meta_data:
   title: 'Coming soon: Gataca Studio, the fastest way to implement SSI'
   description: Gataca Studio is our cloud platform designed for businesses of all
@@ -36,6 +36,6 @@ In essence, Gataca Studio has the potential to superpower any digital platform i
 > “We’re thrilled to be so close to the launch date. Offering SSI technology in a cloud-based, subscription version has been our team’s vision for quite some time - we truly believe it is the easiest way for organizations of all sizes to experience the benefits of SSI technology, bringing us one step closer to wider adoption.”  
 > **Irene Hernandez, CEO**
 
-We will be officially launching in October, but we already have strategic partners successfully testing out the technology. If you’re curious to see the benefits of our technology on your workflows today, get early access to Gataca Studio by clicking on the following form (limited spots available).
+We will officially launch soon, but we already have strategic partners successfully testing the technology. If you’re curious to see the benefits of our technology on your workflows today, get early access to Gataca Studio by clicking on the following form (limited spots available).
 
 [**GET EARLY ACCESS**](https://share.hsforms.com/1lUaPxb5qTUaSYWwNfLpiIQ2tcg6 "Early access form ")
