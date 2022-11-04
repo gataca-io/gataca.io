@@ -9,13 +9,12 @@
   },
   "bigBulletsSection": {
     "title": "Our mission",
-    "bullets": [
-      {
+    "bullets": [{
         "icon": "/illustrations/secure_internet.svg",
         "image": "/illustrations/secure_internet.svg",
         "title": "We’re building an identity layer for a better, more secure Internet",
         "subtitle": "<p>Costly regulation compliance, lack of citizen eID adoption, and identity fraud</p>",
-        "description": "<p>Our mission is to give users back control of their data and ensure their safety online.<br><br>Since its inception at MIT in 2017, GATACA has developed a comprehensive blockchain-based SSI solution that offers a single user-centric digital identity layer for the Internet with government-grade security and simple single-sign-on capabilities.</p>"
+        "description": "<p>Our mission is to give users back control of their data and ensure their safety online.<br><br>Since its inception at MIT in 2017, GATACA has developed a comprehensive blockchain-based SSI solution that offers a single user-centric digital identity layer for the Internet with government-grade security and simple single sign-on capabilities.</p>"
       },
       {
         "icon": "/illustrations/smartphone_digit.svg",
@@ -29,121 +28,101 @@
   "teamDataSection": {
     "title": "Meet the team",
     "description": "<p>Behind our success is the GATACA team, comprised of a diverse and dynamic group with ceaseless determination and expertise in many fields including entrepreneurship, blockchain, cybersecurity and economics</p>",
-    "team": [
-      {
+    "team": [{
         "name": "Irene Hernandez",
         "bio": "<p>CEO</p>",
         "photo": "../images/dsc09829.jpg",
-        "links": [
-          {
-            "name": "linkedIn",
-            "url": "https://www.linkedin.com/in/irenehernandez/",
-            "icon": "../images/linkedin_blue.svg"
-          }
-        ]
+        "links": [{
+          "name": "linkedIn",
+          "url": "https://www.linkedin.com/in/irenehernandez/",
+          "icon": "../images/linkedin_blue.svg"
+        }]
       },
       {
         "name": "Samuel Gómez",
         "bio": "<p>CTO</p>",
         "photo": "../images/dsc09879.jpg",
-        "links": [
-          {
-            "name": "linkedIn",
-            "url": "https://www.linkedin.com/in/samuelgoes/",
-            "icon": "../images/linkedin_blue.svg"
-          }
-        ]
+        "links": [{
+          "name": "linkedIn",
+          "url": "https://www.linkedin.com/in/samuelgoes/",
+          "icon": "../images/linkedin_blue.svg"
+        }]
       },
       {
         "name": "José San Juan",
         "bio": "<p>CSO</p>",
         "photo": "../images/dsc09804.jpg",
-        "links": [
-          {
-            "name": "linkedIn",
-            "url": "https://www.linkedin.com/in/jsanjup/",
-            "icon": "../images/linkedin_blue.svg"
-          }
-        ]
+        "links": [{
+          "name": "linkedIn",
+          "url": "https://www.linkedin.com/in/jsanjup/",
+          "icon": "../images/linkedin_blue.svg"
+        }]
       },
       {
         "name": "Ángela Benavente",
         "bio": "<p>Frontend Developer</p>",
         "photo": "../images/img_7606.png",
-        "links": [
-          {
-            "name": "linkedIn",
-            "url": "https://www.linkedin.com/in/%C3%A1ngela-benavente-almaz%C3%A1n-436003174/",
-            "icon": "../images/linkedin_blue.svg"
-          }
-        ]
+        "links": [{
+          "name": "linkedIn",
+          "url": "https://www.linkedin.com/in/%C3%A1ngela-benavente-almaz%C3%A1n-436003174/",
+          "icon": "../images/linkedin_blue.svg"
+        }]
       },
       {
         "name": "Chiara Casoni",
         "photo": "../images/dsc09789.jpg",
         "bio": "<p>Digital Marketing Specialist</p>",
-        "links": [
-          {
-            "name": "linkedin",
-            "url": "https://www.linkedin.com/in/chiaracasoni/",
-            "icon": "../images/linkedin_blue.svg"
-          }
-        ]
+        "links": [{
+          "name": "linkedin",
+          "url": "https://www.linkedin.com/in/chiaracasoni/",
+          "icon": "../images/linkedin_blue.svg"
+        }]
       },
       {
         "name": "Daniel Moledo",
         "photo": "../images/dsc09710.png",
         "bio": "<p>Backend Developer</p>",
-        "links": [
-          {
-            "name": "linkedin",
-            "url": "https://www.linkedin.com/in/daniel-moledo-garcia-655004192/",
-            "icon": "../images/linkedin_blue.svg"
-          }
-        ]
+        "links": [{
+          "name": "linkedin",
+          "url": "https://www.linkedin.com/in/daniel-moledo-garcia-655004192/",
+          "icon": "../images/linkedin_blue.svg"
+        }]
       },
       {
         "photo": "../images/img_3055.png",
         "bio": "<p>UX/UI Designer</p>",
-        "links": [
-          {
-            "name": "linkedin",
-            "url": "https://www.linkedin.com/in/estefan%C3%ADa-zambrano-rivas-a28b28116/",
-            "icon": "../images/linkedin_blue.svg"
-          }
-        ],
+        "links": [{
+          "name": "linkedin",
+          "url": "https://www.linkedin.com/in/estefan%C3%ADa-zambrano-rivas-a28b28116/",
+          "icon": "../images/linkedin_blue.svg"
+        }],
         "name": "Estefanía Zambrano"
       },
       {
         "name": "Jorge Navas",
         "photo": "../images/img_3058.png",
         "bio": "<p>DevOps</p>",
-        "links": [
-          {
-            "name": "linkedin",
-            "url": "https://www.linkedin.com/in/jorge-navas-d%C3%ADaz-8b422643/",
-            "icon": "../images/linkedin_blue.svg"
-          }
-        ]
+        "links": [{
+          "name": "linkedin",
+          "url": "https://www.linkedin.com/in/jorge-navas-d%C3%ADaz-8b422643/",
+          "icon": "../images/linkedin_blue.svg"
+        }]
       },
       {
         "name": "Esther Saurí",
         "photo": "../images/1641903273176b.jpg",
         "bio": "<p>Digital Marketing Specialist<p>",
-        "links": [
-          {
-            "name": "linkedin",
-            "url": "https://www.linkedin.com/in/esther-sauri-carbonell/",
-            "icon": "../images/linkedin_blue.svg"
-          }
-        ]
+        "links": [{
+          "name": "linkedin",
+          "url": "https://www.linkedin.com/in/esther-sauri-carbonell/",
+          "icon": "../images/linkedin_blue.svg"
+        }]
       }
     ]
   },
   "awardsDataSection": {
     "title": "Awards & Milestones",
-    "awards": [
-      {
+    "awards": [{
         "title": "Block.IS Awardee",
         "description": "<p>This project has indirectly received funding from the European Union’s Horizon 2020 research and innovation programme under project Block.IS (grant agreement No 824509)</p>",
         "photo": "/images/blockis.png",
@@ -202,8 +181,7 @@
   "clientsDataSection": {
     "title": "Clients & Partners",
     "description": "<p>The GATACA team has closed contracts with key European public administrations and private organizations</p>",
-    "clients": [
-      {
+    "clients": [{
         "title": "Red.es",
         "photo": "/images/logo_redes.png",
         "link": "https://red.es/es"

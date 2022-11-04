@@ -49,7 +49,7 @@ GATACA has been working on developing SSI technology since 2017. **GATACA Platfo
 
 * GATACA Certify - Credentials issuance and validation platform for trusted parties and official authorities to create and certify digital identity credentials according to W3C standards
 * GATACA Wallet - Mobile Digital ID wallet for consumers to store identity credentials from any issuer worldwide and seamlessly authenticate in digital services
-* GATACA Connect - Single-sign-on authentication tools for businesses that automatically verify credentials and manage consent proofs
+* GATACA Connect - Single sign-on authentication tools for businesses that automatically verify credentials and manage consent proofs
 
 Among the unlimited applications and use cases of digital identity, GATACA focuses on three industries:
 
