@@ -10,8 +10,7 @@
     "title": "Solutions for all stakeholders",
     "description": "Self-sovereign identity</br>Designed for the digital age"
   },
-  "productsImages": [
-    {
+  "productsImages": [{
       "link": "/images/panel-credentials.svg",
       "title": "Certify"
     },
@@ -28,8 +27,7 @@
     "title": "The Ecosystem",
     "icon": "/images/3-triangle.svg",
     "description": "",
-    "bullets": [
-      {
+    "bullets": [{
         "image": "/images/building.svg",
         "title": "ISSUERS",
         "description": "<p>One-click onboarding\nPortable and reusable\nUp-to-date\nGlobally interoperable and scalable</p>"
@@ -81,8 +79,7 @@
   },
   "why": {
     "title": "Why GATACA",
-    "bullets": [
-      {
+    "bullets": [{
         "image": "/icons/blockslock.svg",
         "title": "LEDGER-AGNOSTIC",
         "description": "<p>We offer a blockchain-agnostic platform that enables you to use your own network and interconnect with other blockchain network providers</p>"
@@ -104,7 +101,7 @@
       },
       {
         "image": "/icons/secure.svg",
-        "title": "PRIVACY BY DESING",
+        "title": "PRIVACY BY DESIGN",
         "description": "<p>We combine strong privacy by design principles with the best end-user experience to increase user loyalty</p>"
       },
       {

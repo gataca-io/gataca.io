@@ -21,8 +21,7 @@
     "mainTitleSubheading": "",
     "mainParagraph": "One single digital identity that is owned and controlled by the user and managed via an ID wallet as a privacy-preserving master key for the Internet.<br><br>Encrypted. Hypersecure. Standardized. Free.",
     "ctaText": "Download our wallet",
-    "credentials": [
-      {
+    "credentials": [{
         "category": "Goverment",
         "subcategory": "National ID",
         "credential_name": "394846728 Y",
@@ -60,8 +59,7 @@
     "title": "DIGITAL IDENTITY MANAGEMENT",
     "icon": "/images/3-triangle.svg",
     "description": "<p>We use identity credentials daily to access local citizen services, prove our qualifications, or file an insurance claim. But as we have rapidly transformed our lives online, identification and authentication systems have not kept up. Gataca's identity management platform is designed for the digital age.</p>",
-    "elements": [
-      {
+    "elements": [{
         "image": "/images/fast.svg",
         "title": "FAST & EASY",
         "description": "<ul><li><p>One-click onboarding</p></li><li><p>Portable and reusable</p></li><li><p>Up-to-date</p></li><li><p>Globally interoperable and scalable</p></li></ul>"
@@ -96,9 +94,8 @@
   "bulletsEnhancedSection": {
     "icon": "/images/4-square.svg",
     "title": "DECENTRALIZED <br> IDENTITY PLATFORM",
-    "description": "<p>Gataca has built a user-centric digital identity platform with government-grade security and a simple single-sign-on to superpower your credentials. Our identity management platform enables fast, secure, and compliant data exchange between credential issuers, users, and service providers.</p>",
-    "elements": [
-      {
+    "description": "<p>Gataca has built a user-centric digital identity platform with government-grade security and a simple single sign-on to superpower your credentials. Our identity management platform enables fast, secure, and compliant data exchange between credential issuers, users, and service providers.</p>",
+    "elements": [{
         "image": "/images/stamp.svg",
         "title": "CREDENTIAL ISSUERS",
         "description": "<p>Issuers can create and validate secure W3C verifiable contactless digital credentials.</p>"
@@ -130,8 +127,7 @@
     "title": "Goverments & Universities are leading the path to Self-Sovereign-Identity",
     "ctaText": "Explore others sectors",
     "ctaUrl": "/use-cases",
-    "list": [
-      {
+    "list": [{
         "title": "E-Government services that work",
         "shortDescription": "<p>Improve citizen’s day to day lives by providing seamless onboarding experiences and securing online transactions.</p>",
         "description": "<p>Governments leverage the GATACA technology to issue digital government documents and authenticate citizens into eGov services. Citizens store and share credentials via their digital Wallet.</p>",

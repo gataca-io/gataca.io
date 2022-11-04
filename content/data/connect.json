@@ -5,16 +5,15 @@
   "ctaText": "Request a demo",
   "ctaLink": "/company/contact",
   "icon": "/images/connectBuilding.svg",
-  "description": "<p>User authentication tools that combine trust levels of government-issued IDs with single-sign-on capabilities</p>",
+  "description": "<p>User authentication tools that combine trust levels of government-issued IDs with single sign-on capabilities</p>",
   "explainSection_one": {
     "infographic": "/images/panel-connect.svg",
     "title": "Features",
-    "bullets": [
-      {
+    "bullets": [{
         "description": "W3C-compliant Verifiable Credentials"
       },
       {
-        "description": "Create Single-Sign-On QR codes"
+        "description": "Create Single Sign-On QR codes"
       },
       {
         "description": "Configurate Presentation Requests"
@@ -34,11 +33,10 @@
     ]
   },
   "secondaryDescription": "<p></p>",
-  "mainImage":  "/images/panel-connect.svg",
+  "mainImage": "/images/panel-connect.svg",
   "stepsSection": {
     "title": "How it works",
-    "steps": [
-      {
+    "steps": [{
         "image": "/illustrations/User-Centered_Design.svg",
         "text": "1. Create credential schema"
       },
@@ -62,8 +60,7 @@
   "explainSection": {
     "infographic": "/illustrations/qrSingleSignOn.png",
     "title": "Customer experience enhanced. Revenues boosted.",
-    "bullets": [
-      {
+    "bullets": [{
         "description": "Improved user experience and reduced onboarding abandonment rate"
       },
       {
