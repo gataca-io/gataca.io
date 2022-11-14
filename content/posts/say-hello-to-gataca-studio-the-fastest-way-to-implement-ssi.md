@@ -11,7 +11,7 @@ meta_data:
     linkedin: "/static/images/introducing-gataca-studio-1.png"
 title: 'Say hello to GATACA Studio: the fastest way to implement SSI'
 author: ''
-hero_image: "/static/images/introducing-gataca-studio.png"
+hero_image: "/static/images/slide1.png"
 
 ---
 With the approval of[ eIDAS 2.0 ](https://gataca.io/blog/here-s-what-the-new-eidas-proposal-really-means-for-the-ssi-community-in-6-key-points)approaching sooner than expected, European organizations are struggling to transition into a user-centric digital identity system based on credentials and [wallets](https://gataca.io/blog/ssi-essentials-a-crash-course-on-digital-id-wallets).
