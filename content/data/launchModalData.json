@@ -1,9 +1,9 @@
 {
-    "active": false,
-    "title": "The fastest way to implement Self-Sovereign Identity",
-    "firstParagraph": "Introducing GATACA Studio",
-    "leftButton": "What's GATACA Studio?",
-    "leftButtonLink": "/company/contact",
-    "rightButton": "Try it Free",
-    "rightButtonLink": "/company/contact"
+  "active": true,
+  "title": "The fastest way to implement Self-Sovereign Identity",
+  "firstParagraph": "Introducing Gataca Studio",
+  "leftButton": "What's Gataca Studio?",
+  "leftButtonLink": "https://gataca.io/blog/say-hello-to-gataca-studio-the-fastest-way-to-implement-ssi?utm_source=popup&utm_medium=web&utm_campaign=gataca_studio_launch",
+  "rightButton": "Get started for free",
+  "rightButtonLink": "https://studio.gataca.io/login"
 }
