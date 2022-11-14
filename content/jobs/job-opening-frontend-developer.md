@@ -14,9 +14,7 @@ author: ''
 hero_image: "/static/images/christopher-gower-unsplash.jpg"
 
 ---
-## Job opening - Frontend Developer
-
-**Who are we?**
+### **Who are we?**
 
 GATACA is a cybersecurity company that provides self-sovereign identity technology. We power users with a mobile ID wallet to enjoy passwordless, hyper-secure, and privacy-preserving access to digital services worldwide. Read more about what we do here: [https://bit.ly/31Us3Ln](https://bit.ly/31Us3Ln "https://bit.ly/31Us3Ln")
 
@@ -24,7 +22,7 @@ Since its inception at MIT in 2018, GATACA has received several European grants,
 
 If you want to join a growing startup with an ambitious goal, keep reading!
 
-**What will you do? 💻**
+### **What will you do? 💻**
 
 To **work on the evolution of a self-sovereign identity (SSI) platform** and help scale it to serve millions of users with maximum guarantees of privacy and security. For this purpose, we need a person who can participate in the design, implementation, and delivery of complex products (both B2B and B2C). You will:
 
@@ -51,7 +49,7 @@ In 12 months ...
 
 You will be fully integrated into GATACA. You will have contributed to a major product transformation and scaled it to large production environments. You will be autonomous, proactive, resourceful, and excited about the company’s future. You will help continue building a great team and preserve the innovative spirit of the company.
 
-**Who will you work closest with? 🕺**
+### **Who will you work closest with? 🕺**
 
 You will be in a dynamic and international environment. Our goal is to make our team as international and diverse as possible, as we believe that it is the key to success. Your colleagues will still be mostly Spanish native speakers, but your clients and other interlocutors will be mostly from other parts of the world. You will need a fluent level of English since you will use it in your day-to-day life.
 
@@ -71,9 +69,9 @@ Our way of working in the visual area is:
 
 3\. Frontend developers implement the prototype
 
-**Who do we need? 🤼♀️**
+### **Who do we need? 🤼♀️**
 
-Skills:
+**Skills:**
 
 * You enjoy solving complex technical problems. Can’t stop until you find a solution.
 * You are comfortable working with abstract problem statements and enjoy giving them shape to find tangible solutions
@@ -85,20 +83,21 @@ Skills:
 * You are comfortable with deadlines
 * You are persistent and keep a positive attitude in adversity
 
-Background:
+**Background:**
 
 * Provable web development experience
 * Proficiency with HTML, CSS, and JavaScript; Understanding of server-side CSS.
 * Experience with responsive and adaptive design.
 * Keen on putting ideas into programming codes.
-* **Bonus points:**
+
+  **Bonus points:**
 * Experience building B2B SaaS platforms
 * Experience with React programming library
 * App development experience (iOS & Android native or React Native)
 * Experience with graphic design applications such as Adobe Illustrator, Figma, or similar tools.
 * Interest/experience in UX/UI
 
-**What do we offer? 🤝**
+### **What do we offer? 🤝**
 
 * Gross salary range 30-35K€
 * Contract type: full-time
@@ -111,7 +110,7 @@ Background:
 * Birthdays off
 * 23 working days per year of vacation
 
-**Where, when? 📪**
+### **Where, when? 📪**
 
 We have a nice in **Madrid**, where we have access to all sorts of conveniences: plenty of space for us, 2 meeting rooms equipped with nice tech, and a kitchen where you can cook or store a few things.
 
@@ -119,7 +118,7 @@ During Covid, we’ve prioritized remote work as a first option, and some team m
 
 Schedule: **Mon to Fri. Flexible schedule.**
 
-**Application ✍**
+### **Application ✍**
 
 * Deadline: February 28, 2023
 * Apply here → [http://bit.ly/3GgZ9qE](http://bit.ly/3GgZ9qE "http://bit.ly/3GgZ9qE")
