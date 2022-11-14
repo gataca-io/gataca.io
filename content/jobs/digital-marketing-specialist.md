@@ -10,7 +10,7 @@ meta_data:
 title: Digital Marketing Specialist
 description: Help us take the GATACA brand to the next level
 author: ''
-active: true
+active: false
 date: '2022-06-06T09:24:18.000+00:00'
 hero_image: "/static/images/rawpixel-559744-unsplash.jpg"
 
