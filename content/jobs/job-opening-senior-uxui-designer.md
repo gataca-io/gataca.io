@@ -6,10 +6,11 @@ meta_data:
     twitter: "/static/images/rawpixel-559744-unsplash.jpg"
     facebook_and_whatsapp: "/static/images/rawpixel-559744-unsplash.jpg"
     linkedin: "/static/images/rawpixel-559744-unsplash.jpg"
+  date: 2022-11-14T16:30:41Z
 title: Senior UX/UI Designer
 description: Help us design build the user experience of Self Sovereign Identity
 author: ''
-active: true
+active: false
 date: '2022-02-28T12:00:00.000+00:00'
 hero_image: "/static/images/rawpixel-559744-unsplash.jpg"
 
@@ -24,7 +25,7 @@ If you want to join a growing startup with an ambitious goal, keep reading.
 
 ### **What will you do? 💻**
 
-To **work on the evolution of a self-sovereign identity (SSI) platform** and help scale it to serve millions of users with maximum guarantees of privacy and security. For this purpose, we need a person who will be responsible for the **design of digital GATACA’s user experiences** across our website, SaaS solution and mobile App, and the **implementation of UX/UI best practices and principles across all our digital products** (both B2B and B2C). You will:
+To **work on the evolution of a self-sovereign identity (SSI) platform** and help scale it to serve millions of users with maximum guarantees of privacy and security. For this purpose, we need a person who will be responsible for the **design of digital GATACA’s user experiences** across our website, SaaS solution, and mobile App, and the **implementation of UX/UI best practices and principles across all our digital products** (both B2B and B2C). You will:
 
 * **Gather and evaluate user requirements** in collaboration with product managers and engineers
 * Be the link between business team and dev team **writing user stories**
@@ -82,7 +83,7 @@ To **work on the evolution of a self-sovereign identity (SSI) platform** and hel
 
 We enjoy beautiful offices in a co-working space in **Madrid**, where we have access to all sort of conveniences: plenty of space for us, an auditorium, 2 meeting rooms equipped with nice tech, a kitchen where you can cook or store a few things, locks, security, and inspiring neighbors.
 
-During Covid, we’ve prioritized remote work as a first option and some team members are enjoying it, so we’ll keep a balance moving forward. We like to meet at least once a week, but flexibility and work-life balance remain a priority. 
+During Covid, we’ve prioritized remote work as a first option and some team members are enjoying it, so we’ll keep a balance moving forward. We like to meet at least once a week, but flexibility and work-life balance remain a priority.
 
 Schedule: **Mon to Fri. Flexible schedule.**
 
