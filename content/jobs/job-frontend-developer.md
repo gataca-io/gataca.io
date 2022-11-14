@@ -60,7 +60,7 @@ You will join as part of the technical team with the following key people:
 
 * Samuel Gomez (CTO) - [https://www.linkedin.com/in/samuelgoes/](https://www.linkedin.com/in/samuelgoes/ "https://www.linkedin.com/in/samuelgoes/")
 * Jose (CSO) - [https://www.linkedin.com/in/jsanjup/](https://www.linkedin.com/in/jsanjup/ "https://www.linkedin.com/in/jsanjup/")
-* Daniel (Backend engineer) - [https://www.linkedin.com/in/daniel-moledo-garcia-655004192/](https://www.linkedin.com/in/daniel-moledo-garcia-655004192/ "https://www.linkedin.com/in/daniel-moledo-garcia-655004192/")
+* Daniel (Backend engineer) - [https://www.linkedin.com/in/daniel-moledo-garcia/](https://www.linkedin.com/in/daniel-moledo-garcia/ "https://www.linkedin.com/in/daniel-moledo-garcia/")
 * Ángela (Frontend engineer) - [https://www.linkedin.com/in/angela-benavente-almazan/](https://www.linkedin.com/in/angela-benavente-almazan/ "https://www.linkedin.com/in/angela-benavente-almazan/")
 * Estefanía (UX/UI designer) - [https://www.linkedin.com/in/tefy-zambrano/](https://www.linkedin.com/in/tefy-zambrano/ "https://www.linkedin.com/in/tefy-zambrano/")
 

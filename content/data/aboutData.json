@@ -64,7 +64,7 @@
         "photo": "../images/img_7606.png",
         "links": [{
           "name": "linkedIn",
-          "url": "https://www.linkedin.com/in/%C3%A1ngela-benavente-almaz%C3%A1n-436003174/",
+          "url": "https://www.linkedin.com/in/angela-benavente-almazan/",
           "icon": "../images/linkedin_blue.svg"
         }]
       },
@@ -84,19 +84,19 @@
         "bio": "<p>Backend Developer</p>",
         "links": [{
           "name": "linkedin",
-          "url": "https://www.linkedin.com/in/daniel-moledo-garcia-655004192/",
+          "url": "https://www.linkedin.com/in/daniel-moledo-garcia/",
           "icon": "../images/linkedin_blue.svg"
         }]
       },
       {
+        "name": "Estefanía Zambrano",
         "photo": "../images/img_3055.png",
         "bio": "<p>UX/UI Designer</p>",
         "links": [{
           "name": "linkedin",
-          "url": "https://www.linkedin.com/in/estefan%C3%ADa-zambrano-rivas-a28b28116/",
+          "url": "https://www.linkedin.com/in/tefy-zambrano/",
           "icon": "../images/linkedin_blue.svg"
-        }],
-        "name": "Estefanía Zambrano"
+        }]
       },
       {
         "name": "Jorge Navas",
