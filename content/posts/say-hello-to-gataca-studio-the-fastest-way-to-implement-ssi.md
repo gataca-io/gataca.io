@@ -1,7 +1,7 @@
 ---
 date: 2022-11-14T08:52:30Z
 meta_data:
-  title: 'Say hello to GATACA Studio: the fastest way to implement SSI'
+  title: 'Say hello to Gataca Studio: the fastest way to implement SSI'
   description: 'Gataca Studio is the fastest way to implement Self-Sovereign Identity
     in the market. It''s a low-code decentralized identity verification platform enabling
     1-click, compliant onboarding, and sign-in processes. '
@@ -9,7 +9,7 @@ meta_data:
     twitter: "/static/images/introducing-gataca-studio-1.png"
     facebook_and_whatsapp: "/static/images/introducing-gataca-studio-1.png"
     linkedin: "/static/images/introducing-gataca-studio-1.png"
-title: 'Say hello to GATACA Studio: the fastest way to implement SSI'
+title: 'Say hello to Gataca Studio: the fastest way to implement SSI'
 author: ''
 hero_image: "/static/images/studio.png"
 
