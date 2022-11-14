@@ -17,7 +17,7 @@ hero_image: "/static/images/christopher-gower-unsplash.jpg"
 ---
 ## Job opening - Frontend Developer
 
-**Who are we?**
+**Who are we?** 
 
 GATACA is a cybersecurity company that provides self-sovereign identity technology. We power users with a mobile ID wallet to enjoy passwordless, hyper-secure, and privacy-preserving access to digital services worldwide. Read more about what we do here: [https://bit.ly/31Us3Ln](https://bit.ly/31Us3Ln "https://bit.ly/31Us3Ln")
 
@@ -61,7 +61,7 @@ You will join as part of the technical team with the following key people:
 * Samuel Gomez (CTO) - [https://www.linkedin.com/in/samuelgoes/](https://www.linkedin.com/in/samuelgoes/ "https://www.linkedin.com/in/samuelgoes/")
 * Jose (CSO) - [https://www.linkedin.com/in/jsanjup/](https://www.linkedin.com/in/jsanjup/ "https://www.linkedin.com/in/jsanjup/")
 * Daniel (Backend engineer) - [https://www.linkedin.com/in/daniel-moledo-garcia-655004192/](https://www.linkedin.com/in/daniel-moledo-garcia-655004192/ "https://www.linkedin.com/in/daniel-moledo-garcia-655004192/")
-* Ángela (Frontend engineer) - [https://www.linkedin.com/in/angela-benavente-almazan/](https://www.linkedin.com/in/angela-benavente-almazan/ "https://www.linkedin.com/in/angela-benavente-almazan/") 
+* Ángela (Frontend engineer) - [https://www.linkedin.com/in/angela-benavente-almazan/](https://www.linkedin.com/in/angela-benavente-almazan/ "https://www.linkedin.com/in/angela-benavente-almazan/")
 * Estefanía (UX/UI designer) - [https://www.linkedin.com/in/tefy-zambrano/](https://www.linkedin.com/in/tefy-zambrano/ "https://www.linkedin.com/in/tefy-zambrano/")
 
 Our way of working in the visual area is:
