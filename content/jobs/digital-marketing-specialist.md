@@ -7,7 +7,7 @@ meta_data:
     facebook_and_whatsapp: ''
     linkedin: ''
   date: 2022-06-05T23:00:00.000+00:00
-title: Digital Marketing Specialist
+title: Digital Marketing Specialist (Closed)
 description: Help us take the GATACA brand to the next level
 author: ''
 active: false

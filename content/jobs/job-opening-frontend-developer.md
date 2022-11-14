@@ -1,23 +1,22 @@
 ---
 meta_data:
-  title: Job - Frontend Developer
-  description: Job - Frontend Developer
+  date: 2022-11-14T16:42:38Z
+  title: Job opening - Frontend Developer
+  description: 'We need a person who can participate in the design, implementation,
+    and delivery of complex products (both B2B and B2C). '
   rrss_images:
     twitter: "/static/images/christopher-gower-unsplash.jpg"
-    facebook_and_whatsapp: "/static/images/christopher-gower-unsplash.jpg"
+    facebook_and_whatsapp: ''
     linkedin: "/static/images/christopher-gower-unsplash.jpg"
-  date: 2022-11-14T16:24:07Z
-title: Frontend Developer (Closed)
-description: Come and build with us with front-face of Self Sovereign Identity
+active: true
+title: Job opening - Frontend Developer
 author: ''
-active: false
-date: '2022-02-10T12:00:00.000+00:00'
 hero_image: "/static/images/christopher-gower-unsplash.jpg"
 
 ---
 ## Job opening - Frontend Developer
 
-**Who are we?** 
+**Who are we?**
 
 GATACA is a cybersecurity company that provides self-sovereign identity technology. We power users with a mobile ID wallet to enjoy passwordless, hyper-secure, and privacy-preserving access to digital services worldwide. Read more about what we do here: [https://bit.ly/31Us3Ln](https://bit.ly/31Us3Ln "https://bit.ly/31Us3Ln")
 

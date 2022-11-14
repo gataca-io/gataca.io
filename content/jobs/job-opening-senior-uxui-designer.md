@@ -7,7 +7,7 @@ meta_data:
     facebook_and_whatsapp: "/static/images/rawpixel-559744-unsplash.jpg"
     linkedin: "/static/images/rawpixel-559744-unsplash.jpg"
   date: 2022-11-14T16:30:41Z
-title: Senior UX/UI Designer
+title: Senior UX/UI Designer (Closed)
 description: Help us design build the user experience of Self Sovereign Identity
 author: ''
 active: false
