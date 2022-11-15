@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Work+Sans:wght@100;400;500&family=Nixie+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Work+Sans:wght@100;400;500&family=Nixie+One&display=swap");
 
 :root {
   --black: rgba(51, 51, 51);
   --darkblue: rgb(24, 27, 94);
-  --coral: #FF7E79;
-  --bg-grey: #F9F9F9;
+  --coral: #ff7e79;
+  --bg-grey: #f9f9f9;
   --light-grey: #afafaf;
   --grey: #6d6d6d;
   --white: white;
@@ -24,15 +24,37 @@
   --max-width: 760px;
   --max-width-l: 1100px;
   --max-width-xl: 1584px;
-  --border-ga: 2px solid #181B5E;
+  --border-ga: 2px solid #181b5e;
   --font-main: "Work Sans", "Helvetica Neue", Helvetica, sans-serif;
   --font-subtitle: "Nixie One", "Serif", Helvetica, sans-serif;
-  --font-header:  "Work Sans", "Helvetica Neue", Helvetica, sans-serif;
-  --font-logo:  "Orbitron", "Helvetica Neue", Helvetica, sans-serif
+  --font-header: "Work Sans", "Helvetica Neue", Helvetica, sans-serif;
+  --font-logo: "Orbitron", "Helvetica Neue", Helvetica, sans-serif;
+  --ga-colors-bl: #212121;
+  --ga-colors-black: #333333;
+  --ga-colors-grey: #212121;
+  --ga-colors-lightGrey: #fafafa;
+  --ga-colors-mediumGrey: #c3c3c3;
+  --ga-colors-pr: #181b5e;
+  --ga-colors-red: #750e13;
+  --ga-colors-sc: #0353e9;
+  --ga-colors-softGrey: #e3e3ec;
+  --ga-colors-white: white;
+  --ga-leftbar: 200px;
+  --ga-radius: 20px;
+  --ga-shadow: 0 3px 10px #00000010;
+  --ga-shadow-strong: 0 5px 13px #0000002e;
+  --ga-skeleton-lightGrey: #e5e5e5;
+  --ga-skeleton-mediumGrey: #c6c6c6d1;
+  --ga-space: 20px;
+  --ga-space-big: 40px;
+  --ga-space-medium: 30px;
+  --ga-space-micro: 5px;
+  --ga-space-min: 10px;
+  --ga-topbar: 3rem;
 }
 
 body {
-  font-family: "Work Sans","Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Work Sans", "Helvetica Neue", Helvetica, sans-serif;
   overflow-x: hidden;
   color: #000;
   font-size: 16px;
@@ -41,7 +63,7 @@ body {
 a {
   text-decoration: none;
   color: inherit;
-  transition: opacity .2s ease;
+  transition: opacity 0.2s ease;
 }
 
 a:hover {
@@ -55,20 +77,28 @@ ul {
 
 //TYPOGRAPHY-------------------------------------
 
-h3, h4, h5, h6, p{
-  font-family:var(--font-main)
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: var(--font-main);
 }
 
-h3, h4, h5 {
+h3,
+h4,
+h5 {
   color: var(--darkblue);
 }
 
-h1, h2,  {
+h1,
+h2 {
   font-family: var(--font-header);
   color: var(--darkblue);
 }
 
-h1, h2 {
+h1,
+h2 {
   font-weight: 500;
 }
 
@@ -87,7 +117,7 @@ h2 {
 
 h3 {
   font-size: 1.2rem;
-  letter-spacing: -.5px;
+  letter-spacing: -0.5px;
   line-height: 1.6rem;
   //color: #A0A0A0;
   font-weight: normal;
@@ -95,15 +125,17 @@ h3 {
 
 h4 {
   font-size: 1.1rem;
-  letter-spacing: -.5px;
+  letter-spacing: -0.5px;
   line-height: 1.1875;
   //color: #A0A0A0;
   font-weight: normal;
 }
 
-p, span, li {
+p,
+span,
+li {
   font-size: 1rem;
-  letter-spacing: -.5px;
+  letter-spacing: -0.5px;
   line-height: 1.5;
   color: var(--grey);
 }
@@ -117,7 +149,6 @@ p, span, li {
 }
 
 @media (max-width: 672px) {
-
   h1 {
     font-size: 1.5rem;
     letter-spacing: 2px;
@@ -132,19 +163,20 @@ p, span, li {
 
   h3 {
     font-size: 1.1rem;
-    letter-spacing: -.5px;
+    letter-spacing: -0.5px;
     line-height: 1.1875;
     font-weight: normal;
   }
 
-  p, span, li {
+  p,
+  span,
+  li {
     font-size: 1rem;
     line-height: 1.4375;
   }
 }
 
 @media (min-width: 1280px) {
-
   h1 {
     font-size: 2rem;
     letter-spacing: 2px;
@@ -158,12 +190,14 @@ p, span, li {
   }
 
   h3 {
-    letter-spacing: -.5px;
+    letter-spacing: -0.5px;
     line-height: 1.1875;
     font-weight: normal;
   }
 
-  p, span, li {
+  p,
+  span,
+  li {
     line-height: 1.4375;
   }
 }

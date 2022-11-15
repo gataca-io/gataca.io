@@ -74,6 +74,11 @@ export default function HeaderSection(props) {
       list: useCasesData.list,
     },
     {
+      name: "Pricing",
+      id: "pricing",
+      route: "pricing",
+    },
+    {
       name: "Developers",
       id: "developers",
       route: "developers",
@@ -244,40 +249,16 @@ export default function HeaderSection(props) {
                         Education
                       </SideNavLink>
                       <SideNavLink href="/use-cases/financial">
-                        Finance
+                        Financial
                       </SideNavLink>
-
                       <div className={headerStyles.sideNavDivider} />
-                      <SideNavLink
-                        className={headerStyles.sideNavHeadline}
-                        href="/developers"
-                      >
-                        Developers
-                      </SideNavLink>
-                      <SideNavLink
-                        href="https://gataca.atlassian.net/wiki/spaces/developers/overview"
-                        target={"_blank"}
-                      >
-                        General documentation
-                      </SideNavLink>
-                      <SideNavLink
-                        href="https://api.gataca.io/"
-                        target={"_blank"}
-                      >
-                        APIs
-                      </SideNavLink>
 
-                      <div className={headerStyles.sideNavDivider} />
                       <SideNavLink href="/blog/">Blog</SideNavLink>
 
                       <div className={headerStyles.sideNavDivider} />
                       <SideNavLink href="/company/about/">About</SideNavLink>
                       <SideNavLink href="/company/jobs/">Jobs</SideNavLink>
                       <SideNavLink href="/company/press/">Press</SideNavLink>
-                      <SideNavLink href="/company/jobs/">Jobs</SideNavLink>
-                      <SideNavLink href="/company/contact/">
-                        Contact
-                      </SideNavLink>
                     </SideNavItems>
                   </SideNav>
                 </Header>
