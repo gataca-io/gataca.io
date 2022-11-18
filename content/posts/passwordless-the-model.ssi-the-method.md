@@ -37,7 +37,7 @@ Due to their operation, Passwordless systems need a secure channel, through whic
 
 Secrets sent by SMS or emails, makes use of these channels as a way of communicating one-time passwords (OTP) or special links. Given the ubiquity of cell phones or email, it is one of the most common implementations.
 
-### Single Sign-on (SSO)
+### Single Sign-On (SSO)
 
 Another popular implementation is known as SSO. Systems that use this flow employ a trusted third party, who does the work of identifying the user on their systems and provides the user profile information to the new system.
 

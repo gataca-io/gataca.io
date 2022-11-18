@@ -13,13 +13,12 @@
     "description": "<p>The GATACA technology enables a way of sharing information in a secure, simple and friendly way to any of the industry sectors. Here, Gataca share all the information necessary to understand how this technology works and how to integrate with your systems</p>"
   },
   "bigBulletsSection": {
-    "bullets": [
-      {
+    "bullets": [{
         "icon": "/images/building.svg",
         "link": "https://cloud.gataca.io",
         "image": "/illustrations/fast_login_gataca.svg",
-        "ctaText" : "Open gataca Cloud",
-        "title": "Fast and easy single QR Sing-On",
+        "ctaText": "Open gataca Cloud",
+        "title": "Fast and easy single QR Sign-On",
         "shortDescription": "<p>Start using SSI in four steps to manage your session. Integrated OpenIDConnect Vouch.... (RELLENAR)</p>",
         "description": "<p>Start using SSI with four simple steps to manage your session. Integrated OpenIDConnect Vouch.... blabalabla (RELLENAR / REESCRIBIR)</p>"
       },
@@ -36,7 +35,7 @@
         "link": "/company/contact",
         "image": "/illustrations/custom_build.svg",
         "title": "Custom needs?",
-        "ctaText" : "Get in touch",
+        "ctaText": "Get in touch",
         "shortDescription": "<p>Know how Gataca works, and how to integrate with your systems.</p>",
         "description": "<p>If you need a customized service or and on-premise implementation of our SSI technology. We will study and build your case to fit your needs.</p>"
       }
@@ -46,8 +45,7 @@
     "title": "The Ecosystem",
     "icon": "/images/3-triangle.svg",
     "description": "",
-    "bullets": [
-      {
+    "bullets": [{
         "image": "/images/building.svg",
         "title": "Banking",
         "subtitle": "Seamless & secure online banking\n",
@@ -91,4 +89,3 @@
     "ctaText": "Get in touch"
   }
 }
-

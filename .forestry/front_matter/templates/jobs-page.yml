@@ -83,3 +83,4 @@ fields:
   description: Enter hero image for blog post here
 pages:
 - content/jobs/digital-marketing-specialist.md
+- content/jobs/job-opening-frontend-developer.md
