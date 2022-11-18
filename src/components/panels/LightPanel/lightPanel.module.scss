@@ -1,0 +1,19 @@
+@import "../../../styles/aux/media-mixins";
+
+.lightPanel {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: fit-content;
+  padding: var(--ga-space) var(--ga-space-min);
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+
+  @include media-for-mobile-m-up {
+    padding: var(--ga-space);
+  }
+}
