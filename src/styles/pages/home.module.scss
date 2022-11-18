@@ -325,11 +325,139 @@
     }
   }
 
-  & > div {
-    // display: flex;
-    // flex-direction: row;
-    // flex-wrap: wrap;
-    // justify-content: space-between;
+  &__bulletsContainer {
+    margin-top: 20px;
+    display: flex;
+    width: 90%;
+    max-width: 1180px;
+    margin: auto;
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 0 var(--baseSpacing);
+
+    @include media-for-phone-only {
+      padding: 0;
+      width: 100%;
+    }
+
+    /* Animation */
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(calc(-250px * 7));
+      }
+    }
+
+    /*  Styling  */
+    .logosHomePageMobile {
+      @include media-for-phone-only {
+        display: flex;
+      }
+      display: none;
+      flex-direction: row;
+      max-width: 355px;
+
+      justify-content: space-around;
+      flex-wrap: wrap;
+
+      & > div {
+        padding: 5px;
+
+        & > img {
+          margin-bottom: 20px;
+        }
+      }
+    }
+    #logosHomePage .slider {
+      height: auto;
+      margin: auto;
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      max-width: 1100px;
+      margin: auto;
+      @include media-for-phone-only {
+        display: none;
+      }
+    }
+    .slide {
+      width: 250px !important;
+      // height: 100px !important;
+      // margin-bottom: 0 !important;
+      & > img {
+        width: 250px !important;
+        height: 100px !important;
+        margin-bottom: 0 !important;
+      }
+    }
+    #logosHomePage {
+      max-width: 90vw;
+    }
+    #logosHomePage .slider:before,
+    #logosHomePage .slider:after {
+      background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      content: "";
+      height: 100px;
+      position: absolute;
+      width: 50px;
+      z-index: 2;
+    }
+
+    #logosHomePage .slider:after {
+      right: 0;
+      top: 0;
+      transform: rotateZ(180deg);
+    }
+
+    #logosHomePage .slider:before {
+      left: 0;
+      top: 0;
+    }
+    #logosHomePage .slideTrack {
+      animation: scroll 50s linear infinite;
+      display: flex;
+      width: calc(275px * 42);
+    }
+
+    #logosHomePage div.slide {
+      margin: 0 15px;
+    }
+
+    &__bullet {
+      &__image {
+        margin-bottom: 0 !important;
+        max-height: 100px;
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .bulletsContainer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 0;
+
+    @include media-for-phone-only {
+      flex-direction: column;
+      align-items: center;
+      text-align: left;
+      & > div {
+        & > div {
+          justify-content: flex-start;
+        }
+      }
+    }
   }
 }
 

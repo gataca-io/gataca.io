@@ -14,6 +14,7 @@ import preLaunchModaldata from "../../content/data/prelaunchModalData.json"
 import launchModaldata from "../../content/data/launchModalData.json"
 
 export default function IndexPage() {
+  const timesToRepeatCarrouselImages = 2
   let preLaunchModalSeen
   let launchModalSeen
 
@@ -138,10 +139,43 @@ export default function IndexPage() {
             })}
           </div>
           <h3>{homeData.fifthSection.subtitle}</h3>
-          <div>
-            {homeData.fifthSection.trustedBy.map((item) => {
-              return <img src={item.image} alt={item.alt} />
-            })}
+          <div className={homeStyles.fifthSection__bulletsContainer}>
+            <div className={homeStyles.logosHomePageMobile}>
+              {homeData.fifthSection.trustedBy.map((item) => {
+                return (
+                  <div>
+                    <img
+                      class="alignnone size-full wp-image-13024"
+                      src={item?.image}
+                      alt={item?.alt}
+                      width="155"
+                      height="64"
+                    />
+                  </div>
+                )
+              })}
+            </div>
+            <div id={homeStyles.logosHomePage}>
+              <div className={homeStyles.slider}>
+                <div className={homeStyles.slideTrack}>
+                  {[...Array(timesToRepeatCarrouselImages)].map((e, i) => {
+                    return homeData.fifthSection.trustedBy.map((item) => {
+                      return (
+                        <div className={homeStyles.slide}>
+                          <img
+                            class="alignnone size-full wp-image-13024"
+                            src={item?.image}
+                            alt={item?.alt}
+                            width="250"
+                            height="100"
+                          />
+                        </div>
+                      )
+                    })
+                  })}
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 

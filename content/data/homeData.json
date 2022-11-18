@@ -151,6 +151,18 @@
       {
         "image": "/images/rovira-i-virgili-logo.svg",
         "alt": "Universitat Rovira i Virgili Logo"
+      },
+      {
+        "image": "/images/european-comission-logo.svg",
+        "alt": "European Comission Logo"
+      },
+      {
+        "image": "/images/early-adopters-logo.svg",
+        "alt": "Early Adopters Logo"
+      },
+      {
+        "image": "/images/una-europa-logo.svg",
+        "alt": "Una Europa Logo"
       }
     ]
   },
