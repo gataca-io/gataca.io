@@ -1,5 +1,4 @@
 import React from "react" // we need this to make JSX compile
-import { IPriceModel } from "../../interfaces/interfactes"
 import DarkButton from "../buttons/DarkButton/DarkButton"
 import SwitchButton from "../buttons/SwitchButton/SwicthButton"
 import LicenseCard from "../LicenseCard/LicenseCard"
@@ -22,12 +21,8 @@ const LicensesTable: React.FC<ILicensesTableProps> = (props) => {
     licenseIsEnterprise,
   } = props
 
-  const getPrice = (prices: IPriceModel[]) => {
-    const selectedPeriodPrice = prices?.filter((el) => {
-      return el.recurringInterval === switchPeriodValue
-    })[0]
-
-    return selectedPeriodPrice?.amount ? selectedPeriodPrice?.amount / 100 : 0
+  const getPrice = (item: any) => {
+    return switchPeriodValue === "year" ? item.yearlyPrice : item.monthlyPrice
   }
 
   return (
@@ -77,7 +72,7 @@ const LicensesTable: React.FC<ILicensesTableProps> = (props) => {
                                   : ""
                               }`}
                             >
-                              <span>{getPrice(license?.prices)}€</span>
+                              <span>{getPrice(license)}€</span>
                               {" /"}
                               &nbsp;
                               {switchPeriodValue}
@@ -95,7 +90,7 @@ const LicensesTable: React.FC<ILicensesTableProps> = (props) => {
                                   : ""
                               }`}
                             >
-                              Custom Pricing
+                              {getPrice(license)}
                             </p>
                             <p className={styles.licenseAdapted}>
                               A plan that adapts to your company's needs
