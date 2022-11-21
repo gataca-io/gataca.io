@@ -12,14 +12,13 @@
     "buttonText": "Start free",
     "buttonLink": "https://studio.gataca.io/login"
   },
-
   "firstSection": {
       "title": "Saas Subscription Plans",
       "products": [
         {
           "id": "prod_MGzBzDyVeNERb0",
           "name": "Starter",
-          "description": "For teams looking to get started with the SSI basics.",
+          "description": "30-day trial for companies looking to get started with the SSI basics",
           "type": "Starter",
           "prices": [
             {
@@ -27,25 +26,24 @@
               "name": "",
               "currency": "",
               "recurringInterval": "year",
-              "amount": 0,
+              "amount": 12900,
               "type": ""
           },
             {
               "id": "",
               "name": "",
               "currency": "",
-              "recurringInterval": "monthly",
-              "amount": 0,
+              "recurringInterval": "month",
+              "amount": 1200,
               "type": ""
             }
-
           ],
           "features": {
             "verificationTemplates": 1,
             "activeUsers": 5,
             "activeUsersInfo": "An active user is a verified user with an active consent. We charge a fix monthly fee per user, not per login event.",
             "issuanceTemplates": 1,
-            "issuedCredentials": 10,
+            "issuedCredentials": 5,
             "issuedCredentialsInfo": "Becoming an issuer in the public catalogue requires a validation process to verify the identity of the issuer and approve its issuance rights.",
             "dids": 1,
             "apiKeys": 1,
@@ -62,8 +60,8 @@
         },
         {
           "id": "prod_MGyG01jd583li0",
-          "name": "Gataca Studio Basic",
-          "description": "For companies ready to implement SSI and test out its benefits.",
+          "name": "Essential",
+          "description": "For companies looking to scale their SSI implementation",
           "type": "Essential",
           "prices": [
             {
@@ -71,27 +69,26 @@
               "name": "Essential yearly",
               "currency": "eur",
               "recurringInterval": "year",
-              "amount": 99000,
+              "amount": 160900,
               "type": "recurring"
-          },
-          {
+            },
+            {
               "id": "price_1LYQKIAqokRFGnUOlgl7rgED",
               "name": "Essential monthly",
               "currency": "eur",
               "recurringInterval": "month",
-              "amount": 9900,
+              "amount": 14900,
               "type": "recurring"
-          }
-            
+            }
           ],
           "features": {
             "verificationTemplates": 2,
-            "activeUsers": 100,
+            "activeUsers": 1000,
             "activeUsersInfo": "An active user is a verified user with an active consent. We charge a fix monthly fee per user, not per login event.",
-            "issuanceTemplates": 2,
-            "issuedCredentials": 100,
+            "issuanceTemplates": 1,
+            "issuedCredentials": 10,
             "issuedCredentialsInfo": "Becoming an issuer in the public catalogue requires a validation process to verify the identity of the issuer and approve its issuance rights.",
-            "dids": 1,
+            "dids": 2,
             "apiKeys": 1,
             "apiKeysInfo": "Unique identifier and authentication keys to provide access to specific Issuance and/or verification templates to your applications calling the Gataca Studio APIs.",
             "notifications": ["Web"],
@@ -106,30 +103,30 @@
         },
         {
           "id": "prod_MGz6kA9IqpZSwn",
-          "name": "Advanced",
-          "description": "For companies looking to scale their SSI implementation",
-          "type": "Pro",
+          "name": "Professional",
+          "description": "For experienced companies ready for a large scale rollout of SSI",
+          "type": "Professional",
           "prices": [
             {
               "id": "price_1LYR82AqokRFGnUO7BJtK4sT",
               "name": "Advanced yearly",
               "currency": "eur",
               "recurringInterval": "year",
-              "amount": 499000,
+              "amount": 2041200,
               "type": "recurring"
-          },
-          {
+            },
+            {
               "id": "price_1LYR82AqokRFGnUObYJ7Y1eY",
               "name": "Advanced monthly",
               "currency": "eur",
               "recurringInterval": "month",
-              "amount": 49900,
+              "amount": 189000,
               "type": "recurring"
-          }
+            }
           ],
           "features": {
             "verificationTemplates": 5,
-            "activeUsers": 1000,
+            "activeUsers": 10000,
             "activeUsersInfo": "An active user is a verified user with an active consent. We charge a fix monthly fee per user, not per login event.",
             "issuanceTemplates": 2,
             "issuedCredentials": 1000,
@@ -150,7 +147,7 @@
         {
           "id": "prod_MGz7OnGxvqnDfa",
           "name": "Enterprise",
-          "description": "For experienced companies ready for a large scale rollout of SSI.",
+          "description": "For companies that have mastered SSI and need extra care",
           "type": "Enterprise",
           "prices": [
             {
@@ -158,24 +155,24 @@
               "name": "Enterprise yearly",
               "currency": "eur",
               "recurringInterval": "year",
-              "amount": 4999000,
+              "amount": 9999000,
               "type": "recurring"
-          },
-          {
+            },
+            {
               "id": "price_1LYR8uAqokRFGnUO0h89BaaE",
               "name": "Enterprise monthly",
               "currency": "eur",
               "recurringInterval": "month",
-              "amount": 499900,
+              "amount": 999900,
               "type": "recurring"
-          }
+            }
           ],
           "features": {
             "verificationTemplates": "∞",
-            "activeUsers": 10000,
+            "activeUsers": "∞",
             "activeUsersInfo": "'An active user is a verified user with an active consent. We charge a fix monthly fee per user, not per login event. Add aditiona Active User for 0,12€ each.'",
             "issuanceTemplates": "∞",
-            "issuedCredentials": 10000,
+            "issuedCredentials": "∞",
             "issuedCredentialsInfo": "Becoming an issuer in the public catalogue requires a validation process to verify the identity of the issuer and approve its issuance rights. Add aditional Issued VC for 0,10€ each.",
             "dids": "∞",
             "apiKeys": "∞",
@@ -217,32 +214,39 @@
       "buttonLink": "/company/contact"
   },
   "thirdSection": {
-      "topItems": {
-          "title": "These pioneering companies trust GATACA",
-          "items": [
-              {
-                  "image": "/images/redes-logo.svg"
-              },
-              {
-                  "image": "/images/bankinter-logo.svg"
-              },
-              {
-                  "image": "/images/rovira-i-virgili-logo.svg"
-              },
-              {
-                "image": "/images/idemia-logo.svg"
-              },
-              {
-                "image": "/images/early-adopters-logo.svg"
-              },
-              {
-                "image": "/images/european-comission-logo.svg"
-              },
-              {
-                "image": "/images/una-europa-logo.svg"
-              }
-          ]
-      }
+    "topItems": {
+      "title": "These pioneering companies trust GATACA",
+      "items": [
+        {
+          "image": "/images/redes-logo.svg",
+          "alt": "Red.es Logo"
+        },
+        {
+          "image": "/images/bankinter-logo.svg",
+          "alt": "Bankinter Logo"
+        },
+        {
+          "image": "/images/idemia-logo.svg",
+          "alt": "Idemia Logo"
+        },
+        {
+          "image": "/images/rovira-i-virgili-logo.svg",
+          "alt": "Universitat Rovira i Virgili Logo"
+        },
+        {
+          "image": "/images/european-comission-logo.svg",
+          "alt": "European Comission Logo"
+        },
+        {
+          "image": "/images/early-adopters-logo.svg",
+          "alt": "Early Adopters Logo"
+        },
+        {
+          "image": "/images/una-europa-logo.svg",
+          "alt": "Una Europa Logo"
+        }
+      ]
+    }
   },
   "fourthSection": {
     "title": "FAQs",
@@ -281,10 +285,8 @@
           ]
         }
     ]
-},
-  "bottomSection": {
-    "title": "Stay ahead of the innovation race",
-    "buttonText": "Chat with us",
-    "buttonLink": "/company/contact"
-  }
+  },
+  "fifthSection": {
+    "title": "Full Feature Breakdown"
+}
 }

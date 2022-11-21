@@ -7,6 +7,7 @@
   margin-right: var(--ga-space-micro);
   padding: var(--ga-space) 15px;
   position: relative;
+  min-height: 540px;
 
   &__tag {
     display: block;
@@ -27,7 +28,6 @@
     & > p {
       font-size: 12px;
       font-weight: bold;
-      color: var(--ga-colors-pr);
     }
   }
 
@@ -49,16 +49,16 @@
     &__title {
       font-weight: bold !important;
       width: calc(100% - 70px);
-      color: var(--ga-colors-pr);
-      margin-bottom: 0 !important;
+      color: var(--darkblue);
+      margin-bottom: 0;
     }
     &__popularTag {
-      background-color: var(--ga-colors-pr);
+      background-color: var(--darkblue);
       border-radius: 5px;
       padding: 3px 8px;
       width: fit-content;
       margin-left: auto;
-      height: 25px;
+      height: 23px;
       & > p {
         color: white;
         font-weight: bold;
@@ -71,17 +71,50 @@
     margin-top: var(--ga-space-micro);
     margin-bottom: var(--ga-space-micro);
     font-size: 14px;
+    min-height: 54px;
   }
 
   &__price {
-    color: var(--ga-colors-pr);
-    margin-bottom: 0 !important;
-
+    color: var(--darkblue);
+    margin-bottom: 0;
     & > span {
       font-size: 40px;
       font-weight: bold;
-      color: var(--ga-colors-pr);
+      color: var(--darkblue);
     }
+  }
+
+  &__priceLarge {
+    margin-bottom: 19px;
+  }
+
+  &__customPrice {
+    color: var(--darkblue);
+    margin-top: 10px;
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 7px;
+    margin: 0;
+  }
+
+  &__customPriceLarge {
+    margin: 0;
+  }
+
+  &__save {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: var(--darkblue);
+  }
+
+  &__adapted {
+    font-size: 14px;
+    margin-bottom: 0px;
+    color: var(--darkblue);
+  }
+
+  &__adaptedLarge {
+    margin-bottom: 8px;
   }
 
   &__features {
@@ -92,7 +125,6 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
     & > div {
       min-width: 232px;
     }
@@ -100,8 +132,7 @@
       font-size: 14px;
       font-weight: bold;
       margin-bottom: var(--ga-space-min);
-      color: var(--ga-colors-pr);
-      margin-bottom: 15px !important;
+      color: var(--darkblue);
     }
 
     &__list {
@@ -117,6 +148,7 @@
           margin-left: 16px;
 
           & > span {
+            font-size: 14px;
             color: #a1a1a1 !important;
           }
         }
@@ -131,7 +163,6 @@
         align-items: flex-start;
         & > img {
           margin: 3px 0;
-          margin-bottom: 0 !important;
         }
         &__content {
           display: flex;
@@ -143,80 +174,77 @@
             font-weight: bold;
             font-size: 13px;
             margin: 3px 0;
+            color: var(--darkblue);
             line-height: 15px !important;
-            color: var(--ga-colors-pr);
           }
           & > .featureName {
-            color: var(--ga-colors-pr);
+            color: var(--darkblue);
             font-size: 13px;
             font-weight: normal !important;
             width: fit-content;
-            color: var(--ga-colors-pr);
-            margin-bottom: 0 !important;
+            margin-bottom: 0;
           }
 
           .featureQuantity {
             font-weight: bold;
             font-size: 13px;
-            color: var(--ga-colors-pr);
           }
         }
         & > span {
           font-weight: bold;
           font-size: 13px;
           line-height: 15px !important;
-          color: var(--ga-colors-pr);
         }
         & > .featureName {
-          color: var(--ga-colors-pr);
+          color: var(--darkblue);
           font-size: 13px;
           font-weight: normal !important;
           width: fit-content;
-          margin-bottom: 0 !important;
           // margin-left: 10px;
         }
 
         .featureQuantity {
           font-weight: bold;
           font-size: 13px;
-          color: var(--ga-colors-pr);
+          color: var(--darkblue);
+          margin-bottom: 0;
+          margin-top: 2.2px;
+          height: 18px;
         }
 
         & > div > div > .featureQuantity {
           font-weight: bold;
           font-size: 13px;
-          color: var(--ga-colors-pr);
         }
         & > div > div > .featureName {
-          color: var(--ga-colors-pr);
+          color: var(--darkblue);
           font-size: 13px;
           font-weight: normal !important;
           width: fit-content;
-          margin-bottom: 0 !important;
-        }
-        & > div > div > img {
-          margin: 3px 0;
-          margin-bottom: 0 !important;
         }
       }
     }
   }
+
   &__button {
     font-weight: bold;
-    margin-top: var(--ga-space-min);
-    width: 100%;
+    width: 100% !important;
     display: flex;
     justify-content: center;
-  }
 
-  &__button__features {
-    font-weight: bold;
-    margin-top: var(--ga-space-min);
+    background-color: var(--darkblue);
+  }
+  &__button:nth-of-type(1) {
+    margin-top: auto;
+    // margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  &__button:nth-of-type(2) {
     background-color: white;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    border: none !important;
+    border: none;
+    &:hover {
+      border: 1px solid var(--darkblue);
+    }
   }
 }
 

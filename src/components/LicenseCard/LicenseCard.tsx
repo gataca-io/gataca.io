@@ -8,7 +8,6 @@ import DarkButton from "../buttons/DarkButton/DarkButton"
 import LightButton from "../buttons/LightButton/LightButton"
 import LightPanel from "../panels/LightPanel/LightPanel"
 import Description from "../texts/Description/Description"
-import RegularTooltip from "../tooltips/RegularTootltip/RegularTootltip"
 import styles from "./licenseCard.module.scss"
 
 type ILicenseCardProps = {
@@ -57,25 +56,13 @@ const Feature: React.FC<IFeatureProps> = (props) => {
     </li>
   ) : (
     <li className={styles.license__features__list__item}>
-      <RegularTooltip
-        positionMobile={{
-          align: "center",
-          direction: "bottom",
-        }}
-        label={
-          <>
-            <img src="/icons/check.svg" alt={"Gataca Google Play"} />
-            &nbsp;&nbsp;
-            <span className={styles.featureQuantity}>{feature}</span>
-            <p className={styles.featureName}>
-              &nbsp;
-              {label}
-            </p>
-          </>
-        }
-        info={info || ""}
-        blue={true}
-      />
+      <img src="/icons/check.svg" alt={"Gataca Google Play"} />
+      &nbsp;&nbsp;
+      <span className={styles.featureQuantity}>{feature}</span>
+      <p className={styles.featureName}>
+        &nbsp;
+        {label}
+      </p>
     </li>
   )
 }
@@ -92,6 +79,9 @@ const LicenseCard: React.FC<ILicenseCardProps> = (props) => {
     popularLicenseType,
   } = props
 
+  const scrollToFeatures = () =>
+    document?.getElementById("topOfAllFeatures")?.scrollIntoView(true)
+
   const getPrice = (prices: IPriceModel[]) => {
     const selectedPeriodPrice = prices?.filter((el) => {
       return el.recurringInterval === period
@@ -100,22 +90,16 @@ const LicenseCard: React.FC<ILicenseCardProps> = (props) => {
     return selectedPeriodPrice?.amount ? selectedPeriodPrice?.amount / 100 : 0
   }
 
+  const licenseIsEnterprise = license?.name
+    ?.toLowerCase()
+    ?.includes("enterprise")
+
   return (
     <LightPanel
       className={`${styles.license} ${
         isCurrentLicense ? styles.currentLicense : ""
       }`}
     >
-      {isNewLicense && (
-        <div className={styles.license__tag}>
-          <p>New Plan</p>
-        </div>
-      )}
-      {isCurrentLicense && (
-        <div className={styles.license__tag}>
-          <p>Current Plan</p>
-        </div>
-      )}
       <div className={styles.license__header}>
         <p className={styles.license__header__title}>{license?.type}</p>
         {license?.type === popularLicenseType && (
@@ -130,10 +114,42 @@ const LicenseCard: React.FC<ILicenseCardProps> = (props) => {
           text={license?.description}
         />
       )}
-      <p className={styles.license__price}>
+      {!licenseIsEnterprise ? (
+        <>
+          <p
+            className={`${styles.license__price} ${
+              period === "month" ? styles.license__priceLarge : ""
+            }`}
+          >
+            <span>{getPrice(license?.prices || [])}€</span> &nbsp;
+            {"/ " + period}
+          </p>
+          {period === "year" && (
+            <span className={styles.license__save}>Save 10%</span>
+          )}
+        </>
+      ) : (
+        <>
+          <p
+            className={`${styles.license__customPrice} ${
+              period === "year" ? styles.license__customPriceLarge : ""
+            }`}
+          >
+            Custom pricing
+          </p>
+          <span
+            className={`${styles.license__adapted} ${
+              period === "year" ? styles.license__adaptedLarge : ""
+            }`}
+          >
+            A plan that adapts to your company's needs
+          </span>
+        </>
+      )}
+      {/* <p className={styles.license__price}>
         <span>{getPrice(license?.prices)}€</span> &nbsp;
-        {/* TODO: TRANSLATE */}/ {period}
-      </p>
+      / {period}
+      </p> */}
       <div className={styles.license__features}>
         <div>
           <p className={styles.license__features__title}>Features</p>
@@ -271,21 +287,19 @@ const LicenseCard: React.FC<ILicenseCardProps> = (props) => {
       {firstButton && (
         <DarkButton
           className={styles.license__button}
-          text={
-            isCurrentLicense
-              ? "Current"
-              : license?.type === "Trial"
-              ? "Switch to Free"
-              : "Upgrade to " + license?.type
-          }
+          text={license?.type !== "Enterprise" ? "Get Started" : "Contact Us"}
           disabled={!!isCurrentLicense}
-          functionality={firstButton.function}
+          functionality={() =>
+            !licenseIsEnterprise
+              ? window?.open("https://studio.gataca.io/login", "_blank")
+              : window?.open("https://gataca.io/company/contact", "_blank")
+          }
         />
       )}
       {secondButton && (
         <LightButton
-          className={styles.license__button__features}
-          functionality={secondButton?.function}
+          className={styles.license__button}
+          functionality={scrollToFeatures}
           text={secondButton.label}
           disabled={false}
         />
