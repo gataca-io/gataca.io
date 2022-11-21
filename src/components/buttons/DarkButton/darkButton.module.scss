@@ -31,16 +31,16 @@
 }
 
 .darkButtonActive {
-  border: 1px solid var(--ga-colors-pr);
-  background-color: var(--ga-colors-pr);
+  border: 1px solid var(--darkblue);
+  background-color: var(--darkblue);
   color: var(--ga-colors-white);
   cursor: pointer;
   font-weight: bold;
 
   &:hover {
     background-color: var(--ga-colors-white);
-    box-shadow: var(--ga-shadow-strong);
-    color: var(--ga-colors-pr);
+    box-shadow: var(--ga-shadow);
+    color: var(--darkblue);
   }
 }
 
@@ -62,6 +62,6 @@
 
 .darkButtonIconActive {
   & > path {
-    stroke: var(--ga-colors-pr);
+    stroke: var(--darkblue);
   }
 }

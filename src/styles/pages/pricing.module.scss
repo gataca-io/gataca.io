@@ -760,6 +760,28 @@
   }
 }
 
+.fifthSection {
+  display: flex;
+  justify-content: center;
+  padding: var(--baseSpacingDouble) var(--baseSpacing);
+  flex-direction: column;
+  background-color: white;
+  @include media-for-tablet-l-portrait-up {
+    padding: 160px 175px;
+  }
+  & > h2 {
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 40px;
+    color: var(--darkblue);
+    text-align: center;
+    text-shadow: 0 4px 10px rgb(0 0 0 / 15%);
+    @include media-for-tablet-l-portrait-up {
+      margin-bottom: 80px;
+    }
+  }
+}
+
 .circle1 {
   position: absolute;
   top: 20%;

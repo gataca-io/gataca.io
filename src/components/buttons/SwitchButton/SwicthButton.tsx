@@ -34,8 +34,8 @@ const SwitchButton: React.FC<SwitchButtonProps> = React.memo((props) => {
               type="radio"
               id="switchMonthly"
               name="switchPlan"
-              value="Monthly"
-              checked={checkedValue === option.value}
+              value={option.value}
+              checked={checkedValue === option.value ? true : false}
             />
           )
         })}

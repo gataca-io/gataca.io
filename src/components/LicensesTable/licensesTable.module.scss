@@ -1,0 +1,293 @@
+@import "../../styles/aux/media-mixins";
+
+.periodToggle {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  padding-bottom: var(--ga-space);
+  & > span {
+    font-weight: bold;
+    font-size: 1rem;
+    color: var(--darkblue);
+  }
+}
+
+.periodCheckbox {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.periodCheckboxLabel {
+  cursor: pointer;
+  text-indent: 49px;
+  width: 41px;
+  height: 18px;
+  background: white;
+  border: 2px solid var(--darkblue);
+  display: block;
+  border-radius: 90px;
+  position: relative;
+  margin-right: var(--ga-space-min);
+  margin-bottom: 2px;
+}
+
+.periodCheckboxLabel:after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border: 2px solid var(--darkblue);
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+.periodCheckbox:checked + .periodCheckboxLabel {
+  background: var(--darkblue);
+}
+
+.periodCheckbox:checked + .periodCheckboxLabel:after {
+  width: 18px;
+  left: calc(100% - 16px);
+}
+
+.periodCheckboxLabel:active:after {
+  width: 22px;
+}
+
+.tableContainer {
+  overflow: scroll;
+  max-height: calc(100% - 116px);
+  max-width: 100%;
+  padding-right: var(--ga-space);
+  display: none;
+  @include media-for-tablet-s {
+    display: block;
+  }
+}
+
+table {
+  border-collapse: separate !important;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 1260px;
+}
+
+.table__header {
+  &__cell {
+    border: 1px solid rgba(227, 227, 227, 1);
+    padding: 12px !important;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 16px;
+    color: var(--darkblue);
+    width: 175px;
+
+    &:first-child {
+      border-top-left-radius: 12px;
+    }
+
+    &__content {
+      justify-content: space-between;
+      flex-direction: column;
+      height: 100%;
+      width: 100%;
+      vertical-align: top;
+      align-items: center;
+      text-align: left;
+      display: inline-flex;
+
+      .license__header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        width: 181px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        & > .licenseName {
+          font-weight: bold;
+          font-size: 16px;
+          width: 100%;
+          font-weight: bold !important;
+          width: calc(100% - 70px);
+          color: var(--darkblue);
+          margin-bottom: 0;
+        }
+        &__popularTag {
+          background-color: var(--darkblue);
+          border-radius: 5px;
+          padding: 3px 8px;
+          width: fit-content;
+          margin-left: auto;
+          height: 25px;
+          & > p {
+            color: white;
+            font-weight: bold;
+            font-size: 12px;
+          }
+        }
+      }
+
+      & > div {
+        width: 100%;
+        & > .licensePrice {
+          margin: var(--ga-space-micro) 0;
+          font-weight: normal;
+          font-size: 16px;
+          width: 100%;
+          color: var(--darkblue);
+
+          & > span {
+            font-size: 25px;
+            font-weight: bold;
+            color: var(--darkblue);
+          }
+        }
+
+        & > .licensePriceLarge {
+          margin-bottom: 49px;
+        }
+        & > .licenseCustomPrice {
+          margin-top: 10px;
+          font-size: 20px;
+          color: var(--darkblue);
+          font-weight: bold;
+          margin-bottom: 0;
+        }
+
+        & > .licenseSave {
+          font-size: 12px;
+          margin-bottom: 30px;
+          height: 14px;
+          color: var(--darkblue);
+        }
+
+        & > .licenseAdapted {
+          font-size: 12px;
+          margin-bottom: 20px;
+          color: var(--darkblue);
+        }
+        & > button {
+          margin-top: 20px;
+          width: 100%;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  &:first-child {
+    & > .table__header__cell:nth-child(2) {
+      -moz-border-top-left-radius: 12px;
+      -webkit-border-top-left-radius: 12px;
+      border-top-left-radius: 12px;
+    }
+    & > .table__header__cell:last-child {
+      -moz-border-top-right-radius: 12px;
+      -webkit-border-top-right-radius: 12px;
+      border-top-right-radius: 12px;
+    }
+    & > th:last-child {
+    }
+  }
+
+  & > th {
+    border-bottom: none !important;
+  }
+}
+
+.table__body {
+  &__row {
+    & > td {
+      border: 1px solid rgba(227, 227, 227, 1);
+      padding: 12px;
+
+      line-height: 16px;
+      color: var(--darkblue);
+    }
+
+    &__category {
+      vertical-align: middle;
+      text-align: center;
+      font-weight: bold;
+      font-size: 13px;
+    }
+    &__subcategory {
+      font-weight: normal;
+      font-size: 14px;
+      & > div {
+        min-width: 205px;
+        & > div {
+          color: var(--darkblue);
+          font-size: 14px;
+        }
+      }
+    }
+    &__data {
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    &:first-child {
+      & > td {
+        &:first-child {
+          -moz-border-top-left-radius: 12px;
+          -webkit-border-top-left-radius: 12px;
+          border-top-left-radius: 12px;
+        }
+      }
+    }
+
+    &:last-child {
+      &:last-child {
+        & > td {
+          &:last-child {
+            -moz-border-bottom-right-radius: 12px;
+            -webkit-border-bottom-right-radius: 12px;
+            border-bottom-right-radius: 12px;
+          }
+        }
+      }
+    }
+
+    &:last-child {
+      border-top-right-radius: 12px;
+    }
+
+    &:nth-child(5) {
+      & > td:nth-child(1) {
+        -moz-border-bottom-left-radius: 12px;
+        -webkit-border-bottom-left-radius: 12px;
+        border-bottom-left-radius: 12px;
+      }
+    }
+  }
+}
+
+.mobileCardsContainer {
+  display: block;
+  overflow: scroll;
+  max-height: calc(100% - 100px);
+  max-width: 100%;
+  padding-bottom: 10px;
+  & > div:first-child {
+    max-width: 320px;
+    margin: 20px auto;
+  }
+  & > div:not(:first-child) {
+    max-width: 320px;
+    margin: 20px auto;
+  }
+  @include media-for-tablet-s {
+    display: none;
+  }
+}
