@@ -1,9 +1,5 @@
 import React from "react" // we need this to make JSX compile
-import {
-  ButtonModel,
-  IPriceModel,
-  IProductModel,
-} from "../../interfaces/interfactes"
+import { ButtonModel, IProductModel } from "../../interfaces/interfactes"
 import DarkButton from "../buttons/DarkButton/DarkButton"
 import LightButton from "../buttons/LightButton/LightButton"
 import LightPanel from "../panels/LightPanel/LightPanel"
@@ -82,12 +78,8 @@ const LicenseCard: React.FC<ILicenseCardProps> = (props) => {
   const scrollToFeatures = () =>
     document?.getElementById("topOfAllFeatures")?.scrollIntoView(true)
 
-  const getPrice = (prices: IPriceModel[]) => {
-    const selectedPeriodPrice = prices?.filter((el) => {
-      return el.recurringInterval === period
-    })[0]
-
-    return selectedPeriodPrice?.amount ? selectedPeriodPrice?.amount / 100 : 0
+  const getPrice = (item: any) => {
+    return period === "year" ? item.yearlyPrice : item.monthlyPrice
   }
 
   const licenseIsEnterprise = license?.name
@@ -121,7 +113,7 @@ const LicenseCard: React.FC<ILicenseCardProps> = (props) => {
               period === "month" ? styles.license__priceLarge : ""
             }`}
           >
-            <span>{getPrice(license?.prices || [])}€</span> &nbsp;
+            <span>{getPrice(license)}€</span> &nbsp;
             {"/ " + period}
           </p>
           {period === "year" && (
@@ -135,7 +127,7 @@ const LicenseCard: React.FC<ILicenseCardProps> = (props) => {
               period === "year" ? styles.license__customPriceLarge : ""
             }`}
           >
-            Custom pricing
+            {getPrice(license)}
           </p>
           <span
             className={`${styles.license__adapted} ${
@@ -146,10 +138,6 @@ const LicenseCard: React.FC<ILicenseCardProps> = (props) => {
           </span>
         </>
       )}
-      {/* <p className={styles.license__price}>
-        <span>{getPrice(license?.prices)}€</span> &nbsp;
-      / {period}
-      </p> */}
       <div className={styles.license__features}>
         <div>
           <p className={styles.license__features__title}>Features</p>

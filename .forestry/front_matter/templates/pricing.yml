@@ -18,71 +18,240 @@ fields:
     label: Description
   label: Metas
 - type: field_group
-  name: introSection
+  name: headline
   label: Price page - Intro Section
   fields:
   - name: title
     type: textarea
-    default: ''
+    default: 'Pricing'
     config:
       required: false
       wysiwyg: false
     label: Title
-  - name: description
+  - name: subtitle
     type: textarea
-    label: Description
-    default: ''
+    label: Subtitle
+    default: 'Pay as you go & grow'
     config:
       required: false
       wysiwyg: true
       schema:
         format: html-blocks
-- type: field_group
-  name: cta
-  label: Price & Plan slots
-  fields:
-  - name: text
+  - name: buttonText
     type: text
-    label: TextHightlightSection text
-    default: ''
+    label: Button text
+    default: 'Start free'
     config:
       required: false
       wysiwyg: false
-  - name: url
+  - name: buttonLink
     type: text
     label: Link
-    default: ''
+    default: 'https://studio.gataca.io/login'
     config:
       required: false
       wysiwyg: false
 - type: field_group
-  name: pricingSlots
-  label: Price & Plan slots
+  name: firstSection
+  label: First Section
+  fields:
+  - name: title
+    type: textarea
+    default: 'Saas Subscription Plans'
+    config:
+      required: false
+      wysiwyg: false
+    label: Title
+  - type: field_group_list
+    name: products
+    label: Licenses
+    fields:
+    - name: name
+    type: textarea
+    default: ''
+    config:
+      required: true
+      wysiwyg: false
+    label: Name
+    - name: description
+    type: textarea
+    default: ''
+    config:
+      required: true
+      wysiwyg: false
+    label: Description
+    - name: yearlyPrice
+      type: textarea
+      default: ''
+      config:
+        required: true
+        wysiwyg: false
+      label: Yearly Price
+    - name: monthlyPrice
+      type: textarea
+      default: ''
+      config:
+        required: true
+        wysiwyg: false
+      label: Monthly Price
+    - type: field_group_list
+      name: features
+      label: Features
+      fields:
+      - name: verificationTemplates
+        type: text
+        default: ''
+        config:
+          required: true
+          wysiwyg: false
+        label: Verification Templates
+      - name: activeUsers
+        type: text
+        default: ''
+        config:
+          required: true
+          wysiwyg: false
+        label: Active Users
+    - name: issuanceTemplates
+        type: text
+        default: ''
+        config:
+          required: true
+          wysiwyg: false
+        label: Issuance Templates
+      - name: issuedCredentials
+        type: text
+        default: ''
+        config:
+          required: true
+          wysiwyg: false
+        label: Issued Credentials
+      - name: dids
+        type: text
+        default: ''
+        config:
+          required: true
+          wysiwyg: false
+        label: DIDs
+      - name: apiKeys
+        type: text
+        default: ''
+        config:
+          required: true
+          wysiwyg: false
+        label: API Keys
+- type: field_group
+  name: secondSection
+  label: Second Section
+  fields:
+  - type: file
+    name: image
+    label: Image
+    config:
+      required: true
+  - name: title
+    type: text
+    default: 'Need extra care?'
+    config:
+      required: true
+      wysiwyg: false
+    label: Title
+  - name: text
+    type: text
+    default: 'For entities who have special integration, customization, security & support needs, contact us to explore other implementation modalities.'
+    config:
+      required: true
+      wysiwyg: false
+    label: Text
+  - name: buttonText
+    type: text
+    default: 'Get in touch'
+    config:
+      required: true
+      wysiwyg: false
+    label: Button Text
+  - name: buttonLink
+    type: text
+    label: Button Link
+    default: '/company/contact'
+    config:
+      required: false
+      wysiwyg: false
+- type: field_group
+  name: thirdSection
+  label: Third Section
   fields:
   - name: title
     type: text
-    label: Gato
-    default: ''
+    default: 'These pioneering companies trust GATACA'
     config:
-      required: false
+      required: true
       wysiwyg: false
-  - name: description
-    type: textarea
-    label: Team Description
-    default: ''
-    config:
-      required: false
-      wysiwyg: true
-      schema:
-        format: html-blocks
-  - type: field_group_list
-    name: bullets
-    label: Team Section
+    label: Title
+  - type: field_group
+    name: items
+    label: Items
     fields:
-    - name: bullet
-      type: text
-      label: Bullet
-      default: Bullet Text
+    - type: file
+      name: image
+      label: Image
       config:
-        required: false
+        required: true
+    - name: alt
+      type: text
+      default: ''
+      config:
+        required: true
         wysiwyg: false
+      label: Alt
+- type: field_group
+  name: fourthSection
+  label: Fourth Section
+  fields:
+  - name: title
+    type: text
+    default: 'FAQs'
+    config:
+      required: true
+      wysiwyg: false
+    label: Title
+  - type: field_group
+    name: list
+    label: Explanations List
+    fields:
+    - name: category
+      type: text
+      default: ''
+      config:
+        required: true
+        wysiwyg: false
+      label: Category
+    - type: field_group
+      name: questions
+      label: Questions
+      fields:
+      - name: title
+        type: text
+        default: ''
+        config:
+          required: true
+          wysiwyg: false
+        label: Title
+      - name: text
+        type: text
+        default: ''
+        config:
+          required: true
+          wysiwyg: false
+        label: Response
+- type: field_group
+  name: fifthSection
+  label: Fifth Section
+  fields:
+  - name: title
+    type: text
+    default: 'Full Feature Breakdown'
+    config:
+      required: true
+      wysiwyg: false
+    label: Title
