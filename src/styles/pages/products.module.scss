@@ -402,9 +402,11 @@
 
     & > .panel:nth-child(2) {
       flex-direction: column;
-      margin-bottom: 180px;
+
+      margin-bottom: 40px;
       @include media-for-tablet-xl {
         flex-direction: row;
+        margin-bottom: 180px;
       }
       & > .panelContent {
         margin-bottom: 20px;
