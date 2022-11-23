@@ -13,13 +13,13 @@
 .container {
   max-width: var(--max-width);
   padding: 5rem 2rem;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
   @include media-for-tablet-portrait-up {
+    text-align: center;
     padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -75,8 +75,9 @@
   justify-content: center;
   height: 52px;
   width: 320px;
-  padding: 20px;
+  padding: 0;
   margin: 0;
+  margin-top: 10px;
   color: var(--white);
   border: 2px solid var(--darkblue);
 
@@ -89,6 +90,8 @@
   @include media-for-phone-only {
     display: flex;
     justify-content: center;
+    padding: 0;
     width: 100%;
+    margin: auto;
   }
 }

@@ -1,5 +1,5 @@
 import React, { FunctionComponent, SVGProps } from "react"
-import { ImageModel } from "../../../interfaces/interfactes"
+import { ImageModel } from "../../../interfaces/interfaces"
 import GaImage from "../../Image/Image"
 import style from "./lightButton.module.scss"
 

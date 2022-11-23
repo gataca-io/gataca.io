@@ -73,11 +73,11 @@ export default function HeaderSection(props) {
       route: "use-cases",
       list: useCasesData.list,
     },
-    //{
-    //  name: "Pricing",
-    //  id: "pricing",
-    //  route: "pricing",
-    //},
+    // {
+    //   name: "Pricing",
+    //   id: "pricing",
+    //   route: "pricing",
+    // },
     {
       name: "Developers",
       id: "developers",

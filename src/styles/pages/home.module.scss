@@ -78,6 +78,9 @@
     padding: 140px var(--baseSpacingDouble);
   }
 
+  & > img {
+    max-width: 856px;
+  }
   .title {
     margin-bottom: 50px;
     font-size: 36px;

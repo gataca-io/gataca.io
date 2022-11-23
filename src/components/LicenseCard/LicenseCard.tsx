@@ -1,5 +1,5 @@
 import React from "react" // we need this to make JSX compile
-import { ButtonModel, IProductModel } from "../../interfaces/interfactes"
+import { ButtonModel, IProductModel } from "../../interfaces/interfaces"
 import DarkButton from "../buttons/DarkButton/DarkButton"
 import LightButton from "../buttons/LightButton/LightButton"
 import LightPanel from "../panels/LightPanel/LightPanel"

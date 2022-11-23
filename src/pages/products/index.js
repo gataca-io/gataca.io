@@ -1,231 +1,274 @@
-import React from "react"
+import React, { useState } from "react"
 // import useSiteMetaData from "../static_queries/useSiteMetadata"
 import { BuildHelmet } from "../../components/auxiliary/HelmetBuilder"
 import productsPage from "../../../content/data/productsPage.json"
 import configMetaData from "../../../content/data/configMetaData.json"
-import faqData from "../../../content/data/faqData.json"
-import styles from "./products.module.scss"
-import FaqSection from "../../components/faqSection/FaqSection"
+// import faqData from "../../../content/data/faqData.json"
+// import styles from "./products.module.scss"
+// import FaqSection from "../../components/faqSection/FaqSection"
 import Layout from "../../layouts/Layout"
-import HeadLineSection from "../../components/HeadLineSection/HeadLineSection"
-import BulletCenter from "../../components/BulletCenter/BulletCenter"
+// import HeadLineSection from "../../components/HeadLineSection/HeadLineSection"
+// import BulletCenter from "../../components/BulletCenter/BulletCenter"
 import homeData from "../../../content/data/homeData.json"
+import pricingData from "../../../content/data/pricing.json"
 import CtaSection from "../../components/CtaSection/CtaSection"
-import { Button } from "carbon-components-react"
-import ctaStyles from "../../components/CtaSection/cta.module.scss"
+// import { Button } from "carbon-components-react"
+import styles from "../../styles/pages/products.module.scss"
 import { Link } from "gatsby"
-import { SizeMe } from "react-sizeme"
+import DarkButton from "../../components/buttons/DarkButton/DarkButton"
+import LightButton from "../../components/buttons/LightButton/LightButton"
+// import { SizeMe } from "react-sizeme"
 
 export default function Products(props) {
+  const [currentCategory, setCurrentCategory] = useState(
+    pricingData.fourthSection.list[0]
+  )
+  const [currentQuestion, setCurrentQuestion] = useState("")
   // const [productsList, setProductsList] = useState(productsData.products.slice(1))
   // const { infoData } = useSiteMetaData()
   // console.log("PRODUCTS PAGE DATA => ", props.data)
   return (
     <Layout>
-      {productsPage && <article>
-        
-        <BuildHelmet
-          title={productsPage.metas.title}
-          description={productsPage.metas.description}
-          twitterImg={productsPage.metas.twitterImage}
-          facebookImg={productsPage.metas.facebookImage}
-          linkedInImg={productsPage.metas.facebookImage}
-        />
-        
-        <section className={styles.headlineContainer}>
-          <HeadLineSection
-            big
-            title={productsPage.introProductsSection.title}
-            subtitle={productsPage.introProductsSection.description}
+      {productsPage && (
+        <article>
+          <BuildHelmet
+            title={productsPage.metas.title}
+            description={productsPage.metas.description}
+            twitterImg={productsPage.metas.twitterImage}
+            facebookImg={productsPage.metas.facebookImage}
+            linkedInImg={productsPage.metas.facebookImage}
           />
-          
-          {/*PRODUCT IMAGES*/}
-          <section className={styles.imagesRowContainer}>
-            <div>
-              {productsPage.productsImages.map(p => {
-                return <img src={p.link} alt={p.title}/>
+
+          <section className={styles.introSection}>
+            <div className={styles.subContainer}>
+              <div className={styles.textBox}>
+                <Link to={productsPage.introSection.buttonLink}>
+                  <button className={styles.ctaButton}>
+                    {productsPage.introSection.buttonText}
+                  </button>
+                </Link>
+                <h1>{productsPage.introSection.title}</h1>
+                <h3>{productsPage.introSection.description}</h3>
+              </div>
+
+              <div className={styles.hero_container}>
+                <img
+                  src={productsPage.introSection.image}
+                  alt={homeData.bigCtaSection.title}
+                />
+              </div>
+            </div>
+
+            <div className={styles.introSection__panel}>
+              <p>{productsPage.introSection.panel}</p>
+            </div>
+          </section>
+
+          <section className={styles.firstSection}>
+            <div className={styles.firstSection__panelsContainer}>
+              {productsPage.firstSection.studio.map((panel) => {
+                return (
+                  <div className={styles.panel}>
+                    <div className={styles.panelContent}>
+                      <p className={styles.title}>{panel.title}</p>
+                      <p className={styles.description}>
+                        {panel.textFirstParagraph}
+                      </p>
+                      <p className={styles.description}>
+                        {panel.textSecondParagraph}
+                      </p>
+                      {panel.buttonLink ? (
+                        <Link to={panel.buttonLink} target="_blank">
+                          <DarkButton text={panel.buttonText} />
+                        </Link>
+                      ) : (
+                        <div className={styles.downloadOptions}>
+                          <Link to={panel.buttonAppleLink} target="_blank">
+                            <img
+                              src={panel.buttonAppleImage}
+                              alt={panel.title}
+                            />
+                          </Link>
+                          <Link to={panel.buttonGoogleLink} target="_blank">
+                            <img
+                              src={panel.buttonGoogleImage}
+                              alt={panel.title}
+                            />
+                          </Link>
+                        </div>
+                      )}
+                    </div>
+                    <div className={styles.panelImage}>
+                      <img src={panel.image} alt={panel.title} />
+                    </div>
+                  </div>
+                )
+              })}
+            </div>
+            <div className={styles.advantages}>
+              {productsPage.firstSection.panels.map((item) => {
+                return (
+                  <div className={styles.item}>
+                    <img
+                      className={styles.icon}
+                      src={item.icon}
+                      alt={item.title}
+                    />
+                    <p className={styles.title}>{item.title}</p>
+                    <p className={styles.description}>{item.text}</p>
+                  </div>
+                )
               })}
             </div>
           </section>
-          
-        </section>
-        
-        
-        {/*THE ECOSYSTEM*/}
-        {/*        <section className={styles.sectionStyleWraps}>
-          <h2>{productsPage.theEcosystem.title}</h2>
-          <div>
-            {
-              productsPage.theEcosystem.bullets.map(bullet => {
-                return <BulletCenter
-                  key={bullet.title}
-                  data={bullet}/>
-              })
-            }
-          </div>
-        </section>*/}
-        
-        {/*OUR PRODUCTS*/}
-        {/*        <section className={styles.sectionStyle}>
-          <div>
-            <h2>{productsData.title}</h2>
-            {
-              productsList.map((bullet, i) => {
-                return <BigBullet
-                  right={i % 2 !== 0}
-                  key={bullet.title}
-                  imgSize={"m"}
-                  title={bullet.title}
-                  ctaText={bullet.ctaText}
-                  ctaUrl={bullet.link}
-                  description={bullet.description}
-                  image={bullet.image}/>
-              })
-            }
-          </div>
-        </section>*/}
-        
-        {/*TODO: use sizeMe*/}
-        <SizeMe>
-          {({ size }) => {
-            return <section className={styles.sectionStyle}>
-              {/*       <div
-                style={{
-                  height: size.height,
-                  width: size.width,
-                }}
-                className={styles.gradient}/>*/}
-              
-              {/*<div className={styles.header}>*/}
-              <h2>{productsPage.findYourSolution.mainTitle}</h2>
-              <div className={styles.line}/>
-              {/*</div>*/}
-              
-              {/*CERTIFY*/}
-              <div className={styles.productFlow}>
-                <div className={styles.productImageContainer}>
-                  <img src={productsPage.findYourSolution.certify.image}/>
-                </div>
-                <div className={styles.productTextContainer}>
-                  <h3>{productsPage.findYourSolution.certify.product}</h3>
-                  <h2>{productsPage.findYourSolution.certify.title}</h2>
-                  <p dangerouslySetInnerHTML={{ __html: productsPage.findYourSolution.certify.description }}/>
-                  <Link to={productsPage.findYourSolution.certify.ctaLink}
-                  >
-                    <Button
-                      className={ctaStyles.ctaButton}
-                      disabled={false}
-                      iconDescription="Button icon"
-                      kind="primary"
-                      renderIcon={undefined}
-                      size="default"
-                      tabIndex={0}
-                      type="button"
-                    > {productsPage.findYourSolution.certify.ctaText}</Button>
-                  </Link>
-                </div>
-                {size.width > 672 && (
-                  <div className={styles.credentialFloating}>
-                    <img className={styles.arrow} src={"/images/longArrowDown.svg"}/>
-                    <img className={styles.mainImg} src={productsPage.findYourSolution.certifyToWallet.image}/>
-                    <img className={styles.arrow} src={"/images/longArrowDown.svg"}/>
+          <section className={styles.secondSection}>
+            <h2 className={styles.title}>{productsPage.secondSection.title}</h2>
+            <p className={styles.description}>
+              {productsPage.secondSection.description}
+            </p>
+
+            <div className={styles.fundamentals}>
+              {productsPage.secondSection.panels.map((item) => {
+                return (
+                  <div className={styles.item}>
+                    <div className={styles.tag}>{item.tag}</div>
+                    <div className={styles.content}>
+                      <div className={styles.role}>
+                        <p className={styles.title}>{item.firstTitle}</p>
+                        <p className={styles.description}>{item.firstText}</p>
+                      </div>
+
+                      {item.secondTitle && (
+                        <div className={styles.role}>
+                          <p className={styles.title}>{item.secondTitle}</p>
+                          <p className={styles.description}>
+                            {item.secondText}
+                          </p>
+                        </div>
+                      )}
+                    </div>
                   </div>
-                )}
-              </div>
-              
-              {/*WALLET*/}
-              
-              <div className={styles.productFlow}>
-                <div className={styles.productWalletImageContainer}>
-                  <div>
-                    <img src={productsPage.findYourSolution.wallet.image}/>
+                )
+              })}
+            </div>
+          </section>
+          <section className={styles.fourthSection}>
+            <h2 className={styles.title}>{productsPage.fourthSection.title}</h2>
+            <p className={styles.description}>
+              {productsPage.fourthSection.description}
+            </p>
+            <p className={styles.subtitle}>
+              {productsPage.fourthSection.subtitle}
+            </p>
+
+            <div className={styles.licenses}>
+              {productsPage.fourthSection.panels.map((item) => {
+                return (
+                  <div className={styles.item}>
+                    {item.popular && <div className={styles.tag}>Popular</div>}
+                    <p className={styles.title}>{item.title}</p>
+                    <p className={styles.description}>{item.text}</p>
+                    {productsPage.fourthSection.panels[0] === item ? (
+                      <Link
+                        to={"https://studio.gataca.io/login"}
+                        target="_blank"
+                      >
+                        <DarkButton
+                          className={styles.button}
+                          text={item.buttonText}
+                        />
+                      </Link>
+                    ) : (
+                      <Link to={"/pricing"} target="_blank">
+                        <LightButton
+                          className={styles.button}
+                          text={item.buttonText}
+                        />
+                      </Link>
+                    )}
                   </div>
-                </div>
-                <div className={styles.productTextContainer}>
-                  <h3>{productsPage.findYourSolution.wallet.product}</h3>
-                  <h2>{productsPage.findYourSolution.wallet.title}</h2>
-                  <p dangerouslySetInnerHTML={{ __html: productsPage.findYourSolution.wallet.description }}/>
-                  <Link to={productsPage.findYourSolution.wallet.ctaLink}
-                  >
-                    <Button
-                      className={ctaStyles.ctaButton}
-                      disabled={false}
-                      iconDescription="Button icon"
-                      kind="primary"
-                      renderIcon={undefined}
-                      size="default"
-                      tabIndex={0}
-                      type="button"
-                    > {productsPage.findYourSolution.wallet.ctaText}</Button>
-                  </Link>
-                </div>
-                
-                {size.width > 672 && (
-                  <div className={styles.qrFloating}>
-                    {/*<img className={styles.arrow} src={"/images/longArrowDown.svg"}/>*/}
-                    <img className={styles.qr} src={productsPage.findYourSolution.walletToConnect.image}/>
-                    <img className={styles.arrow} src={"/images/longArrowDown.svg"}/>
-                    <img className={styles.arrowCurved} src={"/images/curvedArrow.svg"}/>
-                    <img className={styles.arrowCurvedTwo} src={"/images/curvedArrowTwo.svg"}/>
-                  </div>
-                )}
+                )
+              })}
+            </div>
+          </section>
+          <section className={styles.fifthSection}>
+            <h2>{pricingData.fourthSection.title}</h2>
+            <div className={styles.fifthSection__content}>
+              <div className={styles.list}>
+                {pricingData.fourthSection.list.map((el) => {
+                  return (
+                    <div
+                      onClick={() => {
+                        setCurrentCategory(el)
+                        currentCategory !== el && setCurrentQuestion("")
+                      }}
+                      className={`${styles.list__category} ${
+                        currentCategory === el
+                          ? styles.list__category__selected
+                          : ""
+                      }`}
+                    >
+                      <p>{el.category}</p>
+                    </div>
+                  )
+                })}
               </div>
-              
-              {/*CONNECT*/}
-              <div className={styles.productFlow}>
-                <div className={styles.productImageContainer}>
-                  <img src={productsPage.findYourSolution.connect.image}/>
-                </div>
-                <div className={styles.productTextContainer}>
-                  <h3>{productsPage.findYourSolution.connect.product}</h3>
-                  <h2>{productsPage.findYourSolution.connect.title}</h2>
-                  <p dangerouslySetInnerHTML={{ __html: productsPage.findYourSolution.connect.description }}/>
-                  <Link to={productsPage.findYourSolution.connect.ctaLink}
-                  >
-                    <Button
-                      className={ctaStyles.ctaButton}
-                      disabled={false}
-                      iconDescription="Button icon"
-                      kind="primary"
-                      renderIcon={undefined}
-                      size="default"
-                      tabIndex={0}
-                      type="button"
-                    > {productsPage.findYourSolution.connect.ctaText}</Button>
-                  </Link>
-                </div>
+              <div className={styles.questions}>
+                {currentCategory?.questions.map((question) => {
+                  return (
+                    <div className={styles.questions__item}>
+                      <div className={styles.questions__item__header}>
+                        <p className={styles.chip__text}>{question.title}</p>
+
+                        <svg
+                          onClick={() => {
+                            console.log(
+                              currentQuestion?.includes(question?.title),
+                              currentQuestion?.split(question?.title)
+                            )
+                            setCurrentQuestion(
+                              currentQuestion?.includes(question?.title)
+                                ? currentQuestion?.split(question?.title)[0]
+                                : currentQuestion + question?.title
+                            )
+                          }}
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          {!currentQuestion.includes(question?.title) && (
+                            <path
+                              d="M9 1.25V17.75"
+                              stroke="#181B5E"
+                              stroke-width="0.8"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          )}
+                          <path
+                            d="M17.25 9.5H0.75"
+                            stroke="#181B5E"
+                            stroke-width="0.8"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                      {currentQuestion.includes(question?.title) && (
+                        <p className={styles.chip__text}>{question.text}</p>
+                      )}
+                    </div>
+                  )
+                })}
               </div>
-            
-            </section>
-          }}
-        </SizeMe>
-        
-        <section className={styles.sectionStyleWraps}>
-          <h2>{productsPage.why.title}</h2>
-          <div>
-            {
-              productsPage.why.bullets.map(bullet => {
-                return <BulletCenter
-                  bulletContainerStyles={styles.bulletStyle}
-                  key={bullet.title}
-                  data={bullet}/>
-              })
-            }
-          </div>
-        </section>
-        
-        <section className={styles.faqSectionContainer}>
-          <FaqSection data={faqData.faqSection}/>
-        </section>
-        
-        <CtaSection
-          ctaText={homeData.ctaSection.ctaText}
-          ctaUrl={configMetaData.bookACallUrl}
-          title={homeData.ctaSection.title}
-          description={homeData.ctaSection.description}
-        />
-      </article>
-      }
+            </div>
+          </section>
+          <CtaSection
+            ctaText={productsPage.sixthSection.buttonText}
+            ctaUrl={productsPage.sixthSection.buttonLink}
+            title={productsPage.sixthSection.title}
+          />
+        </article>
+      )}
     </Layout>
   )
 }
