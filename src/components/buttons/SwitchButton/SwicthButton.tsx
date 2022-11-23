@@ -1,5 +1,5 @@
 import React, { FunctionComponent, SVGProps } from "react"
-import { ImageModel, OptionModel } from "../../../interfaces/interfactes"
+import { ImageModel, OptionModel } from "../../../interfaces/interfaces"
 import style from "./switchButton.module.scss"
 
 type SwitchButtonProps = {

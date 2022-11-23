@@ -4,7 +4,7 @@ import React from "react" // we need this to make JSX compile
 import {
   ButtonModel,
   TooltipPositionModel,
-} from "../../../interfaces/interfactes"
+} from "../../../interfaces/interfaces"
 import LightButton from "../../buttons/LightButton/LightButton"
 import styles from "./regularTooltip.module.scss"
 

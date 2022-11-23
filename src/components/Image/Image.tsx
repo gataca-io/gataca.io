@@ -1,5 +1,5 @@
 import React from "react"
-import { ImageModel } from "../../interfaces/interfactes"
+import { ImageModel } from "../../interfaces/interfaces"
 
 type GaImageProps = {
   className?: string
