@@ -9,7 +9,7 @@
   "introSection": {
     "title": "The fastest way to implement SSI",
     "description": "Meet the one-stop-shop decentralised identity verification cloud platform facilitating the execution of faster pilots and integrations of SSI.",
-    "image": "/images/studio-dashboard.svg",
+    "image": "/images/productsHerox400.png",
     "buttonText": "Gataca Studio",
     "buttonLink": "https://studio.gataca.io/login",
     "panel": "GATACA Studio is a low-code self-sovereign identity solution that enables compliant identity verification in seconds"
@@ -17,7 +17,7 @@
   "firstSection": {
     "studio": [
       {
-        "image": "/images/issue-credential.svg",
+        "image": "/images/issueCredentialx4.png",
         "title": "Issue verifiable credentials",
         "textFirstParagraph": "Automate the issuance of digital documents to your users in a simple, standardized format.",
         "textSecondParagraph": "Create, validate, and digitally sign identity credentials according to W3C standards for global interoperability.",
@@ -25,7 +25,7 @@
         "buttonLink": "https://studio.gataca.io/login"
       },
       {
-        "image": "/images/enable-secure-storage.svg",
+        "image": "/images/secureStoragex4.png",
         "title": "Enable the secure storage of personal data",
         "textFirstParagraph": "Empower your user-base with free, user-controlled storage of digital credentials via our simple & secure mobile ID Wallet.",
         "textSecondParagraph": "Help them send and receive unlimited credentials, anytime, anywhere.",
@@ -35,7 +35,7 @@
         "buttonAppleLink": "https://apps.apple.com/us/app/gataca/id1498607616"
       },
       {
-        "image": "/images/verify-users.svg",
+        "image": "/images/verifyUsersx4.png",
         "title": "Verify users in seconds",
         "textFirstParagraph": "Verify users with the most secure & privacy-preserving single-sign on technology.",
         "textSecondParagraph": "Offer 1-click, password-less and compliant access to your services while reducing the risk of data breaches and onboarding abandonment rates.",

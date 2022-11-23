@@ -392,7 +392,8 @@
           margin: auto;
           margin-right: 0px;
           margin-left: 20px;
-          max-width: calc(100% - 350px);
+          width: calc(100% - 350px);
+          max-width: 712px;
         }
         & > img {
           margin-bottom: 0;

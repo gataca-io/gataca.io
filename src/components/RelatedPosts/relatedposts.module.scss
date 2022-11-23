@@ -3,7 +3,7 @@
 .mainContainer {
   width: 100%;
   height: auto;
-  padding: 180px 175px;
+  padding: 180px 175px 80px;
   background-color: var(--bg-grey);
   @include media-for-phone-only {
     padding: 100px 24px;

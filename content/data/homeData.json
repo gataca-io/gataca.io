@@ -1,6 +1,6 @@
 {
   "bigCtaSection": {
-    "image": "images/homeCtaImage.svg",
+    "image": "images/studioDashboard.png",
     "title": "Trusted Digital Identities Made Easy",
     "description": "Self-sovereign identity technology for organizations of all sizes",
     "ctaText": "Explore our products",
@@ -25,7 +25,7 @@
   },
   "secondSection": {
     "title": "The easiest way to get started with Self-Sovereign Identity",
-    "image" : "images/home-actions.svg",
+    "image" : "images/ssix4.png",
     "ctaText": "Explore our Platform",
     "ctaUrl": "https://studio.gataca.io/login",
     "actions": [
