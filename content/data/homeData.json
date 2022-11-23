@@ -1,156 +1,173 @@
 {
   "bigCtaSection": {
-    "title": "An identity layer for the internet",
-    "description": "Self-sovereign identity technology that helps organizations transform user and citizen experiences",
-    "subDescription": "Explore our products",
-    "subDescription_old": "We've developed the tools to achieve hyper-secure digital identification in 1-click, while reducing compliance costs and identity fraud",
-    "ctaText": "Get in touch",
+    "image": "images/homeCtaImage.svg",
+    "title": "Trusted Digital Identities Made Easy",
+    "description": "Self-sovereign identity technology for organizations of all sizes",
+    "ctaText": "Explore our products",
     "ctaUrl": "/products"
   },
-  "newIntroSection": {
-    "image": "/faces/allFaces.svg",
-    "images": [
-      "/faces/women_one.svg",
-      "/faces/men_one.svg",
-      "/faces/men_two.svg",
-      "/faces/women_two.svg"
-    ]
-  },
-  "introSection": {
-    "mainTitle": "Start using identity credentials",
-    "mainTitleSubheading": "",
-    "mainParagraph": "One single digital identity that is owned and controlled by the user and managed via an ID wallet as a privacy-preserving master key for the Internet.<br><br>Encrypted. Hypersecure. Standardized. Free.",
-    "ctaText": "Download our wallet",
-    "credentials": [{
-        "category": "Goverment",
-        "subcategory": "National ID",
-        "credential_name": "394846728 Y",
-        "icon": "/images/goverment.svg",
-        "level": 1,
-        "status": "Valid",
-        "openStatus": "Public",
-        "fontColor": "",
-        "bgColor": "",
-        "title": ""
+  "firstSection": {
+    "title": "Enable 1-click onboarding and single sign on for your users",
+    "bullets": [
+      {
+        "image": "/images/web-1.svg",
+        "title": "Web 1.0"
       },
       {
-        "category": "Email",
-        "subcategory": "",
-        "credential_name": "john@gataca.io",
-        "icon": "/images/read_email_circle.svg",
-        "level": 1,
-        "status": "Valid",
-        "openStatus": "Public",
-        "title": ""
+        "image": "/images/web-2.svg",
+        "title": "Web 2.0"
       },
       {
-        "category": "University",
-        "subcategory": "Bachelor Degree",
-        "credential_name": "Architecture",
-        "icon": "/images/building.svg",
-        "level": 2,
-        "status": "Valid",
-        "openStatus": "Private",
-        "title": ""
+        "image": "/images/web-3.svg",
+        "title": "Web 3.0"
       }
     ]
   },
-  "bulletsSection": {
-    "title": "DIGITAL IDENTITY MANAGEMENT",
-    "icon": "/images/3-triangle.svg",
-    "description": "<p>We use identity credentials daily to access local citizen services, prove our qualifications, or file an insurance claim. But as we have rapidly transformed our lives online, identification and authentication systems have not kept up. Gataca's identity management platform is designed for the digital age.</p>",
-    "elements": [{
-        "image": "/images/fast.svg",
-        "title": "FAST & EASY",
-        "description": "<ul><li><p>One-click onboarding</p></li><li><p>Portable and reusable</p></li><li><p>Up-to-date</p></li><li><p>Globally interoperable and scalable</p></li></ul>"
+  "secondSection": {
+    "title": "The easiest way to get started with Self-Sovereign Identity",
+    "image" : "images/home-actions.svg",
+    "ctaText": "Explore our Platform",
+    "ctaUrl": "https://studio.gataca.io/login",
+    "actions": [
+      {
+        "title": "Issue",
+        "descriptionFirstParagraph": "Issue pre-verified, tamper-proof digital versions of identity documents.",
+        "descriptionSecondParagraph": "Ditch the paperwork & avoid fraud."
       },
       {
-        "image": "/images/compliant.svg",
-        "title": "COMPLIANT",
-        "description": "<ul><li><p>Official, W3C verifiable credential issuance</p></li><li><p>KYC and GDPR compliant</p></li><li><p>Self-sovereign data control</p></li><li><p>Data exchange minimization</p></li></ul>"
+        "title": "Store",
+        "descriptionFirstParagraph": "Let users store & control their data in a easy-to-use, secure mobile ID Wallet.",
+        "descriptionSecondParagraph": "A masterkey to the internet."
       },
       {
-        "image": "/images/secure.svg",
-        "title": "SECURE",
-        "description": "<p>Blockchain-enabled</p><p>Cryptographically signed</p><p>Biometrically enhanced</p><p>Post-quantum cryptography</p>"
+        "title": "Verify",
+        "descriptionFirstParagraph": "Offer 1-click, hyper-secure and compliant access to your services via our SSO tool.",
+        "descriptionSecondParagraph": "User-friendly & privacy-preserving."
       }
     ]
   },
-  "credentials": {
-    "title": "Credentials",
-    "elements": [
-      "Unified commuting",
-      "Smart building access",
-      "National ID",
-      "Passport",
-      "Driver’s licence",
-      "Commuting card",
-      "Birth certificate",
-      "Marriage certificate",
-      "Criminal record certificate",
-      "Business license."
+  "thirdSection": {
+    "title": "Break the ice, meet GATACA",
+    "description": "Get to know the cutting edge SSI technology capable of transforming the way we see data as we know it.",
+    "ctaText": "See how our technology works",
+    "ctaUrl": "/products",
+    "video": "/products"
+  },
+  "fourthSection": {
+    "title": "Designed for all industries",
+    "description": "Customized to your needs",
+    "sectors": [
+      {
+        "tag": "Pioneers",
+        "title": "Banking",
+        "shortDescription": "Seamless & secure online banking",
+        "description": "Lead the innovation race with 1-click, compliant KYC  that reduces identity fraud and cuts KYC/GDPR costs while boosting user experience, security, and privacy.",
+        "icon": "/icons/banking.svg"
+      },
+      {
+        "tag": "Pioneers",
+        "title": "Crypto",
+        "shortDescription": "Easy entry & navigation into the crypto space",
+        "description": "Enable the easy entry & navigation into the crypto space by enabling instant eKYC while preserving the decentralization and privacy spirit.",
+        "icon": "/icons/cryptoWallet.svg"
+      },
+      {
+        "tag": "Pioneers",
+        "title": "Government",
+        "shortDescription": "The future of e-governance lies in digital identities",
+        "description": "Save resources and prompt eID adoption in the issuance and validation of digital documents such as national IDs, birth certificates or business licenses.",
+        "icon": "/icons/govermentDetailed.svg"
+      },
+      {
+        "tag": "Pioneers",
+        "title": "Higher Education",
+        "shortDescription": "Grow your student base, lead with innovation",
+        "description": "Streamline academic processes by issuing, updating, and verifying digital academic credentials such as diplomas, transcripts, and student IDs.",
+        "icon": "/icons/graduationCap.svg"
+      },
+      {
+        "title": "Travel",
+        "shortDescription": "Transform traveler experiences",
+        "description": "Transform traveler experience in all stages: from airline to hotel check-in, SSI facilitates travel through globally recognized, verified digital documents.",
+        "icon": "/icons/plane.svg"
+      },
+      {
+        "title": "Healthcare",
+        "shortDescription": "Patient data interaction, reimagined",
+        "description": "Reimagine patient data interaction by offering an efficient and secure access & management of medical records, insurance documents and more.",
+        "icon": "/icons/health.svg"
+      },
+      {
+        "title": "Real Estate",
+        "shortDescription": "Optimize transactions",
+        "description": "Optimize and secure online P2P buy/sell and rental processes and make building access more efficent though instant identity verification.",
+        "icon": "/icons/house.svg"
+      },
+      {
+        "title": "Corporation",
+        "shortDescription": "Better for your clients, partners and employees",
+        "description": "Optimize and secure online P2P buy/sell and rental processes and make building access more efficent though instant identity verification.",
+        "icon": "/icons/accounts.svg"
+      }
     ]
   },
-  "bulletsEnhancedSection": {
-    "icon": "/images/4-square.svg",
-    "title": "DECENTRALIZED <br> IDENTITY PLATFORM",
-    "description": "<p>Gataca has built a user-centric digital identity platform with government-grade security and a simple single sign-on to superpower your credentials. Our identity management platform enables fast, secure, and compliant data exchange between credential issuers, users, and service providers.</p>",
-    "elements": [{
-        "image": "/images/stamp.svg",
-        "title": "CREDENTIAL ISSUERS",
-        "description": "<p>Issuers can create and validate secure W3C verifiable contactless digital credentials.</p>"
+  "fifthSection": {
+    "title": "Grow with GATACA",
+    "description": "The most secure & user-friendly identity verification in the market",
+    "panels": [
+      {
+        "image": "/illustrations/secureMobile.svg",
+        "firstTitle": "Flexible & easy-to-use",
+        "firstDescription": "Low-code solution with customizable features for your individual SSI needs.",
+        "secondTitle": "Privacy by design",
+        "secondDescription": "Designed with user privacy as a core architecture element, naturally complying with GDPR.",
+        "thirdTitle": "Government-grade security",
+        "thirdDescription": "Tested against government-grade security requirements and uses post-quantum cryptography offers maximum protection."
       },
       {
-        "image": "/images/compliant.svg",
-        "title": "END-USERS",
-        "description": "<p>Users are powered with an ID wallet in their phones and digitally verified ID credentials to enjoy passwordless, privacy-preserving access to digital services in under 30 seconds.</p>"
-      },
-      {
-        "image": "/images/secure.svg",
-        "title": "SERVICE PROVIDERS",
-        "description": "<p>Service providers can offer an authentication alternative that users love while cutting KYC and GDPR compliance costs and reducing data breach risks.</p>"
+        "image": "/illustrations/international.svg",
+        "firstTitle": "EBSI-compliant",
+        "firstDescription": "Integrated with EBSI, the European Blockchain Network,  enabling cross-border interoperability.",
+        "secondTitle": "No Vendor Lock-in ",
+        "secondDescription": "Strong belief in internet standards and Open APIs to deliver portability & interoperability.",
+        "thirdTitle": "Ledger-agnostic",
+        "thirdDescription": "Blockchain-agnostic platform enabling clients to use and connect with networks of their choice."
       }
     ],
-    "graph": "/static/images/explainedPlatform.svg",
-    "endBullet": {
-      "image": "/images/privacy.svg",
-      "title": "PRIVACY BY DESIGN",
-      "description": "<p>Gataca embraces privacy-by-design and never stores information about an individual’s identity.</p>"
-    }
-  },
-  "ctaSection_one": {
-    "title": "A solution for all stakeholders in your ecosystem, \ndesigned for organizations of all sizes",
-    "ctaText": "Explore others sectors",
-    "ctaUrl": "/products"
-  },
-  "carrousel": {
-    "title": "Goverments & Universities are leading the path to Self-Sovereign-Identity",
-    "ctaText": "Explore others sectors",
-    "ctaUrl": "/use-cases",
-    "list": [{
-        "title": "E-Government services that work",
-        "shortDescription": "<p>Improve citizen’s day to day lives by providing seamless onboarding experiences and securing online transactions.</p>",
-        "description": "<p>Governments leverage the GATACA technology to issue digital government documents and authenticate citizens into eGov services. Citizens store and share credentials via their digital Wallet.</p>",
-        "icon": "/images/building.svg",
-        "link": "/use-cases/government",
-        "image": "/illustrations/government_digitalization.svg"
+    "subtitle": "Trusted by",
+    "trustedBy": [
+      {
+        "image": "/images/redes-logo.svg",
+        "alt": "Red.es Logo"
       },
       {
-        "title": "Succeed in digital campus flows",
-        "shortDescription": "<p>The GATACA technology enables the higher education sector to maintain their competitive edge by increasing student, staff, and partner experience with digital processes and transactions.</p>",
-        "description": "<p>Forward-thinking institutions have realized how SSI technology can take their innovation to the next level to attract a larger student & staff base.  Universities are pioneering use cases such as the issuance of digital student IDs, academic diplomas and microcredentials.</p>",
-        "icon": "/icons/education_cert.svg",
-        "link": "/use-cases/education",
-        "image": "/illustrations/online_learning.svg"
+        "image": "/images/bankinter-logo.svg",
+        "alt": "Bankinter Logo"
+      },
+      {
+        "image": "/images/idemia-logo.svg",
+        "alt": "Idemia Logo"
+      },
+      {
+        "image": "/images/rovira-i-virgili-logo.svg",
+        "alt": "Universitat Rovira i Virgili Logo"
+      },
+      {
+        "image": "/images/european-comission-logo.svg",
+        "alt": "European Comission Logo"
+      },
+      {
+        "image": "/images/early-adopters-logo.svg",
+        "alt": "Early Adopters Logo"
+      },
+      {
+        "image": "/images/una-europa-logo.svg",
+        "alt": "Una Europa Logo"
       }
     ]
   },
-  "ctaSection_three": {
-    "title": "For Developers",
-    "icon": "/icons/file-code.svg",
-    "description": "<p>We prioritize security and simplicity on all levels, from design processes to programming to implementation. Explore our Developer’s section where we provide robust yet easy to understand technicial documentation including user manuals, introduction to our architecture and APIs.</p>",
-    "ctaText": "Explore our technical documentation",
-    "ctaUrl": "/developers"
+  "sixthSection": {
+    "title": "Discover what's been happening in the SSI world"
   },
   "ctaSection": {
     "title": "Ready for a new identity model?",

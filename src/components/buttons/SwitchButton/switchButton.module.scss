@@ -1,0 +1,72 @@
+@import "../../../styles/aux/media-mixins";
+
+.switchButton {
+  border: 1px solid #e3e3e3;
+  width: 221px;
+  padding: 4px;
+  border-radius: 8px;
+  height: 43px;
+}
+
+.switchesContainer {
+  width: 16rem;
+  position: relative;
+  display: flex;
+  padding: 0;
+  position: relative;
+  line-height: 35px;
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.switchesContainer input {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+}
+
+.switchesContainer label {
+  width: 41%;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  cursor: pointer;
+  font-size: 12px;
+  height: 32px;
+  z-index: 99;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.labelSelectedValue {
+  animation: changeToSelectColor 0.1s linear;
+  color: white;
+  background-color: var(--darkblue);
+}
+
+.labelUnselectedValue {
+  animation: changeToUnselectColor 0.1s linear;
+  color: var(--darkblue);
+  background-color: white;
+}
+
+@keyframes changeToSelectColor {
+  0% {
+    color: var(--darkblue);
+  }
+
+  100% {
+    color: white;
+  }
+}
+
+@keyframes changeToUnselectColor {
+  0% {
+    color: white;
+  }
+
+  100% {
+    color: var(--darkblue);
+  }
+}
