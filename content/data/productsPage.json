@@ -6,194 +6,109 @@
     "linkedInImage": "",
     "twitterImage": ""
   },
-  "introSection": {
-    "title": "The fastest way to implement SSI",
-    "description": "Meet the one-stop-shop decentralised identity verification cloud platform facilitating the execution of faster pilots and integrations of SSI.",
-    "image": "/images/productsHerox400.png",
-    "buttonText": "Gataca Studio",
-    "buttonLink": "https://studio.gataca.io/login",
-    "panel": "GATACA Studio is a low-code self-sovereign identity solution that enables compliant identity verification in seconds"
+  "introProductsSection": {
+    "title": "Solutions for all stakeholders",
+    "description": "Self-sovereign identity</br>Designed for the digital age"
   },
-  "firstSection": {
-    "studio": [
-      {
-        "image": "/images/issueCredentialx4.png",
-        "title": "Issue verifiable credentials",
-        "textFirstParagraph": "Automate the issuance of digital documents to your users in a simple, standardized format.",
-        "textSecondParagraph": "Create, validate, and digitally sign identity credentials according to W3C standards for global interoperability.",
-        "buttonText": "Start Issuing Credentials",
-        "buttonLink": "https://studio.gataca.io/login"
+  "productsImages": [{
+      "link": "/images/panel-credentials.svg",
+      "title": "Certify"
+    },
+    {
+      "link": "/images/identity.svg",
+      "title": "Identity"
+    },
+    {
+      "link": "/images/panel-connect.svg",
+      "title": "Connect"
+    }
+  ],
+  "theEcosystem": {
+    "title": "The Ecosystem",
+    "icon": "/images/3-triangle.svg",
+    "description": "",
+    "bullets": [{
+        "image": "/images/building.svg",
+        "title": "ISSUERS",
+        "description": "<p>One-click onboarding\nPortable and reusable\nUp-to-date\nGlobally interoperable and scalable</p>"
       },
       {
-        "image": "/images/secureStoragex4.png",
-        "title": "Enable the secure storage of personal data",
-        "textFirstParagraph": "Empower your user-base with free, user-controlled storage of digital credentials via our simple & secure mobile ID Wallet.",
-        "textSecondParagraph": "Help them send and receive unlimited credentials, anytime, anywhere.",
-        "buttonGoogleImage": "/icons/googleplay-downloadButton.svg",
-        "buttonGoogleLink": "https://play.google.com/store/apps/details?id=com.gataca.identity&hl=en&gl=US&pli=1",
-        "buttonAppleImage": "/icons/appstore-downloadButton.svg",
-        "buttonAppleLink": "https://apps.apple.com/us/app/gataca/id1498607616"
+        "image": "/images/people.svg",
+        "title": "USERS",
+        "description": "<p>Official, W3C verifiable\ncredential issuance\nKYC and GDPR compliant\nSelf-sovereign data control\nData exchange minimization\n\n</p>"
       },
       {
-        "image": "/images/verifyUsersx4.png",
-        "title": "Verify users in seconds",
-        "textFirstParagraph": "Verify users with the most secure & privacy-preserving single-sign on technology.",
-        "textSecondParagraph": "Offer 1-click, password-less and compliant access to your services while reducing the risk of data breaches and onboarding abandonment rates.",
-        "buttonText": "Verify Users in One-Click",
-        "buttonLink": "https://studio.gataca.io/login"
-      }
-    ],
-    "panels": [
-      {
-        "icon": "/icons/shop.svg",
-        "title": "One-stop-shop",
-        "text": "All your identity needs covered"
-      },
-      {
-        "icon": "/icons/plug.svg",
-        "title": "Plug & play",
-        "text": "Instant deployment, pay as you go"
-      },
-      {
-        "icon": "/icons/service.svg",
-        "title": "Compliant",
-        "text": "GDPR & KYC compliant"
-      },
-      {
-        "icon": "/icons/touchFinger.svg",
-        "title": "Easy-to-use",
-        "text": "for both businesses & end-users"
+        "image": "/images/connectBuilding.svg",
+        "title": "VERIFIERS",
+        "description": "<p>Blockchain-enabled\nCryptographically signed\nBiometrically enhanced\nPost-quantum cryptograph</p>"
       }
     ]
   },
-  "secondSection": {
-    "title": "The Fundamentals",
-    "description": "What's my role in SSI?",
-    "panels": [
-      {
-        "tag": "Individuals",
-        "firstTitle": "Holders",
-        "firstText": "Holders are individuals and digital credential owners who store, manage, and share credentials through the use of a digital ID Wallet."
+  "findYourSolution": {
+    "mainTitle": "Find your perfect fit",
+    "certify": {
+      "product": "GATACA Certify",
+      "title": "Issue identity credentials",
+      "description": "Credential issuance tool that enables Trusted Authorities to issue verifiable digital identity credentials.<br><br> Leverage our government-grade secure technology to streamline authentication processes and issue credentials directly to a digital identity wallet. No paperwork needed.",
+      "ctaText": "get GATACA Certify",
+      "image": "/images/panel-credentials.svg",
+      "ctaLink": "/products/certify"
+    },
+    "wallet": {
+      "product": "GATACA Wallet",
+      "title": "Power your users with an ID wallet",
+      "description": "Your new identity wallet providing unlimited, encrypted storage of identity credentials. A master key to all digital services worldwide.<br><br>National IDs. Vaccination passes. Insurance cards. Academic diplomas. All in one place.",
+      "ctaText": "get GATACA Wallet",
+      "image": "/images/credentialsThirdImage.svg",
+      "ctaLink": "/products/wallet"
+    },
+    "connect": {
+      "product": "GATACA Connect",
+      "title": "Seamlessly authenticate your users",
+      "description": "Single sign-on authentication and credential verification tools for Service Providers.<br><br>Improve user experience by offering instant, password-less, biometric-enabled access to digital services.<br> Privacy & security guaranteed.",
+      "ctaText": "get GATACA Connect",
+      "image": "/images/panel-connect.svg",
+      "ctaLink": "/products/connect"
+    },
+    "certifyToWallet": {
+      "image": "/images/credentialsSecondImage.svg"
+    },
+    "walletToConnect": {
+      "image": "/images/qrLogin.png"
+    }
+  },
+  "why": {
+    "title": "Why GATACA",
+    "bullets": [{
+        "image": "/icons/blockslock.svg",
+        "title": "LEDGER-AGNOSTIC",
+        "description": "<p>We offer a blockchain-agnostic platform that enables you to use your own network and interconnect with other blockchain network providers</p>"
       },
       {
-        "tag": "Organizations",
-        "firstTitle": "Issuers",
-        "firstText": "Entities that issue identity credentials to holders. For example: Universities, corporations, financial institutions, governments hospitals.",
-        "secondTitle": "Verifiers",
-        "secondText": "Service providers that require identity verification and authentication for access to their services. Issuers are often verifiers and vice versa."
+        "image": "/icons/briefcase.svg",
+        "title": "ALIGNED WITH EBSI",
+        "description": "<p>Our platform is the first to be integrated with EBSI, the European blockchain network</p>"
+      },
+      {
+        "image": "/icons/headlock.svg",
+        "title": "NO VENDOR LOCK-IN",
+        "description": "<p>We believe in Internet Standards and Open APIs to deliver portability and interoperability, so clients never be tied to a single vendor</p>"
+      },
+      {
+        "image": "/icons/expandable.svg",
+        "title": "FLEXIBILITY & CONTROL",
+        "description": "<p>Our products can be configured to your own needs. They can be implemented on-premise for full control our clients may use GaaS, our SaaS platform for faster roll out</p>"
+      },
+      {
+        "image": "/icons/secure.svg",
+        "title": "PRIVACY BY DESIGN",
+        "description": "<p>We combine strong privacy by design principles with the best end-user experience to increase user loyalty</p>"
+      },
+      {
+        "image": "/icons/lock.svg",
+        "title": "SECURITY BY DESIGN",
+        "description": "<p>User data and ID credentials are protected with biometrics and post-quantum cryptography for maximum protection</p>"
       }
     ]
-  },
-  "thirdSection": {
-    "title": "How does it all come together?",
-    "description": "Get to know the GATACA technology in 1 minute",
-    "video": ""
-  },
-  "fourthSection": {
-    "title": "Designed for businesses of all sizes",
-    "description": "Test it in seconds, free of charge",
-    "subtitle": "Start free, pay as you go & grow",
-    "panels": [
-      {
-        "title": "Starter",
-        "text": "30-day trial for companies looking to get started with the SSI basics",
-        "buttonText": "Try Starter Plan",
-        "buttonLink": "https://studio.gataca.io/login"
-      },
-      {
-        "title": "Essential",
-        "text": "For companies ready to implement SSI and test out its benefits",
-        "buttonText": "See features",
-        "buttonLink": ""
-      },
-      {
-        "popular": true,
-        "title": "Professional",
-        "text": "For companies looking to scale their SSI implementation",
-        "buttonText": "See features",
-        "buttonLink": ""
-      },
-      {
-        
-        "title": "Enterprise",
-        "text": "For experienced companies ready for a large scale rollout of SSI",
-        "buttonText": "See features",
-        "buttonLink": ""
-      }
-    ]
-  },
-  "fifthSection": {
-    "title": "FAQs",
-    "list": [
-      {
-        "category": "SSI Basics", 
-        "questions": [
-          {
-            "title": "What is Self-Sovereign Identity (SSI) technology?",
-            "text": "SSI is the next-gen architecture for digital identities and, like any new generation of technologies, it provides vast benefits over its predecessor. In past generations, there was always a trade-off between security, usability and privacy in identity verification systems. SSI for the first time breaks this trade off, enabling business to offer 1-click, compliant, & hyper-secure access to their digital services."},
-          {
-            "title": "What are verifiable credentials?",
-            "text": "Verifiable Credentials (VCs), as the W3C recommendation defines, are tamper-proof digital credentials whose authorship can be cryptographically verified. In plain English, VCs are a new way of digitizing your personal information."},
-          {
-            "title": "What is a DID?",
-            "text": "A DID, as the W3C recommendation defines, is a globally unique, persistent identifier that does not require a centralized registration authority and is often generated and/or registered cryptographically. It constitutes a new way to provide a globally unique identifier to people, organizations or things. Think of it as your personal unique URL. The typical DID syntax is as follows: did:didmethod:xxxxxxxxxxxxxxxx. Read more about recent discussions on DIDs here."}
-        ]
-      },
-      {
-        "category": "GATACA for Businesses", 
-        "questions": [
-          {
-            "title": "Why does my business need SSI?",
-            "text": "SSI allows businesses to integrate legally-compliant identity verification processes in one click (in contrast to more time-consuming traditional KYC processes), while improving identity fraud prevention, reducing abandonment rates at onboarding, and granting your users a superb privacy-preserving user experience. For organizations that do not necessarily need to perform strong authentication of their customers, SSI provides a privacy-by-design Single Sign On and 2FA solutions that helps you comply with GDPR and other data protection laws."},
-          {
-            "title": "Is this technology only for banks, governments and universities?",
-            "text": "No. Almost every single industry worldwide needs to implement Identity and Access management (IAM) processes inside and across organizations, and therefore they all can reap the benefits from SSI IAM technology (see previous question). Visit our Home section for an overview of most popular use cases per industry or read our blog post on the topic for more detailed information."},
-          {
-            "title": "I am an organization. How can I start using GATACA’s technology?",
-            "text": "We suggest you try out our GATACA Studio. It is a cloud-based, full stack SSI solution that offers low-code, API-based integration with your own applications, so you don’t need to worry about the intrinsic complexity in SSI ecosystems. Are you looking for special integration, customization, security & support requirements? We also offer on-premise solutions for organizations with special needs.  If that is your case, get in touch."}
-        ]
-      },
-      {
-        "category": "GATACA Compliance", 
-        "questions": [
-          {
-            "title": "How is GATACA GDPR compliant?",
-            "text": "GDPR’s principles state that users are owners of their personal data and that data processing should only occur with user’s consent, lawfully, fairly and in a transparent manner, only for specified, explicit and legitimate purposes and limited to what is necessary in relation to the purposes. GATACA not only abides and promotes GDPR principles, its mission is to build tools that enable easy GDPR compliance by organizations worldwide. Such tools include an ID Wallet that enables individuals to be in full control of their personal data, with functionalities to view and revoke all their consents (where and with whom personal data is shared). We also empower organizations to easily implement purpose definition and data minimization techniques."},
-          {
-            "title": "Where does GATACA store user personal data?",
-            "text": "At GATACA we take user’s privacy very seriously. User’s DID, cryptographic key pairs, and Verifiable Credentials from end users (“user data”) are physically stored in the mobile device where the user has  installed the GATACA Wallet. We don’t have access to user data unless the user proactively shares it with us or with any of our GATACA Studio clients, or unless it has been issued by us or any GATACA Studio client. In those cases, User Data is stored in European servers protected with the highest security standards. We never collect or use user data for any other purpose than providing users with a secure, privacy-preserving authentication service.  "},
-          {
-            "title": "What does GATACA store in the blockchain ledger?",
-            "text": "GATACA never stores personal information (not even hashed) on a blockchain ledger. GATACA only stores DIDs and their associated DID Documents (public keys) on blockchain ledgers. When using the European Trust Framework EBSI, GATACA also stores public information related to Issuers, Trusted Authorization Organizations, and Schemas, as per EBSI specifications."},
-          {
-            "title": "How is GATACA GDPR compliant?",
-            "text": "GATACA technology is blockchain agnostic. That means that we can add an SSI layer to virtually any blockchain-based (or even not blockchain based) infrastructure. We currently offer support for the European Blockchain Services Infrastucture (EBSI), Ethereum mainnet, any private Ethereum network with Besu clients, and any private Hyperledger Fabric network. If you are looking for added support to any other network, get in touch."}
-        ]
-      },
-      {
-        "category": "GATACA for Users", 
-        "questions": [
-          {
-            "title": "Is the GATACA Wallet free?",
-            "text": "Yes. You and your users can download the Wallet from Google Play and Apple's App Store and start using it for free."},
-          {
-            "title": "What happens if I lose my phone?",
-            "text": "Don’t worry! You have the possibility to perform a backup copy of your Wallet content and store it in a cloud of your choice (iCloud, One Drive or Google Drive). We are also working on building a more secure vault in the cloud so that you never ever have to worry about losing your wallet - or your backup copy."}
-        ]
-      },
-      {
-        "category": "Miscellaneous",
-        "questions": [
-          {
-            "title": "Where does the name GATACA come from?",
-            "text": "G, T, C, A, the letters that conform our name, are the four main components of the DNA (guanine (G), adenine (A), thymine (T), and cytosine (C)). We believe that digital identity is the missing and most important layer of the Internet, its DNA, and we aim to build it."}
-        ]
-      }
-    ]
-  },
-  "sixthSection": {
-    "title": "Ready for a new identity model?",
-    "buttonText": "Start for free",
-    "buttonLink": "https://studio.gataca.io/login"
   }
 }
