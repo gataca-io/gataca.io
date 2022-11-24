@@ -1,0 +1,291 @@
+---
+label: Gataca Studio Product Page
+hide_body: false
+fields:
+- type: field_group
+  name: introSection
+  label: Intro Section
+  fields:
+  - name: title
+    type: text
+    default: 'The fastest way to implement SSI'
+    config:
+      required: false
+      wysiwyg: false
+    label: Title
+  - name: description
+    type: textarea
+    label: Description
+    default: 'Meet the one-stop-shop decentralised identity verification cloud platform facilitating the execution of faster pilots and integrations of SSI.'
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: html-blocks
+  - name: image
+    type: file
+    config:
+      required: false
+    label: Image
+  - name: buttonText
+    type: text
+    default: 'The fastest way to implement SSI'
+    config:
+      required: false
+      wysiwyg: false
+    label: Button Text
+  - name: buttonLink
+      type: text
+      label: Button Url
+      default: 'https://studio.gataca.io/login'
+      config:
+        required: false
+        wysiwyg: false
+  - name: panel
+    type: text
+    default: 'The fastest way to implement SSI'
+    config:
+      required: false
+      wysiwyg: false
+    label: Panel
+- type: field_group
+  name: firstSection
+  label: First Section
+  fields:
+  - type: field_group
+    name: studio
+    label: Studio Functionalities
+    fields:
+    - name: image
+      type: file
+      config:
+        required: false
+      label: Image
+    - name: title
+      type: text
+      default: 'The fastest way to implement SSI'
+      config:
+        required: false
+        wysiwyg: false
+      label: Title
+    - name: textFirstParagraph
+      type: textarea
+      label: Text First Paragraph
+      default: 'Empower your user-base with free, user-controlled storage of digital credentials via our simple & secure mobile ID Wallet.'
+      config:
+        required: false
+        wysiwyg: true
+    - name: textSecondParagraph
+      type: textarea
+      label: Text Second Paragraph
+      default: 'Help them send and receive unlimited credentials, anytime, anywhere.'
+      config:
+        required: false
+        wysiwyg: true
+    - name: buttonText
+      type: textarea
+      label: First Panel Button Text
+      default: 'Verify Users in One-Click'
+      config:
+        required: false
+        wysiwyg: true
+    - name: buttonLink
+      type: text
+      label: Button Url
+      default: 'https://studio.gataca.io/login'
+      config:
+        required: false
+        wysiwyg: false
+  - type: field_group
+    name: panels
+    label: Panels
+    fields:
+    - name: icon
+      type: file
+      config:
+        required: false
+      label: Icon
+    - name: title
+      type: text
+      default: ''
+      config:
+        required: false
+        wysiwyg: false
+      label: Title
+    - name: text
+      type: textarea
+      label: Text
+      default: ''
+      config:
+        required: false
+        wysiwyg: true
+  - type: field_group
+    name: secondSection
+    label: Second Section
+    fields:
+    - name: title
+      type: text
+      default: 'The Fundamentals'
+      config:
+        required: false
+        wysiwyg: false
+      label: Title
+    - name: description
+      type: textarea
+      label: Description
+      default: ''
+      config:
+        required: false
+        wysiwyg: true
+    - type: field_group
+      name: panels
+      label: Panels
+      fields:
+      - name: tag
+        type: textarea
+        label: Tag
+        default: ''
+        config:
+          required: false
+          wysiwyg: true
+      - name: firstTitle
+        type: text
+        default: ''
+        config:
+          required: false
+          wysiwyg: false
+        label: First Title
+      - name: firstText
+        type: textarea
+        label: First Text
+        default: ''
+        config:
+          required: false
+          wysiwyg: true
+      - name: secondTitle
+        type: text
+        default: ''
+        config:
+          required: false
+          wysiwyg: false
+        label: Second Title
+      - name: secondText
+        type: textarea
+        label: Second Text
+        default: ''
+        config:
+          required: false
+          wysiwyg: true
+- type: field_group
+  name: thirdSection
+  label: Third Section
+  fields:
+  - name: title
+    type: text
+    default: 'How does it all come together?'
+    config:
+      required: false
+      wysiwyg: false
+    label: Title
+  - name: description
+    type: textarea
+    label: Description
+    default: 'Get to know the GATACA technology in 1 minute'
+    config:
+      required: false
+      wysiwyg: true
+- type: field_group
+  name: fourthSection
+  label: Fourth Section
+  fields:
+  - name: title
+    type: text
+    default: 'Designed for businesses of all sizes'
+    config:
+      required: false
+      wysiwyg: false
+    label: Title
+  - name: description
+    type: textarea
+    label: Description
+    default: 'Test it in seconds, free of charge'
+    config:
+      required: false
+      wysiwyg: true
+  - name: subtitle
+    type: textarea
+    label: Subtitle
+    default: 'Start free, pay as you go & grow'
+    config:
+      required: false
+      wysiwyg: true
+  - type: field_group
+    name: panels
+    label: Panels
+    fields:
+    - name: title
+      type: text
+      default: ''
+      config:
+        required: false
+        wysiwyg: false
+      label: Title
+    - name: text
+      type: textarea
+      label: Text
+      default: ''
+      config:
+        required: false
+        wysiwyg: true
+    - name: buttonText
+      type: text
+      default: ''
+      config:
+        required: false
+        wysiwyg: false
+      label: Button Text
+    - name: buttonLink
+      type: text
+      label: Button Url
+      default: ''
+      config:
+        required: false
+        wysiwyg: false
+- type: field_group
+  name: fifthSection
+  label: Fifth Section
+  fields:
+  - name: title
+    type: text
+    default: 'FAQs'
+    config:
+      required: false
+      wysiwyg: false
+    label: Title
+- type: field_group
+  name: sixthSection
+  label: Sixth Section
+  fields:
+  - name: title
+    type: text
+    default: 'Ready for a new identity model?'
+    config:
+      required: false
+      wysiwyg: false
+    label: Title
+  - name: buttonText
+      type: text
+      default: 'Start for free'
+      config:
+        required: false
+        wysiwyg: false
+      label: Button Text
+  - name: buttonLink
+    type: text
+    label: Button Url
+    default: 'https://studio.gataca.io/login'
+    config:
+      required: false
+      wysiwyg: false
+pages:
+- content/data/gatacaStudio.json

@@ -2,240 +2,310 @@
 label: Home Page
 hide_body: false
 fields:
-- type: field_group
-  name: introSection
-  label: Intro Section
-  fields:
-  - name: mainTitle
-    type: textarea
-    default: ''
-    config:
-      required: false
-      wysiwyg: false
-    label: Main Title
-  - name: mainTitleSubheading
-    type: textarea
-    default: ''
-    config:
-      required: false
-      wysiwyg: false
-    label: Main Title
-  - name: mainSubtitle
-    type: textarea
-    default: ''
-    config:
-      required: false
-      wysiwyg: false
-    label: Main Subtitle
-  - name: mainParagraph
-    type: textarea
-    default: ''
-    config:
-      required: false
-      wysiwyg: true
-      schema:
-        format: html
-    label: Main Paragraph
-  - name: ctaText
-    type: textarea
-    default: ''
-    config:
-      required: false
-      wysiwyg: true
-      schema:
-        format: html-blocks
-    label: CTA text [Button]
-  - name: credentials
-    type: field_group_list
-    default: Certify List to show
-    label: Certify
-    description: Certify shown inside the phone. Don't put more than 5 elements
-    config:
-      labelField: title
-      min: 3
-      max: 6
+  - type: field_group
+    name: firstSection
+    label: First Section
     fields:
-    - type: text
-      name: category
-      config:
-        required: true
-      label: Category
-    - type: text
-      name: subcategory
-      config:
-        required: false
-      label: Subcategory
-    - type: text
-      name: credential_name
-      config:
-        required: true
-      label: Credential Name
-    - type: number
-      name: level
-      config:
-        required: true
-      label: Credential Level
-    - type: text
-      name: status
-      config:
-        required: false
-      label: Status
-    - type: text
-      name: openStatus
-      config:
-        required: false
-      label: Private | Public
-    - type: file
-      name: icon
-      config:
-        required: false
-      label: Icon
-- type: field_group
-  name: bulletsSection
-  label: BulletsSection Section
-  fields:
-  - name: title
-    type: text
-    default: ''
-    config:
-      required: false
-      wysiwyg: false
-    label: Title
-  - name: description
-    type: textarea
-    default: ''
-    config:
-      required: false
-      wysiwyg: true
-      schema:
-        format: html-blocks
-    label: Description
-  - name: elements
-    type: field_group_list
-    default: ''
-    config: 
+      - name: title
+        type: textarea
+        default: ""
+        config:
+          required: false
+          wysiwyg: false
+        label: Title
+      - name: bullets
+        type: field_group_list
+        default: ""
+        label: Bullets
+        config:
+        fields:
+          - type: text
+            name: title
+            label: Title
+            config:
+              required: true
+          - type: file
+            name: image
+            label: Image
+            config:
+              required: true
+      - type: field_group
+        name: secondSection
+        label: Second Section
+        fields:
+          - name: title
+            type: textarea
+            default: "The easiest way to get started with Self-Sovereign Identity"
+            config:
+              required: false
+              wysiwyg: false
+            label: Title
+          - type: file
+            name: image
+            label: Image
+            config:
+              required: true
+          - name: ctaText
+            type: textarea
+            default: "Explore our Platform"
+            config:
+              required: false
+              wysiwyg: false
+            label: Button text
+          - name: ctaUrl
+            type: text
+            label: Button Url
+            default: "/products"
+            config:
+              required: false
+              wysiwyg: false
+          - name: actions
+            type: field_group_list
+            default: ""
+            label: Actions
+            config:
+            fields:
+              - type: text
+                name: title
+                label: Title
+                config:
+                  required: true
+              - name: descriptionFirstParagraph
+                type: textarea
+                default: ""
+                config:
+                  required: false
+                  wysiwyg: false
+                label: Description First Paragraph
+              - name: descriptionSecondParagraph
+                type: textarea
+                default: ""
+                config:
+                  required: false
+                  wysiwyg: false
+                label: Description Second Paragraph
+      - type: field_group
+        name: thirdSection
+        label: Thirs Section
+        fields:
+          - name: title
+            type: textarea
+            default: "Break the ice, meet GATACA"
+            config:
+              required: false
+              wysiwyg: false
+            label: Title
+          - name: description
+            type: textarea
+            default: "Get to know the cutting edge SSI technology capable of transforming the way we see data as we know it."
+            config:
+              required: false
+              wysiwyg: false
+            label: Description
+          - name: ctaText
+            type: textarea
+            default: "See how our technology works"
+            config:
+              required: false
+              wysiwyg: false
+            label: Button text
+          - name: ctaUrl
+            type: text
+            label: Button Url
+            default: "/products"
+            config:
+              required: false
+              wysiwyg: false
+      - type: field_group
+        name: fourthSection
+        label: Fourth Section
+        fields:
+          - name: title
+            type: textarea
+            default: "Designed for all industries"
+            config:
+              required: false
+              wysiwyg: false
+            label: Title
+          - name: description
+            type: textarea
+            default: "Customized to your needs"
+            config:
+              required: false
+              wysiwyg: false
+            label: Description
+          - name: sectors
+            type: field_group_list
+            default: ""
+            label: Sectors
+            config:
+            fields:
+              - type: text
+                name: title
+                label: Title
+                config:
+                  required: true
+              - name: tag
+                type: textarea
+                default: ""
+                config:
+                  required: false
+                  wysiwyg: false
+                label: Tag
+              - name: shortDescription
+                type: textarea
+                default: ""
+                config:
+                  required: false
+                  wysiwyg: false
+                label: Front card description
+              - name: description
+                type: textarea
+                default: ""
+                config:
+                  required: false
+                  wysiwyg: false
+                label: Back card description
+              - type: file
+                name: icon
+                label: Icon
+                config:
+                  required: true
+      - type: field_group
+        name: fifthSection
+        label: Fifth Section
+        fields:
+          - name: title
+            type: textarea
+            default: "Grow with GATACA"
+            config:
+              required: false
+              wysiwyg: false
+            label: Title
+          - name: description
+            type: textarea
+            default: "The most secure & user-friendly identity verification in the market"
+            config:
+              required: false
+              wysiwyg: false
+            label: Description
+          - name: panels
+            type: field_group_list
+            default: ""
+            label: Panels
+            config:
+            fields:
+              - type: file
+                name: image
+                label: Image
+                config:
+                  required: true
+              - type: text
+                name: firstTitle
+                label: First title
+                config:
+                  required: true
+              - name: firstDescription
+                type: textarea
+                default: ""
+                config:
+                  required: true
+                label: First description
+              - type: text
+                name: secondTitle
+                label: Second title
+                config:
+                  required: true
+              - name: secondDescription
+                type: textarea
+                default: ""
+                config:
+                  required: false
+                label: Second description
+              - type: text
+                name: thirdTitle
+                label: Third title
+                config:
+                  required: true
+              - name: thirdDescription
+                type: textarea
+                default: ""
+                config:
+                  required: false
+                label: Third description
+          - name: subtitle
+            type: textarea
+            default: "Trusted by"
+            config:
+              required: false
+              wysiwyg: false
+            label: Subtitle
+          - name: trustedBy
+            type: field_group_list
+            default: ""
+            label: Trusted By
+            config:
+            fields:
+              - type: file
+                name: image
+                label: Image
+                config:
+                  required: true
+              - type: text
+                name: alt
+                label: Alt
+                config:
+                  required: true
+      - name: sixthSection
+        type: textarea
+        default: ""
+        config:
+          required: false
+          wysiwyg: false
+        label: Main Title
+      - name: mainSubtitle
+        type: textarea
+        default: ""
+        config:
+          required: false
+          wysiwyg: false
+        label: Main Subtitle
+      - type: field_group
+        name: sixthSection
+        label: Sixth Section
+        fields:
+      - name: title
+        type: textarea
+        default: ""
+        config:
+          required: true
+        label: Title
+  - type: field_group
+    name: ctaSection
+    label: TextHightlightSection Section
     fields:
-    - type: text
-      name: title
-      label: Image
-      config:
-        required: false
-    - type: file
-      name: image
-      label: Image
-      config:
-        required: false
-    - type: textarea
-      name: description
-      label: Description
-      config:
-        required: false
-        wysiwyg: true
-        schema:
-          format: html-blocks
-    label: BulletsSection
-- type: field_group
-  name: bulletsEnhancedSection
-  label: BulletsSection Enhanced Section
-  fields:
-  - name: title
-    type: text
-    default: ''
-    config:
-      required: false
-      wysiwyg: false
-    label: Title
-  - name: description
-    type: textarea
-    default: ''
-    config:
-      required: false
-      wysiwyg: true
-      schema:
-        format: html-blocks
-    label: Description
-  - name: elements
-    type: field_group_list
-    default: ''
-    label: BulletsSection
-    config:
-      max: 3
-    fields:
-    - type: text
-      name: title
-      label: Image
-      config:
-        required: false
-    - type: file
-      name: image
-      label: Image
-      config:
-        required: false
-    - type: textarea
-      name: description
-      label: Description
-      config:
-        required: false
-        wysiwyg: true
-        schema:
-          format: html-blocks
-  - name: graph
-    type: file
-    default: ''
-    config:
-      required: false
-      wysiwyg: false
-    label: Main Graphic
-  - name: endBullet
-    type: field_group
-    default: ''
-    label: End Bullet
-    config: 
-    fields:
-    - type: text
-      name: title
-      label: Image
-      config:
-        required: false
-    - type: file
-      name: image
-      label: Image
-      config:
-        required: false
-    - type: textarea
-      name: description
-      label: Description
-      config:
-        required: false
-        wysiwyg: true
-        schema:
-          format: html-blocks
-- type: field_group
-  name: ctaSection
-  label: TextHightlightSection Section
-  fields:
-  - name: title
-    type: textarea
-    default: ''
-    config:
-      required: false
-      wysiwyg: false
-    label: Section Title
-  - name: description
-    type: textarea
-    default: ''
-    config:
-      required: false
-      wysiwyg: true
-      schema:
-        format: html-blocks
-    label: Section Description
-  - name: ctaText
-    type: textarea
-    default: ''
-    config:
-      required: false
-      wysiwyg: false
-    label: TextHightlightSection button text
+      - name: title
+        type: textarea
+        default: ""
+        config:
+          required: false
+          wysiwyg: false
+        label: Section Title
+      - name: description
+        type: textarea
+        default: ""
+        config:
+          required: false
+          wysiwyg: true
+          schema:
+            format: html-blocks
+        label: Section Description
+      - name: ctaText
+        type: textarea
+        default: ""
+        config:
+          required: false
+          wysiwyg: false
+        label: TextHightlightSection button text
 pages:
-- content/data/homeData.json
+  - content/data/homeData.json
