@@ -21,9 +21,6 @@ sections:
 - type: heading
   label: products
 - type: document
-  path: content/data/productsData.json
-  label: "- Products list -"
-- type: document
   path: content/data/wallet.json
   label: "- Wallet -"
 - type: document
