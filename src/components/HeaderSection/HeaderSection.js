@@ -64,7 +64,7 @@ export default function HeaderSection(props) {
     {
       name: "Products",
       id: "products",
-      route: "products",
+      route: "",
       list: productsData.products,
     },
     {
@@ -136,9 +136,7 @@ export default function HeaderSection(props) {
                   <div
                     className={cx(
                       headerStyles.nav,
-                      path
-                        ? headerStyles.navSolid
-                        : isTopBarOpaque
+                      isTopBarOpaque
                         ? headerStyles.navOpaque
                         : null,
                       isSideNavExpanded && headerStyles.navMobileOpen
@@ -178,7 +176,7 @@ export default function HeaderSection(props) {
 
                             {el.list && (
                               <HoverMenu
-                                isBlog={path}
+                                
                                 isOpaque={isTopBarOpaque}
                                 isVisible={hoverList[el.id]}
                                 hoverElement={el.id}
@@ -222,7 +220,7 @@ export default function HeaderSection(props) {
 
                       <SideNavLink
                         className={headerStyles.sideNavHeadline}
-                        href="/products"
+                        href=""
                       >
                         Products
                       </SideNavLink>

@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react"
-import styled from "styled-components"
+import React, {useEffect} from "react";
+import styled from "styled-components";
 
-import styles from "./hovermenu.module.scss"
-import { navigate } from "gatsby"
-import cx from "classnames"
+import cx from "classnames";
+import {navigate} from "gatsby";
+import styles from "./hovermenu.module.scss";
 
 type IHoverMenuProps = {
   isVisible: boolean,
@@ -49,47 +49,46 @@ const HoverMenu: React.FC<IHoverMenuProps> = (
 
   return isVisible ? (
     <React.Fragment>
-      {!isOpaque ? <ArrowUp/> : !isBlog && !isOpaque ? <ArrowUp/> : null}
-
-      <div
-        className={cx(
-          styles.hoverMenu,
-          isBlog && styles.menuSolid,
-          isOpaque && styles.menuDownPage,
+      <div className={cx(
+        styles.hoverMenu,
+        isBlog && styles.menuSolid,
+        isOpaque && styles.menuDownPage,
         )}
-        onMouseLeave={() => changeVisibility(hoverElement)}>
-
-        {list.map(el => {
-          const content = (
-            <div className={cx(
-              styles.menuElement,
-              isBlog && styles.menuElementBlog,
-            )}>
-              {el.icon && <div className={styles.imageContainer}>
-                <img src={el.icon} alt={el.title}/>
-              </div>}
-              <div className={styles.textContainer}>
-                <h4>{el.title}</h4>
-                <p dangerouslySetInnerHTML={{ __html: el.shortDescription }}/>
+        onMouseLeave={() => changeVisibility(hoverElement)}
+      >
+        <div  className={styles.hoverMenuContainer} >
+          {...list.map(el => {
+            const content = (
+              <div className={cx(
+                styles.menuElement
+              )}>
+                {el.icon && <div className={styles.imageContainer}>
+                  <img src={el.icon} alt={el.title}/>
+                </div>}
+                <div className={styles.textContainer}>
+                  <h4>{el.title}</h4>
+                  <p dangerouslySetInnerHTML={{ __html: el.shortDescription }}/>
+                </div>
               </div>
-            </div>
-          )
+            )
 
-          return (
-            <>
-              {
-                el.link && el.link.includes("http") ?
-                  <a href={el.link} target="_blank">
-                    {content}
-                  </a>
-                  :
-                  <div onClick={() => linkClick(el.link)}>
-                    {content}
-                  </div>
-              }
-            </>
-          )
-        })}
+            return (
+              <>
+                {
+                  el.link && el.link.includes("http") ?
+                    <a href={el.link} target="_blank">
+                      {content}
+                    </a>
+                    :
+                    <div onClick={() => linkClick(el.link)}>
+                      {content}
+                    </div>
+                }
+              </>
+            )
+          })
+          } 
+        </div>
       </div>
     </React.Fragment>
   ) : <></>

@@ -362,7 +362,7 @@
           font-size: 24px;
           font-weight: bold;
           color: var(--darkblue);
-          line-height: 21px;
+          line-height: 31px;
           margin-bottom: 12px;
         }
         & > .description {
@@ -392,11 +392,14 @@
           margin: auto;
           margin-right: 0px;
           margin-left: 20px;
-          width: calc(100% - 350px);
-          max-width: 712px;
+          width: calc(100% - 390px);
+          max-width: 692px;
         }
         & > img {
           margin-bottom: 0;
+          max-height: 563px;
+          margin-left: auto;
+          margin-right: 0;
         }
       }
     }
@@ -413,8 +416,8 @@
         margin-bottom: 20px;
 
         @include media-for-tablet-xl {
-          margin-left: auto;
-          margin-right: 0;
+          margin-right: auto;
+          margin-left: 0;
           max-width: 300px;
           margin-bottom: 0;
         }
@@ -428,6 +431,13 @@
           margin-bottom: auto;
           margin-right: auto;
           margin-left: 0;
+        }
+
+        & > img {
+          margin-bottom: 0;
+          max-height: 563px;
+          margin-left: 0;
+          margin-right: auto;
         }
       }
       @include media-for-tablet-xl {
