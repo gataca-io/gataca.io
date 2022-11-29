@@ -119,8 +119,8 @@ export default function IndexPage() {
               className={homeStyles.video}
               width="680"
               height="382"
-              src="https://www.youtube.com/embed/_3Kz--gPr3M"
-              title="YouTube video player"
+              src="https://www.youtube-nocookie.com/embed/_3Kz--gPr3M"
+              title="Gataca Studio Presentation"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen

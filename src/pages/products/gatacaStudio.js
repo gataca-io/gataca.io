@@ -147,8 +147,8 @@ export default function Products(props) {
               className={styles.video}
               width="800"
               height="450"
-              src="https://www.youtube.com/embed/_3Kz--gPr3M"
-              title="YouTube video player"
+              src="https://www.youtube-nocookie.com/embed/_3Kz--gPr3M"
+              title="Gataca Studio Presentation"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
