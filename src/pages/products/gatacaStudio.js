@@ -145,8 +145,8 @@ export default function Products(props) {
             </p>
             <iframe
               className={styles.video}
-              width="706"
-              height="382"
+              width="828"
+              height="450"
               src="https://www.youtube.com/embed/_3Kz--gPr3M"
               title="YouTube video player"
               frameborder="0"

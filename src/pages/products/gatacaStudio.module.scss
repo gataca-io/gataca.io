@@ -645,8 +645,7 @@
     -moz-box-shadow: 0 0px 2px #868688;
     -webkit-box-shadow: 0 0px 2px #868688;
     box-shadow: 0 0px 2px #868688;
-    max-width: 90%;
-    @media (max-width: 907px) {
+    @media (max-width: 960px) {
       max-width: 495px;
       max-height: 268px;
     }
