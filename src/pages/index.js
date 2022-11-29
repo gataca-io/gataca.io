@@ -115,16 +115,12 @@ export default function IndexPage() {
                 }
               />
             </div>
-            <iframe
-              className={homeStyles.video}
-              width="680"
-              height="382"
-              src="https://www.youtube-nocookie.com/embed/_3Kz--gPr3M"
-              title="Gataca Studio Presentation"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
+            <video className={homeStyles.video} controls>
+              <source
+                src={homeData.thirdSection.video}
+                type="video/mp4"
+              ></source>
+            </video>
           </div>
         </section>
 
