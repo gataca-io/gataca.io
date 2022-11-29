@@ -645,9 +645,15 @@
     -moz-box-shadow: 0 0px 2px #868688;
     -webkit-box-shadow: 0 0px 2px #868688;
     box-shadow: 0 0px 2px #868688;
-    width: 90%;
-    max-width: 1080px;
-    max-height: 450px;
+    max-width: 90%;
+    @media (max-width: 907px) {
+      max-width: 495px;
+      max-height: 268px;
+    }
+    @include media-for-phone-only {
+      max-width: 327px;
+      max-height: 177px;
+    }
   }
 }
 

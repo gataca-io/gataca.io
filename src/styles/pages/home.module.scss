@@ -166,27 +166,29 @@
   background-color: var(--darkblue);
 
   width: 100%;
-  padding: 150px 175px;
+  padding: 150px 100px;
 
   z-index: 10;
 
   @include media-for-phone-only {
     padding: 100px 24px;
   }
-  @media (min-width: 1352px) {
+  @media (max-width: 1352px) {
     flex-direction: column;
     flex-direction: row;
+    padding: 100px 24px;
   }
   &__content {
     display: flex;
     justify-content: space-between;
-    max-width: 1080px;
+    max-width: 1200px;
     margin: auto;
     align-items: center;
 
     @media (max-width: 1352px) {
       flex-direction: column;
       justify-content: center;
+      max-width: 750px;
     }
     .texts {
       max-width: 408px;
@@ -196,6 +198,7 @@
         max-width: none;
         padding-right: 0px;
         margin-bottom: 60px;
+        margin-right: auto;
       }
       @include media-for-phone-only {
         margin-bottom: 40px;
@@ -223,12 +226,18 @@
       }
     }
     .video {
-      max-width: 704px;
-      max-height: 450px;
+      margin-bottom: 0 !important;
       @media (max-width: 1352px) {
-        width: 100%;
-        max-width: 774px;
-        max-height: none;
+        margin-right: auto;
+      }
+
+      @media (max-width: 907px) {
+        max-width: 495px;
+        max-height: 268px;
+      }
+      @include media-for-phone-only {
+        max-width: 327px;
+        max-height: 177px;
       }
     }
   }

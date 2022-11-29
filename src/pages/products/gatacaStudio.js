@@ -143,12 +143,16 @@ export default function Products(props) {
             <p className={styles.description}>
               {gatacaStudioData.thirdSection.description}
             </p>
-            <video className={styles.video} controls>
-              <source
-                src={gatacaStudioData.thirdSection.video}
-                type="video/mp4"
-              ></source>
-            </video>
+            <iframe
+              className={styles.video}
+              width="706"
+              height="382"
+              src="https://www.youtube.com/embed/_3Kz--gPr3M"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
           </section>
           <section className={styles.fourthSection}>
             <h2 className={styles.title}>
