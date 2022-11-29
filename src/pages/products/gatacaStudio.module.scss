@@ -601,6 +601,61 @@
   }
 }
 
+.thirdSection {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: var(--baseSpacing);
+  background-color: white;
+  overflow: hidden;
+  text-shadow: 0px 2px 5px rgb(0 0 0 / 15%);
+  filter: drop-shadow(0 0px 0px #333);
+  z-index: 10;
+
+  @include media-for-phone-only {
+    padding: 100px 24px;
+  }
+
+  @include media-for-tablet-portrait-up {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 180px var(--baseSpacingDouble) 160px;
+  }
+
+  & > .title {
+    margin-bottom: 12px;
+    font-size: 36px;
+    max-width: 700px;
+    line-height: 42px;
+    text-shadow: 0px 2px 5px rgb(0 0 0 / 15%);
+  }
+
+  & > .description {
+    margin-bottom: 80px;
+    font-size: 20px;
+    color: var(--darkblue);
+    @include media-for-phone-only {
+      margin-bottom: 60px;
+    }
+  }
+
+  & > .video {
+    margin: auto;
+    -moz-box-shadow: 0 0px 2px #868688;
+    -webkit-box-shadow: 0 0px 2px #868688;
+    box-shadow: 0 0px 2px #868688;
+    @media (max-width: 960px) {
+      max-width: 475px;
+      max-height: 268px;
+    }
+    @include media-for-phone-only {
+      max-width: 307px;
+      max-height: 177px;
+    }
+  }
+}
+
 .fourthSection {
   background-color: var(--darkblue);
   padding: 180px 130px;
