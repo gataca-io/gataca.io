@@ -135,6 +135,21 @@ export default function Products(props) {
               })}
             </div>
           </section>
+
+          <section className={styles.thirdSection}>
+            <h2 className={styles.title}>
+              {gatacaStudioData.thirdSection.title}
+            </h2>
+            <p className={styles.description}>
+              {gatacaStudioData.thirdSection.description}
+            </p>
+            <video className={styles.video} controls>
+              <source
+                src={gatacaStudioData.thirdSection.video}
+                type="video/mp4"
+              ></source>
+            </video>
+          </section>
           <section className={styles.fourthSection}>
             <h2 className={styles.title}>
               {gatacaStudioData.fourthSection.title}

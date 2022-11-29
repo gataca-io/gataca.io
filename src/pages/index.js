@@ -6,6 +6,7 @@ import configMetaData from "./../../content/data/configMetaData.json"
 import { BuildHelmet } from "../components/auxiliary/HelmetBuilder"
 import BigCtaSection from "../components/bigCtaSection/BigCtaSection"
 import RotatingCard from "../components/RotatingCard/RotatingCard"
+import LightButton from "../components/buttons/LightButton/LightButton"
 import RelatedPosts from "../components/RelatedPosts/RelatedPosts"
 import { Link } from "gatsby"
 import PreLaunchModal from "../components/modals/PreLaunchModal/PreLaunchModal"
@@ -95,6 +96,32 @@ export default function IndexPage() {
           >
             {homeData.secondSection.ctaText}
           </Link>
+        </section>
+
+        {/* Video */}
+        <section className={homeStyles.thirdSectionStyle}>
+          <div className={homeStyles.thirdSectionStyle__content}>
+            <div className={homeStyles.texts}>
+              <h2 className={homeStyles.title}>
+                {homeData.thirdSection.title}
+              </h2>
+              <p>{homeData.thirdSection.description}</p>
+              <LightButton
+                className={homeStyles.ctaButton}
+                text={homeData.thirdSection.ctaText}
+                disabled={false}
+                functionality={() =>
+                  window?.open("https://studio.gataca.io/login", "_blank")
+                }
+              />
+            </div>
+            <video className={homeStyles.video} controls>
+              <source
+                src={homeData.thirdSection.video}
+                type="video/mp4"
+              ></source>
+            </video>
+          </div>
         </section>
 
         {/* Designed for all industries */}
