@@ -232,11 +232,11 @@
       }
 
       @media (max-width: 907px) {
-        max-width: 495px;
+        max-width: 477px;
         max-height: 268px;
       }
       @include media-for-phone-only {
-        max-width: 327px;
+        max-width: 315px;
         max-height: 177px;
       }
     }

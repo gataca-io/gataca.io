@@ -117,7 +117,7 @@ export default function IndexPage() {
             </div>
             <iframe
               className={homeStyles.video}
-              width="706"
+              width="680"
               height="382"
               src="https://www.youtube.com/embed/_3Kz--gPr3M"
               title="YouTube video player"
