@@ -1,6 +1,6 @@
 ---
 meta_data:
-  date: 2022-11-14T16:42:38Z
+  date: 2022-11-14T16:42:38.000+00:00
   title: Job opening - Frontend Developer
   description: 'We need a person who can participate in the design, implementation,
     and delivery of complex products (both B2B and B2C). '
@@ -69,7 +69,7 @@ Our way of working in the visual area is:
 
 3\. Frontend developers implement the prototype
 
-### **Who do we need? 🤼♀️**
+### **Who do we need? 🙌**
 
 **Skills:**
 
