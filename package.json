@@ -2,8 +2,8 @@
 	"name": "gataca.io",
 	"private": true,
 	"license": "MIT",
-	"version": "0.1.0",
-	"author": "sergio gordo",
+	"version": "4.0.0",
+	"author": "Gataca",
 	"scripts": {
 		"build": "gatsby build",
 		"build-conditional": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
