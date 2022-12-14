@@ -42,7 +42,7 @@ Some KYC providers are already looking into SSI as part of their strategic produ
 
 As issuers, KYC providers can attest to the authenticity and ownership of this KYC credential, transfer this to a user and manage the status lifecycle, including revocation mechanisms to force its renewal according to local laws.
 
-![Trust triangle - Self Sovereign Identity and KYC ](/static/images/trusttriangle.png "Trust triangle - Self-Sovereign Identity and KYC ")
+![](/static/images/screenshot-2022-12-14-at-16-37-21.png)
 
 The issuance of these verifiable credentials can be issued at any time in the current process or triggered proactively by a user.
 
@@ -52,7 +52,7 @@ So, what are the benefits of integrating SSI into a KYC process?
 
 Over the last few years, new technologies such as AI, machine learning, IoT, and blockchain have gained traction, and attitudes and solutions have evolved from centralized, business-centric methods to decentralized, user-centric ones.
 
-As a consequence, KYC providers must ensure they are ready to integrate with near-future technological evolutions to offer their clients the most innovative, and user-friendly experience in the market.
+Consequently, KYC providers must ensure they are ready to integrate with near-future technological evolutions to offer their clients the most innovative, and user-friendly experience in the market.
 
 Governments and businesses are already using [SSI technology for different use cases](https://gataca.io/blog/ssi-essentials-35-use-cases-of-decentralized-identities-that-will-make-your-life-easier "https://gataca.io/blog/ssi-essentials-35-use-cases-of-decentralized-identities-that-will-make-your-life-easier"). However, its mass adoption is fast approaching through emerging regulations like the new [European proposal for eIDAS](https://gataca.io/blog/here-s-what-the-new-eidas-proposal-really-means-for-the-ssi-community-in-6-key-points "https://gataca.io/blog/here-s-what-the-new-eidas-proposal-really-means-for-the-ssi-community-in-6-key-points").
 
@@ -78,7 +78,7 @@ However, current KYC procedures to check alerts, such as potential positives for
 
 The concept of reusable KYC can improve the current business model by increasing effectively reducing such operational costs, increasing the profit margin, and adding recurrent revenues to verify KYC credentials.
 
-The operational cost of a KYC process falls remarkably as the same user data (ie. passport scan, liveness detection test, etc) no longer needs to be verified multiple times across different services.
+The operational cost of a KYC process falls remarkably as the same user data (i.e. passport scan, liveness detection test, etc.) no longer needs to be verified multiple times across different services.
 
 As a result, KYC providers can charge a lower price per verification with a higher margin instead of a high transaction-based price with lower margins. Naturally, these lower prices would be welcomed by third-party verifiers, such as banks, as their high KYC costs would also be reduced.
 
@@ -106,7 +106,7 @@ Through a monthly subscription, KYC providers can implement SSI into their solut
 * **Streamlines the issuance and verification of verifiable credentials**, as well as the management of users in one place
 * **Is fully integrated with EBSI**, the European Blockchain Services Infrastructure, while maintaining its blockchain-agnostic capabilities
 
-Gataca Studio will be officially launching in the next few weeks, but we already have strategic partners successfully testing out the technology and believing in the power of Self-Sovereign Identity. Want to try it out? [Get early access here](https://4728390.hs-sites.com/gataca-studio-get-early-access "https://4728390.hs-sites.com/gataca-studio-get-early-access").
+We already have strategic partners who successfully use the technology and believe in the power of Self-Sovereign Identity. Want to try it out? [Get started for free here](https://gataca.io/products/gatacaStudio/). 
 
 ## **Conclusion: Why should KYC providers be interested in SSI?**
 
@@ -116,6 +116,6 @@ The benefits of integrating Self-Sovereign Identity into existing KYC solutions 
 
 Join GATACA in leading the digital identity revolution.
 
-**Get early access to Gataca Studio** - If you’re curious to see the benefits of our technology on your workflows today, submit your application [here](https://4728390.hs-sites.com/gataca-studio-get-early-access "https://4728390.hs-sites.com/gataca-studio-get-early-access").
+**Get access to Gataca Studio** - If you’re curious to see the benefits of our technology on your workflows today, [start your free trial here](https://studio.gataca.io/login).
 
 **Chat with us -** We’d love to start building conversations and create synergies. Join our [Telegram ](https://t.me/digitalidentityinsights "https://t.me/digitalidentityinsights")group or get in touch at [hello@gataca.io](mailto:hello@gataca.io "mailto:hello@gataca.io").
