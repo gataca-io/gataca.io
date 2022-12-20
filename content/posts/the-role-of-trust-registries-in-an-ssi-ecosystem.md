@@ -6,12 +6,12 @@ meta_data:
     to issue or verify credentials providing a secure basis for entities to trust
     each other.
   rrss_images:
-    twitter: "/static/images/picture2.png"
-    facebook_and_whatsapp: "/static/images/picture2.png"
-    linkedin: "/static/images/picture2.png"
+    twitter: "/static/images/sm.png"
+    facebook_and_whatsapp: "/static/images/sm.png"
+    linkedin: "/static/images/sm.png"
 title: The role of trust registries in an SSI ecosystem
 author: ''
-hero_image: "/static/images/trust-registries-in-ssi.png"
+hero_image: "/static/images/trustregistriesssi.png"
 
 ---
 In the same way that anyone can falsify documents in the physical world, anyone can create a verifiable credential without being authorized to do so.
