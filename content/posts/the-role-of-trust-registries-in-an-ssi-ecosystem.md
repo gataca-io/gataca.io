@@ -16,7 +16,7 @@ hero_image: "/static/images/trustregistriesssi.png"
 ---
 In the same way that anyone can falsify documents in the physical world, anyone can create a verifiable credential without being authorized to do so.
 
-This raises the following question, how can a verifier assess that a verifiable credential is not fake and that it came from an authorized issuer? And vice-versa, how can users know which verifiers are trustworthy and if it is alright to share their credentials with them?
+This raises the following question, how can a verifier assess that a verifiable credential is not fake and that it came from an authorized issuer? And vice-versa, how can users know which verifiers are trustworthy and is all right to share their credentials with them?
 
 This article explores the concept of trust registries and how Gataca implements our Registries to create trust in our SSI environment.
 
