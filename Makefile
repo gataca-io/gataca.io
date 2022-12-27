@@ -6,5 +6,5 @@ install:
 build: install
 	yarn build
 
-docker: build
+docker:
 	docker buildx build -f build/Dockerfile --platform linux/amd64 -t gatacaid/website:$(VERSION) --push .
