@@ -1,5 +1,5 @@
 ---
-date: 2022-03-25T14:07:09Z
+date: 2022-03-25T14:07:09.000+00:00
 meta_data:
   title: This is how GATACA achieves blockchain interoperability
   description: Interoperability has been GATACA’s priority since day 1, as one of
@@ -40,16 +40,18 @@ The DID registry allows a lot more than matching DID methods with their relative
 * Work with different blockchain networks simultaneously
 * Add specific configurations to the DID registry that allows further internal segmentation to support client needs
 * Automatically deploy or load contracts into blockchain networks
-
-
 * Have the capacity to interact with other GATACA DID registries, creating a network effect in which members can help balance resolution workload through delegation
 * Allow the Wallet to manage multiple DID methods without needing to update the Wallet version
 * Readily adapt to new/changing technologies
 
 Being blockchain agnostic is just one of the ways in which GATACA is working towards its mission to make trusted digital identities easy for all stakeholders. In reality, GATACA not only bets on the agnosticism of a particular blockchain, but if required, to blockchain itself, and is exploring other storage solutions such as cloud-based Identity Hubs.
 
-**Chat with us -** We’d love to chat with you. Let us know your perspective and comments on this topic or anything Digital Identity-related. Join our [Telegram ](https://t.me/digitalidentityinsights "https://t.me/digitalidentityinsights")group.
+***
 
-**Stay in the loop -** Keep yourself updated on GATACA developments and how digital identities will transform our digital lives [here](https://gataca.io/insights/decentralized-finance-self-sovereign-identity-a-tale-of-decentralization-a-new-paradigm-of-trust "https://gataca.io/insights/decentralized-finance-self-sovereign-identity-a-tale-of-decentralization-a-new-paradigm-of-trust").
+Join Gataca in leading the digital identity revolution.
 
-Have a specific topic you’d like us to cover? Email us at [hello@gataca.io](mailto:hello@gataca.io "mailto:hello@gataca.io") - we’ll break it down for you in our upcoming blog articles.
+**Get started with Gataca Studio** - If you're curious to see the benefits of our technology on your workflows today, [get started for free here](https://studio.gataca.io/login).
+
+**Chat with us -** We’d love to chat with you. Let us know your perspective and comments on this topic or anything Digital Identity-related. Join our [Telegram ](https://t.me/digitalidentityinsights)group.
+
+**Stay in the loop -** Keep yourself updated on GATACA developments and how digital identities will transform our digital lives by subscribing to our newsletter [here](https://4728390.hs-sites.com/subscription).

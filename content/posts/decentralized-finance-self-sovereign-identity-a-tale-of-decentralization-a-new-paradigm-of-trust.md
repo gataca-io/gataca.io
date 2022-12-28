@@ -75,7 +75,7 @@ Through a monthly subscription and a seamless integration, you can start impleme
 
 → [Discover Gataca Studio and get started for free](https://studio.gataca.io/login "https://studio.gataca.io/login")
 
-![](/static/images/picture-1.png)
+![DeFi and SSI ](/static/images/picture-1.png)
 
 What’s more, **GATACA is working with government organizations to provide financial consumers with verifiable digital KYC/AML-related certificates to enable instant access to financial services while reducing identity fraud risks.** 
 
