@@ -2,7 +2,7 @@
 	"name": "gataca.io",
 	"private": true,
 	"license": "MIT",
-	"version": "4.0.0",
+	"version": "4.0.1",
 	"author": "Gataca",
 	"scripts": {
 		"build": "gatsby build",
@@ -92,10 +92,14 @@
 		"prettier": "^2.0.5",
 		"tailwindcss": "^1.4.6",
 		"tslint": "^6.1.2",
-		"tslint-loader": "^3.5.4"
+		"tslint-loader": "^3.5.4",
+		"@types/html-webpack-plugin": "^3.2.6"
 	},
 	"keywords": [
 		"gatsby",
 		"forestry"
-	]
+	],
+	"resolutions": {
+		"sharp": "^0.29.0"
+	}
 }
