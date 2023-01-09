@@ -13,6 +13,10 @@ author: ''
 hero_image: "/static/images/gatacastudioprelaunchblog.png"
 
 ---
+Gataca Studio has officialy launched. If you're curious to see the benefits of our technology on your workflows today, [get started for free here](https://studio.gataca.io/login).
+
+***
+
 In recent months, the GATACA team has been hard at work on an exciting new product: **Gataca Studio, our cloud platform designed for businesses of all sizes who wish to implement full-stack SSI tech with little integration effort.**
 
 Catering to our client’s needs, traditionally, our products have been solely offered in on-premise modality, which was essential to comply with SSI technology early adopters' requirements, composed mainly of large public institutions such as government administrations and universities. The main challenge with on-premise deployments is inefficiency. Those clients required on-premise offerings for production environments, but wanted to quickly learn and evaluate SSI technology by conducting smaller-scale pilots first. On-premise deployments for piloting SSI make little sense, as they require substantial dedication of resources and longer implementation times, posing avoidable barriers to demonstrating SSI benefits.
@@ -36,6 +40,6 @@ In essence, Gataca Studio has the potential to superpower any digital platform i
 > “We’re thrilled to be so close to the launch date. Offering SSI technology in a cloud-based, subscription version has been our team’s vision for quite some time - we truly believe it is the easiest way for organizations of all sizes to experience the benefits of SSI technology, bringing us one step closer to wider adoption.”  
 > **Irene Hernandez, CEO**
 
-We will officially launch soon, but we already have strategic partners successfully testing the technology. If you’re curious to see the benefits of our technology on your workflows today, get early access to Gataca Studio by clicking on the following form (limited spots available).
+**Chat with us -** We’d love to chat with you. Let us know your perspective and comments on this topic or anything Digital Identity-related. Join our [Telegram ](https://t.me/digitalidentityinsights)group.
 
-[**GET EARLY ACCESS**](https://share.hsforms.com/1lUaPxb5qTUaSYWwNfLpiIQ2tcg6 "Early access form ")
+**Stay in the loop -** Keep yourself updated on GATACA developments and how digital identities will transform our digital lives by subscribing to our newsletter [here](https://4728390.hs-sites.com/subscription).
