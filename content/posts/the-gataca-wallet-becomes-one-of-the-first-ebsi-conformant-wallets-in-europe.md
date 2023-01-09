@@ -13,14 +13,12 @@ author: ''
 hero_image: "/static/images/ebsi-wct-blog-image.jpg"
 
 ---
-* Towards the end of 2021, the EBSI team at the European Commission launched its [EBSI Wallet Conformance Test](https://ec.europa.eu/digital-building-blocks/wikis/display/EBSI/Become+conformant "https://ec.europa.eu/digital-building-blocks/wikis/display/EBSI/Become+conformant") (WCT) to certify conformance with EBSI specs third-partyrty SSI providers.
-
-
+* Towards the end of 2021, the EBSI team at the European Commission launched its [EBSI Wallet Conformance Test](https://ec.europa.eu/digital-building-blocks/wikis/display/EBSI/Become+conformant "https://ec.europa.eu/digital-building-blocks/wikis/display/EBSI/Become+conformant") (WCT) to certify conformance with EBSI specs third-party SSI providers.
 * Our [GATACA Wallet](https://gataca.io/products/wallet "https://gataca.io/products/wallet") has successfully passed the WTC, becoming one of the first EBSI conformant Wallets in the region.
 
 ## What is the EBSI Wallet Conformance Test?
 
-[EBSI ](https://ec.europa.eu/digital-building-blocks/wikis/display/ebsi "https://ec.europa.eu/digital-building-blocks/wikis/display/ebsi")(European Blockchain Services Infrastructure), also referred to as the European blockchain network, has been developing specifications to promote interoperability with its network and its services. The first set of public specifications was directed towards ID wallets applications to ensure conformance to EBSI core service APIs.
+[EBSI ](https://ec.europa.eu/digital-building-blocks/wikis/display/ebsi "https://ec.europa.eu/digital-building-blocks/wikis/display/ebsi")(European Blockchain Services Infrastructure), also referred to as the European blockchain network, has been developing specifications to promote interoperability with its network and its services. The first set of public specifications was directed toward ID wallet applications to ensure conformance to EBSI core service APIs.
 
 The EBSI WCT consists of 3 test scenarios:
 
@@ -38,18 +36,22 @@ The EBSI WCT is simple & financially accessible. This is especially helpful as W
 
 ## What does it mean for GATACA?
 
-Since mid-2020, GATACA has been closely involved with the EBSI project. Even before the EBSI WCT was developed & launched, the GATACA platform was working to become EBSI compliant, which involved using EBSI’s DID registry, credential data models, APIs, and Trusted Issuer Registry (TIR).
+Since mid-2020, GATACA has been closely involved with the EBSI project, using EBSI’s DID registry, credential data models, APIs, and Trusted Issuer Registry (TIR).
 
-We furthered our involvement by becoming [a primary SSI technology provider for the Spanish group and later in the European Commission’s Early Adopters Program](https://gataca.io/blog/gataca-joins-the-european-commission-s-early-adopters-program-as-the-ssi-technology-provider-in-the-spanish-group "https://gataca.io/blog/gataca-joins-the-european-commission-s-early-adopters-program-as-the-ssi-technology-provider-in-the-spanish-group"), whose goal is to support pioneering countries test use cases over EBSI. Later in 2021, we became a technology provider for 2 additional Early Adopters projects.
+We furthered our involvement by becoming [a primary SSI technology provider for the Spanish group and later in the European Commission’s Early Adopters Program](https://gataca.io/blog/gataca-joins-the-european-commission-s-early-adopters-program-as-the-ssi-technology-provider-in-the-spanish-group "https://gataca.io/blog/gataca-joins-the-european-commission-s-early-adopters-program-as-the-ssi-technology-provider-in-the-spanish-group"), whose goal is to support pioneering countries' test use cases over EBSI. Later in 2021, we became a technology provider for 2 additional Early Adopters projects.
 
-Now, by having the EBSI Wallet Conformance certification, GATACA’s market positioning and opportunities are boosted. As one of the few certified Wallets in the market, GATACA has become a key reference and qualified provider for organizations interested in integrating their services with EBSI. It supplies our platform with the trust and credibility required for governments and other large corporations given we’re working with an EU-wide government-backed initiative.
+With the EBSI Wallet Conformance certification, GATACA’s market positioning and opportunities are boosted. As one of the few certified Wallets in the market, GATACA has become a key reference and qualified provider for organizations interested in integrating their services with EBSI. 
 
 ## What’s next?
 
-The WCT is just the first of many specifications that the European Commission and other regional standardization and regulatory bodies will develop. The current WCT will continue to evolve and mature to include new different specifications for ecosystem stakeholders (issuers, users, and verifiers).
+The WCT is just the first of many specifications that the European Commission and other regional standardization and regulatory bodies will develop. The current WCT will evolve and mature to include new specifications for ecosystem stakeholders (issuers, users, and verifiers).
 
-GATACA will continue to work closely with EBSI and pioneering European nations to pilot SSI use cases and soon bring these to life in production environments, which is expected to take place later this year. We believe it is essential to comply and evolve with the EBSI regulation in order to maintain interoperability and compatibility with both the public and private sector as they begin to integrate blockchain use cases in their processes.
+GATACA will continue to work closely with EBSI and pioneering European nations to pilot SSI use cases and soon bring these to life in production environments, which is expected to occur later this year. We believe it is essential to comply and evolve with the EBSI regulation to maintain interoperability and compatibility with both the public and private sectors as they begin to integrate blockchain use cases in their processes.
 
-We look forward to continuing our collaboration in European-led initiatives.
+Join Gataca in leading the digital identity revolution.
 
-Curious to see how GATACA works with EBSI? [Get in touch.](https://gataca.io/company/contact "https://gataca.io/company/contact")
+**Get started with Gataca Studio** - If you're curious to see the benefits of our technology on your workflows today, [get started for free here](https://studio.gataca.io/login).
+
+**Chat with us -** We’d love to chat with you. Let us know your perspective and comments on this topic or anything Digital Identity-related. Join our [Telegram ](https://t.me/digitalidentityinsights)group.
+
+**Stay in the loop -** Keep yourself updated on GATACA developments and how digital identities will transform our digital lives by subscribing to our newsletter [here](https://4728390.hs-sites.com/subscription).
