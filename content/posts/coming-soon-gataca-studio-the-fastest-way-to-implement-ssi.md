@@ -13,7 +13,7 @@ author: ''
 hero_image: "/static/images/gatacastudioprelaunchblog.png"
 
 ---
-Gataca Studio has officialy launched. If you're curious to see the benefits of our technology on your workflows today, [get started for free here](https://studio.gataca.io/login).
+\[UPDATED 13/1/2023\] Gataca Studio has officially launched. If you're curious to see the benefits of our technology on your workflows today, [get started for free here](https://studio.gataca.io/login).
 
 ***
 
