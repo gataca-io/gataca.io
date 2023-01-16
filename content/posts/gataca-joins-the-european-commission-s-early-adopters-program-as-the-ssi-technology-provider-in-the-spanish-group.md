@@ -56,7 +56,7 @@ Following these developments, GATACA will deploy its technology components in th
 
 Interested in following our progress in the Early Adopters Program?
 
-See the results here: [https://ec.europa.eu/digital-building-blocks/wikis/display/EBSI/Transcript+of+records](https://ec.europa.eu/digital-building-blocks/wikis/display/EBSI/Transcript+of+records "https://ec.europa.eu/digital-building-blocks/wikis/display/EBSI/Transcript+of+records")
+\[UPDATE 13/1/2023\] See the results here: [https://ec.europa.eu/digital-building-blocks/wikis/display/EBSI/Transcript+of+records](https://ec.europa.eu/digital-building-blocks/wikis/display/EBSI/Transcript+of+records "https://ec.europa.eu/digital-building-blocks/wikis/display/EBSI/Transcript+of+records")
 
 ***
 
