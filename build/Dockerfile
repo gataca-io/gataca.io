@@ -29,9 +29,7 @@ WORKDIR /app
 
 COPY . .
 
-RUN yarn install 
-
-RUN yarn build
+RUN yarn install && yarn build
 
 
 # FROM alpine:3.15 AS build
@@ -47,12 +45,12 @@ RUN yarn build
 # RUN yarn
 # RUN yarn build
 
-#FROM nginx:1.23-alpine@sha256:0f4e03e4e0e854bafe7ce689a4c2476feb07a88a465bbc7d0f155dd89a6b00db AS deploy
+FROM nginx:1.23-alpine@sha256:0f4e03e4e0e854bafe7ce689a4c2476feb07a88a465bbc7d0f155dd89a6b00db AS deploy
 
-#WORKDIR /usr/share/nginx/html
-#RUN rm -rf ./*
+WORKDIR /usr/share/nginx/html
+RUN rm -rf ./*
 
-# COPY --from=build /app/public ./
-#COPY /public .
+COPY --from=builder /app/public ./
+COPY /public .
 
-#ENTRYPOINT ["nginx", "-g", "daemon off;"]
+ENTRYPOINT ["nginx", "-g", "daemon off;"]

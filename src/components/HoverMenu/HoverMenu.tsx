@@ -57,7 +57,7 @@ const HoverMenu: React.FC<IHoverMenuProps> = (
         onMouseLeave={() => changeVisibility(hoverElement)}
       >
         <div  className={styles.hoverMenuContainer} >
-          {...list.map(el => {
+          {list.map(el => {
             const content = (
               <div className={cx(
                 styles.menuElement
