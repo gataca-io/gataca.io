@@ -6,5 +6,8 @@ install:
 build: install
 	yarn build
 
-docker:
-	docker buildx build -f build/Dockerfile --platform linux/arm64 -t gatacaid/website:$(VERSION) . # --push
+release:
+	docker buildx build -f build/Dockerfile --platform linux/amd64 -t gatacaid/website:$(VERSION) . --push
+
+pre-release:
+	docker buildx build -f build/Dockerfile --platform linux/amd64 -t gatacaid/website:$(VERSION)-pre . --push
