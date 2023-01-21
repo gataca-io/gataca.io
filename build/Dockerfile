@@ -32,7 +32,7 @@ COPY . .
 RUN yarn install && yarn build
 
 
-FROM nginx:1.23-alpine@sha256:0f4e03e4e0e854bafe7ce689a4c2476feb07a88a465bbc7d0f155dd89a6b00db AS deploy
+FROM nginx:1.23-alpine AS deploy
 
 WORKDIR /usr/share/nginx/html
 RUN rm -rf ./*
