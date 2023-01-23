@@ -1,4 +1,3 @@
-
 const path = require("path")
 
 module.exports.onCreateNode = ({ node, actions }) => {
@@ -13,7 +12,7 @@ module.exports.onCreateNode = ({ node, actions }) => {
       name: "slug",
       value: slug,
     })
-    console.log('MD NODE SLUG => ', slug)
+    console.log("MD NODE SLUG => ", slug)
   }
 }
 
@@ -32,10 +31,10 @@ module.exports.createPages = async ({ graphql, actions, reporter }) => {
   const queryPosts = await graphql(`
     query {
       allMarkdownRemark(
-          sort: { fields: [frontmatter___date], order: DESC }
-          filter: {fileAbsolutePath: {regex: "/posts/.*\\\\.md$/"}}
-          limit: 1000
-        ) {
+        sort: { fields: [frontmatter___date], order: DESC }
+        filter: { fileAbsolutePath: { regex: "/posts/.*\\\\.md$/" } }
+        limit: 1000
+      ) {
         edges {
           node {
             fields {
@@ -45,16 +44,15 @@ module.exports.createPages = async ({ graphql, actions, reporter }) => {
         }
       }
     }
-    
   `)
-  
+
   if (queryPosts.errors) {
     reporter.panicOnBuild(`Error while running GraphQL query.`)
     return
   }
-  
+
   // Create blog-list preview pages
-/*  const posts = response.data.allMarkdownRemark.edges
+  /*  const posts = response.data.allMarkdownRemark.edges
   const postsPerPage = 6
   const numPages = Math.ceil(posts.length / postsPerPage)
   Array.from({ length: numPages }).forEach((_, i) => {
@@ -69,9 +67,9 @@ module.exports.createPages = async ({ graphql, actions, reporter }) => {
       },
     })
   })*/
-  
+
   // Create new Unique pages for each post with unique slug
-  queryPosts.data.allMarkdownRemark.edges.forEach(edge => {
+  queryPosts.data.allMarkdownRemark.edges.forEach((edge) => {
     createPage({
       component: blogMdTemplate,
       path: `/blog/${edge.node.fields.slug}`,
@@ -79,33 +77,33 @@ module.exports.createPages = async ({ graphql, actions, reporter }) => {
         slug: edge.node.fields.slug,
       },
     })
-    console.log('POST CREATED => ', edge.node.fields.slug)
+    console.log("POST CREATED => ", edge.node.fields.slug)
   })
-  
+
   const queryMdPages = await graphql(`
     query {
-       allMarkdownRemark(
-        sort: { order: DESC, fields: [frontmatter___date]},
-        filter: {fileAbsolutePath: {regex: "/mdpages/.*\\\\.md$/"}}
+      allMarkdownRemark(
+        sort: { order: DESC, fields: [frontmatter___date] }
+        filter: { fileAbsolutePath: { regex: "/mdpages/.*\\\\.md$/" } }
       ) {
-      edges {
-        node {
-          fields {
-            slug
+        edges {
+          node {
+            fields {
+              slug
+            }
           }
         }
       }
     }
-}
   `)
-  
+
   if (queryMdPages.errors) {
     reporter.panicOnBuild(`Error while running GraphQL query.`)
     return
   }
-  
+
   // Create new Unique pages for each post with unique slug
-  queryMdPages.data.allMarkdownRemark.edges.forEach(edge => {
+  queryMdPages.data.allMarkdownRemark.edges.forEach((edge) => {
     createPage({
       component: pageMdTemplate,
       path: `/${edge.node.fields.slug}`,
@@ -113,33 +111,33 @@ module.exports.createPages = async ({ graphql, actions, reporter }) => {
         slug: edge.node.fields.slug,
       },
     })
-    console.log('PAGE CREATED => ', edge.node.fields.slug)
+    console.log("PAGE CREATED => ", edge.node.fields.slug)
   })
-  
+
   const queryJobs = await graphql(`
     query {
-       allMarkdownRemark(
-        sort: { order: DESC, fields: [frontmatter___date]},
-        filter: {fileAbsolutePath: {regex: "/jobs/.*\\\\.md$/"}}
+      allMarkdownRemark(
+        sort: { order: DESC, fields: [frontmatter___date] }
+        filter: { fileAbsolutePath: { regex: "/jobs/.*\\\\.md$/" } }
       ) {
-      edges {
-        node {
-          fields {
-            slug
+        edges {
+          node {
+            fields {
+              slug
+            }
           }
         }
       }
     }
-}
   `)
-  
+
   if (queryJobs.errors) {
     reporter.panicOnBuild(`Error while running GraphQL query.`)
     return
   }
-  
+
   // Create new Unique pages for each post with unique slug
-  queryJobs.data.allMarkdownRemark.edges.forEach(edge => {
+  queryJobs.data.allMarkdownRemark.edges.forEach((edge) => {
     createPage({
       component: pageMdTemplate,
       path: `/jobs/${edge.node.fields.slug}`,
@@ -147,15 +145,14 @@ module.exports.createPages = async ({ graphql, actions, reporter }) => {
         slug: edge.node.fields.slug,
       },
     })
-    console.log('JOBS CREATED => ', edge.node.fields.slug)
+    console.log("JOBS CREATED => ", edge.node.fields.slug)
   })
-  
-  
+
   //dynamically create pages here
   //get path to template
   //get slugs
-  
-/*  const blogWpTemplate = path.resolve("./src/templates/blog.js")
+
+  /*  const blogWpTemplate = path.resolve("./src/templates/blog.js")
   const responseWp = await graphql(`
     query {
       allWordpressPost {
@@ -167,8 +164,8 @@ module.exports.createPages = async ({ graphql, actions, reporter }) => {
       }
     }
   `)*/
-  
-/*  // Create blog-list preview pages
+
+  /*  // Create blog-list preview pages
   const postsWp = responseWp.data.allWordpressPost.edges
   const postsWpPerPage = 6
   const numWpPages = Math.ceil(posts.length / postsPerPage)
@@ -184,9 +181,9 @@ module.exports.createPages = async ({ graphql, actions, reporter }) => {
       },
     })
   })*/
-  
+
   //create new pages with unique slug
-/*  responseWp.data.allWordpressPost.edges.forEach(edge => {
+  /*  responseWp.data.allWordpressPost.edges.forEach(edge => {
     createPage({
       component: blogWpTemplate,
       path: `/stories/${edge.node.slug}`,
@@ -196,5 +193,3 @@ module.exports.createPages = async ({ graphql, actions, reporter }) => {
     })
   })*/
 }
-
-
