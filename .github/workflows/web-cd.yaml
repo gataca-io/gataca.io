@@ -7,7 +7,7 @@ on:
         type: choice
         description: 'Deploy k8s DEV?'
         required: true
-        default: 'YES'
+        default: 'NO'
         options:
         - "YES"
         - "NO"
@@ -19,7 +19,7 @@ env:
 jobs:
   update:
     name: Set up Version
-    environment: devv
+    environment: dev
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -30,9 +30,12 @@ jobs:
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
+        env:
+          Key: ${{ secrets.CD_AWS_ACCESS_KEY_ID }}
+          Access-key: ${{ secrets.CD_AWS_SECRET_ACCESS_KEY }}
         with:
-          aws-access-key-id: ${{ vars.CD_AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ vars.CD_AWS_SECRET_ACCESS_KEY }}
+          aws-access-key-id: $Key
+          aws-secret-access-key: $Access-key
           aws-region: ${{ env.AWS_REGION }}
      
       - name: Configure git for private modules
