@@ -68,20 +68,20 @@ jobs:
 #          git diff # Output
 
 
-
-      - name: Set up deployment-dev
-        run: |
-          git config --global user.email ${{ github.actor }}@gataca.io
-          git config --global user.name ${{ github.actor }}
-          # Update version pre
-          V=$(grep version package.json | cut -d'"' -f4)
-          echo "ver="$V-pre >> $GITHUB_ENV
-          IMAGE=$(grep 'image:' deployments/deployment-dev.yml | cut -d':' -f3 | cut -d'-' -f1)
-          echo "image="$IMAGE-pre >> $GITHUB_ENV
-          echo "version $V, image $IMAGE."
-          echo "verdiff=NO" >> $GITHUB_ENV
-#          echo "changefile="$CHN >> $GITHUB_ENV
-
+#
+#      - name: Set up deployment-dev
+#        run: |
+#          git config --global user.email ${{ github.actor }}@gataca.io
+#          git config --global user.name ${{ github.actor }}
+#          # Update version pre
+#          V=$(grep version package.json | cut -d'"' -f4)
+#          echo "ver="$V-pre >> $GITHUB_ENV
+#          IMAGE=$(grep 'image:' deployments/deployment-dev.yml | cut -d':' -f3 | cut -d'-' -f1)
+#          echo "image="$IMAGE-pre >> $GITHUB_ENV
+#          echo "version $V, image $IMAGE."
+#          echo "verdiff=NO" >> $GITHUB_ENV
+##          echo "changefile="$CHN >> $GITHUB_ENV
+#
       - name: Update deployment-dev
         run: |
           if [ "${{ env.ver }}" != "${{ env.image }}" ]; then
