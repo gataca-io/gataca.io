@@ -82,21 +82,21 @@ jobs:
           echo "verdiff=NO" >> $GITHUB_ENV
 #          echo "changefile="$CHN >> $GITHUB_ENV
 
-#      - name: Update deployment-dev
-#        run: |
-#          if [ "${{ env.ver }}" != "${{ env.image }}" ]; then
-#            echo "verdiff=YES" >> $GITHUB_ENV
-#            sed -i 's/website:.*$/website:${{ env.ver }}/g' deployments/deployment-dev.yml          
-#            echo "deployment-dev.yml:" ; grep 'website' deployments/deployment-dev.yml || true # output
-#          fi
-##          if [ "${{ env.changefile }}" != "0" ] || [ "${{ env.ver }}" != "${{ env.image }}" ]; then
-#          if [ "${{ env.ver }}" != "${{ env.image }}" ]; then
-#            git add .
-#            git commit -m "Change to image version to ${{ env.ver }} because of gataca.io CD DEV action."
-#            git push
-#          fi
-#
-#
+      - name: Update deployment-dev
+        run: |
+          if [ "${{ env.ver }}" != "${{ env.image }}" ]; then
+            echo "verdiff=YES" >> $GITHUB_ENV
+            sed -i 's/website:.*$/website:${{ env.ver }}/g' deployments/deployment-dev.yml          
+            echo "deployment-dev.yml:" ; grep 'website' deployments/deployment-dev.yml || true # output
+          fi
+#          if [ "${{ env.changefile }}" != "0" ] || [ "${{ env.ver }}" != "${{ env.image }}" ]; then
+          if [ "${{ env.ver }}" != "${{ env.image }}" ]; then
+            git add .
+            git commit -m "Change to image version to ${{ env.ver }} because of gataca.io CD DEV action."
+            git push
+          fi
+
+
 #      - name: Install and configure kubectl
 #        run: |
 #          if [ "${{ github.event.inputs.ExecuteChoice }}" == "YES" ]; then
