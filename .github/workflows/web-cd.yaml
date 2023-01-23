@@ -19,6 +19,7 @@ env:
 jobs:
   update:
     name: Set up Version
+    environment: dev
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -30,8 +31,8 @@ jobs:
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          aws-access-key-id: ${{ var.CD_AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ var.CD_AWS_SECRET_ACCESS_KEY }}
+          aws-access-key-id: ${{ secret.CD_AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secret.CD_AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ env.AWS_REGION }}
      
       - name: Configure git for private modules
