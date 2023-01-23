@@ -19,7 +19,6 @@ env:
 jobs:
   update:
     name: Set up Version
-    environment: dev
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
