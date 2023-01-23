@@ -1,6 +1,6 @@
 FROM node:14.15.5-alpine AS builder
 
-RUN apk add --no-cache \
+RUN apk add --no-cache --update qemu-x86_64 \
     # git: gatsby new command depends on git
     git \
     # util-linux: gatsby develop calls lscpu
@@ -29,7 +29,7 @@ WORKDIR /app
 
 COPY . .
 
-RUN yarn install && yarn build
+RUN yarn install --network-timeout 1000000 && yarn build
 
 
 FROM nginx:1.23-alpine AS deploy
