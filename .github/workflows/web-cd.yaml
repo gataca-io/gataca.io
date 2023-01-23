@@ -20,7 +20,7 @@ jobs:
   update:
     name: Set up Version
     runs-on: ubuntu-latest
-    environment: DEV
+    environment: DEV2
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
