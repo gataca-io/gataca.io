@@ -27,13 +27,13 @@ jobs:
           fetch-depth: 0
           token: ${{ secrets.CI_TOKEN }} 
 
-#      - name: Configure AWS credentials
-#        uses: aws-actions/configure-aws-credentials@v1
-#        with:
-#          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-#          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-#          aws-region: ${{ env.AWS_REGION }}
-#     
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.CD_AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.CD_AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
+     
       - name: Configure git for private modules
         run: git config --global url."https://${{ secrets.CI_TOKEN }}:x-oauth-basic@github.com/gataca-io".insteadOf "https://github.com/gataca-io"
 
@@ -55,10 +55,10 @@ jobs:
           username: navasgataca              ###############  CHANGE TO GENERIC USER ###############
           password: ${{ secrets.DOCKERHUB_TOKEN }} 
 
-      - name: Create Docker image
-        run: |
-          make pre-release-intel 
-          docker image ls
+#      - name: Create Docker image
+#        run: |
+#          make pre-release-intel 
+#          docker image ls
 
 #      - name: Set up deployment-dev
 #        run: |
