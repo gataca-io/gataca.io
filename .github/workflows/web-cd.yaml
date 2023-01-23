@@ -96,26 +96,26 @@ jobs:
           fi
 
 
-#      - name: Install and configure kubectl
-#        run: |
-#          if [ "${{ github.event.inputs.ExecuteChoice }}" == "YES" ]; then
-#            echo "Installing kubctl..."
-#            VERSION=$(curl --silent https://storage.googleapis.com/kubernetes-release/release/stable.txt)
-#            VERSION=v1.23.6
-#            curl https://storage.googleapis.com/kubernetes-release/release/$VERSION/bin/linux/amd64/kubectl \
-#                --progress-bar \
-#                --location \
-#                --remote-name
-#            chmod +x kubectl
-#            sudo mv kubectl /usr/local/bin/
-#            mkdir $HOME/.kube/
-#            echo ${{ secrets.KUBECONFIG }} | base64 --decode > $HOME/.kube/config
-#            kubectl config get-contexts
+      - name: Install and configure kubectl
+        run: |
+          if [ "${{ github.event.inputs.ExecuteChoice }}" == "YES" ]; then
+            echo "Installing kubctl..."
+            VERSION=$(curl --silent https://storage.googleapis.com/kubernetes-release/release/stable.txt)
+            VERSION=v1.23.6
+            curl https://storage.googleapis.com/kubernetes-release/release/$VERSION/bin/linux/amd64/kubectl \
+                --progress-bar \
+                --location \
+                --remote-name
+            chmod +x kubectl
+            sudo mv kubectl /usr/local/bin/
+            mkdir $HOME/.kube/
+            echo ${{ secrets.KUBECONFIG }} | base64 --decode > $HOME/.kube/config
+            kubectl config get-contexts
+          fi
+#            if [ "${{ env.verdiff }}" == "YES" ]; then
+#              kubectl apply -f deployments/deployment-dev.yml || true
+#            else
+#              kubectl -n backends rollout restart deploy connect
+#            fi
 #          fi
-##            if [ "${{ env.verdiff }}" == "YES" ]; then
-##              kubectl apply -f deployments/deployment-dev.yml || true
-##            else
-##              kubectl -n backends rollout restart deploy connect
-##            fi
-##          fi
-#
+
