@@ -68,35 +68,35 @@ jobs:
 #          git diff # Output
 
 
-#
-#      - name: Set up deployment-dev
-#        run: |
-#          git config --global user.email ${{ github.actor }}@gataca.io
-#          git config --global user.name ${{ github.actor }}
-#          # Update version pre
-#          V=$(grep version package.json | cut -d'"' -f4)
-#          echo "ver="$V-pre >> $GITHUB_ENV
-#          IMAGE=$(grep 'image:' deployments/deployment-dev.yml | cut -d':' -f3 | cut -d'-' -f1)
-#          echo "image="$IMAGE-pre >> $GITHUB_ENV
-#          echo "version $V, image $IMAGE."
-#          echo "verdiff=NO" >> $GITHUB_ENV
-##          echo "changefile="$CHN >> $GITHUB_ENV
-#
-#      - name: Update deployment-dev
-#        run: |
-#          if [ "${{ env.ver }}" != "${{ env.image }}" ]; then
-#            echo "verdiff=YES" >> $GITHUB_ENV
-#            sed -i 's/website:.*$/website:${{ env.ver }}/g' deployments/deployment-dev.yml          
-#            echo "deployment-dev.yml:" ; grep 'website' deployments/deployment-dev.yml || true # output
-#          fi
-##          if [ "${{ env.changefile }}" != "0" ] || [ "${{ env.ver }}" != "${{ env.image }}" ]; then
-#          if [ "${{ env.ver }}" != "${{ env.image }}" ]; then
-#            git add .
-#            git commit -m "Change to image version to ${{ env.ver }} because of gataca.io CD DEV action."
-#            git push
-#          fi
-#
-#
+
+      - name: Set up deployment-dev
+        run: |
+          git config --global user.email ${{ github.actor }}@gataca.io
+          git config --global user.name ${{ github.actor }}
+          # Update version pre
+          V=$(grep version package.json | cut -d'"' -f4)
+          echo "ver="$V-pre >> $GITHUB_ENV
+          IMAGE=$(grep 'image:' deployments/deployment-dev.yml | cut -d':' -f3 | cut -d'-' -f1)
+          echo "image="$IMAGE-pre >> $GITHUB_ENV
+          echo "version $V, image $IMAGE."
+          echo "verdiff=NO" >> $GITHUB_ENV
+#          echo "changefile="$CHN >> $GITHUB_ENV
+
+      - name: Update deployment-dev
+        run: |
+          if [ "${{ env.ver }}" != "${{ env.image }}" ]; then
+            echo "verdiff=YES" >> $GITHUB_ENV
+            sed -i 's/website:.*$/website:${{ env.ver }}/g' deployments/deployment-dev.yml          
+            echo "deployment-dev.yml:" ; grep 'website' deployments/deployment-dev.yml || true # output
+          fi
+#          if [ "${{ env.changefile }}" != "0" ] || [ "${{ env.ver }}" != "${{ env.image }}" ]; then
+          if [ "${{ env.ver }}" != "${{ env.image }}" ]; then
+            git add .
+            git commit -m "Change to image version to ${{ env.ver }} because of gataca.io CD DEV action."
+            git push
+          fi
+
+
       - name: Install and configure kubectl
         run: |
           if [ "${{ github.event.inputs.ExecuteChoice }}" == "YES" ]; then
@@ -112,10 +112,11 @@ jobs:
             mkdir $HOME/.kube/
             echo ${{ secrets.KUBECONFIG }} | base64 --decode > $HOME/.kube/config
             kubectl config get-contexts
+          fi
 #            if [ "${{ env.verdiff }}" == "YES" ]; then
 #              kubectl apply -f deployments/deployment-dev.yml || true
 #            else
 #              kubectl -n backends rollout restart deploy connect
 #            fi
-          fi
+#          fi
 
