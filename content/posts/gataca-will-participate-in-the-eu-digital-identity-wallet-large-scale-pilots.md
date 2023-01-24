@@ -10,7 +10,7 @@ meta_data:
     linkedin: ''
 title: Gataca will participate in the EU Digital Identity Wallet Large Scale Pilots
 author: ''
-hero_image: "/static/images/eidas-call.png"
+hero_image: "/static/images/logo-dc4e.png"
 
 ---
 **On the 14th of December 2022, the European Commission announced the results of the EU Digital Identity Wallet Large Scale Pilots. Gataca will participate as part of the** [**Digital Credentials for Europe (DC4EU)**](https://www.dc4eu.eu/ "https://www.dc4eu.eu/") **consortium, formed by 82 organizations from 23 countries.**
