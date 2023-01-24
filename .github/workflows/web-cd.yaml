@@ -43,10 +43,10 @@ jobs:
           username: navasgataca              ###############  CHANGE TO GENERIC USER ###############
           password: ${{ secrets.DOCKERHUB_TOKEN }} 
 
-#      - name: Create Docker image
-#        run: |
-#          make pre-release-intel 
-#          docker image ls
+      - name: Create Docker image
+        run: |
+          make pre-release-intel 
+          docker image ls
 
 
 
