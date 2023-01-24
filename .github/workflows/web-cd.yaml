@@ -1,4 +1,4 @@
-name: gataca.io CD DEV 
+name: Web CD DEV 
 
 on:
   workflow_dispatch:
@@ -7,7 +7,7 @@ on:
         type: choice
         description: 'Deploy k8s DEV?'
         required: true
-        default: 'YES'
+        default: 'NO'
         options:
         - "YES"
         - "NO"
@@ -30,87 +30,61 @@ jobs:
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-access-key-id: ${{ secrets.CD_AWS_ACCESS_KEY_ID_DEV }}
+          aws-secret-access-key: ${{ secrets.CD_AWS_SECRET_ACCESS_KEY_DEV }}
           aws-region: ${{ env.AWS_REGION }}
      
       - name: Configure git for private modules
         run: git config --global url."https://${{ secrets.CI_TOKEN }}:x-oauth-basic@github.com/gataca-io".insteadOf "https://github.com/gataca-io"
 
-#      - name: Install Go 1.17
-#        uses: actions/setup-go@v2
-#        with:
-#          go-version: 1.17
-# 
-#      - name: Set up Lint & Go
-#        run: |
-#          curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $(go env GOPATH)/bin v1.43.0
-#          golangci-lint cache clean && go clean -modcache -cache -i
-#          go get github.com/securego/gosec/cmd/gosec
-#          go get honnef.co/go/tools/cmd/staticcheck
-#
       - name: Login to Docker Hub
         uses: docker/login-action@v2
         with:
           username: navasgataca              ###############  CHANGE TO GENERIC USER ###############
           password: ${{ secrets.DOCKERHUB_TOKEN }} 
 
-      - name: Create Docker image
+      - name: Create and upload Docker image
         run: |
           make pre-release-intel 
           docker image ls
 
-#      - name: Set up deployment-dev
-#        run: |
-#          git config --global user.email ${{ github.actor }}@gataca.io
-#          git config --global user.name ${{ github.actor }}
-#          git fetch
-#          git checkout develop     
-#          CHN=$(git diff | wc -l)
-#          git diff
-#          
-#          # Update version SNAPSHOT
-#          V=$(cat version)
-#          echo "ver="$V-SNAPSHOT >> $GITHUB_ENV
-#          IMAGE=$(grep 'image:' deployments/deployment-dev.yml | cut -d':' -f3 | cut -d'-' -f1)
-#          echo "image="$IMAGE-SNAPSHOT >> $GITHUB_ENV
-#          echo "version $V, image $IMAGE."
-#          echo "verdiff=NO" >> $GITHUB_ENV
-#          echo "changefile="$CHN >> $GITHUB_ENV
-#
-#      - name: Update deployment-dev
-#        run: |
-#          if [ "${{ env.ver }}" != "${{ env.image }}" ]; then
-#            echo "verdiff=YES" >> $GITHUB_ENV
-#            sed -i 's/gataca-connect-api:.*$/gataca-connect-api:${{ env.ver }}/g' deployments/deployment-dev.yml          
-#            echo "deployment-dev.yml:" ; grep 'gataca-connect-api' deployments/deployment-dev.yml || true
-#          fi
-#          if [ "${{ env.changefile }}" != "0" ] || [ "${{ env.ver }}" != "${{ env.image }}" ]; then
-#            git add .
-#            git commit -m "Change to image version to ${{ env.ver }} because of connect-api CD DEV action."
-#            git push
-#          fi
-#
-#
-#      - name: Install and configure kubectl
-#        run: |
-#          if [ "${{ github.event.inputs.ExecuteChoice }}" == "YES" ]; then
-#            echo "Installing kubctl..."
-#            VERSION=$(curl --silent https://storage.googleapis.com/kubernetes-release/release/stable.txt)
-#            VERSION=v1.23.6
-#            curl https://storage.googleapis.com/kubernetes-release/release/$VERSION/bin/linux/amd64/kubectl \
-#                --progress-bar \
-#                --location \
-#                --remote-name
-#            chmod +x kubectl
-#            sudo mv kubectl /usr/local/bin/
-#            mkdir $HOME/.kube/
-#            echo ${{ secrets.KUBECONFIG }} | base64 --decode > $HOME/.kube/config
-#            kubectl config get-contexts
-#            if [ "${{ env.verdiff }}" == "YES" ]; then
-#              kubectl apply -f deployments/deployment-dev.yml || true
-#            else
-#              kubectl -n backends rollout restart deploy connect
-#            fi
-#          fi
-#
+      - name: Set up deployment-dev
+        run: |
+          git config --global user.email ${{ github.actor }}@gataca.io
+          git config --global user.name ${{ github.actor }}
+          # Update version pre
+          V=$(grep version package.json | cut -d'"' -f4)
+          echo "ver="$V-pre >> $GITHUB_ENV
+          IMAGE=$(grep 'image:' deployments/deployment-dev.yml | cut -d':' -f3 | cut -d'-' -f1)
+          echo "image="$IMAGE-pre >> $GITHUB_ENV
+          echo "version $V, image $IMAGE."
+
+      - name: Update deployment-dev
+        run: |
+          if [ "${{ github.event.inputs.ExecuteChoice }}" == "YES" ]; then
+            if [ "${{ env.ver }}" != "${{ env.image }}" ]; then
+              sed -i 's/website:.*$/website:${{ env.ver }}/g' deployments/deployment-dev.yml          
+              echo "deployment-dev.yml:" ; grep 'website' deployments/deployment-dev.yml || true # output
+              git add .
+              git commit -m "Change to image version to ${{ env.ver }} because of gataca.io CD DEV action."
+              git push
+            fi
+          fi
+
+      - name: Install and configure kubectl
+        run: |
+          if [ "${{ github.event.inputs.ExecuteChoice }}" == "YES" ]; then
+            echo "Installing kubctl..."
+            VERSION=$(curl --silent https://storage.googleapis.com/kubernetes-release/release/stable.txt)
+            VERSION=v1.23.6
+            curl https://storage.googleapis.com/kubernetes-release/release/$VERSION/bin/linux/amd64/kubectl \
+                --progress-bar \
+                --location \
+                --remote-name
+            chmod +x kubectl
+            sudo mv kubectl /usr/local/bin/
+            mkdir $HOME/.kube/
+            echo ${{ secrets.CD_KUBE_CONFIG_DEV }} | base64 --decode > $HOME/.kube/config
+            kubectl config get-contexts
+            kubectl apply -f deployments/deployment-dev.yml || true
+          fi
