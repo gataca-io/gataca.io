@@ -25,7 +25,7 @@ At Gataca, we are experts in decentralized identity and have extended experience
 
 ### Introducing Gataca Studio: a full-stack SSI product ready to be tested
 
-Our all-in-one decentralized identity platform, Gataca Studio, is the fastest way to implement Self-Sovereign Identity in the market and is now available for pilots in all different use cases present in the LSPs.
+Our all-in-one decentralized identity platform, [Gataca Studio](https://studio.gataca.io/login), is the fastest way to implement Self-Sovereign Identity in the market and is now available for pilots in all different use cases present in the LSPs.
 
 What can you do in Gataca Studio?
 
@@ -33,6 +33,6 @@ What can you do in Gataca Studio?
 * Create customizable verification templates for onboarding and sign-in processes to authenticate users in just one click.
 * Manage issued credentials, their status (including revocation), and verified users from one dashboard.
 
-Through a monthly subscription and with our plug & play deployment system, you can start building your Proof-of-Concept today. Get started here: [![](https://studio.gataca.io/favicon-v2.svg)Gataca Studio](https://studio.gataca.io/login)
+Through a monthly subscription and with our plug & play deployment system, you can [start building your Proof-of-Concept today.](https://studio.gataca.io/login)[![](https://studio.gataca.io/favicon-v2.svg)](https://studio.gataca.io/login)
 
 ![](/static/images/picture-1.png)
