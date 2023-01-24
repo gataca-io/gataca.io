@@ -48,15 +48,6 @@ jobs:
           make pre-release-intel 
           docker image ls
 
-
-
-#          git fetch
-#          git chore/version ##### CHANGE TO develop #####     
-#          CHN=$(git diff | wc -l)
-#          git diff # Output
-#          if [ "${{ env.changefile }}" != "0" ] || [ "${{ env.ver }}" != "${{ env.image }}" ]; then
-
-
       - name: Set up deployment-dev
         run: |
           git config --global user.email ${{ github.actor }}@gataca.io
@@ -67,14 +58,11 @@ jobs:
           IMAGE=$(grep 'image:' deployments/deployment-dev.yml | cut -d':' -f3 | cut -d'-' -f1)
           echo "image="$IMAGE-pre >> $GITHUB_ENV
           echo "version $V, image $IMAGE."
-#          echo "verdiff=NO" >> $GITHUB_ENV
-#          echo "changefile="$CHN >> $GITHUB_ENV
 
       - name: Update deployment-dev
         run: |
           if [ "${{ github.event.inputs.ExecuteChoice }}" == "YES" ]; then
             if [ "${{ env.ver }}" != "${{ env.image }}" ]; then
-              #echo "verdiff=YES" >> $GITHUB_ENV
               sed -i 's/website:.*$/website:${{ env.ver }}/g' deployments/deployment-dev.yml          
               echo "deployment-dev.yml:" ; grep 'website' deployments/deployment-dev.yml || true # output
               git add .
@@ -99,9 +87,4 @@ jobs:
             echo ${{ secrets.CD_KUBE_CONFIG_DEV }} | base64 --decode > $HOME/.kube/config
             kubectl config get-contexts
             kubectl apply -f deployments/deployment-dev.yml || true
-#            if [ "${{ env.verdiff }}" == "YES" ]; then
-#              kubectl apply -f deployments/deployment-dev.yml || true
-#            else
-#              kubectl -n web rollout restart deploy web
-#            fi
           fi
