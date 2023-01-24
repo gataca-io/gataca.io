@@ -33,6 +33,15 @@ What can you do in Gataca Studio?
 * Create customizable verification templates for onboarding and sign-in processes to authenticate users in just one click.
 * Manage issued credentials, their status (including revocation), and verified users from one dashboard.
 
-Through a monthly subscription and with our plug & play deployment system, you can [start building your Proof-of-Concept today.](https://studio.gataca.io/login)[![](https://studio.gataca.io/favicon-v2.svg)](https://studio.gataca.io/login)
+Through a monthly subscription and with our plug & play deployment system, you can start building your Proof-of-Concept today.
 
-![](/static/images/picture-1.png)
+[![](https://studio.gataca.io/favicon-v2.svg)](https://studio.gataca.io/login)
+
+![](/static/images/picture-1.png)  
+Join Gataca in leading the digital identity revolution.
+
+**Get started with Gataca Studio** - If you're curious to see the benefits of our technology on your workflows today, [get started for free here](https://studio.gataca.io/login).
+
+**Chat with us -** We’d love to chat with you. Let us know your perspective and comments on this topic or anything Digital Identity-related. Join our [Telegram ](https://t.me/digitalidentityinsights)group.
+
+**Stay in the loop -** Keep yourself updated on GATACA developments and how digital identities will transform our digital lives by subscribing to our newsletter [here](https://4728390.hs-sites.com/subscription).
