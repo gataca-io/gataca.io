@@ -1,4 +1,4 @@
-name: gataca.io CD DEV 
+name: Web CD DEV 
 
 on:
   workflow_dispatch:
@@ -43,7 +43,7 @@ jobs:
           username: navasgataca              ###############  CHANGE TO GENERIC USER ###############
           password: ${{ secrets.DOCKERHUB_TOKEN }} 
 
-      - name: Create Docker image
+      - name: Create and upload Docker image
         run: |
           make pre-release-intel 
           docker image ls
