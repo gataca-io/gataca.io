@@ -35,8 +35,6 @@ What can you do in Gataca Studio?
 
 Through a monthly subscription and with our plug & play deployment system, you can start building your Proof-of-Concept today.
 
-[![](https://studio.gataca.io/favicon-v2.svg)](https://studio.gataca.io/login)
-
 ![](/static/images/picture-1.png)  
 Join Gataca in leading the digital identity revolution.
 
