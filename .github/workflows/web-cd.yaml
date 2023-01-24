@@ -67,22 +67,21 @@ jobs:
           IMAGE=$(grep 'image:' deployments/deployment-dev.yml | cut -d':' -f3 | cut -d'-' -f1)
           echo "image="$IMAGE-pre >> $GITHUB_ENV
           echo "version $V, image $IMAGE."
-          echo "verdiff=NO" >> $GITHUB_ENV
+#          echo "verdiff=NO" >> $GITHUB_ENV
 #          echo "changefile="$CHN >> $GITHUB_ENV
 
       - name: Update deployment-dev
         run: |
-          if [ "${{ env.ver }}" != "${{ env.image }}" ]; then
-            echo "verdiff=YES" >> $GITHUB_ENV
-            sed -i 's/website:.*$/website:${{ env.ver }}/g' deployments/deployment-dev.yml          
-            echo "deployment-dev.yml:" ; grep 'website' deployments/deployment-dev.yml || true # output
+          if [ "${{ github.event.inputs.ExecuteChoice }}" == "YES" ]; then
+            if [ "${{ env.ver }}" != "${{ env.image }}" ]; then
+              #echo "verdiff=YES" >> $GITHUB_ENV
+              sed -i 's/website:.*$/website:${{ env.ver }}/g' deployments/deployment-dev.yml          
+              echo "deployment-dev.yml:" ; grep 'website' deployments/deployment-dev.yml || true # output
+              git add .
+              git commit -m "Change to image version to ${{ env.ver }} because of gataca.io CD DEV action."
+              git push
+            fi
           fi
-          if [ "${{ env.ver }}" != "${{ env.image }}" ]; then
-            git add .
-            git commit -m "Change to image version to ${{ env.ver }} because of gataca.io CD DEV action."
-            git push
-          fi
-
 
       - name: Install and configure kubectl
         run: |
@@ -99,9 +98,10 @@ jobs:
             mkdir $HOME/.kube/
             echo ${{ secrets.CD_KUBE_CONFIG_DEV }} | base64 --decode > $HOME/.kube/config
             kubectl config get-contexts
-            if [ "${{ env.verdiff }}" == "YES" ]; then
-              kubectl apply -f deployments/deployment-dev.yml || true
-            else
-              kubectl -n web rollout restart deploy web
-            fi
+            kubectl apply -f deployments/deployment-dev.yml || true
+#            if [ "${{ env.verdiff }}" == "YES" ]; then
+#              kubectl apply -f deployments/deployment-dev.yml || true
+#            else
+#              kubectl -n web rollout restart deploy web
+#            fi
           fi
