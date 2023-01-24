@@ -109,7 +109,7 @@ jobs:
             chmod +x kubectl
             sudo mv kubectl /usr/local/bin/
             mkdir $HOME/.kube/
-            echo ${{ secrets.KUBECONFIG }} | base64 --decode > $HOME/.kube/config
+            echo ${{ secrets.CD_KUBE_CONFIG_DEV }} | base64 --decode > $HOME/.kube/config
             kubectl config get-contexts
           fi
 #            if [ "${{ env.verdiff }}" == "YES" ]; then
