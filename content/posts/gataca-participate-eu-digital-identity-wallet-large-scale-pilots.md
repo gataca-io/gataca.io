@@ -21,6 +21,8 @@ The European Commission has designed a program through Large Scale Projects Pilo
 
 The DC4EU consortium that Gataca is part of focuses on using the EU Digital Identity Wallet for three specific use cases: **Identity, Social Security, and Education.**
 
+We are also participating in the EBSI Call as one of the most important partners of the VECTOR consortium to **advance EBSI/ESSIF Framework** and implement it in real use cases.
+
 At Gataca, we are experts in decentralized identity and have extended experience in national digital identity and education use cases, having worked previously with the European Commission in the [Early Adopters Program ](https://gataca.io/blog/gataca-joins-the-european-commission-s-early-adopters-program-as-the-ssi-technology-provider-in-the-spanish-group "https://gataca.io/blog/gataca-joins-the-european-commission-s-early-adopters-program-as-the-ssi-technology-provider-in-the-spanish-group")and pioneering the development of a [European Self-Sovereign Identity framework](https://gataca.io/blog/ngi-essif-lab-a-program-funded-by-the-european-commission-doubles-down-its-bet-on-gataca "https://gataca.io/blog/ngi-essif-lab-a-program-funded-by-the-european-commission-doubles-down-its-bet-on-gataca").
 
 ### Introducing Gataca Studio: a full-stack SSI product ready to be tested
