@@ -5,9 +5,9 @@ meta_data:
   description: Gataca will participate in the eIDAS call as part of the Digital Credentials
     for Europe (DC4EU) consortium, formed by 82 organizations from 23 countries.
   rrss_images:
-    twitter: ''
-    facebook_and_whatsapp: ''
-    linkedin: ''
+    twitter: "/static/images/sm-1.png"
+    facebook_and_whatsapp: "/static/images/sm-1.png"
+    linkedin: "/static/images/sm-1.png"
 title: Gataca will participate in the EU Digital Identity Wallet Large Scale Pilots
 author: ''
 hero_image: "/static/images/logo-dc4e.png"
