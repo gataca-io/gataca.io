@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: web
-          image: gatacaid/website:4.0.2
+          image: gatacaid/website:4.0.6
           ports:
           - containerPort: 80 
             name: web
