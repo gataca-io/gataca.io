@@ -35,27 +35,30 @@ jobs:
           username: navasgataca              ###############  CHANGE TO GENERIC USER ###############
           password: ${{ secrets.DOCKERHUB_TOKEN }} 
 
-      - name: Set up version pro
-        run: |
-          git config --global user.email ${{ github.actor }}@gataca.io
-          git config --global user.name ${{ github.actor }}
-          yarn version --patch
-          V=$(node -p "require('./package.json').version")
-          echo "The version: " $V "."
-          echo "ver="$V >> $GITHUB_ENV
-
+######  REQUITE ADD samu user to : bypass required pull requests
+#      - name: Set up version pro    
+#        run: |
+#          git config --global user.email ${{ github.actor }}@gataca.io
+#          git config --global user.name ${{ github.actor }}
+#          yarn version --patch
+#          V=$(node -p "require('./package.json').version")
+#          echo "The version: " $V "."
+#          echo "ver="$V >> $GITHUB_ENV
+#
       - name: Create and upload Docker image
         run: |
           make release 
           docker image ls
 
-      - name: Update deployment-pro
-        run: |
-          sed -i 's/website:.*$/website:${{ env.ver }}/g' deployments/deployment-pro.yml 
-          echo -n "deployment-pro.yml:" ; grep 'website' deployments/deployment-pro.yml || true # output
-          git add .
-          git commit -m "Change to image version to ${{ env.ver }} because of gataca.io CD PRO action."
-          git push
+######  REQUITE ADD samu user to : bypass required pull requests
+#      - name: Update deployment-pro
+#        run: |
+#          sed -i 's/website:.*$/website:${{ env.ver }}/g' deployments/deployment-pro.yml 
+#          echo -n "deployment-pro.yml:" ; grep 'website' deployments/deployment-pro.yml || true # output
+#          git add .
+#          git commit -m "Change to image version to ${{ env.ver }} because of gataca.io CD PRO action."
+#          git push
+#
 
       - name: Install and configure kubectl
         run: |
