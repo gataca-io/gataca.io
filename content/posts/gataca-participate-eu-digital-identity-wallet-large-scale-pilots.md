@@ -1,5 +1,5 @@
 ---
-date: 2023-01-23T15:36:15Z
+date: 2023-01-23T15:36:15.000+00:00
 meta_data:
   title: Gataca will participate in the EU Digital Identity Wallet Large Scale Pilots
   description: Gataca will participate in the eIDAS call as part of the Digital Credentials
@@ -13,7 +13,7 @@ author: ''
 hero_image: "/static/images/logo-dc4e.png"
 
 ---
-**On the 14th of December 2022, the European Commission announced the results of the EU Digital Identity Wallet Large Scale Pilots. Gataca will participate in the** [**Digital Credentials for Europe (DC4EU)**](https://www.dc4eu.eu/ "https://www.dc4eu.eu/") **consortium, formed by 82 organizations from 23 countries.**
+On the 14th of December 2022, the European Commission announced the results of the EU Digital Identity Wallet Large Scale Pilots. Gataca will participate in the [Digital Credentials for Europe (DC4EU)](https://www.dc4eu.eu/ "https://www.dc4eu.eu/") consortium, formed by 82 organizations from 23 countries.
 
 The EUDI Wallet is part of the proposed eIDAS2 regulation, which will provide all European citizens access to a trusted digital identity provided by their government and accepted in all EU Member States and EFTA. Therefore, the EUDI Wallet should operate within an ecosystem of supporting organizations, issuing attributes, and facilitating sharing of credentials.
 
