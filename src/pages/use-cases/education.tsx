@@ -39,6 +39,17 @@ const Education: React.FC<IEducationProps> = ({}) => {
           ctaText={data.headline.buttonText}
           ctaLink={data.headline.buttonLink}
         />
+        <iframe
+          style={{
+            borderWidth: 1,
+            borderColor: "rgba(0 0 0 0.1)",
+            overflow: "hidden",
+          }}
+          width="400"
+          height="550"
+          allow="autoplay; fullscreen; picture-in-picture"
+          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FSv2i65QdWknphJjh7cUbZp%2FUntitled%3Fpage-id%3D0%253A1%26node-id%3D1%253A196%26viewport%3D-40%252C-29%252C1.13%26scaling%3Dscale-down%26starting-point-node-id%3D1%253A193"
+        ></iframe>
       </section>
 
       <section className={styles.introSection}>
