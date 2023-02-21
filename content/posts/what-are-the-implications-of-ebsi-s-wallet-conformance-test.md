@@ -5,12 +5,12 @@ meta_data:
   description: 'Explore the differences between the WCT v1 and the v2, including the
     new DID method for natural persons and of OID4VC, a new protocol selected. '
   rrss_images:
-    twitter: ''
-    facebook_and_whatsapp: ''
-    linkedin: ''
+    twitter: "/static/images/wctsm.png"
+    facebook_and_whatsapp: "/static/images/wctsm.png"
+    linkedin: "/static/images/wctsm.png"
 title: 'What are the implications of EBSI''s Wallet Conformance Test? '
 author: ''
-hero_image: "/static/images/wctsm.png"
+hero_image: "/static/images/mwcmodified.png"
 
 ---
 On February 6th, 2023, Gataca Wallet passed the latest version of the EBSI Wallet Conformance Test (WCT).
