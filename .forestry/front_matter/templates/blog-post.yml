@@ -77,6 +77,7 @@ fields:
   label: hero image
   description: Enter hero image for blog post here
 pages:
+- content/drafts/what-are-the-implications-of-ebsi-s-wallet-conformance-test.md
 - content/posts/coming-soon-gataca-studio-the-fastest-way-to-implement-ssi.md
 - content/posts/create-an-identity-that-is-not-controlled-by-big-tech-or-governments.md
 - content/posts/cybernews-features-gataca-as-one-of-the-top-authentication-solutions.md
