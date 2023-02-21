@@ -86,5 +86,5 @@ jobs:
             mkdir $HOME/.kube/
             echo ${{ secrets.CD_KUBE_CONFIG_DEV }} | base64 --decode > $HOME/.kube/config
             kubectl config get-contexts
-            kubectl apply -f deployments/deployment-dev.yml || true
+            kubectl -n web rollout restart deploy web || true
           fi
