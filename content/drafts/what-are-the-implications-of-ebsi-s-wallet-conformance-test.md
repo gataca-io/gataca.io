@@ -10,7 +10,7 @@ meta_data:
     linkedin: "/static/images/wctsm.png"
 title: 'What are the implications of EBSI''s Wallet Conformance Test? '
 author: ''
-hero_image: "/static/images/wct.png"
+hero_image: "/static/images/wctsm.png"
 
 ---
 On February 6th, 2023, Gataca Wallet passed the latest version of the EBSI Wallet Conformance Test (WCT).
