@@ -136,9 +136,7 @@ export default function HeaderSection(props) {
                   <div
                     className={cx(
                       headerStyles.nav,
-                      isTopBarOpaque
-                        ? headerStyles.navOpaque
-                        : null,
+                      isTopBarOpaque ? headerStyles.navOpaque : null,
                       isSideNavExpanded && headerStyles.navMobileOpen
                     )}
                   >
@@ -176,7 +174,6 @@ export default function HeaderSection(props) {
 
                             {el.list && (
                               <HoverMenu
-                                
                                 isOpaque={isTopBarOpaque}
                                 isVisible={hoverList[el.id]}
                                 hoverElement={el.id}
@@ -224,11 +221,8 @@ export default function HeaderSection(props) {
                       >
                         Products
                       </SideNavLink>
-                      <SideNavLink href="/products/certify">
-                        Certify
-                      </SideNavLink>
-                      <SideNavLink href="/products/connect">
-                        Connect
+                      <SideNavLink href="/products/gatacaStudio">
+                        Gataca Studio
                       </SideNavLink>
                       <SideNavLink href="/products/wallet">Wallet</SideNavLink>
 
