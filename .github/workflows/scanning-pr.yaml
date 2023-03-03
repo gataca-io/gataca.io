@@ -1,0 +1,30 @@
+name: Security scanning
+
+on:
+  push:
+    branches: DEV-2897
+
+jobs:
+  zap_scan:
+    runs-on: ubuntu-latest
+    name: Scan the webapplication
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: master
+      - name: ZAP Scan dev.gataca.io
+        uses: zaproxy/action-baseline@v0.7.0
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          docker_name: 'owasp/zap2docker-stable'
+          target: 'https://www.dev.gataca.io/'
+          issue_title: 'Scanning API www.dev.gataca.io'
+
+      - name: ZAP Scan gaas.dev.gataca.io
+        uses: zaproxy/action-baseline@v0.7.0
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          docker_name: 'owasp/zap2docker-stable'
+          target: 'https://gaas.dev.gataca.io/'
+          issue_title: 'Scanning API www.gaas.dev.gataca.io'
