@@ -2,7 +2,7 @@ name: Security scanning
 
 on:
   push:
-    branches: DEV-2897
+    branches: develop
 
 jobs:
   zap_scan:
