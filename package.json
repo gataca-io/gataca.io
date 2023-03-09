@@ -70,7 +70,7 @@
 		"react-stack-grid": "^0.7.1",
 		"react-syntax-highlighter": "^15.4.4",
 		"react-transition-group": "^4.4.1",
-		"sass": "^1.37.0",
+		"sass": "^1.58.0",
 		"start-server-and-test": "^1.11.0",
 		"storybook": "^5.3.18",
 		"styled-components": "^5.1.0"
