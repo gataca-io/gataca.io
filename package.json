@@ -71,7 +71,7 @@
 		"react-syntax-highlighter": "^15.4.4",
 		"react-transition-group": "^4.4.1",
 		"sass": "^1.58.0",
-		"start-server-and-test": "^1.11.0",
+		"start-server-and-test": "^1.15.3",
 		"storybook": "^5.3.18",
 		"styled-components": "^5.3.7"
 	},
