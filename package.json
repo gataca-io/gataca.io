@@ -27,7 +27,7 @@
 		"@n8tb1t/use-scroll-position": "^2.0.3",
 		"babel-plugin-remove-graphql-queries": "^2.9.1",
 		"babel-plugin-styled-components": "^1.10.7",
-		"carbon-components": "^10.11.2",
+		"carbon-components": "^10.58.5",
 		"carbon-components-react": "^7.11.3",
 		"carbon-icons": "^7.0.7",
 		"classnames": "^2.3.1",
