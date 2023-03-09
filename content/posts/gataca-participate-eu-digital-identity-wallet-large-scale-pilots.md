@@ -37,7 +37,10 @@ What can you do in Gataca Studio?
 
 Through a monthly subscription and with our plug & play deployment system, you can start building your Proof-of-Concept today.
 
-![](/static/images/picture-1.png)  
+![](/static/images/frame-1584-1.png)
+
+***
+
 Join Gataca in leading the digital identity revolution.
 
 **Get started with Gataca Studio** - If you're curious to see the benefits of our technology on your workflows today, [get started for free here](https://studio.gataca.io/login).
