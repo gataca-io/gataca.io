@@ -2,6 +2,7 @@ import type { HeadFC, PageProps } from "gatsby"
 import * as React from "react"
 import { useEffect, useState } from "react"
 import ReactMarkdown from "react-markdown"
+import Layout from "../components/templates/mainLayout/MainLayout"
 
 const pageStyles = {
   color: "#232129",
@@ -51,24 +52,26 @@ const IndexPage: React.FC<PageProps> = () => {
   }
 
   return (
-    <main style={pageStyles}>
-      <h1 style={headingStyles}>{homeData?.attributes?.Title}</h1>
-      <img
-        style={{ width: 300 }}
-        alt="Hero image"
-        src={
-          "http://127.0.0.1:1337" +
-          homeData?.attributes?.HeroImage?.data?.attributes?.url
-        }
-      />
-      <p>MarkDown text Example:</p>
-      <ReactMarkdown>
-        {homeData?.attributes?.Body?.replaceAll(
-          "/uploads/",
-          "http://localhost:1337/uploads/"
-        ) || ""}
-      </ReactMarkdown>
-    </main>
+    <Layout>
+      <main style={pageStyles}>
+        <h1 style={headingStyles}>{homeData?.attributes?.Title}</h1>
+        <img
+          style={{ width: 300 }}
+          alt="Hero image"
+          src={
+            "http://127.0.0.1:1337" +
+            homeData?.attributes?.HeroImage?.data?.attributes?.url
+          }
+        />
+        <p>MarkDown text Example:</p>
+        <ReactMarkdown>
+          {homeData?.attributes?.Body?.replaceAll(
+            "/uploads/",
+            "http://localhost:1337/uploads/"
+          ) || ""}
+        </ReactMarkdown>
+      </main>
+    </Layout>
   )
 }
 
