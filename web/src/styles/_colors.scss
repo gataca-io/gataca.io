@@ -1,0 +1,81 @@
+/* Example of use in scss
+  selector {
+    color: $warning100;
+  }
+*/
+
+// Neutral
+$neutral100: #ffffff;
+$neutral200: #f2f2f2;
+$neutral300: #e4e4e4;
+$neutral400: #c6c6c8;
+$neutral500: #a9a9ac;
+$neutral600: #8c8c90;
+$neutral700: #707074;
+$neutral800: #545458;
+$neutral900: #39393c;
+$neutral1000: #1e1e20;
+
+// Primary
+$primary100: #f2f2ff;
+$primary200: #dfdefb;
+$primary300: #C4C3FA;
+$primary400: #9F9EE9;
+$primary500: #7F7DD8;
+$primary600: #615FC8;
+$primary700: #4745B7;
+$primary800: #403F83;
+$primary900: #2F2E50;
+$primary1000: #13131C;
+
+// Secondary
+$secondary100: #D6FDFF;
+$secondary200: #BBF2F4;
+$secondary300: #8EE6E9;
+$secondary400: #54CCD0;
+$secondary500: #25B2B7;
+$secondary600: #00999E;
+$secondary700: #067A7E;
+$secondary800: #095C5E;
+$secondary900: #083D3E;
+$secondary1000: #061E1F;
+
+// Tertiary
+$tertiary100: #FFF2F6;
+$tertiary200: #FFD4E1;
+$tertiary300: #8EE6E9;
+$tertiary400: #F486A7;
+$tertiary500: #F486A7;
+$tertiary600: #DC3164;
+$tertiary700: #B22851;
+$tertiary800: #891E3E;
+$tertiary900: #5F152B;
+$tertiary1000: #360C18;
+
+// Success
+$success100: #D9FADF;
+$success200: #80CA8D;
+$success300: #3D9A4E;
+$success400: #186927;
+$success500: #04380E;
+
+// Alert
+$alert100: #FFDEDF;
+$alert200: #EE888C;
+$alert300: #DC3D43;
+$alert400: #8D1A1E;
+$alert500: #3D0608;
+
+// Warning
+$warning100: #FFF6CA;
+$warning200: #FBE263;
+$warning300: #F7CE00;
+$warning400: #B99B08;
+$warning500: #7A680B;
+
+// Info
+$info100: #E4F3FF;
+$info200: #6FB8F8;
+$info300: #0081F1;
+$info400: #07549A;
+$info500: #062542;

@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import * as React from "react"
 import * as styles from "./mainLayout.module.scss"
+import cx from "classnames"
 
 export type ILayoutProps = {
   children: JSX.Element
@@ -12,7 +13,9 @@ const Layout: React.FC<ILayoutProps> = props => {
       <>
         <header className={styles?.header}>
           <div className={styles.headerNavigationItem}>
-            <Link to="/">Home</Link>
+            <Link className={cx("heading7")} to="/">
+              Home
+            </Link>
           </div>
           <div className={styles.headerNavigationItem}>
             <Link to="/products">Products</Link>

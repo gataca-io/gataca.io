@@ -1,0 +1,208 @@
+@import "./colors";
+@import "./types";
+
+/* Example of use in scss
+import cx from "classnames"
+
+<Tag className={cx("heading7")} />
+*/
+
+:global {
+    // Typo Classes
+    .heading1 {
+        font-family: $customBold;
+        font-size: 56px;
+        line-height: 64px;
+        text-decoration: none;
+    }
+
+    .heading2 {
+        font-family: $customBold;
+        font-size: 48px;
+        line-height: 56px;
+        text-decoration: none;
+    }
+
+    .heading3 {
+        font-family: $customBold;
+        font-size: 40px;
+        line-height: 48px;
+        text-decoration: none;
+    }
+
+    .heading4 {
+        font-family: $customBold;
+        font-size: 32px;
+        line-height: 40px;
+        text-decoration: none;
+    }
+
+    .heading5 {
+        font-family: $customBold;
+        font-size: 24px;
+        line-height: 32px;
+        text-decoration: none;
+    }
+
+    .heading6 {
+        font-family: $customBold;
+        line-height: 24px;
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+    .heading7 {
+        font-family: $customBold;
+        font-size: 16px;
+        line-height: 20px;
+        text-decoration: none;
+    }
+
+    // Body Regular
+    .bodyRegularXL {
+        font-family: $base;
+        font-size: 20px;
+        line-height: 28px;
+        text-decoration: none;
+    }
+
+    .bodyRegularLG {
+        font-family: $base;
+        font-size: 18px;
+        line-height: 24px;
+        text-decoration: none;
+    }
+
+    .bodyRegularMD {
+        font-family: $base;
+        font-size: 16px;
+        line-height: 20px;
+        text-decoration: none;
+    }
+
+    .bodyRegularSM {
+        font-family: $base;
+        font-size: 14px;
+        line-height: 20px;
+        text-decoration: none;
+    }
+
+    .bodyRegularXS {
+        font-family: $base;
+        font-size: 12px;
+        line-height: 16px;
+        text-decoration: none;
+    }
+
+    .bodyRegularCap {
+        font-family: $base;
+        font-size: 11px;
+        line-height: 16px;
+        text-decoration: none;
+    }
+
+    // Body Bold
+    .bodyBoldXL {
+        font-family: $baseBold;
+        font-size: 20px;
+        line-height: 28px;
+        text-decoration: none;
+    }
+
+    .bodyBoldLG {
+        font-family: $baseBold;
+        font-size: 18px;
+        line-height: 24px;
+        text-decoration: none;
+    }
+
+    .bodyBoldMD {
+        font-family: $baseBold;
+        font-size: 16px;
+        line-height: 20px;
+        text-decoration: none;
+    }
+
+    .bodyBoldSM {
+        font-family: $baseBold;
+        font-size: 14px;
+        line-height: 20px;
+        text-decoration: none;
+    }
+
+    .bodyBoldXS {
+        font-family: $baseBold;
+        font-size: 12px;
+        line-height: 16px;
+        text-decoration: none;
+    }
+
+    .bodyBoldCap {
+        font-family: $baseBold;
+        font-size: 11px;
+        line-height: 16px;
+        text-decoration: none;
+    }
+
+    // Body Underline
+    .bodyUnderlineXL {
+        font-family: $base;
+        font-size: 20px;
+        line-height: 28px;
+        text-decoration: "underline";
+    }
+
+    .bodyUnderlineLG {
+        font-family: $base;
+        font-size: 18px;
+        line-height: 24px;
+        text-decoration: "underline";
+    }
+
+    .bodyUnderlineMD {
+        font-family: $base;
+        font-size: 16px;
+        line-height: 20px;
+        text-decoration: "underline";
+    }
+
+    .bodyUnderlineSM {
+        font-family: $base;
+        font-size: 14px;
+        line-height: 20px;
+        text-decoration: "underline";
+    }
+
+    .bodyUnderlineXS {
+        font-family: $base;
+        font-size: 12px;
+        line-height: 16px;
+        text-decoration: "underline";
+    }
+
+    .bodyUnderlineCap {
+        font-family: $base;
+        font-size: 11px;
+        line-height: 16px;
+        text-decoration: "underline";
+    }
+
+    // Button Types
+    .buttonLg {
+        font-family: $baseMedium;
+        font-size: 20px;
+        text-decoration: "none";
+    }
+
+    .buttonMD {
+        font-family: $baseMedium;
+        font-size: 16px;
+        text-decoration: "none";
+    }
+
+    .buttonSM {
+        font-family: $baseMedium;
+        font-size: 14px;
+        text-decoration: "none";
+    }
+}

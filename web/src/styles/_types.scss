@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@100;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap");
+
+// Font Family
+
+/* Example of use in scss
+  selector {
+    font-family: $base;
+  }
+*/
+
+$base: "Poppins-Regular";
+$baseMedium: "Poppins-Medium";
+$baseBold: "Poppins-Bold";
+$bold: "Work Sans";
+$customBold: "Ubuntu-Bold";
+$emphasis: "Work Sans";
