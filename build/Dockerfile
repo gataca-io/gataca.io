@@ -1,4 +1,4 @@
-FROM node:16.19.1-alpine3.17 AS builder
+FROM node:18.15.0-alpine3.17 AS builder
 
 RUN apk add --no-cache --update qemu-x86_64 \
     # git: gatsby new command depends on git
