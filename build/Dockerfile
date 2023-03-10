@@ -8,7 +8,7 @@ RUN apk add --no-cache --update qemu-x86_64 \
     util-linux openssl sudo \
     # node-sess version 4 uses g++ and still requires python2
     # see: https://github.com/sass/node-sass/issues/2877
-    python g++ \
+    python3 g++ \
     # gatsby-plugin-sharp depends on imagemin-mozjpeg,
     # imagemin-mozjpeg depends on mozjpeg,
     # mozjpeg requires compiling from source with autoreconf, automake, libtool, gcc, make, musl-dev, file, pkgconfig, nasm
