@@ -1,4 +1,4 @@
-import { LinkModel } from "../interfaces/interfaces"
+import { LinkModel, IconModel } from "../interfaces/interfaces"
 
 export const headerMenuOptions: LinkModel[] = [
   {
@@ -89,6 +89,218 @@ export const headerMenuOptions: LinkModel[] = [
   },
 ]
 
+export const footerMenuOptions: LinkModel[] = [
+  {
+    id: "products",
+    label: "Products",
+    subRoutes: [
+      {
+        id: "gatacaStudio",
+        label: "Gataca Studio",
+        route: "/products/gatacaStudio",
+      },
+      {
+        id: "gatacaWallet",
+        label: "Wallet",
+        route: "/products/gatacaWallet",
+      },
+      {
+        id: "pricing",
+        label: "Pricing",
+        route: "/",
+      },
+      {
+        id: "logIn",
+        label: "Log In",
+        route: "/",
+      },
+    ],
+  },
+  {
+    id: "useCases",
+    label: "Use Cases",
+    subRoutes: [
+      {
+        id: "customerOnboarding",
+        label: "Customer Onboarding",
+        route: "/",
+      },
+      {
+        id: "userAuthentication",
+        label: "User Authentication",
+        route: "/",
+      },
+      {
+        id: "physicalAccessControl",
+        label: "Physical Access Control",
+        route: "/",
+      },
+      {
+        id: "issuanceIdentityCredentials",
+        label: "Issuance of identity credentials",
+        route: "/",
+      },
+      {
+        id: "signatureContracts",
+        label: "Signature of contracts and other documents",
+        route: "/",
+      },
+      {
+        id: "electronicVoting",
+        label: "Electronic voting",
+        route: "/",
+      },
+    ],
+  },
+  {
+    id: "sectors",
+    label: "Sectors",
+    subRoutes: [
+      {
+        id: "government",
+        label: "Government",
+        route: "/useCasesSectors/government",
+      },
+      {
+        id: "finance",
+        label: "Finance",
+        route: "/useCasesSectors/finance",
+      },
+      {
+        id: "education",
+        label: "Education",
+        route: "/useCasesSectors/education",
+      },
+      {
+        id: "web3",
+        label: "Web 3",
+        route: "/useCasesSectors/web3",
+      },
+      {
+        id: "otherSectors",
+        label: "Other sectors",
+        route: "/",
+      },
+    ],
+  },
+  {
+    id: "company",
+    label: "Company",
+    subRoutes: [
+      {
+        id: "aboutUs",
+        label: "About Us",
+        route: "/aboutUs",
+      },
+      {
+        id: "careers",
+        label: "Careers",
+        route: "/careers",
+      },
+      {
+        id: "contactUs",
+        label: "ContactUs",
+        route: "/contactUs",
+      },
+      {
+        id: "becomeAPartner",
+        label: "Become a Partner",
+        route: "/becomeAPartner",
+      },
+    ],
+  },
+  {
+    id: "learn",
+    label: "Learn",
+    subRoutes: [
+      {
+        id: "watchDemo",
+        label: "Watch Demo",
+        route: "/",
+      },
+      {
+        id: "helpCenter",
+        label: "Help Center",
+        route: "/",
+      },
+      {
+        id: "developers",
+        label: "Developers",
+        route: "/",
+      },
+      {
+        id: "blog",
+        label: "Blog",
+        route: "/blog",
+      },
+    ],
+  },
+  {
+    id: "subFooter",
+    label: "subFooter",
+    subRoutes: [
+      {
+        id: "privacyPolicy",
+        label: "Privacy Policy",
+        route: "/",
+      },
+      {
+        id: "cookiesPolicy",
+        label: "Cookies Policy",
+        route: "/",
+      },
+      {
+        id: "termsOfUse",
+        label: "Terms of Use",
+        route: "/",
+      },
+    ],
+  },
+  {
+    id: "rightsReservedGataca",
+    label: "© 2020 - All rights reserved Gataca",
+    route: "/",
+  },
+]
+
+export const productsFooterMenu = footerMenuOptions?.find(
+  el => el?.id === "products"
+)
+export const useCasesFooterMenu = footerMenuOptions?.find(
+  el => el?.id === "useCases"
+)
+export const sectorsFooterMenu = footerMenuOptions?.find(
+  el => el?.id === "sectors"
+)
+export const companyFooterMenu = footerMenuOptions?.find(
+  el => el?.id === "company"
+)
+export const learnFooterMenu = footerMenuOptions?.find(el => el?.id === "learn")
+
+export const subFooterMenu = footerMenuOptions?.find(
+  el => el?.id === "subFooter"
+)
+export const rightsReservedGataca = footerMenuOptions?.find(
+  el => el?.id === "rightsReservedGataca"
+)
+
+export const socialMedia: IconModel[] = [
+  {
+    id: "linkedIn",
+    icon: "",
+    route: "/",
+  },
+  {
+    id: "twitter",
+    icon: "",
+    route: "/",
+  },
+  {
+    id: "youtube",
+    icon: "",
+    route: "/",
+  },
+]
 // URLs/URIs
 export const marketAndroidURI =
   "https://play.google.com/store/apps/details?id=com.gataca.identity"

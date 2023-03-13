@@ -1,0 +1,72 @@
+@import "../../../styles/mixins";
+@import "../../../styles/colors";
+
+.footer {
+  max-width: calc(1312px - (calc(256px - 40px)));
+  margin: 0 auto;
+  padding: 80px 40px 20px;
+  .mainSectionFooter {
+    @include flexbox();
+    @include flex-wrap(wrap);
+    @include justify-content(space-between);
+    margin-bottom: 40px;
+    > div {
+      margin-bottom: 30px;
+      @include min-width(tablet) {
+        margin-bottom: 0;
+      }
+      &.footerSections {
+        @include min-width(tablet) {
+          padding: 0 16px;
+        }
+      }
+      li a {
+        color: $neutral700;
+      }
+      > div {
+        margin-bottom: 48px;
+        max-width: 202px;
+      }
+    }
+  }
+  .subSectionFooter {
+    @include flexbox();
+    @include flex-wrap(wrap);
+    @include justify-content(space-between);
+    > div {
+      width: 100%;
+      @include min-width(tablet) {
+        width: auto;
+      }
+    } 
+    ul {
+      margin-bottom: 40px;
+      @include flexbox();
+      @include flex-wrap(wrap);
+      @include justify-content(center);
+      @include min-width(tablet) {
+        margin-bottom: 0;
+        @include justify-content(space-between);
+      }
+      li {
+        margin-right: 24px;
+        margin-left: 24px;
+        margin-bottom: 16px;
+        @include min-width(tablet) {
+          margin-right: 40px;
+          margin-left: 0;
+          margin-bottom: 0;
+        }
+      }
+    }
+    * {
+      color: $neutral700;
+    }
+    .rightsReserved {
+      text-align: center;
+      @include min-width(tablet) {
+        text-align: left;
+      }
+    }
+  }
+}
