@@ -1,0 +1,34 @@
+@import "../../../styles/colors";
+
+.headerLayout {
+    position: absolute;
+    width: 100v;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    background-color: transparent;
+    opacity: 0.6;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  height: 48px;
+
+  & > img {
+    width: 170px;
+    height: 40px;
+  }
+
+  & > div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

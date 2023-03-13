@@ -1,0 +1,21 @@
+@import "../../../../../styles/colors";
+
+.menuSubOption {
+    position: absolute;
+    top: 50px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 5px 0px #0000001A;
+    padding: 8px 0;
+    width: 167px;
+    left: 14px;
+}
+
+.menuSubOptionItem {
+    display: block;
+    padding: 16px 20px;
+   &:hover {
+        color: $primary700;
+        font-weight: 700;
+    }
+}
+

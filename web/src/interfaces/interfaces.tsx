@@ -1,5 +1,5 @@
 export interface LinkModel {
-  id?: string
+  id: string
   label: string
   route?: string
   subRoutes?: LinkModel[]
