@@ -10,9 +10,11 @@
   }
 */
 
-$base: "Poppins-Regular";
-$baseMedium: "Poppins-Medium";
-$baseBold: "Poppins-Bold";
-$bold: "Work Sans";
-$customBold: "Ubuntu-Bold";
-$emphasis: "Work Sans";
+$base: "Poppins";
+$custom: "Ubuntu";
+$simple: "Work Sans";
+$default: "Helvetica";
+
+h1, h2, h3, h4, h5, p, a, ul, li, span {
+    font-family: $default;
+}

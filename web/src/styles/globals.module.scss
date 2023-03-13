@@ -1,7 +1,7 @@
 @import "./colors";
 @import "./types";
 
-/* Example of use in scss
+/* Example of use in tsx / ts
     import cx from "classnames"
 
     <Tag className={cx("heading7")} />
@@ -10,50 +10,57 @@
 :global {
     // Typo Classes
     .heading1 {
-        font-family: $customBold;
+        font-family: $custom;
         font-size: 56px;
+        font-weight: 700;
         line-height: 64px;
         text-decoration: none;
     }
 
     .heading2 {
-        font-family: $customBold;
+        font-family: $custom;
         font-size: 48px;
+        font-weight: 700;
         line-height: 56px;
         text-decoration: none;
     }
 
     .heading3 {
-        font-family: $customBold;
+        font-family: $custom;
         font-size: 40px;
+        font-weight: 700;
         line-height: 48px;
         text-decoration: none;
     }
 
     .heading4 {
-        font-family: $customBold;
+        font-family: $custom;
         font-size: 32px;
+        font-weight: 700;
         line-height: 40px;
         text-decoration: none;
     }
 
     .heading5 {
-        font-family: $customBold;
+        font-family: $custom;
         font-size: 24px;
+        font-weight: 700;
         line-height: 32px;
         text-decoration: none;
     }
 
     .heading6 {
-        font-family: $customBold;
+        font-family: $custom;
         line-height: 24px;
+        font-weight: 700;
         font-size: 20px;
         text-decoration: none;
     }
 
     .heading7 {
-        font-family: $customBold;
+        font-family: $custom;
         font-size: 16px;
+        font-weight: 700;
         line-height: 20px;
         text-decoration: none;
     }
@@ -62,6 +69,7 @@
     .bodyRegularXL {
         font-family: $base;
         font-size: 20px;
+        font-weight: 400;
         line-height: 28px;
         text-decoration: none;
     }
@@ -69,6 +77,7 @@
     .bodyRegularLG {
         font-family: $base;
         font-size: 18px;
+        font-weight: 400;
         line-height: 24px;
         text-decoration: none;
     }
@@ -76,6 +85,7 @@
     .bodyRegularMD {
         font-family: $base;
         font-size: 16px;
+        font-weight: 400;
         line-height: 20px;
         text-decoration: none;
     }
@@ -83,6 +93,7 @@
     .bodyRegularSM {
         font-family: $base;
         font-size: 14px;
+        font-weight: 400;
         line-height: 20px;
         text-decoration: none;
     }
@@ -90,6 +101,7 @@
     .bodyRegularXS {
         font-family: $base;
         font-size: 12px;
+        font-weight: 400;
         line-height: 16px;
         text-decoration: none;
     }
@@ -97,49 +109,56 @@
     .bodyRegularCap {
         font-family: $base;
         font-size: 11px;
+        font-weight: 400;
         line-height: 16px;
         text-decoration: none;
     }
 
     // Body Bold
     .bodyBoldXL {
-        font-family: $baseBold;
+        font-family: $base;
         font-size: 20px;
+        font-weight: 700;
         line-height: 28px;
         text-decoration: none;
     }
 
     .bodyBoldLG {
-        font-family: $baseBold;
+        font-family: $base;
         font-size: 18px;
+        font-weight: 700;
         line-height: 24px;
         text-decoration: none;
     }
 
     .bodyBoldMD {
-        font-family: $baseBold;
+        font-family: $base;
         font-size: 16px;
+        font-weight: 700;
         line-height: 20px;
         text-decoration: none;
     }
 
     .bodyBoldSM {
-        font-family: $baseBold;
+        font-family: $base;
         font-size: 14px;
+        font-weight: 700;
         line-height: 20px;
         text-decoration: none;
     }
 
     .bodyBoldXS {
-        font-family: $baseBold;
+        font-family: $base;
         font-size: 12px;
+        font-weight: 700;
         line-height: 16px;
         text-decoration: none;
     }
 
     .bodyBoldCap {
-        font-family: $baseBold;
+        font-family: $base;
         font-size: 11px;
+        font-weight: 700;
         line-height: 16px;
         text-decoration: none;
     }
@@ -148,6 +167,7 @@
     .bodyUnderlineXL {
         font-family: $base;
         font-size: 20px;
+        font-weight: 400;
         line-height: 28px;
         text-decoration: "underline";
     }
@@ -155,6 +175,7 @@
     .bodyUnderlineLG {
         font-family: $base;
         font-size: 18px;
+        font-weight: 400;
         line-height: 24px;
         text-decoration: "underline";
     }
@@ -162,6 +183,7 @@
     .bodyUnderlineMD {
         font-family: $base;
         font-size: 16px;
+        font-weight: 400;
         line-height: 20px;
         text-decoration: "underline";
     }
@@ -169,6 +191,7 @@
     .bodyUnderlineSM {
         font-family: $base;
         font-size: 14px;
+        font-weight: 400;
         line-height: 20px;
         text-decoration: "underline";
     }
@@ -176,6 +199,7 @@
     .bodyUnderlineXS {
         font-family: $base;
         font-size: 12px;
+        font-weight: 400;
         line-height: 16px;
         text-decoration: "underline";
     }
@@ -183,26 +207,30 @@
     .bodyUnderlineCap {
         font-family: $base;
         font-size: 11px;
+        font-weight: 400;
         line-height: 16px;
         text-decoration: "underline";
     }
 
     // Button Types
     .buttonLg {
-        font-family: $baseMedium;
+        font-family: $base;
         font-size: 20px;
+        font-weight: 500;
         text-decoration: "none";
     }
 
     .buttonMD {
-        font-family: $baseMedium;
+        font-family: $base;
         font-size: 16px;
+        font-weight: 500;
         text-decoration: "none";
     }
 
     .buttonSM {
-        font-family: $baseMedium;
+        font-family: $base;
         font-size: 14px;
+        font-weight: 500;
         text-decoration: "none";
     }
 }
