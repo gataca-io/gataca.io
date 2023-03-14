@@ -1,16 +1,9 @@
 import * as React from "react"
 import * as styles from "./purpleButton.module.scss"
 import cx from "classnames"
+import { ButtonModel } from "../../../../interfaces/interfaces"
 
-export type IButtonProps = {
-  label: string
-  icon?: string
-  outlined?: boolean
-  className?: any
-  action: (x?: any) => void
-}
-
-const Button: React.FC<IButtonProps> = props => {
+const Button: React.FC<ButtonModel> = props => {
   const { label, icon, outlined, className, action } = props
   return (
     <button
