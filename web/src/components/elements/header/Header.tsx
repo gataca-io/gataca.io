@@ -1,6 +1,9 @@
 import * as React from "react"
 import * as styles from "./header.module.scss"
-import { headerMenuOptions } from "../../../globalData/globalData"
+import {
+  gatacaStudioURL,
+  headerMenuOptions,
+} from "../../../globalData/globalData"
 import MenuDropdown from "./headerComponents/menuDropdown/MenuDropdown"
 import { images } from "../../../images/images"
 import { Link } from "gatsby"
@@ -44,9 +47,7 @@ const Header: React.FC = () => {
           />
           <PurpleButton
             label={"Try for free"}
-            action={function (x?: any): void {
-              console.log("buttn clicked")
-            }}
+            action={() => window.open(gatacaStudioURL, "_blank")}
           />
         </div>
       </header>

@@ -1,0 +1,44 @@
+@import "../../../../styles/colors";
+
+.beforeFooterCTA {
+  padding: 100px 24px;
+  background-color: $neutral1000;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  & > p, h6 {
+    text-align: center;
+    color: $neutral100;
+    max-width: 980px;
+  }
+
+  & > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    & > a {
+      background-color: $primary700;
+      border-radius: 8px;
+      height: 52px;
+      &:hover {
+         background-color: $primary900;
+      }
+    }
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+  margin-top: 24px;
+  margin-bottom: 30px;
+}
+
+

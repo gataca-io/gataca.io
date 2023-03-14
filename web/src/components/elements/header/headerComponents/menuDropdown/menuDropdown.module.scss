@@ -1,6 +1,6 @@
 @import "../../../../../styles/colors";
 
-.menuDropdown {
+.menuDropdownRoute {
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -9,6 +9,20 @@
     padding: 14px 20px;
     position: relative;
     cursor: pointer;
+}
+
+.menuDropdownNoRoute {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 14px 20px;
+    position: relative;
+
+    & > img, a {
+        cursor: pointer;
+    }
 }
 
 .dropdownLabel {

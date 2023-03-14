@@ -17,22 +17,22 @@ const MenuDropdown: React.FC<IMenuDropdownProps> = props => {
   const { item, open, setOptionOpened } = props
 
   return item?.route ? (
-    <div
-      className={styles.menuDropdown}
-      onClick={() => setOptionOpened(!open ? item?.id : "")}
-    >
+    <div className={styles.menuDropdownNoRoute}>
       <Link
         className={`${styles.dropdownLabel} ${cx("buttonMD")}`}
         to={item?.route}
       >
         {item?.label}
       </Link>
-      <img src={images.chevronDown} />
+      <img
+        onClick={() => setOptionOpened(!open ? item?.id : "")}
+        src={images.chevronDown}
+      />
       <MenuSubOption item={item} open={open} />
     </div>
   ) : (
     <div
-      className={styles.menuDropdown}
+      className={styles.menuDropdownRoute}
       onClick={() => setOptionOpened(!open ? item?.id : "")}
     >
       <p className={`${styles.dropdownLabel} ${cx("buttonMD")}`}>
