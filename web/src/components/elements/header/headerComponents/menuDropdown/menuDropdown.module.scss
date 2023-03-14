@@ -1,0 +1,16 @@
+@import "../../../../../styles/colors";
+
+.menuDropdown {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 14px 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.dropdownLabel {
+    margin-right: 4px;
+}

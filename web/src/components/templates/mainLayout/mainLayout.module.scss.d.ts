@@ -1,2 +1,3 @@
-export const header: string;
-export const headerNavigationItem: string;
+export const mainLayout: string
+export const header: string
+export const headerNavigationItem: string
