@@ -1,7 +1,7 @@
 import type { PageProps } from "gatsby"
 import * as React from "react"
 import Layout from "../../../components/templates/mainLayout/MainLayout"
-import BeforeFooterCTASection from "../../../components/templates/sections/beforeFooterCTA/BeforeFooterCTA"
+import PreFooterCTASection from "../../../components/templates/sections/preFooterCTA/PreFooterCTA"
 import { navigate } from "gatsby"
 
 const GovernmentPage: React.FC<PageProps> = () => {
@@ -10,7 +10,7 @@ const GovernmentPage: React.FC<PageProps> = () => {
       <>
         <main>
           <h1>Government</h1>
-          <BeforeFooterCTASection
+          <PreFooterCTASection
             title={"Want to know more?"}
             description={
               "Get to know our expertise and case studies working with entities in the public sector"

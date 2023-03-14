@@ -1,7 +1,7 @@
 import type { PageProps } from "gatsby"
 import * as React from "react"
 import Layout from "../../../components/templates/mainLayout/MainLayout"
-import BeforeFooterCTASection from "../../../components/templates/sections/beforeFooterCTA/BeforeFooterCTA"
+import PreFooterCTASection from "../../../components/templates/sections/preFooterCTA/PreFooterCTA"
 
 const GatacaWalletPage: React.FC<PageProps> = () => {
   return (
@@ -10,7 +10,7 @@ const GatacaWalletPage: React.FC<PageProps> = () => {
         <main>
           <h1>Gataca Wallet</h1>
         </main>
-        <BeforeFooterCTASection
+        <PreFooterCTASection
           title={"Ready To Start?"}
           description={
             "Protect your privacy and take control of your digital identity"
