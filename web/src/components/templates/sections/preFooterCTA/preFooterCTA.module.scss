@@ -1,0 +1,56 @@
+@import "../../../../styles/colors";
+@import "../../../../styles/mixins";
+
+.preFooterCTA {
+  padding: 80px 20px 70px;
+  background-color: $neutral1000;
+  @include flexbox();
+  @include flex-direction(column);
+  @include justify-content(center);
+  @include align-items(center);
+  @include min-width(tablet) {
+    padding: 100px 50px 90px;
+  }
+
+  & > p, h6 {
+    text-align: center;
+    color: $neutral100;
+    max-width: 980px;
+  }
+
+  & > div {
+    @include flexbox();
+    @include justify-content(center);
+    @include align-items(center);
+    @include flex-direction(column);
+    @include min-width(tablet) {
+      @include flex-direction(row);
+    }
+
+    & > a {
+      background-color: $primary700;
+      border-radius: 8px;
+      height: 52px;
+      min-width: 178px;
+      &:hover {
+         background-color: $primary900;
+      }
+    }
+    & > button {
+      height: 52px;
+      min-width: 178px;
+    }
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+  margin-top: 24px;
+  margin-bottom: 30px;
+}
+
+

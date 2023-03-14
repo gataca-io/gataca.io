@@ -1,14 +1,27 @@
 @import "../../../../../styles/colors";
+@import "../../../../../styles/mixins";
 
-.menuDropdown {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+.menuDropdownRoute {
     padding: 14px 20px;
     position: relative;
     cursor: pointer;
+    @include flexbox();
+    @include flex-wrap(wrap);
+    @include justify-content(center);
+    @include align-items(center);
+}
+
+.menuDropdownNoRoute {
+    padding: 14px 20px;
+    position: relative;
+    @include flexbox();
+    @include flex-wrap(wrap);
+    @include justify-content(center);
+    @include align-items(center);
+
+    & > img, a {
+        cursor: pointer;
+    }
 }
 
 .dropdownLabel {

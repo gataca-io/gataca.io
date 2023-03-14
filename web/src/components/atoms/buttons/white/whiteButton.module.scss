@@ -1,29 +1,28 @@
 @import "../../../../styles/_colors.scss";
 
 .button {
-    background-color: $primary700;
-    color: $primary100;
+    background-color: $neutral100;
+    color: $primary1000;
     padding: 10px 14px;
     height: 48px;
     border-radius: 8px;
     cursor: pointer;
 
     &:hover {
-         background-color: $primary900;
+        background-color: $primary900;
     }
 }
 
 .outlinedButton {
-    background-color: $neutral100;
-    border: 1px solid $primary700;
-    color: $neutral1000;
+    background-color: transparent;
+    border: 1px solid $neutral100;
+    color: $neutral100;
     padding: 10px 14px;
     height: 48px;
     border-radius: 8px;
     cursor: pointer;
 
      &:hover {
-        font-weight: 600;
-        color: $primary700;
+        background-color:rgba(255, 255, 255, 0.2);
     }
 }

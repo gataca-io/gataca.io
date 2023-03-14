@@ -1,9 +1,9 @@
 import * as React from "react"
-import * as styles from "./purpleButton.module.scss"
+import * as styles from "./whiteButton.module.scss"
 import cx from "classnames"
 import { ButtonModel } from "../../../../interfaces/interfaces"
 
-const PurpleButton: React.FC<ButtonModel> = props => {
+const WhiteButton: React.FC<ButtonModel> = props => {
   const { label, icon, outlined, className, action } = props
   return (
     <button
@@ -17,4 +17,4 @@ const PurpleButton: React.FC<ButtonModel> = props => {
   )
 }
 
-export default PurpleButton
+export default WhiteButton

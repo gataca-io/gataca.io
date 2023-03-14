@@ -41,6 +41,13 @@ body {
     color: $neutral1000;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    & > div {
+        height: 100%;
+          & > div {
+            height: 100%;
+        }
+    }
 }
 
 ol, ul {

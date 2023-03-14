@@ -8,39 +8,39 @@ export const headerMenuOptions: LinkModel[] = [
       {
         id: "gatacaWallet",
         label: "Gataca Wallet",
-        route: "/gatacaWallet",
+        route: "/products/gatacaWallet",
       },
       {
         id: "gatacaStudio",
         label: "Gataca Studio",
-        route: "/gatacaStudio",
+        route: "/products/gatacaStudio",
       },
     ],
   },
   {
     id: "useCasesSectors",
     label: "Use Cases & Sectors",
-    route: "/useCases",
+    route: "/useCasesSectors",
     subRoutes: [
       {
         id: "government",
         label: "Government",
-        route: "/government",
+        route: "/useCasesSectors/government",
       },
       {
         id: "finance",
         label: "Finance",
-        route: "/finance",
+        route: "/useCasesSectors/finance",
       },
       {
         id: "education",
         label: "Education",
-        route: "/education",
+        route: "/useCasesSectors/education",
       },
       {
         id: "web3",
         label: "Web 3",
-        route: "/web3",
+        route: "/useCasesSectors/web3",
       },
     ],
   },
@@ -51,39 +51,46 @@ export const headerMenuOptions: LinkModel[] = [
       {
         id: "aboutUs",
         label: "About Us",
-        route: "/aboutUs",
+        route: "/company/aboutUs",
       },
       {
         id: "careers",
         label: "Careers",
-        route: "/careers",
+        route: "/company/careers",
       },
       {
         id: "contactUs",
         label: "ContactUs",
-        route: "/contactUs",
+        route: "/company/contactUs",
       },
       {
         id: "becomeAPartner",
         label: "Become a Partner",
-        route: "/becomeAPartner",
+        route: "/company/becomeAPartner",
       },
     ],
   },
   {
     id: "resources",
     label: "Resources",
+    route: "/resources",
     subRoutes: [
       {
         id: "blog",
         label: "Blog",
-        route: "/blog",
+        route: "/resources/blog",
       },
       {
         id: "documentation",
         label: "Documentation",
-        route: "/documentation",
+        route: "/resources/documentation",
       },
     ],
   },
 ]
+
+// URLs/URIs
+export const marketAndroidURI =
+  "https://play.google.com/store/apps/details?id=com.gataca.identity"
+export const marketIosURI = "https://apps.apple.com/us/app/gataca/id1498607616"
+export const gatacaStudioURL = "https://studio.gataca.io"
