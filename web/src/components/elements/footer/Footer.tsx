@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
         </div>
         <div className={`${styles?.footerSections} ${cx("marginTop10")}`}>
           <SectionContent navigationObject={useCasesFooterMenu} />
-          <SectionContent navigationObject={useCasesFooterMenu} />
+          <SectionContent navigationObject={sectorsFooterMenu} />
         </div>
         <div className={`${styles?.footerSections} ${cx("marginTop10")}`}>
           <SectionContent navigationObject={companyFooterMenu} />
