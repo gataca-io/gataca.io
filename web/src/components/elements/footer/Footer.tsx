@@ -24,7 +24,11 @@ const Footer: React.FC = () => {
           className={`${styles?.iconsContainer} ${styles?.mainSectionFooter__column}`}
         >
           <div className={styles?.logo}>
-            <img src={images.gatacIconAndText} id="gatacaLogo" />
+            <img
+              src={images.gatacIconAndText}
+              id="gatacaLogo"
+              alt="Gataca Logo"
+            />
           </div>
           <div
             className={`${styles?.socialMediaContainer} ${styles?.showDesktop}`}
@@ -93,7 +97,11 @@ const Footer: React.FC = () => {
             {subFooterMenu?.subRoutes?.map(item => {
               return (
                 <li>
-                  <Link className={cx("buttonMD")} to={item.route || ""}>
+                  <Link
+                    id={item.id}
+                    className={cx("buttonMD")}
+                    to={item.route || ""}
+                  >
                     {item.label}
                   </Link>
                 </li>
@@ -105,6 +113,7 @@ const Footer: React.FC = () => {
           className={`${styles?.rightsReserved} ${cx("buttonMD")} ${cx(
             "marginBottom16"
           )}`}
+          id={rightsReservedGataca?.id}
         >
           {rightsReservedGataca?.label}
         </div>

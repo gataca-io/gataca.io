@@ -10,7 +10,7 @@ const SocialMediaContent: React.FC = () => {
         return (
           <li>
             <Link to={item.route || ""}>
-              <img src={item.icon} id={item.id} />
+              <img src={item.icon} id={item.id} alt={item.alt} />
             </Link>
           </li>
         )

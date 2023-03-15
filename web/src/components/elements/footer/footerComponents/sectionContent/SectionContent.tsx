@@ -16,14 +16,21 @@ const SectionContent: React.FC<ISectionContentProps> = props => {
         props.className && props.className
       }`}
     >
-      <p className={`${cx("marginBottom32")} ${cx("buttonMD")}`}>
+      <p
+        id={props.navigationObject?.id}
+        className={`${cx("marginBottom32")} ${cx("buttonMD")}`}
+      >
         {props.navigationObject?.label}
       </p>
       <ul>
         {props.navigationObject?.subRoutes?.map(item => {
           return (
             <li>
-              <Link className={cx("bodyRegularMD")} to={item.route || ""}>
+              <Link
+                id={item.id}
+                className={cx("bodyRegularMD")}
+                to={item.route || ""}
+              >
                 {item.label}
               </Link>
             </li>

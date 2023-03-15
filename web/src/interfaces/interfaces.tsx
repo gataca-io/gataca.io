@@ -15,6 +15,7 @@ export interface ButtonModel {
 }
 export interface IconModel {
   id: string
+  alt: string
   icon: string
   route?: string
 }
