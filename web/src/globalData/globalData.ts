@@ -190,22 +190,22 @@ export const footerMenuOptions: LinkModel[] = [
       {
         id: "aboutUs",
         label: "About Us",
-        route: "/aboutUs",
+        route: "/company/aboutUs",
       },
       {
         id: "careers",
         label: "Careers",
-        route: "/careers",
+        route: "/company/careers",
       },
       {
         id: "contactUs",
         label: "ContactUs",
-        route: "/contactUs",
+        route: "/company/contactUs",
       },
       {
         id: "becomeAPartner",
         label: "Become a Partner",
-        route: "/becomeAPartner",
+        route: "/company/becomeAPartner",
       },
     ],
   },
