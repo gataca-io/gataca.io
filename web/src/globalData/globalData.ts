@@ -287,17 +287,17 @@ export const rightsReservedGataca = footerMenuOptions?.find(
 export const socialMedia: IconModel[] = [
   {
     id: "linkedIn",
-    icon: "",
+    icon: "gatacaLinkedLink",
     route: "/",
   },
   {
     id: "twitter",
-    icon: "",
+    icon: "gatacaTwitterLink",
     route: "/",
   },
   {
     id: "youtube",
-    icon: "",
+    icon: "gatacaYoutubeLink",
     route: "/",
   },
 ]
