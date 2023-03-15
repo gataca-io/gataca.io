@@ -12,6 +12,7 @@ import {
   subFooterMenu,
   useCasesFooterMenu,
 } from "../../../globalData/globalData"
+import SectionContent from "./footerComponents/SectionContent"
 
 const Footer: React.FC = () => {
   return (
@@ -23,111 +24,15 @@ const Footer: React.FC = () => {
               <img src={images.gatacIconAndText} />
             </div>
             <div className={`${styles?.footerSections} ${cx("marginTop10")}`}>
-              <p className={`${cx("marginBottom32")} ${cx("buttonMD")}`}>
-                {productsFooterMenu?.label}
-              </p>
-              <ul>
-                {productsFooterMenu?.subRoutes?.map(item => {
-                  return (
-                    <li className={cx("marginBottom16")}>
-                      <Link
-                        className={cx("bodyRegularMD")}
-                        to={item.route || ""}
-                      >
-                        {item.label}
-                      </Link>
-                    </li>
-                  )
-                })}
-              </ul>
+              <SectionContent navigationObject={productsFooterMenu} />
             </div>
             <div className={`${styles?.footerSections} ${cx("marginTop10")}`}>
-              <div>
-                <p className={`${cx("marginBottom32")} ${cx("buttonMD")}`}>
-                  {useCasesFooterMenu?.label}
-                </p>
-                <ul>
-                  {useCasesFooterMenu?.subRoutes?.map(item => {
-                    return (
-                      <li className={cx("marginBottom16")}>
-                        <Link
-                          className={cx("bodyRegularMD")}
-                          to={item.route || ""}
-                        >
-                          {item.label}
-                        </Link>
-                      </li>
-                    )
-                  })}
-                </ul>
-              </div>
-              <div>
-                <p
-                  className={`${cx("marginBottom32")} ${cx("buttonMD")} ${cx(
-                    "marginTop10"
-                  )}`}
-                >
-                  {sectorsFooterMenu?.label}
-                </p>
-                <ul>
-                  {sectorsFooterMenu?.subRoutes?.map(item => {
-                    return (
-                      <li className={cx("marginBottom16")}>
-                        <Link
-                          className={cx("bodyRegularMD")}
-                          to={item.route || ""}
-                        >
-                          {item.label}
-                        </Link>
-                      </li>
-                    )
-                  })}
-                </ul>
-              </div>
+              <SectionContent navigationObject={useCasesFooterMenu} />
+              <SectionContent navigationObject={useCasesFooterMenu} />
             </div>
             <div className={`${styles?.footerSections} ${cx("marginTop10")}`}>
-              <div>
-                <p className={`${cx("marginBottom32")} ${cx("buttonMD")}`}>
-                  {companyFooterMenu?.label}
-                </p>
-                <ul>
-                  {companyFooterMenu?.subRoutes?.map(item => {
-                    return (
-                      <li className={cx("marginBottom16")}>
-                        <Link
-                          className={cx("bodyRegularMD")}
-                          to={item.route || ""}
-                        >
-                          {item.label}
-                        </Link>
-                      </li>
-                    )
-                  })}
-                </ul>
-              </div>
-              <div>
-                <p
-                  className={`${cx("marginBottom32")} ${cx("buttonMD")} ${cx(
-                    "marginTop10"
-                  )}`}
-                >
-                  {learnFooterMenu?.label}
-                </p>
-                <ul>
-                  {learnFooterMenu?.subRoutes?.map(item => {
-                    return (
-                      <li className={cx("marginBottom16")}>
-                        <Link
-                          className={cx("bodyRegularMD")}
-                          to={item.route || ""}
-                        >
-                          {item.label}
-                        </Link>
-                      </li>
-                    )
-                  })}
-                </ul>
-              </div>
+              <SectionContent navigationObject={companyFooterMenu} />
+              <SectionContent navigationObject={learnFooterMenu} />
             </div>
           </section>
           <hr></hr>

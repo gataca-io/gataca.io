@@ -11,22 +11,11 @@
     max-width: 1184px;
     margin: 0 auto 32px;
     padding: 0 40px;
-    > div {
+    .footerSections {
       margin-bottom: 30px;
       @include min-width(tablet) {
         margin-bottom: 0;
-      }
-      &.footerSections {
-        @include min-width(tablet) {
-          padding: 0 16px;
-        }
-      }
-      li a {
-        color: $neutral700;
-      }
-      > div {
-        margin-bottom: 48px;
-        max-width: 202px;
+        padding: 0 16px;
       }
     }
   }
