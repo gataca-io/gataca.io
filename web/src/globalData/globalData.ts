@@ -1,6 +1,16 @@
 import { images } from "../images/images"
 import { LinkModel, IconModel } from "../interfaces/interfaces"
 
+// URLs/URIs
+export const marketAndroidURI =
+  "https://play.google.com/store/apps/details?id=com.gataca.identity"
+export const marketIosURI = "https://apps.apple.com/us/app/gataca/id1498607616"
+export const gatacaStudioURL = "https://studio.gataca.io"
+export const linkedinURL = "https://www.linkedin.com/company/gataca/"
+export const twitterURL = "https://twitter.com/gataca_id"
+export const youtubeURL =
+  "https://www.youtube.com/channel/UCcjJqmCa1UmbbS8ZpM8kkAQ"
+
 export const headerMenuOptions: LinkModel[] = [
   {
     id: "products",
@@ -290,23 +300,18 @@ export const socialMedia: IconModel[] = [
     id: "linkedIn",
     alt: "LinkedIn Logo",
     icon: images.gatacaLinkedLink,
-    route: "/",
+    route: linkedinURL,
   },
   {
     id: "twitter",
     alt: "Twitter Logo",
     icon: images.gatacaTwitterLink,
-    route: "/",
+    route: twitterURL,
   },
   {
     id: "youtube",
     alt: "Youtube Logo",
     icon: images.gatacaYoutubeLink,
-    route: "/",
+    route: youtubeURL,
   },
 ]
-// URLs/URIs
-export const marketAndroidURI =
-  "https://play.google.com/store/apps/details?id=com.gataca.identity"
-export const marketIosURI = "https://apps.apple.com/us/app/gataca/id1498607616"
-export const gatacaStudioURL = "https://studio.gataca.io"
