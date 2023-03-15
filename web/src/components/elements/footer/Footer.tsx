@@ -138,6 +138,7 @@ const Footer: React.FC = () => {
               </div>
             </div>
           </section>
+          <hr></hr>
           <section className={styles?.subSectionFooter}>
             <div className={cx("marginBottom16")}>
               <ul>

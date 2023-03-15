@@ -2,14 +2,15 @@
 @import "../../../styles/colors";
 
 .footer {
-  max-width: calc(1312px - (calc(256px - 40px)));
   margin: 0 auto;
-  padding: 80px 40px 20px;
+  padding: 80px 0 20px;
   .mainSectionFooter {
     @include flexbox();
     @include flex-wrap(wrap);
     @include justify-content(space-between);
-    margin-bottom: 40px;
+    max-width: calc(1312px - (calc(256px - 40px)));
+    margin: 0 auto 32px;
+    padding: 0 40px;
     > div {
       margin-bottom: 30px;
       @include min-width(tablet) {
@@ -33,6 +34,9 @@
     @include flexbox();
     @include flex-wrap(wrap);
     @include justify-content(space-between);
+    max-width: calc(1312px - (calc(256px - 40px)));
+    margin: 0 auto;
+    padding: 38px 40px 0;
     > div {
       width: 100%;
       @include min-width(tablet) {
