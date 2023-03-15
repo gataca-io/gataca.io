@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
             <div className="logo">
               <img src={images.gatacIconAndText} />
             </div>
-            <div className={styles?.footerSections}>
+            <div className={`${styles?.footerSections} ${cx("marginTop10")}`}>
               <p className={`${cx("marginBottom32")} ${cx("buttonMD")}`}>
                 {productsFooterMenu?.label}
               </p>
@@ -41,13 +41,9 @@ const Footer: React.FC = () => {
                 })}
               </ul>
             </div>
-            <div className={styles?.footerSections}>
+            <div className={`${styles?.footerSections} ${cx("marginTop10")}`}>
               <div>
-                <p
-                  className={`${cx("marginBottom32")} ${cx("buttonMD")} ${cx(
-                    "marginTop10"
-                  )}`}
-                >
+                <p className={`${cx("marginBottom32")} ${cx("buttonMD")}`}>
                   {useCasesFooterMenu?.label}
                 </p>
                 <ul>
@@ -89,13 +85,9 @@ const Footer: React.FC = () => {
                 </ul>
               </div>
             </div>
-            <div className={styles?.footerSections}>
+            <div className={`${styles?.footerSections} ${cx("marginTop10")}`}>
               <div>
-                <p
-                  className={`${cx("marginBottom32")} ${cx("buttonMD")} ${cx(
-                    "marginTop10"
-                  )}`}
-                >
+                <p className={`${cx("marginBottom32")} ${cx("buttonMD")}`}>
                   {companyFooterMenu?.label}
                 </p>
                 <ul>
