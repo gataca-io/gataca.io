@@ -2,8 +2,7 @@ import { Link } from "gatsby"
 import * as React from "react"
 import * as styles from "./sectionContent.module.scss"
 import cx from "classnames"
-import { LinkModel } from "../../../../interfaces/interfaces"
-import classNames from "classnames"
+import { LinkModel } from "../../../../../interfaces/interfaces"
 
 export type ISectionContentProps = {
   navigationObject?: LinkModel
@@ -18,7 +17,7 @@ const SectionContent: React.FC<ISectionContentProps> = props => {
     >
       <p
         id={props.navigationObject?.id}
-        className={`${cx("marginBottom32")} ${cx("buttonMD")}`}
+        className={`${cx("marginBottom32 buttonMD")}`}
       >
         {props.navigationObject?.label}
       </p>

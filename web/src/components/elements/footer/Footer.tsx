@@ -9,7 +9,6 @@ import {
   productsFooterMenu,
   rightsReservedGataca,
   sectorsFooterMenu,
-  socialMedia,
   subFooterMenu,
   useCasesFooterMenu,
 } from "../../../globalData/globalData"
@@ -110,8 +109,8 @@ const Footer: React.FC = () => {
           </ul>
         </div>
         <div
-          className={`${styles?.rightsReserved} ${cx("buttonMD")} ${cx(
-            "marginBottom16"
+          className={`${styles?.rightsReserved} ${cx(
+            "buttonMD marginBottom16"
           )}`}
           id={rightsReservedGataca?.id}
         >
