@@ -16,10 +16,11 @@
 .header {
   margin-bottom: 30px;
   padding: 10px 20px;
+  z-index: 9999;
   @include flexbox();
   @include flex-wrap(wrap);
   @include justify-content(space-between);
-  @include min-width(desktop) {
+  @include min-width($desktopSM) {
     height: 48px;
   }
 
@@ -29,6 +30,7 @@
   }
 
   & > div {
+      z-index: 9999;
     @include flexbox();
     @include flex-wrap(wrap);
     @include justify-content(space-between);
