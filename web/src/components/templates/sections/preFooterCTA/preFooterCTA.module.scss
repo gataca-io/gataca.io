@@ -8,7 +8,7 @@
   @include flex-direction(column);
   @include justify-content(center);
   @include align-items(center);
-  @include min-width(tablet) {
+  @include min-width($mobileXL) {
     padding: 100px 50px 90px;
   }
 
@@ -23,7 +23,7 @@
     @include justify-content(center);
     @include align-items(center);
     @include flex-direction(column);
-    @include min-width(tablet) {
+    @include min-width($mobileXL) {
       @include flex-direction(row);
     }
 

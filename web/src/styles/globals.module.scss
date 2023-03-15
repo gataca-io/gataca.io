@@ -439,6 +439,9 @@
     }
 
     // bottom
+    .marginBottom32 {
+        margin-bottom: 32px;
+    }
     .marginBottom30 {
         margin-bottom: 30px;
     }
@@ -447,6 +450,9 @@
     }
     .marginBottom20 {
         margin-bottom: 20px;
+    }
+    .marginBottom16 {
+        margin-bottom: 16px;
     }
     .marginBottom15 {
         margin-bottom: 15px;
@@ -725,4 +731,8 @@
         padding-bottom: 0px;
     }
 
+    // hr styles
+    hr {
+        border: 1px solid $neutral300;
+    }
 }

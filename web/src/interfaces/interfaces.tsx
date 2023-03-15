@@ -13,3 +13,9 @@ export interface ButtonModel {
   className?: any
   action: (x?: any) => void
 }
+export interface IconModel {
+  id: string
+  alt: string
+  icon: string
+  route?: string
+}
