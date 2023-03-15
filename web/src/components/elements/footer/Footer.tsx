@@ -9,28 +9,81 @@ import {
   productsFooterMenu,
   rightsReservedGataca,
   sectorsFooterMenu,
+  socialMedia,
   subFooterMenu,
   useCasesFooterMenu,
 } from "../../../globalData/globalData"
-import SectionContent from "./footerComponents/SectionContent"
+import SectionContent from "./footerComponents/sectionContent/SectionContent"
+import SocialMediaContent from "./footerComponents/socialMediaContent/SocialMediaContent"
 
 const Footer: React.FC = () => {
   return (
     <footer className={styles?.footer}>
       <section className={styles?.mainSectionFooter}>
-        <div className="logo">
-          <img src={images.gatacIconAndText} />
+        <div
+          className={`${styles?.iconsContainer} ${styles?.mainSectionFooter__column}`}
+        >
+          <div className={styles?.logo}>
+            <img src={images.gatacIconAndText} id="gatacaLogo" />
+          </div>
+          <div
+            className={`${styles?.socialMediaContainer} ${styles?.showDesktop}`}
+          >
+            <SocialMediaContent />
+          </div>
         </div>
-        <div className={`${styles?.footerSections} ${cx("marginTop10")}`}>
+        <div
+          className={`${styles?.footerSections} ${
+            styles?.mainSectionFooter__column
+          } ${styles?.showDesktop} ${cx("marginTop10")}`}
+        >
           <SectionContent navigationObject={productsFooterMenu} />
         </div>
-        <div className={`${styles?.footerSections} ${cx("marginTop10")}`}>
-          <SectionContent navigationObject={useCasesFooterMenu} />
-          <SectionContent navigationObject={sectorsFooterMenu} />
+        <div
+          className={`${styles?.footerSections} ${
+            styles?.mainSectionFooter__column
+          } ${styles?.showMobile} ${cx("marginTop10")}`}
+        >
+          <SectionContent navigationObject={productsFooterMenu} />
+          <SectionContent navigationObject={companyFooterMenu} />
         </div>
-        <div className={`${styles?.footerSections} ${cx("marginTop10")}`}>
+        <div
+          className={`${styles?.footerSections} ${
+            styles?.mainSectionFooter__column
+          } ${cx("marginTop10")}`}
+        >
+          <SectionContent navigationObject={useCasesFooterMenu} />
+          <SectionContent
+            navigationObject={sectorsFooterMenu}
+            className={styles?.showDesktop}
+          />
+        </div>
+        <div
+          className={`${styles?.footerSections} ${
+            styles?.mainSectionFooter__column
+          } ${styles?.showDesktop} ${cx("marginTop10")}`}
+        >
           <SectionContent navigationObject={companyFooterMenu} />
           <SectionContent navigationObject={learnFooterMenu} />
+        </div>
+        <div
+          className={`${styles?.footerSections} ${
+            styles?.mainSectionFooter__column
+          } ${styles?.showMobile} ${cx("marginTop10")}`}
+        >
+          <SectionContent navigationObject={learnFooterMenu} />
+        </div>
+        <div
+          className={`${styles?.footerSections} ${
+            styles?.mainSectionFooter__column
+          } ${styles?.showMobile} ${cx("marginTop10")}`}
+        >
+          <SectionContent navigationObject={sectorsFooterMenu} />
+        </div>
+        <div
+          className={`${styles?.socialMediaContainer} ${styles?.showMobile}`}
+        >
+          <SocialMediaContent />
         </div>
       </section>
       <hr></hr>

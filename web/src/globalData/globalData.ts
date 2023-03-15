@@ -1,3 +1,4 @@
+import { images } from "../images/images"
 import { LinkModel, IconModel } from "../interfaces/interfaces"
 
 export const headerMenuOptions: LinkModel[] = [
@@ -287,17 +288,17 @@ export const rightsReservedGataca = footerMenuOptions?.find(
 export const socialMedia: IconModel[] = [
   {
     id: "linkedIn",
-    icon: "gatacaLinkedLink",
+    icon: images.gatacaLinkedLink,
     route: "/",
   },
   {
     id: "twitter",
-    icon: "gatacaTwitterLink",
+    icon: images.gatacaTwitterLink,
     route: "/",
   },
   {
     id: "youtube",
-    icon: "gatacaYoutubeLink",
+    icon: images.gatacaYoutubeLink,
     route: "/",
   },
 ]

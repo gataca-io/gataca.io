@@ -4,19 +4,69 @@
 .footer {
   margin: 0 auto;
   padding: 80px 0 20px;
+  .showDesktop {
+    display: none;
+    @include min-width($mobileXL) {
+      @include flexbox();
+      @include flex-direction(column);
+    }
+  }
+  .showMobile {
+    @include flexbox();
+    @include flex-direction(column);
+    @include min-width($mobileXL) {
+      display: none;
+    }
+  }
+  .logo {
+    margin-bottom: 60px;
+    @include min-width($mobileXL) {
+      margin-bottom: 0;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .mainSectionFooter__column {
+    &.iconsContainer {
+      @include flex(0, 0, 100%);
+      @include min-width($mobileXL) {
+        @include flexbox();
+        @include flex-direction(column);
+        @include justify-content(space-between);
+        @include flex(0, 0, 25%);
+      }
+    }
+    &.footerSections {
+      @include flex(0, 0, 50%);
+      @include min-width($mobileXL) {
+        @include flex(0, 0, (calc(25% - 32px)));
+      } 
+    }
+  }
   .mainSectionFooter {
     @include flexbox();
     @include flex-wrap(wrap);
     @include justify-content(space-between);
     max-width: 1184px;
-    margin: 0 auto 32px;
-    padding: 0 40px;
+    margin: 0 auto 78px;
+    padding: 0 20px;
+    @include min-width($mobileXL) {
+      @include flex-wrap(nowrap);
+    }
+    @include min-width($desktopMD) {
+      padding: 0 40px;
+    }
     .footerSections {
       margin-bottom: 30px;
-      @include min-width($tabletSM) {
+      @include min-width($mobileXL) {
         margin-bottom: 0;
         padding: 0 16px;
       }
+    }
+    .socialMediaContainer.showMobile {
+      @include flex(0, 0, 100%);
     }
   }
   .secondarySectionFooter {
@@ -25,19 +75,22 @@
     @include justify-content(space-between);
     max-width: 1184px;
     margin: 0 auto;
-    padding: 38px 40px 0;
+    padding: 38px 20px 24px;
+    @include min-width($desktopMD) {
+      padding: 38px 40px 24px;
+    }
     > div {
       width: 100%;
-      @include min-width($tabletSM) {
+      @include min-width($tabletXL) {
         width: auto;
       }
     } 
     ul {
-      margin-bottom: 40px;
+      margin-bottom: 24px;
       @include flexbox();
       @include flex-wrap(wrap);
       @include justify-content(center);
-      @include min-width($tabletSM) {
+      @include min-width($tabletXL) {
         margin-bottom: 0;
         @include justify-content(space-between);
       }
@@ -45,7 +98,7 @@
         margin-right: 24px;
         margin-left: 24px;
         margin-bottom: 16px;
-        @include min-width($tabletSM) {
+        @include min-width($tabletXL) {
           margin-right: 40px;
           margin-left: 0;
           margin-bottom: 0;
@@ -57,7 +110,7 @@
     }
     .rightsReserved {
       text-align: center;
-      @include min-width($tabletSM) {
+      @include min-width($tabletXL) {
         text-align: left;
       }
     }
