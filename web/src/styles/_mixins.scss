@@ -1,23 +1,31 @@
 // --------------------------------------------------
 // Media query mixins
 // --------------------------------------------------
-$breakpoint-tablet: 640px;
-$breakpoint-desktop: 968px;
+
+// Mobile Scale
+$mobileSM: 320px !default;
+$mobileMD: 480px !default;
+$mobileXL: 640px !default;
+
+// Tablet Scale
+$tabletSM: 680px !default;
+$tabletMD: 768px !default;
+$tabletXL: 840px !default;
+
+// Desktop Scale
+$desktopSM: 968px !default;
+$desktopMD: 1025px !default;
+$desktopXL: 1280px !default;
 
 @mixin min-width($breakpoint) {
-  @if ($breakpoint ==tablet) {
-    @media (min-width: $breakpoint-tablet) {
-      @content;
-    }
+  @media (min-width: $breakpoint) {
+    @content;
   }
+}
 
-  @else if ($breakpoint ==desktop) {
-    @media (min-width: $breakpoint-desktop) {
-      @content;
-    }
-  }
-  @else {
-    @error "UNKNOWN MEDIA BREAKPOINT #{$breakpoint}";
+@mixin max-width($breakpoint) {
+  @media (min-width: $breakpoint) {
+    @content;
   }
 }
 
