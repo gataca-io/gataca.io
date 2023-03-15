@@ -36,7 +36,7 @@ const Footer: React.FC = () => {
             </div>
           </section>
           <hr></hr>
-          <section className={styles?.subSectionFooter}>
+          <section className={styles?.secondarySectionFooter}>
             <div className={cx("marginBottom16")}>
               <ul>
                 {subFooterMenu?.subRoutes?.map(item => {
