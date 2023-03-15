@@ -13,7 +13,7 @@
     padding: 0 40px;
     .footerSections {
       margin-bottom: 30px;
-      @include min-width(tablet) {
+      @include min-width($tabletSM) {
         margin-bottom: 0;
         padding: 0 16px;
       }
@@ -28,7 +28,7 @@
     padding: 38px 40px 0;
     > div {
       width: 100%;
-      @include min-width(tablet) {
+      @include min-width($tabletSM) {
         width: auto;
       }
     } 
@@ -37,7 +37,7 @@
       @include flexbox();
       @include flex-wrap(wrap);
       @include justify-content(center);
-      @include min-width(tablet) {
+      @include min-width($tabletSM) {
         margin-bottom: 0;
         @include justify-content(space-between);
       }
@@ -45,7 +45,7 @@
         margin-right: 24px;
         margin-left: 24px;
         margin-bottom: 16px;
-        @include min-width(tablet) {
+        @include min-width($tabletSM) {
           margin-right: 40px;
           margin-left: 0;
           margin-bottom: 0;
@@ -57,7 +57,7 @@
     }
     .rightsReserved {
       text-align: center;
-      @include min-width(tablet) {
+      @include min-width($tabletSM) {
         text-align: left;
       }
     }
