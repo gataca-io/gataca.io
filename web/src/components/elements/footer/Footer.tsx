@@ -18,7 +18,9 @@ import SocialMediaContent from "./footerComponents/socialMediaContent/SocialMedi
 const Footer: React.FC = () => {
   return (
     <footer className={styles?.footer}>
-      <section className={styles?.mainSectionFooter}>
+      <section
+        className={`${styles?.mainSectionFooter} ${cx("containerMaxWidth")}`}
+      >
         <div
           className={`${styles?.iconsContainer} ${styles?.mainSectionFooter__column}`}
         >
@@ -90,7 +92,11 @@ const Footer: React.FC = () => {
         </div>
       </section>
       <hr></hr>
-      <section className={styles?.secondarySectionFooter}>
+      <section
+        className={`${styles?.secondarySectionFooter} ${cx(
+          "containerMaxWidth"
+        )}`}
+      >
         <div className={cx("marginBottom16")}>
           <ul>
             {subFooterMenu?.subRoutes?.map(item => {

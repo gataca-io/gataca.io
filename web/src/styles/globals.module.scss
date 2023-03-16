@@ -735,4 +735,11 @@
     hr {
         border: 1px solid $neutral300;
     }
+
+    // max width container 
+    .containerMaxWidth {
+        max-width: 1184px;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
