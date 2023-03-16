@@ -1,0 +1,65 @@
+@import "../../styles/colors";
+@import "../../styles/mixins";
+@import "../../styles/types";
+
+.privacyPolicy {
+  padding: 160px 20px;
+  @include min-width($desktopMD) {
+    padding: 160px 40px;
+  }
+  .sectionHeader {
+    margin-bottom: 150px;
+  }
+  p {
+    color: $neutral700;
+  }
+  .showDesktop {
+    display: none;
+    @include min-width($mobileXL) {
+      @include flexbox();
+      @include flex-direction(column);
+    }
+  }
+  .showMobile {
+    @include flexbox();
+    @include flex-direction(column);
+    @include min-width($mobileXL) {
+      display: none;
+    }
+  }
+  .sectionMain {
+    @include flexbox();
+    @include flex-wrap(wrap);
+    @include min-width($mobileXL)  {
+      @include flex-wrap(nowrap);
+    }
+    p {
+      font-family: $base;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 24px;
+      text-decoration: none;
+    }
+    b, strong {
+      font-family: $base;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 24px;
+      text-decoration: none;
+    }
+    .sectionMain__dataContentCol {
+      @include flex(0, 0, 100%);
+      @include order(0);
+      @include min-width($mobileXL)  {
+        @include flex(0, 0, 75%);
+        @include order(1);
+      } 
+      .contentCol__section {
+        margin-bottom: 60px;
+      }
+      a {
+        color: $primary700;
+      }
+    }
+  }
+}
