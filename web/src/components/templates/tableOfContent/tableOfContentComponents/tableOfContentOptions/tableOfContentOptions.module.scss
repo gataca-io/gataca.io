@@ -1,0 +1,15 @@
+@import "../../../../../styles/mixins";
+@import "../../../../../styles/colors";
+
+
+.ol {
+  &.open {
+    margin-bottom: 98px;
+    @include min-width($mobileXL)  {
+      margin-bottom: 0;
+    }
+  }
+  li:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}

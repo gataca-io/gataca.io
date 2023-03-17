@@ -2,6 +2,20 @@
 @import "../../styles/mixins";
 @import "../../styles/types";
 
+.showDesktop {
+  display: none;
+  @include min-width($mobileXL) {
+    @include flexbox();
+    @include flex-direction(column);
+  }
+}
+.showMobile {
+  @include flexbox();
+  @include flex-direction(column);
+  @include min-width($mobileXL) {
+    display: none;
+  }
+}
 .privacyPolicy {
   padding: 160px 20px;
   @include min-width($desktopMD) {
@@ -12,20 +26,6 @@
   }
   p {
     color: $neutral700;
-  }
-  .showDesktop {
-    display: none;
-    @include min-width($mobileXL) {
-      @include flexbox();
-      @include flex-direction(column);
-    }
-  }
-  .showMobile {
-    @include flexbox();
-    @include flex-direction(column);
-    @include min-width($mobileXL) {
-      display: none;
-    }
   }
   .sectionMain {
     @include flexbox();

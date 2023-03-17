@@ -1,5 +1,5 @@
-@import "../../../styles/mixins";
-@import "../../../styles/colors";
+@import "../../../../../styles/mixins";
+@import "../../../../../styles/colors";
 
 
 .sectionMain__tableContentCol {
@@ -15,5 +15,8 @@
     padding: 32px;
     background-color: $neutral200;
     border-radius: 12px;
+  }
+  .title {
+    color: $neutral1000;
   }
 }

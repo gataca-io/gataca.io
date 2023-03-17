@@ -5,7 +5,7 @@ import * as styles from "./index.module.scss"
 import cx from "classnames"
 import Layout from "../../components/templates/mainLayout/MainLayout"
 import TableOfContent from "../../components/templates/tableOfContent/TableOfContent"
-import { privacyPolicyOptions, contentOptions, gatacaURL } from "./data/data"
+import { privacyPolicyOptions, gatacaURL } from "./data/data"
 
 const PrivacyPolicy: React.FC<PageProps> = () => {
   return (
@@ -13,7 +13,10 @@ const PrivacyPolicy: React.FC<PageProps> = () => {
       <section
         className={`${styles?.privacyPolicy} ${cx("containerMaxWidth")}`}
       > 
-        {/* <TableOfContent navigationObject={privacyPolicyOptions} className={styles?.showMobile}/> */}
+        <div className={styles?.showMobile}>
+        
+        <TableOfContent item={privacyPolicyOptions} className={styles?.showMobile}/>
+        </div>
         <div className={styles?.sectionHeader}>
           <h1 className={cx("heading1 marginBottom32")}>Privacy Policy</h1>
           <p className={cx("bodyRegularXL")}>Effective date: August 31, 2021</p>
@@ -107,7 +110,7 @@ const PrivacyPolicy: React.FC<PageProps> = () => {
               </p>
             </div>
           </div>
-          <TableOfContent navigationObject={privacyPolicyOptions} className={styles?.showDesktop}/>
+          <TableOfContent item={privacyPolicyOptions} className={styles?.showDesktop}/>
         </div>
       </section>
     </Layout>
