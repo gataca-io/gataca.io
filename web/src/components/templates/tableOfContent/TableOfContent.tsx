@@ -13,6 +13,9 @@ export type ITableOfContent = {
 const TableOfContent: React.FC<ITableOfContent> = props => {
   return props.navigationObject ? (
     <div className={styles?.sectionMain__tableContentCol}>
+    <div className={`${styles?.sectionMain__tableContentCol} ${
+        props.className && props.className
+      }`}>
       <div>
         <p id={props.navigationObject?.id} className={styles?.title}><b>{props.navigationObject?.label}</b></p>
         <ol>
