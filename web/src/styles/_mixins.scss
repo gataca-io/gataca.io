@@ -16,6 +16,7 @@ $tabletXL: 840px !default;
 $desktopSM: 968px !default;
 $desktopMD: 1025px !default;
 $desktopXL: 1280px !default;
+$desktopXXL: 1430px !default;
 
 @mixin min-width($breakpoint) {
   @media (min-width: $breakpoint) {

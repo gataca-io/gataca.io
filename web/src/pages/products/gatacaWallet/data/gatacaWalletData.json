@@ -1,0 +1,52 @@
+{
+    "data": {
+        "firstSection": {
+            "description": "Gataca Wallet is an ID wallet in your phone than can store tamper-proof identity credentials securely, and lets you easily prove who you are when accessing online services",
+            "title": "A master key to the Internet"
+        },
+        "secondSection": {
+            "list": [{
+                    "description": "Credentials are physically stored in your phone, where only you can access your data - not even us! You can finally decide who you share your information with and when to revoke access permissions",
+                    "number": "1",
+                    "title": "Protect your privacy and take control of your data"
+                },
+                {
+                    "description": "Carry all your important documents with you in the form of portable verifiable credentials without the need to carry paper-based originals or rely on notarization services",
+                    "number": "2",
+                    "title": "Access and prove the authenticity of your personal information anytime, anywhere"
+                },
+                {
+                    "description": "Get the best and most secure user experience for onboarding and sign-in processes. You simply scan a QR code with your Gataca Wallet, consent to the required data for identity verification, and are in",
+                    "number": "3",
+                    "title": "Passwordless access to online services"
+                }
+            ],
+            "title": "Beneficts"
+        },
+        "thirdSection": {
+            "description": "Take charge of your digital identity",
+            "list": [{
+                    "description": "Securely store all your identity credentials, certificates, and personal documents",
+                    "image": "",
+                    "title": "Request and store verifiable credentials"
+                },
+                {
+                    "description": "Securely share necessary identity information in a matter of seconds",
+                    "image": "",
+                    "title": "Single Sign-On to digital services"
+                },
+                {
+                    "description": "Easily control and revoke your data permissions anytime",
+                    "image": "",
+                    "title": "Manage access to your data"
+                },
+                {
+                    "description": "Create and store identity credentials  of your own",
+                    "image": "",
+                    "title": "Add self-attested credentials"
+                }
+            ],
+            "title": "Features"
+        }
+    }
+}

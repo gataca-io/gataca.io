@@ -1,0 +1,204 @@
+@import "../../../../../styles/_colors.scss";
+@import "../../../../../styles/mixins.scss";
+@import "../../../../../styles/mixins.scss";
+
+.firstSection {
+    position: relative;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1184px;
+    @include flexbox();
+    @include flex-direction(column);
+    @include justify-content(flex-start);
+    @include flex-wrap(wrap);
+
+    @include min-width($tabletMD) {
+      max-width: 1184px;
+      margin: 80px 30px 80px;
+      @include flex-direction(row);
+    }
+    @include min-width($desktopSM) {
+      margin: 200px auto 80px;
+    }
+    @include min-width($desktopXXL) {
+      padding: 0 128px;
+    }
+}
+
+.firstSection__leftSide {
+  margin: 140px 0 80px;
+  width: 100%;
+
+  @include min-width($tabletMD) {
+    width: 50%;
+    margin: 0;
+  }
+
+  & > div > a {
+    display: block;
+    background-color: $primary700;
+    border-radius: 8px;
+    height: 52px;
+    width: 178px;
+
+    @include min-width($mobileXL) {
+      display: inline-block;
+      min-width: 178px;
+    }
+
+    &:hover {
+        background-color: $primary900;
+    }
+  }
+}
+
+.firstSection__rightSide {
+  max-height: 782px;
+  position: relative;
+  margin-left: -5%;
+  margin-top: -18vw;
+  width: 100%;
+  display: block;
+  z-index: 0;
+
+  @include min-width($mobileXL) {
+    margin-left: 0;
+  }
+  @include min-width($tabletMD) {
+    margin-top: 0;
+    height: 100%;
+    padding-left: 6%;
+    width: 0;
+    max-height: 750px;
+  }
+  @include min-width($desktopSM) {
+    padding-left: 11%;
+  }
+
+  .firstSection__image__desktop_container {
+    display: none;
+    position: absolute;
+    bottom: 51px;
+    left: calc(160px - 11%);
+    width: 100px;
+    height: 50px;
+    z-index: 1;
+    transform:
+      rotateX(51deg)
+      rotateZ(13deg)
+      scale(1.5);
+    transform-style: preserve-3d;
+    border-radius: 30px;
+    box-shadow:
+      -1px 0 28px 0 rgba(34, 33, 81, 0.01),
+      28px 28px 28px 0 rgba(34, 33, 81, 0.25);
+
+    @include min-width($tabletMD) {
+      left: calc(164px - 2vw);
+      display: block;
+    }
+    @include min-width($desktopMD) {
+      left: calc(168px - 6.2%);
+    }
+    @include min-width($desktopXXL) {
+      width: 150px;
+      left: 166px;
+    }
+}
+
+.firstSection__image__desktop_container:before {
+  content: '';
+  position: absolute;
+  top: 18px;
+  left: 145px;
+  width: 400px;
+  height: 90px;
+  border-radius: 30px;
+  background: linear-gradient(to right, rgb(0 0 0 / 1%), rgb(244 244 244 / 58%));
+  box-shadow: 19px -2px 19px 0px rgb(248 248 248);
+  border-bottom-right-radius: 90%;
+  border-top-right-radius: 90%;
+  transform: skewY(334deg);
+  transform-origin: 0 0;
+  z-index: 1;
+}
+
+.firstSection__image__desktop {
+  display: none;
+  width: 303px;
+
+  @include min-width($tabletMD) {
+    max-height: 750px;
+    display: block;
+    position: relative;
+    z-index: 10;
+  }
+  @include min-width($desktopXL) {
+    max-height: 750px;
+  }
+}
+
+.firstSection__image__desktop__shadow_cont {
+  background-image: url("../../../../../images/images3d/Shadow_Mobile.png");
+  -webkit-mask-image: radial-gradient(circle at 50% 50%, #0000009c 10%, rgb(0 0 0 / 0%) 100%);
+  mask-image: radial-gradient(circle at 50% 50%, #0000009c 10%, rgb(0 0 0 / 0%) 100%);
+  -webkit-mask-image: radial-gradient(circle at 50% 50%, #0000009c 10%, rgb(0 0 0 / 0%) 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: none;
+  position: absolute;
+  top: 0;
+  z-index: 9;
+  top: -91px;
+  height: 750px;
+  width: 1200px;
+
+  @include min-width($tabletMD) {
+    display: block;
+    left: calc(-350px - 6.8vw);
+  }
+  @include min-width($tabletXL) {
+    left: calc(-350px - 5.7vw);
+  }
+  @include min-width($desktopSM) {
+    left: calc(-318px - 3vw);
+  }
+  @include min-width($desktopMD) {
+    left: calc(-318px - 1.5vw);
+  }
+  @media (min-width: 1154px) {
+    left: calc(-318px - 0.5vw);
+  }
+  @include min-width($desktopXL) {
+    width: 1200px;
+    left: -318px;
+  }
+}
+  
+.firstSection__image__desktop__shadow {
+  display: none;
+  position: absolute;
+  top: -91px;
+  left: -315px;
+  max-height: 750px;
+  z-index: 9;
+
+  @include min-width($tabletMD) {
+    display: block;
+  }
+}
+
+.firstSection__image__mobile {
+    display: block;
+    height: 123vw;
+    max-height: calc(790px);
+    -webkit-transform: translateX(-30%);
+    -moz-transform: translateX(-30%);
+    transform: translateX(-30%);
+
+    @include min-width($tabletMD) {
+      display: none;
+    }
+  }
+}

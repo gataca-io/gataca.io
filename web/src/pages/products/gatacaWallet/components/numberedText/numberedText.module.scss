@@ -1,0 +1,21 @@
+@import "../../../../../styles/_colors.scss";
+@import "../../../../../styles/mixins.scss";
+
+.container {
+    @include min-width($tabletMD) {
+        &:nth-child(odd) {
+        margin-right: 20px;
+    }
+         max-width: 372px;
+        @include flex(0, 0, calc(50% - 20px));
+    }
+}
+
+.number {
+    color: $primary200;
+    margin-bottom: 24px;
+}
+
+.title {
+    margin-bottom: 8px;
+}
