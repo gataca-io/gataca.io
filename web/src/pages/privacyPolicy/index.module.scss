@@ -30,6 +30,7 @@
   .sectionMain {
     @include flexbox();
     @include flex-wrap(wrap);
+    @include justify-content(space-between);
     @include min-width($mobileXL)  {
       @include flex-wrap(nowrap);
     }
@@ -49,11 +50,18 @@
     }
     .sectionMain__dataContentCol {
       @include flex(0, 0, 100%);
-      @include order(0);
       @include min-width($mobileXL)  {
+        @include flex(0, 0, 60%);
+      }
+      @include min-width($tabletXL)  {
+        @include flex(0, 0, 65%);
+      }
+      @include min-width($desktopSM)  {
+        @include flex(0, 0, 70%);
+      }
+      @include min-width($desktopXL)  {
         @include flex(0, 0, 75%);
-        @include order(1);
-      } 
+      }  
       .contentCol__section {
         margin-bottom: 60px;
       }

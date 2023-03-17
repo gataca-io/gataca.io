@@ -18,7 +18,7 @@ const TableOfContent: React.FC<ITableOfContent> = props => {
         <ol>
           {props.navigationObject?.subRoutes?.map(item => {
             return (
-              <li className={cx("marginBottom24")}>
+              <li className={cx("buttonSM")}>
                 <Link
                   id={item.id}
                   to={item.route || ""}

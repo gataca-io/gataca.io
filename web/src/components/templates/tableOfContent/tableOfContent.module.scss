@@ -4,21 +4,23 @@
 
 .sectionMain__tableContentCol {
   @include flex(0, 0, 100%);
-  @include order(0);
   @include min-width($mobileXL)  {
-    @include flex(0, 0, 25%);
-    @include order(1);
+    @include flex(0, 0, 35%);
+    max-width: 252px;
   }
-  margin-left: 20px;
-  background-color: $neutral200;
-  border-radius: 12px;
-  max-width: 272px;
-  max-height: 760px;
+  @include min-width($desktopMD)  {
+    @include flex(0, 0, 25%);
+  }
   p {
     margin-bottom: 24px;
   }
   > div {
     padding: 32px;
+    background-color: $neutral200;
+    border-radius: 12px;
+    li:not(:last-child) {
+      margin-bottom: 24px;
+    }
   }
   .title {
     color: $neutral1000;
