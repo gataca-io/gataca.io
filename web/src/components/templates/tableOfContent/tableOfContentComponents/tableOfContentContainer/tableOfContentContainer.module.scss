@@ -12,16 +12,27 @@
     @include flex(0, 0, 25%);
   }
   > div {
-    padding: 32px;
+    padding: 12px 20px;
     background-color: $neutral200;
-    border-radius: 12px;
+    @include min-width($mobileXL) {
+      border-radius: 12px;
+      padding: 32px;
+    }
   }
   .title {
-    color: $neutral1000;
-    font-family: "Poppins";
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 24px;
-    text-decoration: none;
+    div {
+      @include flexbox();
+      @include justify-content(space-between);
+      @include align-items(center);
+      width: 100%;
+      span {
+        color: $neutral1000;
+        font-family: "Poppins";
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+        text-decoration: none;
+      }
+    }
   }
 }

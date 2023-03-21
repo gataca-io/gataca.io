@@ -5,6 +5,7 @@ import brandGoogleButton from "./icons/brand-google-button.svg"
 import gatacaLinkedInLink from "./icons/gat-icon-linkedin.svg"
 import gatacaTwitterLink from "./icons/gat-icon-twitter.svg"
 import gatacaYoutubeLink from "./icons/gat-icon-youtube.svg"
+import crevronUpSVG from "./icons/gat-icon-chevron-up.svg"
 
 export const images = {
   chevronDown: crevronDownSVG,
@@ -14,4 +15,5 @@ export const images = {
   gatacaLinkedLink: gatacaLinkedInLink,
   gatacaTwitterLink: gatacaTwitterLink,
   gatacaYoutubeLink: gatacaYoutubeLink,
+  chevronUp: crevronUpSVG,
 }
