@@ -5,11 +5,21 @@ import Layout from "../../../components/templates/mainLayout/MainLayout"
 import FirstSection from "./sections/firstSection/FirstSection"
 import SecondSection from "./sections/secondSection/SecondSection"
 import ThirdSection from "./sections/thirdSection/ThirdSection"
+import FourthSection from "./sections/fourthSection/FourthSection"
+import PreFooterCTASection from "../../../components/templates/sections/preFooterCTA/PreFooterCTA"
+import FifthSection from "./sections/fifthSection/FifthSection"
+import SixthSection from "./sections/sixthSection/SixthSection"
 
 const GatacaWalletPage: React.FC<PageProps> = () => {
   const [gatacaWalletData, setGatacaWallet] = useState<any | undefined>()
-  const { firstSection, secondSection, thirdSection, fiveSection } =
-    gatacaWalletData ? gatacaWalletData : []
+  const {
+    firstSection,
+    secondSection,
+    thirdSection,
+    fourthSection,
+    fifthSection,
+    sixthSection,
+  } = gatacaWalletData ? gatacaWalletData : []
 
   React.useEffect(() => {
     getGatacaWallet()
@@ -36,13 +46,19 @@ const GatacaWalletPage: React.FC<PageProps> = () => {
           description={thirdSection?.description}
           list={thirdSection?.list}
         />
-        {/* <PreFooterCTASection
+        <FourthSection
+          title={fourthSection?.title}
+          list={fourthSection?.list}
+        />
+        <SixthSection title={sixthSection?.title} list={sixthSection?.list} />
+        {/* <FifthSection title={fifthSection?.title} list={fifthSection?.list} /> */}
+        <PreFooterCTASection
           title={"Ready To Start?"}
           description={
             "Protect your privacy and take control of your digital identity"
           }
           storeButtons={true}
-        /> */}
+        />
       </>
     </Layout>
   )

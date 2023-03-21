@@ -3,7 +3,7 @@
 
 .thirdSection {
   margin: 80px auto 80px;
-  margin: 20px;
+  margin: 132px 20px;
   max-width: 1184px;
   @include flexbox();
   @include flex-direction(column);
@@ -18,12 +18,12 @@
 
   @include min-width($tabletMD) {
     @include justify-content(center);
-    margin: 80px 40px 80px;
-    margin-top: 443px;
+    margin: 80px 30px 80px;
+    margin-top: 263px;
   }
   
   @include min-width($desktopSM) {
-    max-width: 1224px;
+    // max-width: 1224px;
     padding: 0 40px;
     margin: 200px auto 80px;
   }
@@ -37,7 +37,7 @@
     @include min-width($tabletMD) {
       margin-right: 80px;
       margin-bottom: 0px;
-      @include flex(0, 0, calc(50% - 80px));
+      @include flex(0, 0, calc(50% - 90px));
     }
     @include min-width($desktopSM) {
       margin-right: 133px;

@@ -12,6 +12,20 @@ import MockupPhoneNoShadowRIGHT from "./images3d/MockupPhoneNoShadowRIGHT.png"
 import phoneConsent from "./images3d/phone-consent.png"
 import phoneCreateCredential from "./images3d/phone-create-credential.png"
 import phoneServices from "./images3d/phone-services.png"
+import checkIcon from "./icons/gat-icon-check.svg"
+import rocket from "./images3d/rocket.png"
+import globeEarthIcon from "./icons/globe-earth.svg"
+import badgeIcon from "./icons/badge.svg"
+import shiedlCheckIcon from "./icons/shield-check.svg"
+import credential1 from "./images3d/credential.png"
+import credential2 from "./images3d/credential-1.png"
+import credential3 from "./images3d/credential-2.png"
+import credential4 from "./images3d/credential-3.png"
+import credential5 from "./images3d/credential-4.png"
+import credential6 from "./images3d/credential-5.png"
+import credential7 from "./images3d/credential-6.png"
+import buttonRightIcon from "./icons/buttonRight.svg"
+import buttonLeftIcon from "./icons/buttonLeft.svg"
 
 export const images = {
   chevronDown: crevronDownSVG,
@@ -28,4 +42,18 @@ export const images = {
   phoneConsent: phoneConsent,
   phoneCreateCredential: phoneCreateCredential,
   phoneServices: phoneServices,
+  checkIcon: checkIcon,
+  rocket: rocket,
+  globeEarthIcon: globeEarthIcon,
+  badgeIcon: badgeIcon,
+  shiedlCheckIcon: shiedlCheckIcon,
+  credential1: credential1,
+  credential2: credential2,
+  credential3: credential3,
+  credential4: credential4,
+  credential5: credential5,
+  credential6: credential6,
+  credential7: credential7,
+  buttonRightIcon: buttonRightIcon,
+  buttonLeftIcon: buttonLeftIcon,
 }

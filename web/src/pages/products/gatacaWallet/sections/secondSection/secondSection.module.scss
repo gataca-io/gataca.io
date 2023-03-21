@@ -22,7 +22,7 @@
 
   @include min-width($desktopSM) {
     @include justify-content(center);
-    max-width: 1224px;
+    // max-width: 1224px;
     padding: 0 45px;
     margin: 152px auto 80px;
   }

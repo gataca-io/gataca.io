@@ -162,17 +162,17 @@
     left: calc(-350px - 5.7vw);
   }
   @include min-width($desktopSM) {
-    left: calc(-318px - 3vw);
+    left: calc(-313px - 3vw);
   }
   @include min-width($desktopMD) {
-    left: calc(-318px - 1.5vw);
+    left: calc(-313px - 1.5vw);
   }
   @media (min-width: 1154px) {
-    left: calc(-318px - 0.5vw);
+    left: calc(-313px - 0.5vw);
   }
   @include min-width($desktopXL) {
     width: 1200px;
-    left: -318px;
+    left: -313px;
   }
 }
   

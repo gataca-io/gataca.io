@@ -1,8 +1,54 @@
 {
     "data": {
+        "fifthSection": {
+            "list": [{
+                    "description": "Set up biometric authentication and issue your first self-attested credential",
+                    "image": "",
+                    "title": "Get started with your Wallet"
+                },
+                {
+                    "description": "From their portal, Trusted Authorities and businesses can issue verifiable credentials directly to your wallet",
+                    "image": "",
+                    "title": "Request a verifiable credential"
+                },
+                {
+                    "description": "Simply scan a QR code and click consent to share relevant data to prove your identity and qualifications",
+                    "image": "",
+                    "title": "Access digital services"
+                },
+                {
+                    "description": "Easily manage which entities can access your data and revoke access to them anytime",
+                    "image": "",
+                    "title": "Manage access to your data"
+                }
+            ],
+            "title": "How it works"
+        },
         "firstSection": {
             "description": "Gataca Wallet is an ID wallet in your phone than can store tamper-proof identity credentials securely, and lets you easily prove who you are when accessing online services",
             "title": "A master key to the Internet"
+        },
+        "fourthSection": {
+            "list": [{
+                    "description": "Create different profiles in your wallet",
+                    "title": "Multi-identity"
+                },
+                {
+                    "description": "Manage your wallet from different devices",
+                    "title": "Multi-device"
+                },
+                {
+                    "description": "Don't worry if you lose your phone",
+                    "title": "Backup and recovery"
+                },
+                {
+                    "title": "Aligned with European specifications for verifiable credentials"
+                },
+                {
+                    "title": "Electronic signature of documents"
+                }
+            ],
+            "title": "Advanced features"
         },
         "secondSection": {
             "list": [{
@@ -22,6 +68,25 @@
                 }
             ],
             "title": "Beneficts"
+        },
+        "sixthSection": {
+            "list": [{
+                    "description": "Following global Internet standards so you can use them worldwide",
+                    "image": "",
+                    "title": "Digitalized"
+                },
+                {
+                    "description": "Signed by Trusted Authorities so you can guarantee their authenticity",
+                    "image": "",
+                    "title": "Verifiable"
+                },
+                {
+                    "description": "Protected with biometrics and strong encryption so only you control their access",
+                    "image": "",
+                    "title": "Secured"
+                }
+            ],
+            "title": "Examples of credentials"
         },
         "thirdSection": {
             "description": "Take charge of your digital identity",
