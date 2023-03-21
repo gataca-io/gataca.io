@@ -9,15 +9,15 @@ export type ITableOfContentProps = {
 }
 
 const TableOfContent: React.FC<ITableOfContentProps> = props => {
-  const [subMenuOpenedID, setSubMenuOpened] = React.useState("")
+  const [tableOfContentOpenedID, setTableOfContentOpened] = React.useState("")
   return props.navigationObject ? (
     <>
       {tableOfContent?.map(item => {
         return (
           <TableOfContentContainer
-            open={subMenuOpenedID === item?.id}
+            open={tableOfContentOpenedID === item?.id}
             item={item}
-            setOptionOpened={setSubMenuOpened}
+            setOptionOpened={setTableOfContentOpened}
             className={props.className}
           />
         )
