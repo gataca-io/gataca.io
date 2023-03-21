@@ -1,11 +1,9 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import * as styles from "./tableOfContentContainer.module.scss"
-import cx from "classnames"
 import { LinkModel } from "../../../../../interfaces/interfaces"
 import { images } from "../../../../../images/images"
 import TableOfContentOptions from "../tableOfContentOptions/TableOfContentOptions"
-import { useRef } from "react"
 
 export type ITableOfContentProps = {
   item: LinkModel
