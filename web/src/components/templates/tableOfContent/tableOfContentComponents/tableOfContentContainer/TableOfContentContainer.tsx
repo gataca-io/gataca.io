@@ -12,12 +12,15 @@ export type ITableOfContentProps = {
 }
 const TableOfContentHeader: React.FC<ITableOfContentProps> = props => {
   const { item, className, open, setOptionOpened } = props
-
+  const width = window.innerWidth
+  const mobile = width < 640
+  const desktop = width > 640
+  console.log(width)
   return item?.route ? null : (
     <div
       className={`${styles?.sectionMain__tableContentCol} ${
         className && className
-      }`}
+      } ${mobile ? "dropdownOption" : "noDropdownOption"}`}
       onClick={() => setOptionOpened(!open ? item?.id : "")}
     >
       <div id={item?.id} className={styles?.title}>
