@@ -1,5 +1,5 @@
 import * as React from "react"
-import TableOfContentHeader from "./tableOfContentComponents/tableOfContentHeader/TableOfContentHeader"
+import TableOfContentContainer from "./tableOfContentComponents/tableOfContentContainer/TableOfContentContainer"
 import { tableOfContent } from "../../../pages/privacyPolicy/data/data"
 import { LinkModel } from "../../../interfaces/interfaces"
 
@@ -14,7 +14,7 @@ const TableOfContent: React.FC<ITableOfContentProps> = props => {
     <>
       {tableOfContent?.map(item => {
         return (
-          <TableOfContentHeader
+          <TableOfContentContainer
             open={subMenuOpenedID === item?.id}
             item={item}
             setOptionOpened={setSubMenuOpened}
