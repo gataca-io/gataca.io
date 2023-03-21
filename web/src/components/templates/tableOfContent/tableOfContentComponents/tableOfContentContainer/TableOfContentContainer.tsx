@@ -24,7 +24,7 @@ const TableOfContentHeader: React.FC<ITableOfContentProps> = props => {
         <div className={styles?.title}>
           <div>
             <span>{item?.label}</span>
-            <img src={images.chevronUp} />
+            <img src={open ? images.chevronDownBig : images.chevronUp} />
           </div>
         </div>
         <TableOfContentOptions item={item} open={open} />
