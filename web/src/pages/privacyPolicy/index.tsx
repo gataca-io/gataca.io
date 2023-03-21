@@ -12,11 +12,12 @@ const PrivacyPolicy: React.FC<PageProps> = () => {
     <Layout>
       <section
         className={`${styles?.privacyPolicy} ${cx("containerMaxWidth")}`}
-      > 
-        <div className={styles?.showMobile}>
-        
-        <TableOfContent item={privacyPolicyOptions} className={styles?.showMobile}/>
-        </div>
+      >
+        <TableOfContent
+          navigationObject={privacyPolicyOptions}
+          className={styles?.showMobile}
+        />
+
         <div className={styles?.sectionHeader}>
           <h1 className={cx("heading1 marginBottom32")}>Privacy Policy</h1>
           <p className={cx("bodyRegularXL")}>Effective date: August 31, 2021</p>
@@ -110,7 +111,10 @@ const PrivacyPolicy: React.FC<PageProps> = () => {
               </p>
             </div>
           </div>
-          <TableOfContent item={privacyPolicyOptions} className={styles?.showDesktop}/>
+          <TableOfContent
+            navigationObject={privacyPolicyOptions}
+            className={styles?.showDesktop}
+          />
         </div>
       </section>
     </Layout>

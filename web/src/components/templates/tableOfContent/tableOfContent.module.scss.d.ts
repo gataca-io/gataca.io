@@ -1,1 +1,0 @@
-export const sectionMain__tableContentCol: string

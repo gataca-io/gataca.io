@@ -16,33 +16,18 @@ export type ITableOfContentProps = {
 const TableOfContentHeader: React.FC<ITableOfContentProps> = props => {
   const { item, className, open, setOptionOpened } = props
 
-  return item?.route ? (
-    <div className={`${styles?.sectionMain__tableContentCol} ${
+  return item?.route ? null : (
+    <div
+      className={`${styles?.sectionMain__tableContentCol} ${
         className && className
-      }`}>
-      <div>
-        <Link
-        className={`${styles.dropdownLabel} ${cx("buttonMD")}`}
-        to={item?.route}
-      >
-        {item?.label}
-      </Link>
-        
-      <img
-        onClick={() => setOptionOpened(!open ? item?.id : "")}
-        src={images.chevronDown}
-      />
-      </div>
-      <TableOfContentOptions item={item} open={open} />
-    </div>
-  ) : (
-    <div className={`${styles?.sectionMain__tableContentCol} ${
-        className && className
-      }`} onClick={() => setOptionOpened(!open ? item?.id : "")}
-    > 
-      <div>
-        <div id={item?.id} className={styles?.title}>{item?.label}
-        <img src={images.chevronDown} /></div>
+      }`}
+      onClick={() => setOptionOpened(!open ? item?.id : "")}
+    >
+      <div id={item?.id} className={styles?.title}>
+        <div className={styles?.title}>
+          {item?.label}
+          <img src={images.chevronDown} />
+        </div>
         <TableOfContentOptions item={item} open={open} />
       </div>
     </div>

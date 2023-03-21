@@ -7,20 +7,16 @@ import cx from "classnames"
 export type ITableOfContenOptionProps = {
   item: LinkModel
   open: boolean
-  isLastDropdown?: boolean
 }
-const TableOfContentOptions: React.FC<ITableOfContentOptionProps> = props => {
-  const { item, open, isLastDropdown } = props
+const TableOfContentOptions: React.FC<ITableOfContenOptionProps> = props => {
+  const { item, open } = props
 
   return item?.subRoutes && item?.subRoutes?.length && open ? (
-    <ol>
-      {item?.subRoutes?.map( subItem => {
+    <ol className={`${styles?.tableOfContenOptions} ${cx("marginTop24")}`}>
+      {item?.subRoutes?.map(subItem => {
         return (
           <li className={cx("buttonSM")}>
-            <Link
-              id={subItem?.id}
-              to={subItem?.route || ""}
-            >
+            <Link id={subItem?.id} to={subItem?.route || ""}>
               {subItem?.label}
             </Link>
           </li>
