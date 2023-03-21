@@ -1,5 +1,4 @@
 import * as React from "react"
-import { Link } from "gatsby"
 import * as styles from "./tableOfContentContainer.module.scss"
 import { LinkModel } from "../../../../../interfaces/interfaces"
 import { images } from "../../../../../images/images"
