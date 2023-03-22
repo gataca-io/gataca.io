@@ -84,6 +84,3 @@ export const tableOfContent: LinkModel[] = [
     ],
   },
 ]
-export const termsOfUseOptions = tableOfContent?.find(
-  el => el?.id === "termsOfUse"
-)
