@@ -1,8 +1,8 @@
-import { LinkModel } from "../../../../interfaces/interfaces"
+import { LinkModel } from "../../../interfaces/interfaces"
 
 // URLs/URIs
 export const gdprGatacaEmail = "gdpr@gataca.io"
-export const gatacaURL = "www.gataca.io"
+export const gatacaURL = "https://gataca.io"
 
 export const tableOfContent: LinkModel[] = [
   {
@@ -71,12 +71,6 @@ export const tableOfContent: LinkModel[] = [
       },
     ],
   },
-]
-export const contentOptions: LinkModel[] = [
-  {
-    id: "firsParagraph",
-    label: "At GATACA, we know that you care about your personal data and want you to know how we will process it. With our Privacy Policy (“Policy”) we aim to explain in a clear and transparent manner, how and when we collect, share and protect your personal data. This Policy applies to the Website, Gataca Platform, the Wallet and any other products and services (collectively, “Services”) provided by GATACA. Please note that anonymised information or purely statistical data used by GATACA will not be considered personal data.",
-  }  
 ]
 export const privacyPolicyOptions = tableOfContent?.find(
   el => el?.id === "privacyPolicyContent"
