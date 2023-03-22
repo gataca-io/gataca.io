@@ -4,19 +4,31 @@ import { Link } from "gatsby"
 import * as styles from "./index.module.scss"
 import cx from "classnames"
 import Layout from "../../components/templates/mainLayout/MainLayout"
-import TableOfContent from "../../components/templates/tableOfContent/TableOfContent"
-import { privacyPolicyOptions, gatacaURL } from "../../globalData/globalData"
+import { tableOfContent, gatacaURL } from "../../globalData/globalData"
+import TableOfContentContainer from "../../components/templates/tableOfContent/tableOfContentComponents/tableOfContentContainer/TableOfContentContainer"
+import { LinkModel } from "../../interfaces/interfaces"
 
+export type ITableOfContentProps = {
+  navigationObject?: LinkModel
+  className?: string
+}
 const PrivacyPolicy: React.FC<PageProps> = () => {
+  const [tableOfContentOpenedID, setTableOfContentOpened] = React.useState("")
   return (
     <Layout>
       <section
         className={`${styles?.privacyPolicy} ${cx("containerMaxWidth")}`}
       >
-        <TableOfContent
-          navigationObject={privacyPolicyOptions}
-          className={styles?.showMobile}
-        />
+        {tableOfContent?.map(item => {
+          return (
+            <TableOfContentContainer
+              open={tableOfContentOpenedID === item?.id}
+              item={item}
+              setOptionOpened={setTableOfContentOpened}
+              className={styles?.showMobile}
+            />
+          )
+        })}
 
         <div className={styles?.sectionHeader}>
           <h1 className={cx("heading1 marginBottom32")}>Privacy Policy</h1>
@@ -197,10 +209,16 @@ const PrivacyPolicy: React.FC<PageProps> = () => {
               </p>
             </div>
           </div>
-          <TableOfContent
-            navigationObject={privacyPolicyOptions}
-            className={styles?.showDesktop}
-          />
+          {tableOfContent?.map(item => {
+            return (
+              <TableOfContentContainer
+                open={tableOfContentOpenedID === item?.id}
+                item={item}
+                setOptionOpened={setTableOfContentOpened}
+                className={styles?.showDesktop}
+              />
+            )
+          })}
         </div>
       </section>
     </Layout>
