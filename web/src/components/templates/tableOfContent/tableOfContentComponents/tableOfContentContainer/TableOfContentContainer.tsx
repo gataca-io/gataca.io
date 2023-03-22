@@ -12,22 +12,30 @@ export type ITableOfContentProps = {
 }
 const TableOfContentHeader: React.FC<ITableOfContentProps> = props => {
   const { item, className, open, setOptionOpened } = props
-  const width = window.innerWidth
+  const width =
+    window.innerWidth ||
+    document.documentElement.clientWidth ||
+    document.body.clientWidth ||
+    Math.min(window.innerWidth, document.documentElement.clientWidth)
   const mobile = width < 640
   const desktop = width > 640
-  console.log(width)
+  if (desktop) {
+    setOptionOpened(item?.id)
+  }
   return item?.route ? null : (
     <div
       className={`${styles?.sectionMain__tableContentCol} ${
         className && className
       } ${mobile ? "dropdownOption" : "noDropdownOption"}`}
-      onClick={() => setOptionOpened(!open ? item?.id : "")}
+      onClick={mobile ? () => setOptionOpened(!open ? item?.id : "") : null}
     >
       <div id={item?.id} className={styles?.title}>
         <div className={styles?.title}>
           <div>
             <span>{item?.label}</span>
-            <img src={open ? images.chevronDownBig : images.chevronUp} />
+            {mobile ? (
+              <img src={open ? images.chevronDownBig : images.chevronUp} />
+            ) : null}
           </div>
         </div>
         <TableOfContentOptions item={item} open={open} />

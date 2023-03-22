@@ -16,9 +16,7 @@ const TableOfContentOptions: React.FC<ITableOfContenOptionProps> = props => {
       {item?.subRoutes?.map(subItem => {
         return (
           <li className={cx("buttonSM")}>
-            <Link id={subItem?.id} to={subItem?.route || ""}>
-              {subItem?.label}
-            </Link>
+            <Link to={subItem?.route || ""}>{subItem?.label}</Link>
           </li>
         )
       })}
