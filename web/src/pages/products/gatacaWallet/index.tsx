@@ -50,8 +50,9 @@ const GatacaWalletPage: React.FC<PageProps> = () => {
           title={fourthSection?.title}
           list={fourthSection?.list}
         />
+        <FifthSection title={fifthSection?.title} list={fifthSection?.list} />
+
         <SixthSection title={sixthSection?.title} list={sixthSection?.list} />
-        {/* <FifthSection title={fifthSection?.title} list={fifthSection?.list} /> */}
         <PreFooterCTASection
           title={"Ready To Start?"}
           description={

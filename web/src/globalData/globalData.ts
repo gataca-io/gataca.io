@@ -94,3 +94,10 @@ export const marketAndroidURI =
   "https://play.google.com/store/apps/details?id=com.gataca.identity"
 export const marketIosURI = "https://apps.apple.com/us/app/gataca/id1498607616"
 export const gatacaStudioURL = "https://studio.gataca.io"
+
+export const scrollDirections = {
+  up: "UP",
+  right: "RIGHT",
+  down: "DOWN",
+  left: "LEFT",
+}
