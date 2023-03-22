@@ -5,7 +5,7 @@ import * as styles from "./index.module.scss"
 import cx from "classnames"
 import Layout from "../../components/templates/mainLayout/MainLayout"
 import TableOfContent from "../../components/templates/tableOfContent/TableOfContent"
-import { privacyPolicyOptions, gatacaURL } from "./data/data"
+import { privacyPolicyOptions, gatacaURL } from "../../globalData/globalData"
 
 const PrivacyPolicy: React.FC<PageProps> = () => {
   return (

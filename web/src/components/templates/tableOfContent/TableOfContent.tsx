@@ -1,6 +1,6 @@
 import * as React from "react"
 import TableOfContentContainer from "./tableOfContentComponents/tableOfContentContainer/TableOfContentContainer"
-import { tableOfContent } from "../../../pages/privacyPolicy/data/data"
+import { tableOfContent } from "../../../globalData/globalData"
 import { LinkModel } from "../../../interfaces/interfaces"
 
 export type ITableOfContentProps = {
