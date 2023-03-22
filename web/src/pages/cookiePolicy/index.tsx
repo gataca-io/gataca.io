@@ -3,17 +3,29 @@ import * as React from "react"
 import * as styles from "./index.module.scss"
 import cx from "classnames"
 import Layout from "../../components/templates/mainLayout/MainLayout"
-import TableOfContent from "../../components/templates/tableOfContent/TableOfContent"
-import { cookiePolicyOptions } from "./data/data"
+import { tableOfContent } from "./data/data"
+import { LinkModel } from "../../interfaces/interfaces"
+import TableOfContentContainer from "../../components/templates/tableOfContent/tableOfContentComponents/tableOfContentContainer/TableOfContentContainer"
 
+export type ITableOfContentProps = {
+  navigationObject?: LinkModel
+  className?: string
+}
 const CookiePolicy: React.FC<PageProps> = () => {
+  const [tableOfContentOpenedID, setTableOfContentOpened] = React.useState("")
   return (
     <Layout>
       <section className={`${styles?.cookiePolicy} ${cx("containerMaxWidth")}`}>
-        <TableOfContent
-          navigationObject={cookiePolicyOptions}
-          className={styles?.showMobile}
-        />
+        {tableOfContent?.map(item => {
+          return (
+            <TableOfContentContainer
+              open={tableOfContentOpenedID === item?.id}
+              item={item}
+              setOptionOpened={setTableOfContentOpened}
+              className={styles?.showMobile}
+            />
+          )
+        })}
 
         <div className={styles?.sectionHeader}>
           <h1 className={cx("heading1 marginBottom32")}>Cookie Policy</h1>
@@ -143,10 +155,16 @@ const CookiePolicy: React.FC<PageProps> = () => {
               </ul>
             </div>
           </div>
-          <TableOfContent
-            navigationObject={cookiePolicyOptions}
-            className={styles?.showDesktop}
-          />
+          {tableOfContent?.map(item => {
+            return (
+              <TableOfContentContainer
+                open={tableOfContentOpenedID === item?.id}
+                item={item}
+                setOptionOpened={setTableOfContentOpened}
+                className={styles?.showDesktop}
+              />
+            )
+          })}
         </div>
       </section>
     </Layout>

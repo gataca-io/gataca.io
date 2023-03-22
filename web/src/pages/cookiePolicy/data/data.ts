@@ -48,6 +48,3 @@ export const tableOfContent: LinkModel[] = [
     ],
   },
 ]
-export const cookiePolicyOptions = tableOfContent?.find(
-  el => el?.id === "cookiePolicyContent"
-)
