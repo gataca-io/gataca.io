@@ -19,6 +19,7 @@ const TableOfContent: React.FC<ITableOfContentProps> = props => {
             item={item}
             setOptionOpened={setTableOfContentOpened}
             className={props.className}
+            navigationObject={props.navigationObject}
           />
         )
       })}
