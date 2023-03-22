@@ -4,9 +4,9 @@ import { Link } from "gatsby"
 import * as styles from "./index.module.scss"
 import cx from "classnames"
 import Layout from "../../components/templates/mainLayout/MainLayout"
-import { tableOfContent, gatacaURL } from "../../globalData/globalData"
 import TableOfContentContainer from "../../components/templates/tableOfContent/tableOfContentComponents/tableOfContentContainer/TableOfContentContainer"
 import { LinkModel } from "../../interfaces/interfaces"
+import { gatacaURL, tableOfContent } from "./data/data"
 
 export type ITableOfContentProps = {
   navigationObject?: LinkModel

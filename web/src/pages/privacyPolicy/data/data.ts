@@ -1,4 +1,4 @@
-import { LinkModel, IconModel } from "../../../interfaces/interfaces"
+import { LinkModel } from "../../../interfaces/interfaces"
 
 export const gdprGatacaEmail = "gdpr@gataca.io"
 export const gatacaURL = "https://gataca.io"
