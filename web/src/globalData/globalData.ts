@@ -31,7 +31,6 @@ export const headerMenuOptions: LinkModel[] = [
   {
     id: "useCasesSectors",
     label: "Use Cases & Sectors",
-    route: "/useCasesSectors",
     subRoutes: [
       {
         id: "government",
@@ -84,7 +83,6 @@ export const headerMenuOptions: LinkModel[] = [
   {
     id: "resources",
     label: "Resources",
-    route: "/resources",
     subRoutes: [
       {
         id: "blog",
