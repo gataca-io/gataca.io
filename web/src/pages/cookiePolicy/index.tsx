@@ -93,7 +93,7 @@ const CookiePolicy: React.FC<PageProps> = () => {
                 Cookies can be classified into different types, according to
                 different criteria:
               </p>
-              <p className={cx("marginBottom20")}>
+              <p className={`${cx("marginBottom20")} ${styles.mainListTitle}`}>
                 <b> 3.1 Types of cookies by the entity that manages them </b>
               </p>
               <ul>
@@ -114,7 +114,7 @@ const CookiePolicy: React.FC<PageProps> = () => {
                   </p>
                 </li>
               </ul>
-              <p className={cx("marginBottom20")}>
+              <p className={`${cx("marginBottom20")} ${styles.mainListTitle}`}>
                 <b>3.2 Types of cookies by their purpose</b>
               </p>
               <ul>

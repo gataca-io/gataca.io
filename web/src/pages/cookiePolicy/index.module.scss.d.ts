@@ -6,3 +6,4 @@ export const sectionMain__tableContentCol: string
 export const contentCol__section: string
 export const showDesktop: string
 export const showMobile: string
+export const mainListTitle: string
