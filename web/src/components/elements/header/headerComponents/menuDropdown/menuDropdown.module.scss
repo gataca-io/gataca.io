@@ -9,6 +9,9 @@
     @include flex-wrap(wrap);
     @include justify-content(center);
     @include align-items(center);
+    > *:hover {
+      color: $primary700;
+      stroke: $primary700;
     }
 }
 
