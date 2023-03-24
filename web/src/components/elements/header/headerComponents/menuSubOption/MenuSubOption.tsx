@@ -2,7 +2,6 @@ import { Link } from "gatsby"
 import * as React from "react"
 import * as styles from "./menuSubOption.module.scss"
 import cx from "classnames"
-import { images } from "../../../../../images/images"
 import { LinkModel } from "../../../../../interfaces/interfaces"
 
 export type IMenuSubOptionProps = {

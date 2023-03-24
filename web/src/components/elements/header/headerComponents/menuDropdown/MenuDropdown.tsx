@@ -5,7 +5,6 @@ import cx from "classnames"
 import { images } from "../../../../../images/images"
 import { LinkModel } from "../../../../../interfaces/interfaces"
 import MenuSubOption from "../menuSubOption/MenuSubOption"
-import { useRef } from "react"
 
 export type IMenuDropdownProps = {
   item: LinkModel
@@ -16,21 +15,7 @@ export type IMenuDropdownProps = {
 const MenuDropdown: React.FC<IMenuDropdownProps> = props => {
   const { item, open, setOptionOpened } = props
 
-  return item?.route ? (
-    <div className={styles.menuDropdownNoRoute}>
-      <Link
-        className={`${styles.dropdownLabel} ${cx("buttonMD")}`}
-        to={item?.route}
-      >
-        {item?.label}
-      </Link>
-      <img
-        onClick={() => setOptionOpened(!open ? item?.id : "")}
-        src={images.chevronDown}
-      />
-      <MenuSubOption item={item} open={open} />
-    </div>
-  ) : (
+  return item?.route ? null : (
     <div
       className={styles.menuDropdownRoute}
       onClick={() => setOptionOpened(!open ? item?.id : "")}
