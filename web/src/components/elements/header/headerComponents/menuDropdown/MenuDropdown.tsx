@@ -20,10 +20,11 @@ const MenuDropdown: React.FC<IMenuDropdownProps> = props => {
       className={styles.menuDropdownRoute}
       onClick={() => setOptionOpened(!open ? item?.id : "")}
     >
-      <p className={`${styles.dropdownLabel} ${cx("buttonMD")}`}>
+      <div className={`${styles.dropdownLabel} ${cx("buttonMD")}`}>
         {item?.label}
-      </p>
       <img src={images.chevronDown} />
+      </div>
+
       <MenuSubOption item={item} open={open} />
     </div>
   )
