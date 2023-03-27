@@ -49,8 +49,7 @@
     @include flexbox();
     @include flex-wrap(wrap);
     @include justify-content(space-between);
-    max-width: 1184px;
-    margin: 0 auto 78px;
+    margin-bottom: 78px;
     padding: 0 20px;
     @include min-width($mobileXL) {
       @include flex-wrap(nowrap);
@@ -73,8 +72,6 @@
     @include flexbox();
     @include flex-wrap(wrap);
     @include justify-content(space-between);
-    max-width: 1184px;
-    margin: 0 auto;
     padding: 38px 20px 24px;
     @include min-width($desktopMD) {
       padding: 38px 40px 24px;

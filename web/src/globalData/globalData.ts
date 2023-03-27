@@ -253,7 +253,7 @@ export const footerMenuOptions: LinkModel[] = [
       {
         id: "privacyPolicy",
         label: "Privacy Policy",
-        route: "/",
+        route: "/privacyPolicy",
       },
       {
         id: "cookiesPolicy",
