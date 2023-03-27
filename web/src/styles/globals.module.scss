@@ -464,6 +464,9 @@
     .marginBottom20 {
         margin-bottom: 20px;
     }
+    .marginBottom16 {
+        margin-bottom: 16px;
+    }
     .marginBottom15 {
         margin-bottom: 15px;
     }
@@ -754,5 +757,10 @@
     }
     .paddingBottom0 {
         padding-bottom: 0px;
+    }
+
+    // hr styles
+    hr {
+        border: 1px solid $neutral300;
     }
 }

@@ -27,6 +27,9 @@ import credential7 from "./images3d/credential-6.png"
 import buttonRightIcon from "./icons/buttonRight.svg"
 import buttonLeftIcon from "./icons/buttonLeft.svg"
 import phoneFrameShadow from "./images3d/phone_frame_shadow.png"
+import gatacaLinkedInLink from "./icons/gat-icon-linkedin.svg"
+import gatacaTwitterLink from "./icons/gat-icon-twitter.svg"
+import gatacaYoutubeLink from "./icons/gat-icon-youtube.svg"
 
 export const images = {
   chevronDown: crevronDownSVG,
@@ -58,4 +61,7 @@ export const images = {
   buttonRightIcon: buttonRightIcon,
   buttonLeftIcon: buttonLeftIcon,
   phoneFrameShadow: phoneFrameShadow,
+  gatacaLinkedLink: gatacaLinkedInLink,
+  gatacaTwitterLink: gatacaTwitterLink,
+  gatacaYoutubeLink: gatacaYoutubeLink,
 }
