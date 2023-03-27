@@ -37,7 +37,7 @@ const SecondSection: React.FC<ISectionProps> = props => {
 
               return (
                 <NumberedText
-                  key={"beneficts__" + index}
+                  key={"benefits__" + index}
                   number={number}
                   title={title}
                   description={description}

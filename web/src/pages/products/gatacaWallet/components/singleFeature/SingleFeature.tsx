@@ -4,6 +4,7 @@ import cx from "classnames"
 import { images } from "../../../../../images/images"
 
 export type ISingleFeatureProps = {
+  id: string
   index: number
   title: string
   description: string
@@ -13,11 +14,13 @@ export type ISingleFeatureProps = {
 }
 
 const SingleFeature: React.FC<ISingleFeatureProps> = props => {
-  const { index, title, description, selected, showFeature, className } = props
+  const { id, index, title, description, selected, showFeature, className } =
+    props
   return (
     <div
       onClick={() => !selected && showFeature(index)}
-      className={`${cx(selected ? "marginTop32" : "marginTop20")} ${cx(
+      id={id}
+      className={`${cx(selected ? "marginTop32" : "marginTop24")} ${cx(
         styles.container
       )}`}
     >
@@ -33,7 +36,9 @@ const SingleFeature: React.FC<ISingleFeatureProps> = props => {
       </div>
 
       {selected && (
-        <p className={`${styles.description} ${cx("bodyRegularLG")}`}>
+        <p
+          className={`${styles.description} ${cx("bodyRegularLG marginTop10")}`}
+        >
           {description}
         </p>
       )}

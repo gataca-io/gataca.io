@@ -18,7 +18,9 @@ const NumberedText: React.FC<INumberedTextProps> = props => {
     >
       <p className={`${cx("heading1")} ${cx(styles.number)}`}>{number}</p>
       <p className={`${cx("heading6")} ${cx(styles.title)}`}>{title}</p>
-      <p className={`${cx("bodyRegularMD")}`}>{description}</p>
+      <p className={`${cx("bodyRegularMD")} ${styles.description}`}>
+        {description}
+      </p>
     </div>
   )
 }

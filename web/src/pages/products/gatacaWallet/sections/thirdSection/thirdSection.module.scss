@@ -18,7 +18,7 @@
 
   @include min-width($tabletMD) {
     @include justify-content(center);
-    margin: 80px 30px 80px;
+    margin: 80px 40px 80px;
     margin-top: 263px;
   }
   
@@ -28,6 +28,7 @@
   }
   
   .thirdSection__leftSide {
+    position: relative;
     max-width: 100%;
     margin-bottom: 80px;
     @include min-width($mobileXL) {
@@ -45,6 +46,7 @@
     }
     
     & > .thirdSection__leftSide__description {
+      color: $neutral700;
       margin-bottom: 40px;
       @include min-width($mobileXL) {
         margin-bottom: 52px;
@@ -57,9 +59,11 @@
     @include flexbox();
     @include flex-direction(column);
     @include justify-content(center);
+    @include align-items(center);
     @include flex-wrap(wrap);
+
     @include min-width($mobileXL) {
-       @include flex(0, 0, 50%);
+       @include flex(0, 0, 47%);
     }
     @include min-width($desktopMD) {
        @include flex(0, 0, 48%);
@@ -69,27 +73,43 @@
     }
     & > img {
       width: 100%;
+      max-width: 524px;
       @include min-width($mobileXL) {
         @include flex(0, 0, calc(50% - 40px));
+          max-width: none;
       }
     }
   }
 
+
   .thirdSection__leftSide__bullets {
     @include flexbox();
     @include flex-direction(row);
-    @include justify-content(space-between);
+    @include justify-content(flex-start);
+    width: 100%;
+    max-width: 100%;
+    height: 138px;
     overflow-x: scroll;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
-    width: calc(100% + 20px);
-    max-width: calc(100% + 20px);
     @include min-width($mobileXL) {
+       height: auto;
+   
       @include flex-direction(column);
+    }
+
+    & > div:nth-child(4) {
+      min-width: 660px;
+       @include min-width($mobileXL) {
+       min-width: 275px;
+    }
+      & > div > p, p {
+        max-width: 275px;
+      }
     }
   }
 }
 
 .thirdSection__leftSide__bullets::-webkit-scrollbar {
-  display: none; /* Opera and Chrome */
+    display: none; /* Opera and Chrome */
 }

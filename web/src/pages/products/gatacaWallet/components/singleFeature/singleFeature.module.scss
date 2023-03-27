@@ -14,13 +14,9 @@
   }
 
   & > .description {    
+    color: $neutral700;
     @include min-width($mobileXL) {
-      font-family: $base;
       margin-left: 70px;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 20px;
-      text-decoration: none;
     }
     @include min-width($desktopMD) {
       margin-left: 113px;
@@ -33,7 +29,7 @@
   @include flexbox();
 
   @include min-width($mobileXL) {
-    margin-top: 20px;
+    margin-top: 24px;
   }
   & > img {
     display: none;

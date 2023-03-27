@@ -2,6 +2,7 @@ import * as React from "react"
 import cx from "classnames"
 import { images } from "../../../../../images/images"
 import * as styles from "./sixthSection.module.scss"
+import CredentialExample from "./components/credential/CredentialExample"
 
 export type ISectionProps = {
   title: string
@@ -9,6 +10,15 @@ export type ISectionProps = {
     title: string
     description: string
     image: string
+  }[]
+  credentials: {
+    icon: string
+    category: string
+    issuer: string
+    mainData: string
+    issuanceDate: string
+    expirationDate: string
+    validated: boolean
   }[]
 }
 
@@ -18,17 +28,18 @@ const featureImages = [
   images.shiedlCheckIcon,
 ]
 
-const feature2Images = [
-  images.credential1,
-  images.credential2,
-  images.credential3,
-  images.credential4,
-  images.credential5,
-  images.credential6,
-  images.credential7,
+const credentialsIcons = [
+  images.iconID,
+  images.iconLicense,
+  images.iconAward,
+  images.iconCredential,
+  images.iconTicket,
+  images.healthIcon,
+  images.pinIcon,
 ]
+
 const SixthSection: React.FC<ISectionProps> = props => {
-  const { title, list } = props
+  const { title, list, credentials } = props
   const [firstItem, setFirstItem] = React.useState<number>(0)
 
   return (
@@ -61,10 +72,29 @@ const SixthSection: React.FC<ISectionProps> = props => {
           <div>
             <div
               className={styles.sixthSection__rightSide__credentials}
-              style={{ left: -firstItem * 323 }}
+              style={{ left: -firstItem * 374 }}
             >
-              {feature2Images?.map((item, index) => {
-                return <img key={"credential__example" + index} src={item} />
+              {credentials?.map((item, index) => {
+                const {
+                  icon,
+                  category,
+                  issuer,
+                  mainData,
+                  issuanceDate,
+                  expirationDate,
+                  validated,
+                } = item
+                return (
+                  <CredentialExample
+                    icon={credentialsIcons[index]}
+                    category={category}
+                    issuer={issuer}
+                    mainData={mainData}
+                    issuanceDate={issuanceDate}
+                    expirationDate={expirationDate}
+                    validated={validated}
+                  />
+                )
               })}
             </div>
             <div className={styles.buttons__container}>

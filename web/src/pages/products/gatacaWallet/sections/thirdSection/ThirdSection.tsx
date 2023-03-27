@@ -17,17 +17,31 @@ export type ISectionProps = {
 const featureImages = [
   images.phoneVC1,
   images.phoneConsent,
-  images.phoneCreateCredential,
   images.phoneServices,
+  images.phoneCreateCredential,
 ]
 const ThirdSection: React.FC<ISectionProps> = props => {
   const { title, description, list } = props
   const [openItem, setOpenItem] = React.useState<number>(1)
 
+  const bullets = document.getElementById("bullets")
+
+  const scrollIntoView = el => {
+    bullets
+      ? bullets.scroll({
+          behavior: "smooth",
+          left: el.offsetLeft,
+        })
+      : null
+  }
+
   return (
     <div style={{ position: "relative" }}>
       <section className={styles.thirdSection}>
-        <div className={`${cx("heading3")} ${styles.thirdSection__leftSide}`}>
+        <div
+          className={`${cx("heading3")} ${styles.thirdSection__leftSide}`}
+          id="leftSide"
+        >
           <p className={`${cx("heading3 marginBottom12")}`}>{title}</p>
           <p
             className={`${cx("bodyRegularXL")} ${
@@ -36,18 +50,24 @@ const ThirdSection: React.FC<ISectionProps> = props => {
           >
             {description}
           </p>
-          <div className={styles.thirdSection__leftSide__bullets}>
+          <div id="bullets" className={styles.thirdSection__leftSide__bullets}>
             {list?.map((item, index) => {
               const { title, description } = item
 
               return (
                 <SingleFeature
+                  id={"feature__" + index}
                   key={"feature__" + index}
                   index={index + 1}
                   title={title}
                   description={description}
                   selected={openItem === index + 1}
-                  showFeature={setOpenItem}
+                  showFeature={index => {
+                    const element = document.getElementById(
+                      "feature__" + (index - 1)
+                    )
+                    setOpenItem(index), element && scrollIntoView(element)
+                  }}
                 />
               )
             })}

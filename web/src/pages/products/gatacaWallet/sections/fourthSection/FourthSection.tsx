@@ -36,7 +36,11 @@ const FourthSection: React.FC<ISectionProps> = props => {
                   <img src={images.checkIcon} />
                   <div>
                     <p className={`${cx("heading6")}`}>{title}</p>
-                    <p className={`${cx("bodyRegularMD marginTop8")}`}>
+                    <p
+                      className={`${cx("bodyRegularMD marginTop8")} ${
+                        styles.bullet__description
+                      }`}
+                    >
                       {description}
                     </p>
                   </div>

@@ -21,7 +21,7 @@
       margin: 200px auto 80px;
     }
     @include min-width($desktopXXL) {
-      padding: 0 128px;
+      padding: 0 60px 0 140px;
     }
 }
 
@@ -49,6 +49,10 @@
     &:hover {
         background-color: $primary900;
     }
+  }
+
+  & > p {
+    color: $neutral700;
   }
 }
 

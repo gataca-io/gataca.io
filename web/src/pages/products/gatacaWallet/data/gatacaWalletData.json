@@ -67,9 +67,69 @@
                     "title": "Passwordless access to online services"
                 }
             ],
-            "title": "Beneficts"
+            "title": "Benefits"
         },
         "sixthSection": {
+            "credentials": [{
+                    "category": "Verifiable ID",
+                    "icon": "",
+                    "issuanceDate": "January 12, 2023",
+                    "issuer": "Government",
+                    "mainData": "12345678V",
+                    "validated": true
+                },
+                {
+                    "category": "Driver's license",
+                    "expirationDate": "September 10, 2022",
+                    "icon": "",
+                    "issuanceDate": "July 10, 2022",
+                    "issuer": "Government",
+                    "mainData": "V123456K",
+                    "validated": true
+                },
+                {
+                    "category": "Academic Diploma",
+                    "icon": "",
+                    "issuanceDate": "January 12, 2023",
+                    "issuer": "University",
+                    "mainData": "Engineering",
+                    "validated": true
+                },
+                {
+                    "category": "Employee Card",
+                    "icon": "",
+                    "issuanceDate": "January 12, 2023",
+                    "issuer": "Company",
+                    "mainData": "CEO",
+                    "validated": true
+                },
+                {
+                    "category": "Conference Ticket",
+                    "expirationDate": "January 16, 2023",
+                    "icon": "",
+                    "issuanceDate": "January 12, 2023",
+                    "issuer": "Conference Organizator",
+                    "mainData": "Conference Name",
+                    "validated": true
+                },
+                {
+                    "category": "Health Insurance Card",
+                    "expirationDate": "January 16, 2023",
+                    "icon": "",
+                    "issuanceDate": "January 12, 2023",
+                    "issuer": "Hospital",
+                    "mainData": "Health Entity Name",
+                    "validated": true
+                },
+                {
+                    "category": "Address",
+                    "expirationDate": "September 10, 2022",
+                    "icon": "",
+                    "issuanceDate": "July 10, 2022",
+                    "issuer": "No issuer",
+                    "mainData": "Street Name, 78"
+                }
+            ],
             "list": [{
                     "description": "Following global Internet standards so you can use them worldwide",
                     "image": "",
