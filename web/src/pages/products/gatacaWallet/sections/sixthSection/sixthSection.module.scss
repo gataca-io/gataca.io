@@ -5,7 +5,9 @@
   position: relative;
   padding: 0 20px 57px;
   margin-top: 218px;
+  height: 1000px;
   @include min-width($mobileXL) {
+    height: auto;
     margin-top: 0;
     padding: 120px 0 0;
   }
@@ -68,12 +70,13 @@
 
   .sixthSection__rightSide {
     position: relative;
-    height: 100%;
+    height: 400px;
     @include flex(0, 0, 100%);
     @include flexbox();
     @include flex-direction(column);
     
     @include min-width($mobileXL) {
+        height: 100%;
       @include flex(0, 0, 50%);
     }
     @include min-width($desktopMD) {
@@ -81,13 +84,16 @@
     }
 
     & > div {
+        height: 500px;
       width: 1148px;
       overflow-x: hidden;
-
+      position: absolute;
+left: 0;
+        top: calc(50% - 89px);
       @include min-width($mobileXL) {
+        height: auto;
         left: 0;
         top: calc(50% - 89px);
-        position: absolute;
       }
     }
   }
@@ -96,9 +102,10 @@
     @include flex(0, 0, 100%);
     @include flexbox();
     @include flex-direction(row);
-
+    position: absolute;
+    top: 100px;
     @include min-width($mobileXL) {
-       position: absolute;
+      top: 0;
     }
     & > img {
       width: 323px;
@@ -139,12 +146,13 @@
 }
 
 .buttons__container {
-  margin-top: 30px;
+  margin-top: 305px;
   @include flexbox();
   @include flex-direction(row);
   @include justify-content(flex-start);
 
   @include min-width($mobileXL) {
+    margin-top: 30px;
     margin-left: 10px;
     margin-top: 200px;
   }
