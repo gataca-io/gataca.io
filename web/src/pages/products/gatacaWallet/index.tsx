@@ -7,7 +7,7 @@ import SecondSection from "./sections/secondSection/SecondSection"
 import ThirdSection from "./sections/thirdSection/ThirdSection"
 import FourthSection from "./sections/fourthSection/FourthSection"
 import PreFooterCTASection from "../../../components/templates/sections/preFooterCTA/PreFooterCTA"
-import FifthSection from "./sections/fifthSection/FifthSection"
+// import FifthSection from "./sections/fifthSection/FifthSection"
 import SixthSection from "./sections/sixthSection/SixthSection"
 
 const GatacaWalletPage: React.FC<PageProps> = () => {
