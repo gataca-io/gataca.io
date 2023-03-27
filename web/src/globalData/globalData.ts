@@ -263,7 +263,7 @@ export const footerMenuOptions: LinkModel[] = [
       {
         id: "termsOfUse",
         label: "Terms of Use",
-        route: "/",
+        route: "/termsOfUse",
       },
     ],
   },
