@@ -75,22 +75,22 @@ export const headerMenuOptions: LinkModel[] = [
           {
             id: "government",
             label: "Government",
-            route: "/sectorGovernment",
+            route: "/useCasesSectors/government",
           },
           {
             id: "education",
             label: "Education",
-            route: "/sectorEducation",
+            route: "/useCasesSectors/education",
           },
           {
             id: "finance",
             label: "Finance",
-            route: "/sectorFinance",
+            route: "/useCasesSectors/finance",
           },
           {
             id: "web3",
             label: "Web3",
-            route: "/sectorWeb3",
+            route: "/useCasesSectors/web3",
           },
           {
             id: "otherIndustries",
