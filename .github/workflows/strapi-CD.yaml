@@ -1,0 +1,51 @@
+name: Strapi CD
+
+on:
+  workflow_dispatch:
+    inputs:
+      ExecuteChoice:
+        type: choice
+        description: 'Deploy Strapi DEV?'
+        required: true
+        default: 'NO'
+        options:
+        - "YES"
+        - "NO"
+
+
+env: 
+  AWS_REGION: eu-central-1
+
+jobs:
+  update:
+    name: Set up Version
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.CI_TOKEN }} 
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.CD_AWS_ACCESS_KEY_ID_DEV }}
+          aws-secret-access-key: ${{ secrets.CD_AWS_SECRET_ACCESS_KEY_DEV }}
+          aws-region: ${{ env.AWS_REGION }}
+     
+      - name: Configure git for private modules
+        run: git config --global url."https://${{ secrets.CI_TOKEN }}:x-oauth-basic@github.com/gataca-io".insteadOf "https://github.com/gataca-io"
+
+      - name: Login to Docker Hub
+        uses: docker/login-action@v2
+        with:
+          username: navasgataca              ###############  CHANGE TO GENERIC USER ###############
+          password: ${{ secrets.DOCKERHUB_TOKEN }} 
+
+      - name: Create and upload Docker image
+        run: |
+          cd web
+          make web6
+          docker image ls ## Output
+
