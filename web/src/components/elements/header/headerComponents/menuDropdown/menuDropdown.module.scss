@@ -9,21 +9,17 @@
     @include flex-wrap(wrap);
     @include justify-content(center);
     @include align-items(center);
-}
-
-.menuDropdownNoRoute {
-    padding: 14px 20px;
-    position: relative;
-    @include flexbox();
-    @include flex-wrap(wrap);
-    @include justify-content(center);
-    @include align-items(center);
-
-    & > img, a {
-        cursor: pointer;
+    > *:hover {
+      color: $primary700;
+      stroke: $primary700;
     }
 }
 
 .dropdownLabel {
     margin-right: 4px;
+    @include flexbox();
+    @include flex-wrap(nowrap);
+    @include justify-content(center);
+    @include align-items(center);
+
 }

@@ -72,6 +72,9 @@ table {
 a {
     color: $neutral1000;
     text-decoration: none;
+    &:hover {
+        color: $primary700;
+    }
 }
 
 button {
