@@ -5,6 +5,9 @@
   li {
     a {
       color: $neutral700;
+      &:hover {
+        color: $primary700;
+      }
     }
     &:not(:last-child) {
       margin-bottom: 16px;
