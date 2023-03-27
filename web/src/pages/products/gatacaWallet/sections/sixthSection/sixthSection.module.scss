@@ -7,10 +7,10 @@
   margin-top: 218px;
   @include min-width($mobileXL) {
     margin-top: 0;
-    padding: 0;
+    padding: 120px 0 0;
   }
   @include min-width($desktopXL) {
-    padding: 0 128px 200px;
+    padding: 120px 128px 200px;
   }
 }
 
@@ -155,6 +155,7 @@
 }
 
 .buttons__inactive {
+  cursor: not-allowed;
   & > rect {
     fill: $neutral100;
     stroke: $primary700;

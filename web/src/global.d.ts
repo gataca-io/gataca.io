@@ -18,6 +18,7 @@ declare module "react-tiny-swiper" {
   const content: any
   export default content
 }
+
 declare global {
   interface Window {
     dataLayer: Record<string, any>[]

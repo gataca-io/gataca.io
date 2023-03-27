@@ -42,6 +42,7 @@ const ThirdSection: React.FC<ISectionProps> = props => {
 
               return (
                 <SingleFeature
+                  key={"feature__" + index}
                   index={index + 1}
                   title={title}
                   description={description}

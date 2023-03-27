@@ -38,7 +38,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 html {
-        position: absolute;
+    position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
@@ -48,20 +48,10 @@ html {
 
 body {
 	line-height: 1;
-    //  position: absolute;
-    // top: 0;
-    // right: 0;
-    // bottom: 0;
-    // left: 0;
     min-height: 100vh;
     margin: 0;
     background-color: $neutral100;
     color: $neutral1000;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-        // overflow-y: hidden;
-        //  overflow-y: scroll;
-
 
     & > div {
         height: 100%;

@@ -30,6 +30,7 @@ const FourthSection: React.FC<ISectionProps> = props => {
 
               return (
                 <div
+                  key={`${"feature_" + index}`}
                   className={`${styles.fourthSection__rightSide__bullets__container}`}
                 >
                   <img src={images.checkIcon} />

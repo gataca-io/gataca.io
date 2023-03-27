@@ -31,8 +31,8 @@
     width: 100%;
     margin-left: -111px;
     margin-bottom: 100px;
+
     @include min-width($tabletMD) {
-      @include flex(0, 0, calc(40% - 40px));
       background-image: url("../../../../../images/images3d/purpleArrows.png");
       background-position: center;
       background-repeat: no-repeat;
@@ -48,9 +48,10 @@
       transform: translateY(-50%);
       max-width: 35%;
       height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      @include flex(0, 0, calc(40% - 40px));
+      @include flexbox();
+      @include flex-direction(column);
+      @include justify-content(center);
     }
 
     @include min-width($desktopSM) {

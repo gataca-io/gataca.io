@@ -12,6 +12,9 @@ import SixthSection from "./sections/sixthSection/SixthSection"
 
 const GatacaWalletPage: React.FC<PageProps> = () => {
   const [gatacaWalletData, setGatacaWallet] = useState<any | undefined>()
+  const [fistSectionLoaded, setFistSectionLoaded] = useState<boolean>(false)
+  const [secondSectionLoaded, setSecondSectionLoaded] = useState<boolean>(false)
+
   const {
     firstSection,
     secondSection,
@@ -36,22 +39,29 @@ const GatacaWalletPage: React.FC<PageProps> = () => {
         <FirstSection
           title={firstSection?.title}
           description={firstSection?.description}
+          setFistSectionLoaded={setFistSectionLoaded}
         />
         <SecondSection
           title={secondSection?.title}
           list={secondSection?.list}
+          setSecondSectionLoaded={setSecondSectionLoaded}
         />
         <ThirdSection
           title={thirdSection?.title}
           description={thirdSection?.description}
           list={thirdSection?.list}
         />
+        {/* Commented until animation is ready */}
+        {/* <FifthSection
+          title={fifthSection?.title}
+          list={fifthSection?.list}
+          secondSectionLoaded={secondSectionLoaded}
+          fistSectionLoaded={fistSectionLoaded}
+        /> */}
         <FourthSection
           title={fourthSection?.title}
           list={fourthSection?.list}
         />
-        <FifthSection title={fifthSection?.title} list={fifthSection?.list} />
-
         <SixthSection title={sixthSection?.title} list={sixthSection?.list} />
         <PreFooterCTASection
           title={"Ready To Start?"}

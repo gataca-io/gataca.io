@@ -26,6 +26,7 @@ import credential6 from "./images3d/credential-5.png"
 import credential7 from "./images3d/credential-6.png"
 import buttonRightIcon from "./icons/buttonRight.svg"
 import buttonLeftIcon from "./icons/buttonLeft.svg"
+import phoneFrameShadow from "./images3d/phone_frame_shadow.png"
 
 export const images = {
   chevronDown: crevronDownSVG,
@@ -56,4 +57,5 @@ export const images = {
   credential7: credential7,
   buttonRightIcon: buttonRightIcon,
   buttonLeftIcon: buttonLeftIcon,
+  phoneFrameShadow: phoneFrameShadow,
 }

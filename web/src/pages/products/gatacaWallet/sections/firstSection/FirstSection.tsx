@@ -11,10 +11,15 @@ import * as styles from "./firstSection.module.scss"
 export type ISectionProps = {
   title: string
   description: string
+  setFistSectionLoaded: (x: boolean) => void
 }
 
 const FirstSection: React.FC<ISectionProps> = props => {
-  const { title, description } = props
+  const { title, description, setFistSectionLoaded } = props
+
+  React.useLayoutEffect(() => {
+    setFistSectionLoaded(true)
+  }, [])
 
   return (
     <div style={{ position: "relative" }}>

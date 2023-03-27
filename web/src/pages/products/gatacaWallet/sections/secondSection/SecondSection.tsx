@@ -4,6 +4,7 @@ import cx from "classnames"
 import { images } from "../../../../../images/images"
 import * as styles from "./secondSection.module.scss"
 import NumberedText from "../../components/numberedText/NumberedText"
+import { useLayoutEffect } from "react"
 
 export type ISectionProps = {
   title: string
@@ -12,10 +13,15 @@ export type ISectionProps = {
     title: string
     description: string
   }[]
+  setSecondSectionLoaded: (x: boolean) => void
 }
 
 const SecondSection: React.FC<ISectionProps> = props => {
-  const { title, list } = props
+  const { title, list, setSecondSectionLoaded } = props
+
+  useLayoutEffect(() => {
+    setSecondSectionLoaded(true)
+  }, [])
 
   return (
     <div style={{ position: "relative" }}>
@@ -26,11 +32,12 @@ const SecondSection: React.FC<ISectionProps> = props => {
         <div className={styles.secondSection__rightSide}>
           <p className={`${cx("heading3 marginBottom8")}`}>{title}</p>
           <div className={styles.secondSection__rightSide__bullets}>
-            {list?.map(item => {
+            {list?.map((item, index) => {
               const { number, title, description } = item
 
               return (
                 <NumberedText
+                  key={"beneficts__" + index}
                   number={number}
                   title={title}
                   description={description}

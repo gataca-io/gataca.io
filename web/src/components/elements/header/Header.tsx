@@ -26,9 +26,10 @@ const Header: React.FC = () => {
           <img src={images.gatacIconAndText} />
         </Link>
         <div>
-          {headerMenuOptions?.map(item => {
+          {headerMenuOptions?.map((item, index) => {
             return (
               <MenuDropdown
+                key={"menuDropdown__" + index}
                 open={subMenuOpenedID === item?.id}
                 item={item}
                 setOptionOpened={setSubMenuOpened}

@@ -2,8 +2,6 @@ import * as React from "react"
 import cx from "classnames"
 import { images } from "../../../../../images/images"
 import * as styles from "./sixthSection.module.scss"
-import SingleFeature from "../../components/singleFeature/SingleFeature"
-import PurpleButton from "../../../../../components/atoms/buttons/purple/PurpleButton"
 
 export type ISectionProps = {
   title: string
@@ -31,11 +29,10 @@ const feature2Images = [
 ]
 const SixthSection: React.FC<ISectionProps> = props => {
   const { title, list } = props
-  const [openItem, setOpenItem] = React.useState<number>(1)
   const [firstItem, setFirstItem] = React.useState<number>(0)
 
   return (
-    <div className={styles.sixthSection__container}>
+    <div id="sixthSection" className={styles.sixthSection__container}>
       <section className={styles.sixthSection}>
         <div className={`${cx("heading3")} ${styles.sixthSection__leftSide}`}>
           <p className={`${cx("heading3 marginBottom12")}`}>{title}</p>
@@ -45,6 +42,7 @@ const SixthSection: React.FC<ISectionProps> = props => {
 
               return (
                 <div
+                  key={"property__example" + index}
                   className={`${styles.sixthSection__rightSide__bullets__container}`}
                 >
                   <img src={featureImages[index]} />
@@ -65,8 +63,8 @@ const SixthSection: React.FC<ISectionProps> = props => {
               className={styles.sixthSection__rightSide__credentials}
               style={{ left: -firstItem * 323 }}
             >
-              {feature2Images?.map(item => {
-                return <img src={item} />
+              {feature2Images?.map((item, index) => {
+                return <img key={"credential__example" + index} src={item} />
               })}
             </div>
             <div className={styles.buttons__container}>
@@ -87,15 +85,15 @@ const SixthSection: React.FC<ISectionProps> = props => {
                   <path
                     d="M27 30L21 24L27 18"
                     stroke="white"
-                    stroke-width="2.66667"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2.66667"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
               </div>
               <div onClick={() => firstItem < 6 && setFirstItem(firstItem + 1)}>
                 <svg
-                  className={`${styles.buttons__right} ${
+                  className={`${
                     firstItem >= 6
                       ? styles.buttons__inactive
                       : styles.buttons__active
@@ -110,9 +108,9 @@ const SixthSection: React.FC<ISectionProps> = props => {
                   <path
                     d="M21 30L27 24L21 18"
                     stroke="white"
-                    stroke-width="2.66667"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2.66667"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
               </div>

@@ -8,7 +8,7 @@
       padding: 0;
   }
   @include min-width($desktopXL) {
-     padding: 0 128px 200px;
+     padding: 0 128px 20px;
   }
 }
 
@@ -29,29 +29,29 @@
     @include flex-direction(row);
     @include align-items(center);
     @include justify-content(space-between);
-    margin: 200px 30px 80px;
+    margin: 200px 30px 0px;
     padding: 40px 15px;
   }
 
   @include min-width($tabletMD) {
     padding: 40px;
-    margin: 200px 6% 80px;
+    margin: 200px 6% 0px;
   }
 
   @include min-width($desktopSM) {
     max-width: 1184px;
-    margin: 200px 5% 80px;
+    margin: 200px 5% 0px;
   }
 
   @include min-width($desktopMD) {
     padding: 72px;
-    margin: 200px 6.3% 80px;
+    margin: 200px 6.3% 0px;
   }
 
   @include min-width($desktopXL) {
     max-width: 1040px;
     padding: 72px;
-    margin: 200px auto 80px;
+    margin: 200px auto 0px;
   }
 
   .fourthSection__leftSide {
