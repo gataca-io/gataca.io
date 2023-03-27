@@ -86,6 +86,7 @@ const SixthSection: React.FC<ISectionProps> = props => {
                 } = item
                 return (
                   <CredentialExample
+                    key={"credential__example" + index}
                     icon={credentialsIcons[index]}
                     category={category}
                     issuer={issuer}
