@@ -8,24 +8,34 @@
       "description": "Explore SSI technology’s most popular use cases",
       "list": [
         {
-          "description": "Securely store all your identity credentials, certificates, and personal documents",
+          "description": "Streamline compliant onboarding processes by enabling individuals to securely prove their identity and provide the necessary information in one click. This can reduce the time and resources needed for identity verification and improve the user experience.",
           "image": "",
-          "title": "Request and store verifiable credentials"
+          "title": "Customer onboarding (KYC / KYB)"
         },
         {
-          "description": "Securely share necessary identity information in a matter of seconds",
+          "description": "No more username and password logins. Combine the simplicity of a Single Sign-On (SSO) with government-grade secure identity systems to provide the best user experience, reduce identity fraud and comply with data protection regulations.",
           "image": "",
-          "title": "Single Sign-On to digital services"
+          "title": "User authentication (SSO)"
         },
         {
-          "description": "Easily control and revoke your data permissions anytime",
+          "description": "Provide secure access to your facilities in proximity scenarios, where you can seamlessly verify identity information in seconds. Combine SSI technology with smart locks or turnstiles to automate access control in office buildings, hotels, or airports.",
           "image": "",
-          "title": "Manage access to your data"
+          "title": "Physical Access Control"
         },
         {
-          "description": "Create and store identity credentials  of your own",
+          "description": "Issue tamper-proof digital certificates, qualifications, badges, tickets, and other personal data or identity attributes, and let users store them in a mobile ID wallet. Users can securely access your services or share them with third parties.",
           "image": "",
-          "title": "Add self-attested credentials"
+          "title": "Issuance of identity credentials"
+        },
+        {
+          "description": "Enhance your business security, efficiency, and convenience, and reduce costs with electronic agreements. Automatically fill in signee information in legal agreements, contracts, and other important documents, and enable qualified electronic signatures.",
+          "image": "",
+          "title": "Signature of contracts and other documents"
+        },
+        {
+          "description": "Provide a more secure, transparent, and trustworthy way of conducting electronic voting for elections, corporate decisions, membership voting, opinion surveys or market research. Using SSI technology in electronic voting reduces the risk of errors and increases confidence in the democratic process.",
+          "image": "",
+          "title": "Electronic voting"
         }
       ],
       "title": "Use cases"

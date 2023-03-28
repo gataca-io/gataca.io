@@ -2,14 +2,32 @@ import * as React from "react"
 import cx from "classnames"
 import * as styles from "./useCasesSection.module.scss"
 import { images } from "../../../../images/images"
-import SingleFeature from "../../../products/gatacaWallet/components/singleFeature/SingleFeature"
+import ListItems from "../../components/listItems/ListItems"
 
 export type ISectionProps = {
   title: string
   description: string
+  list: {
+    title: string
+    description: string
+    image: string
+  }[]
 }
+
 const UseCasesSection: React.FC<ISectionProps> = props => {
-  const { title, description } = props
+  const { title, description, list } = props
+  const [openItem, setOpenItem] = React.useState<number>(1)
+
+  const useCasesBullets = document.getElementById("useCasesBullets")
+
+  const scrollIntoView = el => {
+    useCasesBullets
+      ? useCasesBullets.scroll({
+          behavior: "smooth",
+          left: el.offsetLeft,
+        })
+      : null
+  }
 
   return (
     <>
@@ -23,28 +41,30 @@ const UseCasesSection: React.FC<ISectionProps> = props => {
             <img src={images.folderPurple} alt="Folder" />
           </div>
         </div>
-        <div id="bullets" className={styles.useCasesSection__rightColumn}>
-          {/* {list?.map((item, index) => {
+        <div
+          id="useCasesBullets"
+          className={styles.useCasesSection__rightColumn}
+        >
+          {list?.map((item, index) => {
             const { title, description } = item
 
             return (
-              <SingleFeature
-                id={"feature__" + index}
-                key={"feature__" + index}
+              <ListItems
+                id={"listItem__" + index}
+                key={"listItem__" + index}
                 index={index + 1}
                 title={title}
                 description={description}
                 selected={openItem === index + 1}
-                showFeature={index => {
+                showItem={index => {
                   const element = document.getElementById(
-                    "feature__" + (index - 1)
+                    "listItem__" + (index - 1)
                   )
                   setOpenItem(index), element && scrollIntoView(element)
                 }}
               />
             )
-          })} */}
-          Left column
+          })}
         </div>
         <div className={styles?.showMobile}>
           <img src={images.folderPurple} alt="Folder" />

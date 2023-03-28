@@ -3,20 +3,20 @@
 
 .showDesktop {
   display: none;
-  @include min-width($mobileXL) {
+  @include min-width($tabletMD) {
     display: block;
   }
 }
 
 .showMobile {
   display: block;
-  @include min-width($mobileXL) {
+  @include min-width($tabletMD) {
     display: none;
   }
 }
 .useCasesSection {
   margin-bottom: 132px;
-  @include min-width($mobileXL) {
+  @include min-width($tabletMD) {
     @include flexbox();
     @include align-items (flex-start);
     @include justify-content (space-between);
@@ -24,24 +24,27 @@
     margin-bottom: 200px;
   }
   .useCasesSection__leftColumn{
-    @include min-width($mobileXL) {
-      @include flex(0, 0, 25%);
+    @include min-width($tabletMD) {
+      @include flex(0, 0, 20%);
       padding-right: 5%;
     }
     p {
       color: $neutral700;
       margin-bottom: 32px;
-      @include min-width($mobileXL) {
+      @include min-width($tabletMD) {
         margin-bottom: 164px;
       }
     }
   }
   .useCasesSection__rightColumn {
     text-align: left;
-    margin-bottom: 80px;
-    @include min-width($mobileXL) {
-      @include flex(0, 0, 70%);
+    margin-bottom: 56px;
+    @include min-width($tabletMD) {
+      @include flex(0, 0, 50%);
       margin-bottom: 0;
+    }
+    @include min-width($desktopSM) {
+      @include flex(0, 0, 60%);
     }
   }
 }

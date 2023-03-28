@@ -35,6 +35,7 @@ const UseCasesPage: React.FC<PageProps> = () => {
         <UseCasesSection
           title={useCasesSection?.title}
           description={useCasesSection?.description}
+          list={useCasesSection?.list}
         />
       </div>
       <PreFooterCTASection

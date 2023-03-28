@@ -41,6 +41,8 @@ import pinIcon from "./icons/gat-icon-map-pin.svg"
 import crevronUpSVG from "./icons/gat-icon-chevron-up.svg"
 import chevronDownBig from "./icons/gat-icon-chevron-down-big.svg"
 import folderPurple from "./images3d/41_folder-1.png"
+import iconPlus from "./icons/gat-icon-plus.svg"
+import iconMinus from "./icons/gat-icon-minus.svg"
 
 export const images = {
   chevronDown: crevronDownSVG,
@@ -86,4 +88,6 @@ export const images = {
   chevronUp: crevronUpSVG,
   chevronDownBig: chevronDownBig,
   folderPurple: folderPurple,
+  iconPlus: iconPlus,
+  iconMinus: iconMinus,
 }
