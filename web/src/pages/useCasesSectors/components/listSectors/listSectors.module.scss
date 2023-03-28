@@ -1,0 +1,34 @@
+@import "../../../../styles/colors";
+@import "../../../../styles/mixins";
+@import "../../../../styles/_types.scss";
+
+.itemsContainer {
+  @include flex(0, 0, 100%);
+  margin-bottom: 32px;
+  @include min-width($mobileXL) {
+    @include flex(0, 0, calc(50% - 16px));
+  } 
+  > div {
+    background: $neutral100;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    padding: 32px;
+    min-height: 200px;
+    > img {
+      min-width: 38px;
+      height: auto;
+    }
+    .description {
+      color: $neutral700;
+    }
+    .linkMore {
+      color: $primary700;
+      @include flexbox;
+      @include align-items(center);
+      &:hover {
+        color: $primary900;
+      }
+    }
+  }
+}
+

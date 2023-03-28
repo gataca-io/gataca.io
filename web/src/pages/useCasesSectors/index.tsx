@@ -8,13 +8,13 @@ import * as styles from "./index.module.scss"
 import HeaderSection from "./sections/headerSection/HeaderSection"
 import UseCasesSection from "./sections/useCasesSection/UseCasesSection"
 import { useState } from "react"
+import UseCasesAppliedSection from "./sections/useCasesAppliedSection/UseCasesAppliedSection"
 
 const UseCasesPage: React.FC<PageProps> = () => {
   const [useCasesSectorsData, setUseCasesSectors] = useState<any | undefined>()
   const [headerSectionLoaded, setHeaderSectionLoaded] = useState<boolean>(false)
-  const { headerSection, useCasesSection } = useCasesSectorsData
-    ? useCasesSectorsData
-    : []
+  const { headerSection, useCasesSection, useCasesAppliedSection } =
+    useCasesSectorsData ? useCasesSectorsData : []
 
   React.useEffect(() => {
     getUseCasesSectors()
@@ -36,6 +36,11 @@ const UseCasesPage: React.FC<PageProps> = () => {
           title={useCasesSection?.title}
           description={useCasesSection?.description}
           list={useCasesSection?.list}
+        />
+        <UseCasesAppliedSection
+          title={useCasesAppliedSection?.title}
+          description={useCasesAppliedSection?.description}
+          category={useCasesAppliedSection?.category}
         />
       </div>
       <PreFooterCTASection

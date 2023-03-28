@@ -41,8 +41,18 @@ import pinIcon from "./icons/gat-icon-map-pin.svg"
 import crevronUpSVG from "./icons/gat-icon-chevron-up.svg"
 import chevronDownBig from "./icons/gat-icon-chevron-down-big.svg"
 import folderPurple from "./images3d/41_folder-1.png"
+import iconBank from "./icons/bank.svg"
+import iconBriefcase from "./icons/briefcase.svg"
+import iconCalendarEmpty from "./icons/calendar-empty-alt.svg"
+import iconEthereum from "./icons/ethereum.svg"
+import iconGameController from "./icons/game-controller.svg"
+import iconGraduationCap from "./icons/graduation-cap.svg"
+import iconHeartPulse from "./icons/heart-pulse.svg"
+import iconSend from "./icons/send.svg"
+import iconWallet from "./icons/wallet.svg"
 import iconPlus from "./icons/gat-icon-plus.svg"
 import iconMinus from "./icons/gat-icon-minus.svg"
+import chevronRight from "./icons/gat-icon-chevron-right.svg"
 
 export const images = {
   chevronDown: crevronDownSVG,
@@ -88,6 +98,16 @@ export const images = {
   chevronUp: crevronUpSVG,
   chevronDownBig: chevronDownBig,
   folderPurple: folderPurple,
+  iconBank: iconBank,
+  iconBriefcase: iconBriefcase,
+  iconCalendarEmpty: iconCalendarEmpty,
+  iconEthereum: iconEthereum,
+  iconGameController: iconGameController,
+  iconGraduationCap: iconGraduationCap,
+  iconHeartPulse: iconHeartPulse,
+  iconSend: iconSend,
+  iconWallet: iconWallet,
   iconPlus: iconPlus,
   iconMinus: iconMinus,
+  chevronRight: chevronRight,
 }

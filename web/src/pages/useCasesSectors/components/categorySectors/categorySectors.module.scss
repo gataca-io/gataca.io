@@ -1,0 +1,19 @@
+@import "../../../../styles/colors";
+@import "../../../../styles/mixins";
+@import "../../../../styles/_types.scss";
+
+.categorySectors {
+  .listSectors__description {
+    margin-bottom: 52px;
+    max-width: 537px;
+    .description {
+      color: $neutral700;
+    }
+  }
+  .listSectors__items {
+    @include flexbox();
+    @include justify-content(space-between);
+    @include flex-wrap(wrap);
+  }
+}
+

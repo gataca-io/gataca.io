@@ -4,6 +4,82 @@
       "description": "Self-sovereign identity (SSI) has multiple practical applications across diverse industries, and new use cases are emerging every day.",
       "title": "Unlocking the potential of <span>decentralized identity</span> technology"
     },
+    "useCasesAppliedSection": {
+      "category": [
+        {
+          "description": "These sectors are leading the way in adopting decentralized identity technology and leveraging our platform for a more secure and user-centric future.",
+          "list": [
+            {
+              "description": "Issue digitized, standardized, and tamper-proof government documents and prompt eID and e-government services adoption",
+              "icon": "",
+              "link": "Learn more",
+              "link_route": "/useCasesSectors/government",
+              "title": "Government"
+            },
+            {
+              "description": "Streamline academic processes by issuing, updating, and verifying academic certificates such as diplomas, transcripts of records, and student IDs",
+              "icon": "",
+              "link": "Learn more",
+              "link_route": "/useCasesSectors/education",
+              "title": "Education"
+            },
+            {
+              "description": "Reduce identity fraud with 1-click, compliant KYC and cut compliance costs while boosting user experience, security, and privacy",
+              "icon": "",
+              "link": "Learn more",
+              "link_route": "/useCasesSectors/finance",
+              "title": "Finance"
+            },
+            {
+              "description": "Leverage the benefits of decentralization and privacy for compliant and pseudonymous identity management",
+              "icon": "",
+              "link": "Learn more",
+              "link_route": "/useCasesSectors/web3",
+              "title": "Web 3.0"
+            }
+          ],
+          "title": "Pioneer ecosystems"
+        },
+        {
+          "description": "Regardless of your industry, Gataca provides the building blocks to create secure and efficient identity solutions tailored to your needs.",
+          "list": [
+            {
+              "description": "Elevate the traveler experience",
+              "icon": "",
+              "title": "Travel"
+            },
+            {
+              "description": "Frictionless access to company systems",
+              "icon": "",
+              "title": "Corporate"
+            },
+            {
+              "description": "Patient data management, reimagined",
+              "icon": "",
+              "title": "Healthcare"
+            },
+            {
+              "description": "Remarkable events and conferences",
+              "icon": "",
+              "title": "Events"
+            },
+            {
+              "description": "Easy navigation into the crypto space",
+              "icon": "",
+              "title": "Crypto"
+            },
+            {
+              "description": "Gaming without limits",
+              "icon": "",
+              "title": "Gaming"
+            }
+          ],
+          "title": "Other industries"
+        }
+      ],
+      "description": "Learn about the diverse applications of Gataca's technology across different sectors and industries.",
+      "title": "Use cases applied to sectors"
+    },
     "useCasesSection": {
       "description": "Explore SSI technology’s most popular use cases",
       "list": [
