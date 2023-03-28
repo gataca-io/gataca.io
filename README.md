@@ -17,7 +17,7 @@ A -- website --> C(Gatsby Web)
 - **Admin**: Inside the root folder, run the following command to run the project in our local:
 
   - `yarn install`
-  - `yarn start`
+  - `yarn develop`
 
   To manage your project, go to the administration panel at: http://localhost:1337/admin
   To access the server, go to: http://localhost:1337
@@ -26,7 +26,7 @@ A -- website --> C(Gatsby Web)
 
   - `nvm use 18` since one of the dependencies need node of a version equal to or later than 18.
   - `yarn install`
-  - `yarn start`
+  - `yarn develop`
 
   To view the web in the browser, go to http://localhost:8000/
 

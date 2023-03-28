@@ -1,0 +1,149 @@
+@import "../../../../../styles/_colors.scss";
+@import "../../../../../styles/mixins.scss";
+
+.fourthSection__container {
+  position: relative;
+  padding: 0 20px 57px;
+  @include min-width($mobileXL) {
+      padding: 0;
+  }
+  @include min-width($desktopXL) {
+     padding: 0 128px 20px;
+  }
+}
+
+.fourthSection {
+  position: relative;
+  background-color: $neutral200;
+  border-radius: 20px;
+  padding: 72px 40px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  max-width: 1184px;
+  @include flexbox();
+  @include flex-direction(column-reverse);
+  @include justify-content(center);
+  @include flex-wrap(wrap);
+
+  @include min-width($mobileXL) {
+    @include flex-direction(row);
+    @include align-items(center);
+    @include justify-content(space-between);
+    margin: 80px 30px 0px;
+    padding: 40px 15px;
+  }
+
+  @include min-width($tabletMD) {
+    padding: 40px;
+    margin: 200px 6% 0px;
+  }
+
+  @include min-width($desktopSM) {
+    max-width: 1184px;
+    margin: 200px 5% 0px;
+  }
+
+  @include min-width($desktopMD) {
+    padding: 72px;
+    margin: 200px 6.3% 0px;
+  }
+
+  @include min-width($desktopXL) {
+    max-width: 1040px;
+    padding: 72px;
+    margin: 200px auto 0px;
+  }
+
+  .fourthSection__leftSide {
+    margin-top: 0;
+
+    @include min-width($mobileXL) {
+      @include flex(0, 0, calc(50% - 200px));
+      max-width: 776px;
+      left: 0;
+      bottom: -3px;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      padding-right: 200px;
+      height: 376px;
+      margin-left: -14%;
+      margin-bottom: -28%;
+    }
+
+    @include min-width($tabletMD) {
+      margin-left: -14%;
+      margin-bottom: -28%;
+    }
+
+    @include min-width($desktopSM) {
+      margin-left: -374px;
+      margin-bottom: -235px;
+    }
+
+    & > img {
+      max-height: 310px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      @include min-width($mobileXL) {
+        margin-top: 0px;
+        max-height: 427px;
+        max-width: 220px;
+      }
+      @include min-width($desktopSM) {
+        max-height: 427px;
+        max-width: 250px;
+      }
+      @include min-width($desktopMD) {
+        max-height: 427px;
+        max-width: 276px;
+      }
+      @include min-width($desktopXL) {
+        max-height: 427px;
+        max-width: 376px;
+      }
+    }
+  }
+
+  .fourthSection__rightSide {
+    margin-bottom: 364px;
+
+    @include min-width($mobileXL) {
+      @include flex(0, 0, 52%);
+      margin-bottom: 0;
+      border-bottom-left-radius: 20px;
+    }
+    @include min-width($tabletMD) {
+      @include flex(0, 0, 50%);
+    }
+  }
+
+  .fourthSection__rightSide__bullets__container {
+    @include flexbox();
+    @include flex-direction(row);
+    @include justify-content(flex-start);
+    margin-top: 32px;
+
+    & > img {
+      height: 24px;
+      margin-right: 8px;
+    }
+  }
+
+  .fourthSection__rightSide__bullets {
+    @include flex-direction(column);
+    @include justify-content(center);
+    @include flex-wrap(wrap);
+
+    @include min-width($mobileXL) {
+      @include flexbox();
+      @include flex-direction(row);
+      @include justify-content(space-between);
+    }
+  }
+
+  .bullet__description {
+    color: $neutral700;
+  }
+}

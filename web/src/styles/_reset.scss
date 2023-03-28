@@ -1,3 +1,16 @@
+#___gatsby > * {
+  height: 100%;
+}
+
+div[role="group"][tabindex] {
+      flex: 1;
+  height: 100%;
+}
+
+#gatsby-focus-wrapper {
+  height: 100%;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -25,29 +38,36 @@ footer, header, hgroup, menu, nav, section {
 }
 
 html {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     height: 100%;
 }
 
 body {
 	line-height: 1;
-     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    min-height: 100%;
+    min-height: 100vh;
     margin: 0;
     background-color: $neutral100;
     color: $neutral1000;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 
     & > div {
         height: 100%;
-          & > div {
-            height: 100%;
+        overflow-x: hidden;
+           display: flex;
+           flex-direction: column;
+
+        & > div {
+  
+  flex-grow: 1;
+  width: 100%;
+                height: 100%;
+                // overflow-y: scroll;
         }
     }
+
 }
 
 ol, ul {

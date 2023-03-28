@@ -26,9 +26,10 @@ const Header: React.FC = () => {
           <img src={images.gatacIconAndText} />
         </Link>
         <div>
-          {headerMenuOptions?.map(item => {
+          {headerMenuOptions?.map((item, index) => {
             return (
               <MenuDropdown
+                key={"menuDropdown__" + index}
                 open={subMenuOpenedID === item?.id}
                 item={item}
                 setOptionOpened={setSubMenuOpened}
@@ -41,9 +42,7 @@ const Header: React.FC = () => {
             label={"Log In"}
             outlined
             className={cx("marginRight14")}
-            action={function (x?: any): void {
-              console.log("buttn clicked")
-            }}
+            action={() => window.open(gatacaStudioURL, "_blank")}
           />
           <PurpleButton
             label={"Try for free"}

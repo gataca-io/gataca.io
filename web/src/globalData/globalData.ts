@@ -360,3 +360,10 @@ export const socialMedia: IconModel[] = [
     route: youtubeURL,
   },
 ]
+
+export const scrollDirections = {
+  up: "UP",
+  right: "RIGHT",
+  down: "DOWN",
+  left: "LEFT",
+}

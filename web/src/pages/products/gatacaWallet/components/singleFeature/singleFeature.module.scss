@@ -1,0 +1,70 @@
+@import "../../../../../styles/_colors.scss";
+@import "../../../../../styles/_types.scss";
+@import "../../../../../styles/mixins.scss";
+
+.container {
+  min-width: 275px;
+  max-width: 275px;
+  margin-right: 20px;
+  margin-top: 0;
+  @include min-width($mobileXL) {
+    margin-right: 0px;
+    min-width: none;
+    max-width: 487px;
+  }
+
+  & > .description {    
+    color: $neutral700;
+    @include min-width($mobileXL) {
+      margin-left: 70px;
+    }
+    @include min-width($desktopMD) {
+      margin-left: 113px;
+    }
+  }
+}
+
+.titleContainer {
+  position: relative;
+  @include flexbox();
+
+  @include min-width($mobileXL) {
+    margin-top: 24px;
+  }
+  & > img {
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 50px;
+
+    @include min-width($mobileXL) {
+      display: block;
+    }
+    @include min-width($desktopMD) {
+      width: 81px
+    }
+  }
+
+  & > .title {
+    color: $primary700;
+    @include min-width($mobileXL) {
+      margin-left: 70px;
+    }
+    @include min-width($desktopMD) {
+      margin-left: 113px;
+    } 
+  }
+
+  & > .unselectedTitle {
+    color: $neutral1000;
+    cursor: pointer;
+
+    @include min-width($mobileXL) {
+      margin-left: 70px;
+    }
+    @include min-width($desktopMD) {
+      margin-left: 113px;
+    }
+  }
+}
+

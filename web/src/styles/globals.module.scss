@@ -215,10 +215,11 @@
     }
 
     // Button Types
-    .buttonLg {
+    .buttonLG {
         font-family: $base;
         font-size: 20px;
         font-weight: 500;
+        line-height: 24px;
         text-decoration: "none";
     }
 
@@ -239,6 +240,9 @@
     // Spacings
 
     // Horizontal & vertical:
+    .margin32 {
+        margin: 32px;
+    }
     .margin30 {
         margin: 30px;
     }
@@ -289,6 +293,9 @@
     }
 
     // Top
+    .marginTop32 {
+        margin-top: 32px;
+    }
     .marginTop30 {
         margin-top: 30px;
     }
@@ -339,6 +346,9 @@
     }
 
     // left
+    .marginLeft32 {
+        margin-left: 32px;
+    }
     .marginLeft30 {
         margin-left: 30px;
     }
@@ -389,6 +399,9 @@
     }
 
     // right
+    .marginRight32 {
+        margin-right: 32px;
+    }
     .marginRight30 {
         margin-right: 30px;
     }
@@ -497,6 +510,9 @@
     // Padding
 
     // Horizontal & vertical:
+    .padding32 {
+        padding: 32px;
+    }
     .padding30 {
         padding: 30px;
     }
@@ -544,6 +560,9 @@
     }
 
     // Top
+    .paddingTop32 {
+        padding-top: 32px;
+    }
     .paddingTop30 {
         padding-top: 30px;
     }
@@ -591,6 +610,9 @@
     }
 
     // left
+    .paddingLeft32 {
+        padding-left: 32px;
+    }
     .paddingLeft30 {
         padding-left: 30px;
     }
@@ -638,6 +660,9 @@
     }
 
     // right
+    .paddingRight32 {
+        padding-right: 32px;
+    }
     .paddingRight30 {
         padding-right: 30px;
     }
@@ -685,6 +710,9 @@
     }
 
     // bottom
+    .paddingBottom32 {
+        padding-bottom: 32px;
+    }
     .paddingBottom30 {
         padding-bottom: 30px;
     }

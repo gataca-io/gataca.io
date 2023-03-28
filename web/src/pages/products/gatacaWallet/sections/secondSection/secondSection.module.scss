@@ -1,0 +1,99 @@
+@import "../../../../../styles/_colors.scss";
+@import "../../../../../styles/mixins.scss";
+
+.secondSection {
+  margin: 120px 30px 30px;
+  max-width: 1184px;
+  @include flexbox();
+  @include flex-direction(column);
+  @include flex-wrap(wrap);
+
+  @include min-width($mobileXL) {
+    @include flex-direction(row);
+    @include align-items(center);
+    @include justify-content(space-between);
+  }
+
+  @include min-width($tabletMD) {
+    @include justify-content(flex-end);
+    margin: 80px 40px 80px;
+    margin-top: 130px;
+  }
+
+  @include min-width($desktopSM) {
+    @include justify-content(center);
+    // max-width: 1224px;
+    padding: 0 45px;
+    margin: 152px auto 80px;
+  }
+
+  .secondSection__leftSide {
+    width: 100%;
+    margin-left: -111px;
+    margin-bottom: 100px;
+
+    @include min-width($tabletMD) {
+      background-image: url("../../../../../images/images3d/purpleArrows.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: calc(50% - 202px);
+      margin-left: -30px;
+      margin-bottom: 0px;
+      position: absolute;
+      max-height: 600px;
+      left: -101px;
+      top: 50%;
+      padding-right: 202px;
+      transform: translateY(-50%);
+      max-width: 35%;
+      height: 100%;
+      @include flex(0, 0, calc(40% - 40px));
+      @include flexbox();
+      @include flex-direction(column);
+      @include justify-content(center);
+    }
+
+    @include min-width($desktopSM) {
+        left: -202px;
+    }
+
+    & > img {
+      display: block;
+      margin-top: 8px;
+      width: 100%;
+
+      @include min-width($mobileXL) {
+        @include flex(0, 0, calc(50% - 40px));
+      }
+      @include min-width($tabletMD) {
+        display: none
+      }
+    }
+
+  }
+
+  .secondSection__rightSide {
+    @include flexbox();
+    @include flex-direction(column);
+    @include justify-content(center);
+    @include flex-wrap(wrap);
+
+    @include min-width($tabletXL) {
+      margin-left:35%;
+    }
+    @include min-width($desktopSM) {
+        margin-left:45%;
+    }
+
+    .secondSection__rightSide__bullets {
+      @include flexbox();
+      @include flex-direction(column);
+      @include justify-content(space-between);
+      @include flex-wrap(wrap);
+      @include min-width($desktopSM) {
+        @include flex-direction(row);
+      }
+    }
+  }
+}
