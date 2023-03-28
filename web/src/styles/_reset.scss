@@ -92,8 +92,16 @@ table {
 a {
     color: $neutral1000;
     text-decoration: none;
+    &:hover {
+        color: $primary700;
+    }
 }
 
 button {
     border: none;
+}
+
+// hr styles
+hr {
+    border: 1px solid $neutral300;
 }

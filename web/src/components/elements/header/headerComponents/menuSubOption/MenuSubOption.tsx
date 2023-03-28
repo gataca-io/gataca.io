@@ -2,7 +2,6 @@ import { Link } from "gatsby"
 import * as React from "react"
 import * as styles from "./menuSubOption.module.scss"
 import cx from "classnames"
-import { images } from "../../../../../images/images"
 import { LinkModel } from "../../../../../interfaces/interfaces"
 
 export type IMenuSubOptionProps = {
@@ -13,9 +12,35 @@ export type IMenuSubOptionProps = {
 
 const MenuSubOption: React.FC<IMenuSubOptionProps> = props => {
   const { item, open, isLastDropdown } = props
-
-  return item?.subRoutes && item?.subRoutes?.length && open ? (
-    <div className={styles.menuSubOption}>
+  const categoriesLength = item?.categories?.length
+  return (item?.categories && item?.categories?.length && open) ||
+    (item?.subRoutes && item?.subRoutes?.length && open) ? (
+    <div
+      className={`${styles.menuSubOption} ${
+        categoriesLength > 1 ? styles.menuCategory : ""
+      }`}
+    >
+      {item?.categories?.map(subItem => {
+        return (
+          <div className={styles.menuCategoryItem}>
+            <div
+              className={`${styles.menuCategoryItem__title} ${cx("buttonSM")}`}
+            >
+              {subItem?.label}
+            </div>
+            {subItem?.subRoutes?.map(item => {
+              return (
+                <Link
+                  className={`${styles.menuSubOptionItem} ${cx("buttonSM")}`}
+                  to={item?.route || ""}
+                >
+                  {item?.label}
+                </Link>
+              )
+            })}
+          </div>
+        )
+      })}
       {item?.subRoutes?.map(subItem => {
         return (
           <Link

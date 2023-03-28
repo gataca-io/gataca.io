@@ -17,41 +17,87 @@ export const headerMenuOptions: LinkModel[] = [
     label: "Products",
     subRoutes: [
       {
-        id: "gatacaWallet",
-        label: "Gataca Wallet",
-        route: "/products/gatacaWallet",
-      },
-      {
         id: "gatacaStudio",
         label: "Gataca Studio",
         route: "/products/gatacaStudio",
+      },
+      {
+        id: "gatacaWallet",
+        label: "Gataca Wallet",
+        route: "/products/gatacaWallet",
       },
     ],
   },
   {
     id: "useCasesSectors",
     label: "Use Cases & Sectors",
-    route: "/useCasesSectors",
-    subRoutes: [
+    categories: [
       {
-        id: "government",
-        label: "Government",
-        route: "/useCasesSectors/government",
+        id: "useCases",
+        label: "Use Cases",
+        subRoutes: [
+          {
+            id: "customerOnboarding",
+            label: "Customer onboarding (KYC / KYB)",
+            route: "/useCasesSectors/#customerOnboarding",
+          },
+          {
+            id: "userAuthentication",
+            label: "User authentication (SSO)",
+            route: "/useCasesSectors/#userAuthentication",
+          },
+          {
+            id: "physicalAccessControl",
+            label: "Physical Access Control",
+            route: "/useCasesSectors/#physicalAccessControl",
+          },
+          {
+            id: "issuanceIdentityCredentials",
+            label: "Issuance of identity credentials",
+            route: "/useCasesSectors/#issuanceIdentityCredentials",
+          },
+          {
+            id: "signatureContractsDocuments",
+            label: "Signature of contracts & documents",
+            route: "/useCasesSectors/#signatureContractsDocuments",
+          },
+          {
+            id: "electronicVoting",
+            label: "Electronic voting",
+            route: "/useCasesSectors/#electronicVoting",
+          },
+        ],
       },
       {
-        id: "finance",
-        label: "Finance",
-        route: "/useCasesSectors/finance",
-      },
-      {
-        id: "education",
-        label: "Education",
-        route: "/useCasesSectors/education",
-      },
-      {
-        id: "web3",
-        label: "Web 3",
-        route: "/useCasesSectors/web3",
+        id: "sectors",
+        label: "Sectors",
+        subRoutes: [
+          {
+            id: "government",
+            label: "Government",
+            route: "/sectorGovernment",
+          },
+          {
+            id: "education",
+            label: "Education",
+            route: "/sectorEducation",
+          },
+          {
+            id: "finance",
+            label: "Finance",
+            route: "/sectorFinance",
+          },
+          {
+            id: "web3",
+            label: "Web3",
+            route: "/sectorWeb3",
+          },
+          {
+            id: "otherIndustries",
+            label: "Other industries",
+            route: "/useCasesSectors/#otherIndustries",
+          },
+        ],
       },
     ],
   },
@@ -61,7 +107,7 @@ export const headerMenuOptions: LinkModel[] = [
     subRoutes: [
       {
         id: "aboutUs",
-        label: "About Us",
+        label: "About",
         route: "/company/aboutUs",
       },
       {
@@ -71,7 +117,7 @@ export const headerMenuOptions: LinkModel[] = [
       },
       {
         id: "contactUs",
-        label: "ContactUs",
+        label: "Contact Us",
         route: "/company/contactUs",
       },
       {
@@ -84,17 +130,16 @@ export const headerMenuOptions: LinkModel[] = [
   {
     id: "resources",
     label: "Resources",
-    route: "/resources",
     subRoutes: [
-      {
-        id: "blog",
-        label: "Blog",
-        route: "/resources/blog",
-      },
       {
         id: "documentation",
         label: "Documentation",
         route: "/resources/documentation",
+      },
+      {
+        id: "ssiBasics",
+        label: "SSI Basics",
+        route: "/resources/ssiBasics",
       },
     ],
   },
@@ -253,17 +298,17 @@ export const footerMenuOptions: LinkModel[] = [
       {
         id: "privacyPolicy",
         label: "Privacy Policy",
-        route: "/",
+        route: "/privacyPolicy",
       },
       {
         id: "cookiesPolicy",
         label: "Cookies Policy",
-        route: "/",
+        route: "/cookiePolicy",
       },
       {
         id: "termsOfUse",
         label: "Terms of Use",
-        route: "/",
+        route: "/termsOfUse",
       },
     ],
   },

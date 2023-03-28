@@ -1,0 +1,38 @@
+@import "../../../../../styles/mixins";
+@import "../../../../../styles/colors";
+
+
+.sectionMain__tableContentCol {
+  @include flex(0, 0, 100%);
+  @include min-width($mobileXL)  {
+    @include flex(0, 0, 35%);
+    max-width: 252px;
+  }
+  @include min-width($desktopMD)  {
+    @include flex(0, 0, 25%);
+  }
+  > div {
+    padding: 12px 20px;
+    background-color: $neutral200;
+    @include min-width($mobileXL) {
+      border-radius: 12px;
+      padding: 32px;
+    }
+  }
+  .title {
+    div {
+      @include flexbox();
+      @include justify-content(space-between);
+      @include align-items(center);
+      width: 100%;
+      span {
+        color: $neutral1000;
+        font-family: "Poppins";
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+        text-decoration: none;
+      }
+    }
+  }
+}
