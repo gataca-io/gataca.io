@@ -28,7 +28,7 @@
   @include min-width($mobileXL) {
     @include flex-direction(row);
     @include align-items(center);
-    @include justify-content(space-between);
+    @include justify-content(flex-start);
     margin: 0px 30px 80px;
   }
   @include min-width($tabletMD) {
@@ -47,7 +47,9 @@
     max-width: 100%;
     margin-bottom: 80px;
     @include min-width($mobileXL) {
-      @include flex(0, 0, calc(50% - 40px));
+      @include flex(0, 0, calc(50% - 80px));
+      margin-right: 20px;
+      max-width: 373px;
     }
     @include min-width($tabletMD) {
       margin-right: 80px;
@@ -85,10 +87,10 @@
 
     & > div {
         height: 500px;
-      width: 1148px;
-      overflow-x: hidden;
-      position: absolute;
-left: 0;
+        width: 1148px;
+        overflow-x: hidden;
+        position: absolute;
+        left: 0;
         top: calc(50% - 89px);
       @include min-width($mobileXL) {
         height: auto;
@@ -134,6 +136,10 @@ left: 0;
   & > img {
     height: 24px;
     margin-right: 8px;
+  }
+
+  & > div > p:nth-child(2) {
+    color: $neutral700;
   }
 }
 
