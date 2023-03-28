@@ -4,35 +4,38 @@ import Layout from "../../components/templates/mainLayout/MainLayout"
 import PreFooterCTASection from "../../components/templates/sections/preFooterCTA/PreFooterCTA"
 import { navigate } from "gatsby"
 import { gatacaStudioURL } from "../../globalData/globalData"
-import cx from "classnames"
 import * as styles from "./index.module.scss"
-import PurpleButton from "../../components/atoms/buttons/purple/PurpleButton"
-import UseCasesSection from "./components/useCasesSection/useCasesSection"
+import HeaderSection from "./sections/headerSection/HeaderSection"
+import UseCasesSection from "./sections/useCasesSection/UseCasesSection"
+import { useState } from "react"
 
 const UseCasesPage: React.FC<PageProps> = () => {
+  const [useCasesSectorsData, setUseCasesSectors] = useState<any | undefined>()
+  const [headerSectionLoaded, setHeaderSectionLoaded] = useState<boolean>(false)
+  const { headerSection, useCasesSection } = useCasesSectorsData
+    ? useCasesSectorsData
+    : []
+
+  React.useEffect(() => {
+    getUseCasesSectors()
+  }, [])
+
+  const getUseCasesSectors = async () => {
+    const json_data = require("./data/UseCasesSectorsData.json")
+    setUseCasesSectors(json_data?.data && json_data?.data)
+  }
   return (
     <Layout>
       <div className={styles?.useCasesSectors}>
-        <section
-          className={`${styles?.sectionHeader} ${cx("containerMaxWidth")}`}
-        >
-          <div className={styles?.sectionHeader__container}>
-            <h1 className={cx("heading1 marginBottom32")}>
-              Unlocking the potential of <span>decentralized identity</span>{" "}
-              technology
-            </h1>
-            <p className={cx("bodyRegularXL marginBottom32")}>
-              Self-sovereign identity (SSI) has multiple practical applications
-              across diverse industries, and new use cases are emerging every
-              day.
-            </p>
-            <PurpleButton
-              label={"Try for free"}
-              action={() => window.open(gatacaStudioURL, "_blank")}
-            />
-          </div>
-        </section>
-        <UseCasesSection />
+        <HeaderSection
+          title={headerSection?.title}
+          description={headerSection?.description}
+          setHeaderSectionLoaded={setHeaderSectionLoaded}
+        />
+        <UseCasesSection
+          title={useCasesSection?.title}
+          description={useCasesSection?.description}
+        />
       </div>
       <PreFooterCTASection
         title={"Ready To Start?"}

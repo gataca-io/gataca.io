@@ -1,0 +1,47 @@
+@import "../../../../styles/colors";
+@import "../../../../styles/mixins";
+
+.showDesktop {
+  display: none;
+  @include min-width($mobileXL) {
+    display: block;
+  }
+}
+
+.showMobile {
+  display: block;
+  @include min-width($mobileXL) {
+    display: none;
+  }
+}
+.useCasesSection {
+  margin-bottom: 132px;
+  @include min-width($mobileXL) {
+    @include flexbox();
+    @include align-items (flex-start);
+    @include justify-content (space-between);
+    @include flex-wrap(nowrap);
+    margin-bottom: 200px;
+  }
+  .useCasesSection__leftColumn{
+    @include min-width($mobileXL) {
+      @include flex(0, 0, 25%);
+      padding-right: 5%;
+    }
+    p {
+      color: $neutral700;
+      margin-bottom: 32px;
+      @include min-width($mobileXL) {
+        margin-bottom: 164px;
+      }
+    }
+  }
+  .useCasesSection__rightColumn {
+    text-align: left;
+    margin-bottom: 80px;
+    @include min-width($mobileXL) {
+      @include flex(0, 0, 70%);
+      margin-bottom: 0;
+    }
+  }
+}

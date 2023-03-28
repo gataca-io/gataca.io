@@ -1,0 +1,34 @@
+{
+  "data": {
+    "headerSection": {
+      "description": "Self-sovereign identity (SSI) has multiple practical applications across diverse industries, and new use cases are emerging every day.",
+      "title": "Unlocking the potential of <span>decentralized identity</span> technology"
+    },
+    "useCasesSection": {
+      "description": "Explore SSI technology’s most popular use cases",
+      "list": [
+        {
+          "description": "Securely store all your identity credentials, certificates, and personal documents",
+          "image": "",
+          "title": "Request and store verifiable credentials"
+        },
+        {
+          "description": "Securely share necessary identity information in a matter of seconds",
+          "image": "",
+          "title": "Single Sign-On to digital services"
+        },
+        {
+          "description": "Easily control and revoke your data permissions anytime",
+          "image": "",
+          "title": "Manage access to your data"
+        },
+        {
+          "description": "Create and store identity credentials  of your own",
+          "image": "",
+          "title": "Add self-attested credentials"
+        }
+      ],
+      "title": "Use cases"
+    }
+  }
+}
