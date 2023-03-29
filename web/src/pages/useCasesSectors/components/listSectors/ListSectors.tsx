@@ -10,9 +10,13 @@ export type IListItemsProps = {
   title: string
   description: string
   icon: string
-  link: string
-  link_route: string
+  link?: string
+  link_route?: string
   className?: any
+  secondCategory: boolean
+  inside_description?: string
+  opened: boolean
+  showItem: (x: number) => void
 }
 
 const pioneerIcons = [
@@ -31,31 +35,81 @@ const otherIndustriesIcons = [
 ]
 
 const ListSectors: React.FC<IListItemsProps> = props => {
-  const { id, index, title, description, icon, link, link_route, className } =
-    props
+  const {
+    id,
+    index,
+    title,
+    description,
+    icon,
+    link,
+    link_route,
+    className,
+    secondCategory,
+    inside_description,
+    opened,
+    showItem,
+  } = props
   return (
-    <div id={id} className={cx(styles.itemsContainer)}>
-      <div>
-        <img
-          className={cx("marginBottom16")}
-          src={pioneerIcons ? pioneerIcons[index - 1] : otherIndustriesIcons[index - 1]}
-        ></img>
-        <h5 className={cx("heading5 marginBottom16")}>{title}</h5>
+    <div
+      id={id}
+      className={`${cx(styles?.itemsContainer)} ${cx(
+        secondCategory ? styles.threeCol : ""
+      )}`}
+    >
+      <div
+        className={`${cx(opened ? styles.noShadow : "")} ${cx(
+          secondCategory ? styles.secondCategory : ""
+        )}`}
+      >
+        {secondCategory ? (
+          <div
+            className={`${cx(styles.descriptionContainer)} ${cx(
+              opened ? styles.opened : ""
+            )}`}
+            onClick={() => !opened && showItem(index)}
+          >
+            <div className={cx(styles.iconContainer)}>
+              <img src={opened ? images.iconMinus : images.iconPlus}></img>
+            </div>
+            {opened && (
+              <p className={`${styles.description} ${cx("bodyRegularMD")}`}>
+                {inside_description}
+              </p>
+            )}
+          </div>
+        ) : null}
+        <div className={cx(secondCategory ? "marginTop32" : "")}>
+          <img
+            alt={title}
+            className={`${cx("marginBottom16")} ${styles.iconSectors}`}
+            src={
+              secondCategory
+                ? otherIndustriesIcons[index - 1]
+                : pioneerIcons[index - 1]
+            }
+          ></img>
+          <h5 className={cx("heading5 marginBottom16")}>{title}</h5>
 
-        <p
-          className={`${styles.description} ${cx(
-            "bodyRegularMD marginBottom16"
-          )}`}
-        >
-          {description}
-        </p>
-        <Link
-          className={`${cx("buttonMD")} ${styles.linkMore}`}
-          to={link_route || ""}
-        >
-          {link}
-          <img className={cx("marginLeft10")} src={images.chevronRight}></img>
-        </Link>
+          <p
+            className={`${styles.description} ${cx(
+              "bodyRegularMD marginBottom16"
+            )}`}
+          >
+            {description}
+          </p>
+          <Link
+            className={`${cx("buttonMD")} ${styles.linkMore}`}
+            to={link_route || ""}
+          >
+            {link}
+            {secondCategory ? null : (
+              <img
+                className={cx("marginLeft10")}
+                src={images.chevronRight}
+              ></img>
+            )}
+          </Link>
+        </div>
       </div>
     </div>
   )

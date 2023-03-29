@@ -5,7 +5,7 @@
       "title": "Unlocking the potential of <span>decentralized identity</span> technology"
     },
     "useCasesAppliedSection": {
-      "category": [
+      "categories": [
         {
           "description": "These sectors are leading the way in adopting decentralized identity technology and leveraging our platform for a more secure and user-centric future.",
           "list": [
@@ -46,31 +46,37 @@
             {
               "description": "Elevate the traveler experience",
               "icon": "",
+              "inside_description": "Facilitate travel with globally recognized verified digital documents. From smooth airport and hotel check-ins to hassle-free customs and inmigration processes",
               "title": "Travel"
             },
             {
               "description": "Frictionless access to company systems",
               "icon": "",
+              "inside_description": "Create a unique journey for all stakeholders using verifiable credentials such as employee cards, membership cards, or supplier badges",
               "title": "Corporate"
             },
             {
               "description": "Patient data management, reimagined",
               "icon": "",
+              "inside_description": "Offer secure access and management of patient data such as medical records, insurance documents, health passes, and medical receipts",
               "title": "Healthcare"
             },
             {
               "description": "Remarkable events and conferences",
               "icon": "",
+              "inside_description": "Improve the event management experience for both attendees and organizers by making event registration and access control more efficient and secure",
               "title": "Events"
             },
             {
               "description": "Easy navigation into the crypto space",
               "icon": "",
+              "inside_description": "Reduce entry barriers into the crypto space by enabling instant eKYC while maintaining the principles of decentralization and privacy",
               "title": "Crypto"
             },
             {
               "description": "Gaming without limits",
               "icon": "",
+              "inside_description": "Seamlessly transfer avatars and digital objects/assets between games, ensuring a safe experience with verified identities",
               "title": "Gaming"
             }
           ],

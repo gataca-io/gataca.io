@@ -1,13 +1,14 @@
 import * as React from "react"
 import cx from "classnames"
 import * as styles from "./useCasesAppliedSection.module.scss"
-import { images } from "../../../../images/images"
 import CategorySectors from "../../components/categorySectors/CategorySectors"
+import Categories from "./elements/categories"
 
 export type ISectionProps = {
   title: string
   description: string
-  category: {
+  index: number
+  categories: {
     title: string
     description: string
     list: []
@@ -15,8 +16,19 @@ export type ISectionProps = {
 }
 
 const useCasesAppliedSection: React.FC<ISectionProps> = props => {
-  const { title, description, category } = props
+  const { title, description, index, categories } = props
+  const [openItem, setOpenItem] = React.useState<number>(1)
 
+  const useCasesCategories = document.getElementById("useCasesAppliedSectors")
+
+  const scrollIntoView = el => {
+    useCasesCategories
+      ? useCasesCategories.scroll({
+          behavior: "smooth",
+          left: el.offsetLeft,
+        })
+      : null
+  }
   return (
     <>
       <section
@@ -27,19 +39,44 @@ const useCasesAppliedSection: React.FC<ISectionProps> = props => {
         <div className={styles?.useCasesAppliedSection__header}>
           <h3 className={cx("heading3 marginBottom12")}>{title}</h3>
           <p className={cx("bodyRegularXL")}>{description}</p>
+          <div className={styles?.categories}>
+            {categories?.map((item, index) => {
+              const { title } = item
+              return (
+                <Categories
+                  id={"categories__" + index}
+                  key={"categories__" + index}
+                  index={index + 1}
+                  title={title}
+                  selected={openItem === index + 1}
+                  showItem={index => {
+                    const element = document.getElementById(
+                      "listCategory__" + (index - 1)
+                    )
+                    setOpenItem(index), element && scrollIntoView(element)
+                  }}
+                />
+              )
+            })}
+          </div>
         </div>
-        <div className={styles?.useCasesAppliedSection__sectors}>
-          {category?.map((item, index) => {
+        <div
+          id="useCasesAppliedSectors"
+          className={styles?.useCasesAppliedSection__sectors}
+        >
+          {categories?.map((item, index) => {
             const { title, description, list } = item
 
             return (
               <CategorySectors
                 id={"listCategory__" + index}
                 key={"listCategory__" + index}
+                className={"listCategory__" + index}
                 index={index + 1}
                 title={title}
                 description={description}
                 list={list}
+                selected={openItem === index + 1}
               />
             )
           })}

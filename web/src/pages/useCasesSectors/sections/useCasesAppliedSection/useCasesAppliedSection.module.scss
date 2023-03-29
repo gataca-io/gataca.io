@@ -20,6 +20,17 @@
         margin-bottom: 60px;
       }
     }
+    .categories {
+      @include flexbox();
+      @include flex-wrap(nowrap);
+      @include justify-content (center);
+      max-width: 419px;
+      margin: 0 auto;
+      background-color: $neutral200;
+      padding: 8px;
+      border-radius: 12px;
+      text-align: center;
+    }
   }
   .useCasesAppliedSection__sectors {
     width: 100%;

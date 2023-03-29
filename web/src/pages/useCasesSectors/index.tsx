@@ -40,7 +40,7 @@ const UseCasesPage: React.FC<PageProps> = () => {
         <UseCasesAppliedSection
           title={useCasesAppliedSection?.title}
           description={useCasesAppliedSection?.description}
-          category={useCasesAppliedSection?.category}
+          categories={useCasesAppliedSection?.categories}
         />
       </div>
       <PreFooterCTASection
