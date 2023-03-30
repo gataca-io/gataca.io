@@ -367,3 +367,26 @@ export const scrollDirections = {
   down: "DOWN",
   left: "LEFT",
 }
+
+export const clientsLogos: IconModel[] = [
+  {
+    id: "redES",
+    alt: "red.es logo",
+    icon: images.logoRedES,
+  },
+  {
+    id: "bankinter",
+    alt: "Bankinter logo",
+    icon: images.logoBankinter,
+  },
+  {
+    id: "idema",
+    alt: "Idema logo",
+    icon: images.logoIdema,
+  },
+  {
+    id: "europeanCommision",
+    alt: "European Commision logo",
+    icon: images.logoEuropeanCommision,
+  },
+]

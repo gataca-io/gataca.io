@@ -9,6 +9,7 @@ import HeaderSection from "./sections/headerSection/HeaderSection"
 import UseCasesSection from "./sections/useCasesSection/UseCasesSection"
 import { useState } from "react"
 import UseCasesAppliedSection from "./sections/useCasesAppliedSection/UseCasesAppliedSection"
+import LogosSlider from "../../components/elements/logosSlider/LogosSlider"
 
 const UseCasesPage: React.FC<PageProps> = () => {
   const [useCasesSectorsData, setUseCasesSectors] = useState<any | undefined>()
@@ -43,6 +44,7 @@ const UseCasesPage: React.FC<PageProps> = () => {
           categories={useCasesAppliedSection?.categories}
         />
       </div>
+      <LogosSlider />
       <PreFooterCTASection
         title={"Ready To Start?"}
         description={

@@ -53,6 +53,11 @@ import iconWallet from "./icons/wallet.svg"
 import iconPlus from "./icons/gat-icon-plus.svg"
 import iconMinus from "./icons/gat-icon-minus.svg"
 import chevronRight from "./icons/gat-icon-chevron-right.svg"
+import logoBankinter from "./logos/bankinter.svg"
+import logoEuropeanCommision from "./logos/europeancommision.svg"
+import logoIdema from "./logos/idema.svg"
+import logoRedES from "./logos/redES.svg"
+import logoUniversitat from "./logos/universitat.svg"
 
 export const images = {
   chevronDown: crevronDownSVG,
@@ -110,4 +115,9 @@ export const images = {
   iconPlus: iconPlus,
   iconMinus: iconMinus,
   chevronRight: chevronRight,
+  logoEuropeanCommision: logoEuropeanCommision,
+  logoIdema: logoIdema,
+  logoRedES: logoRedES,
+  logoBankinter: logoBankinter,
+  logoUniversitat: logoUniversitat,
 }
