@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import * as styles from "./index.module.scss"
 import cx from "classnames"
 import Layout from "../../components/templates/mainLayout/MainLayout"
-import TableOfContentContainer from "../../components/templates/tableOfContent/tableOfContentComponents/tableOfContentContainer/TableOfContentContainer"
+import TableOfContentContainer from "../../components/templates/tableOfContent/elements/tableOfContentContainer/TableOfContentContainer"
 import { LinkModel } from "../../interfaces/interfaces"
 import { gatacaURL, tableOfContent } from "./data/data"
 

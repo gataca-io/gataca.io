@@ -10,7 +10,7 @@ import {
   cookiePolicyURL,
 } from "./data/data"
 import { LinkModel } from "../../interfaces/interfaces"
-import TableOfContentContainer from "../../components/templates/tableOfContent/tableOfContentComponents/tableOfContentContainer/TableOfContentContainer"
+import TableOfContentContainer from "../../components/templates/tableOfContent/elements/tableOfContentContainer/TableOfContentContainer"
 
 export type ITableOfContentProps = {
   navigationObject?: LinkModel
