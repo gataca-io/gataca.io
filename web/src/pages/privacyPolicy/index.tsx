@@ -19,13 +19,14 @@ const PrivacyPolicy: React.FC<PageProps> = () => {
       <section
         className={`${styles?.privacyPolicy} ${cx("containerMaxWidth")}`}
       >
-        {tableOfContent?.map(item => {
+        {tableOfContent?.map((item, index) => {
           return (
             <TableOfContentContainer
               open={tableOfContentOpenedID === item?.id}
               item={item}
               setOptionOpened={setTableOfContentOpened}
               className={styles?.showMobile}
+              key={"tableOfContent__" + index}
             />
           )
         })}
@@ -209,13 +210,14 @@ const PrivacyPolicy: React.FC<PageProps> = () => {
               </p>
             </div>
           </div>
-          {tableOfContent?.map(item => {
+          {tableOfContent?.map((item, index) => {
             return (
               <TableOfContentContainer
                 open={tableOfContentOpenedID === item?.id}
                 item={item}
                 setOptionOpened={setTableOfContentOpened}
                 className={styles?.showDesktop}
+                key={"tableOfContent__" + index}
               />
             )
           })}

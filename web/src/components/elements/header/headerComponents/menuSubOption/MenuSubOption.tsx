@@ -20,17 +20,19 @@ const MenuSubOption: React.FC<IMenuSubOptionProps> = props => {
         categoriesLength > 1 ? styles.menuCategory : ""
       }`}
     >
-      {item?.categories?.map(subItem => {
+      {item?.categories?.map((subItem, index) => {
         return (
-          <div className={styles.menuCategoryItem}>
+          <div key={"menuSubOptionCategories__" + index}>
             <div
+              key={"menuSubOptionCategoryItem__" + index}
               className={`${styles.menuCategoryItem__title} ${cx("buttonSM")}`}
             >
               {subItem?.label}
             </div>
-            {subItem?.subRoutes?.map(item => {
+            {subItem?.subRoutes?.map((item, index) => {
               return (
                 <Link
+                  key={"menuSubOption__" + index}
                   className={`${styles.menuSubOptionItem} ${cx("buttonSM")}`}
                   to={item?.route || ""}
                 >

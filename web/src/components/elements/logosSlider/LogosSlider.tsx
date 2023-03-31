@@ -12,13 +12,11 @@ const LogosSlider: React.FC = () => {
             {[...Array(timesToRepeatLogos)].map((e, i) => {
               return clientsLogos.map((item, index) => {
                 return (
-                  <div className={styles?.clientsLogo__sliderItem}>
-                    <img
-                      src={item.icon}
-                      id={item.id}
-                      key={"LogosSlider" + item.id + "__" + index}
-                      alt={item.alt}
-                    />
+                  <div
+                    className={styles?.clientsLogo__sliderItem}
+                    key={"LogosSlider__" + index}
+                  >
+                    <img src={item.icon} id={item.id} alt={item.alt} />
                   </div>
                 )
               })

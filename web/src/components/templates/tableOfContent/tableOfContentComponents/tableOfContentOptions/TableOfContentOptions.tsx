@@ -13,9 +13,9 @@ const TableOfContentOptions: React.FC<ITableOfContenOptionProps> = props => {
 
   return item?.subRoutes && item?.subRoutes?.length && open ? (
     <ol className={`${styles?.tableOfContenOptions} ${cx("marginTop24")}`}>
-      {item?.subRoutes?.map(subItem => {
+      {item?.subRoutes?.map((subItem, index) => {
         return (
-          <li className={cx("buttonSM")}>
+          <li className={cx("buttonSM")} key={"tableOfContent__" + index}>
             <Link to={subItem?.route || ""}>{subItem?.label}</Link>
           </li>
         )
