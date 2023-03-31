@@ -10,6 +10,7 @@ export type ISectionProps = {
   list: {
     title: string
     description: string
+    id: string
     image: string
   }[]
 }
@@ -46,11 +47,11 @@ const UseCasesSection: React.FC<ISectionProps> = props => {
           className={styles.useCasesSection__rightColumn}
         >
           {list?.map((item, index) => {
-            const { title, description } = item
+            const { id, title, description } = item
 
             return (
               <ListItems
-                id={"listItem__" + index}
+                id={id}
                 key={"listItem__" + index}
                 index={index + 1}
                 title={title}
