@@ -1,0 +1,38 @@
+@import "../../../../styles/colors";
+@import "../../../../styles/mixins";
+
+.useCasesAppliedSection {
+  margin-bottom: 132px;
+  @include min-width($mobileXL) {
+    margin-bottom: 200px;
+  }
+  .useCasesAppliedSection__header {
+    max-width: 770px;
+    margin: 0 auto 80px;
+    text-align: center;
+    @include min-width($mobileXL) {
+      margin-bottom: 60px;
+    }
+    p {
+      color: $neutral700;
+      margin-bottom: 80px;
+      @include min-width($mobileXL) {
+        margin-bottom: 60px;
+      }
+    }
+    .categories {
+      @include flexbox();
+      @include flex-wrap(nowrap);
+      @include justify-content (center);
+      max-width: 419px;
+      margin: 0 auto;
+      background-color: $neutral200;
+      padding: 8px;
+      border-radius: 12px;
+      text-align: center;
+    }
+  }
+  .useCasesAppliedSection__sectors {
+    width: 100%;
+  }
+}

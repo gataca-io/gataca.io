@@ -1,0 +1,40 @@
+@import "../../../styles/colors";
+@import "../../../styles/mixins";
+
+.logosSlider{
+  background-color: $neutral200;
+  .clientsLogo {
+    max-width: 100vw;
+    padding: 62px 0;
+  }
+  .clientsLogo__container {
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    margin: auto;
+  }
+  .clientsLogo__slider {
+    @include flexbox();
+    @include align-items(center);
+    @include flex-direction(row);
+    animation: scroll 50s linear infinite;
+    width: calc(275px * 42);
+  }
+  .clientsLogo__sliderItem {
+    margin: 0 50px;
+    @include min-width($desktopMD) {
+      margin: 0 100px;
+    }
+  }
+}
+/* Animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
