@@ -10,7 +10,7 @@ export type ITableOfContentProps = {
   open: boolean
   setOptionOpened: (x: string) => void
 }
-const TableOfContentHeader: React.FC<ITableOfContentProps> = props => {
+const TableOfContentContainer: React.FC<ITableOfContentProps> = props => {
   const { item, className, open, setOptionOpened } = props
   const width =
     window.innerWidth ||
@@ -44,4 +44,4 @@ const TableOfContentHeader: React.FC<ITableOfContentProps> = props => {
   )
 }
 
-export default TableOfContentHeader
+export default TableOfContentContainer

@@ -22,11 +22,11 @@ const SectionContent: React.FC<ISectionContentProps> = props => {
         {props.navigationObject?.label}
       </p>
       <ul>
-        {props.navigationObject?.subRoutes?.map(item => {
+        {props.navigationObject?.subRoutes?.map((item, index) => {
           return (
-            <li>
+            <li key={"footer__" + item.id + index}>
               <Link
-                id={item.id}
+                id={"footer__" + item.id}
                 className={cx("bodyRegularMD")}
                 to={item.route || ""}
               >

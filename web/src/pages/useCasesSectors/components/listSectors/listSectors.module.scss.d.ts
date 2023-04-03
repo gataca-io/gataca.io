@@ -8,3 +8,4 @@ export const secondCategory: string
 export const opened: string
 export const descriptionContainer: string
 export const iconSectors: string
+export const transitionContainer: string

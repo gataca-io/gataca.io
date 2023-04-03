@@ -12,9 +12,9 @@ const CrevronDownSVG: React.FC = () => {
       <path
         d="M4 6L8 10L12 6"
         stroke="currentColor"
-        stroke-width="1.33333"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.33333"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   )

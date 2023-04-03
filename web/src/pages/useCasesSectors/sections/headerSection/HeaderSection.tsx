@@ -1,7 +1,7 @@
 import * as React from "react"
 import cx from "classnames"
-import * as styles from "./headerSection.module.scss"
 import PurpleButton from "../../../../components/atoms/buttons/purple/PurpleButton"
+import * as styles from "./headerSection.module.scss"
 import { gatacaStudioURL } from "../../../../globalData/globalData"
 
 export type ISectionProps = {
