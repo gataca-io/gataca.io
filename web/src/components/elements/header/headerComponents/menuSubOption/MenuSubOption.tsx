@@ -9,10 +9,12 @@ export type IMenuSubOptionProps = {
   open: boolean
   isLastDropdown?: boolean
   setLastRoute: (x: string) => void
+  selected: boolean
+  showItem: (x: number) => void
 }
 
 const MenuSubOption: React.FC<IMenuSubOptionProps> = props => {
-  const { item, open, isLastDropdown, setLastRoute } = props
+  const { item, open, isLastDropdown, setLastRoute, selected, showItem } = props
   const categoriesLength = item?.categories?.length
   return (item?.categories && item?.categories?.length && open) ||
     (item?.subRoutes && item?.subRoutes?.length && open) ? (
@@ -36,7 +38,7 @@ const MenuSubOption: React.FC<IMenuSubOptionProps> = props => {
                   key={"menuSubOption__" + index}
                   className={`${styles.menuSubOptionItem} ${cx("buttonSM")}`}
                   to={item?.route || ""}
-                  onClick={() => setLastRoute(item.id)}
+                  onClick={() => !selected && showItem(setLastRoute(item.id))}
                 >
                   {item?.label}
                 </Link>

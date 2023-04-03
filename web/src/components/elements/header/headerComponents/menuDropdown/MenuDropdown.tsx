@@ -15,7 +15,7 @@ export type IMenuDropdownProps = {
 
 const MenuDropdown: React.FC<IMenuDropdownProps> = props => {
   const { item, open, setOptionOpened } = props
-
+  const [openItem, setOpenItem] = React.useState<number>(1)
   return item?.route ? null : (
     <div
       className={styles.menuDropdownRoute}
@@ -30,6 +30,11 @@ const MenuDropdown: React.FC<IMenuDropdownProps> = props => {
         item={item}
         open={open}
         setLastRoute={props.setLastRoute}
+        selected={openItem}
+        showItem={index => {
+          const element = document.getElementById("listItem__" + (index - 1))
+          setOpenItem(index)
+        }}
       />
     </div>
   )
