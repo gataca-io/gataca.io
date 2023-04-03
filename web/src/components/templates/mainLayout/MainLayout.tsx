@@ -16,7 +16,8 @@ const Layout: React.FC<ILayoutProps> = props => {
     <main className={styles?.mainLayout}>
       <>
         <Header setLastRoute={setLastRoute} />
-        {React.cloneElement(props.children, { lastRoute: lastRoute })}
+        {props.children}
+        {/* {React.cloneElement(props.children, { lastRoute: lastRoute })} */}
         <Footer />
       </>
     </main>
