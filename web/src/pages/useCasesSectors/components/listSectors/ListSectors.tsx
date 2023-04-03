@@ -16,7 +16,7 @@ export type IListItemsProps = {
   secondCategory: boolean
   inside_description?: string
   opened: boolean
-  showItem: (x: number) => void
+  showResults: (x: number) => void
 }
 
 const pioneerIcons = [
@@ -47,8 +47,9 @@ const ListSectors: React.FC<IListItemsProps> = props => {
     secondCategory,
     inside_description,
     opened,
-    showItem,
+    showResults,
   } = props
+
   return (
     <div
       id={id}
@@ -66,16 +67,16 @@ const ListSectors: React.FC<IListItemsProps> = props => {
             className={`${cx(styles.descriptionContainer)} ${cx(
               opened ? styles.opened : ""
             )}`}
-            onClick={() => !opened && showItem(index)}
+            onClick={() => !opened && showResults(index)}
           >
             <div className={cx(styles.iconContainer)}>
               <img src={opened ? images.iconMinus : images.iconPlus}></img>
             </div>
-            {opened && (
+            {opened ? (
               <p className={`${styles.description} ${cx("bodyRegularMD")}`}>
                 {inside_description}
               </p>
-            )}
+            ) : null}
           </div>
         ) : null}
         <div className={cx(secondCategory ? "marginTop32" : "")}>
