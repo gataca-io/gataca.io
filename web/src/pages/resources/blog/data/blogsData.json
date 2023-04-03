@@ -1,0 +1,16 @@
+{
+    "data": {
+        "firstSection": {
+            "description": "Dive into our articles to get you from beginner to knowledgeable in decentralized identity.",
+            "form": {
+                "button": "Sign me up",
+                "label": "Subscribe to our monthly newsletter",
+                "placeholder": "Enter email"
+            },
+            "title": "Gataca Blog"
+        },
+        "secondSection": {
+            "loadMoreButton": "Load more"
+        }
+    }
+}

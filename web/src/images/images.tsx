@@ -40,6 +40,10 @@ import shieldIcon from "./icons/gat-icon-shield.svg"
 import pinIcon from "./icons/gat-icon-map-pin.svg"
 import crevronUpSVG from "./icons/gat-icon-chevron-up.svg"
 import chevronDownBig from "./icons/gat-icon-chevron-down-big.svg"
+import blogHeaderImage from "./images3d/blogHeaderImage.png"
+import edit from "./icons/edit.svg"
+import papers from "./icons/papers.svg"
+import tool from "./icons/tool.svg"
 
 export const images = {
   chevronDown: crevronDownSVG,
@@ -84,4 +88,8 @@ export const images = {
   pinIcon: pinIcon,
   chevronUp: crevronUpSVG,
   chevronDownBig: chevronDownBig,
+  blogHeaderImage: blogHeaderImage,
+  edit: edit,
+  papers: papers,
+  tool: tool,
 }

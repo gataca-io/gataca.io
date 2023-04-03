@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_shared_authors",
+  "info": {
+    "displayName": "Author"
+  },
+  "options": {},
+  "attributes": {
+    "Role": {
+      "type": "string",
+      "required": true
+    },
+    "Person": {
+      "type": "enumeration",
+      "enum": [
+        "Irene",
+        "Samuel",
+        "Esther",
+        "José",
+        "Jorge",
+        "Tefy",
+        "Mayra",
+        "Ángela"
+      ]
+    }
+  }
+}
