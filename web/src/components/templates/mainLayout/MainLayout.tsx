@@ -8,11 +8,15 @@ export type ILayoutProps = {
 }
 
 const Layout: React.FC<ILayoutProps> = props => {
+  // Estado que me dice la útlima ruta a la que he clickado
+  const [lastRoute, setLastRoute] = React.useState<string | undefined>()
+
+  console.log("lastRoute", lastRoute)
   return (
     <main className={styles?.mainLayout}>
       <>
-        <Header />
-        {props.children}
+        <Header setLastRoute={setLastRoute} />
+        {React.cloneElement(props.children, { lastRoute: lastRoute })}
         <Footer />
       </>
     </main>

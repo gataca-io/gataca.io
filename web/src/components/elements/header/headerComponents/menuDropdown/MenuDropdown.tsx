@@ -10,6 +10,7 @@ export type IMenuDropdownProps = {
   item: LinkModel
   open: boolean
   setOptionOpened: (x: string) => void
+  setLastRoute: (x: string) => void
 }
 
 const MenuDropdown: React.FC<IMenuDropdownProps> = props => {
@@ -25,7 +26,11 @@ const MenuDropdown: React.FC<IMenuDropdownProps> = props => {
         <CrevronDownSVG />
       </div>
 
-      <MenuSubOption item={item} open={open} />
+      <MenuSubOption
+        item={item}
+        open={open}
+        setLastRoute={props.setLastRoute}
+      />
     </div>
   )
 }
