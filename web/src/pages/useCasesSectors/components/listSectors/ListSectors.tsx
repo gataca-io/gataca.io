@@ -72,11 +72,13 @@ const ListSectors: React.FC<IListItemsProps> = props => {
             <div className={cx(styles.iconContainer)}>
               <img src={opened ? images.iconMinus : images.iconPlus}></img>
             </div>
-            {opened ? (
-              <p className={`${styles.description} ${cx("bodyRegularMD")}`}>
-                {inside_description}
-              </p>
-            ) : null}
+            <div className={styles.transitionContainer}>
+              {opened && (
+                <p className={`${styles.description} ${cx("bodyRegularMD")}`}>
+                  {inside_description}
+                </p>
+              )}
+            </div>
           </div>
         ) : null}
         <div className={cx(secondCategory ? "marginTop32" : "")}>

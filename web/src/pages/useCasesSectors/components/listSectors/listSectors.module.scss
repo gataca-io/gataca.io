@@ -47,17 +47,28 @@
         left: 0;
         top: 0;
         cursor: pointer;
+        .transitionContainer {
+          transition: opacity 500ms;
+          opacity: 0;
+        }
         &.opened {
           background-color: $neutral200;
           border-radius: 8px;
-          p {
-            color: $neutral1000;
-            padding: 0 32px 32px;
-            @include min-width($mobileXL) {
-              padding: 0 20px 20px;
-            }
-            @include min-width($desktopMD) {
+          display: block;
+          .transitionContainer {
+            transition: opacity 1500ms;
+            opacity: 1;
+            p {
+              color: $neutral1000;
               padding: 0 32px 32px;
+          
+              @include min-width($mobileXL) {
+                padding: 0 20px 20px;
+              }
+          
+              @include min-width($desktopMD) {
+                padding: 0 32px 32px;
+              }
             }
           }
         }
