@@ -67,7 +67,7 @@ const ListSectors: React.FC<IListItemsProps> = props => {
             className={`${cx(styles.descriptionContainer)} ${cx(
               opened ? styles.opened : ""
             )}`}
-            onClick={() => !opened && showResults(index)}
+            onClick={() => showResults(!opened ? index : 0)}
           >
             <div className={cx(styles.iconContainer)}>
               <img src={opened ? images.iconMinus : images.iconPlus}></img>
