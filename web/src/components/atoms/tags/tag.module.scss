@@ -7,7 +7,6 @@
     border-radius: 4px;
     padding: 4px 8px;
     height: 16px;
-    width: fit-content;
     @include flexbox();
     @include align-items(center);
 }

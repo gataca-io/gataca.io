@@ -288,13 +288,9 @@
     .margin05 {
         margin: 0.5px;
     }
-    .margin0 {
+    .marginTop0 {
         margin: 0px;
     }
-    .marginAuto {
-        margin: auto
-    }
-    
 
     // Top
     .marginTop32 {
@@ -347,9 +343,6 @@
     }
     .marginTop0 {
         margin-top: 0px;
-    }
-    .marginTopAuto {
-        margin-top: auto
     }
 
     // left
@@ -404,9 +397,6 @@
     .marginLeft0 {
         margin-left: 0px;
     }
-    .marginLeftAuto {
-        margin-left: auto
-    }
 
     // right
     .marginRight32 {
@@ -459,9 +449,6 @@
     }
     .marginRight0 {
         margin-right: 0px;
-    }
-    .marginRightAuto {
-        margin-right: auto
     }
 
     // bottom
@@ -518,9 +505,6 @@
     }
     .marginBottom0 {
         margin-bottom: 0px;
-    }
-    .marginBottomAuto {
-        margin-bottom: auto
     }
 
     // Padding
@@ -780,10 +764,5 @@
         max-width: 1184px;
         margin-right: auto;
         margin-left: auto;
-    }
-
-    // Colors 
-    .neutral700 {
-        color: $neutral700
     }
 }

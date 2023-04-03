@@ -130,27 +130,21 @@ export const headerMenuOptions: LinkModel[] = [
   {
     id: "resources",
     label: "Resources",
-    categories: [
+    subRoutes: [
       {
-        id: "otherResources",
-        label: "Other Resources",
-        subRoutes: [
-          {
-            id: "documentation",
-            label: "Documentation",
-            route: "/resources/documentation",
-          },
-          {
-            id: "ssiBasics",
-            label: "SSI Basics",
-            route: "/resources/ssiBasics",
-          },
-          {
-            id: "blog",
-            label: "Blog",
-            route: "/resources/blog",
-          },
-        ],
+        id: "documentation",
+        label: "Documentation",
+        route: "/resources/documentation",
+      },
+      {
+        id: "ssiBasics",
+        label: "SSI Basics",
+        route: "/resources/ssiBasics",
+      },
+      {
+        id: "blog",
+        label: "Blog",
+        route: "/resources/blog",
       },
     ],
   },
