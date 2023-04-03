@@ -1,0 +1,50 @@
+{
+    "data": {
+        "firstSection": {
+            "description": "Dive into our articles to get you from beginner to knowledgeable in decentralized identity.",
+            "resources": [{
+                    "description": "Learn more about Self-Sovereign Identity",
+                    "image": "",
+                    "level": "Beginners",
+                    "route": "/resources/documentation",
+                    "title": "SSI Basics"
+                },
+                {
+                    "description": "Dive into technical documentation to implement our technology",
+                    "image": "",
+                    "level": "Developers",
+                    "route": "/resources/documentation",
+                    "title": "Documentation"
+                },
+                {
+                    "description": "Keep up with decentralized identity news and resources",
+                    "image": "",
+                    "level": "For everyone",
+                    "route": "/resources/blog",
+                    "title": "Blog"
+                }
+            ],
+            "title": "What are you looking for?"
+        },
+        "secondSection": {
+            "description": "Start here to master Gataca products in no time",
+            "entries": [{
+                    "description": "Self-Sovereign Identity is a nascent technology combining the simplicity and usability Self-Sovereign Identity is a nascent technology combining the simplicity and usability",
+                    "level": "SSI Essentials",
+                    "title": "What are the implications  of EBSI 's Wallet Conformance Test? hat are the implications  of EBSI 's Wallet Conformance Test?"
+                },
+                {
+                    "description": "We use identity credentials daily to access local citizen services, prove our qualification We use identity credentials daily to access local citizen services, prove our qualification",
+                    "level": "Gataca Updates",
+                    "title": "What are the implications  of EBSI 's Wallet Conformance Test? What are the implications  of EBSI 's Wallet Conformance Test?"
+                },
+                {
+                    "description": "We use identity credentials daily to access local citizen services, prove our qualification We use identity credentials daily to access local citizen services, prove our qualification",
+                    "level": "Regulation",
+                    "title": "What are the implications  of EBSI 's Wallet Conformance Test?"
+                }
+            ],
+            "title": "Quickstart"
+        }
+    }
+}
