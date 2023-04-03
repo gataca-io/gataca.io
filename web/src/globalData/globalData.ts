@@ -75,22 +75,22 @@ export const headerMenuOptions: LinkModel[] = [
           {
             id: "government",
             label: "Government",
-            route: "/sectorGovernment",
+            route: "/useCasesSectors/government",
           },
           {
             id: "education",
             label: "Education",
-            route: "/sectorEducation",
+            route: "/useCasesSectors/education",
           },
           {
             id: "finance",
             label: "Finance",
-            route: "/sectorFinance",
+            route: "/useCasesSectors/finance",
           },
           {
             id: "web3",
             label: "Web3",
-            route: "/sectorWeb3",
+            route: "/useCasesSectors/web3",
           },
           {
             id: "otherIndustries",
@@ -372,3 +372,26 @@ export const scrollDirections = {
   down: "DOWN",
   left: "LEFT",
 }
+
+export const clientsLogos: IconModel[] = [
+  {
+    id: "redES",
+    alt: "red.es logo",
+    icon: images.logoRedES,
+  },
+  {
+    id: "bankinter",
+    alt: "Bankinter logo",
+    icon: images.logoBankinter,
+  },
+  {
+    id: "idema",
+    alt: "Idema logo",
+    icon: images.logoIdema,
+  },
+  {
+    id: "europeanCommision",
+    alt: "European Commision logo",
+    icon: images.logoEuropeanCommision,
+  },
+]

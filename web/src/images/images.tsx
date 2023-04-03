@@ -44,6 +44,24 @@ import blogHeaderImage from "./images3d/blogHeaderImage.png"
 import edit from "./icons/edit.svg"
 import papers from "./icons/papers.svg"
 import tool from "./icons/tool.svg"
+import folderPurple from "./images3d/41_folder-1.png"
+import iconBank from "./icons/bank.svg"
+import iconBriefcase from "./icons/briefcase.svg"
+import iconCalendarEmpty from "./icons/calendar-empty-alt.svg"
+import iconEthereum from "./icons/ethereum.svg"
+import iconGameController from "./icons/game-controller.svg"
+import iconGraduationCap from "./icons/graduation-cap.svg"
+import iconHeartPulse from "./icons/heart-pulse.svg"
+import iconSend from "./icons/send.svg"
+import iconWallet from "./icons/wallet.svg"
+import iconPlus from "./icons/gat-icon-plus.svg"
+import iconMinus from "./icons/gat-icon-minus.svg"
+import chevronRight from "./icons/gat-icon-chevron-right.svg"
+import logoBankinter from "./logos/bankinter.svg"
+import logoEuropeanCommision from "./logos/europeancommision.svg"
+import logoIdema from "./logos/idema.svg"
+import logoRedES from "./logos/redES.svg"
+import logoUniversitat from "./logos/universitat.svg"
 
 export const images = {
   chevronDown: crevronDownSVG,
@@ -92,4 +110,22 @@ export const images = {
   edit: edit,
   papers: papers,
   tool: tool,
+  folderPurple: folderPurple,
+  iconBank: iconBank,
+  iconBriefcase: iconBriefcase,
+  iconCalendarEmpty: iconCalendarEmpty,
+  iconEthereum: iconEthereum,
+  iconGameController: iconGameController,
+  iconGraduationCap: iconGraduationCap,
+  iconHeartPulse: iconHeartPulse,
+  iconSend: iconSend,
+  iconWallet: iconWallet,
+  iconPlus: iconPlus,
+  iconMinus: iconMinus,
+  chevronRight: chevronRight,
+  logoEuropeanCommision: logoEuropeanCommision,
+  logoIdema: logoIdema,
+  logoRedES: logoRedES,
+  logoBankinter: logoBankinter,
+  logoUniversitat: logoUniversitat,
 }

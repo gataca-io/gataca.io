@@ -1,0 +1,100 @@
+@import "../../../../styles/colors";
+@import "../../../../styles/mixins";
+@import "../../../../styles/_types.scss";
+
+.itemsContainer {
+  @include flex(0, 0, 100%);
+  margin-bottom: 32px;
+  @include min-width($mobileXL) {
+    @include flex(0, 0, calc(50% - 16px));
+  }
+  &.threeCol {
+    @include min-width($mobileXL) {
+      @include flex(0, 0, calc((100%/3) - 16px));
+    }
+    > div {
+      max-height: 160px;
+    }
+  }
+  > div {
+    background: $neutral100;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    padding: 32px;
+    min-height: 200px;
+    @include min-width($mobileXL) {
+      min-height: 240px;
+    }
+    @include min-width($desktopSM) {
+      min-height: 200px;
+    }
+    position: relative;
+    &.secondCategory {
+      padding: 21px;
+      @include min-width($mobileXL) {
+        min-height: 260px;
+      }
+      @include min-width($tabletXL) {
+        min-height: 200px;
+      }
+      &.noShadow {
+        box-shadow: none;
+      }
+      .descriptionContainer {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        cursor: pointer;
+        &.opened {
+          background-color: $neutral200;
+          border-radius: 8px;
+          p {
+            color: $neutral1000;
+            padding: 0 32px 32px;
+            @include min-width($mobileXL) {
+              padding: 0 20px 20px;
+            }
+            @include min-width($desktopMD) {
+              padding: 0 32px 32px;
+            }
+          }
+        }
+        .iconContainer {
+          @include flexbox;
+          @include justify-content(flex-end);
+          padding: 21px;
+          height: 32px;
+          @include min-width($mobileXL) {
+            padding: 20px;
+            height: 20px;
+          }
+          @include min-width($desktopMD) {
+            padding: 21px;
+            height: 32px;
+          }
+          img {
+            max-width: 24px;
+          }
+        }
+      }
+    }
+    .iconSectors {
+      min-width: 38px;
+      max-height: 38px;
+    }
+    .description {
+      color: $neutral700;
+    }
+    .linkMore {
+      color: $primary700;
+      @include flexbox;
+      @include align-items(center);
+      &:hover {
+        color: $primary900;
+      }
+    }
+  }
+}
+
