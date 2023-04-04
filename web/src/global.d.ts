@@ -19,6 +19,11 @@ declare module "react-tiny-swiper" {
   export default content
 }
 
+declare module "react-hubspot-form" {
+  const content: any
+  export default content
+}
+
 declare global {
   interface Window {
     dataLayer: Record<string, any>[]

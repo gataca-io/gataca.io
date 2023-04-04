@@ -141,6 +141,11 @@ export const headerMenuOptions: LinkModel[] = [
         label: "SSI Basics",
         route: "/resources/ssiBasics",
       },
+      {
+        id: "blog",
+        label: "Blog",
+        route: "/resources/blog",
+      },
     ],
   },
 ]
@@ -287,7 +292,7 @@ export const footerMenuOptions: LinkModel[] = [
       {
         id: "blog",
         label: "Blog",
-        route: "/blog",
+        route: "/resources/blog",
       },
     ],
   },

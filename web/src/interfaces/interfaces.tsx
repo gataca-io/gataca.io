@@ -20,3 +20,32 @@ export interface IconModel {
   icon: string
   route?: string
 }
+
+export interface BlogPreviewModel {
+  date: string
+  previewImage: StrapiImageModel
+  timeReading: number
+  title: string
+  category: {
+    data: {
+      attributes: {
+        name: string
+      }
+    }
+  }
+}
+
+export interface BlogModel extends BlogPreviewModel {
+  heroImage: any
+  content: string
+}
+
+export interface StrapiImageModel {
+  data: {
+    attributes: {
+      url: string
+      alternativeText?: string
+      caption?: string
+    }
+  }
+}
