@@ -1,0 +1,35 @@
+{
+  "data": {
+    "gatacaStudioSection": {
+      "description": "All-in-one decentralized identity solution.",
+      "list": [
+        {
+          "description": "Create and digitally sign identity credentials in a standardized format",
+          "id": "issueVerifiableCredentials",
+          "title": "Issue verifiable credentials"
+        },
+        {
+          "description": "Design customizable verification templates for onboarding and sign-in processes to offer frictionless access to digital services",
+          "id": "verifyCredentials",
+          "title": "Verify credentials"
+        },
+        {
+          "description": "View, suspend, and revoke issued credentials",
+          "id": "manageCredentialsLifecycle",
+          "title": "Manage credentials lifecycle"
+        },
+        {
+          "description": "Monitor users’ activity",
+          "id": "monitorUsersActivity",
+          "title": "Monitor users’ activity"
+        },
+        {
+          "description": "Let your users authenticate seamlessly in digital services and control their data with the Gataca Wallet. A master key to the Internet",
+          "id": "idWallet",
+          "title": "ID Wallet"
+        }
+      ],
+      "title": "Gataca Studio"
+    }
+  }
+}
