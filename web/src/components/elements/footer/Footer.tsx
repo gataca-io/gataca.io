@@ -27,7 +27,8 @@ const Footer: React.FC = () => {
           <div className={styles?.logo}>
             <img
               src={images.gatacIconAndText}
-              id="gatacaLogo"
+              id="footer__gatacaLogo"
+              key={"footer__" + "gatacaLogo"}
               alt="Gataca Logo"
             />
           </div>
@@ -99,11 +100,11 @@ const Footer: React.FC = () => {
       >
         <div className={cx("marginBottom16")}>
           <ul>
-            {subFooterMenu?.subRoutes?.map(item => {
+            {subFooterMenu?.subRoutes?.map((item, index) => {
               return (
-                <li>
+                <li key={"subFooter__" + item.id + index}>
                   <Link
-                    id={item.id}
+                    id={"subFooter__" + item.id}
                     className={cx("buttonMD")}
                     to={item.route || ""}
                   >
@@ -119,6 +120,7 @@ const Footer: React.FC = () => {
             "buttonMD marginBottom16"
           )}`}
           id={rightsReservedGataca?.id}
+          key={"footer__" + rightsReservedGataca?.id}
         >
           {rightsReservedGataca?.label}
         </div>

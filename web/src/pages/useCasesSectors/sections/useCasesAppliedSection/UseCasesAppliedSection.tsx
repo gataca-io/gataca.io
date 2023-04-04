@@ -9,6 +9,7 @@ export type ISectionProps = {
   description: string
   index: number
   categories: {
+    id: string
     title: string
     description: string
     list: []
@@ -65,11 +66,11 @@ const useCasesAppliedSection: React.FC<ISectionProps> = props => {
           className={styles?.useCasesAppliedSection__sectors}
         >
           {categories?.map((item, index) => {
-            const { title, description, list } = item
+            const { id, title, description, list } = item
 
             return (
               <CategorySectors
-                id={"listCategory__" + index}
+                id={id}
                 key={"listCategory__" + index}
                 className={"listCategory__" + index}
                 index={index + 1}

@@ -24,7 +24,7 @@ export type ICategorySectorsProps = {
 const CategorySectors: React.FC<ICategorySectorsProps> = props => {
   const { id, index, title, description, selected, className, list } = props
   const secondCategory = list.length > 5
-  const [openItem, setOpenItem] = React.useState<number>(1)
+  const [showResults, setShowResults] = React.useState<number>()
   return (
     <div id={id} className={`${cx(styles.categorySectors)} ${className}`}>
       {selected && (
@@ -61,12 +61,10 @@ const CategorySectors: React.FC<ICategorySectorsProps> = props => {
                   link_route={link_route}
                   secondCategory={secondCategory}
                   inside_description={inside_description}
-                  opened={openItem === index + 1}
-                  showItem={index => {
-                    const element = document.getElementById(
-                      "listItem__" + (index - 1)
-                    )
-                    setOpenItem(index)
+                  opened={showResults === index + 1}
+                  showResults={index => {
+                    const element = document.getElementById("listItem__")
+                    setShowResults(index)
                   }}
                 />
               )

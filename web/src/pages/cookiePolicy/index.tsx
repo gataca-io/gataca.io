@@ -5,7 +5,7 @@ import cx from "classnames"
 import Layout from "../../components/templates/mainLayout/MainLayout"
 import { tableOfContent } from "./data/data"
 import { LinkModel } from "../../interfaces/interfaces"
-import TableOfContentContainer from "../../components/templates/tableOfContent/tableOfContentComponents/tableOfContentContainer/TableOfContentContainer"
+import TableOfContentContainer from "../../components/templates/tableOfContent/elements/tableOfContentContainer/TableOfContentContainer"
 
 export type ITableOfContentProps = {
   navigationObject?: LinkModel
@@ -16,13 +16,14 @@ const CookiePolicy: React.FC<PageProps> = () => {
   return (
     <Layout>
       <section className={`${styles?.cookiePolicy} ${cx("containerMaxWidth")}`}>
-        {tableOfContent?.map(item => {
+        {tableOfContent?.map((item, index) => {
           return (
             <TableOfContentContainer
               open={tableOfContentOpenedID === item?.id}
               item={item}
               setOptionOpened={setTableOfContentOpened}
               className={styles?.showMobile}
+              key={"tableOfContent__" + index}
             />
           )
         })}
@@ -155,13 +156,14 @@ const CookiePolicy: React.FC<PageProps> = () => {
               </ul>
             </div>
           </div>
-          {tableOfContent?.map(item => {
+          {tableOfContent?.map((item, index) => {
             return (
               <TableOfContentContainer
                 open={tableOfContentOpenedID === item?.id}
                 item={item}
                 setOptionOpened={setTableOfContentOpened}
                 className={styles?.showDesktop}
+                key={"tableOfContent__" + index}
               />
             )
           })}

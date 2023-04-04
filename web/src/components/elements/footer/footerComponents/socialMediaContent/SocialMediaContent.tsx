@@ -6,11 +6,11 @@ import { socialMedia } from "../../../../../globalData/globalData"
 const SocialMediaContent: React.FC = () => {
   return (
     <ul className={styles?.socialMediaList}>
-      {socialMedia.map(item => {
+      {socialMedia.map((item, index) => {
         return (
-          <li>
+          <li key={"footer__" + item.id + index}>
             <Link to={item.route || ""}>
-              <img src={item.icon} id={item.id} alt={item.alt} />
+              <img src={item.icon} id={"footer__" + item.id} alt={item.alt} />
             </Link>
           </li>
         )
