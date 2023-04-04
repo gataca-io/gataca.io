@@ -1,23 +1,36 @@
+@import "../../../../../../styles/_colors.scss";
+@import "../../../../../../styles/mixins.scss";
 
-
-@import "../../../../styles/colors";
-@import "../../../../styles/mixins";
-
-.blogPreviewSkeleton {
-    overflow: hidden;
-    margin: var(--ga-space-min) 0 15px;
-    border-radius: 10px;
-    background: $skeletonBG;
-    width: 303px;
-    height: 393px;
-    border-radius: 12px;
-    box-shadow: 1px 1px 12px rgba(12, 11, 51, 0.12);
-  
-  @include min-width($mobileXL) {
-    width: 373px;
-        height: 448px;
-
-  }
+.formSkeleton {
+    & > div:nth-child(1) {
+        width: 294px;
+        background: $skeletonBG;
+        height: 23px;
+        border-radius: 3px;
+    }
+    & > div:nth-child(2) {
+        width: 100%;
+        margin-top: 4px;
+        background: $skeletonBG;
+        height: 40px;
+        border-radius: 3px;
+        margin-bottom: 18px;
+    }
+    & > div:nth-child(3) {
+        width: 90%;
+        background: $skeletonBG;
+        height: 23px;
+        border-radius: 3px;
+        margin-bottom: 35px;
+    }
+     & > div:nth-child(4) {
+        width: 140px;
+        margin: auto auto 17px;
+        background: $skeletonBG;
+        height: 42px;
+        border-radius: 3px;
+        margin-bottom: 17px;
+    }
 }
 
 @keyframes skeleton {
@@ -89,13 +102,12 @@
     display: grid;
     overflow: hidden;
     width: 303px;
-    height: 393px;
+    height: 23px;
     grid-gap: 8px;
     grid-template-columns: 128px 200px;
     @include min-width($mobileXL) {
-    width: 373px;
+        width: 373px;
         height: 448px;
-
   }
 }
 
@@ -103,14 +115,11 @@
     position: absolute;
     display: block;
     width: 128px;
-
-      height: 393px;
+    height: 393px;
     background: linear-gradient(90deg, rgba(255, 255, 255, 0), $neutral100, rgba(255, 255, 255, 0));
     content: "";
     animation: skeleton-animation 2s infinite;
-     @include min-width($mobileXL) {
-
+    @include min-width($mobileXL) {
         height: 448px;
-
-  }
+    }
 }

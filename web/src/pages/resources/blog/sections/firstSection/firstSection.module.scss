@@ -1,6 +1,5 @@
 @import "../../../../../styles/_colors.scss";
 @import "../../../../../styles/mixins.scss";
-@import "../../../../../styles/mixins.scss";
 
 .firstSection__container {
   margin: 162px 20px 132px;
@@ -42,7 +41,7 @@
   }
 
   & > .form__container {
-    background-color: white;
+    background-color: $neutral100;
     padding: 20px 20px 4px;
     margin-top: 32px;
     border-radius: 12px;
@@ -106,24 +105,21 @@
   @include align-items(center);
 
   @include min-width($tabletMD) {
-    margin-left: -5%;
     margin-top: auto;
+    margin-bottom: auto;
     height: 100%;
-    margin-left: 6%;
     width: calc(47% - 60px)
   }
-  @include min-width($desktopSM) {
-    margin-top: 90px;
-    margin-left: 65px;
-  }
   @include min-width($desktopMD) {
-    margin-top: 30px;
-  }
-  @include min-width($desktopMD) {
-    margin-top: 50px;
+     width: calc(52% - 60px)
   }
   @include min-width($desktopXL) {
-    margin-top: 0px;
+    margin-top: -50px;
+    width: calc(52% - 60px)
+  }
+    @include min-width($desktopXXL) {
+    margin-top: -85px;
+    width: calc(52% - 60px)
   }
 
   .firstSection__imageContainer {
@@ -135,16 +131,14 @@
       position: relative;
     }
     @include min-width($desktopXL) {
-      max-width: 650px;
-    }
-    @include min-width($desktopXL) {
+       max-width: 650px;
       position: absolute;
       top: 0;
-      left: -65px
+      left: 15px
     }
     @include min-width($desktopXXL) {
       left: 30px;
-      width: calc(100% + 95px);
+     width: calc(50vw + 109px);
     }
   }
 }
