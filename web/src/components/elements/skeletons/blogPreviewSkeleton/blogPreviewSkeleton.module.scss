@@ -7,7 +7,7 @@
     overflow: hidden;
     margin: var(--ga-space-min) 0 15px;
     border-radius: 10px;
-    background: #e0e0e0;
+    background: $skeletonBG;
     width: 303px;
     height: 393px;
     border-radius: 12px;
@@ -105,7 +105,7 @@
     width: 128px;
 
       height: 393px;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0), #ffffff, rgba(255, 255, 255, 0));
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0), $neutral100, rgba(255, 255, 255, 0));
     content: "";
     animation: skeleton-animation 2s infinite;
      @include min-width($mobileXL) {
