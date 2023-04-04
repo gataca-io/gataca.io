@@ -5,3 +5,4 @@ export const readTime: string
 export const imageContainer: string
 export const title: string
 export const date: string
+export const bottomContainer: string
