@@ -1,0 +1,112 @@
+@import "../../../../../styles/_colors.scss";
+@import "../../../../../styles/mixins.scss";
+
+.secondSection__container {
+  margin: 0px 20px 132px;
+  @include flexbox();
+  @include flex-direction(column);
+  @include align-items(center);
+
+  @include min-width($mobileXL) {
+    margin: 0 40px 200px;
+  }
+  @include min-width($tabletMD) {
+    margin: 0 60px 200px;
+  }
+}
+
+.secondSection {
+  width: 100%;
+  @include flexbox();
+  @include flex-direction(column);
+  @include flex-wrap(wrap);
+
+  @include min-width($mobileXL) {
+    @include justify-content(space-between);
+    margin: 0px auto 0px 0px;
+  }
+  @include min-width($desktopSM) {
+    width: 100%;
+    margin: 0px auto 0px;
+    @include justify-content(center);
+  }
+
+  .entriesContainer {
+    max-width: 100%;
+    margin: 80px auto 0 0;
+    gap: 24px;
+    @include flexbox();
+    @include flex-direction(column);
+
+    @include min-width($desktopSM) {
+      width: 75%;
+    }
+  }
+
+  .documentationEntry {
+    background-color: $neutral100;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 876px;
+    color: $primary700;
+    filter: drop-shadow(0px 0px 10px rgba(12, 11, 51, 0.12));
+    @include flexbox();
+    @include justify-content(space-between);
+    @include align-items(center);
+    
+    & > div {
+      max-width: calc(100% - 72px);
+      & > p:nth-child(2) {
+        max-width: 100%;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        @include min-width($mobileXL) {
+          -webkit-line-clamp: 2;
+        }
+      }
+      & > p:nth-child(3) {
+        max-width: 100%;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        @include min-width($mobileXL) {
+          -webkit-line-clamp: 1;
+        }
+      }
+    }
+
+    & > .chevron {
+      cursor: pointer;
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  & > img {
+    display: block;
+    margin-top: 8px;
+    width: 100%;
+
+    @include min-width($mobileXL) {
+      @include flex(0, 0, calc(50% - 40px));
+    }
+    @include min-width($tabletMD) {
+      display: none
+    }
+  }
+
+  .secondSection__rightSide {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    @include min-width($desktopSM) {
+      display: block
+    }
+  }
+}

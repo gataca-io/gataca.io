@@ -16,44 +16,28 @@ export type IListItemsProps = {
 const ListItems: React.FC<IListItemsProps> = props => {
   const { id, index, title, description, selected, showItem, className } = props
   return (
-    <>
-      {!selected && (
-        <div
-          onClick={() => !selected && showItem(index)}
-          id={id}
-          className={cx(styles.container)}
-        >
-          <div className={styles.titleContainer}>
-            <h5 className={cx("heading5")}>{title}</h5>
-            <span>
-              <img src={selected ? images.iconMinus : images.iconPlus} />
-            </span>
-          </div>
-        </div>
-      )}
+    <div
+      onClick={() => !selected && showItem(index)}
+      id={id}
+      className={`${cx(styles.container)} ${cx(
+        selected ? "" : styles.unselectedItem
+      )}`}
+    >
+      <div className={styles.titleContainer}>
+        <h5 className={cx("heading5")}>{title}</h5>
+        <span>
+          <img src={selected ? images.iconMinus : images.iconPlus} />
+        </span>
+      </div>
 
       {selected && (
-        <div
-          onClick={() => showItem(!selected ? index : 0)}
-          id={id}
-          className={cx(styles.container)}
+        <p
+          className={`${styles.description} ${cx("bodyRegularMD marginTop20")}`}
         >
-          <div className={styles.titleContainer}>
-            <h5 className={cx("heading5")}>{title}</h5>
-            <span>
-              <img src={selected ? images.iconMinus : images.iconPlus} />
-            </span>
-          </div>
-          <p
-            className={`${styles.description} ${cx(
-              "bodyRegularMD marginTop20"
-            )}`}
-          >
-            {description}
-          </p>
-        </div>
+          {description}
+        </p>
       )}
-    </>
+    </div>
   )
 }
 

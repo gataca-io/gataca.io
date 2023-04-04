@@ -29,7 +29,7 @@ const BlogPreview: React.FC<BlogPreviewModel> = props => {
       <div className={styles?.imageContainer}>
         <StrapiImage image={previewImage} />
       </div>
-      <div>
+      <div className={`${styles?.bottomContainer}`}>
         <p className={`${styles?.title} ${cx("heading6 marginBottom8")}`}>
           {title}
         </p>

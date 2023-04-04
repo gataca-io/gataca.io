@@ -2,6 +2,9 @@
 @import "../../../styles/colors";
 
 .blogPreview {
+  @include flexbox();
+  @include flex-direction(column);
+  height: 424px;
   width: 260px;
   background-color: $neutral100;
   padding: 24px;
@@ -9,13 +12,16 @@
   box-shadow: 1px 1px 12px rgba(12, 11, 51, 0.12);
   cursor: pointer;
   @include min-width($mobileXL) {
-    width: 325px;
+    min-width: 252px;
+    @include flex(0, 0, calc(28% - 32px));
   }
 
   & > .header {
     @include flexbox();
     @include justify-content(space-between);
     @include align-items(center);
+    @include flex-wrap(wrap-reverse);
+    gap: 20px;
 
     & > .category {
       color: $neutral700;
@@ -34,24 +40,39 @@
   }
 
   & > .imageContainer {
-    width: 262px;
+    width: 100%;
     height: 227.5px;
     border-radius: 11.28px;
     margin-top: 22px;
     margin-bottom: 20px;
     overflow: hidden;
     @include min-width($mobileXL) {
-      width: 325px;
+      width: 100%;
       height: 282px;
     }
 
     & > img {
-      width: 262px;
-      height: 227.5px;
-      @include min-width($mobileXL) {
-        width: 325px;
-        height: 282px;
-      }
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    }
+  }
+
+  .bottomContainer {
+    @include flexbox();
+    @include flex-direction(column);
+    @include flex(1);
+   & > .title {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+   & > .date {
+      margin-top: auto;
     }
   }
 }

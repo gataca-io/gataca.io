@@ -62,6 +62,7 @@ import logoEuropeanCommision from "./logos/europeancommision.svg"
 import logoIdema from "./logos/idema.svg"
 import logoRedES from "./logos/redES.svg"
 import logoUniversitat from "./logos/universitat.svg"
+import rightRocket from "./images3d/rightRocket.png"
 
 export const images = {
   chevronDown: crevronDownSVG,
@@ -80,6 +81,7 @@ export const images = {
   phoneServices: phoneServices,
   checkIcon: checkIcon,
   rocket: rocket,
+  rightRocket: rightRocket,
   globeEarthIcon: globeEarthIcon,
   badgeIcon: badgeIcon,
   shiedlCheckIcon: shiedlCheckIcon,

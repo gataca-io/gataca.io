@@ -5,12 +5,10 @@
       "title": "Unlocking the potential of <span>decentralized identity</span> technology"
     },
     "useCasesAppliedSection": {
-      "categories": [
-        {
+      "categories": [{
           "description": "These sectors are leading the way in adopting decentralized identity technology and leveraging our platform for a more secure and user-centric future.",
           "id": "useCasesAppliedSection",
-          "list": [
-            {
+          "list": [{
               "description": "Issue digitized, standardized, and tamper-proof government documents and prompt eID and e-government services adoption",
               "icon": "",
               "link": "Learn more",
@@ -44,8 +42,7 @@
         {
           "description": "Regardless of your industry, Gataca provides the building blocks to create secure and efficient identity solutions tailored to your needs.",
           "id": "otherIndustries",
-          "list": [
-            {
+          "list": [{
               "description": "Elevate the traveler experience",
               "icon": "",
               "inside_description": "Facilitate travel with globally recognized verified digital documents. From smooth airport and hotel check-ins to hassle-free customs and inmigration processes",
@@ -90,8 +87,7 @@
     },
     "useCasesSection": {
       "description": "Explore SSI technology’s most popular use cases",
-      "list": [
-        {
+      "list": [{
           "description": "Streamline compliant onboarding processes by enabling individuals to securely prove their identity and provide the necessary information in one click. This can reduce the time and resources needed for identity verification and improve the user experience.",
           "id": "customerOnboarding",
           "image": "",
