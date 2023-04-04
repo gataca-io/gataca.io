@@ -12,6 +12,7 @@
   box-shadow: 1px 1px 12px rgba(12, 11, 51, 0.12);
   cursor: pointer;
   @include min-width($mobileXL) {
+    min-width: 252px;
     @include flex(0, 0, calc(28% - 32px));
   }
 
