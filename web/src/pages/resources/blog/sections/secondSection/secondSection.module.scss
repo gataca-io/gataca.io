@@ -118,7 +118,7 @@
   @include flex-wrap(wrap);
   @include justify-content(center);
   @include min-width($desktopXXL) {
-     @include justify-content(flex-start);
+     @include justify-content(space-between);
   }
 }
 
