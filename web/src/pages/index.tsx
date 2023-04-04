@@ -28,8 +28,9 @@ const IndexPage: React.FC<PageProps> = () => {
   const [homeData, setHomeData] = useState<any | undefined>()
   const { firstSection, thirdSection, fourthSection } = homeData ? homeData : []
 
-  useEffect(() => {
+  React.useEffect(() => {
     getHomeData()
+    getIndex()
   }, [])
 
   const getHomeData = async () => {
