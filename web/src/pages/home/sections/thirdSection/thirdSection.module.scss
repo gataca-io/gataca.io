@@ -32,8 +32,11 @@
       position: relative;
       max-width: 100%;
       @include min-width($mobileXL) {
-        @include flex(0, 0, calc(100%/3));
+        @include flex(0, 0, calc(30));
         margin-right: 32px;
+      }
+      @include min-width($desktopXL) {
+        @include flex(0, 0, calc(100%/3));
       }
       .gatacaStudioSection__leftSide__bullets {
         @include flexbox();
@@ -65,8 +68,11 @@
       @include flex(0, 0, 100%);
       margin-top: 20px;
       @include min-width($mobileXL) {
-        @include flex(0, 0, 66%);
+        @include flex(0, 0, 53%);
         margin-top: 0;
+      }
+      @include min-width($desktopXL) {
+        @include flex(0, 0, 66%);
       }
       .gatacaStudioSection__rightSide__videoContainer {
         text-align: center;

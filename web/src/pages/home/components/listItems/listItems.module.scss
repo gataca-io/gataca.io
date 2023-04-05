@@ -35,13 +35,18 @@
       display: none;
       @include min-width($mobileXL) {
         position: absolute;
-        left: 0;
-        top: -6px;
+        left: 5px;
+        top: -3px;
         width: 50px;
         display: block;
       }
-      @include min-width($desktopMD) {
-        width: 81px
+      @include min-width($desktopSM) {
+        left: 0;
+        width: 71px;
+      }
+      @include min-width($desktopXL) {
+        left: 20px;
+        top: -6px;
       }
     }
   }
