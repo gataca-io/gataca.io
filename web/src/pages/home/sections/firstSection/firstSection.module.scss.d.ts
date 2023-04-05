@@ -2,8 +2,5 @@ export const firstSection__container: string
 export const firstSection: string
 export const firstSection__leftSide: string
 export const buttons_container: string
-export const form__label: string
-export const form__input: string
-export const form__button: string
 export const firstSection__rightSide: string
 export const firstSection__imageContainer: string

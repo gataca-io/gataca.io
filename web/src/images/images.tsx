@@ -63,6 +63,7 @@ import logoIdema from "./logos/idema.svg"
 import logoRedES from "./logos/redES.svg"
 import logoUniversitat from "./logos/universitat.svg"
 import rightRocket from "./images3d/rightRocket.png"
+import mainHomeImage from "./images3d/main_home_img.png"
 
 export const images = {
   chevronDown: crevronDownSVG,
@@ -130,4 +131,5 @@ export const images = {
   logoRedES: logoRedES,
   logoBankinter: logoBankinter,
   logoUniversitat: logoUniversitat,
+  mainHomeImage: mainHomeImage,
 }

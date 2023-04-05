@@ -3,7 +3,7 @@ import cx from "classnames"
 import { images } from "../../../../../images/images"
 import * as styles from "./firstSection.module.scss"
 import HubspotForm from "react-hubspot-form"
-import FormSkeleton from "./components/formSkeleton"
+import FormSkeleton from "./components/FormSkeleton"
 
 export type ISectionProps = {
   title: string
@@ -34,7 +34,7 @@ const FirstSection: React.FC<ISectionProps> = props => {
         <div className={styles.firstSection__leftSide}>
           <h1 className={`${cx("heading1 marginBottom32")}`}>{title}</h1>
           <p className={`${cx("bodyRegularXL")}`}>{description}</p>
-          <div id="formContainer" className={styles.form__container}>
+          <div id="formContainer" className={styles.buttons_container}>
             <HubspotForm
               region="na1"
               portalId="4728390"
