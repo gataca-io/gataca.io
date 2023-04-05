@@ -4,10 +4,10 @@
 .fourthSection__container {
   margin: 220px 20px 178px;
   @include min-width($mobileXL) {
-    margin: 220px 40px 204px;
+    margin: 220px 40px 396px;
   }
   @include min-width($tabletMD) {
-    margin: 220px 60px 204px;
+    margin: 220px 60px 396px;
   }
 }
 
