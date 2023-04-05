@@ -30,7 +30,6 @@ const IndexPage: React.FC<PageProps> = () => {
 
   React.useEffect(() => {
     getHomeData()
-    getIndex()
   }, [])
 
   const getHomeData = async () => {
