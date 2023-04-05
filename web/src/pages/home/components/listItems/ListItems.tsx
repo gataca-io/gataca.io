@@ -25,7 +25,7 @@ const ListItems: React.FC<IListItemsProps> = props => {
           {selected && <img src={images.singleFeatureMark} />}
           <h6
             className={`${selected ? styles.selected : styles.notSelected} ${cx(
-              "heading6 marginBottom12"
+              selected ? "heading6 marginBottom12" : "buttonMD"
             )}`}
           >
             {title}
