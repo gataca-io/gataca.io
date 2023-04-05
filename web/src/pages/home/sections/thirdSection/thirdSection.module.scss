@@ -63,8 +63,10 @@
     }
     .gatacaStudioSection__rightSide {
       @include flex(0, 0, 100%);
+      margin-top: 20px;
       @include min-width($mobileXL) {
         @include flex(0, 0, 66%);
+        margin-top: 0;
       }
       .gatacaStudioSection__rightSide__videoContainer {
         border: transparent solid;

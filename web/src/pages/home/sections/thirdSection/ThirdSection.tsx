@@ -56,7 +56,7 @@ const ThirdSection: React.FC<ISectionProps> = props => {
 
                 return (
                   <ListItems
-                    id={id}
+                    id={"listItem__" + index}
                     key={"listItem__" + index}
                     index={index + 1}
                     title={title}
