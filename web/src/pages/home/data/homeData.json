@@ -1,0 +1,14 @@
+{
+    "data": {
+        "firstSection": {
+            "description": "Gataca provides simple, compliant, and secure decentralized identity management technology, also known as self-sovereign identity (SSI) technology.",
+            "leftButton": {
+                "label": "Try for free"
+            },
+            "rightButton": {
+                "label": "See how it works"
+            },
+            "title": "Issue, verify and manage identity credentials"
+        }
+    }
+}
