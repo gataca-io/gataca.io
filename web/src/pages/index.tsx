@@ -28,7 +28,9 @@ import FifthSection from "./home/sections/fifthSection/FifthSection"
 const IndexPage: React.FC<PageProps> = () => {
   // const [homeData, setHomeData] = useState<homeDataModel | undefined>()
   const [homeData, setHomeData] = useState<any | undefined>()
-  const { firstSection, thirdSection, fourthSection } = homeData ? homeData : []
+  const { firstSection, thirdSection, fourthSection, fifthSection } = homeData
+    ? homeData
+    : []
 
   React.useEffect(() => {
     getHomeData()
@@ -66,8 +68,9 @@ const IndexPage: React.FC<PageProps> = () => {
           list={thirdSection?.list}
         />
         <FifthSection
-          title={gatacaStudioSection?.title}
-          description={gatacaStudioSection?.description}
+          title={fifthSection?.title}
+          subTitle={fifthSection?.subTitle}
+          description={fifthSection?.description}
         />
         <ReactMarkdown>
           {homeData?.attributes?.Body?.replaceAll(
