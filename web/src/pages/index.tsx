@@ -26,7 +26,7 @@ import ThirdSection from "./home/sections/thirdSection/ThirdSection"
 const IndexPage: React.FC<PageProps> = () => {
   // const [homeData, setHomeData] = useState<homeDataModel | undefined>()
   const [homeData, setHomeData] = useState<any | undefined>()
-  const { firstSection, fourthSection } = homeData ? homeData : []
+  const { firstSection, thirdSection, fourthSection} = homeData ? homeData : []
 
   React.useEffect(() => {
     getHomeData()
@@ -76,10 +76,11 @@ const IndexPage: React.FC<PageProps> = () => {
             label: "Try for free",
             action: () => window.open(gatacaStudioURL, "_blank"),
           }}
+        
         <ThirdSection
-          title={gatacaStudioSection?.title}
-          description={gatacaStudioSection?.description}
-          list={gatacaStudioSection?.list}
+          title={thirdSection?.title}
+          description={thirdSection?.description}
+          list={thirdSection?.list}
         />
         <ReactMarkdown>
           {homeData?.attributes?.Body?.replaceAll(

@@ -1,14 +1,22 @@
 {
-    "data": {
-        "firstSection": {
-            "description": "Gataca provides simple, compliant, and secure decentralized identity management technology, also known as self-sovereign identity (SSI) technology.",
-            "leftButton": {
-                "label": "Try for free"
-            },
-            "rightButton": {
-                "label": "See how it works"
-            },
-            "title": "Issue, verify and manage identity credentials"
+  "data": {
+    "firstSection": {
+      "description": "Gataca provides simple, compliant, and secure decentralized identity management technology, also known as self-sovereign identity (SSI) technology.",
+      "leftButton": {
+        "label": "Try for free"
+      },
+      "rightButton": {
+        "label": "See how it works"
+      },
+      "title": "Issue, verify and manage identity credentials"
+    },
+    "thirdSection": {
+      "description": "All-in-one decentralized identity solution.",
+      "list": [
+        {
+          "description": "Create and digitally sign identity credentials in a standardized format",
+          "id": "issueVerifiableCredentials",
+          "title": "Issue verifiable credentials"
         },
         "fourthSection": {
             "advantages": [{
