@@ -1,6 +1,6 @@
 import * as React from "react"
 import cx from "classnames"
-import * as styles from "./gatacaStudioSection.module.scss"
+import * as styles from "./thirdSection.module.scss"
 import ListItems from "../../components/listItems/ListItems"
 import { videos } from "../../../../videos/videos"
 
@@ -21,7 +21,7 @@ const videosGatacaStudio = [
   videos.wallet,
 ]
 
-const GatacaStudioSection: React.FC<ISectionProps> = props => {
+const ThirdSection: React.FC<ISectionProps> = props => {
   const { title, description, list } = props
   const [openItem, setOpenItem] = React.useState<number>(1)
 
@@ -93,4 +93,4 @@ const GatacaStudioSection: React.FC<ISectionProps> = props => {
   )
 }
 
-export default GatacaStudioSection
+export default ThirdSection

@@ -7,6 +7,7 @@ import FirstSection from "./home/sections/firstSection/FirstSection"
 import LogosSlider from "../components/elements/logosSlider/LogosSlider"
 import FourthSection from "./home/sections/fourthSection/FourthSection"
 import PreFooterCTASection from "../components/templates/sections/preFooterCTA/PreFooterCTA"
+import ThirdSection from "./home/sections/thirdSection/ThirdSection"
 
 // interface homeDataModel {
 //   attributes: {
@@ -75,6 +76,10 @@ const IndexPage: React.FC<PageProps> = () => {
             label: "Try for free",
             action: () => window.open(gatacaStudioURL, "_blank"),
           }}
+        <ThirdSection
+          title={gatacaStudioSection?.title}
+          description={gatacaStudioSection?.description}
+          list={gatacaStudioSection?.list}
         />
         <ReactMarkdown>
           {homeData?.attributes?.Body?.replaceAll(
