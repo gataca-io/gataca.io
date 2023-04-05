@@ -69,11 +69,19 @@
         margin-top: 0;
       }
       .gatacaStudioSection__rightSide__videoContainer {
-        border: transparent solid;
-        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
-        border-radius: 8px;
+        text-align: center;
+        @include min-width($mobileXL) {
+          text-align: right;
+        }
         video {
+          border: transparent solid;
+          box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
+          border-radius: 8px;
           max-width: 100%;
+          max-height: 400px;
+          @include min-width($mobileXL) {
+            max-height: 560px;
+          }
         }
       }
     }
