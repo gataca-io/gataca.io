@@ -9,6 +9,31 @@
                 "label": "See how it works"
             },
             "title": "Issue, verify and manage identity credentials"
+        },
+        "fourthSection": {
+            "advantages": [{
+                    "description": "User data and ID credentials are issued by trusted authorities and protected with biometrics and post-quantum cryptography to ensure they are tamper-proof, allowing instant identity verification without relying on centralized systems.",
+                    "icon": "",
+                    "title": "Reduce identity fraud"
+                },
+                {
+                    "description": "The operational cost of a KYC or onboarding process falls remarkably as the same data no longer needs to be verified multiple times across different services. Users hold pre-verified identity information and decide with whom to share their data and when to revoke access, instantly complying with data privacy regulations.",
+                    "icon": "",
+                    "title": "Save in compliance costs"
+                },
+                {
+                    "description": "SSI combines the simplicity and usability of a Single Sign-On with advanced cryptography that provides government-grade secured access to digital services, eliminating friction during onboardings and lowering abandonment rates.",
+                    "icon": "",
+                    "title": "Improve user experience"
+                },
+                {
+                    "description": "SSI can be used in both Web 2.0 and Web 3.0 instances and is the ideal partner to transition to a user-centric identity model.",
+                    "icon": "",
+                    "title": "Interconnect with Web 3.0"
+                }
+            ],
+            "description": "Why Gataca",
+            "title": "Unlock the potential of Self-Sovereign Identity for your organization"
         }
     }
 }

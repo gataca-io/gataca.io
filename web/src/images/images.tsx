@@ -64,6 +64,10 @@ import logoRedES from "./logos/redES.svg"
 import logoUniversitat from "./logos/universitat.svg"
 import rightRocket from "./images3d/rightRocket.png"
 import mainHomeImage from "./images3d/main_home_img.png"
+import chartUp from "./icons/chart-up.svg"
+import dollar from "./icons/dollar.svg"
+import linkAtl from "./icons/link-alt.svg"
+import banUser from "./icons/ban-user.svg"
 
 export const images = {
   chevronDown: crevronDownSVG,
@@ -132,4 +136,8 @@ export const images = {
   logoBankinter: logoBankinter,
   logoUniversitat: logoUniversitat,
   mainHomeImage: mainHomeImage,
+  chartUp: chartUp,
+  dollar: dollar,
+  linkAtl: linkAtl,
+  banUser: banUser,
 }

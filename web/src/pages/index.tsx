@@ -1,10 +1,12 @@
-import type { HeadFC, PageProps } from "gatsby"
+import { HeadFC, PageProps, navigate } from "gatsby"
 import * as React from "react"
 import { useEffect, useState } from "react"
 import ReactMarkdown from "react-markdown"
 import Layout from "../components/templates/mainLayout/MainLayout"
 import FirstSection from "./home/sections/firstSection/FirstSection"
 import LogosSlider from "../components/elements/logosSlider/LogosSlider"
+import FourthSection from "./home/sections/fourthSection/FourthSection"
+import PreFooterCTASection from "../components/templates/sections/preFooterCTA/PreFooterCTA"
 
 // interface homeDataModel {
 //   attributes: {
@@ -23,7 +25,7 @@ import LogosSlider from "../components/elements/logosSlider/LogosSlider"
 const IndexPage: React.FC<PageProps> = () => {
   // const [homeData, setHomeData] = useState<homeDataModel | undefined>()
   const [homeData, setHomeData] = useState<any | undefined>()
-  const { firstSection } = homeData ? homeData : []
+  const { firstSection, fourthSection } = homeData ? homeData : []
 
   useEffect(() => {
     getHomeData()
@@ -55,6 +57,25 @@ const IndexPage: React.FC<PageProps> = () => {
           rightButton={firstSection?.rightButton}
         />
         <LogosSlider />
+        <FourthSection
+          title={fourthSection?.title}
+          description={fourthSection?.description}
+          advantages={fourthSection?.advantages}
+        />
+        <PreFooterCTASection
+          title={"Ready to start?"}
+          description={
+            "Create an account in Gataca Studio and start experiencing decentralized identity today. Fast & seamless integration"
+          }
+          leftButton={{
+            label: "Contact us",
+            action: () => navigate("/company/contactUs"),
+          }}
+          rightButton={{
+            label: "Try for free",
+            action: () => window.open(gatacaStudioURL, "_blank"),
+          }}
+        />
         <ReactMarkdown>
           {homeData?.attributes?.Body?.replaceAll(
             "/uploads/",
