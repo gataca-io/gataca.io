@@ -12,19 +12,25 @@ export type ISectionProps = {
     title: string
     description: string
     id: string
-    image: string
   }[]
 }
+const videosGatacaStudio = [
+  videos.issuance,
+  videos.verification,
+  videos.credentialActivity,
+  videos.verifiedUsers,
+  videos.wallet,
+]
 
 const GatacaStudioSection: React.FC<ISectionProps> = props => {
   const { title, description, list } = props
   const [openItem, setOpenItem] = React.useState<number>(1)
 
-  const useCasesBullets = document.getElementById("gatacaStudioBullets")
+  const gatacaStudioBullets = document.getElementById("gatacaStudioBullets")
 
   const scrollIntoView = el => {
-    useCasesBullets
-      ? useCasesBullets.scroll({
+    gatacaStudioBullets
+      ? gatacaStudioBullets.scroll({
           behavior: "smooth",
           left: el.offsetLeft,
         })
@@ -36,42 +42,51 @@ const GatacaStudioSection: React.FC<ISectionProps> = props => {
       <section
         className={`${styles?.gatacaStudioSection} ${cx("containerMaxWidth")}`}
       >
-        <div>
-          <h6 className={cx("heading6 marginBottom12 neutral700")}>{title}</h6>
-          <h3 className={`${styles?.description} ${cx("heading3")}`}>
-            {description}
-          </h3>
-        </div>
+        <h6 className={cx("heading6 marginBottom12 neutral700")}>{title}</h6>
+        <h3 className={`${styles?.description} ${cx("heading3")}`}>
+          {description}
+        </h3>
         <div className={styles?.gatacaStudioSection__container}>
-          <div className={styles?.gatacaStudioSection__leftColumn}>
-            {list?.map((item, index) => {
-              const { id, title, description } = item
+          <div className={styles?.gatacaStudioSection__leftSide}>
+            <div
+              id="gatacaStudioBullets"
+              className={styles?.gatacaStudioSection__leftSide__bullets}
+            >
+              {list?.map((item, index) => {
+                const { id, title, description } = item
 
-              return (
-                <ListItems
-                  id={id}
-                  key={"listItem__" + index}
-                  index={index + 1}
-                  title={title}
-                  description={description}
-                  selected={openItem === index + 1}
-                  showItem={index => {
-                    const element = document.getElementById(
-                      "listItem__" + (index - 1)
-                    )
-                    setOpenItem(index), element && scrollIntoView(element)
-                  }}
-                />
-              )
-            })}
+                return (
+                  <ListItems
+                    id={id}
+                    key={"listItem__" + index}
+                    index={index + 1}
+                    title={title}
+                    description={description}
+                    selected={openItem === index + 1}
+                    showItem={index => {
+                      const element = document.getElementById(
+                        "listItem__" + (index - 1)
+                      )
+                      setOpenItem(index), element && scrollIntoView(element)
+                    }}
+                  />
+                )
+              })}
+            </div>
           </div>
-          <div
-            id="gatacaStudioBullets"
-            className={styles.gatacaStudioSection__rightColumn}
-          >
-            {/* <video autoPlay muted>
-              <source src={videos.issuance} type="video/mp4" />
-            </video> */}
+          <div className={styles.gatacaStudioSection__rightSide}>
+            <div
+              className={styles.gatacaStudioSection__rightSide__videoContainer}
+            >
+              {list && openItem && list[openItem - 1] && (
+                <video autoPlay muted>
+                  <source
+                    src={videosGatacaStudio[openItem - 1]}
+                    type="video/mp4"
+                  />
+                </video>
+              )}
+            </div>
           </div>
         </div>
       </section>

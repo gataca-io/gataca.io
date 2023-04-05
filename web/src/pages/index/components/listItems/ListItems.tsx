@@ -2,6 +2,7 @@ import * as React from "react"
 import * as styles from "./listItems.module.scss"
 import cx from "classnames"
 import { videos } from "../../../../videos/videos"
+import { images } from "../../../../images/images"
 
 export type IListItemsProps = {
   id: string
@@ -10,27 +11,19 @@ export type IListItemsProps = {
   description: string
   selected: boolean
   showItem: (x: number) => void
-  className?: any
 }
 
-const videosGatacaStudio = [
-  videos.issuance,
-  videos.verification,
-  videos.credentialActivity,
-  videos.verifiedUsers,
-  videos.wallet,
-]
-
 const ListItems: React.FC<IListItemsProps> = props => {
-  const { id, index, title, description, selected, showItem, className } = props
+  const { id, index, title, description, selected, showItem } = props
   return (
     <>
       <div
-        onClick={() => showItem(!selected ? index : 0)}
+        onClick={() => !selected && showItem(index)}
         id={id}
-        className={cx(styles.container)}
+        className={cx(styles.listItems__container)}
       >
-        <div className={styles.titleContainer}>
+        <div className={styles.listItems__titleContainer}>
+          {selected && <img src={images.singleFeatureMark} />}
           <h6
             className={`${selected ? styles.selected : styles.notSelected} ${cx(
               "heading6 marginBottom12"
@@ -40,12 +33,13 @@ const ListItems: React.FC<IListItemsProps> = props => {
           </h6>
         </div>
         {selected && (
-          <div>
-            <p className={cx("bodyRegularSM neutral700")}>{description}</p>
-            <video autoPlay muted>
-              <source src={videosGatacaStudio} type="video/mp4" />
-            </video>
-          </div>
+          <p
+            className={`${styles.description} ${cx(
+              "bodyRegularSM neutral700 marginBottom20"
+            )}`}
+          >
+            {description}
+          </p>
         )}
       </div>
     </>
