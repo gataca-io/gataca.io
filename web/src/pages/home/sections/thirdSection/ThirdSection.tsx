@@ -78,12 +78,12 @@ const ThirdSection: React.FC<ISectionProps> = props => {
               className={styles.gatacaStudioSection__rightSide__videoContainer}
             >
               {list && openItem && list[openItem - 1] && (
-                <video autoPlay muted>
-                  <source
-                    src={videosGatacaStudio[openItem - 1]}
-                    type="video/mp4"
-                  />
-                </video>
+                <video
+                  src={videosGatacaStudio[openItem - 1]}
+                  playsInline
+                  autoPlay
+                  muted
+                ></video>
               )}
             </div>
           </div>
