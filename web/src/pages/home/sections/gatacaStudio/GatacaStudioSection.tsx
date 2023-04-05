@@ -3,7 +3,6 @@ import cx from "classnames"
 import * as styles from "./gatacaStudioSection.module.scss"
 import ListItems from "../../components/listItems/ListItems"
 import { videos } from "../../../../videos/videos"
-import { images } from "../../../../images/images"
 
 export type ISectionProps = {
   title: string
@@ -38,14 +37,14 @@ const GatacaStudioSection: React.FC<ISectionProps> = props => {
   }
 
   return (
-    <>
-      <section
-        className={`${styles?.gatacaStudioSection} ${cx("containerMaxWidth")}`}
-      >
-        <h6 className={cx("heading6 marginBottom12 neutral700")}>{title}</h6>
-        <h3 className={`${styles?.description} ${cx("heading3")}`}>
-          {description}
-        </h3>
+    <section
+      className={`${styles?.gatacaStudioSection} ${cx("containerMaxWidth")}`}
+    >
+      <h6 className={cx("heading6 marginBottom12 neutral700")}>{title}</h6>
+      <h3 className={`${styles?.description} ${cx("heading3")}`}>
+        {description}
+      </h3>
+      <div style={{ position: "relative" }}>
         <div className={styles?.gatacaStudioSection__container}>
           <div className={styles?.gatacaStudioSection__leftSide}>
             <div
@@ -89,8 +88,8 @@ const GatacaStudioSection: React.FC<ISectionProps> = props => {
             </div>
           </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   )
 }
 

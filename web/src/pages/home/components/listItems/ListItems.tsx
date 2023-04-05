@@ -1,7 +1,6 @@
 import * as React from "react"
 import * as styles from "./listItems.module.scss"
 import cx from "classnames"
-import { videos } from "../../../../videos/videos"
 import { images } from "../../../../images/images"
 
 export type IListItemsProps = {

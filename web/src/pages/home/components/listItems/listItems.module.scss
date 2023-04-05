@@ -9,7 +9,6 @@
   margin-top: 0;
   @include min-width($mobileXL) {
     margin-right: 0px;
-    min-width: none;
     max-width: 487px;
   }
   .listItems__titleContainer {
@@ -34,10 +33,11 @@
     }
     & > img {
       display: none;
-      position: absolute;
-      left: 0;
-      width: 50px;
       @include min-width($mobileXL) {
+        position: absolute;
+        left: 0;
+        top: -6px;
+        width: 50px;
         display: block;
       }
       @include min-width($desktopMD) {
