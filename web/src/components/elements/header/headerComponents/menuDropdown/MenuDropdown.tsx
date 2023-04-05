@@ -10,7 +10,6 @@ export type IMenuDropdownProps = {
   item: LinkModel
   open: boolean
   setOptionOpened: (x: string) => void
-  setLastRoute: (x: string) => void
 }
 
 const MenuDropdown: React.FC<IMenuDropdownProps> = props => {
@@ -29,7 +28,6 @@ const MenuDropdown: React.FC<IMenuDropdownProps> = props => {
       <MenuSubOption
         item={item}
         open={open}
-        setLastRoute={props.setLastRoute}
         selected={openItem}
         showItem={index => {
           const element = document.getElementById("listItem__" + (index - 1))

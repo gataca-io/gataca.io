@@ -3,19 +3,27 @@ import * as React from "react"
 import * as styles from "./menuSubOption.module.scss"
 import cx from "classnames"
 import { LinkModel } from "../../../../../interfaces/interfaces"
+import { setActiveSubroute } from "../../../../../pages/appStore/appActions"
+import { useDispatch } from "react-redux"
 
 export type IMenuSubOptionProps = {
   item: LinkModel
   open: boolean
   isLastDropdown?: boolean
-  setLastRoute: (x: string) => void
   selected: boolean
   showItem: (x: number) => void
 }
 
 const MenuSubOption: React.FC<IMenuSubOptionProps> = props => {
-  const { item, open, isLastDropdown, setLastRoute, selected, showItem } = props
+  const { item, open, isLastDropdown, selected, showItem } = props
   const categoriesLength = item?.categories?.length
+  const dispatch = useDispatch()
+
+  const setActiveRoute = (item, index) => {
+    !selected && showItem(index),
+      item.id && dispatch(setActiveSubroute(item.id))
+  }
+
   return (item?.categories && item?.categories?.length && open) ||
     (item?.subRoutes && item?.subRoutes?.length && open) ? (
     <div
@@ -38,7 +46,7 @@ const MenuSubOption: React.FC<IMenuSubOptionProps> = props => {
                   key={"menuSubOption__" + index}
                   className={`${styles.menuSubOptionItem} ${cx("buttonSM")}`}
                   to={item?.route || ""}
-                  onClick={() => !selected && showItem(setLastRoute(item.id))}
+                  onClick={() => setActiveRoute(item, index)}
                 >
                   {item?.label}
                 </Link>

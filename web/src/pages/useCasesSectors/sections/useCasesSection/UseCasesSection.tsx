@@ -3,6 +3,8 @@ import cx from "classnames"
 import * as styles from "./useCasesSection.module.scss"
 import { images } from "../../../../images/images"
 import ListItems from "../../components/listItems/ListItems"
+import { getActiveSubroute } from "../../../appStore/appSelectors"
+import { useSelector } from "react-redux"
 
 export type ISectionProps = {
   title: string
@@ -18,8 +20,19 @@ export type ISectionProps = {
 const UseCasesSection: React.FC<ISectionProps> = props => {
   const { title, description, list } = props
   const [openItem, setOpenItem] = React.useState<number>(1)
-
+  const selectedSubRoute = useSelector(getActiveSubroute)
   const useCasesBullets = document.getElementById("useCasesBullets")
+
+  React.useEffect(() => {
+    setTimeout(() => {
+      if (selectedSubRoute?.length) {
+        const selectedItemIndex = list?.findIndex(
+          el => el.id === selectedSubRoute
+        )
+        setOpenItem(selectedItemIndex + 1)
+      }
+    }, 10)
+  }, [selectedSubRoute])
 
   const scrollIntoView = el => {
     useCasesBullets
@@ -58,9 +71,7 @@ const UseCasesSection: React.FC<ISectionProps> = props => {
                 description={description}
                 selected={openItem === index + 1}
                 showItem={index => {
-                  const element = document.getElementById(
-                    "listItem__" + (index - 1)
-                  )
+                  const element = document.getElementById("listItem__" + index)
                   setOpenItem(index), element && scrollIntoView(element)
                 }}
               />

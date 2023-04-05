@@ -10,9 +10,7 @@ import { Link } from "gatsby"
 import PurpleButton from "../../atoms/buttons/purple/PurpleButton"
 import cx from "classnames"
 
-export type IHeaderProps = {
-  setLastRoute: (x: string) => void
-}
+export type IHeaderProps = {}
 
 const Header: React.FC<IHeaderProps> = props => {
   const [subMenuOpenedID, setSubMenuOpened] = React.useState("")
@@ -37,7 +35,6 @@ const Header: React.FC<IHeaderProps> = props => {
                 open={subMenuOpenedID === item?.id}
                 item={item}
                 setOptionOpened={setSubMenuOpened}
-                setLastRoute={props.setLastRoute}
               />
             )
           })}
