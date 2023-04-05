@@ -9,6 +9,8 @@ import FourthSection from "./home/sections/fourthSection/FourthSection"
 import PreFooterCTASection from "../components/templates/sections/preFooterCTA/PreFooterCTA"
 import ThirdSection from "./home/sections/thirdSection/ThirdSection"
 import { gatacaStudioURL } from "../globalData/globalData"
+import FifthSection from "./home/sections/fifthSection/FifthSection"
+
 // interface homeDataModel {
 //   attributes: {
 //     Body: string
@@ -63,24 +65,9 @@ const IndexPage: React.FC<PageProps> = () => {
           description={thirdSection?.description}
           list={thirdSection?.list}
         />
-        <FourthSection
-          title={fourthSection?.title}
-          description={fourthSection?.description}
-          advantages={fourthSection?.advantages}
-        />
-        <PreFooterCTASection
-          title={"Ready to start?"}
-          description={
-            "Create an account in Gataca Studio and start experiencing decentralized identity today. Fast & seamless integration"
-          }
-          leftButton={{
-            label: "Contact us",
-            action: () => navigate("/company/contactUs"),
-          }}
-          rightButton={{
-            label: "Try for free",
-            action: () => window.open(gatacaStudioURL, "_blank"),
-          }}
+        <FifthSection
+          title={gatacaStudioSection?.title}
+          description={gatacaStudioSection?.description}
         />
         <ReactMarkdown>
           {homeData?.attributes?.Body?.replaceAll(

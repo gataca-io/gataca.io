@@ -1,0 +1,12 @@
+@import "../../../../styles/colors";
+@import "../../../../styles/mixins";
+
+.fifthSection {
+  .fifthSection__videoContainer {
+    max-width: 982px;
+    margin:  0 auto;
+    video {
+      max-width: 100%;
+    }
+  }
+}
