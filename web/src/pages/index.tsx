@@ -8,7 +8,7 @@ import LogosSlider from "../components/elements/logosSlider/LogosSlider"
 import FourthSection from "./home/sections/fourthSection/FourthSection"
 import PreFooterCTASection from "../components/templates/sections/preFooterCTA/PreFooterCTA"
 import ThirdSection from "./home/sections/thirdSection/ThirdSection"
-
+import { gatacaStudioURL } from "../globalData/globalData"
 // interface homeDataModel {
 //   attributes: {
 //     Body: string
