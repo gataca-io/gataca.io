@@ -22,9 +22,17 @@
         margin-left: 113px;
       }
       &.notSelected {
-        color: $neutral1000;  
+        font-family: $base;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24px;
+        color: $neutral1000;
         cursor: pointer;
         margin-bottom: 20px;
+        @include min-width($mobileXL) {
+          font-size: 16px;
+          line-height: 20px;
+        }
       }
 
       &.selected {
