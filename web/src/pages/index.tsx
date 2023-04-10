@@ -7,7 +7,8 @@ import FirstSection from "./home/sections/firstSection/FirstSection"
 import LogosSlider from "../components/elements/logosSlider/LogosSlider"
 import FourthSection from "./home/sections/fourthSection/FourthSection"
 import PreFooterCTASection from "../components/templates/sections/preFooterCTA/PreFooterCTA"
-
+import ThirdSection from "./home/sections/thirdSection/ThirdSection"
+import { gatacaStudioURL } from "../globalData/globalData"
 // interface homeDataModel {
 //   attributes: {
 //     Body: string
@@ -25,7 +26,7 @@ import PreFooterCTASection from "../components/templates/sections/preFooterCTA/P
 const IndexPage: React.FC<PageProps> = () => {
   // const [homeData, setHomeData] = useState<homeDataModel | undefined>()
   const [homeData, setHomeData] = useState<any | undefined>()
-  const { firstSection, fourthSection } = homeData ? homeData : []
+  const { firstSection, thirdSection, fourthSection } = homeData ? homeData : []
 
   useEffect(() => {
     getHomeData()
@@ -57,6 +58,11 @@ const IndexPage: React.FC<PageProps> = () => {
           rightButton={firstSection?.rightButton}
         />
         <LogosSlider />
+        <ThirdSection
+          title={thirdSection?.title}
+          description={thirdSection?.description}
+          list={thirdSection?.list}
+        />
         <FourthSection
           title={fourthSection?.title}
           description={fourthSection?.description}
