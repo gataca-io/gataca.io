@@ -67,10 +67,29 @@ const IndexPage: React.FC<PageProps> = () => {
           description={thirdSection?.description}
           list={thirdSection?.list}
         />
+        <FourthSection
+          title={fourthSection?.title}
+          description={fourthSection?.description}
+          advantages={fourthSection?.advantages}
+        />
         <FifthSection
           title={fifthSection?.title}
           subTitle={fifthSection?.subTitle}
           description={fifthSection?.description}
+        />
+        <PreFooterCTASection
+          title={"Ready to start?"}
+          description={
+            "Create an account in Gataca Studio and start experiencing decentralized identity today. Fast & seamless integration"
+          }
+          leftButton={{
+            label: "Contact us",
+            action: () => navigate("/company/contactUs"),
+          }}
+          rightButton={{
+            label: "Try for free",
+            action: () => window.open(gatacaStudioURL, "_blank"),
+          }}
         />
         <ReactMarkdown>
           {homeData?.attributes?.Body?.replaceAll(
