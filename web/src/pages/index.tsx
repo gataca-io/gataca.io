@@ -10,6 +10,7 @@ import PreFooterCTASection from "../components/templates/sections/preFooterCTA/P
 import ThirdSection from "./home/sections/thirdSection/ThirdSection"
 import { gatacaStudioURL } from "../globalData/globalData"
 import FifthSection from "./home/sections/fifthSection/FifthSection"
+import SixthSection from "./home/sections/sixthSection/SixthSection"
 
 // interface homeDataModel {
 //   attributes: {
@@ -28,9 +29,13 @@ import FifthSection from "./home/sections/fifthSection/FifthSection"
 const IndexPage: React.FC<PageProps> = () => {
   // const [homeData, setHomeData] = useState<homeDataModel | undefined>()
   const [homeData, setHomeData] = useState<any | undefined>()
-  const { firstSection, thirdSection, fourthSection, fifthSection } = homeData
-    ? homeData
-    : []
+  const {
+    firstSection,
+    thirdSection,
+    fourthSection,
+    fifthSection,
+    sixthSection,
+  } = homeData ? homeData : []
 
   React.useEffect(() => {
     getHomeData()
@@ -76,6 +81,12 @@ const IndexPage: React.FC<PageProps> = () => {
           title={fifthSection?.title}
           subTitle={fifthSection?.subTitle}
           description={fifthSection?.description}
+        />
+        <SixthSection
+          title={sixthSection?.title}
+          subTitle={sixthSection?.subTitle}
+          description={sixthSection?.description}
+          list={sixthSection?.list}
         />
         <PreFooterCTASection
           title={"Ready to start?"}
