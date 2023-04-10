@@ -73,7 +73,7 @@
 		"sass": "^1.58.0",
 		"start-server-and-test": "^1.15.3",
 		"storybook": "^5.3.18",
-		"styled-components": "^5.3.7"
+		"styled-components": "^5.3.9"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.9.6",
