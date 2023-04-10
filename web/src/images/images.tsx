@@ -68,6 +68,7 @@ import chartUp from "./icons/chart-up.svg"
 import dollar from "./icons/dollar.svg"
 import linkAtl from "./icons/link-alt.svg"
 import banUser from "./icons/ban-user.svg"
+import videoThumbnail from "./images3d/video_thumbnail.png"
 
 export const images = {
   chevronDown: crevronDownSVG,
@@ -140,4 +141,5 @@ export const images = {
   dollar: dollar,
   linkAtl: linkAtl,
   banUser: banUser,
+  videoThumbnail: videoThumbnail,
 }

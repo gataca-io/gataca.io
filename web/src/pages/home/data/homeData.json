@@ -1,5 +1,10 @@
 {
   "data": {
+    "fifthSection": {
+      "description": "Get to know the technology behind our identity verification platform and how it is transforming digital identity as we know it.",
+      "subTitle": "Introducing <span>Gataca Studio</span>",
+      "title": "How it works"
+    },
     "firstSection": {
       "description": "Gataca provides simple, compliant, and secure decentralized identity management technology, also known as self-sovereign identity (SSI) technology.",
       "leftButton": {
