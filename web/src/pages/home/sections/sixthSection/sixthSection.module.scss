@@ -3,10 +3,10 @@
 @import "../../../../styles/_types.scss";
 
 .useCasesSection {
-  margin-bottom: 132px;
+  margin-bottom: calc(132px - 32px);
   padding: 0 20px;
   @include min-width($mobileXL) {
-    margin-bottom: 220px
+    margin-bottom: calc(220px - 32px)
   }
   .description {
     margin-bottom: 80px;
