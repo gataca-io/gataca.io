@@ -3,6 +3,7 @@ import cx from "classnames"
 import * as styles from "./sixthSection.module.scss"
 import SimpleList from "../../../../components/templates/simpleList/SimpleList"
 import { images } from "../../../../images/images"
+import PurpleButton from "../../../../components/atoms/buttons/purple/PurpleButton"
 
 export type ISectionProps = {
   title: string
@@ -29,10 +30,24 @@ const ThirdSection: React.FC<ISectionProps> = props => {
     <section
       className={`${styles?.useCasesSection} ${cx("containerMaxWidth")}`}
     >
-      <div className={styles?.description}>
+      <div>
         <h6 className={cx("heading6 marginBottom12 neutral700")}>{title}</h6>
-        <h3 className={cx("heading3 marginBottom12")}>{subTitle}</h3>
-        <p className={cx("bodyRegularXL neutral700")}>{description}</p>
+        <h3 className={`${styles?.maxWidth} ${cx("heading3 marginBottom12")}`}>
+          {subTitle}
+        </h3>
+        <div className={styles?.description}>
+          <p
+            className={`${styles?.maxWidth} ${cx("bodyRegularXL neutral700")}`}
+          >
+            {description}
+          </p>
+          <div>
+            <PurpleButton
+              label={"Learn More"}
+              action={() => window.open("/useCasesSectors", "_self")}
+            />
+          </div>
+        </div>
       </div>
       <div className={styles?.useCasesSection__container}>
         {list?.map((item, index) => {

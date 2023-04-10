@@ -10,6 +10,20 @@
   }
   .description {
     margin-bottom: 80px;
+    p {
+      margin-bottom: 40px;
+      @include min-width($tabletXL) {
+        margin-bottom: 0;
+      }
+    }
+    @include min-width($tabletXL) {
+      @include flexbox();
+      @include flex-wrap(nowrap);
+      @include justify-content(space-between);
+      @include align-items(center);
+    }
+  }
+  .max-width {
     @include min-width($mobileXL) {
       max-width: 576px;
     }
