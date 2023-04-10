@@ -22,6 +22,16 @@
       @include justify-content(space-between);
       @include align-items(center);
     }
+    .buttonContainer {
+      max-width: 144px;
+      @include min-width($tabletXL) {
+        min-width: 163px;
+        max-width: 100%;
+      }
+      button {
+        width: 100%;
+      }
+    }
   }
   .max-width {
     @include min-width($mobileXL) {

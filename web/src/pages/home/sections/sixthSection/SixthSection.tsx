@@ -41,7 +41,7 @@ const ThirdSection: React.FC<ISectionProps> = props => {
           >
             {description}
           </p>
-          <div>
+          <div className={styles?.buttonContainer}>
             <PurpleButton
               label={"Learn More"}
               action={() => window.open("/useCasesSectors", "_self")}
