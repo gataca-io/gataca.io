@@ -13,7 +13,7 @@
   }
   .fifthSection__videoContainer {
     max-width: 982px;
-    margin:  0 30px 153px;
+    margin:  0 10px 153px;
     position: relative;
     @include min-width($mobileXL) {
       margin: 0 50px 220px;
@@ -27,15 +27,23 @@
     &::after {
       content: "";
       position: absolute;
-      width: 100%;
-      height: 80%;
-      left: -40px;
-      top: 120px;
+      width: 85%;
+      height: 60%;
+      left: -14px;
+      top: 90px;
       background: #1E1E20;
-      border-radius: 40px;
+      border-radius: 11px;
       z-index: -1;
       padding: 0 40px;
+      @include min-width($mobileXL) {
+        width: 100%;
+        height: 70%;
+        top: 150px;
+        left: -40px;
+      }
       @include min-width($tabletXL) {
+        border-radius: 40px;
+        height: 80%;
         top: 200px;
       }
     }
