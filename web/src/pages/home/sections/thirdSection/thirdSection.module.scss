@@ -76,9 +76,6 @@
       }
       .gatacaStudioSection__rightSide__videoContainer {
         text-align: center;
-        @include min-width($mobileXL) {
-          text-align: right;
-        }
         video {
           border: transparent solid;
           box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
