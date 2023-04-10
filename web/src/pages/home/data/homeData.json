@@ -41,6 +41,37 @@
       "description": "Why Gataca",
       "title": "Unlock the potential of Self-Sovereign Identity for your organization"
     },
+    "sixthSection": {
+      "description": "Uncover how Gataca can help you with your identity verification goals",
+      "list": [
+        {
+          "description": "Streamline compliant onboarding processes by enabling individuals to prove their identity and information in one click",
+          "title": "Customer onboarding KYB)"
+        },
+        {
+          "description": "Combine the simplicity of a Single Sign-On with government-grade secure identity systems to provide the best user experience",
+          "title": "User authentication (SSO)"
+        },
+        {
+          "description": "Provide secure access to your facilities in proximity scenarios, where you can seamlessly verify identity information in seconds",
+          "title": "Physical access control"
+        },
+        {
+          "description": "Issue tamper-proof digital certificates, qualifications, and other personal data and let users store them in a mobile ID wallet",
+          "title": "Issuance of identity credentials"
+        },
+        {
+          "description": "Automatically fill in signee information in documents and enable qualified electronic signatures",
+          "title": "Signature of contracts and other documents"
+        },
+        {
+          "description": "Conduct electronic voting for elections, corporate decisions, or membership voting in a secure and transparent way",
+          "title": "Electronic voting"
+        }
+      ],
+      "subTitle": "One solution, countless possibilities",
+      "title": "Use cases"
+    },
     "thirdSection": {
       "description": "All-in-one decentralized identity solution.",
       "list": [

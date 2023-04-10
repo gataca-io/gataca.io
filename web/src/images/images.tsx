@@ -69,6 +69,12 @@ import dollar from "./icons/dollar.svg"
 import linkAtl from "./icons/link-alt.svg"
 import banUser from "./icons/ban-user.svg"
 import videoThumbnail from "./images3d/video_thumbnail.png"
+import envelopeCheckIcon from "./icons/envelope-check.svg"
+import penLineIcon from "./icons/pen-line.svg"
+import idCardIcon from "./icons/id-card.svg"
+import keyIcon from "./icons/key.svg"
+import fingerPrintIcon from "./icons/fingerprint-viewfinder.svg"
+import userCheckIcon from "./icons/user-check-bottom.svg"
 
 export const images = {
   chevronDown: crevronDownSVG,
@@ -142,4 +148,10 @@ export const images = {
   linkAtl: linkAtl,
   banUser: banUser,
   videoThumbnail: videoThumbnail,
+  envelopeCheckIcon: envelopeCheckIcon,
+  penLineIcon: penLineIcon,
+  idCardIcon: idCardIcon,
+  keyIcon: keyIcon,
+  fingerPrintIcon: fingerPrintIcon,
+  userCheckIcon: userCheckIcon,
 }
