@@ -1,0 +1,9 @@
+@import "../../styles/mixins.scss";
+
+.prefooter {
+    padding-top: 160px;
+    @include min-width($mobileXL) {
+         padding-top: 198px;
+        // height: 324px;
+    }
+}

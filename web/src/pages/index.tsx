@@ -10,6 +10,9 @@ import PreFooterCTASection from "../components/templates/sections/preFooterCTA/P
 import ThirdSection from "./home/sections/thirdSection/ThirdSection"
 import { gatacaStudioURL } from "../globalData/globalData"
 import FifthSection from "./home/sections/fifthSection/FifthSection"
+import EighthSection from "./home/sections/eighthSection/EighthSection"
+import { sortByDate } from "../utils/sort"
+import * as styles from "./home/home.module.scss"
 
 // interface homeDataModel {
 //   attributes: {
@@ -26,14 +29,21 @@ import FifthSection from "./home/sections/fifthSection/FifthSection"
 // }
 
 const IndexPage: React.FC<PageProps> = () => {
-  // const [homeData, setHomeData] = useState<homeDataModel | undefined>()
+  const [blogsItems, setBlogsItems] = React.useState<any | undefined>()
   const [homeData, setHomeData] = useState<any | undefined>()
-  const { firstSection, thirdSection, fourthSection, fifthSection } = homeData
-    ? homeData
-    : []
+  const {
+    firstSection,
+    thirdSection,
+    fourthSection,
+    fifthSection,
+    eighthSection,
+  } = homeData ? homeData : []
 
   React.useEffect(() => {
     getHomeData()
+    if (!blogsItems) {
+      getBlogsData()
+    }
   }, [])
 
   const getHomeData = async () => {
@@ -51,6 +61,17 @@ const IndexPage: React.FC<PageProps> = () => {
   //       console.error(error)
   //     })
   // }
+
+  const getBlogsData = async () => {
+    await fetch(`http://127.0.0.1:1337/api/blogs?&populate=*`)
+      .then(response => response.json())
+      .then(jsonResponse => {
+        const blogs = jsonResponse?.data
+        const sorteredBlogs = sortByDate(blogs)
+        setBlogsItems(sorteredBlogs)
+      })
+      .catch((error: any) => {})
+  }
 
   return (
     <Layout>
@@ -77,7 +98,14 @@ const IndexPage: React.FC<PageProps> = () => {
           subTitle={fifthSection?.subTitle}
           description={fifthSection?.description}
         />
+        <EighthSection
+          title={eighthSection?.title}
+          description={eighthSection?.description}
+          blogs={blogsItems}
+          moreButton={eighthSection?.moreButton}
+        />
         <PreFooterCTASection
+          className={styles.prefooter}
           title={"Ready to start?"}
           description={
             "Create an account in Gataca Studio and start experiencing decentralized identity today. Fast & seamless integration"

@@ -10,6 +10,7 @@
   @include align-items(center);
   @include min-width($mobileXL) {
     padding: 100px 50px 90px;
+    @include justify-content(flex-end);
   }
 
   & > p, h6 {
