@@ -4,10 +4,11 @@ import Layout from "../../../components/templates/mainLayout/MainLayout"
 import PreFooterCTASection from "../../../components/templates/sections/preFooterCTA/PreFooterCTA"
 import { navigate } from "gatsby"
 import { useState } from "react"
+import FirstSection from "./sections/firstSection/FirstSection"
 
 const GovernmentPage: React.FC<PageProps> = () => {
   const [governmentData, setGovernment] = useState<any | undefined>()
-  const {} = governmentData ? governmentData : []
+  const { firstSection } = governmentData ? governmentData : []
 
   React.useEffect(() => {
     getGovernment()
@@ -20,7 +21,11 @@ const GovernmentPage: React.FC<PageProps> = () => {
     <Layout>
       <>
         <main>
-          <h1>Government</h1>
+          <FirstSection
+            title={firstSection?.title}
+            description={firstSection?.description}
+            contactButton={firstSection?.contactButton}
+          />
           <PreFooterCTASection
             title={"Want to know more?"}
             description={

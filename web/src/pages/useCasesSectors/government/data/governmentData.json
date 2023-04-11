@@ -1,6 +1,9 @@
 {
   "data": {
     "firstSection": {
+      "contactButton": {
+        "label": "Contact us"
+      },
       "description": "Issue digitized, standardized, and tamper-proof government documents and prompt eID & e-government services adoption",
       "title": "Government"
     }
