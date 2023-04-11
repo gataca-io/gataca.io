@@ -26,6 +26,7 @@ export interface BlogPreviewModel {
   previewImage: StrapiImageModel
   timeReading: number
   title: string
+  slugURL: string
   category: {
     data: {
       attributes: {
@@ -33,6 +34,7 @@ export interface BlogPreviewModel {
       }
     }
   }
+  content?: string
 }
 
 export interface BlogModel extends BlogPreviewModel {

@@ -1,5 +1,4 @@
 export function sortByDate(itemsArr: any[]) {
-  console.log("itemsArr", itemsArr)
   itemsArr?.sort((a: any, b: any) => {
     return getTime(a?.attributes?.date) - getTime(b?.attributes?.date)
   })
