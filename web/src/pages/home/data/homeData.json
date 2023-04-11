@@ -1,81 +1,111 @@
 {
-	"data": {
-		"eighthSection": {
-			"description": "Blog",
-			"moreButton": {
-				"label": "See more"
-			},
-			"title": "The latest news and resources on decentralized identity."
-		},
-		"fifthSection": {
-			"description": "Get to know the technology behind our identity verification platform and how it is transforming digital identity as we know it.",
-			"subTitle": "Introducing <span>Gataca Studio</span>",
-			"title": "How it works"
-		},
-		"firstSection": {
-			"description": "Gataca provides simple, compliant, and secure decentralized identity management technology, also known as self-sovereign identity (SSI) technology.",
-			"leftButton": {
-				"label": "Try for free"
-			},
-			"rightButton": {
-				"label": "See how it works"
-			},
-			"title": "Issue, verify and manage identity credentials"
-		},
-		"fourthSection": {
-			"advantages": [{
-					"description": "User data and ID credentials are issued by trusted authorities and protected with biometrics and post-quantum cryptography to ensure they are tamper-proof, allowing instant identity verification without relying on centralized systems.",
-					"icon": "",
-					"title": "Reduce identity fraud"
-				},
-				{
-					"description": "The operational cost of a KYC or onboarding process falls remarkably as the same data no longer needs to be verified multiple times across different services. Users hold pre-verified identity information and decide with whom to share their data and when to revoke access, instantly complying with data privacy regulations.",
-					"icon": "",
-					"title": "Save in compliance costs"
-				},
-				{
-					"description": "SSI combines the simplicity and usability of a Single Sign-On with advanced cryptography that provides government-grade secured access to digital services, eliminating friction during onboardings and lowering abandonment rates.",
-					"icon": "",
-					"title": "Improve user experience"
-				},
-				{
-					"description": "SSI can be used in both Web 2.0 and Web 3.0 instances and is the ideal partner to transition to a user-centric identity model.",
-					"icon": "",
-					"title": "Interconnect with Web 3.0"
-				}
-			],
-			"description": "Why Gataca",
-			"title": "Unlock the potential of Self-Sovereign Identity for your organization"
-		},
-		"thirdSection": {
-			"description": "All-in-one decentralized identity solution.",
-			"list": [{
-					"description": "Create and digitally sign identity credentials in a standardized format",
-					"id": "issueVerifiableCredentials",
-					"title": "Issue verifiable credentials"
-				},
-				{
-					"description": "Design customizable verification templates for onboarding and sign-in processes to offer frictionless access to digital services",
-					"id": "verifyCredentials",
-					"title": "Verify credentials"
-				},
-				{
-					"description": "View, suspend, and revoke issued credentials",
-					"id": "manageCredentialsLifecycle",
-					"title": "Manage credentials lifecycle"
-				},
-				{
-					"description": "Monitor users’ activity",
-					"id": "monitorUsersActivity",
-					"title": "Monitor users’ activity"
-				},
-				{
-					"description": "Let your users authenticate seamlessly in digital services and control their data with the Gataca Wallet. A master key to the Internet",
-					"id": "idWallet",
-					"title": "ID Wallet"
-				}
-			],
-			"title": "Gataca Studio"
-		}
-	}
+  "data": {
+    "eighthSection": {
+      "description": "Blog",
+      "moreButton": {
+        "label": "See more"
+      },
+      "title": "The latest news and resources on decentralized identity."
+    },
+    "fifthSection": {
+      "description": "Get to know the technology behind our identity verification platform and how it is transforming digital identity as we know it.",
+      "subTitle": "Introducing <span>Gataca Studio</span>",
+      "title": "How it works"
+    },
+    "firstSection": {
+      "description": "Gataca provides simple, compliant, and secure decentralized identity management technology, also known as self-sovereign identity (SSI) technology.",
+      "leftButton": {
+        "label": "Try for free"
+      },
+      "rightButton": {
+        "label": "See how it works"
+      },
+      "title": "Issue, verify and manage identity credentials"
+    },
+    "fourthSection": {
+      "advantages": [{
+          "description": "User data and ID credentials are issued by trusted authorities and protected with biometrics and post-quantum cryptography to ensure they are tamper-proof, allowing instant identity verification without relying on centralized systems.",
+          "icon": "",
+          "title": "Reduce identity fraud"
+        },
+        {
+          "description": "The operational cost of a KYC or onboarding process falls remarkably as the same data no longer needs to be verified multiple times across different services. Users hold pre-verified identity information and decide with whom to share their data and when to revoke access, instantly complying with data privacy regulations.",
+          "icon": "",
+          "title": "Save in compliance costs"
+        },
+        {
+          "description": "SSI combines the simplicity and usability of a Single Sign-On with advanced cryptography that provides government-grade secured access to digital services, eliminating friction during onboardings and lowering abandonment rates.",
+          "icon": "",
+          "title": "Improve user experience"
+        },
+        {
+          "description": "SSI can be used in both Web 2.0 and Web 3.0 instances and is the ideal partner to transition to a user-centric identity model.",
+          "icon": "",
+          "title": "Interconnect with Web 3.0"
+        }
+      ],
+      "description": "Why Gataca",
+      "title": "Unlock the potential of Self-Sovereign Identity for your organization"
+    },
+    "sixthSection": {
+      "description": "Uncover how Gataca can help you with your identity verification goals",
+      "list": [{
+          "description": "Streamline compliant onboarding processes by enabling individuals to prove their identity and information in one click",
+          "title": "Customer onboarding KYB)"
+        },
+        {
+          "description": "Combine the simplicity of a Single Sign-On with government-grade secure identity systems to provide the best user experience",
+          "title": "User authentication (SSO)"
+        },
+        {
+          "description": "Provide secure access to your facilities in proximity scenarios, where you can seamlessly verify identity information in seconds",
+          "title": "Physical access control"
+        },
+        {
+          "description": "Issue tamper-proof digital certificates, qualifications, and other personal data and let users store them in a mobile ID wallet",
+          "title": "Issuance of identity credentials"
+        },
+        {
+          "description": "Automatically fill in signee information in documents and enable qualified electronic signatures",
+          "title": "Signature of contracts and other documents"
+        },
+        {
+          "description": "Conduct electronic voting for elections, corporate decisions, or membership voting in a secure and transparent way",
+          "title": "Electronic voting"
+        }
+      ],
+      "subTitle": "One solution, countless possibilities",
+      "title": "Use cases"
+    },
+    "thirdSection": {
+      "description": "All-in-one decentralized identity solution.",
+      "list": [{
+          "description": "Create and digitally sign identity credentials in a standardized format",
+          "id": "issueVerifiableCredentials",
+          "title": "Issue verifiable credentials"
+        },
+        {
+          "description": "Design customizable verification templates for onboarding and sign-in processes to offer frictionless access to digital services",
+          "id": "verifyCredentials",
+          "title": "Verify credentials"
+        },
+        {
+          "description": "View, suspend, and revoke issued credentials",
+          "id": "manageCredentialsLifecycle",
+          "title": "Manage credentials lifecycle"
+        },
+        {
+          "description": "Monitor users’ activity",
+          "id": "monitorUsersActivity",
+          "title": "Monitor users’ activity"
+        },
+        {
+          "description": "Let your users authenticate seamlessly in digital services and control their data with the Gataca Wallet. A master key to the Internet",
+          "id": "idWallet",
+          "title": "ID Wallet"
+        }
+      ],
+      "title": "Gataca Studio"
+    }
+  }
 }

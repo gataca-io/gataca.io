@@ -1,0 +1,90 @@
+@import "../../../../styles/colors";
+@import "../../../../styles/mixins";
+@import "../../../../styles/_types.scss";
+
+.useCasesSection {
+  margin-bottom: calc(132px - 32px);
+  padding: 0 20px;
+  @include min-width($mobileXL) {
+    margin-bottom: calc(220px - 32px)
+  }
+  .description {
+    margin-bottom: 80px;
+    p {
+      margin-bottom: 40px;
+      @include min-width($tabletXL) {
+        margin-bottom: 0;
+      }
+    }
+    @include min-width($tabletXL) {
+      @include flexbox();
+      @include flex-wrap(nowrap);
+      @include justify-content(space-between);
+      @include align-items(center);
+    }
+    .buttonContainer {
+      max-width: 144px;
+      @include min-width($tabletXL) {
+        min-width: 163px;
+        max-width: 100%;
+      }
+      button {
+        width: 100%;
+      }
+    }
+  }
+  .max-width {
+    @include min-width($mobileXL) {
+      max-width: 576px;
+    }
+  }
+  .useCasesSection__container {
+    @include flexbox();
+    @include flex-direction(column);
+    @include justify-content(center);
+    @include flex-wrap(wrap);
+    @include min-width($mobileXL) {
+      @include flex-direction(row);
+      @include justify-content(space-between);
+    }
+    .useCasesSection__list {
+      @include flex(0, 0 , calc(100% - 64px));
+      min-height: 236px;
+      background: $neutral100;
+      box-shadow: 0px 0px 12px rgba(12, 11, 51, 0.12);
+      border-radius: 20px;
+      padding: 32px;
+      @include min-width($mobileXL) {
+        @include flex(0, 0, calc((100%/2) - 96px));
+      }
+      @include min-width($tabletXL) {
+        @include flex(0, 0, calc((100%/3) - 96px));
+      }
+      &:not(:nth-child(3n)) {
+        @include min-width($tabletXL) {
+          margin-right: 32px;
+        }
+      }
+      img {
+        margin-bottom: 17px;
+      }
+      h5 {
+        font-family: $custom;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+        text-decoration: none;
+        margin-bottom: 16px;
+      }
+      p {
+        font-family: $base;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        text-decoration: none;
+        color: $neutral700
+      }
+     }
+  }
+}
+

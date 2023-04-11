@@ -1,6 +1,6 @@
 import { HeadFC, PageProps, navigate } from "gatsby"
 import * as React from "react"
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import ReactMarkdown from "react-markdown"
 import Layout from "../components/templates/mainLayout/MainLayout"
 import FirstSection from "./home/sections/firstSection/FirstSection"
@@ -13,6 +13,7 @@ import FifthSection from "./home/sections/fifthSection/FifthSection"
 import EighthSection from "./home/sections/eighthSection/EighthSection"
 import { sortByDate } from "../utils/sort"
 import * as styles from "./home/home.module.scss"
+import SixthSection from "./home/sections/sixthSection/SixthSection"
 
 // interface homeDataModel {
 //   attributes: {
@@ -36,6 +37,7 @@ const IndexPage: React.FC<PageProps> = () => {
     thirdSection,
     fourthSection,
     fifthSection,
+    sixthSection,
     eighthSection,
   } = homeData ? homeData : []
 
@@ -97,6 +99,12 @@ const IndexPage: React.FC<PageProps> = () => {
           title={fifthSection?.title}
           subTitle={fifthSection?.subTitle}
           description={fifthSection?.description}
+        />
+        <SixthSection
+          title={sixthSection?.title}
+          subTitle={sixthSection?.subTitle}
+          description={sixthSection?.description}
+          list={sixthSection?.list}
         />
         <EighthSection
           title={eighthSection?.title}
