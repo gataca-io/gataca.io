@@ -4,10 +4,12 @@
 .fourthSection__container {
   margin: 220px 20px 178px;
   @include min-width($mobileXL) {
-    margin: 220px 40px 396px;
+    margin: 220px 0px 396px;
+    padding: 0 40px;
   }
-  @include min-width($tabletMD) {
-    margin: 220px 60px 396px;
+  @include min-width($desktopMD) {
+    margin: 220px 0px 396px;
+    padding: 0 60px;
   }
 }
 
@@ -57,7 +59,7 @@
     @media (min-width: 1067px) {
       margin-left: 0;
       overflow: visible;
-      width: 100%;
+      width: calc(100% - 36px);
       @include justify-content(space-between);
       margin-top: -70px;
       height: 149px;

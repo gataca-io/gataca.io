@@ -2,12 +2,15 @@
 @import "../../../../styles/mixins.scss";
 
 .eighthSection__container {
-  margin: 132px 20px 178px;
+  margin: 132px 0px 178px;
+  padding: 0 20px;
   @include min-width($mobileXL) {
-    margin: 220px 40px 0px;
+    margin: 220px 0px 0px;
+    padding: 0 40px;
   }
-  @include min-width($tabletMD) {
-    margin: 220px 60px 0px;
+  @include min-width($desktopMD) {
+    margin: 220px 0px 0px;
+    padding: 0 60px;
   }
 }
 
@@ -120,8 +123,8 @@
 }
 
 .blogSkeleton {
-  height: 532px !important;
+  height: 471px !important;
   &::before {
-    height: 532px !important;
+    height: 471px !important;
   }
 }
