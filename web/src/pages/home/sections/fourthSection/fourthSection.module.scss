@@ -4,12 +4,13 @@
 .fourthSection__container {
   margin: 220px 20px 178px;
   @include min-width($mobileXL) {
-    margin: 220px 0px 396px;
     padding: 0 40px;
   }
   @include min-width($desktopMD) {
-    margin: 220px 0px 396px;
     padding: 0 60px;
+  }
+  @media (min-width: 1067px) {
+    margin: 220px 0px 396px;
   }
 }
 
