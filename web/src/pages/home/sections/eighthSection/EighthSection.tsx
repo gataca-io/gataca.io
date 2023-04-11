@@ -35,7 +35,10 @@ const EighthSection: React.FC<ISectionProps> = props => {
               <h1 className={`${cx("heading3")}`}>{title}</h1>
             </div>
             {/* TODO: Add action to navigate to blogs route when web is deployed */}
-            <PurpleButton label={moreButton?.label} action={() => {}} />
+            <PurpleButton
+              label={moreButton?.label}
+              action={() => window.open("/resources/blog/", "_self")}
+            />
           </div>
 
           <div className={styles.blogs__container}>
