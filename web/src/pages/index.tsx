@@ -1,6 +1,6 @@
 import { HeadFC, PageProps, navigate } from "gatsby"
 import * as React from "react"
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import ReactMarkdown from "react-markdown"
 import Layout from "../components/templates/mainLayout/MainLayout"
 import FirstSection from "./home/sections/firstSection/FirstSection"
@@ -10,6 +10,9 @@ import PreFooterCTASection from "../components/templates/sections/preFooterCTA/P
 import ThirdSection from "./home/sections/thirdSection/ThirdSection"
 import { gatacaStudioURL } from "../data/globalData"
 import FifthSection from "./home/sections/fifthSection/FifthSection"
+import EighthSection from "./home/sections/eighthSection/EighthSection"
+import { sortByDate } from "../utils/sort"
+import * as styles from "./home/home.module.scss"
 import SixthSection from "./home/sections/sixthSection/SixthSection"
 
 // interface homeDataModel {
@@ -27,7 +30,7 @@ import SixthSection from "./home/sections/sixthSection/SixthSection"
 // }
 
 const IndexPage: React.FC<PageProps> = () => {
-  // const [homeData, setHomeData] = useState<homeDataModel | undefined>()
+  const [blogsItems, setBlogsItems] = React.useState<any | undefined>()
   const [homeData, setHomeData] = useState<any | undefined>()
   const {
     firstSection,
@@ -35,10 +38,14 @@ const IndexPage: React.FC<PageProps> = () => {
     fourthSection,
     fifthSection,
     sixthSection,
+    eighthSection,
   } = homeData ? homeData : []
 
   React.useEffect(() => {
     getHomeData()
+    if (!blogsItems) {
+      getBlogsData()
+    }
   }, [])
 
   const getHomeData = async () => {
@@ -56,6 +63,17 @@ const IndexPage: React.FC<PageProps> = () => {
   //       console.error(error)
   //     })
   // }
+
+  const getBlogsData = async () => {
+    await fetch(`http://127.0.0.1:1337/api/blogs?&populate=*`)
+      .then(response => response.json())
+      .then(jsonResponse => {
+        const blogs = jsonResponse?.data
+        const sorteredBlogs = sortByDate(blogs)
+        setBlogsItems(sorteredBlogs)
+      })
+      .catch((error: any) => {})
+  }
 
   return (
     <Layout>
@@ -88,7 +106,14 @@ const IndexPage: React.FC<PageProps> = () => {
           description={sixthSection?.description}
           list={sixthSection?.list}
         />
+        <EighthSection
+          title={eighthSection?.title}
+          description={eighthSection?.description}
+          blogs={blogsItems}
+          moreButton={eighthSection?.moreButton}
+        />
         <PreFooterCTASection
+          className={styles.prefooter}
           title={"Ready to start?"}
           description={
             "Create an account in Gataca Studio and start experiencing decentralized identity today. Fast & seamless integration"

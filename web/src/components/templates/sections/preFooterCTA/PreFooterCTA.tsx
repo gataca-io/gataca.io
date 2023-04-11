@@ -13,12 +13,20 @@ export type IPreFooterCTAProps = {
   storeButtons?: boolean
   leftButton?: ButtonModel
   rightButton?: ButtonModel
+  className?: string
 }
 
 const PreFooterCTASection: React.FC<IPreFooterCTAProps> = props => {
-  const { title, description, storeButtons, leftButton, rightButton } = props
+  const {
+    title,
+    description,
+    storeButtons,
+    leftButton,
+    rightButton,
+    className,
+  } = props
   return (
-    <section className={styles?.preFooterCTA}>
+    <section className={`${styles?.preFooterCTA} ${className && className}`}>
       <h6 className={`${cx("heading1 marginBottom24")}`}>{title}</h6>
       <p className={`${cx("bodyRegularXL marginBottom14")}`}>{description}</p>
       {storeButtons ? (

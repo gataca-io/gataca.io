@@ -1,0 +1,76 @@
+@import "../../../../styles/mixins";
+@import "../../../../styles/colors";
+
+.blogDetailedPreview {
+  @include flexbox();
+  @include flex-direction(column);
+  height: 424px;
+  width: 260px;
+  background-color: $neutral100;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 1px 1px 12px rgba(12, 11, 51, 0.12);
+  cursor: pointer;
+  @include min-width($mobileXL) {
+    min-width: 252px;
+    @include flex(0, 0, calc(30% - 32px));
+  }
+
+  & > .imageContainer {
+    width: 100%;
+    height: 227.5px;
+    border-radius: 11.28px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    @include min-width($mobileXL) {
+      width: 100%;
+      height: 282px;
+    }
+
+    & > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    }
+  }
+
+  .bottomContainer {
+    @include flexbox();
+    @include flex-direction(column);
+    @include flex(1);
+   & > .title {
+    height: 72px;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    & > .description {
+      color: $grey600;
+      height: 60px;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    & > .date {
+      color: $grey600;
+    }
+
+    & > .link {
+      margin-top: 22px;
+      color: $primary700;
+      @include flexbox();
+      @include align-items(center);
+      & > img {
+        margin-left: 8;
+        height: 24px;
+        width: 24px;
+      }
+    }
+  }
+}

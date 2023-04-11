@@ -9,7 +9,7 @@
     margin: 150px 0 103px;
     padding: 0 40px;
   }
-  @include min-width($tabletMD) {
+  @include min-width($desktopMD) {
     margin: 150px 0px 184px;
     padding: 0 60px;
   }
