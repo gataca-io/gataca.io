@@ -105,6 +105,7 @@ const IndexPage: React.FC<PageProps> = () => {
           subTitle={sixthSection?.subTitle}
           description={sixthSection?.description}
           list={sixthSection?.list}
+          learnMoreButton={sixthSection?.learnMoreButton}
         />
         <EighthSection
           title={eighthSection?.title}

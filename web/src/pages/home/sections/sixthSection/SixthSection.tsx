@@ -1,5 +1,6 @@
 import * as React from "react"
 import cx from "classnames"
+import { ButtonModel } from "../../../../interfaces/interfaces"
 import * as styles from "./sixthSection.module.scss"
 import SimpleList from "../../../../components/templates/simpleList/SimpleList"
 import { images } from "../../../../images/images"
@@ -13,6 +14,7 @@ export type ISectionProps = {
     title: string
     description: string
   }[]
+  learnMoreButton: ButtonModel
 }
 
 const iconsUseCases = [
@@ -24,7 +26,7 @@ const iconsUseCases = [
   images.envelopeCheckIcon,
 ]
 const SixthSection: React.FC<ISectionProps> = props => {
-  const { title, subTitle, description, list } = props
+  const { title, subTitle, description, list, learnMoreButton } = props
 
   return (
     <section
@@ -43,7 +45,7 @@ const SixthSection: React.FC<ISectionProps> = props => {
           </p>
           <div className={styles?.buttonContainer}>
             <PurpleButton
-              label={"Learn More"}
+              label={learnMoreButton?.label}
               action={() => window.open("/useCasesSectors", "_self")}
             />
           </div>

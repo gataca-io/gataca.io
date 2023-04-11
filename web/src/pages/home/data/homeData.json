@@ -49,7 +49,11 @@
     },
     "sixthSection": {
       "description": "Uncover how Gataca can help you with your identity verification goals",
-      "list": [{
+      "learnMoreButton": {
+        "label": "Learn more"
+      },
+      "list": [
+        {
           "description": "Streamline compliant onboarding processes by enabling individuals to prove their identity and information in one click",
           "title": "Customer onboarding KYB)"
         },
