@@ -19,20 +19,25 @@ const TableOfContentContainer: React.FC<ITableOfContentProps> = props => {
   if (desktop) {
     setOptionOpened(item?.id)
   }
+
   return item?.route ? null : (
     <div
       className={`${styles?.sectionMain__tableContentCol} ${
         className && className
-      } ${mobile ? "dropdownOption" : "noDropdownOption"}`}
-      onClick={mobile ? () => setOptionOpened(!open ? item?.id : "") : null}
+      }`}
+      onClick={() =>
+        mobile && isBrowser ? setOptionOpened(!open ? item?.id : "") : {}
+      }
     >
       <div id={item?.id} className={styles?.title}>
         <div className={styles?.title}>
           <div>
             <span>{item?.label}</span>
-            {mobile ? (
-              <img src={open ? images.chevronDownBig : images.chevronUp} />
-            ) : null}
+
+            <img
+              className={styles.tableImage}
+              src={open ? images.chevronDownBig : images.chevronUp}
+            />
           </div>
         </div>
         <TableOfContentOptions item={item} open={open} />
