@@ -1,0 +1,17 @@
+@import "../../../../../styles/colors";
+@import "../../../../../styles/mixins";
+@import "../../../../../styles/_types.scss";
+
+.stepsSection{
+  .stepsSection__container {
+    .number {
+      color: $primary100;
+      font-family: $custom;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 330.75px;
+      line-height: 378px;
+    }
+  }
+}
+

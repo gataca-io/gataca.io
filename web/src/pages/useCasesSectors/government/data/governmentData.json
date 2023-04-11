@@ -6,6 +6,20 @@
       },
       "description": "Issue digitized, standardized, and tamper-proof government documents and prompt eID & e-government services adoption",
       "title": "Government"
+    },
+    "secondSection": {
+      "steps": [
+        {
+          "description": "Governments around the world are dedicated to digitalizing the public sector. However, they are encountering difficulties in promoting citizen eID adoption and digital inclusion in e-government services. These challenges stem from usability, interoperability, and security features in existing systems and processes",
+          "number": "1",
+          "title": "Challenge"
+        },
+        {
+          "description": "Our end-to-end solution empowers authorities to issue tamper-proof Verifiable Credentials for various government documents, including national IDs, passports, driver's licenses, and business permits. These credentials are then securely shared to a citizen's ID Wallet, which gives them control over who can access their data and enables Single Sign-On authentication to access digital services both in the public and private sectors",
+          "number": "2",
+          "title": "Solution"
+        }
+      ]
     }
   }
 }

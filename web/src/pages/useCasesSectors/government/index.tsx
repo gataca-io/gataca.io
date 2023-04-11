@@ -5,10 +5,11 @@ import PreFooterCTASection from "../../../components/templates/sections/preFoote
 import { navigate } from "gatsby"
 import { useState } from "react"
 import FirstSection from "./sections/firstSection/FirstSection"
+import SecondSection from "./sections/secondSection/SecondSection"
 
 const GovernmentPage: React.FC<PageProps> = () => {
   const [governmentData, setGovernment] = useState<any | undefined>()
-  const { firstSection } = governmentData ? governmentData : []
+  const { firstSection, secondSection } = governmentData ? governmentData : []
 
   React.useEffect(() => {
     getGovernment()
@@ -26,6 +27,7 @@ const GovernmentPage: React.FC<PageProps> = () => {
             description={firstSection?.description}
             contactButton={firstSection?.contactButton}
           />
+          <SecondSection steps={secondSection?.steps} />
           <PreFooterCTASection
             title={"Want to know more?"}
             description={
