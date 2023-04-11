@@ -19,8 +19,12 @@ export type ISectionProps = {
 const useCasesAppliedSection: React.FC<ISectionProps> = props => {
   const { title, description, index, categories } = props
   const [openItem, setOpenItem] = React.useState<number>(1)
+  let useCasesCategories: HTMLElement | null
 
-  const useCasesCategories = document.getElementById("useCasesAppliedSectors")
+  React.useEffect(() => {
+    useCasesCategories =
+      document && document?.getElementById("useCasesAppliedSectors")
+  })
 
   const scrollIntoView = el => {
     useCasesCategories
@@ -51,9 +55,9 @@ const useCasesAppliedSection: React.FC<ISectionProps> = props => {
                   title={title}
                   selected={openItem === index + 1}
                   showItem={index => {
-                    const element = document.getElementById(
-                      "listCategory__" + (index - 1)
-                    )
+                    const element =
+                      document &&
+                      document?.getElementById("listCategory__" + (index - 1))
                     setOpenItem(index), element && scrollIntoView(element)
                   }}
                 />

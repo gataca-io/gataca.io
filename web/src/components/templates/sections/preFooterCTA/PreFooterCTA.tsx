@@ -3,10 +3,7 @@ import * as styles from "./preFooterCTA.module.scss"
 import { ButtonModel } from "../../../../interfaces/interfaces"
 import cx from "classnames"
 import { images } from "../../../../images/images"
-import {
-  marketAndroidURI,
-  marketIosURI,
-} from "../../../../globalData/globalData"
+import { marketAndroidURI, marketIosURI } from "../../../../data/globalData"
 import PurpleButton from "../../../atoms/buttons/purple/PurpleButton"
 import WhiteButton from "../../../atoms/buttons/white/WhiteButton"
 

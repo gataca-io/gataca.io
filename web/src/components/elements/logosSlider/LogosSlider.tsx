@@ -1,6 +1,6 @@
 import * as React from "react"
 import * as styles from "./logosSlider.module.scss"
-import { clientsLogos } from "../../../globalData/globalData"
+import { clientsLogos } from "../../../data/globalData"
 
 const timesToRepeatLogos = 3
 const LogosSlider: React.FC = () => {

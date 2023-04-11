@@ -12,8 +12,13 @@ export type ISectionProps = {
 
 const ThirdSection: React.FC<ISectionProps> = props => {
   const { title, subTitle, description } = props
-  const video = document.getElementById("video")
+  let video: HTMLVideoElement | null | undefined
 
+  React.useEffect(() => {
+    video = document
+      ? (document?.getElementById("video") as HTMLVideoElement)
+      : undefined
+  })
   return (
     <section className={`${styles?.fifthSection} ${cx("containerMaxWidth")}`}>
       <div className={styles.fifthSection__header}>
@@ -28,7 +33,7 @@ const ThirdSection: React.FC<ISectionProps> = props => {
         <video
           id="video"
           poster={images.videoThumbnail}
-          onClick={() => (video.controls = true)}
+          onClick={() => (video ? (video.controls = true) : {})}
         >
           <source src={videos.gatacaVideo} type="video/mp4" />
         </video>

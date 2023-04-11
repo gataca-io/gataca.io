@@ -27,7 +27,13 @@ const SecondSection: React.FC<ISectionProps> = props => {
   } = props
 
   const [loadMoreCounter, setLoadMoreCounter] = React.useState(1)
-  const categoriesContainer = document.getElementById("categoriesContainer")
+
+  let categoriesContainer: HTMLElement | null | undefined
+  React.useEffect(() => {
+    categoriesContainer = document
+      ? document?.getElementById("categoriesContainer")
+      : undefined
+  })
 
   const scrollIntoView = (el: any) => {
     setTimeout(() => {
@@ -65,7 +71,8 @@ const SecondSection: React.FC<ISectionProps> = props => {
               <div
                 id={"category__" + index}
                 onClick={() => {
-                  const element = document.getElementById("category__" + index)
+                  const element =
+                    document && document?.getElementById("category__" + index)
                   setSelectedCategoryIndex(index),
                     element && scrollIntoView(element)
                 }}

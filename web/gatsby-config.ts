@@ -3,6 +3,9 @@ require("dotenv").config({
 })
 
 module.exports = {
+  flags: {
+    DEV_SSR: true,
+  },
   plugins: [
     "gatsby-plugin-gatsby-cloud",
     "gatsby-plugin-sass",

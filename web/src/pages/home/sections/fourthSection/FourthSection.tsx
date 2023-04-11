@@ -25,9 +25,15 @@ const advantagesImages = [
 const FourthSection: React.FC<ISectionProps> = props => {
   const { title, description, advantages } = props
   const [openedAdvantage, setOpenedAdvantage] = React.useState(0)
-  const advantagesContainer = document.getElementById("advantagesContainer")
+  let advantagesContainer: HTMLElement | null | undefined
 
-  const scrollIntoView = el => {
+  React.useEffect(() => {
+    advantagesContainer = document
+      ? document?.getElementById("advantagesContainer")
+      : undefined
+  })
+
+  const scrollIntoView = (el: HTMLElement) => {
     advantagesContainer
       ? advantagesContainer.scroll({
           behavior: "smooth",

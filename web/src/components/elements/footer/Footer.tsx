@@ -11,7 +11,7 @@ import {
   sectorsFooterMenu,
   subFooterMenu,
   useCasesFooterMenu,
-} from "../../../globalData/globalData"
+} from "../../../data/globalData"
 import SectionContent from "./footerComponents/sectionContent/SectionContent"
 import SocialMediaContent from "./footerComponents/socialMediaContent/SocialMediaContent"
 

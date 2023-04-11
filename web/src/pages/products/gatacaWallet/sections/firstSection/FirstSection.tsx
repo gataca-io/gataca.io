@@ -1,10 +1,7 @@
 import type { PageProps } from "gatsby"
 import * as React from "react"
 import cx from "classnames"
-import {
-  marketAndroidURI,
-  marketIosURI,
-} from "../../../../../globalData/globalData"
+import { marketAndroidURI, marketIosURI } from "../../../../../data/globalData"
 import { images } from "../../../../../images/images"
 import * as styles from "./firstSection.module.scss"
 
