@@ -1,5 +1,4 @@
 import * as React from "react"
-import { images } from "../../../images/images"
 
 export type ISimpleListProps = {
   title: string
