@@ -3,7 +3,7 @@ import * as React from "react"
 import * as styles from "./index.module.scss"
 import cx from "classnames"
 import Layout from "../../components/templates/mainLayout/MainLayout"
-import { tableOfContent } from "./data/data"
+import tableOfContent from "../../data/cookiePolicyData"
 import { LinkModel } from "../../interfaces/interfaces"
 import TableOfContentContainer from "../../components/templates/tableOfContent/elements/tableOfContentContainer/TableOfContentContainer"
 

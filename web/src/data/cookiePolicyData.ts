@@ -1,6 +1,6 @@
-import { LinkModel } from "../../../interfaces/interfaces"
+import { LinkModel } from "../interfaces/interfaces"
 
-export const tableOfContent: LinkModel[] = [
+const tableOfContent: LinkModel[] = [
   {
     id: "cookiePolicyContent",
     label: "Table of content",
@@ -48,3 +48,5 @@ export const tableOfContent: LinkModel[] = [
     ],
   },
 ]
+
+export default tableOfContent

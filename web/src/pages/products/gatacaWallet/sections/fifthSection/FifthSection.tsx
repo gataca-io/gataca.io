@@ -34,8 +34,19 @@ const FifthSection: React.FC<ISectionProps> = props => {
   const [selectedStep, setSelectedStep] = React.useState(0)
   const ref = React.useRef<HTMLDivElement>(null)
 
-  const divContainer = document.getElementById("fifthSection")
-  const contentContainer = document?.getElementById("sectionContainer")
+  let divContainer: HTMLElement | null | undefined
+  let contentContainer: HTMLElement | null | undefined
+  let fourthStep1: HTMLElement | null | undefined
+
+  React.useEffect(() => {
+    divContainer = document
+      ? document?.getElementById("fifthSection")
+      : undefined
+    contentContainer = document
+      ? document?.getElementById("sectionContainer")
+      : undefined
+    fourthStep1 = document ? document?.getElementById("step3") : undefined
+  })
 
   const disableBodyScroll = (entries, observer1) => {
     if (entries[0]?.isIntersecting) {
@@ -60,15 +71,13 @@ const FifthSection: React.FC<ISectionProps> = props => {
     }
   }
 
-  const containerObserver = new IntersectionObserver(disableBodyScroll, {
-    root: null,
-    rootMargin: "0px 0px 0px 0px",
-    threshold: 0.9,
-  })
+  // const containerObserver = new IntersectionObserver(disableBodyScroll, {
+  //   root: null,
+  //   rootMargin: "0px 0px 0px 0px",
+  //   threshold: 0.9,
+  // })
 
-  divContainer && containerObserver.observe(divContainer)
-
-  const fourthStep1 = document?.getElementById("step3")
+  // divContainer && containerObserver.observe(divContainer)
 
   const enableBodyScroll = (entries, observer1) => {
     if (!entries[0]?.isIntersecting) {
@@ -92,14 +101,14 @@ const FifthSection: React.FC<ISectionProps> = props => {
     }
   }
 
-  const stepsObserver = new IntersectionObserver(enableBodyScroll, {
-    root: null,
-    rootMargin: "0px 0px 0px 0px",
-    threshold: 0.9,
-  })
+  // const stepsObserver = new IntersectionObserver(enableBodyScroll, {
+  //   root: null,
+  //   rootMargin: "0px 0px 0px 0px",
+  //   threshold: 0.9,
+  // })
 
   // firstStep1 && stepsObserver.observe(firstStep1)
-  fourthStep1 && stepsObserver.observe(fourthStep1)
+  // fourthStep1 && stepsObserver.observe(fourthStep1)
 
   return (
     <div id="fifthSection" className={styles.fifthSection__container}>

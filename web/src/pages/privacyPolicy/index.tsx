@@ -6,7 +6,8 @@ import cx from "classnames"
 import Layout from "../../components/templates/mainLayout/MainLayout"
 import TableOfContentContainer from "../../components/templates/tableOfContent/elements/tableOfContentContainer/TableOfContentContainer"
 import { LinkModel } from "../../interfaces/interfaces"
-import { gatacaURL, tableOfContent } from "./data/data"
+import tableOfContent from "../../data/privacyPolicyData"
+import { gatacaURL } from "../../data/globalData"
 
 export type ITableOfContentProps = {
   navigationObject?: LinkModel

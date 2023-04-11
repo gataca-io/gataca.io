@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import * as React from "react"
 import * as styles from "./socialMediaContent.module.scss"
-import { socialMedia } from "../../../../../globalData/globalData"
+import { socialMedia } from "../../../../../data/globalData"
 
 const SocialMediaContent: React.FC = () => {
   return (

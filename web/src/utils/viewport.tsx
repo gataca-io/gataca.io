@@ -1,3 +1,5 @@
+export const isBrowser = typeof window !== "undefined"
+
 export function elementInViewport(el: any) {
   var top = el.offsetTop
   var left = el.offsetLeft
@@ -13,8 +15,8 @@ export function elementInViewport(el: any) {
   return (
     top >= window.pageYOffset &&
     left >= window.pageXOffset &&
-    top + height <= window.pageYOffset + window.innerHeight &&
-    left + width <= window.pageXOffset + window.innerWidth
+    top + height <= window.pageYOffset + (isBrowser ? window.innerHeight : 0) &&
+    left + width <= window.pageXOffset + (isBrowser ? window.innerHeight : 0)
   )
 }
 
@@ -37,7 +39,7 @@ export function actionInViewport(el: any) {
 }
 
 import { useEffect, useState, useRef, RefObject } from "react"
-import { scrollDirections } from "../globalData/globalData"
+import { scrollDirections } from "../data/globalData"
 
 export default function useOnScreen(ref: RefObject<HTMLElement>) {
   const observerRef = useRef<IntersectionObserver | null>(null)
@@ -88,8 +90,6 @@ export function useOnScreenAgain(
     }
   }, [ref])
 }
-
-var scrollableElement = document.body //document.getElementById('scrollableElement');
 
 export function checkScrollDirection(
   event: any,

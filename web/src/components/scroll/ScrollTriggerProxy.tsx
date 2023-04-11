@@ -2,6 +2,7 @@ import gsap from "gsap"
 import ScrollTrigger from "gsap/ScrollTrigger"
 import { useEffect } from "react"
 import { useLocomotiveScroll } from "react-locomotive-scroll"
+import { isBrowser } from "../../utils/viewport"
 
 // Required to ScrollTrigger from gsap works in animations
 const ScrollTriggerProxy = () => {
@@ -23,8 +24,8 @@ const ScrollTriggerProxy = () => {
           return {
             top: 0,
             left: 0,
-            width: window.innerWidth,
-            height: window.innerHeight,
+            width: isBrowser ? window.innerWidth : 0,
+            height: isBrowser ? window.innerHeight : 0,
           }
         },
         pinType: element.style.transform ? "transform" : "fixed",

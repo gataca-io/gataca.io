@@ -2,7 +2,7 @@ import * as React from "react"
 import cx from "classnames"
 import PurpleButton from "../../../../components/atoms/buttons/purple/PurpleButton"
 import * as styles from "./headerSection.module.scss"
-import { gatacaStudioURL } from "../../../../globalData/globalData"
+import { gatacaStudioURL } from "../../../../data/globalData"
 
 export type ISectionProps = {
   title: string

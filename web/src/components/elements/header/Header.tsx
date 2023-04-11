@@ -1,9 +1,6 @@
 import * as React from "react"
 import * as styles from "./header.module.scss"
-import {
-  gatacaStudioURL,
-  headerMenuOptions,
-} from "../../../globalData/globalData"
+import { gatacaStudioURL, headerMenuOptions } from "../../../data/globalData"
 import MenuDropdown from "./headerComponents/menuDropdown/MenuDropdown"
 import { images } from "../../../images/images"
 import { Link } from "gatsby"

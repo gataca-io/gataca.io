@@ -25,9 +25,14 @@ const ThirdSection: React.FC<ISectionProps> = props => {
   const { title, description, list } = props
   const [openItem, setOpenItem] = React.useState<number>(1)
 
-  const gatacaStudioBullets = document.getElementById("gatacaStudioBullets")
+  let gatacaStudioBullets: HTMLElement | null | undefined
+  React.useEffect(() => {
+    gatacaStudioBullets = document
+      ? document?.getElementById("gatacaStudioBullets")
+      : undefined
+  })
 
-  const scrollIntoView = el => {
+  const scrollIntoView = (el: HTMLElement) => {
     gatacaStudioBullets
       ? gatacaStudioBullets.scroll({
           behavior: "smooth",
@@ -57,7 +62,7 @@ const ThirdSection: React.FC<ISectionProps> = props => {
                 return (
                   <ListItems
                     id={"listItem__" + index}
-                    key={"listItem__" + index}
+                    key={"listItemThirdSection__" + index}
                     index={index + 1}
                     title={title}
                     description={description}

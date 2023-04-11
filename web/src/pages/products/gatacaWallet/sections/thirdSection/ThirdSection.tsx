@@ -24,9 +24,12 @@ const ThirdSection: React.FC<ISectionProps> = props => {
   const { title, description, list } = props
   const [openItem, setOpenItem] = React.useState<number>(1)
 
-  const bullets = document.getElementById("bullets")
+  let bullets: HTMLElement | null | undefined
+  React.useEffect(() => {
+    bullets = document ? document?.getElementById("bullets") : undefined
+  })
 
-  const scrollIntoView = el => {
+  const scrollIntoView = (el: HTMLElement) => {
     bullets
       ? bullets.scroll({
           behavior: "smooth",
@@ -63,9 +66,9 @@ const ThirdSection: React.FC<ISectionProps> = props => {
                   description={description}
                   selected={openItem === index + 1}
                   showFeature={index => {
-                    const element = document.getElementById(
-                      "feature__" + (index - 1)
-                    )
+                    const element =
+                      document &&
+                      document?.getElementById("feature__" + (index - 1))
                     setOpenItem(index), element && scrollIntoView(element)
                   }}
                 />

@@ -23,7 +23,7 @@ export type ICategorySectorsProps = {
 
 const CategorySectors: React.FC<ICategorySectorsProps> = props => {
   const { id, index, title, description, selected, className, list } = props
-  const secondCategory = list.length > 5
+  const secondCategory = list?.length > 5
   const [showResults, setShowResults] = React.useState<number>()
   return (
     <div id={id} className={`${cx(styles.categorySectors)} ${className}`}>

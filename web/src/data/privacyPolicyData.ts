@@ -1,9 +1,6 @@
-import { LinkModel } from "../../../interfaces/interfaces"
+import { LinkModel } from "../interfaces/interfaces"
 
-export const gdprGatacaEmail = "gdpr@gataca.io"
-export const gatacaURL = "https://gataca.io"
-
-export const tableOfContent: LinkModel[] = [
+const tableOfContent: LinkModel[] = [
   {
     id: "privacyPolicyContent",
     label: "Table of content",
@@ -74,3 +71,5 @@ export const tableOfContent: LinkModel[] = [
     ],
   },
 ]
+
+export default tableOfContent

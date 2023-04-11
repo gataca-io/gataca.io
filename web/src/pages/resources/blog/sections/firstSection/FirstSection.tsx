@@ -18,12 +18,6 @@ export type ISectionProps = {
 const FirstSection: React.FC<ISectionProps> = props => {
   const { title, description, form } = props
   const [formSubmitted, setFormSubmitted] = React.useState(false)
-  React.useEffect(() => {
-    // const formContainer = document.getElementById("formContainer")
-    // const formLabel = document.getElementById("formLabel")
-    // formContainer ? (formContainer.style.paddingBottom = "4px") : null
-    // formLabel ? (formLabel.style.display = "block") : null
-  }, [])
 
   return (
     <div
@@ -42,8 +36,10 @@ const FirstSection: React.FC<ISectionProps> = props => {
               onSubmit={() => {
                 setFormSubmitted(true)
                 console.log("Submit!")
-                const formContainer = document.getElementById("formContainer")
-                const formLabel = document.getElementById("formLabel")
+                const formContainer =
+                  document && document?.getElementById("formContainer")
+                const formLabel =
+                  document && document?.getElementById("formLabel")
 
                 formContainer
                   ? (formContainer.style.paddingBottom = "20px")

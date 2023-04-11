@@ -33,9 +33,7 @@ const BlogPreview: React.FC<BlogPreviewModel> = props => {
         <p className={`${styles?.title} ${cx("heading6 marginBottom8")}`}>
           {title}
         </p>
-        <p className={`${styles?.date} ${cx("bodyRegularSM")}`}>
-          {moment(date).format("LL")}
-        </p>
+        <p className={`${cx("bodyRegularSM")}`}>{moment(date).format("LL")}</p>
       </div>
     </div>
   )

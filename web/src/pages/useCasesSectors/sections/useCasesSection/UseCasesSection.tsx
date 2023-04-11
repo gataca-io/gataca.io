@@ -19,11 +19,15 @@ const UseCasesSection: React.FC<ISectionProps> = props => {
   const { title, description, list } = props
   const [openItem, setOpenItem] = React.useState<number>(1)
 
-  const useCasesBullets = document.getElementById("useCasesBullets")
+  let useCasesBullets: HTMLElement | null
+
+  React.useEffect(() => {
+    useCasesBullets = document && document?.getElementById("useCasesBullets")
+  })
 
   const scrollIntoView = el => {
     useCasesBullets
-      ? useCasesBullets.scroll({
+      ? useCasesBullets?.scroll({
           behavior: "smooth",
           left: el.offsetLeft,
         })
@@ -58,9 +62,9 @@ const UseCasesSection: React.FC<ISectionProps> = props => {
                 description={description}
                 selected={openItem === index + 1}
                 showItem={index => {
-                  const element = document.getElementById(
-                    "listItem__" + (index - 1)
-                  )
+                  const element =
+                    document &&
+                    document?.getElementById("listItem__" + (index - 1))
                   setOpenItem(index), element && scrollIntoView(element)
                 }}
               />

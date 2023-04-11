@@ -4,7 +4,7 @@ import * as styles from "./firstSection.module.scss"
 import { images } from "../../../../images/images"
 import PurpleButton from "../../../../components/atoms/buttons/purple/PurpleButton"
 import { ButtonModel } from "../../../../interfaces/interfaces"
-import { gatacaStudioURL } from "../../../../globalData/globalData"
+import { gatacaStudioURL } from "../../../../data/globalData"
 
 export type ISectionProps = {
   title: string

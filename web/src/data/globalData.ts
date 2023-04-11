@@ -10,6 +10,11 @@ export const linkedinURL = "https://www.linkedin.com/company/gataca/"
 export const twitterURL = "https://twitter.com/gataca_id"
 export const youtubeURL =
   "https://www.youtube.com/channel/UCcjJqmCa1UmbbS8ZpM8kkAQ"
+export const legalGatacaEmail = "legal@gataca.io"
+export const gatacaURL = "https://gataca.io"
+export const privacyPolicyURL = "/privacyPolicy"
+export const cookiePolicyURL = "/cookiePolicy"
+export const gdprGatacaEmail = "gdpr@gataca.io"
 
 export const headerMenuOptions: LinkModel[] = [
   {

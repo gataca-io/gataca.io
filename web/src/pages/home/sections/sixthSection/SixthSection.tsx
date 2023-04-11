@@ -23,7 +23,7 @@ const iconsUseCases = [
   images.penLineIcon,
   images.envelopeCheckIcon,
 ]
-const ThirdSection: React.FC<ISectionProps> = props => {
+const SixthSection: React.FC<ISectionProps> = props => {
   const { title, subTitle, description, list } = props
 
   return (
@@ -56,6 +56,7 @@ const ThirdSection: React.FC<ISectionProps> = props => {
           return (
             <div
               id={"listItem__" + index}
+              key={"useCaseItem__" + index}
               className={`${styles?.useCasesSection__list} ${cx(
                 "marginBottom32"
               )}`}
@@ -76,4 +77,4 @@ const ThirdSection: React.FC<ISectionProps> = props => {
   )
 }
 
-export default ThirdSection
+export default SixthSection

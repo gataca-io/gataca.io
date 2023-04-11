@@ -12,11 +12,8 @@ export type ITableOfContentProps = {
 }
 const TableOfContentContainer: React.FC<ITableOfContentProps> = props => {
   const { item, className, open, setOptionOpened } = props
-  const width =
-    window.innerWidth ||
-    document.documentElement.clientWidth ||
-    document.body.clientWidth ||
-    Math.min(window.innerWidth, document.documentElement.clientWidth)
+  const isBrowser = typeof window !== "undefined"
+  const width = isBrowser ? window.innerWidth || Math.min(window.innerWidth) : 0
   const mobile = width < 640
   const desktop = width > 640
   if (desktop) {

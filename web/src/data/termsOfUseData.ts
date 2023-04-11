@@ -1,12 +1,4 @@
-import { LinkModel } from "../../../interfaces/interfaces"
-
-// URLs/URIs
-export const legalGatacaEmail = "legal@gataca.io"
-export const gatacaURL = "https://gataca.io"
-export const privacyPolicyURL = "/privacyPolicy"
-export const cookiePolicyURL = "/cookiePolicy"
-
-export const tableOfContent: LinkModel[] = [
+export const tableOfContent = [
   {
     id: "termsOfUse",
     label: "Table of content",
@@ -84,3 +76,5 @@ export const tableOfContent: LinkModel[] = [
     ],
   },
 ]
+
+export default tableOfContent
