@@ -1,5 +1,9 @@
 {
   "data": {
+    "fifthSection": {
+      "description": "Gataca Studio is the most comprehensive tool on the market to deploy decentralized identity solutions",
+      "title": "How it works"
+    },
     "firstSection": {
       "contactButton": {
         "label": "Contact us"

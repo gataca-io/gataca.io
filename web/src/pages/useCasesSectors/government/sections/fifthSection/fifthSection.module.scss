@@ -1,0 +1,59 @@
+@import "../../../../../styles/colors";
+@import "../../../../../styles/mixins";
+
+.videoSection {
+  padding: 0 20px;
+   @include min-width($mobileXL) {
+    padding: 0 40px;
+  }
+  @include min-width($desktopMD) {
+    padding: 0 60px;
+  }
+  .videoSection__header {
+    text-align: center;
+    max-width: 778px;
+    margin: 0 auto 60px;
+    .description span{
+      color: $primary700;
+    }
+    @include min-width($mobileXL) {
+      margin: 0 auto 52px;
+    }
+  }
+  .videoSection__videoContainer {
+    max-width: 982px;
+    margin:  0 10px 153px;
+    position: relative;
+    @include min-width($desktopMD) {
+      margin: 0 auto 250px;
+    }
+    video {
+      max-width: 100%;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 70%;
+      bottom: -20px;
+      left: -5px;
+      background: $neutral200;
+      border-radius: 11px;
+      z-index: -1;
+      padding: 0 5px;
+      @include min-width($mobileXL) {
+        left: -10px;
+        padding: 0 10px;
+      }
+      @include min-width($tabletXL) {
+        border-radius: 40px;
+      }
+      @include min-width($desktopXL) {
+        height: 80%;
+        bottom: -50px;
+        left: -40px;
+        padding: 0 40px;
+      }
+    }
+  }
+}
