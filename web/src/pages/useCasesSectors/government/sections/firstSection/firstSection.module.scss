@@ -8,9 +8,11 @@
   padding: 0 20px;
   @include min-width($mobileXL) {
     margin-top: 110px;
-    margin-bottom: 203px;
     padding: 0 40px;
   }
+  @include min-width($tabletMD) {
+    margin-bottom: 203px;
+  } 
   @include min-width($desktopMD) {
     padding: 0 60px;
   }
