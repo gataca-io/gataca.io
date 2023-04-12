@@ -10,7 +10,7 @@ export type ISectionProps = {
   description: string
 }
 
-const ThirdSection: React.FC<ISectionProps> = props => {
+const FifthSection: React.FC<ISectionProps> = props => {
   const { title, subTitle, description } = props
   let video: HTMLVideoElement | null | undefined
 
@@ -42,4 +42,4 @@ const ThirdSection: React.FC<ISectionProps> = props => {
   )
 }
 
-export default ThirdSection
+export default FifthSection
