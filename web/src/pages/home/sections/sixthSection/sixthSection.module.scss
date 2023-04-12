@@ -35,7 +35,7 @@
       }
     }
   }
-  .max-width {
+  .maxWidth {
     @include min-width($mobileXL) {
       max-width: 576px;
     }
