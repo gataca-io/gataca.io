@@ -2,7 +2,7 @@ import * as React from "react"
 import cx from "classnames"
 import * as styles from "./useCasesAppliedSection.module.scss"
 import CategorySectors from "../../components/categorySectors/CategorySectors"
-import Categories from "./elements/categories"
+import Categories from "./elements/Categories"
 
 export type ISectionProps = {
   title: string
@@ -26,7 +26,7 @@ const useCasesAppliedSection: React.FC<ISectionProps> = props => {
       document && document?.getElementById("useCasesAppliedSectors")
   })
 
-  const scrollIntoView = el => {
+  const scrollIntoView = (el: any) => {
     useCasesCategories
       ? useCasesCategories.scroll({
           behavior: "smooth",

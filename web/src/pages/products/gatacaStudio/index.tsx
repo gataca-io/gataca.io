@@ -3,6 +3,7 @@ import * as React from "react"
 import Layout from "../../../components/templates/mainLayout/MainLayout"
 import FirstSection from "./sections/firstSection/FirstSection"
 import SecondSection from "./sections/secondSection/SecondSection"
+import ThirdSection from "./sections/thirdSection/ThirdSection"
 
 const GatacaStudioPage: React.FC<PageProps> = () => {
   const [homeData, setHomeData] = React.useState<any | undefined>()
@@ -38,6 +39,7 @@ const GatacaStudioPage: React.FC<PageProps> = () => {
           list={secondSection?.list}
           description={secondSection?.description}
         />
+        <ThirdSection title={thirdSection?.title} list={thirdSection?.list} />
       </>
     </Layout>
   )

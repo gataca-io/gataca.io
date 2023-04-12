@@ -33,44 +33,60 @@
         },
         "fourthSection": {
             "list": [{
-                    "description": "Create different profiles in your wallet",
-                    "title": "Multi-identity"
+                    "title": "Integration of multiple trust frameworks"
                 },
                 {
-                    "description": "Manage your wallet from different devices",
-                    "title": "Multi-device"
+                    "title": "Infrastructure agnostic"
                 },
                 {
-                    "description": "Don't worry if you lose your phone",
-                    "title": "Backup and recovery"
+                    "title": "Multi DID methods"
                 },
                 {
-                    "title": "Aligned with European specifications for verifiable credentials"
+                    "title": "2FA security mechanisms"
                 },
                 {
-                    "title": "Electronic signature of documents"
+                    "title": "Customization of GDPR purposes"
+                },
+                {
+                    "title": "Sandbox environment"
+                },
+                {
+                    "title": "Granular Role-Based Access Control"
+                },
+                {
+                    "title": "Open APIs for easier integration"
+                },
+                {
+                    "title": "Multi-format credentials"
                 }
             ],
             "title": "Advanced features"
         },
         "secondSection": {
+            "description": "Gataca Studio streamlines the issuance, verification, and management of identity credentials and enables 1-click onboarding and sign-in processes for your users",
             "list": [{
-                    "description": "Credentials are physically stored in your phone, where only you can access your data - not even us! You can finally decide who you share your information with and when to revoke access permissions",
-                    "number": "1",
-                    "title": "Protect your privacy and take control of your data"
+                    "descriptionParagraphs": [
+                        "Create and digitally sign tamper - proof identity credentials, certificates, tickets, badges, and other types of personal documents according to W3C and ISO standards for global interoperability.",
+                        "With Gataca Studio, you can configure end - to - end issuance processes that can be easily integrated with your own backend systems through pre - defined credential schemas and a simple interface"
+                    ],
+                    "title": "Issue verifiable credentials"
                 },
                 {
-                    "description": "Carry all your important documents with you in the form of portable verifiable credentials without the need to carry paper-based originals or rely on notarization services",
-                    "number": "2",
-                    "title": "Access and prove the authenticity of your personal information anytime, anywhere"
+                    "descriptionParagraphs": [
+                        "Verify the authenticity of identity credentials or claims a user presents and create customizable verification processes to enhance your user's onboarding and sign-in experience.",
+                        "From our platform, you decide on the authentication requirements, trust levels, and other security features to meet regulatory standards without the need to store sensitive personal data."
+                    ],
+                    "title": "Verify credentials & authenticate users"
                 },
                 {
-                    "description": "Get the best and most secure user experience for onboarding and sign-in processes. You simply scan a QR code with your Gataca Wallet, consent to the required data for identity verification, and are in",
-                    "number": "3",
-                    "title": "Passwordless access to online services"
+                    "descriptionParagraphs": [
+                        "Manage the lifecycle of issued credentials (issue, suspend, activate, and revoke) and control your base of active users (view and delete).",
+                        "Gataca Studio allows you to monitor the performance of your templates and control data sharing consents from a simple dashboard."
+                    ],
+                    "title": "Monitor credentials & user activity"
                 }
             ],
-            "title": "Benefits"
+            "title": "Features"
         },
         "sixthSection": {
             "credentials": [{
@@ -152,29 +168,35 @@
             "title": "Examples of credentials"
         },
         "thirdSection": {
-            "description": "Take charge of your digital identity",
             "list": [{
-                    "description": "Securely store all your identity credentials, certificates, and personal documents",
-                    "image": "",
-                    "title": "Request and store verifiable credentials"
+                    "title": "Integration of multiple trust frameworks"
                 },
                 {
-                    "description": "Securely share necessary identity information in a matter of seconds",
-                    "image": "",
-                    "title": "Single Sign-On to digital services"
+                    "title": "Infrastructure agnostic"
                 },
                 {
-                    "description": "Easily control and revoke your data permissions anytime",
-                    "image": "",
-                    "title": "Manage access to your data"
+                    "title": "Multi DID methods"
                 },
                 {
-                    "description": "Create and store identity credentials  of your own",
-                    "image": "",
-                    "title": "Add self-attested credentials"
+                    "title": "2FA security mechanisms"
+                },
+                {
+                    "title": "Customization of GDPR purposes"
+                },
+                {
+                    "title": "Sandbox environment"
+                },
+                {
+                    "title": "Granular Role-Based Access Control"
+                },
+                {
+                    "title": "Open APIs for easier integration"
+                },
+                {
+                    "title": "Multi-format credentials"
                 }
             ],
-            "title": "Features"
+            "title": "Advanced features"
         }
     }
 }

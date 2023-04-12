@@ -7,7 +7,7 @@ export type IListItemsProps = {
   id: string
   index: number
   title: string
-  description: string
+  description: string | string[]
   selected: boolean
   showItem: (x: number) => void
 }
@@ -31,15 +31,29 @@ const ListItems: React.FC<IListItemsProps> = props => {
             {title}
           </h6>
         </div>
-        {selected && (
-          <p
-            className={`${styles.description} ${cx(
-              "bodyRegularSM neutral700 marginBottom20"
-            )}`}
-          >
-            {description}
-          </p>
-        )}
+        {selected &&
+          (!Array.isArray(description) && typeof description === "string" ? (
+            <p
+              className={`${styles.description} ${cx(
+                "bodyRegularMD neutral700 marginBottom20"
+              )}`}
+            >
+              {description}
+            </p>
+          ) : (
+            Array.isArray(description) &&
+            description?.map((el: string) => {
+              return (
+                <p
+                  className={`${styles.description} ${cx(
+                    "bodyRegularMD neutral700 marginBottom20"
+                  )}`}
+                >
+                  {el}
+                </p>
+              )
+            })
+          ))}
       </div>
     </>
   )

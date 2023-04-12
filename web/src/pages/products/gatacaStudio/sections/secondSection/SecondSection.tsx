@@ -1,37 +1,38 @@
 import * as React from "react"
 import cx from "classnames"
-import { images } from "../../../../../images/images"
 import * as styles from "./secondSection.module.scss"
-import SingleFeature from "../../../gatacaWallet/components/singleFeature/SingleFeature"
+import ListItems from "../../../../home/components/listItems/ListItems"
+import { videos } from "../../../../../videos/videos"
 
 export type ISectionProps = {
   title: string
   description: string
   list: {
     title: string
-    description: string
-    image: string
+    descriptionParagraphs: string[]
+    id: string
   }[]
 }
-
-const featureImages = [
-  images.phoneVC1,
-  images.phoneConsent,
-  images.phoneServices,
-  images.phoneCreateCredential,
+const videosGatacaStudio = [
+  videos.studioVideo1,
+  videos.studioVideo2,
+  videos.studioVideo3,
 ]
+
 const SecondSection: React.FC<ISectionProps> = props => {
   const { title, description, list } = props
   const [openItem, setOpenItem] = React.useState<number>(1)
 
-  let bullets: HTMLElement | null | undefined
+  let gatacaStudioBullets: HTMLElement | null | undefined
   React.useEffect(() => {
-    bullets = document ? document?.getElementById("bullets") : undefined
+    gatacaStudioBullets = document
+      ? document?.getElementById("gatacaStudioBullets")
+      : undefined
   })
 
   const scrollIntoView = (el: HTMLElement) => {
-    bullets
-      ? bullets.scroll({
+    gatacaStudioBullets
+      ? gatacaStudioBullets.scroll({
           behavior: "smooth",
           left: el.offsetLeft,
         })
@@ -39,52 +40,59 @@ const SecondSection: React.FC<ISectionProps> = props => {
   }
 
   return (
-    <div style={{ position: "relative" }}>
-      <section className={styles.secondSection}>
-        <div
-          className={`${cx("heading3")} ${styles.secondSection__leftSide}`}
-          id="leftSide"
-        >
-          <p className={`${cx("heading3 marginBottom12")}`}>{title}</p>
-          <p
-            className={`${cx("bodyRegularXL")} ${
-              styles.secondSection__leftSide__description
-            }`}
-          >
-            {description}
-          </p>
-          <div id="bullets" className={styles.secondSection__leftSide__bullets}>
-            {list?.map((item, index) => {
-              const { title, description } = item
+    <section
+      className={`${styles.gatacaStudioSection} ${cx("containerMaxWidth")}`}
+    >
+      <h3 className={cx("heading3 marginBottom12")}>{title}</h3>
+      <p className={`${styles?.description} ${cx("bodyRegularXL neutral700")}`}>
+        {description}
+      </p>
+      <div style={{ position: "relative" }}>
+        <div className={styles?.gatacaStudioSection__container}>
+          <div className={styles?.gatacaStudioSection__leftSide}>
+            <div
+              id="gatacaStudioBullets"
+              className={styles?.gatacaStudioSection__leftSide__bullets}
+            >
+              {list?.map((item, index) => {
+                const { id, title, descriptionParagraphs } = item
 
-              return (
-                <SingleFeature
-                  id={"feature__" + index}
-                  key={"feature__" + index}
-                  index={index + 1}
-                  title={title}
-                  description={description}
-                  selected={openItem === index + 1}
-                  showFeature={index => {
-                    const element =
-                      document &&
-                      document?.getElementById("feature__" + (index - 1))
-                    setOpenItem(index), element && scrollIntoView(element)
-                  }}
-                />
-              )
-            })}
+                return (
+                  <ListItems
+                    id={"listItem__" + index}
+                    key={"listItemThirdSection__" + index}
+                    index={index + 1}
+                    title={title}
+                    description={descriptionParagraphs}
+                    selected={openItem === index + 1}
+                    showItem={index => {
+                      const element = document.getElementById(
+                        "listItem__" + (index - 1)
+                      )
+                      setOpenItem(index), element && scrollIntoView(element)
+                    }}
+                  />
+                )
+              })}
+            </div>
+          </div>
+          <div className={styles.gatacaStudioSection__rightSide}>
+            <div
+              className={styles.gatacaStudioSection__rightSide__videoContainer}
+            >
+              {list && openItem && list[openItem - 1] && (
+                <video
+                  src={videosGatacaStudio[openItem - 1]}
+                  playsInline
+                  autoPlay
+                  muted
+                ></video>
+              )}
+            </div>
           </div>
         </div>
-        <div className={styles.secondSection__rightSide}>
-          {list && openItem && list[openItem - 1] && (
-            <img src={featureImages[openItem - 1]} />
-            // TODO: Change img by the commented code when data comes from BE
-            // <img src={require(list[openItem - 1]?.image)} />
-          )}
-        </div>
-      </section>
-    </div>
+      </div>
+    </section>
   )
 }
 
