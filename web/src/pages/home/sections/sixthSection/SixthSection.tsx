@@ -2,15 +2,18 @@ import * as React from "react"
 import cx from "classnames"
 import { ButtonModel } from "../../../../interfaces/interfaces"
 import * as styles from "./sixthSection.module.scss"
-import SimpleList from "../../../../components/templates/simpleList/SimpleList"
 import { images } from "../../../../images/images"
 import PurpleButton from "../../../../components/atoms/buttons/purple/PurpleButton"
+import CardList from "../../../../components/templates/cardList/CardList"
 
 export type ISectionProps = {
   title: string
   subTitle: string
   description: string
   list: {
+    index: number
+    id: string
+    icon: string
     title: string
     description: string
   }[]
@@ -54,24 +57,14 @@ const SixthSection: React.FC<ISectionProps> = props => {
       <div className={styles?.useCasesSection__container}>
         {list?.map((item, index) => {
           const { title, description } = item
-
           return (
-            <div
-              id={"listItem__" + index}
+            <CardList
+              id={"useCaseItem__" + index}
               key={"useCaseItem__" + index}
-              className={`${styles?.useCasesSection__list} ${cx(
-                "marginBottom32"
-              )}`}
-            >
-              <div>
-                <img src={iconsUseCases[index]} />
-              </div>
-              <SimpleList
-                key={"listItem__" + index}
-                title={title}
-                description={description}
-              />
-            </div>
+              icon={iconsUseCases[index]}
+              title={title}
+              description={description}
+            />
           )
         })}
       </div>
