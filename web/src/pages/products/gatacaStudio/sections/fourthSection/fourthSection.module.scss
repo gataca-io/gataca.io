@@ -62,10 +62,9 @@
       overflow: visible;
       width: calc(100% - 36px);
       @include justify-content(space-between);
-      margin-top: -70px;
+      margin-top: 80px;
       height: 149px;
-      background-color: $neutral200;
-      padding: 127px 18px 16px;
+      padding: 0px 0px 16px;
     }
 
     & > div:nth-child(4)  {

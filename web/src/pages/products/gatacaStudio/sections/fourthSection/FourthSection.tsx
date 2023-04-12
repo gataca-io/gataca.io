@@ -48,11 +48,7 @@ const FourthSection: React.FC<ISectionProps> = props => {
     >
       <section className={`${styles.fourthSection} ${cx("containerMaxWidth")}`}>
         <div className={styles.fourthSection__leftSide}>
-          <p className={`${cx("heading6 neutral700 marginBottom12")}`}>
-            {description}
-          </p>
-
-          <h1 className={`${cx("heading3")}`}>{title}</h1>
+          <h3 className={`${cx("heading3")}`}>{title}</h3>
 
           <div
             id="advantagesContainer"
