@@ -76,6 +76,7 @@
         }
       }
       .textContainer {
+        margin-bottom: 0;
         .text {
           @include min-width($tabletMD) {
             margin-left: 0;
@@ -108,6 +109,10 @@
       }
     }
     .textContainer {
+      margin-bottom: 280px;
+      @include min-width($tabletMD) {
+        margin-bottom: 0;
+      }
       @include min-width($tabletMD) {
         @include flex(0, 0, 50%);
       }
