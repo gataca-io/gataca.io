@@ -75,6 +75,8 @@ import idCardIcon from "./icons/id-card.svg"
 import keyIcon from "./icons/key.svg"
 import fingerPrintIcon from "./icons/fingerprint-viewfinder.svg"
 import userCheckIcon from "./icons/user-check-bottom.svg"
+import likeIcon from "./icons/like.svg"
+import documentListCheckIcon from "./icons/document-list-check.svg"
 
 export const images = {
   chevronDown: crevronDownSVG,
@@ -154,4 +156,6 @@ export const images = {
   keyIcon: keyIcon,
   fingerPrintIcon: fingerPrintIcon,
   userCheckIcon: userCheckIcon,
+  likeIcon: likeIcon,
+  documentListCheckIcon: documentListCheckIcon,
 }

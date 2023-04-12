@@ -20,6 +20,32 @@
           "title": "Solution"
         }
       ]
+    },
+    "thirdSection": {
+      "description": "Boost digital transformation and start improving citizens' day-to-day lives",
+      "list": [
+        {
+          "description": "Issue tamper-proof government documents in a standard, digital format that can be securely shared globally",
+          "title": "Issuance of government documents"
+        },
+        {
+          "description": "Allow secure identity verification of citizens in the public and private sectors by empowering the use of Verifiable IDs",
+          "title": "Citizen identity verification"
+        },
+        {
+          "description": "Drive accessibility to e-government services, including tax filing, license applications, fine payments, and more",
+          "title": "Access to E-government services"
+        },
+        {
+          "description": "Allocate easily and soundly government benefits, such as social benefits or grant applications to citizens",
+          "title": "Benefit transfer"
+        },
+        {
+          "description": "Securely verify voters' identity and ensure the voting process's integrity",
+          "title": "Electronic voting"
+        }
+      ],
+      "title": "Use cases"
     }
   }
 }

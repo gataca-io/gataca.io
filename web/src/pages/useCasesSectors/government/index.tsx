@@ -6,10 +6,13 @@ import { useState } from "react"
 import FirstSection from "./sections/firstSection/FirstSection"
 import SecondSection from "./sections/secondSection/SecondSection"
 import PreFooterCTASection from "../../../components/templates/sections/preFooterCTA/PreFooterCTA"
+import ThirdSection from "./sections/thirdSection/ThirdSection"
 
 const GovernmentPage: React.FC<PageProps> = () => {
   const [governmentData, setGovernment] = useState<any | undefined>()
-  const { firstSection, secondSection } = governmentData ? governmentData : []
+  const { firstSection, secondSection, thirdSection } = governmentData
+    ? governmentData
+    : []
 
   React.useEffect(() => {
     getGovernment()
@@ -28,6 +31,11 @@ const GovernmentPage: React.FC<PageProps> = () => {
             contactButton={firstSection?.contactButton}
           />
           <SecondSection steps={secondSection?.steps} />
+          <ThirdSection
+            title={thirdSection?.title}
+            description={thirdSection?.description}
+            list={thirdSection?.list}
+          />
           <PreFooterCTASection
             title={"Want to know more?"}
             description={
