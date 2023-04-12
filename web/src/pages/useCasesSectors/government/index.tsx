@@ -1,11 +1,11 @@
 import type { PageProps } from "gatsby"
 import * as React from "react"
 import Layout from "../../../components/templates/mainLayout/MainLayout"
-import PreFooterCTASection from "../../../components/templates/sections/preFooterCTA/PreFooterCTA"
 import { navigate } from "gatsby"
 import { useState } from "react"
 import FirstSection from "./sections/firstSection/FirstSection"
 import SecondSection from "./sections/secondSection/SecondSection"
+import PreFooterCTASection from "../../../components/templates/sections/preFooterCTA/PreFooterCTA"
 
 const GovernmentPage: React.FC<PageProps> = () => {
   const [governmentData, setGovernment] = useState<any | undefined>()
