@@ -1,0 +1,180 @@
+{
+    "data": {
+        "fifthSection": {
+            "list": [{
+                    "description": "Set up biometric authentication and issue your first self-attested credential",
+                    "image": "",
+                    "title": "Get started with your Wallet"
+                },
+                {
+                    "description": "From their portal, Trusted Authorities and businesses can issue verifiable credentials directly to your wallet",
+                    "image": "",
+                    "title": "Request a verifiable credential"
+                },
+                {
+                    "description": "Simply scan a QR code and click consent to share relevant data to prove your identity and qualifications",
+                    "image": "",
+                    "title": "Access digital services"
+                },
+                {
+                    "description": "Easily manage which entities can access your data and revoke access to them anytime",
+                    "image": "",
+                    "title": "Manage access to your data"
+                }
+            ],
+            "title": "How it works"
+        },
+        "firstSection": {
+            "button": {
+                "label": "Try for free"
+            },
+            "description": "Meet Gataca Studio, the all-in-one platform facilitating the integration of Self-Sovereign Identity into your website or application",
+            "title": "Compliant identity verification in seconds"
+        },
+        "fourthSection": {
+            "list": [{
+                    "description": "Create different profiles in your wallet",
+                    "title": "Multi-identity"
+                },
+                {
+                    "description": "Manage your wallet from different devices",
+                    "title": "Multi-device"
+                },
+                {
+                    "description": "Don't worry if you lose your phone",
+                    "title": "Backup and recovery"
+                },
+                {
+                    "title": "Aligned with European specifications for verifiable credentials"
+                },
+                {
+                    "title": "Electronic signature of documents"
+                }
+            ],
+            "title": "Advanced features"
+        },
+        "secondSection": {
+            "list": [{
+                    "description": "Credentials are physically stored in your phone, where only you can access your data - not even us! You can finally decide who you share your information with and when to revoke access permissions",
+                    "number": "1",
+                    "title": "Protect your privacy and take control of your data"
+                },
+                {
+                    "description": "Carry all your important documents with you in the form of portable verifiable credentials without the need to carry paper-based originals or rely on notarization services",
+                    "number": "2",
+                    "title": "Access and prove the authenticity of your personal information anytime, anywhere"
+                },
+                {
+                    "description": "Get the best and most secure user experience for onboarding and sign-in processes. You simply scan a QR code with your Gataca Wallet, consent to the required data for identity verification, and are in",
+                    "number": "3",
+                    "title": "Passwordless access to online services"
+                }
+            ],
+            "title": "Benefits"
+        },
+        "sixthSection": {
+            "credentials": [{
+                    "category": "Verifiable ID",
+                    "icon": "",
+                    "issuanceDate": "January 12, 2023",
+                    "issuer": "Government",
+                    "mainData": "12345678V",
+                    "validated": true
+                },
+                {
+                    "category": "Driver's license",
+                    "expirationDate": "September 10, 2022",
+                    "icon": "",
+                    "issuanceDate": "July 10, 2022",
+                    "issuer": "Government",
+                    "mainData": "V123456K",
+                    "validated": true
+                },
+                {
+                    "category": "Academic Diploma",
+                    "icon": "",
+                    "issuanceDate": "January 12, 2023",
+                    "issuer": "University",
+                    "mainData": "Engineering",
+                    "validated": true
+                },
+                {
+                    "category": "Employee Card",
+                    "icon": "",
+                    "issuanceDate": "January 12, 2023",
+                    "issuer": "Company",
+                    "mainData": "CEO",
+                    "validated": true
+                },
+                {
+                    "category": "Conference Ticket",
+                    "expirationDate": "January 16, 2023",
+                    "icon": "",
+                    "issuanceDate": "January 12, 2023",
+                    "issuer": "Conference Organizator",
+                    "mainData": "Conference Name",
+                    "validated": true
+                },
+                {
+                    "category": "Health Insurance Card",
+                    "expirationDate": "January 16, 2023",
+                    "icon": "",
+                    "issuanceDate": "January 12, 2023",
+                    "issuer": "Hospital",
+                    "mainData": "Health Entity Name",
+                    "validated": true
+                },
+                {
+                    "category": "Address",
+                    "expirationDate": "September 10, 2022",
+                    "icon": "",
+                    "issuanceDate": "July 10, 2022",
+                    "issuer": "No issuer",
+                    "mainData": "Street Name, 78"
+                }
+            ],
+            "list": [{
+                    "description": "Following global Internet standards so you can use them worldwide",
+                    "image": "",
+                    "title": "Digitalized"
+                },
+                {
+                    "description": "Signed by Trusted Authorities so you can guarantee their authenticity",
+                    "image": "",
+                    "title": "Verifiable"
+                },
+                {
+                    "description": "Protected with biometrics and strong encryption so only you control their access",
+                    "image": "",
+                    "title": "Secured"
+                }
+            ],
+            "title": "Examples of credentials"
+        },
+        "thirdSection": {
+            "description": "Take charge of your digital identity",
+            "list": [{
+                    "description": "Securely store all your identity credentials, certificates, and personal documents",
+                    "image": "",
+                    "title": "Request and store verifiable credentials"
+                },
+                {
+                    "description": "Securely share necessary identity information in a matter of seconds",
+                    "image": "",
+                    "title": "Single Sign-On to digital services"
+                },
+                {
+                    "description": "Easily control and revoke your data permissions anytime",
+                    "image": "",
+                    "title": "Manage access to your data"
+                },
+                {
+                    "description": "Create and store identity credentials  of your own",
+                    "image": "",
+                    "title": "Add self-attested credentials"
+                }
+            ],
+            "title": "Features"
+        }
+    }
+}

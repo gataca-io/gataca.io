@@ -1,0 +1,6 @@
+export const secondSection: string
+export const secondSection__leftSide: string
+export const secondSection__rightSide: string
+export const secondSection__leftSide__bullets: string
+export const secondSection__leftSide__description: string
+export const secondSection__leftSide__horizontalScroll: string

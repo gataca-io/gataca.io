@@ -75,6 +75,7 @@ import idCardIcon from "./icons/id-card.svg"
 import keyIcon from "./icons/key.svg"
 import fingerPrintIcon from "./icons/fingerprint-viewfinder.svg"
 import userCheckIcon from "./icons/user-check-bottom.svg"
+import macFloating from "./images3d/mac_floating_shadow.png"
 
 export const images = {
   chevronDown: crevronDownSVG,
@@ -154,4 +155,5 @@ export const images = {
   keyIcon: keyIcon,
   fingerPrintIcon: fingerPrintIcon,
   userCheckIcon: userCheckIcon,
+  macFloating: macFloating,
 }
