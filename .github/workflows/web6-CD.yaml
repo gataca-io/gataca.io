@@ -1,11 +1,11 @@
-name: Strapi CD
+name: web6 CD
 
 on:
   workflow_dispatch:
     inputs:
       ExecuteChoice:
         type: choice
-        description: 'Deploy Strapi web in DEV?'
+        description: 'Deploy web6 in DEV?'
         required: true
         default: 'NO'
         options:
