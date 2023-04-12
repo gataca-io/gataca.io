@@ -1,0 +1,80 @@
+@import "../../../../../styles/mixins";
+
+.fourthSection {
+  margin-bottom: calc(132px - 32px);
+  padding: 0 20px;
+  @include min-width($mobileXL) {
+    margin-bottom: calc(200px - 32px);
+    padding: 0 40px;
+  }
+  @include min-width($desktopMD) {
+    padding: 0 60px;
+  }
+  > div {
+    padding-bottom: 0;
+    @include min-width($mobileXL) {
+      padding-bottom: 40px;
+    }
+  }
+  > div > div {
+    @include min-width($mobileXL) {
+      @include flex(0, 0, 63%);
+    }
+    &:nth-child(1) {
+      @include flexbox();
+      @include justify-content(center);
+      img {
+        position: relative !important;
+        max-width: 280px !important;
+    
+        @include min-width($mobileXL) {
+          position: absolute !important;
+          max-width: 230px !important;
+          left: 10px !important;
+        }
+    
+        @include min-width($tabletMD) {
+          max-width: 250px !important;
+          left: 30px !important;
+        }
+    
+        @include min-width($tabletXL) {
+          max-width: 300px !important;
+          left: 50px !important;
+        }
+    
+        @include min-width($desktopMD) {
+          max-width: 350px !important;
+          left: 60px !important;
+        }
+    
+        @include min-width($desktopXL) {
+          max-width: 100% !important;
+          left: 119px !important;
+        }
+      }
+    }
+    &:nth-child(2){
+      margin-bottom: 79px;
+      @include min-width($mobileXL) {
+        @include flex(0, 0, 50%);
+        margin-bottom: 0;
+      }
+      @include min-width($desktopXL) {
+        @include flex(0, 0, 37%);
+      }
+    }
+  }
+}
+.leftSide {
+  @include min-width($mobileXL) {
+    @include flex(0, 0, 65%);
+  }
+}
+
+.rightSide {
+  @include min-width($mobileXL) {
+    @include flex(0, 0, 35%);
+  }
+}
+

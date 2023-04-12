@@ -8,11 +8,17 @@ import SecondSection from "./sections/secondSection/SecondSection"
 import PreFooterCTASection from "../../../components/templates/sections/preFooterCTA/PreFooterCTA"
 import ThirdSection from "./sections/thirdSection/ThirdSection"
 import FifthSection from "./sections/fifthSection/FifthSection"
+import FourthSection from "./sections/fourthSection/FourthSection"
 
 const GovernmentPage: React.FC<PageProps> = () => {
   const [governmentData, setGovernment] = useState<any | undefined>()
-  const { firstSection, secondSection, thirdSection, fifthSection } =
-    governmentData ? governmentData : []
+  const {
+    firstSection,
+    secondSection,
+    thirdSection,
+    fourthSection,
+    fifthSection,
+  } = governmentData ? governmentData : []
 
   React.useEffect(() => {
     getGovernment()
@@ -35,6 +41,14 @@ const GovernmentPage: React.FC<PageProps> = () => {
             title={thirdSection?.title}
             description={thirdSection?.description}
             list={thirdSection?.list}
+          />
+          <FourthSection
+            title={fourthSection?.title}
+            description={fourthSection?.description}
+            list={fourthSection?.list}
+            imageClassName={fourthSection?.imageClassName}
+            leftSideClassName={fourthSection?.leftSideClassName}
+            rightSideClassName={fourthSection?.rightSideClassName}
           />
           <FifthSection
             title={fifthSection?.title}

@@ -11,6 +11,30 @@
       "description": "Issue digitized, standardized, and tamper-proof government documents and prompt eID & e-government services adoption",
       "title": "Government"
     },
+    "fourthSection": {
+      "description": "Accelerate economic growth with Self-Sovereign Identity",
+      "imageClassName": "barsGovernment",
+      "leftSideClassName": "leftSide",
+      "list": [
+        {
+          "title": "Expertise"
+        },
+        {
+          "title": "Security by design"
+        },
+        {
+          "title": "Compliance is engrained"
+        },
+        {
+          "title": "Ledger-agnostic"
+        },
+        {
+          "title": "No vendor lock-in"
+        }
+      ],
+      "rightSideClassName": "rightSide",
+      "title": "Why Gataca"
+    },
     "secondSection": {
       "steps": [
         {
