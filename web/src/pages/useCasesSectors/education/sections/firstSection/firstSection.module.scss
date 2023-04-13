@@ -1,0 +1,35 @@
+@import "../../../../../styles/mixins";
+
+.headerSection{
+  margin-top: 162px;
+  margin-bottom: 340px;
+  padding: 0 20px;
+  @include min-width($mobileXL) {
+    margin-top: 146px;
+    padding: 0 40px;
+  }
+  @include min-width($tabletMD) {
+    margin-bottom: 203px;
+  } 
+  @include min-width($desktopMD) {
+    padding: 0 60px;
+  }
+  .headerSection__container {
+    text-align: center;
+    .buttonContainer {
+      min-width: 137px;
+      max-width: 13px;
+      margin:  0 auto;
+      button {
+        width: 100%;
+      }
+    }
+    .max-width {
+      margin: 0 auto 32px;
+      @include min-width($mobileXL) {
+        max-width: 576px;
+      }
+    }
+  }
+}
+

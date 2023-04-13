@@ -1,0 +1,76 @@
+{
+  "data": {
+    "fifthSection": {
+      "description": "Gataca Studio is the most comprehensive tool on the market to deploy decentralized identity solutions",
+      "title": "How it works"
+    },
+    "firstSection": {
+      "description": "Boost digital transformation in the education sector with verifiable credentials",
+      "title": "Education",
+      "tryForFreeButton": {
+        "label": "Try for free"
+      }
+    },
+    "fourthSection": {
+      "description": "Accelerate economic growth with Self-Sovereign Identity",
+      "list": [
+        {
+          "title": "Expertise"
+        },
+        {
+          "title": "Security by design"
+        },
+        {
+          "title": "Compliance is engrained"
+        },
+        {
+          "title": "Ledger-agnostic"
+        },
+        {
+          "title": "No vendor lock-in"
+        }
+      ],
+      "title": "Why Gataca"
+    },
+    "secondSection": {
+      "steps": [
+        {
+          "description": "Governments around the world are dedicated to digitalizing the public sector. However, they are encountering difficulties in promoting citizen eID adoption and digital inclusion in e-government services. These challenges stem from usability, interoperability, and security features in existing systems and processes",
+          "number": "1",
+          "title": "Challenge"
+        },
+        {
+          "description": "Our end-to-end solution empowers authorities to issue tamper-proof Verifiable Credentials for various government documents, including national IDs, passports, driver's licenses, and business permits. These credentials are then securely shared to a citizen's ID Wallet, which gives them control over who can access their data and enables Single Sign-On authentication to access digital services both in the public and private sectors",
+          "number": "2",
+          "title": "Solution"
+        }
+      ]
+    },
+    "thirdSection": {
+      "description": "Boost digital transformation and start improving citizens' day-to-day lives",
+      "list": [
+        {
+          "description": "Issue tamper-proof government documents in a standard, digital format that can be securely shared globally",
+          "title": "Issuance of government documents"
+        },
+        {
+          "description": "Allow secure identity verification of citizens in the public and private sectors by empowering the use of Verifiable IDs",
+          "title": "Citizen identity verification"
+        },
+        {
+          "description": "Drive accessibility to e-government services, including tax filing, license applications, fine payments, and more",
+          "title": "Access to E-government services"
+        },
+        {
+          "description": "Allocate easily and soundly government benefits, such as social benefits or grant applications to citizens",
+          "title": "Benefit transfer"
+        },
+        {
+          "description": "Securely verify voters' identity and ensure the voting process's integrity",
+          "title": "Electronic voting"
+        }
+      ],
+      "title": "Use cases"
+    }
+  }
+}
