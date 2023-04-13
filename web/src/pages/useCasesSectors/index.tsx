@@ -22,7 +22,7 @@ const UseCasesPage: React.FC<PageProps> = () => {
   }, [])
 
   const getUseCasesSectors = async () => {
-    const json_data = require("./data/UseCasesSectorsData.json")
+    const json_data = require("./data/useCasesSectorsData.json")
     setUseCasesSectors(json_data?.data && json_data?.data)
   }
   return (
