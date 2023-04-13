@@ -41,6 +41,7 @@ const FourthSection: React.FC<ISectionProps> = props => {
         })
       : null
   }
+
   return (
     <div
       className={styles.fourthSection__container}

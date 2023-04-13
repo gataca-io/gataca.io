@@ -1,4 +1,4 @@
-export const fifthSection: string
-export const fifthSection__header: string
+export const videoSection: string
+export const videoSection__header: string
 export const description: string
-export const fifthSection__videoContainer: string
+export const videoSection__videoContainer: string

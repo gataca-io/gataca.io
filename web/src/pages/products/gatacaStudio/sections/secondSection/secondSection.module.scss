@@ -12,6 +12,7 @@
   @include min-width($desktopMD) {
     padding: 0 60px;
   }
+
   .description {
     margin-bottom: 80px;
     @include min-width($mobileXL) {
@@ -19,6 +20,7 @@
       max-width: 592px;
     }
   }
+
   .gatacaStudioSection__container {
     @include flexbox();
     @include flex-direction(column);
@@ -32,6 +34,7 @@
     @include min-width($tabletMD) {
       @include justify-content(center);
     }
+
     .gatacaStudioSection__leftSide {
       position: relative;
       max-width: 100%;
@@ -42,16 +45,17 @@
       @include min-width($desktopXL) {
         @include flex(0, 0, calc(100%/3));
       }
+
       .gatacaStudioSection__leftSide__bullets {
-        @include flexbox();
-        @include flex-direction(row);
-        @include justify-content(flex-start);
         width: 100%;
         max-width: 100%;
         height: 360px;
         overflow-x: scroll;
         -ms-overflow-style: none; /* IE and Edge */
         scrollbar-width: none; /* Firefox */
+        @include flexbox();
+        @include flex-direction(row);
+        @include justify-content(flex-start);
         @include min-width($mobileXL) {
           margin-left: -4px;
           height: auto;
@@ -68,9 +72,11 @@
         }
       }
     }
+
     .gatacaStudioSection__rightSide {
-      @include flex(0, 0, 100%);
       margin-top: 20px;
+      @include flex(0, 0, 100%);
+
       @include min-width($mobileXL) {
         @include flex(0, 0, 53%);
         margin-top: 0;
@@ -78,6 +84,7 @@
       @include min-width($desktopXL) {
         @include flex(0, 0, 66%);
       }
+
       .gatacaStudioSection__rightSide__videoContainer {
         text-align: center;
         video {
@@ -94,7 +101,7 @@
     }
   }
 }
+
 .gatacaStudioSection__leftSide__bullets::-webkit-scrollbar {
   display: none; /* Opera and Chrome */
 }
-

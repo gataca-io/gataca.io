@@ -1,9 +1,9 @@
 import * as React from "react"
 import cx from "classnames"
 import * as styles from "./sixthSection.module.scss"
-import SimpleList from "../../../../components/templates/simpleList/SimpleList"
 import { images } from "../../../../images/images"
 import PurpleButton from "../../../../components/atoms/buttons/purple/PurpleButton"
+import SimpleList from "../../../../components/templates/simpleList/SimpleList"
 
 export type ISectionProps = {
   title: string

@@ -114,15 +114,15 @@
       left: 0px;
     }
     @include min-width($desktopSM) {
-    top: -109px;
+      top: -109px;
       display: block;
       position: absolute;
       left: 0px;
-        max-height: 642px;
+      max-height: 642px;
     }
     @include min-width($desktopMD) {
       top: -109px;
-    max-height: 742px;
+      max-height: 742px;
     }
     @include min-width($desktopXL) {
       top: -109px;

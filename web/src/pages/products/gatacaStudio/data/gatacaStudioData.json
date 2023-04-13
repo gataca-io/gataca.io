@@ -1,6 +1,7 @@
 {
     "data": {
         "fifthSection": {
+            "description": "Get to know our technology and how it works in just 1 minute",
             "list": [{
                     "description": "Set up biometric authentication and issue your first self-attested credential",
                     "image": "",
@@ -82,83 +83,47 @@
             "title": "Features"
         },
         "sixthSection": {
-            "credentials": [{
-                    "category": "Verifiable ID",
-                    "icon": "",
-                    "issuanceDate": "January 12, 2023",
-                    "issuer": "Government",
-                    "mainData": "12345678V",
-                    "validated": true
-                },
-                {
-                    "category": "Driver's license",
-                    "expirationDate": "September 10, 2022",
-                    "icon": "",
-                    "issuanceDate": "July 10, 2022",
-                    "issuer": "Government",
-                    "mainData": "V123456K",
-                    "validated": true
-                },
-                {
-                    "category": "Academic Diploma",
-                    "icon": "",
-                    "issuanceDate": "January 12, 2023",
-                    "issuer": "University",
-                    "mainData": "Engineering",
-                    "validated": true
-                },
-                {
-                    "category": "Employee Card",
-                    "icon": "",
-                    "issuanceDate": "January 12, 2023",
-                    "issuer": "Company",
-                    "mainData": "CEO",
-                    "validated": true
-                },
-                {
-                    "category": "Conference Ticket",
-                    "expirationDate": "January 16, 2023",
-                    "icon": "",
-                    "issuanceDate": "January 12, 2023",
-                    "issuer": "Conference Organizator",
-                    "mainData": "Conference Name",
-                    "validated": true
-                },
-                {
-                    "category": "Health Insurance Card",
-                    "expirationDate": "January 16, 2023",
-                    "icon": "",
-                    "issuanceDate": "January 12, 2023",
-                    "issuer": "Hospital",
-                    "mainData": "Health Entity Name",
-                    "validated": true
-                },
-                {
-                    "category": "Address",
-                    "expirationDate": "September 10, 2022",
-                    "icon": "",
-                    "issuanceDate": "July 10, 2022",
-                    "issuer": "No issuer",
-                    "mainData": "Street Name, 78"
-                }
-            ],
+            "description": "No matter where you are in your journey toward implementing a decentralized identity solution, we have you covered",
             "list": [{
-                    "description": "Following global Internet standards so you can use them worldwide",
-                    "image": "",
-                    "title": "Digitalized"
+                    "button": {
+                        "label": "Start free 30-day trial",
+                        "outlined": false,
+                        "url": "https://studio.gataca.io"
+                    },
+                    "description": "For companies looking to get started with SSI",
+                    "title": "Starter"
                 },
                 {
-                    "description": "Signed by Trusted Authorities so you can guarantee their authenticity",
-                    "image": "",
-                    "title": "Verifiable"
+                    "button": {
+                        "label": "See all features",
+                        "outlined": true,
+                        "url": ""
+                    },
+                    "description": "For companies looking to scale their SSI implementation.",
+                    "title": "Essential"
                 },
                 {
-                    "description": "Protected with biometrics and strong encryption so only you control their access",
-                    "image": "",
-                    "title": "Secured"
+                    "button": {
+                        "label": "See all features",
+                        "outlined": true,
+                        "url": ""
+                    },
+                    "description": "For experienced companies ready for a large-scale rollout of SSI.",
+                    "tag": "Popular",
+                    "title": "Professional"
+                },
+                {
+                    "button": {
+                        "label": "See all features",
+                        "outlined": true,
+                        "url": ""
+                    },
+                    "description": "For companies that need special features and extra support ",
+                    "title": "Enterprise"
                 }
             ],
-            "title": "Examples of credentials"
+            "subTitle": "Our subscriptions are designed to be scalable",
+            "title": "Subscription plans"
         },
         "thirdSection": {
             "list": [{
