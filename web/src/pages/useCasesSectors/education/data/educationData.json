@@ -1,8 +1,64 @@
 {
   "data": {
     "fifthSection": {
-      "description": "Gataca Studio is the most comprehensive tool on the market to deploy decentralized identity solutions",
-      "title": "How it works"
+      "stories": [
+        {
+          "LearnMore": "Learn more",
+          "description": "Issuance of variable ID by FNMT, issuance of student ID and Academic diploma, application to master degree",
+          "list": [
+            {
+              "title": "Spanish ID card"
+            },
+            {
+              "title": "Student Identifier"
+            },
+            {
+              "title": "Bachelor’s diploma"
+            }
+          ],
+          "listTitle": "Credentials exchanged:",
+          "route": "ebsiUniversitiesYoutubeVideo",
+          "title": "Spanish Universities"
+        },
+        {
+          "description": "Application and return process in a cross-border Erasmus exchange scenario between KU Leuven & University di Bologna",
+          "list": [
+            {
+              "title": "Student Identifier"
+            },
+            {
+              "title": "Transcript of Records"
+            }
+          ],
+          "listTitle": "Credentials exchanged:",
+          "title": "UNA Europa"
+        },
+        {
+          "LearnMore": "Learn more",
+          "description": "Exchange of verifiable credentials between institutions, including the Royal Mint of Spain, and three universities in cross-border settings (Spain, Belgium, and Italy)",
+          "list": [
+            {
+              "title": "Spanish ID card"
+            },
+            {
+              "title": "European Student Identifier"
+            },
+            {
+              "title": "Bachelor’s diploma"
+            },
+            {
+              "title": "Masters’s diploma"
+            },
+            {
+              "title": "Transcript of Records"
+            }
+          ],
+          "listTitle": "Credentials exchanged:",
+          "route": "ebsiEuroCommYoutubevideo",
+          "title": "EBSI - Early Adopters Programme"
+        }
+      ],
+      "title": "Success stories"
     },
     "firstSection": {
       "description": "Boost digital transformation in the education sector with verifiable credentials",

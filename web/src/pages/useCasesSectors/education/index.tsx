@@ -50,7 +50,8 @@ const EducationPage: React.FC<PageProps> = () => {
           />
           <FifthSection
             title={fifthSection?.title}
-            description={fifthSection?.description}
+            stories={fifthSection?.stories}
+            list={fifthSection?.list}
           />
           <PreFooterCTASection
             title={"Ready to start?"}
