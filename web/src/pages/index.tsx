@@ -3,17 +3,17 @@ import * as React from "react"
 import { useState } from "react"
 import ReactMarkdown from "react-markdown"
 import Layout from "../components/templates/mainLayout/MainLayout"
-import FirstSection from "./home/sections/firstSection/FirstSection"
-import LogosSlider from "../components/elements/logosSlider/LogosSlider"
-import FourthSection from "./home/sections/fourthSection/FourthSection"
 import PreFooterCTASection from "../components/templates/sections/preFooterCTA/PreFooterCTA"
-import ThirdSection from "./home/sections/thirdSection/ThirdSection"
-import { gatacaStudioURL } from "../data/globalData"
-import FifthSection from "./home/sections/fifthSection/FifthSection"
-import EighthSection from "./home/sections/eighthSection/EighthSection"
+import LogosSlider from "../components/elements/logosSlider/LogosSlider"
 import { sortByDate } from "../utils/sort"
-import * as styles from "./home/home.module.scss"
+import { gatacaStudioURL } from "../data/globalData"
+import EighthSection from "./home/sections/eighthSection/EighthSection"
 import SixthSection from "./home/sections/sixthSection/SixthSection"
+import FifthSection from "./home/sections/fifthSection/FifthSection"
+import FourthSection from "./home/sections/fourthSection/FourthSection"
+import ThirdSection from "./home/sections/thirdSection/ThirdSection"
+import FirstSection from "./home/sections/firstSection/FirstSection"
+import * as styles from "./home/home.module.scss"
 
 // interface homeDataModel {
 //   attributes: {
@@ -105,6 +105,7 @@ const IndexPage: React.FC<PageProps> = () => {
           subTitle={sixthSection?.subTitle}
           description={sixthSection?.description}
           list={sixthSection?.list}
+          learnMoreButton={sixthSection?.learnMoreButton}
         />
         <EighthSection
           title={eighthSection?.title}

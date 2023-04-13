@@ -1,7 +1,7 @@
-@import "../../../../styles/colors";
-@import "../../../../styles/mixins";
+@import "../../../../../styles/colors";
+@import "../../../../../styles/mixins";
 
-.fifthSection {
+.videoSection {
   padding: 0 20px;
    @include min-width($mobileXL) {
     padding: 0 40px;
@@ -9,15 +9,18 @@
   @include min-width($desktopMD) {
     padding: 0 60px;
   }
-  .fifthSection__header {
+  .videoSection__header {
     text-align: center;
     max-width: 778px;
-    margin: 0 auto 80px;
+    margin: 0 auto 60px;
     .description span{
       color: $primary700;
     }
+    @include min-width($mobileXL) {
+      margin: 0 auto 52px;
+    }
   }
-  .fifthSection__videoContainer {
+  .videoSection__videoContainer {
     max-width: calc(1184px - 80px);
     margin: 0 10px 153px;
     text-align: center;
@@ -38,7 +41,7 @@
       height: 70%;
       bottom: -20px;
       left: -5px;
-      background: $neutral1000;
+      background: $neutral200;
       border-radius: 11px;
       z-index: -1;
       padding: 0 5px;

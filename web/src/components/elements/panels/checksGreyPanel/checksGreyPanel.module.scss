@@ -1,0 +1,64 @@
+@import "../../../../styles/_colors.scss";
+@import "../../../../styles/mixins.scss";
+
+.checksGreyPanel__container {
+  position: relative;
+  background-color: $neutral200;
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 1104px;
+  @include flexbox();
+  @include flex-direction(column-reverse);
+  @include justify-content(center);
+  @include flex-wrap(wrap);
+  @include min-width($mobileXL) {
+    @include flex-direction(row);
+    @include align-items(center);
+    @include justify-content(space-between);
+  }
+  @include min-width($desktopMD) {
+    padding: 72px;
+  }
+
+  .checksGreyPanel__leftSide {
+    @include min-width($mobileXL) {
+      @include flex(0, 0, calc(50% - 200px));
+      max-width: 776px;
+    }
+    .leftSide__image {
+      height: auto;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+  .checksGreyPanel__rightSide {
+    margin-bottom: 364px;
+    @include min-width($mobileXL) {
+      @include flex(0, 0, 52%);
+      margin-bottom: 0;
+    }
+    @include min-width($tabletMD) {
+      @include flex(0, 0, 50%);
+    }
+  }
+  .bullet__description {
+    color: $neutral700;
+    margin-bottom: 32px;
+  }
+  .checksGreyPanel__rightSide__bullets__container {
+    @include flexbox();
+    @include flex-direction(row);
+    @include justify-content(flex-start);
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+    &>img {
+      height: 24px;
+      margin-right: 12px;
+    }
+    .bullets__container__description {
+      color: $neutral700;
+    }
+  }
+}
