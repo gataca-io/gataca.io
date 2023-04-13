@@ -46,9 +46,6 @@ const GovernmentPage: React.FC<PageProps> = () => {
             title={fourthSection?.title}
             description={fourthSection?.description}
             list={fourthSection?.list}
-            imageClassName={fourthSection?.imageClassName}
-            leftSideClassName={fourthSection?.leftSideClassName}
-            rightSideClassName={fourthSection?.rightSideClassName}
           />
           <FifthSection
             title={fifthSection?.title}

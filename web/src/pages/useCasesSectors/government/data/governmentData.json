@@ -13,8 +13,6 @@
     },
     "fourthSection": {
       "description": "Accelerate economic growth with Self-Sovereign Identity",
-      "imageClassName": "barsGovernment",
-      "leftSideClassName": "leftSide",
       "list": [
         {
           "title": "Expertise"
@@ -32,7 +30,6 @@
           "title": "No vendor lock-in"
         }
       ],
-      "rightSideClassName": "rightSide",
       "title": "Why Gataca"
     },
     "secondSection": {

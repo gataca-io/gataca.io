@@ -7,9 +7,6 @@ import { images } from "../../../../../images/images"
 export type ISectionProps = {
   title: string
   description: string
-  imageClassName: string
-  leftSideClassName: string
-  rightSideClassName: string
   list: {
     title: string
     description?: string
@@ -17,14 +14,7 @@ export type ISectionProps = {
 }
 
 const ThirdSection: React.FC<ISectionProps> = props => {
-  const {
-    title,
-    description,
-    list,
-    imageClassName,
-    leftSideClassName,
-    rightSideClassName,
-  } = props
+  const { title, description, list } = props
 
   return (
     <section className={`${styles?.fourthSection} ${cx("containerMaxWidth")}`}>
@@ -33,9 +23,9 @@ const ThirdSection: React.FC<ISectionProps> = props => {
         title={title}
         description={description}
         list={list}
-        imageClassName={imageClassName}
-        leftSideClassName={leftSideClassName}
-        rightSideClassName={rightSideClassName}
+        imageClassName={styles.barsGovernment}
+        leftSideClassName={styles.leftSide}
+        rightSideClassName={styles.rightSide}
       />
     </section>
   )
