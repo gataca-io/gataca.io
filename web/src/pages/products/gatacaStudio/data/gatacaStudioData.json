@@ -34,7 +34,7 @@
         },
         "fourthSection": {
             "advantages": [{
-                    "description": "User data and ID credentials are issued by trusted authorities and protected with biometrics and post-quantum cryptography to ensure they are tamper-proof, allowing instant identity verification without relying on centralized systems.",
+                    "description": "Gataca Studio is a low-code platform. Set it up in seconds with our plug & play deployment system",
                     "icon": "",
                     "title": "Seamless integration"
                 },
@@ -44,7 +44,7 @@
                     "title": "Easy to use "
                 },
                 {
-                    "description": "Our platform provides flexible integration capabilities with diverse blockchain networks, databases, and centralized Public Key Infrastructures (PKIs), enabling seamless cross-border, cross-industry interoperability for end-users",
+                    "description": "Gataca Studio is purpose-built to seamlessly incorporate GDPR, eIDAS, KYC, and other relevant regulations. Effortlessly achieve legal compliance without worrying about the ever-changing regulatory landscape",
                     "icon": "",
                     "title": "Infrastructure-agnostic"
                 },

@@ -9,7 +9,7 @@
   @include min-width($desktopMD) {
     padding: 0 60px;
   }
-  @media (min-width: 1067px) {
+  @media (min-width: 1150px) {
     margin: 220px 0px 380px;
   }
 }
@@ -27,11 +27,13 @@
 .fourthSection__leftSide {
   margin: 0;
   width: 100%;
-  text-align: right;
   @include flexbox();
   @include flex-direction(column);
   @include align-items(flex-end);
 
+  @include min-width($mobileXL) {
+    text-align: right;
+  }
   @include min-width($tabletMD) {
     margin: 0 auto 0 0;
   }
@@ -58,7 +60,7 @@
     margin-left: auto;
     @include flexbox();
 
-    @media (min-width: 1067px) {
+    @media (min-width: 1150px) {
       margin-left: 0;
       overflow: visible;
       width: calc(100% - 36px);
@@ -70,15 +72,15 @@
 
     & > div:nth-child(4)  {
       margin-right: 660px;
-      @media (min-width: 1067px) {
+      @media (min-width: 1150px) {
         margin-right: 0px;
       }
     }
 
     & > .advantage {
       height: fit-content;
-      min-width: 220px;
-      max-width: 220px;
+      min-width: 200px;
+      max-width: 200px;
       background-color: white;
       padding: 40px;
       border-radius: 20px;
@@ -90,10 +92,10 @@
       @include flex-direction(column);
       @include align-items(flex-start);
 
-      @media (min-width: 1067px) {
+      @media (min-width: 1150px) {
         padding: 24px;
-        min-width: 0;
-        max-width: 224px;
+        max-width: 180px;
+        min-width: 180px;
         width: auto;
       }
 

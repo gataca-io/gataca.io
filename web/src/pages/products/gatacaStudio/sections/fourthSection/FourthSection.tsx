@@ -16,10 +16,10 @@ export type ISectionProps = {
 }
 
 const advantagesImages = [
-  images.banUser,
-  images.dollar,
-  images.chartUp,
-  images.linkAtl,
+  images.settingsIcon,
+  images.likeIcon,
+  images.cloudConnectionIcon,
+  images.documentIcon,
 ]
 
 const FourthSection: React.FC<ISectionProps> = props => {
@@ -66,7 +66,7 @@ const FourthSection: React.FC<ISectionProps> = props => {
                   }}
                   onClick={() => {
                     const element = document.getElementById("feature__" + index)
-                    window?.innerWidth < 1067 &&
+                    window?.innerWidth < 1150 &&
                       (setOpenedAdvantage(index),
                       element && scrollIntoView(element))
                   }}

@@ -71,7 +71,7 @@ const ChecksGreyPanelTwoColumns: React.FC<ISectionProps> = props => {
               })}
             </div>
             <div>
-              {list?.slice(6, list?.length)?.map((item, index) => {
+              {list?.slice(5, list?.length)?.map((item, index) => {
                 const { title, description } = item
 
                 return (

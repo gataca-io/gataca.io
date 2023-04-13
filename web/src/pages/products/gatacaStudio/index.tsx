@@ -11,7 +11,9 @@ import { gatacaStudioURL } from "../../../data/globalData"
 import PreFooterCTASection from "../../../components/templates/sections/preFooterCTA/PreFooterCTA"
 
 const GatacaStudioPage: React.FC<PageProps> = () => {
-  const [homeData, setHomeData] = React.useState<any | undefined>()
+  const [gatacaStudioData, setGatacaStudioData] = React.useState<
+    any | undefined
+  >()
   const {
     firstSection,
     secondSection,
@@ -19,15 +21,15 @@ const GatacaStudioPage: React.FC<PageProps> = () => {
     fourthSection,
     fifthSection,
     sixthSection,
-  } = homeData ? homeData : []
+  } = gatacaStudioData ? gatacaStudioData : []
 
   React.useEffect(() => {
-    getHomeData()
+    getGatacaStudioData()
   }, [])
 
-  const getHomeData = async () => {
+  const getGatacaStudioData = async () => {
     const json_data = await require("./data/gatacaStudioData.json")
-    setHomeData(json_data?.data && json_data?.data)
+    setGatacaStudioData(json_data?.data && json_data?.data)
   }
 
   return (
