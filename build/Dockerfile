@@ -32,7 +32,7 @@ COPY . .
 RUN yarn install --network-timeout 1000000 && yarn build
 
 
-FROM nginx:1.23-alpine AS deploy
+FROM nginx:1.24-alpine AS deploy
 
 WORKDIR /usr/share/nginx/html
 RUN rm -rf ./*
