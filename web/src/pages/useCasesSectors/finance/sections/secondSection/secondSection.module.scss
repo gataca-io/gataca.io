@@ -6,9 +6,12 @@
   position: relative;
   margin-bottom: 132px;
   padding: 0 20px;
-  @include min-width($tabletMD) {
+  @include min-width($mobileXL) {
     margin-bottom: 200px;
     padding: 0 40px;
+  }
+  @include min-width($tabletMD) {
+    padding: 0 60px;
 
     &::before {
       content: '';
