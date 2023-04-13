@@ -24,8 +24,9 @@
   }
 
   .videoSection__videoContainer {
-    max-width: 982px;
-    margin:  0 10px 153px;
+    max-width: calc(1184px - 80px);
+    margin: 0 10px 153px;
+    text-align: center;
     position: relative;
     @include min-width($desktopMD) {
       margin: 0 auto 250px;
@@ -33,6 +34,9 @@
 
     video {
       max-width: 100%;
+      @include min-width($desktopXL) {
+        max-width: 982px;
+      }
     }
 
     &::after {

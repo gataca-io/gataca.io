@@ -1,7 +1,6 @@
 import * as React from "react"
 import cx from "classnames"
 import * as styles from "./sixthSection.module.scss"
-import { images } from "../../../../../images/images"
 import PurpleButton from "../../../../../components/atoms/buttons/purple/PurpleButton"
 import Tag from "../../../../../components/atoms/tags/Tag"
 import { ButtonModel } from "../../../../../interfaces/interfaces"
