@@ -18,47 +18,45 @@
     .leftSide {
       @include flexbox();
       @include justify-content(center);
+      min-height: 254px;
+      @include min-width($mobileSM) {
+        min-height: 342px;
+      }
       @include min-width($mobileXL) {
         @include flex(0, 0, 50%);
+        min-height: auto;
       }
-      @include min-width($desktopXL) {
+      @include min-width($tabletXL) {
         @include flex(0, 0, 63%);
       }
       .barsGovernment {
-        position: relative;
-        max-width: 100%;
+        position: absolute;
+        max-width: 175px;
         height: auto;
+        bottom: 0;
+        left: 0;
+        @include min-width($mobileSM) {
+          max-width: 264px;
+        }
         @include min-width($mobileXL) {
-          position: absolute;
+          max-width: 200px;
+        }
+        @include min-width($tabletSM) {
           max-width: 230px;
-          bottom: 0;
-          left: 10px;
         }
         @include min-width($tabletMD) {
-          max-width: 250px;
-          left: 30px;
-        }
-        @include min-width($tabletXL) {
           max-width: 300px;
-          left: 50px;
         }
-        @include min-width($desktopMD) {
-          max-width: 350px;
-          left: 60px;
-        }
-        @include min-width($desktopXL) {
+        @include min-width($desktopSM) {
           max-width: 100%;
-          left: 119px;
         }
       }
     }
     .rightSide {
-      margin-bottom: 79px;
       @include min-width($mobileXL) {
         @include flex(0, 0, 50%);
-        margin-bottom: 0;
       }
-      @include min-width($desktopXL) {
+      @include min-width($tabletXL) {
         @include flex(0, 0, 37%);
       }
     }

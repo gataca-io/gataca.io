@@ -12,22 +12,25 @@
       }
     },
     "fourthSection": {
-      "description": "Accelerate economic growth with Self-Sovereign Identity",
+      "description": "A new era in education",
       "list": [
         {
-          "title": "Expertise"
+          "title": "Seamless integration"
         },
         {
-          "title": "Security by design"
+          "title": "Easy to use"
         },
         {
-          "title": "Compliance is engrained"
+          "title": "Infrastructure-agnostic"
         },
         {
-          "title": "Ledger-agnostic"
+          "title": "Compliance by design"
         },
         {
           "title": "No vendor lock-in"
+        },
+        {
+          "title": "Expertise"
         }
       ],
       "title": "Why Gataca"
@@ -35,39 +38,38 @@
     "secondSection": {
       "steps": [
         {
-          "description": "Governments around the world are dedicated to digitalizing the public sector. However, they are encountering difficulties in promoting citizen eID adoption and digital inclusion in e-government services. These challenges stem from usability, interoperability, and security features in existing systems and processes",
-          "number": "1",
+          "description": "Universities face time-consuming processes to verify student identities and certifications for enrollment and mobility, leading to complex application procedures for students and alumni seeking programs or jobs. Additionally, the growing trend toward skills-based education has increased the demand for micro-credentialing, which universities struggle to provide attestations for",
           "title": "Challenge"
         },
         {
-          "description": "Our end-to-end solution empowers authorities to issue tamper-proof Verifiable Credentials for various government documents, including national IDs, passports, driver's licenses, and business permits. These credentials are then securely shared to a citizen's ID Wallet, which gives them control over who can access their data and enables Single Sign-On authentication to access digital services both in the public and private sectors",
+          "description": "Our technology allows universities to ease operational processes by securely issuing, updating, and verifying interoperable digital academic credentials, such as diplomas, transcripts, and student IDs. Students can easily use and share these credentials from their ID Wallet to apply for jobs and programs within seconds, reducing paperwork and the burden on verifiers",
           "number": "2",
           "title": "Solution"
         }
       ]
     },
     "thirdSection": {
-      "description": "Boost digital transformation and start improving citizens' day-to-day lives",
+      "description": "Streamline processes and generate new opportunities for the entire education ecosystem",
       "list": [
         {
-          "description": "Issue tamper-proof government documents in a standard, digital format that can be securely shared globally",
-          "title": "Issuance of government documents"
+          "description": "Issue tamper-proof educational credentials such as diplomas, transcripts of records, certificates, or student cards in a standard, digital format",
+          "title": "Issuance of digital education credentials"
         },
         {
-          "description": "Allow secure identity verification of citizens in the public and private sectors by empowering the use of Verifiable IDs",
-          "title": "Citizen identity verification"
+          "description": "Improve identity verification of students for admission processes, course registrations, or exam attendance, reducing the risk of academic fraud",
+          "title": "Student authentication"
         },
         {
-          "description": "Drive accessibility to e-government services, including tax filing, license applications, fine payments, and more",
-          "title": "Access to E-government services"
+          "description": "Manage secure entry to campus buildings, systems, and resources, such as student portals, libraries, and laboratories",
+          "title": "Campus access"
         },
         {
-          "description": "Allocate easily and soundly government benefits, such as social benefits or grant applications to citizens",
-          "title": "Benefit transfer"
+          "description": "Share educational credentials easily cross-borders in a standardized format for international mobility of students and staff",
+          "title": "International mobility"
         },
         {
-          "description": "Securely verify voters' identity and ensure the voting process's integrity",
-          "title": "Electronic voting"
+          "description": "Offer tamper-proof, self-verifiable credentials for job application processes and eliminate the need to manage authenticity requests",
+          "title": "Job application"
         }
       ],
       "title": "Use cases"
