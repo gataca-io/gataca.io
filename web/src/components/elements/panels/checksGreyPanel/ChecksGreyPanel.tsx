@@ -13,62 +13,77 @@ export type ISectionProps = {
   image: string
   leftSideClassName?: string
   imageClassName?: string
+  rightSideClassName?: string
 }
 
 const ChecksGreyPanel: React.FC<ISectionProps> = props => {
-  const { title, description, list, image, leftSideClassName, imageClassName } =
-    props
+  const {
+    title,
+    description,
+    list,
+    image,
+    leftSideClassName,
+    imageClassName,
+    rightSideClassName,
+  } = props
 
   return (
     <div className={styles.checksGreyPanel__container}>
-      <section className={styles.checksGreyPanel}>
-        <div
-          className={`${styles.checksGreyPanel__leftSide} ${
-            leftSideClassName && leftSideClassName
+      <div
+        className={`${
+          leftSideClassName
+            ? leftSideClassName
+            : styles.checksGreyPanel__leftSide
+        }`}
+      >
+        <img
+          className={`${
+            imageClassName ? imageClassName : styles.leftSide__image
           }`}
-        >
-          <img className={`${imageClassName && imageClassName}`} src={image} />
-        </div>
-        <div
-          className={`${cx("heading3")} ${styles.checksGreyPanel__rightSide}`}
-        >
-          <h3 className={`${cx("heading3 marginBottom12")}`}>{title}</h3>
-          {description && (
-            <p
-              className={`${cx("bodyRegularXL")} ${styles.bullet__description}`}
-            >
-              {description}
-            </p>
-          )}
+          src={image}
+        />
+      </div>
+      <div
+        className={`${
+          rightSideClassName
+            ? rightSideClassName
+            : styles.checksGreyPanel__rightSide
+        }`}
+      >
+        <h3 className={`${cx("heading3 marginBottom12")}`}>{title}</h3>
+        {description && (
+          <p className={`${cx("bodyRegularXL")} ${styles.bullet__description}`}>
+            {description}
+          </p>
+        )}
 
-          <div className={styles.checksGreyPanel__rightSide__bullets}>
-            {list?.map((item, index) => {
-              const { title, description } = item
+        <div>
+          {list?.map((item, index) => {
+            const { title, description } = item
 
-              return (
-                <div
-                  key={`${"feature_" + index}`}
-                  className={`${styles.checksGreyPanel__rightSide__bullets__container}`}
-                >
-                  <img src={images.checkIcon} />
-                  <div>
-                    <p className={`${cx("heading6")}`}>{title}</p>
-                    {description && (
-                      <p
-                        className={`${cx("bodyRegularMD marginTop8")} ${
-                          styles.bullet__description
-                        }`}
-                      >
-                        {description}
-                      </p>
-                    )}
-                  </div>
+            return (
+              <div
+                key={`${"feature_" + index}`}
+                className={`${styles.checksGreyPanel__rightSide__bullets__container}`}
+              >
+                <img src={images.checkIcon} />
+                <div>
+                  <p className={`${cx("heading6")}`}>{title}</p>
+                  {description && (
+                    <p
+                      className={`${cx("bodyRegularMD marginTop8")} ${
+                        styles.bullets__container__description
+                      }`}
+                    >
+                      {description}
+                    </p>
+                  )}
                 </div>
-              )
-            })}
-          </div>
+              </div>
+            )
+          })}
         </div>
-      </section>
+      </div>
     </div>
   )
 }

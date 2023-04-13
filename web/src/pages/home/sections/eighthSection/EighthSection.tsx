@@ -1,11 +1,11 @@
 import * as React from "react"
 import cx from "classnames"
-import * as styles from "./eighthSection.module.scss"
 import { BlogModel, ButtonModel } from "../../../../interfaces/interfaces"
 import { readingMarkdownTime } from "../../../../utils/time"
+import PurpleButton from "../../../../components/atoms/buttons/purple/PurpleButton"
 import BlogPreviewSkeleton from "../../../../components/elements/skeletons/blogPreviewSkeleton/BlogPreviewSkeleton"
 import BlogDetailedPreview from "../../../../components/elements/blogPreview/blogDetailedPreview/BlogDetailedPreview"
-import PurpleButton from "../../../../components/atoms/buttons/purple/PurpleButton"
+import * as styles from "./eighthSection.module.scss"
 
 export type ISectionProps = {
   title: string

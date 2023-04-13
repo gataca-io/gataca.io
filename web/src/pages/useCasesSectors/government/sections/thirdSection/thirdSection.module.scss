@@ -1,10 +1,10 @@
-@import "../../../../styles/mixins";
+@import "../../../../../styles/mixins";
 
 .useCasesSection {
   margin-bottom: calc(132px - 32px);
   padding: 0 20px;
   @include min-width($mobileXL) {
-    margin-bottom: calc(220px - 32px);
+    margin-bottom: calc(200px - 32px);
     padding: 0 40px;
   }
   @include min-width($desktopMD) {
@@ -12,27 +12,9 @@
   }
   .description {
     margin-bottom: 80px;
+    text-align: center;
     p {
-      margin-bottom: 40px;
-      @include min-width($tabletXL) {
-        margin-bottom: 0;
-      }
-    }
-    @include min-width($tabletXL) {
-      @include flexbox();
-      @include flex-wrap(nowrap);
-      @include justify-content(space-between);
-      @include align-items(center);
-    }
-    .buttonContainer {
-      max-width: 144px;
-      @include min-width($tabletXL) {
-        min-width: 163px;
-        max-width: 100%;
-      }
-      button {
-        width: 100%;
-      }
+      margin:  0 auto;
     }
   }
   .maxWidth {
@@ -48,6 +30,12 @@
     @include min-width($mobileXL) {
       @include flex-direction(row);
       @include justify-content(space-between);
+    }
+    @include min-width($tabletXL) {
+      @include justify-content(start);
+      > div {
+        @include flex(0, 0, calc((100%/3) - 85.4px));
+      }
     }
   }
 }

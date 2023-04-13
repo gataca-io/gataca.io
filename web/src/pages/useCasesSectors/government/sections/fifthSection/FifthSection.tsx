@@ -1,17 +1,16 @@
 import * as React from "react"
 import cx from "classnames"
 import * as styles from "./fifthSection.module.scss"
-import { videos } from "../../../../videos/videos"
-import { images } from "../../../../images/images"
+import { videos } from "../../../../../videos/videos"
+import { images } from "../../../../../images/images"
 
 export type ISectionProps = {
   title: string
-  subTitle: string
   description: string
 }
 
 const FifthSection: React.FC<ISectionProps> = props => {
-  const { title, subTitle, description } = props
+  const { title, description } = props
   let video: HTMLVideoElement | null | undefined
 
   React.useEffect(() => {
@@ -20,16 +19,16 @@ const FifthSection: React.FC<ISectionProps> = props => {
       : undefined
   })
   return (
-    <section className={`${styles?.fifthSection} ${cx("containerMaxWidth")}`}>
-      <div className={styles.fifthSection__header}>
-        <h6 className={cx("heading6 marginBottom12 neutral700")}>{title}</h6>
+    <section className={`${styles?.videoSection} ${cx("containerMaxWidth")}`}>
+      <div className={styles.videoSection__header}>
         <h3
           className={`${styles?.description} ${cx("heading3 marginBottom12")}`}
-          dangerouslySetInnerHTML={{ __html: subTitle }}
-        ></h3>
+        >
+          {title}
+        </h3>
         <p className={cx("bodyRegularXL neutral700")}>{description}</p>
       </div>
-      <div className={styles.fifthSection__videoContainer}>
+      <div className={styles.videoSection__videoContainer}>
         <video
           id="video"
           poster={images.videoThumbnail}

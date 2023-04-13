@@ -44,7 +44,7 @@ import blogHeaderImage from "./images3d/blogHeaderImage.png"
 import edit from "./icons/edit.svg"
 import papers from "./icons/papers.svg"
 import tool from "./icons/tool.svg"
-import folderPurple from "./images3d/41_folder-1.png"
+import folderPurple from "./images3d/41_Folder-1.png"
 import iconBank from "./icons/bank.svg"
 import iconBriefcase from "./icons/briefcase.svg"
 import iconCalendarEmpty from "./icons/calendar-empty-alt.svg"
@@ -77,9 +77,11 @@ import fingerPrintIcon from "./icons/fingerprint-viewfinder.svg"
 import userCheckIcon from "./icons/user-check-bottom.svg"
 import macFloating from "./images3d/mac_floating_shadow.png"
 import documentIcon from "./icons/document.svg"
-import likeIcon from "./icons/like.svg"
 import cloudConnectionIcon from "./icons/cloud-connection.svg"
 import settingsIcon from "./icons/settings.svg"
+import likeIcon from "./icons/like.svg"
+import documentListCheckIcon from "./icons/document-list-check.svg"
+import barsUpDown from "./images3d/bars2.png"
 
 export const images = {
   chevronDown: crevronDownSVG,
@@ -164,4 +166,7 @@ export const images = {
   likeIcon: likeIcon,
   cloudConnectionIcon: cloudConnectionIcon,
   settingsIcon: settingsIcon,
+  likeIcon: likeIcon,
+  documentListCheckIcon: documentListCheckIcon,
+  barsUpDown: barsUpDown,
 }
