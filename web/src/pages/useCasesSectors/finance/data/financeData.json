@@ -1,0 +1,72 @@
+{
+    "data": {
+        "fifthSection": {
+            "description": "Gataca Studio is the most comprehensive tool on the market to deploy decentralized identity solutions",
+            "title": "How it works"
+        },
+        "firstSection": {
+            "contactButton": {
+                "label": "Contact us"
+            },
+            "description": "Financial services have never been easier to access",
+            "title": "Finance"
+        },
+        "fourthSection": {
+            "description": "Revolutionizing financial services with decentralized identity solutions",
+            "list": [{
+                    "title": "Seamless integration"
+                },
+                {
+                    "title": "Engrained compliance"
+                },
+                {
+                    "title": "Infrastructure-agnostic"
+                },
+                {
+                    "title": "No vendor lock-in"
+                },
+                {
+                    "title": "Security by design"
+                },
+                {
+                    "title": "Expertise"
+                }
+            ],
+            "title": "Why Gataca"
+        },
+        "secondSection": {
+            "steps": [{
+                    "description": "Traditional identity verification methods, such as KYC and AML checks, are time-consuming and costly for financial institutions. Moreover, these methods can result in frustrating processes due to errors and false positives. At the same time, users may find the identity verification process difficult and tedious, which can lead them to abandon it entirely",
+                    "number": "1",
+                    "title": "Challenge"
+                },
+                {
+                    "description": "Our secure and compliant identity verification solution removes a substantial barrier to entry for new users and boosts privacy and trust for existing ones in just one click. By streamlining this process, we help financial institutions reduce the time and cost associated with KYC and AML checks while reducing the risk of fraud and boosting conversion rates",
+                    "number": "2",
+                    "title": "Solution"
+                }
+            ]
+        },
+        "thirdSection": {
+            "description": "Seamless and secure online banking",
+            "list": [{
+                    "description": "Reduce the time and effort required for identity verification while complying with regulatory requirements with a verifiable KYC credential",
+                    "title": "Customer onboarding (Reusable KYC)"
+                },
+                {
+                    "description": "Issue digital certificates to customers, which can be securely stored in their ID wallet. Examples like credit scores or titles of ownership can trigger new revenue models",
+                    "title": "Issuance of financial certificates"
+                },
+                {
+                    "description": "Streamline the application processes by accepting verifiable background information such as academic qualifications or salary certificates",
+                    "title": "Loan applications"
+                },
+                {
+                    "description": "Verify the identity of customers during payment transactions, reducing the risk of fraud and increasing security",
+                    "title": "Secure payment transactions"
+                }
+            ],
+            "title": "Use cases"
+        }
+    }
+}

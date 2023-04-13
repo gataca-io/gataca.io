@@ -1,0 +1,70 @@
+@import "../../../../../styles/mixins";
+
+.fourthSection {
+  margin-bottom: 132px;
+  padding: 0 20px;
+  @include min-width($mobileXL) {
+    margin-bottom: calc(200px - 32px);
+    padding: 0 40px;
+  }
+  @include min-width($desktopMD) {
+    padding: 0 60px;
+  }
+
+  & > div {
+    padding-bottom: 0;
+    @include min-width($mobileXL) {
+      padding-bottom: 40px;
+    }
+
+    .leftSide {
+      @include flexbox();
+      @include justify-content(center);
+      @include min-width($mobileXL) {
+        @include flex(0, 0, 50%);
+      }
+      @include min-width($desktopXL) {
+        @include flex(0, 0, 63%);
+      }
+
+      .barsGovernment {
+        position: relative;
+        max-width: 100%;
+        height: auto;
+        @include min-width($mobileXL) {
+          position: absolute;
+          max-width: 230px;
+          bottom: 0;
+          left: 10px;
+        }
+        @include min-width($tabletMD) {
+          max-width: 250px;
+          left: 30px;
+        }
+        @include min-width($tabletXL) {
+          max-width: 300px;
+          left: 50px;
+        }
+        @include min-width($desktopMD) {
+          max-width: 350px;
+          left: 60px;
+        }
+        @include min-width($desktopXL) {
+          max-width: 100%;
+          left: 119px;
+        }
+      }
+    }
+
+    .rightSide {
+      margin-bottom: 79px;
+      @include min-width($mobileXL) {
+        @include flex(0, 0, 50%);
+        margin-bottom: 0;
+      }
+      @include min-width($desktopXL) {
+        @include flex(0, 0, 37%);
+      }
+    }
+  }
+}

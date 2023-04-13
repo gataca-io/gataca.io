@@ -1,0 +1,137 @@
+@import "../../../../../styles/colors";
+@import "../../../../../styles/mixins";
+@import "../../../../../styles/_types.scss";
+
+.stepsSection {
+  position: relative;
+  margin-bottom: 132px;
+  padding: 0 20px;
+  @include min-width($tabletMD) {
+    margin-bottom: 200px;
+    padding: 0 40px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 2px;
+      height: 1565px;
+      left: 50%;
+      top: -130px;
+      background-image: -webkit-linear-gradient(transparent 0%, $primary700 40%, $primary700 60%, transparent 100%);
+      background: linear-gradient(transparent 0%, $primary700 40%, $primary700 60%,  transparent 100%);
+      @include min-width($tabletXL) { 
+        height: 1365px;
+      }
+      @include min-width($desktopMD) {
+        height: 1265px;
+      }
+      @include min-width($desktopXL) {
+        height: 1195px;
+      }
+    }
+  }
+  @include min-width($desktopSM) {
+    margin-bottom: 260px;
+  }
+  @include min-width($desktopMD) {
+    padding: 0 60px;
+  }
+  @include min-width($desktopXL) {
+    margin-bottom: 200px;
+  }
+
+  .stepsSection__container {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 4px;
+      height: 240px;
+      left: 50%;
+      top: -250px;
+      background-image: -webkit-linear-gradient(transparent 0%, $primary700 40%, $primary700 60%, transparent 100%);
+      background: linear-gradient(transparent 0%, $primary700 40%, $primary700 60%, transparent 100%);
+    }
+
+    @include min-width($tabletMD) {
+      @include flexbox();
+      @include justify-content(center);
+      @include flex-wrap(nowrap);
+      @include align-items(center);
+      &::before {
+        content: none;
+      }
+    }
+
+    &:nth-child(2) {
+      @include min-width($tabletMD) {
+        margin-top: 200px;
+      }
+      @include min-width($desktopMD) {
+        margin-top: 160px;
+      }
+
+      .numberContainer{
+        order: 1;
+        .number {
+          @include min-width($tabletMD) {
+            text-align: left;
+            margin-left: 58px;
+          }
+        }
+      }
+
+      .textContainer {
+        margin-bottom: 0;
+        .text {
+          @include min-width($tabletMD) {
+            margin-left: 0;
+            margin-right: 116px;
+          }
+        }
+      }
+    }
+
+    .numberContainer {
+      @include min-width($tabletMD) {
+        @include flex(0, 0, 50%);
+      }
+      .number {
+        color: $primary100;
+        font-family: $custom;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 280px;
+        line-height: 280px;
+        text-align: center;
+        margin-bottom: 40px;
+        @include min-width($tabletMD) {
+          font-size: 330.75px;
+          line-height: 378px;
+          text-align: right;
+          margin-right: 58px;
+          margin-bottom: 0;
+        }
+        
+      }
+    }
+
+    .textContainer {
+      margin-bottom: 280px;
+      @include min-width($tabletMD) {
+        margin-bottom: 0;
+      }
+      @include min-width($tabletMD) {
+        @include flex(0, 0, 50%);
+      }
+
+      .text {
+        @include min-width($tabletMD) {
+          margin-left: 116px;
+        }
+      }
+    }
+  }
+}
+
