@@ -4,7 +4,7 @@
   margin-bottom: 132px;
   padding: 0 20px;
   @include min-width($mobileXL) {
-    margin-bottom: calc(200px - 32px);
+    margin-bottom: 200px;
     padding: 0 40px;
   }
   @include min-width($desktopMD) {
