@@ -7,7 +7,7 @@
   margin-bottom: 132px;
   padding: 0 20px;
   @include min-width($mobileXL) {
-    margin-bottom: 200px;
+    margin-bottom: 228px;
     padding: 0 40px;
   }
   @include min-width($tabletMD) {
@@ -17,7 +17,7 @@
       content: '';
       position: absolute;
       width: 2px;
-      height: 1565px;
+      height: 1500px;
       left: 50%;
       top: -130px;
       background-image: -webkit-linear-gradient(transparent 0%, $primary700 40%, $primary700 60%, transparent 100%);
