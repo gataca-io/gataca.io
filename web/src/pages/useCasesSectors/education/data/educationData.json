@@ -39,6 +39,7 @@
       "steps": [
         {
           "description": "Universities face time-consuming processes to verify student identities and certifications for enrollment and mobility, leading to complex application procedures for students and alumni seeking programs or jobs. Additionally, the growing trend toward skills-based education has increased the demand for micro-credentialing, which universities struggle to provide attestations for",
+          "number": "1",
           "title": "Challenge"
         },
         {
