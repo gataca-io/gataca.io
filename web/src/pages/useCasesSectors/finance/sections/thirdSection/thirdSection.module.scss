@@ -1,11 +1,11 @@
 @import "../../../../../styles/mixins";
 
 .useCasesSection {
-  margin-bottom: calc(132px - 32px);
+  margin-bottom: calc(132px);
   padding: 0 20px;
 
   @include min-width($mobileXL) {
-    margin-bottom: calc(200px - 32px);
+    margin-bottom: calc(200px);
     padding: 0 40px;
   }
   @include min-width($desktopMD) {
@@ -41,21 +41,24 @@
     & > .card {
       margin-right: 0;
       margin-bottom: 0;
-      width: 100%;
-      height: 290px;
+      // width: 100%;
+      height: auto;
+      min-height: 164px;
       @include min-width($mobileXL) {
         @include flex(0, 0, calc(100% - 65px));
+        height: auto;
       }
-      @include min-width($tabletMD) {
-        @include flex(0, 0, calc(100% - 65px));
-        width: 100%;
-      }
-      @include min-width($tabletXL) {
+      @include min-width($tabletSM) {
         @include flex(0, 0, calc((100%/2) - 96px));
-        height: 273px;
+        height: 293px;
       }
       @include min-width($desktopSM) {
         height: auto;
+        height: 224px;
+      }
+      @include min-width($desktopXL) {
+        height: auto;
+        height: 164px;
       }
     }
   }

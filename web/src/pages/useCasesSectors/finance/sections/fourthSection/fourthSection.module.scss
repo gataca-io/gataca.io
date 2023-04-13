@@ -13,6 +13,7 @@
 
   & > div {
     padding-bottom: 0;
+    overflow: hidden;
     @include min-width($mobileXL) {
       padding-bottom: 40px;
     }
@@ -29,29 +30,35 @@
 
       .barsGovernment {
         position: relative;
-        max-width: 100%;
+        max-width: 85%;
         height: auto;
+        left: -20%;
+        transform: rotate(-15deg);
+        @include min-width($mobileMD) {
+           left: -15%;
+        }
         @include min-width($mobileXL) {
           position: absolute;
           max-width: 230px;
           bottom: 0;
-          left: 10px;
+          left: -4px;
+          transform: rotate(-15deg);
         }
         @include min-width($tabletMD) {
-          max-width: 250px;
-          left: 30px;
+          max-width: 300px;
+          // left: 30px;
         }
         @include min-width($tabletXL) {
-          max-width: 300px;
-          left: 50px;
+          // max-width: 300px;
+          // left: 50px;
         }
         @include min-width($desktopMD) {
           max-width: 350px;
-          left: 60px;
+          // left: 60px;
         }
         @include min-width($desktopXL) {
-          max-width: 100%;
-          left: 119px;
+          max-width: 442px;
+
         }
       }
     }
@@ -59,7 +66,7 @@
     .rightSide {
       margin-bottom: 79px;
       @include min-width($mobileXL) {
-        @include flex(0, 0, 50%);
+        @include flex(0, 0, 45%);
         margin-bottom: 0;
       }
       @include min-width($desktopXL) {

@@ -78,6 +78,7 @@ import userCheckIcon from "./icons/user-check-bottom.svg"
 import likeIcon from "./icons/like.svg"
 import documentListCheckIcon from "./icons/document-list-check.svg"
 import barsUpDown from "./images3d/bars2.png"
+import safe from "./images3d/safe.png"
 
 export const images = {
   chevronDown: crevronDownSVG,
@@ -160,4 +161,5 @@ export const images = {
   likeIcon: likeIcon,
   documentListCheckIcon: documentListCheckIcon,
   barsUpDown: barsUpDown,
+  safe: safe,
 }
