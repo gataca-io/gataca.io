@@ -1,4 +1,5 @@
 export const checksGreyPanel__leftSide: string
+export const leftSide__image: string
 export const checksGreyPanel__rightSide: string
 export const checksGreyPanel__rightSide__bullets: string
 export const checksGreyPanel__rightSide__bullets__container: string

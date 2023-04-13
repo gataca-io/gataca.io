@@ -30,15 +30,24 @@ const ChecksGreyPanel: React.FC<ISectionProps> = props => {
   return (
     <div className={styles.checksGreyPanel__container}>
       <div
-        className={`${styles.checksGreyPanel__leftSide} ${
-          leftSideClassName && leftSideClassName
+        className={`${
+          leftSideClassName
+            ? leftSideClassName
+            : styles.checksGreyPanel__leftSide
         }`}
       >
-        <img className={`${imageClassName && imageClassName}`} src={image} />
+        <img
+          className={`${
+            imageClassName ? imageClassName : styles.leftSide__image
+          }`}
+          src={image}
+        />
       </div>
       <div
-        className={`${cx("heading3")} ${styles.checksGreyPanel__rightSide} ${
-          rightSideClassName && rightSideClassName
+        className={`${
+          rightSideClassName
+            ? rightSideClassName
+            : styles.checksGreyPanel__rightSide
         }`}
       >
         <h3 className={`${cx("heading3 marginBottom12")}`}>{title}</h3>

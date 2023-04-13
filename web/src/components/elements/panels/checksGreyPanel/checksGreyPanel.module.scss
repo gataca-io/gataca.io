@@ -25,27 +25,13 @@
       @include flex(0, 0, calc(50% - 200px));
       max-width: 776px;
     }
-    & > img {
+    .leftSide__image {
       height: auto;
-      max-width: 281px;
       position: absolute;
       bottom: 0;
       left: 0;
-      @include min-width($mobileXL) {
-        max-width: 220px;
-      }
-      @include min-width($desktopSM) {
-        max-width: 250px;
-      }
-      @include min-width($desktopMD) {
-        max-width: 276px;
-      }
-      @include min-width($desktopXL) {
-        max-width: 376px;
-      }
     }
   }
-
   .checksGreyPanel__rightSide {
     margin-bottom: 364px;
     @include min-width($mobileXL) {
@@ -55,24 +41,24 @@
     @include min-width($tabletMD) {
       @include flex(0, 0, 50%);
     }
-    .bullet__description {
-      color: $neutral700;
-      margin-bottom: 32px;
+  }
+  .bullet__description {
+    color: $neutral700;
+    margin-bottom: 32px;
+  }
+  .checksGreyPanel__rightSide__bullets__container {
+    @include flexbox();
+    @include flex-direction(row);
+    @include justify-content(flex-start);
+    &:not(:last-child) {
+      margin-bottom: 24px;
     }
-    .checksGreyPanel__rightSide__bullets__container {
-      @include flexbox();
-      @include flex-direction(row);
-      @include justify-content(flex-start);
-      &:not(:last-child){
-        margin-bottom: 24px;
-      }
-      & > img {
-        height: 24px;
-        margin-right: 12px;
-      }
-      .bullets__container__description {
-        color: $neutral700;
-      }
+    &>img {
+      height: 24px;
+      margin-right: 12px;
+    }
+    .bullets__container__description {
+      color: $neutral700;
     }
   }
 }
