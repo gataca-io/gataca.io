@@ -29,9 +29,9 @@
   width: 100%;
   @include flexbox();
   @include flex-direction(column);
-  @include align-items(flex-end);
 
   @include min-width($mobileXL) {
+    @include align-items(flex-end);
     text-align: right;
   }
   @include min-width($tabletMD) {
@@ -97,6 +97,12 @@
         max-width: 180px;
         min-width: 180px;
         width: auto;
+      }
+
+      &:nth-child(2) {
+        & > p:nth-child(2) {
+          width: 100px;
+        }
       }
 
       & > .advantage__image {

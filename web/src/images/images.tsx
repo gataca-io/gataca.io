@@ -163,7 +163,6 @@ export const images = {
   userCheckIcon: userCheckIcon,
   macFloating: macFloating,
   documentIcon: documentIcon,
-  likeIcon: likeIcon,
   cloudConnectionIcon: cloudConnectionIcon,
   settingsIcon: settingsIcon,
   likeIcon: likeIcon,
