@@ -19,7 +19,7 @@ const advantagesImages = [
   images.settingsIcon,
   images.likeIcon,
   images.cloudConnectionIcon,
-  images.documentIcon,
+  images.documentListCheckIcon,
 ]
 
 const FourthSection: React.FC<ISectionProps> = props => {

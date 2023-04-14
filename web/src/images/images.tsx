@@ -76,7 +76,6 @@ import keyIcon from "./icons/key.svg"
 import fingerPrintIcon from "./icons/fingerprint-viewfinder.svg"
 import userCheckIcon from "./icons/user-check-bottom.svg"
 import macFloating from "./images3d/mac_floating_shadow.png"
-import documentIcon from "./icons/document.svg"
 import cloudConnectionIcon from "./icons/cloud-connection.svg"
 import settingsIcon from "./icons/settings.svg"
 import likeIcon from "./icons/like.svg"
@@ -162,7 +161,6 @@ export const images = {
   fingerPrintIcon: fingerPrintIcon,
   userCheckIcon: userCheckIcon,
   macFloating: macFloating,
-  documentIcon: documentIcon,
   cloudConnectionIcon: cloudConnectionIcon,
   settingsIcon: settingsIcon,
   likeIcon: likeIcon,
