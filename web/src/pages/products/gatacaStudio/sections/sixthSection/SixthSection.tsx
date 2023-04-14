@@ -1,9 +1,9 @@
 import * as React from "react"
 import cx from "classnames"
-import * as styles from "./sixthSection.module.scss"
 import PurpleButton from "../../../../../components/atoms/buttons/purple/PurpleButton"
 import Tag from "../../../../../components/atoms/tags/Tag"
 import { ButtonModel } from "../../../../../interfaces/interfaces"
+import * as styles from "./sixthSection.module.scss"
 
 export type ISectionProps = {
   title: string

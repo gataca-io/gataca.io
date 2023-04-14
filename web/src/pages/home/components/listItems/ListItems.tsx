@@ -42,9 +42,10 @@ const ListItems: React.FC<IListItemsProps> = props => {
             </p>
           ) : (
             Array.isArray(description) &&
-            description?.map((el: string) => {
+            description?.map((el: string, index: number) => {
               return (
                 <p
+                  key={"listItemDescription" + index}
                   className={`${styles.description} ${cx(
                     "bodyRegularMD neutral700 marginBottom20"
                   )}`}

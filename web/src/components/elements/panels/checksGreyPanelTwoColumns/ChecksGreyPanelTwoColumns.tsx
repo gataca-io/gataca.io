@@ -20,7 +20,7 @@ const ChecksGreyPanelTwoColumns: React.FC<ISectionProps> = props => {
     props
 
   return (
-    <div className={styles.checksGreyPanelTwoColumns__container}>
+    <div>
       <section className={styles.checksGreyPanelTwoColumns}>
         <div
           className={`${styles.checksGreyPanelTwoColumns__leftSide} ${

@@ -1,6 +1,7 @@
 import { PageProps, navigate } from "gatsby"
 import * as React from "react"
 import Layout from "../../../components/templates/mainLayout/MainLayout"
+import PreFooterCTASection from "../../../components/templates/sections/preFooterCTA/PreFooterCTA"
 import FirstSection from "./sections/firstSection/FirstSection"
 import SecondSection from "./sections/secondSection/SecondSection"
 import ThirdSection from "./sections/thirdSection/ThirdSection"
@@ -8,7 +9,6 @@ import FourthSection from "./sections/fourthSection/FourthSection"
 import FifthSection from "./sections/fifthSection/FifthSection"
 import SixthSection from "./sections/sixthSection/SixthSection"
 import { gatacaStudioURL } from "../../../data/globalData"
-import PreFooterCTASection from "../../../components/templates/sections/preFooterCTA/PreFooterCTA"
 
 const GatacaStudioPage: React.FC<PageProps> = () => {
   const [gatacaStudioData, setGatacaStudioData] = React.useState<
