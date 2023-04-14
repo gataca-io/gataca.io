@@ -3,6 +3,7 @@ import cx from "classnames"
 import * as styles from "./fifthSection.module.scss"
 import { images } from "../../../../../images/images"
 import { Link } from "gatsby"
+import { IconModel } from "../../../../../interfaces/interfaces"
 
 export type ISectionProps = {
   title: string
@@ -11,7 +12,9 @@ export type ISectionProps = {
     description: string
     route?: string
     listTitle: string
-    LearnMore?: string
+    learnMore?: string
+    icon?: IconModel
+    list: []
   }[]
   list: {
     title: string
@@ -20,12 +23,12 @@ export type ISectionProps = {
 
 const logos = [
   images.ebsiEarlyAdoptersLogo,
-  images.ebsiEuroCommissionLogo,
   images.unaEuropalogo,
+  images.ebsiEuroCommissionLogo,
 ]
 
 const FifthSection: React.FC<ISectionProps> = props => {
-  const { title, stories, list } = props
+  const { title, stories } = props
   const [openedStory, setOpenedStory] = React.useState(0)
   let storiesContainer: HTMLElement | null | undefined
 
@@ -55,7 +58,7 @@ const FifthSection: React.FC<ISectionProps> = props => {
         </div>
         <div id="storiesContainer" className={styles.stories__container}>
           {stories?.map((el, index) => {
-            const { title, description, listTitle, LearnMore, list } = el
+            const { title, description, listTitle, learnMore, list, icon } = el
             return (
               <div
                 id={"feature__" + index}
@@ -75,30 +78,49 @@ const FifthSection: React.FC<ISectionProps> = props => {
                 <p
                   className={`${styles?.story__description} ${cx(
                     "bodyRegularXL marginTop12"
-                  )}`}
+                  )} ${cx(openedStory === index ? "" : styles.notOpened)}`}
                 >
                   {description}
                 </p>
                 {openedStory === index ? (
                   <div>
-                    <p className={cx("bodyRegularXL marginTop12 neutral700")}>
+                    <p
+                      className={cx(
+                        "bodyRegularXL marginTop32 marginBottom20 neutral700"
+                      )}
+                    >
                       {listTitle}
                     </p>
 
-                    {list?.map(item => {
+                    {list?.map((item, index) => {
                       const { title } = item
-                      return <p>{title}</p>
+                      return (
+                        <p
+                          key={"listItem" + index}
+                          className={`${styles.list} ${cx("heading6")}`}
+                        >
+                          <span className={cx("marginRight12")}>
+                            <img src={images.checkIcon} />
+                          </span>
+                          <span>{title}</span>
+                        </p>
+                      )
                     })}
-                    <Link key={"link__" + index} to={el.route || ""}>
-                      {el.LearnMore}
-                    </Link>
+                    <div
+                      className={styles.link__container}
+                      key={"link__" + index}
+                    >
+                      <Link className={cx("buttonMD")} to={el.route || ""}>
+                        {learnMore}
+                      </Link>
+                      <img src={images.chevronRight}></img>
+                    </div>
                   </div>
                 ) : null}
               </div>
             )
           })}
         </div>
-        <div className={styles.fourthSection__rightSide}></div>
       </div>
     </section>
   )

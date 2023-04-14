@@ -5,3 +5,6 @@ export const stories__container: string
 export const story: string
 export const logo__image: string
 export const story__description: string
+export const notOpened: string
+export const list: string
+export const link__container: string
