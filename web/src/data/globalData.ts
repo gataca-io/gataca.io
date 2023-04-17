@@ -15,10 +15,6 @@ export const gatacaURL = "https://gataca.io"
 export const privacyPolicyURL = "/privacyPolicy"
 export const cookiePolicyURL = "/cookiePolicy"
 export const gdprGatacaEmail = "gdpr@gataca.io"
-export const ebsiUniversitiesYoutubeVideo =
-  "https://www.youtube.com/watch?v=ks-A4_o4SpA"
-export const ebsiEuroCommYoutubevideo =
-  "https://www.youtube.com/watch?v=DPqVnnpVhzU"
 
 export const headerMenuOptions: LinkModel[] = [
   {
