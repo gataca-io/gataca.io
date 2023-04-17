@@ -1,0 +1,66 @@
+@import "../../../../../styles/mixins";
+
+.useCasesSection {
+  margin-bottom: calc(132px);
+  padding: 0 20px;
+
+  @include min-width($mobileXL) {
+    margin-bottom: calc(200px);
+    padding: 0 40px;
+  }
+  @include min-width($desktopMD) {
+    padding: 0 60px;
+  }
+
+  .description {
+    margin-bottom: 80px;
+    text-align: center;
+    p {
+      margin:  0 auto;
+    }
+  }
+
+  .maxWidth {
+    @include min-width($mobileXL) {
+      max-width: 576px;
+    }
+  }
+
+  .useCasesSection__container {
+    gap: 32px;
+    @include flexbox();
+    @include flex-direction(column);
+    @include justify-content(center);
+    @include flex-wrap(wrap);
+    @include min-width($mobileXL) {
+      @include flex-direction(row);
+      @include justify-content(space-between);
+      @include align-items(flex-start);
+    }
+
+    & > .card {
+      margin-right: 0;
+      margin-bottom: 0;
+      // width: 100%;
+      height: auto;
+      min-height: 164px;
+      @include min-width($mobileXL) {
+        @include flex(0, 0, calc(100% - 65px));
+        height: auto;
+      }
+      @include min-width($tabletSM) {
+        @include flex(0, 0, calc((100%/2) - 96px));
+        height: 293px;
+      }
+      @include min-width($desktopSM) {
+        height: auto;
+        height: 224px;
+      }
+      @include min-width($desktopXL) {
+        height: auto;
+        height: 164px;
+      }
+    }
+  }
+}
+

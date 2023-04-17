@@ -81,6 +81,7 @@ import settingsIcon from "./icons/settings.svg"
 import likeIcon from "./icons/like.svg"
 import documentListCheckIcon from "./icons/document-list-check.svg"
 import barsUpDown from "./images3d/bars2.png"
+import safe from "./images3d/safe.png"
 import certificateIcon from "./icons/certificate.svg"
 import books from "./images3d/books_1.png"
 import ebsiEarlyAdoptersLogo from "./logos/ebsi-earlyadopters.svg"
@@ -171,6 +172,7 @@ export const images = {
   likeIcon: likeIcon,
   documentListCheckIcon: documentListCheckIcon,
   barsUpDown: barsUpDown,
+  safe: safe,
   certificateIcon: certificateIcon,
   books: books,
   ebsiEarlyAdoptersLogo: ebsiEarlyAdoptersLogo,

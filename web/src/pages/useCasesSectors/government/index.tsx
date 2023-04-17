@@ -3,12 +3,12 @@ import * as React from "react"
 import Layout from "../../../components/templates/mainLayout/MainLayout"
 import { navigate } from "gatsby"
 import { useState } from "react"
+import PreFooterCTASection from "../../../components/templates/sections/preFooterCTA/PreFooterCTA"
 import FirstSection from "./sections/firstSection/FirstSection"
 import SecondSection from "./sections/secondSection/SecondSection"
-import PreFooterCTASection from "../../../components/templates/sections/preFooterCTA/PreFooterCTA"
 import ThirdSection from "./sections/thirdSection/ThirdSection"
-import FifthSection from "./sections/fifthSection/FifthSection"
 import FourthSection from "./sections/fourthSection/FourthSection"
+import FifthSection from "./sections/fifthSection/FifthSection"
 
 const GovernmentPage: React.FC<PageProps> = () => {
   const [governmentData, setGovernment] = useState<any | undefined>()

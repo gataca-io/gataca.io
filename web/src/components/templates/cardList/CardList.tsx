@@ -7,12 +7,18 @@ export type ICardListProps = {
   icon: string
   title: string
   description: string
+  className?: string
 }
 
 const CardList: React.FC<ICardListProps> = props => {
-  const { id, icon, title, description } = props
+  const { id, icon, title, description, className } = props
   return (
-    <div id={id} className={`${styles?.card__list} ${cx("marginBottom32")}`}>
+    <div
+      id={id}
+      className={`${styles?.card__list} ${cx("marginBottom32")} ${
+        className && className
+      }`}
+    >
       <img src={icon} />
       <h5>{title}</h5>
       <p>{description}</p>
