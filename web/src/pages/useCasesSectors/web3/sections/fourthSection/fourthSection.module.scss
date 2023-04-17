@@ -19,7 +19,6 @@
     }
 
     .leftSide {
-      position: relative;
       @include flexbox();
       @include justify-content(center);
       @include min-width($mobileXL) {
@@ -31,7 +30,8 @@
 
       .barsGovernment {
         position: relative;
-        width: 366px;
+        min-width: 366px;
+        max-width: 100%;
         height: auto;
         left: -101px;
         bottom: -72px;
