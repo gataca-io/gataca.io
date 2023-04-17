@@ -34,6 +34,7 @@
       width: 100vw;
       gap: 24px;
       border-radius: 12px;
+      padding: 16px 14px;
       overflow-x: scroll;
       -ms-overflow-style: none;
       /* IE and Edge */
@@ -46,6 +47,7 @@
         overflow: visible;
         width: calc(100% - 36px);
         @include justify-content(space-between);
+        padding: 16px 18px;
       }
       &::before {
         content: '';
