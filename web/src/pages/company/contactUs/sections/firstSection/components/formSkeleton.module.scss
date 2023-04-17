@@ -1,0 +1,117 @@
+@import "../../../../../../styles/colors.scss";
+@import "../../../../../../styles/mixins.scss";
+
+.formSkeleton {
+  .formRow {
+    @include flexbox();
+    @include flex-wrap(nowrap);
+    @include justify-content(space-between);
+    margin-bottom: 20px;
+  }
+  .skeleton {
+    &:nth-child(1), &:nth-child(2) {
+      width: 238px;
+      background: $skeletonBG;
+      height: 36px;
+      border-radius: 8px;
+    }
+    width: 496px;
+    background: $skeletonBG;
+    height: 36px;
+    border-radius: 8px;
+    &:nth-child(8) {
+      height: 82px;
+    }
+  }
+}
+
+@keyframes skeleton {
+  0% {
+    opacity: 0.3;
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+
+  20% {
+    opacity: 1;
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+
+  28% {
+    transform: scaleX(1);
+    transform-origin: right;
+  }
+
+  51% {
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+
+  58% {
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+
+  82% {
+    transform: scaleX(1);
+    transform-origin: right;
+  }
+
+  83% {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+
+  96% {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+
+  100% {
+    opacity: 0.3;
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+}
+
+@keyframes skeleton-animation {
+  0% {
+    right: 100%;
+  }
+
+  50% {
+    right: -128px;
+  }
+
+  100% {
+    right: 100%;
+  }
+}
+
+.skeleton {
+  position: relative;
+  display: grid;
+  overflow: hidden;
+  width: 303px;
+  height: 871px;
+  grid-gap: 8px;
+  grid-template-columns: 128px 200px;
+  @include min-width($mobileXL) {
+    width: 373px;
+    height: 714px;
+  }
+}
+
+.skeleton:before {
+  position: absolute;
+  display: block;
+  width: 128px;
+  height: 871px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0), $neutral100, rgba(255, 255, 255, 0));
+  content: "";
+  animation: skeleton-animation 2s infinite;
+  @include min-width($mobileXL) {
+    height: 714px;
+  }
+}

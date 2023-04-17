@@ -1,17 +1,30 @@
 import type { PageProps } from "gatsby"
 import * as React from "react"
+import { useState } from "react"
 import Layout from "../../../components/templates/mainLayout/MainLayout"
 import PreFooterCTASection from "../../../components/templates/sections/preFooterCTA/PreFooterCTA"
-import { navigate } from "gatsby"
 import { gatacaStudioURL } from "../../../data/globalData"
+import FirstSection from "./sections/firstSection/FirstSection"
 
 const ContactUsPage: React.FC<PageProps> = () => {
+  const [contactUsData, setcontactUs] = useState<any | undefined>()
+  const { firstSection } = contactUsData ? contactUsData : []
+
+  React.useEffect(() => {
+    getcontactUs()
+  }, [])
+  const getcontactUs = async () => {
+    const json_data = require("./data/contactUsData.json")
+    setcontactUs(json_data?.data && json_data?.data)
+  }
   return (
     <Layout>
       <>
-        <main>
-          <h1>Contact us</h1>
-        </main>
+        <FirstSection
+          title={firstSection?.title}
+          description={firstSection?.description}
+          list={firstSection?.list}
+        />
         <PreFooterCTASection
           title={"Ready to start?"}
           description={

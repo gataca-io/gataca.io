@@ -1,0 +1,64 @@
+@import "../../../../../styles/_colors.scss";
+@import "../../../../../styles/mixins.scss";
+
+.firstSection {
+  padding: 0 20px;
+  margin-top: 162px;
+  margin-bottom: 132px;
+  @include min-width($mobileXL) {
+    margin-bottom: 266px;
+    margin-top: 106px;
+    padding: 0 40px;
+  }
+  @include min-width($desktopMD) {
+    padding: 0 60px;
+  }
+}
+
+.firstSection__container {
+  @include flexbox();
+  @include justify-content(space-between);
+  @include flex-wrap(wrap);
+}
+
+.firstSection__leftSide {
+  @include flex(0, 0, 100%);
+  @include min-width($tabletMD) {
+    @include flex(0, 0, calc(100% / 2));
+  }
+  h1 {
+    @include min-width($mobileXL) {
+      margin-top: 40px;
+    }
+  }
+  p {
+    max-width: 475px;
+  }
+  .description {
+    margin-bottom: 34px;
+  }
+  .list__container {
+    @include flexbox();
+    @include align-items(center);
+    img {
+      width: 32px;
+      margin-right: 20px;
+    }
+  }
+}
+
+.firstSection__rightSide {
+  @include flex(0, 0, calc(100% / 2));
+  @include min-width($tabletMD) {
+    @include flex(0, 0, calc(100% / 2));
+  }
+
+  .form_container {
+    background-color: $neutral100;
+    padding: 40px;
+    margin-top: 32px;
+    border-radius: 12px;
+    min-height: 284;
+    filter: drop-shadow(0px 0px 10px rgba(12, 11, 51, 0.12));
+  }
+}

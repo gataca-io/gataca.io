@@ -1,0 +1,22 @@
+{
+  "data": {
+    "firstSection": {
+      "description": "We’re happy to answer any questions you may have and get you started with Gataca. Let us know how we can help.",
+      "list": [
+        {
+          "title": "Request a demo"
+        },
+        {
+          "title": "Explore use cases for your organization"
+        },
+        {
+          "title": "Explore our partnership program"
+        },
+        {
+          "title": "Media or other opportunities"
+        }
+      ],
+      "title": "Contact us"
+    }
+  }
+}
