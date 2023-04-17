@@ -53,7 +53,7 @@ const FifthSection: React.FC<ISectionProps> = props => {
         style={{ position: "relative" }}
       >
         <div className={styles.fifthSection__header}>
-          <h3 className={cx("heading3 marginBottom12")}>{title}</h3>
+          <h3 className={cx("heading3")}>{title}</h3>
         </div>
         <div id="storiesContainer" className={styles.stories__container}>
           {stories?.map((el, index) => {

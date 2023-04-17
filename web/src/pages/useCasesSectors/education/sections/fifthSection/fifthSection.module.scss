@@ -23,7 +23,7 @@
     .fifthSection__header {
       text-align: center;
       h3 {
-        margin-bottom: 82px;
+        margin-bottom: calc(82px - 16px);
       }
     }
     .stories__container::-webkit-scrollbar {
