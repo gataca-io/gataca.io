@@ -71,6 +71,12 @@
           width: 3000px;
         }
       }
+      & > div:nth-child(3) {
+        margin-right: 300px;
+        @media (min-width: 1067px) {
+          margin-right: 0px;
+        }
+      }
       .story {
         height: fit-content;
         @include flex(0, 0, 300px);
