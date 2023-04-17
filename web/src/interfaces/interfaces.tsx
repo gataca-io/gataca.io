@@ -12,6 +12,7 @@ export interface ButtonModel {
   icon?: string
   outlined?: boolean
   className?: any
+  url?: string
   action: (x?: any) => void
 }
 export interface IconModel {

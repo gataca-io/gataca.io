@@ -26,7 +26,7 @@ const useCasesAppliedSection: React.FC<ISectionProps> = props => {
       document && document?.getElementById("useCasesAppliedSectors")
   })
 
-  const scrollIntoView = el => {
+  const scrollIntoView = (el: any) => {
     useCasesCategories
       ? useCasesCategories.scroll({
           behavior: "smooth",

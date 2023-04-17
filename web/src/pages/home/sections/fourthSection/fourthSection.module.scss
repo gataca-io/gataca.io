@@ -43,7 +43,8 @@
 
   & > .advantages__container::-webkit-scrollbar {
     display: none; /* Opera and Chrome */
-}
+  }
+
   & > .advantages__container {
     width: 100vw;
     z-index: 0;

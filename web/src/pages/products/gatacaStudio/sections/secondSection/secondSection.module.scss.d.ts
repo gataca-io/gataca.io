@@ -1,0 +1,7 @@
+export const description: string
+export const gatacaStudioSection: string
+export const gatacaStudioSection__container: string
+export const gatacaStudioSection__leftSide: string
+export const gatacaStudioSection__rightSide: string
+export const gatacaStudioSection__leftSide__bullets: string
+export const gatacaStudioSection__rightSide__videoContainer: string
