@@ -1,8 +1,8 @@
 import * as React from "react"
 import cx from "classnames"
 import { images } from "../../../../../images/images"
-import * as styles from "./thirdSection.module.scss"
 import CardList from "../../../../../components/templates/cardList/CardList"
+import * as styles from "./thirdSection.module.scss"
 
 export type ISectionProps = {
   title: string
