@@ -17,10 +17,10 @@ export type ISectionProps = {
 }
 
 const iconsUseCases = [
-  images.documentListCheckIcon,
-  images.idCardIcon,
-  images.keyIcon,
-  images.likeIcon,
+  images.userCheckIcon,
+  images.fingerPrintIcon,
+  images.userAvatarIcon,
+  images.trophyIcon,
 ]
 
 const ThirdSection: React.FC<ISectionProps> = props => {

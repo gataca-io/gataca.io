@@ -19,7 +19,7 @@ const FourthSection: React.FC<ISectionProps> = props => {
   return (
     <section className={`${styles?.fourthSection} ${cx("containerMaxWidth")}`}>
       <ChecksGreyPanel
-        image={images.safe}
+        image={images.puzzle}
         title={title}
         description={description}
         list={list}
