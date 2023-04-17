@@ -1,4 +1,4 @@
 export const fourthSection: string
 export const rightSide: string
 export const leftSide: string
-export const booksImage: string
+export const puzzleImage: string

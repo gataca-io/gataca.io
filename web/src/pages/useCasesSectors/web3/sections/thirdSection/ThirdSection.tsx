@@ -1,8 +1,8 @@
 import * as React from "react"
 import cx from "classnames"
 import { images } from "../../../../../images/images"
-import CardList from "../../../../../components/templates/cardList/CardList"
 import * as styles from "./thirdSection.module.scss"
+import CardList from "../../../../../components/templates/cardList/CardList"
 
 export type ISectionProps = {
   title: string
@@ -17,10 +17,10 @@ export type ISectionProps = {
 }
 
 const iconsUseCases = [
-  images.documentListCheckIcon,
-  images.idCardIcon,
-  images.keyIcon,
-  images.likeIcon,
+  images.userCheckIcon,
+  images.fingerPrintIcon,
+  images.userAvatarIcon,
+  images.trophyIcon,
 ]
 
 const ThirdSection: React.FC<ISectionProps> = props => {

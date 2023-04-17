@@ -28,30 +28,37 @@
         @include flex(0, 0, 63%);
       }
 
-      .safeBoxImage {
+      .puzzleImage {
         position: relative;
-        max-width: 85%;
+        min-width: 366px;
+        max-width: 100%;
         height: auto;
-        left: -20%;
-        transform: rotate(-15deg);
+        left: -101px;
+        bottom: -72px;
         @include min-width($mobileMD) {
-           left: -15%;
+          left: -28%;
+          bottom: -72px;
         }
         @include min-width($mobileXL) {
           position: absolute;
-          max-width: 230px;
-          bottom: 0;
-          left: -4px;
-          transform: rotate(-15deg);
+          max-width: 330px;
+          bottom: -72px;
+          left: -58px;
         }
         @include min-width($tabletMD) {
-          max-width: 300px;
+          bottom: -102px;
+          left: -88px;
+          max-width: 450px;
         }
         @include min-width($desktopMD) {
-          max-width: 350px;
+          bottom: -132px;
+          left: -88px;
+          max-width: 550px;
         }
         @include min-width($desktopXL) {
-          max-width: 400px;
+          bottom: -152px;
+          left: -118px;
+          max-width: 600px;
 
         }
       }
@@ -59,7 +66,6 @@
 
     .rightSide {
       width: 100%;
-      margin-bottom: 79px;
       @include min-width($mobileXL) {
         @include flex(0, 0, 45%);
         margin-bottom: 0;
