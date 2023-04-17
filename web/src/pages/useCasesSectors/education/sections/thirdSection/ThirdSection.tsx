@@ -1,8 +1,8 @@
 import * as React from "react"
 import cx from "classnames"
 import { images } from "../../../../../images/images"
-import CardList from "../../../../../components/templates/cardList/CardList"
 import * as styles from "./thirdSection.module.scss"
+import CardList from "../../../../../components/templates/cardList/CardList"
 
 export type ISectionProps = {
   title: string
@@ -17,12 +17,12 @@ export type ISectionProps = {
 }
 
 const iconsUseCases = [
-  images.documentListCheckIcon,
-  images.idCardIcon,
+  images.certificateIcon,
+  images.fingerPrintIcon,
   images.keyIcon,
-  images.likeIcon,
+  images.globeEarthIcon,
+  images.iconBriefcase,
 ]
-
 const ThirdSection: React.FC<ISectionProps> = props => {
   const { title, description, list } = props
 
@@ -45,7 +45,6 @@ const ThirdSection: React.FC<ISectionProps> = props => {
           const { title, description } = item
           return (
             <CardList
-              className={styles.card}
               id={"useCaseItem__" + index}
               key={"useCaseItem__" + index}
               icon={iconsUseCases[index]}

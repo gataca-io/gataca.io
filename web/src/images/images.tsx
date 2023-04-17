@@ -85,6 +85,11 @@ import safe from "./images3d/safe.png"
 import puzzle from "./images3d/3d_puzzle.png"
 import userAvatarIcon from "./icons/userAvatar.svg"
 import trophyIcon from "./icons/trophy.svg"
+import certificateIcon from "./icons/certificate.svg"
+import books from "./images3d/books_1.png"
+import ebsiEarlyAdoptersLogo from "./logos/ebsi-earlyadopters.svg"
+import ebsiEuroCommissionLogo from "./logos/ebsi-europeancomission.svg"
+import unaEuropalogo from "./logos/una_europa_small.svg"
 
 export const images = {
   chevronDown: crevronDownSVG,
@@ -174,4 +179,9 @@ export const images = {
   puzzle: puzzle,
   userAvatarIcon: userAvatarIcon,
   trophyIcon: trophyIcon,
+  certificateIcon: certificateIcon,
+  books: books,
+  ebsiEarlyAdoptersLogo: ebsiEarlyAdoptersLogo,
+  ebsiEuroCommissionLogo: ebsiEuroCommissionLogo,
+  unaEuropalogo: unaEuropalogo,
 }
