@@ -3,7 +3,7 @@
 
 .fifthSection {
   padding: 0 20px;
-  margin-bottom: 132px;
+  margin-bottom: calc(132px - 18px);
   @include min-width($mobileXL) {
     padding: 0 40px;
   }
@@ -11,7 +11,7 @@
     padding: 0 60px;
   }
   @media (min-width: 1067px) {
-    margin-bottom: 200px;
+    margin-bottom: calc(200px - 18px);
   }
   .fifthSection__container {
     margin: 0px auto 0px;
