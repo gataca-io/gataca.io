@@ -60,6 +60,9 @@
           width: 100px;
           right: -40px;
         }
+        @include min-width($desktopMD) {
+          right: -60px;
+        }
         @media (min-width: 1067px) {
           right: auto;
           left: 300px;
