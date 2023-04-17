@@ -83,6 +83,15 @@
           @include flex(0, 0, calc(100%/3 - 80px));
           
         }
+        h5 {
+          min-height: 76px;
+          @media (min-width: 1067px) {
+            min-height: 108px;
+          }
+          @media (min-width: 1123px) {
+            min-height: 76px;
+          }
+        }
         .logo__image {
           max-width: 328px;
           height: auto;
