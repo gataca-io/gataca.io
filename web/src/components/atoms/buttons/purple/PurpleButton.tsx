@@ -4,7 +4,7 @@ import { ButtonModel } from "../../../../interfaces/interfaces"
 import * as styles from "./purpleButton.module.scss"
 
 const PurpleButton: React.FC<ButtonModel> = props => {
-  const { label, icon, outlined, className, action } = props
+  const { label, outlined, className, action } = props
   return (
     <button
       className={`${outlined ? styles?.outlinedButton : styles?.button} ${cx(

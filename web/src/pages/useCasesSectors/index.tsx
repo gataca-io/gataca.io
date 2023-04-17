@@ -27,39 +27,42 @@ const UseCasesPage: React.FC<PageProps> = () => {
   }
   return (
     <Layout>
-      <div className={styles?.useCasesSectors}>
-        <HeaderSection
-          title={headerSection?.title}
-          description={headerSection?.description}
-          setHeaderSectionLoaded={setHeaderSectionLoaded}
+      <>
+        <div className={styles?.useCasesSectors}>
+          <HeaderSection
+            title={headerSection?.title}
+            description={headerSection?.description}
+            setHeaderSectionLoaded={setHeaderSectionLoaded}
+          />
+          <UseCasesSection
+            title={useCasesSection?.title}
+            description={useCasesSection?.description}
+            list={useCasesSection?.list}
+          />
+          <UseCasesAppliedSection
+            title={useCasesAppliedSection?.title}
+            description={useCasesAppliedSection?.description}
+            categories={useCasesAppliedSection?.categories}
+            index={0}
+          />
+        </div>
+        <LogosSlider />
+        <PreFooterCTASection
+          title={"Ready To Start?"}
+          description={
+            "Create an account in Gataca Studio and start experiencing user-centric identity solutions today. Fast & seamless integration."
+          }
+          leftButton={{
+            label: "Contact Us",
+            outlined: true,
+            action: () => navigate("/company/contactUs"),
+          }}
+          rightButton={{
+            label: "Try for free",
+            action: () => window.open(gatacaStudioURL, "_blank"),
+          }}
         />
-        <UseCasesSection
-          title={useCasesSection?.title}
-          description={useCasesSection?.description}
-          list={useCasesSection?.list}
-        />
-        <UseCasesAppliedSection
-          title={useCasesAppliedSection?.title}
-          description={useCasesAppliedSection?.description}
-          categories={useCasesAppliedSection?.categories}
-        />
-      </div>
-      <LogosSlider />
-      <PreFooterCTASection
-        title={"Ready To Start?"}
-        description={
-          "Create an account in Gataca Studio and start experiencing user-centric identity solutions today. Fast & seamless integration."
-        }
-        leftButton={{
-          label: "Contact Us",
-          outlined: true,
-          action: () => navigate("/company/contactUs"),
-        }}
-        rightButton={{
-          label: "Try for free",
-          action: () => window.open(gatacaStudioURL, "_blank"),
-        }}
-      />
+      </>
     </Layout>
   )
 }

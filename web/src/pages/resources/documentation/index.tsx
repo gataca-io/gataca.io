@@ -34,9 +34,9 @@ const BlogPage: React.FC<PageProps> = () => {
         />
 
         <PreFooterCTASection
-          title={"Ready to start?"}
+          title={"We're here to help!"}
           description={
-            "Create an account in Gataca Studio and start experiencing decentralized identity today. Fast & seamless integration"
+            "If you can't find the answer to your question, don't worry – our support team is here to assist you"
           }
           rightButton={{
             label: "Contact us",

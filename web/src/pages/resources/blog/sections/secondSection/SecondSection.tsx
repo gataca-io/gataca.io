@@ -1,10 +1,10 @@
 import * as React from "react"
 import cx from "classnames"
 import PurpleButton from "../../../../../components/atoms/buttons/purple/PurpleButton"
-import BlogPreview from "../../../../../components/elements/blogPreview/BlogPreview"
 import { readingMarkdownTime } from "../../../../../utils/time"
 import { BlogModel } from "../../../../../interfaces/interfaces"
 import BlogPreviewSkeleton from "../../../../../components/elements/skeletons/blogPreviewSkeleton/BlogPreviewSkeleton"
+import BlogPreview from "../../../../../components/elements/blogPreview/BlogPreview"
 import * as styles from "./secondSection.module.scss"
 
 export type ISectionProps = {
