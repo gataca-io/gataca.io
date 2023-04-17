@@ -81,6 +81,11 @@ import settingsIcon from "./icons/settings.svg"
 import likeIcon from "./icons/like.svg"
 import documentListCheckIcon from "./icons/document-list-check.svg"
 import barsUpDown from "./images3d/bars2.png"
+import certificateIcon from "./icons/certificate.svg"
+import books from "./images3d/books_1.png"
+import ebsiEarlyAdoptersLogo from "./logos/ebsi-earlyadopters.svg"
+import ebsiEuroCommissionLogo from "./logos/ebsi-europeancomission.svg"
+import unaEuropalogo from "./logos/una_europa_small.svg"
 
 export const images = {
   chevronDown: crevronDownSVG,
@@ -166,4 +171,9 @@ export const images = {
   likeIcon: likeIcon,
   documentListCheckIcon: documentListCheckIcon,
   barsUpDown: barsUpDown,
+  certificateIcon: certificateIcon,
+  books: books,
+  ebsiEarlyAdoptersLogo: ebsiEarlyAdoptersLogo,
+  ebsiEuroCommissionLogo: ebsiEuroCommissionLogo,
+  unaEuropalogo: unaEuropalogo,
 }
