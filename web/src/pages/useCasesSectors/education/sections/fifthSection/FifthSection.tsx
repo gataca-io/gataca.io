@@ -13,7 +13,6 @@ export type ISectionProps = {
     route?: string
     listTitle: string
     learnMore?: string
-    icon?: IconModel
     list: []
   }[]
   list: {
@@ -58,7 +57,7 @@ const FifthSection: React.FC<ISectionProps> = props => {
         </div>
         <div id="storiesContainer" className={styles.stories__container}>
           {stories?.map((el, index) => {
-            const { title, description, listTitle, learnMore, list, icon } = el
+            const { title, description, listTitle, learnMore, list } = el
             return (
               <div
                 id={"feature__" + index}
@@ -106,15 +105,21 @@ const FifthSection: React.FC<ISectionProps> = props => {
                         </p>
                       )
                     })}
-                    <div
-                      className={styles.link__container}
-                      key={"link__" + index}
-                    >
-                      <Link className={cx("buttonMD")} to={el.route || ""}>
-                        {learnMore}
-                      </Link>
-                      <img src={images.chevronRight}></img>
-                    </div>
+                    {learnMore && (
+                      <div
+                        className={styles.link__container}
+                        key={"link__" + index}
+                      >
+                        <Link
+                          className={cx("buttonMD")}
+                          to={el.route || ""}
+                          target="_blank"
+                        >
+                          {learnMore}
+                        </Link>
+                        <img src={images.chevronRight}></img>
+                      </div>
+                    )}
                   </div>
                 ) : null}
               </div>

@@ -4,7 +4,6 @@
       "stories": [
         {
           "description": "Issuance of variable ID by FNMT, issuance of student ID and Academic diploma, application to master degree",
-          "icon": "",
           "learnMore": "Learn more",
           "list": [
             {
@@ -36,7 +35,6 @@
         },
         {
           "description": "Exchange of verifiable credentials between institutions, including the Royal Mint of Spain, and three universities in cross-border settings (Spain, Belgium, and Italy)",
-          "icon": "",
           "learnMore": "Learn more",
           "list": [
             {
