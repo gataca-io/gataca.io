@@ -12,10 +12,7 @@
   .videoSection__header {
     text-align: center;
     max-width: 778px;
-    margin: 0 auto 60px;
-    .description span{
-      color: $primary700;
-    }
+    margin: 0 auto 60px; 
     @include min-width($mobileXL) {
       margin: 0 auto 52px;
     }
