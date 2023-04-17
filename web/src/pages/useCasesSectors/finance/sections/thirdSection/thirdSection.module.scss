@@ -41,7 +41,6 @@
     & > .card {
       margin-right: 0;
       margin-bottom: 0;
-      // width: 100%;
       height: auto;
       min-height: 164px;
       @include min-width($mobileXL) {

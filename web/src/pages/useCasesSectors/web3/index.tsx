@@ -1,14 +1,14 @@
 import type { PageProps } from "gatsby"
 import * as React from "react"
 import Layout from "../../../components/templates/mainLayout/MainLayout"
-import PreFooterCTASection from "../../../components/templates/sections/preFooterCTA/PreFooterCTA"
 import { navigate } from "gatsby"
 import { gatacaStudioURL } from "../../../data/globalData"
+import PreFooterCTASection from "../../../components/templates/sections/preFooterCTA/PreFooterCTA"
 import FirstSection from "./sections/firstSection/FirstSection"
 import SecondSection from "./sections/secondSection/SecondSection"
+import ThirdSection from "./sections/thirdSection/ThirdSection"
 import FourthSection from "./sections/fourthSection/FourthSection"
 import FifthSection from "./sections/fifthSection/FifthSection"
-import ThirdSection from "./sections/thirdSection/ThirdSection"
 
 const Web3Page: React.FC<PageProps> = () => {
   const [web3Data, setWeb3Data] = React.useState<any | undefined>()
