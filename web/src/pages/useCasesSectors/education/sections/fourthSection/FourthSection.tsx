@@ -23,7 +23,7 @@ const ThirdSection: React.FC<ISectionProps> = props => {
         title={title}
         description={description}
         list={list}
-        imageClassName={styles.barsGovernment}
+        imageClassName={styles.booksImage}
         leftSideClassName={styles.leftSide}
         rightSideClassName={styles.rightSide}
       />
