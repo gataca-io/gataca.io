@@ -94,6 +94,7 @@ import desktopIcon from "./icons/desktop.svg"
 import searchIcon from "./icons/search.svg"
 import puzzleIcon from "./icons/puzzle.svg"
 import videoPlayIcon from "./icons/video-play.svg"
+import chat from "./images3d/chat2.png"
 
 export const images = {
   chevronDown: crevronDownSVG,
@@ -192,4 +193,5 @@ export const images = {
   searchIcon: searchIcon,
   puzzleIcon: puzzleIcon,
   videoPlayIcon: videoPlayIcon,
+  chat: chat,
 }

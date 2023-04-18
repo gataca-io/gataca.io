@@ -5,10 +5,11 @@ import Layout from "../../../components/templates/mainLayout/MainLayout"
 import PreFooterCTASection from "../../../components/templates/sections/preFooterCTA/PreFooterCTA"
 import { gatacaStudioURL } from "../../../data/globalData"
 import FirstSection from "./sections/firstSection/FirstSection"
+import SecondSection from "./sections/secondSection/SecondSection"
 
 const ContactUsPage: React.FC<PageProps> = () => {
   const [contactUsData, setcontactUs] = useState<any | undefined>()
-  const { firstSection } = contactUsData ? contactUsData : []
+  const { firstSection, secondSection } = contactUsData ? contactUsData : []
 
   React.useEffect(() => {
     getcontactUs()
@@ -24,6 +25,11 @@ const ContactUsPage: React.FC<PageProps> = () => {
           title={firstSection?.title}
           description={firstSection?.description}
           list={firstSection?.list}
+        />
+        <SecondSection
+          title={secondSection?.title}
+          subTitle={secondSection?.subTitle}
+          info={secondSection?.info}
         />
         <PreFooterCTASection
           title={"Ready to start?"}
