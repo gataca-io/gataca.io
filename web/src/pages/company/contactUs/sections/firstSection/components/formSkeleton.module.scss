@@ -2,25 +2,65 @@
 @import "../../../../../../styles/mixins.scss";
 
 .formSkeleton {
-  .formRow {
-    @include flexbox();
-    @include flex-wrap(nowrap);
-    @include justify-content(space-between);
-    margin-bottom: 20px;
+  @include flexbox();
+  @include flex-wrap(wrap);
+  @include justify-content(space-between);
+  margin: 0 auto;
+  width: 280px;
+  height: 1000px;
+  @media (min-width: $mobileMD) {
+    width: 350px;
+  }
+  @media (min-width: $mobileXL) {
+    width: 100%;
+    height: 788px;
+  }
+  @media (min-width: $tabletXL) {
+    height: 974px;
+    width: 296px;
+  }
+  @media (min-width: $desktopSM) {
+    height: 900px;
+    width: 360px;
+  }
+  @media (min-width: $desktopMD) {
+    width: 380px;
+    height: 792px;
+  }
+  @media (min-width: $desktopXL) {
+    width: 100%;
+    height: 714px;
   }
   .skeleton {
-    &:nth-child(1), &:nth-child(2) {
-      width: 238px;
-      background: $skeletonBG;
-      height: 36px;
-      border-radius: 8px;
-    }
-    width: 496px;
+    width: 100%;
     background: $skeletonBG;
-    height: 36px;
+    height: 64px;
     border-radius: 8px;
+    margin-bottom: 18px;
+    &:nth-child(1), &:nth-child(2),
+    &:nth-child(4), &:nth-child(5) {
+      @media (min-width: $mobileMD) {
+        @include flex(0, 0, calc(50% - 16px));
+      }
+      @media (min-width: $tabletXL) {
+        width: 100%;
+      }
+      @media (min-width: $desktopMD) {
+        @include flex(0, 0, calc(50% - 16px));
+      }
+    }
     &:nth-child(8) {
-      height: 82px;
+      height: 90px;
+    }
+    &:nth-child(9), &:nth-child(10) {
+      height: 16px;
+    }
+    &:nth-child(11) {
+      position: absolute;
+      bottom: 5px;
+      right: 40px;
+      width: 106px;
+      height: 48px;
     }
   }
 }
@@ -93,7 +133,7 @@
   position: relative;
   display: grid;
   overflow: hidden;
-  width: 303px;
+  width: 260px;
   height: 871px;
   grid-gap: 8px;
   grid-template-columns: 128px 200px;

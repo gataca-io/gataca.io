@@ -23,16 +23,18 @@
 
 .firstSection__leftSide {
   @include flex(0, 0, 100%);
-  @include min-width($tabletMD) {
-    @include flex(0, 0, calc(100% / 2));
+  @include min-width($tabletXL) {
+    @include flex(0, 0, calc((100% - 32px) / 2));
   }
   h1 {
-    @include min-width($mobileXL) {
+    @include min-width($tabletXL) {
       margin-top: 40px;
     }
   }
   p {
-    max-width: 475px;
+    @include min-width($tabletXL) {
+      max-width: 475px;
+    }
   }
   .description {
     margin-bottom: 34px;
@@ -41,24 +43,26 @@
     @include flexbox();
     @include align-items(center);
     img {
-      width: 32px;
+      width: 28px;
       margin-right: 20px;
     }
   }
 }
 
 .firstSection__rightSide {
-  @include flex(0, 0, calc(100% / 2));
-  @include min-width($tabletMD) {
-    @include flex(0, 0, calc(100% / 2));
+  @include flex(0, 0, 100%);
+  @include min-width($tabletXL) {
+    @include flex(0, 0, calc((100% - 32px) / 2));
   }
 
   .form_container {
     background-color: $neutral100;
     padding: 40px;
-    margin-top: 32px;
+    margin-top: calc(80px - 24px);
     border-radius: 12px;
-    min-height: 284;
     filter: drop-shadow(0px 0px 10px rgba(12, 11, 51, 0.12));
+    @include min-width($tabletXL) {
+      margin-top: 0;
+    }
   }
 }
