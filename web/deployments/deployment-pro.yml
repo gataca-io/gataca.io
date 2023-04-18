@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: web6
-          image: gatacaid/website:6.0.0-web-SNAPSHOT
+          image: gatacaid/website:6.0.0-web6
           imagePullPolicy: Always
           ports:
           - containerPort: 80 
@@ -30,7 +30,7 @@ spec:
             protocol: TCP
           env:
           - name: STRAPI_API_URL
-            value: "https://strapi.dev.gataca.io"
+            value: "https://strapi.gataca.io"
           - name: STRAPI_TOKEN
             valueFrom:
               secretKeyRef:
