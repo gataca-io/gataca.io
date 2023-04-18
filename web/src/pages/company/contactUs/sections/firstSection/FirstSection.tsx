@@ -39,15 +39,11 @@ const FirstSection: React.FC<ISectionProps> = props => {
             const { title } = item
             return (
               <div
+                key={"item__" + index}
                 className={`${styles.list__container} ${cx("marginBottom24")}`}
               >
                 <img src={icons[index]} />
-                <p
-                  key={"item__" + index}
-                  className={`${cx("bodyRegularXL neutral700")}`}
-                >
-                  {title}
-                </p>
+                <p className={`${cx("bodyRegularXL neutral700")}`}>{title}</p>
               </div>
             )
           })}
