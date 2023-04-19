@@ -6,10 +6,11 @@ import PreFooterCTASection from "../../../components/templates/sections/preFoote
 import { navigate } from "gatsby"
 import { gatacaStudioURL } from "../../../data/globalData"
 import FirstSection from "./sections/firstSection/FirstSection"
+import SecondSection from "./sections/secondSection/SecondSection"
 
 const AboutUsPage: React.FC<PageProps> = () => {
   const [aboutUsData, setaboutUs] = useState<any | undefined>()
-  const { firstSection } = aboutUsData ? aboutUsData : []
+  const { firstSection, secondSection } = aboutUsData ? aboutUsData : []
 
   React.useEffect(() => {
     getaboutUs()
@@ -28,6 +29,7 @@ const AboutUsPage: React.FC<PageProps> = () => {
           title={firstSection?.title}
           descriptionParagraphs={firstSection?.descriptionParagraphs}
         />
+        <SecondSection description={secondSection?.description} />
         <PreFooterCTASection
           title={"Ready to start?"}
           description={
