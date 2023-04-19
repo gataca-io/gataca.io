@@ -1,0 +1,76 @@
+@import "../../../../../styles/_colors.scss";
+@import "../../../../../styles/mixins.scss";
+
+.firstSection {
+  padding: 0 20px;
+  margin-top: 162px;
+  margin-bottom: 132px;
+  @include min-width($mobileXL) {
+    margin-top: 146px;
+    padding: 0 40px;
+  }
+  @include min-width($tabletXL) {
+    margin-bottom: 200px;
+  }
+  @include min-width($desktopMD) {
+    padding: 0 60px;
+  }
+  .firstSection__header {
+    text-align: center;
+    margin: 0 auto 80px;
+    @include min-width($tabletXL) {
+      margin: 0 auto 156px;
+    }
+    .title {
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      span {
+        color: $primary700;
+      }
+    }
+    p {
+      margin: 0 auto;
+      max-width: 500px;
+    }
+  }
+  .firstSection__content {
+    @include min-width($tabletXL) {
+      @include flexbox();
+      @include justify-content(space-between);
+      @include align-items(center);
+    }
+    .leftColumn {
+      text-align: center;
+      margin-bottom: 80px;
+      @include min-width($tabletXL) {
+        @include flex(0, 0, calc(50% - 32px));
+        margin-bottom: 0;
+        text-align: left;
+      }
+      img {
+        width: 100%;
+        height: auto;
+        @include min-width($mobileXL) {
+          max-width: 486px;
+        }
+      }
+    }
+    .rightColumn {
+      @include min-width($tabletXL) {
+        @include flex(0, 0, calc(50% - 32px))
+      }
+      p {
+        width: 100%;
+        height: auto;
+        @include min-width($tabletXL) {
+          max-width: 576px;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+

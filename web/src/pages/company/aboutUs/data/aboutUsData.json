@@ -1,0 +1,14 @@
+{
+  "data": {
+    "firstSection": {
+      "descriptionHeader": "Gataca is a cybersecurity company providing decentralized identity technology",
+      "descriptionParagraphs": [
+        "Gataca was conceived as an academic research project at MIT in 2017 to mitigate the risks of conducting business online.",
+        "The research identified existing internet authentication frameworks as significant contributors to cybersecurity breaches and identity fraud and proposed a decentralized authentication architecture that would invert the traditional actors' roles in identity management.",
+        "Today, Gataca is one of the companies leading the SSI industry in Europe offering a decentralized identity solution that streamlines the issuance, verification, and management of identity credentials in a simple, compliant, and secure manner."
+      ],
+      "title": "Our story",
+      "titleHeader": "Bringing <span>real-life trust</span> to the Internet"
+    }
+  }
+}
