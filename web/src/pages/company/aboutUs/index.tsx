@@ -8,12 +8,12 @@ import { gatacaStudioURL } from "../../../data/globalData"
 import FirstSection from "./sections/firstSection/FirstSection"
 import SecondSection from "./sections/secondSection/SecondSection"
 import ThirdSection from "./sections/thirdSection/ThirdSection"
+import FourthSection from "./sections/fourthSection/FourthSection"
 
 const AboutUsPage: React.FC<PageProps> = () => {
   const [aboutUsData, setaboutUs] = useState<any | undefined>()
-  const { firstSection, secondSection, thirdSection } = aboutUsData
-    ? aboutUsData
-    : []
+  const { firstSection, secondSection, thirdSection, fourthSection } =
+    aboutUsData ? aboutUsData : []
 
   React.useEffect(() => {
     getaboutUs()
@@ -34,6 +34,12 @@ const AboutUsPage: React.FC<PageProps> = () => {
         />
         <SecondSection description={secondSection?.description} />
         <ThirdSection title={thirdSection?.title} list={thirdSection?.list} />
+        <FourthSection
+          title={fourthSection?.title}
+          description={fourthSection?.description}
+          button={fourthSection?.button}
+          list={fourthSection?.list}
+        />
         <PreFooterCTASection
           title={"Ready to start?"}
           description={

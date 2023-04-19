@@ -10,6 +10,65 @@
       "title": "Our story",
       "titleHeader": "Bringing <span>real-life trust</span> to the Internet"
     },
+    "fourthSection": {
+      "button": {
+        "label": "Join the team"
+      },
+      "description": "Our team is a diverse and dynamic group of highly motivated and skilled individuals. Meet our exceptional team below.",
+      "list": [
+        {
+          "linkedinRoute": "https://www.linkedin.com/in/irenehernandez/",
+          "name": "Irene Hernández",
+          "title": "CEO"
+        },
+        {
+          "linkedinRoute": "https://www.linkedin.com/in/samuelgoes/",
+          "name": "Samuel Gómez",
+          "title": "CTO"
+        },
+        {
+          "linkedinRoute": "https://www.linkedin.com/in/jsanjup/",
+          "name": "José San Juan",
+          "title": "CSO"
+        },
+        {
+          "linkedinRoute": "https://www.linkedin.com/in/chiaracasoni/",
+          "name": "Chiara Casoni",
+          "title": "Business Development & Partnerships"
+        },
+        {
+          "linkedinRoute": "https://www.linkedin.com/in/daniel-moledo-garcia/",
+          "name": "Daniel Moledo",
+          "title": "Backend Developer"
+        },
+        {
+          "linkedinRoute": "https://www.linkedin.com/in/angela-benavente-almazan/",
+          "name": "Ángela Benavente",
+          "title": "Frontend Developer"
+        },
+        {
+          "linkedinRoute": "https://www.linkedin.com/in/tefy-zambrano/",
+          "name": "Estefanía Zambrano",
+          "title": "UX/UI Designer"
+        },
+        {
+          "linkedinRoute": "https://www.linkedin.com/in/jorge-navas-d%C3%ADaz-8b422643/",
+          "name": "Jorge Navas",
+          "title": "IT Manager"
+        },
+        {
+          "linkedinRoute": "https://www.linkedin.com/in/esther-sauri-carbonell/",
+          "name": "Esther Saurí",
+          "title": "Digital Marketing Specialist"
+        },
+        {
+          "linkedinRoute": "https://www.linkedin.com/in/mayra-amador-zapata-/",
+          "name": "Mayra Amador",
+          "title": "Frontend Developer"
+        }
+      ],
+      "title": "Meet the team"
+    },
     "secondSection": {
       "description": "<span>Gataca's mission</span> is to develop highly secure digital identities that are privacy-preserving, user-friendly, and effortlessly integrated into existing systems"
     },
