@@ -12,6 +12,26 @@
     },
     "secondSection": {
       "description": "<span>Gataca's mission</span> is to develop highly secure digital identities that are privacy-preserving, user-friendly, and effortlessly integrated into existing systems"
+    },
+    "thirdSection": {
+      "list": [
+        {
+          "description": "We respect our customer's privacy as we do our own. We build our technology to make sure that you have full control over your private information and decide with who you share it",
+          "number": "1",
+          "title": "Privacy"
+        },
+        {
+          "description": "We ensure the highest levels of security standards by using advanced security technologies and following world-renowned standards for information security management systems",
+          "number": "2",
+          "title": "Security"
+        },
+        {
+          "description": "We develop our products with the end-user at the center of the design, considering factors such as ease of use, accessibility, and aesthetic appeal",
+          "number": "3",
+          "title": "User Experience"
+        }
+      ],
+      "title": "Values"
     }
   }
 }

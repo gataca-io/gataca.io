@@ -7,10 +7,13 @@ import { navigate } from "gatsby"
 import { gatacaStudioURL } from "../../../data/globalData"
 import FirstSection from "./sections/firstSection/FirstSection"
 import SecondSection from "./sections/secondSection/SecondSection"
+import ThirdSection from "./sections/thirdSection/ThirdSection"
 
 const AboutUsPage: React.FC<PageProps> = () => {
   const [aboutUsData, setaboutUs] = useState<any | undefined>()
-  const { firstSection, secondSection } = aboutUsData ? aboutUsData : []
+  const { firstSection, secondSection, thirdSection } = aboutUsData
+    ? aboutUsData
+    : []
 
   React.useEffect(() => {
     getaboutUs()
@@ -30,6 +33,7 @@ const AboutUsPage: React.FC<PageProps> = () => {
           descriptionParagraphs={firstSection?.descriptionParagraphs}
         />
         <SecondSection description={secondSection?.description} />
+        <ThirdSection title={thirdSection?.title} list={thirdSection?.list} />
         <PreFooterCTASection
           title={"Ready to start?"}
           description={
