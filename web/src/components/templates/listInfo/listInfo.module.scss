@@ -6,6 +6,7 @@
   margin-top: 10px;
   @include flex(0, 0, auto);
   @include min-width($mobileXL) {
+    margin-top: 0;
     min-width: 275px;
     @include flex(0, 0, 100%);
     margin-right: 0px;
@@ -39,17 +40,14 @@
       @include min-width($mobileXL) {
         position: absolute;
         left: 5px;
-        top: -3px;
+        top: 8px;
         width: 50px;
         display: block;
       }
       @include min-width($desktopSM) {
         left: 0;
         width: 71px;
-      }
-      @include min-width($desktopXL) {
-        left: 10px;
-        top: -6px;
+        top: 4px;
       }
     }
   }
