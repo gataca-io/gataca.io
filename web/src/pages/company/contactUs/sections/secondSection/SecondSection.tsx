@@ -19,7 +19,10 @@ export type ISectionProps = {
 
 const SecondSection: React.FC<ISectionProps> = props => {
   const { title, subTitle, info } = props
-  const [openItem, setOpenItem] = React.useState<number>(1)
+  const [openItem, setOpenItem] = React.useState<number>(0)
+  const [openInfoItem, setOpenInfoItem] = React.useState<number | undefined>(
+    undefined
+  )
 
   let gatacaStudioBullets: HTMLElement | null | undefined
   React.useEffect(() => {
@@ -58,13 +61,13 @@ const SecondSection: React.FC<ISectionProps> = props => {
                     <ListInfo
                       id={"listInfo__" + index}
                       key={"listInfo__" + index}
-                      index={index + 1}
+                      index={index}
                       title={title}
-                      selected={openItem === index + 1}
+                      selected={openItem === index}
                       showItem={index => {
                         const element =
                           document &&
-                          document.getElementById("listInfo__" + (index - 1))
+                          document.getElementById("listInfo__" + index)
                         setOpenItem(index), element && scrollIntoView(element)
                       }}
                     />
@@ -74,41 +77,38 @@ const SecondSection: React.FC<ISectionProps> = props => {
             </div>
             <div className={styles?.faqsSection__rightSide}>
               <>
-                {info?.map((el, index) => {
-                  const { list } = el
+                {info &&
+                  info[openItem]?.list?.map((el, index) => {
+                    const { title, description } = el
 
-                  return (
-                    <>
-                      <div
-                        id={"listOption__" + index}
-                        key={"listOption__" + index}
-                      >
-                        {list?.map((subItem, index) => {
-                          const { title, description } = subItem
-                          return (
-                            <ListInfoItems
-                              id={"listItem__" + index}
-                              key={"listItem__" + index}
-                              index={index + 1}
-                              title={title}
-                              description={description}
-                              selected={openItem === index + 1}
-                              showItem={index => {
-                                const element =
-                                  document &&
-                                  document?.getElementById(
-                                    "listInfo_" + (index - 1)
-                                  )
-                                setOpenItem(index),
-                                  element && scrollIntoView(element)
-                              }}
-                            />
-                          )
-                        })}
-                      </div>
-                    </>
-                  )
-                })}
+                    return (
+                      <>
+                        <div
+                          id={"listOption__" + index}
+                          key={"listOption__" + index}
+                        >
+                          <ListInfoItems
+                            id={"listItem__" + index}
+                            key={"listItem__" + index}
+                            index={index}
+                            title={title}
+                            description={description}
+                            selected={openInfoItem}
+                            showItem={index => {
+                              const element =
+                                document &&
+                                index &&
+                                document?.getElementById(
+                                  "listInfo__" + (index - 1)
+                                )
+                              setOpenInfoItem(index),
+                                element && scrollIntoView(element)
+                            }}
+                          />
+                        </div>
+                      </>
+                    )
+                  })}
               </>
             </div>
           </div>
