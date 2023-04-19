@@ -19,41 +19,27 @@ const ListItems: React.FC<IListItemsProps> = props => {
 
   return (
     <>
-      {!selected && (
-        <div
-          onClick={() => !selected && showItem(index)}
-          id={id}
-          className={cx(styles.container)}
-        >
-          <div className={styles.titleContainer}>
-            <h5 className={cx("heading5")}>{title}</h5>
-            <span>
-              <img src={selected ? images.iconMinus : images.iconPlus} />
-            </span>
-          </div>
+      <div
+        onClick={() => showItem(!selected ? index : undefined)}
+        id={id}
+        className={`${cx(styles.container)} ${cx("marginBottom16")}`}
+      >
+        <div className={styles.titleContainer}>
+          <h5 className={cx("heading5")}>{title}</h5>
+          <span>
+            <img src={selected ? images.iconMinus : images.iconPlus} />
+          </span>
         </div>
-      )}
 
-      {selected && (
-        <div
-          onClick={() => showItem(!selected ? index : undefined)}
-          id={id}
-          className={cx(styles.container)}
-        >
-          <div className={styles.titleContainer}>
-            <h5 className={cx("heading5")}>{title}</h5>
-            <span>
-              <img src={selected ? images.iconMinus : images.iconPlus} />
-            </span>
-          </div>
+        {selected && (
           <p
             className={`${styles.description} ${cx(
               "bodyRegularMD marginTop20"
             )}`}
             dangerouslySetInnerHTML={{ __html: description }}
           ></p>
-        </div>
-      )}
+        )}
+      </div>
     </>
   )
 }
