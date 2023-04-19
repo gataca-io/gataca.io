@@ -23,7 +23,7 @@ spec:
     spec:
       containers:        
         - name: strapiweb
-          image: gatacaid/website:6.0.0-SNAPSHOT
+          image: gatacaid/website:6.0.0
           imagePullPolicy: Always
           env:
           - name: APP_KEYS
@@ -41,10 +41,14 @@ spec:
               secretKeyRef:
                 key: ADMIN_JWT_SECRET
                 name: strapi-api
+          - name: JWT_SECRET
+            valueFrom:
+              secretKeyRef:
+                key: JWT_SECRET
+                name: strapi-api
           - name: DATABASE_CLIENT
             value: "postgres"
           - name: DATABASE_HOST
-#            value: "strapidb.web.svc.cluster.local"
             value: "postgres.database.svc.cluster.local"
           - name: DATABASE_PORT
             value: "5432"
@@ -68,24 +72,8 @@ spec:
             name: strapiweb
             protocol: TCP
           volumeMounts:
-#            - mountPath: /etc/ssl
-#              name: postgres-ssl-certs
-#            - mountPath: /etc/ssl_ca
-#              name: postgres-ca
-#            - mountPath: /etc/config
-#              name: postgres-configuration-file
       imagePullSecrets:
       - name: regcred
-#      volumes:
-#      - name: postgres-ssl-certs
-#        secret: 
-#          secretName: strapidb-tls
-#      - name: postgres-ca
-#        secret: 
-#          secretName: postgresql-ca
-#      - name: postgres-configuration-file
-#        configMap:
-#          name: strapi-env
 ---
 apiVersion: v1
 kind: Service
