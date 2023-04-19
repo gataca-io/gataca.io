@@ -1,4 +1,5 @@
 import * as React from "react"
+import { Link } from "gatsby"
 import cx from "classnames"
 import { images } from "../../../../../images/images"
 import { ButtonModel } from "../../../../../interfaces/interfaces"
@@ -67,9 +68,9 @@ const FourthSection: React.FC<ISectionProps> = props => {
                     </p>
                   </div>
                   <div className={`${styles.rightColumn}`}>
-                    <a href={item.linkedinRoute} target="_blank">
+                    <Link to={item.linkedinRoute}>
                       <img src={images.linkedinLogo}></img>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
