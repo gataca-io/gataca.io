@@ -4,7 +4,7 @@
 .secondSection {
   margin-bottom: 132px;
   @include min-width($mobileXL) {
-    margin-top: 146px;
+    margin-bottom: 146px;
   }
   .secondSection__container {
     text-align: center;
