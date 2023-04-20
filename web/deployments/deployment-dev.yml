@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: web6
-          image: gatacaid/website:6.0.0-web-SNAPSHOT
+          image: gatacaid/website:6.0.0-web6-SNAPSHOT
           imagePullPolicy: Always
           ports:
           - containerPort: 80 
