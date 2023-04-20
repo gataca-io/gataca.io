@@ -1,0 +1,251 @@
+{
+  "data": {
+    "headerSection": {
+      "description": "No matter where you are in your journey toward implementing a user-centric identity solution, we have you covered",
+      "title": "Our subscriptions are built to scale with you"
+    },
+    "useCasesAppliedSection": {
+      "categories": [{
+          "description": "These sectors are leading the way in adopting decentralized identity technology and leveraging our platform for a more secure and user-centric future.",
+          "id": "cloudSection",
+          "list": [{
+              "button": {
+                "label": "Start free 30-day trial",
+                "outsideWeb": true,
+                "url": "https://studio.gataca.io/login"
+              },
+              "description": "30-day trial for companies looking to get started with the SSI basics",
+              "features": {
+                "activeUsers": "5",
+                "activeUsersInfo": "An active user is a verified user with an active consent. We charge a fix monthly fee per user, not per login event.",
+                "apiKeys": "1",
+                "apiKeysInfo": "Unique identifier and authentication keys to provide access to specific Issuance and/or verification templates to your applications calling the Gataca Studio APIs.",
+                "credentialsInISO28013": false,
+                "credentialsInW3CFormat": true,
+                "customGDPRPurposes": false,
+                "customQR": false,
+                "didPublicCatalogue": false,
+                "dids": "1",
+                "ebsiIntegration": false,
+                "integrationCustomTrustFrameworks": false,
+                "integrationCustomTrustInfraestructure": false,
+                "issuanceTemplates": "1",
+                "issuedCredentials": "5",
+                "issuedCredentialsInfo": "Becoming an issuer in the public catalogue requires a validation process to verify the identity of the issuer and approve its issuance rights.",
+                "nFactor": [],
+                "newSchemaPublicCatalogue": false,
+                "notifications": [
+                  "Web"
+                ],
+                "premierSupport": false,
+                "sandBoxEnvironment": true,
+                "slas": false,
+                "stadistics": true,
+                "standardSupport": false,
+                "verificationTemplates": "1"
+              },
+              "monthlyPrice": 12,
+              "name": "Starter",
+              "subPriceMonthLabel": "Billed after the first month",
+              "subPriceYearLabel": "-10%. Billed after the first month",
+              "type": "Starter",
+              "yearlyPrice": 129
+            },
+            {
+              "button": {
+                "label": "Buy Essential",
+                "outsideWeb": true,
+                "url": "https://studio.gataca.io/login"
+              },
+              "description": "For companies looking to scale their SSI implementation",
+              "features": {
+                "activeUsers": "1000",
+                "activeUsersInfo": "An active user is a verified user with an active consent. We charge a fix monthly fee per user, not per login event.",
+                "apiKeys": "1",
+                "apiKeysInfo": "Unique identifier and authentication keys to provide access to specific Issuance and/or verification templates to your applications calling the Gataca Studio APIs.",
+                "credentialsInISO28013": false,
+                "credentialsInW3CFormat": true,
+                "customGDPRPurposes": false,
+                "customQR": false,
+                "didPublicCatalogue": true,
+                "dids": "2",
+                "ebsiIntegration": false,
+                "integrationCustomTrustFrameworks": false,
+                "integrationCustomTrustInfraestructure": false,
+                "issuanceTemplates": "1",
+                "issuedCredentials": "10",
+                "issuedCredentialsInfo": "Becoming an issuer in the public catalogue requires a validation process to verify the identity of the issuer and approve its issuance rights.",
+                "nFactor": [
+                  "Silent OTP",
+                  "Hardware",
+                  "Biometrics"
+                ],
+                "newSchemaPublicCatalogue": false,
+                "notifications": [
+                  "Web"
+                ],
+                "premierSupport": false,
+                "sandBoxEnvironment": true,
+                "slas": false,
+                "stadistics": true,
+                "standardSupport": "(Extra charges may apply)",
+                "verificationTemplates": "2"
+              },
+              "monthlyPrice": 149,
+              "name": "Essential",
+              "type": "Essential",
+              "yearlyPrice": 1.609
+            },
+            {
+              "button": {
+                "label": "Buy Professional",
+                "outsideWeb": true,
+                "url": "https://studio.gataca.io/login"
+              },
+              "description": "For experienced companies ready for a large scale rollout of SSI",
+              "features": {
+                "activeUsers": "10000",
+                "activeUsersInfo": "An active user is a verified user with an active consent. We charge a fix monthly fee per user, not per login event.",
+                "apiKeys": "10",
+                "apiKeysInfo": "Unique identifier and authentication keys to provide access to specific Issuance and/or verification templates to your applications calling the Gataca Studio APIs.",
+                "credentialsInISO28013": false,
+                "credentialsInW3CFormat": true,
+                "customGDPRPurposes": true,
+                "customQR": true,
+                "didPublicCatalogue": true,
+                "dids": "10",
+                "ebsiIntegration": true,
+                "integrationCustomTrustFrameworks": false,
+                "integrationCustomTrustInfraestructure": false,
+                "issuanceTemplates": "2",
+                "issuedCredentials": "1000",
+                "issuedCredentialsInfo": "Becoming an issuer in the public catalogue requires a validation process to verify the identity of the issuer and approve its issuance rights.",
+                "nFactor": [
+                  "Silent OTP",
+                  "Email OTP",
+                  "SMS OTP",
+                  "Biometrics"
+                ],
+                "newSchemaPublicCatalogue": true,
+                "notifications": [
+                  "Email",
+                  "Web"
+                ],
+                "premierSupport": "(Extra charges may apply)",
+                "sandBoxEnvironment": true,
+                "slas": false,
+                "stadistics": true,
+                "standardSupport": true,
+                "verificationTemplates": "5"
+              },
+              "monthlyPrice": 189,
+              "name": "Professional",
+              "type": "Professional",
+              "yearlyPrice": 20.412
+            },
+            {
+              "button": {
+                "label": "Contact us",
+                "outsideWeb": false,
+                "url": "/company/contactUs"
+              },
+              "description": "For companies that have mastered SSI and need extra care",
+              "features": {
+                "activeUsers": "∞",
+                "activeUsersInfo": "'An active user is a verified user with an active consent. We charge a fix monthly fee per user, not per login event. Add aditiona Active User for 0,12€ each.'",
+                "apiKeys": "∞",
+                "apiKeysInfo": "Unique identifier and authentication keys to provide access to specific Issuance and/or verification templates to your applications calling the Gataca Studio APIs.",
+                "credentialsInISO28013": true,
+                "credentialsInW3CFormat": true,
+                "customGDPRPurposes": true,
+                "customQR": true,
+                "didPublicCatalogue": true,
+                "dids": "∞",
+                "ebsiIntegration": true,
+                "integrationCustomTrustFrameworks": true,
+                "integrationCustomTrustInfraestructure": true,
+                "issuanceTemplates": "∞",
+                "issuedCredentials": "∞",
+                "issuedCredentialsInfo": "Becoming an issuer in the public catalogue requires a validation process to verify the identity of the issuer and approve its issuance rights. Add aditional Issued VC for 0,10€ each.",
+                "nFactor": [
+                  "Silent OTP",
+                  "Email OTP",
+                  "SMS OTP",
+                  "Biometrics"
+                ],
+                "newSchemaPublicCatalogue": true,
+                "notifications": [
+                  "Email",
+                  "Web"
+                ],
+                "premierSupport": true,
+                "sandBoxEnvironment": true,
+                "slas": true,
+                "stadistics": true,
+                "standardSupport": true,
+                "verificationTemplates": "∞"
+              },
+              "monthlyPrice": "Custom pricing",
+              "name": "Enterprise",
+              "type": "Enterprise",
+              "yearlyPrice": "Custom pricing"
+            }
+          ],
+          "title": "Cloud"
+        },
+        {
+          "id": "onPremiseSection",
+          "panelTitle": "On-premise deployment",
+          "paragraphs": [
+            "We understand that some organizations may require heightened control, bespoke integration, or in-house data management. If that is your case, you may deploy Gataca Studio in your own infrastructure.",
+            "We'll offer a team of experts guiding you through every step of the implementation process and provide support services as needed. If this is your case, reach out and tell us your needs."
+          ],
+          "title": "On-premise"
+        }
+      ],
+      "description": "No matter where you are in your journey toward implementing a user-centric identity solution, we have you covered",
+      "title": "Our subscriptions are built to scale with you"
+    },
+    "useCasesSection": {
+      "description": "Explore SSI technology’s most popular use cases",
+      "list": [{
+          "description": "Streamline compliant onboarding processes by enabling individuals to securely prove their identity and provide the necessary information in one click. This can reduce the time and resources needed for identity verification and improve the user experience.",
+          "id": "customerOnboarding",
+          "image": "",
+          "title": "Customer onboarding (KYC / KYB)"
+        },
+        {
+          "description": "No more username and password logins. Combine the simplicity of a Single Sign-On (SSO) with government-grade secure identity systems to provide the best user experience, reduce identity fraud and comply with data protection regulations.",
+          "id": "userAuthentication",
+          "image": "",
+          "title": "User authentication (SSO)"
+        },
+        {
+          "description": "Provide secure access to your facilities in proximity scenarios, where you can seamlessly verify identity information in seconds. Combine SSI technology with smart locks or turnstiles to automate access control in office buildings, hotels, or airports.",
+          "id": "physicalAccessControl",
+          "image": "",
+          "title": "Physical Access Control"
+        },
+        {
+          "description": "Issue tamper-proof digital certificates, qualifications, badges, tickets, and other personal data or identity attributes, and let users store them in a mobile ID wallet. Users can securely access your services or share them with third parties.",
+          "id": "issuanceIdentityCredentials",
+          "image": "",
+          "title": "Issuance of identity credentials"
+        },
+        {
+          "description": "Enhance your business security, efficiency, and convenience, and reduce costs with electronic agreements. Automatically fill in signee information in legal agreements, contracts, and other important documents, and enable qualified electronic signatures.",
+          "id": "signatureContractsDocuments",
+          "image": "",
+          "title": "Signature of contracts and other documents"
+        },
+        {
+          "description": "Provide a more secure, transparent, and trustworthy way of conducting electronic voting for elections, corporate decisions, membership voting, opinion surveys or market research. Using SSI technology in electronic voting reduces the risk of errors and increases confidence in the democratic process.",
+          "id": "electronicVoting",
+          "image": "",
+          "title": "Electronic voting"
+        }
+      ],
+      "title": "Use cases"
+    }
+  }
+}

@@ -1,0 +1,59 @@
+@import "../../../../styles/_colors.scss";
+@import "../../../../styles/_mixins.scss";
+
+.switchButton {
+  display: inline-flex;
+  height: 100%;
+  @include flexbox();
+  @include flex-direction(row);
+  @include flex-wrap(wrap);
+  @include align-items(center);
+}
+
+.periodCheckbox {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.periodCheckboxLabel {
+  cursor: pointer;
+  text-indent: 49px;
+  width: 52px;
+  height: 26px;
+  background: white;
+  border: 3px solid $neutral400;
+  display: block;
+  border-radius: 90px;
+  position: relative;
+  margin: 0px 8px 0px 2px;
+}
+
+.periodCheckboxLabel:after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 26px;
+  min-width: 26px;
+  height: 26px;
+  background: $neutral100;
+  border: 3px solid $neutral400;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+.periodCheckbox:checked + .periodCheckboxLabel {
+  background: $primary700;
+  border: 3px solid $primary700;
+}
+
+.periodCheckbox:checked + .periodCheckboxLabel:after {
+  width: 18px;
+  left: calc(100% - 28px);
+  border: 3px solid $primary700;
+}
+
+.periodCheckboxLabel:active:after {
+  width: 26px;
+}
