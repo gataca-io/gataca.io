@@ -9,11 +9,17 @@ import FirstSection from "./sections/firstSection/FirstSection"
 import SecondSection from "./sections/secondSection/SecondSection"
 import ThirdSection from "./sections/thirdSection/ThirdSection"
 import FourthSection from "./sections/fourthSection/FourthSection"
+import FifthSection from "./sections/fifthSection/FifthSection"
 
 const AboutUsPage: React.FC<PageProps> = () => {
   const [aboutUsData, setaboutUs] = useState<any | undefined>()
-  const { firstSection, secondSection, thirdSection, fourthSection } =
-    aboutUsData ? aboutUsData : []
+  const {
+    firstSection,
+    secondSection,
+    thirdSection,
+    fourthSection,
+    fifthSection,
+  } = aboutUsData ? aboutUsData : []
 
   React.useEffect(() => {
     getaboutUs()
@@ -40,6 +46,7 @@ const AboutUsPage: React.FC<PageProps> = () => {
           button={fourthSection?.button}
           list={fourthSection?.list}
         />
+        <FifthSection title={fifthSection?.title} list={fifthSection?.list} />
         <PreFooterCTASection
           title={"Ready to start?"}
           description={

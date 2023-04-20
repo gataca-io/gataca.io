@@ -1,5 +1,37 @@
 {
   "data": {
+    "fifthSection": {
+      "list": [
+        {
+          "title": "Blockchain & Advanced Technologies Award"
+        },
+        {
+          "title": "Best Business Solution Award"
+        },
+        {
+          "title": "Best Technological Solution Nominee"
+        },
+        {
+          "title": "2dn Finalist of 2022 Startup Competition"
+        },
+        {
+          "title": "Named 1 of 5 “Innovators to Watch” in 2022"
+        },
+        {
+          "title": "Grant recipient"
+        },
+        {
+          "title": "Grant recipient"
+        },
+        {
+          "title": "Grant recipient"
+        },
+        {
+          "title": "Grant recipient"
+        }
+      ],
+      "title": "Awards"
+    },
     "firstSection": {
       "descriptionHeader": "Gataca is a cybersecurity company providing decentralized identity technology",
       "descriptionParagraphs": [

@@ -235,6 +235,7 @@ export const images = {
   businessInsiderLogo: businessInsiderLogo,
   webSubmitLogo: webSubmitLogo,
   jffLogo: jffLogo,
+  mitSandbox: mitSandbox,
   blockIsLogo: blockIsLogo,
   cdtiNeotecLogo: cdtiNeotecLogo,
   redEsLogo: redEsLogo,

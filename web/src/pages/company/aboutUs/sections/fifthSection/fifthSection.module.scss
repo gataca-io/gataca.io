@@ -1,0 +1,55 @@
+@import "../../../../../styles/_colors.scss";
+@import "../../../../../styles/mixins.scss";
+
+.fifthSection {
+  padding: 0 20px;
+  margin-bottom: 132px;
+  @include min-width($mobileXL) {
+    padding: 0 40px;
+    margin-bottom: 200px;
+  }
+  @include min-width($desktopMD) {
+    padding: 0 60px;
+  }
+  .fifthSection__content {
+    .header {
+      text-align: center;
+      margin-bottom: 80px;
+      @include min-width($mobileXL) {
+        margin-bottom: 60px;
+      }
+    }
+    .listContainer {
+      text-align: center;
+      @include min-width($mobileXL) {
+        @include flexbox();
+        @include justify-content(space-around);
+        @include flex-wrap(wrap);
+      }
+      .listAwards {
+        margin-bottom: 76px;
+        @include flex(0, 0, 100%);
+        @include min-width($mobileXL) {
+          @include flex(0, 0, calc((100% / 3) - 30px));
+          padding: 0 15px;
+          margin-bottom: 52px;
+        }
+        @include min-width($desktopMD) {
+          @include flex(0, 0, calc((100% / 4) - 20px));
+          padding: 0 10px;
+        }
+        .imageContainer {
+          min-height: 55px;
+          img {
+            max-width: 200px;
+          }
+        }
+        .title {
+          max-width: 250px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
