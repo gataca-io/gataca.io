@@ -11,8 +11,6 @@ export type ISectionProps = {
   info: {
     title: string
     index: number
-    selected: boolean
-    showItem: (x: number) => void
     list: []
   }[]
 }
@@ -20,7 +18,8 @@ export type ISectionProps = {
 const SecondSection: React.FC<ISectionProps> = props => {
   const { title, subTitle, info } = props
   const [openItem, setOpenItem] = React.useState<number>(0)
-  const [showItem, setShowItem] = React.useState<number>(0)
+  const [showItem, setShowItem] = React.useState<number>()
+
   let faqsBullets: HTMLElement | null | undefined
 
   React.useEffect(() => {
@@ -83,13 +82,14 @@ const SecondSection: React.FC<ISectionProps> = props => {
                           <ListInfoItems
                             id={"listItem__" + index}
                             key={"listItem__" + index}
-                            index={index}
+                            index={index + 1}
                             title={title}
                             description={description}
-                            selected={showItem === index}
+                            selected={showItem === index + 1}
                             showItem={index => {
-                              const element =
-                                document.getElementById("listItem__")
+                              const element = document.getElementById(
+                                "listItem__" + (index - 1)
+                              )
                               setShowItem(index)
                             }}
                           />

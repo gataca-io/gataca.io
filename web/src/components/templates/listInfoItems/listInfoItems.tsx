@@ -14,32 +14,43 @@ export type IListItemsProps = {
 
 const ListItems: React.FC<IListItemsProps> = props => {
   const { id, index, title, description, selected, showItem } = props
-  // const [openItem, setOpenItem] = React.useState<number | undefined>(undefined)
-  // const selected = (index: number) => openItem === index
 
   return (
     <>
-      <div
-        onClick={() => !selected && showItem(index)}
-        id={id}
-        className={`${cx(styles.container)} ${cx("marginBottom16")}`}
-      >
-        <div className={styles.titleContainer}>
-          <h5 className={cx("heading5")}>{title}</h5>
-          <span>
-            <img src={selected ? images.iconMinus : images.iconPlus} />
-          </span>
+      {!selected && (
+        <div
+          onClick={() => !selected && showItem(index)}
+          id={id}
+          className={`${cx(styles.container)} ${cx("marginBottom16")}`}
+        >
+          <div className={styles.titleContainer}>
+            <h5 className={cx("heading5")}>{title}</h5>
+            <span>
+              <img src={selected ? images.iconMinus : images.iconPlus} />
+            </span>
+          </div>
         </div>
-
-        {selected && (
+      )}
+      {selected && (
+        <div
+          onClick={() => showItem(!selected ? index : 0)}
+          id={id}
+          className={`${cx(styles.container)} ${cx("marginBottom16")}`}
+        >
+          <div className={styles.titleContainer}>
+            <h5 className={cx("heading5")}>{title}</h5>
+            <span>
+              <img src={selected ? images.iconMinus : images.iconPlus} />
+            </span>
+          </div>
           <p
             className={`${styles.description} ${cx(
               "bodyRegularMD marginTop20"
             )}`}
             dangerouslySetInnerHTML={{ __html: description }}
           ></p>
-        )}
-      </div>
+        </div>
+      )}
     </>
   )
 }
