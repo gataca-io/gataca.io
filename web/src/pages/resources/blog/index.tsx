@@ -56,7 +56,7 @@ const BlogPage: React.FC<PageProps> = () => {
     const json_data = await require("./data/blogsData.json")
     setPageData(json_data?.data && json_data?.data)
     if (pageData) {
-      await fetch(`http://127.0.0.1:1337/api/blogs?&populate=*`)
+      await fetch(`${process.env.STRAPI_API_URL}/api/blogs?&populate=*`)
         .then(response => response.json())
         .then(jsonResponse => {
           const blogs = jsonResponse?.data
@@ -71,7 +71,7 @@ const BlogPage: React.FC<PageProps> = () => {
 
   const getBlogsCategories = async () => {
     if (pageData) {
-      await fetch(`http://127.0.0.1:1337/api/categories?populate=deep`)
+      await fetch(`${process.env.STRAPI_API_URL}/api/categories?populate=deep`)
         .then(response => response.json())
         .then(jsonResponse => {
           const categories = jsonResponse?.data

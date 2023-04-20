@@ -54,7 +54,7 @@ const IndexPage: React.FC<PageProps> = () => {
   }
 
   // const getHomeData = async () => {
-  //   await fetch("http://127.0.0.1:1337/api/entry?populate=*")
+  //   await fetch("https://strapi.dev.gataca.io//api/entry?populate=*")
   //     .then(response => response.json())
   //     .then(jsonResponse => {
   //       setHomeData(jsonResponse?.data)
@@ -65,7 +65,7 @@ const IndexPage: React.FC<PageProps> = () => {
   // }
 
   const getBlogsData = async () => {
-    await fetch(`http://127.0.0.1:1337/api/blogs?&populate=*`)
+    await fetch(`${process.env.STRAPI_API_URL}/api/blogs?&populate=*`)
       .then(response => response.json())
       .then(jsonResponse => {
         const blogs = jsonResponse?.data
