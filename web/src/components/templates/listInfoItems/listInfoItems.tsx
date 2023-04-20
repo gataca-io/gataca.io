@@ -8,8 +8,8 @@ export type IListItemsProps = {
   index: number
   title: string
   description: string
-  selected: undefined | number
-  showItem: (x: undefined | number) => void
+  selected: boolean
+  showItem: (x: number) => void
 }
 
 const ListItems: React.FC<IListItemsProps> = props => {
@@ -20,7 +20,7 @@ const ListItems: React.FC<IListItemsProps> = props => {
   return (
     <>
       <div
-        onClick={() => showItem(!selected ? index : undefined)}
+        onClick={() => !selected && showItem(index)}
         id={id}
         className={`${cx(styles.container)} ${cx("marginBottom16")}`}
       >

@@ -20,20 +20,16 @@ export type ISectionProps = {
 const SecondSection: React.FC<ISectionProps> = props => {
   const { title, subTitle, info } = props
   const [openItem, setOpenItem] = React.useState<number>(0)
-  const [openInfoItem, setOpenInfoItem] = React.useState<number | undefined>(
-    undefined
-  )
+  const [showItem, setShowItem] = React.useState<number>(0)
+  let faqsBullets: HTMLElement | null | undefined
 
-  let gatacaStudioBullets: HTMLElement | null | undefined
   React.useEffect(() => {
-    gatacaStudioBullets = document
-      ? document?.getElementById("faqsBullets")
-      : undefined
+    faqsBullets = document ? document?.getElementById("faqsBullets") : undefined
   })
 
   const scrollIntoView = (el: HTMLElement) => {
-    gatacaStudioBullets
-      ? gatacaStudioBullets.scroll({
+    faqsBullets
+      ? faqsBullets.scroll({
           behavior: "smooth",
           left: el.offsetLeft,
         })
@@ -50,10 +46,7 @@ const SecondSection: React.FC<ISectionProps> = props => {
         <div style={{ position: "relative" }}>
           <div className={styles?.faqsSection__options}>
             <div className={styles?.faqsSection__leftSide}>
-              <div
-                id="faqsBullets"
-                className={styles?.faqsSection__leftSide__bullets}
-              >
+              <div className={styles?.faqsSection__leftSide__bullets}>
                 {info?.map((item, index) => {
                   const { title } = item
 
@@ -67,7 +60,7 @@ const SecondSection: React.FC<ISectionProps> = props => {
                       showItem={index => {
                         const element =
                           document &&
-                          document.getElementById("listInfo__" + index)
+                          document.getElementById("listOption__" + index)
                         setOpenItem(index), element && scrollIntoView(element)
                       }}
                     />
@@ -75,7 +68,7 @@ const SecondSection: React.FC<ISectionProps> = props => {
                 })}
               </div>
             </div>
-            <div className={styles?.faqsSection__rightSide}>
+            <div id="faqsBullets" className={styles?.faqsSection__rightSide}>
               <>
                 {info &&
                   info[openItem]?.list?.map((el, index) => {
@@ -93,16 +86,11 @@ const SecondSection: React.FC<ISectionProps> = props => {
                             index={index}
                             title={title}
                             description={description}
-                            selected={openInfoItem}
+                            selected={showItem === index}
                             showItem={index => {
                               const element =
-                                document &&
-                                index &&
-                                document?.getElementById(
-                                  "listInfo__" + (index - 1)
-                                )
-                              setOpenInfoItem(index),
-                                element && scrollIntoView(element)
+                                document.getElementById("listItem__")
+                              setShowItem(index)
                             }}
                           />
                         </div>
