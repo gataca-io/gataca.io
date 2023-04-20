@@ -3,10 +3,10 @@
 
 .fifthSection {
   padding: 0 20px;
-  margin-bottom: 132px;
+  margin-bottom: 119px;
   @include min-width($mobileXL) {
     padding: 0 40px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
   }
   @include min-width($desktopMD) {
     padding: 0 60px;
