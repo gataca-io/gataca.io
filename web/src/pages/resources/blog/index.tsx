@@ -71,7 +71,7 @@ const BlogPage: React.FC<PageProps> = () => {
 
   const getBlogsCategories = async () => {
     if (pageData) {
-      await fetch(`https://strapi.dev.gataca.io//api/categories?populate=deep`)
+      await fetch(`${process.env.STRAPI_API_URL}/api/categories?populate=deep`)
         .then(response => response.json())
         .then(jsonResponse => {
           const categories = jsonResponse?.data
