@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "test_dos",
+  "info": {
+    "singularName": "test-do",
+    "pluralName": "test-dos",
+    "displayName": "TestDo"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}
