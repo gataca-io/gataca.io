@@ -3,10 +3,8 @@
 
 .listInfo__container {
   margin-right: 20px;
-  margin-top: 10px;
   @include flex(0, 0, auto);
   @include min-width($mobileXL) {
-    margin-top: 0;
     min-width: 275px;
     @include flex(0, 0, 100%);
     margin-right: 0px;
@@ -29,7 +27,7 @@
 
       &.selected {
         color: $primary700;
-        margin-bottom: 28px;
+        margin-bottom: 20px;
         border: 1px solid $primary700;
         border-radius: 8px;
         padding: 8px;
