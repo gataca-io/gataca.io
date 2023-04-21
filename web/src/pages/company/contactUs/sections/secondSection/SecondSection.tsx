@@ -60,7 +60,9 @@ const SecondSection: React.FC<ISectionProps> = props => {
                         const element =
                           document &&
                           document.getElementById("listOption__" + index)
-                        setOpenItem(index), element && scrollIntoView(element)
+                        setOpenItem(index),
+                          setShowItem(0),
+                          element && scrollIntoView(element)
                       }}
                     />
                   )
