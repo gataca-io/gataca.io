@@ -101,7 +101,7 @@
           margin-top: 0;
         }
         @include min-width($desktopXL) {
-          @include flex(0, 0, 66%);
+          @include flex(0, 0, calc(66% - 32px));
         }
         a {
           color: $primary700;
