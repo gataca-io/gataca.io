@@ -40,6 +40,11 @@
         }
       ],
       "title": "Company culture"
+    },
+    "thirdSection": {
+      "description": "However, we are always interested in hearing from talented individuals passionate about our mission and values. Please feel free to submit your resume, and we will keep it for future opportunities",
+      "subTitle": "Sorry, we currently do not have any open job positions",
+      "title": "Job openings"
     }
   }
 }

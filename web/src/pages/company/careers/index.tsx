@@ -4,10 +4,13 @@ import { useState } from "react"
 import Layout from "../../../components/templates/mainLayout/MainLayout"
 import FirstSection from "./sections/firstSection/FirstSection"
 import SecondSection from "./sections/secondSection/SecondSection"
+import ThirdSection from "./sections/thirdSection/ThirdSection"
 
 const CareersPage: React.FC<PageProps> = () => {
   const [careersData, setCareers] = useState<any | undefined>()
-  const { firstSection, secondSection } = careersData ? careersData : []
+  const { firstSection, secondSection, thirdSection } = careersData
+    ? careersData
+    : []
 
   React.useEffect(() => {
     getCareers()
@@ -28,6 +31,11 @@ const CareersPage: React.FC<PageProps> = () => {
           title={secondSection?.title}
           description={secondSection?.description}
           list={secondSection?.list}
+        />
+        <ThirdSection
+          title={thirdSection?.title}
+          subTitle={thirdSection?.subTitle}
+          description={thirdSection?.description}
         />
       </>
     </Layout>
