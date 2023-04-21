@@ -90,6 +90,11 @@ import books from "./images3d/books_1.png"
 import ebsiEarlyAdoptersLogo from "./logos/ebsi-earlyadopters.svg"
 import ebsiEuroCommissionLogo from "./logos/ebsi-europeancomission.svg"
 import unaEuropalogo from "./logos/una_europa_small.svg"
+import desktopIcon from "./icons/desktop.svg"
+import searchIcon from "./icons/search.svg"
+import puzzleIcon from "./icons/puzzle.svg"
+import videoPlayIcon from "./icons/video-play.svg"
+import chat from "./images3d/chat2.png"
 
 export const images = {
   chevronDown: crevronDownSVG,
@@ -184,4 +189,9 @@ export const images = {
   ebsiEarlyAdoptersLogo: ebsiEarlyAdoptersLogo,
   ebsiEuroCommissionLogo: ebsiEuroCommissionLogo,
   unaEuropalogo: unaEuropalogo,
+  desktopIcon: desktopIcon,
+  searchIcon: searchIcon,
+  puzzleIcon: puzzleIcon,
+  videoPlayIcon: videoPlayIcon,
+  chat: chat,
 }

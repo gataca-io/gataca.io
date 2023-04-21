@@ -1,0 +1,61 @@
+@import "../../../styles/colors";
+@import "../../../styles/mixins";
+
+.listInfo__container {
+  margin-right: 20px;
+  @include flex(0, 0, auto);
+  @include min-width($mobileXL) {
+    min-width: 275px;
+    @include flex(0, 0, 100%);
+    margin-right: 0px;
+    max-width: 487px;
+  }
+  .listInfo__titleContainer {
+    position: relative;
+    @include flexbox();
+    .listTitle {
+      @include min-width($mobileXL) {
+        margin-left: 70px;
+      }
+      @include min-width($desktopMD) {
+        margin-left: 113px;
+      }
+      &.notSelected {
+        cursor: pointer;
+        margin-bottom: 20px;
+      }
+
+      &.selected {
+        color: $primary700;
+        margin-bottom: 20px;
+        border: 1px solid $primary700;
+        border-radius: 8px;
+        padding: 8px;
+      }
+    }
+    & > img {
+      display: none;
+      @include min-width($mobileXL) {
+        position: absolute;
+        left: 5px;
+        top: 8px;
+        width: 50px;
+        display: block;
+      }
+      @include min-width($desktopSM) {
+        left: 0;
+        width: 71px;
+        top: 4px;
+      }
+    }
+  }
+  .description {
+    @include min-width($mobileXL) {
+      margin-left: 70px;
+    }
+
+    @include min-width($desktopMD) {
+      margin-left: 113px;
+    }
+  }
+}
