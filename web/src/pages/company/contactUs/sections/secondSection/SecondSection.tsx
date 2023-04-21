@@ -30,7 +30,7 @@ const SecondSection: React.FC<ISectionProps> = props => {
     faqsBullets
       ? faqsBullets.scroll({
           behavior: "smooth",
-          left: el.offsetLeft,
+          left: el.offsetLeft - 50,
         })
       : null
   }
@@ -45,7 +45,10 @@ const SecondSection: React.FC<ISectionProps> = props => {
         <div style={{ position: "relative" }}>
           <div className={styles?.faqsSection__options}>
             <div className={styles?.faqsSection__leftSide}>
-              <div className={styles?.faqsSection__leftSide__bullets}>
+              <div
+                id="faqsBullets"
+                className={styles?.faqsSection__leftSide__bullets}
+              >
                 {info?.map((item, index) => {
                   const { title } = item
 
@@ -59,7 +62,7 @@ const SecondSection: React.FC<ISectionProps> = props => {
                       showItem={index => {
                         const element =
                           document &&
-                          document.getElementById("listOption__" + index)
+                          document.getElementById("listInfo__" + index)
                         setOpenItem(index),
                           setShowItem(0),
                           element && scrollIntoView(element)
@@ -69,7 +72,7 @@ const SecondSection: React.FC<ISectionProps> = props => {
                 })}
               </div>
             </div>
-            <div id="faqsBullets" className={styles?.faqsSection__rightSide}>
+            <div className={styles?.faqsSection__rightSide}>
               <>
                 {info &&
                   info[openItem]?.list?.map((el, index) => {
