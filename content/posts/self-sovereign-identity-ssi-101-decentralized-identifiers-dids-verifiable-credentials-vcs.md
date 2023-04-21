@@ -1,5 +1,5 @@
 ---
-date: 2021-11-15T21:18:42+01:00
+date: 2021-11-15T09:18:42+01:00
 meta_data:
   title: 'Self-Sovereign Identity (SSI) 101: Decentralized Identifiers (DIDs) & Verifiable
     Credentials (VCs)'
