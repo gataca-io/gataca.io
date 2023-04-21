@@ -63,15 +63,7 @@ export interface IProductModel {
   features?: IProductFeaturesModel
   subPriceMonthLabel?: string
   subPriceYearLabel?: string
-  credentialsInW3CFormat: boolean
-  sandBoxEnvironment: boolean
-  ebsiIntegration: boolean
-  customGDPRPurposes: boolean
-  credentialsInISO28013: boolean
-  integrationCustomTrustFrameworks: boolean
-  integrationCustomTrustInfraestructure: boolean
-  standardSupport: boolean | string
-  premierSupport: boolean | string
+
   button: {
     label: "Contact us"
     outsideWeb: false
@@ -106,6 +98,15 @@ export interface IProductFeaturesModel {
   customQR: string
   support: string
   slas: boolean
+  credentialsInW3CFormat: boolean
+  sandBoxEnvironment: boolean
+  ebsiIntegration: boolean
+  customGDPRPurposes: boolean
+  credentialsInISO28013: boolean
+  integrationCustomTrustFrameworks: boolean
+  integrationCustomTrustInfraestructure: boolean
+  standardSupport: boolean | string
+  premierSupport: boolean | string
 }
 
 export interface ImageModel {

@@ -194,6 +194,10 @@
           "title": "Cloud"
         },
         {
+          "button": {
+            "label": "Contact us",
+            "url": "/company/contactUs"
+          },
           "id": "onPremiseSection",
           "panelTitle": "On-premise deployment",
           "paragraphs": [
