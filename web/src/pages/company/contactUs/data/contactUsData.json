@@ -41,14 +41,14 @@
           "list": [
             {
               "description": "SSI allows businesses to integrate legally-compliant identity verification processes in one click (in contrast to more time-consuming traditional KYC processes), while <strong>improving identity fraud prevention, reducing abandonment rates at onboarding, and granting your users a superb privacy-preserving user experience</strong>. For organizations that do not necessarily need to perform strong authentication of their customers, SSI provides a <strong>privacy-by-design Single Sign On and 2FA solutions</strong> that helps you comply with GDPR and other data protection laws.",
-              "title": "How is GATACA GDPR compliant?"
+              "title": "Why does my business need SSI?"
             },
             {
               "description": "No. Almost every single industry worldwide needs to implement Identity and Access management (IAM) processes inside and across organizations, and therefore they all can reap the benefits from SSI IAM technology (see previous question). Visit our <a href='/userCasesSector'>Use Cases page</a> for an overview of most popular use cases per industry or read our <a href='https://gataca.io/blog/ssi-essentials-35-use-cases-of-decentralized-identities-that-will-make-your-life-easier' target='_blank'>blog post</a> on the topic for more detailed information.",
               "title": "Is this technology only for banks, governments and universities?"
             },
             {
-              "description": "We suggest you try out our <a href='https://studio.gataca.io' target='_blank'>GATACA Studio</a>. It is a cloud-based, full stack SSI solution that offers low-code, API-based integration with your own applications, so you don’t need to worry about the intrinsic complexity in SSI ecosystems. <br>Are you looking for special integration, customization, security & support requirements? We also offer on-premise solutions for organizations with special needs.  If that is your case, <a href='/company/contactUs/'>get in touch</a>.",
+              "description": "We suggest you try out our <a href='https://studio.gataca.io' target='_blank'>GATACA Studio</a>. It is a cloud-based, full stack SSI solution that offers low-code, API-based integration with your own applications, so you don’t need to worry about the intrinsic complexity in SSI ecosystems. <br><br>Are you looking for special integration, customization, security & support requirements? We also offer on-premise solutions for organizations with special needs.  If that is your case, <a href='/company/contactUs/'>get in touch</a>.",
               "title": "I am an organization. How can I start using GATACA’s technology?"
             }
           ],
@@ -74,7 +74,7 @@
               "title": "How is GATACA GDPR compliant?"
             },
             {
-              "description": "At GATACA we take user’s privacy very seriously. User’s DID, cryptographic key pairs, and Verifiable Credentials from end users (“user data”) are physically stored in the mobile device where the user has  installed the GATACA Wallet. We don’t have access to user data unless the user proactively shares it with us or with any of our GATACA Studio clients, or unless it has been issued by us or any GATACA Studio client. In those cases, User Data is stored in European servers protected with the highest security standards. <br>We never collect or use user data for any other purpose than providing users with a secure, privacy-preserving authentication service.",
+              "description": "At GATACA we take user’s privacy very seriously. User’s DID, cryptographic key pairs, and Verifiable Credentials from end users (“user data”) are physically stored in the mobile device where the user has  installed the GATACA Wallet. We don’t have access to user data unless the user proactively shares it with us or with any of our GATACA Studio clients, or unless it has been issued by us or any GATACA Studio client. In those cases, User Data is stored in European servers protected with the highest security standards. <br><br>We never collect or use user data for any other purpose than providing users with a secure, privacy-preserving authentication service.",
               "title": "Where does GATACA store user personal data?"
             },
             {

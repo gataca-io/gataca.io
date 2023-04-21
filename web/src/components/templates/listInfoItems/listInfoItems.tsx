@@ -24,7 +24,7 @@ const ListItems: React.FC<IListItemsProps> = props => {
           className={`${cx(styles.container)} ${cx("marginBottom16")}`}
         >
           <div className={styles.titleContainer}>
-            <h5 className={cx("heading5")}>{title}</h5>
+            <h5 className={cx("bodyBoldLG")}>{title}</h5>
             <span>
               <img src={selected ? images.iconMinus : images.iconPlus} />
             </span>
@@ -38,7 +38,7 @@ const ListItems: React.FC<IListItemsProps> = props => {
           className={`${cx(styles.container)} ${cx("marginBottom16")}`}
         >
           <div className={styles.titleContainer}>
-            <h5 className={cx("heading5")}>{title}</h5>
+            <h5 className={cx("bodyBoldLG")}>{title}</h5>
             <span>
               <img src={selected ? images.iconMinus : images.iconPlus} />
             </span>
