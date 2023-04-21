@@ -1,0 +1,60 @@
+@import "../../../../../styles/_colors.scss";
+@import "../../../../../styles/mixins.scss";
+
+.firstSection {
+  padding: 0 20px;
+  margin-top: 162px;
+  margin-bottom: 132px;
+  @include min-width($mobileXL) {
+    margin-top: 64px;
+    padding: 0 40px;
+  }
+  @include min-width($desktopMD) {
+    padding: 0 60px;
+  }
+  .firstSection__content {
+    @include min-width($tabletXL) {
+      @include flexbox();
+      @include justify-content(space-between);
+      @include align-items(center);
+    }
+    .leftColumn {
+      margin-bottom: 40px;
+      @include min-width($tabletXL) {
+        @include flex(0, 0, calc(50% - 59px));
+        margin-bottom: 0;
+        text-align: left;
+      }
+      p {
+        width: 100%;
+        @include min-width($tabletXL) {
+          max-width: 475px;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+    }
+    .rightColumn {
+      text-align: center;
+      @include min-width($tabletXL) {
+        @include flex(0, 0, calc(50% - 59px))
+      }
+      .imagesContainer {
+        > div {
+          @include flexbox();
+          @include align-items(flex-end);
+          @include justify-content(space-around);
+          > div {
+            @include flex(0, 0, 50%);
+            img {
+              max-width: 100%;
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
