@@ -1,0 +1,70 @@
+@import "../../../../../styles/_colors.scss";
+@import "../../../../../styles/mixins.scss";
+
+.fourthSection {
+  padding: 0 20px;
+  margin-bottom: 100px;
+  @include min-width($mobileXL) {
+    padding: 0 40px;
+    margin-bottom: 52px;
+  }
+  @include min-width($desktopMD) {
+    padding: 0 60px;
+  }
+  .fourthSection__content {
+    .header {
+      margin-bottom: 100px;
+      @include min-width($mobileXL) {
+        margin-bottom: 169px;
+        max-width: 576px;
+      }
+    }
+    .listContainer {
+      text-align: center;
+      @include min-width($mobileXL) {
+        @include flexbox();
+        @include justify-content(flex-start);
+        @include flex-wrap(wrap);
+      }
+      img {
+        width: 100%;
+        height: auto;
+        max-width: 232px;
+      }
+      .listTeam {
+        margin-bottom: 32px;
+        @include flex(0, 0, 100%);
+        @include min-width($mobileXL) {
+          @include flex(0, 0, calc((100% / 3) - 30px));
+          padding: 0 15px;
+          margin-bottom: 80px;
+        }
+        @include min-width($desktopMD) {
+          @include flex(0, 0, calc((100% / 4) - 20px));
+          padding: 0 10px;
+        }
+        .listTeam__content {
+          @include flexbox();
+          @include justify-content(space-between);
+          @include flex-wrap(nowrap);
+          max-width: 232px;
+          margin: 0 auto;
+          .leftColumn {
+            .name {
+              color: $primary700;
+              text-align: left;
+            }
+            .title {
+              font-weight: 400;
+              text-align: left;
+            }
+          }
+          .rightColumn {
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+}
+

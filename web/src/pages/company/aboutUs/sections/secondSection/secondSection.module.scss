@@ -1,0 +1,25 @@
+@import "../../../../../styles/_colors.scss";
+@import "../../../../../styles/mixins.scss";
+
+.secondSection {
+  margin-bottom: 132px;
+  @include min-width($mobileXL) {
+    margin-bottom: 200px;
+  }
+  .secondSection__container {
+    text-align: center;
+    background-color: $neutral200;
+    padding: 80px 20px;
+    @include min-width($mobileXL) {
+      padding: 80px;
+    }
+    .slogan {
+      max-width: 882px;
+      margin-left: auto;
+      margin-right: auto;
+      span {
+        color: $primary700;
+      }
+    }
+  }
+}
