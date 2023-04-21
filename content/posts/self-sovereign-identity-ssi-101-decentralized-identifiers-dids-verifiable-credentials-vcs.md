@@ -13,7 +13,7 @@ meta_data:
 title: 'SSI Essentials: What are Decentralized Identifiers (DIDs) & Verifiable Credentials
   (VCs)?'
 author: ''
-hero_image: "/static/images/dids-and-vcs-top-image.png"
+hero_image: "/static/images/what-are-vcs-and-dids.png"
 
 ---
 Decentralized Identifiers (DIDs) and Verifiable Credentials (VCs) are the foundational concepts of Self-Sovereign Identity and the standards for developing a new decentralized identity architecture based on the notions of privacy, security, and user-centricity. 
