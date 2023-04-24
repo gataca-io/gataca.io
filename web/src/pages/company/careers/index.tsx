@@ -37,6 +37,7 @@ const CareersPage: React.FC<PageProps> = () => {
           subTitle={thirdSection?.subTitle}
           description={thirdSection?.description}
         />
+        <hr></hr>
       </>
     </Layout>
   )
