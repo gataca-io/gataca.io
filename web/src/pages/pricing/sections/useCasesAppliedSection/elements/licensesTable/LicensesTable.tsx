@@ -1,10 +1,10 @@
-import React from "react" // we need this to make JSX compile
-// import LicenseCard from "../LicenseCard/LicenseCard"
+import React from "react"
 import cx from "classnames"
 import * as styles from "./licensesTable.module.scss"
 import PurpleButton from "../../../../../../components/atoms/buttons/purple/PurpleButton"
 import Tag from "../../../../../../components/atoms/tags/Tag"
 import { images } from "../../../../../../images/images"
+import HoverTooltip from "../../../../../../components/elements/tooltip/hoverTooltip/HoverTooltip"
 
 type ILicensesTableProps = {
   products: any[]
@@ -118,26 +118,6 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
                             )
                           }
                         />
-                        {/* <PurpleButton
-                          className={styles.billSummary__continue}
-                          text={
-                            licenseIsEnterprise(license)
-                              ? "Contact Us"
-                              : "Get Started"
-                          }
-                          functionality={() =>
-                            !licenseIsEnterprise(license)
-                              ? window?.open(
-                                  "https://studio.gataca.io/login",
-                                  "_blank"
-                                )
-                              : window?.open(
-                                  "https://gataca.io/company/contact",
-                                  "_blank"
-                                )
-                          }
-                          disabled={false}
-                        /> */}
                       </div>
                     </div>
                   </th>
@@ -164,7 +144,12 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
                   styles.table__body__row__subcategory
                 } ${cx("bodyRegularSM")}`}
               >
-                Verification Templates
+                <div>
+                  <p className={`${cx("bodyRegularSM")}`}>
+                    Verification Templates
+                  </p>
+                  <HoverTooltip label={"hola"} />
+                </div>
               </td>
               {products?.map(license => {
                 return (
@@ -497,8 +482,6 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
                             : images.closeIcon
                         }
                       ></img>
-                      {/* {  */}
-                      {/* // : "✗ " + "Only Private Catalogue"} */}
                     </td>
                   </>
                 )
@@ -788,35 +771,6 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
                 )
               })}
             </tr>
-            {/* <tr key={15} className={styles.table__body__row}>
-              <td
-                className={`${styles.table__body__row__cell} ${
-                  styles.table__body__row__subcategory
-                } ${cx("bodyRegularSM")}`}
-              >
-                SLAs
-              </td>
-              {products?.map(license => {
-                return (
-                  <>
-                    <td
-                      className={`${styles.table__body__row__cell} ${
-                        styles.table__body__row__data
-                      } ${cx("bodyBoldSM")}`}
-                    >
-                      <img
-                        className={styles.table__body__row__cell__icon}
-                        src={
-                          license.features?.slas
-                            ? images.checkIcon
-                            : images.closeIcon
-                        }
-                      ></img>
-                    </td>
-                  </>
-                )
-              })}
-            </tr> */}
           </tbody>
         </table>
       </div>

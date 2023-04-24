@@ -92,6 +92,7 @@ import ebsiEuroCommissionLogo from "./logos/ebsi-europeancomission.svg"
 import unaEuropalogo from "./logos/una_europa_small.svg"
 import greenCheckIcon from "./icons/greenCheck.svg"
 import closeIcon from "./icons/closeIcon.svg"
+import infoIcon from "./icons/info.svg"
 
 export const images = {
   chevronDown: crevronDownSVG,
@@ -188,4 +189,5 @@ export const images = {
   unaEuropalogo: unaEuropalogo,
   greenCheckIcon: greenCheckIcon,
   closeIcon: closeIcon,
+  infoIcon: infoIcon,
 }

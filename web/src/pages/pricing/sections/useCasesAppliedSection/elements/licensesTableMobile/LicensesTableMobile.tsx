@@ -6,6 +6,7 @@ import PurpleButton from "../../../../../../components/atoms/buttons/purple/Purp
 import Tag from "../../../../../../components/atoms/tags/Tag"
 import { images } from "../../../../../../images/images"
 import { IProductModel } from "../../../../../../interfaces/interfaces"
+import HoverTooltip from "../../../../../../components/elements/tooltip/hoverTooltip/HoverTooltip"
 
 type ILicensesTableMobileProps = {
   license: IProductModel
@@ -30,6 +31,7 @@ export const CardLeftColumn: React.FC<{ text: string }> = props => {
     <div key={0} className={styles.card__row}>
       <div>
         <p className={`${cx("bodyRegularSM")}`}>{text}</p>
+        <HoverTooltip label={"hola"} />
       </div>
     </div>
   )
