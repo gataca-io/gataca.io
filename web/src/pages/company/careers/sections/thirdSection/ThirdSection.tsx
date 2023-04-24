@@ -45,6 +45,9 @@ const ThirdSection: React.FC<ISectionProps> = props => {
               loading={<FormSkeleton />}
             />
           </div>
+          <div className={styles?.image__container}>
+            <img src={images.magnifyingGlass}></img>
+          </div>
         </div>
       </div>
     </section>
