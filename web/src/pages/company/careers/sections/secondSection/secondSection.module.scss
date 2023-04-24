@@ -4,7 +4,7 @@
   margin-bottom: calc(132px - 40px);
   padding: 0 20px;
   @include min-width($mobileXL) {
-    margin-bottom: calc(240px - 84px);
+    margin-bottom: calc(240px - 52px);
     padding: 0 40px;
   }
   @include min-width($desktopMD) {
@@ -54,6 +54,7 @@
       margin-right: 0;
       margin-bottom: 40px;
       padding: 0;
+      min-height: auto;
       @include min-width($tabletXL) {
         margin-bottom: 52px;
       }
