@@ -126,6 +126,7 @@ import userHeartIcon from "./icons/user-heart.svg"
 import handHoldingUserIcon from "./icons/hand-holding-user.svg"
 import chatIcon from "./icons/chat-icon.svg"
 import magnifyingGlass from "./images3d/magnifying_glass.png"
+import medalIcon from "./icons/medal.svg"
 
 export const images = {
   chevronDown: crevronDownSVG,
@@ -256,4 +257,5 @@ export const images = {
   handHoldingUserIcon: handHoldingUserIcon,
   chatIcon: chatIcon,
   magnifyingGlass: magnifyingGlass,
+  medalIcon: medalIcon,
 }

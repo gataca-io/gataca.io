@@ -19,7 +19,7 @@ export type ISectionProps = {
 const iconsUseCases = [
   images.chatIcon,
   images.likeIcon,
-  images.badgeIcon,
+  images.medalIcon,
   images.iconGraduationCap,
   images.handHoldingUserIcon,
   images.userHeartIcon,
