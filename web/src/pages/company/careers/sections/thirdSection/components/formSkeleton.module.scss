@@ -7,29 +7,28 @@
   @include justify-content(space-between);
   margin: 0 auto;
   width: 280px;
-  height: 1000px;
+  height: 766px;
   @media (min-width: $mobileMD) {
     width: 350px;
   }
   @media (min-width: $mobileXL) {
     width: 100%;
-    height: 788px;
+    height: 676px;
   }
   @media (min-width: $tabletXL) {
-    height: 974px;
-    width: 296px;
+    width: 248px;
+    height: 766px;
   }
   @media (min-width: $desktopSM) {
-    height: 900px;
-    width: 360px;
+    width: 312px;
   }
   @media (min-width: $desktopMD) {
     width: 380px;
-    height: 792px;
+    height: 744px;
   }
   @media (min-width: $desktopXL) {
     width: 100%;
-    height: 714px;
+    height: 666px;
   }
   .skeleton {
     width: 100%;
@@ -37,8 +36,7 @@
     height: 64px;
     border-radius: 8px;
     margin-bottom: 18px;
-    &:nth-child(1), &:nth-child(2),
-    &:nth-child(4), &:nth-child(5) {
+    &:nth-child(1), &:nth-child(2){
       @media (min-width: $mobileMD) {
         @include flex(0, 0, calc(50% - 16px));
       }
@@ -49,13 +47,10 @@
         @include flex(0, 0, calc(50% - 16px));
       }
     }
-    &:nth-child(8) {
-      height: 90px;
-    }
-    &:nth-child(9), &:nth-child(10) {
+    &:nth-child(7), &:nth-child(8) {
       height: 16px;
     }
-    &:nth-child(11) {
+    &:nth-child(9) {
       position: absolute;
       bottom: 5px;
       right: 40px;

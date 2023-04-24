@@ -15,8 +15,6 @@ const FormSkeleton: React.FC<IFormSkeletonProps> = props => {
       <div className={`${styles?.skeleton}`}></div>
       <div className={`${styles?.skeleton}`}></div>
       <div className={`${styles?.skeleton}`}></div>
-      <div className={`${styles?.skeleton}`}></div>
-      <div className={`${styles?.skeleton}`}></div>
     </div>
   )
 }
