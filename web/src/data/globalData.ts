@@ -31,11 +31,6 @@ export const headerMenuOptions: LinkModel[] = [
         label: "Gataca Wallet",
         route: "/products/gatacaWallet",
       },
-      {
-        id: "pricing",
-        label: "Pricing",
-        route: "/pricing",
-      },
     ],
   },
   {
