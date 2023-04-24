@@ -1,0 +1,53 @@
+{
+  "data": {
+    "firstSection": {
+      "button": {
+        "label": "Apply now"
+      },
+      "descriptionParagraphs": [
+        "Developing SSI technology takes time.",
+        "Become a partner and leverage our decentralized identity solution in days"
+      ],
+      "title": "Gataca Partnership Program"
+    },
+    "secondSection": {
+      "description": "Our organizational ethos is shaped by these principles:",
+      "list": [
+        {
+          "description": "We ensure everyone on the team feels free to express their opinions, share their ideas, and ask questions without fear of judgment, fostering a culture of transparency and trust",
+          "title": "Open environment"
+        },
+        {
+          "description": "We have a positive and energetic atmosphere that encourages fun and enjoyment in the workplace, and we always try to keep an optimistic attitude even in challenging times",
+          "title": "Optimism"
+        },
+        {
+          "description": "We provide the necessary flexibility to keep a healthy professional-life balance, whether that means working from home or having the ability to adjust schedules.",
+          "title": "People first"
+        },
+        {
+          "description": "We foster a growth mindset where employees are not afraid to take risks and support them in their pursuit of knowledge and skill development.",
+          "title": "Learning"
+        },
+        {
+          "description": "We trust that everyone on the team is working towards a shared vision and understand their role in the organization's success",
+          "title": "Commitment"
+        },
+        {
+          "description": "We recognize and celebrate diversity and encourage everyone to bring their authentic selves to work",
+          "title": "Inclusiveness"
+        },
+        {
+          "description": "We work towards our objectives with a purpose, emphasizing results and outcomes",
+          "title": "Objective-oriented"
+        }
+      ],
+      "title": "Company culture"
+    },
+    "thirdSection": {
+      "description": "However, we are always interested in hearing from talented individuals passionate about our mission and values. Please feel free to submit your resume, and we will keep it for future opportunities",
+      "subTitle": "Sorry, we currently do not have any open job positions",
+      "title": "Job openings"
+    }
+  }
+}
