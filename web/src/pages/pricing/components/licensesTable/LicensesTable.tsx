@@ -5,32 +5,23 @@ import PurpleButton from "../../../../components/atoms/buttons/purple/PurpleButt
 import Tag from "../../../../components/atoms/tags/Tag"
 import { images } from "../../../../images/images"
 import HoverTooltip from "../../../../components/elements/tooltip/hoverTooltip/HoverTooltip"
+import CategoryCell from "./elements/cells/category/CategoryCell"
+import SubcategoryCell from "./elements/cells/subcategoryCell/SubcategoryCell"
+import IconDataCell from "./elements/cells/iconDataCell/IconDataCell"
+import QuantityDataCell from "./elements/cells/quantityDataCell/QuantityDataCell"
+import ListDataCell from "./elements/cells/listDataCell/ListDataCell"
 
 type ILicensesTableProps = {
   products: any[]
   switchPeriodValue: string
-  switchButtonOptios: any
   licenseIsEnterprise: (x: any) => boolean
-  selectPeriod: (x: any) => void
 }
 
 const LicensesTable: React.FC<ILicensesTableProps> = props => {
-  const {
-    products,
-    switchPeriodValue,
-    switchButtonOptios,
-    selectPeriod,
-    licenseIsEnterprise,
-  } = props
+  const { products, switchPeriodValue, licenseIsEnterprise } = props
 
   const getPrice = (item: any) => {
     return switchPeriodValue === "year" ? item.yearlyPrice : item.monthlyPrice
-  }
-
-  const isLastItem = (itemsArray: any[], item: any) => {
-    const arrLength = itemsArray?.length
-    const itemPosition = itemsArray?.indexOf(item)
-    return itemPosition === arrLength - 1
   }
 
   return (
@@ -131,15 +122,9 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
               <div></div>
             </tr>
             <tr key={1} className={styles.table__body__row}>
-              <td
-                className={`${styles.table__body__row__cell} ${
-                  styles.table__body__row__category
-                } ${cx("bodyBoldCap")}`}
-                rowSpan={2}
-              >
-                Verification Features
-              </td>
-              <td
+              <CategoryCell category={"Verification Features"} rowsPan={2} />
+              <SubcategoryCell subcategory={"Verification Templates"} />
+              {/* <td
                 className={`${styles.table__body__row__cell} ${
                   styles.table__body__row__subcategory
                 } ${cx("bodyRegularSM")}`}
@@ -150,555 +135,169 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
                   </p>
                   <HoverTooltip label={"hola"} />
                 </div>
-              </td>
+              </td> */}
               {products?.map(license => {
                 return (
-                  <>
-                    <td
-                      className={`${styles.table__body__row__cell} ${
-                        styles.table__body__row__data
-                      } ${cx("bodyBoldSM")}`}
-                    >
-                      {license.features?.verificationTemplates === "∞"
-                        ? "Unlimited"
-                        : license.features?.verificationTemplates}
-                    </td>
-                  </>
+                  <QuantityDataCell
+                    data={license.features?.verificationTemplates}
+                  />
                 )
               })}
             </tr>
             <tr key={2} className={styles.table__body__row}>
-              <td
-                className={`${styles.table__body__row__cell} ${
-                  styles.table__body__row__subcategory
-                } ${cx("bodyRegularSM")}`}
-              >
-                Active Users p/m
-              </td>
+              <SubcategoryCell subcategory={"Active Users p/m"} />
               {products?.map(license => {
-                return (
-                  <>
-                    <td
-                      className={`${styles.table__body__row__cell} ${
-                        styles.table__body__row__data
-                      } ${cx("bodyBoldSM")}`}
-                    >
-                      {license.features?.activeUsers === "∞"
-                        ? "Unlimited"
-                        : license.features?.activeUsers}
-                    </td>
-                  </>
-                )
+                return <QuantityDataCell data={license.features?.activeUsers} />
               })}
             </tr>
             <tr key={3} className={styles.table__body__row}>
-              <td
-                rowSpan={2}
-                className={`${styles.table__body__row__cell} ${
-                  styles.table__body__row__category
-                } ${cx("bodyBoldCap")}`}
-              >
-                Issuance Features
-              </td>
-              <td
-                className={`${styles.table__body__row__cell} ${
-                  styles.table__body__row__subcategory
-                } ${cx("bodyRegularSM")}`}
-              >
-                Issuance Templates
-              </td>
+              <CategoryCell category={"Issuance Features"} rowsPan={2} />
+              <SubcategoryCell subcategory={"Issuance Templates"} />
               {products?.map(license => {
                 return (
-                  <>
-                    <td
-                      className={`${styles.table__body__row__cell} ${
-                        styles.table__body__row__data
-                      } ${cx("bodyBoldSM")}`}
-                    >
-                      {license.features?.issuanceTemplates === "∞"
-                        ? "Unlimited"
-                        : license.features?.issuanceTemplates}
-                    </td>
-                  </>
+                  <QuantityDataCell
+                    data={license.features?.issuanceTemplates}
+                  />
                 )
               })}
             </tr>
             <tr key={4} className={styles.table__body__row}>
-              <td
-                className={`${styles.table__body__row__cell} ${
-                  styles.table__body__row__subcategory
-                } ${cx("bodyRegularSM")}`}
-              >
-                Issued Credentials p/m
-              </td>
+              <SubcategoryCell subcategory={"Issued Credentials p/m"} />
               {products?.map(license => {
                 return (
-                  <>
-                    <td
-                      className={`${styles.table__body__row__cell} ${
-                        styles.table__body__row__data
-                      } ${cx("bodyBoldSM")}`}
-                    >
-                      {license.features?.issuedCredentials === "∞"
-                        ? "Unlimited"
-                        : license.features?.issuedCredentials}
-                    </td>
-                  </>
+                  <QuantityDataCell
+                    data={license.features?.issuedCredentials}
+                  />
                 )
               })}
             </tr>
             <tr key={5} className={styles.table__body__row}>
-              <td
-                rowSpan={18}
-                className={`${styles.table__body__row__cell} ${
-                  styles.table__body__row__category
-                } ${cx("bodyBoldCap")}`}
-              >
-                Other Features
-              </td>
-            </tr>
-            <tr key={6} className={styles.table__body__row}>
-              <td
-                className={`${styles.table__body__row__cell} ${
-                  styles.table__body__row__subcategory
-                } ${cx("bodyRegularSM")}`}
-              >
-                DIDs
-              </td>
+              <CategoryCell category={"Other Features"} rowsPan={25} />
+              <SubcategoryCell subcategory={"DIDs"} />
               {products?.map(license => {
-                return (
-                  <>
-                    <td
-                      className={`${styles.table__body__row__cell} ${
-                        styles.table__body__row__data
-                      } ${cx("bodyBoldSM")}`}
-                    >
-                      {license.features?.dids === "∞"
-                        ? "Unlimited"
-                        : license.features?.dids}
-                    </td>
-                  </>
-                )
+                return <QuantityDataCell data={license.features?.dids} />
               })}
             </tr>
             <tr key={7} className={styles.table__body__row}>
-              <td
-                className={`${styles.table__body__row__cell} ${
-                  styles.table__body__row__subcategory
-                } ${cx("bodyRegularSM")}`}
-              >
-                API Keys
-              </td>
+              <SubcategoryCell subcategory={"API Keys"} />
               {products?.map(license => {
-                return (
-                  <>
-                    <td
-                      className={`${styles.table__body__row__cell} ${
-                        styles.table__body__row__data
-                      } ${cx("bodyBoldSM")}`}
-                    >
-                      {license.features?.apiKeys === "∞"
-                        ? "Unlimited"
-                        : license.features?.apiKeys}
-                    </td>
-                  </>
-                )
+                return <QuantityDataCell data={license.features?.apiKeys} />
               })}
             </tr>
             <tr key={8} className={styles.table__body__row}>
-              <td
-                className={`${styles.table__body__row__cell} ${
-                  styles.table__body__row__subcategory
-                } ${cx("bodyRegularSM")}`}
-              >
-                2FA Security Mechanism
-              </td>
+              <SubcategoryCell subcategory={"2FA Security Mechanism"} />
               {products?.map(license => {
-                return (
-                  <>
-                    <td
-                      className={`${styles.table__body__row__cell} ${
-                        styles.table__body__row__data
-                      } ${cx("bodyBoldSM")}`}
-                    >
-                      {license.features?.nFactor?.length ? (
-                        license.features?.nFactor?.map((el: string) => (
-                          <p className={`${cx("bodyBoldSM")}`}>
-                            {el}
-                            {!isLastItem(license.features?.nFactor, el)
-                              ? ","
-                              : ""}
-                          </p>
-                        ))
-                      ) : (
-                        <p className={`${cx("bodyBoldSM")}`}>None</p>
-                      )}
-                    </td>
-                  </>
-                )
+                return <ListDataCell data={license.features?.nFactor} />
               })}
             </tr>
             <tr key={9} className={styles.table__body__row}>
-              <td
-                className={`${styles.table__body__row__cell} ${
-                  styles.table__body__row__subcategory
-                } ${cx("bodyRegularSM")}`}
-              >
-                Notifications
-              </td>
+              <SubcategoryCell subcategory={"Notifications"} />
               {products?.map(license => {
-                return (
-                  <>
-                    <td
-                      className={`${styles.table__body__row__cell} ${
-                        styles.table__body__row__data
-                      } ${cx("bodyBoldSM")}`}
-                    >
-                      {license.features?.notifications?.length ? (
-                        license.features?.notifications?.map((el: string) => (
-                          <p className={`${cx("bodyBoldSM")}`}>
-                            {el}
-                            {!isLastItem(license.features?.notifications, el)
-                              ? ","
-                              : ""}
-                          </p>
-                        ))
-                      ) : (
-                        <p className={`${cx("bodyBoldSM")}`}>None</p>
-                      )}
-                    </td>
-                  </>
-                )
+                return <ListDataCell data={license.features?.notifications} />
               })}
             </tr>
             <tr key={10} className={styles.table__body__row}>
-              <td
-                className={`${styles.table__body__row__cell} ${
-                  styles.table__body__row__subcategory
-                } ${cx("bodyRegularSM")}`}
-              >
-                Usage Statistics
-              </td>
+              <SubcategoryCell subcategory={"Usage Statistics"} />
               {products?.map(license => {
-                return (
-                  <>
-                    <td
-                      className={`${styles.table__body__row__cell} ${
-                        styles.table__body__row__data
-                      } ${cx("bodyBoldSM")}`}
-                    >
-                      <img
-                        className={styles.table__body__row__cell__icon}
-                        src={
-                          license.features?.stadistics
-                            ? images.checkIcon
-                            : images.closeIcon
-                        }
-                      ></img>
-                    </td>
-                  </>
-                )
+                return <IconDataCell data={license.features?.stadistics} />
               })}
             </tr>
             <tr key={10} className={styles.table__body__row}>
-              <td
-                className={`${styles.table__body__row__cell} ${
-                  styles.table__body__row__subcategory
-                } ${cx("bodyRegularSM")}`}
-              >
-                Credentials in W3C VC format
-              </td>
+              <SubcategoryCell subcategory={"Credentials in W3C VC format"} />
               {products?.map(license => {
-                return (
-                  <>
-                    <td
-                      className={`${styles.table__body__row__cell} ${
-                        styles.table__body__row__data
-                      } ${cx("bodyBoldSM")}`}
-                    >
-                      <img
-                        className={styles.table__body__row__cell__icon}
-                        src={
-                          license?.credentialsInW3CFormat
-                            ? images.checkIcon
-                            : images.closeIcon
-                        }
-                      ></img>
-                    </td>
-                  </>
-                )
+                return <IconDataCell data={license?.credentialsInW3CFormat} />
               })}
             </tr>
             <tr key={10} className={styles.table__body__row}>
-              <td
-                className={`${styles.table__body__row__cell} ${
-                  styles.table__body__row__subcategory
-                } ${cx("bodyRegularSM")}`}
-              >
-                Sandbox environment
-              </td>
+              <SubcategoryCell subcategory={"Sandbox environment"} />
               {products?.map(license => {
                 return (
-                  <>
-                    <td
-                      className={`${styles.table__body__row__cell} ${
-                        styles.table__body__row__data
-                      } ${cx("bodyBoldSM")}`}
-                    >
-                      <img
-                        className={styles.table__body__row__cell__icon}
-                        src={
-                          license.features?.sandBoxEnvironment
-                            ? images.checkIcon
-                            : images.closeIcon
-                        }
-                      ></img>
-                    </td>
-                  </>
+                  <IconDataCell data={license.features?.sandBoxEnvironment} />
                 )
               })}
             </tr>
             <tr key={11} className={styles.table__body__row}>
-              <td
-                className={`${styles.table__body__row__cell} ${
-                  styles.table__body__row__subcategory
-                } ${cx("bodyRegularSM")}`}
-              >
-                DID in Public Catalogue
-              </td>
+              <SubcategoryCell subcategory={"DID in Public Catalogue"} />
               {products?.map(license => {
                 return (
-                  <>
-                    <td
-                      className={`${styles.table__body__row__cell} ${
-                        styles.table__body__row__data
-                      } ${cx("bodyBoldSM")}`}
-                    >
-                      <img
-                        className={styles.table__body__row__cell__icon}
-                        src={
-                          license.features?.didPublicCatalogue
-                            ? images.checkIcon
-                            : images.closeIcon
-                        }
-                      ></img>
-                    </td>
-                  </>
+                  <IconDataCell data={license.features?.didPublicCatalogue} />
                 )
               })}
             </tr>
             <tr key={12} className={styles.table__body__row}>
-              <td
-                className={`${styles.table__body__row__cell} ${
-                  styles.table__body__row__subcategory
-                } ${cx("bodyRegularSM")}`}
-              >
-                Publish Schemas in Public Catalogue
-              </td>
+              <SubcategoryCell
+                subcategory={"Publish Schemas in Public Catalogue"}
+              />
               {products?.map(license => {
                 return (
-                  <>
-                    <td
-                      className={`${styles.table__body__row__cell} ${
-                        styles.table__body__row__data
-                      } ${cx("bodyBoldSM")}`}
-                    >
-                      <img
-                        className={styles.table__body__row__cell__icon}
-                        src={
-                          license.features?.newSchemaPublicCatalogue
-                            ? images.checkIcon
-                            : images.closeIcon
-                        }
-                      ></img>
-                    </td>
-                  </>
+                  <IconDataCell
+                    data={license.features?.newSchemaPublicCatalogue}
+                  />
                 )
               })}
             </tr>
             <tr key={12} className={styles.table__body__row}>
-              <td
-                className={`${styles.table__body__row__cell} ${
-                  styles.table__body__row__subcategory
-                } ${cx("bodyRegularSM")}`}
-              >
-                EBSI integration
-              </td>
+              <SubcategoryCell subcategory={"EBSI integration"} />
               {products?.map(license => {
-                return (
-                  <>
-                    <td
-                      className={`${styles.table__body__row__cell} ${
-                        styles.table__body__row__data
-                      } ${cx("bodyBoldSM")}`}
-                    >
-                      <img
-                        className={styles.table__body__row__cell__icon}
-                        src={
-                          license.features?.ebsiIntegration
-                            ? images.checkIcon
-                            : images.closeIcon
-                        }
-                      ></img>
-                    </td>
-                  </>
-                )
+                return <IconDataCell data={license.features?.ebsiIntegration} />
               })}
             </tr>
             <tr key={12} className={styles.table__body__row}>
-              <td
-                className={`${styles.table__body__row__cell} ${
-                  styles.table__body__row__subcategory
-                } ${cx("bodyRegularSM")}`}
-              >
-                Customization of GDPR purposes
-              </td>
+              <SubcategoryCell subcategory={"Customization of GDPR purposes"} />
+
               {products?.map(license => {
                 return (
-                  <>
-                    <td
-                      className={`${styles.table__body__row__cell} ${
-                        styles.table__body__row__data
-                      } ${cx("bodyBoldSM")}`}
-                    >
-                      <img
-                        className={styles.table__body__row__cell__icon}
-                        src={
-                          license.features?.customGDPRPurposes
-                            ? images.checkIcon
-                            : images.closeIcon
-                        }
-                      ></img>
-                    </td>
-                  </>
+                  <IconDataCell data={license.features?.customGDPRPurposes} />
                 )
               })}
             </tr>
             <tr key={13} className={styles.table__body__row}>
-              <td
-                className={`${styles.table__body__row__cell} ${
-                  styles.table__body__row__subcategory
-                } ${cx("bodyRegularSM")}`}
-              >
-                Custom QR
-              </td>
+              <SubcategoryCell subcategory={"Custom QR"} />
+
+              {products?.map(license => {
+                return <IconDataCell data={license.features?.customQR} />
+              })}
+            </tr>
+            <tr key={13} className={styles.table__body__row}>
+              <SubcategoryCell
+                subcategory={"Credentials in ISO 18013:5 format"}
+              />
               {products?.map(license => {
                 return (
-                  <>
-                    <td
-                      className={`${styles.table__body__row__cell} ${
-                        styles.table__body__row__data
-                      } ${cx("bodyBoldSM")}`}
-                    >
-                      <img
-                        className={styles.table__body__row__cell__icon}
-                        src={
-                          license.features?.customQR
-                            ? images.checkIcon
-                            : images.closeIcon
-                        }
-                      ></img>
-                    </td>
-                  </>
+                  <IconDataCell
+                    data={license.features?.credentialsInISO28013}
+                  />
                 )
               })}
             </tr>
             <tr key={13} className={styles.table__body__row}>
-              <td
-                className={`${styles.table__body__row__cell} ${
-                  styles.table__body__row__subcategory
-                } ${cx("bodyRegularSM")}`}
-              >
-                Credentials in ISO 18013:5 format
-              </td>
+              <SubcategoryCell
+                subcategory={"Integration with custom trust Frameworks"}
+              />
               {products?.map(license => {
                 return (
-                  <>
-                    <td
-                      className={`${styles.table__body__row__cell} ${
-                        styles.table__body__row__data
-                      } ${cx("bodyBoldSM")}`}
-                    >
-                      <img
-                        className={styles.table__body__row__cell__icon}
-                        src={
-                          license.features?.credentialsInISO28013
-                            ? images.checkIcon
-                            : images.closeIcon
-                        }
-                      ></img>
-                    </td>
-                  </>
+                  <IconDataCell
+                    data={license.features?.integrationCustomTrustFrameworks}
+                  />
                 )
               })}
             </tr>
             <tr key={13} className={styles.table__body__row}>
-              <td
-                className={`${styles.table__body__row__cell} ${
-                  styles.table__body__row__subcategory
-                } ${cx("bodyRegularSM")}`}
-              >
-                Integration with custom trust Frameworks
-              </td>
+              <SubcategoryCell
+                subcategory={"Integration with custom infrastructure"}
+              />
               {products?.map(license => {
                 return (
-                  <>
-                    <td
-                      className={`${styles.table__body__row__cell} ${
-                        styles.table__body__row__data
-                      } ${cx("bodyBoldSM")}`}
-                    >
-                      <img
-                        className={styles.table__body__row__cell__icon}
-                        src={
-                          license.features?.integrationCustomTrustFrameworks
-                            ? images.checkIcon
-                            : images.closeIcon
-                        }
-                      ></img>
-                    </td>
-                  </>
-                )
-              })}
-            </tr>
-            <tr key={13} className={styles.table__body__row}>
-              <td
-                className={`${styles.table__body__row__cell} ${
-                  styles.table__body__row__subcategory
-                } ${cx("bodyRegularSM")}`}
-              >
-                Integration with custom infrastructure
-              </td>
-              {products?.map(license => {
-                return (
-                  <>
-                    <td
-                      className={`${styles.table__body__row__cell} ${
-                        styles.table__body__row__data
-                      } ${cx("bodyBoldSM")}`}
-                    >
-                      <img
-                        className={styles.table__body__row__cell__icon}
-                        src={
-                          license.features
-                            ?.integrationCustomTrustInfraestructure
-                            ? images.checkIcon
-                            : images.closeIcon
-                        }
-                      ></img>
-                    </td>
-                  </>
+                  <IconDataCell
+                    data={
+                      license.features?.integrationCustomTrustInfraestructure
+                    }
+                  />
                 )
               })}
             </tr>
             <tr key={14} className={styles.table__body__row}>
-              <td
-                className={`${styles.table__body__row__cell} ${
-                  styles.table__body__row__subcategory
-                } ${cx("bodyRegularSM")}`}
-              >
-                Stadard Support
-              </td>
+              <SubcategoryCell subcategory={"Stadard Support"} />
               {products?.map(license => {
                 return (
                   <>
@@ -732,13 +331,7 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
               })}
             </tr>
             <tr key={14} className={styles.table__body__row}>
-              <td
-                className={`${styles.table__body__row__cell} ${
-                  styles.table__body__row__subcategory
-                } ${cx("bodyRegularSM")}`}
-              >
-                Premier Support
-              </td>
+              <SubcategoryCell subcategory={"Premier Support"} />
               {products?.map(license => {
                 return (
                   <>

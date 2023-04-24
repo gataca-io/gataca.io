@@ -208,35 +208,6 @@ table {
       width: 40px;
     }
 
-    & > td:nth-child(2) {
-      min-width: 154px;
-    }
-
-    &__category {
-      vertical-align: middle;
-      text-align: center;
-    }
-    &__subcategory {
-      & > div {
-        @include flexbox();
-        @include flex-wrap(nowrap);
-        @include align-items(flex-start);
-        @include justify-content(flex-start);
-        & > p {
-          margin-right: 10px;
-        }
-      }
-      & > div {
-        min-width: 205px;
-      }
-    }
-    &__data {
-      & > .table__body__row__cell__icon {
-        width: 16px;
-        height: 16px;
-      }
-    }
-
     &:last-child {
       &:last-child {
         & > td {
@@ -248,22 +219,6 @@ table {
         }
       }
     }
-  }
-}
-
-.mobileCardsContainer {
-  display: block;
-  overflow: scroll;
-  max-height: calc(100% - 100px);
-  max-width: 100%;
-  padding-bottom: 10px;
-  & > div:first-child {
-    max-width: 320px;
-    margin: 20px auto;
-  }
-  & > div:not(:first-child) {
-    max-width: 320px;
-    margin: 20px auto;
   }
 }
 

@@ -179,7 +179,7 @@ export const footerMenuOptions: LinkModel[] = [
       {
         id: "pricing",
         label: "Pricing",
-        route: "/",
+        route: "/pricing",
       },
       {
         id: "logIn",
