@@ -53,6 +53,21 @@
               height: auto;
             }
           }
+          img {
+            max-width: 187px;
+            @include min-width($mobileMD) {
+              max-width: 232px;
+            }
+            @include min-width($mobileXL) {
+              max-width: 319px;
+            }
+            @include min-width($tabletXL) {
+              max-width: 187px;
+            }
+            @include min-width($desktopMD) {
+              max-width: 268px;
+            }
+          }
         }
       }
     }
