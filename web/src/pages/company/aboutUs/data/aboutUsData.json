@@ -1,0 +1,131 @@
+{
+  "data": {
+    "fifthSection": {
+      "list": [
+        {
+          "title": "Blockchain & Advanced Technologies Award"
+        },
+        {
+          "title": "Best Business Solution Award"
+        },
+        {
+          "title": "Best Technological Solution Nominee"
+        },
+        {
+          "title": "2dn Finalist of 2022 Startup Competition"
+        },
+        {
+          "title": "Named 1 of 5 “Innovators to Watch” in 2022"
+        },
+        {
+          "title": "Grant recipient"
+        },
+        {
+          "title": "Grant recipient"
+        },
+        {
+          "title": "Grant recipient"
+        },
+        {
+          "title": "Grant recipient"
+        }
+      ],
+      "title": "Awards"
+    },
+    "firstSection": {
+      "descriptionHeader": "Gataca is a cybersecurity company providing decentralized identity technology",
+      "descriptionParagraphs": [
+        "Gataca was conceived as an academic research project at MIT in 2017 to mitigate the risks of conducting business online.",
+        "The research identified existing internet authentication frameworks as significant contributors to cybersecurity breaches and identity fraud and proposed a decentralized authentication architecture that would invert the traditional actors' roles in identity management.",
+        "Today, Gataca is one of the companies leading the SSI industry in Europe offering a decentralized identity solution that streamlines the issuance, verification, and management of identity credentials in a simple, compliant, and secure manner."
+      ],
+      "title": "Our story",
+      "titleHeader": "Bringing <span>real-life trust</span> to the Internet"
+    },
+    "fourthSection": {
+      "button": {
+        "label": "Join the team"
+      },
+      "description": "Our team is a diverse and dynamic group of highly motivated and skilled individuals. Meet our exceptional team below.",
+      "list": [
+        {
+          "linkedinRoute": "https://www.linkedin.com/in/irenehernandez/",
+          "name": "Irene Hernández",
+          "title": "CEO"
+        },
+        {
+          "linkedinRoute": "https://www.linkedin.com/in/samuelgoes/",
+          "name": "Samuel Gómez",
+          "title": "CTO"
+        },
+        {
+          "linkedinRoute": "https://www.linkedin.com/in/jsanjup/",
+          "name": "José San Juan",
+          "title": "CSO"
+        },
+        {
+          "linkedinRoute": "https://www.linkedin.com/in/chiaracasoni/",
+          "name": "Chiara Casoni",
+          "title": "Business Development & Partnerships"
+        },
+        {
+          "linkedinRoute": "https://www.linkedin.com/in/daniel-moledo-garcia/",
+          "name": "Daniel Moledo",
+          "title": "Backend Developer"
+        },
+        {
+          "linkedinRoute": "https://www.linkedin.com/in/angela-benavente-almazan/",
+          "name": "Ángela Benavente",
+          "title": "Frontend Developer"
+        },
+        {
+          "linkedinRoute": "https://www.linkedin.com/in/tefy-zambrano/",
+          "name": "Estefanía Zambrano",
+          "title": "UX/UI Designer"
+        },
+        {
+          "linkedinRoute": "https://www.linkedin.com/in/jorge-navas-d%C3%ADaz-8b422643/",
+          "name": "Jorge Navas",
+          "title": "IT Manager"
+        },
+        {
+          "linkedinRoute": "https://www.linkedin.com/in/esther-sauri-carbonell/",
+          "name": "Esther Saurí",
+          "title": "Digital Marketing Specialist"
+        },
+        {
+          "linkedinRoute": "https://www.linkedin.com/in/mayra-amador-zapata-/",
+          "name": "Mayra Amador",
+          "title": "Frontend Developer"
+        }
+      ],
+      "title": "Meet the team"
+    },
+    "secondSection": {
+      "description": "<span>Gataca's mission</span> is to develop highly secure digital identities that are privacy-preserving, user-friendly, and effortlessly integrated into existing systems"
+    },
+    "sixthSection": {
+      "description": "The project has received funding from European Commission’s Horizon 2020 Research and Innovation Programme, under Grant Agreement Nº 824509 and Nº 871932"
+    },
+    "thirdSection": {
+      "list": [
+        {
+          "description": "We respect our customer's privacy as we do our own. We build our technology to make sure that you have full control over your private information and decide with who you share it",
+          "number": "1",
+          "title": "Privacy"
+        },
+        {
+          "description": "We ensure the highest levels of security standards by using advanced security technologies and following world-renowned standards for information security management systems",
+          "number": "2",
+          "title": "Security"
+        },
+        {
+          "description": "We develop our products with the end-user at the center of the design, considering factors such as ease of use, accessibility, and aesthetic appeal",
+          "number": "3",
+          "title": "User Experience"
+        }
+      ],
+      "title": "Values"
+    }
+  }
+}

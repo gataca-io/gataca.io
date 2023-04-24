@@ -93,6 +93,34 @@ import unaEuropalogo from "./logos/una_europa_small.svg"
 import greenCheckIcon from "./icons/greenCheck.svg"
 import closeIcon from "./icons/closeIcon.svg"
 import infoIcon from "./icons/info.svg"
+import desktopIcon from "./icons/desktop.svg"
+import searchIcon from "./icons/search.svg"
+import puzzleIcon from "./icons/puzzle.svg"
+import videoPlayIcon from "./icons/video-play.svg"
+import chat from "./images3d/chat2.png"
+import heart from "./images3d/heart2.png"
+import gatacaTeam from "./team/GATACA_Team.png"
+import ceoTeam from "./team/irene-hernandez.png"
+import ctoTeam from "./team/samuel-gomez.png"
+import csoTeam from "./team/jose-san-juan.png"
+import businessTeam from "./team/chiara-casoni.png"
+import backendTeam from "./team/daniel-moledo.png"
+import frontend1Team from "./team/angela-benavente.png"
+import designTeam from "./team/estefania-zambrano.png"
+import itManagerTeam from "./team/jorge-navas.png"
+import marketingTeam from "./team/esther-sauri.png"
+import frontend2Team from "./team/mayra-amador.png"
+import linkedinLogo from "./logos/linkednIn-logo.svg"
+import madridLogo from "./logos/logo_Madrid.svg"
+import ngiEssifLogo from "./logos/ngi-essif-lab.png"
+import businessInsiderLogo from "./logos/business-insider.png"
+import webSubmitLogo from "./logos/web-submit.svg"
+import jffLogo from "./logos/jff-logo.png"
+import mitSandbox from "./logos/mit-sandbox-logo.png"
+import blockIsLogo from "./logos/logo-block-is.png"
+import cdtiNeotecLogo from "./logos/logo-cdti-neotec.png"
+import redEsLogo from "./logos/logo-red-es.svg"
+import europeanUnionLogo from "./logos/logo-european-union.png"
 
 export const images = {
   chevronDown: crevronDownSVG,
@@ -190,4 +218,32 @@ export const images = {
   greenCheckIcon: greenCheckIcon,
   closeIcon: closeIcon,
   infoIcon: infoIcon,
+  desktopIcon: desktopIcon,
+  searchIcon: searchIcon,
+  puzzleIcon: puzzleIcon,
+  videoPlayIcon: videoPlayIcon,
+  chat: chat,
+  heart: heart,
+  gatacaTeam: gatacaTeam,
+  ceoTeam: ceoTeam,
+  ctoTeam: ctoTeam,
+  csoTeam: csoTeam,
+  businessTeam: businessTeam,
+  backendTeam: backendTeam,
+  frontend1Team: frontend1Team,
+  designTeam: designTeam,
+  itManagerTeam: itManagerTeam,
+  marketingTeam: marketingTeam,
+  frontend2Team: frontend2Team,
+  linkedinLogo: linkedinLogo,
+  madridLogo: madridLogo,
+  ngiEssifLogo: ngiEssifLogo,
+  businessInsiderLogo: businessInsiderLogo,
+  webSubmitLogo: webSubmitLogo,
+  jffLogo: jffLogo,
+  mitSandbox: mitSandbox,
+  blockIsLogo: blockIsLogo,
+  cdtiNeotecLogo: cdtiNeotecLogo,
+  redEsLogo: redEsLogo,
+  europeanUnionLogo: europeanUnionLogo,
 }
