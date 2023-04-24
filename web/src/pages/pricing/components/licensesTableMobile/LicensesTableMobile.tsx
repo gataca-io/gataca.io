@@ -6,6 +6,11 @@ import PurpleButton from "../../../../components/atoms/buttons/purple/PurpleButt
 import Tag from "../../../../components/atoms/tags/Tag"
 import { IProductModel } from "../../../../interfaces/interfaces"
 import { images } from "../../../../images/images"
+import IconDataCell from "./elements/cells/iconDataCell/IconDataCell"
+import ListDataCell from "./elements/cells/listDataCell/ListDataCell"
+import QuantityDataCell from "./elements/cells/quantityDataCell/QuantityDataCell"
+import CardHeader from "./elements/cardHeader/CardHeader"
+import CardLeftColumn from "./elements/cardLeftColumn/CardLeftColumn"
 
 type ILicensesTableMobileProps = {
   license: IProductModel
@@ -13,27 +18,6 @@ type ILicensesTableMobileProps = {
   switchPeriodValue: string
   licenseIsEnterprise: (x: any) => boolean
   selectLicense: (x: any) => void
-}
-
-export const CardHeader: React.FC<{ title: string }> = props => {
-  const { title } = props
-  return (
-    <div key={0} className={styles.card__header}>
-      <p className={`${cx("bodyBoldLG")}`}>{title}</p>
-    </div>
-  )
-}
-
-export const CardLeftColumn: React.FC<{ text: string }> = props => {
-  const { text } = props
-  return (
-    <div key={0} className={styles.card__row}>
-      <div>
-        <p className={`${cx("bodyRegularSM")}`}>{text}</p>
-        <HoverTooltip label={"hola"} />
-      </div>
-    </div>
-  )
 }
 
 const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
@@ -173,19 +157,11 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
 
           <div key={0} className={styles.card__row}>
             <CardLeftColumn text={"Verification Templates"} />
-            <div className={`${cx("bodyBoldSM")}`}>
-              {license?.features?.verificationTemplates === "∞"
-                ? "Unlimited"
-                : license?.features?.verificationTemplates}
-            </div>
+            <QuantityDataCell data={license?.features?.verificationTemplates} />
           </div>
           <div className={styles.card__row}>
             <CardLeftColumn text={"Active users p/m"} />
-            <div className={`${cx("bodyBoldSM")}`}>
-              {license?.features?.activeUsers === "∞"
-                ? "Unlimited"
-                : license?.features?.activeUsers}
-            </div>
+            <QuantityDataCell data={license?.features?.activeUsers} />
           </div>
         </div>
 
@@ -195,19 +171,11 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
 
           <div key={0} className={styles.card__row}>
             <CardLeftColumn text={"Issuance Templates"} />
-            <div className={`${cx("bodyBoldSM")}`}>
-              {license?.features?.issuanceTemplates === "∞"
-                ? "Unlimited"
-                : license?.features?.issuanceTemplates}
-            </div>
+            <QuantityDataCell data={license?.features?.issuanceTemplates} />
           </div>
           <div className={styles.card__row}>
             <CardLeftColumn text={"Issued Credentials"} />
-            <div className={`${cx("bodyBoldSM")}`}>
-              {license?.features?.issuedCredentials === "∞"
-                ? "Unlimited"
-                : license?.features?.issuedCredentials}
-            </div>
+            <QuantityDataCell data={license?.features?.issuedCredentials} />
           </div>
         </div>
 
@@ -217,196 +185,67 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
 
           <div key={0} className={styles.card__row}>
             <CardLeftColumn text={"DIDs"} />
-            <div className={`${cx("bodyBoldSM")}`}>
-              {license.features?.dids === "∞"
-                ? "Unlimited"
-                : license.features?.dids}
-            </div>
+            <QuantityDataCell data={license.features?.dids} />
           </div>
           <div className={styles.card__row}>
             <CardLeftColumn text={"API Keys"} />
-            <div className={`${cx("bodyBoldSM")}`}>
-              {license.features?.apiKeys === "∞"
-                ? "Unlimited"
-                : license.features?.apiKeys}
-            </div>
+            <QuantityDataCell data={license.features?.apiKeys} />
           </div>
           <div className={styles.card__row}>
             <CardLeftColumn text={"2FA Security Mechanism"} />
-            <div className={`${cx("bodyBoldSM")}`}>
-              {license?.features?.nFactor?.length ? (
-                license?.features?.nFactor?.map((el: string) => (
-                  <p className={`${cx("bodyBoldSM")}`}>
-                    {el}
-                    {!isLastItem(license?.features?.nFactor || [], el)
-                      ? ","
-                      : ""}
-                  </p>
-                ))
-              ) : (
-                <p className={`${cx("bodyBoldSM")}`}>None</p>
-              )}
-            </div>
+            <ListDataCell data={license?.features?.nFactor} />
           </div>
           <div className={styles.card__row}>
             <CardLeftColumn text={"Notifications"} />
-            <div className={`${cx("bodyBoldSM")}`}>
-              {license.features?.notifications?.length ? (
-                license.features?.notifications?.map((el: string) => (
-                  <p className={`${cx("bodyBoldSM")}`}>
-                    {el}
-                    {!isLastItem(license.features?.notifications, el)
-                      ? ","
-                      : ""}
-                  </p>
-                ))
-              ) : (
-                <p className={`${cx("bodyBoldSM")}`}>None</p>
-              )}
-            </div>
+            <ListDataCell data={license.features?.notifications} />
           </div>
           <div className={styles.card__row}>
             <CardLeftColumn text={"Usage Statistics"} />
-            <div className={`${cx("bodyBoldSM")}`}>
-              <img
-                className={styles.icon}
-                src={
-                  license.features?.stadistics
-                    ? images.checkIcon
-                    : images.closeIcon
-                }
-              ></img>
-            </div>
+            <IconDataCell data={license.features?.stadistics} />
           </div>
           <div className={styles.card__row}>
             <CardLeftColumn text={"Credentials in W3C VC format"} />
-            <div className={`${cx("bodyBoldSM")}`}>
-              <img
-                className={styles.icon}
-                src={
-                  license?.features?.credentialsInW3CFormat
-                    ? images.checkIcon
-                    : images.closeIcon
-                }
-              ></img>
-            </div>
+            <IconDataCell data={license?.features?.credentialsInW3CFormat} />
           </div>
           <div className={styles.card__row}>
             <CardLeftColumn text={"Sandbox environment"} />
-            <div className={`${cx("bodyBoldSM")}`}>
-              <img
-                className={styles.icon}
-                src={
-                  license.features?.sandBoxEnvironment
-                    ? images.checkIcon
-                    : images.closeIcon
-                }
-              ></img>
-            </div>
+            <IconDataCell data={license.features?.sandBoxEnvironment} />
           </div>
           <div className={styles.card__row}>
             <CardLeftColumn text={"DID in Public Catalogue"} />
-            <div className={`${cx("bodyBoldSM")}`}>
-              <img
-                className={styles.icon}
-                src={
-                  license.features?.didPublicCatalogue
-                    ? images.checkIcon
-                    : images.closeIcon
-                }
-              ></img>
-            </div>
+            <IconDataCell data={license.features?.didPublicCatalogue} />
           </div>
           <div className={styles.card__row}>
             <CardLeftColumn text={"Publish Schemas in Public Catalogue"} />
-            <div className={`${cx("bodyBoldSM")}`}>
-              <img
-                className={styles.icon}
-                src={
-                  license.features?.newSchemaPublicCatalogue
-                    ? images.checkIcon
-                    : images.closeIcon
-                }
-              ></img>
-            </div>
+            <IconDataCell data={license.features?.newSchemaPublicCatalogue} />
           </div>
           <div className={styles.card__row}>
             <CardLeftColumn text={"EBSI integration"} />
-            <div className={`${cx("bodyBoldSM")}`}>
-              <img
-                className={styles.icon}
-                src={
-                  license.features?.ebsiIntegration
-                    ? images.checkIcon
-                    : images.closeIcon
-                }
-              ></img>
-            </div>
+            <IconDataCell data={license.features?.ebsiIntegration} />
           </div>
           <div className={styles.card__row}>
             <CardLeftColumn text={"Customization of GDPR purposes"} />
-            <div className={`${cx("bodyBoldSM")}`}>
-              <img
-                className={styles.icon}
-                src={
-                  license.features?.customGDPRPurposes
-                    ? images.checkIcon
-                    : images.closeIcon
-                }
-              ></img>
-            </div>
+            <IconDataCell data={license.features?.customGDPRPurposes} />
           </div>
           <div className={styles.card__row}>
             <CardLeftColumn text={"Custom QR"} />
-            <div className={`${cx("bodyBoldSM")}`}>
-              <img
-                className={styles.icon}
-                src={
-                  license.features?.customQR
-                    ? images.checkIcon
-                    : images.closeIcon
-                }
-              ></img>
-            </div>
+            <IconDataCell data={license.features?.customQR} />
           </div>
           <div className={styles.card__row}>
             <CardLeftColumn text={"Credentials in ISO 18013:5 format"} />
-            <div className={`${cx("bodyBoldSM")}`}>
-              <img
-                className={styles.icon}
-                src={
-                  license.features?.credentialsInISO28013
-                    ? images.checkIcon
-                    : images.closeIcon
-                }
-              ></img>
-            </div>
+            <IconDataCell data={license.features?.credentialsInISO28013} />
           </div>
           <div className={styles.card__row}>
             <CardLeftColumn text={"Integration with custom trust Frameworks"} />
-            <div className={`${cx("bodyBoldSM")}`}>
-              <img
-                className={styles.icon}
-                src={
-                  license.features?.integrationCustomTrustFrameworks
-                    ? images.checkIcon
-                    : images.closeIcon
-                }
-              ></img>
-            </div>
+            <IconDataCell
+              data={license.features?.integrationCustomTrustFrameworks}
+            />
           </div>
           <div className={styles.card__row}>
             <CardLeftColumn text={"Integration with custom infrastructure"} />
-            <div className={`${cx("bodyBoldSM")}`}>
-              <img
-                className={styles.icon}
-                src={
-                  license.features?.integrationCustomTrustInfraestructure
-                    ? images.checkIcon
-                    : images.closeIcon
-                }
-              ></img>
-            </div>
+            <IconDataCell
+              data={license.features?.integrationCustomTrustInfraestructure}
+            />
           </div>
           <div className={styles.card__row}>
             <CardLeftColumn text={"Stadard Support"} />
