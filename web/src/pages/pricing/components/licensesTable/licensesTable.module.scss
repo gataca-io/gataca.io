@@ -196,7 +196,7 @@ table {
         border-top-right-radius: 12px;
       }
     }
-    &__row {
+    &__row:not(:first-child) {
       & > td {
       border: 1px solid $neutral300;
       padding: 12px;

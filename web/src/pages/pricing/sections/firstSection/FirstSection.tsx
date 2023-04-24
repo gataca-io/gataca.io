@@ -1,6 +1,5 @@
 import * as React from "react"
 import cx from "classnames"
-import * as styles from "./firstSection.module.scss"
 import LicenseCard from "../../components/licenseCard/LicenseCard"
 import SwitchButton from "../../../../components/atoms/buttons/switchButton/SwicthButton"
 import LicensesTable from "../../components/licensesTable/LicensesTable"
@@ -13,6 +12,7 @@ import {
 import LicensesTableMobile from "../../components/licensesTableMobile/LicensesTableMobile"
 import OnPremisePanel from "../../components/onPremisePanel/OnPremisePanel"
 import Categories from "../../components/categories/Categories"
+import * as styles from "./firstSection.module.scss"
 
 export type ISectionProps = {
   title: string
@@ -80,7 +80,7 @@ const FirstSection: React.FC<ISectionProps> = props => {
     <>
       <section className={`${styles?.firstSection} ${cx("containerMaxWidth")}`}>
         <div className={styles?.firstSection__header}>
-          <h1 className={cx("heading1 marginBottom32")}>{title}</h1>
+          <h1 className={cx("heading2 marginBottom32")}>{title}</h1>
           <p className={cx("bodyRegularXL marginBottom32")}>{description}</p>
           <div className={styles?.categories}>
             {categories?.map((item, index) => {
@@ -117,16 +117,15 @@ const FirstSection: React.FC<ISectionProps> = props => {
               <div className={styles?.firstSection__sectors__cardsContainer}>
                 {licenses?.map((item: any, index) => {
                   return (
-                    <>
-                      <LicenseCard
-                        license={item}
-                        firstButton={item?.button}
-                        period={switchPeriodValue}
-                        isCurrentLicense={false}
-                        isNewLicense={false}
-                        popularLicenseType={"Professional"}
-                      />
-                    </>
+                    <LicenseCard
+                      key={"licenseCard__" + index}
+                      license={item}
+                      firstButton={item?.button}
+                      period={switchPeriodValue}
+                      isCurrentLicense={false}
+                      isNewLicense={false}
+                      popularLicenseType={"Professional"}
+                    />
                   )
                 })}
               </div>

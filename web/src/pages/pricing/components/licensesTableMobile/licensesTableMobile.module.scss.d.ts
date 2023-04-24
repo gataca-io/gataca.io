@@ -6,14 +6,8 @@ export const periodCheckboxLabel: string
 export const header__container: string
 export const table__header__cell: string
 export const table__header__cell__content: string
-export const license__header: string
 export const licenseName: string
 export const license__header__popularTag: string
-export const licensePrice: string
-export const licensePriceLarge: string
-export const licenseSave: string
-export const licenseCustomPrice: string
-export const licenseCustomPriceLarge: string
 export const licenseAdapted: string
 export const license__button: string
 export const table__body: string

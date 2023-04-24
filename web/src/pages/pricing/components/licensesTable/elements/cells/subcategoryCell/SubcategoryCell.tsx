@@ -1,7 +1,7 @@
 import * as React from "react"
 import cx from "classnames"
-import * as styles from "./subcategoryCell.module.scss"
 import HoverTooltip from "../../../../../../../components/elements/tooltip/hoverTooltip/HoverTooltip"
+import * as styles from "./subcategoryCell.module.scss"
 
 export type ISubcategoryCellProps = {
   subcategory: string

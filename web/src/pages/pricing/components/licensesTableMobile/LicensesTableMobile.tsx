@@ -1,19 +1,18 @@
 import React from "react"
 import cx from "classnames"
-import * as styles from "./licensesTableMobile.module.scss"
-import HoverTooltip from "../../../../components/elements/tooltip/hoverTooltip/HoverTooltip"
 import PurpleButton from "../../../../components/atoms/buttons/purple/PurpleButton"
 import Tag from "../../../../components/atoms/tags/Tag"
+import CardHeader from "./elements/cardHeader/CardHeader"
+import CardLeftColumn from "./elements/cardLeftColumn/CardLeftColumn"
+import IconDataCell from "./elements/cells/iconDataCell/IconDataCell"
+import ListDataCell from "./elements/cells/listDataCell/ListDataCell"
+import QuantityDataCell from "./elements/cells/quantityDataCell/QuantityDataCell"
+import * as styles from "./licensesTableMobile.module.scss"
+import { images } from "../../../../images/images"
 import {
   IProductModel,
   InfoTogglesPricingModel,
 } from "../../../../interfaces/interfaces"
-import { images } from "../../../../images/images"
-import IconDataCell from "./elements/cells/iconDataCell/IconDataCell"
-import ListDataCell from "./elements/cells/listDataCell/ListDataCell"
-import QuantityDataCell from "./elements/cells/quantityDataCell/QuantityDataCell"
-import CardHeader from "./elements/cardHeader/CardHeader"
-import CardLeftColumn from "./elements/cardLeftColumn/CardLeftColumn"
 
 type ILicensesTableMobileProps = {
   license: IProductModel
@@ -85,13 +84,7 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
             <div>
               {!licenseIsEnterprise(license) ? (
                 <>
-                  <p
-                    className={`${styles.licensePrice} ${
-                      switchPeriodValue !== "year"
-                        ? styles.licensePriceLarge
-                        : ""
-                    } ${cx("heading4")}`}
-                  >
+                  <p className={`${cx("heading4")}`}>
                     <span>{getPrice(license)}€</span>
                     {" /"}
                     &nbsp;
@@ -102,7 +95,7 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
                         <span
                           className={`${cx(
                             "neutral700 bodyRegularXS marginTop2"
-                          )} ${styles.licenseSave}`}
+                          )}`}
                         >
                           {license?.subPriceMonthLabel}
                         </span>
@@ -111,7 +104,7 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
                         <span
                           className={`${cx(
                             "neutral700 bodyRegularXS marginTop2"
-                          )} ${styles.licenseSave}`}
+                          )}`}
                         >
                           {license?.subPriceYearLabel}
                         </span>
@@ -119,20 +112,12 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
                 </>
               ) : (
                 <>
-                  <p
-                    className={`${styles.licenseCustomPrice} ${
-                      switchPeriodValue === "year"
-                        ? styles.licenseCustomPriceLarge
-                        : ""
-                    } ${cx("heading5")}`}
-                  >
-                    {getPrice(license)}
-                  </p>
+                  <p className={`${cx("heading5")}`}>{getPrice(license)}</p>
                 </>
               )}
             </div>
 
-            <div className={styles.license__header}>
+            <div>
               {license?.type === "Professional" && (
                 <Tag label={"Popular"} className={styles.popularTag} />
               )}

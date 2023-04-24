@@ -18,8 +18,11 @@ const ListDataCell: React.FC<IListDataCellProps> = props => {
     <>
       <td className={`${cx("bodyBoldSM")}`}>
         {data?.length ? (
-          data?.map((el: string) => (
-            <p className={`${cx("bodyBoldSM")}`}>
+          data?.map((el: string, index: number) => (
+            <p
+              key={"dataList__" + el + index + Math.random()}
+              className={`${cx("bodyBoldSM")}`}
+            >
               {el}
               {!isLastItem(data, el) ? "," : ""}
             </p>

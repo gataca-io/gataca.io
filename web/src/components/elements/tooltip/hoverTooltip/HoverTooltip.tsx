@@ -1,6 +1,6 @@
 import * as React from "react"
-import * as styles from "./hoverTooltip.module.scss"
 import cx from "classnames"
+import * as styles from "./hoverTooltip.module.scss"
 import { images } from "../../../../images/images"
 
 export type IHoverTooltipProps = {

@@ -79,7 +79,7 @@ const SecondSection: React.FC<ISectionProps> = props => {
                     const { title, description } = el
 
                     return (
-                      <>
+                      <div key={"faqInfo__" + index}>
                         <div
                           id={"listOption__" + index}
                           key={"listOption__" + index}
@@ -99,7 +99,7 @@ const SecondSection: React.FC<ISectionProps> = props => {
                             }}
                           />
                         </div>
-                      </>
+                      </div>
                     )
                   })}
               </>

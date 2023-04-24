@@ -1,5 +1,6 @@
 @import "../../../../styles/colors";
 @import "../../../../styles/mixins";
+@import "../../../../styles/types";
 
 .firstSection {
   margin-top: 162px;
@@ -19,6 +20,13 @@
     text-align: center;
     @include min-width($mobileXL) {
       margin-bottom: 60px;
+      & > h1 {
+        font-family: $custom;
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 64px;
+        text-decoration: none;
+      }
     }
     p {
       color: $neutral700;
