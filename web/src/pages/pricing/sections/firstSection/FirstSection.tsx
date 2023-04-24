@@ -1,9 +1,9 @@
 import * as React from "react"
 import cx from "classnames"
-import LicenseCard from "../../components/licenseCard/LicenseCard"
 import SwitchButton from "../../../../components/atoms/buttons/switchButton/SwicthButton"
-import LicensesTable from "../../components/licensesTable/LicensesTable"
 import PurpleButton from "../../../../components/atoms/buttons/purple/PurpleButton"
+import LicenseCard from "../../components/licenseCard/LicenseCard"
+import LicensesTable from "../../components/licensesTable/LicensesTable"
 import {
   ButtonModel,
   IProductModel,
