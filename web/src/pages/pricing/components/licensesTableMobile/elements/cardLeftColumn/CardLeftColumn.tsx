@@ -5,15 +5,18 @@ import HoverTooltip from "../../../../../../components/elements/tooltip/hoverToo
 
 export type ICardLeftColumnProps = {
   text: string
+  information?: string
 }
 
 export const CardLeftColumn: React.FC<ICardLeftColumnProps> = props => {
-  const { text } = props
+  const { text, information } = props
   return (
     <div key={0} className={styles.card__row}>
       <div>
         <p className={`${cx("bodyRegularSM")}`}>{text}</p>
-        <HoverTooltip label={"hola"} />
+        {information?.length && information?.length > 0 ? (
+          <HoverTooltip label={information} />
+        ) : null}
       </div>
     </div>
   )

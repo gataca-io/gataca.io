@@ -4,7 +4,10 @@ import * as styles from "./licensesTableMobile.module.scss"
 import HoverTooltip from "../../../../components/elements/tooltip/hoverTooltip/HoverTooltip"
 import PurpleButton from "../../../../components/atoms/buttons/purple/PurpleButton"
 import Tag from "../../../../components/atoms/tags/Tag"
-import { IProductModel } from "../../../../interfaces/interfaces"
+import {
+  IProductModel,
+  InfoTogglesPricingModel,
+} from "../../../../interfaces/interfaces"
 import { images } from "../../../../images/images"
 import IconDataCell from "./elements/cells/iconDataCell/IconDataCell"
 import ListDataCell from "./elements/cells/listDataCell/ListDataCell"
@@ -16,6 +19,7 @@ type ILicensesTableMobileProps = {
   license: IProductModel
   licenseIndex: number
   switchPeriodValue: string
+  infoToggles: InfoTogglesPricingModel
   licenseIsEnterprise: (x: any) => boolean
   selectLicense: (x: any) => void
 }
@@ -25,18 +29,13 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
     license,
     switchPeriodValue,
     licenseIndex,
+    infoToggles,
     selectLicense,
     licenseIsEnterprise,
   } = props
 
   const getPrice = (item: any) => {
     return switchPeriodValue === "year" ? item.yearlyPrice : item.monthlyPrice
-  }
-
-  const isLastItem = (itemsArray: any[] | undefined, item: any) => {
-    const arrLength = itemsArray?.length
-    const itemPosition = itemsArray?.indexOf(item)
-    return arrLength ? itemPosition === arrLength - 1 : false
   }
 
   return (
@@ -156,11 +155,17 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
           <CardHeader title={"Verification Features"} />
 
           <div key={0} className={styles.card__row}>
-            <CardLeftColumn text={"Verification Templates"} />
+            <CardLeftColumn
+              text={"Verification Templates"}
+              information={infoToggles?.verificationTemplate}
+            />
             <QuantityDataCell data={license?.features?.verificationTemplates} />
           </div>
           <div className={styles.card__row}>
-            <CardLeftColumn text={"Active users p/m"} />
+            <CardLeftColumn
+              text={"Active users p/m"}
+              information={infoToggles?.activeUser}
+            />
             <QuantityDataCell data={license?.features?.activeUsers} />
           </div>
         </div>
@@ -170,11 +175,17 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
           <CardHeader title={"Issuance Features"} />
 
           <div key={0} className={styles.card__row}>
-            <CardLeftColumn text={"Issuance Templates"} />
+            <CardLeftColumn
+              text={"Issuance Templates"}
+              information={infoToggles?.issuanceTemplate}
+            />
             <QuantityDataCell data={license?.features?.issuanceTemplates} />
           </div>
           <div className={styles.card__row}>
-            <CardLeftColumn text={"Issued Credentials"} />
+            <CardLeftColumn
+              text={"Issued Credentials"}
+              information={infoToggles?.issuedCredential}
+            />
             <QuantityDataCell data={license?.features?.issuedCredentials} />
           </div>
         </div>
@@ -192,7 +203,10 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
             <QuantityDataCell data={license.features?.apiKeys} />
           </div>
           <div className={styles.card__row}>
-            <CardLeftColumn text={"2FA Security Mechanism"} />
+            <CardLeftColumn
+              text={"2FA Security Mechanism"}
+              information={infoToggles?.securityFactorMechanism}
+            />
             <ListDataCell data={license?.features?.nFactor} />
           </div>
           <div className={styles.card__row}>
@@ -208,19 +222,31 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
             <IconDataCell data={license?.features?.credentialsInW3CFormat} />
           </div>
           <div className={styles.card__row}>
-            <CardLeftColumn text={"Sandbox environment"} />
+            <CardLeftColumn
+              text={"Sandbox environment"}
+              information={infoToggles?.sandboxEnvironment}
+            />
             <IconDataCell data={license.features?.sandBoxEnvironment} />
           </div>
           <div className={styles.card__row}>
-            <CardLeftColumn text={"DID in Public Catalogue"} />
+            <CardLeftColumn
+              text={"DID in Public Catalogue"}
+              information={infoToggles?.didInPublicCatalogue}
+            />
             <IconDataCell data={license.features?.didPublicCatalogue} />
           </div>
           <div className={styles.card__row}>
-            <CardLeftColumn text={"Publish Schemas in Public Catalogue"} />
+            <CardLeftColumn
+              text={"Publish Schemas in Public Catalogue"}
+              information={infoToggles?.schemaInPublicCatalogue}
+            />
             <IconDataCell data={license.features?.newSchemaPublicCatalogue} />
           </div>
           <div className={styles.card__row}>
-            <CardLeftColumn text={"EBSI integration"} />
+            <CardLeftColumn
+              text={"EBSI integration"}
+              information={infoToggles?.ebsiIntegration}
+            />
             <IconDataCell data={license.features?.ebsiIntegration} />
           </div>
           <div className={styles.card__row}>
@@ -236,13 +262,19 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
             <IconDataCell data={license.features?.credentialsInISO28013} />
           </div>
           <div className={styles.card__row}>
-            <CardLeftColumn text={"Integration with custom trust Frameworks"} />
+            <CardLeftColumn
+              text={"Integration with custom trust Frameworks"}
+              information={infoToggles?.integrationCustomFrameworks}
+            />
             <IconDataCell
               data={license.features?.integrationCustomTrustFrameworks}
             />
           </div>
           <div className={styles.card__row}>
-            <CardLeftColumn text={"Integration with custom infrastructure"} />
+            <CardLeftColumn
+              text={"Integration with custom infrastructure"}
+              information={infoToggles?.integrationCustomInfraestructure}
+            />
             <IconDataCell
               data={license.features?.integrationCustomTrustInfraestructure}
             />

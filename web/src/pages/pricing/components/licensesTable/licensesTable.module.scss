@@ -202,12 +202,10 @@ table {
       padding: 12px;
       line-height: 16px;
     }
-
-    & > td:nth-child(1) {
-      min-width: 40px;
-      width: 40px;
+    .table__body__row__cell__icon {
+      width: 16px;
+      height: 16px;
     }
-
     &:last-child {
       &:last-child {
         & > td {

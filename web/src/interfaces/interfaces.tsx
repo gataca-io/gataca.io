@@ -118,3 +118,17 @@ export interface OptionModel {
   text: string
   value: string
 }
+
+export interface InfoTogglesPricingModel {
+  verificationTemplate: string
+  activeUser: string
+  issuanceTemplate: string
+  issuedCredential: string
+  securityFactorMechanism: string
+  sandboxEnvironment: string
+  didInPublicCatalogue: string
+  schemaInPublicCatalogue: string
+  ebsiIntegration: string
+  integrationCustomFrameworks: string
+  integrationCustomInfraestructure: string
+}

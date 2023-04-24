@@ -10,15 +10,18 @@ import SubcategoryCell from "./elements/cells/subcategoryCell/SubcategoryCell"
 import IconDataCell from "./elements/cells/iconDataCell/IconDataCell"
 import QuantityDataCell from "./elements/cells/quantityDataCell/QuantityDataCell"
 import ListDataCell from "./elements/cells/listDataCell/ListDataCell"
+import { InfoTogglesPricingModel } from "../../../../interfaces/interfaces"
 
 type ILicensesTableProps = {
   products: any[]
   switchPeriodValue: string
+  infoToggles: InfoTogglesPricingModel
   licenseIsEnterprise: (x: any) => boolean
 }
 
 const LicensesTable: React.FC<ILicensesTableProps> = props => {
-  const { products, switchPeriodValue, licenseIsEnterprise } = props
+  const { products, switchPeriodValue, infoToggles, licenseIsEnterprise } =
+    props
 
   const getPrice = (item: any) => {
     return switchPeriodValue === "year" ? item.yearlyPrice : item.monthlyPrice
@@ -123,19 +126,10 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
             </tr>
             <tr key={1} className={styles.table__body__row}>
               <CategoryCell category={"Verification Features"} rowsPan={2} />
-              <SubcategoryCell subcategory={"Verification Templates"} />
-              {/* <td
-                className={`${styles.table__body__row__cell} ${
-                  styles.table__body__row__subcategory
-                } ${cx("bodyRegularSM")}`}
-              >
-                <div>
-                  <p className={`${cx("bodyRegularSM")}`}>
-                    Verification Templates
-                  </p>
-                  <HoverTooltip label={"hola"} />
-                </div>
-              </td> */}
+              <SubcategoryCell
+                subcategory={"Verification Templates"}
+                information={infoToggles.verificationTemplate}
+              />
               {products?.map(license => {
                 return (
                   <QuantityDataCell
@@ -145,14 +139,20 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
               })}
             </tr>
             <tr key={2} className={styles.table__body__row}>
-              <SubcategoryCell subcategory={"Active Users p/m"} />
+              <SubcategoryCell
+                subcategory={"Active Users p/m"}
+                information={infoToggles.activeUser}
+              />
               {products?.map(license => {
                 return <QuantityDataCell data={license.features?.activeUsers} />
               })}
             </tr>
             <tr key={3} className={styles.table__body__row}>
               <CategoryCell category={"Issuance Features"} rowsPan={2} />
-              <SubcategoryCell subcategory={"Issuance Templates"} />
+              <SubcategoryCell
+                subcategory={"Issuance Templates"}
+                information={infoToggles.issuanceTemplate}
+              />
               {products?.map(license => {
                 return (
                   <QuantityDataCell
@@ -162,7 +162,10 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
               })}
             </tr>
             <tr key={4} className={styles.table__body__row}>
-              <SubcategoryCell subcategory={"Issued Credentials p/m"} />
+              <SubcategoryCell
+                subcategory={"Issued Credentials p/m"}
+                information={infoToggles.issuedCredential}
+              />
               {products?.map(license => {
                 return (
                   <QuantityDataCell
@@ -185,7 +188,10 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
               })}
             </tr>
             <tr key={8} className={styles.table__body__row}>
-              <SubcategoryCell subcategory={"2FA Security Mechanism"} />
+              <SubcategoryCell
+                subcategory={"2FA Security Mechanism"}
+                information={infoToggles.securityFactorMechanism}
+              />
               {products?.map(license => {
                 return <ListDataCell data={license.features?.nFactor} />
               })}
@@ -209,7 +215,10 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
               })}
             </tr>
             <tr key={10} className={styles.table__body__row}>
-              <SubcategoryCell subcategory={"Sandbox environment"} />
+              <SubcategoryCell
+                subcategory={"Sandbox environment"}
+                information={infoToggles.sandboxEnvironment}
+              />
               {products?.map(license => {
                 return (
                   <IconDataCell data={license.features?.sandBoxEnvironment} />
@@ -217,7 +226,10 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
               })}
             </tr>
             <tr key={11} className={styles.table__body__row}>
-              <SubcategoryCell subcategory={"DID in Public Catalogue"} />
+              <SubcategoryCell
+                subcategory={"DID in Public Catalogue"}
+                information={infoToggles.didInPublicCatalogue}
+              />
               {products?.map(license => {
                 return (
                   <IconDataCell data={license.features?.didPublicCatalogue} />
@@ -227,6 +239,7 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
             <tr key={12} className={styles.table__body__row}>
               <SubcategoryCell
                 subcategory={"Publish Schemas in Public Catalogue"}
+                information={infoToggles.schemaInPublicCatalogue}
               />
               {products?.map(license => {
                 return (
@@ -237,7 +250,10 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
               })}
             </tr>
             <tr key={12} className={styles.table__body__row}>
-              <SubcategoryCell subcategory={"EBSI integration"} />
+              <SubcategoryCell
+                subcategory={"EBSI integration"}
+                information={infoToggles.ebsiIntegration}
+              />
               {products?.map(license => {
                 return <IconDataCell data={license.features?.ebsiIntegration} />
               })}
@@ -273,6 +289,7 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
             <tr key={13} className={styles.table__body__row}>
               <SubcategoryCell
                 subcategory={"Integration with custom trust Frameworks"}
+                information={infoToggles.integrationCustomFrameworks}
               />
               {products?.map(license => {
                 return (
@@ -285,6 +302,7 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
             <tr key={13} className={styles.table__body__row}>
               <SubcategoryCell
                 subcategory={"Integration with custom infrastructure"}
+                information={infoToggles.integrationCustomInfraestructure}
               />
               {products?.map(license => {
                 return (

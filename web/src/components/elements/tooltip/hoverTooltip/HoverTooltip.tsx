@@ -17,8 +17,9 @@ const HoverTooltip: React.FC<IHoverTooltipProps> = props => {
       }`}
     >
       <img src={images.infoIcon} />
-
-      <p className={`${styles?.hoverTooltipText} ${cx("buttonSM")}`}>{label}</p>
+      <p className={`${styles?.hoverTooltipText} ${cx("bodyRegularXS")}`}>
+        {label}
+      </p>
     </span>
   )
 }

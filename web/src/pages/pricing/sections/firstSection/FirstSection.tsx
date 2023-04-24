@@ -5,7 +5,11 @@ import LicenseCard from "../../components/licenseCard/LicenseCard"
 import SwitchButton from "../../../../components/atoms/buttons/switchButton/SwicthButton"
 import LicensesTable from "../../components/licensesTable/LicensesTable"
 import PurpleButton from "../../../../components/atoms/buttons/purple/PurpleButton"
-import { ButtonModel, IProductModel } from "../../../../interfaces/interfaces"
+import {
+  ButtonModel,
+  IProductModel,
+  InfoTogglesPricingModel,
+} from "../../../../interfaces/interfaces"
 import LicensesTableMobile from "../../components/licensesTableMobile/LicensesTableMobile"
 import OnPremisePanel from "../../components/onPremisePanel/OnPremisePanel"
 import Categories from "../../components/categories/Categories"
@@ -24,10 +28,19 @@ export type ISectionProps = {
     button: ButtonModel
   }
   licenses: IProductModel[]
+  infoToggles: InfoTogglesPricingModel
 }
 
 const FirstSection: React.FC<ISectionProps> = props => {
-  const { title, description, index, categories, licenses, onPremise } = props
+  const {
+    title,
+    description,
+    index,
+    categories,
+    licenses,
+    onPremise,
+    infoToggles,
+  } = props
   const [switchPeriodValue, setmonthlyChecked] = React.useState("month")
   const [showAllFeatures, setShowAllFeatures] = React.useState(false)
   const [selectedLicense, setSelectedLicense] = React.useState(0)
@@ -121,16 +134,16 @@ const FirstSection: React.FC<ISectionProps> = props => {
               {showAllFeatures && (
                 <div id={"allFeatures"}>
                   <LicensesTable
-                    switchButtonOptios={switchButton?.options}
                     products={licenses}
                     switchPeriodValue={switchPeriodValue}
-                    selectPeriod={selectPeriod}
                     licenseIsEnterprise={licenseIsEnterprise}
+                    infoToggles={infoToggles}
                   />
                   <LicensesTableMobile
                     licenseIndex={selectedLicense}
                     license={licenses[selectedLicense]}
                     switchPeriodValue={switchPeriodValue}
+                    infoToggles={infoToggles}
                     selectLicense={setSelectedLicense}
                     licenseIsEnterprise={licenseIsEnterprise}
                   />

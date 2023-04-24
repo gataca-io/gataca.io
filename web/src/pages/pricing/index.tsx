@@ -27,6 +27,7 @@ const Pricing: React.FC<PageProps> = () => {
           description={firstSection?.description}
           categories={firstSection?.categories}
           index={0}
+          infoToggles={firstSection?.infoToggles}
           licenses={firstSection?.categories[0].list}
           onPremise={firstSection?.categories[1]}
         />

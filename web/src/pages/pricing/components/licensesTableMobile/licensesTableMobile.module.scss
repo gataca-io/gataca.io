@@ -44,8 +44,8 @@
       & > div {
         @include flexbox();
         @include flex-wrap(nowrap);
-        @include align-items(flex-start);
-        @include justify-content(flex-start);
+        @include align-items(space-between);
+        @include justify-content(space-between);
         & > p {
           margin-right: 10px;
         }
