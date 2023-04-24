@@ -209,7 +209,7 @@
   box-shadow: none;
 
   @media (min-width: 1200px) {
-    justify-content: flex-start;
+    @include justify-content(flex-start);
     margin-right: 15px !important;
   }
 
