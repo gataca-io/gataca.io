@@ -118,6 +118,15 @@ import blockIsLogo from "./logos/logo-block-is.png"
 import cdtiNeotecLogo from "./logos/logo-cdti-neotec.png"
 import redEsLogo from "./logos/logo-red-es.svg"
 import europeanUnionLogo from "./logos/logo-european-union.png"
+import gatacaTeamCareers1 from "./team/gataca-team-careers1.png"
+import gatacaTeamCareers2 from "./team/gataca-team-careers2.png"
+import gatacaTeamCareers3 from "./team/gataca-team-careers3.png"
+import targetIcon from "./icons/target.svg"
+import userHeartIcon from "./icons/user-heart.svg"
+import handHoldingUserIcon from "./icons/hand-holding-user.svg"
+import chatIcon from "./icons/chat-icon.svg"
+import magnifyingGlass from "./images3d/magnifying_glass.png"
+import medalIcon from "./icons/medal.svg"
 
 export const images = {
   chevronDown: crevronDownSVG,
@@ -240,4 +249,13 @@ export const images = {
   cdtiNeotecLogo: cdtiNeotecLogo,
   redEsLogo: redEsLogo,
   europeanUnionLogo: europeanUnionLogo,
+  gatacaTeamCareers1: gatacaTeamCareers1,
+  gatacaTeamCareers2: gatacaTeamCareers2,
+  gatacaTeamCareers3: gatacaTeamCareers3,
+  targetIcon: targetIcon,
+  userHeartIcon: userHeartIcon,
+  handHoldingUserIcon: handHoldingUserIcon,
+  chatIcon: chatIcon,
+  magnifyingGlass: magnifyingGlass,
+  medalIcon: medalIcon,
 }
