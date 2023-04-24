@@ -43,18 +43,37 @@
 
 .thirdSection__rightSide {
   @include flex(0, 0, 100%);
+  position: relative;
   @include min-width($tabletXL) {
     @include flex(0, 0, calc((100% - 32px) / 2));
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    width: 2000px;
+    height: 770px;
+    background: $neutral200;
+    border-radius: 40px 0px 0px 40px;
+    z-index: -1;
+    top: 92px;
+    left: -20px;
+    @include min-width($mobileXL) {
+      left: -40px;
+    }
+    @include min-width($tabletXL) {
+      height: 654px;
+      left: 10px;
+    }
   }
 
   .form_container {
     background-color: $neutral100;
     padding: 40px;
-    margin-top: calc(80px - 24px);
     border-radius: 12px;
     filter: drop-shadow(0px 0px 10px rgba(12, 11, 51, 0.12));
+    max-width: 410px;
     @include min-width($tabletXL) {
-      margin-top: 0;
+      margin: -39px 0 0 auto;
     }
   }
 }
