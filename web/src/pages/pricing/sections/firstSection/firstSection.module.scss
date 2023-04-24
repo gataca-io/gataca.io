@@ -1,9 +1,9 @@
 @import "../../../../styles/colors";
 @import "../../../../styles/mixins";
 
-.useCasesAppliedSection {
+.firstSection {
   margin-top: 162px;
-  margin-bottom: 179px;
+  margin-bottom: 132px;
   padding: 0 20px;
   @include min-width($mobileXL) {
     margin-top: 146px;
@@ -13,7 +13,7 @@
   @include min-width($desktopMD) {
     padding: 0 60px;
   }
-  .useCasesAppliedSection__header {
+  .firstSection__header {
     max-width: 770px;
     margin: 0 auto 80px;
     text-align: center;
@@ -32,7 +32,8 @@
       @include flex-wrap(nowrap);
       @include justify-content(center);
       @include align-items(center);
-      max-width: 419px;
+      width: fit-content;
+      max-width: 260px;
       margin: 0 auto;
       height: 48px;
       background-color: $neutral200;
@@ -41,13 +42,13 @@
       text-align: center;
     }
   }
-  .useCasesAppliedSection__sectors {
+  .firstSection__sectors {
     width: 100%;
    
     margin-top: 44px;
     
   }
-  .useCasesAppliedSection__sectors__cardsContainer {
+  .firstSection__sectors__cardsContainer {
      width: 100%;
 
  @include flexbox();

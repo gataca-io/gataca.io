@@ -1,6 +1,6 @@
-@import "../../../../../../styles/colors";
-@import "../../../../../../styles/mixins";
-@import "../../../../../../styles/types";
+@import "../../../../styles/colors";
+@import "../../../../styles/mixins";
+@import "../../../../styles/types";
 
 .card__list {
   @include flex(0, 0, calc(100% - 64px));

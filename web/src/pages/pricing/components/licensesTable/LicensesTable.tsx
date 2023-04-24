@@ -1,10 +1,10 @@
 import React from "react"
 import cx from "classnames"
 import * as styles from "./licensesTable.module.scss"
-import PurpleButton from "../../../../../../components/atoms/buttons/purple/PurpleButton"
-import Tag from "../../../../../../components/atoms/tags/Tag"
-import { images } from "../../../../../../images/images"
-import HoverTooltip from "../../../../../../components/elements/tooltip/hoverTooltip/HoverTooltip"
+import PurpleButton from "../../../../components/atoms/buttons/purple/PurpleButton"
+import Tag from "../../../../components/atoms/tags/Tag"
+import { images } from "../../../../images/images"
+import HoverTooltip from "../../../../components/elements/tooltip/hoverTooltip/HoverTooltip"
 
 type ILicensesTableProps = {
   products: any[]

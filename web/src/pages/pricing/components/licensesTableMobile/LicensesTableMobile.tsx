@@ -1,12 +1,11 @@
-import React from "react" // we need this to make JSX compile
-// import LicenseCard from "../LicenseCard/LicenseCard"
+import React from "react"
 import cx from "classnames"
 import * as styles from "./licensesTableMobile.module.scss"
-import PurpleButton from "../../../../../../components/atoms/buttons/purple/PurpleButton"
-import Tag from "../../../../../../components/atoms/tags/Tag"
-import { images } from "../../../../../../images/images"
-import { IProductModel } from "../../../../../../interfaces/interfaces"
-import HoverTooltip from "../../../../../../components/elements/tooltip/hoverTooltip/HoverTooltip"
+import HoverTooltip from "../../../../components/elements/tooltip/hoverTooltip/HoverTooltip"
+import PurpleButton from "../../../../components/atoms/buttons/purple/PurpleButton"
+import Tag from "../../../../components/atoms/tags/Tag"
+import { IProductModel } from "../../../../interfaces/interfaces"
+import { images } from "../../../../images/images"
 
 type ILicensesTableMobileProps = {
   license: IProductModel

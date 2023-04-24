@@ -1,10 +1,10 @@
 import React from "react" // we need this to make JSX compile
-import PurpleButton from "../../../atoms/buttons/purple/PurpleButton"
+import PurpleButton from "../../../../components/atoms/buttons/purple/PurpleButton"
 import { ButtonModel, IProductModel } from "../../../../interfaces/interfaces"
 import cx from "classnames"
 import * as styles from "./licenseCard.module.scss"
 import { images } from "../../../../images/images"
-import Tag from "../../../atoms/tags/Tag"
+import Tag from "../../../../components/atoms/tags/Tag"
 
 type ILicenseCardProps = {
   license: IProductModel

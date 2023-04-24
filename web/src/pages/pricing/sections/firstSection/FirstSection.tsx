@@ -1,15 +1,14 @@
 import * as React from "react"
 import cx from "classnames"
-import * as styles from "./useCasesAppliedSection.module.scss"
-import CategorySectors from "../../components/categorySectors/CategorySectors"
-import Categories from "./elements/Categories"
-import LicenseCard from "../../../../components/templates/cards/licenseCard/LicenseCard"
+import * as styles from "./firstSection.module.scss"
+import LicenseCard from "../../components/licenseCard/LicenseCard"
 import SwitchButton from "../../../../components/atoms/buttons/switchButton/SwicthButton"
-import LicensesTable from "./elements/licensesTable/LicensesTable"
+import LicensesTable from "../../components/licensesTable/LicensesTable"
 import PurpleButton from "../../../../components/atoms/buttons/purple/PurpleButton"
-import OnPremisePanel from "./elements/onPremisePanel/OnPremisePanel"
 import { ButtonModel, IProductModel } from "../../../../interfaces/interfaces"
-import LicensesTableMobile from "./elements/licensesTableMobile/LicensesTableMobile"
+import LicensesTableMobile from "../../components/licensesTableMobile/LicensesTableMobile"
+import OnPremisePanel from "../../components/onPremisePanel/OnPremisePanel"
+import Categories from "../../components/categories/Categories"
 
 export type ISectionProps = {
   title: string
@@ -27,7 +26,7 @@ export type ISectionProps = {
   licenses: IProductModel[]
 }
 
-const useCasesAppliedSection: React.FC<ISectionProps> = props => {
+const FirstSection: React.FC<ISectionProps> = props => {
   const { title, description, index, categories, licenses, onPremise } = props
   const [switchPeriodValue, setmonthlyChecked] = React.useState("month")
   const [showAllFeatures, setShowAllFeatures] = React.useState(false)
@@ -44,17 +43,17 @@ const useCasesAppliedSection: React.FC<ISectionProps> = props => {
     ],
     function: selectPeriod,
   }
+
   const [openItem, setOpenItem] = React.useState<number>(1)
-  let useCasesCategories: HTMLElement | null
+  let typeCategories: HTMLElement | null
 
   React.useEffect(() => {
-    useCasesCategories =
-      document && document?.getElementById("useCasesAppliedSectors")
+    typeCategories = document && document?.getElementById("cloud")
   })
 
   const scrollIntoView = (el: any) => {
-    useCasesCategories
-      ? useCasesCategories.scroll({
+    typeCategories
+      ? typeCategories.scroll({
           behavior: "smooth",
           left: el.offsetLeft,
         })
@@ -66,12 +65,8 @@ const useCasesAppliedSection: React.FC<ISectionProps> = props => {
 
   return (
     <>
-      <section
-        className={`${styles?.useCasesAppliedSection} ${cx(
-          "containerMaxWidth"
-        )}`}
-      >
-        <div className={styles?.useCasesAppliedSection__header}>
+      <section className={`${styles?.firstSection} ${cx("containerMaxWidth")}`}>
+        <div className={styles?.firstSection__header}>
           <h1 className={cx("heading1 marginBottom32")}>{title}</h1>
           <p className={cx("bodyRegularXL marginBottom32")}>{description}</p>
           <div className={styles?.categories}>
@@ -95,10 +90,7 @@ const useCasesAppliedSection: React.FC<ISectionProps> = props => {
             })}
           </div>
         </div>
-        <div
-          id="useCasesAppliedSectors"
-          className={styles?.useCasesAppliedSection__sectors}
-        >
+        <div id="cloud" className={styles?.firstSection__sectors}>
           {openItem === 1 ? (
             <>
               <div className={styles.switchButtonContainer}>
@@ -109,11 +101,7 @@ const useCasesAppliedSection: React.FC<ISectionProps> = props => {
                   onChangeSwitchSelect={switchButton.function}
                 />
               </div>
-              <div
-                className={
-                  styles?.useCasesAppliedSection__sectors__cardsContainer
-                }
-              >
+              <div className={styles?.firstSection__sectors__cardsContainer}>
                 {licenses?.map((item: any, index) => {
                   return (
                     <>
@@ -176,4 +164,4 @@ const useCasesAppliedSection: React.FC<ISectionProps> = props => {
   )
 }
 
-export default useCasesAppliedSection
+export default FirstSection
