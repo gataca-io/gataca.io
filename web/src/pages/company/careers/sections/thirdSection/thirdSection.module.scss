@@ -53,13 +53,14 @@
       content: '';
       position: absolute;
       width: 2000px;
-      height: 770px;
+      height: 820px;
       background: $neutral200;
       border-radius: 40px 0px 0px 40px;
       z-index: -1;
       top: 92px;
       left: -20px;
       @include min-width($mobileXL) {
+        height: 720px;
         left: -40px;
       }
       @include min-width($tabletXL) {
@@ -80,17 +81,23 @@
       }
     }
     .image__container {
-      position: absolute;
-      bottom: -300px;
-      left: 30px;
+      position: relative;
+      bottom: -80px;
+      text-align: center;
       @include min-width($mobileXL) {
-        bottom: -200px;
+        position: absolute;
+        bottom: -150px;
+        left: 30px;
       } 
       @include min-width($tabletXL) {
         bottom: -50px;
-        left: -270px;
+        left: -200px;
       }
       @include min-width($desktopSM) {
+        bottom: -100px;
+        left: -200px;
+      }
+      @include min-width($desktopXL) {
         bottom: -150px;
         left: -270px;
       }
