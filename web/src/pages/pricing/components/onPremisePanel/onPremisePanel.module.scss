@@ -11,7 +11,6 @@
   padding: 24px;
   @include flexbox();
   @include flex-direction(column);
-  // @include justify-content(center);
   @include align-items(center);
   @include min-width($mobileXL) {
       padding: 40px;
@@ -23,11 +22,6 @@
   @include min-width($tabletXL) {
 
     @include flex(0, 0, calc((100%/3) - 96px));
-  }
-  &:not(:nth-child(3n)) {
-    @include min-width($tabletXL) {
-      // margin-right: 32px;
-    }
   }
   img {
     margin-bottom: 17px;
