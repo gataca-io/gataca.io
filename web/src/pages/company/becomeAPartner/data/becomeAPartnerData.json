@@ -30,6 +30,32 @@
       ],
       "subTitle": "Looking for something different?",
       "title": "Partnership types"
+    },
+    "thirdSection": {
+      "description": "Accelerate your capability to offer a user-centric digital identity and secure your market positioning.",
+      "list": [
+        {
+          "description": "Provide your clients seamless authentication technology, ensuring increased conversion rates while boosting UX and security",
+          "number": "1",
+          "title": "Reduce customer churn rate"
+        },
+        {
+          "description": "SSI authentication technology reduces the internal resources consumed for each user verification",
+          "number": "2",
+          "title": "Lower customer operational costs"
+        },
+        {
+          "description": "Businesses are already asking for user-centric authentication options, don't waste time developing technology, offer Gataca’s, and surpass your competitors",
+          "number": "3",
+          "title": "Take the lead in your market"
+        },
+        {
+          "description": "Add use cases to your offering and expand your customer base with a unique competitive edge",
+          "number": "4",
+          "title": "Unlock new business opportunities"
+        }
+      ],
+      "title": "Why become a Gataca partner"
     }
   }
 }
