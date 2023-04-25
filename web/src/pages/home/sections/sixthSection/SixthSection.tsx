@@ -3,7 +3,7 @@ import cx from "classnames"
 import { ButtonModel } from "../../../../interfaces/interfaces"
 import { images } from "../../../../images/images"
 import PurpleButton from "../../../../components/atoms/buttons/purple/PurpleButton"
-import CardList from "../../../../components/templates/cardList/CardList"
+import CardList from "../../../../components/templates/cards/cardList/CardList"
 import * as styles from "./sixthSection.module.scss"
 
 export type ISectionProps = {

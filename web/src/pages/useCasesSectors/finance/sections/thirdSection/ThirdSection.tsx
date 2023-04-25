@@ -1,7 +1,7 @@
 import * as React from "react"
 import cx from "classnames"
 import { images } from "../../../../../images/images"
-import CardList from "../../../../../components/templates/cardList/CardList"
+import CardList from "../../../../../components/templates/cards/cardList/CardList"
 import * as styles from "./thirdSection.module.scss"
 
 export type ISectionProps = {
