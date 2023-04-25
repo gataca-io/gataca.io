@@ -6,11 +6,17 @@ import FirstSection from "./sections/firstSection/FirstSection"
 import SecondSection from "./sections/secondSection/SecondSection"
 import ThirdSection from "./sections/thirdSection/ThirdSection"
 import FourthSection from "./sections/fourthSection/FourthSection"
+import FifthSection from "./sections/fifthSection/FifthSection"
 
 const BecomeAPartnerPage: React.FC<PageProps> = () => {
   const [becomeAPartnerData, setBecomeAPartner] = useState<any | undefined>()
-  const { firstSection, secondSection, thirdSection, fourthSection } =
-    becomeAPartnerData ? becomeAPartnerData : []
+  const {
+    firstSection,
+    secondSection,
+    thirdSection,
+    fourthSection,
+    fifthSection,
+  } = becomeAPartnerData ? becomeAPartnerData : []
 
   React.useEffect(() => {
     getBecomeAPartner()
@@ -45,6 +51,10 @@ const BecomeAPartnerPage: React.FC<PageProps> = () => {
           title={fourthSection?.title}
           description={fourthSection?.description}
           list={fourthSection?.list}
+        />
+        <FifthSection
+          title={fifthSection?.title}
+          description={fifthSection?.description}
         />
         <hr></hr>
       </>
