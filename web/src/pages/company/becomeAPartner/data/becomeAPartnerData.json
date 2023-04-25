@@ -11,43 +11,25 @@
       "title": "Gataca Partnership Program"
     },
     "secondSection": {
-      "description": "Our organizational ethos is shaped by these principles:",
+      "description": "to discuss different partnership models",
+      "linkLabel": "Contact us",
+      "linkRoute": "/company/contactUs",
       "list": [
         {
-          "description": "We ensure everyone on the team feels free to express their opinions, share their ideas, and ask questions without fear of judgment, fostering a culture of transparency and trust",
-          "title": "Open environment"
+          "description": "Integrate Gataca technology as a value-added component to your existing solutions to offer a more robust product offering",
+          "title": "Integrator"
         },
         {
-          "description": "We have a positive and energetic atmosphere that encourages fun and enjoyment in the workplace, and we always try to keep an optimistic attitude even in challenging times",
-          "title": "Optimism"
+          "description": "Sell Gataca solutions in your own channels. We train resellers to assist customers in using the software, from installation and customization to customer support",
+          "title": "Reseller"
         },
         {
-          "description": "We provide the necessary flexibility to keep a healthy professional-life balance, whether that means working from home or having the ability to adjust schedules.",
-          "title": "People first"
-        },
-        {
-          "description": "We foster a growth mindset where employees are not afraid to take risks and support them in their pursuit of knowledge and skill development.",
-          "title": "Learning"
-        },
-        {
-          "description": "We trust that everyone on the team is working towards a shared vision and understand their role in the organization's success",
-          "title": "Commitment"
-        },
-        {
-          "description": "We recognize and celebrate diversity and encourage everyone to bring their authentic selves to work",
-          "title": "Inclusiveness"
-        },
-        {
-          "description": "We work towards our objectives with a purpose, emphasizing results and outcomes",
-          "title": "Objective-oriented"
+          "description": "Enable reusable KYC by integrating our technology into your workflow. We can also integrate your components to create a joint product that we can sell together",
+          "title": "KYC Partner"
         }
       ],
-      "title": "Company culture"
-    },
-    "thirdSection": {
-      "description": "However, we are always interested in hearing from talented individuals passionate about our mission and values. Please feel free to submit your resume, and we will keep it for future opportunities",
-      "subTitle": "Sorry, we currently do not have any open job positions",
-      "title": "Job openings"
+      "subTitle": "Looking for something different?",
+      "title": "Partnership types"
     }
   }
 }
