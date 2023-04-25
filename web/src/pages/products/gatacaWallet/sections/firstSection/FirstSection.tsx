@@ -1,4 +1,3 @@
-import type { PageProps } from "gatsby"
 import * as React from "react"
 import cx from "classnames"
 import { marketAndroidURI, marketIosURI } from "../../../../../data/globalData"

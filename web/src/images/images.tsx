@@ -90,6 +90,9 @@ import books from "./images3d/books_1.png"
 import ebsiEarlyAdoptersLogo from "./logos/ebsi-earlyadopters.svg"
 import ebsiEuroCommissionLogo from "./logos/ebsi-europeancomission.svg"
 import unaEuropalogo from "./logos/una_europa_small.svg"
+import greenCheckIcon from "./icons/greenCheck.svg"
+import closeIcon from "./icons/closeIcon.svg"
+import infoIcon from "./icons/info.svg"
 import desktopIcon from "./icons/desktop.svg"
 import searchIcon from "./icons/search.svg"
 import puzzleIcon from "./icons/puzzle.svg"
@@ -224,6 +227,9 @@ export const images = {
   ebsiEarlyAdoptersLogo: ebsiEarlyAdoptersLogo,
   ebsiEuroCommissionLogo: ebsiEuroCommissionLogo,
   unaEuropalogo: unaEuropalogo,
+  greenCheckIcon: greenCheckIcon,
+  closeIcon: closeIcon,
+  infoIcon: infoIcon,
   desktopIcon: desktopIcon,
   searchIcon: searchIcon,
   puzzleIcon: puzzleIcon,

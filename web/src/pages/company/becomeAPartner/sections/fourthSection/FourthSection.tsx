@@ -2,7 +2,7 @@ import * as React from "react"
 import cx from "classnames"
 import { images } from "../../../../../images/images"
 import * as styles from "./fourthSection.module.scss"
-import CardList from "../../../../../components/templates/cardList/CardList"
+import CardList from "../../../../../components/templates/cards/cardList/CardList"
 
 export type ISectionProps = {
   title: string

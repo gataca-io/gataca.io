@@ -1,0 +1,15 @@
+@import "../../../../../../../styles/mixins";
+
+.subcategoryCell {
+    min-width: 180px;
+    & > span {
+        @include flexbox();
+        @include flex-wrap(nowrap);
+        @include align-items(flex-start);
+        @include justify-content(flex-start);
+        & > p {
+            margin-right: 10px;
+            width: calc(100% - 10px)
+        }
+    }
+}
