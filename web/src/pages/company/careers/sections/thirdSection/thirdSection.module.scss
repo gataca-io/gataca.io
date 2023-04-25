@@ -1,0 +1,130 @@
+@import "../../../../../styles/_colors.scss";
+@import "../../../../../styles/mixins.scss";
+
+.thirdSection {
+  padding: 0 20px;
+  margin-bottom: 460px;
+  @include min-width($mobileXL) {
+    margin-bottom: 200px;
+    padding: 0 40px;
+  }
+  @include min-width($desktopMD) {
+    padding: 0 60px;
+  }
+  h3 {
+    margin-bottom: 60px;
+
+    @include min-width($tabletXL) {
+      margin-bottom: 80px;
+    }
+  }
+
+
+  .thirdSection__container {
+    @include flexbox();
+    @include justify-content(space-between);
+    @include flex-wrap(wrap);
+  }
+
+  .thirdSection__leftSide {
+    @include flex(0, 0, 100%);
+    margin-bottom: 60px;
+    @include min-width($tabletXL) {
+      @include flex(0, 0, calc((100% - 32px) / 2));
+      margin-bottom: 0;
+    }
+    p {
+      @include min-width($tabletXL) {
+        max-width: 576px;
+      }
+    }
+    .description {
+      margin-bottom: 34px;
+    }
+  }
+
+  .thirdSection__rightSide {
+    @include flex(0, 0, 100%);
+    position: relative;
+    @include min-width($tabletXL) {
+      @include flex(0, 0, calc((100% - 32px) / 2));
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      width: 2000px;
+      height: 820px;
+      background: $neutral200;
+      border-radius: 40px 0px 0px 40px;
+      z-index: -1;
+      top: 92px;
+      left: -20px;
+      @include min-width($mobileXL) {
+        height: 720px;
+        left: -40px;
+      }
+      @include min-width($tabletXL) {
+        height: 654px;
+        left: 10px;
+      }
+    }
+
+    .form_container {
+      background-color: $neutral100;
+      padding: 40px;
+      border-radius: 12px;
+      filter: drop-shadow(0px 0px 10px rgba(12, 11, 51, 0.12));
+      max-width: 410px;
+      margin: 0 auto;
+      min-height: 685px;
+      @include flexbox;
+      @include flex-direction(column);
+      @include justify-content(center);
+      @media (min-width: $mobileMD) {
+        min-height: 604px;
+      }
+      @media (min-width: $tabletXL) {
+        min-height: 685px;
+        margin: -39px 0 0 auto;
+      }
+      @media (min-width: $desktopMD) {
+        min-height: 604px;
+      }
+    }
+    .image__container {
+      position: relative;
+      bottom: -80px;
+      text-align: center;
+      @include min-width($mobileXL) {
+        position: absolute;
+        bottom: -150px;
+        left: 30px;
+      } 
+      @include min-width($tabletXL) {
+        bottom: -50px;
+        left: -200px;
+      }
+      @include min-width($desktopSM) {
+        bottom: -100px;
+        left: -200px;
+      }
+      @include min-width($desktopXL) {
+        bottom: -150px;
+        left: -270px;
+      }
+      img {
+        width: 100%;
+        height: auto;
+        max-width: 245px;
+        @include min-width($desktopSM) {
+          max-width: 300px;
+          width: auto;
+        }
+        @include min-width($desktopXL) {
+          max-width: 392px;
+          width: auto;
+        }
+      }
+    }
+  }
+}

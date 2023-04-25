@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "test_syncs",
+  "info": {
+    "singularName": "test-sync",
+    "pluralName": "test-syncs",
+    "displayName": "testSync"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}
