@@ -158,7 +158,7 @@ const FirstSection: React.FC<ISectionProps> = props => {
                 }
                 outlined
                 IconComponent={
-                  showAllFeatures ? <CrevronDownSVG /> : <ChevronUpSVG />
+                  showAllFeatures ? <ChevronUpSVG /> : <CrevronDownSVG />
                 }
                 className={`${cx("marginTop32")} ${styles.allFeaturesButton}`}
                 action={() => {
