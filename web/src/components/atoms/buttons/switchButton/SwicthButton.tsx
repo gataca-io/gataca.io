@@ -1,7 +1,7 @@
 import React from "react"
-import * as styles from "./switchButton.module.scss"
-import { OptionModel } from "../../../../interfaces/interfaces"
 import cx from "classnames"
+import { OptionModel } from "../../../../interfaces/interfaces"
+import * as styles from "./switchButton.module.scss"
 
 type SwitchButtonProps = {
   options: OptionModel[]

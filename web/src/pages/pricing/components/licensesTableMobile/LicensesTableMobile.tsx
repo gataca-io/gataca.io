@@ -1,19 +1,18 @@
 import React from "react"
 import cx from "classnames"
-import * as styles from "./licensesTableMobile.module.scss"
-import HoverTooltip from "../../../../components/elements/tooltip/hoverTooltip/HoverTooltip"
 import PurpleButton from "../../../../components/atoms/buttons/purple/PurpleButton"
 import Tag from "../../../../components/atoms/tags/Tag"
 import {
   IProductModel,
   InfoTogglesPricingModel,
 } from "../../../../interfaces/interfaces"
-import { images } from "../../../../images/images"
 import IconDataCell from "./elements/cells/iconDataCell/IconDataCell"
 import ListDataCell from "./elements/cells/listDataCell/ListDataCell"
 import QuantityDataCell from "./elements/cells/quantityDataCell/QuantityDataCell"
 import CardHeader from "./elements/cardHeader/CardHeader"
 import CardLeftColumn from "./elements/cardLeftColumn/CardLeftColumn"
+import * as styles from "./licensesTableMobile.module.scss"
+import { images } from "../../../../images/images"
 
 type ILicensesTableMobileProps = {
   license: IProductModel

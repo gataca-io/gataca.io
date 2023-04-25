@@ -1,8 +1,8 @@
 import * as React from "react"
 import cx from "classnames"
-import * as styles from "./secondSection.module.scss"
 import ListInfo from "../../../../components/templates/listInfo/ListInfo"
 import ListInfoItems from "../../../../components/templates/listInfoItems/listInfoItems"
+import * as styles from "./secondSection.module.scss"
 import { images } from "../../../../images/images"
 
 export type ISectionProps = {

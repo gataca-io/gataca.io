@@ -1,10 +1,10 @@
 import React from "react" // we need this to make JSX compile
+import cx from "classnames"
 import PurpleButton from "../../../../components/atoms/buttons/purple/PurpleButton"
 import { ButtonModel, IProductModel } from "../../../../interfaces/interfaces"
-import cx from "classnames"
+import Tag from "../../../../components/atoms/tags/Tag"
 import * as styles from "./licenseCard.module.scss"
 import { images } from "../../../../images/images"
-import Tag from "../../../../components/atoms/tags/Tag"
 
 type ILicenseCardProps = {
   license: IProductModel
@@ -171,7 +171,6 @@ const LicenseCard: React.FC<ILicenseCardProps> = props => {
             <Feature
               feature={license?.features?.activeUsers}
               label="Active Users"
-              info={license?.features?.activeUsersInfo}
             />
           </ul>
         </div>
@@ -192,7 +191,6 @@ const LicenseCard: React.FC<ILicenseCardProps> = props => {
             <Feature
               feature={license?.features?.issuedCredentials}
               label="Issued Credentials"
-              info={license?.features?.issuedCredentialsInfo}
             />
           </ul>
         </div>
@@ -203,11 +201,7 @@ const LicenseCard: React.FC<ILicenseCardProps> = props => {
             <ul className={styles.license__features__list}>
               <Feature feature={license?.features?.dids} label="DIDs" />
 
-              <Feature
-                feature={license?.features?.apiKeys}
-                label="API Keys"
-                info={license?.features?.apiKeysInfo}
-              />
+              <Feature feature={license?.features?.apiKeys} label="API Keys" />
 
               {!!license?.features?.nFactor?.length && (
                 <li className={styles.license__features__list__item}>

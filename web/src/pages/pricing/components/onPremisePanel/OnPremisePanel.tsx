@@ -1,9 +1,9 @@
 import * as React from "react"
-import cx from "classnames"
-import * as styles from "./onPremisePanel.module.scss"
 import { navigate } from "gatsby"
+import cx from "classnames"
 import { ButtonModel } from "../../../../interfaces/interfaces"
 import PurpleButton from "../../../../components/atoms/buttons/purple/PurpleButton"
+import * as styles from "./onPremisePanel.module.scss"
 
 export type IOnPremisePanelProps = {
   panelTitle: string

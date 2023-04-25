@@ -1,6 +1,6 @@
 import * as React from "react"
-import * as styles from "./categories.module.scss"
 import cx from "classnames"
+import * as styles from "./categories.module.scss"
 
 export type ICategoriesProps = {
   id: string

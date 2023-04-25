@@ -1,6 +1,5 @@
 import * as React from "react"
 import cx from "classnames"
-import * as styles from "./firstSection.module.scss"
 import LicenseCard from "../../components/licenseCard/LicenseCard"
 import SwitchButton from "../../../../components/atoms/buttons/switchButton/SwicthButton"
 import LicensesTable from "../../components/licensesTable/LicensesTable"
@@ -13,9 +12,9 @@ import {
 import LicensesTableMobile from "../../components/licensesTableMobile/LicensesTableMobile"
 import OnPremisePanel from "../../components/onPremisePanel/OnPremisePanel"
 import Categories from "../../components/categories/Categories"
-import { images } from "../../../../images/images"
 import CrevronDownSVG from "../../../../images/icons/ChevronDownSVG"
 import ChevronUpSVG from "../../../../images/icons/ChevronUpSVG"
+import * as styles from "./firstSection.module.scss"
 
 export type ISectionProps = {
   title: string

@@ -1,9 +1,7 @@
 import React from "react"
 import cx from "classnames"
-import * as styles from "./licensesTable.module.scss"
 import PurpleButton from "../../../../components/atoms/buttons/purple/PurpleButton"
 import Tag from "../../../../components/atoms/tags/Tag"
-import { images } from "../../../../images/images"
 import CategoryCell from "./elements/cells/category/CategoryCell"
 import SubcategoryCell from "./elements/cells/subcategoryCell/SubcategoryCell"
 import IconDataCell from "./elements/cells/iconDataCell/IconDataCell"
@@ -13,6 +11,8 @@ import {
   IProductModel,
   InfoTogglesPricingModel,
 } from "../../../../interfaces/interfaces"
+import * as styles from "./licensesTable.module.scss"
+import { images } from "../../../../images/images"
 
 type ILicensesTableProps = {
   products: any[]
