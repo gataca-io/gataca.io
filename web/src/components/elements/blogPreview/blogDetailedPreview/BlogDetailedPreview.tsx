@@ -8,13 +8,21 @@ import { Link } from "gatsby"
 import { images } from "../../../../images/images"
 
 const BlogDetailedPreview: React.FC<BlogPreviewModel> = props => {
-  const { date, previewImage, timeReading, title, category, content, slugURL } =
-    props
+  const {
+    date,
+    // previewImage,
+    // timeReading,
+    title,
+    // category,
+    // content,
+    slugURL,
+    id,
+  } = props
 
   return (
     <div className={styles?.blogDetailedPreview}>
       <div className={styles?.imageContainer}>
-        <StrapiImage image={previewImage} />
+        {/* <StrapiImage image={previewImage} /> */}
       </div>
       <div className={`${styles?.bottomContainer}`}>
         <p className={`${styles?.title} ${cx("heading6 marginBottom8")}`}>
@@ -23,13 +31,16 @@ const BlogDetailedPreview: React.FC<BlogPreviewModel> = props => {
         <p className={`${styles?.date} ${cx("bodyRegularSM marginBottom20")}`}>
           {moment(date).format("LL")}
         </p>
-        <p className={`${styles?.description} ${cx("bodyRegularSM")}`}>
+        {/* <p className={`${styles?.description} ${cx("bodyRegularSM")}`}>
           {content}
-        </p>
+        </p> */}
         {/* TODO: Add complete route when single blog view is ready */}
-        <Link to={slugURL || ""} className={`${styles.link} ${cx("buttonMD")}`}>
+        {/* <Link
+          to={`/src/templates/${slugURL}`}
+          className={`${styles.link} ${cx("buttonMD")}`}
+        >
           Read more <img src={images.chevronRight} />
-        </Link>
+        </Link> */}
       </div>
     </div>
   )

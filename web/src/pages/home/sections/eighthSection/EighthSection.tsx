@@ -6,19 +6,18 @@ import PurpleButton from "../../../../components/atoms/buttons/purple/PurpleButt
 import BlogPreviewSkeleton from "../../../../components/elements/skeletons/blogPreviewSkeleton/BlogPreviewSkeleton"
 import BlogDetailedPreview from "../../../../components/elements/blogPreview/blogDetailedPreview/BlogDetailedPreview"
 import * as styles from "./eighthSection.module.scss"
+import { Link, graphql } from "gatsby"
 
 export type ISectionProps = {
   title: string
   description: string
-  blogs: {
-    attributes: BlogModel
-  }[]
+  blogs: any
   moreButton: ButtonModel
 }
 
 const EighthSection: React.FC<ISectionProps> = props => {
   const { title, description, blogs, moreButton } = props
-
+  console.log("blogs", blogs)
   return (
     <div
       className={styles.eighthSection__container}
@@ -44,27 +43,23 @@ const EighthSection: React.FC<ISectionProps> = props => {
           <div className={styles.blogs__container}>
             {blogs ? (
               blogs?.slice(0, 3)?.map((el, index) => {
-                const {
-                  date,
-                  previewImage,
-                  title,
-                  category,
-                  content,
-                  slugURL,
-                } = el?.attributes
+                console.log("el", el)
+                return <Link to={`/${el.node.slugURL}`}>{el?.node?.id}</Link>
+                // const { date, title, slugURL } = el?.node?.attributes
 
-                return (
-                  <BlogDetailedPreview
-                    key={"blogPreview_" + index}
-                    date={date}
-                    previewImage={previewImage}
-                    timeReading={readingMarkdownTime(content)}
-                    title={title}
-                    category={category}
-                    content={content}
-                    slugURL={slugURL}
-                  />
-                )
+                // return (
+                //   <BlogDetailedPreview
+                //     key={"blogPreview_" + index}
+                //     id={el?.id}
+                //     date={date}
+                //     // previewImage={previewImage}
+                //     // timeReading={readingMarkdownTime(content)}
+                //     title={title}
+                //     // category={category}
+                //     // content={content}
+                //     slugURL={slugURL}
+                //   />
+                // )
               })
             ) : (
               <BlogPreviewSkeleton

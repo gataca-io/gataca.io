@@ -7,7 +7,8 @@ import Tag from "../../atoms/tags/Tag"
 import * as styles from "./blogPreview.module.scss"
 
 const BlogPreview: React.FC<BlogPreviewModel> = props => {
-  const { date, previewImage, timeReading, title, category } = props
+  const { date, previewImage, timeReading, title, category, slugURL, id } =
+    props
   const blogCategory = category?.data?.attributes?.name
 
   const readingTimeDisplay = () => {
@@ -36,6 +37,7 @@ const BlogPreview: React.FC<BlogPreviewModel> = props => {
         <p className={`${cx("bodyRegularSM")}`}>{moment(date).format("LL")}</p>
       </div>
     </div>
+    // </Link>
   )
 }
 

@@ -23,12 +23,13 @@ export interface IconModel {
 }
 
 export interface BlogPreviewModel {
+  id: string
   date: string
-  previewImage: StrapiImageModel
-  timeReading: number
+  previewImage?: StrapiImageModel
+  timeReading?: number
   title: string
   slugURL: string
-  category: {
+  category?: {
     data: {
       attributes: {
         name: string

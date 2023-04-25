@@ -1,4 +1,4 @@
-import { HeadFC, PageProps, navigate } from "gatsby"
+import { HeadFC, PageProps, graphql, navigate } from "gatsby"
 import * as React from "react"
 import { useState } from "react"
 import ReactMarkdown from "react-markdown"
@@ -29,7 +29,21 @@ import * as styles from "./home/home.module.scss"
 //   }
 // }
 
-const IndexPage: React.FC<PageProps> = () => {
+export type IStrapiBlog = {
+  data: {
+    allStrapiBlog: {
+      edges: {
+        node: {
+          id: string
+          title: string
+          slugURL: string
+        }
+      }
+    }
+  }
+}
+const IndexPage: React.FC<IStrapiBlog> = props => {
+  console.log("DATA", props, props?.data?.allStrapiBlog?.edges)
   const [blogsItems, setBlogsItems] = React.useState<any | undefined>()
   const [homeData, setHomeData] = useState<any | undefined>()
   const {
@@ -47,6 +61,13 @@ const IndexPage: React.FC<PageProps> = () => {
       getBlogsData()
     }
   }, [])
+
+  React.useEffect(() => {
+    // getHomeData()
+    // if (!blogsItems) {
+    //   getBlogsData()
+    // }
+  }, [props])
 
   const getHomeData = async () => {
     const json_data = await require("./home/data/homeData.json")
@@ -110,7 +131,7 @@ const IndexPage: React.FC<PageProps> = () => {
         <EighthSection
           title={eighthSection?.title}
           description={eighthSection?.description}
-          blogs={blogsItems}
+          blogs={props?.data?.allStrapiBlog?.edges}
           moreButton={eighthSection?.moreButton}
         />
         <PreFooterCTASection
@@ -141,4 +162,14 @@ const IndexPage: React.FC<PageProps> = () => {
 
 export default IndexPage
 
-export const Head: HeadFC = () => <title>Home Page</title>
+export const pageQuery = graphql`
+  query allStrapiBlog {
+    edges {
+      node {
+        id
+        title
+        slugURL
+      }
+    }
+  }
+`

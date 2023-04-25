@@ -10,6 +10,7 @@ import * as styles from "./secondSection.module.scss"
 export type ISectionProps = {
   categories: any[]
   blogsCategorySelected: {
+    id: string
     attributes: BlogModel
   }[]
   loadMoreButton: string
@@ -89,17 +90,26 @@ const SecondSection: React.FC<ISectionProps> = props => {
             blogsCategorySelected
               ?.slice(0, 6 * loadMoreCounter)
               ?.map((el, index) => {
-                const { date, previewImage, title, category, content } =
-                  el?.attributes
+                const {
+                  id,
+                  date,
+                  previewImage,
+                  title,
+                  category,
+                  content,
+                  slugURL,
+                } = el?.attributes
 
                 return (
                   <BlogPreview
+                    id={id}
                     key={"blogPreview_" + index}
                     date={date}
                     previewImage={previewImage}
                     timeReading={readingMarkdownTime(content)}
                     title={title}
                     category={category}
+                    slugURL={slugURL}
                   />
                 )
               })
