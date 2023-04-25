@@ -5,12 +5,12 @@ import Layout from "../../../components/templates/mainLayout/MainLayout"
 import FirstSection from "./sections/firstSection/FirstSection"
 import SecondSection from "./sections/secondSection/SecondSection"
 import ThirdSection from "./sections/thirdSection/ThirdSection"
+import FourthSection from "./sections/fourthSection/FourthSection"
 
 const BecomeAPartnerPage: React.FC<PageProps> = () => {
   const [becomeAPartnerData, setBecomeAPartner] = useState<any | undefined>()
-  const { firstSection, secondSection, thirdSection } = becomeAPartnerData
-    ? becomeAPartnerData
-    : []
+  const { firstSection, secondSection, thirdSection, fourthSection } =
+    becomeAPartnerData ? becomeAPartnerData : []
 
   React.useEffect(() => {
     getBecomeAPartner()
@@ -40,6 +40,11 @@ const BecomeAPartnerPage: React.FC<PageProps> = () => {
           title={thirdSection?.title}
           description={thirdSection?.description}
           list={thirdSection?.list}
+        />
+        <FourthSection
+          title={fourthSection?.title}
+          description={fourthSection?.description}
+          list={fourthSection?.list}
         />
         <hr></hr>
       </>

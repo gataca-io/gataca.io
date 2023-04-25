@@ -1,0 +1,59 @@
+@import "../../../../../styles/_mixins.scss";
+@import "../../../../../styles/_colors.scss";
+
+.fourthSection {
+  margin-bottom: 132px;
+  padding: 0 20px;
+  @include min-width($mobileXL) {
+    margin-bottom: 200px;
+    padding: 0 40px;
+  }
+  @include min-width($desktopMD) {
+    padding: 0 60px;
+  }
+  .description {
+    margin-bottom: 80px;
+    text-align: center;
+    p {
+      margin:  0 auto;
+    }
+  }
+  .maxWidth {
+    @include min-width($mobileXL) {
+      max-width: 576px;
+    }
+  }
+  .fourthSection__container {
+    @include flexbox();
+    @include flex-direction(column);
+    @include justify-content(center);
+    @include flex-wrap(wrap);
+    gap: 32px;
+    @include min-width($mobileXL) {
+      @include flex-direction(row);
+      @include justify-content(space-between);
+    }
+    @include min-width($tabletXL) {
+      @include justify-content(start);
+    }
+    > div {
+      margin-right: 0;
+      min-height: auto;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 0;
+      @include min-width($mobileXL) { 
+        @include flex(0, 0, calc((100%/2) - 72px));
+        border: 1px solid $neutral300;
+        box-shadow: none;
+      }
+      @include min-width($tabletXL) {
+        @include flex(0, 0, calc((100%/4) - 72px));
+      }
+      h5 {
+        font-size: 20px;
+      }
+    }
+  }
+}
+

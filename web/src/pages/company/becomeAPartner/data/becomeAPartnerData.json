@@ -10,6 +10,28 @@
       ],
       "title": "Gataca Partnership Program"
     },
+    "fourthSection": {
+      "description": "Gataca partners with companies in different industries to expand the power of Self-Sovereign Identity",
+      "list": [
+        {
+          "description": "Enable reusable KYC by integrating our technology into your workflow",
+          "title": "KYC services & solutions"
+        },
+        {
+          "description": "Enhance your SSO solutions by offering SSI wallet-based authentication",
+          "title": "IAM technology providers"
+        },
+        {
+          "description": "Offer KYC and authentication technology that aligns with the Web3 vision",
+          "title": "Web3 solution builders"
+        },
+        {
+          "description": "Embed SSI technology in both traditional security & cybersecurity processes",
+          "title": "Cybersecurity services"
+        }
+      ],
+      "title": "Gataca partnership ecosystem"
+    },
     "secondSection": {
       "description": "to discuss different partnership models",
       "linkLabel": "Contact us",
