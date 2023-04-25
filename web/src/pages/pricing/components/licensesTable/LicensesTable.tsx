@@ -10,7 +10,10 @@ import SubcategoryCell from "./elements/cells/subcategoryCell/SubcategoryCell"
 import IconDataCell from "./elements/cells/iconDataCell/IconDataCell"
 import QuantityDataCell from "./elements/cells/quantityDataCell/QuantityDataCell"
 import ListDataCell from "./elements/cells/listDataCell/ListDataCell"
-import { InfoTogglesPricingModel } from "../../../../interfaces/interfaces"
+import {
+  IProductModel,
+  InfoTogglesPricingModel,
+} from "../../../../interfaces/interfaces"
 
 type ILicensesTableProps = {
   products: any[]
@@ -166,7 +169,7 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
                 subcategory={"Issued Credentials p/m"}
                 information={infoToggles.issuedCredential}
               />
-              {products?.map(license => {
+              {products?.map((license: IProductModel) => {
                 return (
                   <QuantityDataCell
                     data={license.features?.issuedCredentials}
@@ -211,7 +214,11 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
             <tr key={10} className={styles.table__body__row}>
               <SubcategoryCell subcategory={"Credentials in W3C VC format"} />
               {products?.map(license => {
-                return <IconDataCell data={license?.credentialsInW3CFormat} />
+                return (
+                  <IconDataCell
+                    data={license?.features?.credentialsInW3CFormat}
+                  />
+                )
               })}
             </tr>
             <tr key={10} className={styles.table__body__row}>

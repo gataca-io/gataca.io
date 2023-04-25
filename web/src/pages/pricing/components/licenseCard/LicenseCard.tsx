@@ -111,7 +111,7 @@ const LicenseCard: React.FC<ILicenseCardProps> = props => {
       {license?.description && (
         <p
           className={`${styles.license__description} ${cx(
-            "marginTop8 BodyRegularSM neutral700"
+            "marginTop8 bodyRegularSM neutral700"
           )}`}
         >
           {license?.description}
@@ -121,7 +121,7 @@ const LicenseCard: React.FC<ILicenseCardProps> = props => {
         <div className={`${styles.license__price}`}>
           <p
             className={` ${styles.license__priceLarge} ${cx(
-              "marginTo24 heading3"
+              "marginTop24 heading3"
             )}`}
           >
             <span>{getPrice(license)}€</span>
@@ -154,7 +154,7 @@ const LicenseCard: React.FC<ILicenseCardProps> = props => {
           <p
             className={`${styles.license__customPrice} ${
               period === "year" ? styles.license__customPriceLarge : ""
-            } ${cx("marginTo24 heading3")}`}
+            } ${cx("marginTo24 heading4")}`}
           >
             {getPrice(license)}
           </p>

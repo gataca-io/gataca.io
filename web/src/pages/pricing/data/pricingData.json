@@ -55,7 +55,7 @@
               },
               "description": "For companies looking to scale their SSI implementation",
               "features": {
-                "activeUsers": "1000",
+                "activeUsers": "1.000",
                 "activeUsersInfo": "An active user is a verified user with an active consent. We charge a fix monthly fee per user, not per login event.",
                 "apiKeys": "1",
                 "apiKeysInfo": "Unique identifier and authentication keys to provide access to specific Issuance and/or verification templates to your applications calling the Gataca Studio APIs.",
@@ -100,7 +100,7 @@
               },
               "description": "For experienced companies ready for a large scale rollout of SSI",
               "features": {
-                "activeUsers": "10000",
+                "activeUsers": "10.000",
                 "activeUsersInfo": "An active user is a verified user with an active consent. We charge a fix monthly fee per user, not per login event.",
                 "apiKeys": "10",
                 "apiKeysInfo": "Unique identifier and authentication keys to provide access to specific Issuance and/or verification templates to your applications calling the Gataca Studio APIs.",
@@ -114,7 +114,7 @@
                 "integrationCustomTrustFrameworks": false,
                 "integrationCustomTrustInfraestructure": false,
                 "issuanceTemplates": "2",
-                "issuedCredentials": "1000",
+                "issuedCredentials": "1.000",
                 "issuedCredentialsInfo": "Becoming an issuer in the public catalogue requires a validation process to verify the identity of the issuer and approve its issuance rights.",
                 "nFactor": [
                   "Silent OTP",

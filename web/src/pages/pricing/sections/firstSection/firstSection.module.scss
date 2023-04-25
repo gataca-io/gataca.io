@@ -93,7 +93,10 @@
   margin-bottom: 44px;
   margin-left: auto;
   @include flexbox();
-  @include justify-content(flex-end);
+  @include justify-content(center);
+  @include min-width($mobileXL) {
+    @include justify-content(flex-end);
+  }
 }
 
 .allFeaturesButton {
