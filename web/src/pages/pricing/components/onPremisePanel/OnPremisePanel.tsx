@@ -19,8 +19,13 @@ const OnPremisePanel: React.FC<IOnPremisePanelProps> = props => {
         <span>{panelTitle.slice(0, 10)}</span>
         {panelTitle.slice(10, 21)}
       </h5>
-      {paragraphs?.map(el => (
-        <p className={`${cx("bodyRegularXL marginBottom24")}`}>{el}</p>
+      {paragraphs?.map((el, index) => (
+        <p
+          key={"itemP_" + index}
+          className={`${cx("bodyRegularXL marginBottom24")}`}
+        >
+          {el}
+        </p>
       ))}
       <PurpleButton
         label={button?.label}

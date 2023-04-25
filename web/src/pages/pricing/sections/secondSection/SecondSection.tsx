@@ -55,7 +55,7 @@ const SecondSection: React.FC<ISectionProps> = props => {
                   return (
                     <ListInfo
                       id={"listInfo__" + index}
-                      key={"listInfo__" + index}
+                      key={"listInfoPricing__" + index}
                       index={index}
                       title={title}
                       selected={openItem === index}
@@ -79,7 +79,7 @@ const SecondSection: React.FC<ISectionProps> = props => {
                     const { title, description } = el
 
                     return (
-                      <>
+                      <div key={"listOptionP__" + index}>
                         <div
                           id={"listOption__" + index}
                           key={"listOption__" + index}
@@ -99,7 +99,7 @@ const SecondSection: React.FC<ISectionProps> = props => {
                             }}
                           />
                         </div>
-                      </>
+                      </div>
                     )
                   })}
               </>

@@ -4,7 +4,6 @@ import * as styles from "./licensesTable.module.scss"
 import PurpleButton from "../../../../components/atoms/buttons/purple/PurpleButton"
 import Tag from "../../../../components/atoms/tags/Tag"
 import { images } from "../../../../images/images"
-import HoverTooltip from "../../../../components/elements/tooltip/hoverTooltip/HoverTooltip"
 import CategoryCell from "./elements/cells/category/CategoryCell"
 import SubcategoryCell from "./elements/cells/subcategoryCell/SubcategoryCell"
 import IconDataCell from "./elements/cells/iconDataCell/IconDataCell"
@@ -40,7 +39,10 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
 
               {products?.map(license => {
                 return (
-                  <th className={styles.table__header__cell}>
+                  <th
+                    key={"headerT__" + license?.type}
+                    className={styles.table__header__cell}
+                  >
                     <div className={styles.table__header__cell__content}>
                       <div className={styles.license__header}>
                         <p
@@ -95,11 +97,9 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
                         ) : (
                           <>
                             <p
-                              className={`${styles.licenseCustomPrice} ${
-                                switchPeriodValue === "year"
-                                  ? styles.licenseCustomPriceLarge
-                                  : ""
-                              } ${cx("heading5")}`}
+                              className={`${styles.licenseCustomPrice} ${cx(
+                                "heading5"
+                              )}`}
                             >
                               {getPrice(license)}
                             </p>
@@ -123,10 +123,7 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
             </tr>
           </thead>
           <tbody className={styles.table__body}>
-            <tr key={0} className={styles.table__body__row}>
-              <p></p>
-              <div></div>
-            </tr>
+            <tr key={0} className={styles.table__body__row}></tr>
             <tr key={1} className={styles.table__body__row}>
               <CategoryCell category={"Verification Features"} rowsPan={2} />
               <SubcategoryCell
@@ -136,6 +133,7 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
               {products?.map(license => {
                 return (
                   <QuantityDataCell
+                    key={"VT__" + license?.type}
                     data={license.features?.verificationTemplates}
                   />
                 )
@@ -147,7 +145,12 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
                 information={infoToggles.activeUser}
               />
               {products?.map(license => {
-                return <QuantityDataCell data={license.features?.activeUsers} />
+                return (
+                  <QuantityDataCell
+                    key={"AU__" + license?.type}
+                    data={license.features?.activeUsers}
+                  />
+                )
               })}
             </tr>
             <tr key={3} className={styles.table__body__row}>
@@ -159,6 +162,7 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
               {products?.map(license => {
                 return (
                   <QuantityDataCell
+                    key={"IT__" + license?.type}
                     data={license.features?.issuanceTemplates}
                   />
                 )
@@ -172,6 +176,7 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
               {products?.map((license: IProductModel) => {
                 return (
                   <QuantityDataCell
+                    key={"IC__" + license?.type}
                     data={license.features?.issuedCredentials}
                   />
                 )
@@ -181,34 +186,59 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
               <CategoryCell category={"Other Features"} rowsPan={25} />
               <SubcategoryCell subcategory={"DIDs"} />
               {products?.map(license => {
-                return <QuantityDataCell data={license.features?.dids} />
+                return (
+                  <QuantityDataCell
+                    key={"DIDS__" + license?.type}
+                    data={license.features?.dids}
+                  />
+                )
+              })}
+            </tr>
+            <tr key={6} className={styles.table__body__row}>
+              <SubcategoryCell subcategory={"API Keys"} />
+              {products?.map(license => {
+                return (
+                  <QuantityDataCell
+                    key={"AK__" + license?.type}
+                    data={license.features?.apiKeys}
+                  />
+                )
               })}
             </tr>
             <tr key={7} className={styles.table__body__row}>
-              <SubcategoryCell subcategory={"API Keys"} />
-              {products?.map(license => {
-                return <QuantityDataCell data={license.features?.apiKeys} />
-              })}
-            </tr>
-            <tr key={8} className={styles.table__body__row}>
               <SubcategoryCell
                 subcategory={"2FA Security Mechanism"}
                 information={infoToggles.securityFactorMechanism}
               />
               {products?.map(license => {
-                return <ListDataCell data={license.features?.nFactor} />
+                return (
+                  <ListDataCell
+                    key={"2FM__" + license?.type}
+                    data={license.features?.nFactor}
+                  />
+                )
+              })}
+            </tr>
+            <tr key={8} className={styles.table__body__row}>
+              <SubcategoryCell subcategory={"Notifications"} />
+              {products?.map(license => {
+                return (
+                  <ListDataCell
+                    key={"NOT__" + license?.type}
+                    data={license.features?.notifications}
+                  />
+                )
               })}
             </tr>
             <tr key={9} className={styles.table__body__row}>
-              <SubcategoryCell subcategory={"Notifications"} />
-              {products?.map(license => {
-                return <ListDataCell data={license.features?.notifications} />
-              })}
-            </tr>
-            <tr key={10} className={styles.table__body__row}>
               <SubcategoryCell subcategory={"Usage Statistics"} />
               {products?.map(license => {
-                return <IconDataCell data={license.features?.stadistics} />
+                return (
+                  <IconDataCell
+                    key={"US__" + license?.type}
+                    data={license.features?.stadistics}
+                  />
+                )
               })}
             </tr>
             <tr key={10} className={styles.table__body__row}>
@@ -216,34 +246,41 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
               {products?.map(license => {
                 return (
                   <IconDataCell
+                    key={"CW3C__" + license?.type}
                     data={license?.features?.credentialsInW3CFormat}
                   />
                 )
               })}
             </tr>
-            <tr key={10} className={styles.table__body__row}>
+            <tr key={11} className={styles.table__body__row}>
               <SubcategoryCell
                 subcategory={"Sandbox environment"}
                 information={infoToggles.sandboxEnvironment}
               />
               {products?.map(license => {
                 return (
-                  <IconDataCell data={license.features?.sandBoxEnvironment} />
+                  <IconDataCell
+                    key={"SE__" + license?.type}
+                    data={license.features?.sandBoxEnvironment}
+                  />
                 )
               })}
             </tr>
-            <tr key={11} className={styles.table__body__row}>
+            <tr key={12} className={styles.table__body__row}>
               <SubcategoryCell
                 subcategory={"DID in Public Catalogue"}
                 information={infoToggles.didInPublicCatalogue}
               />
               {products?.map(license => {
                 return (
-                  <IconDataCell data={license.features?.didPublicCatalogue} />
+                  <IconDataCell
+                    key={"DPC__" + license?.type}
+                    data={license.features?.didPublicCatalogue}
+                  />
                 )
               })}
             </tr>
-            <tr key={12} className={styles.table__body__row}>
+            <tr key={13} className={styles.table__body__row}>
               <SubcategoryCell
                 subcategory={"Publish Schemas in Public Catalogue"}
                 information={infoToggles.schemaInPublicCatalogue}
@@ -251,49 +288,64 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
               {products?.map(license => {
                 return (
                   <IconDataCell
+                    key={"PSPC__" + license?.type}
                     data={license.features?.newSchemaPublicCatalogue}
                   />
                 )
               })}
             </tr>
-            <tr key={12} className={styles.table__body__row}>
+            <tr key={14} className={styles.table__body__row}>
               <SubcategoryCell
                 subcategory={"EBSI integration"}
                 information={infoToggles.ebsiIntegration}
               />
               {products?.map(license => {
-                return <IconDataCell data={license.features?.ebsiIntegration} />
+                return (
+                  <IconDataCell
+                    key={"EBSII__" + license?.type}
+                    data={license.features?.ebsiIntegration}
+                  />
+                )
               })}
             </tr>
-            <tr key={12} className={styles.table__body__row}>
+            <tr key={15} className={styles.table__body__row}>
               <SubcategoryCell subcategory={"Customization of GDPR purposes"} />
 
               {products?.map(license => {
                 return (
-                  <IconDataCell data={license.features?.customGDPRPurposes} />
+                  <IconDataCell
+                    key={"GDPRC__" + license?.type}
+                    data={license.features?.customGDPRPurposes}
+                  />
                 )
               })}
             </tr>
-            <tr key={13} className={styles.table__body__row}>
+            <tr key={16} className={styles.table__body__row}>
               <SubcategoryCell subcategory={"Custom QR"} />
 
               {products?.map(license => {
-                return <IconDataCell data={license.features?.customQR} />
+                return (
+                  <IconDataCell
+                    key={"CQR__" + license?.type}
+                    data={license.features?.customQR}
+                  />
+                )
               })}
             </tr>
-            <tr key={13} className={styles.table__body__row}>
+            <tr key={17} className={styles.table__body__row}>
               <SubcategoryCell
                 subcategory={"Credentials in ISO 18013:5 format"}
               />
               {products?.map(license => {
                 return (
                   <IconDataCell
+                    key={"CIF__" + license?.type}
                     data={license.features?.credentialsInISO28013}
                   />
                 )
               })}
             </tr>
-            <tr key={13} className={styles.table__body__row}>
+            <tr key={18} className={styles.table__body__row}>
               <SubcategoryCell
                 subcategory={"Integration with custom trust Frameworks"}
                 information={infoToggles.integrationCustomFrameworks}
@@ -301,12 +353,13 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
               {products?.map(license => {
                 return (
                   <IconDataCell
+                    key={"ICF__" + license?.type}
                     data={license.features?.integrationCustomTrustFrameworks}
                   />
                 )
               })}
             </tr>
-            <tr key={13} className={styles.table__body__row}>
+            <tr key={20} className={styles.table__body__row}>
               <SubcategoryCell
                 subcategory={"Integration with custom infrastructure"}
                 information={infoToggles.integrationCustomInfraestructure}
@@ -314,6 +367,7 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
               {products?.map(license => {
                 return (
                   <IconDataCell
+                    key={"ICI__" + license?.type}
                     data={
                       license.features?.integrationCustomTrustInfraestructure
                     }
@@ -321,49 +375,43 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
                 )
               })}
             </tr>
-            <tr key={14} className={styles.table__body__row}>
+            <tr key={21} className={styles.table__body__row}>
               <SubcategoryCell subcategory={"Stadard Support"} />
               {products?.map(license => {
                 return (
-                  <>
-                    <td
-                      className={`${styles.table__body__row__cell} ${
-                        styles.table__body__row__data
-                      } ${cx("bodyBoldSM")}`}
-                    >
-                      {typeof license.features?.standardSupport == "boolean" ? (
-                        <img
-                          className={styles.table__body__row__cell__icon}
-                          src={
-                            license.features?.standardSupport
-                              ? images.checkIcon
-                              : images.closeIcon
-                          }
-                        ></img>
-                      ) : (
-                        <p>
-                          ${" "}
-                          <span
-                            className={`${cx("bodyRegularCap neutral700")}`}
-                          >
-                            {license.features?.standardSupport}
-                          </span>
-                        </p>
-                      )}
-                    </td>
-                  </>
+                  <td
+                    key={"SSPT__" + license?.type}
+                    className={`${cx("bodyBoldSM")}`}
+                  >
+                    {typeof license.features?.standardSupport == "boolean" ? (
+                      <img
+                        className={styles.table__body__row__cell__icon}
+                        src={
+                          license.features?.standardSupport
+                            ? images.checkIcon
+                            : images.closeIcon
+                        }
+                      ></img>
+                    ) : (
+                      <p>
+                        ${" "}
+                        <span className={`${cx("bodyRegularCap neutral700")}`}>
+                          {license.features?.standardSupport}
+                        </span>
+                      </p>
+                    )}
+                  </td>
                 )
               })}
             </tr>
-            <tr key={14} className={styles.table__body__row}>
+            <tr key={22} className={styles.table__body__row}>
               <SubcategoryCell subcategory={"Premier Support"} />
               {products?.map(license => {
                 return (
                   <>
                     <td
-                      className={`${styles.table__body__row__cell} ${
-                        styles.table__body__row__data
-                      } ${cx("bodyBoldSM")}`}
+                      key={"PSPT__" + license?.type}
+                      className={`${cx("bodyBoldSM")}`}
                     >
                       {typeof license.features?.premierSupport == "boolean" ? (
                         <img

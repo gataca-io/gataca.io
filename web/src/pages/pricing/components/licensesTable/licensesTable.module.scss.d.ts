@@ -13,13 +13,10 @@ export const licensePrice: string
 export const licensePriceLarge: string
 export const licenseSave: string
 export const licenseCustomPrice: string
-export const licenseCustomPriceLarge: string
 export const licenseAdapted: string
 export const license__button: string
 export const table__body: string
 export const table__body__row: string
-export const table__body__row__cell: string
 export const table__body__row__category: string
 export const table__body__row__subcategory: string
-export const table__body__row__data: string
 export const table__body__row__cell__icon: string

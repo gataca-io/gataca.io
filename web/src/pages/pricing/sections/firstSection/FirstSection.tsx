@@ -90,8 +90,8 @@ const FirstSection: React.FC<ISectionProps> = props => {
               const { title } = item
               return (
                 <Categories
-                  id={"categories__" + index}
-                  key={"categories__" + index}
+                  id={"categories__" + item?.id + index}
+                  key={"categoriesP__" + index}
                   index={index + 1}
                   title={title}
                   selected={openItem === index + 1}
@@ -122,6 +122,7 @@ const FirstSection: React.FC<ISectionProps> = props => {
                   return (
                     <>
                       <LicenseCard
+                        key={"licenseP__" + item?.type + index}
                         license={item}
                         firstButton={item?.button}
                         period={switchPeriodValue}

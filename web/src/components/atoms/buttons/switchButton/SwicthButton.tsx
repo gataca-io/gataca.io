@@ -20,6 +20,7 @@ const SwitchButton: React.FC<SwitchButtonProps> = React.memo(props => {
       <input
         checked={checkedValue === options[1]?.value}
         className={styles.periodCheckbox}
+        onChange={() => {}}
         type="checkbox"
         id="switch"
       />

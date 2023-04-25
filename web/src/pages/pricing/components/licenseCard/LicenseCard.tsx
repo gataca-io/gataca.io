@@ -116,11 +116,7 @@ const LicenseCard: React.FC<ILicenseCardProps> = props => {
       )}
       {!licenseIsEnterprise ? (
         <div className={`${styles.license__price}`}>
-          <p
-            className={` ${styles.license__priceLarge} ${cx(
-              "marginTop24 heading3"
-            )}`}
-          >
+          <p className={`${cx("marginTop24 heading3")}`}>
             <span>{getPrice(license)}€</span>
             <span className={`${cx("neutral700 bodyRegularMD marginLeft8")}`}>
               {"/ " + period}
@@ -149,9 +145,9 @@ const LicenseCard: React.FC<ILicenseCardProps> = props => {
       ) : (
         <>
           <p
-            className={`${styles.license__customPrice} ${
-              period === "year" ? styles.license__customPriceLarge : ""
-            } ${cx("marginTo24 heading4")}`}
+            className={`${styles.license__customPrice} ${cx(
+              "marginTo24 heading4"
+            )}`}
           >
             {getPrice(license)}
           </p>

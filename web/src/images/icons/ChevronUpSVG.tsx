@@ -12,9 +12,9 @@ const ChevronUpSVG: React.FC = () => {
       <path
         d="M12 10L8 6L4 10"
         stroke="currentColor"
-        stroke-width="1.33333"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.33333"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   )

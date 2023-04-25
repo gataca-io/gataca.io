@@ -11,10 +11,8 @@ export const license__header__title: string
 export const license__header__popularTag: string
 export const license__description: string
 export const license__price: string
-export const license__priceLarge: string
 export const license__save: string
 export const license__customPrice: string
-export const license__customPriceLarge: string
 export const license__adapted: string
 export const license__adaptedLarge: string
 export const license__features: string
