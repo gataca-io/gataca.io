@@ -1,0 +1,76 @@
+{
+  "key": "plugin_content_manager_configuration_components::shared.author",
+  "value": {
+    "uid": "shared.author",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "Role",
+      "defaultSortBy": "Role",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "Role": {
+        "edit": {
+          "label": "Role",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Role",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "Person": {
+        "edit": {
+          "label": "Person",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Person",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "Role",
+        "Person"
+      ],
+      "edit": [
+        [
+          {
+            "name": "Role",
+            "size": 6
+          },
+          {
+            "name": "Person",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}
