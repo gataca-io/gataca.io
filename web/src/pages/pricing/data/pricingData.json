@@ -13,9 +13,7 @@
               "description": "30-day trial for companies looking to get started with the SSI basics",
               "features": {
                 "activeUsers": "5",
-                "activeUsersInfo": "An active user is a verified user with an active consent. We charge a fix monthly fee per user, not per login event.",
                 "apiKeys": "1",
-                "apiKeysInfo": "Unique identifier and authentication keys to provide access to specific Issuance and/or verification templates to your applications calling the Gataca Studio APIs.",
                 "credentialsInISO28013": false,
                 "credentialsInW3CFormat": true,
                 "customGDPRPurposes": false,
@@ -27,7 +25,6 @@
                 "integrationCustomTrustInfraestructure": false,
                 "issuanceTemplates": "1",
                 "issuedCredentials": "5",
-                "issuedCredentialsInfo": "Becoming an issuer in the public catalogue requires a validation process to verify the identity of the issuer and approve its issuance rights.",
                 "nFactor": [],
                 "newSchemaPublicCatalogue": false,
                 "notifications": [
@@ -56,9 +53,7 @@
               "description": "For companies looking to scale their SSI implementation",
               "features": {
                 "activeUsers": "1.000",
-                "activeUsersInfo": "An active user is a verified user with an active consent. We charge a fix monthly fee per user, not per login event.",
                 "apiKeys": "1",
-                "apiKeysInfo": "Unique identifier and authentication keys to provide access to specific Issuance and/or verification templates to your applications calling the Gataca Studio APIs.",
                 "credentialsInISO28013": false,
                 "credentialsInW3CFormat": true,
                 "customGDPRPurposes": false,
@@ -70,7 +65,6 @@
                 "integrationCustomTrustInfraestructure": false,
                 "issuanceTemplates": "1",
                 "issuedCredentials": "10",
-                "issuedCredentialsInfo": "Becoming an issuer in the public catalogue requires a validation process to verify the identity of the issuer and approve its issuance rights.",
                 "nFactor": [
                   "Silent OTP",
                   "Hardware",
@@ -89,6 +83,7 @@
               },
               "monthlyPrice": 149,
               "name": "Essential",
+              "subPriceYearLabel": "Save 10%",
               "type": "Essential",
               "yearlyPrice": 1.609
             },
@@ -101,9 +96,7 @@
               "description": "For experienced companies ready for a large scale rollout of SSI",
               "features": {
                 "activeUsers": "10.000",
-                "activeUsersInfo": "An active user is a verified user with an active consent. We charge a fix monthly fee per user, not per login event.",
                 "apiKeys": "10",
-                "apiKeysInfo": "Unique identifier and authentication keys to provide access to specific Issuance and/or verification templates to your applications calling the Gataca Studio APIs.",
                 "credentialsInISO28013": false,
                 "credentialsInW3CFormat": true,
                 "customGDPRPurposes": true,
@@ -115,7 +108,6 @@
                 "integrationCustomTrustInfraestructure": false,
                 "issuanceTemplates": "2",
                 "issuedCredentials": "1.000",
-                "issuedCredentialsInfo": "Becoming an issuer in the public catalogue requires a validation process to verify the identity of the issuer and approve its issuance rights.",
                 "nFactor": [
                   "Silent OTP",
                   "Email OTP",
@@ -136,6 +128,7 @@
               },
               "monthlyPrice": 189,
               "name": "Professional",
+              "subPriceYearLabel": "Save 10%",
               "type": "Professional",
               "yearlyPrice": 20.412
             },
@@ -150,7 +143,6 @@
                 "activeUsers": "∞",
                 "activeUsersInfo": "'An active user is a verified user with an active consent. We charge a fix monthly fee per user, not per login event. Add aditiona Active User for 0,12€ each.'",
                 "apiKeys": "∞",
-                "apiKeysInfo": "Unique identifier and authentication keys to provide access to specific Issuance and/or verification templates to your applications calling the Gataca Studio APIs.",
                 "credentialsInISO28013": true,
                 "credentialsInW3CFormat": true,
                 "customGDPRPurposes": true,
@@ -183,6 +175,7 @@
               },
               "monthlyPrice": "Custom pricing",
               "name": "Enterprise",
+              "subPriceYearLabel": "Save 10%",
               "type": "Enterprise",
               "yearlyPrice": "Custom pricing"
             }

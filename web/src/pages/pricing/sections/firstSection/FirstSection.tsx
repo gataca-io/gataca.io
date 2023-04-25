@@ -13,6 +13,9 @@ import {
 import LicensesTableMobile from "../../components/licensesTableMobile/LicensesTableMobile"
 import OnPremisePanel from "../../components/onPremisePanel/OnPremisePanel"
 import Categories from "../../components/categories/Categories"
+import { images } from "../../../../images/images"
+import CrevronDownSVG from "../../../../images/icons/ChevronDownSVG"
+import ChevronUpSVG from "../../../../images/icons/ChevronUpSVG"
 
 export type ISectionProps = {
   title: string
@@ -80,7 +83,7 @@ const FirstSection: React.FC<ISectionProps> = props => {
     <>
       <section className={`${styles?.firstSection} ${cx("containerMaxWidth")}`}>
         <div className={styles?.firstSection__header}>
-          <h1 className={cx("heading1 marginBottom32")}>{title}</h1>
+          <h1 className={cx("heading2 marginBottom32")}>{title}</h1>
           <p className={cx("bodyRegularXL marginBottom32")}>{description}</p>
           <div className={styles?.categories}>
             {categories?.map((item, index) => {
@@ -154,6 +157,9 @@ const FirstSection: React.FC<ISectionProps> = props => {
                   showAllFeatures ? "Hide all features" : "See all features"
                 }
                 outlined
+                IconComponent={
+                  showAllFeatures ? <CrevronDownSVG /> : <ChevronUpSVG />
+                }
                 className={`${cx("marginTop32")} ${styles.allFeaturesButton}`}
                 action={() => {
                   setShowAllFeatures(!showAllFeatures),

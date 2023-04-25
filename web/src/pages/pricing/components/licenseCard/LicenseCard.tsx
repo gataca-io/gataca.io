@@ -103,9 +103,6 @@ const LicenseCard: React.FC<ILicenseCardProps> = props => {
             label={"Popular"}
             className={styles.license__header__popularTag}
           />
-          // <div className={styles.license__header__popularTag}>
-          //   <p>Popular</p>
-          // </div>
         )}
       </div>
       {license?.description && (
@@ -158,13 +155,6 @@ const LicenseCard: React.FC<ILicenseCardProps> = props => {
           >
             {getPrice(license)}
           </p>
-          {/* <span
-            className={`${styles.license__adapted} ${
-              period === "year" ? styles.license__adaptedLarge : ""
-            }`}
-          >
-            A plan that adapts to your company's needs
-          </span> */}
         </>
       )}
       <div className={styles.license__features}>

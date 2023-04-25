@@ -19,6 +19,12 @@
     text-align: center;
     @include min-width($mobileXL) {
       margin-bottom: 60px;
+
+      & > h1 {
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 64px;
+      }
     }
     p {
       color: $neutral700;
@@ -59,11 +65,10 @@
        & > div { 
       width: 100%;
       & > div:nth-child(4) {
-      //  @include flex-wrap(nowrap);
       gap: 12px;
 
         & > div {
-          min-width: 180px;
+          min-width: 184px;
           width: calc(49% - 12px);
         }
 
@@ -102,4 +107,8 @@
 .allFeaturesButton {
   width: 100%;
   margin: 32px auto 0;
+  & > svg {
+    width: 24px;
+    height: 24px;
+  }
 }

@@ -10,6 +10,7 @@ export interface LinkModel {
 export interface ButtonModel {
   label: string
   icon?: string
+  IconComponent?: any
   outlined?: boolean
   className?: any
   url?: string
@@ -83,13 +84,10 @@ export interface IPriceModel {
 export interface IProductFeaturesModel {
   verificationTemplates?: number | string
   activeUsers?: number | string
-  activeUsersInfo?: string
   issuanceTemplates?: number | string
   issuedCredentials?: number | string
-  issuedCredentialsInfo?: string
   dids: string
   apiKeys: string
-  apiKeysInfo?: string
   notifications: string[]
   stadistics: boolean
   nFactor: string[]
