@@ -1,0 +1,115 @@
+@import "../../../../../styles/_colors.scss";
+@import "../../../../../styles/mixins.scss";
+
+.fifthSection {
+  padding: 0 20px;
+  margin-bottom: 435px;
+  @include min-width($mobileXL) {
+    margin-bottom: 200px;
+    padding: 0 40px;
+  }
+  @include min-width($desktopMD) {
+    padding: 0 60px;
+  }
+
+
+  .fifthSection__container {
+    @include flexbox();
+    @include justify-content(space-between);
+    @include flex-wrap(wrap);
+  }
+
+  .fifthSection__leftSide {
+    @include flex(0, 0, 100%);
+    margin-bottom: 60px;
+    @include min-width($tabletXL) {
+      @include flex(0, 0, calc(35% - 32px));
+      margin-bottom: 0;
+    }
+    h3 {
+      @include min-width($tabletXL) {
+        margin-top: 40px;
+      }
+    }
+    p {
+      @include min-width($tabletXL) {
+        max-width: 356px;
+      }
+    }
+  }
+
+  .fifthSection__rightSide {
+    @include flex(0, 0, 100%);
+    position: relative;
+    @include min-width($tabletXL) {
+      @include flex(0, 0, calc(65% - 32px));
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      width: 2000px;
+      height: 937px;
+      background: $neutral1000;
+      border-radius: 40px 0px 0px 40px;
+      z-index: -1;
+      top: 205px;
+      left: -20px;
+      @include min-width(530px) {
+        height: 757px;
+        left: -40px;
+        top: 135px;
+      }
+      @include min-width($tabletXL) {
+        height: 741px;
+        left: 10px;
+      }
+    }
+
+    .form_container {
+      background-color: $neutral100;
+      padding: 40px;
+      border-radius: 12px;
+      filter: drop-shadow(0px 0px 10px rgba(12, 11, 51, 0.12));
+      max-width: calc(591px - 80px);
+      margin: 0 auto;
+      min-height: 900px;
+      @include flexbox;
+      @include flex-direction(column);
+      @include justify-content(center);
+      @media (min-width: $mobileMD) {
+        min-height: 700px;
+      }
+      @media (min-width: $tabletXL) {
+        min-height: 755px;
+        margin: auto 0 auto auto;
+      }
+      @media (min-width: $desktopMD) {
+        min-height: 676px;
+      }
+    }
+    .image__container {
+      position: relative;
+      bottom: -50px;
+      text-align: center;
+      @include min-width($tabletXL) {
+        position: absolute;
+        bottom: 0;
+        left: -300px;
+      } 
+      @include min-width($desktopXL) {
+        left: -200px;
+      }
+      img {
+        width: 100%;
+        height: auto;
+        max-width: 254px;
+        @include min-width($tabletXL) {
+          max-width: 240px;
+        }
+        @include min-width($desktopXL) {
+          max-width: 262px;
+        }
+      }
+    }
+  }
+}
