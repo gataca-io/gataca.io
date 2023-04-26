@@ -1,6 +1,10 @@
 import * as React from "react"
 import cx from "classnames"
-import { BlogModel, ButtonModel } from "../../../../interfaces/interfaces"
+import {
+  BlogModel,
+  BlogPreviewModel,
+  ButtonModel,
+} from "../../../../interfaces/interfaces"
 import { readingMarkdownTime } from "../../../../utils/time"
 import PurpleButton from "../../../../components/atoms/buttons/purple/PurpleButton"
 import BlogPreviewSkeleton from "../../../../components/elements/skeletons/blogPreviewSkeleton/BlogPreviewSkeleton"
@@ -11,7 +15,7 @@ import { Link, graphql } from "gatsby"
 export type ISectionProps = {
   title: string
   description: string
-  blogs: any
+  blogs: BlogPreviewModel[]
   moreButton: ButtonModel
 }
 
@@ -43,23 +47,17 @@ const EighthSection: React.FC<ISectionProps> = props => {
           <div className={styles.blogs__container}>
             {blogs ? (
               blogs?.slice(0, 3)?.map((el, index) => {
-                console.log("el", el)
-                return <Link to={`/${el.node.slugURL}`}>{el?.node?.id}</Link>
-                // const { date, title, slugURL } = el?.node?.attributes
+                el.attributes.timeReading = readingMarkdownTime(
+                  el?.attributes?.content
+                )
 
-                // return (
-                //   <BlogDetailedPreview
-                //     key={"blogPreview_" + index}
-                //     id={el?.id}
-                //     date={date}
-                //     // previewImage={previewImage}
-                //     // timeReading={readingMarkdownTime(content)}
-                //     title={title}
-                //     // category={category}
-                //     // content={content}
-                //     slugURL={slugURL}
-                //   />
-                // )
+                return (
+                  <BlogDetailedPreview
+                    id={el?.id}
+                    key={"blogPreview_" + index}
+                    attributes={el?.attributes}
+                  />
+                )
               })
             ) : (
               <BlogPreviewSkeleton

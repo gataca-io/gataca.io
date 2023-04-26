@@ -7,8 +7,8 @@ import Tag from "../../atoms/tags/Tag"
 import * as styles from "./blogPreview.module.scss"
 
 const BlogPreview: React.FC<BlogPreviewModel> = props => {
-  const { date, previewImage, timeReading, title, category, slugURL, id } =
-    props
+  const { date, previewImage, timeReading, title, category, slugURL } =
+    props?.attributes
   const blogCategory = category?.data?.attributes?.name
 
   const readingTimeDisplay = () => {

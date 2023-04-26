@@ -24,22 +24,22 @@ export interface IconModel {
 
 export interface BlogPreviewModel {
   id: string
+  attributes: BlogModel
+}
+
+export interface BlogModel extends BlogPreviewModel {
   date: string
-  previewImage?: StrapiImageModel
+  previewImage: StrapiImageModel
   timeReading?: number
   title: string
   slugURL: string
-  category?: {
+  category: {
     data: {
       attributes: {
         name: string
       }
     }
   }
-  content?: string
-}
-
-export interface BlogModel extends BlogPreviewModel {
   heroImage: any
   content: string
 }

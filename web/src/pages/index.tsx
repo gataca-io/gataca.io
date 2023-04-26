@@ -15,35 +15,7 @@ import ThirdSection from "./home/sections/thirdSection/ThirdSection"
 import FirstSection from "./home/sections/firstSection/FirstSection"
 import * as styles from "./home/home.module.scss"
 
-// interface homeDataModel {
-//   attributes: {
-//     Body: string
-//     Title: string
-//     HeroImage?: {
-//       data: {
-//         attributes: {
-//           url: string
-//         }
-//       }
-//     }
-//   }
-// }
-
-export type IStrapiBlog = {
-  data: {
-    allStrapiBlog: {
-      edges: {
-        node: {
-          id: string
-          title: string
-          slugURL: string
-        }
-      }
-    }
-  }
-}
-const IndexPage: React.FC<IStrapiBlog> = props => {
-  console.log("DATA", props, props?.data?.allStrapiBlog?.edges)
+const IndexPage: React.FC<PageProps> = props => {
   const [blogsItems, setBlogsItems] = React.useState<any | undefined>()
   const [homeData, setHomeData] = useState<any | undefined>()
   const {
@@ -62,28 +34,10 @@ const IndexPage: React.FC<IStrapiBlog> = props => {
     }
   }, [])
 
-  React.useEffect(() => {
-    // getHomeData()
-    // if (!blogsItems) {
-    //   getBlogsData()
-    // }
-  }, [props])
-
   const getHomeData = async () => {
     const json_data = await require("./home/data/homeData.json")
     setHomeData(json_data?.data && json_data?.data)
   }
-
-  // const getHomeData = async () => {
-  //   await fetch("https://strapi.dev.gataca.io//api/entry?populate=*")
-  //     .then(response => response.json())
-  //     .then(jsonResponse => {
-  //       setHomeData(jsonResponse?.data)
-  //     })
-  //     .catch((error: any) => {
-  //       console.error(error)
-  //     })
-  // }
 
   const getBlogsData = async () => {
     await fetch(`${process.env.STRAPI_API_URL}/api/blogs?&populate=*`)
@@ -131,7 +85,7 @@ const IndexPage: React.FC<IStrapiBlog> = props => {
         <EighthSection
           title={eighthSection?.title}
           description={eighthSection?.description}
-          blogs={props?.data?.allStrapiBlog?.edges}
+          blogs={blogsItems}
           moreButton={eighthSection?.moreButton}
         />
         <PreFooterCTASection
@@ -161,15 +115,3 @@ const IndexPage: React.FC<IStrapiBlog> = props => {
 }
 
 export default IndexPage
-
-export const pageQuery = graphql`
-  query allStrapiBlog {
-    edges {
-      node {
-        id
-        title
-        slugURL
-      }
-    }
-  }
-`
