@@ -37,6 +37,7 @@ const FirstSection: React.FC<ISectionProps> = props => {
               const { title, image, description, level, route } = el
               return (
                 <div
+                  key={"resource__" + index}
                   className={`${styles?.resource}`}
                   onClick={() => navigate(route)}
                 >
