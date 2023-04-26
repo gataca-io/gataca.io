@@ -5,6 +5,7 @@ import cx from "classnames"
 import { LinkModel } from "../../../../../interfaces/interfaces"
 import MenuSubOption from "../menuSubOption/MenuSubOption"
 import CrevronDownSVG from "../../../../../images/icons/ChevronDownSVG"
+import CrevronUpSVG from "../../../../../images/icons/ChevronUpSVG"
 
 export type IMenuDropdownProps = {
   item: LinkModel
@@ -22,7 +23,7 @@ const MenuDropdown: React.FC<IMenuDropdownProps> = props => {
     >
       <div className={`${styles.dropdownLabel} ${cx("buttonMD")}`}>
         {item?.label}
-        <CrevronDownSVG />
+        {open ? <CrevronUpSVG /> : <CrevronDownSVG />}
       </div>
 
       <MenuSubOption item={item} open={open} />
