@@ -179,7 +179,7 @@ export const footerMenuOptions: LinkModel[] = [
       {
         id: "logIn",
         label: "Log In",
-        route: "/",
+        route: "https://studio.gataca.io",
       },
     ],
   },
@@ -189,33 +189,33 @@ export const footerMenuOptions: LinkModel[] = [
     subRoutes: [
       {
         id: "customerOnboarding",
-        label: "Customer Onboarding",
-        route: "/",
+        label: "Customer onboarding",
+        route: "/useCasesSectors/#customerOnboarding",
       },
       {
         id: "userAuthentication",
-        label: "User Authentication",
-        route: "/",
+        label: "User authentication",
+        route: "/useCasesSectors/#userAuthentication",
       },
       {
         id: "physicalAccessControl",
         label: "Physical Access Control",
-        route: "/",
+        route: "/useCasesSectors/#physicalAccessControl",
       },
       {
         id: "issuanceIdentityCredentials",
         label: "Issuance of identity credentials",
-        route: "/",
+        route: "/useCasesSectors/#issuanceIdentityCredentials",
       },
       {
         id: "signatureContracts",
         label: "Signature of contracts and other documents",
-        route: "/",
+        route: "/useCasesSectors/#signatureContractsDocuments",
       },
       {
         id: "electronicVoting",
         label: "Electronic voting",
-        route: "/",
+        route: "/useCasesSectors/#electronicVoting",
       },
     ],
   },
@@ -229,24 +229,24 @@ export const footerMenuOptions: LinkModel[] = [
         route: "/useCasesSectors/government",
       },
       {
-        id: "finance",
-        label: "Finance",
-        route: "/useCasesSectors/finance",
-      },
-      {
         id: "education",
         label: "Education",
         route: "/useCasesSectors/education",
       },
       {
+        id: "finance",
+        label: "Finance",
+        route: "/useCasesSectors/finance",
+      },
+      {
         id: "web3",
-        label: "Web 3",
+        label: "Web 3.0",
         route: "/useCasesSectors/web3",
       },
       {
-        id: "otherSectors",
-        label: "Other sectors",
-        route: "/",
+        id: "otherIndustries",
+        label: "Other industries",
+        route: "/useCasesSectors/#otherIndustries",
       },
     ],
   },
@@ -256,7 +256,7 @@ export const footerMenuOptions: LinkModel[] = [
     subRoutes: [
       {
         id: "aboutUs",
-        label: "About Us",
+        label: "About",
         route: "/company/aboutUs",
       },
       {
@@ -266,7 +266,7 @@ export const footerMenuOptions: LinkModel[] = [
       },
       {
         id: "contactUs",
-        label: "ContactUs",
+        label: "Contact Us",
         route: "/company/contactUs",
       },
       {
@@ -277,8 +277,8 @@ export const footerMenuOptions: LinkModel[] = [
     ],
   },
   {
-    id: "learn",
-    label: "Learn",
+    id: "resources",
+    label: "Resources",
     subRoutes: [
       {
         id: "watchDemo",
@@ -286,14 +286,14 @@ export const footerMenuOptions: LinkModel[] = [
         route: "/",
       },
       {
-        id: "helpCenter",
-        label: "Help Center",
-        route: "/",
+        id: "documentation",
+        label: "Documentation",
+        route: "/resources/documentation",
       },
       {
-        id: "developers",
-        label: "Developers",
-        route: "/",
+        id: "ssiBasics",
+        label: "SSI Basics",
+        route: "/resources/ssiBasics/",
       },
       {
         id: "blog",
@@ -342,7 +342,9 @@ export const sectorsFooterMenu = footerMenuOptions?.find(
 export const companyFooterMenu = footerMenuOptions?.find(
   el => el?.id === "company"
 )
-export const learnFooterMenu = footerMenuOptions?.find(el => el?.id === "learn")
+export const resourcesFooterMenu = footerMenuOptions?.find(
+  el => el?.id === "resources"
+)
 
 export const subFooterMenu = footerMenuOptions?.find(
   el => el?.id === "subFooter"
