@@ -19,7 +19,6 @@ type ILicensesTableMobileProps = {
   licenseIndex: number
   switchPeriodValue: string
   infoToggles: InfoTogglesPricingModel
-  licenseIsEnterprise: (x: any) => boolean
   selectLicense: (x: any) => void
 }
 
@@ -30,7 +29,6 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
     licenseIndex,
     infoToggles,
     selectLicense,
-    licenseIsEnterprise,
   } = props
 
   const getPrice = (item: any) => {
@@ -82,7 +80,7 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
           </select>
           <div className={styles.header__container}>
             <div>
-              {!licenseIsEnterprise(license) ? (
+              {!license?.name?.toLowerCase()?.includes("enterprise") ? (
                 <>
                   <p className={`${cx("heading4")}`}>
                     <span>{getPrice(license)}€</span>

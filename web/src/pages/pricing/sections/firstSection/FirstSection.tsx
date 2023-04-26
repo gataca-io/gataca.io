@@ -75,9 +75,6 @@ const FirstSection: React.FC<ISectionProps> = props => {
       : null
   }
 
-  const licenseIsEnterprise = (license: IProductModel) =>
-    license?.name?.toLowerCase()?.includes("enterprise")
-
   return (
     <>
       <section className={`${styles?.firstSection} ${cx("containerMaxWidth")}`}>
@@ -139,7 +136,6 @@ const FirstSection: React.FC<ISectionProps> = props => {
                   <LicensesTable
                     products={licenses}
                     switchPeriodValue={switchPeriodValue}
-                    licenseIsEnterprise={licenseIsEnterprise}
                     infoToggles={infoToggles}
                   />
                   <LicensesTableMobile
@@ -148,7 +144,6 @@ const FirstSection: React.FC<ISectionProps> = props => {
                     switchPeriodValue={switchPeriodValue}
                     infoToggles={infoToggles}
                     selectLicense={setSelectedLicense}
-                    licenseIsEnterprise={licenseIsEnterprise}
                   />
                 </div>
               )}
