@@ -128,7 +128,7 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
               <CategoryCell category={"Verification Features"} rowsPan={2} />
               <SubcategoryCell
                 subcategory={"Verification Templates"}
-                information={infoToggles.verificationTemplate}
+                information={infoToggles?.verificationTemplate}
               />
               {products?.map(license => {
                 return (
@@ -142,7 +142,7 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
             <tr key={2} className={styles?.table__body__row}>
               <SubcategoryCell
                 subcategory={"Active Users p/m"}
-                information={infoToggles.activeUser}
+                information={infoToggles?.activeUser}
               />
               {products?.map(license => {
                 return (
@@ -157,7 +157,7 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
               <CategoryCell category={"Issuance Features"} rowsPan={2} />
               <SubcategoryCell
                 subcategory={"Issuance Templates"}
-                information={infoToggles.issuanceTemplate}
+                information={infoToggles?.issuanceTemplate}
               />
               {products?.map(license => {
                 return (
@@ -171,7 +171,7 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
             <tr key={4} className={styles?.table__body__row}>
               <SubcategoryCell
                 subcategory={"Issued Credentials p/m"}
-                information={infoToggles.issuedCredential}
+                information={infoToggles?.issuedCredential}
               />
               {products?.map((license: IProductModel) => {
                 return (
@@ -208,7 +208,7 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
             <tr key={7} className={styles?.table__body__row}>
               <SubcategoryCell
                 subcategory={"2FA Security Mechanism"}
-                information={infoToggles.securityFactorMechanism}
+                information={infoToggles?.securityFactorMechanism}
               />
               {products?.map(license => {
                 return (
@@ -255,7 +255,7 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
             <tr key={11} className={styles?.table__body__row}>
               <SubcategoryCell
                 subcategory={"Sandbox environment"}
-                information={infoToggles.sandboxEnvironment}
+                information={infoToggles?.sandboxEnvironment}
               />
               {products?.map(license => {
                 return (
@@ -269,7 +269,7 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
             <tr key={12} className={styles?.table__body__row}>
               <SubcategoryCell
                 subcategory={"DID in Public Catalogue"}
-                information={infoToggles.didInPublicCatalogue}
+                information={infoToggles?.didInPublicCatalogue}
               />
               {products?.map(license => {
                 return (
@@ -283,7 +283,7 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
             <tr key={13} className={styles?.table__body__row}>
               <SubcategoryCell
                 subcategory={"Publish Schemas in Public Catalogue"}
-                information={infoToggles.schemaInPublicCatalogue}
+                information={infoToggles?.schemaInPublicCatalogue}
               />
               {products?.map(license => {
                 return (
@@ -297,7 +297,7 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
             <tr key={14} className={styles?.table__body__row}>
               <SubcategoryCell
                 subcategory={"EBSI integration"}
-                information={infoToggles.ebsiIntegration}
+                information={infoToggles?.ebsiIntegration}
               />
               {products?.map(license => {
                 return (
@@ -348,7 +348,7 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
             <tr key={18} className={styles?.table__body__row}>
               <SubcategoryCell
                 subcategory={"Integration with custom trust Frameworks"}
-                information={infoToggles.integrationCustomFrameworks}
+                information={infoToggles?.integrationCustomFrameworks}
               />
               {products?.map(license => {
                 return (
@@ -362,7 +362,7 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
             <tr key={20} className={styles?.table__body__row}>
               <SubcategoryCell
                 subcategory={"Integration with custom infrastructure"}
-                information={infoToggles.integrationCustomInfraestructure}
+                information={infoToggles?.integrationCustomInfraestructure}
               />
               {products?.map(license => {
                 return (
