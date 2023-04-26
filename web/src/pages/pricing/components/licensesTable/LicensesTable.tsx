@@ -2,11 +2,11 @@ import React from "react"
 import cx from "classnames"
 import PurpleButton from "../../../../components/atoms/buttons/purple/PurpleButton"
 import Tag from "../../../../components/atoms/tags/Tag"
-import CategoryCell from "./elements/cells/category/CategoryCell"
-import SubcategoryCell from "./elements/cells/subcategoryCell/SubcategoryCell"
-import IconDataCell from "./elements/cells/iconDataCell/IconDataCell"
 import QuantityDataCell from "./elements/cells/quantityDataCell/QuantityDataCell"
 import ListDataCell from "./elements/cells/listDataCell/ListDataCell"
+import SubcategoryCell from "./elements/cells/subcategoryCell/SubcategoryCell"
+import IconDataCell from "./elements/cells/iconDataCell/IconDataCell"
+import CategoryCell from "./elements/cells/category/CategoryCell"
 import {
   IProductModel,
   InfoTogglesPricingModel,
