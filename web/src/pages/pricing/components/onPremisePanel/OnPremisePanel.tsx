@@ -16,8 +16,8 @@ const OnPremisePanel: React.FC<IOnPremisePanelProps> = props => {
   return (
     <div className={`${styles?.card__list}`}>
       <h5 className={`${cx("heading3")}`}>
-        <span>{panelTitle.slice(0, 10)}</span>
-        {panelTitle.slice(10, 21)}
+        <span>{panelTitle?.slice(0, 10)}</span>
+        {panelTitle?.slice(10, 21)}
       </h5>
       {paragraphs?.map((el, index) => (
         <p
