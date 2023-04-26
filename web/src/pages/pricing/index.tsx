@@ -30,7 +30,7 @@ const Pricing: React.FC = () => {
           licenses={firstSection?.categories[0].list}
           onPremise={firstSection?.categories[1]}
         />
-        <LogosSlider className={styles.slider} />
+        <LogosSlider className={styles?.slider} />
         <SecondSection
           title={secondSection?.title}
           subTitle={secondSection?.subTitle}

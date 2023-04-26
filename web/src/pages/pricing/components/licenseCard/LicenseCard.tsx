@@ -9,12 +9,8 @@ import { images } from "../../../../images/images"
 type ILicenseCardProps = {
   license: IProductModel
   showAllDetails?: boolean
-  firstButton?: ButtonModel
-  secondButton?: ButtonModel
   period: string
   isCurrentLicense?: boolean
-  isNewLicense?: boolean
-  popularLicenseType: string
 }
 
 type IFeatureProps = {
@@ -29,9 +25,9 @@ const Feature: React.FC<IFeatureProps> = props => {
 
   return !info ? (
     <li
-      className={`${styles.license__features__list__item} ${cx(
+      className={`${styles?.license__features__list__item} ${cx(
         "marginTop16"
-      )} ${notAvailableNow ? styles.notAvailableNow : ""}`}
+      )} ${notAvailableNow ? styles?.notAvailableNow : ""}`}
     >
       {!notAvailableNow && (
         <>
@@ -41,23 +37,25 @@ const Feature: React.FC<IFeatureProps> = props => {
       <div
         className={
           notAvailableNow
-            ? styles.featureNotAvailableNow
-            : styles.license__features__list__item__content
+            ? styles?.featureNotAvailableNow
+            : styles?.license__features__list__item__content
         }
       >
         {feature && <span>{feature}&nbsp;</span>}
 
-        <span className={styles.featureName}>{label}</span>
+        <span className={styles?.featureName}>{label}</span>
       </div>
     </li>
   ) : (
     <li
-      className={`${styles.license__features__list__item} ${cx("marginTop16")}`}
+      className={`${styles?.license__features__list__item} ${cx(
+        "marginTop16"
+      )}`}
     >
       <img src={images.greenCheckIcon} alt={"Gataca Google Play"} />
       &nbsp;&nbsp;
-      <span className={`${styles.featureQuantity}`}>{feature}</span>
-      <p className={`${styles.featureName} ${cx("bodyBoldXS marginRight4 ")}`}>
+      <span className={`${styles?.featureQuantity}`}>{feature}</span>
+      <p className={`${styles?.featureName} ${cx("bodyBoldXS marginRight4 ")}`}>
         &nbsp;
         {label}
       </p>
@@ -66,22 +64,10 @@ const Feature: React.FC<IFeatureProps> = props => {
 }
 
 const LicenseCard: React.FC<ILicenseCardProps> = props => {
-  const {
-    license,
-    showAllDetails,
-    firstButton,
-    secondButton,
-    period,
-    isNewLicense,
-    isCurrentLicense,
-    popularLicenseType,
-  } = props
-
-  const scrollToFeatures = () =>
-    document?.getElementById("topOfAllFeatures")?.scrollIntoView(true)
+  const { license, showAllDetails, period, isCurrentLicense } = props
 
   const getPrice = (item: any) => {
-    return period === "year" ? item.yearlyPrice : item.monthlyPrice
+    return period === "year" ? item?.yearlyPrice : item?.monthlyPrice
   }
 
   const licenseIsEnterprise = license?.name
@@ -90,24 +76,24 @@ const LicenseCard: React.FC<ILicenseCardProps> = props => {
 
   return (
     <div
-      className={`${styles.license} ${
-        isCurrentLicense ? styles.currentLicense : ""
+      className={`${styles?.license} ${
+        isCurrentLicense ? styles?.currentLicense : ""
       }`}
     >
-      <div className={styles.license__header}>
-        <p className={`${styles.license__header__title} ${cx("bodyBoldLG")}`}>
+      <div className={styles?.license__header}>
+        <p className={`${styles?.license__header__title} ${cx("bodyBoldLG")}`}>
           {license?.type}
         </p>
         {license?.type === "Professional" && (
           <Tag
             label={"Popular"}
-            className={styles.license__header__popularTag}
+            className={styles?.license__header__popularTag}
           />
         )}
       </div>
       {license?.description && (
         <p
-          className={`${styles.license__description} ${cx(
+          className={`${styles?.license__description} ${cx(
             "marginTop8 bodyRegularSM neutral700"
           )}`}
         >
@@ -115,7 +101,7 @@ const LicenseCard: React.FC<ILicenseCardProps> = props => {
         </p>
       )}
       {!licenseIsEnterprise ? (
-        <div className={`${styles.license__price}`}>
+        <div className={`${styles?.license__price}`}>
           <p className={`${cx("marginTop24 heading3")}`}>
             <span>{getPrice(license)}€</span>
             <span className={`${cx("neutral700 bodyRegularMD marginLeft8")}`}>
@@ -126,7 +112,7 @@ const LicenseCard: React.FC<ILicenseCardProps> = props => {
             ? license?.subPriceMonthLabel && (
                 <span
                   className={`${cx("neutral700 bodyRegularXS marginTop2")} ${
-                    styles.license__save
+                    styles?.license__save
                   }`}
                 >
                   {license?.subPriceMonthLabel}
@@ -135,7 +121,7 @@ const LicenseCard: React.FC<ILicenseCardProps> = props => {
             : license?.subPriceYearLabel && (
                 <span
                   className={`${cx("neutral700 bodyRegularXS marginTop2")} ${
-                    styles.license__save
+                    styles?.license__save
                   }`}
                 >
                   {license?.subPriceYearLabel}
@@ -145,7 +131,7 @@ const LicenseCard: React.FC<ILicenseCardProps> = props => {
       ) : (
         <>
           <p
-            className={`${styles.license__customPrice} ${cx(
+            className={`${styles?.license__customPrice} ${cx(
               "marginTo24 heading4"
             )}`}
           >
@@ -153,16 +139,16 @@ const LicenseCard: React.FC<ILicenseCardProps> = props => {
           </p>
         </>
       )}
-      <div className={styles.license__features}>
+      <div className={styles?.license__features}>
         <div>
           <p
-            className={`${styles.license__features__title} ${cx(
+            className={`${styles?.license__features__title} ${cx(
               "bodyBoldXS neutral700"
             )}`}
           >
             Verification Features
           </p>
-          <ul className={styles.license__features__list}>
+          <ul className={styles?.license__features__list}>
             <Feature
               feature={license?.features?.verificationTemplates}
               label="Verification Templates"
@@ -176,13 +162,13 @@ const LicenseCard: React.FC<ILicenseCardProps> = props => {
         </div>
         <div>
           <p
-            className={`${styles.license__features__title} ${cx(
+            className={`${styles?.license__features__title} ${cx(
               " bodyBoldXS neutral700"
             )}`}
           >
             Issuance Features
           </p>
-          <ul className={styles.license__features__list}>
+          <ul className={styles?.license__features__list}>
             <Feature
               feature={license?.features?.issuanceTemplates}
               label="Issuance Templates"
@@ -196,33 +182,33 @@ const LicenseCard: React.FC<ILicenseCardProps> = props => {
         </div>
         {showAllDetails && (
           <div>
-            <p className={styles.license__features__title}>Other Features</p>
+            <p className={styles?.license__features__title}>Other Features</p>
 
-            <ul className={styles.license__features__list}>
+            <ul className={styles?.license__features__list}>
               <Feature feature={license?.features?.dids} label="DIDs" />
 
               <Feature feature={license?.features?.apiKeys} label="API Keys" />
 
               {!!license?.features?.nFactor?.length && (
-                <li className={styles.license__features__list__item}>
+                <li className={styles?.license__features__list__item}>
                   <img src={images.greenCheckIcon} alt={"Gataca Google Play"} />
                   &nbsp;&nbsp;
-                  <span className={styles.featureName}>
+                  <span className={styles?.featureName}>
                     N-factor mechanisms {license?.features?.nFactor?.join(", ")}
                   </span>
                 </li>
               )}
-              <li className={styles.license__features__list__item}>
+              <li className={styles?.license__features__list__item}>
                 <img src={images.greenCheckIcon} alt={"Gataca Google Play"} />
                 &nbsp;&nbsp;
-                <span className={styles.featureName}>
+                <span className={styles?.featureName}>
                   Notifications {license?.features?.notifications?.join(", ")}
                 </span>
               </li>
-              <li className={styles.license__features__list__item}>
+              <li className={styles?.license__features__list__item}>
                 <img src={images.greenCheckIcon} alt={"Gataca Google Play"} />
                 &nbsp;&nbsp;
-                <span className={styles.featureName}>Stadistics</span>
+                <span className={styles?.featureName}>Stadistics</span>
               </li>
               {!!license?.features?.didPublicCatalogue && (
                 <Feature feature={""} label={"DID in Public Catalogue"} />
@@ -254,10 +240,10 @@ const LicenseCard: React.FC<ILicenseCardProps> = props => {
               )}
               {!license?.features?.nFactor?.length && (
                 <li
-                  className={`${styles.license__features__list__item} ${styles.notAvailableNow}`}
+                  className={`${styles?.license__features__list__item} ${styles?.notAvailableNow}`}
                 >
                   &nbsp;&nbsp;&nbsp;&nbsp;
-                  <span className={styles.featureName}>
+                  <span className={styles?.featureName}>
                     N-factor mechanisms
                   </span>
                 </li>
@@ -278,7 +264,7 @@ const LicenseCard: React.FC<ILicenseCardProps> = props => {
               )}
               {!license?.features?.customQR && (
                 <li
-                  className={`${styles.license__features__list__item} ${styles.notAvailableNow}`}
+                  className={`${styles?.license__features__list__item} ${styles?.notAvailableNow}`}
                 >
                   &nbsp; &nbsp; Custom QR
                 </li>
@@ -295,7 +281,7 @@ const LicenseCard: React.FC<ILicenseCardProps> = props => {
       </div>
 
       <PurpleButton
-        className={styles.license__button}
+        className={styles?.license__button}
         label={license?.button?.label}
         action={() =>
           window?.open(

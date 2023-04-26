@@ -9,7 +9,7 @@ export type ICardHeaderProps = {
 export const CardHeader: React.FC<ICardHeaderProps> = props => {
   const { title } = props
   return (
-    <div key={0} className={styles.card__header}>
+    <div key={0} className={styles?.card__header}>
       <p className={`${cx("bodyBoldLG")}`}>{title}</p>
     </div>
   )
