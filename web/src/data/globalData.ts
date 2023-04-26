@@ -36,6 +36,13 @@ export const headerMenuOptions: LinkModel[] = [
   {
     id: "useCasesSectors",
     label: "Use Cases & Sectors",
+    mainRoute: [
+      {
+        id: "discoverAllUseCases",
+        label: "Discover All Use Cases & Sectors",
+        route: "/useCasesSectors",
+      },
+    ],
     categories: [
       {
         id: "useCases",
@@ -135,22 +142,34 @@ export const headerMenuOptions: LinkModel[] = [
   {
     id: "resources",
     label: "Resources",
-
-    subRoutes: [
+    mainRoute: [
       {
-        id: "documentation",
-        label: "Documentation",
-        route: "/resources/documentation",
+        id: "discoverAllResources",
+        label: "Discover All Resources",
+        route: "/resources/",
       },
+    ],
+    categories: [
       {
-        id: "ssiBasics",
-        label: "SSI Basics",
-        route: "/resources/ssiBasics",
-      },
-      {
-        id: "blog",
-        label: "Blog",
-        route: "/resources/blog",
+        id: "otherResources",
+        label: "Other resources",
+        subRoutes: [
+          {
+            id: "documentation",
+            label: "Documentation",
+            route: "/resources/documentation",
+          },
+          {
+            id: "ssiBasics",
+            label: "SSI Basics",
+            route: "/resources/ssiBasics",
+          },
+          {
+            id: "blog",
+            label: "Blog",
+            route: "/resources/blog",
+          },
+        ],
       },
     ],
   },
