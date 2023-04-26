@@ -18,12 +18,10 @@ type ILicensesTableProps = {
   products: any[]
   switchPeriodValue: string
   infoToggles: InfoTogglesPricingModel
-  licenseIsEnterprise: (x: any) => boolean
 }
 
 const LicensesTable: React.FC<ILicensesTableProps> = props => {
-  const { products, switchPeriodValue, infoToggles, licenseIsEnterprise } =
-    props
+  const { products, switchPeriodValue, infoToggles } = props
 
   const getPrice = (item: any) => {
     return switchPeriodValue === "year" ? item.yearlyPrice : item.monthlyPrice
@@ -60,7 +58,9 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
                         )}
                       </div>
                       <div>
-                        {!licenseIsEnterprise(license) ? (
+                        {!license?.name
+                          ?.toLowerCase()
+                          ?.includes("enterprise") ? (
                           <>
                             <p
                               className={`${styles.licensePrice} ${
