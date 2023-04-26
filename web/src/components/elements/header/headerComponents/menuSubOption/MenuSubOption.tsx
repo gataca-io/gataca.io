@@ -43,9 +43,10 @@ const MenuSubOption: React.FC<IMenuSubOptionProps> = props => {
           </div>
         )
       })}
-      {item?.subRoutes?.map(subItem => {
+      {item?.subRoutes?.map((subItem, index) => {
         return (
           <Link
+            key={"menuSubOption__" + index}
             className={`${styles.menuSubOptionItem} ${cx("buttonSM")}`}
             to={subItem?.route || ""}
           >
