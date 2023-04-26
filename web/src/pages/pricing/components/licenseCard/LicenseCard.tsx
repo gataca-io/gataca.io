@@ -31,7 +31,7 @@ const Feature: React.FC<IFeatureProps> = props => {
     >
       {!notAvailableNow && (
         <>
-          <img src={images?.greenCheckIcon} alt={"Gataca Google Play"} />
+          <img src={images.greenCheckIcon} alt={"Gataca Google Play"} />
         </>
       )}
       <div
@@ -52,7 +52,7 @@ const Feature: React.FC<IFeatureProps> = props => {
         "marginTop16"
       )}`}
     >
-      <img src={images?.greenCheckIcon} alt={"Gataca Google Play"} />
+      <img src={images.greenCheckIcon} alt={"Gataca Google Play"} />
       &nbsp;&nbsp;
       <span className={`${styles?.featureQuantity}`}>{feature}</span>
       <p className={`${styles?.featureName} ${cx("bodyBoldXS marginRight4 ")}`}>
@@ -191,10 +191,7 @@ const LicenseCard: React.FC<ILicenseCardProps> = props => {
 
               {!!license?.features?.nFactor?.length && (
                 <li className={styles?.license__features__list__item}>
-                  <img
-                    src={images?.greenCheckIcon}
-                    alt={"Gataca Google Play"}
-                  />
+                  <img src={images.greenCheckIcon} alt={"Gataca Google Play"} />
                   &nbsp;&nbsp;
                   <span className={styles?.featureName}>
                     N-factor mechanisms {license?.features?.nFactor?.join(", ")}
@@ -202,14 +199,14 @@ const LicenseCard: React.FC<ILicenseCardProps> = props => {
                 </li>
               )}
               <li className={styles?.license__features__list__item}>
-                <img src={images?.greenCheckIcon} alt={"Gataca Google Play"} />
+                <img src={images.greenCheckIcon} alt={"Gataca Google Play"} />
                 &nbsp;&nbsp;
                 <span className={styles?.featureName}>
                   Notifications {license?.features?.notifications?.join(", ")}
                 </span>
               </li>
               <li className={styles?.license__features__list__item}>
-                <img src={images?.greenCheckIcon} alt={"Gataca Google Play"} />
+                <img src={images.greenCheckIcon} alt={"Gataca Google Play"} />
                 &nbsp;&nbsp;
                 <span className={styles?.featureName}>Stadistics</span>
               </li>

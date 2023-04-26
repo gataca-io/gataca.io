@@ -107,7 +107,7 @@ const SecondSection: React.FC<ISectionProps> = props => {
           </div>
         </div>
         <div className={styles?.image__container}>
-          <img src={images?.chat}></img>
+          <img src={images.chat}></img>
         </div>
       </div>
     </section>

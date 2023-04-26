@@ -388,8 +388,8 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
                         className={styles?.table__body__row__cell__icon}
                         src={
                           license?.features?.standardSupport
-                            ? images?.checkIcon
-                            : images?.closeIcon
+                            ? images.checkIcon
+                            : images.closeIcon
                         }
                       ></img>
                     ) : (
@@ -418,8 +418,8 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
                           className={styles?.table__body__row__cell__icon}
                           src={
                             license?.features?.premierSupport
-                              ? images?.checkIcon
-                              : images?.closeIcon
+                              ? images.checkIcon
+                              : images.closeIcon
                           }
                         ></img>
                       ) : (

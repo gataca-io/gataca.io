@@ -270,8 +270,8 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
                   className={styles?.icon}
                   src={
                     license?.features?.standardSupport
-                      ? images?.checkIcon
-                      : images?.closeIcon
+                      ? images.checkIcon
+                      : images.closeIcon
                   }
                 ></img>
               ) : (
@@ -292,8 +292,8 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
                   className={styles?.icon}
                   src={
                     license?.features?.premierSupport
-                      ? images?.checkIcon
-                      : images?.closeIcon
+                      ? images.checkIcon
+                      : images.closeIcon
                   }
                 ></img>
               ) : (
