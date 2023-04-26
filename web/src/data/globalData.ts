@@ -281,11 +281,6 @@ export const footerMenuOptions: LinkModel[] = [
     label: "Resources",
     subRoutes: [
       {
-        id: "watchDemo",
-        label: "Watch Demo",
-        route: "/",
-      },
-      {
         id: "documentation",
         label: "Documentation",
         route: "/resources/documentation",
