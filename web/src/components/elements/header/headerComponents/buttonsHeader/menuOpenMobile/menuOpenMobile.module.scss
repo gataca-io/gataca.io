@@ -1,0 +1,24 @@
+@import "../../../../../../styles/colors";
+@import "../../../../../../styles/mixins";
+
+div.mobileMenu {
+  @include flexbox();
+  cursor: pointer;
+  @include min-width($desktopMD) {
+    display: none;
+  }
+  .mobileMenu__Content {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    background: $neutral100;
+    height: 100%;
+    left: 0;
+    top: 100px;
+  }
+  .buttonsContainer {
+    @include flexbox();
+    padding: 20px;
+    border-top: 2px solid $neutral300;
+  }
+}

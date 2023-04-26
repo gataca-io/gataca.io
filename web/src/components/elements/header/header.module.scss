@@ -35,4 +35,10 @@
     @include flex-wrap(wrap);
     @include justify-content(space-between);
   }
+  .buttonsDesktop {
+    display: none;
+    @include min-width($desktopMD) {
+      @include flexbox();
+    }
+  }
 }
