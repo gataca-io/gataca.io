@@ -26,6 +26,11 @@
       @include flex(0, 0, calc(35% - 32px));
       margin-bottom: 0;
     }
+    h3 {
+      @include min-width($tabletXL) {
+        margin-top: 40px;
+      }
+    }
     p {
       @include min-width($tabletXL) {
         max-width: 356px;
