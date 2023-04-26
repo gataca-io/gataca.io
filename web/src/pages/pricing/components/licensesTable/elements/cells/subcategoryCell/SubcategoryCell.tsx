@@ -11,7 +11,7 @@ export type ISubcategoryCellProps = {
 const SubcategoryCell: React.FC<ISubcategoryCellProps> = props => {
   const { subcategory, information } = props
   return (
-    <td className={`${styles.subcategoryCell} ${cx("bodyRegularSM")}`}>
+    <td className={`${styles?.subcategoryCell} ${cx("bodyRegularSM")}`}>
       <span>
         <p className={`${cx("bodyRegularSM")}`}>{subcategory}</p>
         {information?.length && information?.length > 0 ? (

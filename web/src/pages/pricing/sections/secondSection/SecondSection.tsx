@@ -62,7 +62,7 @@ const SecondSection: React.FC<ISectionProps> = props => {
                       showItem={index => {
                         const element =
                           document &&
-                          document.getElementById("listInfo__" + index)
+                          document?.getElementById("listInfo__" + index)
                         setOpenItem(index),
                           setShowItem(0),
                           element && scrollIntoView(element)
@@ -92,7 +92,7 @@ const SecondSection: React.FC<ISectionProps> = props => {
                             description={description}
                             selected={showItem === index + 1}
                             showItem={index => {
-                              const element = document.getElementById(
+                              const element = document?.getElementById(
                                 "listItem__" + (index - 1)
                               )
                               setShowItem(index)
