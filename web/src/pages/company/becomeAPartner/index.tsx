@@ -22,7 +22,7 @@ const BecomeAPartnerPage: React.FC<PageProps> = () => {
     getBecomeAPartner()
   }, [])
   const getBecomeAPartner = async () => {
-    const json_data = require("./data/BecomeAPartnerData.json")
+    const json_data = require("./data/becomeAPartnerData.json")
     setBecomeAPartner(json_data?.data && json_data?.data)
   }
 
