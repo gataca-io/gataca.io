@@ -133,6 +133,7 @@ import medalIcon from "./icons/medal.svg"
 import userLockIcon from "./icons/user-lock.svg"
 import thumbsUp from "./images3d/tumbsup.png"
 import cloudShieldIcon from "./icons/cloud-shield.svg"
+import usersIcon from "./icons/users.svg"
 
 export const images = {
   chevronDown: crevronDownSVG,
@@ -270,4 +271,5 @@ export const images = {
   userLockIcon: userLockIcon,
   thumbsUp: thumbsUp,
   cloudShieldIcon: cloudShieldIcon,
+  usersIcon: usersIcon,
 }

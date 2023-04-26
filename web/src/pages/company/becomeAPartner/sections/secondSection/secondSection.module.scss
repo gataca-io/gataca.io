@@ -40,6 +40,14 @@
           margin-bottom: 0;
           @include flex(0, 0, calc(100%/3 - 52px));
         }
+        img {
+          min-width: 40px;
+          max-width: 40px;
+          @include min-width($tabletMD) {
+            min-width: 52px;
+            max-width: 52px;
+          }
+        }
       }
     }
     .content__footer {

@@ -16,11 +16,7 @@ export type ISectionProps = {
   }[]
 }
 
-const typesIcons = [
-  images.settingsIcon,
-  images.userAvatarIcon,
-  images.userCheckIcon,
-]
+const typesIcons = [images.settingsIcon, images.usersIcon, images.userCheckIcon]
 
 const SecondSection: React.FC<ISectionProps> = props => {
   const { title, description, subTitle, linkLabel, linkRoute, list } = props
@@ -43,7 +39,9 @@ const SecondSection: React.FC<ISectionProps> = props => {
                   className={`${cx("marginBottom24")}`}
                 />
                 <h5 className={`${cx("heading5 marginBottom8")}`}>{title}</h5>
-                <p className={`${cx("bodyRegularMD")} `}>{description}</p>
+                <p className={`${cx("bodyRegularMD neutral700")} `}>
+                  {description}
+                </p>
               </div>
             )
           })}
