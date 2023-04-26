@@ -32,18 +32,18 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
   } = props
 
   const getPrice = (item: any) => {
-    return switchPeriodValue === "year" ? item.yearlyPrice : item.monthlyPrice
+    return switchPeriodValue === "year" ? item?.yearlyPrice : item?.monthlyPrice
   }
 
   return (
     <>
-      <div className={styles.tableContainer}>
+      <div className={styles?.tableContainer}>
         <div>
           <p className={`${cx("heading4")}`} id={"featuresTable"}>
             All features
           </p>
           <select
-            className={`${styles.selector} ${cx("bodyRegularMD")}`}
+            className={`${styles?.selector} ${cx("bodyRegularMD")}`}
             defaultValue={licenseIndex || 0}
             onChange={event => {
               selectLicense(event?.target?.value)
@@ -78,7 +78,7 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
               Enterprise
             </option>
           </select>
-          <div className={styles.header__container}>
+          <div className={styles?.header__container}>
             <div>
               {!license?.name?.toLowerCase()?.includes("enterprise") ? (
                 <>
@@ -117,12 +117,12 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
 
             <div>
               {license?.type === "Professional" && (
-                <Tag label={"Popular"} className={styles.popularTag} />
+                <Tag label={"Popular"} className={styles?.popularTag} />
               )}
             </div>
           </div>
           <PurpleButton
-            className={styles.license__button}
+            className={styles?.license__button}
             label={license?.button?.label}
             action={() =>
               window?.open(
@@ -134,17 +134,17 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
         </div>
 
         {/* Verification features */}
-        <div className={styles.card}>
+        <div className={styles?.card}>
           <CardHeader title={"Verification Features"} />
 
-          <div key={0} className={styles.card__row}>
+          <div key={0} className={styles?.card__row}>
             <CardLeftColumn
               text={"Verification Templates"}
               information={infoToggles?.verificationTemplate}
             />
             <QuantityDataCell data={license?.features?.verificationTemplates} />
           </div>
-          <div className={styles.card__row}>
+          <div className={styles?.card__row}>
             <CardLeftColumn
               text={"Active users p/m"}
               information={infoToggles?.activeUser}
@@ -154,17 +154,17 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
         </div>
 
         {/* Issuance features */}
-        <div className={styles.card}>
+        <div className={styles?.card}>
           <CardHeader title={"Issuance Features"} />
 
-          <div key={0} className={styles.card__row}>
+          <div key={0} className={styles?.card__row}>
             <CardLeftColumn
               text={"Issuance Templates"}
               information={infoToggles?.issuanceTemplate}
             />
             <QuantityDataCell data={license?.features?.issuanceTemplates} />
           </div>
-          <div className={styles.card__row}>
+          <div className={styles?.card__row}>
             <CardLeftColumn
               text={"Issued Credentials"}
               information={infoToggles?.issuedCredential}
@@ -174,133 +174,133 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
         </div>
 
         {/* Other features */}
-        <div className={styles.card}>
+        <div className={styles?.card}>
           <CardHeader title={"Other Features"} />
 
-          <div key={0} className={styles.card__row}>
+          <div key={0} className={styles?.card__row}>
             <CardLeftColumn text={"DIDs"} />
-            <QuantityDataCell data={license.features?.dids} />
+            <QuantityDataCell data={license?.features?.dids} />
           </div>
-          <div className={styles.card__row}>
+          <div className={styles?.card__row}>
             <CardLeftColumn text={"API Keys"} />
-            <QuantityDataCell data={license.features?.apiKeys} />
+            <QuantityDataCell data={license?.features?.apiKeys} />
           </div>
-          <div className={styles.card__row}>
+          <div className={styles?.card__row}>
             <CardLeftColumn
               text={"2FA Security Mechanism"}
               information={infoToggles?.securityFactorMechanism}
             />
             <ListDataCell data={license?.features?.nFactor} />
           </div>
-          <div className={styles.card__row}>
+          <div className={styles?.card__row}>
             <CardLeftColumn text={"Notifications"} />
-            <ListDataCell data={license.features?.notifications} />
+            <ListDataCell data={license?.features?.notifications} />
           </div>
-          <div className={styles.card__row}>
+          <div className={styles?.card__row}>
             <CardLeftColumn text={"Usage Statistics"} />
-            <IconDataCell data={license.features?.stadistics} />
+            <IconDataCell data={license?.features?.stadistics} />
           </div>
-          <div className={styles.card__row}>
+          <div className={styles?.card__row}>
             <CardLeftColumn text={"Credentials in W3C VC format"} />
             <IconDataCell data={license?.features?.credentialsInW3CFormat} />
           </div>
-          <div className={styles.card__row}>
+          <div className={styles?.card__row}>
             <CardLeftColumn
               text={"Sandbox environment"}
               information={infoToggles?.sandboxEnvironment}
             />
-            <IconDataCell data={license.features?.sandBoxEnvironment} />
+            <IconDataCell data={license?.features?.sandBoxEnvironment} />
           </div>
-          <div className={styles.card__row}>
+          <div className={styles?.card__row}>
             <CardLeftColumn
               text={"DID in Public Catalogue"}
               information={infoToggles?.didInPublicCatalogue}
             />
-            <IconDataCell data={license.features?.didPublicCatalogue} />
+            <IconDataCell data={license?.features?.didPublicCatalogue} />
           </div>
-          <div className={styles.card__row}>
+          <div className={styles?.card__row}>
             <CardLeftColumn
               text={"Publish Schemas in Public Catalogue"}
               information={infoToggles?.schemaInPublicCatalogue}
             />
-            <IconDataCell data={license.features?.newSchemaPublicCatalogue} />
+            <IconDataCell data={license?.features?.newSchemaPublicCatalogue} />
           </div>
-          <div className={styles.card__row}>
+          <div className={styles?.card__row}>
             <CardLeftColumn
               text={"EBSI integration"}
               information={infoToggles?.ebsiIntegration}
             />
-            <IconDataCell data={license.features?.ebsiIntegration} />
+            <IconDataCell data={license?.features?.ebsiIntegration} />
           </div>
-          <div className={styles.card__row}>
+          <div className={styles?.card__row}>
             <CardLeftColumn text={"Customization of GDPR purposes"} />
-            <IconDataCell data={license.features?.customGDPRPurposes} />
+            <IconDataCell data={license?.features?.customGDPRPurposes} />
           </div>
-          <div className={styles.card__row}>
+          <div className={styles?.card__row}>
             <CardLeftColumn text={"Custom QR"} />
-            <IconDataCell data={license.features?.customQR} />
+            <IconDataCell data={license?.features?.customQR} />
           </div>
-          <div className={styles.card__row}>
+          <div className={styles?.card__row}>
             <CardLeftColumn text={"Credentials in ISO 18013:5 format"} />
-            <IconDataCell data={license.features?.credentialsInISO28013} />
+            <IconDataCell data={license?.features?.credentialsInISO28013} />
           </div>
-          <div className={styles.card__row}>
+          <div className={styles?.card__row}>
             <CardLeftColumn
               text={"Integration with custom trust Frameworks"}
               information={infoToggles?.integrationCustomFrameworks}
             />
             <IconDataCell
-              data={license.features?.integrationCustomTrustFrameworks}
+              data={license?.features?.integrationCustomTrustFrameworks}
             />
           </div>
-          <div className={styles.card__row}>
+          <div className={styles?.card__row}>
             <CardLeftColumn
               text={"Integration with custom infrastructure"}
               information={infoToggles?.integrationCustomInfraestructure}
             />
             <IconDataCell
-              data={license.features?.integrationCustomTrustInfraestructure}
+              data={license?.features?.integrationCustomTrustInfraestructure}
             />
           </div>
-          <div className={styles.card__row}>
+          <div className={styles?.card__row}>
             <CardLeftColumn text={"Stadard Support"} />
             <div className={`${cx("bodyBoldSM")}`}>
-              {typeof license.features?.standardSupport == "boolean" ? (
+              {typeof license?.features?.standardSupport == "boolean" ? (
                 <img
-                  className={styles.icon}
+                  className={styles?.icon}
                   src={
-                    license.features?.standardSupport
-                      ? images.checkIcon
-                      : images.closeIcon
+                    license?.features?.standardSupport
+                      ? images?.checkIcon
+                      : images?.closeIcon
                   }
                 ></img>
               ) : (
                 <p>
                   ${" "}
                   <span className={`${cx("bodyRegularCap neutral700")}`}>
-                    {license.features?.standardSupport}
+                    {license?.features?.standardSupport}
                   </span>
                 </p>
               )}
             </div>
           </div>
-          <div className={styles.card__row}>
+          <div className={styles?.card__row}>
             <CardLeftColumn text={"Premier Support"} />
             <div className={`${cx("bodyBoldSM")}`}>
-              {typeof license.features?.premierSupport == "boolean" ? (
+              {typeof license?.features?.premierSupport == "boolean" ? (
                 <img
-                  className={styles.icon}
+                  className={styles?.icon}
                   src={
-                    license.features?.premierSupport
-                      ? images.checkIcon
-                      : images.closeIcon
+                    license?.features?.premierSupport
+                      ? images?.checkIcon
+                      : images?.closeIcon
                   }
                 ></img>
               ) : (
                 <p>
                   ${" "}
                   <span className={`${cx("bodyRegularCap neutral700")}`}>
-                    {license.features?.premierSupport}
+                    {license?.features?.premierSupport}
                   </span>
                 </p>
               )}

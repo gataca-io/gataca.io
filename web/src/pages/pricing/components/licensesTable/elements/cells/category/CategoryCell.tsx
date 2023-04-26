@@ -11,7 +11,7 @@ const CategoryCell: React.FC<ICategoryCellProps> = props => {
   const { category, rowsPan } = props
   return (
     <td
-      className={`${styles.categoryCell} ${cx("bodyBoldCap")}`}
+      className={`${styles?.categoryCell} ${cx("bodyBoldCap")}`}
       rowSpan={rowsPan}
     >
       {category}

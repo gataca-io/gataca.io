@@ -17,7 +17,7 @@ const Categories: React.FC<ICategoriesProps> = props => {
         id={id}
         onClick={() => !selected && showItem(index)}
         className={`${cx(styles?.categories__item)} ${cx(
-          selected ? styles.selected : ""
+          selected ? styles?.selected : ""
         )}`}
       >
         {title}

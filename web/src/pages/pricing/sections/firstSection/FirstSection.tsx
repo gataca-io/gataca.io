@@ -105,7 +105,7 @@ const FirstSection: React.FC<ISectionProps> = props => {
         <div id="cloud" className={styles?.firstSection__sectors}>
           {openItem === 1 ? (
             <>
-              <div className={styles.switchButtonContainer}>
+              <div className={styles?.switchButtonContainer}>
                 <SwitchButton
                   rightLabel={"Pay Yearly (Save 10%)"}
                   checkedValue={switchPeriodValue}
@@ -120,11 +120,8 @@ const FirstSection: React.FC<ISectionProps> = props => {
                       <LicenseCard
                         key={"licenseP__" + item?.type + index}
                         license={item}
-                        firstButton={item?.button}
                         period={switchPeriodValue}
                         isCurrentLicense={false}
-                        isNewLicense={false}
-                        popularLicenseType={"Professional"}
                       />
                     </>
                   )
@@ -155,7 +152,7 @@ const FirstSection: React.FC<ISectionProps> = props => {
                 IconComponent={
                   showAllFeatures ? <ChevronUpSVG /> : <CrevronDownSVG />
                 }
-                className={`${cx("marginTop32")} ${styles.allFeaturesButton}`}
+                className={`${cx("marginTop32")} ${styles?.allFeaturesButton}`}
                 action={() => {
                   setShowAllFeatures(!showAllFeatures),
                     setSelectedLicense(0),
