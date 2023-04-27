@@ -7,8 +7,8 @@ import MenuDropdownMobile from "../../menuDropdownMobile/MenuDropdownMobile"
 import ButtonsHeader from "../ButtonsHeader"
 
 export type IMenuDropdownProps = {
-  open: boolean
-  setMenuOpened: (x: number) => void
+  open: string
+  setMenuOpened: (x: string) => void
 }
 
 const MenuOpenMobile: React.FC<IMenuDropdownProps> = props => {
