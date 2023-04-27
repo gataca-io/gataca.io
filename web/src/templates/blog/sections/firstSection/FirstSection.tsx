@@ -18,11 +18,8 @@ const FirstSection: React.FC<BlogModel> = props => {
   }
 
   return (
-    <div
-      className={styles.firstSection__container}
-      style={{ position: "relative" }}
-    >
-      <section className={`${styles.firstSection} ${cx("containerMaxWidth")}`}>
+    <section className={styles.firstSection__container}>
+      <div className={`${styles.firstSection} ${cx("containerMaxWidth")}`}>
         <div className={styles.firstSection__leftSide}>
           <div className={styles.firstSection__leftSide__header}>
             {category && <Tag label={category?.data?.attributes?.name} />}
@@ -40,8 +37,8 @@ const FirstSection: React.FC<BlogModel> = props => {
         <div className={styles.firstSection__rightSide}>
           <StrapiImage image={previewImage} />
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   )
 }
 

@@ -4,13 +4,8 @@ import * as styles from "./introBlogSkeleton.module.scss"
 
 const IntroBlogSkeleton: React.FC = () => {
   return (
-    <div
-      className={styles.introBlogSkeleton__container}
-      style={{ position: "relative" }}
-    >
-      <section
-        className={`${styles.introBlogSkeleton} ${cx("containerMaxWidth")}`}
-      >
+    <section className={styles.introBlogSkeleton__container}>
+      <div className={`${styles.introBlogSkeleton} ${cx("containerMaxWidth")}`}>
         <div className={styles.introBlogSkeleton__leftSide}>
           <div className={styles.introBlogSkeleton__leftSide__header}>
             <div
@@ -34,8 +29,8 @@ const IntroBlogSkeleton: React.FC = () => {
         <div
           className={`${styles.introBlogSkeleton__rightSide} ${styles.skeleton}`}
         ></div>
-      </section>
-    </div>
+      </div>
+    </section>
   )
 }
 

@@ -3,6 +3,7 @@
 
 .firstSection__container {
   margin: 162px 20px 132px;
+  position: relative;
   @include min-width($mobileXL) {
     margin: 200px 40px 132px;
   }
