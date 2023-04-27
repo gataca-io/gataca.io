@@ -30,7 +30,6 @@
 
   @include min-width($tabletMD) {
     @include flex-direction(row);
-    margin: 0px auto 0px;
   }
 }
 
