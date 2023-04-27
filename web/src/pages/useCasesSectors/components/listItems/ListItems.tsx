@@ -25,9 +25,7 @@ const ListItems: React.FC<IListItemsProps> = props => {
         >
           <div className={styles.titleContainer}>
             <h5 className={cx("heading5")}>{title}</h5>
-            <span>
-              <img src={selected ? images.iconMinus : images.iconPlus} />
-            </span>
+            <span>{!selected && <img src={images.iconPlus} />}</span>
           </div>
         </div>
       )}
@@ -40,9 +38,7 @@ const ListItems: React.FC<IListItemsProps> = props => {
         >
           <div className={styles.titleContainer}>
             <h5 className={cx("heading5")}>{title}</h5>
-            <span>
-              <img src={selected ? images.iconMinus : images.iconPlus} />
-            </span>
+            <span>{!selected && <img src={images.iconPlus} />}</span>
           </div>
           <p
             className={`${styles.description} ${cx(

@@ -14,17 +14,21 @@ export type ISectionProps = {
     description: string
     list: []
   }[]
+  subOptionClickedID?: string
 }
 
 const useCasesAppliedSection: React.FC<ISectionProps> = props => {
-  const { title, description, index, categories } = props
-  const [openItem, setOpenItem] = React.useState<number>(1)
+  const { title, description, index, categories, subOptionClickedID } = props
+  const [openItem, setOpenItem] = React.useState(
+    subOptionClickedID === "otherIndustries" ? 2 : 1
+  )
   let useCasesCategories: HTMLElement | null
 
   React.useEffect(() => {
+    setOpenItem(subOptionClickedID === "otherIndustries" ? 2 : 1)
     useCasesCategories =
       document && document?.getElementById("useCasesAppliedSectors")
-  })
+  }, [subOptionClickedID])
 
   const scrollIntoView = (el: any) => {
     useCasesCategories
@@ -74,7 +78,7 @@ const useCasesAppliedSection: React.FC<ISectionProps> = props => {
 
             return (
               <CategorySectors
-                id={id}
+                id={"otherIndustries"}
                 key={"listCategory__" + index}
                 className={"listCategory__" + index}
                 index={index + 1}

@@ -12,7 +12,7 @@ const Layout: React.FC<ILayoutProps> = props => {
     <main className={styles?.mainLayout}>
       <>
         <Header />
-        {props.children}
+        {props?.children}
         <Footer />
       </>
     </main>

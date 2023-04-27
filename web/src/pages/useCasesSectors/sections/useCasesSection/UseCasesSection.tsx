@@ -13,19 +13,36 @@ export type ISectionProps = {
     id: string
     image: string
   }[]
+  subOptionClickedID?: string
 }
 
 const UseCasesSection: React.FC<ISectionProps> = props => {
-  const { title, description, list } = props
-  const [openItem, setOpenItem] = React.useState<number>(1)
+  const { title, description, list, subOptionClickedID } = props
+  const [openItem, setOpenItem] = React.useState<string | undefined>(
+    (subOptionClickedID && subOptionClickedID) ||
+      "customerOnboarding" ||
+      undefined
+  )
 
   let useCasesBullets: HTMLElement | null
+  let selectedUseCase: HTMLElement | null
 
   React.useEffect(() => {
     useCasesBullets = document && document?.getElementById("useCasesBullets")
+    selectedUseCase =
+      document && document?.getElementById(subOptionClickedID || "")
+    setOpenItem(subOptionClickedID || "customerOnboarding" || undefined)
+  }, [subOptionClickedID])
+
+  React.useEffect(() => {
+    selectedUseCase =
+      document && document?.getElementById(subOptionClickedID || "")
+    subOptionClickedID &&
+      openItem &&
+      selectedUseCase?.scrollIntoView({ behavior: "smooth" })
   })
 
-  const scrollIntoView = el => {
+  const scrollIntoView = (el: any) => {
     useCasesBullets
       ? useCasesBullets?.scroll({
           behavior: "smooth",
@@ -54,20 +71,25 @@ const UseCasesSection: React.FC<ISectionProps> = props => {
             const { id, title, description } = item
 
             return (
-              <ListItems
-                id={id}
-                key={"listItem__" + index}
-                index={index + 1}
-                title={title}
-                description={description}
-                selected={openItem === index + 1}
-                showItem={index => {
-                  const element =
-                    document &&
-                    document?.getElementById("listItem__" + (index - 1))
-                  setOpenItem(index), element && scrollIntoView(element)
-                }}
-              />
+              <>
+                <p id={list[index + 1]?.id}></p>
+                <ListItems
+                  id={id}
+                  key={"listItem__" + index}
+                  index={index + 1}
+                  title={title}
+                  description={description}
+                  selected={openItem === item?.id}
+                  showItem={index => {
+                    const element =
+                      document &&
+                      document?.getElementById("listItem__" + (index - 1))
+                    subOptionClickedID !== "otherIndustries" &&
+                      (setOpenItem(item?.id),
+                      element && scrollIntoView(element))
+                  }}
+                />
+              </>
             )
           })}
         </div>

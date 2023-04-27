@@ -20,7 +20,11 @@ const MenuSubOption: React.FC<IMenuSubOptionProps> = props => {
       id={item?.id}
       className={`${styles?.menuSubOption} ${
         categoriesAvailable ? styles?.menuCategoryContainer : ""
-      } ${categoriesAvailable?.length > 1 ? styles?.twoCategories : ""}`}
+      } ${
+        categoriesAvailable && categoriesAvailable?.length > 1
+          ? styles?.twoCategories
+          : ""
+      }`}
     >
       {item?.mainRoute && (
         <div className={styles?.mainRoute}>
