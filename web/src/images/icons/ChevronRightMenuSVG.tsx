@@ -18,7 +18,7 @@ const CrevronRightSVG: React.FC<ISVGProps> = props => {
     >
       <path
         d="M9 18L15 12L9 6"
-        stroke={strokeColor || "#1E1E20"}
+        stroke="currentColor"
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"

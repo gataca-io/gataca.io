@@ -14,24 +14,14 @@
 }
 
 .header {
-  padding: 16px 16px;
-  height: 40px;
-  z-index: 9999;
   @include flexbox();
   @include flex-wrap(wrap);
   @include justify-content(space-between);
-  border-bottom: 2px solid $neutral300;
-  @include min-width($desktopMD) {
-    height: 48px;
-    padding: 24px 32px 0;
-    margin-bottom: 30px;
-    border: none;
-  }
-
-  & > img {
-    width: 170px;
-    height: 40px;
-  }
+  @include align-items(center);
+  height: 48px;
+  padding: 24px 32px 0;
+  margin-bottom: 30px;
+ 
 
   & > div {
       z-index: 9999;
@@ -43,6 +33,32 @@
     display: none;
     @include min-width($desktopMD) {
       @include flexbox();
+    }
+    button {
+      padding: 10px 14px;
+      @include min-width($desktopMD) {
+        padding: 7px 8px;
+      }
+      @include min-width(1075px) {
+        padding: 10px 14px;
+      }
+    }
+  }
+  .logoDesktop {
+    display: none;
+    @include min-width($desktopMD) {
+      display: block;
+    }
+    img {
+      @include min-width($desktopMD) {
+        width: 100%;
+        height: auto;
+        max-width: 140px;
+      }
+      @include min-width(1075px) {
+        min-width: 170px;
+        height: auto;
+      }
     }
   }
 }

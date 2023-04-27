@@ -22,6 +22,9 @@
   &.menuCategoryContainer {
     min-width: 210px;
     padding: 16px 0;
+    @include min-width($desktopMD) {
+      padding: 16px;
+    }
     &.twoCategories {
       min-width: 510px;
     }

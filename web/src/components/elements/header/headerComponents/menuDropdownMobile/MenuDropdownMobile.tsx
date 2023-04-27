@@ -21,9 +21,11 @@ const MenuDropdownMobile: React.FC<IMenuDropdownProps> = props => {
       onClick={() => setOptionOpened(!open ? item?.id : "")}
     >
       <div className={`${styles.dropdownLabel} ${cx("buttonMD")}`}>
-        {item?.label}
+        <span>{item?.label}</span>
+        <span>
+          <CrevronRightMenuSVG />
+        </span>
       </div>
-      <CrevronRightMenuSVG />
 
       <MenuSubOption item={item} open={open} />
     </div>

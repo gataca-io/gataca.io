@@ -2,19 +2,47 @@
 @import "../../../../../../styles/mixins";
 
 div.mobileMenu {
-  @include flexbox();
   cursor: pointer;
   @include min-width($desktopMD) {
     display: none;
   }
+  &.opened {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 335px;
+    max-width: 335px;
+    height: 100%;
+    background-color: $neutral100;
+    box-shadow: 0px 0px 12px rgba(12, 11, 51, 0.12);
+    border-radius: 6px;
+    @include flexbox();
+    @include flex-direction(column);
+    overflow-x: hidden;
+  }
+  .mobileMenu__header {
+    width: 100%;
+    padding: 16px 16px;
+    @include flexbox();
+    @include flex-wrap(wrap);
+    @include justify-content(flex-end);
+    @include align-items(center);
+    &.opened {
+      border-bottom: 2px solid $neutral300;
+      @include justify-content(space-between);
+      padding: 16px 16px;
+      .menuOpenClose {
+        margin-right: 37px;
+      }
+    }
+  }
   .mobileMenu__Content {
     position: absolute;
-    z-index: 2;
+    z-index: 9999;
     width: 100%;
-    background: $neutral100;
-    height: 100%;
+    height: 100vh;
     left: 0;
-    top: 74px;
+    top: 77px;
     padding-top: 16px;
   }
   .buttonsContainer {
@@ -22,5 +50,20 @@ div.mobileMenu {
     padding: 20px;
     border-top: 2px solid $neutral300;
     margin-top: 16px;
+    button {
+      width: 95px;
+      &:nth-child(2) {
+        width: 137px;
+      }
+    }
+  }
+  .backLink {
+    @include flexbox();
+    @include align-items(center);
+    margin-left: 9px;
+    .backLink__text {
+      margin-left: 13px;
+
+    }
   }
 }

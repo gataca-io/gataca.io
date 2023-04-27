@@ -4,15 +4,14 @@
 .menuDropdownRoute {
   padding: 16px;
   cursor: pointer;
-  @include flexbox();
-  @include justify-content(space-between);
-  >*:hover {
+  > *:hover {
     color: $primary700;
     stroke: $primary700;
   }
 }
 
 .dropdownLabel {
-    margin-right: 4px;
-
+  @include flexbox();
+  @include justify-content(space-between);
+  margin-right: 4px;
 }
