@@ -1,8 +1,8 @@
 import * as React from "react"
 import cx from "classnames"
-import Tag from "../../../../../components/atoms/tags/Tag"
-import { images } from "../../../../../images/images"
-import CrevronRightSVG from "../../../../../images/icons/ChevronRightSVG"
+import Tag from "../../../../components/atoms/tags/Tag"
+import { images } from "../../../../images/images"
+import CrevronRightSVG from "../../../../images/icons/ChevronRightSVG"
 import * as styles from "./secondSection.module.scss"
 
 export type ISectionProps = {

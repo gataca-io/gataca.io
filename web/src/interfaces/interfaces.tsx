@@ -4,6 +4,7 @@ export interface LinkModel {
   route?: string
   categories?: LinkModel[]
   subRoutes?: LinkModel[]
+  mainRoute?: LinkModel[]
   action?: (...args: any[]) => {}
 }
 

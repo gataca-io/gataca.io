@@ -2,11 +2,12 @@
     "data": {
         "firstSection": {
             "description": "Dive into our articles to get you from beginner to knowledgeable in decentralized identity.",
-            "resources": [{
+            "resources": [
+                {
                     "description": "Learn more about Self-Sovereign Identity",
                     "image": "",
                     "level": "Beginners",
-                    "route": "/resources/documentation",
+                    "route": "/resources/ssiBasics",
                     "title": "SSI Basics"
                 },
                 {
@@ -28,7 +29,8 @@
         },
         "secondSection": {
             "description": "Start here to master Gataca products in no time",
-            "entries": [{
+            "entries": [
+                {
                     "description": "Self-Sovereign Identity is a nascent technology combining the simplicity and usability Self-Sovereign Identity is a nascent technology combining the simplicity and usability",
                     "level": "SSI Essentials",
                     "title": "What are the implications  of EBSI 's Wallet Conformance Test? hat are the implications  of EBSI 's Wallet Conformance Test?"
