@@ -1,13 +1,8 @@
 import { Link } from "gatsby"
 import * as React from "react"
 import * as styles from "./menuOpenMobile.module.scss"
-import cx from "classnames"
-import { LinkModel } from "../../../../../../interfaces/interfaces"
 import { images } from "../../../../../../images/images"
 import { headerMenuOptions } from "../../../../../../data/globalData"
-import MenuSubOption from "../../menuSubOption/MenuSubOption"
-import CrevronDownSVG from "../../../../../../images/icons/ChevronDownSVG"
-import CrevronUpSVG from "../../../../../../images/icons/ChevronUpSVG"
 import MenuDropdownMobile from "../../menuDropdownMobile/MenuDropdownMobile"
 import ButtonsHeader from "../ButtonsHeader"
 
