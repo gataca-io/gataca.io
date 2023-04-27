@@ -1,10 +1,10 @@
 import * as React from "react"
-import * as styles from "./blogDetailedPreview.module.scss"
 import cx from "classnames"
 import moment from "moment"
+import { Link } from "gatsby"
 import StrapiImage from "../../../atoms/images/StrapiImage"
 import { BlogPreviewModel } from "../../../../interfaces/interfaces"
-import { Link } from "gatsby"
+import * as styles from "./blogDetailedPreview.module.scss"
 import { images } from "../../../../images/images"
 
 const BlogDetailedPreview: React.FC<BlogPreviewModel> = props => {

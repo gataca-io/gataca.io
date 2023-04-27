@@ -1,0 +1,64 @@
+@import "../../../../../styles/_colors.scss";
+@import "../../../../../styles/mixins.scss";
+
+.thirdSection {
+  padding: 0 20px;
+  margin-bottom: 132px;
+  @include min-width($mobileXL) {
+    padding: 0 40px;
+    margin-bottom: 200px;
+  }
+  @include min-width($desktopMD) {
+    padding: 0 60px;
+  }
+  .thirdSection__content {
+    @include min-width($tabletXL) {
+      @include flexbox();
+      @include justify-content(space-between);
+    }
+    .leftColumn {
+      margin-bottom: 80px;
+      @include min-width($tabletXL) {
+        @include flex(0, 0, calc(50% - 32px));
+        margin-bottom: 0;
+      }
+      h3 {
+        @include min-width($tabletXL) {
+          max-width: 400px;
+        }
+      }
+      p {
+        @include min-width($tabletXL) {
+          max-width: 473px;
+        }
+      }
+    }
+    .rightColumn {
+      @include min-width($tabletXL) {
+        @include flex(0, 0, calc(50% - 32px))
+      }
+      h3 {
+        margin-bottom: 40px;
+      }
+      .listContainer {
+        @include min-width($mobileXL) {
+          @include flexbox();
+          @include justify-content(space-between);
+          @include flex-wrap(wrap);
+          gap: 32px
+        }
+        .number {
+          color: $primary200;
+        }
+        .list {
+          margin-bottom: 32px;
+          @include min-width($mobileXL) {
+            @include flex(0, 0, calc((100% / 2) - 32px));
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
+

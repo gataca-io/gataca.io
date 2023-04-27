@@ -1,4 +1,5 @@
-@import "../../../../styles/_colors.scss";
+@import "../../../../styles/colors.scss";
+@import "../../../../styles/mixins.scss";
 
 .button {
     background-color: $primary700;
@@ -6,10 +7,17 @@
     padding: 10px 14px;
     height: 48px;
     border-radius: 8px;
+    @include flexbox();
+    @include justify-content(center);
+    @include align-items(center);
     cursor: pointer;
 
     &:hover {
-         background-color: $primary900;
+        background-color: $primary900;
+    }
+
+    & > svg {
+        margin-left: 8px;
     }
 }
 
@@ -20,10 +28,17 @@
     padding: 10px 14px;
     height: 48px;
     border-radius: 8px;
+    @include flexbox();
+    @include justify-content(center);
+    @include align-items(center);
     cursor: pointer;
 
      &:hover {
         font-weight: 600;
         color: $primary700;
+    }
+
+    & > svg {
+        margin-left: 8px;
     }
 }

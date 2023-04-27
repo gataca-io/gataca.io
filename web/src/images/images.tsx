@@ -90,6 +90,9 @@ import books from "./images3d/books_1.png"
 import ebsiEarlyAdoptersLogo from "./logos/ebsi-earlyadopters.svg"
 import ebsiEuroCommissionLogo from "./logos/ebsi-europeancomission.svg"
 import unaEuropalogo from "./logos/una_europa_small.svg"
+import greenCheckIcon from "./icons/greenCheck.svg"
+import closeIcon from "./icons/closeIcon.svg"
+import infoIcon from "./icons/info.svg"
 import desktopIcon from "./icons/desktop.svg"
 import searchIcon from "./icons/search.svg"
 import puzzleIcon from "./icons/puzzle.svg"
@@ -127,6 +130,10 @@ import handHoldingUserIcon from "./icons/hand-holding-user.svg"
 import chatIcon from "./icons/chat-icon.svg"
 import magnifyingGlass from "./images3d/magnifying_glass.png"
 import medalIcon from "./icons/medal.svg"
+import userLockIcon from "./icons/user-lock.svg"
+import thumbsUp from "./images3d/tumbsup.png"
+import cloudShieldIcon from "./icons/cloud-shield.svg"
+import usersIcon from "./icons/users.svg"
 
 export const images = {
   chevronDown: crevronDownSVG,
@@ -221,6 +228,9 @@ export const images = {
   ebsiEarlyAdoptersLogo: ebsiEarlyAdoptersLogo,
   ebsiEuroCommissionLogo: ebsiEuroCommissionLogo,
   unaEuropalogo: unaEuropalogo,
+  greenCheckIcon: greenCheckIcon,
+  closeIcon: closeIcon,
+  infoIcon: infoIcon,
   desktopIcon: desktopIcon,
   searchIcon: searchIcon,
   puzzleIcon: puzzleIcon,
@@ -258,4 +268,8 @@ export const images = {
   chatIcon: chatIcon,
   magnifyingGlass: magnifyingGlass,
   medalIcon: medalIcon,
+  userLockIcon: userLockIcon,
+  thumbsUp: thumbsUp,
+  cloudShieldIcon: cloudShieldIcon,
+  usersIcon: usersIcon,
 }
