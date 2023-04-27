@@ -19,7 +19,6 @@ export type ISectionProps = {
 
 const EighthSection: React.FC<ISectionProps> = props => {
   const { title, description, blogs, moreButton } = props
-  console.log("blogs", blogs)
   return (
     <div
       className={styles.eighthSection__container}

@@ -3,10 +3,10 @@ import { navigate } from "gatsby"
 import Layout from "../../components/templates/mainLayout/MainLayout"
 import PreFooterCTASection from "../../components/templates/sections/preFooterCTA/PreFooterCTA"
 import FirstSection from "./sections/firstSection/FirstSection"
-import IntroBlogSkeleton from "./components/introBlogSkeleton/introBlogSkeleton"
 import SecondSection from "./sections/secondSection/SecondSection"
 import { gatacaStudioURL } from "../../data/globalData"
 import { readingMarkdownTime } from "../../utils/time"
+import IntroBlogSkeleton from "./components/introBlogSkeleton/IntroBlogSkeleton"
 
 const ArticleTemplate: React.FC = (props: any) => {
   const [blog, setBlog] = React.useState<any | undefined>()
