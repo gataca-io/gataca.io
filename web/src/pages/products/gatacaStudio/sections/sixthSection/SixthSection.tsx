@@ -68,7 +68,6 @@ const SixthSection: React.FC<ISectionProps> = props => {
               className={`${styles?.plansSection__list}`}
               onClick={() => {
                 const element = document.getElementById("cardItem__" + index)
-                console.log("hola")
                 window?.innerWidth < 1230 && element && scrollIntoView(element)
               }}
             >

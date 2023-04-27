@@ -56,7 +56,9 @@ const BlogPage: React.FC<PageProps> = () => {
     const json_data = await require("./data/blogsData.json")
     setPageData(json_data?.data && json_data?.data)
     if (pageData) {
-      await fetch(`${process.env.STRAPI_API_URL}/api/blogs?&populate=*`)
+      await fetch(
+        `${process.env.STRAPI_API_URL}/api/blogs?sort[0]=date%3Aasc&populate=*`
+      )
         .then(response => response.json())
         .then(jsonResponse => {
           const blogs = jsonResponse?.data
@@ -91,7 +93,7 @@ const BlogPage: React.FC<PageProps> = () => {
           form={firstSection?.form}
         />
         <SecondSection
-          blogsCategorySelected={selectedCategoryBlogs}
+          blogsCategorySelected={sortByDate(selectedCategoryBlogs)}
           categories={allCategories}
           loadMoreButton={secondSection?.loadMoreButton}
           setSelectedCategoryIndex={setSelectedCategoryIndex}

@@ -1,24 +1,24 @@
 import * as React from "react"
 import cx from "classnames"
-import { BlogModel, ButtonModel } from "../../../../interfaces/interfaces"
-import { readingMarkdownTime } from "../../../../utils/time"
+import {
+  BlogPreviewModel,
+  ButtonModel,
+} from "../../../../interfaces/interfaces"
 import PurpleButton from "../../../../components/atoms/buttons/purple/PurpleButton"
-import BlogPreviewSkeleton from "../../../../components/elements/skeletons/blogPreviewSkeleton/BlogPreviewSkeleton"
 import BlogDetailedPreview from "../../../../components/elements/blogPreview/blogDetailedPreview/BlogDetailedPreview"
+import BlogPreviewSkeleton from "../../../../components/elements/skeletons/blogPreviewSkeleton/BlogPreviewSkeleton"
 import * as styles from "./eighthSection.module.scss"
+import { readingMarkdownTime } from "../../../../utils/time"
 
 export type ISectionProps = {
   title: string
   description: string
-  blogs: {
-    attributes: BlogModel
-  }[]
+  blogs: BlogPreviewModel[]
   moreButton: ButtonModel
 }
 
 const EighthSection: React.FC<ISectionProps> = props => {
   const { title, description, blogs, moreButton } = props
-
   return (
     <div
       className={styles.eighthSection__container}
@@ -44,25 +44,15 @@ const EighthSection: React.FC<ISectionProps> = props => {
           <div className={styles.blogs__container}>
             {blogs ? (
               blogs?.slice(0, 3)?.map((el, index) => {
-                const {
-                  date,
-                  previewImage,
-                  title,
-                  category,
-                  content,
-                  slugURL,
-                } = el?.attributes
+                el.attributes.timeReading = readingMarkdownTime(
+                  el?.attributes?.content
+                )
 
                 return (
                   <BlogDetailedPreview
+                    id={el?.id}
                     key={"blogPreview_" + index}
-                    date={date}
-                    previewImage={previewImage}
-                    timeReading={readingMarkdownTime(content)}
-                    title={title}
-                    category={category}
-                    content={content}
-                    slugURL={slugURL}
+                    attributes={el?.attributes}
                   />
                 )
               })

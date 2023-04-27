@@ -1,0 +1,149 @@
+@import "../../../../styles/_colors.scss";
+@import "../../../../styles/mixins.scss";
+
+.secondSection__container {
+  padding: 0 20px;
+  margin: 0px auto 132px;
+  position: relative;
+  @include min-width($mobileXL) {
+    padding: 0 40px;
+    margin: 0px auto 80px;
+  }
+  @include min-width($tabletMD) {
+    padding: 0 60px;
+    margin: 0px auto 80px;
+  }
+}
+
+.secondSection {
+  position: relative;
+  margin: 0px 0;
+  width: 100%;
+  @include flexbox();
+  @include flex-direction(column);
+  @include justify-content(space-around);
+  @include flex-wrap(wrap);
+
+  @include min-width($tabletMD) {
+    @include flex-direction(row);
+  }
+}
+
+.secondSection__leftSide {
+  margin: 0px 0 60px;
+  width: 100%;
+
+  @include min-width($tabletMD) {
+    width: 100%;
+    margin: 0 auto 0 0;
+  }
+  @include min-width(1110px) {
+    max-width: 779px;
+  }
+
+  & > p {
+    color: $neutral700;
+  }
+
+  & > .buttons_container {
+    background-color: $neutral100;
+    padding: 20px 20px 4px;
+    margin-top: 32px;
+    border-radius: 12px;
+    min-height: 284;
+    filter: drop-shadow(0px 0px 10px rgba(12, 11, 51, 0.12));
+    @include flexbox();
+    @include flex-direction(column);
+    @include justify-content(space-between);
+
+    @include min-width($tabletMD) {
+      max-width: 400px;
+    }
+    @include min-width($desktopXL) {
+      max-width: 475px;
+      padding: 20px 20px 4px;
+      margin-top: 57px;
+    }
+
+    .form__label {
+      color: $neutral700;
+      margin-bottom: 24px;
+    }
+
+    .form__input {
+      color: $neutral900;
+      height: 32px;
+      width: calc(100% - 24px) ;
+      padding: 8px 12px;
+      border-radius: 8px;
+      border: none;
+      margin-top: 24px;
+      @include min-width($desktopXL) {
+        width: 190px;
+        margin-right: 32px;
+        margin-top: 0px;
+      }
+    }
+
+    .form__button {
+      width: 100%;
+      text-align: center;
+      margin-top: 12px;
+      @include min-width($desktopXL) {
+        margin-top: 0;
+        width: 140px;
+      }
+    }
+  }
+}
+
+.secondSection__rightSide {
+  position: relative;
+  width: 100%;
+  display: block;
+  z-index: 0;
+  height: 100%;
+  margin-left: 3%;
+  @include flexbox();
+  @include flex-direction(column);
+  @include justify-content(center);
+  @include align-items(center);
+
+  @include min-width($tabletMD) {
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 100%;
+    width: calc(47% - 60px)
+  }
+  @include min-width($desktopMD) {
+     width: calc(52% - 60px)
+  }
+  @include min-width($desktopXL) {
+    margin-top: -50px;
+    width: calc(52% - 60px)
+  }
+  @include min-width($desktopXXL) {
+    margin-top: -85px;
+    width: calc(52% - 60px)
+  }
+
+  .secondSection__imageContainer {
+    width: 100%;
+    @include min-width($tabletMD) {
+      width: calc(50vw - 66px);
+      max-width: 550px;
+      display: block;
+      position: relative;
+    }
+    @include min-width($desktopXL) {
+       max-width: 650px;
+      position: absolute;
+      top: 0;
+      left: 15px
+    }
+    @include min-width($desktopXXL) {
+      left: 30px;
+      width: calc(50vw + 109px);
+    }
+  }
+}

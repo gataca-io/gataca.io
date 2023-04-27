@@ -50,7 +50,8 @@
     "react-tiny-swiper": "^1.0.3",
     "react-waypoint": "^10.3.0",
     "sass": "^1.58.3",
-    "smooth-scrollbar": "^8.8.3"
+    "smooth-scrollbar": "^8.8.3",
+    "webpack-filter-warnings-plugin": "^1.2.1"
   },
   "devDependencies": {
     "@types/locomotive-scroll": "^4.1.0",

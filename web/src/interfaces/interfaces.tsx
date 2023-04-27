@@ -26,9 +26,14 @@ export interface IconModel {
 }
 
 export interface BlogPreviewModel {
+  id: string
+  attributes: BlogModel
+}
+
+export interface BlogModel extends BlogPreviewModel {
   date: string
   previewImage: StrapiImageModel
-  timeReading: number
+  timeReading?: number
   title: string
   slugURL: string
   category: {
@@ -38,10 +43,6 @@ export interface BlogPreviewModel {
       }
     }
   }
-  content?: string
-}
-
-export interface BlogModel extends BlogPreviewModel {
   heroImage: any
   content: string
 }

@@ -1,4 +1,4 @@
-import type { PageProps } from "gatsby"
+import { PageProps, navigate } from "gatsby"
 import * as React from "react"
 import { useState } from "react"
 import Layout from "../../../components/templates/mainLayout/MainLayout"
@@ -38,8 +38,7 @@ const ContactUsPage: React.FC<PageProps> = () => {
           }
           leftButton={{
             label: "See pricing plans",
-            // TODO: Add navigation for pricing
-            action: () => console.log("hola"),
+            action: () => navigate("/pricing"),
           }}
           rightButton={{
             label: "Try for free",
