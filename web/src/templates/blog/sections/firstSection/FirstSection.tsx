@@ -1,26 +1,14 @@
 import * as React from "react"
-import cx from "classnames"
-import * as styles from "./firstSection.module.scss"
-import FormSkeleton from "../../../../pages/company/careers/sections/thirdSection/components/FormSkeleton"
-import { images } from "../../../../images/images"
-import Tag from "../../../../components/atoms/tags/Tag"
-import { BlogModel } from "../../../../interfaces/interfaces"
 import moment from "moment"
+import { BlogModel } from "../../../../interfaces/interfaces"
+import cx from "classnames"
+import Tag from "../../../../components/atoms/tags/Tag"
 import StrapiImage from "../../../../components/atoms/images/StrapiImage"
+import * as styles from "./firstSection.module.scss"
 import { readingMarkdownTime } from "../../../../utils/time"
 
 const FirstSection: React.FC<BlogModel> = props => {
-  const {
-    title,
-    category,
-    timeReading,
-    date,
-    previewImage,
-    content,
-    heroImage,
-    slugURL,
-  } = props
-  const [formSubmitted, setFormSubmitted] = React.useState(false)
+  const { title, category, timeReading, date, previewImage, content } = props
 
   const readingTimeDisplay = () => {
     if (content) {
@@ -38,10 +26,14 @@ const FirstSection: React.FC<BlogModel> = props => {
         <div className={styles.firstSection__leftSide}>
           <div className={styles.firstSection__leftSide__header}>
             {category && <Tag label={category?.data?.attributes?.name} />}
-            {timeReading && timeReading > 0 && <p>{readingTimeDisplay()}</p>}
+            {timeReading && timeReading > 0 && (
+              <p className={`${cx("neutral700 bodyRegularSM")}`}>
+                {readingTimeDisplay()}
+              </p>
+            )}
           </div>
           <h1 className={`${cx("heading1 marginBottom32")}`}>{title}</h1>
-          <p className={`${cx("bodyRegularSM")}`}>
+          <p className={`${cx("bodyRegularXL neutral700")}`}>
             {moment(date).format("LL")}
           </p>
         </div>

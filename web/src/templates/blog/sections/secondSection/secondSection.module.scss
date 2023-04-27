@@ -31,13 +31,12 @@
   width: 100%;
 
   @include min-width($tabletMD) {
-    // max-width: 779px;
     width: 100%;
     margin: 0 auto 0 0;
   }
-    @include min-width(1110px) {
-      max-width: 779px;
-    }
+  @include min-width(1110px) {
+    max-width: 779px;
+  }
 
   & > p {
     color: $neutral700;
@@ -120,7 +119,7 @@
     margin-top: -50px;
     width: calc(52% - 60px)
   }
-    @include min-width($desktopXXL) {
+  @include min-width($desktopXXL) {
     margin-top: -85px;
     width: calc(52% - 60px)
   }
@@ -141,7 +140,7 @@
     }
     @include min-width($desktopXXL) {
       left: 30px;
-     width: calc(50vw + 109px);
+      width: calc(50vw + 109px);
     }
   }
 }

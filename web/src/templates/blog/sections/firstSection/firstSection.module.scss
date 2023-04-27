@@ -9,7 +9,6 @@
   @include min-width($tabletMD) {
     margin: 200px 60px 132px;
   }
-
   @include min-width(1110px) {
     margin-bottom: 144px;
   }
@@ -35,15 +34,10 @@
   margin: 0px 0 60px;
   width: 100%;
 
-
   @include min-width(1110px) {
     max-width: 630px;
-    width: calc(100% - 608px);
+    width: calc(100% - 612px);
     margin: 0 auto 0 0;
-  }
-
-  & > p {
-    color: $neutral700;
   }
 
   &__header {
@@ -62,6 +56,8 @@
   display: block;
   z-index: 0;
   height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
 
   @include flexbox();
   @include flex-direction(column);
@@ -77,26 +73,8 @@
     height: 500px;
   }
   @include min-width(1110px) {
-    padding-left: 32px;
+    margin-left: 32px;
   }
-
-  // @include min-width($tabletMD) {
-  //   margin-top: auto;
-  //   margin-bottom: auto;
-  //   height: 100%;
-  //   width: calc(47% - 60px)
-  // }
-  // @include min-width($desktopMD) {
-  //    width: calc(52% - 60px)
-  // }
-  // @include min-width($desktopXL) {
-  //   margin-top: -50px;
-  //   width: calc(52% - 60px)
-  // }
-  //   @include min-width($desktopXXL) {
-  //   margin-top: -85px;
-  //   width: calc(52% - 60px)
-  // }
 
   .firstSection__imageContainer {
     width: 100%;
@@ -107,14 +85,14 @@
       position: relative;
     }
     @include min-width($desktopXL) {
-       max-width: 650px;
+      max-width: 650px;
       position: absolute;
       top: 0;
       left: 15px
     }
     @include min-width($desktopXXL) {
       left: 30px;
-     width: calc(50vw + 109px);
+      width: calc(50vw + 109px);
     }
   }
 }

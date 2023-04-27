@@ -1,49 +1,3 @@
-// const path = require("path")
-
-// exports.createPages = async ({ graphql, actions, reporter }) => {
-//   const { createPage } = actions
-
-//   // Define a template for blog post
-//   const articlePost = path.resolve("./src/components/templates/article.js")
-
-//   const result = await graphql(
-//     `
-//       {
-//         allStrapiBlog {
-//           nodes {
-//             title
-//             slugURL
-//             id
-//           }
-//         }
-//       }
-//     `
-//   )
-
-//   if (result.errors) {
-//     reporter.panicOnBuild(
-//       `There was an error loading your Strapi articles`,
-//       result.errors
-//     )
-
-//     return
-//   }
-
-//   const articles = result.data.allStrapiArticle.nodes
-
-//   if (articles.length > 0) {
-//     articles.forEach(article => {
-//       createPage({
-//         path: `/blog/${article.id}`,
-//         component: articlePost,
-//         context: {
-//           id: article.id,
-//         },
-//       })
-//     })
-//   }
-// }
-
 const path = require(`path`)
 
 const makeRequest = (graphql, request) =>
@@ -84,7 +38,7 @@ exports.createPages = ({ actions, graphql }) => {
     // Create pages for each article.
     result.data.allStrapiBlog.edges.forEach(({ node }) => {
       createPage({
-        path: `/blog/${node.slugURL}`,
+        path: `/blog/${node?.slugURL}`,
         component: path.resolve(`src/templates/blog/article.tsx`),
         context: {
           id: node.id,

@@ -1,12 +1,10 @@
-import { HeadFC, PageProps, graphql, navigate } from "gatsby"
+import { PageProps, navigate } from "gatsby"
 import * as React from "react"
 import { useState } from "react"
 import ReactMarkdown from "react-markdown"
 import Layout from "../components/templates/mainLayout/MainLayout"
 import PreFooterCTASection from "../components/templates/sections/preFooterCTA/PreFooterCTA"
 import LogosSlider from "../components/elements/logosSlider/LogosSlider"
-import { sortByDate } from "../utils/sort"
-import { gatacaStudioURL } from "../data/globalData"
 import EighthSection from "./home/sections/eighthSection/EighthSection"
 import SixthSection from "./home/sections/sixthSection/SixthSection"
 import FifthSection from "./home/sections/fifthSection/FifthSection"
@@ -14,6 +12,8 @@ import FourthSection from "./home/sections/fourthSection/FourthSection"
 import ThirdSection from "./home/sections/thirdSection/ThirdSection"
 import FirstSection from "./home/sections/firstSection/FirstSection"
 import * as styles from "./home/home.module.scss"
+import { sortByDate } from "../utils/sort"
+import { gatacaStudioURL } from "../data/globalData"
 
 const IndexPage: React.FC<PageProps> = props => {
   const [blogsItems, setBlogsItems] = React.useState<any | undefined>()
@@ -40,14 +40,15 @@ const IndexPage: React.FC<PageProps> = props => {
   }
 
   const getBlogsData = async () => {
-    await fetch(`${process.env.STRAPI_API_URL}/api/blogs?&populate=*`)
+    await fetch(
+      `${process.env.STRAPI_API_URL}/api/blogs?sort[0]=date%3Aasc&populate=*`
+    )
       .then(response => response.json())
       .then(jsonResponse => {
         const blogs = jsonResponse?.data
         const sorteredBlogs = sortByDate(blogs)
         setBlogsItems(sorteredBlogs)
       })
-      .catch((error: any) => {})
   }
 
   return (
