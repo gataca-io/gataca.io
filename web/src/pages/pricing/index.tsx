@@ -1,8 +1,8 @@
 import * as React from "react"
 import { useState } from "react"
 import Layout from "../../components/templates/mainLayout/MainLayout"
-import FirstSection from "./sections/firstSection/FirstSection"
 import LogosSlider from "../../components/elements/logosSlider/LogosSlider"
+import FirstSection from "./sections/firstSection/FirstSection"
 import SecondSection from "./sections/secondSection/SecondSection"
 import * as styles from "./index.module.scss"
 

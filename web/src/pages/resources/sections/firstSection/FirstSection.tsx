@@ -1,8 +1,8 @@
 import * as React from "react"
 import cx from "classnames"
-import { images } from "../../../../../images/images"
+import { images } from "../../../../images/images"
 import * as styles from "./firstSection.module.scss"
-import Tag from "../../../../../components/atoms/tags/Tag"
+import Tag from "../../../../components/atoms/tags/Tag"
 import { navigate } from "gatsby"
 
 export type ISectionProps = {
@@ -37,6 +37,7 @@ const FirstSection: React.FC<ISectionProps> = props => {
               const { title, image, description, level, route } = el
               return (
                 <div
+                  key={"resource__" + index}
                   className={`${styles?.resource}`}
                   onClick={() => navigate(route)}
                 >
