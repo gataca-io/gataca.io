@@ -56,7 +56,6 @@ const BecomeAPartnerPage: React.FC<PageProps> = () => {
           title={fifthSection?.title}
           description={fifthSection?.description}
         />
-        <hr></hr>
       </>
     </Layout>
   )

@@ -5,7 +5,7 @@ import cx from "classnames"
 import { images } from "../../../images/images"
 import {
   companyFooterMenu,
-  learnFooterMenu,
+  resourcesFooterMenu,
   productsFooterMenu,
   rightsReservedGataca,
   sectorsFooterMenu,
@@ -70,14 +70,14 @@ const Footer: React.FC = () => {
           } ${styles?.showDesktop} ${cx("marginTop10")}`}
         >
           <SectionContent navigationObject={companyFooterMenu} />
-          <SectionContent navigationObject={learnFooterMenu} />
+          <SectionContent navigationObject={resourcesFooterMenu} />
         </div>
         <div
           className={`${styles?.footerSections} ${
             styles?.mainSectionFooter__column
           } ${styles?.showMobile} ${cx("marginTop10")}`}
         >
-          <SectionContent navigationObject={learnFooterMenu} />
+          <SectionContent navigationObject={resourcesFooterMenu} />
         </div>
         <div
           className={`${styles?.footerSections} ${

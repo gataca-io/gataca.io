@@ -2,6 +2,7 @@ import * as React from "react"
 import cx from "classnames"
 import LicenseCard from "../../components/licenseCard/LicenseCard"
 import SwitchButton from "../../../../components/atoms/buttons/switchButton/SwicthButton"
+import LicensesTableMobile from "../../components/licensesTableMobile/LicensesTableMobile"
 import LicensesTable from "../../components/licensesTable/LicensesTable"
 import PurpleButton from "../../../../components/atoms/buttons/purple/PurpleButton"
 import {
@@ -9,7 +10,6 @@ import {
   IProductModel,
   InfoTogglesPricingModel,
 } from "../../../../interfaces/interfaces"
-import LicensesTableMobile from "../../components/licensesTableMobile/LicensesTableMobile"
 import OnPremisePanel from "../../components/onPremisePanel/OnPremisePanel"
 import Categories from "../../components/categories/Categories"
 import CrevronDownSVG from "../../../../images/icons/ChevronDownSVG"

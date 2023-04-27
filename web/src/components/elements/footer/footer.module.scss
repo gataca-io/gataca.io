@@ -4,6 +4,7 @@
 .footer {
   margin: 0 auto;
   padding: 80px 0 20px;
+  border-top: 2px solid $neutral300;
   .showDesktop {
     display: none;
     @include min-width($mobileXL) {
