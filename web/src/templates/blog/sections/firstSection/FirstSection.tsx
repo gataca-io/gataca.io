@@ -18,8 +18,10 @@ const FirstSection: React.FC<BlogModel> = props => {
   }
 
   return (
-    <section className={styles.firstSection__container}>
-      <div className={`${styles.firstSection} ${cx("containerMaxWidth")}`}>
+    <section
+      className={`${styles.firstSection__container} ${cx("containerMaxWidth")}`}
+    >
+      <div className={`${styles.firstSection}`}>
         <div className={styles.firstSection__leftSide}>
           <div className={styles.firstSection__leftSide__header}>
             {category && <Tag label={category?.data?.attributes?.name} />}

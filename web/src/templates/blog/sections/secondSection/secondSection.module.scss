@@ -2,13 +2,16 @@
 @import "../../../../styles/mixins.scss";
 
 .secondSection__container {
-  margin: 0px 20px 132px;
+  padding: 0 20px;
+  margin: 0px auto 132px;
   position: relative;
   @include min-width($mobileXL) {
-    margin: 0px 40px 80px;
+    padding: 0 40px;
+    margin: 0px auto 80px;
   }
   @include min-width($tabletMD) {
-    margin: 0px 60px 80px;
+    padding: 0 60px;
+    margin: 0px auto 80px;
   }
 }
 
@@ -23,7 +26,6 @@
 
   @include min-width($tabletMD) {
     @include flex-direction(row);
-    margin: 0px auto 0px;
   }
 }
 

@@ -4,8 +4,12 @@ import * as styles from "./introBlogSkeleton.module.scss"
 
 const IntroBlogSkeleton: React.FC = () => {
   return (
-    <section className={styles.introBlogSkeleton__container}>
-      <div className={`${styles.introBlogSkeleton} ${cx("containerMaxWidth")}`}>
+    <section
+      className={`${styles.introBlogSkeleton__container} ${cx(
+        "containerMaxWidth"
+      )}`}
+    >
+      <div className={`${styles.introBlogSkeleton}`}>
         <div className={styles.introBlogSkeleton__leftSide}>
           <div className={styles.introBlogSkeleton__leftSide__header}>
             <div

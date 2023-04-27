@@ -11,8 +11,12 @@ const SecondSection: React.FC<IContentProps> = props => {
   const { content } = props
 
   return (
-    <section className={styles.secondSection__container}>
-      <div className={`${styles.secondSection} ${cx("containerMaxWidth")}`}>
+    <section
+      className={`${styles.secondSection__container} ${cx(
+        "containerMaxWidth"
+      )}`}
+    >
+      <div className={`${styles.secondSection}`}>
         <div className={styles.secondSection__leftSide}>
           {content?.length && <MarkDownContent content={content} />}
         </div>
