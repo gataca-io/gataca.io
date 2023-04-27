@@ -30,38 +30,36 @@ const GovernmentPage: React.FC<PageProps> = () => {
   return (
     <Layout>
       <>
-        <main>
-          <FirstSection
-            title={firstSection?.title}
-            description={firstSection?.description}
-            contactButton={firstSection?.contactButton}
-          />
-          <SecondSection steps={secondSection?.steps} />
-          <ThirdSection
-            title={thirdSection?.title}
-            description={thirdSection?.description}
-            list={thirdSection?.list}
-          />
-          <FourthSection
-            title={fourthSection?.title}
-            description={fourthSection?.description}
-            list={fourthSection?.list}
-          />
-          <FifthSection
-            title={fifthSection?.title}
-            description={fifthSection?.description}
-          />
-          <PreFooterCTASection
-            title={"Want to know more?"}
-            description={
-              "Get to know our expertise and case studies working with entities in the public sector"
-            }
-            rightButton={{
-              label: "Contact us",
-              action: () => navigate("/company/contactUs"),
-            }}
-          />
-        </main>
+        <FirstSection
+          title={firstSection?.title}
+          description={firstSection?.description}
+          contactButton={firstSection?.contactButton}
+        />
+        <SecondSection steps={secondSection?.steps} />
+        <ThirdSection
+          title={thirdSection?.title}
+          description={thirdSection?.description}
+          list={thirdSection?.list}
+        />
+        <FourthSection
+          title={fourthSection?.title}
+          description={fourthSection?.description}
+          list={fourthSection?.list}
+        />
+        <FifthSection
+          title={fifthSection?.title}
+          description={fifthSection?.description}
+        />
+        <PreFooterCTASection
+          title={"Want to know more?"}
+          description={
+            "Get to know our expertise and case studies working with entities in the public sector"
+          }
+          rightButton={{
+            label: "Contact us",
+            action: () => navigate("/company/contactUs"),
+          }}
+        />
       </>
     </Layout>
   )
