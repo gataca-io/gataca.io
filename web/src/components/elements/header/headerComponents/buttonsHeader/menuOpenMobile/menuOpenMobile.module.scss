@@ -8,8 +8,8 @@ div.mobileMenu {
   }
   &.opened {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 20px;
+    right: 20px;
     width: 335px;
     max-width: 335px;
     height: 100%;
@@ -19,6 +19,10 @@ div.mobileMenu {
     @include flexbox();
     @include flex-direction(column);
     overflow-x: hidden;
+    overflow-y: hidden;
+    @include min-width($desktopMD) {
+      display: none;
+    }
   }
   .mobileMenu__header {
     width: 100%;
