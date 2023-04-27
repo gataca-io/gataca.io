@@ -3,22 +3,35 @@
 
 .menuSubOption {
   position: absolute;
-  top: 50px;
-  border-radius: 6px;
-  box-shadow: 0px 0px 5px 0px #0000001A;
-  padding: 16px;
-  min-width: 155px;
+  top: 0;
+  left: 0;
+  padding: 16px 8px;
   width: 100%;
-  left: 14px;
+  height: 100vh;
   z-index: 9999;
   background-color: $neutral100;
+  @include min-width($desktopSM) {
+    top: 50px;
+    left: 14px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 5px 0px #0000001A;
+    padding: 16px;
+    min-width: 155px;
+    height: auto;
+  }
   &.menuCategoryContainer {
     min-width: 210px;
+    padding: 16px 0;
     &.twoCategories {
       min-width: 510px;
     }
     .mainRoute {
-      margin-bottom: 24px;
+      margin-bottom: 16px;
+      padding: 0 8px;
+      @include min-width($desktopSM) {
+        padding: 0;
+        margin-bottom: 24px;
+      }
       a {
         display: block;
         padding: 12px;
@@ -31,14 +44,37 @@
   }
   .menuCategory {
     @include flexbox();
-    @include flex-wrap(nowrap);
+    @include flex-direction(column);
     padding: 0 0 8px;
-    gap: 0 32px;
+    gap: 20px 0;
+    @include min-width($desktopSM) {
+      @include flex-direction(row);
+      @include flex-wrap(nowrap);
+      gap: 0 32px;
+    }
+    > div {
+      padding: 0 8px;
+      @include min-width($desktopSM) {
+        padding: 0;
+      }
+      &:first-child {
+        border-top: 2px solid $neutral300;
+        border-bottom: 2px solid $neutral300;
+        padding: 28px 8px 16px;
+        @include min-width($desktopSM) {
+          border: none;
+          padding: 0;
+        }
+      }
+    }
     .menuCategoryItem__title {
       color: $neutral500;
       padding: 0 12px;
-      margin-bottom: 12px;
+      margin-bottom: 20px;
       cursor: auto;
+      @include min-width($desktopSM) {
+        margin-bottom: 12px;
+      }
     }
   }
 }

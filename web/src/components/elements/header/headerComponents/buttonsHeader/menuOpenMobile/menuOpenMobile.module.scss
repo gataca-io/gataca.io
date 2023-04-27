@@ -14,11 +14,13 @@ div.mobileMenu {
     background: $neutral100;
     height: 100%;
     left: 0;
-    top: 100px;
+    top: 74px;
+    padding-top: 16px;
   }
   .buttonsContainer {
     @include flexbox();
     padding: 20px;
     border-top: 2px solid $neutral300;
+    margin-top: 16px;
   }
 }

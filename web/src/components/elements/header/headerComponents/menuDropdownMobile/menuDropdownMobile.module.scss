@@ -2,8 +2,7 @@
 @import "../../../../../styles/mixins";
 
 .menuDropdownRoute {
-  padding: 14px 20px;
-  position: relative;
+  padding: 16px;
   cursor: pointer;
   @include flexbox();
   @include justify-content(space-between);
