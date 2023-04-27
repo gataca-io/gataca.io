@@ -2,7 +2,10 @@ import * as React from "react"
 import cx from "classnames"
 import PurpleButton from "../../../../../components/atoms/buttons/purple/PurpleButton"
 import { readingMarkdownTime } from "../../../../../utils/time"
-import { BlogModel } from "../../../../../interfaces/interfaces"
+import {
+  BlogModel,
+  BlogPreviewModel,
+} from "../../../../../interfaces/interfaces"
 import BlogPreviewSkeleton from "../../../../../components/elements/skeletons/blogPreviewSkeleton/BlogPreviewSkeleton"
 import BlogPreview from "../../../../../components/elements/blogPreview/BlogPreview"
 import * as styles from "./secondSection.module.scss"
@@ -10,6 +13,7 @@ import * as styles from "./secondSection.module.scss"
 export type ISectionProps = {
   categories: any[]
   blogsCategorySelected: {
+    id: string
     attributes: BlogModel
   }[]
   loadMoreButton: string
@@ -89,17 +93,15 @@ const SecondSection: React.FC<ISectionProps> = props => {
             blogsCategorySelected
               ?.slice(0, 6 * loadMoreCounter)
               ?.map((el, index) => {
-                const { date, previewImage, title, category, content } =
-                  el?.attributes
+                el.attributes.timeReading = readingMarkdownTime(
+                  el?.attributes?.content
+                )
 
                 return (
                   <BlogPreview
+                    id={el?.id}
                     key={"blogPreview_" + index}
-                    date={date}
-                    previewImage={previewImage}
-                    timeReading={readingMarkdownTime(content)}
-                    title={title}
-                    category={category}
+                    attributes={el?.attributes}
                   />
                 )
               })
