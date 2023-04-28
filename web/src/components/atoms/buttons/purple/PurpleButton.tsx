@@ -12,7 +12,7 @@ const PurpleButton: React.FC<ButtonModel> = props => {
       )} ${className && className}`}
       onClick={action}
     >
-      <span>{label}</span>
+      <span className={cx("buttonMD")}>{label}</span>
       {icon && <img src={icon} />}
       {IconComponent && IconComponent}
     </button>
