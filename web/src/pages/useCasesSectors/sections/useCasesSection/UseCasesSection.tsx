@@ -39,6 +39,7 @@ const UseCasesSection: React.FC<ISectionProps> = props => {
       document && document?.getElementById(subOptionClickedID || "")
     subOptionClickedID &&
       openItem &&
+      subOptionClickedID === openItem &&
       selectedUseCase?.scrollIntoView({ behavior: "smooth" })
   })
 
