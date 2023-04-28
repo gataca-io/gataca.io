@@ -9,7 +9,7 @@ import MenuOpenMobile from "./headerComponents/buttonsHeader/menuOpenMobile/Menu
 
 const Header: React.FC = () => {
   const [subMenuOpenedID, setSubMenuOpened] = React.useState("")
-  const [menuOpened, setMenuOpened] = React.useState("")
+  const [menuOpened, setMenuOpened] = React.useState(false)
 
   return (
     <>

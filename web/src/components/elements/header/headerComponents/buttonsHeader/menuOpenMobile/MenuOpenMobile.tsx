@@ -9,14 +9,12 @@ import ButtonsHeader from "../ButtonsHeader"
 import { LinkModel } from "../../../../../../interfaces/interfaces"
 
 export type IMenuDropdownProps = {
-  item: LinkModel
-  open: string
-  setMenuOpened: (x: string) => void
-  setOptionOpened: (x: string) => void
+  open: boolean
+  setMenuOpened: (x: boolean) => void
 }
 
 const MenuOpenMobile: React.FC<IMenuDropdownProps> = props => {
-  const { item, open, setMenuOpened, setOptionOpened } = props
+  const { open, setMenuOpened } = props
   const [subMenuOpenedID, setSubMenuOpened] = React.useState("")
 
   return (
@@ -35,7 +33,7 @@ const MenuOpenMobile: React.FC<IMenuDropdownProps> = props => {
             )}
             {subMenuOpenedID && (
               <div
-                onClick={() => setSubMenuOpened(!open ? item?.id : "")}
+                onClick={() => setSubMenuOpened("")}
                 className={styles?.backLink}
               >
                 <span>
@@ -52,7 +50,11 @@ const MenuOpenMobile: React.FC<IMenuDropdownProps> = props => {
             )}
           </>
         )}
-        <div onClick={() => setMenuOpened(!open)}>
+        <div
+          onClick={() => {
+            setMenuOpened(!open), setSubMenuOpened("")
+          }}
+        >
           <img src={open ? images.closeMenuIcon : images.menuIcon}></img>
         </div>
       </div>
