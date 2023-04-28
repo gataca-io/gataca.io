@@ -39,7 +39,7 @@
       @include min-width($desktopMD) {
         padding: 7px 8px;
       }
-      @include min-width(1075px) {
+      @include min-width(1080px) {
         padding: 10px 14px;
       }
     }
@@ -51,7 +51,7 @@
         height: auto;
         max-width: 140px;
       }
-      @include min-width(1075px) {
+      @include min-width(1080px) {
         min-width: 170px;
         height: auto;
       }
