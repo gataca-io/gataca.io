@@ -52,10 +52,7 @@ const MenuOpenMobile: React.FC<IMenuDropdownProps> = props => {
             )}
           </>
         )}
-        <div
-          className={styles.menuOpenClose}
-          onClick={() => setMenuOpened(!open)}
-        >
+        <div onClick={() => setMenuOpened(!open)}>
           <img src={open ? images.closeMenuIcon : images.menuIcon}></img>
         </div>
       </div>

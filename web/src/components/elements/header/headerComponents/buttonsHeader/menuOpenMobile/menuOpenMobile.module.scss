@@ -25,19 +25,16 @@ div.mobileMenu {
     }
   }
   .mobileMenu__header {
-    width: 100%;
+    width: auto;
     padding: 16px 16px;
     @include flexbox();
     @include flex-wrap(wrap);
     @include justify-content(flex-end);
     @include align-items(center);
+    min-height: 40px;
     &.opened {
       border-bottom: 2px solid $neutral300;
       @include justify-content(space-between);
-      padding: 16px 16px;
-      .menuOpenClose {
-        margin-right: 37px;
-      }
     }
   }
   .mobileMenu__Content {

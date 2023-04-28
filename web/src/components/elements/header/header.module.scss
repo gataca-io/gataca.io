@@ -17,7 +17,6 @@
   @include flexbox();
   @include flex-wrap(wrap);
   @include justify-content(space-between);
-  @include align-items(center);
   height: 48px;
   padding: 24px 32px 0;
   margin-bottom: 30px;
@@ -44,11 +43,7 @@
       }
     }
   }
-  .logoDesktop {
-    display: none;
-    @include min-width($desktopMD) {
-      display: block;
-    }
+  .header__logo {
     img {
       @include min-width($desktopMD) {
         width: 100%;

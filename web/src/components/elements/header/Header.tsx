@@ -14,7 +14,7 @@ const Header: React.FC = () => {
   return (
     <>
       <header className={styles?.header}>
-        <Link to="/">
+        <Link className={styles?.header__logo} to="/">
           <img src={images.gatacIconAndText} />
         </Link>
         <div>
