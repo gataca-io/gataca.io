@@ -13,5 +13,6 @@
 .dropdownLabel {
   @include flexbox();
   @include justify-content(space-between);
+  @include align-items(center);
   margin-right: 4px;
 }
