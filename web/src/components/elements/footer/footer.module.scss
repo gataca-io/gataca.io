@@ -73,6 +73,7 @@
     @include flexbox();
     @include flex-wrap(wrap);
     @include justify-content(space-between);
+    @include align-items(center);
     padding: 38px 20px 24px;
     @include min-width($desktopMD) {
       padding: 38px 40px 24px;
@@ -81,6 +82,20 @@
       width: 100%;
       @include min-width($tabletXL) {
         width: auto;
+      }
+      &:first-child {
+        max-width: 235px;
+        margin: 0 auto 32px;
+        @include min-width($tabletXL) {
+          margin: 0;
+        }
+      }
+      > div {
+        @include min-width($tabletXL) {
+          @include flexbox();
+          @include flex-wrap(nowrap);
+          @include justify-content(space-between);
+        }
       }
     } 
     ul {

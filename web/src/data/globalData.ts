@@ -169,6 +169,11 @@ export const headerMenuOptions: LinkModel[] = [
             label: "Blog",
             route: "/resources/blog",
           },
+          {
+            id: "certifications",
+            label: "Certifications",
+            route: "/resources/certifications",
+          },
         ],
       },
     ],
@@ -314,6 +319,11 @@ export const footerMenuOptions: LinkModel[] = [
         label: "Blog",
         route: "/resources/blog",
       },
+      {
+        id: "certifications",
+        label: "Certifications",
+        route: "/resources/certifications",
+      },
     ],
   },
   {
@@ -339,7 +349,7 @@ export const footerMenuOptions: LinkModel[] = [
   },
   {
     id: "rightsReservedGataca",
-    label: "© 2020 - All rights reserved Gataca",
+    label: "© 2020 - Gataca",
     route: "/",
   },
 ]

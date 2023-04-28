@@ -134,6 +134,7 @@ import userLockIcon from "./icons/user-lock.svg"
 import thumbsUp from "./images3d/tumbsup.png"
 import cloudShieldIcon from "./icons/cloud-shield.svg"
 import usersIcon from "./icons/users.svg"
+import ISO27001Certification from "./logos/iso-27001-certification.svg"
 
 export const images = {
   chevronDown: crevronDownSVG,
@@ -272,4 +273,5 @@ export const images = {
   thumbsUp: thumbsUp,
   cloudShieldIcon: cloudShieldIcon,
   usersIcon: usersIcon,
+  ISO27001Certification: ISO27001Certification,
 }
