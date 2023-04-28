@@ -21,6 +21,7 @@ div.mobileMenu {
     @include flex-direction(column);
     overflow-x: hidden;
     overflow-y: hidden;
+    transition: all 0.2s ease-out;
     @include min-width($desktopMD) {
       display: none;
     }
