@@ -3,22 +3,43 @@
 
 .menuSubOption {
   position: absolute;
-  top: 50px;
-  border-radius: 6px;
-  box-shadow: 0px 0px 5px 0px #0000001A;
-  padding: 16px;
-  min-width: 155px;
-  width: 100%;
-  left: 14px;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 16px 8px;
+  width: auto;
+  height: 100%;
+  max-height: 724px;
   z-index: 9999;
   background-color: $neutral100;
+  transform: translateX(100%);
+  @include min-width($desktopMD) {
+    top: 50px;
+    left: 14px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 5px 0px #0000001A;
+    padding: 16px;
+    min-width: 155px;
+    height: auto;
+  }
   &.menuCategoryContainer {
-    min-width: 210px;
+    padding: 16px 0;
+    @include min-width($desktopMD) {
+      padding: 16px;
+      min-width: 210px;
+    }
     &.twoCategories {
-      min-width: 510px;
+      @include min-width($desktopMD) {
+        min-width: 510px;
+      }
     }
     .mainRoute {
-      margin-bottom: 24px;
+      margin-bottom: 16px;
+      padding: 0 8px;
+      @include min-width($desktopMD) {
+        padding: 0;
+        margin-bottom: 24px;
+      }
       a {
         display: block;
         padding: 12px;
@@ -31,14 +52,43 @@
   }
   .menuCategory {
     @include flexbox();
-    @include flex-wrap(nowrap);
+    @include flex-direction(column);
     padding: 0 0 8px;
-    gap: 0 32px;
+    gap: 16px 0;
+    @include min-width($desktopMD) {
+      @include flex-direction(row);
+      @include flex-wrap(nowrap);
+      gap: 0 32px;
+    }
+    & > div {
+      padding: 0 8px;
+      @include min-width($desktopMD) {
+        padding: 0;
+      }
+      &:first-child {
+        border-top: 2px solid $neutral300;
+        padding: 28px 8px 0;
+        @include min-width($desktopMD) {
+          border: none;
+          padding: 0;
+        }
+      }
+      &:nth-child(2) {
+        border-top: 2px solid $neutral300;
+        padding-top: 28px;
+        @include min-width($desktopMD) {
+          border: none;
+        }
+      }
+    }
     .menuCategoryItem__title {
       color: $neutral500;
       padding: 0 12px;
-      margin-bottom: 12px;
+      margin-bottom: 20px;
       cursor: auto;
+      @include min-width($desktopMD) {
+        margin-bottom: 12px;
+      }
     }
   }
 }
@@ -49,5 +99,44 @@
   &:hover {
     background-color: $neutral200;
     border-radius: 8px;
+  }
+}
+
+.subItemActive {
+  transform: translateX(0);
+  animation: open 0.2s ease-out;
+  @include min-width($desktopMD) {
+    animation: none;
+    transform: none;
+  }
+}
+
+.subItemInActive {
+  transform: translateX(100%);
+  animation: close 0.2s ease-out;
+  @include min-width($desktopMD) {
+    display: none;
+  }
+}
+
+/* Animation */
+@keyframes open {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Animation */
+@keyframes close {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(100%);
   }
 }

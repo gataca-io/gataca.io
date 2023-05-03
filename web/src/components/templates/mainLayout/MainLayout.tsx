@@ -9,13 +9,11 @@ export type ILayoutProps = {
 
 const Layout: React.FC<ILayoutProps> = props => {
   return (
-    <main className={styles?.mainLayout}>
-      <>
-        <Header />
-        {props?.children}
-        <Footer />
-      </>
-    </main>
+    <>
+      <Header />
+      <main className={styles?.mainLayout}>{props.children}</main>
+      <Footer />
+    </>
   )
 }
 

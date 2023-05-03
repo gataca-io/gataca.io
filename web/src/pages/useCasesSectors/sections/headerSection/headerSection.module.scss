@@ -18,5 +18,14 @@
     p {
       color: $neutral700;
     }
+    .buttonContainer {
+      min-width: 134px;
+      max-width: 134px;
+      margin: 0 auto;
+
+      button {
+        width: 100%;
+      }
+    }
   }
 }

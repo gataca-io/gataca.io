@@ -10,7 +10,6 @@
   padding: 24px;
   border-radius: 12px;
   box-shadow: 1px 1px 12px rgba(12, 11, 51, 0.12);
-  cursor: pointer;
   @include min-width($mobileXL) {
     min-width: 252px;
     @include flex(0, 0, calc(30% - 32px));
@@ -64,6 +63,7 @@
     & > .link {
       margin-top: 22px;
       color: $primary700;
+      cursor: pointer;
       @include flexbox();
       @include align-items(center);
       & > img {

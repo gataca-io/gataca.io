@@ -27,10 +27,12 @@ const UseCasesSection: React.FC<ISectionProps> = props => {
             className={cx("heading1 marginBottom32")}
           ></h1>
           <p className={cx("bodyRegularXL marginBottom32")}>{description}</p>
-          <PurpleButton
-            label={"Try for free"}
-            action={() => window.open(gatacaStudioURL, "_blank")}
-          />
+          <div className={styles?.buttonContainer}>
+            <PurpleButton
+              label={"Try for free"}
+              action={() => window.open(gatacaStudioURL, "_blank")}
+            />
+          </div>
         </div>
       </section>
     </>

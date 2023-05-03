@@ -31,43 +31,41 @@ const EducationPage: React.FC<PageProps> = () => {
   return (
     <Layout>
       <>
-        <main>
-          <FirstSection
-            title={firstSection?.title}
-            description={firstSection?.description}
-            tryForFreeButton={firstSection?.tryForFreeButton}
-          />
-          <SecondSection steps={secondSection?.steps} />
-          <ThirdSection
-            title={thirdSection?.title}
-            description={thirdSection?.description}
-            list={thirdSection?.list}
-          />
-          <FourthSection
-            title={fourthSection?.title}
-            description={fourthSection?.description}
-            list={fourthSection?.list}
-          />
-          <FifthSection
-            title={fifthSection?.title}
-            stories={fifthSection?.stories}
-            list={fifthSection?.list}
-          />
-          <PreFooterCTASection
-            title={"Ready to start?"}
-            description={
-              "Create an account in Gataca Studio and start experiencing decentralized identity today. Fast & seamless integration"
-            }
-            leftButton={{
-              label: "Contact us",
-              action: () => navigate("/company/contactUs"),
-            }}
-            rightButton={{
-              label: "Try for free",
-              action: () => window.open(gatacaStudioURL, "_blank"),
-            }}
-          />
-        </main>
+        <FirstSection
+          title={firstSection?.title}
+          description={firstSection?.description}
+          tryForFreeButton={firstSection?.tryForFreeButton}
+        />
+        <SecondSection steps={secondSection?.steps} />
+        <ThirdSection
+          title={thirdSection?.title}
+          description={thirdSection?.description}
+          list={thirdSection?.list}
+        />
+        <FourthSection
+          title={fourthSection?.title}
+          description={fourthSection?.description}
+          list={fourthSection?.list}
+        />
+        <FifthSection
+          title={fifthSection?.title}
+          stories={fifthSection?.stories}
+          list={fifthSection?.list}
+        />
+        <PreFooterCTASection
+          title={"Ready to start?"}
+          description={
+            "Create an account in Gataca Studio and start experiencing decentralized identity today. Fast & seamless integration"
+          }
+          leftButton={{
+            label: "Contact us",
+            action: () => navigate("/company/contactUs"),
+          }}
+          rightButton={{
+            label: "Try for free",
+            action: () => window.open(gatacaStudioURL, "_blank"),
+          }}
+        />
       </>
     </Layout>
   )
