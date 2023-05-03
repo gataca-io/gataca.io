@@ -134,6 +134,9 @@ import userLockIcon from "./icons/user-lock.svg"
 import thumbsUp from "./images3d/tumbsup.png"
 import cloudShieldIcon from "./icons/cloud-shield.svg"
 import usersIcon from "./icons/users.svg"
+import menuIcon from "./icons/gat-icon-menu.svg"
+import closeMenuIcon from "./icons/gat-icon-close.svg"
+import chevronLeftIcon from "./icons/chevronLeft.svg"
 
 export const images = {
   chevronDown: crevronDownSVG,
@@ -272,4 +275,7 @@ export const images = {
   thumbsUp: thumbsUp,
   cloudShieldIcon: cloudShieldIcon,
   usersIcon: usersIcon,
+  menuIcon: menuIcon,
+  closeMenuIcon: closeMenuIcon,
+  chevronLeftIcon: chevronLeftIcon,
 }

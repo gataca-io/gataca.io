@@ -1,0 +1,18 @@
+@import "../../../../../styles/colors";
+@import "../../../../../styles/mixins";
+
+.menuDropdownRoute {
+  padding: 16px;
+  cursor: pointer;
+  > *:hover {
+    color: $primary700;
+    stroke: $primary700;
+  }
+}
+
+.dropdownLabel {
+  @include flexbox();
+  @include justify-content(space-between);
+  @include align-items(center);
+  margin-right: 4px;
+}
