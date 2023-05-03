@@ -1,7 +1,7 @@
 import * as React from "react"
 import cx from "classnames"
 import { images } from "../../../../../images/images"
-import PurpleButton from "../../../../../components/atoms/buttons/purple/PurpleButton"
+import { files } from "../../../../../assets/files/files"
 import { ButtonModel } from "../../../../../interfaces/interfaces"
 import * as styles from "./firstSection.module.scss"
 
@@ -52,11 +52,18 @@ const FirstSection: React.FC<ISectionProps> = props => {
                       </p>
                     )
                   })}
-                <PurpleButton
-                  className={`${cx("marginTop32")}`}
-                  label={button?.label}
-                  action={() => window.open(gatacaStudioURL, "_blank")}
-                />
+                <div
+                  className={`${cx("marginTop32")} ${styles?.buttonContainer}`}
+                >
+                  <a
+                    className={`${styles?.purpleLink}`}
+                    target="_blank"
+                    href={files.ISO27001Certification}
+                    download={button?.fileName}
+                  >
+                    <span className={cx("buttonMD")}>{button?.label}</span>
+                  </a>
+                </div>
               </div>
             )
           })}

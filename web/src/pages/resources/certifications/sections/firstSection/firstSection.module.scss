@@ -46,6 +46,27 @@
       @include min-width($tabletXL) {
         @include flex(0, 0, 70%);
       }
+      .buttonContainer {
+        .purpleLink {
+          background-color: $primary700;
+          color: $primary100;
+          padding: 16px 14px;
+          height: auto;
+          border-radius: 8px;
+          max-width: 257px;
+          @include flexbox();
+          @include justify-content(center);
+          @include align-items(center);
+          cursor: pointer;
+          &:hover {
+            background-color: $primary900;
+          }
+          margin: 0 auto;
+          @include min-width($tabletXL) {
+            margin: 0;
+          }
+        }
+      }
     }
   }
 }
