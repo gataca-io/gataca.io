@@ -11,7 +11,7 @@ import { useState } from "react"
 import UseCasesAppliedSection from "./sections/useCasesAppliedSection/UseCasesAppliedSection"
 import LogosSlider from "../../components/elements/logosSlider/LogosSlider"
 
-const UseCasesPage: React.FC<PageProps> = () => {
+const UseCasesPage: React.FC<PageProps> = props => {
   const [useCasesSectorsData, setUseCasesSectors] = useState<any | undefined>()
   const [headerSectionLoaded, setHeaderSectionLoaded] = useState<boolean>(false)
   const { headerSection, useCasesSection, useCasesAppliedSection } =
@@ -38,12 +38,18 @@ const UseCasesPage: React.FC<PageProps> = () => {
             title={useCasesSection?.title}
             description={useCasesSection?.description}
             list={useCasesSection?.list}
+            subOptionClickedID={
+              props?.location?.hash?.substring(1) !== "otherIndustries"
+                ? props?.location?.hash?.substring(1)
+                : ""
+            }
           />
           <UseCasesAppliedSection
             title={useCasesAppliedSection?.title}
             description={useCasesAppliedSection?.description}
             categories={useCasesAppliedSection?.categories}
             index={0}
+            subOptionClickedID={props?.location?.hash?.substring(1)}
           />
         </div>
         <LogosSlider />

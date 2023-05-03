@@ -3,9 +3,14 @@
 @import "../../../../styles/_types.scss";
 
 .categorySectors {
+  
   .listSectors__description {
     margin-bottom: 52px;
     max-width: 537px;
+    padding-top: 40px;
+    @include min-width($mobileXL) {
+      padding-top: 30px;
+    }
     .description {
       color: $neutral700;
     }
