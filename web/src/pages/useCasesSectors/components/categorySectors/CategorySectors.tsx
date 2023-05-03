@@ -19,12 +19,31 @@ export type ICategorySectorsProps = {
     link_route?: string
     inside_description?: string
   }[]
+  subOptionClickedID?: string
 }
 
 const CategorySectors: React.FC<ICategorySectorsProps> = props => {
-  const { id, index, title, description, selected, className, list } = props
+  const {
+    id,
+    index,
+    title,
+    description,
+    selected,
+    className,
+    list,
+    subOptionClickedID,
+  } = props
   const secondCategory = list?.length > 5
   const [showResults, setShowResults] = React.useState<number>()
+  let categoriesContent: HTMLElement | null
+
+  React.useEffect(() => {
+    categoriesContent = document && document?.getElementById("otherIndustries")
+    console.log("subOptionClickedID", subOptionClickedID, categoriesContent)
+    subOptionClickedID === "otherIndustries" &&
+      categoriesContent?.scrollIntoView({ behavior: "smooth" })
+  }, [subOptionClickedID])
+
   return (
     <div id={id} className={`${cx(styles.categorySectors)} ${className}`}>
       {selected && (
