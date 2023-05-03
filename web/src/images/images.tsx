@@ -134,6 +134,9 @@ import userLockIcon from "./icons/user-lock.svg"
 import thumbsUp from "./images3d/tumbsup.png"
 import cloudShieldIcon from "./icons/cloud-shield.svg"
 import usersIcon from "./icons/users.svg"
+import menuIcon from "./icons/gat-icon-menu.svg"
+import closeMenuIcon from "./icons/gat-icon-close.svg"
+import chevronLeftIcon from "./icons/chevronLeft.svg"
 import ISO27001Certification from "./logos/iso-27001-certification.svg"
 
 export const images = {
@@ -273,5 +276,8 @@ export const images = {
   thumbsUp: thumbsUp,
   cloudShieldIcon: cloudShieldIcon,
   usersIcon: usersIcon,
+  menuIcon: menuIcon,
+  closeMenuIcon: closeMenuIcon,
+  chevronLeftIcon: chevronLeftIcon,
   ISO27001Certification: ISO27001Certification,
 }

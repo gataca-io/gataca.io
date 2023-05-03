@@ -1,25 +1,20 @@
 import * as React from "react"
 import * as styles from "./header.module.scss"
-import { gatacaStudioURL, headerMenuOptions } from "../../../data/globalData"
+import { headerMenuOptions } from "../../../data/globalData"
 import MenuDropdown from "./headerComponents/menuDropdown/MenuDropdown"
 import { images } from "../../../images/images"
 import { Link } from "gatsby"
-import PurpleButton from "../../atoms/buttons/purple/PurpleButton"
-import cx from "classnames"
+import ButtonsHeader from "./headerComponents/buttonsHeader/ButtonsHeader"
+import MenuOpenMobile from "./headerComponents/buttonsHeader/menuOpenMobile/MenuOpenMobile"
 
 const Header: React.FC = () => {
   const [subMenuOpenedID, setSubMenuOpened] = React.useState("")
+  const [menuOpened, setMenuOpened] = React.useState(false)
 
   return (
     <>
-      {subMenuOpenedID && (
-        <div
-          onClick={() => setSubMenuOpened("")}
-          className={styles.headerLayout}
-        ></div>
-      )}
       <header className={styles?.header}>
-        <Link to="/">
+        <Link className={styles?.header__logo} to="/">
           <img src={images.gatacIconAndText} />
         </Link>
         <div>
@@ -34,18 +29,10 @@ const Header: React.FC = () => {
             )
           })}
         </div>
-        <div>
-          <PurpleButton
-            label={"Log In"}
-            outlined
-            className={cx("marginRight14")}
-            action={() => window.open(gatacaStudioURL, "_blank")}
-          />
-          <PurpleButton
-            label={"Try for free"}
-            action={() => window.open(gatacaStudioURL, "_blank")}
-          />
+        <div className={styles?.buttonsDesktop}>
+          <ButtonsHeader />
         </div>
+        <MenuOpenMobile open={menuOpened} setMenuOpened={setMenuOpened} />
       </header>
     </>
   )
