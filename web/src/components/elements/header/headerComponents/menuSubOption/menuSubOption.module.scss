@@ -60,7 +60,7 @@
       @include flex-wrap(nowrap);
       gap: 0 32px;
     }
-    > div {
+    & > div {
       padding: 0 8px;
       @include min-width($desktopMD) {
         padding: 0;
