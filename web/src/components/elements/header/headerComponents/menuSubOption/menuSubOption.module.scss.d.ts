@@ -5,3 +5,5 @@ export const twoCategories: string
 export const mainRoute: string
 export const menuCategory: string
 export const menuCategoryItem__title: string
+export const subItemActive: string
+export const subItemInActive: string

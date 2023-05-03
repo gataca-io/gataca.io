@@ -12,6 +12,7 @@
   max-height: 724px;
   z-index: 9999;
   background-color: $neutral100;
+  transform: translateX(100%);
   @include min-width($desktopMD) {
     top: 50px;
     left: 14px;
@@ -98,5 +99,37 @@
   &:hover {
     background-color: $neutral200;
     border-radius: 8px;
+  }
+}
+
+.subItemActive {
+  transform: translateX(0);
+  animation: open 0.2s ease-out;
+}
+
+.subItemInActive {
+  transform: translateX(100%);
+  animation: close 0.2s ease-out;
+}
+
+/* Animation */
+@keyframes open {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Animation */
+@keyframes close {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(100%);
   }
 }
