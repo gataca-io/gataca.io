@@ -104,12 +104,6 @@ const IndexPage: React.FC<PageProps> = props => {
             action: () => window.open(gatacaStudioURL, "_blank"),
           }}
         />
-        <ReactMarkdown>
-          {homeData?.attributes?.Body?.replaceAll(
-            "/uploads/",
-            "http://localhost:1337/uploads/"
-          ) || ""}
-        </ReactMarkdown>
       </>
     </Layout>
   )
