@@ -105,11 +105,18 @@
 .subItemActive {
   transform: translateX(0);
   animation: open 0.2s ease-out;
+  @include min-width($desktopMD) {
+    animation: none;
+    transform: none;
+  }
 }
 
 .subItemInActive {
   transform: translateX(100%);
   animation: close 0.2s ease-out;
+  @include min-width($desktopMD) {
+    display: none;
+  }
 }
 
 /* Animation */
