@@ -73,7 +73,7 @@ const UseCasesSection: React.FC<ISectionProps> = props => {
 
             return (
               <>
-                <p id={list[index + 1]?.id}></p>
+                <div id={list[index + 1]?.id}></div>
                 <ListItems
                   id={id}
                   key={"listItem__" + index}
