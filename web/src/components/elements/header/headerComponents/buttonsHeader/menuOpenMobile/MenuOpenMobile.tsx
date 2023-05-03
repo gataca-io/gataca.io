@@ -16,14 +16,12 @@ const MenuOpenMobile: React.FC<IMenuDropdownProps> = props => {
   const { open, setMenuOpened } = props
   const [subMenuOpenedID, setSubMenuOpened] = React.useState("")
   const refMenuMobile = React.useRef<HTMLDivElement>(null)
-  const refMenuMobileLogo = React.useRef<HTMLDivElement>(null)
-  const refMenuMobileIcon = React.useRef<HTMLDivElement>(null)
+  const refMenuMobileHeader = React.useRef<HTMLDivElement>(null)
   const refMenuMobileOptions = React.useRef<HTMLDivElement>(null)
 
   React.useEffect(() => {
     const contentRefs = [
-      refMenuMobileLogo?.current,
-      refMenuMobileIcon?.current,
+      refMenuMobileHeader?.current,
       refMenuMobileOptions?.current,
     ]
     open
@@ -54,10 +52,11 @@ const MenuOpenMobile: React.FC<IMenuDropdownProps> = props => {
   return (
     <div className={`${styles.mobileMenu}`} ref={refMenuMobile}>
       <div
+        ref={refMenuMobileHeader}
         className={`${styles.mobileMenu__header} ${open ? styles.opened : ""}`}
       >
         {open && (
-          <div ref={refMenuMobileLogo}>
+          <>
             {!subMenuOpenedID && (
               <div
                 className={`${styles.logo} ${
@@ -90,10 +89,9 @@ const MenuOpenMobile: React.FC<IMenuDropdownProps> = props => {
                 </span>
               </div>
             )}
-          </div>
+          </>
         )}
         <div
-          ref={refMenuMobileIcon}
           className={styles.menuIconContainer}
           onClick={() => {
             setMenuOpened(!open), setSubMenuOpened("")
