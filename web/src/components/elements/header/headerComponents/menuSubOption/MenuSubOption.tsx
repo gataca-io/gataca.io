@@ -13,14 +13,18 @@ const MenuSubOption: React.FC<IMenuSubOptionProps> = props => {
   const { item, open } = props
   const categoriesAvailable = item?.categories
 
-  return (item?.categories && item?.categories?.length && open) ||
-    (item?.subRoutes && item?.subRoutes?.length && open) ||
-    (item?.mainRoute && item?.mainRoute?.length && open) ? (
+  return (item?.categories && item?.categories?.length) ||
+    (item?.subRoutes && item?.subRoutes?.length) ||
+    (item?.mainRoute && item?.mainRoute?.length) ? (
     <div
       id={item?.id}
       className={`${styles?.menuSubOption} ${
         categoriesAvailable ? styles?.menuCategoryContainer : ""
-      } ${categoriesAvailable?.length > 1 ? styles?.twoCategories : ""}`}
+      } ${
+        categoriesAvailable && categoriesAvailable?.length > 1
+          ? styles?.twoCategories
+          : ""
+      } ${open ? styles?.subItemActive : styles?.subItemInActive}`}
     >
       {item?.mainRoute && (
         <div className={styles?.mainRoute}>
