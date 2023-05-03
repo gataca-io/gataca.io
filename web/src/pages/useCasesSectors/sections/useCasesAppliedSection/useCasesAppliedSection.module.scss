@@ -8,10 +8,10 @@
   }
   .useCasesAppliedSection__header {
     max-width: 770px;
-    margin: 0 auto 80px;
+    margin: 0 auto 40px;
     text-align: center;
     @include min-width($mobileXL) {
-      margin-bottom: 60px;
+      margin-bottom: 30px;
     }
     p {
       color: $neutral700;
