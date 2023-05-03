@@ -138,6 +138,7 @@ import menuIcon from "./icons/gat-icon-menu.svg"
 import closeMenuIcon from "./icons/gat-icon-close.svg"
 import chevronLeftIcon from "./icons/chevronLeft.svg"
 import ISO27001Certification from "./logos/iso-27001-certification.svg"
+import ISO27001Logo from "./logos/iso27001.svg"
 
 export const images = {
   chevronDown: crevronDownSVG,
@@ -280,4 +281,5 @@ export const images = {
   closeMenuIcon: closeMenuIcon,
   chevronLeftIcon: chevronLeftIcon,
   ISO27001Certification: ISO27001Certification,
+  ISO27001Logo: ISO27001Logo,
 }
