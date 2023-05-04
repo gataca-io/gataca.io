@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "gataca_studios",
+  "info": {
+    "singularName": "gataca-studio",
+    "pluralName": "gataca-studios",
+    "displayName": "2.2. Products - Studio",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

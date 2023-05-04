@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "sectors_educations",
+  "info": {
+    "singularName": "sectors-education",
+    "pluralName": "sectors-educations",
+    "displayName": "3.3. Sectors - Education",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "seo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.seo"
+    }
+  }
+}
