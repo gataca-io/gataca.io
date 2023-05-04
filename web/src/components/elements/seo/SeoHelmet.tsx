@@ -1,17 +1,21 @@
 import React from "react"
 import { Helmet } from "react-helmet-async"
 import { gatacaURL, twitterHandler } from "../../../data/globalData"
+import { StrapiImageModel } from "../../../interfaces/interfaces"
 
 interface IHelmet {
   title: string
   description: string
   keywords: string
-  rrssImg?: string
+  rrssImg?: StrapiImageModel
   canonicalURL?: string
 }
 
 export const SeoHelmet: React.FC<IHelmet> = props => {
   const { title, description, rrssImg, keywords, canonicalURL } = props
+
+  const getSeoRRSSImgURL = (image?: StrapiImageModel) =>
+    image?.data?.attributes?.url ? image?.data?.attributes?.url : undefined
 
   return (
     <Helmet>
@@ -30,7 +34,7 @@ export const SeoHelmet: React.FC<IHelmet> = props => {
         property="og:image"
         content={
           (process.env.STRAPI_API_URL &&
-            process.env.STRAPI_API_URL + rrssImg) ||
+            process.env.STRAPI_API_URL + getSeoRRSSImgURL(rrssImg)) ||
           ""
         }
       />
@@ -43,7 +47,7 @@ export const SeoHelmet: React.FC<IHelmet> = props => {
         name="twitter:image"
         content={
           (process.env.STRAPI_API_URL &&
-            process.env.STRAPI_API_URL + rrssImg) ||
+            process.env.STRAPI_API_URL + getSeoRRSSImgURL(rrssImg)) ||
           ""
         }
       />

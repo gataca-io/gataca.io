@@ -41,7 +41,7 @@ const ArticleTemplate: React.FC = (props: any) => {
           <SeoHelmet
             title={blogData?.seo?.metaTitle}
             description={blogData?.seo?.metaDescription}
-            rrssImg={getSeoRRSSImgURL(blogData?.seo?.rrssImg)}
+            rrssImg={blogData?.seo?.rrssImg}
             keywords={blogData?.seo?.keywords}
           />
         )}
