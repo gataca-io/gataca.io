@@ -2597,7 +2597,8 @@
       "info": {
         "singularName": "test-sync",
         "pluralName": "test-syncs",
-        "displayName": "testSync"
+        "displayName": "testSync",
+        "description": ""
       },
       "options": {
         "draftAndPublish": true
@@ -2606,6 +2607,12 @@
       "attributes": {
         "title": {
           "type": "string"
+        },
+        "SEO": {
+          "type": "component",
+          "repeatable": false,
+          "component": "shared.seo",
+          "required": true
         },
         "createdAt": {
           "type": "datetime"
@@ -2645,7 +2652,8 @@
         "info": {
           "singularName": "test-sync",
           "pluralName": "test-syncs",
-          "displayName": "testSync"
+          "displayName": "testSync",
+          "description": ""
         },
         "options": {
           "draftAndPublish": true
@@ -2654,6 +2662,12 @@
         "attributes": {
           "title": {
             "type": "string"
+          },
+          "SEO": {
+            "type": "component",
+            "repeatable": false,
+            "component": "shared.seo",
+            "required": true
           }
         },
         "kind": "collectionType"

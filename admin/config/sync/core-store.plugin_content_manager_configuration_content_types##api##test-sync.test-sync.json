@@ -34,6 +34,20 @@
           "sortable": true
         }
       },
+      "SEO": {
+        "edit": {
+          "label": "SEO",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "SEO",
+          "searchable": false,
+          "sortable": false
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -75,6 +89,12 @@
           {
             "name": "title",
             "size": 6
+          }
+        ],
+        [
+          {
+            "name": "SEO",
+            "size": 12
           }
         ]
       ]
