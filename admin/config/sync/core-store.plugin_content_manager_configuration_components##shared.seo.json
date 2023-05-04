@@ -48,30 +48,16 @@
           "sortable": true
         }
       },
-      "metaImage": {
+      "facebookImg": {
         "edit": {
-          "label": "metaImage",
+          "label": "facebookImg",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "metaImage",
-          "searchable": false,
-          "sortable": false
-        }
-      },
-      "metaSocial": {
-        "edit": {
-          "label": "metaSocial",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "metaSocial",
+          "label": "facebookImg",
           "searchable": false,
           "sortable": false
         }
@@ -90,48 +76,6 @@
           "sortable": true
         }
       },
-      "metaRobots": {
-        "edit": {
-          "label": "metaRobots",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "metaRobots",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "structuredData": {
-        "edit": {
-          "label": "structuredData",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "structuredData",
-          "searchable": false,
-          "sortable": false
-        }
-      },
-      "metaViewport": {
-        "edit": {
-          "label": "metaViewport",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "metaViewport",
-          "searchable": true,
-          "sortable": true
-        }
-      },
       "canonicalURL": {
         "edit": {
           "label": "canonicalURL",
@@ -145,6 +89,34 @@
           "searchable": true,
           "sortable": true
         }
+      },
+      "twitterImg": {
+        "edit": {
+          "label": "twitterImg",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "twitterImg",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "linkedInImg": {
+        "edit": {
+          "label": "linkedInImg",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "linkedInImg",
+          "searchable": false,
+          "sortable": false
+        }
       }
     },
     "layouts": {
@@ -152,7 +124,7 @@
         "id",
         "metaTitle",
         "metaDescription",
-        "metaImage"
+        "facebookImg"
       ],
       "edit": [
         [
@@ -167,35 +139,23 @@
         ],
         [
           {
-            "name": "metaImage",
+            "name": "keywords",
             "size": 6
           }
         ],
         [
           {
-            "name": "metaSocial",
-            "size": 12
-          }
-        ],
-        [
-          {
-            "name": "keywords",
+            "name": "facebookImg",
             "size": 6
           },
           {
-            "name": "metaRobots",
+            "name": "linkedInImg",
             "size": 6
           }
         ],
         [
           {
-            "name": "structuredData",
-            "size": 12
-          }
-        ],
-        [
-          {
-            "name": "metaViewport",
+            "name": "twitterImg",
             "size": 6
           },
           {

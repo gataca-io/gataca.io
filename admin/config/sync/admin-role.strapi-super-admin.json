@@ -61,16 +61,11 @@
         "fields": [
           "Seo.metaTitle",
           "Seo.metaDescription",
-          "Seo.metaImage",
-          "Seo.metaSocial.socialNetwork",
-          "Seo.metaSocial.title",
-          "Seo.metaSocial.description",
-          "Seo.metaSocial.image",
+          "Seo.facebookImg",
           "Seo.keywords",
-          "Seo.metaRobots",
-          "Seo.structuredData",
-          "Seo.metaViewport",
           "Seo.canonicalURL",
+          "Seo.twitterImg",
+          "Seo.linkedInImg",
           "title",
           "date",
           "previewImage",
@@ -102,16 +97,11 @@
         "fields": [
           "Seo.metaTitle",
           "Seo.metaDescription",
-          "Seo.metaImage",
-          "Seo.metaSocial.socialNetwork",
-          "Seo.metaSocial.title",
-          "Seo.metaSocial.description",
-          "Seo.metaSocial.image",
+          "Seo.facebookImg",
           "Seo.keywords",
-          "Seo.metaRobots",
-          "Seo.structuredData",
-          "Seo.metaViewport",
           "Seo.canonicalURL",
+          "Seo.twitterImg",
+          "Seo.linkedInImg",
           "title",
           "date",
           "previewImage",
@@ -131,16 +121,11 @@
         "fields": [
           "Seo.metaTitle",
           "Seo.metaDescription",
-          "Seo.metaImage",
-          "Seo.metaSocial.socialNetwork",
-          "Seo.metaSocial.title",
-          "Seo.metaSocial.description",
-          "Seo.metaSocial.image",
+          "Seo.facebookImg",
           "Seo.keywords",
-          "Seo.metaRobots",
-          "Seo.structuredData",
-          "Seo.metaViewport",
           "Seo.canonicalURL",
+          "Seo.twitterImg",
+          "Seo.linkedInImg",
           "title",
           "date",
           "previewImage",
@@ -211,16 +196,11 @@
           "Title",
           "seo.metaTitle",
           "seo.metaDescription",
-          "seo.metaImage",
-          "seo.metaSocial.socialNetwork",
-          "seo.metaSocial.title",
-          "seo.metaSocial.description",
-          "seo.metaSocial.image",
+          "seo.facebookImg",
           "seo.keywords",
-          "seo.metaRobots",
-          "seo.structuredData",
-          "seo.metaViewport",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "seo.twitterImg",
+          "seo.linkedInImg"
         ],
         "locales": [
           "en"
@@ -258,16 +238,11 @@
           "Title",
           "seo.metaTitle",
           "seo.metaDescription",
-          "seo.metaImage",
-          "seo.metaSocial.socialNetwork",
-          "seo.metaSocial.title",
-          "seo.metaSocial.description",
-          "seo.metaSocial.image",
+          "seo.facebookImg",
           "seo.keywords",
-          "seo.metaRobots",
-          "seo.structuredData",
-          "seo.metaViewport",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "seo.twitterImg",
+          "seo.linkedInImg"
         ],
         "locales": [
           "en"
@@ -285,16 +260,11 @@
           "Title",
           "seo.metaTitle",
           "seo.metaDescription",
-          "seo.metaImage",
-          "seo.metaSocial.socialNetwork",
-          "seo.metaSocial.title",
-          "seo.metaSocial.description",
-          "seo.metaSocial.image",
+          "seo.facebookImg",
           "seo.keywords",
-          "seo.metaRobots",
-          "seo.structuredData",
-          "seo.metaViewport",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "seo.twitterImg",
+          "seo.linkedInImg"
         ],
         "locales": [
           "en"
@@ -307,7 +277,14 @@
       "subject": "api::test-sync.test-sync",
       "properties": {
         "fields": [
-          "title"
+          "title",
+          "SEO.metaTitle",
+          "SEO.metaDescription",
+          "SEO.facebookImg",
+          "SEO.keywords",
+          "SEO.canonicalURL",
+          "SEO.twitterImg",
+          "SEO.linkedInImg"
         ]
       },
       "conditions": []
@@ -329,7 +306,14 @@
       "subject": "api::test-sync.test-sync",
       "properties": {
         "fields": [
-          "title"
+          "title",
+          "SEO.metaTitle",
+          "SEO.metaDescription",
+          "SEO.facebookImg",
+          "SEO.keywords",
+          "SEO.canonicalURL",
+          "SEO.twitterImg",
+          "SEO.linkedInImg"
         ]
       },
       "conditions": []
@@ -339,7 +323,14 @@
       "subject": "api::test-sync.test-sync",
       "properties": {
         "fields": [
-          "title"
+          "title",
+          "SEO.metaTitle",
+          "SEO.metaDescription",
+          "SEO.facebookImg",
+          "SEO.keywords",
+          "SEO.canonicalURL",
+          "SEO.twitterImg",
+          "SEO.linkedInImg"
         ]
       },
       "conditions": []
