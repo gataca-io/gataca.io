@@ -31,7 +31,7 @@ export interface BlogPreviewModel {
 }
 
 export interface BlogModel extends BlogPreviewModel {
-  Seo: SeoModel
+  seo: SeoModel
   date: string
   previewImage: StrapiImageModel
   timeReading?: number

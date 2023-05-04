@@ -37,12 +37,12 @@ const ArticleTemplate: React.FC = (props: any) => {
   return (
     <Layout>
       <>
-        {blogData?.Seo && (
+        {blogData?.seo && (
           <SeoHelmet
-            title={blogData?.Seo?.metaTitle}
-            description={blogData?.Seo?.metaDescription}
-            rrssImg={getSeoRRSSImgURL(blogData?.Seo?.rrssImg)}
-            keywords={blogData?.Seo?.keywords}
+            title={blogData?.seo?.metaTitle}
+            description={blogData?.seo?.metaDescription}
+            rrssImg={getSeoRRSSImgURL(blogData?.seo?.rrssImg)}
+            keywords={blogData?.seo?.keywords}
           />
         )}
         {blogData?.content ? (
