@@ -177,12 +177,6 @@
       }
     },
     "layouts": {
-      "list": [
-        "id",
-        "Seo",
-        "title",
-        "category"
-      ],
       "edit": [
         [
           {
@@ -196,27 +190,33 @@
             "size": 6
           },
           {
-            "name": "category",
+            "name": "author",
             "size": 6
           }
         ],
         [
+          {
+            "name": "slugURL",
+            "size": 6
+          },
           {
             "name": "date",
             "size": 6
-          },
+          }
+        ],
+        [
           {
             "name": "previewImage",
+            "size": 6
+          },
+          {
+            "name": "heroImage",
             "size": 6
           }
         ],
         [
           {
-            "name": "heroImage",
-            "size": 6
-          },
-          {
-            "name": "author",
+            "name": "category",
             "size": 6
           }
         ],
@@ -225,13 +225,13 @@
             "name": "content",
             "size": 12
           }
-        ],
-        [
-          {
-            "name": "slugURL",
-            "size": 6
-          }
         ]
+      ],
+      "list": [
+        "id",
+        "Seo",
+        "title",
+        "category"
       ]
     }
   },
