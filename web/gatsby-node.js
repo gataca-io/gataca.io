@@ -16,9 +16,18 @@ const makeRequest = (graphql, request) =>
 
 // Implement the Gatsby API “createPages”. This is called once the
 // data layer is bootstrapped to let plugins create pages from data.
-exports.createPages = ({ actions, graphql }) => {
-  const { createPage } = actions
 
+const redirects = require("./redirects.json")
+
+exports.createPages = ({ actions, graphql }) => {
+  const { createPage, createRedirect } = actions
+
+  redirects.forEach(redirect =>
+    createRedirect({
+      fromPath: redirect.fromPath,
+      toPath: redirect.toPath,
+    })
+  )
   const getArticles = makeRequest(
     graphql,
     `
