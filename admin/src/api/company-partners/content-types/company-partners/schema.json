@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "company_partner",
+  "info": {
+    "singularName": "company-partners",
+    "pluralName": "company-partner",
+    "displayName": "4.4. Company - Partners"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

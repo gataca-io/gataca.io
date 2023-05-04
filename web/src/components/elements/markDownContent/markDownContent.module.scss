@@ -25,6 +25,17 @@
     list-style-position: inside;
   }
 
+  & > ol {
+    margin-left: 16px;
+    list-style: inside;
+    list-style-type: decimal;
+    margin-bottom: 18px;
+
+    & > li {
+      margin-bottom: 6px;
+    }
+  }
+
   & > h1, h2, h3, h4, h5, h6 {
     margin-bottom: 32px;
     margin-top: 40px;

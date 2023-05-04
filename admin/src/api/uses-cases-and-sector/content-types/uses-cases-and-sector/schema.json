@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "uses_cases_and_sectors",
+  "info": {
+    "singularName": "uses-cases-and-sector",
+    "pluralName": "uses-cases-and-sectors",
+    "displayName": "3.1. Uses Cases & Sectors",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

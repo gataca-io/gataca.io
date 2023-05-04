@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "sectors_web3s",
+  "info": {
+    "singularName": "sectors-web3",
+    "pluralName": "sectors-web3s",
+    "displayName": "3.5. Sectors - Web3",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

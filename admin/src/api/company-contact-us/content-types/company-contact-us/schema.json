@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "company_contact_uses",
+  "info": {
+    "singularName": "company-contact-us",
+    "pluralName": "company-contact-uses",
+    "displayName": "4.2. Company - Contact",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

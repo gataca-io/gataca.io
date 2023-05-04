@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "resources_documentations",
+  "info": {
+    "singularName": "resources-documentation",
+    "pluralName": "resources-documentations",
+    "displayName": "5.2. Resources - Docs",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

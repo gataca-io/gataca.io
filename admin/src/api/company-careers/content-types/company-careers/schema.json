@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "company_career",
+  "info": {
+    "singularName": "company-careers",
+    "pluralName": "company-career",
+    "displayName": "4.3. Company - Careers"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}
