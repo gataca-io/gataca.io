@@ -61,11 +61,9 @@
         "fields": [
           "Seo.metaTitle",
           "Seo.metaDescription",
-          "Seo.facebookImg",
+          "Seo.rrssImg",
           "Seo.keywords",
           "Seo.canonicalURL",
-          "Seo.twitterImg",
-          "Seo.linkedInImg",
           "title",
           "date",
           "previewImage",
@@ -97,11 +95,9 @@
         "fields": [
           "Seo.metaTitle",
           "Seo.metaDescription",
-          "Seo.facebookImg",
+          "Seo.rrssImg",
           "Seo.keywords",
           "Seo.canonicalURL",
-          "Seo.twitterImg",
-          "Seo.linkedInImg",
           "title",
           "date",
           "previewImage",
@@ -121,11 +117,9 @@
         "fields": [
           "Seo.metaTitle",
           "Seo.metaDescription",
-          "Seo.facebookImg",
+          "Seo.rrssImg",
           "Seo.keywords",
           "Seo.canonicalURL",
-          "Seo.twitterImg",
-          "Seo.linkedInImg",
           "title",
           "date",
           "previewImage",
@@ -196,11 +190,9 @@
           "Title",
           "seo.metaTitle",
           "seo.metaDescription",
-          "seo.facebookImg",
+          "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL",
-          "seo.twitterImg",
-          "seo.linkedInImg"
+          "seo.canonicalURL"
         ],
         "locales": [
           "en"
@@ -238,11 +230,9 @@
           "Title",
           "seo.metaTitle",
           "seo.metaDescription",
-          "seo.facebookImg",
+          "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL",
-          "seo.twitterImg",
-          "seo.linkedInImg"
+          "seo.canonicalURL"
         ],
         "locales": [
           "en"
@@ -260,11 +250,9 @@
           "Title",
           "seo.metaTitle",
           "seo.metaDescription",
-          "seo.facebookImg",
+          "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL",
-          "seo.twitterImg",
-          "seo.linkedInImg"
+          "seo.canonicalURL"
         ],
         "locales": [
           "en"
@@ -280,11 +268,9 @@
           "title",
           "SEO.metaTitle",
           "SEO.metaDescription",
-          "SEO.facebookImg",
+          "SEO.rrssImg",
           "SEO.keywords",
-          "SEO.canonicalURL",
-          "SEO.twitterImg",
-          "SEO.linkedInImg"
+          "SEO.canonicalURL"
         ]
       },
       "conditions": []
@@ -309,11 +295,9 @@
           "title",
           "SEO.metaTitle",
           "SEO.metaDescription",
-          "SEO.facebookImg",
+          "SEO.rrssImg",
           "SEO.keywords",
-          "SEO.canonicalURL",
-          "SEO.twitterImg",
-          "SEO.linkedInImg"
+          "SEO.canonicalURL"
         ]
       },
       "conditions": []
@@ -326,11 +310,9 @@
           "title",
           "SEO.metaTitle",
           "SEO.metaDescription",
-          "SEO.facebookImg",
+          "SEO.rrssImg",
           "SEO.keywords",
-          "SEO.canonicalURL",
-          "SEO.twitterImg",
-          "SEO.linkedInImg"
+          "SEO.canonicalURL"
         ]
       },
       "conditions": []
