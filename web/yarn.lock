@@ -1099,6 +1099,11 @@
     "@babel/helper-validator-identifier" "^7.19.1"
     to-fast-properties "^2.0.0"
 
+"@bakkenbaeck/gatsby-plugin-rename-routes@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@bakkenbaeck/gatsby-plugin-rename-routes/-/gatsby-plugin-rename-routes-1.0.0.tgz#8921c2101216560347430ffd37700acdb5e39afe"
+  integrity sha512-hIa78dyiCY0KOclntgjyn5l/bPY2b5YtDzLolZ4FGTu/WuzsyWxh4dqvfHez2kASg+btMUNEEirr92EEI/+t3Q==
+
 "@bcoe/v8-coverage@^0.2.3":
   version "0.2.3"
   resolved "https://registry.npmjs.org/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz"
