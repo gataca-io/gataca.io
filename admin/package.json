@@ -24,6 +24,7 @@
     "@strapi/plugin-i18n": "4.7.1",
     "@strapi/plugin-seo": "^1.8.0",
     "@strapi/plugin-users-permissions": "4.7.1",
+    "@strapi/provider-upload-aws-s3": "^4.10.2",
     "@strapi/strapi": "4.7.1",
     "better-sqlite3": "8.0.1",
     "pg": "^8.10.0",
