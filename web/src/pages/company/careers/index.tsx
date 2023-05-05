@@ -8,11 +8,13 @@ import ThirdSection from "./sections/thirdSection/ThirdSection"
 
 const CareersPage: React.FC<PageProps> = () => {
   const [careersData, setCareers] = useState<any | undefined>()
+  const [strapiData, setStrapiData] = React.useState<any | undefined>()
   const { firstSection, secondSection, thirdSection } = careersData
     ? careersData
     : []
 
   React.useEffect(() => {
+    getStrapiData()
     getCareers()
   }, [])
   const getCareers = async () => {
@@ -20,8 +22,17 @@ const CareersPage: React.FC<PageProps> = () => {
     setCareers(json_data?.data && json_data?.data)
   }
 
+  const getStrapiData = async () => {
+    await fetch(`${process.env.STRAPI_API_URL}/api/company-careers?&populate=*`)
+      .then(response => response.json())
+      .then(jsonResponse => {
+        const strapiData = jsonResponse?.data?.attributes
+        setStrapiData(strapiData)
+      })
+  }
+
   return (
-    <Layout>
+    <Layout seoData={strapiData?.seo}>
       <>
         <FirstSection
           title={firstSection?.title}

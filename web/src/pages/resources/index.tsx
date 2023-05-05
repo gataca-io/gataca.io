@@ -9,8 +9,10 @@ import SecondSection from "./sections/secondSection/SecondSection"
 const BlogPage: React.FC<PageProps> = () => {
   const [resourcesData, setResourcesData] = React.useState<any | undefined>()
   const { firstSection, secondSection } = resourcesData ? resourcesData : []
+  const [strapiData, setStrapiData] = React.useState<any | undefined>()
 
   React.useEffect(() => {
+    getStrapiData()
     getResourcesData()
   })
 
@@ -19,8 +21,17 @@ const BlogPage: React.FC<PageProps> = () => {
     setResourcesData(json_data?.data && json_data?.data)
   }
 
+  const getStrapiData = async () => {
+    await fetch(`${process.env.STRAPI_API_URL}/api/resources?&populate=*`)
+      .then(response => response.json())
+      .then(jsonResponse => {
+        const strapiData = jsonResponse?.data?.attributes
+        setStrapiData(strapiData)
+      })
+  }
+
   return (
-    <Layout>
+    <Layout seoData={strapiData?.seo}>
       <>
         <FirstSection
           title={firstSection?.title}

@@ -14,6 +14,7 @@ const GatacaWalletPage: React.FC<PageProps> = () => {
   const [gatacaWalletData, setGatacaWallet] = useState<any | undefined>()
   const [fistSectionLoaded, setFistSectionLoaded] = useState<boolean>(false)
   const [secondSectionLoaded, setSecondSectionLoaded] = useState<boolean>(false)
+  const [strapiData, setStrapiData] = React.useState<any | undefined>()
 
   const {
     firstSection,
@@ -25,6 +26,8 @@ const GatacaWalletPage: React.FC<PageProps> = () => {
   } = gatacaWalletData ? gatacaWalletData : []
 
   React.useEffect(() => {
+    getStrapiData()
+
     getGatacaWallet()
   }, [])
 
@@ -33,8 +36,17 @@ const GatacaWalletPage: React.FC<PageProps> = () => {
     setGatacaWallet(json_data?.data && json_data?.data)
   }
 
+  const getStrapiData = async () => {
+    await fetch(`${process.env.STRAPI_API_URL}/api/gataca-wallet?&populate=*`)
+      .then(response => response.json())
+      .then(jsonResponse => {
+        const strapiData = jsonResponse?.data?.attributes
+        setStrapiData(strapiData)
+      })
+  }
+
   return (
-    <Layout>
+    <Layout seoData={strapiData?.seo}>
       <>
         <FirstSection
           title={firstSection?.title}

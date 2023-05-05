@@ -16,17 +16,30 @@ const UseCasesPage: React.FC<PageProps> = props => {
   const [headerSectionLoaded, setHeaderSectionLoaded] = useState<boolean>(false)
   const { headerSection, useCasesSection, useCasesAppliedSection } =
     useCasesSectorsData ? useCasesSectorsData : []
+  const [strapiData, setStrapiData] = useState<any | undefined>()
 
   React.useEffect(() => {
+    getStrapiData()
     getUseCasesSectors()
   }, [])
+
+  const getStrapiData = async () => {
+    await fetch(
+      `${process.env.STRAPI_API_URL}/api/uses-cases-and-sector?&populate=*`
+    )
+      .then(response => response.json())
+      .then(jsonResponse => {
+        const strapiData = jsonResponse?.data?.attributes
+        setStrapiData(strapiData)
+      })
+  }
 
   const getUseCasesSectors = async () => {
     const json_data = require("./data/useCasesSectorsData.json")
     setUseCasesSectors(json_data?.data && json_data?.data)
   }
   return (
-    <Layout>
+    <Layout seoData={strapiData?.seo}>
       <>
         <div className={styles?.useCasesSectors}>
           <HeaderSection

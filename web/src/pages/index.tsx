@@ -18,6 +18,8 @@ import { gatacaStudioURL } from "../data/globalData"
 const IndexPage: React.FC<PageProps> = props => {
   const [blogsItems, setBlogsItems] = React.useState<any | undefined>()
   const [homeData, setHomeData] = useState<any | undefined>()
+  const [homeStrapiData, setHomeStrapiData] = useState<any | undefined>()
+
   const {
     firstSection,
     thirdSection,
@@ -28,6 +30,7 @@ const IndexPage: React.FC<PageProps> = props => {
   } = homeData ? homeData : []
 
   React.useEffect(() => {
+    getHomeStrapiData()
     getHomeData()
     if (!blogsItems) {
       getBlogsData()
@@ -51,8 +54,17 @@ const IndexPage: React.FC<PageProps> = props => {
       })
   }
 
+  const getHomeStrapiData = async () => {
+    await fetch(`${process.env.STRAPI_API_URL}/api/entry?&populate=*`)
+      .then(response => response.json())
+      .then(jsonResponse => {
+        const homeData = jsonResponse?.data?.attributes
+        setHomeStrapiData(homeData)
+      })
+  }
+
   return (
-    <Layout>
+    <Layout seoData={homeStrapiData?.seo}>
       <>
         <FirstSection
           title={firstSection?.title}
