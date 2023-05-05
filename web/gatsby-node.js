@@ -26,6 +26,8 @@ exports.createPages = ({ actions, graphql }) => {
     createRedirect({
       fromPath: redirect.fromPath,
       toPath: redirect.toPath,
+      redirectInBrowser: true,
+      isPermanent: true,
     })
   )
   const getArticles = makeRequest(

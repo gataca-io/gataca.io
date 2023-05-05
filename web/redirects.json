@@ -22,5 +22,9 @@
   {
     "fromPath": "/404/",
     "toPath": "/"
+  },
+  {
+    "fromPath": "/404.html",
+    "toPath": "/"
   }
 ]
