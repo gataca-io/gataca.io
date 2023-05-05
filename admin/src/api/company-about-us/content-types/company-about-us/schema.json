@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "company_about_uses",
+  "info": {
+    "singularName": "company-about-us",
+    "pluralName": "company-about-uses",
+    "displayName": "4.1. Company - About",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

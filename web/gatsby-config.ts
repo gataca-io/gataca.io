@@ -9,6 +9,7 @@ module.exports = {
   plugins: [
     "gatsby-plugin-gatsby-cloud",
     "gatsby-plugin-sass",
+    "gatsby-plugin-react-helmet-async",
     {
       resolve: "gatsby-source-strapi",
       options: {

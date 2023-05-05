@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "sectors_governments",
+  "info": {
+    "singularName": "sectors-government",
+    "pluralName": "sectors-governments",
+    "displayName": "3.2. Sectors - Government",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

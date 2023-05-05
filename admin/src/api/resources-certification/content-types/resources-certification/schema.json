@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "resources_certifications",
+  "info": {
+    "singularName": "resources-certification",
+    "pluralName": "resources-certifications",
+    "displayName": "5.5. Resources - Certs",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

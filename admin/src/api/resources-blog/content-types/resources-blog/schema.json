@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "resources_blogs",
+  "info": {
+    "singularName": "resources-blog",
+    "pluralName": "resources-blogs",
+    "displayName": "5.4. Resources - Blogs"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "seo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.seo"
+    }
+  }
+}

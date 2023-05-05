@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "gataca_wallets",
+  "info": {
+    "singularName": "gataca-wallet",
+    "pluralName": "gataca-wallets",
+    "displayName": "2.1. Products - Wallet",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

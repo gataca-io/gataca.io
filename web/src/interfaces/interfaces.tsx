@@ -32,6 +32,7 @@ export interface BlogPreviewModel {
 }
 
 export interface BlogModel extends BlogPreviewModel {
+  seo: SeoModel
   date: string
   previewImage: StrapiImageModel
   timeReading?: number
@@ -46,6 +47,15 @@ export interface BlogModel extends BlogPreviewModel {
   }
   heroImage: any
   content: string
+}
+
+export interface SeoModel {
+  id: string
+  metaTitle: string
+  metaDescription: string
+  keywords: string
+  canonicalURL?: string
+  rrssImg?: StrapiImageModel
 }
 
 export interface StrapiImageModel {
