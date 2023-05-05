@@ -9,15 +9,10 @@ export type IMarkDownContentProps = {
 
 const MarkDownContent: React.FC<IMarkDownContentProps> = props => {
   const { content, className } = props
-  let formattedContent =
-    content?.replaceAll(
-      "/uploads/",
-      `${process.env.STRAPI_API_URL}/uploads/`
-    ) || ""
 
   return (
     <div className={styles.markDownContent}>
-      <ReactMarkdown>{formattedContent}</ReactMarkdown>
+      <ReactMarkdown>{content}</ReactMarkdown>
     </div>
   )
 }

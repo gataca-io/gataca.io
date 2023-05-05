@@ -14,7 +14,7 @@ const StrapiImage: React.FC<IStrapiImageProps> = props => {
   return imageURL ? (
     <img
       className={className}
-      src={process.env.STRAPI_API_URL + imageAtt?.url}
+      src={imageAtt?.url}
       alt={imageAtt?.alternativeText}
     />
   ) : null
