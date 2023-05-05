@@ -15,6 +15,7 @@ export interface ButtonModel {
   outlined?: boolean
   className?: any
   url?: string
+  fileName?: string
   action: (x?: any) => void
 }
 

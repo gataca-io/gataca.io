@@ -98,31 +98,36 @@ const Footer: React.FC = () => {
           "containerMaxWidth"
         )}`}
       >
-        <div className={cx("marginBottom16")}>
-          <ul>
-            {subFooterMenu?.subRoutes?.map((item, index) => {
-              return (
-                <li key={"subFooter__" + item.id + index}>
-                  <Link
-                    id={"subFooter__" + item.id}
-                    className={cx("buttonMD")}
-                    to={item.route || ""}
-                  >
-                    {item.label}
-                  </Link>
-                </li>
-              )
-            })}
-          </ul>
+        <div>
+          <img src={images.ISO27001Certification}></img>
         </div>
-        <div
-          className={`${styles?.rightsReserved} ${cx(
-            "buttonMD marginBottom16"
-          )}`}
-          id={rightsReservedGataca?.id}
-          key={"footer__" + rightsReservedGataca?.id}
-        >
-          {rightsReservedGataca?.label}
+        <div>
+          <div>
+            <div>
+              <ul>
+                {subFooterMenu?.subRoutes?.map((item, index) => {
+                  return (
+                    <li key={"subFooter__" + item.id + index}>
+                      <Link
+                        id={"subFooter__" + item.id}
+                        className={cx("buttonMD")}
+                        to={item.route || ""}
+                      >
+                        {item.label}
+                      </Link>
+                    </li>
+                  )
+                })}
+              </ul>
+            </div>
+            <div
+              className={`${styles?.rightsReserved} ${cx("buttonMD")}`}
+              id={rightsReservedGataca?.id}
+              key={"footer__" + rightsReservedGataca?.id}
+            >
+              {rightsReservedGataca?.label}
+            </div>
+          </div>
         </div>
       </section>
     </footer>

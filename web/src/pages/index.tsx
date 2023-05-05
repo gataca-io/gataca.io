@@ -1,7 +1,6 @@
 import { PageProps, navigate } from "gatsby"
 import * as React from "react"
 import { useState } from "react"
-import ReactMarkdown from "react-markdown"
 import Layout from "../components/templates/mainLayout/MainLayout"
 import PreFooterCTASection from "../components/templates/sections/preFooterCTA/PreFooterCTA"
 import LogosSlider from "../components/elements/logosSlider/LogosSlider"
@@ -15,7 +14,7 @@ import * as styles from "./home/home.module.scss"
 import { sortByDate } from "../utils/sort"
 import { gatacaStudioURL } from "../data/globalData"
 
-const IndexPage: React.FC<PageProps> = props => {
+const IndexPage: React.FC<PageProps> = () => {
   const [blogsItems, setBlogsItems] = React.useState<any | undefined>()
   const [homeData, setHomeData] = useState<any | undefined>()
   const [homeStrapiData, setHomeStrapiData] = useState<any | undefined>()

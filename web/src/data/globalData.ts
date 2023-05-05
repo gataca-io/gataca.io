@@ -12,8 +12,8 @@ export const youtubeURL =
   "https://www.youtube.com/channel/UCcjJqmCa1UmbbS8ZpM8kkAQ"
 export const legalGatacaEmail = "legal@gataca.io"
 export const gatacaURL = "https://www.gataca.io"
-export const privacyPolicyURL = "/privacyPolicy"
-export const cookiePolicyURL = "/cookiePolicy"
+export const privacyPolicyURL = "/privacy-policy"
+export const cookiePolicyURL = "/cookie-policy"
 export const gdprGatacaEmail = "gdpr@gataca.io"
 // TODO: Update TW @ when new account is created
 export const twitterHandler = "@gataca_id"
@@ -31,7 +31,7 @@ export const headerMenuOptions: LinkModel[] = [
       {
         id: "gatacaWallet",
         label: "Gataca Wallet",
-        route: "/products/gatacaWallet",
+        route: "/products/wallet",
       },
     ],
   },
@@ -42,7 +42,7 @@ export const headerMenuOptions: LinkModel[] = [
       {
         id: "discoverAllUseCases",
         label: "Discover All Use Cases & Sectors",
-        route: "/useCasesSectors",
+        route: "/use-cases",
       },
     ],
     categories: [
@@ -53,32 +53,32 @@ export const headerMenuOptions: LinkModel[] = [
           {
             id: "customerOnboarding",
             label: "Customer onboarding (KYC / KYB)",
-            route: "/useCasesSectors/#customerOnboarding",
+            route: "/use-cases/#customerOnboarding",
           },
           {
             id: "userAuthentication",
             label: "User authentication (SSO)",
-            route: "/useCasesSectors/#userAuthentication",
+            route: "/use-cases/#userAuthentication",
           },
           {
             id: "physicalAccessControl",
             label: "Physical Access Control",
-            route: "/useCasesSectors/#physicalAccessControl",
+            route: "/use-cases/#physicalAccessControl",
           },
           {
             id: "issuanceIdentityCredentials",
             label: "Issuance of identity credentials",
-            route: "/useCasesSectors/#issuanceIdentityCredentials",
+            route: "/use-cases/#issuanceIdentityCredentials",
           },
           {
             id: "signatureContractsDocuments",
             label: "Signature of contracts & documents",
-            route: "/useCasesSectors/#signatureContractsDocuments",
+            route: "/use-cases/#signatureContractsDocuments",
           },
           {
             id: "electronicVoting",
             label: "Electronic voting",
-            route: "/useCasesSectors/#electronicVoting",
+            route: "/use-cases/#electronicVoting",
           },
         ],
       },
@@ -89,27 +89,27 @@ export const headerMenuOptions: LinkModel[] = [
           {
             id: "government",
             label: "Government",
-            route: "/useCasesSectors/government",
+            route: "/use-cases/government",
           },
           {
             id: "education",
             label: "Education",
-            route: "/useCasesSectors/education",
+            route: "/use-cases/education",
           },
           {
             id: "finance",
             label: "Finance",
-            route: "/useCasesSectors/finance",
+            route: "/use-cases/finance",
           },
           {
             id: "web3",
             label: "Web3",
-            route: "/useCasesSectors/web3",
+            route: "/use-cases/web3",
           },
           {
             id: "otherIndustries",
             label: "Other industries",
-            route: "/useCasesSectors/#otherIndustries",
+            route: "/use-cases/#otherIndustries",
           },
         ],
       },
@@ -122,22 +122,22 @@ export const headerMenuOptions: LinkModel[] = [
       {
         id: "aboutUs",
         label: "About",
-        route: "/company/aboutUs",
+        route: "/company/about",
       },
       {
         id: "careers",
         label: "Careers",
-        route: "/company/careers",
+        route: "/company/jobs",
       },
       {
         id: "contactUs",
         label: "Contact Us",
-        route: "/company/contactUs",
+        route: "/company/contact",
       },
       {
         id: "becomeAPartner",
         label: "Become a Partner",
-        route: "/company/becomeAPartner",
+        route: "/company/partnership",
       },
     ],
   },
@@ -171,6 +171,11 @@ export const headerMenuOptions: LinkModel[] = [
             label: "Blog",
             route: "/resources/blog",
           },
+          {
+            id: "certifications",
+            label: "Certifications",
+            route: "/resources/certifications",
+          },
         ],
       },
     ],
@@ -190,7 +195,7 @@ export const footerMenuOptions: LinkModel[] = [
       {
         id: "gatacaWallet",
         label: "Wallet",
-        route: "/products/gatacaWallet",
+        route: "/products/wallet",
       },
       {
         id: "pricing",
@@ -211,32 +216,32 @@ export const footerMenuOptions: LinkModel[] = [
       {
         id: "customerOnboarding",
         label: "Customer onboarding",
-        route: "/useCasesSectors/#customerOnboarding",
+        route: "/use-cases/#customerOnboarding",
       },
       {
         id: "userAuthentication",
         label: "User authentication",
-        route: "/useCasesSectors/#userAuthentication",
+        route: "/use-cases/#userAuthentication",
       },
       {
         id: "physicalAccessControl",
         label: "Physical Access Control",
-        route: "/useCasesSectors/#physicalAccessControl",
+        route: "/use-cases/#physicalAccessControl",
       },
       {
         id: "issuanceIdentityCredentials",
         label: "Issuance of identity credentials",
-        route: "/useCasesSectors/#issuanceIdentityCredentials",
+        route: "/use-cases/#issuanceIdentityCredentials",
       },
       {
         id: "signatureContracts",
         label: "Signature of contracts and other documents",
-        route: "/useCasesSectors/#signatureContractsDocuments",
+        route: "/use-cases/#signatureContractsDocuments",
       },
       {
         id: "electronicVoting",
         label: "Electronic voting",
-        route: "/useCasesSectors/#electronicVoting",
+        route: "/use-cases/#electronicVoting",
       },
     ],
   },
@@ -247,27 +252,27 @@ export const footerMenuOptions: LinkModel[] = [
       {
         id: "government",
         label: "Government",
-        route: "/useCasesSectors/government",
+        route: "/use-cases/government",
       },
       {
         id: "education",
         label: "Education",
-        route: "/useCasesSectors/education",
+        route: "/use-cases/education",
       },
       {
         id: "finance",
         label: "Finance",
-        route: "/useCasesSectors/finance",
+        route: "/use-cases/finance",
       },
       {
         id: "web3",
         label: "Web 3.0",
-        route: "/useCasesSectors/web3",
+        route: "/use-cases/web3",
       },
       {
         id: "otherIndustries",
         label: "Other industries",
-        route: "/useCasesSectors/#otherIndustries",
+        route: "/use-cases/#otherIndustries",
       },
     ],
   },
@@ -278,22 +283,22 @@ export const footerMenuOptions: LinkModel[] = [
       {
         id: "aboutUs",
         label: "About",
-        route: "/company/aboutUs",
+        route: "/company/about",
       },
       {
         id: "careers",
         label: "Careers",
-        route: "/company/careers",
+        route: "/company/jobs",
       },
       {
         id: "contactUs",
         label: "Contact Us",
-        route: "/company/contactUs",
+        route: "/company/contact",
       },
       {
         id: "becomeAPartner",
         label: "Become a Partner",
-        route: "/company/becomeAPartner",
+        route: "/company/partnership",
       },
     ],
   },
@@ -316,6 +321,11 @@ export const footerMenuOptions: LinkModel[] = [
         label: "Blog",
         route: "/resources/blog",
       },
+      {
+        id: "certifications",
+        label: "Certifications",
+        route: "/resources/certifications",
+      },
     ],
   },
   {
@@ -325,23 +335,23 @@ export const footerMenuOptions: LinkModel[] = [
       {
         id: "privacyPolicy",
         label: "Privacy Policy",
-        route: "/privacyPolicy",
+        route: "/privacy-policy",
       },
       {
         id: "cookiesPolicy",
         label: "Cookies Policy",
-        route: "/cookiePolicy",
+        route: "/cookie-policy",
       },
       {
         id: "termsOfUse",
         label: "Terms of Use",
-        route: "/termsOfUse",
+        route: "/generic-terms-of-service",
       },
     ],
   },
   {
     id: "rightsReservedGataca",
-    label: "© 2020 - All rights reserved Gataca",
+    label: "© 2020 - Gataca",
     route: "/",
   },
 ]

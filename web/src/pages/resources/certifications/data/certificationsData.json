@@ -1,0 +1,23 @@
+{
+  "data": {
+    "firstSection": {
+      "description": "List of Gataca’s active certifications",
+      "list": [
+        {
+          "button": {
+            "fileName": "Gataca-Espana-S.L-ISO27001-2022-Official-Certificate.pdf",
+            "label": "Download certificate"
+          },
+          "descriptionParagraphs": [
+            "Gataca is ISO/IEC 27001:2022 certified.",
+            "ISO 27001 is the globally recognized standard for Information Security Management Systems (ISMS).",
+            "This certification confirms our commitment to implementing best practices and continuously improving our risk-based security program. Our management system was inspected by Prescient Security LLC, an accredited certification body for information security management systems.",
+            "ISO 27001 requires organizations to certify their information security management controls across their entire IT infrastructure, from asset management and access control to human resource security and application security."
+          ],
+          "title": "ISO/IEC 27001:2022 Certification"
+        }
+      ],
+      "title": "Certifications"
+    }
+  }
+}

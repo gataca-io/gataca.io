@@ -3,7 +3,7 @@
 
 .footer {
   margin: 0 auto;
-  padding: 80px 0 20px;
+  padding: 80px 0 0;
   border-top: 2px solid $neutral300;
   .showDesktop {
     display: none;
@@ -73,18 +73,33 @@
     @include flexbox();
     @include flex-wrap(wrap);
     @include justify-content(space-between);
-    padding: 38px 20px 24px;
+    @include align-items(center);
+    padding: 28px 20px 32px;
     @include min-width($desktopMD) {
-      padding: 38px 40px 24px;
+      padding: 28px 40px 32px;
     }
     > div {
       width: 100%;
       @include min-width($tabletXL) {
         width: auto;
       }
+      &:first-child {
+        max-width: 235px;
+        margin: 0 auto 32px;
+        @include min-width($tabletXL) {
+          margin: 0;
+        }
+      }
+      > div {
+        @include min-width($tabletXL) {
+          @include flexbox();
+          @include flex-wrap(nowrap);
+          @include justify-content(space-between);
+        }
+      }
     } 
     ul {
-      margin-bottom: 24px;
+      margin-bottom: 16px;
       @include flexbox();
       @include flex-wrap(wrap);
       @include justify-content(center);
