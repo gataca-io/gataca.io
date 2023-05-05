@@ -20,7 +20,9 @@ const BecomeAPartnerPage: React.FC<PageProps> = () => {
   } = becomeAPartnerData ? becomeAPartnerData : []
 
   React.useEffect(() => {
-    getStrapiData()
+    if (!strapiData) {
+      getStrapiData()
+    }
     getBecomeAPartner()
   }, [])
 

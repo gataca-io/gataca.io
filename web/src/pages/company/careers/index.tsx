@@ -14,7 +14,9 @@ const CareersPage: React.FC<PageProps> = () => {
     : []
 
   React.useEffect(() => {
-    getStrapiData()
+    if (!strapiData) {
+      getStrapiData()
+    }
     getCareers()
   }, [])
   const getCareers = async () => {

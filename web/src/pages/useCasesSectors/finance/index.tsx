@@ -22,7 +22,9 @@ const FinancePage: React.FC<PageProps> = () => {
   } = financeData ? financeData : []
 
   React.useEffect(() => {
-    getStrapiData()
+    if (!strapiData) {
+      getStrapiData()
+    }
     getFinanceData()
   }, [])
   const getFinanceData = async () => {

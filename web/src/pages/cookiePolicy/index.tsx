@@ -16,7 +16,9 @@ const CookiePolicy: React.FC<PageProps> = () => {
   const [strapiData, setStrapiData] = React.useState<any | undefined>()
 
   React.useEffect(() => {
-    getStrapiData()
+    if (!strapiData) {
+      getStrapiData()
+    }
   }, [])
 
   const getStrapiData = async () => {

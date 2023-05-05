@@ -22,7 +22,9 @@ const GovernmentPage: React.FC<PageProps> = () => {
   } = governmentData ? governmentData : []
 
   React.useEffect(() => {
-    getStrapiData()
+    if (!strapiData) {
+      getStrapiData()
+    }
     getGovernment()
   }, [])
   const getGovernment = async () => {

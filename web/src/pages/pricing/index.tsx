@@ -12,7 +12,9 @@ const Pricing: React.FC = () => {
   const { firstSection, secondSection } = pricingData ? pricingData : []
 
   React.useEffect(() => {
-    getStrapiData()
+    if (!strapiData) {
+      getStrapiData()
+    }
     getPricing()
   }, [])
 

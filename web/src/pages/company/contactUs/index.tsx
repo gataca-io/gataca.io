@@ -13,7 +13,9 @@ const ContactUsPage: React.FC<PageProps> = () => {
   const { firstSection, secondSection } = contactUsData ? contactUsData : []
 
   React.useEffect(() => {
-    getStrapiData()
+    if (!strapiData) {
+      getStrapiData()
+    }
     getcontactUs()
   }, [])
   const getcontactUs = async () => {

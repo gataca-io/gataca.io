@@ -25,7 +25,9 @@ const GatacaStudioPage: React.FC<PageProps> = () => {
   } = gatacaStudioData ? gatacaStudioData : []
 
   React.useEffect(() => {
-    getStrapiData()
+    if (!strapiData) {
+      getStrapiData()
+    }
     getGatacaStudioData()
   }, [])
 

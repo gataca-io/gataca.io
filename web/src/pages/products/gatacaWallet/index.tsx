@@ -26,7 +26,9 @@ const GatacaWalletPage: React.FC<PageProps> = () => {
   } = gatacaWalletData ? gatacaWalletData : []
 
   React.useEffect(() => {
-    getStrapiData()
+    if (!strapiData) {
+      getStrapiData()
+    }
 
     getGatacaWallet()
   }, [])

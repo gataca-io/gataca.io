@@ -19,7 +19,9 @@ const UseCasesPage: React.FC<PageProps> = props => {
   const [strapiData, setStrapiData] = useState<any | undefined>()
 
   React.useEffect(() => {
-    getStrapiData()
+    if (!strapiData) {
+      getStrapiData()
+    }
     getUseCasesSectors()
   }, [])
 

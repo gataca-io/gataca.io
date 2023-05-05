@@ -23,7 +23,9 @@ const EducationPage: React.FC<PageProps> = () => {
   } = educationData ? educationData : []
 
   React.useEffect(() => {
-    getStrapiData()
+    if (!strapiData) {
+      getStrapiData()
+    }
     getEducation()
   }, [])
 

@@ -25,7 +25,9 @@ const AboutUsPage: React.FC<PageProps> = () => {
   } = aboutUsData ? aboutUsData : []
 
   React.useEffect(() => {
-    getStrapiData()
+    if (!strapiData) {
+      getStrapiData()
+    }
     getaboutUs()
   }, [])
   const getaboutUs = async () => {

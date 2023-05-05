@@ -22,7 +22,9 @@ const Web3Page: React.FC<PageProps> = () => {
   } = web3Data ? web3Data : []
 
   React.useEffect(() => {
-    getStrapiData()
+    if (!strapiData) {
+      getStrapiData()
+    }
     getWeb3Data()
   }, [])
 

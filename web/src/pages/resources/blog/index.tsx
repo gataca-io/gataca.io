@@ -21,7 +21,9 @@ const BlogPage: React.FC<PageProps> = () => {
   const [strapiData, setStrapiData] = React.useState<any | undefined>()
 
   React.useEffect(() => {
-    getStrapiData()
+    if (!strapiData) {
+      getStrapiData()
+    }
     if (!blogsItems) {
       getPageData()
     }
