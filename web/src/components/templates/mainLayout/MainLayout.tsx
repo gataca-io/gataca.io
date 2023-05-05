@@ -18,10 +18,11 @@ const Layout: React.FC<ILayoutProps> = props => {
       <Header />
       {seoData && (
         <SeoHelmet
-          title={seoData?.metaTitle}
-          description={seoData?.metaDescription}
+          metaTitle={seoData?.metaTitle}
+          metaDescription={seoData?.metaDescription}
           rrssImg={seoData?.rrssImg}
           keywords={seoData?.keywords}
+          id={seoData?.id}
         />
       )}
       <main className={styles?.mainLayout}>{props.children}</main>

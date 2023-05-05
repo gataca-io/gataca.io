@@ -31,20 +31,9 @@ const ArticleTemplate: React.FC = (props: any) => {
       })
   }
 
-  const getSeoRRSSImgURL = (image?: StrapiImageModel) =>
-    image?.data?.attributes?.url ? image?.data?.attributes?.url : undefined
-
   return (
-    <Layout>
+    <Layout seoData={blogData?.seo}>
       <>
-        {blogData?.seo && (
-          <SeoHelmet
-            title={blogData?.seo?.metaTitle}
-            description={blogData?.seo?.metaDescription}
-            rrssImg={blogData?.seo?.rrssImg}
-            keywords={blogData?.seo?.keywords}
-          />
-        )}
         {blogData?.content ? (
           <FirstSection
             {...blogData}

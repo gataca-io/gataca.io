@@ -18,8 +18,12 @@ const BlogPage: React.FC<PageProps> = () => {
   const [selectedCategoryBlogs, setSelectedCategoryBlogs] = React.useState(
     allCategories[selectedCategoryIndex]?.attributes?.blogs?.data
   )
+  const [strapiData, setStrapiData] = React.useState<any | undefined>()
 
   React.useEffect(() => {
+    if (!strapiData) {
+      getStrapiData()
+    }
     if (!blogsItems) {
       getPageData()
     }
@@ -84,8 +88,17 @@ const BlogPage: React.FC<PageProps> = () => {
     }
   }
 
+  const getStrapiData = async () => {
+    await fetch(`${process.env.STRAPI_API_URL}/api/resources-blog?&populate=*`)
+      .then(response => response.json())
+      .then(jsonResponse => {
+        const strapiData = jsonResponse?.data?.attributes
+        setStrapiData(strapiData)
+      })
+  }
+
   return (
-    <Layout>
+    <Layout seoData={strapiData?.seo}>
       <>
         <FirstSection
           title={firstSection?.title}

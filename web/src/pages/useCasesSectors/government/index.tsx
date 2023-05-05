@@ -12,6 +12,7 @@ import FifthSection from "./sections/fifthSection/FifthSection"
 
 const GovernmentPage: React.FC<PageProps> = () => {
   const [governmentData, setGovernment] = useState<any | undefined>()
+  const [strapiData, setStrapiData] = useState<any | undefined>()
   const {
     firstSection,
     secondSection,
@@ -21,14 +22,28 @@ const GovernmentPage: React.FC<PageProps> = () => {
   } = governmentData ? governmentData : []
 
   React.useEffect(() => {
+    if (!strapiData) {
+      getStrapiData()
+    }
     getGovernment()
   }, [])
   const getGovernment = async () => {
     const json_data = require("./data/governmentData.json")
     setGovernment(json_data?.data && json_data?.data)
   }
+
+  const getStrapiData = async () => {
+    await fetch(
+      `${process.env.STRAPI_API_URL}/api/sectors-government?&populate=*`
+    )
+      .then(response => response.json())
+      .then(jsonResponse => {
+        const strapiData = jsonResponse?.data?.attributes
+        setStrapiData(strapiData)
+      })
+  }
   return (
-    <Layout>
+    <Layout seoData={strapiData?.seo}>
       <>
         <FirstSection
           title={firstSection?.title}

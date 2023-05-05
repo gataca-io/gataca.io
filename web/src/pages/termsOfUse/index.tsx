@@ -18,8 +18,25 @@ export type ITableOfContentProps = {
 }
 const TermsOfUse: React.FC<PageProps> = () => {
   const [tableOfContentOpenedID, setTableOfContentOpened] = React.useState("")
+  const [strapiData, setStrapiData] = React.useState<any | undefined>()
+
+  React.useEffect(() => {
+    if (!strapiData) {
+      getStrapiData()
+    }
+  }, [])
+
+  const getStrapiData = async () => {
+    await fetch(`${process.env.STRAPI_API_URL}/api/terms-of-use?&populate=*`)
+      .then(response => response.json())
+      .then(jsonResponse => {
+        const strapiData = jsonResponse?.data?.attributes
+        setStrapiData(strapiData)
+      })
+  }
+
   return (
-    <Layout>
+    <Layout seoData={strapiData?.seo}>
       <section className={`${styles?.termsOfUse} ${cx("containerMaxWidth")}`}>
         {tableOfContent?.map((item, index) => {
           return (
@@ -48,10 +65,11 @@ const TermsOfUse: React.FC<PageProps> = () => {
                 identity technology through our software applications
                 (collectively, “<b>Gataca Platform</b>”), including but not
                 limited to our website
-                <Link to={gatacaURL}> https://gataca.io</Link> (“<b>Website</b>
-                ”), a cloud-based end-to-end solution (“<b>Gataca Studio</b>”),
-                our on-premise applications GATACA Certify and GATACA Connect
-                and a mobile application (“
+                <Link to={gatacaURL}> https://gataca.io</Link> (“
+                <b>Website</b>
+                ”), a cloud-based end-to-end solution (“<b>Gataca Studio</b>
+                ”), our on-premise applications GATACA Certify and GATACA
+                Connect and a mobile application (“
                 <b>Gataca Wallet</b>”).
               </p>
               <p className={cx("marginBottom20")}>

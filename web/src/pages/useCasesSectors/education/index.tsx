@@ -13,6 +13,7 @@ import { gatacaStudioURL } from "../../../data/globalData"
 
 const EducationPage: React.FC<PageProps> = () => {
   const [educationData, setEducation] = useState<any | undefined>()
+  const [strapiData, setStrapiData] = useState<any | undefined>()
   const {
     firstSection,
     secondSection,
@@ -22,14 +23,30 @@ const EducationPage: React.FC<PageProps> = () => {
   } = educationData ? educationData : []
 
   React.useEffect(() => {
+    if (!strapiData) {
+      getStrapiData()
+    }
     getEducation()
   }, [])
+
   const getEducation = async () => {
     const json_data = require("./data/educationData.json")
     setEducation(json_data?.data && json_data?.data)
   }
+
+  const getStrapiData = async () => {
+    await fetch(
+      `${process.env.STRAPI_API_URL}/api/sectors-education?&populate=*`
+    )
+      .then(response => response.json())
+      .then(jsonResponse => {
+        const strapiData = jsonResponse?.data?.attributes
+        setStrapiData(strapiData)
+      })
+  }
+
   return (
-    <Layout>
+    <Layout seoData={strapiData?.seo}>
       <>
         <FirstSection
           title={firstSection?.title}

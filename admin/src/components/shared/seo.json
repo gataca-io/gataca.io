@@ -30,7 +30,7 @@
     "keywords": {
       "type": "string",
       "regex": "[^,]+",
-      "required": true
+      "required": false
     },
     "canonicalURL": {
       "type": "string",

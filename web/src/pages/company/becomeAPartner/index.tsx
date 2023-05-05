@@ -10,6 +10,7 @@ import FifthSection from "./sections/fifthSection/FifthSection"
 
 const BecomeAPartnerPage: React.FC<PageProps> = () => {
   const [becomeAPartnerData, setBecomeAPartner] = useState<any | undefined>()
+  const [strapiData, setStrapiData] = React.useState<any | undefined>()
   const {
     firstSection,
     secondSection,
@@ -19,15 +20,30 @@ const BecomeAPartnerPage: React.FC<PageProps> = () => {
   } = becomeAPartnerData ? becomeAPartnerData : []
 
   React.useEffect(() => {
+    if (!strapiData) {
+      getStrapiData()
+    }
     getBecomeAPartner()
   }, [])
+
   const getBecomeAPartner = async () => {
     const json_data = require("./data/becomeAPartnerData.json")
     setBecomeAPartner(json_data?.data && json_data?.data)
   }
 
+  const getStrapiData = async () => {
+    await fetch(
+      `${process.env.STRAPI_API_URL}/api/company-partners?&populate=*`
+    )
+      .then(response => response.json())
+      .then(jsonResponse => {
+        const strapiData = jsonResponse?.data?.attributes
+        setStrapiData(strapiData)
+      })
+  }
+
   return (
-    <Layout>
+    <Layout seoData={strapiData?.seo}>
       <>
         <FirstSection
           title={firstSection?.title}

@@ -53,7 +53,7 @@ export interface SeoModel {
   id: string
   metaTitle: string
   metaDescription: string
-  keywords: string
+  keywords?: string
   canonicalURL?: string
   rrssImg?: StrapiImageModel
 }

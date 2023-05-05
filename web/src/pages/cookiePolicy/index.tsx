@@ -13,8 +13,25 @@ export type ITableOfContentProps = {
 }
 const CookiePolicy: React.FC<PageProps> = () => {
   const [tableOfContentOpenedID, setTableOfContentOpened] = React.useState("")
+  const [strapiData, setStrapiData] = React.useState<any | undefined>()
+
+  React.useEffect(() => {
+    if (!strapiData) {
+      getStrapiData()
+    }
+  }, [])
+
+  const getStrapiData = async () => {
+    await fetch(`${process.env.STRAPI_API_URL}/api/cookie-policy?&populate=*`)
+      .then(response => response.json())
+      .then(jsonResponse => {
+        const strapiData = jsonResponse?.data?.attributes
+        setStrapiData(strapiData)
+      })
+  }
+
   return (
-    <Layout>
+    <Layout seoData={strapiData?.seo}>
       <section className={`${styles?.cookiePolicy} ${cx("containerMaxWidth")}`}>
         {tableOfContent?.map((item, index) => {
           return (

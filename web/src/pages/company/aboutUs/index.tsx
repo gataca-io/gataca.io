@@ -14,6 +14,7 @@ import SixthSection from "./sections/sixthSection/SixthSection"
 
 const AboutUsPage: React.FC<PageProps> = () => {
   const [aboutUsData, setaboutUs] = useState<any | undefined>()
+  const [strapiData, setStrapiData] = React.useState<any | undefined>()
   const {
     firstSection,
     secondSection,
@@ -24,6 +25,9 @@ const AboutUsPage: React.FC<PageProps> = () => {
   } = aboutUsData ? aboutUsData : []
 
   React.useEffect(() => {
+    if (!strapiData) {
+      getStrapiData()
+    }
     getaboutUs()
   }, [])
   const getaboutUs = async () => {
@@ -31,8 +35,19 @@ const AboutUsPage: React.FC<PageProps> = () => {
     setaboutUs(json_data?.data && json_data?.data)
   }
 
+  const getStrapiData = async () => {
+    await fetch(
+      `${process.env.STRAPI_API_URL}/api/company-about-us?&populate=*`
+    )
+      .then(response => response.json())
+      .then(jsonResponse => {
+        const strapiData = jsonResponse?.data?.attributes
+        setStrapiData(strapiData)
+      })
+  }
+
   return (
-    <Layout>
+    <Layout seoData={strapiData?.seo}>
       <>
         <FirstSection
           titleHeader={firstSection?.titleHeader}
