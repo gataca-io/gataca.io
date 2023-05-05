@@ -99,7 +99,7 @@
       }
     } 
     ul {
-      margin-bottom: 24px;
+      margin-bottom: 16px;
       @include flexbox();
       @include flex-wrap(wrap);
       @include justify-content(center);

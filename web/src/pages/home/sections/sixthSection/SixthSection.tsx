@@ -49,7 +49,7 @@ const SixthSection: React.FC<ISectionProps> = props => {
           <div className={styles?.buttonContainer}>
             <PurpleButton
               label={learnMoreButton?.label}
-              action={() => window.open("/useCasesSectors", "_self")}
+              action={() => window.open("/use-cases", "_self")}
             />
           </div>
         </div>

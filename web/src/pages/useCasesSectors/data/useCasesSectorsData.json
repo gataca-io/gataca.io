@@ -12,28 +12,28 @@
               "description": "Issue digitized, standardized, and tamper-proof government documents and prompt eID and e-government services adoption",
               "icon": "",
               "link": "Learn more",
-              "link_route": "/useCasesSectors/government",
+              "link_route": "/use-cases/government",
               "title": "Government"
             },
             {
               "description": "Streamline academic processes by issuing, updating, and verifying academic certificates such as diplomas, transcripts of records, and student IDs",
               "icon": "",
               "link": "Learn more",
-              "link_route": "/useCasesSectors/education",
+              "link_route": "/use-cases/education",
               "title": "Education"
             },
             {
               "description": "Reduce identity fraud with 1-click, compliant KYC and cut compliance costs while boosting user experience, security, and privacy",
               "icon": "",
               "link": "Learn more",
-              "link_route": "/useCasesSectors/finance",
+              "link_route": "/use-cases/finance",
               "title": "Finance"
             },
             {
               "description": "Leverage the benefits of decentralization and privacy for compliant and pseudonymous identity management",
               "icon": "",
               "link": "Learn more",
-              "link_route": "/useCasesSectors/web3",
+              "link_route": "/use-cases/web3",
               "title": "Web 3.0"
             }
           ],

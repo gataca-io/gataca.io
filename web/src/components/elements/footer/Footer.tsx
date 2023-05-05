@@ -102,7 +102,7 @@ const Footer: React.FC = () => {
           <img src={images.ISO27001Certification}></img>
         </div>
         <div>
-          <div className={cx("marginBottom16")}>
+          <div>
             <div>
               <ul>
                 {subFooterMenu?.subRoutes?.map((item, index) => {
