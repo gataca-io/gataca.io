@@ -78,6 +78,7 @@
         padding-top: 28px;
         @include min-width($desktopMD) {
           border: none;
+          padding: 0;
         }
       }
     }
