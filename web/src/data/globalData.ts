@@ -144,41 +144,41 @@ export const headerMenuOptions: LinkModel[] = [
   {
     id: "resources",
     label: "Resources",
-    mainRoute: [
+    // mainRoute: [
+    //   {
+    //     id: "discoverAllResources",
+    //     label: "Discover All Resources",
+    //     route: "/resources/",
+    //   },
+    // ],
+    // categories: [
+    //   {
+    //     id: "otherResources",
+    //     label: "Other resources",
+    subRoutes: [
+      // {
+      //   id: "documentation",
+      //   label: "Documentation",
+      //   route: "/resources/documentation",
+      // },
+      // {
+      //   id: "ssiBasics",
+      //   label: "SSI Basics",
+      //   route: "/resources/ssiBasics",
+      // },
       {
-        id: "discoverAllResources",
-        label: "Discover All Resources",
-        route: "/resources/",
+        id: "blog",
+        label: "Blog",
+        route: "/resources/blog",
+      },
+      {
+        id: "certifications",
+        label: "Certifications",
+        route: "/resources/certifications",
       },
     ],
-    categories: [
-      {
-        id: "otherResources",
-        label: "Other resources",
-        subRoutes: [
-          {
-            id: "documentation",
-            label: "Documentation",
-            route: "/resources/documentation",
-          },
-          {
-            id: "ssiBasics",
-            label: "SSI Basics",
-            route: "/resources/ssiBasics",
-          },
-          {
-            id: "blog",
-            label: "Blog",
-            route: "/resources/blog",
-          },
-          {
-            id: "certifications",
-            label: "Certifications",
-            route: "/resources/certifications",
-          },
-        ],
-      },
-    ],
+    //   },
+    // ],
   },
 ]
 
@@ -306,16 +306,16 @@ export const footerMenuOptions: LinkModel[] = [
     id: "resources",
     label: "Resources",
     subRoutes: [
-      {
-        id: "documentation",
-        label: "Documentation",
-        route: "/resources/documentation",
-      },
-      {
-        id: "ssiBasics",
-        label: "SSI Basics",
-        route: "/resources/ssiBasics/",
-      },
+      // {
+      //   id: "documentation",
+      //   label: "Documentation",
+      //   route: "/resources/documentation",
+      // },
+      // {
+      //   id: "ssiBasics",
+      //   label: "SSI Basics",
+      //   route: "/resources/ssiBasics/",
+      // },
       {
         id: "blog",
         label: "Blog",
