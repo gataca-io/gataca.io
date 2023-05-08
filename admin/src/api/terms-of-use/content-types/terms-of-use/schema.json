@@ -4,17 +4,19 @@
   "info": {
     "singularName": "terms-of-use",
     "pluralName": "terms-of-uses",
-    "displayName": "7.3. Terms of Use"
+    "displayName": "7.3. Terms of Use",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "seo": {
+    "pageContent": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.seo"
+      "component": "template.legal-template",
+      "required": true
     }
   }
 }
