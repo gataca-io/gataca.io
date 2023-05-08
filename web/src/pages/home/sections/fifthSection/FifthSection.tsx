@@ -19,8 +19,12 @@ const FifthSection: React.FC<ISectionProps> = props => {
       ? (document?.getElementById("video") as HTMLVideoElement)
       : undefined
   })
+
   return (
-    <section className={`${styles?.fifthSection} ${cx("containerMaxWidth")}`}>
+    <section
+      id="homeVideoSection"
+      className={`${styles?.fifthSection} ${cx("containerMaxWidth")}`}
+    >
       <div className={styles.fifthSection__header}>
         <h6 className={cx("heading6 marginBottom12 neutral700")}>{title}</h6>
         <h3
