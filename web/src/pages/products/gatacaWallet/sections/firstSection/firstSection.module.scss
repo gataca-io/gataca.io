@@ -28,6 +28,7 @@
 .firstSection__leftSide {
   margin: 140px 0 80px;
   width: 100%;
+  z-index: 1;
 
   @include min-width($tabletMD) {
     width: 50%;
@@ -153,10 +154,10 @@
   display: none;
   position: absolute;
   top: 0;
-  z-index: 9;
   top: -91px;
   height: 750px;
   width: 1200px;
+  z-index: 0;
 
   @include min-width($tabletMD) {
     display: block;

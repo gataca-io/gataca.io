@@ -43,7 +43,7 @@ const FourthSection: React.FC<ISectionProps> = props => {
           </p>
           <PurpleButton
             label={button?.label}
-            action={() => window.open("/company/careers/", "_self")}
+            action={() => window.open("/company/jobs/", "_self")}
           />
         </div>
         <div className={styles.listContainer}>
