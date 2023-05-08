@@ -59,11 +59,11 @@
       "subject": "api::blog.blog",
       "properties": {
         "fields": [
-          "Seo.metaTitle",
-          "Seo.metaDescription",
-          "Seo.rrssImg",
-          "Seo.keywords",
-          "Seo.canonicalURL",
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL",
           "title",
           "date",
           "previewImage",
@@ -93,11 +93,11 @@
       "subject": "api::blog.blog",
       "properties": {
         "fields": [
-          "Seo.metaTitle",
-          "Seo.metaDescription",
-          "Seo.rrssImg",
-          "Seo.keywords",
-          "Seo.canonicalURL",
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL",
           "title",
           "date",
           "previewImage",
@@ -115,11 +115,11 @@
       "subject": "api::blog.blog",
       "properties": {
         "fields": [
-          "Seo.metaTitle",
-          "Seo.metaDescription",
-          "Seo.rrssImg",
-          "Seo.keywords",
-          "Seo.canonicalURL",
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL",
           "title",
           "date",
           "previewImage",
@@ -176,6 +176,294 @@
           "name",
           "order",
           "blogs"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::company-about-us.company-about-us",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::company-about-us.company-about-us",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::company-about-us.company-about-us",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::company-about-us.company-about-us",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::company-about-us.company-about-us",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::company-careers.company-careers",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::company-careers.company-careers",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::company-careers.company-careers",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::company-careers.company-careers",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::company-careers.company-careers",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::company-contact-us.company-contact-us",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::company-contact-us.company-contact-us",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::company-contact-us.company-contact-us",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::company-contact-us.company-contact-us",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::company-contact-us.company-contact-us",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::company-partners.company-partners",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::company-partners.company-partners",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::company-partners.company-partners",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::company-partners.company-partners",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::company-partners.company-partners",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::cookie-policy.cookie-policy",
+      "properties": {
+        "fields": [
+          "pageContent.title",
+          "pageContent.date.dateText",
+          "pageContent.date.date",
+          "pageContent.introSectionText",
+          "pageContent.contentSectionItem.title",
+          "pageContent.contentSectionItem.description",
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::cookie-policy.cookie-policy",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::cookie-policy.cookie-policy",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::cookie-policy.cookie-policy",
+      "properties": {
+        "fields": [
+          "pageContent.title",
+          "pageContent.date.dateText",
+          "pageContent.date.date",
+          "pageContent.introSectionText",
+          "pageContent.contentSectionItem.title",
+          "pageContent.contentSectionItem.description",
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::cookie-policy.cookie-policy",
+      "properties": {
+        "fields": [
+          "pageContent.title",
+          "pageContent.date.dateText",
+          "pageContent.date.date",
+          "pageContent.introSectionText",
+          "pageContent.contentSectionItem.title",
+          "pageContent.contentSectionItem.description",
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
         ]
       },
       "conditions": []
@@ -262,6 +550,815 @@
     },
     {
       "action": "plugin::content-manager.explorer.create",
+      "subject": "api::gataca-studio.gataca-studio",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::gataca-studio.gataca-studio",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::gataca-studio.gataca-studio",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::gataca-studio.gataca-studio",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::gataca-studio.gataca-studio",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::gataca-wallet.gataca-wallet",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ],
+        "locales": [
+          "en"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::gataca-wallet.gataca-wallet",
+      "properties": {
+        "locales": [
+          "en"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::gataca-wallet.gataca-wallet",
+      "properties": {
+        "locales": [
+          "en"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::gataca-wallet.gataca-wallet",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ],
+        "locales": [
+          "en"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::gataca-wallet.gataca-wallet",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ],
+        "locales": [
+          "en"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::pricing.pricing",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::pricing.pricing",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::pricing.pricing",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::pricing.pricing",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::pricing.pricing",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::privacy-policy.privacy-policy",
+      "properties": {
+        "fields": [
+          "pageContent.title",
+          "pageContent.date.dateText",
+          "pageContent.date.date",
+          "pageContent.introSectionText",
+          "pageContent.contentSectionItem.title",
+          "pageContent.contentSectionItem.description",
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::privacy-policy.privacy-policy",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::privacy-policy.privacy-policy",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::privacy-policy.privacy-policy",
+      "properties": {
+        "fields": [
+          "pageContent.title",
+          "pageContent.date.dateText",
+          "pageContent.date.date",
+          "pageContent.introSectionText",
+          "pageContent.contentSectionItem.title",
+          "pageContent.contentSectionItem.description",
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::privacy-policy.privacy-policy",
+      "properties": {
+        "fields": [
+          "pageContent.title",
+          "pageContent.date.dateText",
+          "pageContent.date.date",
+          "pageContent.introSectionText",
+          "pageContent.contentSectionItem.title",
+          "pageContent.contentSectionItem.description",
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::resources-blog.resources-blog",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::resources-blog.resources-blog",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::resources-blog.resources-blog",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::resources-blog.resources-blog",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::resources-blog.resources-blog",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::resources-certification.resources-certification",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::resources-certification.resources-certification",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::resources-certification.resources-certification",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::resources-certification.resources-certification",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::resources-certification.resources-certification",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::resources-documentation.resources-documentation",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::resources-documentation.resources-documentation",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::resources-documentation.resources-documentation",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::resources-documentation.resources-documentation",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::resources-documentation.resources-documentation",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::resources-ssi-basic.resources-ssi-basic",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::resources-ssi-basic.resources-ssi-basic",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::resources-ssi-basic.resources-ssi-basic",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::resources-ssi-basic.resources-ssi-basic",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::resources-ssi-basic.resources-ssi-basic",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::resources.resources",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::resources.resources",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::resources.resources",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::resources.resources",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::resources.resources",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::sectors-education.sectors-education",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::sectors-education.sectors-education",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::sectors-education.sectors-education",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::sectors-education.sectors-education",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::sectors-education.sectors-education",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::sectors-finance.sectors-finance",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::sectors-finance.sectors-finance",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::sectors-finance.sectors-finance",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::sectors-finance.sectors-finance",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::sectors-finance.sectors-finance",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::sectors-government.sectors-government",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::sectors-government.sectors-government",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::sectors-government.sectors-government",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::sectors-government.sectors-government",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::sectors-government.sectors-government",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::sectors-web3.sectors-web3",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::sectors-web3.sectors-web3",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::sectors-web3.sectors-web3",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::sectors-web3.sectors-web3",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::sectors-web3.sectors-web3",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::terms-of-use.terms-of-use",
+      "properties": {
+        "fields": [
+          "pageContent.title",
+          "pageContent.date.dateText",
+          "pageContent.date.date",
+          "pageContent.introSectionText",
+          "pageContent.contentSectionItem.title",
+          "pageContent.contentSectionItem.description",
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::terms-of-use.terms-of-use",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::terms-of-use.terms-of-use",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::terms-of-use.terms-of-use",
+      "properties": {
+        "fields": [
+          "pageContent.title",
+          "pageContent.date.dateText",
+          "pageContent.date.date",
+          "pageContent.introSectionText",
+          "pageContent.contentSectionItem.title",
+          "pageContent.contentSectionItem.description",
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::terms-of-use.terms-of-use",
+      "properties": {
+        "fields": [
+          "pageContent.title",
+          "pageContent.date.dateText",
+          "pageContent.date.date",
+          "pageContent.introSectionText",
+          "pageContent.contentSectionItem.title",
+          "pageContent.contentSectionItem.description",
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
       "subject": "api::test-sync.test-sync",
       "properties": {
         "fields": [
@@ -313,6 +1410,60 @@
           "SEO.rrssImg",
           "SEO.keywords",
           "SEO.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::uses-cases-and-sector.uses-cases-and-sector",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::uses-cases-and-sector.uses-cases-and-sector",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::uses-cases-and-sector.uses-cases-and-sector",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::uses-cases-and-sector.uses-cases-and-sector",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::uses-cases-and-sector.uses-cases-and-sector",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
         ]
       },
       "conditions": []

@@ -1,14 +1,14 @@
 {
-  "key": "plugin_content_manager_configuration_content_types::api::entry.entry",
+  "key": "plugin_content_manager_configuration_content_types::api::company-about-us.company-about-us",
   "value": {
-    "uid": "api::entry.entry",
+    "uid": "api::company-about-us.company-about-us",
     "settings": {
       "bulkable": true,
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "Title",
-      "defaultSortBy": "Title",
+      "mainField": "id",
+      "defaultSortBy": "id",
       "defaultSortOrder": "ASC"
     },
     "metadatas": {
@@ -16,48 +16,6 @@
         "edit": {},
         "list": {
           "label": "id",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "Body": {
-        "edit": {
-          "label": "Body",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "Body",
-          "searchable": false,
-          "sortable": false
-        }
-      },
-      "HeroImage": {
-        "edit": {
-          "label": "HeroImage",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "HeroImage",
-          "searchable": false,
-          "sortable": false
-        }
-      },
-      "Title": {
-        "edit": {
-          "label": "Title",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "Title",
           "searchable": true,
           "sortable": true
         }
@@ -106,35 +64,19 @@
       }
     },
     "layouts": {
+      "list": [
+        "id",
+        "seo",
+        "createdAt",
+        "updatedAt"
+      ],
       "edit": [
         [
           {
             "name": "seo",
             "size": 12
           }
-        ],
-        [
-          {
-            "name": "Body",
-            "size": 12
-          }
-        ],
-        [
-          {
-            "name": "HeroImage",
-            "size": 6
-          },
-          {
-            "name": "Title",
-            "size": 6
-          }
         ]
-      ],
-      "list": [
-        "id",
-        "HeroImage",
-        "Title",
-        "seo"
       ]
     }
   },
