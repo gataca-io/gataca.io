@@ -7,7 +7,7 @@ export const defaultMetadata = {
   metaTitle: "Gataca | Decentralized Identity Management",
   description:
     "Gataca is a cybersecurity company that provides fast, compliant and secure digital identity technology solutions.",
-  bookACallUrl: "/company/contactUs",
+  bookACallUrl: "/company/contact",
   siteUrl: "https://www.gataca.io",
   twitterHandler: "@gataca_id",
   androidLink: marketAndroidURI,

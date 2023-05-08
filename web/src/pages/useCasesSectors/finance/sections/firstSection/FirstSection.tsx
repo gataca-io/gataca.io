@@ -23,7 +23,7 @@ const FirstSection: React.FC<ISectionProps> = props => {
         <div className={styles?.buttonContainer}>
           <PurpleButton
             label={contactButton?.label}
-            action={() => window.open("/company/contactUs/", "_self")}
+            action={() => window.open("/company/contact/", "_self")}
           />
         </div>
       </div>

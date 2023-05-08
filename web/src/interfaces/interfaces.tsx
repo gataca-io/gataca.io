@@ -81,7 +81,7 @@ export interface IProductModel {
   button: {
     label: "Contact us"
     outsideWeb: false
-    url: "/company/contactUs"
+    url: "/company/contact"
   }
 }
 

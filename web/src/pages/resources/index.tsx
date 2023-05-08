@@ -53,7 +53,7 @@ const BlogPage: React.FC<PageProps> = () => {
           }
           rightButton={{
             label: "Contact us",
-            action: () => navigate("/company/contactUs"),
+            action: () => navigate("/company/contact"),
           }}
         />
       </>

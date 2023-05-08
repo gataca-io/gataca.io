@@ -136,7 +136,7 @@
               "button": {
                 "label": "Contact us",
                 "outsideWeb": false,
-                "url": "/company/contactUs"
+                "url": "/company/contact"
               },
               "description": "For companies that have mastered SSI and need extra care",
               "features": {
@@ -185,7 +185,7 @@
         {
           "button": {
             "label": "Contact us",
-            "url": "/company/contactUs"
+            "url": "/company/contact"
           },
           "id": "onPremiseSection",
           "panelTitle": "On-premise deployment",
@@ -239,11 +239,11 @@
               "title": "Why does my business need SSI?"
             },
             {
-              "description": "No. Almost every single industry worldwide needs to implement Identity and Access management (IAM) processes inside and across organizations, and therefore they all can reap the benefits from SSI IAM technology (see previous question). Visit our <a href='/userCasesSector'>Use Cases page</a> for an overview of most popular use cases per industry or read our <a href='https://gataca.io/blog/ssi-essentials-35-use-cases-of-decentralized-identities-that-will-make-your-life-easier' target='_blank'>blog post</a> on the topic for more detailed information.",
+              "description": "No. Almost every single industry worldwide needs to implement Identity and Access management (IAM) processes inside and across organizations, and therefore they all can reap the benefits from SSI IAM technology (see previous question). Visit our <a href='/use-cases'>Use Cases page</a> for an overview of most popular use cases per industry or read our <a href='https://gataca.io/blog/ssi-essentials-35-use-cases-of-decentralized-identities-that-will-make-your-life-easier' target='_blank'>blog post</a> on the topic for more detailed information.",
               "title": "Is this technology only for banks, governments and universities?"
             },
             {
-              "description": "We suggest you try out our <a href='https://studio.gataca.io' target='_blank'>GATACA Studio</a>. It is a cloud-based, full stack SSI solution that offers low-code, API-based integration with your own applications, so you don’t need to worry about the intrinsic complexity in SSI ecosystems. <br><br>Are you looking for special integration, customization, security & support requirements? We also offer on-premise solutions for organizations with special needs.  If that is your case, <a href='/company/contactUs/'>get in touch</a>.",
+              "description": "We suggest you try out our <a href='https://studio.gataca.io' target='_blank'>GATACA Studio</a>. It is a cloud-based, full stack SSI solution that offers low-code, API-based integration with your own applications, so you don’t need to worry about the intrinsic complexity in SSI ecosystems. <br><br>Are you looking for special integration, customization, security & support requirements? We also offer on-premise solutions for organizations with special needs.  If that is your case, <a href='/company/contact/'>get in touch</a>.",
               "title": "I am an organization. How can I start using GATACA’s technology?"
             }
           ],
@@ -275,7 +275,7 @@
               "title": "What does GATACA store in the blockchain ledger?"
             },
             {
-              "description": "GATACA technology is blockchain agnostic. That means that we can add an SSI layer to virtually any blockchain-based (or even not blockchain based) infrastructure. We currently offer support for the European Blockchain Services Infrastucture (EBSI), Ethereum mainnet, any private Ethereum network with Besu clients, and any private Hyperledger Fabric network. If you are looking for added support to any other network, <a href='/company/contactUs/'>get in touch</a>.",
+              "description": "GATACA technology is blockchain agnostic. That means that we can add an SSI layer to virtually any blockchain-based (or even not blockchain based) infrastructure. We currently offer support for the European Blockchain Services Infrastucture (EBSI), Ethereum mainnet, any private Ethereum network with Besu clients, and any private Hyperledger Fabric network. If you are looking for added support to any other network, <a href='/company/contact/'>get in touch</a>.",
               "title": "What blockchain does GATACA use?"
             }
           ],

@@ -76,7 +76,7 @@ const EducationPage: React.FC<PageProps> = () => {
           }
           leftButton={{
             label: "Contact us",
-            action: () => navigate("/company/contactUs"),
+            action: () => navigate("/company/contact"),
           }}
           rightButton={{
             label: "Try for free",
