@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_template_legal_templates",
+  "info": {
+    "displayName": "legalTemplate"
+  },
+  "options": {},
+  "attributes": {
+    "seo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.seo"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "date": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.date-text",
+      "required": true
+    },
+    "introSectionText": {
+      "type": "richtext"
+    },
+    "contentSectionItem": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.content-item",
+      "required": true
+    }
+  }
+}

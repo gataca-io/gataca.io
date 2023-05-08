@@ -12,10 +12,11 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "seo": {
+    "pageContent": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.seo"
+      "component": "template.legal-template",
+      "required": true
     }
   }
 }

@@ -16,6 +16,25 @@
       "type": "component",
       "repeatable": false,
       "component": "shared.seo"
+    },
+    "sectionTitleText": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.content-item",
+      "required": true
+    },
+    "introSectionText": {
+      "type": "richtext"
+    },
+    "title": {
+      "type": "string"
+    },
+    "date": {
+      "displayName": "dateText",
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.date-text",
+      "required": true
     }
   }
 }
