@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_shared_date_texts",
+  "info": {
+    "displayName": "dateText"
+  },
+  "options": {},
+  "attributes": {
+    "dateText": {
+      "type": "string",
+      "required": true
+    },
+    "date": {
+      "type": "date"
+    }
+  }
+}
