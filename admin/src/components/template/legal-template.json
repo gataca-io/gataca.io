@@ -1,15 +1,11 @@
 {
   "collectionName": "components_template_legal_templates",
   "info": {
-    "displayName": "legalTemplate"
+    "displayName": "legalTemplate",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "seo": {
-      "type": "component",
-      "repeatable": true,
-      "component": "shared.seo"
-    },
     "title": {
       "type": "string",
       "required": true
