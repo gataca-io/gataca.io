@@ -20,16 +20,16 @@
           "sortable": true
         }
       },
-      "Seo": {
+      "seo": {
         "edit": {
-          "label": "Seo",
+          "label": "seo",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "Seo",
+          "label": "seo",
           "searchable": false,
           "sortable": false
         }
@@ -177,13 +177,13 @@
       }
     },
     "layouts": {
+      "list": [
+        "id",
+        "title",
+        "category",
+        "seo"
+      ],
       "edit": [
-        [
-          {
-            "name": "Seo",
-            "size": 12
-          }
-        ],
         [
           {
             "name": "title",
@@ -225,13 +225,13 @@
             "name": "content",
             "size": 12
           }
+        ],
+        [
+          {
+            "name": "seo",
+            "size": 12
+          }
         ]
-      ],
-      "list": [
-        "id",
-        "Seo",
-        "title",
-        "category"
       ]
     }
   },

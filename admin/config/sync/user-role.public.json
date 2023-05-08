@@ -22,6 +22,69 @@
       "action": "api::category.category.findOne"
     },
     {
+      "action": "api::company-about-us.company-about-us.find"
+    },
+    {
+      "action": "api::company-careers.company-careers.find"
+    },
+    {
+      "action": "api::company-contact-us.company-contact-us.find"
+    },
+    {
+      "action": "api::company-partners.company-partners.find"
+    },
+    {
+      "action": "api::cookie-policy.cookie-policy.find"
+    },
+    {
+      "action": "api::entry.entry.find"
+    },
+    {
+      "action": "api::gataca-studio.gataca-studio.find"
+    },
+    {
+      "action": "api::gataca-wallet.gataca-wallet.find"
+    },
+    {
+      "action": "api::pricing.pricing.find"
+    },
+    {
+      "action": "api::privacy-policy.privacy-policy.find"
+    },
+    {
+      "action": "api::resources-blog.resources-blog.find"
+    },
+    {
+      "action": "api::resources-certification.resources-certification.find"
+    },
+    {
+      "action": "api::resources-documentation.resources-documentation.find"
+    },
+    {
+      "action": "api::resources-ssi-basic.resources-ssi-basic.find"
+    },
+    {
+      "action": "api::resources.resources.find"
+    },
+    {
+      "action": "api::sectors-education.sectors-education.find"
+    },
+    {
+      "action": "api::sectors-finance.sectors-finance.find"
+    },
+    {
+      "action": "api::sectors-government.sectors-government.find"
+    },
+    {
+      "action": "api::sectors-web3.sectors-web3.find"
+    },
+    {
+      "action": "api::terms-of-use.terms-of-use.find"
+    },
+    {
+      "action": "api::uses-cases-and-sector.uses-cases-and-sector.find"
+    },
+    {
       "action": "plugin::users-permissions.auth.callback"
     },
     {
