@@ -87,7 +87,6 @@ const PrivacyPolicy: React.FC<PageProps> = () => {
                   </div>
                 )
               })}
-              {strapiData?.pageContent?.contentSectionItem[5].description}
             </div>
             {tableOfContent?.map((item, index) => {
               return (
