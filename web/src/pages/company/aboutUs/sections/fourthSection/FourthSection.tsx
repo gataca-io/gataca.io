@@ -68,9 +68,9 @@ const FourthSection: React.FC<ISectionProps> = props => {
                     </p>
                   </div>
                   <div className={`${styles.rightColumn}`}>
-                    <Link to={item.linkedinRoute}>
+                    <a href={item.linkedinRoute} target="_blank">
                       <img src={images.linkedinLogo}></img>
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>

@@ -386,12 +386,12 @@ export const socialMedia: IconModel[] = [
     icon: images.gatacaLinkedLink,
     route: linkedinURL,
   },
-  {
-    id: "twitter",
-    alt: "Twitter Logo",
-    icon: images.gatacaTwitterLink,
-    route: twitterURL,
-  },
+  // {
+  //   id: "twitter",
+  //   alt: "Twitter Logo",
+  //   icon: images.gatacaTwitterLink,
+  //   route: twitterURL,
+  // },
   {
     id: "youtube",
     alt: "Youtube Logo",
