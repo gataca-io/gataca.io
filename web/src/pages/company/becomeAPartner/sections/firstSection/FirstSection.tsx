@@ -15,6 +15,18 @@ export type ISectionProps = {
 const FirstSection: React.FC<ISectionProps> = props => {
   const { title, descriptionParagraphs, button } = props
 
+  let applyFormSection: HTMLVideoElement | null | undefined
+
+  React.useEffect(() => {
+    applyFormSection = document
+      ? (document?.getElementById("applyFormSection") as HTMLVideoElement)
+      : undefined
+  })
+
+  const scrollToAplyForm = () => {
+    applyFormSection?.scrollIntoView({ behavior: "smooth" })
+  }
+
   return (
     <section className={`${styles.firstSection} ${cx("containerMaxWidth")}`}>
       <div className={styles.firstSection__content}>
@@ -36,7 +48,7 @@ const FirstSection: React.FC<ISectionProps> = props => {
 
           <PurpleButton
             label={button?.label}
-            action={() => window.open(gatacaStudioURL, "_blank")}
+            action={() => scrollToAplyForm()}
           />
         </div>
         <div className={styles.rightColumn}>
