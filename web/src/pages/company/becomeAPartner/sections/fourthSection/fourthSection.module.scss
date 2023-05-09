@@ -2,10 +2,10 @@
 @import "../../../../../styles/_colors.scss";
 
 .fourthSection {
-  margin-bottom: 132px;
+  margin-bottom: 112px;
   padding: 0 20px;
   @include min-width($mobileXL) {
-    margin-bottom: 200px;
+    margin-bottom: 180px;
     padding: 0 40px;
   }
   @include min-width($desktopMD) {

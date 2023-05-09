@@ -15,7 +15,10 @@ const FifthSection: React.FC<ISectionProps> = props => {
   const [formSubmitted, setFormSubmitted] = React.useState(false)
 
   return (
-    <section className={`${styles.fifthSection} ${cx("containerMaxWidth")}`}>
+    <section
+      id={"applyFormSection"}
+      className={`${styles.fifthSection} ${cx("containerMaxWidth")}`}
+    >
       <div className={styles.fifthSection__container}>
         <div className={styles.fifthSection__leftSide}>
           <h3 className={`${cx("heading3 marginBottom10")}`}>{title}</h3>
