@@ -31,6 +31,7 @@ export type ISectionProps = {
   }
   licenses: IProductModel[]
   infoToggles: InfoTogglesPricingModel
+  subOptionClickedID?: string
 }
 
 const FirstSection: React.FC<ISectionProps> = props => {
@@ -42,6 +43,7 @@ const FirstSection: React.FC<ISectionProps> = props => {
     licenses,
     onPremise,
     infoToggles,
+    subOptionClickedID,
   } = props
   const [switchPeriodValue, setmonthlyChecked] = React.useState("month")
   const [showAllFeatures, setShowAllFeatures] = React.useState(false)
@@ -61,10 +63,34 @@ const FirstSection: React.FC<ISectionProps> = props => {
 
   const [openItem, setOpenItem] = React.useState<number>(1)
   let typeCategories: HTMLElement | null
+  let allFeatures: HTMLVideoElement | null | undefined
 
   React.useEffect(() => {
     typeCategories = document && document?.getElementById("cloud")
   })
+
+  React.useEffect(() => {
+    setAllfeaturesComponent()
+    allFeatures &&
+      subOptionClickedID === "gatacaStudioFeatures" &&
+      (window?.setTimeout(() => {
+        window?.scrollTo({ top: 0 })
+        setShowAllFeatures(true)
+      }, 10),
+      setTimeout(() => {
+        scrollToAllFeatures()
+      }, 100))
+  }, [subOptionClickedID])
+
+  const setAllfeaturesComponent = () => {
+    allFeatures = document
+      ? (document?.getElementById("allFeatures") as HTMLVideoElement)
+      : undefined
+  }
+
+  const scrollToAllFeatures = () => {
+    allFeatures?.scrollIntoView()
+  }
 
   const scrollIntoView = (el: any) => {
     typeCategories
@@ -77,7 +103,10 @@ const FirstSection: React.FC<ISectionProps> = props => {
 
   return (
     <>
-      <section className={`${styles?.firstSection} ${cx("containerMaxWidth")}`}>
+      <section
+        id={"gatacaStudioFeatures"}
+        className={`${styles?.firstSection} ${cx("containerMaxWidth")}`}
+      >
         <div className={styles?.firstSection__header}>
           <h1 className={cx("heading2 marginBottom32")}>{title}</h1>
           <p className={cx("bodyRegularXL marginBottom32")}>{description}</p>
@@ -113,7 +142,10 @@ const FirstSection: React.FC<ISectionProps> = props => {
                   onChangeSwitchSelect={switchButton.function}
                 />
               </div>
-              <div className={styles?.firstSection__sectors__cardsContainer}>
+              <div
+                className={styles?.firstSection__sectors__cardsContainer}
+                id={"allLicensesFeatures"}
+              >
                 {licenses?.map((item: any, index) => {
                   return (
                     <>
@@ -127,9 +159,9 @@ const FirstSection: React.FC<ISectionProps> = props => {
                   )
                 })}
               </div>
-
-              {showAllFeatures && (
-                <div id={"allFeatures"}>
+              <div id={"allFeatures"}></div>
+              {showAllFeatures && licenses && (
+                <div>
                   <LicensesTable
                     products={licenses}
                     switchPeriodValue={switchPeriodValue}

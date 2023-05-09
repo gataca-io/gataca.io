@@ -97,7 +97,7 @@
                     "button": {
                         "label": "See all features",
                         "outlined": true,
-                        "url": ""
+                        "url": "/pricing/#gatacaStudioFeatures"
                     },
                     "description": "For companies looking to scale their SSI implementation.",
                     "title": "Essential"
@@ -106,7 +106,7 @@
                     "button": {
                         "label": "See all features",
                         "outlined": true,
-                        "url": ""
+                        "url": "/pricing/#gatacaStudioFeatures"
                     },
                     "description": "For experienced companies ready for a large-scale rollout of SSI.",
                     "tag": "Popular",
@@ -116,7 +116,7 @@
                     "button": {
                         "label": "See all features",
                         "outlined": true,
-                        "url": ""
+                        "url": "/pricing/#gatacaStudioFeatures"
                     },
                     "description": "For companies that need special features and extra support ",
                     "title": "Enterprise"

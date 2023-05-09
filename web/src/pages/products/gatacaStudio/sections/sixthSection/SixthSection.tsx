@@ -4,6 +4,7 @@ import PurpleButton from "../../../../../components/atoms/buttons/purple/PurpleB
 import Tag from "../../../../../components/atoms/tags/Tag"
 import { ButtonModel } from "../../../../../interfaces/interfaces"
 import * as styles from "./sixthSection.module.scss"
+import { navigate } from "gatsby"
 
 export type ISectionProps = {
   title: string
@@ -82,7 +83,11 @@ const SixthSection: React.FC<ISectionProps> = props => {
               <PurpleButton
                 outlined={button?.outlined}
                 label={button?.label}
-                action={() => window.open(button?.url)}
+                action={() =>
+                  !button?.outlined
+                    ? window?.open(button?.url)
+                    : navigate(button?.url || "")
+                }
               />
             </div>
           )

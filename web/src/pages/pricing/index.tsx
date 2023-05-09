@@ -5,8 +5,9 @@ import LogosSlider from "../../components/elements/logosSlider/LogosSlider"
 import FirstSection from "./sections/firstSection/FirstSection"
 import SecondSection from "./sections/secondSection/SecondSection"
 import * as styles from "./index.module.scss"
+import { PageProps } from "gatsby"
 
-const Pricing: React.FC = () => {
+const Pricing: React.FC<PageProps> = props => {
   const [pricingData, setPricing] = useState<any | undefined>()
   const [strapiData, setStrapiData] = React.useState<any | undefined>()
   const { firstSection, secondSection } = pricingData ? pricingData : []
@@ -24,9 +25,7 @@ const Pricing: React.FC = () => {
   }
 
   const getStrapiData = async () => {
-    await fetch(
-      `${process.env.STRAPI_API_URL}/api/company-contact-us?&populate=*`
-    )
+    await fetch(`${process.env.STRAPI_API_URL}/api/pricing?&populate=*`)
       .then(response => response.json())
       .then(jsonResponse => {
         const strapiData = jsonResponse?.data?.attributes
@@ -45,6 +44,7 @@ const Pricing: React.FC = () => {
           infoToggles={firstSection?.infoToggles}
           licenses={firstSection?.categories[0].list}
           onPremise={firstSection?.categories[1]}
+          subOptionClickedID={props?.location?.hash?.substring(1)}
         />
         <LogosSlider className={styles?.slider} />
         <SecondSection
