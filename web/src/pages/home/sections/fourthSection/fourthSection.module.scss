@@ -2,7 +2,7 @@
 @import "../../../../styles/mixins.scss";
 
 .fourthSection__container {
-  margin: 220px 20px 178px;
+  margin: 220px 20px 158px;
   @include min-width($mobileXL) {
     padding: 0 40px;
   }
@@ -10,7 +10,7 @@
     padding: 0 60px;
   }
   @media (min-width: 1067px) {
-    margin: 220px 0px 396px;
+    margin: 220px 0px 376px;
   }
 }
 
