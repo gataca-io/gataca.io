@@ -1,7 +1,8 @@
 {
   "collectionName": "components_shared_content_items",
   "info": {
-    "displayName": "content-item"
+    "displayName": "content-item",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -11,6 +12,10 @@
     },
     "description": {
       "type": "richtext"
+    },
+    "idName": {
+      "type": "string",
+      "required": true
     }
   }
 }
