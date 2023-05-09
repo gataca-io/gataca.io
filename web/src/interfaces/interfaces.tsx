@@ -143,3 +143,20 @@ export interface InfoTogglesPricingModel {
   integrationCustomFrameworks: string
   integrationCustomInfraestructure: string
 }
+export interface LegalModel {
+  seo: SeoModel
+  pageContent: {
+    date: {
+      date: string
+      dateText: string
+    }
+    title: string
+    introSectionText?: string
+    contentSectionItem: {
+      description: string
+      title: string
+      idName: string
+      id: string
+    }[]
+  }
+}

@@ -11,6 +11,15 @@ module.exports = {
     "gatsby-plugin-sass",
     "gatsby-plugin-react-helmet-async",
     {
+      resolve: "gatsby-plugin-sitemap",
+      options: {
+        siteMetadata: {
+          // If you didn't use the resolveSiteUrl option this needs to be set
+          siteUrl: "https://gataca.io",
+        },
+      },
+    },
+    {
       resolve: "gatsby-source-strapi",
       options: {
         apiURL: process.env.STRAPI_API_URL || "http://localhost:1337",
