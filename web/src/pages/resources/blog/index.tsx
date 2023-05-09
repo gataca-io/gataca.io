@@ -98,7 +98,13 @@ const BlogPage: React.FC<PageProps> = () => {
   }
 
   return (
-    <Layout seoData={strapiData?.seo}>
+    <Layout
+      seoData={
+        strapiData?.seo && strapiData?.seo?.length
+          ? strapiData?.seo[0]
+          : undefined
+      }
+    >
       <>
         <FirstSection
           title={firstSection?.title}

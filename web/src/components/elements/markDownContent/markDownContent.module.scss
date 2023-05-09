@@ -4,7 +4,7 @@
 
 .markDownContent{
   & > p, span, li {
-    margin-bottom: 18px;
+    margin-bottom: 20px;
     font-family: $base;
     font-size: 18px;
     font-weight: 400;
@@ -17,12 +17,26 @@
     color: $primary700;
     text-decoration: underline;
     cursor: pointer;
+    font-family: $base;
   }
 
   & > ul {
     margin-left: 16px;
-    list-style: inside;
-    list-style-position: inside;
+    list-style-type: none;
+    li {
+      position: relative;
+      margin-left: 10px;
+      &::before {
+        content: '';
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        background-color: $neutral700;
+        border-radius: 5px;
+        top: 9px;
+        left: -15px;
+      }
+    }
   }
 
   & > ol {
