@@ -1,13 +1,12 @@
 import type { PageProps } from "gatsby"
 import * as React from "react"
-import { Link } from "gatsby"
+import moment from "moment"
 import * as styles from "./index.module.scss"
 import cx from "classnames"
 import Layout from "../../components/templates/mainLayout/MainLayout"
 import TableOfContentContainer from "../../components/templates/tableOfContent/elements/tableOfContentContainer/TableOfContentContainer"
 import { LegalModel, LinkModel } from "../../interfaces/interfaces"
 import tableOfContent from "../../data/privacyPolicyData"
-import { gatacaURL } from "../../data/globalData"
 import MarkDownContent from "../../components/elements/markDownContent/MarkDownContent"
 
 export type ITableOfContentProps = {
@@ -37,6 +36,7 @@ const PrivacyPolicy: React.FC<PageProps> = () => {
   }
 
   const list = strapiData?.pageContent?.contentSectionItem
+  const date = strapiData?.pageContent?.date.date
 
   return (
     <Layout seoData={strapiData?.seo}>
@@ -60,14 +60,10 @@ const PrivacyPolicy: React.FC<PageProps> = () => {
             <h1 className={cx("heading1 marginBottom32")}>
               {strapiData?.pageContent?.title}
             </h1>
-            <MarkDownContent
-              content={
-                (strapiData?.pageContent?.date.dateText,
-                strapiData?.pageContent?.date.date)
-              }
-            />
-            <MarkDownContent content={strapiData?.pageContent?.date.dateText} />
-            <MarkDownContent content={strapiData?.pageContent?.date.date} />
+            <p className={cx("bodyRegularXL")}>
+              {strapiData?.pageContent?.date.dateText}
+              {moment(date).format("LL")}
+            </p>
           </div>
           <div className={styles?.sectionMain}>
             <div className={styles?.sectionMain__dataContentCol}>
@@ -81,7 +77,7 @@ const PrivacyPolicy: React.FC<PageProps> = () => {
                   <div
                     key={"content__" + index}
                     className={styles?.contentCol__section}
-                    id={item.idName}
+                    id={item.idName + "__" + index}
                   >
                     <h4 className={cx("heading4 marginBottom32")}>
                       {item.title}
@@ -91,6 +87,7 @@ const PrivacyPolicy: React.FC<PageProps> = () => {
                   </div>
                 )
               })}
+              {strapiData?.pageContent?.contentSectionItem[5].description}
             </div>
             {tableOfContent?.map((item, index) => {
               return (
