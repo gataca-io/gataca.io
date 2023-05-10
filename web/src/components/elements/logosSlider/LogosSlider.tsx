@@ -6,7 +6,7 @@ export type ILogosSliderProps = {
   className?: string
 }
 
-const timesToRepeatLogos = 3
+const timesToRepeatLogos = 15
 const LogosSlider: React.FC<ILogosSliderProps> = props => {
   const { className } = props
 
