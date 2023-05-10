@@ -7,7 +7,10 @@ module.exports = {
     DEV_SSR: true,
   },
   siteMetadata: {
-    // If you didn't use the resolveSiteUrl option this needs to be set
+    metaTitle: "Gataca | Decentralized Identity Management Technology",
+    metaDescription:
+      "Gataca is a cybersecurity company that provides decentralized digital identity technology, also known as self-sovereign identity (SSI).",
+    title: "GATACA",
     siteUrl: "https://gataca.io",
   },
   plugins: [
