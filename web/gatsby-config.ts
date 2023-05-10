@@ -6,19 +6,15 @@ module.exports = {
   flags: {
     DEV_SSR: true,
   },
+  siteMetadata: {
+    // If you didn't use the resolveSiteUrl option this needs to be set
+    siteUrl: "https://gataca.io",
+  },
   plugins: [
     "gatsby-plugin-gatsby-cloud",
     "gatsby-plugin-sass",
     "gatsby-plugin-react-helmet-async",
-    {
-      resolve: "gatsby-plugin-sitemap",
-      options: {
-        siteMetadata: {
-          // If you didn't use the resolveSiteUrl option this needs to be set
-          siteUrl: "https://gataca.io",
-        },
-      },
-    },
+    "gatsby-plugin-sitemap",
     {
       resolve: "gatsby-source-strapi",
       options: {
