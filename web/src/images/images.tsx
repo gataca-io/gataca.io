@@ -140,6 +140,13 @@ import closeMenuIcon from "./icons/gat-icon-close.svg"
 import chevronLeftIcon from "./icons/chevronLeft.svg"
 import ISO27001Certification from "./logos/iso-27001-certification.svg"
 import ISO27001Logo from "./logos/iso27001.svg"
+import bankinterClearLogo from "./logos/bankinter-clear-logo.svg"
+import redesClearLogo from "./logos/redes-logo-clear.svg"
+import unaEuropaClearLogo from "./logos/logo-una_europa-clear.svg"
+import roviraIVirgiliClearLogo from "./logos/logo-rovira-virgilia-clear.svg"
+import idemiaClearLogo from "./logos/logo-idemia-clear.svg"
+import europeanComissionClearLogo from "./logos/logo-european-comission-clear.svg"
+import earlyAdoptersSpainClearLogo from "./logos/logo-early-adopters-spain-clear.svg"
 
 export const images = {
   chevronDown: crevronDownSVG,
@@ -284,4 +291,11 @@ export const images = {
   ISO27001Certification: ISO27001Certification,
   ISO27001Logo: ISO27001Logo,
   earlyAdoptersSpainLogo: logoEarlyAdoptersSpain,
+  bankinterClearLogo: bankinterClearLogo,
+  redesClearLogo: redesClearLogo,
+  unaEuropaClearLogo: unaEuropaClearLogo,
+  roviraIVirgiliClearLogo: roviraIVirgiliClearLogo,
+  idemiaClearLogo: idemiaClearLogo,
+  europeanComissionClearLogo: europeanComissionClearLogo,
+  earlyAdoptersSpainClearLogo: earlyAdoptersSpainClearLogo,
 }
