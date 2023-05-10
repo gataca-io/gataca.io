@@ -20,6 +20,7 @@
   },
   "version": "6.0.0",
   "dependencies": {
+    "@ckeditor/strapi-plugin-ckeditor": "^0.0.7",
     "@strapi/plugin-documentation": "4.7.1",
     "@strapi/plugin-i18n": "4.7.1",
     "@strapi/plugin-seo": "^1.8.0",

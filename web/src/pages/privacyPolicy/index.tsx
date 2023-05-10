@@ -84,6 +84,7 @@ const PrivacyPolicy: React.FC<PageProps> = () => {
                     </h4>
 
                     <MarkDownContent content={item.description} />
+                    {item.descriptionCKE}
                   </div>
                 )
               })}

@@ -2,6 +2,10 @@ module.exports = ({ env }) => ({
   seo: {
     enabled: true,
   },
+  ckeditor: {
+    enabled: true,
+    resolve: "./src/plugins/strapi-plugin-ckeditor",
+  },
   "strapi-plugin-populate-deep": {
     config: {
       defaultDepth: 3, // Default is 5
@@ -9,26 +13,26 @@ module.exports = ({ env }) => ({
   },
   upload: {
     config: {
-      provider: 'aws-s3',
+      provider: "aws-s3",
       providerOptions: {
         s3Options: {
-          accessKeyId: env('AWS_ACCESS_KEY_ID'),
-          secretAccessKey: env('AWS_ACCESS_SECRET'),
-          region: env('AWS_REGION'),
+          accessKeyId: env("AWS_ACCESS_KEY_ID"),
+          secretAccessKey: env("AWS_ACCESS_SECRET"),
+          region: env("AWS_REGION"),
           params: {
-              Bucket: env('AWS_BUCKET_NAME'),
+            Bucket: env("AWS_BUCKET_NAME"),
           },
-        }
+        },
       },
       // These parameters could solve issues with ACL public-read access — see [this issue](https://github.com/strapi/strapi/issues/5868) for details
       actionOptions: {
         upload: {
-          ACL: null
+          ACL: null,
         },
         uploadStream: {
-          ACL: null
+          ACL: null,
         },
-      }
+      },
     },
-  }  
+  },
 });
