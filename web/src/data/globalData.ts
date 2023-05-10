@@ -194,7 +194,7 @@ export const footerMenuOptions: LinkModel[] = [
       },
       {
         id: "gatacaWallet",
-        label: "Wallet",
+        label: "Gataca Wallet",
         route: "/products/wallet",
       },
       {
