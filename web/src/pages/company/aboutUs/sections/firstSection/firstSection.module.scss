@@ -1,5 +1,6 @@
 @import "../../../../../styles/_colors.scss";
 @import "../../../../../styles/mixins.scss";
+@import "../../../../../styles/types.scss";
 
 .firstSection {
   padding: 0 20px;
@@ -27,6 +28,7 @@
       margin-right: auto;
       span {
         color: $primary700;
+        font-family: $custom;
       }
     }
     p {
