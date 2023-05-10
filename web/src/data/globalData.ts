@@ -419,9 +419,24 @@ export const clientsLogos: IconModel[] = [
     icon: images.logoBankinter,
   },
   {
-    id: "idema",
-    alt: "Idema logo",
+    id: "idemia",
+    alt: "Idemia logo",
     icon: images.logoIdema,
+  },
+  {
+    id: "roviraIVirgili",
+    alt: "Universitat Rovira i Virgili logo",
+    icon: images.logoUniversitat,
+  },
+  {
+    id: "earlyAdoptersProgramSpain",
+    alt: "Early Adopters Program Spain logo",
+    icon: images.earlyAdoptersSpainLogo,
+  },
+  {
+    id: "unaEuropa",
+    alt: "Una Europa logo",
+    icon: images.unaEuropalogo,
   },
   {
     id: "europeanCommision",

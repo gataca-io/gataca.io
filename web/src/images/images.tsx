@@ -61,6 +61,7 @@ import logoBankinter from "./logos/bankinter.svg"
 import logoEuropeanCommision from "./logos/europeancommision.svg"
 import logoIdema from "./logos/idema.svg"
 import logoRedES from "./logos/redES.svg"
+import logoEarlyAdoptersSpain from "./logos/logo-early-adopters-spain.svg"
 import logoUniversitat from "./logos/universitat.svg"
 import rightRocket from "./images3d/rightRocket.png"
 import mainHomeImage from "./images3d/main_home_img.png"
@@ -282,4 +283,5 @@ export const images = {
   chevronLeftIcon: chevronLeftIcon,
   ISO27001Certification: ISO27001Certification,
   ISO27001Logo: ISO27001Logo,
+  earlyAdoptersSpainLogo: logoEarlyAdoptersSpain,
 }
