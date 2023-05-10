@@ -1,14 +1,17 @@
 import * as React from "react"
 import * as styles from "./logosSlider.module.scss"
-import { clientsLogos } from "../../../data/globalData"
+import { clientsClearLogos, clientsLogos } from "../../../data/globalData"
 
 export type ILogosSliderProps = {
+  lightLogos?: boolean
   className?: string
 }
 
 const timesToRepeatLogos = 15
 const LogosSlider: React.FC<ILogosSliderProps> = props => {
-  const { className } = props
+  const { lightLogos, className } = props
+
+  const logosToDisplay = lightLogos ? clientsClearLogos : clientsLogos
 
   return (
     <div className={`${className && className} ${styles.logosSlider} `}>
@@ -16,7 +19,7 @@ const LogosSlider: React.FC<ILogosSliderProps> = props => {
         <div className={styles.clientsLogo__container}>
           <div className={styles.clientsLogo__slider}>
             {[...Array(timesToRepeatLogos)].map((e, i) => {
-              return clientsLogos.map((item, index) => {
+              return logosToDisplay?.map((item, index) => {
                 return (
                   <div
                     className={styles?.clientsLogo__sliderItem}

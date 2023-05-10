@@ -444,3 +444,41 @@ export const clientsLogos: IconModel[] = [
     icon: images.logoEuropeanCommision,
   },
 ]
+
+export const clientsClearLogos: IconModel[] = [
+  {
+    id: "redES",
+    alt: "red.es logo",
+    icon: images.redesClearLogo,
+  },
+  {
+    id: "bankinter",
+    alt: "Bankinter logo",
+    icon: images.bankinterClearLogo,
+  },
+  {
+    id: "idemia",
+    alt: "Idemia logo",
+    icon: images.idemiaClearLogo,
+  },
+  {
+    id: "roviraIVirgili",
+    alt: "Universitat Rovira i Virgili logo",
+    icon: images.roviraIVirgiliClearLogo,
+  },
+  {
+    id: "earlyAdoptersProgramSpain",
+    alt: "Early Adopters Program Spain logo",
+    icon: images.earlyAdoptersSpainClearLogo,
+  },
+  {
+    id: "unaEuropa",
+    alt: "Una Europa logo",
+    icon: images.unaEuropaClearLogo,
+  },
+  {
+    id: "europeanCommision",
+    alt: "European Commision logo",
+    icon: images.europeanComissionClearLogo,
+  },
+]
