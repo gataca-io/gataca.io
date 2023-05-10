@@ -48,17 +48,6 @@
       "component": "template.list-items-with-media",
       "required": true
     },
-    "thirdSection": {
-      "type": "component",
-      "repeatable": false,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "component": "template.list-items-with-media",
-      "required": true
-    },
     "fourthSection": {
       "type": "component",
       "repeatable": false,
@@ -70,17 +59,6 @@
       "component": "template.video-section",
       "required": true
     },
-    "fifthSection": {
-      "type": "component",
-      "repeatable": false,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "component": "template.list-items-with-media",
-      "required": true
-    },
     "sixthSection": {
       "type": "component",
       "repeatable": false,
@@ -90,6 +68,28 @@
         }
       },
       "component": "shared.title-text-buttons",
+      "required": true
+    },
+    "thirdSection": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "template.items-with-icon-section",
+      "required": true
+    },
+    "fifthSection": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "template.items-with-icon-section",
       "required": true
     }
   }

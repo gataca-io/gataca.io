@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_template_items_with_icon_sections",
+  "info": {
+    "displayName": "ItemsWithIconSection"
+  },
+  "options": {},
+  "attributes": {
+    "smallTitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "richtext"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.button"
+    },
+    "listItemsWithIcon": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.list-items-with-icon",
+      "required": true
+    }
+  }
+}
