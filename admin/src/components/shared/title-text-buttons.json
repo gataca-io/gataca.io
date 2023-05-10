@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_shared_title_text_buttons",
+  "info": {
+    "displayName": "titleTextButtons",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "richtext"
+    },
+    "title": {
+      "type": "richtext"
+    },
+    "firstButton": {
+      "displayName": "button",
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.button"
+    },
+    "secondButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.button"
+    },
+    "smallTitle": {
+      "type": "string"
+    }
+  }
+}

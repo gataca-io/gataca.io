@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_template_video_sections",
+  "info": {
+    "displayName": "videoSection"
+  },
+  "options": {},
+  "attributes": {
+    "smallTitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "richtext"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "video": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

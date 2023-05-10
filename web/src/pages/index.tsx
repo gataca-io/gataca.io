@@ -54,7 +54,7 @@ const IndexPage: React.FC<PageProps> = () => {
   }
 
   const getHomeStrapiData = async () => {
-    await fetch(`${process.env.STRAPI_API_URL}/api/entry?&populate=*`)
+    await fetch(`${process.env.STRAPI_API_URL}/api/entry?&populate=deep`)
       .then(response => response.json())
       .then(jsonResponse => {
         const homeData = jsonResponse?.data?.attributes
