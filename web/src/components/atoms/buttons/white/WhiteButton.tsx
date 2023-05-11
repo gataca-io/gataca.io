@@ -8,7 +8,7 @@ const WhiteButton: React.FC<ButtonModel> = props => {
   return (
     <button
       className={`${outlined ? styles?.outlinedButton : styles?.button} ${cx(
-        "buttonMD"
+        "buttonLG"
       )} ${className && className}`}
       onClick={action}
     >

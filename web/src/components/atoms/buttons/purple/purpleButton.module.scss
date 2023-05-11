@@ -3,9 +3,10 @@
 
 .button {
     background-color: $primary700;
-    color: $primary100;
-    padding: 10px 14px;
+    color: $neutral100;
+    padding: 12px 24px;
     height: 48px;
+    border: 2px solid $primary700;
     border-radius: 8px;
     @include flexbox();
     @include justify-content(center);
@@ -14,6 +15,10 @@
 
     &:hover {
         background-color: $primary900;
+        border: 2px solid $primary900;
+    }
+    &:focus {
+        border: 2px solid $primary300;
     }
 
     & > svg {
@@ -25,7 +30,7 @@
     background-color: $neutral100;
     border: 1px solid $primary700;
     color: $neutral1000;
-    padding: 10px 14px;
+    padding: 12px 24px;
     height: 48px;
     border-radius: 8px;
     @include flexbox();
@@ -36,6 +41,9 @@
      &:hover {
         font-weight: 600;
         color: $primary700;
+    }
+    &:focus {
+        border: 1px solid $primary300;
     }
 
     & > svg {
