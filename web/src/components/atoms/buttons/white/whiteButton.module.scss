@@ -6,15 +6,13 @@
     padding: 12px 24px;
     height: 48px;
     border-radius: 8px;
-    border: 2px solid $primary700;
     cursor: pointer;
 
     &:hover {
         background-color: $primary900;
-        border: 2px solid $primary900;
     }
     &:focus {
-        border: 2px solid $primary300;
+        box-shadow: inset 0px 0px 0px 2px $primary300;
     }
 }
 
@@ -31,6 +29,6 @@
         background-color:rgba(255, 255, 255, 0.2);
     }
     &:focus {
-        border: 1px solid $primary300;
+        box-shadow: inset 0px 0px 0px 2px $primary300;
     }
 }

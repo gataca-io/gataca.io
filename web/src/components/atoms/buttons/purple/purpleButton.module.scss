@@ -6,7 +6,6 @@
     color: $neutral100;
     padding: 12px 24px;
     height: 48px;
-    border: 2px solid $primary700;
     border-radius: 8px;
     @include flexbox();
     @include justify-content(center);
@@ -15,10 +14,9 @@
 
     &:hover {
         background-color: $primary900;
-        border: 2px solid $primary900;
     }
     &:focus {
-        border: 2px solid $primary300;
+        box-shadow: inset 0px 0px 0px 2px $primary300;
     }
 
     & > svg {
@@ -43,7 +41,7 @@
         color: $primary700;
     }
     &:focus {
-        border: 1px solid $primary300;
+        box-shadow: inset 0px 0px 0px 2px $primary300;
     }
 
     & > svg {
