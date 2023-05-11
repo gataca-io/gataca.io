@@ -156,7 +156,6 @@ export interface LegalModel {
       description: string
       title: string
       idName: string
-      descriptionCKE: string
       id: string
     }[]
   }

@@ -46,7 +46,7 @@ const Pricing: React.FC<PageProps> = props => {
           onPremise={firstSection?.categories[1]}
           subOptionClickedID={props?.location?.hash?.substring(1)}
         />
-        <LogosSlider className={styles?.slider} />
+        <LogosSlider className={styles?.slider} lightLogos={true} />
         <SecondSection
           title={secondSection?.title}
           subTitle={secondSection?.subTitle}

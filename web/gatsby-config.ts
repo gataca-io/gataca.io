@@ -6,19 +6,18 @@ module.exports = {
   flags: {
     DEV_SSR: true,
   },
+  siteMetadata: {
+    metaTitle: "Gataca | Decentralized Identity Management Technology",
+    metaDescription:
+      "Gataca is a cybersecurity company that provides decentralized digital identity technology, also known as self-sovereign identity (SSI).",
+    title: "GATACA",
+    siteUrl: "https://gataca.io",
+  },
   plugins: [
     "gatsby-plugin-gatsby-cloud",
     "gatsby-plugin-sass",
     "gatsby-plugin-react-helmet-async",
-    {
-      resolve: "gatsby-plugin-sitemap",
-      options: {
-        siteMetadata: {
-          // If you didn't use the resolveSiteUrl option this needs to be set
-          siteUrl: "https://gataca.io",
-        },
-      },
-    },
+    "gatsby-plugin-sitemap",
     {
       resolve: "gatsby-source-strapi",
       options: {

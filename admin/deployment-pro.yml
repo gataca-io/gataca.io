@@ -67,6 +67,22 @@ spec:
               secretKeyRef:
                 key: POSTGRES_PASSWORD
                 name: strapidb-secret
+          - name: AWS_BUCKET
+            value: dev-strapi-s3-gataca
+          - name: AWS_BUCKET_NAME
+            value: dev-strapi-s3-gataca
+          - name: AWS_REGION
+            value: eu-central-1
+          - name: AWS_ACCESS_KEY_ID
+            valueFrom:
+              secretKeyRef:
+                key: AWS_ACCESS_KEY_ID
+                name: strapi-api
+          - name: AWS_ACCESS_SECRET
+            valueFrom:
+              secretKeyRef:
+                key: AWS_ACCESS_SECRET
+                name: strapi-api
           ports:
           - containerPort: 1337
             name: strapiweb
