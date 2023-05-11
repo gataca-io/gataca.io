@@ -9,9 +9,9 @@ const SocialMediaContent: React.FC = () => {
       {socialMedia.map((item, index) => {
         return (
           <li key={"footer__" + item.id + index}>
-            <Link to={item.route || ""}>
+            <a href={item.route || ""} target="_blank">
               <img src={item.icon} id={"footer__" + item.id} alt={item.alt} />
-            </Link>
+            </a>
           </li>
         )
       })}

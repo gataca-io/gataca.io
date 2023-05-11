@@ -16,6 +16,18 @@ export type ISectionProps = {
 const FirstSection: React.FC<ISectionProps> = props => {
   const { title, description, leftButton, rightButton } = props
 
+  let videoSection: HTMLVideoElement | null | undefined
+
+  React.useEffect(() => {
+    videoSection = document
+      ? (document?.getElementById("homeVideoSection") as HTMLVideoElement)
+      : undefined
+  })
+
+  const scrollToVideo = () => {
+    videoSection?.scrollIntoView({ behavior: "smooth" })
+  }
+
   return (
     <div
       className={styles.firstSection__container}
@@ -38,7 +50,7 @@ const FirstSection: React.FC<ISectionProps> = props => {
                   label={rightButton?.label}
                   className={`${rightButton.className}`}
                   outlined
-                  action={() => window.open(gatacaStudioURL, "_blank")}
+                  action={() => scrollToVideo()}
                 />
               )}
             </div>

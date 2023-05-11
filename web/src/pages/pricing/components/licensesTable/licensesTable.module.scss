@@ -59,7 +59,7 @@ table {
         @include flexbox();
         @include flex-wrap(wrap);
         @include justify-content(space-between);
-        width: 181px;
+        width: 190px;
         align-items: center;
         & > .licenseName {
           width: 100%;
