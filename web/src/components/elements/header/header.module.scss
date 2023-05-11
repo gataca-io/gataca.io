@@ -35,12 +35,23 @@
       @include flexbox();
     }
     button {
-      padding: 10px 14px;
+      padding: 12px 24px;
       @include min-width($desktopMD) {
-        padding: 7px 8px;
+        padding: 6px 8px;
+        height: auto;
       }
-      @include min-width(1080px) {
-        padding: 10px 14px;
+      @include min-width(1200px) {
+        padding: 12px 24px;
+        height: 48px;
+      }
+      &:first-child {
+        @include min-width($desktopMD) {
+          margin-right: 14px;
+        }
+      
+        @include min-width(1200px) {
+          margin-right: 20px;
+        }
       }
     }
   }

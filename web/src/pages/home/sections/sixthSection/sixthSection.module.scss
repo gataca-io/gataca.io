@@ -25,13 +25,11 @@
       @include align-items(center);
     }
     .buttonContainer {
-      max-width: 144px;
-      @include min-width($tabletXL) {
-        min-width: 163px;
-        max-width: 100%;
-      }
       button {
-        width: 100%;
+        span {
+          font-size: 20px;
+          line-height: 24px;
+        }
       }
     }
   }
