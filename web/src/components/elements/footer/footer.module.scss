@@ -21,6 +21,7 @@
   }
   .logo {
     margin-bottom: 60px;
+    max-width: 170px;
     @include min-width($mobileXL) {
       margin-bottom: 0;
     }
