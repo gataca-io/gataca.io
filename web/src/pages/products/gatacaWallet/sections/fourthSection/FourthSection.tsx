@@ -16,7 +16,11 @@ const FourthSection: React.FC<ISectionProps> = props => {
   const { title, list } = props
 
   return (
-    <div className={styles.fourthSection__container}>
+    <div
+      className={`${styles.fourthSection__container} ${cx(
+        "containerMaxWidth"
+      )}`}
+    >
       <section className={styles.fourthSection}>
         <div className={styles.fourthSection__leftSide}>
           <img src={images.rocket} />

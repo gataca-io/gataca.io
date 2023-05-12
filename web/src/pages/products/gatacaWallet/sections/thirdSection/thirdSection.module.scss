@@ -3,8 +3,8 @@
 
 .thirdSection {
   margin: 80px auto 80px;
-  margin: 132px 20px;
-  max-width: 1184px;
+  margin: 132px 0;
+  padding: 0 20px;
   @include flexbox();
   @include flex-direction(column);
   @include justify-content(center);
@@ -14,17 +14,19 @@
     @include flex-direction(row);
     @include align-items(center);
     @include justify-content(space-between);
+    padding: 0 40px;
   }
 
   @include min-width($tabletMD) {
-    @include justify-content(center);
-    margin: 80px 40px 80px;
+    margin: 80px 0 80px;
     margin-top: 263px;
   }
   
   @include min-width($desktopSM) {
-    padding: 0 40px;
     margin: 200px auto 80px;
+  }
+  @include min-width($desktopMD) {
+    padding: 0 60px;
   }
   
   .thirdSection__leftSide {

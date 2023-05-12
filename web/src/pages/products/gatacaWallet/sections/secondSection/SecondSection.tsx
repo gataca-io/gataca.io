@@ -25,7 +25,7 @@ const SecondSection: React.FC<ISectionProps> = props => {
 
   return (
     <div style={{ position: "relative" }}>
-      <section className={styles.secondSection}>
+      <section className={`${styles.secondSection} ${cx("containerMaxWidth")}`}>
         <div className={`${cx("heading3")} ${styles.secondSection__leftSide}`}>
           <img src={images.purpleArrows} />
         </div>

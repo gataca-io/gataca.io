@@ -43,7 +43,10 @@ const SixthSection: React.FC<ISectionProps> = props => {
   const [firstItem, setFirstItem] = React.useState<number>(0)
 
   return (
-    <div id="sixthSection" className={styles.sixthSection__container}>
+    <div
+      id="sixthSection"
+      className={`${styles.sixthSection__container} ${cx("containerMaxWidth")}`}
+    >
       <section className={styles.sixthSection}>
         <div className={`${cx("heading3")} ${styles.sixthSection__leftSide}`}>
           <p className={`${cx("heading3 marginBottom12")}`}>{title}</p>
