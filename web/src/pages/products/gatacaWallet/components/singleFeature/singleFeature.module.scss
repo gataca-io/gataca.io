@@ -36,12 +36,18 @@
     position: absolute;
     left: 0;
     width: 50px;
+    top: 2px;
 
     @include min-width($mobileXL) {
       display: block;
     }
     @include min-width($desktopMD) {
-      width: 81px
+      top: -3px;
+      width: 71px;
+    }
+    @include min-width($desktopXL) {
+      left: 10px;
+      top: -4px;
     }
   }
 
