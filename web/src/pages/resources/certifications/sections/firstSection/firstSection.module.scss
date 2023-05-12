@@ -53,7 +53,7 @@
           padding: 12px 24px;
           height: auto;
           border-radius: 8px;
-          max-width: 257px;
+          max-width: calc(257px - 48px);
           @include flexbox();
           @include justify-content(center);
           @include align-items(center);
