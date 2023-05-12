@@ -9,7 +9,7 @@ const ButtonsHeader: React.FC = () => {
       <PurpleButton
         label={"Log In"}
         outlined
-        className={cx("marginRight14")}
+        className={cx("marginRight20")}
         action={() => window.open(gatacaStudioURL, "_blank")}
       />
       <PurpleButton

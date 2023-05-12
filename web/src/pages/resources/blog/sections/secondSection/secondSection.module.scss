@@ -1,5 +1,6 @@
 @import "../../../../../styles/_colors.scss";
 @import "../../../../../styles/mixins.scss";
+@import "../../../../../styles/types.scss";
 
 .secondSection__container {
   position: relative;
@@ -59,6 +60,9 @@
     text-align: center;
     white-space: nowrap;
     cursor: none;
+    p {
+      font-family: $base;
+    }
   }
   .categoryOption {
     padding: 8px 0px;
