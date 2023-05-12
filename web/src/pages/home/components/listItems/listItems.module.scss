@@ -14,29 +14,26 @@
   .listItems__titleContainer {
     position: relative;
     @include flexbox();
-    h6 {
+    .title {
+      color: $primary700;
       @include min-width($mobileXL) {
         margin-left: 70px;
       }
       @include min-width($desktopMD) {
         margin-left: 113px;
       }
-      &.notSelected {
-        font-family: $base;
-        font-size: 20px;
-        font-weight: 500;
-        line-height: 24px;
-        color: $neutral1000;
-        cursor: pointer;
-        margin-bottom: 20px;
-        @include min-width($mobileXL) {
-          font-size: 16px;
-          line-height: 20px;
-        }
+    }
+    .notSelected {
+      color: $neutral1000;
+      cursor: pointer;
+      margin-bottom: 20px;
+      @include min-width($mobileXL) {
+        font-size: 16px;
+        line-height: 20px;
+        margin-left: 70px;
       }
-
-      &.selected {
-        color: $primary700;
+      @include min-width($desktopMD) {
+        margin-left: 113px;
       }
     }
     & > img {
@@ -44,17 +41,18 @@
       @include min-width($mobileXL) {
         position: absolute;
         left: 5px;
-        top: -3px;
+        top: 2px;
         width: 50px;
         display: block;
       }
-      @include min-width($desktopSM) {
+      @include min-width($desktopMD) {
         left: 0;
+        top: -3px;
         width: 71px;
       }
       @include min-width($desktopXL) {
         left: 20px;
-        top: -6px;
+        top: -4px;
       }
     }
   }
