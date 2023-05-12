@@ -16,7 +16,9 @@ const ThirdSection: React.FC<ISectionProps> = props => {
   const { title, list } = props
 
   return (
-    <div className={styles.thirdSection__container}>
+    <div
+      className={`${styles.thirdSection__container} ${cx("containerMaxWidth")}`}
+    >
       <ChecksGreyPanelTwoColumns
         title={title}
         list={list}
