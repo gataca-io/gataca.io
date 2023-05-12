@@ -1,5 +1,6 @@
 @import "../../../../../styles/_colors.scss";
 @import "../../../../../styles/mixins.scss";
+@import "../../../../../styles/types.scss";
 
 .secondSection {
   margin-bottom: 132px;
@@ -19,6 +20,7 @@
       margin-right: auto;
       span {
         color: $primary700;
+        font-family: $custom;
       }
     }
   }

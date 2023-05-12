@@ -1,5 +1,6 @@
 @import "../../../../styles/colors";
 @import "../../../../styles/mixins";
+@import "../../../../styles/types";
 
 .headerSection {
   .headerSection__container {
@@ -13,6 +14,7 @@
 
     h1 span {
       color: $primary700;
+      font-family: $custom;
     }
 
     p {

@@ -21,11 +21,7 @@ const FifthSection: React.FC<ISectionProps> = props => {
   return (
     <section className={`${styles?.videoSection} ${cx("containerMaxWidth")}`}>
       <div className={styles.videoSection__header}>
-        <h3
-          className={`${styles?.description} ${cx("heading3 marginBottom12")}`}
-        >
-          {title}
-        </h3>
+        <h3 className={` ${cx("heading3 marginBottom12")}`}>{title}</h3>
         <p className={cx("bodyRegularXL neutral700")}>{description}</p>
       </div>
       <div className={styles.videoSection__videoContainer}>

@@ -1,5 +1,6 @@
 @import "../../../../styles/colors";
 @import "../../../../styles/mixins";
+@import "../../../../styles/types";
 
 .fifthSection {
   padding: 20px 20px 0;
@@ -15,6 +16,7 @@
     margin: 0 auto 80px;
     .description span{
       color: $primary700;
+      font-family: $custom;
     }
   }
   .fifthSection__videoContainer {
