@@ -16,7 +16,7 @@ div.mobileMenu {
     height: auto;
     min-height: 724px;
     background-color: $neutral100;
-    box-shadow: 0px 0px 12px rgba(12, 11, 51, 0.12);
+    box-shadow: 0px 0px 12px $boxShadowLigh;
     border-radius: 6px;
     @include flexbox();
     @include flex-direction(column);
