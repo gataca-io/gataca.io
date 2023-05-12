@@ -21,9 +21,12 @@
 
   .videoSection__videoContainer {
     max-width: calc(1184px - 80px);
-    margin: 0 10px 153px;
+    margin: 0 5px 153px;
     text-align: center;
     position: relative;
+    @include min-width($mobileXL) {
+      margin: 0 10px 153px;
+    }
     @include min-width($desktopMD) {
       margin: 0 auto 250px;
     }
