@@ -58,12 +58,6 @@ div.mobileMenu {
     padding: 20px;
     border-top: 2px solid $neutral300;
     margin-top: 16px;
-    button {
-      width: 95px;
-      &:nth-child(2) {
-        width: 137px;
-      }
-    }
   }
   .backLink {
     @include flexbox();
