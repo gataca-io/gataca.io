@@ -1,5 +1,6 @@
 @import "../../../../styles/colors";
 @import "../../../../styles/mixins";
+@import "../../../../styles/types";
 
 .headerSection {
   .headerSection__container {
@@ -13,18 +14,16 @@
 
     h1 span {
       color: $primary700;
+      font-family: $custom;
     }
 
     p {
       color: $neutral700;
     }
     .buttonContainer {
-      min-width: 134px;
-      max-width: 134px;
-      margin: 0 auto;
-
+      text-align: center;
       button {
-        width: 100%;
+        margin: 0 auto;
       }
     }
   }

@@ -25,12 +25,14 @@ const Footer: React.FC = () => {
           className={`${styles?.iconsContainer} ${styles?.mainSectionFooter__column}`}
         >
           <div className={styles?.logo}>
-            <img
-              src={images.gatacIconAndText}
-              id="footer__gatacaLogo"
-              key={"footer__" + "gatacaLogo"}
-              alt="Gataca Logo"
-            />
+            <Link to="/">
+              <img
+                src={images.gatacIconAndText}
+                id="footer__gatacaLogo"
+                key={"footer__" + "gatacaLogo"}
+                alt="Gataca Logo"
+              />
+            </Link>
           </div>
           <div
             className={`${styles?.socialMediaContainer} ${styles?.showDesktop}`}

@@ -79,7 +79,7 @@
     .plansSection__list {
       min-height: 164px;
       background: $neutral100;
-      box-shadow: 0px 0px 12px rgba(12, 11, 51, 0.12);
+      box-shadow: 0px 0px 12px $boxShadowLigh;
       border-radius: 20px;
       padding: 20px;
       width: 232px;
@@ -133,6 +133,9 @@
       &:nth-child(1) {
         & > p:nth-child(2) {
           max-width: 149px;
+        }
+        button {
+          padding: 12px 8px;
         }
       }
     }

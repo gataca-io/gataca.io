@@ -23,13 +23,13 @@ const ListItems: React.FC<IListItemsProps> = props => {
       >
         <div className={styles.listItems__titleContainer}>
           {selected && <img src={images.singleFeatureMark} />}
-          <h6
-            className={`${selected ? styles.selected : styles.notSelected} ${cx(
-              selected ? "heading6 marginBottom12" : ""
+          <p
+            className={`${selected ? styles.title : styles.notSelected} ${cx(
+              selected ? "bodyBoldXL marginBottom12" : "buttonLG"
             )}`}
           >
             {title}
-          </h6>
+          </p>
         </div>
         {selected &&
           (!Array.isArray(description) && typeof description === "string" ? (

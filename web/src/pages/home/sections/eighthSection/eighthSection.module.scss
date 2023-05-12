@@ -67,9 +67,12 @@
 
     & > button {
       margin-top: 40px;
-      width: 144px;
       @include min-width($desktopMD) {
         margin-top: 0;
+      }
+      span {
+        font-size: 20px;
+        line-height: 24px;
       }
     }
   }
