@@ -50,7 +50,7 @@
       padding: 24px;
       border-radius: 20px;
       cursor: pointer;
-      filter: drop-shadow(0px 0px 10px rgba(12, 11, 51, 0.12));
+      filter: drop-shadow(0px 0px 10px $boxShadowLigh);
       @include flexbox();
       @include flex-direction(column);
       @include align-items(center);

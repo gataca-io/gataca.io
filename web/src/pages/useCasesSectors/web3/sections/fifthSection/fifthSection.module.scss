@@ -29,6 +29,7 @@
     }
     video {
       max-width: 100%;
+      box-shadow: 1px 1px 12px $boxShadowLigh;
       @include min-width($desktopXL) {
         max-width: 982px;
       }

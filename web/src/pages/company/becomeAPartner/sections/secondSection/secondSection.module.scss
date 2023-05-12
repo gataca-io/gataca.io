@@ -23,7 +23,7 @@
     }
     .content__cards {
       background: $neutral100;
-      box-shadow: 0px 0px 12px rgba(12, 11, 51, 0.12);
+      box-shadow: 0px 0px 12px $boxShadowLigh;
       border-radius: 20px;
       max-width: 277px;
       gap: 52px;
