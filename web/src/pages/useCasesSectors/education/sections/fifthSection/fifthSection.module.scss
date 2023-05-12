@@ -2,16 +2,17 @@
 @import "../../../../../styles/_mixins.scss";
 
 .fifthSection {
-  padding: 0 20px;
+  padding: 0 calc(20px - 14px);
   margin-bottom: calc(132px - 18px);
   @include min-width($mobileXL) {
-    padding: 0 40px;
+    padding: 0 calc(40px - 14px);
   }
   @include min-width($desktopMD) {
     padding: 0 60px;
   }
   @media (min-width: 1067px) {
     margin-bottom: calc(200px - 18px);
+    padding: 0 calc(60px - 18px);
   }
   .fifthSection__container {
     margin: 0px auto 0px;
