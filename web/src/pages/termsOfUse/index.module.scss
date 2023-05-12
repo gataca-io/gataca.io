@@ -4,102 +4,128 @@
 
 .showDesktop {
   display: none;
+
   @include min-width($mobileXL) {
     @include flexbox();
     @include flex-direction(column);
   }
 }
+
 .showMobile {
   @include flexbox();
   @include flex-direction(column);
+
   @include min-width($mobileXL) {
     display: none;
   }
 }
+
 .termsOfUse {
   @include min-width($mobileXL) {
     padding-right: 20px;
     padding-left: 20px;
   }
+
   @include min-width($desktopMD) {
     padding-right: 40px;
     padding-left: 40px;
   }
+
   .sectionHeader {
     margin-bottom: 150px;
     padding-top: 110px;
     padding-right: 20px;
     padding-left: 20px;
+
     @include min-width($mobileXL) {
       padding-top: 160px;
       padding-right: 0;
       padding-left: 0;
     }
   }
+
   p {
     color: $neutral700;
   }
+
   .sectionMain {
     @include flexbox();
     @include flex-wrap(wrap);
     @include justify-content(space-between);
     padding-right: 20px;
     padding-left: 20px;
-    @include min-width($mobileXL)  {
+
+    @include min-width($mobileXL) {
       @include flex-wrap(nowrap);
       padding-right: 0;
       padding-left: 0;
     }
+
     p {
       font-family: $base;
       font-size: 18px;
       font-weight: 400;
       line-height: 24px;
       text-decoration: none;
+
       &.mainListTitle {
         color: $neutral1000;
       }
     }
-    b, strong {
+
+    b,
+    strong {
       font-family: $base;
       font-size: 18px;
       font-weight: 700;
       line-height: 24px;
       text-decoration: none;
     }
+
     .sectionMain__dataContentCol {
       @include flex(0, 0, 100%);
-      @include min-width($mobileXL)  {
+
+      @include min-width($mobileXL) {
         @include flex(0, 0, 60%);
       }
-      @include min-width($tabletXL)  {
+
+      @include min-width($tabletXL) {
         @include flex(0, 0, 65%);
       }
-      @include min-width($desktopSM)  {
+
+      @include min-width($desktopSM) {
         @include flex(0, 0, 70%);
       }
-      @include min-width($desktopXL)  {
+
+      @include min-width($desktopXL) {
         @include flex(0, 0, 75%);
-      }  
+      }
+
       .contentCol__section {
         &:not(:last-child) {
           margin-bottom: 60px;
         }
+
         &:last-child {
           margin-bottom: 40px;
+
           @include min-width($mobileXL) {
             margin-bottom: 120px;
           }
         }
       }
+
       a {
         color: $primary700;
         font-family: $base;
       }
+
       li {
         margin-left: 25px;
+
         p:first-child {
           position: relative;
+
           ::before {
             content: "";
             position: absolute;
