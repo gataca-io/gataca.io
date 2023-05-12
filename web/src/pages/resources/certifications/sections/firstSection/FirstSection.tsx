@@ -61,7 +61,7 @@ const FirstSection: React.FC<ISectionProps> = props => {
                     href={files.ISO27001Certification}
                     download={button?.fileName}
                   >
-                    <span className={cx("buttonMD")}>{button?.label}</span>
+                    <span className={cx("buttonLG")}>{button?.label}</span>
                   </a>
                 </div>
               </div>

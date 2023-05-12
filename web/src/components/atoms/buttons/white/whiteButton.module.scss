@@ -3,7 +3,7 @@
 .button {
     background-color: $neutral100;
     color: $primary1000;
-    padding: 10px 14px;
+    padding: 12px 24px;
     height: 48px;
     border-radius: 8px;
     cursor: pointer;
@@ -11,18 +11,24 @@
     &:hover {
         background-color: $primary900;
     }
+    &:focus {
+        box-shadow: inset 0px 0px 0px 2px $primary300;
+    }
 }
 
 .outlinedButton {
     background-color: transparent;
     border: 1px solid $neutral100;
     color: $neutral100;
-    padding: 10px 14px;
+    padding: 12px 24px;
     height: 48px;
     border-radius: 8px;
     cursor: pointer;
 
      &:hover {
         background-color:rgba(255, 255, 255, 0.2);
+    }
+    &:focus {
+        box-shadow: inset 0px 0px 0px 2px $primary300;
     }
 }

@@ -6,14 +6,15 @@
         },
         "firstSection": {
             "contactButton": {
-                "label": "Contact us"
+                "label": "Try for free"
             },
             "description": "Financial services have never been easier to access",
             "title": "Finance"
         },
         "fourthSection": {
             "description": "Revolutionizing financial services with decentralized identity solutions",
-            "list": [{
+            "list": [
+                {
                     "title": "Seamless integration"
                 },
                 {
@@ -35,7 +36,8 @@
             "title": "Why Gataca"
         },
         "secondSection": {
-            "steps": [{
+            "steps": [
+                {
                     "description": "Traditional identity verification methods, such as KYC and AML checks, are time-consuming and costly for financial institutions. Moreover, these methods can result in frustrating processes due to errors and false positives. At the same time, users may find the identity verification process difficult and tedious, which can lead them to abandon it entirely",
                     "number": "1",
                     "title": "Challenge"
@@ -49,7 +51,8 @@
         },
         "thirdSection": {
             "description": "Seamless and secure online banking",
-            "list": [{
+            "list": [
+                {
                     "description": "Reduce the time and effort required for identity verification while complying with regulatory requirements with a verifiable KYC credential",
                     "title": "Customer onboarding (Reusable KYC)"
                 },
