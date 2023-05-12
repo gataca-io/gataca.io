@@ -4,7 +4,6 @@ import Layout from "../../components/templates/mainLayout/MainLayout"
 import PreFooterCTASection from "../../components/templates/sections/preFooterCTA/PreFooterCTA"
 import { navigate } from "gatsby"
 import { gatacaStudioURL } from "../../data/globalData"
-import * as styles from "./index.module.scss"
 import HeaderSection from "./sections/headerSection/HeaderSection"
 import UseCasesSection from "./sections/useCasesSection/UseCasesSection"
 import { useState } from "react"
@@ -43,30 +42,28 @@ const UseCasesPage: React.FC<PageProps> = props => {
   return (
     <Layout seoData={strapiData?.seo}>
       <>
-        <div className={styles?.useCasesSectors}>
-          <HeaderSection
-            title={headerSection?.title}
-            description={headerSection?.description}
-            setHeaderSectionLoaded={setHeaderSectionLoaded}
-          />
-          <UseCasesSection
-            title={useCasesSection?.title}
-            description={useCasesSection?.description}
-            list={useCasesSection?.list}
-            subOptionClickedID={
-              props?.location?.hash?.substring(1) !== "otherIndustries"
-                ? props?.location?.hash?.substring(1)
-                : ""
-            }
-          />
-          <UseCasesAppliedSection
-            title={useCasesAppliedSection?.title}
-            description={useCasesAppliedSection?.description}
-            categories={useCasesAppliedSection?.categories}
-            index={0}
-            subOptionClickedID={props?.location?.hash?.substring(1)}
-          />
-        </div>
+        <HeaderSection
+          title={headerSection?.title}
+          description={headerSection?.description}
+          setHeaderSectionLoaded={setHeaderSectionLoaded}
+        />
+        <UseCasesSection
+          title={useCasesSection?.title}
+          description={useCasesSection?.description}
+          list={useCasesSection?.list}
+          subOptionClickedID={
+            props?.location?.hash?.substring(1) !== "otherIndustries"
+              ? props?.location?.hash?.substring(1)
+              : ""
+          }
+        />
+        <UseCasesAppliedSection
+          title={useCasesAppliedSection?.title}
+          description={useCasesAppliedSection?.description}
+          categories={useCasesAppliedSection?.categories}
+          index={0}
+          subOptionClickedID={props?.location?.hash?.substring(1)}
+        />
         <LogosSlider />
         <PreFooterCTASection
           title={"Ready To Start?"}

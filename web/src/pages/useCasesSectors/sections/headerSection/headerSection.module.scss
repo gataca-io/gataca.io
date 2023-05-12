@@ -7,9 +7,12 @@
     text-align: center;
     max-width: 778px;
     margin: 0 auto;
-    padding: 162px 0 146px;
+    padding: 162px 20px 146px;
     @include min-width($mobileXL) {
-      padding: 180px 0 200px;
+      padding: 180px 40px 200px;
+    }
+    @include min-width($desktopMD) {
+      padding: 180px 60px 200px;
     }
 
     h1 span {

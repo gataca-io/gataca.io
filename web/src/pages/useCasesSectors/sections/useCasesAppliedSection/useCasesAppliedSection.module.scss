@@ -3,8 +3,13 @@
 
 .useCasesAppliedSection {
   margin-bottom: 132px;
+  padding: 0 20px;
   @include min-width($mobileXL) {
     margin-bottom: 200px;
+    padding: 0 40px;
+  }
+  @include min-width($desktopMD) {
+    padding: 0 60px;
   }
   .useCasesAppliedSection__header {
     max-width: 770px;
