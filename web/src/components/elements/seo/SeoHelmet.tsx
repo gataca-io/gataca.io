@@ -2,7 +2,7 @@ import React from "react"
 import { Helmet } from "react-helmet-async"
 import { gatacaURL, twitterHandler } from "../../../data/globalData"
 import { SeoModel, StrapiImageModel } from "../../../interfaces/interfaces"
-import images from "../../../images/images"
+import { images } from "../../../images/images"
 
 export const SeoHelmet: React.FC<SeoModel> = props => {
   const { metaTitle, metaDescription, rrssImg, keywords, canonicalURL } = props
