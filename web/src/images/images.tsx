@@ -1,3 +1,4 @@
+import favicon from "./icon.png"
 import crevronDownSVG from "./icons/gat-icon-chevron-down.svg"
 import gatacIconAndText from "./gataca-icon-text.png"
 import brandAppleButton from "./icons/brand-apple-button.svg"
@@ -149,6 +150,7 @@ import europeanComissionClearLogo from "./logos/logo-european-comission-clear.sv
 import earlyAdoptersSpainClearLogo from "./logos/logo-early-adopters-spain-clear.svg"
 
 export const images = {
+  favicon: favicon,
   chevronDown: crevronDownSVG,
   gatacIconAndText: gatacIconAndText,
   brandAppleButton: brandAppleButton,
