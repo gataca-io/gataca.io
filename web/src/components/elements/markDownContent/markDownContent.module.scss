@@ -4,7 +4,7 @@
 
 .markDownContent{
   & > p, span, li {
-    margin-bottom: 18px;
+    margin-bottom: 20px;
     font-family: $base;
     font-size: 18px;
     font-weight: 400;
@@ -13,16 +13,30 @@
     color: $neutral700;
   }
 
-  & > a, p > a, span > a {
+  & > a, p > a, span > a, li > a {
     color: $primary700;
     text-decoration: underline;
     cursor: pointer;
+    font-family: $base;
   }
 
   & > ul {
     margin-left: 16px;
-    list-style: inside;
-    list-style-position: inside;
+    list-style-type: none;
+    li {
+      position: relative;
+      margin-left: 10px;
+      &::before {
+        content: '';
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        background-color: $neutral700;
+        border-radius: 5px;
+        top: 9px;
+        left: -15px;
+      }
+    }
   }
 
   & > ol {
@@ -96,5 +110,42 @@
 
     & > em, p > em, span > em {
       font-style: italic;
+    }
+    & > table {
+      margin: 0 auto 20px;
+      border-radius: 12px;
+      border: 1px solid $neutral300;
+      > * {
+        font-family: $base;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+        text-decoration: none;
+        color: $neutral700;
+      }
+    }
+    thead {
+      th {
+        padding: 20px 12px;
+        font-family: $base;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 28px;
+        text-decoration: none;
+        color: $neutral1000;
+        text-align: left;
+        &:not(:first-child){  
+          border-left: 1px solid $neutral300;
+        }
+      }
+    }
+    tbody {
+      td{
+        border-top: 1px solid $neutral300;
+        padding: 12px;
+        &:not(:first-child) {
+          border-left: 1px solid $neutral300;
+        }
+      }
     }
 }

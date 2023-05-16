@@ -1,6 +1,7 @@
 import * as React from "react"
 import * as styles from "./markDownContent.module.scss"
 import ReactMarkdown from "react-markdown"
+import remarkGfm from "remark-gfm"
 
 export type IMarkDownContentProps = {
   content?: any
@@ -12,7 +13,7 @@ const MarkDownContent: React.FC<IMarkDownContentProps> = props => {
 
   return (
     <div className={styles.markDownContent}>
-      <ReactMarkdown>{content}</ReactMarkdown>
+      <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>
     </div>
   )
 }

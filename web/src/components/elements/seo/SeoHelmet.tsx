@@ -2,6 +2,7 @@ import React from "react"
 import { Helmet } from "react-helmet-async"
 import { gatacaURL, twitterHandler } from "../../../data/globalData"
 import { SeoModel, StrapiImageModel } from "../../../interfaces/interfaces"
+import { images } from "../../../images/images"
 
 export const SeoHelmet: React.FC<SeoModel> = props => {
   const { metaTitle, metaDescription, rrssImg, keywords, canonicalURL } = props
@@ -52,6 +53,12 @@ export const SeoHelmet: React.FC<SeoModel> = props => {
       <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
       <meta name="theme-color" content="#ffffff" />
       <link rel="manifest" href="/manifest.json" />
+      <link
+        rel="mask-icon"
+        href={images.favicon}
+        sizes="32x32"
+        type="image/png"
+      />
       {/*TODO: Add icons when they are created*/}
       {/* <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
       <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />

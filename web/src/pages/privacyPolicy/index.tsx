@@ -101,11 +101,11 @@ const PrivacyPolicy: React.FC<PageProps> = () => {
                     </p>
                     <p>
                       Service/s means the website{" "}
-                      <Link to={gatacaURL}>www.gataca.io</Link> (the “
-                      <b>Website</b>”), a backend platform and client
-                      applications (collectively, “<b>Gataca Platform</b>”) a
-                      mobile application called GATACA Wallet (the “Wallet”) and
-                      any other online products and services provided by GATACA.
+                      <Link to={gatacaURL}>gataca.io</Link> (the “<b>Website</b>
+                      ”), a backend platform and client applications
+                      (collectively, “<b>Gataca Platform</b>”) a mobile
+                      application called GATACA Wallet (the “Wallet”) and any
+                      other online products and services provided by GATACA.
                     </p>
                   </li>
                   <li className={cx("marginBottom20")}>
@@ -224,7 +224,7 @@ const PrivacyPolicy: React.FC<PageProps> = () => {
                   the Service or any forms dependent on the Service may be
                   processed by GATACA, as well as the data derived from your
                   browsing and any other data that you may provide in the
-                  future. 
+                  future.
                 </p>
                 <p className={cx("marginBottom20")}>
                   The data requested through the Service are generally mandatory
