@@ -3,7 +3,7 @@
 @import "../../../../styles/types";
 
 .seventhSection {
-  margin: 100px auto;
+  margin: 100px auto 0;
   padding: 0 20px;
 
   @include min-width($mobileXL) {
@@ -37,7 +37,7 @@
         order: 2;
         height: 100%;
         width: 100%;
-        margin: 178px 0 0;
+        margin: 178px 0 217px;
 
         @include min-width($tabletXL) {
           margin: 178px 0 217px;
