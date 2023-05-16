@@ -31,6 +31,7 @@ table {
     left: 0;
     box-shadow: 0px 4px 8px 0px #0000001F;
     z-index: -1;
+    background-color: $neutral100;
   }
 }
 
@@ -41,7 +42,7 @@ table {
   }
   &__cell {
     height: 143px;
-    padding: 20px !important;
+    padding: 15px !important;
     text-align: center;
     line-height: 16px;
     width: 175px;
@@ -198,6 +199,7 @@ table {
       }
     }
     &__row {
+        background-color: $neutral100;
       & > td {
       border: 1px solid $neutral300;
       padding: 12px;

@@ -5,18 +5,22 @@
   margin-top: 162px;
   margin-bottom: 132px;
   padding: 0 20px;
+
   @include min-width($mobileXL) {
     margin-top: 146px;
     margin-bottom: 132px;
     padding: 0 40px;
   }
+
   @include min-width($desktopMD) {
     padding: 0 60px;
   }
+
   .firstSection__header {
     max-width: 770px;
     margin: 0 auto 80px;
     text-align: center;
+
     @include min-width($mobileXL) {
       margin-bottom: 60px;
 
@@ -26,13 +30,16 @@
         line-height: 64px;
       }
     }
+
     p {
       color: $neutral700;
       margin-bottom: 80px;
+
       @include min-width($mobileXL) {
         margin-bottom: 60px;
       }
     }
+
     .categories {
       @include flexbox();
       @include flex-wrap(nowrap);
@@ -48,48 +55,45 @@
       text-align: center;
     }
   }
+
   .firstSection__sectors {
     width: 100%;
-   
     margin-top: 44px;
-    
   }
+
   .firstSection__sectors__cardsContainer {
-     width: 100%;
-
- @include flexbox();
+    width: 100%;
+    @include flexbox();
     gap: 32px;
-
+    @include justify-content(space-between);
     @include flex-wrap(wrap);
 
-       & > div { 
+    & > div {
       width: 100%;
+
       & > div:nth-child(4) {
-      gap: 12px;
+        gap: 12px;
 
         & > div {
           min-width: 184px;
           width: calc(49% - 12px);
         }
-
       }
     }
-     @include min-width($mobileXL) {
 
-   & > div { 
-      width: calc(50% - 58px);
-      
-      
+    @include min-width($mobileXL) {
+      & > div {
+        width: calc(50% - 58px);
+      }
     }
-  }
-@include min-width(1386px) {
-    @include flex-wrap(nowrap);
-    & > div > div:nth-child(4)  > div {
-     width: 100%;
-        }
 
-      
-  }
+    @include min-width(1386px) {
+      @include flex-wrap(nowrap);
+
+      & > div > div:nth-child(4) > div {
+        width: 100%;
+      }
+    }
   }
 }
 
@@ -99,6 +103,7 @@
   margin-left: auto;
   @include flexbox();
   @include justify-content(center);
+
   @include min-width($mobileXL) {
     @include justify-content(flex-end);
   }
@@ -107,6 +112,7 @@
 .allFeaturesButton {
   width: 100%;
   margin: 32px auto 0;
+
   & > svg {
     width: 24px;
     height: 24px;

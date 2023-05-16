@@ -23,6 +23,7 @@
   border-radius: 12px;
   border: 1px solid $neutral300;
   overflow: hidden;
+  background-color: $neutral100;
 
   & > .card__header {
     padding: 12px 20px;
@@ -102,6 +103,7 @@
   height: 40px;
   border: 1px solid $neutral400;
   border-radius: 8px;
+  background-color: $neutral100;
 }
 
 select {

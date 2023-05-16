@@ -1,7 +1,7 @@
 @import "../../../../../../../styles/mixins";
 
 .subcategoryCell {
-    min-width: 180px;
+    min-width: 184px;
     & > span {
         @include flexbox();
         @include flex-wrap(nowrap);
