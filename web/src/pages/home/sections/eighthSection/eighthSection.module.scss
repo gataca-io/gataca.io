@@ -2,7 +2,7 @@
 @import "../../../../styles/mixins.scss";
 
 .eighthSection__container {
-  margin: 132px 0px 178px;
+  margin: 0px 0px 178px;
   padding: 0 20px;
   @include min-width($mobileXL) {
     margin: 220px 0px 0px;

@@ -1,0 +1,164 @@
+@import "../../../../styles/colors";
+@import "../../../../styles/mixins";
+@import "../../../../styles/types";
+
+.seventhSection {
+  margin: 100px auto;
+  padding: 0 20px;
+
+  @include min-width($mobileXL) {
+    padding: 0 40px;
+  }
+
+  @include min-width($tabletXL) {
+    margin: 402px auto;
+  }
+
+  @include min-width($desktopMD) {
+    padding: 0 60px;
+  }
+
+  .seventhSection__container {
+    position: relative;
+
+    .seventhSection__options {
+      @include flexbox();
+      @include flex-direction(column);
+      @include justify-content(center);
+
+      @include min-width($tabletXL) {
+        gap: 32px;
+        @include flex-direction(row);
+        @include flex-wrap(nowrap);
+        @include justify-content(flex-end);
+      }
+
+      .seventhSection__leftSide {
+        order: 2;
+        height: 100%;
+        width: 100%;
+        margin: 178px 0 0;
+
+        @include min-width($tabletXL) {
+          margin: 178px 0 217px;
+          margin-top: 0;
+          order: 1;
+          position: absolute;
+          left: 0;
+          max-width: calc(50% - 32px);
+          @include flex(0, 0, calc(50));
+        }
+
+        .seventhSection__leftSide__feedbackBullet {
+          position: relative;
+          background-color: $primary200;
+
+          width: calc(100% - 80px);
+          padding: 40px;
+          border-radius: 12px;
+          height: auto;
+          @include flexbox();
+          @include justify-content(flex-start);
+          @include flex-direction(column);
+          @include align-items(inherit);
+
+          @include min-width($tabletXL) {
+            top: 50%;
+            transform: translateY(-50%);
+
+            & > div:nth-child(1) {
+              min-height: 228px;
+            }
+          }
+
+          & > div:nth-child(2) {
+            gap: 20px;
+            margin-top: 40px;
+            flex-direction: column;
+            @include flexbox();
+
+            @include min-width($mobileXL) {
+              flex-direction: row;
+              @include align-items(center);
+            }
+
+            @include min-width($tabletXL) {
+              flex-direction: column;
+              @include align-items(flex-start);
+            }
+
+            @include min-width(1115px) {
+              flex-direction: row;
+              @include align-items(center);
+            }
+
+            & > img {
+              width: 100px;
+              height: 36px;
+            }
+          }
+
+          &::before {
+            content: "";
+            position: absolute;
+            width: 75vw;
+            height: calc(100% + 176px);
+            right: 0px;
+            right: -40px;
+            background: $neutral200;
+            border-radius: 40px 0px 0px 40px;
+            z-index: -1;
+            top: 50%;
+            transform: translateY(-50%);
+
+            @include min-width($tabletXL) {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .seventhSection__rightSide {
+        position: relative;
+        @include flex(0, 0, 100%);
+
+        @include min-width($tabletXL) {
+          margin-top: 0;
+          display: flex;
+          justify-content: flex-end;
+          @include flex(0, 0, calc(75% - 32px));
+
+          & > div {
+            margin-left: 200px;
+            max-width: 475px;
+          }
+        }
+
+        @include min-width($desktopXL) {
+          @include flex(0, 0, calc(75% - 32px));
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          width: 75vw;
+          height: 591px;
+          right: -40px;
+          background: $neutral200;
+          border-radius: 40px 0px 0px 40px;
+          z-index: -1;
+          display: none;
+
+          @include min-width($tabletXL) {
+            display: block;
+            right: -40px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: calc(1184px + 100vh);
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+}

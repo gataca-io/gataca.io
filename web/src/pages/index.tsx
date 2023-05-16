@@ -13,6 +13,7 @@ import FirstSection from "./home/sections/firstSection/FirstSection"
 import * as styles from "./home/home.module.scss"
 import { sortByDate } from "../utils/sort"
 import { gatacaStudioURL } from "../data/globalData"
+import SeventhSection from "./home/sections/seventhSection/SeventhSection"
 
 const IndexPage: React.FC<PageProps> = () => {
   const [blogsItems, setBlogsItems] = React.useState<any | undefined>()
@@ -25,6 +26,7 @@ const IndexPage: React.FC<PageProps> = () => {
     fourthSection,
     fifthSection,
     sixthSection,
+    seventhSection,
     eighthSection,
   } = homeData ? homeData : []
 
@@ -93,6 +95,12 @@ const IndexPage: React.FC<PageProps> = () => {
           description={sixthSection?.description}
           list={sixthSection?.list}
           learnMoreButton={sixthSection?.learnMoreButton}
+        />
+        <SeventhSection
+          title={seventhSection?.title}
+          subTitle={seventhSection?.subTitle}
+          description={seventhSection?.description}
+          feedback={seventhSection?.feedback}
         />
         <EighthSection
           title={eighthSection?.title}
