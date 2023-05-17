@@ -1,4 +1,4 @@
-import type { PageProps } from "gatsby"
+import { PageProps } from "gatsby"
 import * as React from "react"
 import * as styles from "./index.module.scss"
 import cx from "classnames"
@@ -6,6 +6,7 @@ import Layout from "../../components/templates/mainLayout/MainLayout"
 import tableOfContent from "../../data/cookiePolicyData"
 import { LinkModel } from "../../interfaces/interfaces"
 import TableOfContentContainer from "../../components/templates/tableOfContent/elements/tableOfContentContainer/TableOfContentContainer"
+import Table from "./table/Table"
 
 export type ITableOfContentProps = {
   navigationObject?: LinkModel
@@ -171,6 +172,246 @@ const CookiePolicy: React.FC<PageProps> = () => {
                   </p>
                 </li>
               </ul>
+            </div>
+            <div
+              className={styles?.contentCol__section}
+              id="whatCookiesWeUse__3"
+            >
+              <h4 className={cx("heading4 marginBottom32")}>
+                4. What cookies do we use?
+              </h4>
+              <p className={cx("marginBottom20")}>
+                In addition to those cookies strictly necessary for the
+                provisioning of the Services, our Services use analytical
+                cookies and may use advertisement cookies.
+              </p>
+              <p className={cx("marginBottom20")}>
+                First-party cookies are all cookies necessary for the Services
+                to function.
+              </p>
+              <p className={cx("marginBottom20")}>
+                Details of the characteristics of third-party cookies are
+                described below:
+              </p>
+              <Table />
+              <p className={cx("marginBottom20 marginTop32")}>
+                Regarding third-party cookies, please visit the following links
+                for further information:
+              </p>
+              <ul>
+                <li className={cx("marginBottom20")}>
+                  <p>
+                    <b></b>Google Analytics:{" "}
+                    <a href="https://marketingplatform.google.com/about/analytics/terms/us">
+                      https://marketingplatform.google.com/about/analytics/terms/us
+                    </a>
+                  </p>
+                </li>
+                <li className={cx("marginBottom20")}>
+                  <p>
+                    <b></b>Fullstory:{" "}
+                    <a href="https://www.fullstory.com/legal/privacy-policy/">
+                      https://www.fullstory.com/legal/privacy-policy/
+                    </a>
+                  </p>
+                </li>
+                <li className={cx("marginBottom20")}>
+                  <p>
+                    <b></b>HubSpot:{" "}
+                    <a href="https://legal.hubspot.com/privacy-policy">
+                      https://legal.hubspot.com/privacy-policy
+                    </a>
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div className={styles?.contentCol__section} id="manageCookies__4">
+              <h4 className={cx("heading4 marginBottom32")}>
+                5. How to manage cookies on our services?
+              </h4>
+              <p className={cx("marginBottom20")}>
+                The first time you visit our Services, you can accept or reject
+                the use of cookies through GATACA’s Cookie Management Centre.
+              </p>
+              <p className={cx("marginBottom20")}>
+                Once you accept our cookies, you can delete them directly
+                through the cookie management options of your browser.
+              </p>
+              <p>
+                You can allow, block or delete the cookies installed on your
+                computer at any time through the options provided by your
+                browser. Please note that if you disable all cookies, some of
+                the functionalities or content of the Services may be affected.
+              </p>
+              <p className={cx("marginBottom20")}>Here's how to do it:</p>
+              <ul>
+                <li className={cx("marginBottom20")}>
+                  <p className={cx("marginBottom20")}>
+                    If you use <b>Microsoft Internet Explorer:</b>
+                  </p>
+                  <p>
+                    <b>1. </b>Click on the Settings button in Internet Explorer
+                  </p>
+                  <p>
+                    <b>2. </b>Then go to this location Privacy {">"} Settings{" "}
+                    {">"} Advanced
+                  </p>
+                  <p>
+                    <b>3. </b>Choose whether you want to accept, block, or be
+                    prompted for first-party and third-party cookies.
+                  </p>
+                  <p>
+                    <b>4. </b>For more information, click{" "}
+                    <a href="https://support.microsoft.com/es-es/windows/eliminar-y-administrar-cookies-168dab11-0753-043d-7c16-ede5947fc64d">
+                      here
+                    </a>
+                  </p>
+                </li>
+                <li className={cx("marginBottom20")}>
+                  <p className={cx("marginBottom20")}>
+                    If you use <b>Firefox:</b>
+                  </p>
+                  <p>
+                    <b>1. </b>Click on the Firefox button
+                  </p>
+                  <p>
+                    <b>2. </b>Select Options {">"} Privacy {">"} Use custom
+                    settings for history {">"} Check the Accept cookies option
+                    to enable them, and uncheck it to disable them {">"} Choose
+                    how long cookies will be stored {">"} OK.
+                  </p>
+                  <p>
+                    <b>3. </b>For more information, click{" "}
+                    <a href="https://support.mozilla.org/es/products/firefox/privacy-and-security">
+                      here
+                    </a>
+                  </p>
+                </li>
+                <li className={cx("marginBottom20")}>
+                  <p className={cx("marginBottom20")}>
+                    If you use <b>Chrome::</b>
+                  </p>
+                  <p>
+                    <b>1. </b>Click on the Chrome menu in the browser toolbar{" "}
+                    {">"} Settings {">"} Show advanced options {">"} In the
+                    "Privacy" section, click on Content settings {">"} In the
+                    "Cookies" section, you can manage cookies.
+                  </p>
+                  <p>
+                    <b>2. </b>For more information, click{" "}
+                    <a href="https://support.mozilla.org/es/products/firefox/privacy-and-security">
+                      here
+                    </a>
+                  </p>
+                </li>
+                <li className={cx("marginBottom20")}>
+                  <p className={cx("marginBottom20")}>
+                    If you use <b>Safari:</b>
+                  </p>
+                  <p>
+                    <b>1. </b>Go to Preferences
+                  </p>
+                  <p>
+                    <b>2. </b>Then in the Privacy panel, choose Block Cookies,
+                    and select the option you prefer from those offered by the
+                    browser.
+                  </p>
+                  <p>
+                    <b>3. </b>For more information, click{" "}
+                    <a href="https://support.apple.com/guide/safari/sfri11471/mac">
+                      here
+                    </a>
+                  </p>
+                </li>
+                <li className={cx("marginBottom20")}>
+                  <p className={cx("marginBottom20")}>
+                    If you use <b>Opera:</b>
+                  </p>
+                  <p>
+                    <b>1. </b>Click on Settings {">"} Options {">"} Advanced{" "}
+                    {">"} Cookies.
+                  </p>
+                  <p>
+                    <b>4. </b>For more information, click{" "}
+                    <a href="https://help.opera.com/en/latest/web-preferences/#cookies">
+                      here
+                    </a>
+                  </p>
+                </li>
+                <li className={cx("marginBottom20")}>
+                  <p className={cx("marginBottom20")}>
+                    If you use an <b>iPhone or iPad:</b>
+                  </p>
+                  <p>
+                    <b>1. </b>From the home screen, select Settings {">"} Safari
+                    and then choose your preferred configuration option.
+                  </p>
+                  <p>
+                    <b>2. </b>For more information, click{" "}
+                    <a href="https://support.apple.com/HT201265">here</a>
+                  </p>
+                </li>
+                <li className={cx("marginBottom20")}>
+                  <p className={cx("marginBottom20")}>
+                    If you use <b>Android:</b>
+                  </p>
+                  <p>
+                    <b>1. </b>Click on Menu {">"} Settings {">"} Security and
+                    Privacy {">"} activate or deactivate the "Accept cookies"
+                    checkbox {">"} Restart the browser for the changes to take
+                    effect.
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div
+              className={styles?.contentCol__section}
+              id="thirsPartyIntTransfers__5"
+            >
+              <h4 className={cx("heading4 marginBottom32")}>
+                6. Third Party and international transfers
+              </h4>
+              <p className={cx("marginBottom20")}>
+                First-party cookies are stored in servers located in the
+                European Economic Area (EEA).
+              </p>
+              <p className={cx("marginBottom20")}>
+                Users can obtain information about transfers to third countries
+                that, if any, are made by the third parties identified in this
+                cookie policy in their corresponding policies.
+              </p>
+              <p className={cx("marginBottom20")}>
+                Your data may also be communicated to competent authorities in
+                the exercise of their functions.
+              </p>
+            </div>
+            <div className={styles?.contentCol__section} id="additionalInfo__6">
+              <h4 className={cx("heading4 marginBottom32")}>
+                7. Additional information
+              </h4>
+              <p className={cx("marginBottom20")}>
+                First-party cookies are stored in servers located in the
+                European Economic Area (EEA).
+              </p>
+              <p className={cx("marginBottom20")}>
+                You can find additional information about the processing of your
+                data, in particular about your rights and how to exercise them,
+                in GATACA's Privacy Policy, which you will find available
+                through the following link{" "}
+                <a href="https://gataca.io/privacy-policy">
+                  https://gataca.io/privacy-policy
+                </a>
+              </p>
+            </div>
+            <div className={styles?.contentCol__section} id="contact__7">
+              <h4 className={cx("heading4 marginBottom32")}>8. Contact</h4>
+              <p className={cx("marginBottom20")}>
+                If you have any questions about this Cookie Policy, please
+                contact us by e-mail:{" "}
+                <a href="mailto: gdpr@gataca.io" type="email">
+                  gdpr@gataca.io
+                </a>
+              </p>
             </div>
           </div>
           {tableOfContent?.map((item, index) => {
