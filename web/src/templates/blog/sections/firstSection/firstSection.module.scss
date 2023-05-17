@@ -79,6 +79,10 @@
     margin-left: 32px;
   }
 
+  & > img {
+    width: 100%
+  }
+
   .firstSection__imageContainer {
     width: 100%;
     @include min-width($tabletMD) {
