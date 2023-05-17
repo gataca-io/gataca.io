@@ -57,13 +57,14 @@
   }
   .header__logo {
     img {
+      max-width: 170px;
       @include min-width($desktopMD) {
         width: 100%;
         height: auto;
         max-width: 140px;
       }
       @include min-width(1080px) {
-        min-width: 170px;
+        max-width: 170px;
         height: auto;
       }
     }

@@ -86,6 +86,9 @@ div.mobileMenu {
   left: 16px;
   opacity: 1;
   transform: translateX(0);
+  & > a > img {
+    max-width: 170px;
+  }
 }
 
 .visibleLogo {
