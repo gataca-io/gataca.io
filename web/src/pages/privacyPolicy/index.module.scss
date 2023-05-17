@@ -5,7 +5,7 @@
 .showDesktop {
   display: none;
 
-  @include min-width($mobileXL) {
+  @include min-width($tabletMD) {
     @include flexbox();
     @include flex-direction(column);
   }
@@ -15,20 +15,23 @@
   @include flexbox();
   @include flex-direction(column);
 
-  @include min-width($mobileXL) {
+  @include min-width($tabletMD) {
     display: none;
   }
 }
 
 .privacyPolicy {
+  padding-right: 20px;
+  padding-left: 20px;
+
   @include min-width($mobileXL) {
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
   }
 
   @include min-width($desktopMD) {
-    padding-right: 40px;
-    padding-left: 40px;
+    padding-right: 60px;
+    padding-left: 60px;
   }
 
   .sectionHeader {
@@ -52,10 +55,9 @@
     @include flexbox();
     @include flex-wrap(wrap);
     @include justify-content(space-between);
-    padding-right: 20px;
-    padding-left: 20px;
+    gap: 32px;
 
-    @include min-width($mobileXL) {
+    @include min-width($tabletMD) {
       @include flex-wrap(nowrap);
       padding-right: 0;
       padding-left: 0;
@@ -83,22 +85,22 @@
     }
 
     .sectionMain__dataContentCol {
-      @include flex(0, 0, 100%);
+      width: 100%;
 
-      @include min-width($mobileXL) {
-        @include flex(0, 0, 60%);
+      @include min-width($tabletMD) {
+        width: calc(100% - 304px);
       }
 
       @include min-width($tabletXL) {
-        @include flex(0, 0, 65%);
+        width: calc(100% - 304px);
       }
 
       @include min-width($desktopSM) {
-        @include flex(0, 0, 70%);
+        width: calc(100% - 304px);
       }
 
       @include min-width($desktopXL) {
-        @include flex(0, 0, 75%);
+        width: calc(100% - 304px);
       }
 
       .contentCol__section {
