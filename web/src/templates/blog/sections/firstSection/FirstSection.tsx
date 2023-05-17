@@ -8,7 +8,7 @@ import * as styles from "./firstSection.module.scss"
 import { readingMarkdownTime } from "../../../../utils/time"
 
 const FirstSection: React.FC<BlogModel> = props => {
-  const { title, category, timeReading, date, previewImage, content } = props
+  const { title, category, timeReading, date, heroImage, content } = props
 
   const readingTimeDisplay = () => {
     if (content) {
@@ -37,7 +37,7 @@ const FirstSection: React.FC<BlogModel> = props => {
           </p>
         </div>
         <div className={styles.firstSection__rightSide}>
-          <StrapiImage image={previewImage} />
+          <StrapiImage image={heroImage} />
         </div>
       </div>
     </section>

@@ -12,7 +12,7 @@
   @include min-width($mobileXL) {
     margin: 0 40px 68px;
   }
-  @include min-width($tabletMD) {
+  @include min-width($desktopMD) {
     margin: 0 60px 68px;
   }
 }
@@ -116,13 +116,29 @@
 
 
 .secondSection__blogsContainer {
-  width: 100%;
-  gap: 60px 32px;
-  @include flexbox();
-  @include flex-wrap(wrap);
-  @include justify-content(center);
-  @include min-width($desktopXXL) {
-    @include justify-content(flex-start);
+  display: inline-grid;
+  width:100%;
+  justify-content: space-between;
+  align-items: space-between;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 32px;
+
+  @include min-width($mobileXL) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  @include min-width(712px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+  @include min-width($desktopMD) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+
+  & > div {
+    min-width: 0;
+    width: calc(100% - 48px);
   }
 }
 

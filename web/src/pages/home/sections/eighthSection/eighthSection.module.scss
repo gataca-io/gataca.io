@@ -18,17 +18,10 @@
   position: relative;
   margin: 0px auto -98px;
   width: 100%;
-  height: 1697px;
   @include flexbox();
   @include flex-direction(column);
   @include flex-wrap(wrap);
 
-  @include min-width(471px) {
-     height: 1648px;
-  }
-  @include min-width(616px) {
-     height: 1603px;
-  }
   @include min-width($mobileXL) {
     height: auto;
   }
@@ -85,21 +78,38 @@
     width: 100%;
     z-index: 0;
     margin-top: 70px;
-    gap: 32px;
     border-radius: 12px;
-    flex-wrap: wrap;
-    @include flexbox();
-    @include justify-content(center);
+    display: inline-grid;
 
-    @include min-width(1067px) {
-      flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: space-between;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 32px;
+
+    @include min-width($mobileXL) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    @include min-width(712px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+    }
+    @include min-width($desktopMD) {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+    & > div {
+      min-width: 0;
+      width: calc(100% - 48px);
+    }
+
+    @include min-width($desktopMD) {
       overflow: visible;
       width: 100%;
       margin-top: 80px;
-      @include justify-content(space-between);
     }
 
-    @media (min-width: 710px) and (max-width: 1067px) {
+    @media (min-width: $mobileXL) and (max-width: $desktopMD) {
       & > div:nth-child(3)  {
         display: none;
       }
@@ -107,7 +117,7 @@
 
     & > div:nth-child(4)  {
       margin-right: 660px;
-      @include min-width(1067px) {
+      @include min-width($desktopMD) {
         margin-right: 0px;
       }
     }

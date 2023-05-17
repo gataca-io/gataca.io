@@ -71,6 +71,7 @@
           -ms-overflow-style: none; /* IE and Edge */
           scrollbar-width: none; /* Firefox */
           @include min-width($mobileXL) {
+            margin-left: -4px;
             height: auto;
             @include flex-direction(column);
             @include align-items(inherit);
@@ -97,7 +98,7 @@
         @include flex(0, 0, 100%);
         margin-top: 20px;
         @include min-width($mobileXL) {
-          @include flex(0, 0, 53%);
+          @include flex(0, 0, 50.5%);
           margin-top: 0;
         }
         @include min-width($desktopXL) {
