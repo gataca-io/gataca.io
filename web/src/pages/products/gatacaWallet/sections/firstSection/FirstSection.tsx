@@ -19,18 +19,16 @@ const FirstSection: React.FC<ISectionProps> = props => {
 
   return (
     <div style={{ position: "relative" }}>
-      <section className={styles.firstSection}>
+      <section className={`${styles.firstSection} ${cx("containerMaxWidth")}`}>
         <div className={styles.firstSection__leftSide}>
-          <h1 className={`${cx("heading1 margin10 marginBottom32")}`}>
-            {title}
-          </h1>
-          <p className={`${cx("bodyRegularXL margin10 marginBottom20")}`}>
+          <h1 className={`${cx("heading1 marginBottom32")}`}>{title}</h1>
+          <p className={`${cx("bodyRegularXL marginBottom20")}`}>
             {description}
           </p>
           <div>
             <a
               className={`${cx(
-                "bodyRegularXL margin10 marginTop12 marginBottom8"
+                "bodyRegularXL marginRight20 marginTop12 marginBottom20"
               )}`}
               href={marketIosURI}
               target="_blank"
@@ -40,7 +38,7 @@ const FirstSection: React.FC<ISectionProps> = props => {
             <a
               href={marketAndroidURI}
               target="_blank"
-              className={`${cx("margin10 marginTop12 marginBottom10")}`}
+              className={`${cx("marginBottom20")}`}
             >
               <img src={images.brandGoogleButton} />
             </a>

@@ -5,23 +5,24 @@
 .firstSection {
     position: relative;
     margin: 20px auto;
-    padding: 20px;
-    max-width: 1184px;
+    padding: 0 20px;
     @include flexbox();
     @include flex-direction(column);
     @include justify-content(flex-start);
     @include flex-wrap(wrap);
+    @include min-width($mobileXL) {
+      padding: 0 40px;
+    }
 
     @include min-width($tabletMD) {
-      max-width: 1184px;
-      margin: 80px 30px 80px;
+      margin: 80px 0 80px;
       @include flex-direction(row);
     }
     @include min-width($desktopSM) {
       margin: 200px auto 80px;
     }
-    @include min-width($desktopXXL) {
-      padding: 0 60px 0 140px;
+    @include min-width($desktopMD) {
+      padding: 0 60px;
     }
 }
 

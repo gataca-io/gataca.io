@@ -5,10 +5,10 @@
   position: relative;
   padding: 0 20px 57px;
   @include min-width($mobileXL) {
-      padding: 0;
+    padding: 0 40px;
   }
-  @include min-width($desktopXL) {
-     padding: 0 128px 0px;
+  @include min-width($desktopMD) {
+    padding: 0 60px;
   }
 }
 
@@ -35,17 +35,17 @@
 
   @include min-width($tabletMD) {
     padding: 40px;
-    margin: 200px 6% 0px;
+    margin: 200px 0 0px;
   }
 
   @include min-width($desktopSM) {
     max-width: 1184px;
-    margin: 200px 5% 0px;
+    margin: 200px 0 0px;
   }
 
   @include min-width($desktopMD) {
     padding: 72px;
-    margin: 200px 6.3% 0px;
+    margin: 200px 0 0px;
   }
 
   @include min-width($desktopXL) {

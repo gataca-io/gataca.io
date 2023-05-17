@@ -787,4 +787,51 @@
     .neutral700 {
         color: $neutral700
     }
+
+    // Background vertical lines
+    body {
+        &::before {
+            content: '';
+            position: fixed;
+            z-index: -999;
+            min-height: 100%;
+            width: calc(100% - 40px);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background:
+                repeating-linear-gradient(#E4E4E4,
+                    #E4E4E4 3px,
+                    transparent 3px,
+                    transparent 6px) 0%,
+                repeating-linear-gradient(#E4E4E4,
+                        #E4E4E4 3px,
+                        transparent 3px,
+                        transparent 6px)25%,
+                repeating-linear-gradient(#E4E4E4,
+                        #E4E4E4 3px,
+                        transparent 3px,
+                        transparent 6px)50%,
+                repeating-linear-gradient(#E4E4E4,
+                        #E4E4E4 3px,
+                        transparent 3px,
+                        transparent 6px)75%,
+                repeating-linear-gradient(#E4E4E4,
+                        #E4E4E4 3px,
+                        transparent 3px,
+                        transparent 6px)100%;
+            background-size: 1px 100%;
+            background-repeat: repeat-y;
+            @include min-width($mobileXL) {
+                width: calc(100% - 80px);
+            }
+            @include min-width($desktopMD) {
+                width: calc(100% - 120px);
+            }
+            @media (min-width: 1304px) {
+                width: 100%;
+                max-width: 1184px;
+            }
+        }
+    }
 }

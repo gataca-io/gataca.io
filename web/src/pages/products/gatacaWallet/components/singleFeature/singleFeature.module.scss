@@ -19,7 +19,7 @@
       margin-left: 70px;
     }
     @include min-width($desktopMD) {
-      margin-left: 113px;
+      margin-left: 103px;
     }
   }
 }
@@ -46,7 +46,7 @@
       width: 71px;
     }
     @include min-width($desktopXL) {
-      left: 10px;
+      left: 0px;
       top: -4px;
     }
   }
@@ -57,7 +57,7 @@
       margin-left: 70px;
     }
     @include min-width($desktopMD) {
-      margin-left: 113px;
+      margin-left: 103px;
     } 
   }
 
@@ -69,7 +69,7 @@
       margin-left: 70px;
     }
     @include min-width($desktopMD) {
-      margin-left: 113px;
+      margin-left: 103px;
     }
   }
 }

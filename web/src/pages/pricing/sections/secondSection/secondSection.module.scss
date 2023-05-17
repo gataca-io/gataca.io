@@ -55,6 +55,7 @@
         @include min-width($mobileXL) {
           @include flex(0, 0, calc(30));
           margin-right: 32px;
+          margin-left: -4px;
         }
         @include min-width($desktopXL) {
           @include flex(0, 0, calc(100%/3));
@@ -97,7 +98,7 @@
         @include flex(0, 0, 100%);
         margin-top: 20px;
         @include min-width($mobileXL) {
-          @include flex(0, 0, 53%);
+          @include flex(0, 0, 50%);
           margin-top: 0;
         }
         @include min-width($desktopXL) {

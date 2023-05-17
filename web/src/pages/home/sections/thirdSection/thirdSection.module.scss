@@ -14,7 +14,7 @@
   }
   .description {
     margin-bottom: 80px;
-    @include min-width($mobileXL) {
+    @include min-width($desktopSM) {
       margin-bottom: 122px;
       max-width: 592px;
     }
@@ -24,18 +24,18 @@
     @include flex-direction(column);
     @include justify-content(center);
     @include flex-wrap(wrap);
-    @include min-width($mobileXL) {
+    @include min-width($desktopSM) {
       @include flex-direction(row);
       @include flex-wrap(nowrap);
       @include justify-content(space-between);
     }
     @include min-width($tabletMD) {
-      @include justify-content(center);
+      @include justify-content(space-between);
     }
     .gatacaStudioSection__leftSide {
       position: relative;
       max-width: 100%;
-      @include min-width($mobileXL) {
+      @include min-width($desktopSM) {
         @include flex(0, 0, calc(30));
         margin-right: 32px;
       }
@@ -52,14 +52,14 @@
         overflow-x: scroll;
         -ms-overflow-style: none; /* IE and Edge */
         scrollbar-width: none; /* Firefox */
-        @include min-width($mobileXL) {
+        @include min-width($desktopSM) {
           margin-left: -4px;
           height: auto;
           @include flex-direction(column);
         }
         & > div:nth-child(5) {
           min-width: 660px;
-          @include min-width($mobileXL) {
+          @include min-width($desktopSM) {
             min-width: 275px;
           }
           & > div > h6, p {
@@ -70,23 +70,26 @@
     }
     .gatacaStudioSection__rightSide {
       @include flex(0, 0, 100%);
-      margin-top: 20px;
-      @include min-width($mobileXL) {
+      margin-top: 25px;
+      @include min-width($desktopSM) {
         @include flex(0, 0, 53%);
         margin-top: 0;
+        max-width: calc(100% - 417px);
       }
       @include min-width($desktopXL) {
         @include flex(0, 0, 66%);
+        max-width: calc(100% - 427px);
       }
       .gatacaStudioSection__rightSide__videoContainer {
+        width: 100%;
         text-align: center;
         video {
-          border: transparent solid;
           box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
           border-radius: 8px;
+          width: 100%;
           max-width: 100%;
-          max-height: 400px;
-          @include min-width($mobileXL) {
+
+          @include min-width($desktopSM) {
             max-height: 560px;
           }
         }

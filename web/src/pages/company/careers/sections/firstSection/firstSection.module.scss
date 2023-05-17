@@ -46,6 +46,10 @@
           @include flexbox();
           @include align-items(flex-end);
           @include justify-content(space-around);
+          @include min-width($tabletXL) {
+            margin-right: -3.2%;
+          }
+          
           > div {
             @include flex(0, 0, 50%);
             img {

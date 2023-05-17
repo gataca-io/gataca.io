@@ -34,7 +34,7 @@
       @include justify-content(space-between);
     }
     @include min-width($tabletXL) {
-      @include justify-content(start);
+      @include justify-content(space-between);
     }
     > div {
       margin-right: 0;

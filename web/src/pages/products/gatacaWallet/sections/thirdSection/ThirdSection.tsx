@@ -40,7 +40,7 @@ const ThirdSection: React.FC<ISectionProps> = props => {
 
   return (
     <div style={{ position: "relative" }}>
-      <section className={styles.thirdSection}>
+      <section className={`${styles.thirdSection} ${cx("containerMaxWidth")}`}>
         <div
           className={`${cx("heading3")} ${styles.thirdSection__leftSide}`}
           id="leftSide"

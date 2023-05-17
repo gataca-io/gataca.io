@@ -9,17 +9,18 @@
   @include min-width($mobileXL) {
     height: auto;
     margin-top: 0;
-    padding: 180px 0 0;
+    padding: 180px 40px 0;
+  }
+  @include min-width($desktopMD) {
+    padding: 180px 60px 0;
   }
   @include min-width($desktopXL) {
-    padding: 180px 128px 120px;
+    padding: 180px 60px 120px;
   }
 }
 
 .sixthSection {
   margin: 80px auto 80px;
-  width: 100%;
-  max-width: 1184px;
   @include flexbox();
   @include flex-direction(column);
   @include justify-content(center);
@@ -29,17 +30,6 @@
     @include flex-direction(row);
     @include align-items(center);
     @include justify-content(flex-start);
-    margin: 0px 30px 80px;
-  }
-  @include min-width($tabletMD) {
-    margin: 0px 6% 80px;
-  }
-  @include min-width($desktopSM) {
-    max-width: 1184px;
-    margin: 0px 5% 80px;
-  }
-  @include min-width($desktopXXL) {
-    width: 1148px;
     margin: 0px auto 80px;
   }
   

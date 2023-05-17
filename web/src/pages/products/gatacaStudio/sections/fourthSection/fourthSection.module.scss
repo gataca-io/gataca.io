@@ -2,7 +2,8 @@
 @import "../../../../../styles/mixins.scss";
 
 .fourthSection__container {
-  margin: 220px 20px 162px;
+  margin: 220px 0px 162px;
+  padding: 0 20px;
   @include min-width($mobileXL) {
     padding: 0 40px;
   }
@@ -31,7 +32,7 @@
   @include flex-direction(column);
 
   @include min-width($mobileXL) {
-    @include align-items(flex-end);
+    @include align-items(space-between);
     text-align: right;
   }
   @include min-width($tabletMD) {
@@ -63,7 +64,7 @@
     @media (min-width: 1150px) {
       margin-left: 0;
       overflow: visible;
-      width: calc(100% - 36px);
+      width: 100%;
       margin-top: 80px;
       height: 149px;
       padding: 0px 0px 16px;
