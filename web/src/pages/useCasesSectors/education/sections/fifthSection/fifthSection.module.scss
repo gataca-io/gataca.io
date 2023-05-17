@@ -2,17 +2,16 @@
 @import "../../../../../styles/_mixins.scss";
 
 .fifthSection {
-  padding: 0 calc(20px - 14px);
+  padding: 0 20px;
   margin-bottom: calc(132px - 18px);
   @include min-width($mobileXL) {
-    padding: 0 calc(40px - 14px);
+    padding: 0 40px;
   }
   @include min-width($desktopMD) {
     padding: 0 60px;
   }
   @media (min-width: 1067px) {
     margin-bottom: calc(200px - 18px);
-    padding: 0 calc(60px - 18px);
   }
   .fifthSection__container {
     margin: 0px auto 0px;
@@ -35,7 +34,7 @@
       width: 100vw;
       gap: 24px;
       border-radius: 12px;
-      padding: 16px 14px;
+      padding: 16px 4px;
       overflow-x: scroll;
       -ms-overflow-style: none;
       /* IE and Edge */
@@ -48,7 +47,7 @@
         overflow: visible;
         width: calc(100% - 36px);
         @include justify-content(space-between);
-        padding: 16px 18px;
+        padding: 16px 0px;
       }
       &::before {
         content: '';
@@ -92,7 +91,7 @@
         @include flex-direction(column);
         @include align-items(flex-start);
         @media (min-width: 1067px) {
-          @include flex(0, 0, calc(100%/3 - 80px));
+          @include flex(0, 0, calc(33% - 80px));
           
         }
         h5 {

@@ -63,8 +63,9 @@
 
     @media (min-width: 1230px) {
       margin-left: 0;
+      padding: 0;
       overflow: visible;
-      width: calc(100% - 36px);
+      width: 100%;
       @include justify-content(center);
       @include flex-wrap(nowrap);
     }
