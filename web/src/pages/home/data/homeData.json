@@ -23,8 +23,7 @@
       "title": "Issue, verify and manage identity credentials"
     },
     "fourthSection": {
-      "advantages": [
-        {
+      "advantages": [{
           "description": "User data and ID credentials are issued by trusted authorities and protected with biometrics and post-quantum cryptography to ensure they are tamper-proof, allowing instant identity verification without relying on centralized systems.",
           "icon": "",
           "title": "Reduce identity fraud"
@@ -48,13 +47,22 @@
       "description": "Why Gataca",
       "title": "Unlock the potential of Self-Sovereign Identity for your organization"
     },
+    "seventhSection": {
+      "description": "Find out what others say about working with Gataca and gain insight into how our solution can best serve you.",
+      "feedback": [{
+        "comment": "Gataca has been a pleasure to work with. Their technology's readiness, expertise and team's willingness to help makes them the ideal partner for the higher education sector seeking to implement a digital identity strategy",
+        "persons": "Ellen Lerouge & Jan Du Caju",
+        "roles": "Enterprise Architects, ICTS"
+      }],
+      "subTitle": "Client testimonials",
+      "title": "What our clients say about us"
+    },
     "sixthSection": {
       "description": "Uncover how Gataca can help you with your identity verification goals",
       "learnMoreButton": {
         "label": "Learn more"
       },
-      "list": [
-        {
+      "list": [{
           "description": "Streamline compliant onboarding processes by enabling individuals to prove their identity and information in one click",
           "title": "Customer onboarding KYB)"
         },
@@ -84,8 +92,7 @@
     },
     "thirdSection": {
       "description": "All-in-one decentralized identity solution.",
-      "list": [
-        {
+      "list": [{
           "description": "Create and digitally sign identity credentials in a standardized format",
           "id": "issueVerifiableCredentials",
           "title": "Issue verifiable credentials"

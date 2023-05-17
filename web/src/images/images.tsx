@@ -148,6 +148,7 @@ import roviraIVirgiliClearLogo from "./logos/logo-rovira-virgilia-clear.svg"
 import idemiaClearLogo from "./logos/logo-idemia-clear.svg"
 import europeanComissionClearLogo from "./logos/logo-european-comission-clear.svg"
 import earlyAdoptersSpainClearLogo from "./logos/logo-early-adopters-spain-clear.svg"
+import kuleuvenLogo from "./logos/kuleuven-logo.png"
 
 export const images = {
   favicon: favicon,
@@ -300,4 +301,5 @@ export const images = {
   idemiaClearLogo: idemiaClearLogo,
   europeanComissionClearLogo: europeanComissionClearLogo,
   earlyAdoptersSpainClearLogo: earlyAdoptersSpainClearLogo,
+  kuleuvenLogo: kuleuvenLogo,
 }

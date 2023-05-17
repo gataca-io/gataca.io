@@ -1,10 +1,8 @@
 @import "../../../../styles/mixins";
 
 .useCasesSection {
-  margin-bottom: calc(132px - 32px);
   padding: 0 20px;
   @include min-width($mobileXL) {
-    margin-bottom: calc(220px - 32px);
     padding: 0 40px;
   }
   @include min-width($desktopMD) {
