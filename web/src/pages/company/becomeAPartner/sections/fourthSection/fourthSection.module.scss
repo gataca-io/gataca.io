@@ -1,5 +1,6 @@
 @import "../../../../../styles/_mixins.scss";
 @import "../../../../../styles/_colors.scss";
+@import "../../../../../styles/types";
 
 .fourthSection {
   margin-bottom: 112px;
@@ -50,8 +51,24 @@
       @include min-width($tabletXL) {
         @include flex(0, 0, calc((100%/4) - 72px));
       }
-      h5 {
+
+      & > img {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 16px;
+      }
+
+      & > h5 {
+        font-family: $custom;
         font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 8px;
+        @include min-width($mobileXL) {
+          max-width: 142px;
+        }
       }
     }
   }
