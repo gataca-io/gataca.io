@@ -74,7 +74,7 @@ const CookiePolicy: React.FC<PageProps> = () => {
                 Service.
               </p>
             </div>
-            <div className={styles?.contentCol__section} id="whoAreWe">
+            <div className={styles?.contentCol__section} id="whoAreWe__0">
               <h4 className={cx("heading4 marginBottom32")}>1. Who are we?</h4>
               <p>
                 Gataca España S.L.U. (referred to as “<b>Gataca</b>” or “
@@ -84,7 +84,7 @@ const CookiePolicy: React.FC<PageProps> = () => {
                 Commercial Register of Madrid.
               </p>
             </div>
-            <div className={styles?.contentCol__section} id="whatIsCookie">
+            <div className={styles?.contentCol__section} id="whatIsCookie__1">
               <h4 className={cx("heading4 marginBottom32")}>
                 2. What is a cookie?
               </h4>
@@ -104,7 +104,7 @@ const CookiePolicy: React.FC<PageProps> = () => {
                 improvements to the Services and to detect website malfunctions.
               </p>
             </div>
-            <div className={styles?.contentCol__section} id="typeOfCookies">
+            <div className={styles?.contentCol__section} id="typeOfCookies__2">
               <h4 className={cx("heading4 marginBottom32")}>
                 3. Type of cookies
               </h4>
@@ -411,6 +411,7 @@ const CookiePolicy: React.FC<PageProps> = () => {
                 <a href="mailto: gdpr@gataca.io" type="email">
                   gdpr@gataca.io
                 </a>
+                .
               </p>
             </div>
           </div>

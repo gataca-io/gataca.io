@@ -568,6 +568,7 @@ const PrivacyPolicy: React.FC<PageProps> = () => {
                   <a href="mailto: gdpr@gataca.io" type="email">
                     gdpr@gataca.io
                   </a>
+                  .
                 </p>
               </div>
             </div>
