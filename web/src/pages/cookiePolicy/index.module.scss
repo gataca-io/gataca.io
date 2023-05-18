@@ -83,7 +83,7 @@
     }
 
     .sectionMain__dataContentCol {
-      @include flex(0, 0, 100%);
+      width: 100%;
 
       @include min-width($mobileXL) {
         @include flex(0, 0, 60%);
