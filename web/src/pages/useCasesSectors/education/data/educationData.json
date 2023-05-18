@@ -1,12 +1,10 @@
 {
   "data": {
     "fifthSection": {
-      "stories": [
-        {
-          "description": "Issuance of variable ID by FNMT, issuance of student ID and Academic diploma, application to master degree",
+      "stories": [{
+          "description": "Issuance of verifiable ID by FNMT, issuance of student ID and Academic diploma, application to master degree",
           "learnMore": "Learn more",
-          "list": [
-            {
+          "list": [{
               "title": "Spanish ID card"
             },
             {
@@ -22,8 +20,7 @@
         },
         {
           "description": "Application and return process in a cross-border Erasmus exchange scenario between KU Leuven & University di Bologna",
-          "list": [
-            {
+          "list": [{
               "title": "Student Identifier"
             },
             {
@@ -36,8 +33,7 @@
         {
           "description": "Exchange of verifiable credentials between institutions, including the Royal Mint of Spain, and three universities in cross-border settings (Spain, Belgium, and Italy)",
           "learnMore": "Learn more",
-          "list": [
-            {
+          "list": [{
               "title": "Spanish ID card"
             },
             {
@@ -69,8 +65,7 @@
     },
     "fourthSection": {
       "description": "A new era in education",
-      "list": [
-        {
+      "list": [{
           "title": "Seamless integration"
         },
         {
@@ -92,8 +87,7 @@
       "title": "Why Gataca"
     },
     "secondSection": {
-      "steps": [
-        {
+      "steps": [{
           "description": "Universities face time-consuming processes to verify student identities and certifications for enrollment and mobility, leading to complex application procedures for students and alumni seeking programs or jobs. Additionally, the growing trend toward skills-based education has increased the demand for micro-credentialing, which universities struggle to provide attestations for",
           "number": "1",
           "title": "Challenge"
@@ -107,8 +101,7 @@
     },
     "thirdSection": {
       "description": "Streamline processes and generate new opportunities for the entire education ecosystem",
-      "list": [
-        {
+      "list": [{
           "description": "Issue tamper-proof educational credentials such as diplomas, transcripts of records, certificates, or student cards in a standard, digital format",
           "title": "Issuance of digital education credentials"
         },

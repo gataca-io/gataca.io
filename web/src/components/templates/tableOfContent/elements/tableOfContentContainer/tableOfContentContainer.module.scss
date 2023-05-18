@@ -3,7 +3,7 @@
 
 
 .sectionMain__tableContentCol {
-  @include min-width($mobileXL)  {
+  @include min-width($tabletMD)  {
     max-width: 252px;
     min-width: 252px;
   }
@@ -14,7 +14,7 @@
   > div {
     padding: 12px 20px;
     background-color: $neutral200;
-    @include min-width($mobileXL) {
+    @include min-width($tabletMD) {
       border-radius: 12px;
       padding: 32px;
     }
@@ -35,7 +35,7 @@
       }
 
       &> .tableImage {
-        @include min-width($mobileXL) {
+        @include min-width($tabletMD) {
           display: none;
         }
       }
