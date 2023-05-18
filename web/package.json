@@ -34,6 +34,7 @@
     "gatsby-plugin-sass": "^6.7.0",
     "gatsby-plugin-sharp": "^5.7.0",
     "gatsby-plugin-sitemap": "^6.7.0",
+    "gatsby-remark-responsive-iframe": "^6.10.0",
     "gatsby-source-filesystem": "^5.7.0",
     "gatsby-source-strapi": "^3.0.5",
     "gatsby-transformer-remark": "^6.7.0",

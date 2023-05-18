@@ -17,6 +17,15 @@ module.exports = {
     "gatsby-plugin-gatsby-cloud",
     "gatsby-plugin-sass",
     "gatsby-plugin-react-helmet-async",
+    "gatsby-remark-responsive-iframe",
+    {
+      resolve: "gatsby-plugin-hubspot",
+      options: {
+        trackingCode: "4728390",
+        respectDNT: true,
+        productionOnly: false,
+      },
+    },
     "gatsby-plugin-sitemap",
     {
       resolve: "gatsby-source-strapi",
