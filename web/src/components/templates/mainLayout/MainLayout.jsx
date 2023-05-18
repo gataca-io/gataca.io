@@ -5,31 +5,21 @@ import Footer from "../../elements/footer/Footer"
 import { SeoHelmet } from "../../elements/seo/SeoHelmet"
 
 const Layout = props => {
-  const { seoData, children } = props
+  const { seoData } = props
+
   React.useEffect(() => {
-    clearNotConsentedCookies()
-    listenConsentEvents()
-    return () => {}
-  }, [])
-  
-  function getCookie(name) {
-    const value = `; ${document.cookie}`
-    const parts = value.split(`; ${name}=`)
-    if (parts.length === 2) {return parts.pop()?.split(";").shift()}
-  }
+        const listenConsentEvents = () => {
+    const _hsp = window && window._hsp && ((window._hsp = window._hsp || []))
 
-  const listenConsentEvents = () => {
-    const _hsp = window._hsp && ((window._hsp = window._hsp || []))
-
-    _hsp.push([
+    _hsp?.push([
       "addPrivacyConsentListener",
       function (consent) {
-        if (!consent.categories.analytics) {
+        if (!consent?.categories?.analytics) {
           removeAnalyticsCookies()
         } else {
           setGaConsentAnalyticCookie()
         }
-        if (!consent.categories.functionality) {
+        if (!consent?.categories?.functionality) {
           removeFunctionalCookies()
         }
       },
@@ -41,23 +31,12 @@ const Layout = props => {
         hubspotBanner.onclick = function () {
           deleteAllCookies()
           removeAnalyticsCookies()
-          _hsp.push(["revokeCookieConsent"])
+          _hsp?.push(["revokeCookieConsent"])
         }
       }
     }
   }
-
-  const setGaConsentAnalyticCookie = () => {
-    const date = new Date()
-    const durationInDays = 90
-    date.setTime(date.getTime() + durationInDays * 24 * 60 * 60 * 1000)
-    const expirationDate = "; expires=" + date.toGMTString()
-
-    document.cookie =
-      "__gat_analytics_consent" + "=" + "1" + expirationDate + "; path=/"
-  }
-
-  const clearNotConsentedCookies = () => {
+        const clearNotConsentedCookies = () => {
     const analyticsAcceptedCookie = getCookie("__gat_analytics_consent")
     const hubspotStateCookie = getCookie("__hs_cookie_cat_pref")
 
@@ -88,26 +67,48 @@ const Layout = props => {
       removeAnalyticsCookies()
     }
   }
+        clearNotConsentedCookies()
+        listenConsentEvents()
+        return () => {}
+  }, []) 
+  
+  function getCookie(name) {
+    const value = `; ${document.cookie}`
+    const parts = value?.split(`; ${name}=`)
+    if (parts?.length === 2) {return parts?.pop()?.split(";").shift()}
+  }
+
+
+
+  const setGaConsentAnalyticCookie = () => {
+    const date = new Date()
+    const durationInDays = 90
+    date.setTime(date.getTime() + durationInDays * 24 * 60 * 60 * 1000)
+    const expirationDate = "; expires=" + date.toGMTString()
+
+    document.cookie =
+      "__gat_analytics_consent=1" + expirationDate + "; path=/"
+  }
+
+
 
   const removeAnalyticsCookies = () => {
-    document.cookie = "_ga" + "=; Path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT"
+    document.cookie = "_ga=; Path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT"
     document.cookie =
-      "_gid" + "=; Path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT"
+      "_gid=; Path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT"
     document.cookie =
-      "gataca_io_accepted" + "=; Path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT"
+      "gataca_io_accepted=; Path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT"
     document.cookie =
-      "_gat_UA-133561010-1" + "=; Path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT"
+      "_gat_UA-133561010-1=; Path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT"
     document.cookie =
-      "fs_uid" + "=; Path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT"
+      "fs_uid=; Path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT"
     document.cookie =
-      "__gat_analytics_consent" +
-      "=; Path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT"
+      "__gat_analytics_consent=; Path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT"
   }
 
   const removeFunctionalCookies = () => {
     document.cookie =
-      "__hs_cookie_cat_pref" +
-      "=; Path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT"
+      "__hs_cookie_cat_pref=; Path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT"
   }
 
   const deleteAllCookies = () => {
@@ -116,7 +117,7 @@ const Layout = props => {
       for (let i = 0; i < cookies.length; i++) {
         const cookie = cookies[i]
         const eqPos = cookie.indexOf("=")
-        const name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie
+        const name = eqPos > -1 ? cookie?.substr(0, eqPos) : cookie
         document.cookie =
           name + "=; Path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT"
       }
