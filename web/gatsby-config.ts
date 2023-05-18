@@ -100,6 +100,7 @@ module.exports = {
           "/privacyPolicy/": "/privacy-policy/",
           "/cookiePolicy/": "/cookie-policy/",
           "/termsOfUse/": "/generic-terms-of-service/",
+          "/blog/": "/resources/blog/",
         },
       },
     },
