@@ -20,6 +20,14 @@ module.exports = ({ env }) => [
           upgradeInsecureRequests: null,
         },
       },
+      hsts: {
+        maxAge: 63072000,
+        includeSubdomains: true,
+        preload: true
+      },
+      //frameguard: {
+      //  action: "deny"
+      //}
     },
   },
   'strapi::cors',
