@@ -20,9 +20,7 @@ const SingleFeature: React.FC<ISingleFeatureProps> = props => {
     <div
       onClick={() => !selected && showFeature(index)}
       id={id}
-      className={`${cx(selected ? "marginTop32" : "marginTop24")} ${cx(
-        styles.container
-      )}`}
+      className={`${cx("marginBottom20")} ${cx(styles.container)}`}
     >
       <div className={`${styles.titleContainer}`}>
         {selected && <img src={images.singleFeatureMark} />}

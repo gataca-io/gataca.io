@@ -7,6 +7,10 @@ import gatacaVideo from "./GATACA_Final_Video.mp4"
 import studioVideo1 from "./1-Studio_Animation_Issuance.mp4"
 import studioVideo2 from "./2-Studio_Animation_Verification.mp4"
 import studioVideo3 from "./3-Studio_Animation_CredentialActivity_VerifiedUser.mp4"
+import createCredentialVideo from "./1_create-credential.mp4"
+import verifiableCredentialVideo from "./2_verifiable-credential.mp4"
+import SSIvideo from "./3_SSIn.mp4"
+import servicesVideo from "./4_services.mp4"
 
 export const videos = {
   issuance: issuance,
@@ -18,4 +22,8 @@ export const videos = {
   studioVideo1: studioVideo1,
   studioVideo2: studioVideo2,
   studioVideo3: studioVideo3,
+  createCredentialVideo: createCredentialVideo,
+  verifiableCredentialVideo: verifiableCredentialVideo,
+  SSIvideo: SSIvideo,
+  servicesVideo: servicesVideo,
 }
