@@ -4,11 +4,12 @@ import { useState } from "react"
 import Layout from "../../../components/templates/mainLayout/MainLayout"
 import FirstSection from "./sections/firstSection/FirstSection"
 import SecondSection from "./sections/secondSection/SecondSection"
-import ThirdSection from "./sections/thirdSection/ThirdSection"
 import FourthSection from "./sections/fourthSection/FourthSection"
 import PreFooterCTASection from "../../../components/templates/sections/preFooterCTA/PreFooterCTA"
 // import FifthSection from "./sections/fifthSection/FifthSection"
 import SixthSection from "./sections/sixthSection/SixthSection"
+import FifthSection from "./sections/fifthSection/FifthSection"
+import ThirdSection from "./sections/thirdSection/ThirdSection"
 
 const GatacaWalletPage: React.FC<PageProps> = () => {
   const [gatacaWalletData, setGatacaWallet] = useState<any | undefined>()
@@ -21,6 +22,7 @@ const GatacaWalletPage: React.FC<PageProps> = () => {
     secondSection,
     thirdSection,
     fourthSection,
+    fifth1Section,
     fifthSection,
     sixthSection,
   } = gatacaWalletData ? gatacaWalletData : []
@@ -60,21 +62,20 @@ const GatacaWalletPage: React.FC<PageProps> = () => {
           list={secondSection?.list}
           setSecondSectionLoaded={setSecondSectionLoaded}
         />
+
         <ThirdSection
           title={thirdSection?.title}
-          description={thirdSection?.description}
           list={thirdSection?.list}
+          description={thirdSection?.description}
         />
-        {/* Commented until animation is ready */}
-        {/* <FifthSection
-          title={fifthSection?.title}
-          list={fifthSection?.list}
-          secondSectionLoaded={secondSectionLoaded}
-          fistSectionLoaded={fistSectionLoaded}
-        /> */}
         <FourthSection
           title={fourthSection?.title}
           list={fourthSection?.list}
+        />
+        <FifthSection
+          title={fifthSection?.title}
+          description={fifthSection?.description}
+          list={fifthSection?.list}
         />
         <SixthSection
           title={sixthSection?.title}

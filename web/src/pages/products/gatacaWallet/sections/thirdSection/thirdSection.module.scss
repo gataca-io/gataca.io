@@ -1,56 +1,75 @@
 @import "../../../../../styles/_colors.scss";
 @import "../../../../../styles/mixins.scss";
+@import "../../../../../styles/types.scss";
 
 .thirdSection {
-  margin: 80px auto 80px;
-  margin: 132px 0;
+  margin: 120px auto 189px;
   padding: 0 20px;
   @include flexbox();
   @include flex-direction(column);
   @include justify-content(center);
+  @include align-items(center);
   @include flex-wrap(wrap);
 
+  & > p {
+    width: 100%;
+  }
+
   @include min-width($mobileXL) {
-    @include flex-direction(row);
-    @include align-items(center);
-    @include justify-content(space-between);
     padding: 0 40px;
   }
 
   @include min-width($tabletMD) {
-    margin: 80px 0 80px;
-    margin-top: 263px;
+    margin: 200px auto 0px;
+    gap: 0 50px;
+    @include flex-direction(row);
+    @include align-items(center);
+    @include justify-content(space-between);
+    @include flex-wrap(nowrap);
+
+    & > p {
+      display: none;
+    }
   }
-  
-  @include min-width($desktopSM) {
-    margin: 200px auto 80px;
-  }
+
   @include min-width($desktopMD) {
     padding: 0 60px;
   }
-  
+
+  @include min-width($desktopXL) {
+    padding: 0 40px;
+    gap: 0 105px;
+  }
+
   .thirdSection__leftSide {
     position: relative;
     max-width: 100%;
-    margin-bottom: 40px;
-    @include min-width($mobileXL) {
-      @include flex(0, 0, calc(50% - 40px));
-    }
+    margin-top: 80px;
+    @include flexbox();
+    @include justify-content(center);
+
     @include min-width($tabletMD) {
-      margin-right: 80px;
       margin-bottom: 0px;
-      @include flex(0, 0, calc(50% - 90px));
+      margin-top: 0px;
+      margin-bottom: 40px;
+      @include justify-content(flex-start);
+      @include flex(0, 0, calc(44% - 60px));
     }
+
     @include min-width($desktopSM) {
       margin-bottom: 0px;
-      @include flex(0, 0, calc(50% - 133px));
+      @include flex(0, 0, calc(calc(50% - 60px)));
     }
-    
-    & > .thirdSection__leftSide__description {
-      color: $neutral700;
-      margin-bottom: 40px;
-      @include min-width($mobileXL) {
-        margin-bottom: 52px;
+
+    & > img {
+      width: calc(100% + 4%);
+      margin-left: -1.5%;
+      max-width: calc(375px + 4%);
+      height: auto;
+
+      @include min-width($tabletMD) {
+        margin-left: -1.5%;
+        max-width: none;
       }
     }
   }
@@ -59,59 +78,182 @@
     @include flex(0, 0, 100%);
     @include flexbox();
     @include flex-direction(column);
-    @include justify-content(center);
-    @include align-items(center);
+    @include align-items(flex-start);
     @include flex-wrap(wrap);
+    width: 100%;
 
-    @include min-width($mobileXL) {
-       @include flex(0, 0, 49%);
+    & > p {
+      display: none;
     }
-    @include min-width($desktopMD) {
-       @include flex(0, 0, 50%);
+
+    @include min-width($tabletMD) {
+      @include flex(0, 0, 55%);
+      max-width: calc(55%);
+
+      & > p {
+        display: block;
+      }
     }
-    @include min-width($desktopMD) {
-       @include flex(0, 0, 50%);
+
+    @include min-width($desktopSM) {
+      max-width: calc(50%);
     }
+
+    @include min-width($desktopXL) {
+      max-width: calc(50% - 105px);
+    }
+
+    & > p {
+      text-align: left;
+    }
+
+    &__data {
+      margin-bottom: 27px;
+      margin-top: 65px;
+      width: 100%;
+      max-width: 100%;
+      overflow-y: visible;
+      opacity: 1;
+      transition: all 0.2s ease-out;
+      @include flexbox();
+      @include flex-wrap(nowrap);
+
+      @include min-width($tabletMD) {
+        margin-top: 96px;
+        min-height: 240px;
+        margin-bottom: 0px;
+      }
+
+      &__item {
+        position: relative;
+        padding-left: 91px;
+        max-width: 498px;
+        @include flexbox();
+        @include flex-direction(column);
+
+        @include min-width($tabletMD) {
+          padding-left: 125px;
+        }
+
+        & > div {
+          width: 70px;
+          left: 0;
+          position: absolute;
+          top: 0;
+
+          @include min-width($tabletMD) {
+            transform: translateY(-50%);
+            width: auto;
+            top: calc(50% - 40px);
+            left: 23px;
+            @include flexbox();
+            @include justify-content(center);
+          }
+
+          & > img {
+            margin-top: 7px;
+            height: 80px;
+
+            @include min-width($tabletMD) {
+              margin-top: 0px;
+              height: auto;
+              width: auto;
+            }
+          }
+        }
+
+        & > p {
+          z-index: 9;
+
+          @include min-width($tabletMD) {
+            max-width: 376px;
+          }
+        }
+
+        &__title {
+          font-family: $custom;
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 32px;
+          text-decoration: none;
+
+          @include min-width(993px) {
+            font-family: $custom;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 40px;
+            text-decoration: none;
+          }
+        }
+
+        &__desc {
+          @include min-width($tabletMD) {
+            font-size: 18px;
+          }
+
+          @include min-width(993px) {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+
     & > img {
       width: 100%;
       max-width: 524px;
+      transition: all 0.2s ease-out;
 
-      @include min-width($mobileXL) {
-        @include flex(0, 0, calc(50% - 40px));
+      @include min-width($tabletMD) {
         max-width: 440px;
-      }
-    }
-  }
-
-
-  .thirdSection__leftSide__bullets {
-    @include flexbox();
-    @include flex-direction(row);
-    @include justify-content(flex-start);
-    width: 100%;
-    max-width: 100%;
-    height: 138px;
-    overflow-x: scroll;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-    @include min-width($mobileXL) {
-      margin-left: -4px;
-      height: auto;
-      @include flex-direction(column);
-    }
-
-    & > div:nth-child(4) {
-      min-width: 660px;
-       @include min-width($mobileXL) {
-       min-width: 275px;
-    }
-      & > div > p, p {
-        max-width: 275px;
+        @include flex(0, 0, calc(50% - 40px));
       }
     }
   }
 }
 
-.thirdSection__leftSide__bullets::-webkit-scrollbar {
-    display: none; /* Opera and Chrome */
+.buttons {
+  border-radius: 100%;
+  height: 48px;
+  width: 48px;
+  margin-left: 12px;
+  margin-right: 10px;
+}
+
+.buttons__container {
+  margin-left: 91px;
+  z-index: 9;
+  @include flexbox();
+  @include flex-direction(row);
+  @include justify-content(flex-start);
+
+  @include min-width($tabletMD) {
+    margin-left: 125px;
+  }
+}
+
+.buttons__left {
+  margin-right: 20px;
+}
+
+.buttons__inactive {
+  cursor: not-allowed;
+
+  & > rect {
+    fill: $neutral100;
+    stroke: $primary700;
+  }
+
+  & > path {
+    stroke: $primary700;
+  }
+}
+
+.buttons__active {
+  cursor: pointer;
+
+  &:hover {
+    & > rect {
+      fill: $primary900;
+    }
+  }
 }

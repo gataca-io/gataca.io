@@ -149,6 +149,11 @@ import idemiaClearLogo from "./logos/logo-idemia-clear.svg"
 import europeanComissionClearLogo from "./logos/logo-european-comission-clear.svg"
 import earlyAdoptersSpainClearLogo from "./logos/logo-early-adopters-spain-clear.svg"
 import kuleuvenLogo from "./logos/kuleuven-logo.png"
+import userShieldIcon from "./logos/iso27001.svg"
+import number1 from "./images3d/1.png"
+import number2 from "./images3d/2.png"
+import number3 from "./images3d/3.png"
+import number4 from "./images3d/4.png"
 
 export const images = {
   favicon: favicon,
@@ -302,4 +307,10 @@ export const images = {
   europeanComissionClearLogo: europeanComissionClearLogo,
   earlyAdoptersSpainClearLogo: earlyAdoptersSpainClearLogo,
   kuleuvenLogo: kuleuvenLogo,
+  userShieldIcon: userShieldIcon,
+  userViewFinderIcon: userShieldIcon,
+  number1: number1,
+  number2: number2,
+  number3: number3,
+  number4: number4,
 }
