@@ -86,7 +86,6 @@
         video {
           box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
           border-radius: 8px;
-          width: 100%;
           max-width: 100%;
 
           @include min-width($desktopSM) {
