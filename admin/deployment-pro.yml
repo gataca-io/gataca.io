@@ -23,7 +23,7 @@ spec:
     spec:
       containers:        
         - name: strapiweb
-          image: gatacaid/website:6.0.0
+          image: gatacaid/strapi:6.0.0
           imagePullPolicy: Always
           env:
           - name: APP_KEYS

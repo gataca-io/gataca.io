@@ -62,8 +62,8 @@ jobs:
         run: |
           if [ "${{ github.event.inputs.ExecuteChoice }}" == "YES" ]; then
             if [ "${{ env.ver }}" != "${{ env.image }}" ]; then
-              sed -i 's/website:.*$/website:${{ env.ver }}/g' deployments/deployment-pro.yml          
-              echo "deployment-pro.yml:" ; grep 'website' deployments/deployment-pro.yml || true # output
+              sed -i 's/strapi:.*$/strapi:${{ env.ver }}/g' deployments/deployment-pro.yml          
+              echo "deployment-pro.yml:" ; grep 'strapi' deployments/deployment-pro.yml || true # output
               git add .
               git commit -m "Change to image version to ${{ env.ver }} because of gataca.io CD PRO action."
               git push
@@ -84,6 +84,5 @@ jobs:
             mkdir $HOME/.kube/
             echo ${{ secrets.CD_KUBE_CONFIG_PRO }} | base64 --decode > $HOME/.kube/config
             kubectl config get-contexts
-            #kubectl apply -f deployments/deployment-dev.yml || true
             kubectl -n web rollout restart deploy strapiweb 
           fi 
