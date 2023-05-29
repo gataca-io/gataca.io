@@ -148,4 +148,9 @@
         }
       }
     }
+
+    & > video, p > video {
+      margin: 32px 0 52px;
+      box-shadow: 0px 0px 16px 0px #0C0B331F;
+    }
 }
