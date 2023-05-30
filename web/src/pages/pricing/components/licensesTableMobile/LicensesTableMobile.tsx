@@ -263,7 +263,7 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
             />
           </div>
           <div className={styles?.card__row}>
-            <CardLeftColumn text={"Stadard Support"} />
+            <CardLeftColumn text={"Standard Support"} />
             <div className={`${cx("bodyBoldSM")}`}>
               {typeof license?.features?.standardSupport == "boolean" ? (
                 <img

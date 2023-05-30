@@ -376,7 +376,7 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
               })}
             </tr>
             <tr key={21} className={styles?.table__body__row}>
-              <SubcategoryCell subcategory={"Stadard Support"} />
+              <SubcategoryCell subcategory={"Standard Support"} />
               {products?.map(license => {
                 return (
                   <td
