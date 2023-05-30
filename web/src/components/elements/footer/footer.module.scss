@@ -22,7 +22,7 @@
   .logo {
     margin-bottom: 60px;
     max-width: 170px;
-    @include min-width($mobileXL) {
+    @include min-width(1214px) {
       margin-bottom: 0;
     }
     img {
@@ -85,18 +85,18 @@
     }
     > div {
       width: 100%;
-      @include min-width($tabletXL) {
+      @include min-width(1214px) {
         width: auto;
       }
       &:first-child {
         max-width: 235px;
         margin: 0 auto 32px;
-        @include min-width($tabletXL) {
+        @include min-width(1214px) {
           margin: 0;
         }
       }
       > div {
-        @include min-width($tabletXL) {
+        @include min-width(1214px) {
           @include flexbox();
           @include flex-wrap(nowrap);
           @include justify-content(space-between);
@@ -108,7 +108,7 @@
       @include flexbox();
       @include flex-wrap(wrap);
       @include justify-content(center);
-      @include min-width($tabletXL) {
+      @include min-width(1214px) {
         margin-bottom: 0;
         @include justify-content(space-between);
       }
@@ -132,7 +132,7 @@
     }
     .rightsReserved {
       text-align: center;
-      @include min-width($tabletXL) {
+      @include min-width(1214px) {
         text-align: left;
       }
     }

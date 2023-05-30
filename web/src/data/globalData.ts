@@ -351,7 +351,7 @@ export const footerMenuOptions: LinkModel[] = [
       {
         id: "termsOfUseWallet",
         label: "Wallet | Terms of Service",
-        route: "/terms-of-service-wallet",
+        route: "/terms-of-use-wallet",
       },
     ],
   },
