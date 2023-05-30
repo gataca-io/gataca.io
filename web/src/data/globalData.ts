@@ -14,6 +14,7 @@ export const legalGatacaEmail = "legal@gataca.io"
 export const gatacaURL = "https://gataca.io"
 export const privacyPolicyURL = "/privacy-policy"
 export const cookiePolicyURL = "/cookie-policy"
+export const termOfServiceURL = "/generic-terms-of-service"
 export const gdprGatacaEmail = "gdpr@gataca.io"
 // TODO: Update TW @ when new account is created
 export const twitterHandler = "@gataca_id"
@@ -346,6 +347,11 @@ export const footerMenuOptions: LinkModel[] = [
         id: "termsOfUse",
         label: "Terms of Use",
         route: "/generic-terms-of-service",
+      },
+      {
+        id: "termsOfUseWallet",
+        label: "Wallet | Terms of Service",
+        route: "/terms-of-use-wallet",
       },
     ],
   },

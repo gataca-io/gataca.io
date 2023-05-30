@@ -109,6 +109,7 @@ module.exports = {
           "/privacyPolicy/": "/privacy-policy/",
           "/cookiePolicy/": "/cookie-policy/",
           "/termsOfUse/": "/generic-terms-of-service/",
+          "/termsOfUseWallet/": "/terms-of-use-wallet/",
           "/blog/": "/resources/blog/",
         },
       },
