@@ -13,6 +13,7 @@ import {
   termOfServiceURL,
   pricingURL,
 } from "../../data/globalData"
+import Table from "./table/Table"
 
 export type ITableOfContentProps = {
   navigationObject?: LinkModel
@@ -359,15 +360,112 @@ const TermsOfServiceStudio: React.FC<PageProps> = () => {
               <h4 className={cx("heading4 marginBottom32")}>
                 7. Service Levels
               </h4>
+              <p className={cx("marginBottom20")}>
+                GATACA offers Service Level Agreements (“<b>SLAs</b>”) for
+                certain subscription tiers. If your subscription includes SLAs,
+                this section will apply.
+              </p>
+              <p className={cx("marginBottom20")}>
+                An Authorized User may raise 3 types of support requests:
+              </p>
+              <ul>
+                <li className={cx("marginBottom20")}>
+                  <p>
+                    <b>Incidences</b>. Request for resolution of system errors
+                    or malfunctions
+                  </p>
+                </li>
+                <li className={cx("marginBottom20")}>
+                  <p>
+                    <b>Technical doubts</b>. Request for IT help on topics
+                    related to the Service
+                  </p>
+                </li>
+                <li className={cx("marginBottom20")}>
+                  <p>
+                    <b>Service requests</b>. Request for configuration changes,
+                    new feature suggestions, or any other modification to the
+                    Service or to the Client’s account
+                  </p>
+                </li>
+              </ul>
+              <p className={cx("marginBottom20")}>
+                Incidences will be classified depending on their severity:
+              </p>
+              <ul>
+                <li className={cx("marginBottom20")}>
+                  <p>
+                    Level 1 (L1) <b>Application down</b>: Production application
+                    down or major malfunction affecting business and high number
+                    of users
+                  </p>
+                </li>
+                <li className={cx("marginBottom20")}>
+                  <p>
+                    Level 2 (L2) <b>Serious Degradation</b>: Serious degradation
+                    of application performance or functionality
+                  </p>
+                </li>
+                <li className={cx("marginBottom20")}>
+                  <p>
+                    Level 3 (L3) <b>Moderate Impact</b>: Application issue that
+                    has a moderate impact to the business
+                  </p>
+                </li>
+                <li className={cx("marginBottom20")}>
+                  <p>
+                    Level 4 (L4) <b>Low Impact</b>: Issue with limited business
+                    impact
+                  </p>
+                </li>
+              </ul>
+              <p className={cx("marginBottom20")}>
+                Service performance will be measured based on the following
+                metrics:
+              </p>
+              <ul>
+                <li className={cx("marginBottom20")}>
+                  <p>
+                    Initial Response Time: amount of time taken for an agent to
+                    provide an initial response to a Client request.
+                  </p>
+                </li>
+                <li className={cx("marginBottom20")}>
+                  <p>
+                    Resolution Time: amount of time between when a Client first
+                    creates the request and when such ticket is marked as
+                    “resolved”.
+                  </p>
+                </li>
+                <li className={cx("marginBottom20")}>
+                  <p>
+                    Availability: percentage of time in a given monthly
+                    subscription period that the Service is available and
+                    accessible for use.
+                  </p>
+                </li>
+              </ul>
+              <p className={cx("marginBottom20")}>
+                Service levels will be measured averaging the time across all
+                the requests in a monthly subscription period.
+              </p>
+              <p className={cx("marginBottom20")}>
+                If your subscription tier includes SLAs, we commit to the
+                following service levels:
+              </p>
+              <Table />
               <p className={cx("marginBottom20")}></p>
-              <p className={cx("marginBottom20")}></p>
-              <p className={cx("marginBottom20")}></p>
-              <p className={cx("marginBottom20")}></p>
-              <p className={cx("marginBottom20")}></p>
-              <p className={cx("marginBottom20")}></p>
-              <p className={cx("marginBottom20")}></p>
-              <p className={cx("marginBottom20")}></p>
-              <p className={cx("marginBottom20")}></p>
+              <p className={cx("marginBottom20")}>
+                If your subscription tier includes SLAs, we agree to credit you
+                an amount equal to 5% of total monthly service fees if any
+                performance metric is not met for incidences on a given monthly
+                subscription period, and 5% if service availability is not met
+                on a given monthly subscription period.
+              </p>
+              <p className={cx("marginBottom20")}>
+                For any other subscription tiers, Gataca will make commercially
+                reasonable efforts to meet similar service level targets.
+              </p>
             </div>
             <div
               className={styles?.contentCol__section}
