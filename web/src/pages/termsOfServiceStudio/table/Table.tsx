@@ -3,7 +3,7 @@ import * as styles from "./table.module.scss"
 
 const Table: React.FC = () => {
   return (
-    <table className={styles.cookiesTable}>
+    <table className={styles.studioTosTable}>
       <thead>
         <tr>
           <th></th>
@@ -59,18 +59,6 @@ const Table: React.FC = () => {
           </td>
           <td data-th="Penalty">
             <p>-</p>
-          </td>
-        </tr>
-        <tr>
-          <td></td>
-          <td data-th="Initial Response Time">
-            <p></p>
-          </td>
-          <td data-th="Resolution Time">
-            <p></p>
-          </td>
-          <td data-th="Penalty">
-            <p></p>
           </td>
         </tr>
         <tr>

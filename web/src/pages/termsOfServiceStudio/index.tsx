@@ -454,7 +454,6 @@ const TermsOfServiceStudio: React.FC<PageProps> = () => {
                 following service levels:
               </p>
               <Table />
-              <p className={cx("marginBottom20")}></p>
               <p className={cx("marginBottom20")}>
                 If your subscription tier includes SLAs, we agree to credit you
                 an amount equal to 5% of total monthly service fees if any

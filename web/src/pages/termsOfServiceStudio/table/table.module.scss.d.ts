@@ -1,1 +1,1 @@
-export const cookiesTable: string
+export const studioTosTable: string
