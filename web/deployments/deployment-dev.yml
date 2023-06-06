@@ -9,7 +9,7 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: web6 
+      app: web6
   strategy:
     rollingUpdate:
       maxSurge: 25%
@@ -22,22 +22,22 @@ spec:
     spec:
       containers:
         - name: web6
-          image: gatacaid/website:6.0.0-web6-SNAPSHOT
+          image: gatacaid/website:6.0.1-web6-SNAPSHOT
           imagePullPolicy: Always
           ports:
-          - containerPort: 80 
-            name: web6
-            protocol: TCP
+            - containerPort: 80
+              name: web6
+              protocol: TCP
           env:
-          - name: STRAPI_API_URL
-            value: "https://strapi.dev.gataca.io"
-          - name: STRAPI_TOKEN
-            valueFrom:
-              secretKeyRef:
-                key: STRAPI_TOKEN
-                name: strapi-api
+            - name: STRAPI_API_URL
+              value: "https://strapi.dev.gataca.io"
+            - name: STRAPI_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  key: STRAPI_TOKEN
+                  name: strapi-api
       imagePullSecrets:
-      - name: regcred
+        - name: regcred
 ---
 apiVersion: v1
 kind: Service
