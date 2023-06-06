@@ -10,7 +10,7 @@ module.exports = {
     metaTitle: "Gataca | Decentralized Identity Management Technology",
     metaDescription:
       "Gataca is a cybersecurity company that provides decentralized digital identity technology, also known as self-sovereign identity (SSI).",
-    title: "GATACA",
+    title: "Gataca",
     siteUrl: "https://gataca.io",
   },
   plugins: [
@@ -110,6 +110,7 @@ module.exports = {
           "/cookiePolicy/": "/cookie-policy/",
           "/termsOfUse/": "/generic-terms-of-service/",
           "/termsOfUseWallet/": "/terms-of-use-wallet/",
+          "/termsOfServiceStudio/": "/terms-of-service-studio/",
           "/blog/": "/resources/blog/",
         },
       },
