@@ -52,8 +52,9 @@ module.exports = ({ env }) => [
     name: 'strapi::cors',
     config: {
       enabled: true,
-      headers: '*',
-      origin: ['https://strapi.dev.gataca.io', 'https://strapi.gataca.io']
+//      headers: '*',
+//      origin: ['https://strapi.dev.gataca.io', 'https://strapi.gataca.io']
+      origin: ['*'], //allow all
     }
   },
   "strapi::poweredBy",
