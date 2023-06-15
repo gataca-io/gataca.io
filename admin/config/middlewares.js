@@ -47,16 +47,24 @@ module.exports = ({ env }) => [
       //}
     },
   },
-//  "strapi::cors",
-  {
+
+ {
     name: 'strapi::cors',
     config: {
-//      enabled: false,
-      headers: 'Origin',
-      origin: ['https://strapi.dev.gataca.io', 'https://strapi.gataca.io']
-//      origin: ['*'], //allow all
-    }
+      credentials: false,
+    },
   },
+
+////  "strapi::cors",
+//  {
+//    name: 'strapi::cors',
+//    config: {
+////      enabled: false,
+//      headers: 'Origin',
+//      origin: ['https://strapi.dev.gataca.io', 'https://strapi.gataca.io']
+////      origin: ['*'], //allow all
+//    }
+//  },
   "strapi::poweredBy",
   "strapi::logger",
   "strapi::query",
