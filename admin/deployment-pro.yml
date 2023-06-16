@@ -68,11 +68,11 @@ spec:
                 key: POSTGRES_PASSWORD
                 name: strapidb-secret
           - name: AWS_BUCKET
-            value: dev-strapi-s3-gataca
+            value: media-gataca
           - name: AWS_BUCKET_NAME
-            value: dev-strapi-s3-gataca
+            value: media-gataca
           - name: AWS_REGION
-            value: eu-central-1
+            value: eu-west-1
           - name: AWS_ACCESS_KEY_ID
             valueFrom:
               secretKeyRef:
