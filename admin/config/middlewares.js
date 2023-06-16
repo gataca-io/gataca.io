@@ -68,7 +68,7 @@ module.exports = ({ env }) => [
       jsonLimit: "256mb", // modify JSON body
       textLimit: "256mb", // modify text body
       formidable: {
-        maxFileSize: 750 * 1024 * 1024, // multipart data, modify here limit of uploaded file size
+        maxFileSize: 1024 * 1024 * 1024, // multipart data, modify here limit of uploaded file size
       },
     },
   },
