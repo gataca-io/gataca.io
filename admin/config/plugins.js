@@ -8,10 +8,6 @@ module.exports = ({ env }) => ({
     },
   },
   upload: {
-    "multipart": true,
-    "formidable": {
-      "maxFileSize": 750 * 1024 * 1024
-    },
     config: {
       provider: 'aws-s3',
       providerOptions: {
