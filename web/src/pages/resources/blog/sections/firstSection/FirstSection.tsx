@@ -47,9 +47,7 @@ const FirstSection: React.FC<ISectionProps> = props => {
 
                 formLabel ? (formLabel.style.display = "none") : null
               }}
-              onReady={() => {
-                console.log("ready")
-              }}
+              onReady={() => {}}
               loading={<FormSkeleton />}
             />
           </div>

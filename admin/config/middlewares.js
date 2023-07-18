@@ -14,6 +14,10 @@ module.exports = ({ env }) => [
             "blob:",
             "platform-lookaside.fbsbx.com", // facebook avatars
             "dl.airtable.com", // strapi marketplace
+            "https://dev-strapi-s3-gataca.s3.eu-central-1.amazonaws.com",
+            "https://pro-strapi-s3-gataca.s3.eu-west-1.amazonaws.com",
+            "https://mediadev-gataca.s3.eu-central-1.amazonaws.com",
+            "https://media-gataca.s3.eu-west-1.amazonaws.com",
             `https://${env("AWS_BUCKET_NAME")}.s3.${env(
               "AWS_REGION"
             )}.amazonaws.com`,
@@ -22,6 +26,10 @@ module.exports = ({ env }) => [
             "'self'",
             "data:",
             "blob:",
+            "https://dev-strapi-s3-gataca.s3.eu-central-1.amazonaws.com",
+            "https://pro-strapi-s3-gataca.s3.eu-west-1.amazonaws.com",
+            "https://mediadev-gataca.s3.eu-central-1.amazonaws.com",
+            "https://media-gataca.s3.eu-west-1.amazonaws.com",
             `https://${env("AWS_BUCKET")}.s3.${env(
               "AWS_REGION"
             )}.amazonaws.com`,
@@ -39,11 +47,25 @@ module.exports = ({ env }) => [
       //}
     },
   },
+
   "strapi::cors",
   "strapi::poweredBy",
   "strapi::logger",
   "strapi::query",
-  "strapi::body",
+//  "strapi::body",
+// ...
+  {
+    name: "strapi::body",
+    config: {
+      formLimit: "256mb", // modify form body
+      jsonLimit: "256mb", // modify JSON body
+      textLimit: "256mb", // modify text body
+      formidable: {
+        maxFileSize: 1024 * 1024 * 1024, // multipart data, modify here limit of uploaded file size
+      },
+    },
+  },
+  // ...
   "strapi::session",
   "strapi::favicon",
   "strapi::public",

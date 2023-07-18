@@ -39,9 +39,7 @@ const ThirdSection: React.FC<ISectionProps> = props => {
                 setFormSubmitted(true)
                 console.log("Submit!")
               }}
-              onReady={() => {
-                console.log("ready")
-              }}
+              onReady={() => {}}
               loading={<FormSkeleton />}
             />
           </div>
