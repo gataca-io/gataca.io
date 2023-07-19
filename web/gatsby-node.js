@@ -63,14 +63,3 @@ exports.createPages = ({ actions, graphql }) => {
   // Query for articles nodes to use in creating pages.
   return getArticles
 }
-
-exports.onCreateWebpackConfig = ({ actions }) => {
-  actions.setWebpackConfig({
-    plugins: [
-      new FilterWarningsPlugin({
-        exclude:
-          /mini-css-extract-plugin[^]*Conflicting order. Following module has been added:/,
-      }),
-    ],
-  })
-}
