@@ -64,8 +64,6 @@ exports.createPages = ({ actions, graphql }) => {
   return getArticles
 }
 
-const FilterWarningsPlugin = require("webpack-filter-warnings-plugin")
-
 exports.onCreateWebpackConfig = ({ actions }) => {
   actions.setWebpackConfig({
     plugins: [
