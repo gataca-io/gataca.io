@@ -30,7 +30,6 @@ const useCasesAppliedSection: React.FC<ISectionProps> = props => {
     useCasesCategories =
       document && document?.getElementById("useCasesAppliedSectors")
     categoriesContent = document && document?.getElementById("otherIndustries")
-    console.log("subOptionClickedID", subOptionClickedID, categoriesContent)
     subOptionClickedID === "otherIndustries" &&
       categoriesContent?.scrollIntoView({ behavior: "smooth" })
   }, [subOptionClickedID])

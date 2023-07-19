@@ -39,7 +39,6 @@ const CategorySectors: React.FC<ICategorySectorsProps> = props => {
 
   React.useEffect(() => {
     categoriesContent = document && document?.getElementById("otherIndustries")
-    console.log("subOptionClickedID", subOptionClickedID, categoriesContent)
     subOptionClickedID === "otherIndustries" &&
       categoriesContent?.scrollIntoView({ behavior: "smooth" })
   }, [subOptionClickedID])
