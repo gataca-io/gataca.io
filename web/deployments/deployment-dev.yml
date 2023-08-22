@@ -22,8 +22,17 @@ spec:
     spec:
       containers:
         - name: web6
-          image: gatacaid/website:6.0.2-web6-SNAPSHOT
+          image: gatacaid/website:6.0.3-web6-SNAPSHOT
           imagePullPolicy: Always
+          securityContext: 
+            runAsNonRoot: true
+            runAsUser: 1000
+            allowPrivilegeEscalation: false
+            seccompProfile:
+              type: RuntimeDefault
+            capabilities: 
+              drop:
+                - ALL
           ports:
             - containerPort: 80
               name: web6
