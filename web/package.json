@@ -21,7 +21,7 @@
     "start": "gatsby develop",
     "typecheck": "tsc --noEmit"
   },
-  "version": "6.0.1",
+  "version": "6.0.2",
   "dependencies": {
     "@bakkenbaeck/gatsby-plugin-rename-routes": "^1.0.0",
     "@types/classnames": "^2.3.1",
@@ -65,7 +65,7 @@
     "sass": "^1.58.3",
     "smooth-scrollbar": "^8.8.3",
     "tsconfig-paths": "^4.2.0",
-    "yaml": "^2.2.2"
+    "yaml": ">=2.2.2"
   },
   "devDependencies": {
     "@types/locomotive-scroll": "^4.1.0",
