@@ -10,11 +10,11 @@ RUN yarn config set network-timeout 600000 -g && yarn install
 WORKDIR /opt/app
 COPY ./ .
  
-RUN addgroup -S strapi && adduser -u 2000 -D --gecos "" -S -G strapi strapi 
+RUN addgroup --gid 2000 -S strapi && adduser -u 2000 -D --gecos "" -S -G strapi strapi 
 
 RUN yarn build
 EXPOSE 1337
-RUN chown -R strapi:strapi /opt/app
+RUN chown -R 2000:2000 /opt/app
 
 USER strapi
 CMD ["yarn", "start"]
