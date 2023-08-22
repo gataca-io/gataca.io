@@ -6,7 +6,7 @@ install:
 build: install
 	yarn build
 
-compile: build
+compile: install
 	docker build -f build/Dockerfile -t gatacaid/website:$(VERSION) . 
 
 release:
