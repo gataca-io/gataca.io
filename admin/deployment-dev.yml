@@ -25,6 +25,15 @@ spec:
         - name: strapiweb
           image: gatacaid/strapi:6.0.0-SNAPSHOT
           imagePullPolicy: Always
+          securityContext: 
+            runAsNonRoot: true
+            runAsUser: 1000 
+            allowPrivilegeEscalation: false
+            seccompProfile:
+              type: RuntimeDefault
+            capabilities: 
+              drop:
+                - ALL
           env:
           - name: APP_KEYS
             valueFrom:
@@ -64,7 +73,7 @@ spec:
                 key: POSTGRES_PASSWORD
                 name: strapidb-secret
           - name: AWS_BUCKET_NAME
-            value: "dev-strapi-s3-gataca"
+            value: "media-dev-gataca"
           - name: AWS_REGION
             value: "eu-central-1"
           - name: AWS_ACCESS_KEY_ID

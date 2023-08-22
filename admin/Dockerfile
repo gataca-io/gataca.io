@@ -11,7 +11,9 @@ WORKDIR /opt/app
 COPY ./ .
 
 RUN adduser -u 1000 --disabled-password --gecos "" strapi
+RUN chown -R strapi /opt/app
 USER strapi
+
 RUN yarn build
 EXPOSE 1337
 CMD ["yarn", "start"]
