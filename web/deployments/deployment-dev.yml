@@ -20,6 +20,10 @@ spec:
       labels:
         app: web6
     spec:
+      securityContext:
+        sysctls:
+        - name: net.ipv4.ip_unprivileged_port_start
+          value: "80"
       containers:
         - name: web6
           image: gatacaid/website:6.0.3-web6-SNAPSHOT
