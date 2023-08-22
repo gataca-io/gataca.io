@@ -9,11 +9,12 @@ ENV PATH /opt/node_modules/.bin:$PATH
 RUN yarn config set network-timeout 600000 -g && yarn install
 WORKDIR /opt/app
 COPY ./ .
-
-RUN adduser -u 1000 --disabled-password --gecos "" strapi
-RUN chown -R strapi /opt/app
-USER strapi
+ 
+RUN addgroup -S strapi && adduser -u 2000 -D --gecos "" -S -G strapi strapi 
+RUN chown -R strapi:strapi /opt/app
 
 RUN yarn build
 EXPOSE 1337
+
+USER strapi
 CMD ["yarn", "start"]
