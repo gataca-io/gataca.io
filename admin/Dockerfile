@@ -11,10 +11,10 @@ WORKDIR /opt/app
 COPY ./ .
  
 RUN addgroup -S strapi && adduser -u 2000 -D --gecos "" -S -G strapi strapi 
-RUN chown -R strapi:strapi /opt/app
 
 RUN yarn build
 EXPOSE 1337
+RUN chown -R strapi:strapi /opt/app
 
 USER strapi
 CMD ["yarn", "start"]
