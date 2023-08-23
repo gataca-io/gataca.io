@@ -23,11 +23,11 @@ spec:
     spec:
       containers:        
         - name: strapiweb
-          image: gatacaid/strapi:6.0.0-SNAPSHOT
+          image: gatacaid/strapi:6.0.1-SNAPSHOT
           imagePullPolicy: Always
           securityContext: 
             runAsNonRoot: true
-            runAsUser: 1000 
+            runAsUser: 2000 
             allowPrivilegeEscalation: false
             seccompProfile:
               type: RuntimeDefault
