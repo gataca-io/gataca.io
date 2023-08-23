@@ -14,5 +14,6 @@ RUN yarn build
 EXPOSE 1337
 
 RUN adduser -u 2000 -D --gecos "" -S strapi 
+RUN chown -R 2000 /opt/app
 USER strapi
 CMD ["yarn", "start"]
