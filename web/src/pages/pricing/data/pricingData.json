@@ -8,7 +8,7 @@
               "button": {
                 "label": "Start free 30-day trial",
                 "outsideWeb": true,
-                "url": "https://studio.gataca.io/login"
+                "url": "https://studio.gataca.io/login/starter"
               },
               "description": "30-day trial for companies looking to get started with the SSI basics",
               "features": {
@@ -48,7 +48,7 @@
               "button": {
                 "label": "Buy Essential",
                 "outsideWeb": true,
-                "url": "https://studio.gataca.io/login"
+                "url": "https://studio.gataca.io/login/essential"
               },
               "description": "For companies looking to scale their SSI implementation",
               "features": {
@@ -91,7 +91,7 @@
               "button": {
                 "label": "Buy Professional",
                 "outsideWeb": true,
-                "url": "https://studio.gataca.io/login"
+                "url": "https://studio.gataca.io/login/professional"
               },
               "description": "For experienced companies ready for a large scale rollout of SSI",
               "features": {

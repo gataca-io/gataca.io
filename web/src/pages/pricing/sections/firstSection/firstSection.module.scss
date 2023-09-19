@@ -67,6 +67,11 @@
     gap: 32px;
     @include justify-content(space-between);
     @include flex-wrap(wrap);
+        @include min-width($mobileXL) {
+      & > div {
+        width: calc(50% - 58px);
+      }
+    }
 
     & > div {
       width: 100%;
@@ -81,11 +86,7 @@
       }
     }
 
-    @include min-width($mobileXL) {
-      & > div {
-        width: calc(50% - 58px);
-      }
-    }
+
 
     @include min-width(1386px) {
       @include flex-wrap(nowrap);

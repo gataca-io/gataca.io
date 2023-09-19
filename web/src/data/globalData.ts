@@ -457,6 +457,11 @@ export const clientsLogos: IconModel[] = [
     alt: "European Commision logo",
     icon: images.logoEuropeanCommision,
   },
+  {
+    id: "erua",
+    alt: "ERUA logo",
+    icon: images.eruaLogo,
+  },
 ]
 
 export const clientsClearLogos: IconModel[] = [
@@ -494,5 +499,10 @@ export const clientsClearLogos: IconModel[] = [
     id: "europeanCommision",
     alt: "European Commision logo",
     icon: images.europeanComissionClearLogo,
+  },
+  {
+    id: "erua",
+    alt: "ERUA logo",
+    icon: images.eruaClearLogo,
   },
 ]
