@@ -457,6 +457,11 @@ export const clientsLogos: IconModel[] = [
     alt: "European Commision logo",
     icon: images.logoEuropeanCommision,
   },
+  {
+    id: "aegan",
+    alt: "Aegan logo",
+    icon: images.aeganLogo,
+  },
 ]
 
 export const clientsClearLogos: IconModel[] = [
@@ -494,5 +499,10 @@ export const clientsClearLogos: IconModel[] = [
     id: "europeanCommision",
     alt: "European Commision logo",
     icon: images.europeanComissionClearLogo,
+  },
+  {
+    id: "aegan",
+    alt: "Aegan logo",
+    icon: images.aeganClearLogo,
   },
 ]
