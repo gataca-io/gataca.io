@@ -148,8 +148,8 @@ import roviraIVirgiliClearLogo from "./logos/logo-rovira-virgilia-clear.svg"
 import idemiaClearLogo from "./logos/logo-idemia-clear.svg"
 import europeanComissionClearLogo from "./logos/logo-european-comission-clear.svg"
 import earlyAdoptersSpainClearLogo from "./logos/logo-early-adopters-spain-clear.svg"
-import aeganLogo from "./logos/logo-aegan.svg"
-import aeganClearLogo from "./logos/logo-aegan-clear.svg"
+import eruaLogo from "./logos/logo-erua.svg"
+import eruaClearLogo from "./logos/logo-erua-clear.svg"
 import kuleuvenLogo from "./logos/kuleuven-logo.png"
 import userShieldIcon from "./logos/iso27001.svg"
 import number1 from "./images3d/1.png"
@@ -308,8 +308,8 @@ export const images = {
   idemiaClearLogo: idemiaClearLogo,
   europeanComissionClearLogo: europeanComissionClearLogo,
   earlyAdoptersSpainClearLogo: earlyAdoptersSpainClearLogo,
-  aeganLogo: aeganLogo,
-  aeganClearLogo: aeganClearLogo,
+  eruaLogo: eruaLogo,
+  eruaClearLogo: eruaClearLogo,
   kuleuvenLogo: kuleuvenLogo,
   userShieldIcon: userShieldIcon,
   userViewFinderIcon: userShieldIcon,
