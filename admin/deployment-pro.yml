@@ -23,8 +23,17 @@ spec:
     spec:
       containers:        
         - name: strapiweb
-          image: gatacaid/strapi:6.0.0
+          image: gatacaid/strapi:6.0.1
           imagePullPolicy: Always
+          securityContext: 
+            runAsNonRoot: true
+            runAsUser: 2000 
+            allowPrivilegeEscalation: false
+            seccompProfile:
+              type: RuntimeDefault
+            capabilities: 
+              drop:
+                - ALL
           env:
           - name: APP_KEYS
             valueFrom:
