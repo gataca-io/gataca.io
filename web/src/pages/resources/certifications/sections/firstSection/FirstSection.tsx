@@ -12,6 +12,7 @@ export type ISectionProps = {
     title: string
     descriptionParagraphs: string | string[]
     button: ButtonModel
+    image: string
   }[]
 }
 
@@ -28,15 +29,16 @@ const FirstSection: React.FC<ISectionProps> = props => {
         <h1 className={`${cx("heading1 marginBottom32")}`}>{title}</h1>
         <p className={`${cx("bodyRegularXL neutral700")}`}>{description}</p>
       </div>
-      <div className={styles?.certifications__cards}>
-        <div className={styles?.leftSide}>
-          <img src={images.ISO27001Logo}></img>
-        </div>
-        <div className={styles?.rightSide}>
-          {list?.map((item, index) => {
-            const { title, descriptionParagraphs, button } = item
 
-            return (
+      {list?.map((item, index) => {
+        const { title, descriptionParagraphs, button, image } = item
+
+        return (
+          <div className={styles?.certifications__cards}>
+            <div className={styles?.leftSide}>
+              <img src={image}></img>
+            </div>
+            <div className={styles?.rightSide}>
               <div key={`${"certication__" + index}`}>
                 <h4 className={cx("heading4 marginBottom32")}>{title}</h4>
                 {Array.isArray(descriptionParagraphs) &&
@@ -58,17 +60,17 @@ const FirstSection: React.FC<ISectionProps> = props => {
                   <a
                     className={`${styles?.purpleLink}`}
                     target="_blank"
-                    href={files.ISO27001Certification}
-                    download={button?.fileName}
+                    href={button?.url}
+                    download={button?.fileName ? button?.fileName : undefined}
                   >
                     <span className={cx("buttonLG")}>{button?.label}</span>
                   </a>
                 </div>
               </div>
-            )
-          })}
-        </div>
-      </div>
+            </div>
+          </div>
+        )
+      })}
     </section>
   )
 }
