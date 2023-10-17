@@ -26,12 +26,7 @@ module.exports = {
         productionOnly: false,
         setIdentity: "admin@gataca.io",
         useTrackingCode: true,
-        setPath: [
-          "/company/contact",
-          "/company/jobs",
-          "/company/partnership/",
-          "/resources/blog/",
-        ],
+        setPath: ["/company/contact"],
         trackPageView: true,
       },
     },
