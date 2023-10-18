@@ -126,7 +126,6 @@ const Layout = props => {
 
   return (
     <>
-      <Header />
       {seoData && (
         <SeoHelmet
           metaTitle={seoData?.metaTitle}
@@ -138,6 +137,7 @@ const Layout = props => {
           alternateURL={seoData?.alternate_urls}
         />
       )}
+      <Header />
       <main className={styles?.mainLayout}>{props.children}</main>
       <Footer />
     </>
