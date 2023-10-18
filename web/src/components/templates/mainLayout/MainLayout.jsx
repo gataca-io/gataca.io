@@ -126,7 +126,6 @@ const Layout = props => {
 
   return (
     <>
-      <Header />
       {seoData && (
         <SeoHelmet
           metaTitle={seoData?.metaTitle}
@@ -136,6 +135,7 @@ const Layout = props => {
           id={seoData?.id}
         />
       )}
+      <Header />
       <main className={styles?.mainLayout}>{props.children}</main>
       <Footer />
     </>
