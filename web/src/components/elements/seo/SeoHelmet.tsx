@@ -20,13 +20,10 @@ export const SeoHelmet: React.FC<SeoModel> = props => {
   return (
     <Helmet>
       <html lang="en" />
-      <title>
-        {metaTitle || "Gataca | Decentralized Identity Management Technology"}
-      </title>
+      <title>{"Gataca | Decentralized Identity Management Technology"}</title>
       <meta
         name="description"
         content={
-          metaDescription ||
           "Gataca is a cybersecurity company that provides decentralized digital identity technology, also known as self-sovereign identity (SSI)."
         }
       />
@@ -42,14 +39,11 @@ export const SeoHelmet: React.FC<SeoModel> = props => {
       <meta property="og:type" content="article" />
       <meta
         property="og:title"
-        content={
-          metaTitle || "Gataca | Decentralized Identity Management Technology"
-        }
+        content={"Gataca | Decentralized Identity Management Technology"}
       />
       <meta
         property="og:description"
         content={
-          metaDescription ||
           "Gataca is a cybersecurity company that provides decentralized digital identity technology, also known as self-sovereign identity (SSI)."
         }
       />
