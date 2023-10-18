@@ -20,8 +20,16 @@ export const SeoHelmet: React.FC<SeoModel> = props => {
   return (
     <Helmet>
       <html lang="en" />
-      <title>{metaTitle}</title>
-      <meta name="description" content={metaDescription} />
+      <title>
+        {metaTitle || "Gataca | Decentralized Identity Management Technology"}
+      </title>
+      <meta
+        name="description"
+        content={
+          metaDescription ||
+          "Gataca is a cybersecurity company that provides decentralized digital identity technology, also known as self-sovereign identity (SSI)."
+        }
+      />
       {!!canonicalURL?.length && <link rel="canonical" href={canonicalURL} />}
       {alternateURL?.data?.map(item => {
         const { url, hreflangLocale } = item.attributes
