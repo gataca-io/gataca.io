@@ -21,17 +21,14 @@
 }
 
 .privacyPolicy {
-  padding-right: 20px;
-  padding-left: 20px;
-
   @include min-width($mobileXL) {
-    padding-right: 40px;
-    padding-left: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 
   @include min-width($desktopMD) {
-    padding-right: 60px;
-    padding-left: 60px;
+    padding-right: 40px;
+    padding-left: 40px;
   }
 
   .sectionHeader {
@@ -56,9 +53,10 @@
     @include flexbox();
     @include flex-wrap(wrap);
     @include justify-content(space-between);
-    gap: 32px;
-
-    @include min-width($tabletMD) {
+    padding-right: 20px;
+    padding-left: 20px;
+  
+    @include min-width($mobileXL) {
       @include flex-wrap(nowrap);
       padding-right: 0;
       padding-left: 0;
