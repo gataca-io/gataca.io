@@ -20,7 +20,9 @@ export const SeoHelmet: React.FC<SeoModel> = props => {
   return (
     <Helmet>
       <html lang="en" />
-      <title>{"Gataca | Decentralized Identity Management Technology"}</title>
+      <title>
+        {"test Gataca | Decentralized Identity Management Technology"}
+      </title>
       <meta
         name="description"
         content={
