@@ -50,7 +50,7 @@
       @include flex-direction(row);
     }
 
-    & > div > p, h1 {
+    & > div > p, h3 {
       z-index: 9999;
       @include min-width($mobileXL) {
         max-width: 576px;
