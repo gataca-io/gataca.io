@@ -40,8 +40,19 @@ export const SeoHelmet: React.FC<SeoModel> = props => {
       {/*FACEBOOK*/}
       <meta property="og:url" content={gatacaURL} />
       <meta property="og:type" content="article" />
-      <meta property="og:title" content={metaTitle} />
-      <meta property="og:description" content={metaDescription} />
+      <meta
+        property="og:title"
+        content={
+          metaTitle || "Gataca | Decentralized Identity Management Technology"
+        }
+      />
+      <meta
+        property="og:description"
+        content={
+          metaDescription ||
+          "Gataca is a cybersecurity company that provides decentralized digital identity technology, also known as self-sovereign identity (SSI)."
+        }
+      />
       {rrssImg && (
         <meta
           property="og:image"
