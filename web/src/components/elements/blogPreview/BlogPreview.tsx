@@ -21,7 +21,7 @@ const BlogPreview: React.FC<BlogPreviewModel> = props => {
   return (
     <div
       className={styles?.blogPreview}
-      onClick={() => navigate(`/blog/${slugURL}`)}
+      onClick={() => window.open(`/blog/${slugURL}`)}
     >
       <div className={styles?.header}>
         {blogCategory && <Tag label={blogCategory} />}
