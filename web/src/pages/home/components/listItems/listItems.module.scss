@@ -27,12 +27,12 @@
       color: $neutral1000;
       cursor: pointer;
       margin-bottom: 20px;
+      font-family: $base;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 28px;
+      text-decoration: none;
       @include min-width($desktopSM) {
-        font-family: $base;
-        font-size: 20px;
-        font-weight: 700;
-        line-height: 28px;
-        text-decoration: none;
         margin-left: 70px;
       }
       @include min-width($desktopMD) {
