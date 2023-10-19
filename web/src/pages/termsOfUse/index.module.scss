@@ -32,13 +32,14 @@
   }
 
   .sectionHeader {
-    margin-bottom: 150px;
+    margin-bottom: 86px;
     padding-top: 110px;
     padding-right: 20px;
     padding-left: 20px;
 
     @include min-width($mobileXL) {
-      padding-top: 160px;
+      margin-bottom: 150px;
+      padding-top: 84px;
       padding-right: 0;
       padding-left: 0;
     }
