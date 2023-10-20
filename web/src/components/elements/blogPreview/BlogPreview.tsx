@@ -5,7 +5,6 @@ import StrapiImage from "../../atoms/images/StrapiImage"
 import { BlogPreviewModel } from "../../../interfaces/interfaces"
 import Tag from "../../atoms/tags/Tag"
 import * as styles from "./blogPreview.module.scss"
-import { navigate } from "gatsby"
 
 const BlogPreview: React.FC<BlogPreviewModel> = props => {
   const { date, previewImage, timeReading, title, category, slugURL } =
@@ -19,9 +18,10 @@ const BlogPreview: React.FC<BlogPreviewModel> = props => {
   }
 
   return (
-    <div
+    <a
       className={styles?.blogPreview}
-      onClick={() => window.open(`/blog/${slugURL}`)}
+      href={`/blog/${slugURL}`}
+      target="_blank"
     >
       <div className={styles?.header}>
         {blogCategory && <Tag label={blogCategory} />}
@@ -40,8 +40,7 @@ const BlogPreview: React.FC<BlogPreviewModel> = props => {
         </p>
         <p className={`${cx("bodyRegularSM")}`}>{moment(date).format("LL")}</p>
       </div>
-    </div>
-    // </Link>
+    </a>
   )
 }
 
