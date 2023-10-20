@@ -66,7 +66,7 @@ const FourthSection: React.FC<ISectionProps> = props => {
                   }}
                   onClick={() => {
                     const element = document.getElementById("feature__" + index)
-                    window?.innerWidth < 1150 &&
+                    window?.innerWidth < 1067 &&
                       (setOpenedAdvantage(index),
                       element && scrollIntoView(element))
                   }}
