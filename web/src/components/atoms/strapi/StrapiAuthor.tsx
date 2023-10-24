@@ -12,9 +12,15 @@ const StrapiAuthor: React.FC<IStrapiAuthorProps> = props => {
   const authorAtt = author
 
   return (
-    <ul className={className}>
-      <li>{authorAtt}</li>
-    </ul>
+    <div className={className}>
+      <div>
+        <img src="authors image"></img>
+      </div>
+      <div>
+        <h6>{authorAtt}</h6>
+        <p>Authors role</p>
+      </div>
+    </div>
   )
 }
 
