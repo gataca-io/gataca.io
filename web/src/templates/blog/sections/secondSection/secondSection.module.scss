@@ -96,10 +96,11 @@
 
 .secondSection__rightSide {
 @include flex(0, 0, 75%);
-& > h6 {
+h6 {
   color: $neutral1000;
+  margin-bottom: 4px;
 }
-& > p {
+p {
   color: $neutral700;
 }
 & > div {
@@ -108,7 +109,7 @@
   @include flex-wrap(nowrap);
   @include justify-content(center);
   @include align-items(center);
-  & > img {
+  img {
     max-width: 64px;
     width: 64px;
   }

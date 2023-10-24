@@ -1,5 +1,5 @@
 import * as React from "react"
-import { StrapiAuthorModel } from "../../../interfaces/interfaces"
+import cx from "classnames"
 import { Link } from "gatsby"
 
 export interface IStrapiAuthorProps {
@@ -17,7 +17,7 @@ const StrapiAuthor: React.FC<IStrapiAuthorProps> = props => {
         <img src="authors image"></img>
       </div>
       <div>
-        <h6>{authorAtt}</h6>
+        <h6 className={cx("heading6")}>{authorAtt}</h6>
         <p>Authors role</p>
       </div>
     </div>
