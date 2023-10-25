@@ -95,7 +95,11 @@
 }
 
 .secondSection__rightSide {
-@include flex(0, 0, 75%);
+@include order(1);
+@include min-width($tabletMD) {
+  @include order(1);
+  @include flex(0, 0, 25%);
+}
 h6 {
   color: $neutral1000;
   margin-bottom: 4px;
@@ -112,6 +116,7 @@ p {
   img {
     max-width: 64px;
     width: 64px;
+    margin-right: 20px;
   }
 }
   
