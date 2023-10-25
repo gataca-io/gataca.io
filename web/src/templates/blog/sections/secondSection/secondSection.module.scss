@@ -1,128 +1,128 @@
 @import "../../../../styles/_colors.scss";
 @import "../../../../styles/mixins.scss";
 
-.secondSection__container {
-  padding: 0 20px;
-  margin: 0px auto 132px;
-  position: relative;
-  @include min-width($mobileXL) {
-    padding: 0 40px;
-    margin: 0px auto 80px;
-  }
-  @include min-width($desktopMD) {
-    padding: 0 60px;
-  }
-}
+// .secondSection__container {
+//   padding: 0 20px;
+//   margin: 0px auto 132px;
+//   position: relative;
+//   @include min-width($mobileXL) {
+//     padding: 0 40px;
+//     margin: 0px auto 80px;
+//   }
+//   @include min-width($desktopMD) {
+//     padding: 0 60px;
+//   }
+// }
 
-.secondSection {
-  position: relative;
-  margin: 0px 0;
-  width: 100%;
-  @include flexbox();
-  @include flex-direction(column);
-  @include flex-wrap(wrap);
+// .secondSection {
+//   position: relative;
+//   margin: 0px 0;
+//   width: 100%;
+//   @include flexbox();
+//   @include flex-direction(column);
+//   @include flex-wrap(wrap);
 
-  @include min-width($desktopMD) {
-    @include flex-direction(row);
-    @include justify-content(space-around);
-  }
-}
+//   @include min-width($desktopMD) {
+//     @include flex-direction(row);
+//     @include justify-content(space-around);
+//   }
+// }
 
-.secondSection__leftSide {
-  margin: 0px 0 60px;
-  width: 100%;
-  @include order(1);
-  @include min-width($desktopMD) {
-    @include flex(0, 0, 75%);
-    @include order(0);
-    margin: 0 auto 0 0;
-  }
+// .secondSection__leftSide {
+//   margin: 0px 0 60px;
+//   width: 100%;
+//   @include order(1);
+//   @include min-width($desktopMD) {
+//     @include flex(0, 0, 75%);
+//     @include order(0);
+//     margin: 0 auto 0 0;
+//   }
 
-  & > p {
-    color: $neutral700;
-  }
+//   & > p {
+//     color: $neutral700;
+//   }
 
-  & > .buttons_container {
-    background-color: $neutral100;
-    padding: 20px 20px 4px;
-    margin-top: 32px;
-    border-radius: 12px;
-    min-height: 284;
-    filter: drop-shadow(0px 0px 10px $boxShadowLigh);
-    @include flexbox();
-    @include flex-direction(column);
-    @include justify-content(space-between);
+//   & > .buttons_container {
+//     background-color: $neutral100;
+//     padding: 20px 20px 4px;
+//     margin-top: 32px;
+//     border-radius: 12px;
+//     min-height: 284;
+//     filter: drop-shadow(0px 0px 10px $boxShadowLigh);
+//     @include flexbox();
+//     @include flex-direction(column);
+//     @include justify-content(space-between);
 
-    @include min-width($tabletMD) {
-      max-width: 400px;
-    }
-    @include min-width($desktopXL) {
-      max-width: 475px;
-      padding: 20px 20px 4px;
-      margin-top: 57px;
-    }
+//     @include min-width($tabletMD) {
+//       max-width: 400px;
+//     }
+//     @include min-width($desktopXL) {
+//       max-width: 475px;
+//       padding: 20px 20px 4px;
+//       margin-top: 57px;
+//     }
 
-    .form__label {
-      color: $neutral700;
-      margin-bottom: 24px;
-    }
+//     .form__label {
+//       color: $neutral700;
+//       margin-bottom: 24px;
+//     }
 
-    .form__input {
-      color: $neutral900;
-      height: 32px;
-      width: calc(100% - 24px) ;
-      padding: 8px 12px;
-      border-radius: 8px;
-      border: none;
-      margin-top: 24px;
-      @include min-width($desktopXL) {
-        width: 190px;
-        margin-right: 32px;
-        margin-top: 0px;
-      }
-    }
+//     .form__input {
+//       color: $neutral900;
+//       height: 32px;
+//       width: calc(100% - 24px) ;
+//       padding: 8px 12px;
+//       border-radius: 8px;
+//       border: none;
+//       margin-top: 24px;
+//       @include min-width($desktopXL) {
+//         width: 190px;
+//         margin-right: 32px;
+//         margin-top: 0px;
+//       }
+//     }
 
-    .form__button {
-      width: 100%;
-      text-align: center;
-      margin-top: 12px;
-      @include min-width($desktopXL) {
-        margin-top: 0;
-        width: 140px;
-      }
-    }
-  }
-}
+//     .form__button {
+//       width: 100%;
+//       text-align: center;
+//       margin-top: 12px;
+//       @include min-width($desktopXL) {
+//         margin-top: 0;
+//         width: 140px;
+//       }
+//     }
+//   }
+// }
 
-.secondSection__rightSide {
-  @include order(0);
-  margin-bottom: 132px;
-  @include min-width($desktopMD) {
-    @include order(1);
-    @include flex(0, 0, 25%);
-    margin-bottom: 0;
-  }
-  h6 {
-    color: $neutral1000;
-    margin-bottom: 4px;
-  }
-  p {
-    color: $neutral700;
-  }
-  & > div {
-    @include flexbox();
-    @include flex-direction(row);
-    @include flex-wrap(nowrap);
-    @include justify-content(flex-start);
-    @include align-items(center);
-    @include min-width($desktopMD) {
-      @include justify-content(center);
-    }
-    img {
-      max-width: 64px;
-      width: 64px;
-      margin-right: 20px;
-      border-radius: 35px;
-    }
-  }
-}
+// .secondSection__rightSide {
+//   @include order(0);
+//   margin-bottom: 132px;
+//   @include min-width($desktopMD) {
+//     @include order(1);
+//     @include flex(0, 0, 25%);
+//     margin-bottom: 0;
+//   }
+//   h6 {
+//     color: $neutral1000;
+//     margin-bottom: 4px;
+//   }
+//   p {
+//     color: $neutral700;
+//   }
+//   & > div {
+//     @include flexbox();
+//     @include flex-direction(row);
+//     @include flex-wrap(nowrap);
+//     @include justify-content(flex-start);
+//     @include align-items(center);
+//     @include min-width($desktopMD) {
+//       @include justify-content(center);
+//     }
+//     img {
+//       max-width: 64px;
+//       width: 64px;
+//       margin-right: 20px;
+//       border-radius: 35px;
+//     }
+//   }
+// }
