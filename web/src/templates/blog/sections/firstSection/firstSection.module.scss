@@ -9,11 +9,11 @@
     padding: 0 40px;
     margin: 200px auto 132px;
   }
-  @include min-width(1110px) {
-    margin-bottom: 144px;
-  }
   @include min-width($desktopMD) {
     padding: 0 60px;
+  }
+  @include min-width(1110px) {
+    margin-bottom: 144px;
   }
 }
 
