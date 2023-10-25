@@ -95,35 +95,34 @@
 }
 
 .secondSection__rightSide {
-@include order(0);
-margin-bottom: 132px;
-@include min-width($desktopMD) {
-  @include order(1);
-  @include flex(0, 0, 25%);
-  margin-bottom: 0;
-}
-h6 {
-  color: $neutral1000;
-  margin-bottom: 4px;
-}
-p {
-  color: $neutral700;
-}
-& > div {
-  @include flexbox();
-  @include flex-direction(row);
-  @include flex-wrap(nowrap);
-  @include justify-content(start);
-  @include align-items(center);
+  @include order(0);
+  margin-bottom: 132px;
   @include min-width($desktopMD) {
-    @include justify-content(center);
+    @include order(1);
+    @include flex(0, 0, 25%);
+    margin-bottom: 0;
   }
-  img {
-    max-width: 64px;
-    width: 64px;
-    margin-right: 20px;
-    border-radius: 35px;
+  h6 {
+    color: $neutral1000;
+    margin-bottom: 4px;
   }
-}
-  
+  p {
+    color: $neutral700;
+  }
+  & > div {
+    @include flexbox();
+    @include flex-direction(row);
+    @include flex-wrap(nowrap);
+    @include justify-content(flex-start);
+    @include align-items(center);
+    @include min-width($desktopMD) {
+      @include justify-content(center);
+    }
+    img {
+      max-width: 64px;
+      width: 64px;
+      margin-right: 20px;
+      border-radius: 35px;
+    }
+  }
 }
