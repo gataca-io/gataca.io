@@ -9,9 +9,8 @@
     padding: 0 40px;
     margin: 0px auto 80px;
   }
-  @include min-width($tabletMD) {
+  @include min-width($desktopMD) {
     padding: 0 60px;
-    margin: 0px auto 80px;
   }
 }
 
@@ -23,7 +22,7 @@
   @include flex-direction(column);
   @include flex-wrap(wrap);
 
-  @include min-width($tabletMD) {
+  @include min-width($desktopMD) {
     @include flex-direction(row);
     @include justify-content(space-around);
   }
@@ -32,9 +31,10 @@
 .secondSection__leftSide {
   margin: 0px 0 60px;
   width: 100%;
-
-  @include min-width($tabletMD) {
+  @include order(1);
+  @include min-width($desktopMD) {
     @include flex(0, 0, 75%);
+    @include order(0);
     margin: 0 auto 0 0;
   }
 
@@ -95,10 +95,12 @@
 }
 
 .secondSection__rightSide {
-@include order(1);
-@include min-width($tabletMD) {
+@include order(0);
+margin-bottom: 132px;
+@include min-width($desktopMD) {
   @include order(1);
   @include flex(0, 0, 25%);
+  margin-bottom: 0;
 }
 h6 {
   color: $neutral1000;
@@ -111,12 +113,16 @@ p {
   @include flexbox();
   @include flex-direction(row);
   @include flex-wrap(nowrap);
-  @include justify-content(center);
+  @include justify-content(start);
   @include align-items(center);
+  @include min-width($desktopMD) {
+    @include justify-content(center);
+  }
   img {
     max-width: 64px;
     width: 64px;
     margin-right: 20px;
+    border-radius: 35px;
   }
 }
   
