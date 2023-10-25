@@ -1,21 +1,21 @@
 @import "../../../../styles/_colors.scss";
 @import "../../../../styles/mixins.scss";
 
-// .firstSection__container {
-//   padding: 0 20px;
-//   margin: 162px auto 132px;
-//   position: relative;
-//   @include min-width($mobileXL) {
-//     padding: 0 40px;
-//     margin: 200px auto 132px;
-//   }
-//   @include min-width($desktopMD) {
-//     padding: 0 60px;
-//   }
-//   @include min-width(1110px) {
-//     margin-bottom: 144px;
-//   }
-// }
+.firstSection__container {
+  padding: 0 20px;
+  margin: 162px auto 132px;
+  position: relative;
+  @include min-width($mobileXL) {
+    padding: 0 40px;
+    margin: 200px auto 132px;
+  }
+  @include min-width($desktopMD) {
+    padding: 0 60px;
+  }
+  @include min-width(1110px) {
+    margin-bottom: 144px;
+  }
+}
 
 .firstSection {
   position: relative;
