@@ -3,11 +3,11 @@
 
 .firstSection__container {
   padding: 0 20px;
-  margin: 162px auto 132px;
+  margin: 162px auto 60px;
   position: relative;
   @include min-width($mobileXL) {
     padding: 0 40px;
-    margin: 200px auto 132px;
+    margin: 200px auto 60px;
   }
   @include min-width($desktopMD) {
     padding: 0 60px;
