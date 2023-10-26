@@ -21,7 +21,9 @@ const FirstSection: React.FC<ISectionProps> = props => {
     <div style={{ position: "relative" }}>
       <section className={`${styles.firstSection} ${cx("containerMaxWidth")}`}>
         <div className={styles.firstSection__leftSide}>
-          <h1 className={`${cx("heading1 marginBottom32")}`}>{title}</h1>
+          <h1 className={`${cx("heading1 marginBottom32")}`}>
+            A master key to the Internet
+          </h1>
           <p className={`${cx("bodyRegularXL marginBottom20")}`}>
             {description}
           </p>
