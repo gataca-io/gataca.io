@@ -33,7 +33,7 @@
   width: 100%;
   @include order(1);
   @include min-width($desktopMD) {
-    @include flex(0, 0, 75%);
+    @include flex(0, 0, 70%);
     @include order(0);
     margin: 0 auto 0 0;
   }
