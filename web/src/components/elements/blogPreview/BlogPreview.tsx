@@ -7,15 +7,8 @@ import Tag from "../../atoms/tags/Tag"
 import * as styles from "./blogPreview.module.scss"
 
 const BlogPreview: React.FC<BlogPreviewModel> = props => {
-  const {
-    date,
-    previewImage,
-    timeReading,
-    title,
-    category,
-    slugURL,
-    AuthorResponseDataObject,
-  } = props?.attributes
+  const { date, previewImage, timeReading, title, category, slugURL } =
+    props?.attributes
   const blogCategory = category?.data?.attributes?.name
 
   const readingTimeDisplay = () => {
@@ -23,10 +16,6 @@ const BlogPreview: React.FC<BlogPreviewModel> = props => {
       return timeReading < 60 ? timeReading + " min read" : "+1 hour read"
     }
   }
-
-  const strapiAuthorName = AuthorResponseDataObject
-
-  console.log("nombre encontrado" + " " + strapiAuthorName)
 
   return (
     <a

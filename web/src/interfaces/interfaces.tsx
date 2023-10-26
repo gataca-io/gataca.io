@@ -47,7 +47,6 @@ export interface BlogModel extends BlogPreviewModel {
   }
   heroImage: any
   content: string
-  AuthorResponseDataObject: any
 }
 
 export interface SeoModel {
@@ -65,16 +64,6 @@ export interface StrapiImageModel {
       url: string
       alternativeText?: string
       caption?: string
-    }
-  }
-}
-
-export interface StrapiAuthorModel {
-  data: {
-    attributes: {
-      Name: string
-      Role: string
-      LinkedInURL: string
     }
   }
 }
