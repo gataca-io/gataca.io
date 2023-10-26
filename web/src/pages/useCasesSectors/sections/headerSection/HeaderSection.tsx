@@ -24,7 +24,10 @@ const UseCasesSection: React.FC<ISectionProps> = props => {
       >
         <div className={styles?.headerSection__container}>
           <h1
-            dangerouslySetInnerHTML={{ __html: title }}
+            dangerouslySetInnerHTML={{
+              __html:
+                "Unlocking the potential of <span>decentralized identity</span> technology",
+            }}
             className={cx("heading1 marginBottom32")}
           ></h1>
           <p className={cx("bodyRegularXL marginBottom32")}>{description}</p>

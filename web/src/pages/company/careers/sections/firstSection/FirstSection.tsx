@@ -15,7 +15,7 @@ const FirstSection: React.FC<ISectionProps> = props => {
     <section className={`${styles.firstSection} ${cx("containerMaxWidth")}`}>
       <div className={styles.firstSection__content}>
         <div className={styles.leftColumn}>
-          <h1 className={`${cx("heading1 marginBottom32")}`}>{title}</h1>
+          <h1 className={`${cx("heading1 marginBottom32")}`}>Join Gataca!</h1>
           {Array.isArray(descriptionParagraphs) &&
             descriptionParagraphs?.map((el: string, index: number) => {
               return (

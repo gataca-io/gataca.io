@@ -109,7 +109,9 @@ const FirstSection: React.FC<ISectionProps> = props => {
         className={`${styles?.firstSection} ${cx("containerMaxWidth")}`}
       >
         <div className={styles?.firstSection__header}>
-          <h1 className={cx("heading2 marginBottom32")}>{title}</h1>
+          <h1 className={cx("heading2 marginBottom32")}>
+            Our subscriptions are built to scale with you
+          </h1>
           <p className={cx("bodyRegularXL marginBottom32")}>{description}</p>
           <div className={styles?.categories}>
             {categories?.map((item, index) => {
