@@ -22,6 +22,7 @@ export const SeoHelmet: React.FC<SeoModel> = props => {
           metaDescription ||
           "Gataca is a cybersecurity company that provides decentralized digital identity technology, also known as self-sovereign identity (SSI)."
         }
+        data-react-helmet="true"
       />
       {!!canonicalURL?.length && <link rel="canonical" href={canonicalURL} />}
       {!!keywords?.length && <meta name="keywords" content={keywords} />}
@@ -29,11 +30,11 @@ export const SeoHelmet: React.FC<SeoModel> = props => {
       <meta property="og:url" content={gatacaURL} />
       <meta property="og:type" content="article" />
       <meta
-        data-react-helmet="true"
         property="og:title"
         content={
           metaTitle || "Gataca | Decentralized Identity Management Technology"
         }
+        data-react-helmet="true"
       />
       <meta
         property="og:description"
@@ -41,6 +42,7 @@ export const SeoHelmet: React.FC<SeoModel> = props => {
           metaDescription ||
           "Gataca is a cybersecurity company that provides decentralized digital identity technology, also known as self-sovereign identity (SSI)."
         }
+        data-react-helmet="true"
       />
       {rrssImg && (
         <meta
