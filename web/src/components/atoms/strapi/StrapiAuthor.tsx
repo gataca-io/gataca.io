@@ -34,7 +34,7 @@ const StrapiAuthor: React.FC<IStrapiAuthorProps> = props => {
         (authorName = "Irene Hernández"),
         (authorRole = "CEO"),
         (authorImage = teamImages[0]),
-        (authorLinkedInURL = "https://www.linkedin.com/in/samuelgoes/")
+        (authorLinkedInURL = "https://www.linkedin.com/in/irenehernandez/")
       )
     } else if (author === "Samuel") {
       return (
@@ -43,7 +43,7 @@ const StrapiAuthor: React.FC<IStrapiAuthorProps> = props => {
         (authorImage = teamImages[1]),
         (authorLinkedInURL = "https://www.linkedin.com/in/samuelgoes/")
       )
-    } else if (author === "José") {
+    } else if (author === "Jose") {
       return (
         (authorName = "José San Juan"),
         (authorRole = "CSO"),
