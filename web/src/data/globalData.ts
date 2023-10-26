@@ -10,6 +10,7 @@ export const linkedinURL = "https://www.linkedin.com/company/gataca/"
 export const twitterURL = "https://twitter.com/gataca_id"
 export const youtubeURL =
   "https://www.youtube.com/channel/UCcjJqmCa1UmbbS8ZpM8kkAQ"
+export const discordURL = "https://discord.com/invite/2EgQFAc926"
 export const legalGatacaEmail = "legal@gataca.io"
 export const gatacaURL = "https://gataca.io"
 export const privacyPolicyURL = "/privacy-policy"
@@ -406,6 +407,12 @@ export const socialMedia: IconModel[] = [
   //   icon: images.gatacaTwitterLink,
   //   route: twitterURL,
   // },
+  {
+    id: "discord",
+    alt: "Discord Logo",
+    icon: images.gatacaDiscordLink,
+    route: discordURL,
+  },
   {
     id: "youtube",
     alt: "Youtube Logo",
