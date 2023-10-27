@@ -156,6 +156,7 @@ import number1 from "./images3d/1.png"
 import number2 from "./images3d/2.png"
 import number3 from "./images3d/3.png"
 import number4 from "./images3d/4.png"
+import gatacaDiscordLink from "./icons/gat-icon-discord.svg"
 
 export const images = {
   favicon: favicon,
@@ -317,4 +318,5 @@ export const images = {
   number2: number2,
   number3: number3,
   number4: number4,
+  gatacaDiscordLink: gatacaDiscordLink,
 }
