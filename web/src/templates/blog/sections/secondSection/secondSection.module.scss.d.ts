@@ -6,4 +6,3 @@ export const form__label: string
 export const form__input: string
 export const form__button: string
 export const secondSection__rightSide: string
-export const secondSection__imageContainer: string

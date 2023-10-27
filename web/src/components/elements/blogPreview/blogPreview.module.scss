@@ -4,13 +4,16 @@
 .blogPreview {
   @include flexbox();
   @include flex-direction(column);
-  width: 260px;
+  min-width: 0;
+  width: calc(100% - 48px);
   background-color: $neutral100;
 padding: 24px;
   border-radius: 12px;
   box-shadow: 1px 1px 12px $boxShadowLigh;
   cursor: pointer;
-
+  &:hover {
+    color: $neutral1000
+  }
   & > .header {
     @include flexbox();
     @include justify-content(space-between);

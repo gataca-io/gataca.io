@@ -94,8 +94,15 @@
       @media (min-width: 1067px) {
         padding: 24px;
         min-width: 0;
-        max-width: 206px;
+        max-width: 225px;
         width: auto;
+        flex: 0 0 calc(25% - 75px);
+      }
+
+      &:nth-child(1){
+        &>p:nth-child(2) {
+          width: 200px;
+        }
       }
 
       & > .advantage__image {

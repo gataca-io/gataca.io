@@ -9,9 +9,8 @@
     padding: 0 40px;
     margin: 0px auto 80px;
   }
-  @include min-width($tabletMD) {
+  @include min-width($desktopMD) {
     padding: 0 60px;
-    margin: 0px auto 80px;
   }
 }
 
@@ -21,23 +20,22 @@
   width: 100%;
   @include flexbox();
   @include flex-direction(column);
-  @include justify-content(space-around);
   @include flex-wrap(wrap);
 
-  @include min-width($tabletMD) {
+  @include min-width($desktopMD) {
     @include flex-direction(row);
+    @include justify-content(space-around);
   }
 }
 
 .secondSection__leftSide {
   margin: 0px 0 60px;
   width: 100%;
-
-  @include min-width($tabletMD) {
-    width: 100%;
+  @include order(1);
+  @include min-width($desktopMD) {
+    @include flex(0, 0, 70%);
+    @include order(0);
     margin: 0 auto 0 0;
-  }
-  @include min-width(1110px) {
     max-width: 779px;
   }
 
@@ -98,52 +96,34 @@
 }
 
 .secondSection__rightSide {
-  position: relative;
-  width: 100%;
-  display: block;
-  z-index: 0;
-  height: 100%;
-  margin-left: 3%;
-  @include flexbox();
-  @include flex-direction(column);
-  @include justify-content(center);
-  @include align-items(center);
-
-  @include min-width($tabletMD) {
-    margin-top: auto;
-    margin-bottom: auto;
-    height: 100%;
-    width: calc(47% - 60px)
-  }
+  @include order(0);
+  margin-bottom: 132px;
   @include min-width($desktopMD) {
-     width: calc(52% - 60px)
+    @include order(1);
+    @include flex(0, 0, 25%);
+    margin-bottom: 0;
   }
-  @include min-width($desktopXL) {
-    margin-top: -50px;
-    width: calc(52% - 60px)
+  h6 {
+    color: $neutral1000;
+    margin-bottom: 4px;
   }
-  @include min-width($desktopXXL) {
-    margin-top: -85px;
-    width: calc(52% - 60px)
+  p {
+    color: $neutral700;
   }
-
-  .secondSection__imageContainer {
-    width: 100%;
-    @include min-width($tabletMD) {
-      width: calc(50vw - 66px);
-      max-width: 550px;
-      display: block;
-      position: relative;
+  & > div {
+    @include flexbox();
+    @include flex-direction(row);
+    @include flex-wrap(nowrap);
+    @include justify-content(flex-start);
+    @include align-items(center);
+    @include min-width($desktopMD) {
+      @include justify-content(center);
     }
-    @include min-width($desktopXL) {
-       max-width: 650px;
-      position: absolute;
-      top: 0;
-      left: 15px
-    }
-    @include min-width($desktopXXL) {
-      left: 30px;
-      width: calc(50vw + 109px);
+    img {
+      max-width: 64px;
+      width: 64px;
+      margin-right: 20px;
+      border-radius: 35px;
     }
   }
 }
