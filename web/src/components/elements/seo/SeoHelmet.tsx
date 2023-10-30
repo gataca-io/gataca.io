@@ -33,81 +33,81 @@ export const SeoHelmet: React.FC<SeoModel> = props => {
   const url = postMeta.slug ? `${gatacaURL}/${postMeta.slug}/` : gatacaURL
 
   return (
-    <Helmet>
-      <html lang="en" />
-      <title data-react-helmet="true">{title}</title>
-      <meta
-        name="description"
-        content={
-          description ||
-          "Gataca is a cybersecurity company that provides decentralized digital identity technology, also known as self-sovereign identity (SSI)."
-        }
-        data-react-helmet="true"
-      />
-      {!!canonicalURL?.length && <link rel="canonical" href={canonicalURL} />}
-      {alternateURL?.data?.map(item => {
-        const { url, hreflangLocale } = item.attributes
-        return <link rel="alternate" href={url} hreflang={hreflangLocale} />
-      })}
-
-      {!!keywords?.length && <meta name="keywords" content={keywords} />}
-      {/*FACEBOOK*/}
-      <meta property="og:url" content={url} />
-      <meta property="og:type" content="article" />
-      <meta
-        property="og:title"
-        content={
-          title || "Gataca | Decentralized Identity Management Technology"
-        }
-        data-react-helmet="true"
-      />
-      <meta
-        property="og:description"
-        content={
-          description ||
-          "Gataca is a cybersecurity company that provides decentralized digital identity technology, also known as self-sovereign identity (SSI)."
-        }
-        data-react-helmet="true"
-      />
-      {rrssImg && (
+    <>
+      <Helmet>
+        <html lang="en" />
+        <title data-react-helmet="true">{title}</title>
         <meta
-          property="og:image"
+          name="description"
           content={
-            (process.env.STRAPI_API_URL &&
-              process.env.STRAPI_API_URL + getSeoRRSSImgURL(rrssImg)) ||
-            ""
+            description ||
+            "Gataca is a cybersecurity company that provides decentralized digital identity technology, also known as self-sovereign identity (SSI)."
           }
+          data-react-helmet="true"
         />
-      )}
-      {/*TWITTER*/}
-      <meta name="twitter:card" content="summary" />
-      <meta name="twitter:title" content={title} />
-      <meta name="twitter:description" content={description} />
-      {rrssImg && (
+        {!!canonicalURL?.length && <link rel="canonical" href={canonicalURL} />}
+        {alternateURL?.data?.map(item => {
+          const { url, hreflangLocale } = item.attributes
+          return <link rel="alternate" href={url} hreflang={hreflangLocale} />
+        })}
+        {!!keywords?.length && <meta name="keywords" content={keywords} />}
+        {/*FACEBOOK*/}
+        <meta property="og:url" content={url} />
+        <meta property="og:type" content="article" />
         <meta
-          name="twitter:image"
+          property="og:title"
           content={
-            (process.env.STRAPI_API_URL &&
-              process.env.STRAPI_API_URL + getSeoRRSSImgURL(rrssImg)) ||
-            ""
+            title || "Gataca | Decentralized Identity Management Technology"
           }
+          data-react-helmet="true"
         />
-      )}
-      <meta name="twitter:site" content={url} />
-      <meta name="twitter:creator" content={twitterHandler} />
-      {/*WEB SAVED IN STARTING SCREEN*/}
-      <meta name="msapplication-TileColor" content="#ffffff" />
-      <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
-      <meta name="theme-color" content="#ffffff" />
-      <link rel="manifest" href="/manifest.json" />
-      <link
-        rel="mask-icon"
-        href={images.favicon}
-        sizes="32x32"
-        type="image/png"
-      />
-      {/*TODO: Add icons when they are created*/}
-      {/* <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
+        <meta
+          property="og:description"
+          content={
+            description ||
+            "Gataca is a cybersecurity company that provides decentralized digital identity technology, also known as self-sovereign identity (SSI)."
+          }
+          data-react-helmet="true"
+        />
+        {rrssImg && (
+          <meta
+            property="og:image"
+            content={
+              (process.env.STRAPI_API_URL &&
+                process.env.STRAPI_API_URL + getSeoRRSSImgURL(rrssImg)) ||
+              ""
+            }
+          />
+        )}
+        {/*TWITTER*/}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        {rrssImg && (
+          <meta
+            name="twitter:image"
+            content={
+              (process.env.STRAPI_API_URL &&
+                process.env.STRAPI_API_URL + getSeoRRSSImgURL(rrssImg)) ||
+              ""
+            }
+          />
+        )}
+        <meta name="twitter:site" content={url} />
+        <meta name="twitter:creator" content={twitterHandler} />
+        {/*WEB SAVED IN STARTING SCREEN*/}
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+        <meta name="theme-color" content="#ffffff" />
+        <link rel="manifest" href="/manifest.json" />
+        <link
+          rel="mask-icon"
+          href={images.favicon}
+          sizes="32x32"
+          type="image/png"
+        />
+        {/*TODO: Add icons when they are created*/}
+        {/* <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
       <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
       <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
       <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png" />
@@ -160,6 +160,8 @@ export const SeoHelmet: React.FC<SeoModel> = props => {
         sizes="16x16"
         href="/favicon-16x16.png"
       /> */}
-    </Helmet>
+      </Helmet>
+      <GatsbySeo title={title} description={description} />
+    </>
   )
 }

@@ -18,6 +18,7 @@ module.exports = {
     "gatsby-plugin-sass",
     "gatsby-plugin-react-helmet-async",
     "gatsby-remark-responsive-iframe",
+    "gatsby-plugin-next-seo",
     {
       resolve: "gatsby-plugin-hubspot",
       options: {
