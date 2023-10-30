@@ -212,14 +212,6 @@ export interface SeoModel {
       }
     }[]
   }
-  postData: {
-    childMarkdownRemark: {
-      frontmatter: any
-      excerpt: any
-    }
-  }
-  postImage: string
-  frontmatter: any
 }
 
 export interface StrapiImageModel {
