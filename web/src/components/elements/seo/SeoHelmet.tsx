@@ -1,25 +1,44 @@
 import React from "react"
 import { Helmet } from "react-helmet-async"
+import { StaticQuery, graphql } from "gatsby"
+import { GatsbySeo } from "gatsby-plugin-next-seo"
 import { gatacaURL, twitterHandler } from "../../../data/globalData"
 import { SeoModel, StrapiImageModel } from "../../../interfaces/interfaces"
 import { images } from "../../../images/images"
 
 export const SeoHelmet: React.FC<SeoModel> = props => {
-  const { metaTitle, metaDescription, rrssImg, keywords, canonicalURL } = props
+  const {
+    postData,
+    frontmatter = {},
+    postImage,
+    metaTitle,
+    metaDescription,
+    rrssImg,
+    keywords,
+    canonicalURL,
+  } = props
 
   const getSeoRRSSImgURL = (image?: StrapiImageModel) =>
     image?.data?.attributes?.url ? image?.data?.attributes?.url : undefined
 
+  const postMeta = frontmatter || postData.childMarkdownRemark.frontmatter || {}
+
+  const title = postMeta.title || metaTitle
+  const description = postMeta.description || metaDescription
+  const image = postImage
+    ? process.env.STRAPI_API_URL &&
+      process.env.STRAPI_API_URL + getSeoRRSSImgURL(rrssImg)
+    : rrssImg
+  const url = postMeta.slug ? `${gatacaURL}/${postMeta.slug}/` : gatacaURL
+
   return (
     <Helmet>
       <html lang="en" />
-      <title data-react-helmet="true">
-        {metaTitle || "Gataca | Decentralized Identity Management Technology"}
-      </title>
+      <title data-react-helmet="true">{title}</title>
       <meta
         name="description"
         content={
-          metaDescription ||
+          description ||
           "Gataca is a cybersecurity company that provides decentralized digital identity technology, also known as self-sovereign identity (SSI)."
         }
         data-react-helmet="true"
@@ -27,19 +46,19 @@ export const SeoHelmet: React.FC<SeoModel> = props => {
       {!!canonicalURL?.length && <link rel="canonical" href={canonicalURL} />}
       {!!keywords?.length && <meta name="keywords" content={keywords} />}
       {/*FACEBOOK*/}
-      <meta property="og:url" content={gatacaURL} />
+      <meta property="og:url" content={url} />
       <meta property="og:type" content="article" />
       <meta
         property="og:title"
         content={
-          metaTitle || "Gataca | Decentralized Identity Management Technology"
+          title || "Gataca | Decentralized Identity Management Technology"
         }
         data-react-helmet="true"
       />
       <meta
         property="og:description"
         content={
-          metaDescription ||
+          description ||
           "Gataca is a cybersecurity company that provides decentralized digital identity technology, also known as self-sovereign identity (SSI)."
         }
         data-react-helmet="true"
@@ -56,8 +75,8 @@ export const SeoHelmet: React.FC<SeoModel> = props => {
       )}
       {/*TWITTER*/}
       <meta name="twitter:card" content="summary" />
-      <meta name="twitter:title" content={metaTitle} />
-      <meta name="twitter:description" content={metaDescription} />
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:description" content={description} />
       {rrssImg && (
         <meta
           name="twitter:image"
@@ -68,7 +87,7 @@ export const SeoHelmet: React.FC<SeoModel> = props => {
           }
         />
       )}
-      <meta name="twitter:site" content={gatacaURL} />
+      <meta name="twitter:site" content={url} />
       <meta name="twitter:creator" content={twitterHandler} />
       {/*WEB SAVED IN STARTING SCREEN*/}
       <meta name="msapplication-TileColor" content="#ffffff" />

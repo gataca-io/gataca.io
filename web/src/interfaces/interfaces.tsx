@@ -56,6 +56,14 @@ export interface SeoModel {
   keywords?: string
   canonicalURL?: string
   rrssImg?: StrapiImageModel
+  postData: {
+    childMarkdownRemark: {
+      frontmatter: any
+      excerpt: any
+    }
+  }
+  postImage: string
+  frontmatter: any
 }
 
 export interface StrapiImageModel {
