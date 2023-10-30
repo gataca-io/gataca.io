@@ -128,7 +128,7 @@ const Layout = props => {
     <>
       {seoData && (
         <SeoHelmet
-          metaTitle={seoData?.metaTitle}
+          metaTitle="hola"
           metaDescription={seoData?.metaDescription}
           rrssImg={seoData?.rrssImg}
           keywords={seoData?.keywords}
