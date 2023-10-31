@@ -1,5 +1,5 @@
 import React from "react"
-import { Helmet } from "react-helmet-async"
+import { Helmet, HelmetProvider } from "react-helmet-async"
 import { StaticQuery, graphql } from "gatsby"
 import { GatsbySeo } from "gatsby-plugin-next-seo"
 import { gatacaURL, twitterHandler } from "../../../data/globalData"
@@ -20,72 +20,75 @@ export const SeoHelmet: React.FC<SeoModel> = props => {
     image?.data?.attributes?.url ? image?.data?.attributes?.url : undefined
   return (
     <>
-      <GatsbySeo title={metaTitle} description={metaDescription}>
-        <html lang="en" />
-        <title data-react-helmet="true">{metaTitle}</title>
-        <meta
-          name="description"
-          content={metaDescription}
-          data-react-helmet="true"
-        />
-        {!!canonicalURL?.length && <link rel="canonical" href={canonicalURL} />}
-        {alternateURL?.data?.map(item => {
-          const { url, hreflangLocale } = item.attributes
-          return <link rel="alternate" href={url} hreflang={hreflangLocale} />
-        })}
-        {!!keywords?.length && <meta name="keywords" content={keywords} />}
-        {/*FACEBOOK*/}
-        <meta property="og:url" content={gatacaURL} />
-        <meta property="og:type" content="article" />
-        <meta
-          property="og:title"
-          content={metaTitle}
-          data-react-helmet="true"
-        />
-        <meta
-          property="og:description"
-          content={metaDescription}
-          data-react-helmet="true"
-        />
-        {rrssImg && (
+      <HelmetProvider>
+        <Helmet>
+          <html lang="en" />
+          <title data-react-helmet="true">{metaTitle}</title>
           <meta
-            property="og:image"
-            content={
-              (process.env.STRAPI_API_URL &&
-                process.env.STRAPI_API_URL + getSeoRRSSImgURL(rrssImg)) ||
-              ""
-            }
+            name="description"
+            content={metaDescription}
+            data-react-helmet="true"
           />
-        )}
-        {/*TWITTER*/}
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content={metaTitle} />
-        <meta name="twitter:description" content={metaDescription} />
-        {rrssImg && (
+          {!!canonicalURL?.length && (
+            <link rel="canonical" href={canonicalURL} />
+          )}
+          {alternateURL?.data?.map(item => {
+            const { url, hreflangLocale } = item.attributes
+            return <link rel="alternate" href={url} hreflang={hreflangLocale} />
+          })}
+          {!!keywords?.length && <meta name="keywords" content={keywords} />}
+          {/*FACEBOOK*/}
+          <meta property="og:url" content={gatacaURL} />
+          <meta property="og:type" content="article" />
           <meta
-            name="twitter:image"
-            content={
-              (process.env.STRAPI_API_URL &&
-                process.env.STRAPI_API_URL + getSeoRRSSImgURL(rrssImg)) ||
-              ""
-            }
+            property="og:title"
+            content={metaTitle}
+            data-react-helmet="true"
           />
-        )}
-        <meta name="twitter:site" content={gatacaURL} />
-        <meta name="twitter:creator" content={twitterHandler} />
-        {/*WEB SAVED IN STARTING SCREEN*/}
-        <meta name="msapplication-TileColor" content="#ffffff" />
-        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
-        <meta name="theme-color" content="#ffffff" />
-        <link rel="manifest" href="/manifest.json" />
-        <link
-          rel="mask-icon"
-          href={images.favicon}
-          sizes="32x32"
-          type="image/png"
-        />
-        {/*TODO: Add icons when they are created*/}
-        {/* <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
+          <meta
+            property="og:description"
+            content={metaDescription}
+            data-react-helmet="true"
+          />
+          {rrssImg && (
+            <meta
+              property="og:image"
+              content={
+                (process.env.STRAPI_API_URL &&
+                  process.env.STRAPI_API_URL + getSeoRRSSImgURL(rrssImg)) ||
+                ""
+              }
+            />
+          )}
+          {/*TWITTER*/}
+          <meta name="twitter:card" content="summary" />
+          <meta name="twitter:title" content={metaTitle} />
+          <meta name="twitter:description" content={metaDescription} />
+          {rrssImg && (
+            <meta
+              name="twitter:image"
+              content={
+                (process.env.STRAPI_API_URL &&
+                  process.env.STRAPI_API_URL + getSeoRRSSImgURL(rrssImg)) ||
+                ""
+              }
+            />
+          )}
+          <meta name="twitter:site" content={gatacaURL} />
+          <meta name="twitter:creator" content={twitterHandler} />
+          {/*WEB SAVED IN STARTING SCREEN*/}
+          <meta name="msapplication-TileColor" content="#ffffff" />
+          <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+          <meta name="theme-color" content="#ffffff" />
+          <link rel="manifest" href="/manifest.json" />
+          <link
+            rel="mask-icon"
+            href={images.favicon}
+            sizes="32x32"
+            type="image/png"
+          />
+          {/*TODO: Add icons when they are created*/}
+          {/* <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
       <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
       <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
       <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png" />
@@ -138,7 +141,8 @@ export const SeoHelmet: React.FC<SeoModel> = props => {
         sizes="16x16"
         href="/favicon-16x16.png"
       /> */}
-      </GatsbySeo>
+        </Helmet>
+      </HelmetProvider>
     </>
   )
 }
