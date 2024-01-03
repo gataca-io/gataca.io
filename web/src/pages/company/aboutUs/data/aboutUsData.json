@@ -97,6 +97,16 @@
           "linkedinRoute": "https://www.linkedin.com/in/mayra-amador-zapata-/",
           "name": "Mayra Amador",
           "title": "Frontend Developer"
+        },
+        {
+          "linkedinRoute": "https://www.linkedin.com/in/m%C3%B3nica-mayoral-67679aa/",
+          "name": "Mónica Mayoral",
+          "title": "CFO"
+        },
+        {
+          "linkedinRoute": "https://www.linkedin.com/in/marisol-esqueda-p/",
+          "name": "Marisol Esqueda",
+          "title": "Administrative Executive"
         }
       ],
       "title": "Meet the team"

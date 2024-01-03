@@ -28,6 +28,8 @@ const teamImages = [
   images.itManagerTeam,
   images.marketingTeam,
   images.frontend2Team,
+  images.cfoTeam,
+  images.adminExecutiveTeam,
 ]
 
 const FourthSection: React.FC<ISectionProps> = props => {
