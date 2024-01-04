@@ -157,6 +157,8 @@ import number2 from "./images3d/2.png"
 import number3 from "./images3d/3.png"
 import number4 from "./images3d/4.png"
 import gatacaDiscordLink from "./icons/gat-icon-discord.svg"
+import cfoTeam from "./team/monica-mayoral.png"
+import adminExecutiveTeam from "./team/marisol-esqueda.png"
 
 export const images = {
   favicon: favicon,
@@ -272,6 +274,8 @@ export const images = {
   itManagerTeam: itManagerTeam,
   marketingTeam: marketingTeam,
   frontend2Team: frontend2Team,
+  cfoTeam: cfoTeam,
+  adminExecutiveTeam: adminExecutiveTeam,
   linkedinLogo: linkedinLogo,
   madridLogo: madridLogo,
   ngiEssifLogo: ngiEssifLogo,
