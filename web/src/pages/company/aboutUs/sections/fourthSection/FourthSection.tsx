@@ -30,6 +30,7 @@ const teamImages = [
   images.frontend2Team,
   images.cfoTeam,
   images.adminExecutiveTeam,
+  images.mobileAppDeveloper,
 ]
 
 const FourthSection: React.FC<ISectionProps> = props => {
