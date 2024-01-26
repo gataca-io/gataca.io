@@ -19,6 +19,9 @@ const SitxtSection: React.FC<ISectionProps> = props => {
             className={`${cx("bodyRegularSM")}`}
             dangerouslySetInnerHTML={{ __html: description }}
           ></div>
+          <img src={images.mtdfpLogo}></img>
+          <img src={images.nextGenerationLogo}></img>
+          <img src={images.prtrLogo}></img>
         </div>
       </div>
     </section>

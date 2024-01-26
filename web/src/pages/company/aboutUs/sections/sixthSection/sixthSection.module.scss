@@ -18,6 +18,16 @@
       > div {
         text-align: center;
         margin-top: 32px;
+        font-size: 12px;
+        @include min-width($mobileXL) {
+          max-width: 443px;
+          text-align: left;
+          margin-top: 0;
+          margin-left: 32px;
+        }
+      }
+      img {
+        margin-top: 32px;
         @include min-width($mobileXL) {
           max-width: 443px;
           text-align: left;
