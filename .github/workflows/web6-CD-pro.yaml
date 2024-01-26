@@ -58,15 +58,15 @@ jobs:
           # Update version pro
           V=$(grep version package.json | cut -d'"' -f4)
           echo "ver="$V >> $GITHUB_ENV
-          IMAGE=$(grep 'image:' deployments/deployment-pro.yml | cut -d':' -f3 | cut -d'-' -f1)
+          IMAGE=$(grep 'image:' web/deployments/deployment-pro.yml | cut -d':' -f3 | cut -d'-' -f1)
           echo "image="$IMAGE >> $GITHUB_ENV
           echo "version $V, image $IMAGE."
       - name: Update deployment-pro
         run: |
           if [ "${{ github.event.inputs.ExecuteChoice }}" == "YES" ]; then
             if [ "${{ env.ver }}" != "${{ env.image }}" ]; then
-              sed -i 's/website:.*$/website:${{ env.ver }}/g' deployments/deployment-pro.yml          
-              echo "deployment-pro.yml:" ; grep 'website' deployments/deployment-pro.yml || true # output
+              sed -i 's/website:.*$/website:${{ env.ver }}/g' web/deployments/deployment-pro.yml          
+              echo "deployment-pro.yml:" ; grep 'website' web/deployments/deployment-pro.yml || true # output
               git add .
               git commit -m "Change to image version to ${{ env.ver }} because of gataca.io CD PRO action."
               git push
@@ -87,7 +87,7 @@ jobs:
             mkdir $HOME/.kube/
             echo ${{ secrets.CD_KUBE_CONFIG_PRO }} | base64 --decode > $HOME/.kube/config
             kubectl config get-contexts
-            kubectl diff -f deployments/deployment-pro.yml
+            kubectl diff -f web/deployments/deployment-pro.yml
             kubectl -n web scale deploy web6 --replicas=0
-            kubectl apply -f deployments/deployment-pro.yml  
+            kubectl apply -f web/deployments/deployment-pro.yml
           fi 
