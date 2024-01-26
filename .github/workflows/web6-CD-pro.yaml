@@ -56,7 +56,7 @@ jobs:
           git config --global user.email ${{ github.actor }}@gataca.io
           git config --global user.name ${{ github.actor }}
           # Update version pro
-          V=$(grep version package.json | cut -d'"' -f4)
+          V=$(grep web/version package.json | cut -d'"' -f4)
           echo "ver="$V >> $GITHUB_ENV
           IMAGE=$(grep 'image:' web/deployments/deployment-pro.yml | cut -d':' -f3 | cut -d'-' -f1)
           echo "image="$IMAGE >> $GITHUB_ENV
