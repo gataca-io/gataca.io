@@ -123,6 +123,9 @@ import blockIsLogo from "./logos/logo-block-is.png"
 import cdtiNeotecLogo from "./logos/logo-cdti-neotec.png"
 import redEsLogo from "./logos/logo-red-es.svg"
 import europeanUnionLogo from "./logos/logo-european-union.png"
+import mtdfpLogo from "./logos/logo-mtdfp.png"
+import nextGenerationLogo from "./logos/logo-eu-next-generation.png"
+import prtrLogo from "./logos/logo-prtr.png"
 import gatacaTeamCareers1 from "./team/gataca-team-careers1.png"
 import gatacaTeamCareers2 from "./team/gataca-team-careers2.png"
 import gatacaTeamCareers3 from "./team/gataca-team-careers3.png"
@@ -289,6 +292,9 @@ export const images = {
   cdtiNeotecLogo: cdtiNeotecLogo,
   redEsLogo: redEsLogo,
   europeanUnionLogo: europeanUnionLogo,
+  mtdfpLogo: mtdfpLogo,
+  nextGenerationLogo: nextGenerationLogo,
+  prtrLogo: prtrLogo,
   gatacaTeamCareers1: gatacaTeamCareers1,
   gatacaTeamCareers2: gatacaTeamCareers2,
   gatacaTeamCareers3: gatacaTeamCareers3,
