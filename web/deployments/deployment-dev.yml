@@ -26,7 +26,7 @@ spec:
             value: "80"
       containers:
         - name: web6
-          image: gatacaid/website:6.0.5-web6-SNAPSHOT
+          image: gatacaid/website:-pre
           imagePullPolicy: Always
           securityContext:
             runAsNonRoot: true
