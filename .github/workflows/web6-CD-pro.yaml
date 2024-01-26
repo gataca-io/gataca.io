@@ -87,5 +87,7 @@ jobs:
             mkdir $HOME/.kube/
             echo ${{ secrets.CD_KUBE_CONFIG_PRO }} | base64 --decode > $HOME/.kube/config
             kubectl config get-contexts
-            kubectl -n web rollout restart deploy web6
+            kubectl diff -f deployments/deployment-pro.yml
+            kubectl -n web scale deploy web6 --replicas=0
+            kubectl apply -f deployments/deployment-pro.yml  
           fi 
