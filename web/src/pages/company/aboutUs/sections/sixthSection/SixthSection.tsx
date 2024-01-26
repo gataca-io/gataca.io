@@ -14,14 +14,22 @@ const SitxtSection: React.FC<ISectionProps> = props => {
     <section className={`${styles.sixthSection}`}>
       <div className={styles.sixthSection__container}>
         <div className={styles.elements__container}>
-          <img src={images.europeanUnionLogo}></img>
-          <div
-            className={`${cx("bodyRegularSM")}`}
-            dangerouslySetInnerHTML={{ __html: description }}
-          ></div>
-          <img src={images.mtdfpLogo}></img>
-          <img src={images.nextGenerationLogo}></img>
-          <img src={images.prtrLogo}></img>
+          <div className={styles.europeanUnionLogo__container}>
+            <img src={images.europeanUnionLogo}></img>
+            <div
+              className={`${cx("bodyRegularSM")}`}
+              dangerouslySetInnerHTML={{ __html: description }}
+            ></div>
+          </div>
+          <div>
+            <img src={images.mtdfpLogo}></img>
+          </div>
+          <div>
+            <img src={images.nextGenerationLogo}></img>
+          </div>
+          <div>
+            <img src={images.prtrLogo}></img>
+          </div>
         </div>
       </div>
     </section>
