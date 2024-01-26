@@ -10,29 +10,61 @@
       padding: 40px;
     }
     .elements__container {
+      @include flexbox();
+      @include justify-content(center);
+      @include flex-wrap(wrap);
+      gap: 40px;
       @include min-width($mobileXL) {
-        @include flexbox();
-        @include justify-content(center);
         @include align-items(center);
+      }
+      @include min-width($desktopXXL) {
+        @include justify-content(space-between);
+        @include flex-wrap(nowrap);
+        gap: 30px;
+      }
+      .europeanUnionLogo__container {
+        @include flex(0, 0, 100%);
+        @include min-width($desktopXXL) {
+          @include flexbox();
+          @include justify-content(center);
+          @include align-items(center);
+          @include flex(0, 0, 30%);
+          max-width: 100%;
+        }
+        > div {
+          text-align: center;
+          font-size: 12px;
+          max-width: 443px;
+          margin: 10px auto 0;
+          @include min-width($desktopXXL) {
+            margin-left: 32px;
+            margin-top: 0;
+            text-align: left;
+          }
+        }
       }
       > div {
         text-align: center;
-        margin-top: 32px;
         font-size: 12px;
-        @include min-width($mobileXL) {
+        @include flex(0, 0, 100%);
+        @include min-width($tabletSM) {
+          @include flex(0, 0, calc((100%/2) - 40px));
+        }
+        @include min-width($tabletXL) {
+          @include flex(0, 0, calc((100%/3) - 40px));
+        }
+        @include min-width($desktopXXL) {
           max-width: 443px;
-          text-align: left;
+          text-align: center;
           margin-top: 0;
-          margin-left: 32px;
+          @include flex(0, 0, calc((70%/3) - 30px));
         }
       }
       img {
-        margin-top: 32px;
         @include min-width($mobileXL) {
           max-width: 443px;
           text-align: left;
           margin-top: 0;
-          margin-left: 32px;
         }
       }
     }
