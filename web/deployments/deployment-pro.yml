@@ -22,19 +22,19 @@ spec:
     spec:
       securityContext:
         sysctls:
-        - name: net.ipv4.ip_unprivileged_port_start
-          value: "80"
+          - name: net.ipv4.ip_unprivileged_port_start
+            value: "80"
       containers:
         - name: web6
-          image: gatacaid/website:6.0.4-web6
+          image: gatacaid/website:6.0.5-web6
           imagePullPolicy: Always
-          securityContext: 
+          securityContext:
             runAsNonRoot: true
             runAsUser: 1000
             allowPrivilegeEscalation: false
             seccompProfile:
               type: RuntimeDefault
-            capabilities: 
+            capabilities:
               drop:
                 - ALL
           ports:
