@@ -106,13 +106,13 @@
       }
     },
     "layouts": {
+      "list": [
+        "id",
+        "HeroImage",
+        "Title",
+        "seo"
+      ],
       "edit": [
-        [
-          {
-            "name": "seo",
-            "size": 12
-          }
-        ],
         [
           {
             "name": "Body",
@@ -128,13 +128,13 @@
             "name": "Title",
             "size": 6
           }
+        ],
+        [
+          {
+            "name": "seo",
+            "size": 12
+          }
         ]
-      ],
-      "list": [
-        "id",
-        "HeroImage",
-        "Title",
-        "seo"
       ]
     }
   },

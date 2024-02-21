@@ -5,6 +5,183 @@
   "permissions": [
     {
       "action": "plugin::content-manager.explorer.create",
+      "subject": "api::author.author",
+      "properties": {
+        "fields": [
+          "Image",
+          "LinkedInURL",
+          "Name",
+          "Role"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::author.author",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::author.author",
+      "properties": {
+        "fields": [
+          "Image",
+          "LinkedInURL",
+          "Name",
+          "Role"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::author.author",
+      "properties": {
+        "fields": [
+          "Image",
+          "LinkedInURL",
+          "Name",
+          "Role"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::blog.blog",
+      "properties": {
+        "fields": [
+          "title",
+          "date",
+          "previewImage",
+          "heroImage",
+          "author",
+          "content",
+          "slugURL",
+          "category",
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.keywords"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::blog.blog",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::blog.blog",
+      "properties": {
+        "fields": [
+          "title",
+          "date",
+          "previewImage",
+          "heroImage",
+          "author",
+          "content",
+          "slugURL",
+          "category",
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.keywords"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::blog.blog",
+      "properties": {
+        "fields": [
+          "title",
+          "date",
+          "previewImage",
+          "heroImage",
+          "author",
+          "content",
+          "slugURL",
+          "category",
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.keywords"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::category.category",
+      "properties": {
+        "fields": [
+          "blogs",
+          "name",
+          "order"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::category.category",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::category.category",
+      "properties": {
+        "fields": [
+          "blogs",
+          "name",
+          "order"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::category.category",
+      "properties": {
+        "fields": [
+          "blogs",
+          "name",
+          "order"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
       "subject": "api::entry.entry",
       "properties": {
         "fields": [
@@ -15,6 +192,21 @@
           "seo.metaDescription",
           "seo.keywords",
           "seo.canonicalURL"
+        ],
+        "locales": [
+          "en"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::entry.entry",
+      "properties": {
+        "locales": [
+          "en"
         ]
       },
       "conditions": [
@@ -33,6 +225,9 @@
           "seo.metaDescription",
           "seo.keywords",
           "seo.canonicalURL"
+        ],
+        "locales": [
+          "en"
         ]
       },
       "conditions": [
@@ -51,6 +246,133 @@
           "seo.metaDescription",
           "seo.keywords",
           "seo.canonicalURL"
+        ],
+        "locales": [
+          "en"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::test-sync.test-sync",
+      "properties": {
+        "fields": [
+          "title",
+          "SEO.metaTitle",
+          "SEO.metaDescription",
+          "SEO.keywords",
+          "SEO.canonicalURL"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::test-sync.test-sync",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::test-sync.test-sync",
+      "properties": {
+        "fields": [
+          "title",
+          "SEO.metaTitle",
+          "SEO.metaDescription",
+          "SEO.keywords",
+          "SEO.canonicalURL"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::test-sync.test-sync",
+      "properties": {
+        "fields": [
+          "title",
+          "SEO.metaTitle",
+          "SEO.metaDescription",
+          "SEO.keywords",
+          "SEO.canonicalURL"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "plugin::users-permissions.user",
+      "properties": {
+        "fields": [
+          "blocked",
+          "confirmationToken",
+          "confirmed",
+          "email",
+          "password",
+          "provider",
+          "resetPasswordToken",
+          "role",
+          "username"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "plugin::users-permissions.user",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "plugin::users-permissions.user",
+      "properties": {
+        "fields": [
+          "blocked",
+          "confirmationToken",
+          "confirmed",
+          "email",
+          "password",
+          "provider",
+          "resetPasswordToken",
+          "role",
+          "username"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "plugin::users-permissions.user",
+      "properties": {
+        "fields": [
+          "blocked",
+          "confirmationToken",
+          "confirmed",
+          "email",
+          "password",
+          "provider",
+          "resetPasswordToken",
+          "role",
+          "username"
         ]
       },
       "conditions": [

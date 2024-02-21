@@ -80,9 +80,9 @@
     "layouts": {
       "list": [
         "id",
+        "seo",
         "createdAt",
-        "updatedAt",
-        "pageContent"
+        "updatedAt"
       ],
       "edit": [
         [
