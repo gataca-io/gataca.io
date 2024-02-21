@@ -47,12 +47,27 @@
           "searchable": false,
           "sortable": false
         }
+      },
+      "idName": {
+        "edit": {
+          "label": "idName",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "idName",
+          "searchable": true,
+          "sortable": true
+        }
       }
     },
     "layouts": {
       "list": [
         "id",
-        "title"
+        "title",
+        "idName"
       ],
       "edit": [
         [
@@ -65,6 +80,12 @@
           {
             "name": "description",
             "size": 12
+          }
+        ],
+        [
+          {
+            "name": "idName",
+            "size": 6
           }
         ]
       ]

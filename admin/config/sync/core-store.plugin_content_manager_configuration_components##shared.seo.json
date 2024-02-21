@@ -113,13 +113,13 @@
           {
             "name": "keywords",
             "size": 6
-          },
-          {
-            "name": "canonicalURL",
-            "size": 6
           }
         ],
         [
+          {
+            "name": "canonicalURL",
+            "size": 6
+          },
           {
             "name": "rrssImg",
             "size": 6
