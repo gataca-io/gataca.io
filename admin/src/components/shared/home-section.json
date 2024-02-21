@@ -1,0 +1,54 @@
+{
+  "collectionName": "components_shared_home_sections",
+  "info": {
+    "displayName": "Home-Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "leftButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.button"
+    },
+    "rightButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.button"
+    },
+    "moreButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.button"
+    },
+    "learnMoreButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.button"
+    },
+    "advantages": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.advantage"
+    },
+    "feedbacks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.feedback"
+    },
+    "useCases": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.use-case"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "subtitle": {
+      "type": "string"
+    }
+  }
+}
