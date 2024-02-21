@@ -45,6 +45,8 @@ jobs:
 
       - name: Create and upload Docker image
         run: |
+          sudo apt get
+          sudo apt install libvips -y
           cd admin
           make pre-release-intel-strapi
           docker image ls ## Output
