@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_shared_use_cases",
+  "info": {
+    "displayName": "useCase"
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "text"
+    },
+    "title": {
+      "type": "string"
+    },
+    "identifier": {
+      "type": "string"
+    }
+  }
+}
