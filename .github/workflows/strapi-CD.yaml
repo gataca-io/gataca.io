@@ -19,7 +19,7 @@ env:
 jobs:
   update:
     name: Set up Version
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04 # ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
