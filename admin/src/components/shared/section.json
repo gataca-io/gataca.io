@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_shared_sections",
+  "info": {
+    "displayName": "section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "button": {
+      "type": "string"
+    },
+    "list": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.entry"
+    }
+  }
+}

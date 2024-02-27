@@ -1,0 +1,74 @@
+{
+  "kind": "singleType",
+  "collectionName": "home2s",
+  "info": {
+    "singularName": "home2",
+    "pluralName": "home2s",
+    "displayName": "Home2",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "button1": {
+      "type": "string"
+    },
+    "button2": {
+      "type": "string"
+    },
+    "gatacaStudio": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.section"
+    },
+    "whyGataca": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.section"
+    },
+    "howItWorks": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.section"
+    },
+    "useCases": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.section"
+    },
+    "blog": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.section"
+    },
+    "feedbacks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.feedback"
+    },
+    "clients": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}
