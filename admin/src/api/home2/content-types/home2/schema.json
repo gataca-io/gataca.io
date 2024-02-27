@@ -49,11 +49,6 @@
       "repeatable": false,
       "component": "shared.section"
     },
-    "feedbacks": {
-      "type": "component",
-      "repeatable": true,
-      "component": "shared.feedback"
-    },
     "clients": {
       "type": "media",
       "multiple": true,
@@ -69,6 +64,11 @@
       "type": "component",
       "repeatable": false,
       "component": "shared.seo"
+    },
+    "testimonials": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.feed-back-section"
     }
   }
 }
