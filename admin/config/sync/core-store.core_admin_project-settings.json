@@ -1,0 +1,28 @@
+{
+  "key": "core_admin_project-settings",
+  "value": {
+    "menuLogo": {
+      "name": "logo_512x512.png",
+      "hash": "logo_512x512_3472ce191a",
+      "url": "https://dev-strapi-s3-gataca.s3.eu-central-1.amazonaws.com/logo_512x512_3472ce191a.png",
+      "width": 512,
+      "height": 512,
+      "ext": ".png",
+      "size": 11.6,
+      "provider": "aws-s3"
+    },
+    "authLogo": {
+      "name": "logo_512x512.png",
+      "hash": "logo_512x512_7143b2568c",
+      "url": "https://dev-strapi-s3-gataca.s3.eu-central-1.amazonaws.com/logo_512x512_7143b2568c.png",
+      "width": 512,
+      "height": 512,
+      "ext": ".png",
+      "size": 11.6,
+      "provider": "aws-s3"
+    }
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

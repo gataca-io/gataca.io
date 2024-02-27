@@ -1,0 +1,237 @@
+{
+  "key": "plugin_content_manager_configuration_components::shared.home-section",
+  "value": {
+    "uid": "shared.home-section",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "title",
+      "defaultSortBy": "title",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "leftButton": {
+        "edit": {
+          "label": "leftButton",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "leftButton",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "rightButton": {
+        "edit": {
+          "label": "rightButton",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "rightButton",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "moreButton": {
+        "edit": {
+          "label": "moreButton",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "moreButton",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "learnMoreButton": {
+        "edit": {
+          "label": "learnMoreButton",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "learnMoreButton",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "advantages": {
+        "edit": {
+          "label": "advantages",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "advantages",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "feedbacks": {
+        "edit": {
+          "label": "feedbacks",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "feedbacks",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "useCases": {
+        "edit": {
+          "label": "useCases",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "useCases",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "title": {
+        "edit": {
+          "label": "title",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "title",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "description": {
+        "edit": {
+          "label": "description",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "description",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "subtitle": {
+        "edit": {
+          "label": "subtitle",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "subtitle",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "leftButton",
+        "rightButton",
+        "moreButton"
+      ],
+      "edit": [
+        [
+          {
+            "name": "title",
+            "size": 6
+          },
+          {
+            "name": "subtitle",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "description",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "leftButton",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "rightButton",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "moreButton",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "learnMoreButton",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "advantages",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "feedbacks",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "useCases",
+            "size": 12
+          }
+        ]
+      ]
+    },
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

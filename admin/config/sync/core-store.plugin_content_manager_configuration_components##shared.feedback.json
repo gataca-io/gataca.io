@@ -1,0 +1,97 @@
+{
+  "key": "plugin_content_manager_configuration_components::shared.feedback",
+  "value": {
+    "uid": "shared.feedback",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "persons",
+      "defaultSortBy": "persons",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "comment": {
+        "edit": {
+          "label": "comment",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "comment",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "persons": {
+        "edit": {
+          "label": "persons",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "persons",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "roles": {
+        "edit": {
+          "label": "roles",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "roles",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "comment",
+        "persons",
+        "roles"
+      ],
+      "edit": [
+        [
+          {
+            "name": "comment",
+            "size": 6
+          },
+          {
+            "name": "persons",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "roles",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

@@ -4,10 +4,25 @@
   "type": "authenticated",
   "permissions": [
     {
+      "action": "api::author.author.create"
+    },
+    {
+      "action": "api::author.author.delete"
+    },
+    {
       "action": "api::author.author.find"
     },
     {
       "action": "api::author.author.findOne"
+    },
+    {
+      "action": "api::author.author.update"
+    },
+    {
+      "action": "api::blog.blog.create"
+    },
+    {
+      "action": "api::blog.blog.delete"
     },
     {
       "action": "api::blog.blog.find"
@@ -16,16 +31,124 @@
       "action": "api::blog.blog.findOne"
     },
     {
+      "action": "api::blog.blog.update"
+    },
+    {
+      "action": "api::category.category.create"
+    },
+    {
+      "action": "api::category.category.delete"
+    },
+    {
       "action": "api::category.category.find"
     },
     {
       "action": "api::category.category.findOne"
     },
     {
+      "action": "api::category.category.update"
+    },
+    {
+      "action": "api::entry.entry.createLocalization"
+    },
+    {
+      "action": "api::entry.entry.delete"
+    },
+    {
+      "action": "api::entry.entry.find"
+    },
+    {
+      "action": "api::entry.entry.update"
+    },
+    {
+      "action": "api::test-sync.test-sync.create"
+    },
+    {
+      "action": "api::test-sync.test-sync.delete"
+    },
+    {
+      "action": "api::test-sync.test-sync.find"
+    },
+    {
+      "action": "api::test-sync.test-sync.findOne"
+    },
+    {
+      "action": "api::test-sync.test-sync.update"
+    },
+    {
+      "action": "plugin::upload.content-api.destroy"
+    },
+    {
+      "action": "plugin::upload.content-api.find"
+    },
+    {
+      "action": "plugin::upload.content-api.findOne"
+    },
+    {
+      "action": "plugin::upload.content-api.upload"
+    },
+    {
+      "action": "plugin::users-permissions.auth.callback"
+    },
+    {
       "action": "plugin::users-permissions.auth.changePassword"
     },
     {
+      "action": "plugin::users-permissions.auth.connect"
+    },
+    {
+      "action": "plugin::users-permissions.auth.emailConfirmation"
+    },
+    {
+      "action": "plugin::users-permissions.auth.forgotPassword"
+    },
+    {
+      "action": "plugin::users-permissions.auth.register"
+    },
+    {
+      "action": "plugin::users-permissions.auth.resetPassword"
+    },
+    {
+      "action": "plugin::users-permissions.auth.sendEmailConfirmation"
+    },
+    {
+      "action": "plugin::users-permissions.permissions.getPermissions"
+    },
+    {
+      "action": "plugin::users-permissions.role.createRole"
+    },
+    {
+      "action": "plugin::users-permissions.role.deleteRole"
+    },
+    {
+      "action": "plugin::users-permissions.role.find"
+    },
+    {
+      "action": "plugin::users-permissions.role.findOne"
+    },
+    {
+      "action": "plugin::users-permissions.role.updateRole"
+    },
+    {
+      "action": "plugin::users-permissions.user.count"
+    },
+    {
+      "action": "plugin::users-permissions.user.create"
+    },
+    {
+      "action": "plugin::users-permissions.user.destroy"
+    },
+    {
+      "action": "plugin::users-permissions.user.find"
+    },
+    {
+      "action": "plugin::users-permissions.user.findOne"
+    },
+    {
       "action": "plugin::users-permissions.user.me"
+    },
+    {
+      "action": "plugin::users-permissions.user.update"
     }
   ]
 }

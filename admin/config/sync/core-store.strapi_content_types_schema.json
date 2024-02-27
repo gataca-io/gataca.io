@@ -190,17 +190,20 @@
           "minLength": 6,
           "configurable": false,
           "required": false,
-          "private": true
+          "private": true,
+          "searchable": false
         },
         "resetPasswordToken": {
           "type": "string",
           "configurable": false,
-          "private": true
+          "private": true,
+          "searchable": false
         },
         "registrationToken": {
           "type": "string",
           "configurable": false,
-          "private": true
+          "private": true,
+          "searchable": false
         },
         "isActive": {
           "type": "boolean",
@@ -226,7 +229,8 @@
         "preferedLanguage": {
           "type": "string",
           "configurable": false,
-          "required": false
+          "required": false,
+          "searchable": false
         },
         "createdAt": {
           "type": "datetime"
@@ -307,17 +311,20 @@
             "minLength": 6,
             "configurable": false,
             "required": false,
-            "private": true
+            "private": true,
+            "searchable": false
           },
           "resetPasswordToken": {
             "type": "string",
             "configurable": false,
-            "private": true
+            "private": true,
+            "searchable": false
           },
           "registrationToken": {
             "type": "string",
             "configurable": false,
-            "private": true
+            "private": true,
+            "searchable": false
           },
           "isActive": {
             "type": "boolean",
@@ -343,7 +350,8 @@
           "preferedLanguage": {
             "type": "string",
             "configurable": false,
-            "required": false
+            "required": false,
+            "searchable": false
           }
         },
         "kind": "collectionType"
@@ -543,7 +551,8 @@
           "type": "string",
           "minLength": 1,
           "configurable": false,
-          "required": true
+          "required": true,
+          "searchable": false
         },
         "lastUsedAt": {
           "type": "datetime",
@@ -644,7 +653,8 @@
             "type": "string",
             "minLength": 1,
             "configurable": false,
-            "required": true
+            "required": true,
+            "searchable": false
           },
           "lastUsedAt": {
             "type": "datetime",
@@ -1141,7 +1151,8 @@
           "type": "string",
           "min": 1,
           "required": true,
-          "private": true
+          "private": true,
+          "searchable": false
         },
         "createdAt": {
           "type": "datetime"
@@ -1311,7 +1322,8 @@
             "type": "string",
             "min": 1,
             "required": true,
-            "private": true
+            "private": true,
+            "searchable": false
           }
         },
         "kind": "collectionType"
@@ -2849,38 +2861,6 @@
         }
       },
       "attributes": {
-        "Body": {
-          "pluginOptions": {
-            "i18n": {
-              "localized": true
-            }
-          },
-          "type": "richtext"
-        },
-        "HeroImage": {
-          "type": "media",
-          "multiple": false,
-          "required": false,
-          "allowedTypes": [
-            "images",
-            "files",
-            "videos",
-            "audios"
-          ],
-          "pluginOptions": {
-            "i18n": {
-              "localized": true
-            }
-          }
-        },
-        "Title": {
-          "pluginOptions": {
-            "i18n": {
-              "localized": true
-            }
-          },
-          "type": "string"
-        },
         "seo": {
           "type": "component",
           "repeatable": false,
@@ -2890,6 +2870,76 @@
             }
           },
           "component": "shared.seo"
+        },
+        "firstSection": {
+          "type": "component",
+          "repeatable": false,
+          "pluginOptions": {
+            "i18n": {
+              "localized": true
+            }
+          },
+          "component": "shared.home-section"
+        },
+        "thirdSection": {
+          "type": "component",
+          "repeatable": false,
+          "pluginOptions": {
+            "i18n": {
+              "localized": true
+            }
+          },
+          "component": "shared.home-section"
+        },
+        "fourthSection": {
+          "type": "component",
+          "repeatable": false,
+          "pluginOptions": {
+            "i18n": {
+              "localized": true
+            }
+          },
+          "component": "shared.home-section"
+        },
+        "fifthSection": {
+          "type": "component",
+          "repeatable": false,
+          "pluginOptions": {
+            "i18n": {
+              "localized": true
+            }
+          },
+          "component": "shared.home-section"
+        },
+        "sixthSection": {
+          "type": "component",
+          "repeatable": false,
+          "pluginOptions": {
+            "i18n": {
+              "localized": true
+            }
+          },
+          "component": "shared.home-section"
+        },
+        "seventhSection": {
+          "type": "component",
+          "repeatable": false,
+          "pluginOptions": {
+            "i18n": {
+              "localized": true
+            }
+          },
+          "component": "shared.home-section"
+        },
+        "eighthSection": {
+          "type": "component",
+          "repeatable": false,
+          "pluginOptions": {
+            "i18n": {
+              "localized": true
+            }
+          },
+          "component": "shared.home-section"
         },
         "createdAt": {
           "type": "datetime"
@@ -2957,38 +3007,6 @@
           }
         },
         "attributes": {
-          "Body": {
-            "pluginOptions": {
-              "i18n": {
-                "localized": true
-              }
-            },
-            "type": "richtext"
-          },
-          "HeroImage": {
-            "type": "media",
-            "multiple": false,
-            "required": false,
-            "allowedTypes": [
-              "images",
-              "files",
-              "videos",
-              "audios"
-            ],
-            "pluginOptions": {
-              "i18n": {
-                "localized": true
-              }
-            }
-          },
-          "Title": {
-            "pluginOptions": {
-              "i18n": {
-                "localized": true
-              }
-            },
-            "type": "string"
-          },
           "seo": {
             "type": "component",
             "repeatable": false,
@@ -2998,6 +3016,76 @@
               }
             },
             "component": "shared.seo"
+          },
+          "firstSection": {
+            "type": "component",
+            "repeatable": false,
+            "pluginOptions": {
+              "i18n": {
+                "localized": true
+              }
+            },
+            "component": "shared.home-section"
+          },
+          "thirdSection": {
+            "type": "component",
+            "repeatable": false,
+            "pluginOptions": {
+              "i18n": {
+                "localized": true
+              }
+            },
+            "component": "shared.home-section"
+          },
+          "fourthSection": {
+            "type": "component",
+            "repeatable": false,
+            "pluginOptions": {
+              "i18n": {
+                "localized": true
+              }
+            },
+            "component": "shared.home-section"
+          },
+          "fifthSection": {
+            "type": "component",
+            "repeatable": false,
+            "pluginOptions": {
+              "i18n": {
+                "localized": true
+              }
+            },
+            "component": "shared.home-section"
+          },
+          "sixthSection": {
+            "type": "component",
+            "repeatable": false,
+            "pluginOptions": {
+              "i18n": {
+                "localized": true
+              }
+            },
+            "component": "shared.home-section"
+          },
+          "seventhSection": {
+            "type": "component",
+            "repeatable": false,
+            "pluginOptions": {
+              "i18n": {
+                "localized": true
+              }
+            },
+            "component": "shared.home-section"
+          },
+          "eighthSection": {
+            "type": "component",
+            "repeatable": false,
+            "pluginOptions": {
+              "i18n": {
+                "localized": true
+              }
+            },
+            "component": "shared.home-section"
           }
         },
         "kind": "singleType"
@@ -3206,6 +3294,86 @@
       "uid": "api::gataca-wallet.gataca-wallet",
       "apiName": "gataca-wallet",
       "globalId": "GatacaWallet",
+      "actions": {},
+      "lifecycles": {}
+    },
+    "api::home.home": {
+      "kind": "singleType",
+      "collectionName": "homes",
+      "info": {
+        "singularName": "home",
+        "pluralName": "homes",
+        "displayName": "Home"
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "firstSection": {
+          "type": "component",
+          "repeatable": false,
+          "component": "shared.home-section"
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "homes",
+        "info": {
+          "singularName": "home",
+          "pluralName": "homes",
+          "displayName": "Home"
+        },
+        "options": {
+          "draftAndPublish": true
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "firstSection": {
+            "type": "component",
+            "repeatable": false,
+            "component": "shared.home-section"
+          }
+        },
+        "kind": "singleType"
+      },
+      "modelType": "contentType",
+      "modelName": "home",
+      "connection": "default",
+      "uid": "api::home.home",
+      "apiName": "home",
+      "globalId": "Home",
       "actions": {},
       "lifecycles": {}
     },
