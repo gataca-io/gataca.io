@@ -29,7 +29,7 @@
     "@strapi/plugin-seo": "^1.8.0",
     "@strapi/plugin-users-permissions": "4.7.1",
     "@strapi/provider-upload-aws-s3": "^4.10.2",
-    "@strapi/strapi": "4.8.0",
+    "@strapi/strapi": "4.13.1",
     "better-sqlite3": "8.0.1",
     "pg": "^8.10.0",
     "strapi-plugin-config-sync": "^1.1.1",
