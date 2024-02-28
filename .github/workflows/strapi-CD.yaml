@@ -54,7 +54,8 @@ jobs:
      
       - name: Create and upload Docker image
         run: |
-          cd admin # make pre-release-intel-strapi
+          cd admin 
+          make pre-release-intel-strapi
           docker image ls ## Output
 
       - name: Set up deployment-dev
@@ -79,7 +80,7 @@ jobs:
               echo "deployment-dev.yml:" ; grep 'strapi' deployment-dev.yml || true # output
               git add .
               git commit -m "Change to image version to ${{ env.ver }} because of gataca.io CD DEV action." -S
-              git status #push
+              git push
             fi
           fi
 
@@ -100,8 +101,8 @@ jobs:
             kubectl config get-contexts
             if [ "${{ env.ver }}" != "${{ env.image }}" ]; then
               cd admin
-              kubectl -n web get pods # apply -f deployment-dev.yml
+              kubectl apply -f deployment-dev.yml
             else
-              kubectl -n web get deploy #rollout restart deploy strapiweb  
+              kubectl -n web rollout restart deploy strapiweb  
             fi
           fi 
