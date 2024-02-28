@@ -54,8 +54,7 @@ jobs:
      
       - name: Create and upload Docker image
         run: |
-          cd admin
-#          make pre-release-intel-strapi
+          cd admin # make pre-release-intel-strapi
           docker image ls ## Output
 
       - name: Set up deployment-dev
