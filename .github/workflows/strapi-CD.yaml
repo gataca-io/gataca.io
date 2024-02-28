@@ -98,5 +98,10 @@ jobs:
             mkdir $HOME/.kube/
             echo ${{ secrets.CD_KUBE_CONFIG_DEV }} | base64 --decode > $HOME/.kube/config
             kubectl config get-contexts
-            kubectl -n web get pods #rollout restart deploy strapiweb 
+            if [ "${{ env.ver }}" != "${{ env.image }}" ]; then
+              cd admin
+              kubectl -n web get pods # apply -f deployment-dev.yml
+            else
+              kubectl -n web get deploy #rollout restart deploy strapiweb  
+            fi
           fi 
