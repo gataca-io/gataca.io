@@ -23,7 +23,7 @@ spec:
     spec:
       containers:        
         - name: strapiweb
-          image: gatacaid/strapi:6.0.1-SNAPSHOT
+          image: gatacaid/strapi:6.0.3-SNAPSHOT
           imagePullPolicy: Always
           securityContext: 
             runAsNonRoot: true

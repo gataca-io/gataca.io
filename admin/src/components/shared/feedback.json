@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_shared_feedbacks",
+  "info": {
+    "displayName": "feedback"
+  },
+  "options": {},
+  "attributes": {
+    "comment": {
+      "type": "text"
+    },
+    "persons": {
+      "type": "string"
+    },
+    "roles": {
+      "type": "string"
+    }
+  }
+}
