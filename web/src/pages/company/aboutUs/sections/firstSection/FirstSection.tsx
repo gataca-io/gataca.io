@@ -18,7 +18,9 @@ const FirstSection: React.FC<ISectionProps> = props => {
       <div className={styles.firstSection__header}>
         <h1
           className={`${cx("heading1 marginBottom32")} ${styles.title}`}
-          dangerouslySetInnerHTML={{ __html: titleHeader }}
+          dangerouslySetInnerHTML={{
+            __html: "Bringing <span>real-life trust</span> to the Internet",
+          }}
         ></h1>
         <p className={`${cx("bodyRegularXL neutral700")}`}>
           {descriptionHeader}

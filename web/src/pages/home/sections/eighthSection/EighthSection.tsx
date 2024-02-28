@@ -32,7 +32,7 @@ const EighthSection: React.FC<ISectionProps> = props => {
                 {description}
               </p>
 
-              <h1 className={`${cx("heading3")}`}>{title}</h1>
+              <h3 className={`${cx("heading3")}`}>{title}</h3>
             </div>
             {/* TODO: Add action to navigate to blogs route when web is deployed */}
             <PurpleButton
