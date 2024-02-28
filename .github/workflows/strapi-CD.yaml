@@ -70,18 +70,18 @@ jobs:
           echo "image="$IMAGE-pre >> $GITHUB_ENV
           echo "version $V, image $IMAGE."
 
-#      - name: Update deployment-dev
-#        run: |
-#          if [ "${{ github.event.inputs.ExecuteChoice }}" == "YES" ]; then
-#            if [ "${{ env.ver }}" != "${{ env.image }}" ]; then
-#              sed -i 's/strapi:.*$/strapi:${{ env.ver }}/g' deployments/deployment-dev.yml          
-#              echo "deployment-dev.yml:" ; grep 'strapi' deployments/deployment-dev.yml || true # output
-#              git add .
-#              git commit -m "Change to image version to ${{ env.ver }} because of gataca.io CD DEV action." -S
-#              git push
-#            fi
-#          fi
-#
+      - name: Update deployment-dev
+        run: |
+          if [ "${{ github.event.inputs.ExecuteChoice }}" == "YES" ]; then
+            if [ "${{ env.ver }}" != "${{ env.image }}" ]; then
+              sed -i 's/strapi:.*$/strapi:${{ env.ver }}/g' deployment-dev.yml          
+              echo "deployment-dev.yml:" ; grep 'strapi' deployment-dev.yml || true # output
+              git add .
+              git commit -m "Change to image version to ${{ env.ver }} because of gataca.io CD DEV action."
+              git status #push
+            fi
+          fi
+
 #      - name: Install and configure kubectl
 #        run: |
 #          if [ "${{ github.event.inputs.ExecuteChoice }}" == "YES" ]; then
