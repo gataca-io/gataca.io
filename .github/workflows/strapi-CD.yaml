@@ -43,32 +43,47 @@ jobs:
           username: navasgataca              ###############  CHANGE TO GENERIC USER ###############
           password: ${{ secrets.DOCKERHUB_TOKEN }} 
 
+      - name: Import GPG key
+        id: import_gpg
+        uses: crazy-max/ghaction-import-gpg@v6
+        with:
+          gpg_private_key: ${{ secrets.GH_ACTIONS_GPG_KEY }}
+          passphrase: ${{ secrets.GH_ACTIONS_GPG_PASS }}
+          git_user_signingkey: true
+          git_commit_gpgsign: true
+     
       - name: Create and upload Docker image
         run: |
-          cd admin
+          cd admin 
           make pre-release-intel-strapi
           docker image ls ## Output
+
       - name: Set up deployment-dev
         run: |
           git config --global user.email ${{ github.actor }}@gataca.io
           git config --global user.name ${{ github.actor }}
+          cd admin
+          pwd; ls
           # Update version pre
           V=$(grep version package.json | cut -d'"' -f4)
           echo "ver="$V-pre >> $GITHUB_ENV
-          IMAGE=$(grep 'image:' deployments/deployment-dev.yml | cut -d':' -f3 | cut -d'-' -f1)
+          IMAGE=$(grep 'image:' deployment-dev.yml | cut -d':' -f3 | cut -d'-' -f1)
           echo "image="$IMAGE-pre >> $GITHUB_ENV
           echo "version $V, image $IMAGE."
+
       - name: Update deployment-dev
         run: |
+          cd admin
           if [ "${{ github.event.inputs.ExecuteChoice }}" == "YES" ]; then
             if [ "${{ env.ver }}" != "${{ env.image }}" ]; then
-              sed -i 's/strapi:.*$/strapi:${{ env.ver }}/g' deployments/deployment-dev.yml          
-              echo "deployment-dev.yml:" ; grep 'strapi' deployments/deployment-dev.yml || true # output
+              sed -i 's/strapi:.*$/strapi:${{ env.ver }}/g' deployment-dev.yml          
+              echo "deployment-dev.yml:" ; grep 'strapi' deployment-dev.yml || true # output
               git add .
-              git commit -m "Change to image version to ${{ env.ver }} because of gataca.io CD DEV action."
+              git commit -m "Change to image version to ${{ env.ver }} because of gataca.io CD DEV action." -S
               git push
             fi
           fi
+
       - name: Install and configure kubectl
         run: |
           if [ "${{ github.event.inputs.ExecuteChoice }}" == "YES" ]; then
@@ -84,5 +99,10 @@ jobs:
             mkdir $HOME/.kube/
             echo ${{ secrets.CD_KUBE_CONFIG_DEV }} | base64 --decode > $HOME/.kube/config
             kubectl config get-contexts
-            kubectl -n web rollout restart deploy strapiweb 
+            if [ "${{ env.ver }}" != "${{ env.image }}" ]; then
+              cd admin
+              kubectl apply -f deployment-dev.yml
+            else
+              kubectl -n web rollout restart deploy strapiweb  
+            fi
           fi 
