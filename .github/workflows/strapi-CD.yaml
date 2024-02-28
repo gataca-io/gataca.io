@@ -43,15 +43,15 @@ jobs:
           username: navasgataca              ###############  CHANGE TO GENERIC USER ###############
           password: ${{ secrets.DOCKERHUB_TOKEN }} 
 
-      - name: Import GPG key
-        id: import_gpg
-        uses: crazy-max/ghaction-import-gpg@v6
-        with:
-          gpg_private_key: ${{ secrets.GH_ACTIONS_GPG_KEY }}
-          passphrase: ${{ secrets.GH_ACTIONS_GPG_PASS }}
-          git_user_signingkey: true
-          git_commit_gpgsign: true
-     
+#      - name: Import GPG key
+#        id: import_gpg
+#        uses: crazy-max/ghaction-import-gpg@v6
+#        with:
+#          gpg_private_key: ${{ secrets.GH_ACTIONS_GPG_KEY }}
+#          passphrase: ${{ secrets.GH_ACTIONS_GPG_PASS }}
+#          git_user_signingkey: true
+#          git_commit_gpgsign: true
+#     
       - name: Create and upload Docker image
         run: |
           cd admin # make pre-release-intel-strapi
