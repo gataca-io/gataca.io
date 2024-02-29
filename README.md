@@ -1,4 +1,4 @@
-# GATACA Website
+# Gataca Website
 
 # Folders structure
 
