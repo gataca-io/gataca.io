@@ -1,0 +1,42 @@
+{
+  "attributes": {
+    "button": {
+      "component": "generic.button",
+      "displayName": "Button",
+      "repeatable": false,
+      "type": "component"
+    },
+    "description": {
+      "type": "text"
+    },
+    "features": {
+      "component": "pricing.tier-details",
+      "displayName": "TierDetails",
+      "repeatable": false,
+      "type": "component"
+    },
+    "monthlyPrice": {
+      "type": "decimal"
+    },
+    "name": {
+      "type": "string"
+    },
+    "subPriceMonthLabel": {
+      "type": "string"
+    },
+    "subPriceYearLabel": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "yearlyPrice": {
+      "type": "decimal"
+    }
+  },
+  "collectionName": "components_pricing_tiers",
+  "info": {
+    "displayName": "Tier"
+  },
+  "options": {}
+}

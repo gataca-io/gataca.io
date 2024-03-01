@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_template_entries",
+  "info": {
+    "displayName": "Entry",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_pricing_on_premises",
+  "info": {
+    "displayName": "OnPremiseSection",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "generic.button"
+    },
+    "identifier": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "panelTitle": {
+      "type": "string"
+    },
+    "paragraphs": {
+      "type": "json"
+    }
+  }
+}
