@@ -1,7 +1,8 @@
 {
   "collectionName": "components_pricing_tier_details",
   "info": {
-    "displayName": "TierDetails"
+    "displayName": "TierDetails",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -64,12 +65,6 @@
     },
     "standardSupport": {
       "type": "boolean"
-    },
-    "nFactor": {
-      "type": "json"
-    },
-    "notifications": {
-      "type": "json"
     }
   }
 }
