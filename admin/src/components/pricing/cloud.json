@@ -22,10 +22,9 @@
       "type": "string"
     },
     "tiers": {
-      "displayName": "Tier",
-      "type": "component",
-      "repeatable": true,
-      "component": "pricing.tier"
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tier.tier"
     }
   }
 }
