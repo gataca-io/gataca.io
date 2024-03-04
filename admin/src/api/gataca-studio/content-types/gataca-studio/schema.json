@@ -4,7 +4,7 @@
   "info": {
     "singularName": "gataca-studio",
     "pluralName": "gataca-studios",
-    "displayName": "2.2. Products - Studio",
+    "displayName": "Products - Studio",
     "description": ""
   },
   "options": {
@@ -16,6 +16,17 @@
       "type": "component",
       "repeatable": false,
       "component": "shared.seo"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "generic.button"
     }
   }
 }
