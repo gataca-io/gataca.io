@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "advanced_features",
+  "info": {
+    "singularName": "advanced-feature",
+    "pluralName": "advanced-features",
+    "displayName": "AdvancedFeature"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}
