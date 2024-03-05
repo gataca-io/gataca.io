@@ -22,6 +22,18 @@
       "type": "component",
       "repeatable": false,
       "component": "generic.header"
+    },
+    "industriesSection": {
+      "displayName": "UseCasesAppliedSection",
+      "type": "component",
+      "repeatable": false,
+      "component": "use-cases.use-cases-applied-section"
+    },
+    "useCasesSection": {
+      "displayName": "UseCaseSection",
+      "type": "component",
+      "repeatable": false,
+      "component": "use-cases.use-case-section"
     }
   }
 }
