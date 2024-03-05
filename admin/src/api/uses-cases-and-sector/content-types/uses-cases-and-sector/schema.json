@@ -4,7 +4,7 @@
   "info": {
     "singularName": "uses-cases-and-sector",
     "pluralName": "uses-cases-and-sectors",
-    "displayName": "3.1. Uses Cases & Sectors",
+    "displayName": "Uses Cases & Sectors",
     "description": ""
   },
   "options": {
@@ -16,6 +16,12 @@
       "type": "component",
       "repeatable": false,
       "component": "shared.seo"
+    },
+    "header": {
+      "displayName": "Header",
+      "type": "component",
+      "repeatable": false,
+      "component": "generic.header"
     }
   }
 }

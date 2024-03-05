@@ -14,8 +14,11 @@
     "title": {
       "type": "string"
     },
-    "Description": {
+    "description": {
       "type": "text"
+    },
+    "identifier": {
+      "type": "uid"
     },
     "image": {
       "allowedTypes": [

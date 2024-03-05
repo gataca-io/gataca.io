@@ -10,11 +10,6 @@
     },
     "description": {
       "type": "text"
-    },
-    "use_cases": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::use-case.use-case"
     }
   }
 }
