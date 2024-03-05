@@ -27,6 +27,12 @@
       "type": "component",
       "repeatable": false,
       "component": "generic.button"
+    },
+    "featureSection": {
+      "displayName": "FeatureSection",
+      "type": "component",
+      "repeatable": false,
+      "component": "studio.feature-section"
     }
   }
 }
