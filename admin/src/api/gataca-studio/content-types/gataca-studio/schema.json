@@ -51,6 +51,11 @@
       "type": "component",
       "repeatable": false,
       "component": "studio.tier-section"
+    },
+    "headerSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "generic.header"
     }
   }
 }
