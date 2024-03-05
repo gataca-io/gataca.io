@@ -1,7 +1,8 @@
 {
   "collectionName": "components_studio_feature_sections",
   "info": {
-    "displayName": "FeatureSection"
+    "displayName": "FeatureSection",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -11,9 +12,9 @@
     "description": {
       "type": "text"
     },
-    "feature": {
+    "features": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "oneToMany",
       "target": "api::feature.feature"
     }
   }
