@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_studio_why_studio_sections",
+  "info": {
+    "displayName": "WhyStudioSection"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "advantages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::advantage.advantage"
+    }
+  }
+}

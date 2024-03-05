@@ -33,6 +33,24 @@
       "type": "component",
       "repeatable": false,
       "component": "studio.feature-section"
+    },
+    "whyStudioSection": {
+      "displayName": "WhyStudioSection",
+      "type": "component",
+      "repeatable": false,
+      "component": "studio.why-studio-section"
+    },
+    "howWorksSection": {
+      "displayName": "UseCaseSection",
+      "type": "component",
+      "repeatable": false,
+      "component": "studio.use-case-section"
+    },
+    "tierSection": {
+      "displayName": "TierSection",
+      "type": "component",
+      "repeatable": false,
+      "component": "studio.tier-section"
     }
   }
 }
