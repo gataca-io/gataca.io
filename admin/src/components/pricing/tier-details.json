@@ -51,9 +51,6 @@
     "newSchemaPublicCatalogue": {
       "type": "boolean"
     },
-    "premierSupport": {
-      "type": "boolean"
-    },
     "sandBoxEnvironment": {
       "type": "boolean"
     },
@@ -63,8 +60,21 @@
     "stadistics": {
       "type": "boolean"
     },
+    "premierSupport": {
+      "type": "enumeration",
+      "enum": [
+        "true",
+        "false",
+        "extra"
+      ]
+    },
     "standardSupport": {
-      "type": "boolean"
+      "type": "enumeration",
+      "enum": [
+        "true",
+        "false",
+        "extra"
+      ]
     }
   }
 }
