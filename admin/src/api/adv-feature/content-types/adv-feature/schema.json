@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ad_features",
+  "info": {
+    "singularName": "adv-feature",
+    "pluralName": "ad-features",
+    "displayName": "Advanced Feature",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "identifier": {
+      "type": "uid"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

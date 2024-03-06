@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_studio_advance_sections",
+  "info": {
+    "displayName": "AdvanceSection"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "adv_features": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::adv-feature.adv-feature"
+    }
+  }
+}
