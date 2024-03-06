@@ -3,7 +3,6 @@ import cx from "classnames"
 import * as styles from "./useCasesSection.module.scss"
 import { images } from "../../../../images/images"
 import ListItems from "../../components/listItems/ListItems"
-import {UseCasesSectionModel} from "../../../../interfaces/interfaces";
 
 export type ISectionProps = {
   title: string

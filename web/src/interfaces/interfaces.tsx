@@ -70,6 +70,7 @@ export interface StrapiImageModel {
 
 export interface IProductModel {
   id: string
+  attributes: any[]
   name: string
   description: string
   prices: IPriceModel[]
