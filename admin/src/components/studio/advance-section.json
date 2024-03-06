@@ -7,11 +7,6 @@
   "attributes": {
     "title": {
       "type": "string"
-    },
-    "adv_features": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::adv-feature.adv-feature"
     }
   }
 }
