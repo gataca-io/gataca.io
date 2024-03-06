@@ -57,7 +57,7 @@
       "repeatable": false,
       "component": "generic.header"
     },
-    "adv_section": {
+    "adSection": {
       "type": "component",
       "repeatable": false,
       "component": "studio.advance-section"

@@ -1,12 +1,18 @@
 {
   "collectionName": "components_studio_advance_sections",
   "info": {
-    "displayName": "AdvanceSection"
+    "displayName": "AdvanceSection",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "title": {
       "type": "string"
+    },
+    "ad_features": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::ad-feature.ad-feature"
     }
   }
 }
