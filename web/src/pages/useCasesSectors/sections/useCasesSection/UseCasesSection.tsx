@@ -3,19 +3,24 @@ import cx from "classnames"
 import * as styles from "./useCasesSection.module.scss"
 import { images } from "../../../../images/images"
 import ListItems from "../../components/listItems/ListItems"
+import {UseCasesSectionModel} from "../../../../interfaces/interfaces";
 
 export type ISectionProps = {
   title: string
   description: string
   list: {
-    title: string
-    description: string
-    id: string
-    image: string
+    id: number,
+    attributes: {
+      title: string
+      description: string
+      identifier: string
+      createdAt?: string
+      updatedAt?: string
+      publishedAt?: string
+    }
   }[]
   subOptionClickedID?: string
 }
-
 const UseCasesSection: React.FC<ISectionProps> = props => {
   const { title, description, list, subOptionClickedID } = props
   const [openItem, setOpenItem] = React.useState<string | undefined>(
@@ -69,24 +74,24 @@ const UseCasesSection: React.FC<ISectionProps> = props => {
           className={styles.useCasesSection__rightColumn}
         >
           {list?.map((item, index) => {
-            const { id, title, description } = item
-
+            const { title, description, identifier } = item.attributes
+            console.log("listItem__" + index);
             return (
               <>
-                <div id={list[index + 1]?.id}></div>
+                <div id={list[index + 1]?.attributes.identifier}></div>
                 <ListItems
-                  id={id}
+                  id={identifier}
                   key={"listItem__" + index}
                   index={index + 1}
                   title={title}
                   description={description}
-                  selected={openItem === item?.id}
+                  selected={openItem === identifier}
                   showItem={index => {
                     const element =
                       document &&
                       document?.getElementById("listItem__" + (index - 1))
                     subOptionClickedID !== "otherIndustries" &&
-                      (setOpenItem(item?.id),
+                      (setOpenItem(identifier),
                       element && scrollIntoView(element))
                   }}
                 />

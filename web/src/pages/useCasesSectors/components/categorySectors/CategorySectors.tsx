@@ -12,12 +12,16 @@ export type ICategorySectorsProps = {
   selected: boolean
   className?: any
   list: {
-    title: string
-    description: string
-    icon: string
-    link?: string
-    link_route?: string
-    inside_description?: string
+    id: string
+    attributes: {
+      title: string
+      subtitle?: string
+      description: string
+      icon: string
+      link?: string
+      link_route?: string
+      inside_description?: string
+    }
   }[]
   subOptionClickedID?: string
 }
@@ -66,7 +70,7 @@ const CategorySectors: React.FC<ICategorySectorsProps> = props => {
                 link,
                 icon,
                 inside_description,
-              } = subItem
+              } = subItem.attributes
               return (
                 <ListSectors
                   id={"listItem__" + index}

@@ -12,7 +12,9 @@ export type ISectionProps = {
     id: string
     title: string
     description: string
-    list: []
+    industries: {
+      data: any[]
+    }
   }[]
   subOptionClickedID?: string
 }
@@ -78,7 +80,7 @@ const useCasesAppliedSection: React.FC<ISectionProps> = props => {
           className={styles?.useCasesAppliedSection__sectors}
         >
           {categories?.map((item, index) => {
-            const { id, title, description, list } = item
+            const { id, title, description, industries } = item
 
             return (
               <CategorySectors
@@ -88,7 +90,7 @@ const useCasesAppliedSection: React.FC<ISectionProps> = props => {
                 index={index + 1}
                 title={title}
                 description={description}
-                list={list}
+                list={industries.data}
                 selected={openItem === index + 1}
                 subOptionClickedID={subOptionClickedID}
               />
