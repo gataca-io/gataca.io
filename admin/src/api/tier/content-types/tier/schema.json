@@ -42,6 +42,9 @@
       "type": "component",
       "repeatable": false,
       "component": "pricing.tier-details"
+    },
+    "popular": {
+      "type": "boolean"
     }
   }
 }
