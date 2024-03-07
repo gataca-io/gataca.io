@@ -45,6 +45,11 @@
     },
     "popular": {
       "type": "boolean"
+    },
+    "button2": {
+      "type": "component",
+      "repeatable": false,
+      "component": "generic.button"
     }
   }
 }
