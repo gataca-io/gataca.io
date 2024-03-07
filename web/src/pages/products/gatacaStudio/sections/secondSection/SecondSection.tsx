@@ -8,11 +8,18 @@ export type ISectionProps = {
   title: string
   description: string
   list: {
-    title: string
-    descriptionParagraphs: string[]
     id: string
+    attributes: {
+      title: string
+      firstParagraph: string
+      secondParagraph: string
+      createdAt?: string
+      updatedAt?: string
+      publishedAt?: string
+    }
   }[]
 }
+
 const videosGatacaStudio = [
   videos.studioVideo1,
   videos.studioVideo2,
@@ -55,7 +62,7 @@ const SecondSection: React.FC<ISectionProps> = props => {
               className={styles?.gatacaStudioSection__leftSide__bullets}
             >
               {list?.map((item, index) => {
-                const { id, title, descriptionParagraphs } = item
+                const { title, firstParagraph, secondParagraph } = item?.attributes
 
                 return (
                   <ListItems
@@ -63,7 +70,7 @@ const SecondSection: React.FC<ISectionProps> = props => {
                     key={"listItemThirdSection__" + index}
                     index={index + 1}
                     title={title}
-                    description={descriptionParagraphs}
+                    description={[firstParagraph, secondParagraph]}
                     selected={openItem === index + 1}
                     showItem={index => {
                       const element = document.getElementById(

@@ -7,11 +7,14 @@ export type ISectionProps = {
   title: string
   description: string
   advantages: {
-    route: string
-    title: string
-    image: string
-    description: string
-    level: string
+    id: string
+    attributes: {
+      title: string
+      description: string
+      createdAt?: string
+      updatedAt?: string
+      publishedAt?: string
+    }
   }[]
 }
 
@@ -55,7 +58,7 @@ const FourthSection: React.FC<ISectionProps> = props => {
             className={styles.advantages__container}
           >
             {advantages?.map((el, index) => {
-              const { title, image, description, level, route } = el
+              const { title, description } = el.attributes
               return (
                 <div
                   id={"feature__" + index}

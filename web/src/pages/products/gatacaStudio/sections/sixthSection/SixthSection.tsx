@@ -2,21 +2,33 @@ import * as React from "react"
 import cx from "classnames"
 import PurpleButton from "../../../../../components/atoms/buttons/purple/PurpleButton"
 import Tag from "../../../../../components/atoms/tags/Tag"
-import { ButtonModel } from "../../../../../interfaces/interfaces"
 import * as styles from "./sixthSection.module.scss"
 import { navigate } from "gatsby"
+import { ButtonModel } from "../../../../../interfaces/interfaces";
 
 export type ISectionProps = {
   title: string
   subTitle: string
   description: string
   list: {
-    title: string
-    description: string
-    button: ButtonModel
-    tag?: string
+      id: string
+      attributes: {
+          name: string
+          description: string
+          subPriceMonthLabel: string
+          subPriceYearLabel: string
+          type: string
+          monthlyPrice: number
+          yearlyPrice: number
+          button: ButtonModel
+          popular: boolean
+          createdAt?: string
+          updatedAt?: string
+          publishedAt?: string
+      }
   }[]
 }
+
 
 const SixthSection: React.FC<ISectionProps> = props => {
   const { title, subTitle, description, list } = props
@@ -60,7 +72,7 @@ const SixthSection: React.FC<ISectionProps> = props => {
       </div>
       <div id="cardsContainer" className={styles?.plansSection__container}>
         {list?.map((item, index) => {
-          const { title, description, button, tag } = item
+          const { name, description, button, popular } = item.attributes
 
           return (
             <div
@@ -73,8 +85,8 @@ const SixthSection: React.FC<ISectionProps> = props => {
               }}
             >
               <div className={styles.cardHeader}>
-                <p className={`${cx("bodyBoldLG")}`}>{title}</p>
-                {tag && <Tag label={tag} />}
+                <p className={`${cx("bodyBoldLG")}`}>{name}</p>
+                {popular && <Tag label={'Popular'} />}
               </div>
 
               <p className={`${cx("bodyRegularSM marginBottom24 neutral700")}`}>
