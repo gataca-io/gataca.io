@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_wallet_wallet_features",
+  "info": {
+    "displayName": "Wallet Feature"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

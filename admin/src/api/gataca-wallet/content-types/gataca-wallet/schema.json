@@ -46,6 +46,17 @@
         }
       },
       "component": "wallet.benefit-section"
+    },
+    "featureSection": {
+      "displayName": "Wallet Feature",
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "wallet.wallet-feature"
     }
   }
 }
