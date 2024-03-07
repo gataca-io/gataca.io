@@ -57,6 +57,17 @@
         }
       },
       "component": "wallet.wallet-feature"
+    },
+    "walletAdFeature": {
+      "displayName": "Wallet AdFeature",
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "wallet.wallet-ad-feature"
     }
   }
 }
