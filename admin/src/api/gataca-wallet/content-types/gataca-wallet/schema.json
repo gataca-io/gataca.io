@@ -79,6 +79,17 @@
         }
       },
       "component": "wallet.how-section"
+    },
+    "credentialSection": {
+      "displayName": "Credential Section",
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "wallet.credential-section"
     }
   }
 }
