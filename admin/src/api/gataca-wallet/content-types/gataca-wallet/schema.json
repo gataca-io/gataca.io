@@ -25,6 +25,27 @@
           "localized": true
         }
       }
+    },
+    "headerSection": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "generic.header"
+    },
+    "benefitSection": {
+      "displayName": "Benefit Section",
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "wallet.benefit-section"
     }
   }
 }
