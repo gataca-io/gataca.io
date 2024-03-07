@@ -14,6 +14,9 @@
     },
     "outsideWeb": {
       "type": "boolean"
+    },
+    "outlined": {
+      "type": "boolean"
     }
   }
 }
