@@ -68,6 +68,17 @@
         }
       },
       "component": "wallet.wallet-ad-feature"
+    },
+    "howSection": {
+      "displayName": "HowSection",
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "wallet.how-section"
     }
   }
 }
