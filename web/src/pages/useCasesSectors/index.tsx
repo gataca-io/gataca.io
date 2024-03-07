@@ -55,7 +55,7 @@ const UseCasesPage: React.FC<PageProps> = props => {
         />
         <UseCasesAppliedSection
           title={industriesSection?.title}
-          description={industriesSection?.description}
+          description={industriesSection?.subtitle}
           categories={industriesSection?.categories}
           index={0}
           subOptionClickedID={props?.location?.hash?.substring(1)}
