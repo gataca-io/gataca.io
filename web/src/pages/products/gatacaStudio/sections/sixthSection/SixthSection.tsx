@@ -21,6 +21,7 @@ export type ISectionProps = {
           monthlyPrice: number
           yearlyPrice: number
           button: ButtonModel
+          button2: ButtonModel
           popular: boolean
           createdAt?: string
           updatedAt?: string
@@ -72,7 +73,7 @@ const SixthSection: React.FC<ISectionProps> = props => {
       </div>
       <div id="cardsContainer" className={styles?.plansSection__container}>
         {list?.map((item, index) => {
-          const { name, description, button, popular } = item.attributes
+          const { name, description, button2, popular } = item.attributes
 
           return (
             <div
@@ -93,12 +94,12 @@ const SixthSection: React.FC<ISectionProps> = props => {
                 {description}
               </p>
               <PurpleButton
-                outlined={button?.outlined}
-                label={button?.label}
+                outlined={button2?.outlined}
+                label={button2?.label}
                 action={() =>
-                  !button?.outlined
-                    ? window?.open(button?.url)
-                    : navigate(button?.url || "")
+                  !button2?.outlined
+                    ? window?.open(button2?.url)
+                    : navigate(button2?.url || "")
                 }
               />
             </div>

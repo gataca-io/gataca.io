@@ -7,9 +7,7 @@ import ChecksGreyPanelTwoColumns from "../../../../../components/elements/panels
 
 export type ISectionProps = {
   title: string
-  list: {
-    title: string
-  }[]
+  list: any[]
 }
 
 const ThirdSection: React.FC<ISectionProps> = props => {

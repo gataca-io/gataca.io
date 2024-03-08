@@ -58,7 +58,7 @@ const GatacaStudioPage: React.FC<PageProps> = () => {
           list={featureSection?.features.data}
           description={featureSection?.description}
         />
-        <ThirdSection title={adSection?.title} list={adSection?.list} />
+        <ThirdSection title={adSection?.title} list={adSection?.ad_features.data} />
         <FourthSection
           title={whyStudioSection?.title}
           description={whyStudioSection?.description}
