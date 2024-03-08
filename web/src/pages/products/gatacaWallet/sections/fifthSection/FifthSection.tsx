@@ -9,9 +9,12 @@ export type ISectionProps = {
   title: string
   description: string
   list: {
-    title: string
-    description: string
-    image: string
+    id: string
+    attributes: {
+      title: string
+      description: string
+      image: string
+    }
   }[]
 }
 
@@ -57,7 +60,7 @@ const FifthSection: React.FC<ISectionProps> = props => {
           </p>
           <div id="bullets" className={styles.fifthSection__leftSide__bullets}>
             {list?.map((item, index) => {
-              const { title, description } = item
+              const { title, description } = item.attributes
 
               return (
                 <SingleFeature
