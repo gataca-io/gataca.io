@@ -26,8 +26,10 @@
       "relation": "oneToMany",
       "target": "api::credential.credential"
     },
-    "route": {
-      "type": "string"
+    "link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "generic.link"
     }
   }
 }

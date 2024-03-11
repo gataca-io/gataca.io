@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_generic_links",
+  "info": {
+    "displayName": "Link"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "route": {
+      "type": "text"
+    }
+  }
+}
