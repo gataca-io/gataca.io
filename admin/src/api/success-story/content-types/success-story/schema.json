@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "success_stories",
+  "info": {
+    "singularName": "success-story",
+    "pluralName": "success-stories",
+    "displayName": "Success Story",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "listTitle": {
+      "type": "string"
+    },
+    "credentials": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::credential.credential"
+    },
+    "route": {
+      "type": "string"
+    }
+  }
+}

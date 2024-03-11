@@ -16,6 +16,29 @@
       "type": "component",
       "repeatable": false,
       "component": "shared.seo"
+    },
+    "headerSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "generic.header"
+    },
+    "stepsSection": {
+      "displayName": "Step Section",
+      "type": "component",
+      "repeatable": false,
+      "component": "education.step-section"
+    },
+    "useCasesSection": {
+      "displayName": "Use Cases Section",
+      "type": "component",
+      "repeatable": false,
+      "component": "education.use-cases-section"
+    },
+    "whySection": {
+      "displayName": "Why Section",
+      "type": "component",
+      "repeatable": false,
+      "component": "education.why-section"
     }
   }
 }
