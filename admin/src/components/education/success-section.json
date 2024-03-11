@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_education_success_sections",
+  "info": {
+    "displayName": "Success Section"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

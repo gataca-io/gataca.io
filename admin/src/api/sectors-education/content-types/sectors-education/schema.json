@@ -39,6 +39,12 @@
       "type": "component",
       "repeatable": false,
       "component": "education.why-section"
+    },
+    "successSection": {
+      "displayName": "Success Section",
+      "type": "component",
+      "repeatable": false,
+      "component": "education.success-section"
     }
   }
 }
