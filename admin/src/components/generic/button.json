@@ -17,6 +17,9 @@
     },
     "outlined": {
       "type": "boolean"
+    },
+    "filename": {
+      "type": "string"
     }
   }
 }
