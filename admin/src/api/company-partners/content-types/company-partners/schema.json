@@ -4,7 +4,8 @@
   "info": {
     "singularName": "company-partners",
     "pluralName": "company-partner",
-    "displayName": "4.4. Company - Partners"
+    "displayName": "4.4. Company - Partners",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,6 +16,17 @@
       "type": "component",
       "repeatable": false,
       "component": "shared.seo"
+    },
+    "headerSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "generic.header"
+    },
+    "typeSection": {
+      "displayName": "Partnership Type Section",
+      "type": "component",
+      "repeatable": false,
+      "component": "partnership.partnership-type-section"
     }
   }
 }
