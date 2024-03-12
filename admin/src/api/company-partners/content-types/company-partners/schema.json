@@ -33,6 +33,17 @@
       "type": "component",
       "repeatable": false,
       "component": "partnership.become-section"
+    },
+    "partnershipSection": {
+      "displayName": "Partnership Section",
+      "type": "component",
+      "repeatable": false,
+      "component": "partnership.partnership-section"
+    },
+    "applySection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "generic.heading"
     }
   }
 }
