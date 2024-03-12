@@ -27,6 +27,12 @@
       "type": "component",
       "repeatable": false,
       "component": "partnership.partnership-type-section"
+    },
+    "becomeSection": {
+      "displayName": "Become Section",
+      "type": "component",
+      "repeatable": false,
+      "component": "partnership.become-section"
     }
   }
 }

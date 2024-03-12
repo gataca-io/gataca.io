@@ -1,7 +1,8 @@
 {
   "collectionName": "components_partnership_partnership_type_sections",
   "info": {
-    "displayName": "Partnership Type Section"
+    "displayName": "Partnership Type Section",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -18,6 +19,11 @@
       "type": "component",
       "repeatable": false,
       "component": "generic.link"
+    },
+    "types": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::partnership-type.partnership-type"
     }
   }
 }
