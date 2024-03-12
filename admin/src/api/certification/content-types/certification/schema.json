@@ -4,7 +4,8 @@
   "info": {
     "singularName": "certification",
     "pluralName": "certifications",
-    "displayName": "Certification"
+    "displayName": "Certification",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,23 +19,24 @@
       "type": "text"
     },
     "secondParagraph": {
-      "type": "string"
+      "type": "text"
     },
     "thirdParagraph": {
-      "type": "string"
+      "type": "text"
     },
     "fourthParagraph": {
       "type": "text"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "button": {
       "type": "component",
