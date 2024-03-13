@@ -70,19 +70,20 @@ export interface StrapiImageModel {
 
 export interface IProductModel {
   id: string
-  attributes: any[]
-  name: string
-  description: string
-  prices: IPriceModel[]
-  type?: string
-  features?: IProductFeaturesModel
-  subPriceMonthLabel?: string
-  subPriceYearLabel?: string
+  attributes:  {
+    name: string
+    description: string
+    prices: IPriceModel[]
+    type?: string
+    features?: IProductFeaturesModel
+    subPriceMonthLabel?: string
+    subPriceYearLabel?: string
 
-  button: {
-    label: "Contact us"
-    outsideWeb: false
-    url: "/company/contact"
+    button: {
+      label: "Contact us"
+      outsideWeb: false
+      url: "/company/contact"
+    }
   }
 }
 
