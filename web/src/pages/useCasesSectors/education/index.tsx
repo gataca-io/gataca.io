@@ -12,31 +12,27 @@ import FourthSection from "./sections/fourthSection/FourthSection"
 import { gatacaStudioURL } from "../../../data/globalData"
 
 const EducationPage: React.FC<PageProps> = () => {
-  const [educationData, setEducation] = useState<any | undefined>()
   const [strapiData, setStrapiData] = useState<any | undefined>()
   const {
-    firstSection,
-    secondSection,
-    thirdSection,
-    fourthSection,
-    fifthSection,
-  } = educationData ? educationData : []
+    headerSection,
+    stepsSection,
+    useCasesSection,
+    whySection,
+    successSection,
+  } = strapiData ? strapiData : []
 
   React.useEffect(() => {
     if (!strapiData) {
       getStrapiData()
     }
-    getEducation()
   }, [])
 
-  const getEducation = async () => {
-    const json_data = require("./data/educationData.json")
-    setEducation(json_data?.data && json_data?.data)
-  }
+
 
   const getStrapiData = async () => {
     await fetch(
-      `${process.env.STRAPI_API_URL}/api/sectors-education?&populate=*`
+
+      `${process.env.STRAPI_API_URL}/api/sectors-education?populate[headerSection][populate]=*&populate[stepsSection][populate]=*&populate[useCasesSection][populate]=*&populate[whySection][populate][advantages][populate]=*&populate[successSection][populate][success_stories][populate][link]=*&populate[successSection][populate][success_stories][populate][credentials]=*`
     )
       .then(response => response.json())
       .then(jsonResponse => {
@@ -49,25 +45,25 @@ const EducationPage: React.FC<PageProps> = () => {
     <Layout seoData={strapiData?.seo}>
       <>
         <FirstSection
-          title={firstSection?.title}
-          description={firstSection?.description}
-          tryForFreeButton={firstSection?.tryForFreeButton}
+          title={headerSection?.title}
+          description={headerSection?.description}
+          tryForFreeButton={headerSection?.cta}
         />
-        <SecondSection steps={secondSection?.steps} />
+        <SecondSection steps={stepsSection?.steps.data} />
         <ThirdSection
-          title={thirdSection?.title}
-          description={thirdSection?.description}
-          list={thirdSection?.list}
+          title={useCasesSection?.title}
+          description={useCasesSection?.description}
+          list={useCasesSection?.use_cases.data}
         />
         <FourthSection
-          title={fourthSection?.title}
-          description={fourthSection?.description}
-          list={fourthSection?.list}
+          title={whySection?.title}
+          description={whySection?.description}
+          list={whySection?.advantages.data}
         />
         <FifthSection
-          title={fifthSection?.title}
-          stories={fifthSection?.stories}
-          list={fifthSection?.list}
+          title={successSection?.title}
+          stories={successSection?.success_stories.data}
+          list={successSection?.list}
         />
         <PreFooterCTASection
           title={"Ready to start?"}
