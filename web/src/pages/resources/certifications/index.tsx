@@ -5,7 +5,6 @@ import Layout from "../../../components/templates/mainLayout/MainLayout"
 import FirstSection from "./sections/firstSection/FirstSection"
 
 const CertificationsPage: React.FC<PageProps> = () => {
-  // const [certificationsData, setcertifications] = useState<any | undefined>()
   const [strapiData, setStrapiData] = React.useState<any | undefined>()
   const { headerSection, certifications } = strapiData ? strapiData : []
 
@@ -13,12 +12,7 @@ const CertificationsPage: React.FC<PageProps> = () => {
     if (!strapiData) {
       getStrapiData()
     }
-    // getcertifications()
   }, [])
-  // const getcertifications = async () => {
-  //   const json_data = require("./data/certificationsData.json")
-  //   setcertifications(json_data?.data && json_data?.data)
-  // }
 
   const getStrapiData = async () => {
     await fetch(

@@ -9,7 +9,6 @@ import FourthSection from "./sections/fourthSection/FourthSection"
 import FifthSection from "./sections/fifthSection/FifthSection"
 
 const BecomeAPartnerPage: React.FC<PageProps> = () => {
-  // const [becomeAPartnerData, setBecomeAPartner] = useState<any | undefined>()
   const [strapiData, setStrapiData] = React.useState<any | undefined>()
   const {
     headerSection,
@@ -23,13 +22,7 @@ const BecomeAPartnerPage: React.FC<PageProps> = () => {
     if (!strapiData) {
       getStrapiData()
     }
-    // getBecomeAPartner()
   }, [])
-
-  // const getBecomeAPartner = async () => {
-  //   const json_data = require("./data/becomeAPartnerData.json")
-  //   setBecomeAPartner(json_data?.data && json_data?.data)
-  // }
 
   const getStrapiData = async () => {
     await fetch(
