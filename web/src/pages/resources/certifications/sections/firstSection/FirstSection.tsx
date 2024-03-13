@@ -4,15 +4,30 @@ import { images } from "../../../../../images/images"
 import { files } from "../../../../../assets/files/files"
 import { ButtonModel } from "../../../../../interfaces/interfaces"
 import * as styles from "./firstSection.module.scss"
+import PurpleButton from "../../../../../components/atoms/buttons/purple/PurpleButton";
+import {gatacaStudioURL} from "../../../../../data/globalData";
 
 export type ISectionProps = {
   title: string
   description: string
   list: {
-    title: string
-    descriptionParagraphs: string | string[]
-    button: ButtonModel
-    image: string
+    id: number
+    attributes: {
+      title: string
+      firstParagraph: string
+      secondParagraph: string
+      thirdParagraph: string
+      fourthParagraph: string
+      button: ButtonModel
+      image: {
+        data: {
+          attributes: {
+            url: string
+            alternativeText: string
+          }
+        }
+      }
+    }
   }[]
 }
 
@@ -31,41 +46,63 @@ const FirstSection: React.FC<ISectionProps> = props => {
       </div>
 
       {list?.map((item, index) => {
-        const { title, descriptionParagraphs, button, image } = item
+        const { title, firstParagraph, secondParagraph, thirdParagraph, fourthParagraph, button, image } = item.attributes
 
         return (
-          <div className={styles?.certifications__cards}>
+          <div key={`${"certication__" + index}`} className={styles?.certifications__cards}>
             <div className={styles?.leftSide}>
-              <img src={image}></img>
+              <img src={image.data.attributes.url} alt={image.data.attributes.alternativeText}></img>
             </div>
             <div className={styles?.rightSide}>
-              <div key={`${"certication__" + index}`}>
-                <h4 className={cx("heading4 marginBottom32")}>{title}</h4>
-                {Array.isArray(descriptionParagraphs) &&
-                  descriptionParagraphs?.map((el: string, index: number) => {
-                    return (
-                      <p
-                        key={"paragraph" + index}
-                        className={`${cx(
+              <h4 className={cx("heading4 marginBottom32")}>{title}</h4>
+              {firstParagraph && (
+                  <p
+                      className={`${cx(
                           "bodyRegularMD neutral700 marginBottom20"
-                        )}`}
-                      >
-                        {el}
-                      </p>
-                    )
-                  })}
-                <div
+                      )}`}
+                  >
+                    {firstParagraph}
+                  </p>
+              )}
+              {secondParagraph && (
+                  <p
+                      className={`${cx(
+                          "bodyRegularMD neutral700 marginBottom20"
+                      )}`}
+                  >
+                    {secondParagraph}
+                  </p>
+              )}
+              {thirdParagraph && (
+                  <p
+                      className={`${cx(
+                          "bodyRegularMD neutral700 marginBottom20"
+                      )}`}
+                  >
+                    {thirdParagraph}
+                  </p>
+              )}
+              {fourthParagraph && (
+                  <p
+                      className={`${cx(
+                          "bodyRegularMD neutral700 marginBottom20"
+                      )}`}
+                  >
+                    {fourthParagraph}
+                  </p>
+              )}
+
+              <div
                   className={`${cx("marginTop32")} ${styles?.buttonContainer}`}
-                >
-                  <a
+              >
+                <a
                     className={`${styles?.purpleLink}`}
                     target="_blank"
                     href={button?.url}
                     download={button?.fileName ? button?.fileName : undefined}
-                  >
-                    <span className={cx("buttonLG")}>{button?.label}</span>
-                  </a>
-                </div>
+                >
+                  <span className={cx("buttonLG")}>{button?.label}</span>
+                </a>
               </div>
             </div>
           </div>

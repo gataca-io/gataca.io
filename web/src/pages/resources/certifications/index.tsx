@@ -5,24 +5,24 @@ import Layout from "../../../components/templates/mainLayout/MainLayout"
 import FirstSection from "./sections/firstSection/FirstSection"
 
 const CertificationsPage: React.FC<PageProps> = () => {
-  const [certificationsData, setcertifications] = useState<any | undefined>()
+  // const [certificationsData, setcertifications] = useState<any | undefined>()
   const [strapiData, setStrapiData] = React.useState<any | undefined>()
-  const { firstSection } = certificationsData ? certificationsData : []
+  const { headerSection, certifications } = strapiData ? strapiData : []
 
   React.useEffect(() => {
     if (!strapiData) {
       getStrapiData()
     }
-    getcertifications()
+    // getcertifications()
   }, [])
-  const getcertifications = async () => {
-    const json_data = require("./data/certificationsData.json")
-    setcertifications(json_data?.data && json_data?.data)
-  }
+  // const getcertifications = async () => {
+  //   const json_data = require("./data/certificationsData.json")
+  //   setcertifications(json_data?.data && json_data?.data)
+  // }
 
   const getStrapiData = async () => {
     await fetch(
-      `${process.env.STRAPI_API_URL}/api/resources-certification?&populate=*`
+      `${process.env.STRAPI_API_URL}/api/resources-certification?populate%5Bseo%5D=*&populate%5BheaderSection%5D%5Bpopulate%5D=*&populate%5Bcertifications%5D%5Bpopulate%5D=*`
     )
       .then(response => response.json())
       .then(jsonResponse => {
@@ -34,9 +34,9 @@ const CertificationsPage: React.FC<PageProps> = () => {
   return (
     <Layout seoData={strapiData?.seo}>
       <FirstSection
-        title={firstSection?.title}
-        description={firstSection?.description}
-        list={firstSection?.list}
+        title={headerSection?.title}
+        description={headerSection?.description}
+        list={certifications?.data}
       />
     </Layout>
   )
