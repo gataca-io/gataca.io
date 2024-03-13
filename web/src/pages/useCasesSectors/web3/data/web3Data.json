@@ -13,23 +13,36 @@
         },
         "fourthSection": {
             "description": "The ideal partner to transition to a user-centric identity model",
-            "list": [{
-                    "title": "GDPR & KYC compliance"
+            "list": [
+                {
+                    "attributes": {
+                        "title": "GDPR & KYC compliance"
+                    }
                 },
                 {
-                    "title": "Interconnection with Web 2.0"
+                    "attributes": {
+                        "title": "Interconnection with Web 2.0"
+                    }
                 },
                 {
-                    "title": "Ledger-agnostic"
+                    "attributes": {
+                        "title": "Ledger-agnostic"
+                    }
                 },
                 {
-                    "title": "Security by design"
+                    "attributes": {
+                        "title": "Security by design"
+                    }
                 },
                 {
-                    "title": "Expertise"
+                    "attributes": {
+                        "title": "Expertise"
+                    }
                 },
                 {
-                    "title": "No vendor lock-in"
+                    "attributes": {
+                        "title": "No vendor lock-in"
+                    }
                 }
             ],
             "title": "Why Gataca"
