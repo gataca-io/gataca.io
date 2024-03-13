@@ -77,7 +77,7 @@ const CategorySectors: React.FC<ICategorySectorsProps> = props => {
                   index={index + 1}
                   icon={icon}
                   title={title}
-                  description={subtitle}
+                  description={description}
                   link={link}
                   link_route={link_route}
                   secondCategory={secondCategory}

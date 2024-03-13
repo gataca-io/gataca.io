@@ -80,7 +80,7 @@ const useCasesAppliedSection: React.FC<ISectionProps> = props => {
           className={styles?.useCasesAppliedSection__sectors}
         >
           {categories?.map((item, index) => {
-            const { id, title, description, industries } = item
+            const { title, description, industries } = item
 
             return (
               <CategorySectors
