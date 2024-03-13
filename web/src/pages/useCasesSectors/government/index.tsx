@@ -11,30 +11,24 @@ import FourthSection from "./sections/fourthSection/FourthSection"
 import FifthSection from "./sections/fifthSection/FifthSection"
 
 const GovernmentPage: React.FC<PageProps> = () => {
-  const [governmentData, setGovernment] = useState<any | undefined>()
   const [strapiData, setStrapiData] = useState<any | undefined>()
   const {
-    firstSection,
-    secondSection,
-    thirdSection,
-    fourthSection,
-    fifthSection,
-  } = governmentData ? governmentData : []
+    headerSection,
+    stepSection,
+    useCasesSection,
+    whySection,
+    howSection,
+  } = strapiData ? strapiData : []
 
   React.useEffect(() => {
     if (!strapiData) {
       getStrapiData()
     }
-    getGovernment()
   }, [])
-  const getGovernment = async () => {
-    const json_data = require("./data/governmentData.json")
-    setGovernment(json_data?.data && json_data?.data)
-  }
 
   const getStrapiData = async () => {
     await fetch(
-      `${process.env.STRAPI_API_URL}/api/sectors-government?&populate=*`
+      `${process.env.STRAPI_API_URL}/api/sectors-government?populate[headerSection][populate]=*&populate[stepSection][populate]=*&populate[useCasesSection][populate]=*&populate[whySection][populate][advantages][populate]=*&populate[howSection]=*`
     )
       .then(response => response.json())
       .then(jsonResponse => {
@@ -46,24 +40,24 @@ const GovernmentPage: React.FC<PageProps> = () => {
     <Layout seoData={strapiData?.seo}>
       <>
         <FirstSection
-          title={firstSection?.title}
-          description={firstSection?.description}
-          contactButton={firstSection?.contactButton}
+          title={headerSection?.title}
+          description={headerSection?.description}
+          contactButton={headerSection?.cta}
         />
-        <SecondSection steps={secondSection?.steps} />
+        <SecondSection steps={stepSection?.steps.data} />
         <ThirdSection
-          title={thirdSection?.title}
-          description={thirdSection?.description}
-          list={thirdSection?.list}
+          title={useCasesSection?.title}
+          description={useCasesSection?.description}
+          list={useCasesSection?.use_cases.data}
         />
         <FourthSection
-          title={fourthSection?.title}
-          description={fourthSection?.description}
-          list={fourthSection?.list}
+          title={whySection?.title}
+          description={whySection?.description}
+          list={whySection?.advantages.data}
         />
         <FifthSection
-          title={fifthSection?.title}
-          description={fifthSection?.description}
+          title={howSection?.title}
+          description={howSection?.description}
         />
         <PreFooterCTASection
           title={"Want to know more?"}
