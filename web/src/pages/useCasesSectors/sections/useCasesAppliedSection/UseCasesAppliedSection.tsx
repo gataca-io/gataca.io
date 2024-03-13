@@ -90,7 +90,7 @@ const useCasesAppliedSection: React.FC<ISectionProps> = props => {
                 index={index + 1}
                 title={title}
                 description={description}
-                list={industries.data}
+                list={industries?.data}
                 selected={openItem === index + 1}
                 subOptionClickedID={subOptionClickedID}
               />

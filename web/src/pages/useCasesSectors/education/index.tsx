@@ -49,16 +49,16 @@ const EducationPage: React.FC<PageProps> = () => {
           description={headerSection?.description}
           tryForFreeButton={headerSection?.cta}
         />
-        <SecondSection steps={stepsSection?.steps.data} />
+        <SecondSection steps={stepsSection?.steps?.data} />
         <ThirdSection
           title={useCasesSection?.title}
           description={useCasesSection?.description}
-          list={useCasesSection?.use_cases.data}
+          list={useCasesSection?.use_cases?.data}
         />
         <FourthSection
           title={whySection?.title}
           description={whySection?.description}
-          list={whySection?.advantages.data}
+          list={whySection?.advantages?.data}
         />
         <FifthSection
           title={successSection?.title}

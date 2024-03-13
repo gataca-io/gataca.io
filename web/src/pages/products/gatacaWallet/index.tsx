@@ -49,28 +49,28 @@ const GatacaWalletPage: React.FC<PageProps> = () => {
           />
           <SecondSection
               title={benefitSection?.title}
-              list={benefitSection?.benefits.data}
+              list={benefitSection?.benefits?.data}
               setSecondSectionLoaded={setSecondSectionLoaded}
           />
 
           <ThirdSection
               title={featureSection?.title}
-              list={featureSection?.wallet_features.data}
+              list={featureSection?.wallet_features?.data}
               description={featureSection?.description}
           />
           <FourthSection
               title={walletAdFeature?.title}
-              list={walletAdFeature?.wallet_ad_features.data}
+              list={walletAdFeature?.wallet_ad_features?.data}
           />
           <FifthSection
               title={howSection?.title}
               description={howSection?.description}
-              list={howSection?.operations.data}
+              list={howSection?.operations?.data}
           />
           <SixthSection
               title={credentialSection?.title}
-              list={credentialSection?.properties.data}
-              credentials={credentialSection?.credentials.data}
+              list={credentialSection?.properties?.data}
+              credentials={credentialSection?.credentials?.data}
           />
           <PreFooterCTASection
               title={"Ready To Start?"}

@@ -49,17 +49,17 @@ const BecomeAPartnerPage: React.FC<PageProps> = () => {
           linkLabel={typeSection?.link.label}
           linkRoute={typeSection?.link.route}
           description={typeSection?.description}
-          list={typeSection?.types.data}
+          list={typeSection?.types?.data}
         />
         <ThirdSection
           title={becomeSection?.title}
           description={becomeSection?.description}
-          list={becomeSection?.steps.data}
+          list={becomeSection?.steps?.data}
         />
         <FourthSection
           title={partnershipSection?.title}
           description={partnershipSection?.description}
-          list={partnershipSection?.list.data}
+          list={partnershipSection?.list?.data}
         />
         <FifthSection
           title={applySection?.title}

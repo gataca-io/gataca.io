@@ -61,7 +61,7 @@ const AboutUsPage: React.FC<PageProps> = () => {
           title={employeeSection?.title}
           description={employeeSection?.description}
           button={employeeSection?.button}
-          list={employeeSection?.employees.data}
+          list={employeeSection?.employees?.data}
         />
         <FifthSection title={awardsSection?.title} list={awardsSection?.awards.data} />
         <SixthSection description={fundingDescription} />

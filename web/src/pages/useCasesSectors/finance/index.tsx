@@ -43,16 +43,16 @@ const FinancePage: React.FC<PageProps> = () => {
           description={headerSection?.description}
           contactButton={headerSection?.cta}
         />
-        <SecondSection steps={stepSection?.steps.data} />
+        <SecondSection steps={stepSection?.steps?.data} />
         <ThirdSection
           title={useCaseSection?.title}
           description={useCaseSection?.description}
-          list={useCaseSection?.use_cases.data}
+          list={useCaseSection?.use_cases?.data}
         />
         <FourthSection
           title={whySection?.title}
           description={whySection?.description}
-          list={whySection?.advantages.data}
+          list={whySection?.advantages?.data}
         />
         <FifthSection
           title={howSection?.title}
