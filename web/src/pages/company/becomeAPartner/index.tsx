@@ -9,31 +9,31 @@ import FourthSection from "./sections/fourthSection/FourthSection"
 import FifthSection from "./sections/fifthSection/FifthSection"
 
 const BecomeAPartnerPage: React.FC<PageProps> = () => {
-  const [becomeAPartnerData, setBecomeAPartner] = useState<any | undefined>()
+  // const [becomeAPartnerData, setBecomeAPartner] = useState<any | undefined>()
   const [strapiData, setStrapiData] = React.useState<any | undefined>()
   const {
-    firstSection,
-    secondSection,
-    thirdSection,
-    fourthSection,
-    fifthSection,
-  } = becomeAPartnerData ? becomeAPartnerData : []
+    headerSection,
+    typeSection,
+    becomeSection,
+    partnershipSection,
+    applySection,
+  } = strapiData ? strapiData : []
 
   React.useEffect(() => {
     if (!strapiData) {
       getStrapiData()
     }
-    getBecomeAPartner()
+    // getBecomeAPartner()
   }, [])
 
-  const getBecomeAPartner = async () => {
-    const json_data = require("./data/becomeAPartnerData.json")
-    setBecomeAPartner(json_data?.data && json_data?.data)
-  }
+  // const getBecomeAPartner = async () => {
+  //   const json_data = require("./data/becomeAPartnerData.json")
+  //   setBecomeAPartner(json_data?.data && json_data?.data)
+  // }
 
   const getStrapiData = async () => {
     await fetch(
-      `${process.env.STRAPI_API_URL}/api/company-partners?&populate=*`
+      `${process.env.STRAPI_API_URL}/api/company-partners?populate%5Bseo%5D=*&populate%5BheaderSection%5D%5Bpopulate%5D=*&populate%5BtypeSection%5D%5Bpopulate%5D%5Btypes%5D%5Bpopulate%5D=*&populate%5BtypeSection%5D%5Bpopulate%5D%5Blink%5D%5Bpopulate%5D=*&populate%5BbecomeSection%5D%5Bpopulate%5D=*&populate%5BpartnershipSection%5D%5Bpopulate%5D=*&populate%5BapplySection%5D=*`
     )
       .then(response => response.json())
       .then(jsonResponse => {
@@ -46,31 +46,31 @@ const BecomeAPartnerPage: React.FC<PageProps> = () => {
     <Layout seoData={strapiData?.seo}>
       <>
         <FirstSection
-          title={firstSection?.title}
-          descriptionParagraphs={firstSection?.descriptionParagraphs}
-          button={firstSection?.button}
+          title={headerSection?.title}
+          descriptionParagraphs={headerSection?.description}
+          button={headerSection?.cta}
         />
         <SecondSection
-          title={secondSection?.title}
-          subTitle={secondSection?.subTitle}
-          linkLabel={secondSection?.linkLabel}
-          linkRoute={secondSection?.linkRoute}
-          description={secondSection?.description}
-          list={secondSection?.list}
+          title={typeSection?.title}
+          subTitle={typeSection?.subtitle}
+          linkLabel={typeSection?.link.label}
+          linkRoute={typeSection?.link.route}
+          description={typeSection?.description}
+          list={typeSection?.types.data}
         />
         <ThirdSection
-          title={thirdSection?.title}
-          description={thirdSection?.description}
-          list={thirdSection?.list}
+          title={becomeSection?.title}
+          description={becomeSection?.description}
+          list={becomeSection?.steps.data}
         />
         <FourthSection
-          title={fourthSection?.title}
-          description={fourthSection?.description}
-          list={fourthSection?.list}
+          title={partnershipSection?.title}
+          description={partnershipSection?.description}
+          list={partnershipSection?.list.data}
         />
         <FifthSection
-          title={fifthSection?.title}
-          description={fifthSection?.description}
+          title={applySection?.title}
+          description={applySection?.description}
         />
       </>
     </Layout>
