@@ -366,7 +366,7 @@ export const footerMenuOptions: LinkModel[] = [
   },
   {
     id: "rightsReservedGataca",
-    label: "© 2023 - Gataca",
+    label: "© 2024 - Gataca",
     route: "/",
   },
 ]
