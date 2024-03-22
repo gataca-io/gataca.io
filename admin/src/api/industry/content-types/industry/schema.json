@@ -4,7 +4,8 @@
   "info": {
     "singularName": "industry",
     "pluralName": "industries",
-    "displayName": "Industry"
+    "displayName": "Industry",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,14 +19,15 @@
       "type": "text"
     },
     "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "subtitle": {
       "type": "string"
@@ -34,6 +36,9 @@
       "type": "string"
     },
     "link_route": {
+      "type": "string"
+    },
+    "inside_description": {
       "type": "string"
     }
   }
