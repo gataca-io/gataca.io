@@ -29,9 +29,6 @@
         "audios"
       ]
     },
-    "subtitle": {
-      "type": "string"
-    },
     "link": {
       "type": "string"
     },
