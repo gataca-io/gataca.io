@@ -19,6 +19,12 @@
     },
     "panelTitle": {
       "type": "string"
+    },
+    "paragraph_1": {
+      "type": "text"
+    },
+    "paragraph_2": {
+      "type": "text"
     }
   }
 }
