@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_contact_us_faq_sections",
+  "info": {
+    "displayName": "FAQ Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "faqs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::faq.faq"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_use_cases_use_cases_applied_sections",
+  "info": {
+    "displayName": "UseCasesAppliedSection"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "categories": {
+      "displayName": "IndustryCategory",
+      "type": "component",
+      "repeatable": true,
+      "component": "use-cases.industry-category"
+    }
+  }
+}

@@ -25,6 +25,71 @@
           "localized": true
         }
       }
+    },
+    "headerSection": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "generic.header"
+    },
+    "benefitSection": {
+      "displayName": "Benefit Section",
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "wallet.benefit-section"
+    },
+    "featureSection": {
+      "displayName": "Wallet Feature",
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "wallet.wallet-feature"
+    },
+    "walletAdFeature": {
+      "displayName": "Wallet AdFeature",
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "wallet.wallet-ad-feature"
+    },
+    "howSection": {
+      "displayName": "HowSection",
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "wallet.how-section"
+    },
+    "credentialSection": {
+      "displayName": "Credential Section",
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "wallet.credential-section"
     }
   }
 }

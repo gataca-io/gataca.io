@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "partnership_types",
+  "info": {
+    "singularName": "partnership-type",
+    "pluralName": "partnership-types",
+    "displayName": "Partnership Type"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}

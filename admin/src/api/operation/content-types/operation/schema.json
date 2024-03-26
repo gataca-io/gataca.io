@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "operations",
+  "info": {
+    "singularName": "operation",
+    "pluralName": "operations",
+    "displayName": "Operation"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_reasons",
+  "info": {
+    "singularName": "contact-reason",
+    "pluralName": "contact-reasons",
+    "displayName": "Contact Reason"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

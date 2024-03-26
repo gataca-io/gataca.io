@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_partnership_partnership_sections",
+  "info": {
+    "displayName": "Partnership Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "list": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::partnership-ecosystem.partnership-ecosystem"
+    }
+  }
+}

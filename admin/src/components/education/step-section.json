@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_education_step_sections",
+  "info": {
+    "displayName": "Step Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "steps": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::step.step"
+    }
+  }
+}

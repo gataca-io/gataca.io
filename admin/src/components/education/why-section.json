@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_education_why_sections",
+  "info": {
+    "displayName": "Why Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "advantages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::advantage.advantage"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_pricing_entry2_faqs",
+  "info": {
+    "displayName": "Entry-FAQ",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "list": {
+      "type": "component",
+      "repeatable": true,
+      "component": "generic.entry"
+    }
+  }
+}

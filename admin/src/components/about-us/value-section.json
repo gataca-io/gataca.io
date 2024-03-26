@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_about_us_value_sections",
+  "info": {
+    "displayName": "ValueSection"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "values": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::value.value"
+    }
+  }
+}

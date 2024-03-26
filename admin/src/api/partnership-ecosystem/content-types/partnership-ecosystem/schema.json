@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "partnership_ecosystems",
+  "info": {
+    "singularName": "partnership-ecosystem",
+    "pluralName": "partnership-ecosystems",
+    "displayName": "Partnership Ecosystem"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

@@ -9,22 +9,22 @@
     "leftButton": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.button"
+      "component": "generic.button"
     },
     "rightButton": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.button"
+      "component": "generic.button"
     },
     "moreButton": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.button"
+      "component": "generic.button"
     },
     "learnMoreButton": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.button"
+      "component": "generic.button"
     },
     "advantages": {
       "type": "component",

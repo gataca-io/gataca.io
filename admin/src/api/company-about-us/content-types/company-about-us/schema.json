@@ -16,6 +16,41 @@
       "type": "component",
       "repeatable": false,
       "component": "shared.seo"
+    },
+    "headerSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "generic.header"
+    },
+    "ourStorySection": {
+      "displayName": "OurStory",
+      "type": "component",
+      "repeatable": false,
+      "component": "about-us.our-story"
+    },
+    "missionDescription": {
+      "type": "text"
+    },
+    "valuesSection": {
+      "displayName": "ValueSection",
+      "type": "component",
+      "repeatable": false,
+      "component": "about-us.value-section"
+    },
+    "employeeSection": {
+      "displayName": "EmployeeSection",
+      "type": "component",
+      "repeatable": false,
+      "component": "about-us.employee-section"
+    },
+    "awardsSection": {
+      "displayName": "AwardSection",
+      "type": "component",
+      "repeatable": false,
+      "component": "about-us.award-section"
+    },
+    "fundingDescription": {
+      "type": "text"
     }
   }
 }

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_studio_use_case_sections",
+  "info": {
+    "displayName": "UseCaseSection",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "operations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::operation.operation"
+    }
+  }
+}

@@ -4,7 +4,7 @@
   "info": {
     "singularName": "uses-cases-and-sector",
     "pluralName": "uses-cases-and-sectors",
-    "displayName": "3.1. Uses Cases & Sectors",
+    "displayName": "3.1 Uses Cases & Sectors",
     "description": ""
   },
   "options": {
@@ -16,6 +16,24 @@
       "type": "component",
       "repeatable": false,
       "component": "shared.seo"
+    },
+    "header": {
+      "displayName": "Header",
+      "type": "component",
+      "repeatable": false,
+      "component": "generic.header"
+    },
+    "industriesSection": {
+      "displayName": "UseCasesAppliedSection",
+      "type": "component",
+      "repeatable": false,
+      "component": "use-cases.use-cases-applied-section"
+    },
+    "useCasesSection": {
+      "displayName": "UseCaseSection",
+      "type": "component",
+      "repeatable": false,
+      "component": "use-cases.use-case-section"
     }
   }
 }

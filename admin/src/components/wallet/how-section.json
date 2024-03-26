@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_wallet_how_sections",
+  "info": {
+    "displayName": "HowSection"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "operations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::operation.operation"
+    }
+  }
+}

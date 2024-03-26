@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_studio_tier_sections",
+  "info": {
+    "displayName": "TierSection"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "tiers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tier.tier"
+    }
+  }
+}

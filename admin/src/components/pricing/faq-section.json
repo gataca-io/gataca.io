@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_shared_faq_sections",
+  "info": {
+    "displayName": "FAQ-Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "info": {
+      "displayName": "Entry2-FAQ",
+      "type": "component",
+      "repeatable": true,
+      "component": "pricing.entry2-faq"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_wallet_wallet_ad_features",
+  "info": {
+    "displayName": "Wallet AdFeature"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "wallet_ad_features": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::wallet-ad-feature.wallet-ad-feature"
+    }
+  }
+}

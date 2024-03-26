@@ -1,0 +1,42 @@
+{
+  "collectionName": "components_pricing_pricing_details",
+  "info": {
+    "displayName": "PricingDetails"
+  },
+  "options": {},
+  "attributes": {
+    "activeUser": {
+      "type": "text"
+    },
+    "didInPublicCatalogue": {
+      "type": "text"
+    },
+    "ebsiIntegration": {
+      "type": "text"
+    },
+    "integrationCustomFrameworks": {
+      "type": "text"
+    },
+    "integrationCustomInfraestructure": {
+      "type": "text"
+    },
+    "issuanceTemplate": {
+      "type": "text"
+    },
+    "issuedCredential": {
+      "type": "text"
+    },
+    "sandboxEnvironment": {
+      "type": "text"
+    },
+    "schemaInPublicCatalogue": {
+      "type": "text"
+    },
+    "securityFactorMechanism": {
+      "type": "text"
+    },
+    "verificationTemplate": {
+      "type": "text"
+    }
+  }
+}

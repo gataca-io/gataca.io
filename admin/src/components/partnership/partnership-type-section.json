@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_partnership_partnership_type_sections",
+  "info": {
+    "displayName": "Partnership Type Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "generic.link"
+    },
+    "types": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::partnership-type.partnership-type"
+    }
+  }
+}

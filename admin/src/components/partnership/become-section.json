@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_partnership_become_sections",
+  "info": {
+    "displayName": "Become Section"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "steps": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::step.step"
+    }
+  }
+}

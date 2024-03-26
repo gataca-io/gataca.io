@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_education_use_cases_sections",
+  "info": {
+    "displayName": "Use Cases Section"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "use_cases": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::use-case.use-case"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_use_cases_industry_categories",
+  "info": {
+    "displayName": "IndustryCategory"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "identifier": {
+      "type": "string"
+    },
+    "industries": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::industry.industry"
+    }
+  }
+}

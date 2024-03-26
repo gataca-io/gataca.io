@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ad_features",
+  "info": {
+    "singularName": "ad-feature",
+    "pluralName": "ad-features",
+    "displayName": "AdFeature"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "identifier": {
+      "type": "uid"
+    }
+  }
+}
