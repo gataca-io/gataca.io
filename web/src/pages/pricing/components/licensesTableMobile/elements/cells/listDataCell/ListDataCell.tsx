@@ -6,7 +6,11 @@ export type IListDataCellProps = {
 }
 
 const ListDataCell: React.FC<IListDataCellProps> = props => {
-  const { data } = props
+  let { data } = props
+
+  if(typeof data === 'string') {
+    data = data.split(',');
+  }
 
   const isLastItem = (itemsArray: any[], item: any) => {
     const arrLength = itemsArray?.length

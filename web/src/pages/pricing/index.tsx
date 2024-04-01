@@ -9,11 +9,16 @@ import { PageProps } from "gatsby"
 
 const Pricing: React.FC<PageProps> = props => {
   const [pricingData, setPricing] = useState<any | undefined>()
-  const [strapiData, setStrapiData] = React.useState<any | undefined>()
+  const [pricingStrapiData, setStrapiData] = React.useState<any | undefined>()
   const { firstSection, secondSection } = pricingData ? pricingData : []
+  const {
+    faqSection,
+    cloudSection,
+    onPremiseSection,
+  } = pricingStrapiData ? pricingStrapiData : []
 
   React.useEffect(() => {
-    if (!strapiData) {
+    if (!pricingStrapiData) {
       getStrapiData()
     }
     getPricing()
@@ -25,32 +30,34 @@ const Pricing: React.FC<PageProps> = props => {
   }
 
   const getStrapiData = async () => {
-    await fetch(`${process.env.STRAPI_API_URL}/api/pricing?&populate=*`)
+    // await fetch(`${process.env.STRAPI_API_URL}/api/pricing?&populate=*`)
+    await fetch(`${process.env.STRAPI_API_URL}/api/pricing?populate%5BfaqSection%5D%5Bpopulate%5D%5Binfo%5D%5Bpopulate%5D=*&populate%5BcloudSection%5D%5Bpopulate%5D%5Btiers%5D%5Bpopulate%5D=*&populate%5BonPremiseSection%5D%5Bpopulate%5D=*`)
       .then(response => response.json())
       .then(jsonResponse => {
-        const strapiData = jsonResponse?.data?.attributes
-        setStrapiData(strapiData)
+        const pricingStrapiData = jsonResponse?.data?.attributes
+        setStrapiData(pricingStrapiData)
       })
   }
 
   return (
-    <Layout seoData={strapiData?.seo}>
+    <Layout seoData={pricingStrapiData?.seo}>
       <>
         <FirstSection
-          title={firstSection?.title}
-          description={firstSection?.description}
+          title={pricingStrapiData?.title}
+          description={pricingStrapiData?.description}
           categories={firstSection?.categories}
           index={0}
           infoToggles={firstSection?.infoToggles}
-          licenses={firstSection?.categories[0].list}
-          onPremise={firstSection?.categories[1]}
+          licenses={cloudSection?.tiers.data}
+          onPremise={onPremiseSection}
           subOptionClickedID={props?.location?.hash?.substring(1)}
         />
+
         <LogosSlider className={styles?.slider} lightLogos={true} />
         <SecondSection
-          title={secondSection?.title}
-          subTitle={secondSection?.subTitle}
-          info={secondSection?.info}
+          title={faqSection?.title}
+          subTitle={faqSection?.subTitle}
+          info={faqSection?.info}
         />
       </>
     </Layout>
