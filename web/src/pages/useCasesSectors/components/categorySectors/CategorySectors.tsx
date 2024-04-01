@@ -20,6 +20,7 @@ export type ICategorySectorsProps = {
       icon: string
       link?: string
       link_route?: string
+      inside_description?: string
     }
   }[]
   subOptionClickedID?: string
@@ -69,6 +70,7 @@ const CategorySectors: React.FC<ICategorySectorsProps> = props => {
                 link,
                 icon,
                 description,
+                inside_description,
               } = subItem.attributes
               return (
                 <ListSectors
@@ -81,7 +83,7 @@ const CategorySectors: React.FC<ICategorySectorsProps> = props => {
                   link={link}
                   link_route={link_route}
                   secondCategory={secondCategory}
-                  inside_description={description}
+                  inside_description={inside_description}
                   opened={showResults === index + 1}
                   showResults={index => {
                     const element = document.getElementById("listItem__")
