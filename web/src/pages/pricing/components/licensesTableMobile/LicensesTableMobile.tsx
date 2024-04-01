@@ -32,7 +32,11 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
   } = props
 
   const getPrice = (item: any) => {
-    return switchPeriodValue === "year" ? item?.yearlyPrice : item?.monthlyPrice
+    if(switchPeriodValue === "year") {
+      return (item?.yearlyPrice == undefined || item?.yearlyPrice < 0) ? 'Custom pricing' : new Intl.NumberFormat('en-DE').format(item?.yearlyPrice);
+    } else {
+      return (item?.monthlyPrice == undefined || item?.monthlyPrice < 0) ? 'Custom pricing' : new Intl.NumberFormat('en-DE').format(item?.monthlyPrice);
+    }
   }
 
   return (
@@ -265,45 +269,43 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
           <div className={styles?.card__row}>
             <CardLeftColumn text={"Standard Support"} />
             <div className={`${cx("bodyBoldSM")}`}>
-              {typeof license?.attributes.features?.standardSupport == "boolean" ? (
-                <img
-                  className={styles?.icon}
-                  src={
-                    license?.attributes.features?.standardSupport
-                      ? images.checkIcon
-                      : images.closeIcon
-                  }
-                ></img>
-              ) : (
-                <p>
-                  ${" "}
-                  <span className={`${cx("bodyRegularCap neutral700")}`}>
-                    {license?.attributes.features?.standardSupport}
-                  </span>
-                </p>
-              )}
+              {license?.attributes.features?.standardSupport === "true" &&
+                  <img
+                      className={styles?.icon}
+                      src={images.checkIcon}></img>}
+              {license?.attributes.features?.standardSupport === "false" &&
+                  <img
+                      className={styles?.icon}
+                      src={images.closeIcon} ></img>}
+              {license?.attributes.features?.standardSupport === "extra" &&
+                  <p>
+                    ${" "}
+                    <span
+                        className={`${cx("bodyRegularCap neutral700")}`}>
+                              {"(Extra charges may apply)"}
+                            </span>
+                  </p>}
             </div>
           </div>
           <div className={styles?.card__row}>
             <CardLeftColumn text={"Premier Support"} />
             <div className={`${cx("bodyBoldSM")}`}>
-              {typeof license?.attributes.features?.premierSupport == "boolean" ? (
-                <img
-                  className={styles?.icon}
-                  src={
-                    license?.attributes.features?.premierSupport
-                      ? images.checkIcon
-                      : images.closeIcon
-                  }
-                ></img>
-              ) : (
-                <p>
-                  ${" "}
-                  <span className={`${cx("bodyRegularCap neutral700")}`}>
-                    {license?.attributes.features?.premierSupport}
-                  </span>
-                </p>
-              )}
+              {license?.attributes.features?.premierSupport === "true" &&
+                  <img
+                      className={styles?.icon}
+                      src={images.checkIcon}></img>}
+              {license?.attributes.features?.premierSupport === "false" &&
+                  <img
+                      className={styles?.icon}
+                      src={images.closeIcon} ></img>}
+              {license?.attributes.features?.premierSupport === "extra" &&
+                  <p>
+                    ${" "}
+                    <span
+                        className={`${cx("bodyRegularCap neutral700")}`}>
+                            {"(Extra charges may apply)"}
+                          </span>
+                  </p>}
             </div>
           </div>
         </div>

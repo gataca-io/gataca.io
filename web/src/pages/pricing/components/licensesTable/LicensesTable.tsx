@@ -411,30 +411,27 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
               <SubcategoryCell subcategory={"Premier Support"} />
               {products?.map(license => {
                 return (
-                  <>
-                    <td
-                      key={"PSPT__" + license?.attributes.type}
-                      className={`${cx("bodyBoldSM")}`}
-                    >
-                      {license?.attributes.features?.premierSupport === "true" &&
-                          <img
-                          className={styles?.table__body__row__cell__icon}
-                          src={images.checkIcon}></img>}
-                      {license?.attributes.features?.premierSupport === "false" &&
-                          <img
-                          className={styles?.table__body__row__cell__icon}
-                          src={images.closeIcon} ></img>}
-                      {license?.attributes.features?.premierSupport === "extra" &&
-                          <p>
-                            ${" "}
-                            <span
-                              className={`${cx("bodyRegularCap neutral700")}`}>
-                              {"(Extra charges may apply)"}
-                            </span>
-                          </p>}
-
-                    </td>
-                  </>
+                  <td
+                    key={"PSPT__" + license?.attributes.type}
+                    className={`${cx("bodyBoldSM")}`}
+                  >
+                    {license?.attributes.features?.premierSupport === "true" &&
+                        <img
+                        className={styles?.table__body__row__cell__icon}
+                        src={images.checkIcon}></img>}
+                    {license?.attributes.features?.premierSupport === "false" &&
+                        <img
+                        className={styles?.table__body__row__cell__icon}
+                        src={images.closeIcon} ></img>}
+                    {license?.attributes.features?.premierSupport === "extra" &&
+                        <p>
+                          ${" "}
+                          <span
+                            className={`${cx("bodyRegularCap neutral700")}`}>
+                            {"(Extra charges may apply)"}
+                          </span>
+                        </p>}
+                  </td>
                 )
               })}
             </tr>
