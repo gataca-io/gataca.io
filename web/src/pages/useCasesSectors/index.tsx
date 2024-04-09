@@ -13,20 +13,21 @@ import LogosSlider from "../../components/elements/logosSlider/LogosSlider"
 const UseCasesPage: React.FC<PageProps> = props => {
   const [useCasesSectorsData, setUseCasesSectors] = useState<any | undefined>()
   const [headerSectionLoaded, setHeaderSectionLoaded] = useState<boolean>(false)
-  const { headerSection, useCasesSection, useCasesAppliedSection } =
-    useCasesSectorsData ? useCasesSectorsData : []
   const [strapiData, setStrapiData] = useState<any | undefined>()
+  const { header,
+          useCasesSection,
+          industriesSection } =
+          strapiData ? strapiData : []
 
   React.useEffect(() => {
     if (!strapiData) {
       getStrapiData()
     }
-    getUseCasesSectors()
   }, [])
 
   const getStrapiData = async () => {
     await fetch(
-      `${process.env.STRAPI_API_URL}/api/uses-cases-and-sector?&populate=*`
+      `${process.env.STRAPI_API_URL}/api/uses-cases-and-sector?populate[header]=*&populate[industriesSection][populate][categories][populate]=*&populate[useCasesSection][populate]=*`
     )
       .then(response => response.json())
       .then(jsonResponse => {
@@ -34,23 +35,18 @@ const UseCasesPage: React.FC<PageProps> = props => {
         setStrapiData(strapiData)
       })
   }
-
-  const getUseCasesSectors = async () => {
-    const json_data = require("./data/useCasesSectorsData.json")
-    setUseCasesSectors(json_data?.data && json_data?.data)
-  }
   return (
     <Layout seoData={strapiData?.seo}>
       <>
         <HeaderSection
-          title={headerSection?.title}
-          description={headerSection?.description}
+          title={header?.title}
+          description={header?.description}
           setHeaderSectionLoaded={setHeaderSectionLoaded}
         />
         <UseCasesSection
           title={useCasesSection?.title}
           description={useCasesSection?.description}
-          list={useCasesSection?.list}
+          list={useCasesSection?.use_cases?.data}
           subOptionClickedID={
             props?.location?.hash?.substring(1) !== "otherIndustries"
               ? props?.location?.hash?.substring(1)
@@ -58,9 +54,9 @@ const UseCasesPage: React.FC<PageProps> = props => {
           }
         />
         <UseCasesAppliedSection
-          title={useCasesAppliedSection?.title}
-          description={useCasesAppliedSection?.description}
-          categories={useCasesAppliedSection?.categories}
+          title={industriesSection?.title}
+          description={industriesSection?.subtitle}
+          categories={industriesSection?.categories}
           index={0}
           subOptionClickedID={props?.location?.hash?.substring(1)}
         />

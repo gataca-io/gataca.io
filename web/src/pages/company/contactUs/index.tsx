@@ -8,23 +8,23 @@ import FirstSection from "./sections/firstSection/FirstSection"
 import SecondSection from "./sections/secondSection/SecondSection"
 
 const ContactUsPage: React.FC<PageProps> = () => {
-  const [contactUsData, setcontactUs] = useState<any | undefined>()
+  // const [contactUsData, setcontactUs] = useState<any | undefined>()
   const [strapiData, setStrapiData] = React.useState<any | undefined>()
-  const { firstSection, secondSection } = contactUsData ? contactUsData : []
+  const { reasonSection, faqSection } = strapiData ? strapiData : []
 
   React.useEffect(() => {
     if (!strapiData) {
       getStrapiData()
     }
-    getcontactUs()
+    // getcontactUs()
   }, [])
-  const getcontactUs = async () => {
-    const json_data = require("./data/contactUsData.json")
-    setcontactUs(json_data?.data && json_data?.data)
-  }
+  // const getcontactUs = async () => {
+  //   const json_data = require("./data/contactUsData.json")
+  //   setcontactUs(json_data?.data && json_data?.data)
+  // }
 
   const getStrapiData = async () => {
-    await fetch(`${process.env.STRAPI_API_URL}/api/pricing?&populate=*`)
+    await fetch(`${process.env.STRAPI_API_URL}/api/company-contact-us?populate%5Bseo%5D%5Bpopulate%5D=*&populate%5BreasonSection%5D%5Bpopulate%5D=*&populate%5BfaqSection%5D%5Bpopulate%5D%5Bfaqs%5D%5Bpopulate%5D=*`)
       .then(response => response.json())
       .then(jsonResponse => {
         const strapiData = jsonResponse?.data?.attributes
@@ -36,14 +36,14 @@ const ContactUsPage: React.FC<PageProps> = () => {
     <Layout seoData={strapiData?.seo}>
       <>
         <FirstSection
-          title={firstSection?.title}
-          description={firstSection?.description}
-          list={firstSection?.list}
+          title={reasonSection?.title}
+          description={reasonSection?.description}
+          list={reasonSection?.list?.data}
         />
         <SecondSection
-          title={secondSection?.title}
-          subTitle={secondSection?.subTitle}
-          info={secondSection?.info}
+          title={faqSection?.title}
+          subTitle={faqSection?.subtitle}
+          info={faqSection?.faqs?.data}
         />
         <PreFooterCTASection
           title={"Ready to start?"}

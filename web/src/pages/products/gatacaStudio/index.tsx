@@ -16,28 +16,28 @@ const GatacaStudioPage: React.FC<PageProps> = () => {
   >()
   const [strapiData, setStrapiData] = React.useState<any | undefined>()
   const {
-    firstSection,
-    secondSection,
-    thirdSection,
-    fourthSection,
-    fifthSection,
-    sixthSection,
-  } = gatacaStudioData ? gatacaStudioData : []
+    headerSection,
+    featureSection,
+    adSection,
+    whyStudioSection,
+    howWorksSection,
+    tierSection,
+  } = strapiData ? strapiData : []
 
   React.useEffect(() => {
     if (!strapiData) {
       getStrapiData()
     }
-    getGatacaStudioData()
+    // getGatacaStudioData()
   }, [])
 
-  const getGatacaStudioData = async () => {
-    const json_data = await require("./data/gatacaStudioData.json")
-    setGatacaStudioData(json_data?.data && json_data?.data)
-  }
+  // const getGatacaStudioData = async () => {
+  //   const json_data = await require("./data/gatacaStudioData.json")
+  //   setGatacaStudioData(json_data?.data && json_data?.data)
+  // }
 
   const getStrapiData = async () => {
-    await fetch(`${process.env.STRAPI_API_URL}/api/gataca-studio?&populate=*`)
+    await fetch(`${process.env.STRAPI_API_URL}/api/gataca-studio?populate[seo]=*&populate[featureSection][populate]=*&populate[whyStudioSection][populate]=*&populate[howWorksSection][populate]=*&populate[tierSection][populate][tiers][populate]=*&populate[headerSection][populate]=*&populate[adSection][populate]=*`)
       .then(response => response.json())
       .then(jsonResponse => {
         const strapiData = jsonResponse?.data?.attributes
@@ -49,30 +49,30 @@ const GatacaStudioPage: React.FC<PageProps> = () => {
     <Layout seoData={strapiData?.seo}>
       <>
         <FirstSection
-          title={firstSection?.title}
-          description={firstSection?.description}
-          button={firstSection?.button}
+          title={headerSection?.title}
+          description={headerSection?.description}
+          button={headerSection?.cta}
         />
         <SecondSection
-          title={secondSection?.title}
-          list={secondSection?.list}
-          description={secondSection?.description}
+          title={featureSection?.title}
+          list={featureSection?.features?.data}
+          description={featureSection?.description}
         />
-        <ThirdSection title={thirdSection?.title} list={thirdSection?.list} />
+        <ThirdSection title={adSection?.title} list={adSection?.ad_features?.data} />
         <FourthSection
-          title={fourthSection?.title}
-          description={fourthSection?.description}
-          advantages={fourthSection?.advantages}
+          title={whyStudioSection?.title}
+          description={whyStudioSection?.description}
+          advantages={whyStudioSection?.advantages?.data}
         />
         <FifthSection
-          title={fifthSection?.title}
-          description={fifthSection?.description}
+          title={howWorksSection?.title}
+          description={howWorksSection?.description}
         />
         <SixthSection
-          title={sixthSection?.title}
-          subTitle={sixthSection?.subTitle}
-          description={sixthSection?.description}
-          list={sixthSection?.list}
+          title={tierSection?.title}
+          subTitle={tierSection?.subtitle}
+          description={tierSection?.description}
+          list={tierSection?.tiers.data}
         />
         <PreFooterCTASection
           title={"Ready to start?"}

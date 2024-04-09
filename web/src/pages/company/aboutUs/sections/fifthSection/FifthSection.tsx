@@ -6,7 +6,10 @@ import * as styles from "./fifthSection.module.scss"
 export type ISectionProps = {
   title: string
   list: {
-    title: string
+    id: string
+    attributes: {
+      title: string
+    }
   }[]
 }
 
@@ -41,7 +44,7 @@ const FifthSection: React.FC<ISectionProps> = props => {
                   <img src={awardsLogos[index]}></img>
                 </div>
                 <p className={`${styles.title} ${cx("bodyBoldLG")}`}>
-                  {item.title}
+                  {item.attributes.title}
                 </p>
               </div>
             )

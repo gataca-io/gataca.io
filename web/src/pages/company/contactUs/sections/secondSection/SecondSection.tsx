@@ -9,9 +9,12 @@ export type ISectionProps = {
   title: string
   subTitle: string
   info: {
-    title: string
-    index: number
-    list: []
+    id: number
+    attributes: {
+      title: string
+      index: number
+      list: []
+    }
   }[]
 }
 
@@ -50,7 +53,7 @@ const SecondSection: React.FC<ISectionProps> = props => {
                 className={styles?.faqsSection__leftSide__bullets}
               >
                 {info?.map((item, index) => {
-                  const { title } = item
+                  const { title } = item.attributes
 
                   return (
                     <ListInfo
@@ -75,7 +78,7 @@ const SecondSection: React.FC<ISectionProps> = props => {
             <div className={styles?.faqsSection__rightSide}>
               <>
                 {info &&
-                  info[openItem]?.list?.map((el, index) => {
+                  info[openItem]?.attributes.list?.map((el, index) => {
                     const { title, description } = el
 
                     return (

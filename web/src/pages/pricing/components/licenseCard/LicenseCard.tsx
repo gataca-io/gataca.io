@@ -41,7 +41,7 @@ const Feature: React.FC<IFeatureProps> = props => {
             : styles?.license__features__list__item__content
         }
       >
-        {feature && <span>{feature}&nbsp;</span>}
+        {feature && <span>{feature < 0 ? '∞' : feature}&nbsp;</span>}
 
         <span className={styles?.featureName}>{label}</span>
       </div>
@@ -67,7 +67,11 @@ const LicenseCard: React.FC<ILicenseCardProps> = props => {
   const { license, showAllDetails, period, isCurrentLicense } = props
 
   const getPrice = (item: any) => {
-    return period === "year" ? item?.yearlyPrice : item?.monthlyPrice
+    if(period === "year") {
+      return (item?.yearlyPrice == undefined || item?.yearlyPrice < 0) ? 'Custom pricing' : new Intl.NumberFormat('en-DE').format(item?.yearlyPrice);
+    } else {
+      return (item?.monthlyPrice == undefined || item?.monthlyPrice < 0) ? 'Custom pricing' : new Intl.NumberFormat('en-DE').format(item?.monthlyPrice);
+    }
   }
 
   const licenseIsEnterprise = license?.name

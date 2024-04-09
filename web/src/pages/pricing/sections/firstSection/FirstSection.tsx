@@ -26,7 +26,8 @@ export type ISectionProps = {
   }[]
   onPremise: {
     panelTitle: string
-    paragraphs: string[]
+    paragraph_1: string
+    paragraph_2: string
     button: ButtonModel
   }
   licenses: IProductModel[]
@@ -148,14 +149,12 @@ const FirstSection: React.FC<ISectionProps> = props => {
               >
                 {licenses?.map((item: any, index) => {
                   return (
-                    <>
-                      <LicenseCard
-                        key={"licenseP__" + item?.type + index}
-                        license={item}
-                        period={switchPeriodValue}
-                        isCurrentLicense={false}
-                      />
-                    </>
+                    <LicenseCard
+                      key={"licenseP__" + item?.attributes.type + index}
+                      license={item?.attributes}
+                      period={switchPeriodValue}
+                      isCurrentLicense={false}
+                    />
                   )
                 })}
               </div>
@@ -197,7 +196,7 @@ const FirstSection: React.FC<ISectionProps> = props => {
           ) : (
             <OnPremisePanel
               panelTitle={onPremise?.panelTitle}
-              paragraphs={onPremise?.paragraphs}
+              paragraphs={[onPremise?.paragraph_1, onPremise?.paragraph_2]}
               button={onPremise?.button}
             />
           )}

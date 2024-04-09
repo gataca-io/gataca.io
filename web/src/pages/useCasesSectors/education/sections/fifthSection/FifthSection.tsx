@@ -8,12 +8,25 @@ import { IconModel } from "../../../../../interfaces/interfaces"
 export type ISectionProps = {
   title: string
   stories: {
-    title: string
-    description: string
-    route?: string
-    listTitle: string
-    learnMore?: string
-    list: []
+    id: number
+    attributes: {
+      title: string
+      description: string
+      route?: string
+      listTitle: string
+      link?: {
+        label: string
+        route: string
+      }
+      credentials: {
+        data: {
+          id: number
+          attributes: {
+            category: string
+          }
+        }[]
+      }
+  }
   }[]
   list: {
     title: string
@@ -57,7 +70,7 @@ const FifthSection: React.FC<ISectionProps> = props => {
         </div>
         <div id="storiesContainer" className={styles.stories__container}>
           {stories?.map((el, index) => {
-            const { title, description, listTitle, learnMore, list } = el
+            const { title, description, listTitle, link, credentials } = el.attributes
             return (
               <div
                 id={"feature__" + index}
@@ -91,8 +104,8 @@ const FifthSection: React.FC<ISectionProps> = props => {
                       {listTitle}
                     </p>
 
-                    {list?.map((item, index) => {
-                      const { title } = item
+                    {credentials.data?.map((item, index) => {
+                      const { category } = item.attributes
                       return (
                         <p
                           key={"listItem" + index}
@@ -101,21 +114,21 @@ const FifthSection: React.FC<ISectionProps> = props => {
                           <span className={cx("marginRight12")}>
                             <img src={images.checkIcon} />
                           </span>
-                          <span>{title}</span>
+                          <span>{category}</span>
                         </p>
                       )
                     })}
-                    {learnMore && (
+                    {link && (
                       <div
                         className={styles.link__container}
                         key={"link__" + index}
                       >
                         <Link
                           className={cx("buttonMD")}
-                          to={el.route || ""}
+                          to={link.route || ""}
                           target="_blank"
                         >
-                          {learnMore}
+                          {link.label}
                         </Link>
                         <img src={images.chevronRight}></img>
                       </div>

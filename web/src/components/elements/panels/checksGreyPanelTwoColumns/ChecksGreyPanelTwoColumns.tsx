@@ -7,8 +7,12 @@ export type ISectionProps = {
   title: string
   description?: string
   list: {
-    title: string
-    description?: string
+    id: number
+    attributes: {
+      description: string
+      title: string
+      identifier: string
+    }
   }[]
   image: string
   leftSideClassName?: string
@@ -46,7 +50,7 @@ const ChecksGreyPanelTwoColumns: React.FC<ISectionProps> = props => {
           <div className={styles.checksGreyPanelTwoColumns__rightSide__bullets}>
             <div>
               {list?.slice(0, 5)?.map((item, index) => {
-                const { title, description } = item
+                const { title, description } = item.attributes
 
                 return (
                   <div
@@ -72,7 +76,7 @@ const ChecksGreyPanelTwoColumns: React.FC<ISectionProps> = props => {
             </div>
             <div>
               {list?.slice(5, list?.length)?.map((item, index) => {
-                const { title, description } = item
+                const { title, description } = item.attributes
 
                 return (
                   <div

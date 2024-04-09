@@ -7,18 +7,24 @@ import CredentialExample from "./components/credential/CredentialExample"
 export type ISectionProps = {
   title: string
   list: {
-    title: string
-    description: string
-    image: string
+    id: string
+    attributes: {
+      title: string
+      description: string
+      image: string
+    }
   }[]
   credentials: {
-    icon: string
-    category: string
-    issuer: string
-    mainData: string
-    issuanceDate: string
-    expirationDate: string
-    validated: boolean
+    id: string
+    attributes: {
+      icon: string
+      category: string
+      issuer: string
+      mainData: string
+      issuanceDate: string
+      expirationDate: string
+      validated: boolean
+    }
   }[]
 }
 
@@ -52,7 +58,7 @@ const SixthSection: React.FC<ISectionProps> = props => {
           <p className={`${cx("heading3 marginBottom12")}`}>{title}</p>
           <div className={styles.sixthSection__leftSide__bullets}>
             {list?.map((item, index) => {
-              const { title, description } = item
+              const { title, description } = item.attributes
 
               return (
                 <div
@@ -86,7 +92,7 @@ const SixthSection: React.FC<ISectionProps> = props => {
                   issuanceDate,
                   expirationDate,
                   validated,
-                } = item
+                } = item.attributes
                 return (
                   <CredentialExample
                     key={"credential__example" + index}

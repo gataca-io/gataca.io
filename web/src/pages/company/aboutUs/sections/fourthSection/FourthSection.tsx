@@ -11,9 +11,12 @@ export type ISectionProps = {
   description: string
   button: ButtonModel
   list: {
-    name: string
-    title: string
-    linkedinRoute: string
+    id: string
+    attributes: {
+      name: string
+      role: string
+      linkedinRoute: string
+    }
   }[]
 }
 
@@ -64,14 +67,14 @@ const FourthSection: React.FC<ISectionProps> = props => {
                         styles.name
                       }`}
                     >
-                      {item.name}
+                      {item.attributes.name}
                     </h6>
                     <p className={`${styles.title} ${cx("bodyBoldMD")}`}>
-                      {item.title}
+                      {item.attributes.role}
                     </p>
                   </div>
                   <div className={`${styles.rightColumn}`}>
-                    <a href={item.linkedinRoute} target="_blank">
+                    <a href={item.attributes.linkedinRoute} target="_blank">
                       <img src={images.linkedinLogo}></img>
                     </a>
                   </div>
