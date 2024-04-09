@@ -21,90 +21,90 @@ spec:
       labels:
         app: strapiweb
     spec:
-      containers:        
+      containers:
         - name: strapiweb
-          image: gatacaid/strapi:6.0.1
+          image: gatacaid/strapi:6.1.0
           imagePullPolicy: Always
-          securityContext: 
+          securityContext:
             runAsNonRoot: true
-            runAsUser: 2000 
+            runAsUser: 2000
             allowPrivilegeEscalation: false
             seccompProfile:
               type: RuntimeDefault
-            capabilities: 
+            capabilities:
               drop:
                 - ALL
           env:
-          - name: APP_KEYS
-            valueFrom:
-              secretKeyRef:
-                key: APP_KEYS
-                name: strapi-api
-          - name: API_TOKEN_SALT
-            valueFrom:
-              secretKeyRef:
-                key: API_TOKEN_SALT
-                name: strapi-api
-          - name: ADMIN_JWT_SECRET
-            valueFrom:
-              secretKeyRef:
-                key: ADMIN_JWT_SECRET
-                name: strapi-api
-          - name: JWT_SECRET
-            valueFrom:
-              secretKeyRef:
-                key: JWT_SECRET
-                name: strapi-api
-          - name: DATABASE_CLIENT
-            value: "postgres"
-          - name: DATABASE_HOST
-            value: "postgres.database.svc.cluster.local"
-          - name: DATABASE_PORT
-            value: "5432"
-          - name: DATABASE_NAME
-            valueFrom:
-              secretKeyRef:
-                key: POSTGRES_DB
-                name: strapidb-secret
-          - name: DATABASE_USERNAME
-            valueFrom:
-              secretKeyRef:
-                key: POSTGRES_USER
-                name: strapidb-secret
-          - name: DATABASE_PASSWORD 
-            valueFrom:
-              secretKeyRef:
-                key: POSTGRES_PASSWORD
-                name: strapidb-secret
-          - name: AWS_BUCKET
-            value: media-gataca
-          - name: AWS_BUCKET_NAME
-            value: media-gataca
-          - name: AWS_REGION
-            value: eu-west-1
-          - name: AWS_ACCESS_KEY_ID
-            valueFrom:
-              secretKeyRef:
-                key: AWS_ACCESS_KEY_ID
-                name: strapi-api
-          - name: AWS_ACCESS_SECRET
-            valueFrom:
-              secretKeyRef:
-                key: AWS_ACCESS_SECRET
-                name: strapi-api
+            - name: APP_KEYS
+              valueFrom:
+                secretKeyRef:
+                  key: APP_KEYS
+                  name: strapi-api
+            - name: API_TOKEN_SALT
+              valueFrom:
+                secretKeyRef:
+                  key: API_TOKEN_SALT
+                  name: strapi-api
+            - name: ADMIN_JWT_SECRET
+              valueFrom:
+                secretKeyRef:
+                  key: ADMIN_JWT_SECRET
+                  name: strapi-api
+            - name: JWT_SECRET
+              valueFrom:
+                secretKeyRef:
+                  key: JWT_SECRET
+                  name: strapi-api
+            - name: DATABASE_CLIENT
+              value: "postgres"
+            - name: DATABASE_HOST
+              value: "postgres.database.svc.cluster.local"
+            - name: DATABASE_PORT
+              value: "5432"
+            - name: DATABASE_NAME
+              valueFrom:
+                secretKeyRef:
+                  key: POSTGRES_DB
+                  name: strapidb-secret
+            - name: DATABASE_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  key: POSTGRES_USER
+                  name: strapidb-secret
+            - name: DATABASE_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  key: POSTGRES_PASSWORD
+                  name: strapidb-secret
+            - name: AWS_BUCKET
+              value: media-gataca
+            - name: AWS_BUCKET_NAME
+              value: media-gataca
+            - name: AWS_REGION
+              value: eu-west-1
+            - name: AWS_ACCESS_KEY_ID
+              valueFrom:
+                secretKeyRef:
+                  key: AWS_ACCESS_KEY_ID
+                  name: strapi-api
+            - name: AWS_ACCESS_SECRET
+              valueFrom:
+                secretKeyRef:
+                  key: AWS_ACCESS_SECRET
+                  name: strapi-api
           ports:
-          - containerPort: 1337
-            name: strapiweb
-            protocol: TCP
+            - containerPort: 1337
+              name: strapiweb
+              protocol: TCP
           volumeMounts:
       imagePullSecrets:
-      - name: regcred
+        - name: regcred
 ---
 apiVersion: v1
 kind: Service
 metadata:
   labels:
-    app : strapiadmin
+    app: strapiadmin
   name: strapiadmin
   namespace: web
 spec:
