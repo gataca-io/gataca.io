@@ -4,7 +4,8 @@
   "info": {
     "singularName": "pricing",
     "pluralName": "pricings",
-    "displayName": "6. Pricing"
+    "displayName": "6.1 Pricing",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,6 +16,29 @@
       "type": "component",
       "repeatable": false,
       "component": "shared.seo"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "faqSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "pricing.faq-section"
+    },
+    "cloudSection": {
+      "displayName": "cloud",
+      "type": "component",
+      "repeatable": false,
+      "component": "pricing.cloud"
+    },
+    "onPremiseSection": {
+      "displayName": "OnPremise",
+      "type": "component",
+      "repeatable": false,
+      "component": "pricing.on-premise"
     }
   }
 }

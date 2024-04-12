@@ -1,0 +1,128 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: strapiweb
+  name: strapiweb
+  namespace: web
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: strapiweb
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: strapiweb
+    spec:
+      containers:
+        - name: strapiweb
+          image: gatacaid/strapi:6.1.0-SNAPSHOT
+          imagePullPolicy: Always
+          securityContext:
+            runAsNonRoot: true
+            runAsUser: 2000
+            allowPrivilegeEscalation: false
+            seccompProfile:
+              type: RuntimeDefault
+            capabilities:
+              drop:
+                - ALL
+          env:
+            - name: APP_KEYS
+              valueFrom:
+                secretKeyRef:
+                  key: APP_KEYS
+                  name: strapi-api
+            - name: API_TOKEN_SALT
+              valueFrom:
+                secretKeyRef:
+                  key: API_TOKEN_SALT
+                  name: strapi-api
+            - name: ADMIN_JWT_SECRET
+              valueFrom:
+                secretKeyRef:
+                  key: ADMIN_JWT_SECRET
+                  name: strapi-api
+            - name: DATABASE_CLIENT
+              value: "postgres"
+            - name: DATABASE_HOST
+              #            value: "strapidb.web.svc.cluster.local"
+              value: "postgres.database.svc.cluster.local"
+            - name: DATABASE_PORT
+              value: "5432"
+            - name: DATABASE_NAME
+              valueFrom:
+                secretKeyRef:
+                  key: POSTGRES_DB
+                  name: strapidb-secret
+            - name: DATABASE_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  key: POSTGRES_USER
+                  name: strapidb-secret
+            - name: DATABASE_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  key: POSTGRES_PASSWORD
+                  name: strapidb-secret
+            - name: AWS_BUCKET_NAME
+              value: "media-dev-gataca"
+            - name: AWS_REGION
+              value: "eu-central-1"
+            - name: AWS_ACCESS_KEY_ID
+              valueFrom:
+                secretKeyRef:
+                  key: AWS_ACCESS_KEY_ID
+                  name: strapi-api
+            - name: AWS_ACCESS_SECRET
+              valueFrom:
+                secretKeyRef:
+                  key: AWS_ACCESS_SECRET
+                  name: strapi-api
+          ports:
+            - containerPort: 1337
+              name: strapiweb
+              protocol: TCP
+          volumeMounts:
+      #            - mountPath: /etc/ssl
+      #              name: postgres-ssl-certs
+      #            - mountPath: /etc/ssl_ca
+      #              name: postgres-ca
+      #            - mountPath: /etc/config
+      #              name: postgres-configuration-file
+      imagePullSecrets:
+        - name: regcred
+#      volumes:
+#      - name: postgres-ssl-certs
+#        secret:
+#          secretName: strapidb-tls
+#      - name: postgres-ca
+#        secret:
+#          secretName: postgresql-ca
+#      - name: postgres-configuration-file
+#        configMap:
+#          name: strapi-env
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: strapiadmin
+  name: strapiadmin
+  namespace: web
+spec:
+  type: ClusterIP
+  clusterIP: None
+  ports:
+    - port: 1337
+      name: strapiadminport
+      targetPort: 1337
+  selector:
+    app: strapiweb

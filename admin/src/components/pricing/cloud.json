@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_pricing_clouds",
+  "info": {
+    "displayName": "cloud",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "infoToggles": {
+      "displayName": "PricingDetails",
+      "type": "component",
+      "repeatable": false,
+      "component": "pricing.pricing-details"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "identifier": {
+      "type": "string"
+    },
+    "tiers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tier.tier"
+    }
+  }
+}
