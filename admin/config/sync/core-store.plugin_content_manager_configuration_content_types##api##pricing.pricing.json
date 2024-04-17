@@ -34,6 +34,90 @@
           "sortable": false
         }
       },
+      "title": {
+        "edit": {
+          "label": "title",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "title",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "description": {
+        "edit": {
+          "label": "description",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "description",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "faqSection": {
+        "edit": {
+          "label": "faqSection",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "faqSection",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "cloudSection": {
+        "edit": {
+          "label": "cloudSection",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "cloudSection",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "onPremiseSection": {
+        "edit": {
+          "label": "onPremiseSection",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "onPremiseSection",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "test": {
+        "edit": {
+          "label": "test",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "test",
+          "searchable": true,
+          "sortable": true
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -75,6 +159,40 @@
           {
             "name": "seo",
             "size": 12
+          }
+        ],
+        [
+          {
+            "name": "title",
+            "size": 6
+          },
+          {
+            "name": "description",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "faqSection",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "cloudSection",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "onPremiseSection",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "test",
+            "size": 6
           }
         ]
       ]

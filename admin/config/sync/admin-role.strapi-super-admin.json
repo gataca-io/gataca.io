@@ -5,6 +5,102 @@
   "permissions": [
     {
       "action": "plugin::content-manager.explorer.create",
+      "subject": "api::ad-feature.ad-feature",
+      "properties": {
+        "fields": [
+          "title",
+          "description",
+          "identifier"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::ad-feature.ad-feature",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::ad-feature.ad-feature",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::ad-feature.ad-feature",
+      "properties": {
+        "fields": [
+          "title",
+          "description",
+          "identifier"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::ad-feature.ad-feature",
+      "properties": {
+        "fields": [
+          "title",
+          "description",
+          "identifier"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::advantage.advantage",
+      "properties": {
+        "fields": [
+          "title",
+          "description",
+          "icon"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::advantage.advantage",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::advantage.advantage",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::advantage.advantage",
+      "properties": {
+        "fields": [
+          "title",
+          "description",
+          "icon"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::advantage.advantage",
+      "properties": {
+        "fields": [
+          "title",
+          "description",
+          "icon"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
       "subject": "api::author.author",
       "properties": {
         "fields": [
@@ -50,6 +146,102 @@
           "Role",
           "Image",
           "LinkedInURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::award.award",
+      "properties": {
+        "fields": [
+          "title",
+          "description",
+          "icon"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::award.award",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::award.award",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::award.award",
+      "properties": {
+        "fields": [
+          "title",
+          "description",
+          "icon"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::award.award",
+      "properties": {
+        "fields": [
+          "title",
+          "description",
+          "icon"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::benefit.benefit",
+      "properties": {
+        "fields": [
+          "title",
+          "number",
+          "description"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::benefit.benefit",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::benefit.benefit",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::benefit.benefit",
+      "properties": {
+        "fields": [
+          "title",
+          "number",
+          "description"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::benefit.benefit",
+      "properties": {
+        "fields": [
+          "title",
+          "number",
+          "description"
         ]
       },
       "conditions": []
@@ -182,6 +374,78 @@
     },
     {
       "action": "plugin::content-manager.explorer.create",
+      "subject": "api::certification.certification",
+      "properties": {
+        "fields": [
+          "title",
+          "firstParagraph",
+          "secondParagraph",
+          "thirdParagraph",
+          "fourthParagraph",
+          "image",
+          "button.label",
+          "button.url",
+          "button.outsideWeb",
+          "button.outlined",
+          "button.filename"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::certification.certification",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::certification.certification",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::certification.certification",
+      "properties": {
+        "fields": [
+          "title",
+          "firstParagraph",
+          "secondParagraph",
+          "thirdParagraph",
+          "fourthParagraph",
+          "image",
+          "button.label",
+          "button.url",
+          "button.outsideWeb",
+          "button.outlined",
+          "button.filename"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::certification.certification",
+      "properties": {
+        "fields": [
+          "title",
+          "firstParagraph",
+          "secondParagraph",
+          "thirdParagraph",
+          "fourthParagraph",
+          "image",
+          "button.label",
+          "button.url",
+          "button.outsideWeb",
+          "button.outlined",
+          "button.filename"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
       "subject": "api::company-about-us.company-about-us",
       "properties": {
         "fields": [
@@ -189,7 +453,33 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "headerSection.title",
+          "headerSection.subtitle",
+          "headerSection.description",
+          "headerSection.hero",
+          "headerSection.cta.label",
+          "headerSection.cta.url",
+          "headerSection.cta.external_url",
+          "ourStorySection.title",
+          "ourStorySection.firstParagraph",
+          "ourStorySection.secondParagraph",
+          "ourStorySection.thirdParagraph",
+          "ourStorySection.image",
+          "missionDescription",
+          "valuesSection.title",
+          "valuesSection.values",
+          "employeeSection.title",
+          "employeeSection.description",
+          "employeeSection.button.label",
+          "employeeSection.button.url",
+          "employeeSection.button.outsideWeb",
+          "employeeSection.button.outlined",
+          "employeeSection.button.filename",
+          "employeeSection.employees",
+          "awardsSection.title",
+          "awardsSection.awards",
+          "fundingDescription"
         ]
       },
       "conditions": []
@@ -215,7 +505,33 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "headerSection.title",
+          "headerSection.subtitle",
+          "headerSection.description",
+          "headerSection.hero",
+          "headerSection.cta.label",
+          "headerSection.cta.url",
+          "headerSection.cta.external_url",
+          "ourStorySection.title",
+          "ourStorySection.firstParagraph",
+          "ourStorySection.secondParagraph",
+          "ourStorySection.thirdParagraph",
+          "ourStorySection.image",
+          "missionDescription",
+          "valuesSection.title",
+          "valuesSection.values",
+          "employeeSection.title",
+          "employeeSection.description",
+          "employeeSection.button.label",
+          "employeeSection.button.url",
+          "employeeSection.button.outsideWeb",
+          "employeeSection.button.outlined",
+          "employeeSection.button.filename",
+          "employeeSection.employees",
+          "awardsSection.title",
+          "awardsSection.awards",
+          "fundingDescription"
         ]
       },
       "conditions": []
@@ -229,7 +545,33 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "headerSection.title",
+          "headerSection.subtitle",
+          "headerSection.description",
+          "headerSection.hero",
+          "headerSection.cta.label",
+          "headerSection.cta.url",
+          "headerSection.cta.external_url",
+          "ourStorySection.title",
+          "ourStorySection.firstParagraph",
+          "ourStorySection.secondParagraph",
+          "ourStorySection.thirdParagraph",
+          "ourStorySection.image",
+          "missionDescription",
+          "valuesSection.title",
+          "valuesSection.values",
+          "employeeSection.title",
+          "employeeSection.description",
+          "employeeSection.button.label",
+          "employeeSection.button.url",
+          "employeeSection.button.outsideWeb",
+          "employeeSection.button.outlined",
+          "employeeSection.button.filename",
+          "employeeSection.employees",
+          "awardsSection.title",
+          "awardsSection.awards",
+          "fundingDescription"
         ]
       },
       "conditions": []
@@ -297,7 +639,13 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "reasonSection.title",
+          "reasonSection.description",
+          "reasonSection.list",
+          "faqSection.title",
+          "faqSection.subtitle",
+          "faqSection.faqs"
         ]
       },
       "conditions": []
@@ -323,7 +671,13 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "reasonSection.title",
+          "reasonSection.description",
+          "reasonSection.list",
+          "faqSection.title",
+          "faqSection.subtitle",
+          "faqSection.faqs"
         ]
       },
       "conditions": []
@@ -337,7 +691,13 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "reasonSection.title",
+          "reasonSection.description",
+          "reasonSection.list",
+          "faqSection.title",
+          "faqSection.subtitle",
+          "faqSection.faqs"
         ]
       },
       "conditions": []
@@ -351,7 +711,29 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "headerSection.title",
+          "headerSection.subtitle",
+          "headerSection.description",
+          "headerSection.hero",
+          "headerSection.cta.label",
+          "headerSection.cta.url",
+          "headerSection.cta.external_url",
+          "typeSection.title",
+          "typeSection.subtitle",
+          "typeSection.description",
+          "typeSection.link.label",
+          "typeSection.link.route",
+          "typeSection.types",
+          "becomeSection.title",
+          "becomeSection.description",
+          "becomeSection.steps",
+          "partnershipSection.title",
+          "partnershipSection.description",
+          "partnershipSection.list",
+          "applySection.title",
+          "applySection.subtitle",
+          "applySection.description"
         ]
       },
       "conditions": []
@@ -377,7 +759,29 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "headerSection.title",
+          "headerSection.subtitle",
+          "headerSection.description",
+          "headerSection.hero",
+          "headerSection.cta.label",
+          "headerSection.cta.url",
+          "headerSection.cta.external_url",
+          "typeSection.title",
+          "typeSection.subtitle",
+          "typeSection.description",
+          "typeSection.link.label",
+          "typeSection.link.route",
+          "typeSection.types",
+          "becomeSection.title",
+          "becomeSection.description",
+          "becomeSection.steps",
+          "partnershipSection.title",
+          "partnershipSection.description",
+          "partnershipSection.list",
+          "applySection.title",
+          "applySection.subtitle",
+          "applySection.description"
         ]
       },
       "conditions": []
@@ -391,7 +795,71 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "headerSection.title",
+          "headerSection.subtitle",
+          "headerSection.description",
+          "headerSection.hero",
+          "headerSection.cta.label",
+          "headerSection.cta.url",
+          "headerSection.cta.external_url",
+          "typeSection.title",
+          "typeSection.subtitle",
+          "typeSection.description",
+          "typeSection.link.label",
+          "typeSection.link.route",
+          "typeSection.types",
+          "becomeSection.title",
+          "becomeSection.description",
+          "becomeSection.steps",
+          "partnershipSection.title",
+          "partnershipSection.description",
+          "partnershipSection.list",
+          "applySection.title",
+          "applySection.subtitle",
+          "applySection.description"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::contact-reason.contact-reason",
+      "properties": {
+        "fields": [
+          "title"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::contact-reason.contact-reason",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::contact-reason.contact-reason",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::contact-reason.contact-reason",
+      "properties": {
+        "fields": [
+          "title"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::contact-reason.contact-reason",
+      "properties": {
+        "fields": [
+          "title"
         ]
       },
       "conditions": []
@@ -473,17 +941,349 @@
     },
     {
       "action": "plugin::content-manager.explorer.create",
+      "subject": "api::credential.credential",
+      "properties": {
+        "fields": [
+          "category",
+          "icon",
+          "issuanceDate",
+          "issuer",
+          "mainData",
+          "validated",
+          "expirationDate"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::credential.credential",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::credential.credential",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::credential.credential",
+      "properties": {
+        "fields": [
+          "category",
+          "icon",
+          "issuanceDate",
+          "issuer",
+          "mainData",
+          "validated",
+          "expirationDate"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::credential.credential",
+      "properties": {
+        "fields": [
+          "category",
+          "icon",
+          "issuanceDate",
+          "issuer",
+          "mainData",
+          "validated",
+          "expirationDate"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::employee.employee",
+      "properties": {
+        "fields": [
+          "role",
+          "name",
+          "linkedinRoute",
+          "portrait"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::employee.employee",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::employee.employee",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::employee.employee",
+      "properties": {
+        "fields": [
+          "role",
+          "name",
+          "linkedinRoute",
+          "portrait"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::employee.employee",
+      "properties": {
+        "fields": [
+          "role",
+          "name",
+          "linkedinRoute",
+          "portrait"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
       "subject": "api::entry.entry",
       "properties": {
         "fields": [
-          "Body",
-          "HeroImage",
-          "Title",
           "seo.metaTitle",
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "firstSection.leftButton.label",
+          "firstSection.leftButton.url",
+          "firstSection.leftButton.outsideWeb",
+          "firstSection.leftButton.outlined",
+          "firstSection.leftButton.filename",
+          "firstSection.rightButton.label",
+          "firstSection.rightButton.url",
+          "firstSection.rightButton.outsideWeb",
+          "firstSection.rightButton.outlined",
+          "firstSection.rightButton.filename",
+          "firstSection.moreButton.label",
+          "firstSection.moreButton.url",
+          "firstSection.moreButton.outsideWeb",
+          "firstSection.moreButton.outlined",
+          "firstSection.moreButton.filename",
+          "firstSection.learnMoreButton.label",
+          "firstSection.learnMoreButton.url",
+          "firstSection.learnMoreButton.outsideWeb",
+          "firstSection.learnMoreButton.outlined",
+          "firstSection.learnMoreButton.filename",
+          "firstSection.advantages.description",
+          "firstSection.advantages.icon",
+          "firstSection.advantages.title",
+          "firstSection.feedbacks.comment",
+          "firstSection.feedbacks.persons",
+          "firstSection.feedbacks.roles",
+          "firstSection.useCases.description",
+          "firstSection.useCases.title",
+          "firstSection.useCases.identifier",
+          "firstSection.title",
+          "firstSection.description",
+          "firstSection.subtitle",
+          "thirdSection.leftButton.label",
+          "thirdSection.leftButton.url",
+          "thirdSection.leftButton.outsideWeb",
+          "thirdSection.leftButton.outlined",
+          "thirdSection.leftButton.filename",
+          "thirdSection.rightButton.label",
+          "thirdSection.rightButton.url",
+          "thirdSection.rightButton.outsideWeb",
+          "thirdSection.rightButton.outlined",
+          "thirdSection.rightButton.filename",
+          "thirdSection.moreButton.label",
+          "thirdSection.moreButton.url",
+          "thirdSection.moreButton.outsideWeb",
+          "thirdSection.moreButton.outlined",
+          "thirdSection.moreButton.filename",
+          "thirdSection.learnMoreButton.label",
+          "thirdSection.learnMoreButton.url",
+          "thirdSection.learnMoreButton.outsideWeb",
+          "thirdSection.learnMoreButton.outlined",
+          "thirdSection.learnMoreButton.filename",
+          "thirdSection.advantages.description",
+          "thirdSection.advantages.icon",
+          "thirdSection.advantages.title",
+          "thirdSection.feedbacks.comment",
+          "thirdSection.feedbacks.persons",
+          "thirdSection.feedbacks.roles",
+          "thirdSection.useCases.description",
+          "thirdSection.useCases.title",
+          "thirdSection.useCases.identifier",
+          "thirdSection.title",
+          "thirdSection.description",
+          "thirdSection.subtitle",
+          "fourthSection.leftButton.label",
+          "fourthSection.leftButton.url",
+          "fourthSection.leftButton.outsideWeb",
+          "fourthSection.leftButton.outlined",
+          "fourthSection.leftButton.filename",
+          "fourthSection.rightButton.label",
+          "fourthSection.rightButton.url",
+          "fourthSection.rightButton.outsideWeb",
+          "fourthSection.rightButton.outlined",
+          "fourthSection.rightButton.filename",
+          "fourthSection.moreButton.label",
+          "fourthSection.moreButton.url",
+          "fourthSection.moreButton.outsideWeb",
+          "fourthSection.moreButton.outlined",
+          "fourthSection.moreButton.filename",
+          "fourthSection.learnMoreButton.label",
+          "fourthSection.learnMoreButton.url",
+          "fourthSection.learnMoreButton.outsideWeb",
+          "fourthSection.learnMoreButton.outlined",
+          "fourthSection.learnMoreButton.filename",
+          "fourthSection.advantages.description",
+          "fourthSection.advantages.icon",
+          "fourthSection.advantages.title",
+          "fourthSection.feedbacks.comment",
+          "fourthSection.feedbacks.persons",
+          "fourthSection.feedbacks.roles",
+          "fourthSection.useCases.description",
+          "fourthSection.useCases.title",
+          "fourthSection.useCases.identifier",
+          "fourthSection.title",
+          "fourthSection.description",
+          "fourthSection.subtitle",
+          "fifthSection.leftButton.label",
+          "fifthSection.leftButton.url",
+          "fifthSection.leftButton.outsideWeb",
+          "fifthSection.leftButton.outlined",
+          "fifthSection.leftButton.filename",
+          "fifthSection.rightButton.label",
+          "fifthSection.rightButton.url",
+          "fifthSection.rightButton.outsideWeb",
+          "fifthSection.rightButton.outlined",
+          "fifthSection.rightButton.filename",
+          "fifthSection.moreButton.label",
+          "fifthSection.moreButton.url",
+          "fifthSection.moreButton.outsideWeb",
+          "fifthSection.moreButton.outlined",
+          "fifthSection.moreButton.filename",
+          "fifthSection.learnMoreButton.label",
+          "fifthSection.learnMoreButton.url",
+          "fifthSection.learnMoreButton.outsideWeb",
+          "fifthSection.learnMoreButton.outlined",
+          "fifthSection.learnMoreButton.filename",
+          "fifthSection.advantages.description",
+          "fifthSection.advantages.icon",
+          "fifthSection.advantages.title",
+          "fifthSection.feedbacks.comment",
+          "fifthSection.feedbacks.persons",
+          "fifthSection.feedbacks.roles",
+          "fifthSection.useCases.description",
+          "fifthSection.useCases.title",
+          "fifthSection.useCases.identifier",
+          "fifthSection.title",
+          "fifthSection.description",
+          "fifthSection.subtitle",
+          "sixthSection.leftButton.label",
+          "sixthSection.leftButton.url",
+          "sixthSection.leftButton.outsideWeb",
+          "sixthSection.leftButton.outlined",
+          "sixthSection.leftButton.filename",
+          "sixthSection.rightButton.label",
+          "sixthSection.rightButton.url",
+          "sixthSection.rightButton.outsideWeb",
+          "sixthSection.rightButton.outlined",
+          "sixthSection.rightButton.filename",
+          "sixthSection.moreButton.label",
+          "sixthSection.moreButton.url",
+          "sixthSection.moreButton.outsideWeb",
+          "sixthSection.moreButton.outlined",
+          "sixthSection.moreButton.filename",
+          "sixthSection.learnMoreButton.label",
+          "sixthSection.learnMoreButton.url",
+          "sixthSection.learnMoreButton.outsideWeb",
+          "sixthSection.learnMoreButton.outlined",
+          "sixthSection.learnMoreButton.filename",
+          "sixthSection.advantages.description",
+          "sixthSection.advantages.icon",
+          "sixthSection.advantages.title",
+          "sixthSection.feedbacks.comment",
+          "sixthSection.feedbacks.persons",
+          "sixthSection.feedbacks.roles",
+          "sixthSection.useCases.description",
+          "sixthSection.useCases.title",
+          "sixthSection.useCases.identifier",
+          "sixthSection.title",
+          "sixthSection.description",
+          "sixthSection.subtitle",
+          "seventhSection.leftButton.label",
+          "seventhSection.leftButton.url",
+          "seventhSection.leftButton.outsideWeb",
+          "seventhSection.leftButton.outlined",
+          "seventhSection.leftButton.filename",
+          "seventhSection.rightButton.label",
+          "seventhSection.rightButton.url",
+          "seventhSection.rightButton.outsideWeb",
+          "seventhSection.rightButton.outlined",
+          "seventhSection.rightButton.filename",
+          "seventhSection.moreButton.label",
+          "seventhSection.moreButton.url",
+          "seventhSection.moreButton.outsideWeb",
+          "seventhSection.moreButton.outlined",
+          "seventhSection.moreButton.filename",
+          "seventhSection.learnMoreButton.label",
+          "seventhSection.learnMoreButton.url",
+          "seventhSection.learnMoreButton.outsideWeb",
+          "seventhSection.learnMoreButton.outlined",
+          "seventhSection.learnMoreButton.filename",
+          "seventhSection.advantages.description",
+          "seventhSection.advantages.icon",
+          "seventhSection.advantages.title",
+          "seventhSection.feedbacks.comment",
+          "seventhSection.feedbacks.persons",
+          "seventhSection.feedbacks.roles",
+          "seventhSection.useCases.description",
+          "seventhSection.useCases.title",
+          "seventhSection.useCases.identifier",
+          "seventhSection.title",
+          "seventhSection.description",
+          "seventhSection.subtitle",
+          "eighthSection.leftButton.label",
+          "eighthSection.leftButton.url",
+          "eighthSection.leftButton.outsideWeb",
+          "eighthSection.leftButton.outlined",
+          "eighthSection.leftButton.filename",
+          "eighthSection.rightButton.label",
+          "eighthSection.rightButton.url",
+          "eighthSection.rightButton.outsideWeb",
+          "eighthSection.rightButton.outlined",
+          "eighthSection.rightButton.filename",
+          "eighthSection.moreButton.label",
+          "eighthSection.moreButton.url",
+          "eighthSection.moreButton.outsideWeb",
+          "eighthSection.moreButton.outlined",
+          "eighthSection.moreButton.filename",
+          "eighthSection.learnMoreButton.label",
+          "eighthSection.learnMoreButton.url",
+          "eighthSection.learnMoreButton.outsideWeb",
+          "eighthSection.learnMoreButton.outlined",
+          "eighthSection.learnMoreButton.filename",
+          "eighthSection.advantages.description",
+          "eighthSection.advantages.icon",
+          "eighthSection.advantages.title",
+          "eighthSection.feedbacks.comment",
+          "eighthSection.feedbacks.persons",
+          "eighthSection.feedbacks.roles",
+          "eighthSection.useCases.description",
+          "eighthSection.useCases.title",
+          "eighthSection.useCases.identifier",
+          "eighthSection.title",
+          "eighthSection.description",
+          "eighthSection.subtitle"
         ],
         "locales": [
           "en"
@@ -516,14 +1316,235 @@
       "subject": "api::entry.entry",
       "properties": {
         "fields": [
-          "Body",
-          "HeroImage",
-          "Title",
           "seo.metaTitle",
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "firstSection.leftButton.label",
+          "firstSection.leftButton.url",
+          "firstSection.leftButton.outsideWeb",
+          "firstSection.leftButton.outlined",
+          "firstSection.leftButton.filename",
+          "firstSection.rightButton.label",
+          "firstSection.rightButton.url",
+          "firstSection.rightButton.outsideWeb",
+          "firstSection.rightButton.outlined",
+          "firstSection.rightButton.filename",
+          "firstSection.moreButton.label",
+          "firstSection.moreButton.url",
+          "firstSection.moreButton.outsideWeb",
+          "firstSection.moreButton.outlined",
+          "firstSection.moreButton.filename",
+          "firstSection.learnMoreButton.label",
+          "firstSection.learnMoreButton.url",
+          "firstSection.learnMoreButton.outsideWeb",
+          "firstSection.learnMoreButton.outlined",
+          "firstSection.learnMoreButton.filename",
+          "firstSection.advantages.description",
+          "firstSection.advantages.icon",
+          "firstSection.advantages.title",
+          "firstSection.feedbacks.comment",
+          "firstSection.feedbacks.persons",
+          "firstSection.feedbacks.roles",
+          "firstSection.useCases.description",
+          "firstSection.useCases.title",
+          "firstSection.useCases.identifier",
+          "firstSection.title",
+          "firstSection.description",
+          "firstSection.subtitle",
+          "thirdSection.leftButton.label",
+          "thirdSection.leftButton.url",
+          "thirdSection.leftButton.outsideWeb",
+          "thirdSection.leftButton.outlined",
+          "thirdSection.leftButton.filename",
+          "thirdSection.rightButton.label",
+          "thirdSection.rightButton.url",
+          "thirdSection.rightButton.outsideWeb",
+          "thirdSection.rightButton.outlined",
+          "thirdSection.rightButton.filename",
+          "thirdSection.moreButton.label",
+          "thirdSection.moreButton.url",
+          "thirdSection.moreButton.outsideWeb",
+          "thirdSection.moreButton.outlined",
+          "thirdSection.moreButton.filename",
+          "thirdSection.learnMoreButton.label",
+          "thirdSection.learnMoreButton.url",
+          "thirdSection.learnMoreButton.outsideWeb",
+          "thirdSection.learnMoreButton.outlined",
+          "thirdSection.learnMoreButton.filename",
+          "thirdSection.advantages.description",
+          "thirdSection.advantages.icon",
+          "thirdSection.advantages.title",
+          "thirdSection.feedbacks.comment",
+          "thirdSection.feedbacks.persons",
+          "thirdSection.feedbacks.roles",
+          "thirdSection.useCases.description",
+          "thirdSection.useCases.title",
+          "thirdSection.useCases.identifier",
+          "thirdSection.title",
+          "thirdSection.description",
+          "thirdSection.subtitle",
+          "fourthSection.leftButton.label",
+          "fourthSection.leftButton.url",
+          "fourthSection.leftButton.outsideWeb",
+          "fourthSection.leftButton.outlined",
+          "fourthSection.leftButton.filename",
+          "fourthSection.rightButton.label",
+          "fourthSection.rightButton.url",
+          "fourthSection.rightButton.outsideWeb",
+          "fourthSection.rightButton.outlined",
+          "fourthSection.rightButton.filename",
+          "fourthSection.moreButton.label",
+          "fourthSection.moreButton.url",
+          "fourthSection.moreButton.outsideWeb",
+          "fourthSection.moreButton.outlined",
+          "fourthSection.moreButton.filename",
+          "fourthSection.learnMoreButton.label",
+          "fourthSection.learnMoreButton.url",
+          "fourthSection.learnMoreButton.outsideWeb",
+          "fourthSection.learnMoreButton.outlined",
+          "fourthSection.learnMoreButton.filename",
+          "fourthSection.advantages.description",
+          "fourthSection.advantages.icon",
+          "fourthSection.advantages.title",
+          "fourthSection.feedbacks.comment",
+          "fourthSection.feedbacks.persons",
+          "fourthSection.feedbacks.roles",
+          "fourthSection.useCases.description",
+          "fourthSection.useCases.title",
+          "fourthSection.useCases.identifier",
+          "fourthSection.title",
+          "fourthSection.description",
+          "fourthSection.subtitle",
+          "fifthSection.leftButton.label",
+          "fifthSection.leftButton.url",
+          "fifthSection.leftButton.outsideWeb",
+          "fifthSection.leftButton.outlined",
+          "fifthSection.leftButton.filename",
+          "fifthSection.rightButton.label",
+          "fifthSection.rightButton.url",
+          "fifthSection.rightButton.outsideWeb",
+          "fifthSection.rightButton.outlined",
+          "fifthSection.rightButton.filename",
+          "fifthSection.moreButton.label",
+          "fifthSection.moreButton.url",
+          "fifthSection.moreButton.outsideWeb",
+          "fifthSection.moreButton.outlined",
+          "fifthSection.moreButton.filename",
+          "fifthSection.learnMoreButton.label",
+          "fifthSection.learnMoreButton.url",
+          "fifthSection.learnMoreButton.outsideWeb",
+          "fifthSection.learnMoreButton.outlined",
+          "fifthSection.learnMoreButton.filename",
+          "fifthSection.advantages.description",
+          "fifthSection.advantages.icon",
+          "fifthSection.advantages.title",
+          "fifthSection.feedbacks.comment",
+          "fifthSection.feedbacks.persons",
+          "fifthSection.feedbacks.roles",
+          "fifthSection.useCases.description",
+          "fifthSection.useCases.title",
+          "fifthSection.useCases.identifier",
+          "fifthSection.title",
+          "fifthSection.description",
+          "fifthSection.subtitle",
+          "sixthSection.leftButton.label",
+          "sixthSection.leftButton.url",
+          "sixthSection.leftButton.outsideWeb",
+          "sixthSection.leftButton.outlined",
+          "sixthSection.leftButton.filename",
+          "sixthSection.rightButton.label",
+          "sixthSection.rightButton.url",
+          "sixthSection.rightButton.outsideWeb",
+          "sixthSection.rightButton.outlined",
+          "sixthSection.rightButton.filename",
+          "sixthSection.moreButton.label",
+          "sixthSection.moreButton.url",
+          "sixthSection.moreButton.outsideWeb",
+          "sixthSection.moreButton.outlined",
+          "sixthSection.moreButton.filename",
+          "sixthSection.learnMoreButton.label",
+          "sixthSection.learnMoreButton.url",
+          "sixthSection.learnMoreButton.outsideWeb",
+          "sixthSection.learnMoreButton.outlined",
+          "sixthSection.learnMoreButton.filename",
+          "sixthSection.advantages.description",
+          "sixthSection.advantages.icon",
+          "sixthSection.advantages.title",
+          "sixthSection.feedbacks.comment",
+          "sixthSection.feedbacks.persons",
+          "sixthSection.feedbacks.roles",
+          "sixthSection.useCases.description",
+          "sixthSection.useCases.title",
+          "sixthSection.useCases.identifier",
+          "sixthSection.title",
+          "sixthSection.description",
+          "sixthSection.subtitle",
+          "seventhSection.leftButton.label",
+          "seventhSection.leftButton.url",
+          "seventhSection.leftButton.outsideWeb",
+          "seventhSection.leftButton.outlined",
+          "seventhSection.leftButton.filename",
+          "seventhSection.rightButton.label",
+          "seventhSection.rightButton.url",
+          "seventhSection.rightButton.outsideWeb",
+          "seventhSection.rightButton.outlined",
+          "seventhSection.rightButton.filename",
+          "seventhSection.moreButton.label",
+          "seventhSection.moreButton.url",
+          "seventhSection.moreButton.outsideWeb",
+          "seventhSection.moreButton.outlined",
+          "seventhSection.moreButton.filename",
+          "seventhSection.learnMoreButton.label",
+          "seventhSection.learnMoreButton.url",
+          "seventhSection.learnMoreButton.outsideWeb",
+          "seventhSection.learnMoreButton.outlined",
+          "seventhSection.learnMoreButton.filename",
+          "seventhSection.advantages.description",
+          "seventhSection.advantages.icon",
+          "seventhSection.advantages.title",
+          "seventhSection.feedbacks.comment",
+          "seventhSection.feedbacks.persons",
+          "seventhSection.feedbacks.roles",
+          "seventhSection.useCases.description",
+          "seventhSection.useCases.title",
+          "seventhSection.useCases.identifier",
+          "seventhSection.title",
+          "seventhSection.description",
+          "seventhSection.subtitle",
+          "eighthSection.leftButton.label",
+          "eighthSection.leftButton.url",
+          "eighthSection.leftButton.outsideWeb",
+          "eighthSection.leftButton.outlined",
+          "eighthSection.leftButton.filename",
+          "eighthSection.rightButton.label",
+          "eighthSection.rightButton.url",
+          "eighthSection.rightButton.outsideWeb",
+          "eighthSection.rightButton.outlined",
+          "eighthSection.rightButton.filename",
+          "eighthSection.moreButton.label",
+          "eighthSection.moreButton.url",
+          "eighthSection.moreButton.outsideWeb",
+          "eighthSection.moreButton.outlined",
+          "eighthSection.moreButton.filename",
+          "eighthSection.learnMoreButton.label",
+          "eighthSection.learnMoreButton.url",
+          "eighthSection.learnMoreButton.outsideWeb",
+          "eighthSection.learnMoreButton.outlined",
+          "eighthSection.learnMoreButton.filename",
+          "eighthSection.advantages.description",
+          "eighthSection.advantages.icon",
+          "eighthSection.advantages.title",
+          "eighthSection.feedbacks.comment",
+          "eighthSection.feedbacks.persons",
+          "eighthSection.feedbacks.roles",
+          "eighthSection.useCases.description",
+          "eighthSection.useCases.title",
+          "eighthSection.useCases.identifier",
+          "eighthSection.title",
+          "eighthSection.description",
+          "eighthSection.subtitle"
         ],
         "locales": [
           "en"
@@ -536,17 +1557,334 @@
       "subject": "api::entry.entry",
       "properties": {
         "fields": [
-          "Body",
-          "HeroImage",
-          "Title",
           "seo.metaTitle",
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "firstSection.leftButton.label",
+          "firstSection.leftButton.url",
+          "firstSection.leftButton.outsideWeb",
+          "firstSection.leftButton.outlined",
+          "firstSection.leftButton.filename",
+          "firstSection.rightButton.label",
+          "firstSection.rightButton.url",
+          "firstSection.rightButton.outsideWeb",
+          "firstSection.rightButton.outlined",
+          "firstSection.rightButton.filename",
+          "firstSection.moreButton.label",
+          "firstSection.moreButton.url",
+          "firstSection.moreButton.outsideWeb",
+          "firstSection.moreButton.outlined",
+          "firstSection.moreButton.filename",
+          "firstSection.learnMoreButton.label",
+          "firstSection.learnMoreButton.url",
+          "firstSection.learnMoreButton.outsideWeb",
+          "firstSection.learnMoreButton.outlined",
+          "firstSection.learnMoreButton.filename",
+          "firstSection.advantages.description",
+          "firstSection.advantages.icon",
+          "firstSection.advantages.title",
+          "firstSection.feedbacks.comment",
+          "firstSection.feedbacks.persons",
+          "firstSection.feedbacks.roles",
+          "firstSection.useCases.description",
+          "firstSection.useCases.title",
+          "firstSection.useCases.identifier",
+          "firstSection.title",
+          "firstSection.description",
+          "firstSection.subtitle",
+          "thirdSection.leftButton.label",
+          "thirdSection.leftButton.url",
+          "thirdSection.leftButton.outsideWeb",
+          "thirdSection.leftButton.outlined",
+          "thirdSection.leftButton.filename",
+          "thirdSection.rightButton.label",
+          "thirdSection.rightButton.url",
+          "thirdSection.rightButton.outsideWeb",
+          "thirdSection.rightButton.outlined",
+          "thirdSection.rightButton.filename",
+          "thirdSection.moreButton.label",
+          "thirdSection.moreButton.url",
+          "thirdSection.moreButton.outsideWeb",
+          "thirdSection.moreButton.outlined",
+          "thirdSection.moreButton.filename",
+          "thirdSection.learnMoreButton.label",
+          "thirdSection.learnMoreButton.url",
+          "thirdSection.learnMoreButton.outsideWeb",
+          "thirdSection.learnMoreButton.outlined",
+          "thirdSection.learnMoreButton.filename",
+          "thirdSection.advantages.description",
+          "thirdSection.advantages.icon",
+          "thirdSection.advantages.title",
+          "thirdSection.feedbacks.comment",
+          "thirdSection.feedbacks.persons",
+          "thirdSection.feedbacks.roles",
+          "thirdSection.useCases.description",
+          "thirdSection.useCases.title",
+          "thirdSection.useCases.identifier",
+          "thirdSection.title",
+          "thirdSection.description",
+          "thirdSection.subtitle",
+          "fourthSection.leftButton.label",
+          "fourthSection.leftButton.url",
+          "fourthSection.leftButton.outsideWeb",
+          "fourthSection.leftButton.outlined",
+          "fourthSection.leftButton.filename",
+          "fourthSection.rightButton.label",
+          "fourthSection.rightButton.url",
+          "fourthSection.rightButton.outsideWeb",
+          "fourthSection.rightButton.outlined",
+          "fourthSection.rightButton.filename",
+          "fourthSection.moreButton.label",
+          "fourthSection.moreButton.url",
+          "fourthSection.moreButton.outsideWeb",
+          "fourthSection.moreButton.outlined",
+          "fourthSection.moreButton.filename",
+          "fourthSection.learnMoreButton.label",
+          "fourthSection.learnMoreButton.url",
+          "fourthSection.learnMoreButton.outsideWeb",
+          "fourthSection.learnMoreButton.outlined",
+          "fourthSection.learnMoreButton.filename",
+          "fourthSection.advantages.description",
+          "fourthSection.advantages.icon",
+          "fourthSection.advantages.title",
+          "fourthSection.feedbacks.comment",
+          "fourthSection.feedbacks.persons",
+          "fourthSection.feedbacks.roles",
+          "fourthSection.useCases.description",
+          "fourthSection.useCases.title",
+          "fourthSection.useCases.identifier",
+          "fourthSection.title",
+          "fourthSection.description",
+          "fourthSection.subtitle",
+          "fifthSection.leftButton.label",
+          "fifthSection.leftButton.url",
+          "fifthSection.leftButton.outsideWeb",
+          "fifthSection.leftButton.outlined",
+          "fifthSection.leftButton.filename",
+          "fifthSection.rightButton.label",
+          "fifthSection.rightButton.url",
+          "fifthSection.rightButton.outsideWeb",
+          "fifthSection.rightButton.outlined",
+          "fifthSection.rightButton.filename",
+          "fifthSection.moreButton.label",
+          "fifthSection.moreButton.url",
+          "fifthSection.moreButton.outsideWeb",
+          "fifthSection.moreButton.outlined",
+          "fifthSection.moreButton.filename",
+          "fifthSection.learnMoreButton.label",
+          "fifthSection.learnMoreButton.url",
+          "fifthSection.learnMoreButton.outsideWeb",
+          "fifthSection.learnMoreButton.outlined",
+          "fifthSection.learnMoreButton.filename",
+          "fifthSection.advantages.description",
+          "fifthSection.advantages.icon",
+          "fifthSection.advantages.title",
+          "fifthSection.feedbacks.comment",
+          "fifthSection.feedbacks.persons",
+          "fifthSection.feedbacks.roles",
+          "fifthSection.useCases.description",
+          "fifthSection.useCases.title",
+          "fifthSection.useCases.identifier",
+          "fifthSection.title",
+          "fifthSection.description",
+          "fifthSection.subtitle",
+          "sixthSection.leftButton.label",
+          "sixthSection.leftButton.url",
+          "sixthSection.leftButton.outsideWeb",
+          "sixthSection.leftButton.outlined",
+          "sixthSection.leftButton.filename",
+          "sixthSection.rightButton.label",
+          "sixthSection.rightButton.url",
+          "sixthSection.rightButton.outsideWeb",
+          "sixthSection.rightButton.outlined",
+          "sixthSection.rightButton.filename",
+          "sixthSection.moreButton.label",
+          "sixthSection.moreButton.url",
+          "sixthSection.moreButton.outsideWeb",
+          "sixthSection.moreButton.outlined",
+          "sixthSection.moreButton.filename",
+          "sixthSection.learnMoreButton.label",
+          "sixthSection.learnMoreButton.url",
+          "sixthSection.learnMoreButton.outsideWeb",
+          "sixthSection.learnMoreButton.outlined",
+          "sixthSection.learnMoreButton.filename",
+          "sixthSection.advantages.description",
+          "sixthSection.advantages.icon",
+          "sixthSection.advantages.title",
+          "sixthSection.feedbacks.comment",
+          "sixthSection.feedbacks.persons",
+          "sixthSection.feedbacks.roles",
+          "sixthSection.useCases.description",
+          "sixthSection.useCases.title",
+          "sixthSection.useCases.identifier",
+          "sixthSection.title",
+          "sixthSection.description",
+          "sixthSection.subtitle",
+          "seventhSection.leftButton.label",
+          "seventhSection.leftButton.url",
+          "seventhSection.leftButton.outsideWeb",
+          "seventhSection.leftButton.outlined",
+          "seventhSection.leftButton.filename",
+          "seventhSection.rightButton.label",
+          "seventhSection.rightButton.url",
+          "seventhSection.rightButton.outsideWeb",
+          "seventhSection.rightButton.outlined",
+          "seventhSection.rightButton.filename",
+          "seventhSection.moreButton.label",
+          "seventhSection.moreButton.url",
+          "seventhSection.moreButton.outsideWeb",
+          "seventhSection.moreButton.outlined",
+          "seventhSection.moreButton.filename",
+          "seventhSection.learnMoreButton.label",
+          "seventhSection.learnMoreButton.url",
+          "seventhSection.learnMoreButton.outsideWeb",
+          "seventhSection.learnMoreButton.outlined",
+          "seventhSection.learnMoreButton.filename",
+          "seventhSection.advantages.description",
+          "seventhSection.advantages.icon",
+          "seventhSection.advantages.title",
+          "seventhSection.feedbacks.comment",
+          "seventhSection.feedbacks.persons",
+          "seventhSection.feedbacks.roles",
+          "seventhSection.useCases.description",
+          "seventhSection.useCases.title",
+          "seventhSection.useCases.identifier",
+          "seventhSection.title",
+          "seventhSection.description",
+          "seventhSection.subtitle",
+          "eighthSection.leftButton.label",
+          "eighthSection.leftButton.url",
+          "eighthSection.leftButton.outsideWeb",
+          "eighthSection.leftButton.outlined",
+          "eighthSection.leftButton.filename",
+          "eighthSection.rightButton.label",
+          "eighthSection.rightButton.url",
+          "eighthSection.rightButton.outsideWeb",
+          "eighthSection.rightButton.outlined",
+          "eighthSection.rightButton.filename",
+          "eighthSection.moreButton.label",
+          "eighthSection.moreButton.url",
+          "eighthSection.moreButton.outsideWeb",
+          "eighthSection.moreButton.outlined",
+          "eighthSection.moreButton.filename",
+          "eighthSection.learnMoreButton.label",
+          "eighthSection.learnMoreButton.url",
+          "eighthSection.learnMoreButton.outsideWeb",
+          "eighthSection.learnMoreButton.outlined",
+          "eighthSection.learnMoreButton.filename",
+          "eighthSection.advantages.description",
+          "eighthSection.advantages.icon",
+          "eighthSection.advantages.title",
+          "eighthSection.feedbacks.comment",
+          "eighthSection.feedbacks.persons",
+          "eighthSection.feedbacks.roles",
+          "eighthSection.useCases.description",
+          "eighthSection.useCases.title",
+          "eighthSection.useCases.identifier",
+          "eighthSection.title",
+          "eighthSection.description",
+          "eighthSection.subtitle"
         ],
         "locales": [
           "en"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::faq.faq",
+      "properties": {
+        "fields": [
+          "title",
+          "list.title",
+          "list.description"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::faq.faq",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::faq.faq",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::faq.faq",
+      "properties": {
+        "fields": [
+          "title",
+          "list.title",
+          "list.description"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::faq.faq",
+      "properties": {
+        "fields": [
+          "title",
+          "list.title",
+          "list.description"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::feature.feature",
+      "properties": {
+        "fields": [
+          "title",
+          "firstParagraph",
+          "secondParagraph"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::feature.feature",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::feature.feature",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::feature.feature",
+      "properties": {
+        "fields": [
+          "title",
+          "firstParagraph",
+          "secondParagraph"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::feature.feature",
+      "properties": {
+        "fields": [
+          "title",
+          "firstParagraph",
+          "secondParagraph"
         ]
       },
       "conditions": []
@@ -560,7 +1898,35 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "title",
+          "description",
+          "button.label",
+          "button.url",
+          "button.outsideWeb",
+          "button.outlined",
+          "button.filename",
+          "featureSection.title",
+          "featureSection.description",
+          "featureSection.features",
+          "whyStudioSection.title",
+          "whyStudioSection.advantages",
+          "howWorksSection.title",
+          "howWorksSection.description",
+          "howWorksSection.operations",
+          "tierSection.title",
+          "tierSection.subtitle",
+          "tierSection.description",
+          "tierSection.tiers",
+          "headerSection.title",
+          "headerSection.subtitle",
+          "headerSection.description",
+          "headerSection.hero",
+          "headerSection.cta.label",
+          "headerSection.cta.url",
+          "headerSection.cta.external_url",
+          "adSection.title",
+          "adSection.ad_features"
         ]
       },
       "conditions": []
@@ -586,7 +1952,35 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "title",
+          "description",
+          "button.label",
+          "button.url",
+          "button.outsideWeb",
+          "button.outlined",
+          "button.filename",
+          "featureSection.title",
+          "featureSection.description",
+          "featureSection.features",
+          "whyStudioSection.title",
+          "whyStudioSection.advantages",
+          "howWorksSection.title",
+          "howWorksSection.description",
+          "howWorksSection.operations",
+          "tierSection.title",
+          "tierSection.subtitle",
+          "tierSection.description",
+          "tierSection.tiers",
+          "headerSection.title",
+          "headerSection.subtitle",
+          "headerSection.description",
+          "headerSection.hero",
+          "headerSection.cta.label",
+          "headerSection.cta.url",
+          "headerSection.cta.external_url",
+          "adSection.title",
+          "adSection.ad_features"
         ]
       },
       "conditions": []
@@ -600,7 +1994,35 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "title",
+          "description",
+          "button.label",
+          "button.url",
+          "button.outsideWeb",
+          "button.outlined",
+          "button.filename",
+          "featureSection.title",
+          "featureSection.description",
+          "featureSection.features",
+          "whyStudioSection.title",
+          "whyStudioSection.advantages",
+          "howWorksSection.title",
+          "howWorksSection.description",
+          "howWorksSection.operations",
+          "tierSection.title",
+          "tierSection.subtitle",
+          "tierSection.description",
+          "tierSection.tiers",
+          "headerSection.title",
+          "headerSection.subtitle",
+          "headerSection.description",
+          "headerSection.hero",
+          "headerSection.cta.label",
+          "headerSection.cta.url",
+          "headerSection.cta.external_url",
+          "adSection.title",
+          "adSection.ad_features"
         ]
       },
       "conditions": []
@@ -614,7 +2036,25 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "headerSection.title",
+          "headerSection.subtitle",
+          "headerSection.description",
+          "headerSection.hero",
+          "headerSection.cta.label",
+          "headerSection.cta.url",
+          "headerSection.cta.external_url",
+          "benefitSection.title",
+          "benefitSection.benefits",
+          "featureSection.title",
+          "featureSection.wallet_features",
+          "walletAdFeature.title",
+          "walletAdFeature.wallet_ad_features",
+          "howSection.title",
+          "howSection.operations",
+          "credentialSection.title",
+          "credentialSection.credentials",
+          "credentialSection.properties"
         ],
         "locales": [
           "en"
@@ -651,7 +2091,25 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "headerSection.title",
+          "headerSection.subtitle",
+          "headerSection.description",
+          "headerSection.hero",
+          "headerSection.cta.label",
+          "headerSection.cta.url",
+          "headerSection.cta.external_url",
+          "benefitSection.title",
+          "benefitSection.benefits",
+          "featureSection.title",
+          "featureSection.wallet_features",
+          "walletAdFeature.title",
+          "walletAdFeature.wallet_ad_features",
+          "howSection.title",
+          "howSection.operations",
+          "credentialSection.title",
+          "credentialSection.credentials",
+          "credentialSection.properties"
         ],
         "locales": [
           "en"
@@ -668,10 +2126,280 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "headerSection.title",
+          "headerSection.subtitle",
+          "headerSection.description",
+          "headerSection.hero",
+          "headerSection.cta.label",
+          "headerSection.cta.url",
+          "headerSection.cta.external_url",
+          "benefitSection.title",
+          "benefitSection.benefits",
+          "featureSection.title",
+          "featureSection.wallet_features",
+          "walletAdFeature.title",
+          "walletAdFeature.wallet_ad_features",
+          "howSection.title",
+          "howSection.operations",
+          "credentialSection.title",
+          "credentialSection.credentials",
+          "credentialSection.properties"
         ],
         "locales": [
           "en"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::industry.industry",
+      "properties": {
+        "fields": [
+          "title",
+          "description",
+          "icon",
+          "link",
+          "link_route",
+          "inside_description"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::industry.industry",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::industry.industry",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::industry.industry",
+      "properties": {
+        "fields": [
+          "title",
+          "description",
+          "icon",
+          "link",
+          "link_route",
+          "inside_description"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::industry.industry",
+      "properties": {
+        "fields": [
+          "title",
+          "description",
+          "icon",
+          "link",
+          "link_route",
+          "inside_description"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::operation.operation",
+      "properties": {
+        "fields": [
+          "title",
+          "description",
+          "image"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::operation.operation",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::operation.operation",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::operation.operation",
+      "properties": {
+        "fields": [
+          "title",
+          "description",
+          "image"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::operation.operation",
+      "properties": {
+        "fields": [
+          "title",
+          "description",
+          "image"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::page.page",
+      "properties": {
+        "fields": [
+          "Page",
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::page.page",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::page.page",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::page.page",
+      "properties": {
+        "fields": [
+          "Page",
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::page.page",
+      "properties": {
+        "fields": [
+          "Page",
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::partnership-ecosystem.partnership-ecosystem",
+      "properties": {
+        "fields": [
+          "title",
+          "description"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::partnership-ecosystem.partnership-ecosystem",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::partnership-ecosystem.partnership-ecosystem",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::partnership-ecosystem.partnership-ecosystem",
+      "properties": {
+        "fields": [
+          "title",
+          "description"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::partnership-ecosystem.partnership-ecosystem",
+      "properties": {
+        "fields": [
+          "title",
+          "description"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::partnership-type.partnership-type",
+      "properties": {
+        "fields": [
+          "title",
+          "description"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::partnership-type.partnership-type",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::partnership-type.partnership-type",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::partnership-type.partnership-type",
+      "properties": {
+        "fields": [
+          "title",
+          "description"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::partnership-type.partnership-type",
+      "properties": {
+        "fields": [
+          "title",
+          "description"
         ]
       },
       "conditions": []
@@ -685,7 +2413,42 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "title",
+          "description",
+          "faqSection.title",
+          "faqSection.subtitle",
+          "faqSection.info.title",
+          "faqSection.info.list.title",
+          "faqSection.info.list.description",
+          "faqSection.info.list.icon",
+          "faqSection.info.list.image",
+          "cloudSection.infoToggles.activeUser",
+          "cloudSection.infoToggles.didInPublicCatalogue",
+          "cloudSection.infoToggles.ebsiIntegration",
+          "cloudSection.infoToggles.integrationCustomFrameworks",
+          "cloudSection.infoToggles.integrationCustomInfraestructure",
+          "cloudSection.infoToggles.issuanceTemplate",
+          "cloudSection.infoToggles.issuedCredential",
+          "cloudSection.infoToggles.sandboxEnvironment",
+          "cloudSection.infoToggles.schemaInPublicCatalogue",
+          "cloudSection.infoToggles.securityFactorMechanism",
+          "cloudSection.infoToggles.verificationTemplate",
+          "cloudSection.title",
+          "cloudSection.description",
+          "cloudSection.identifier",
+          "cloudSection.tiers",
+          "onPremiseSection.button.label",
+          "onPremiseSection.button.url",
+          "onPremiseSection.button.outsideWeb",
+          "onPremiseSection.button.outlined",
+          "onPremiseSection.button.filename",
+          "onPremiseSection.identifier",
+          "onPremiseSection.title",
+          "onPremiseSection.panelTitle",
+          "onPremiseSection.paragraph_1",
+          "onPremiseSection.paragraph_2",
+          "test"
         ]
       },
       "conditions": []
@@ -711,7 +2474,42 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "title",
+          "description",
+          "faqSection.title",
+          "faqSection.subtitle",
+          "faqSection.info.title",
+          "faqSection.info.list.title",
+          "faqSection.info.list.description",
+          "faqSection.info.list.icon",
+          "faqSection.info.list.image",
+          "cloudSection.infoToggles.activeUser",
+          "cloudSection.infoToggles.didInPublicCatalogue",
+          "cloudSection.infoToggles.ebsiIntegration",
+          "cloudSection.infoToggles.integrationCustomFrameworks",
+          "cloudSection.infoToggles.integrationCustomInfraestructure",
+          "cloudSection.infoToggles.issuanceTemplate",
+          "cloudSection.infoToggles.issuedCredential",
+          "cloudSection.infoToggles.sandboxEnvironment",
+          "cloudSection.infoToggles.schemaInPublicCatalogue",
+          "cloudSection.infoToggles.securityFactorMechanism",
+          "cloudSection.infoToggles.verificationTemplate",
+          "cloudSection.title",
+          "cloudSection.description",
+          "cloudSection.identifier",
+          "cloudSection.tiers",
+          "onPremiseSection.button.label",
+          "onPremiseSection.button.url",
+          "onPremiseSection.button.outsideWeb",
+          "onPremiseSection.button.outlined",
+          "onPremiseSection.button.filename",
+          "onPremiseSection.identifier",
+          "onPremiseSection.title",
+          "onPremiseSection.panelTitle",
+          "onPremiseSection.paragraph_1",
+          "onPremiseSection.paragraph_2",
+          "test"
         ]
       },
       "conditions": []
@@ -725,7 +2523,42 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "title",
+          "description",
+          "faqSection.title",
+          "faqSection.subtitle",
+          "faqSection.info.title",
+          "faqSection.info.list.title",
+          "faqSection.info.list.description",
+          "faqSection.info.list.icon",
+          "faqSection.info.list.image",
+          "cloudSection.infoToggles.activeUser",
+          "cloudSection.infoToggles.didInPublicCatalogue",
+          "cloudSection.infoToggles.ebsiIntegration",
+          "cloudSection.infoToggles.integrationCustomFrameworks",
+          "cloudSection.infoToggles.integrationCustomInfraestructure",
+          "cloudSection.infoToggles.issuanceTemplate",
+          "cloudSection.infoToggles.issuedCredential",
+          "cloudSection.infoToggles.sandboxEnvironment",
+          "cloudSection.infoToggles.schemaInPublicCatalogue",
+          "cloudSection.infoToggles.securityFactorMechanism",
+          "cloudSection.infoToggles.verificationTemplate",
+          "cloudSection.title",
+          "cloudSection.description",
+          "cloudSection.identifier",
+          "cloudSection.tiers",
+          "onPremiseSection.button.label",
+          "onPremiseSection.button.url",
+          "onPremiseSection.button.outsideWeb",
+          "onPremiseSection.button.outlined",
+          "onPremiseSection.button.filename",
+          "onPremiseSection.identifier",
+          "onPremiseSection.title",
+          "onPremiseSection.panelTitle",
+          "onPremiseSection.paragraph_1",
+          "onPremiseSection.paragraph_2",
+          "test"
         ]
       },
       "conditions": []
@@ -807,6 +2640,54 @@
     },
     {
       "action": "plugin::content-manager.explorer.create",
+      "subject": "api::property.property",
+      "properties": {
+        "fields": [
+          "title",
+          "description",
+          "image"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::property.property",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::property.property",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::property.property",
+      "properties": {
+        "fields": [
+          "title",
+          "description",
+          "image"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::property.property",
+      "properties": {
+        "fields": [
+          "title",
+          "description",
+          "image"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
       "subject": "api::resources-blog.resources-blog",
       "properties": {
         "fields": [
@@ -868,7 +2749,15 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "headerSection.title",
+          "headerSection.subtitle",
+          "headerSection.description",
+          "headerSection.hero",
+          "headerSection.cta.label",
+          "headerSection.cta.url",
+          "headerSection.cta.external_url",
+          "certifications"
         ]
       },
       "conditions": []
@@ -894,7 +2783,15 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "headerSection.title",
+          "headerSection.subtitle",
+          "headerSection.description",
+          "headerSection.hero",
+          "headerSection.cta.label",
+          "headerSection.cta.url",
+          "headerSection.cta.external_url",
+          "certifications"
         ]
       },
       "conditions": []
@@ -908,7 +2805,15 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "headerSection.title",
+          "headerSection.subtitle",
+          "headerSection.description",
+          "headerSection.hero",
+          "headerSection.cta.label",
+          "headerSection.cta.url",
+          "headerSection.cta.external_url",
+          "certifications"
         ]
       },
       "conditions": []
@@ -1084,7 +2989,23 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "headerSection.title",
+          "headerSection.subtitle",
+          "headerSection.description",
+          "headerSection.hero",
+          "headerSection.cta.label",
+          "headerSection.cta.url",
+          "headerSection.cta.external_url",
+          "stepsSection.steps",
+          "useCasesSection.title",
+          "useCasesSection.description",
+          "useCasesSection.use_cases",
+          "whySection.title",
+          "whySection.description",
+          "whySection.advantages",
+          "successSection.title",
+          "successSection.success_stories"
         ]
       },
       "conditions": []
@@ -1110,7 +3031,23 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "headerSection.title",
+          "headerSection.subtitle",
+          "headerSection.description",
+          "headerSection.hero",
+          "headerSection.cta.label",
+          "headerSection.cta.url",
+          "headerSection.cta.external_url",
+          "stepsSection.steps",
+          "useCasesSection.title",
+          "useCasesSection.description",
+          "useCasesSection.use_cases",
+          "whySection.title",
+          "whySection.description",
+          "whySection.advantages",
+          "successSection.title",
+          "successSection.success_stories"
         ]
       },
       "conditions": []
@@ -1124,7 +3061,23 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "headerSection.title",
+          "headerSection.subtitle",
+          "headerSection.description",
+          "headerSection.hero",
+          "headerSection.cta.label",
+          "headerSection.cta.url",
+          "headerSection.cta.external_url",
+          "stepsSection.steps",
+          "useCasesSection.title",
+          "useCasesSection.description",
+          "useCasesSection.use_cases",
+          "whySection.title",
+          "whySection.description",
+          "whySection.advantages",
+          "successSection.title",
+          "successSection.success_stories"
         ]
       },
       "conditions": []
@@ -1138,7 +3091,24 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "headerSection.title",
+          "headerSection.subtitle",
+          "headerSection.description",
+          "headerSection.hero",
+          "headerSection.cta.label",
+          "headerSection.cta.url",
+          "headerSection.cta.external_url",
+          "stepSection.steps",
+          "useCaseSection.title",
+          "useCaseSection.description",
+          "useCaseSection.use_cases",
+          "whySection.title",
+          "whySection.description",
+          "whySection.advantages",
+          "howSection.title",
+          "howSection.subtitle",
+          "howSection.description"
         ]
       },
       "conditions": []
@@ -1164,7 +3134,24 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "headerSection.title",
+          "headerSection.subtitle",
+          "headerSection.description",
+          "headerSection.hero",
+          "headerSection.cta.label",
+          "headerSection.cta.url",
+          "headerSection.cta.external_url",
+          "stepSection.steps",
+          "useCaseSection.title",
+          "useCaseSection.description",
+          "useCaseSection.use_cases",
+          "whySection.title",
+          "whySection.description",
+          "whySection.advantages",
+          "howSection.title",
+          "howSection.subtitle",
+          "howSection.description"
         ]
       },
       "conditions": []
@@ -1178,7 +3165,24 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "headerSection.title",
+          "headerSection.subtitle",
+          "headerSection.description",
+          "headerSection.hero",
+          "headerSection.cta.label",
+          "headerSection.cta.url",
+          "headerSection.cta.external_url",
+          "stepSection.steps",
+          "useCaseSection.title",
+          "useCaseSection.description",
+          "useCaseSection.use_cases",
+          "whySection.title",
+          "whySection.description",
+          "whySection.advantages",
+          "howSection.title",
+          "howSection.subtitle",
+          "howSection.description"
         ]
       },
       "conditions": []
@@ -1192,7 +3196,24 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "headerSection.title",
+          "headerSection.subtitle",
+          "headerSection.description",
+          "headerSection.hero",
+          "headerSection.cta.label",
+          "headerSection.cta.url",
+          "headerSection.cta.external_url",
+          "stepSection.steps",
+          "useCasesSection.title",
+          "useCasesSection.description",
+          "useCasesSection.use_cases",
+          "whySection.title",
+          "whySection.description",
+          "whySection.advantages",
+          "howSection.title",
+          "howSection.subtitle",
+          "howSection.description"
         ]
       },
       "conditions": []
@@ -1218,7 +3239,24 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "headerSection.title",
+          "headerSection.subtitle",
+          "headerSection.description",
+          "headerSection.hero",
+          "headerSection.cta.label",
+          "headerSection.cta.url",
+          "headerSection.cta.external_url",
+          "stepSection.steps",
+          "useCasesSection.title",
+          "useCasesSection.description",
+          "useCasesSection.use_cases",
+          "whySection.title",
+          "whySection.description",
+          "whySection.advantages",
+          "howSection.title",
+          "howSection.subtitle",
+          "howSection.description"
         ]
       },
       "conditions": []
@@ -1232,7 +3270,24 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "headerSection.title",
+          "headerSection.subtitle",
+          "headerSection.description",
+          "headerSection.hero",
+          "headerSection.cta.label",
+          "headerSection.cta.url",
+          "headerSection.cta.external_url",
+          "stepSection.steps",
+          "useCasesSection.title",
+          "useCasesSection.description",
+          "useCasesSection.use_cases",
+          "whySection.title",
+          "whySection.description",
+          "whySection.advantages",
+          "howSection.title",
+          "howSection.subtitle",
+          "howSection.description"
         ]
       },
       "conditions": []
@@ -1287,6 +3342,111 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::step.step",
+      "properties": {
+        "fields": [
+          "title",
+          "description",
+          "number"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::step.step",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::step.step",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::step.step",
+      "properties": {
+        "fields": [
+          "title",
+          "description",
+          "number"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::step.step",
+      "properties": {
+        "fields": [
+          "title",
+          "description",
+          "number"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::success-story.success-story",
+      "properties": {
+        "fields": [
+          "title",
+          "description",
+          "listTitle",
+          "credentials",
+          "link.label",
+          "link.route"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::success-story.success-story",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::success-story.success-story",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::success-story.success-story",
+      "properties": {
+        "fields": [
+          "title",
+          "description",
+          "listTitle",
+          "credentials",
+          "link.label",
+          "link.route"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::success-story.success-story",
+      "properties": {
+        "fields": [
+          "title",
+          "description",
+          "listTitle",
+          "credentials",
+          "link.label",
+          "link.route"
         ]
       },
       "conditions": []
@@ -1425,6 +3585,216 @@
     },
     {
       "action": "plugin::content-manager.explorer.create",
+      "subject": "api::tier.tier",
+      "properties": {
+        "fields": [
+          "button.label",
+          "button.url",
+          "button.outsideWeb",
+          "button.outlined",
+          "button.filename",
+          "description",
+          "name",
+          "subPriceMonthLabel",
+          "subPriceYearLabel",
+          "type",
+          "monthlyPrice",
+          "yearlyPrice",
+          "features.activeUsers",
+          "features.apiKeys",
+          "features.dids",
+          "features.issuanceTemplates",
+          "features.issuedCredentials",
+          "features.verificationTemplates",
+          "features.credentialsInISO28013",
+          "features.credentialsInW3CFormat",
+          "features.customGDPRPurposes",
+          "features.customQR",
+          "features.didPublicCatalogue",
+          "features.ebsiIntegration",
+          "features.integrationCustomTrustFrameworks",
+          "features.integrationCustomTrustInfraestructure",
+          "features.newSchemaPublicCatalogue",
+          "features.sandBoxEnvironment",
+          "features.slas",
+          "features.stadistics",
+          "features.premierSupport",
+          "features.standardSupport",
+          "features.nFactor",
+          "features.notifications",
+          "popular",
+          "button2.label",
+          "button2.url",
+          "button2.outsideWeb",
+          "button2.outlined",
+          "button2.filename"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::tier.tier",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::tier.tier",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::tier.tier",
+      "properties": {
+        "fields": [
+          "button.label",
+          "button.url",
+          "button.outsideWeb",
+          "button.outlined",
+          "button.filename",
+          "description",
+          "name",
+          "subPriceMonthLabel",
+          "subPriceYearLabel",
+          "type",
+          "monthlyPrice",
+          "yearlyPrice",
+          "features.activeUsers",
+          "features.apiKeys",
+          "features.dids",
+          "features.issuanceTemplates",
+          "features.issuedCredentials",
+          "features.verificationTemplates",
+          "features.credentialsInISO28013",
+          "features.credentialsInW3CFormat",
+          "features.customGDPRPurposes",
+          "features.customQR",
+          "features.didPublicCatalogue",
+          "features.ebsiIntegration",
+          "features.integrationCustomTrustFrameworks",
+          "features.integrationCustomTrustInfraestructure",
+          "features.newSchemaPublicCatalogue",
+          "features.sandBoxEnvironment",
+          "features.slas",
+          "features.stadistics",
+          "features.premierSupport",
+          "features.standardSupport",
+          "features.nFactor",
+          "features.notifications",
+          "popular",
+          "button2.label",
+          "button2.url",
+          "button2.outsideWeb",
+          "button2.outlined",
+          "button2.filename"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::tier.tier",
+      "properties": {
+        "fields": [
+          "button.label",
+          "button.url",
+          "button.outsideWeb",
+          "button.outlined",
+          "button.filename",
+          "description",
+          "name",
+          "subPriceMonthLabel",
+          "subPriceYearLabel",
+          "type",
+          "monthlyPrice",
+          "yearlyPrice",
+          "features.activeUsers",
+          "features.apiKeys",
+          "features.dids",
+          "features.issuanceTemplates",
+          "features.issuedCredentials",
+          "features.verificationTemplates",
+          "features.credentialsInISO28013",
+          "features.credentialsInW3CFormat",
+          "features.customGDPRPurposes",
+          "features.customQR",
+          "features.didPublicCatalogue",
+          "features.ebsiIntegration",
+          "features.integrationCustomTrustFrameworks",
+          "features.integrationCustomTrustInfraestructure",
+          "features.newSchemaPublicCatalogue",
+          "features.sandBoxEnvironment",
+          "features.slas",
+          "features.stadistics",
+          "features.premierSupport",
+          "features.standardSupport",
+          "features.nFactor",
+          "features.notifications",
+          "popular",
+          "button2.label",
+          "button2.url",
+          "button2.outsideWeb",
+          "button2.outlined",
+          "button2.filename"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::use-case.use-case",
+      "properties": {
+        "fields": [
+          "title",
+          "description",
+          "identifier",
+          "image"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::use-case.use-case",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::use-case.use-case",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::use-case.use-case",
+      "properties": {
+        "fields": [
+          "title",
+          "description",
+          "identifier",
+          "image"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::use-case.use-case",
+      "properties": {
+        "fields": [
+          "title",
+          "description",
+          "identifier",
+          "image"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
       "subject": "api::uses-cases-and-sector.uses-cases-and-sector",
       "properties": {
         "fields": [
@@ -1432,7 +3802,23 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "header.title",
+          "header.subtitle",
+          "header.description",
+          "header.hero",
+          "header.cta.label",
+          "header.cta.url",
+          "header.cta.external_url",
+          "industriesSection.title",
+          "industriesSection.description",
+          "industriesSection.categories.title",
+          "industriesSection.categories.description",
+          "industriesSection.categories.identifier",
+          "industriesSection.categories.industries",
+          "useCasesSection.title",
+          "useCasesSection.description",
+          "useCasesSection.use_cases"
         ]
       },
       "conditions": []
@@ -1458,7 +3844,23 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "header.title",
+          "header.subtitle",
+          "header.description",
+          "header.hero",
+          "header.cta.label",
+          "header.cta.url",
+          "header.cta.external_url",
+          "industriesSection.title",
+          "industriesSection.description",
+          "industriesSection.categories.title",
+          "industriesSection.categories.description",
+          "industriesSection.categories.identifier",
+          "industriesSection.categories.industries",
+          "useCasesSection.title",
+          "useCasesSection.description",
+          "useCasesSection.use_cases"
         ]
       },
       "conditions": []
@@ -1472,7 +3874,167 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "header.title",
+          "header.subtitle",
+          "header.description",
+          "header.hero",
+          "header.cta.label",
+          "header.cta.url",
+          "header.cta.external_url",
+          "industriesSection.title",
+          "industriesSection.description",
+          "industriesSection.categories.title",
+          "industriesSection.categories.description",
+          "industriesSection.categories.identifier",
+          "industriesSection.categories.industries",
+          "useCasesSection.title",
+          "useCasesSection.description",
+          "useCasesSection.use_cases"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::value.value",
+      "properties": {
+        "fields": [
+          "title",
+          "description",
+          "number"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::value.value",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::value.value",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::value.value",
+      "properties": {
+        "fields": [
+          "title",
+          "description",
+          "number"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::value.value",
+      "properties": {
+        "fields": [
+          "title",
+          "description",
+          "number"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::wallet-ad-feature.wallet-ad-feature",
+      "properties": {
+        "fields": [
+          "title",
+          "description"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::wallet-ad-feature.wallet-ad-feature",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::wallet-ad-feature.wallet-ad-feature",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::wallet-ad-feature.wallet-ad-feature",
+      "properties": {
+        "fields": [
+          "title",
+          "description"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::wallet-ad-feature.wallet-ad-feature",
+      "properties": {
+        "fields": [
+          "title",
+          "description"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::wallet-feature.wallet-feature",
+      "properties": {
+        "fields": [
+          "title",
+          "description",
+          "image",
+          "identifier"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::wallet-feature.wallet-feature",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::wallet-feature.wallet-feature",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::wallet-feature.wallet-feature",
+      "properties": {
+        "fields": [
+          "title",
+          "description",
+          "image",
+          "identifier"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::wallet-feature.wallet-feature",
+      "properties": {
+        "fields": [
+          "title",
+          "description",
+          "image",
+          "identifier"
         ]
       },
       "conditions": []

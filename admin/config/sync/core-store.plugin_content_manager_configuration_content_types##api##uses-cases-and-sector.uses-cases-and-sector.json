@@ -34,6 +34,48 @@
           "sortable": false
         }
       },
+      "header": {
+        "edit": {
+          "label": "header",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "header",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "industriesSection": {
+        "edit": {
+          "label": "industriesSection",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "industriesSection",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "useCasesSection": {
+        "edit": {
+          "label": "useCasesSection",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "useCasesSection",
+          "searchable": false,
+          "sortable": false
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -74,6 +116,24 @@
         [
           {
             "name": "seo",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "header",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "industriesSection",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "useCasesSection",
             "size": 12
           }
         ]

@@ -190,17 +190,20 @@
           "minLength": 6,
           "configurable": false,
           "required": false,
-          "private": true
+          "private": true,
+          "searchable": false
         },
         "resetPasswordToken": {
           "type": "string",
           "configurable": false,
-          "private": true
+          "private": true,
+          "searchable": false
         },
         "registrationToken": {
           "type": "string",
           "configurable": false,
-          "private": true
+          "private": true,
+          "searchable": false
         },
         "isActive": {
           "type": "boolean",
@@ -226,7 +229,8 @@
         "preferedLanguage": {
           "type": "string",
           "configurable": false,
-          "required": false
+          "required": false,
+          "searchable": false
         },
         "createdAt": {
           "type": "datetime"
@@ -307,17 +311,20 @@
             "minLength": 6,
             "configurable": false,
             "required": false,
-            "private": true
+            "private": true,
+            "searchable": false
           },
           "resetPasswordToken": {
             "type": "string",
             "configurable": false,
-            "private": true
+            "private": true,
+            "searchable": false
           },
           "registrationToken": {
             "type": "string",
             "configurable": false,
-            "private": true
+            "private": true,
+            "searchable": false
           },
           "isActive": {
             "type": "boolean",
@@ -343,7 +350,8 @@
           "preferedLanguage": {
             "type": "string",
             "configurable": false,
-            "required": false
+            "required": false,
+            "searchable": false
           }
         },
         "kind": "collectionType"
@@ -543,7 +551,8 @@
           "type": "string",
           "minLength": 1,
           "configurable": false,
-          "required": true
+          "required": true,
+          "searchable": false
         },
         "lastUsedAt": {
           "type": "datetime",
@@ -644,7 +653,8 @@
             "type": "string",
             "minLength": 1,
             "configurable": false,
-            "required": true
+            "required": true,
+            "searchable": false
           },
           "lastUsedAt": {
             "type": "datetime",
@@ -1141,7 +1151,8 @@
           "type": "string",
           "min": 1,
           "required": true,
-          "private": true
+          "private": true,
+          "searchable": false
         },
         "createdAt": {
           "type": "datetime"
@@ -1311,7 +1322,8 @@
             "type": "string",
             "min": 1,
             "required": true,
-            "private": true
+            "private": true,
+            "searchable": false
           }
         },
         "kind": "collectionType"
@@ -1987,6 +1999,196 @@
       "plugin": "users-permissions",
       "globalId": "UsersPermissionsUser"
     },
+    "api::ad-feature.ad-feature": {
+      "kind": "collectionType",
+      "collectionName": "ad_features",
+      "info": {
+        "singularName": "ad-feature",
+        "pluralName": "ad-features",
+        "displayName": "AdFeature"
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "text"
+        },
+        "identifier": {
+          "type": "uid"
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "ad_features",
+        "info": {
+          "singularName": "ad-feature",
+          "pluralName": "ad-features",
+          "displayName": "AdFeature"
+        },
+        "options": {
+          "draftAndPublish": true
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "text"
+          },
+          "identifier": {
+            "type": "uid"
+          }
+        },
+        "kind": "collectionType"
+      },
+      "modelType": "contentType",
+      "modelName": "ad-feature",
+      "connection": "default",
+      "uid": "api::ad-feature.ad-feature",
+      "apiName": "ad-feature",
+      "globalId": "AdFeature",
+      "actions": {},
+      "lifecycles": {}
+    },
+    "api::advantage.advantage": {
+      "kind": "collectionType",
+      "collectionName": "advantages",
+      "info": {
+        "singularName": "advantage",
+        "pluralName": "advantages",
+        "displayName": "Advantage"
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "text"
+        },
+        "icon": {
+          "allowedTypes": [
+            "images",
+            "files",
+            "videos",
+            "audios"
+          ],
+          "type": "media",
+          "multiple": false
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "advantages",
+        "info": {
+          "singularName": "advantage",
+          "pluralName": "advantages",
+          "displayName": "Advantage"
+        },
+        "options": {
+          "draftAndPublish": true
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "text"
+          },
+          "icon": {
+            "allowedTypes": [
+              "images",
+              "files",
+              "videos",
+              "audios"
+            ],
+            "type": "media",
+            "multiple": false
+          }
+        },
+        "kind": "collectionType"
+      },
+      "modelType": "contentType",
+      "modelName": "advantage",
+      "connection": "default",
+      "uid": "api::advantage.advantage",
+      "apiName": "advantage",
+      "globalId": "Advantage",
+      "actions": {},
+      "lifecycles": {}
+    },
     "api::author.author": {
       "kind": "collectionType",
       "collectionName": "authors",
@@ -2104,6 +2306,196 @@
       "uid": "api::author.author",
       "apiName": "author",
       "globalId": "Author",
+      "actions": {},
+      "lifecycles": {}
+    },
+    "api::award.award": {
+      "kind": "collectionType",
+      "collectionName": "awards",
+      "info": {
+        "singularName": "award",
+        "pluralName": "awards",
+        "displayName": "Award"
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "text"
+        },
+        "icon": {
+          "allowedTypes": [
+            "images",
+            "files",
+            "videos",
+            "audios"
+          ],
+          "type": "media",
+          "multiple": false
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "awards",
+        "info": {
+          "singularName": "award",
+          "pluralName": "awards",
+          "displayName": "Award"
+        },
+        "options": {
+          "draftAndPublish": true
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "text"
+          },
+          "icon": {
+            "allowedTypes": [
+              "images",
+              "files",
+              "videos",
+              "audios"
+            ],
+            "type": "media",
+            "multiple": false
+          }
+        },
+        "kind": "collectionType"
+      },
+      "modelType": "contentType",
+      "modelName": "award",
+      "connection": "default",
+      "uid": "api::award.award",
+      "apiName": "award",
+      "globalId": "Award",
+      "actions": {},
+      "lifecycles": {}
+    },
+    "api::benefit.benefit": {
+      "kind": "collectionType",
+      "collectionName": "benefits",
+      "info": {
+        "singularName": "benefit",
+        "pluralName": "benefits",
+        "displayName": "Benefit"
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "title": {
+          "type": "string"
+        },
+        "number": {
+          "type": "integer"
+        },
+        "description": {
+          "type": "text"
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "benefits",
+        "info": {
+          "singularName": "benefit",
+          "pluralName": "benefits",
+          "displayName": "Benefit"
+        },
+        "options": {
+          "draftAndPublish": true
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "title": {
+            "type": "string"
+          },
+          "number": {
+            "type": "integer"
+          },
+          "description": {
+            "type": "text"
+          }
+        },
+        "kind": "collectionType"
+      },
+      "modelType": "contentType",
+      "modelName": "benefit",
+      "connection": "default",
+      "uid": "api::benefit.benefit",
+      "apiName": "benefit",
+      "globalId": "Benefit",
       "actions": {},
       "lifecycles": {}
     },
@@ -2411,6 +2803,140 @@
       "actions": {},
       "lifecycles": {}
     },
+    "api::certification.certification": {
+      "kind": "collectionType",
+      "collectionName": "certifications",
+      "info": {
+        "singularName": "certification",
+        "pluralName": "certifications",
+        "displayName": "Certification",
+        "description": ""
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "title": {
+          "type": "string"
+        },
+        "firstParagraph": {
+          "type": "text"
+        },
+        "secondParagraph": {
+          "type": "text"
+        },
+        "thirdParagraph": {
+          "type": "text"
+        },
+        "fourthParagraph": {
+          "type": "text"
+        },
+        "image": {
+          "type": "media",
+          "multiple": false,
+          "required": false,
+          "allowedTypes": [
+            "images",
+            "files",
+            "videos",
+            "audios"
+          ]
+        },
+        "button": {
+          "type": "component",
+          "repeatable": false,
+          "component": "generic.button"
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "certifications",
+        "info": {
+          "singularName": "certification",
+          "pluralName": "certifications",
+          "displayName": "Certification",
+          "description": ""
+        },
+        "options": {
+          "draftAndPublish": true
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "title": {
+            "type": "string"
+          },
+          "firstParagraph": {
+            "type": "text"
+          },
+          "secondParagraph": {
+            "type": "text"
+          },
+          "thirdParagraph": {
+            "type": "text"
+          },
+          "fourthParagraph": {
+            "type": "text"
+          },
+          "image": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": [
+              "images",
+              "files",
+              "videos",
+              "audios"
+            ]
+          },
+          "button": {
+            "type": "component",
+            "repeatable": false,
+            "component": "generic.button"
+          }
+        },
+        "kind": "collectionType"
+      },
+      "modelType": "contentType",
+      "modelName": "certification",
+      "connection": "default",
+      "uid": "api::certification.certification",
+      "apiName": "certification",
+      "globalId": "Certification",
+      "actions": {},
+      "lifecycles": {}
+    },
     "api::company-about-us.company-about-us": {
       "kind": "singleType",
       "collectionName": "company_about_uses",
@@ -2429,6 +2955,41 @@
           "type": "component",
           "repeatable": false,
           "component": "shared.seo"
+        },
+        "headerSection": {
+          "type": "component",
+          "repeatable": false,
+          "component": "generic.header"
+        },
+        "ourStorySection": {
+          "displayName": "OurStory",
+          "type": "component",
+          "repeatable": false,
+          "component": "about-us.our-story"
+        },
+        "missionDescription": {
+          "type": "text"
+        },
+        "valuesSection": {
+          "displayName": "ValueSection",
+          "type": "component",
+          "repeatable": false,
+          "component": "about-us.value-section"
+        },
+        "employeeSection": {
+          "displayName": "EmployeeSection",
+          "type": "component",
+          "repeatable": false,
+          "component": "about-us.employee-section"
+        },
+        "awardsSection": {
+          "displayName": "AwardSection",
+          "type": "component",
+          "repeatable": false,
+          "component": "about-us.award-section"
+        },
+        "fundingDescription": {
+          "type": "text"
         },
         "createdAt": {
           "type": "datetime"
@@ -2480,6 +3041,41 @@
             "type": "component",
             "repeatable": false,
             "component": "shared.seo"
+          },
+          "headerSection": {
+            "type": "component",
+            "repeatable": false,
+            "component": "generic.header"
+          },
+          "ourStorySection": {
+            "displayName": "OurStory",
+            "type": "component",
+            "repeatable": false,
+            "component": "about-us.our-story"
+          },
+          "missionDescription": {
+            "type": "text"
+          },
+          "valuesSection": {
+            "displayName": "ValueSection",
+            "type": "component",
+            "repeatable": false,
+            "component": "about-us.value-section"
+          },
+          "employeeSection": {
+            "displayName": "EmployeeSection",
+            "type": "component",
+            "repeatable": false,
+            "component": "about-us.employee-section"
+          },
+          "awardsSection": {
+            "displayName": "AwardSection",
+            "type": "component",
+            "repeatable": false,
+            "component": "about-us.award-section"
+          },
+          "fundingDescription": {
+            "type": "text"
           }
         },
         "kind": "singleType"
@@ -2592,6 +3188,18 @@
           "repeatable": false,
           "component": "shared.seo"
         },
+        "reasonSection": {
+          "displayName": "Contact Reason Section",
+          "type": "component",
+          "repeatable": false,
+          "component": "contact-us.contact-reason-section"
+        },
+        "faqSection": {
+          "displayName": "FAQ Section",
+          "type": "component",
+          "repeatable": false,
+          "component": "contact-us.faq-section"
+        },
         "createdAt": {
           "type": "datetime"
         },
@@ -2642,6 +3250,18 @@
             "type": "component",
             "repeatable": false,
             "component": "shared.seo"
+          },
+          "reasonSection": {
+            "displayName": "Contact Reason Section",
+            "type": "component",
+            "repeatable": false,
+            "component": "contact-us.contact-reason-section"
+          },
+          "faqSection": {
+            "displayName": "FAQ Section",
+            "type": "component",
+            "repeatable": false,
+            "component": "contact-us.faq-section"
           }
         },
         "kind": "singleType"
@@ -2661,7 +3281,8 @@
       "info": {
         "singularName": "company-partners",
         "pluralName": "company-partner",
-        "displayName": "4.4. Company - Partners"
+        "displayName": "4.4. Company - Partners",
+        "description": ""
       },
       "options": {
         "draftAndPublish": true
@@ -2672,6 +3293,34 @@
           "type": "component",
           "repeatable": false,
           "component": "shared.seo"
+        },
+        "headerSection": {
+          "type": "component",
+          "repeatable": false,
+          "component": "generic.header"
+        },
+        "typeSection": {
+          "displayName": "Partnership Type Section",
+          "type": "component",
+          "repeatable": false,
+          "component": "partnership.partnership-type-section"
+        },
+        "becomeSection": {
+          "displayName": "Become Section",
+          "type": "component",
+          "repeatable": false,
+          "component": "partnership.become-section"
+        },
+        "partnershipSection": {
+          "displayName": "Partnership Section",
+          "type": "component",
+          "repeatable": false,
+          "component": "partnership.partnership-section"
+        },
+        "applySection": {
+          "type": "component",
+          "repeatable": false,
+          "component": "generic.heading"
         },
         "createdAt": {
           "type": "datetime"
@@ -2711,7 +3360,8 @@
         "info": {
           "singularName": "company-partners",
           "pluralName": "company-partner",
-          "displayName": "4.4. Company - Partners"
+          "displayName": "4.4. Company - Partners",
+          "description": ""
         },
         "options": {
           "draftAndPublish": true
@@ -2722,6 +3372,34 @@
             "type": "component",
             "repeatable": false,
             "component": "shared.seo"
+          },
+          "headerSection": {
+            "type": "component",
+            "repeatable": false,
+            "component": "generic.header"
+          },
+          "typeSection": {
+            "displayName": "Partnership Type Section",
+            "type": "component",
+            "repeatable": false,
+            "component": "partnership.partnership-type-section"
+          },
+          "becomeSection": {
+            "displayName": "Become Section",
+            "type": "component",
+            "repeatable": false,
+            "component": "partnership.become-section"
+          },
+          "partnershipSection": {
+            "displayName": "Partnership Section",
+            "type": "component",
+            "repeatable": false,
+            "component": "partnership.partnership-section"
+          },
+          "applySection": {
+            "type": "component",
+            "repeatable": false,
+            "component": "generic.heading"
           }
         },
         "kind": "singleType"
@@ -2732,6 +3410,82 @@
       "uid": "api::company-partners.company-partners",
       "apiName": "company-partners",
       "globalId": "CompanyPartners",
+      "actions": {},
+      "lifecycles": {}
+    },
+    "api::contact-reason.contact-reason": {
+      "kind": "collectionType",
+      "collectionName": "contact_reasons",
+      "info": {
+        "singularName": "contact-reason",
+        "pluralName": "contact-reasons",
+        "displayName": "Contact Reason"
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "title": {
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "contact_reasons",
+        "info": {
+          "singularName": "contact-reason",
+          "pluralName": "contact-reasons",
+          "displayName": "Contact Reason"
+        },
+        "options": {
+          "draftAndPublish": true
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "title": {
+            "type": "string"
+          }
+        },
+        "kind": "collectionType"
+      },
+      "modelType": "contentType",
+      "modelName": "contact-reason",
+      "connection": "default",
+      "uid": "api::contact-reason.contact-reason",
+      "apiName": "contact-reason",
+      "globalId": "ContactReason",
       "actions": {},
       "lifecycles": {}
     },
@@ -2831,6 +3585,244 @@
       "actions": {},
       "lifecycles": {}
     },
+    "api::credential.credential": {
+      "kind": "collectionType",
+      "collectionName": "credentials",
+      "info": {
+        "singularName": "credential",
+        "pluralName": "credentials",
+        "displayName": "Credential",
+        "description": ""
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "category": {
+          "type": "string"
+        },
+        "icon": {
+          "type": "media",
+          "multiple": false,
+          "required": false,
+          "allowedTypes": [
+            "images",
+            "files",
+            "videos",
+            "audios"
+          ]
+        },
+        "issuanceDate": {
+          "type": "date"
+        },
+        "issuer": {
+          "type": "string"
+        },
+        "mainData": {
+          "type": "string"
+        },
+        "validated": {
+          "type": "boolean"
+        },
+        "expirationDate": {
+          "type": "date"
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "credentials",
+        "info": {
+          "singularName": "credential",
+          "pluralName": "credentials",
+          "displayName": "Credential",
+          "description": ""
+        },
+        "options": {
+          "draftAndPublish": true
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "category": {
+            "type": "string"
+          },
+          "icon": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": [
+              "images",
+              "files",
+              "videos",
+              "audios"
+            ]
+          },
+          "issuanceDate": {
+            "type": "date"
+          },
+          "issuer": {
+            "type": "string"
+          },
+          "mainData": {
+            "type": "string"
+          },
+          "validated": {
+            "type": "boolean"
+          },
+          "expirationDate": {
+            "type": "date"
+          }
+        },
+        "kind": "collectionType"
+      },
+      "modelType": "contentType",
+      "modelName": "credential",
+      "connection": "default",
+      "uid": "api::credential.credential",
+      "apiName": "credential",
+      "globalId": "Credential",
+      "actions": {},
+      "lifecycles": {}
+    },
+    "api::employee.employee": {
+      "kind": "collectionType",
+      "collectionName": "employees",
+      "info": {
+        "singularName": "employee",
+        "pluralName": "employees",
+        "displayName": "Employee"
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "role": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "linkedinRoute": {
+          "type": "string"
+        },
+        "portrait": {
+          "allowedTypes": [
+            "images",
+            "files",
+            "videos",
+            "audios"
+          ],
+          "type": "media",
+          "multiple": false
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "employees",
+        "info": {
+          "singularName": "employee",
+          "pluralName": "employees",
+          "displayName": "Employee"
+        },
+        "options": {
+          "draftAndPublish": true
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "role": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "linkedinRoute": {
+            "type": "string"
+          },
+          "portrait": {
+            "allowedTypes": [
+              "images",
+              "files",
+              "videos",
+              "audios"
+            ],
+            "type": "media",
+            "multiple": false
+          }
+        },
+        "kind": "collectionType"
+      },
+      "modelType": "contentType",
+      "modelName": "employee",
+      "connection": "default",
+      "uid": "api::employee.employee",
+      "apiName": "employee",
+      "globalId": "Employee",
+      "actions": {},
+      "lifecycles": {}
+    },
     "api::entry.entry": {
       "kind": "singleType",
       "collectionName": "entries",
@@ -2849,38 +3841,6 @@
         }
       },
       "attributes": {
-        "Body": {
-          "pluginOptions": {
-            "i18n": {
-              "localized": true
-            }
-          },
-          "type": "richtext"
-        },
-        "HeroImage": {
-          "type": "media",
-          "multiple": false,
-          "required": false,
-          "allowedTypes": [
-            "images",
-            "files",
-            "videos",
-            "audios"
-          ],
-          "pluginOptions": {
-            "i18n": {
-              "localized": true
-            }
-          }
-        },
-        "Title": {
-          "pluginOptions": {
-            "i18n": {
-              "localized": true
-            }
-          },
-          "type": "string"
-        },
         "seo": {
           "type": "component",
           "repeatable": false,
@@ -2890,6 +3850,76 @@
             }
           },
           "component": "shared.seo"
+        },
+        "firstSection": {
+          "type": "component",
+          "repeatable": false,
+          "pluginOptions": {
+            "i18n": {
+              "localized": true
+            }
+          },
+          "component": "shared.home-section"
+        },
+        "thirdSection": {
+          "type": "component",
+          "repeatable": false,
+          "pluginOptions": {
+            "i18n": {
+              "localized": true
+            }
+          },
+          "component": "shared.home-section"
+        },
+        "fourthSection": {
+          "type": "component",
+          "repeatable": false,
+          "pluginOptions": {
+            "i18n": {
+              "localized": true
+            }
+          },
+          "component": "shared.home-section"
+        },
+        "fifthSection": {
+          "type": "component",
+          "repeatable": false,
+          "pluginOptions": {
+            "i18n": {
+              "localized": true
+            }
+          },
+          "component": "shared.home-section"
+        },
+        "sixthSection": {
+          "type": "component",
+          "repeatable": false,
+          "pluginOptions": {
+            "i18n": {
+              "localized": true
+            }
+          },
+          "component": "shared.home-section"
+        },
+        "seventhSection": {
+          "type": "component",
+          "repeatable": false,
+          "pluginOptions": {
+            "i18n": {
+              "localized": true
+            }
+          },
+          "component": "shared.home-section"
+        },
+        "eighthSection": {
+          "type": "component",
+          "repeatable": false,
+          "pluginOptions": {
+            "i18n": {
+              "localized": true
+            }
+          },
+          "component": "shared.home-section"
         },
         "createdAt": {
           "type": "datetime"
@@ -2957,38 +3987,6 @@
           }
         },
         "attributes": {
-          "Body": {
-            "pluginOptions": {
-              "i18n": {
-                "localized": true
-              }
-            },
-            "type": "richtext"
-          },
-          "HeroImage": {
-            "type": "media",
-            "multiple": false,
-            "required": false,
-            "allowedTypes": [
-              "images",
-              "files",
-              "videos",
-              "audios"
-            ],
-            "pluginOptions": {
-              "i18n": {
-                "localized": true
-              }
-            }
-          },
-          "Title": {
-            "pluginOptions": {
-              "i18n": {
-                "localized": true
-              }
-            },
-            "type": "string"
-          },
           "seo": {
             "type": "component",
             "repeatable": false,
@@ -2998,6 +3996,76 @@
               }
             },
             "component": "shared.seo"
+          },
+          "firstSection": {
+            "type": "component",
+            "repeatable": false,
+            "pluginOptions": {
+              "i18n": {
+                "localized": true
+              }
+            },
+            "component": "shared.home-section"
+          },
+          "thirdSection": {
+            "type": "component",
+            "repeatable": false,
+            "pluginOptions": {
+              "i18n": {
+                "localized": true
+              }
+            },
+            "component": "shared.home-section"
+          },
+          "fourthSection": {
+            "type": "component",
+            "repeatable": false,
+            "pluginOptions": {
+              "i18n": {
+                "localized": true
+              }
+            },
+            "component": "shared.home-section"
+          },
+          "fifthSection": {
+            "type": "component",
+            "repeatable": false,
+            "pluginOptions": {
+              "i18n": {
+                "localized": true
+              }
+            },
+            "component": "shared.home-section"
+          },
+          "sixthSection": {
+            "type": "component",
+            "repeatable": false,
+            "pluginOptions": {
+              "i18n": {
+                "localized": true
+              }
+            },
+            "component": "shared.home-section"
+          },
+          "seventhSection": {
+            "type": "component",
+            "repeatable": false,
+            "pluginOptions": {
+              "i18n": {
+                "localized": true
+              }
+            },
+            "component": "shared.home-section"
+          },
+          "eighthSection": {
+            "type": "component",
+            "repeatable": false,
+            "pluginOptions": {
+              "i18n": {
+                "localized": true
+              }
+            },
+            "component": "shared.home-section"
           }
         },
         "kind": "singleType"
@@ -3011,13 +4079,189 @@
       "actions": {},
       "lifecycles": {}
     },
+    "api::faq.faq": {
+      "kind": "collectionType",
+      "collectionName": "faqs",
+      "info": {
+        "singularName": "faq",
+        "pluralName": "faqs",
+        "displayName": "FAQ"
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "title": {
+          "type": "string"
+        },
+        "list": {
+          "displayName": "FAQ",
+          "type": "component",
+          "repeatable": true,
+          "component": "contact-us.faq"
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "faqs",
+        "info": {
+          "singularName": "faq",
+          "pluralName": "faqs",
+          "displayName": "FAQ"
+        },
+        "options": {
+          "draftAndPublish": true
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "title": {
+            "type": "string"
+          },
+          "list": {
+            "displayName": "FAQ",
+            "type": "component",
+            "repeatable": true,
+            "component": "contact-us.faq"
+          }
+        },
+        "kind": "collectionType"
+      },
+      "modelType": "contentType",
+      "modelName": "faq",
+      "connection": "default",
+      "uid": "api::faq.faq",
+      "apiName": "faq",
+      "globalId": "Faq",
+      "actions": {},
+      "lifecycles": {}
+    },
+    "api::feature.feature": {
+      "kind": "collectionType",
+      "collectionName": "features",
+      "info": {
+        "singularName": "feature",
+        "pluralName": "features",
+        "displayName": "Feature"
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "title": {
+          "type": "string"
+        },
+        "firstParagraph": {
+          "type": "text"
+        },
+        "secondParagraph": {
+          "type": "text"
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "features",
+        "info": {
+          "singularName": "feature",
+          "pluralName": "features",
+          "displayName": "Feature"
+        },
+        "options": {
+          "draftAndPublish": true
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "title": {
+            "type": "string"
+          },
+          "firstParagraph": {
+            "type": "text"
+          },
+          "secondParagraph": {
+            "type": "text"
+          }
+        },
+        "kind": "collectionType"
+      },
+      "modelType": "contentType",
+      "modelName": "feature",
+      "connection": "default",
+      "uid": "api::feature.feature",
+      "apiName": "feature",
+      "globalId": "Feature",
+      "actions": {},
+      "lifecycles": {}
+    },
     "api::gataca-studio.gataca-studio": {
       "kind": "singleType",
       "collectionName": "gataca_studios",
       "info": {
         "singularName": "gataca-studio",
         "pluralName": "gataca-studios",
-        "displayName": "2.2. Products - Studio",
+        "displayName": "2.2 Products - Studio",
         "description": ""
       },
       "options": {
@@ -3029,6 +4273,51 @@
           "type": "component",
           "repeatable": false,
           "component": "shared.seo"
+        },
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "text"
+        },
+        "button": {
+          "type": "component",
+          "repeatable": false,
+          "component": "generic.button"
+        },
+        "featureSection": {
+          "displayName": "FeatureSection",
+          "type": "component",
+          "repeatable": false,
+          "component": "studio.feature-section"
+        },
+        "whyStudioSection": {
+          "displayName": "WhyStudioSection",
+          "type": "component",
+          "repeatable": false,
+          "component": "studio.why-studio-section"
+        },
+        "howWorksSection": {
+          "displayName": "UseCaseSection",
+          "type": "component",
+          "repeatable": false,
+          "component": "studio.use-case-section"
+        },
+        "tierSection": {
+          "displayName": "TierSection",
+          "type": "component",
+          "repeatable": false,
+          "component": "studio.tier-section"
+        },
+        "headerSection": {
+          "type": "component",
+          "repeatable": false,
+          "component": "generic.header"
+        },
+        "adSection": {
+          "type": "component",
+          "repeatable": false,
+          "component": "studio.advance-section"
         },
         "createdAt": {
           "type": "datetime"
@@ -3068,7 +4357,7 @@
         "info": {
           "singularName": "gataca-studio",
           "pluralName": "gataca-studios",
-          "displayName": "2.2. Products - Studio",
+          "displayName": "2.2 Products - Studio",
           "description": ""
         },
         "options": {
@@ -3080,6 +4369,51 @@
             "type": "component",
             "repeatable": false,
             "component": "shared.seo"
+          },
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "text"
+          },
+          "button": {
+            "type": "component",
+            "repeatable": false,
+            "component": "generic.button"
+          },
+          "featureSection": {
+            "displayName": "FeatureSection",
+            "type": "component",
+            "repeatable": false,
+            "component": "studio.feature-section"
+          },
+          "whyStudioSection": {
+            "displayName": "WhyStudioSection",
+            "type": "component",
+            "repeatable": false,
+            "component": "studio.why-studio-section"
+          },
+          "howWorksSection": {
+            "displayName": "UseCaseSection",
+            "type": "component",
+            "repeatable": false,
+            "component": "studio.use-case-section"
+          },
+          "tierSection": {
+            "displayName": "TierSection",
+            "type": "component",
+            "repeatable": false,
+            "component": "studio.tier-section"
+          },
+          "headerSection": {
+            "type": "component",
+            "repeatable": false,
+            "component": "generic.header"
+          },
+          "adSection": {
+            "type": "component",
+            "repeatable": false,
+            "component": "studio.advance-section"
           }
         },
         "kind": "singleType"
@@ -3120,6 +4454,71 @@
               "localized": true
             }
           }
+        },
+        "headerSection": {
+          "type": "component",
+          "repeatable": false,
+          "pluginOptions": {
+            "i18n": {
+              "localized": true
+            }
+          },
+          "component": "generic.header"
+        },
+        "benefitSection": {
+          "displayName": "Benefit Section",
+          "type": "component",
+          "repeatable": false,
+          "pluginOptions": {
+            "i18n": {
+              "localized": true
+            }
+          },
+          "component": "wallet.benefit-section"
+        },
+        "featureSection": {
+          "displayName": "Wallet Feature",
+          "type": "component",
+          "repeatable": false,
+          "pluginOptions": {
+            "i18n": {
+              "localized": true
+            }
+          },
+          "component": "wallet.wallet-feature"
+        },
+        "walletAdFeature": {
+          "displayName": "Wallet AdFeature",
+          "type": "component",
+          "repeatable": false,
+          "pluginOptions": {
+            "i18n": {
+              "localized": true
+            }
+          },
+          "component": "wallet.wallet-ad-feature"
+        },
+        "howSection": {
+          "displayName": "HowSection",
+          "type": "component",
+          "repeatable": false,
+          "pluginOptions": {
+            "i18n": {
+              "localized": true
+            }
+          },
+          "component": "wallet.how-section"
+        },
+        "credentialSection": {
+          "displayName": "Credential Section",
+          "type": "component",
+          "repeatable": false,
+          "pluginOptions": {
+            "i18n": {
+              "localized": true
+            }
+          },
+          "component": "wallet.credential-section"
         },
         "createdAt": {
           "type": "datetime"
@@ -3196,6 +4595,71 @@
                 "localized": true
               }
             }
+          },
+          "headerSection": {
+            "type": "component",
+            "repeatable": false,
+            "pluginOptions": {
+              "i18n": {
+                "localized": true
+              }
+            },
+            "component": "generic.header"
+          },
+          "benefitSection": {
+            "displayName": "Benefit Section",
+            "type": "component",
+            "repeatable": false,
+            "pluginOptions": {
+              "i18n": {
+                "localized": true
+              }
+            },
+            "component": "wallet.benefit-section"
+          },
+          "featureSection": {
+            "displayName": "Wallet Feature",
+            "type": "component",
+            "repeatable": false,
+            "pluginOptions": {
+              "i18n": {
+                "localized": true
+              }
+            },
+            "component": "wallet.wallet-feature"
+          },
+          "walletAdFeature": {
+            "displayName": "Wallet AdFeature",
+            "type": "component",
+            "repeatable": false,
+            "pluginOptions": {
+              "i18n": {
+                "localized": true
+              }
+            },
+            "component": "wallet.wallet-ad-feature"
+          },
+          "howSection": {
+            "displayName": "HowSection",
+            "type": "component",
+            "repeatable": false,
+            "pluginOptions": {
+              "i18n": {
+                "localized": true
+              }
+            },
+            "component": "wallet.how-section"
+          },
+          "credentialSection": {
+            "displayName": "Credential Section",
+            "type": "component",
+            "repeatable": false,
+            "pluginOptions": {
+              "i18n": {
+                "localized": true
+              }
+            },
+            "component": "wallet.credential-section"
           }
         },
         "kind": "singleType"
@@ -3209,19 +4673,252 @@
       "actions": {},
       "lifecycles": {}
     },
-    "api::pricing.pricing": {
-      "kind": "singleType",
-      "collectionName": "pricings",
+    "api::industry.industry": {
+      "kind": "collectionType",
+      "collectionName": "industries",
       "info": {
-        "singularName": "pricing",
-        "pluralName": "pricings",
-        "displayName": "6. Pricing"
+        "singularName": "industry",
+        "pluralName": "industries",
+        "displayName": "Industry",
+        "description": ""
       },
       "options": {
         "draftAndPublish": true
       },
       "pluginOptions": {},
       "attributes": {
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "text"
+        },
+        "icon": {
+          "type": "media",
+          "multiple": false,
+          "required": false,
+          "allowedTypes": [
+            "images",
+            "files",
+            "videos",
+            "audios"
+          ]
+        },
+        "link": {
+          "type": "string"
+        },
+        "link_route": {
+          "type": "string"
+        },
+        "inside_description": {
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "industries",
+        "info": {
+          "singularName": "industry",
+          "pluralName": "industries",
+          "displayName": "Industry",
+          "description": ""
+        },
+        "options": {
+          "draftAndPublish": true
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "text"
+          },
+          "icon": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": [
+              "images",
+              "files",
+              "videos",
+              "audios"
+            ]
+          },
+          "link": {
+            "type": "string"
+          },
+          "link_route": {
+            "type": "string"
+          },
+          "inside_description": {
+            "type": "string"
+          }
+        },
+        "kind": "collectionType"
+      },
+      "modelType": "contentType",
+      "modelName": "industry",
+      "connection": "default",
+      "uid": "api::industry.industry",
+      "apiName": "industry",
+      "globalId": "Industry",
+      "actions": {},
+      "lifecycles": {}
+    },
+    "api::operation.operation": {
+      "kind": "collectionType",
+      "collectionName": "operations",
+      "info": {
+        "singularName": "operation",
+        "pluralName": "operations",
+        "displayName": "Operation"
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "text"
+        },
+        "image": {
+          "allowedTypes": [
+            "images",
+            "files",
+            "videos",
+            "audios"
+          ],
+          "type": "media",
+          "multiple": true
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "operations",
+        "info": {
+          "singularName": "operation",
+          "pluralName": "operations",
+          "displayName": "Operation"
+        },
+        "options": {
+          "draftAndPublish": true
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "text"
+          },
+          "image": {
+            "allowedTypes": [
+              "images",
+              "files",
+              "videos",
+              "audios"
+            ],
+            "type": "media",
+            "multiple": true
+          }
+        },
+        "kind": "collectionType"
+      },
+      "modelType": "contentType",
+      "modelName": "operation",
+      "connection": "default",
+      "uid": "api::operation.operation",
+      "apiName": "operation",
+      "globalId": "Operation",
+      "actions": {},
+      "lifecycles": {}
+    },
+    "api::page.page": {
+      "kind": "collectionType",
+      "collectionName": "pages",
+      "info": {
+        "singularName": "page",
+        "pluralName": "pages",
+        "displayName": "Page"
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "Page": {
+          "type": "dynamiczone",
+          "components": [
+            "generic.button",
+            "generic.section"
+          ]
+        },
         "seo": {
           "type": "component",
           "repeatable": false,
@@ -3261,11 +4958,290 @@
         }
       },
       "__schema__": {
+        "collectionName": "pages",
+        "info": {
+          "singularName": "page",
+          "pluralName": "pages",
+          "displayName": "Page"
+        },
+        "options": {
+          "draftAndPublish": true
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "Page": {
+            "type": "dynamiczone",
+            "components": [
+              "generic.button",
+              "generic.section"
+            ]
+          },
+          "seo": {
+            "type": "component",
+            "repeatable": false,
+            "component": "shared.seo"
+          }
+        },
+        "kind": "collectionType"
+      },
+      "modelType": "contentType",
+      "modelName": "page",
+      "connection": "default",
+      "uid": "api::page.page",
+      "apiName": "page",
+      "globalId": "Page",
+      "actions": {},
+      "lifecycles": {}
+    },
+    "api::partnership-ecosystem.partnership-ecosystem": {
+      "kind": "collectionType",
+      "collectionName": "partnership_ecosystems",
+      "info": {
+        "singularName": "partnership-ecosystem",
+        "pluralName": "partnership-ecosystems",
+        "displayName": "Partnership Ecosystem"
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "text"
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "partnership_ecosystems",
+        "info": {
+          "singularName": "partnership-ecosystem",
+          "pluralName": "partnership-ecosystems",
+          "displayName": "Partnership Ecosystem"
+        },
+        "options": {
+          "draftAndPublish": true
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "text"
+          }
+        },
+        "kind": "collectionType"
+      },
+      "modelType": "contentType",
+      "modelName": "partnership-ecosystem",
+      "connection": "default",
+      "uid": "api::partnership-ecosystem.partnership-ecosystem",
+      "apiName": "partnership-ecosystem",
+      "globalId": "PartnershipEcosystem",
+      "actions": {},
+      "lifecycles": {}
+    },
+    "api::partnership-type.partnership-type": {
+      "kind": "collectionType",
+      "collectionName": "partnership_types",
+      "info": {
+        "singularName": "partnership-type",
+        "pluralName": "partnership-types",
+        "displayName": "Partnership Type"
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "partnership_types",
+        "info": {
+          "singularName": "partnership-type",
+          "pluralName": "partnership-types",
+          "displayName": "Partnership Type"
+        },
+        "options": {
+          "draftAndPublish": true
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          }
+        },
+        "kind": "collectionType"
+      },
+      "modelType": "contentType",
+      "modelName": "partnership-type",
+      "connection": "default",
+      "uid": "api::partnership-type.partnership-type",
+      "apiName": "partnership-type",
+      "globalId": "PartnershipType",
+      "actions": {},
+      "lifecycles": {}
+    },
+    "api::pricing.pricing": {
+      "kind": "singleType",
+      "collectionName": "pricings",
+      "info": {
+        "singularName": "pricing",
+        "pluralName": "pricings",
+        "displayName": "6.1 Pricing",
+        "description": ""
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "seo": {
+          "type": "component",
+          "repeatable": false,
+          "component": "shared.seo"
+        },
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "text"
+        },
+        "faqSection": {
+          "type": "component",
+          "repeatable": false,
+          "component": "pricing.faq-section"
+        },
+        "cloudSection": {
+          "displayName": "cloud",
+          "type": "component",
+          "repeatable": false,
+          "component": "pricing.cloud"
+        },
+        "onPremiseSection": {
+          "displayName": "OnPremise",
+          "type": "component",
+          "repeatable": false,
+          "component": "pricing.on-premise"
+        },
+        "test": {
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
         "collectionName": "pricings",
         "info": {
           "singularName": "pricing",
           "pluralName": "pricings",
-          "displayName": "6. Pricing"
+          "displayName": "6.1 Pricing",
+          "description": ""
         },
         "options": {
           "draftAndPublish": true
@@ -3276,6 +5252,32 @@
             "type": "component",
             "repeatable": false,
             "component": "shared.seo"
+          },
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "text"
+          },
+          "faqSection": {
+            "type": "component",
+            "repeatable": false,
+            "component": "pricing.faq-section"
+          },
+          "cloudSection": {
+            "displayName": "cloud",
+            "type": "component",
+            "repeatable": false,
+            "component": "pricing.cloud"
+          },
+          "onPremiseSection": {
+            "displayName": "OnPremise",
+            "type": "component",
+            "repeatable": false,
+            "component": "pricing.on-premise"
+          },
+          "test": {
+            "type": "string"
           }
         },
         "kind": "singleType"
@@ -3382,6 +5384,108 @@
       "uid": "api::privacy-policy.privacy-policy",
       "apiName": "privacy-policy",
       "globalId": "PrivacyPolicy",
+      "actions": {},
+      "lifecycles": {}
+    },
+    "api::property.property": {
+      "kind": "collectionType",
+      "collectionName": "properties",
+      "info": {
+        "singularName": "property",
+        "pluralName": "properties",
+        "displayName": "Property"
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "text"
+        },
+        "image": {
+          "allowedTypes": [
+            "images",
+            "files",
+            "videos",
+            "audios"
+          ],
+          "type": "media",
+          "multiple": false
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "properties",
+        "info": {
+          "singularName": "property",
+          "pluralName": "properties",
+          "displayName": "Property"
+        },
+        "options": {
+          "draftAndPublish": true
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "text"
+          },
+          "image": {
+            "allowedTypes": [
+              "images",
+              "files",
+              "videos",
+              "audios"
+            ],
+            "type": "media",
+            "multiple": false
+          }
+        },
+        "kind": "collectionType"
+      },
+      "modelType": "contentType",
+      "modelName": "property",
+      "connection": "default",
+      "uid": "api::property.property",
+      "apiName": "property",
+      "globalId": "Property",
       "actions": {},
       "lifecycles": {}
     },
@@ -3564,6 +5668,16 @@
           "repeatable": false,
           "component": "shared.seo"
         },
+        "headerSection": {
+          "type": "component",
+          "repeatable": false,
+          "component": "generic.header"
+        },
+        "certifications": {
+          "type": "relation",
+          "relation": "oneToMany",
+          "target": "api::certification.certification"
+        },
         "createdAt": {
           "type": "datetime"
         },
@@ -3614,6 +5728,16 @@
             "type": "component",
             "repeatable": false,
             "component": "shared.seo"
+          },
+          "headerSection": {
+            "type": "component",
+            "repeatable": false,
+            "component": "generic.header"
+          },
+          "certifications": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::certification.certification"
           }
         },
         "kind": "singleType"
@@ -3810,6 +5934,35 @@
           "repeatable": false,
           "component": "shared.seo"
         },
+        "headerSection": {
+          "type": "component",
+          "repeatable": false,
+          "component": "generic.header"
+        },
+        "stepsSection": {
+          "displayName": "Step Section",
+          "type": "component",
+          "repeatable": false,
+          "component": "education.step-section"
+        },
+        "useCasesSection": {
+          "displayName": "Use Cases Section",
+          "type": "component",
+          "repeatable": false,
+          "component": "education.use-cases-section"
+        },
+        "whySection": {
+          "displayName": "Why Section",
+          "type": "component",
+          "repeatable": false,
+          "component": "education.why-section"
+        },
+        "successSection": {
+          "displayName": "Success Section",
+          "type": "component",
+          "repeatable": false,
+          "component": "education.success-section"
+        },
         "createdAt": {
           "type": "datetime"
         },
@@ -3860,6 +6013,35 @@
             "type": "component",
             "repeatable": false,
             "component": "shared.seo"
+          },
+          "headerSection": {
+            "type": "component",
+            "repeatable": false,
+            "component": "generic.header"
+          },
+          "stepsSection": {
+            "displayName": "Step Section",
+            "type": "component",
+            "repeatable": false,
+            "component": "education.step-section"
+          },
+          "useCasesSection": {
+            "displayName": "Use Cases Section",
+            "type": "component",
+            "repeatable": false,
+            "component": "education.use-cases-section"
+          },
+          "whySection": {
+            "displayName": "Why Section",
+            "type": "component",
+            "repeatable": false,
+            "component": "education.why-section"
+          },
+          "successSection": {
+            "displayName": "Success Section",
+            "type": "component",
+            "repeatable": false,
+            "component": "education.success-section"
           }
         },
         "kind": "singleType"
@@ -3891,6 +6073,32 @@
           "type": "component",
           "repeatable": false,
           "component": "shared.seo"
+        },
+        "headerSection": {
+          "type": "component",
+          "repeatable": false,
+          "component": "generic.header"
+        },
+        "stepSection": {
+          "type": "component",
+          "repeatable": false,
+          "component": "education.step-section"
+        },
+        "useCaseSection": {
+          "type": "component",
+          "repeatable": false,
+          "component": "education.use-cases-section"
+        },
+        "whySection": {
+          "type": "component",
+          "repeatable": false,
+          "component": "education.why-section"
+        },
+        "howSection": {
+          "displayName": "Heading",
+          "type": "component",
+          "repeatable": false,
+          "component": "generic.heading"
         },
         "createdAt": {
           "type": "datetime"
@@ -3942,6 +6150,32 @@
             "type": "component",
             "repeatable": false,
             "component": "shared.seo"
+          },
+          "headerSection": {
+            "type": "component",
+            "repeatable": false,
+            "component": "generic.header"
+          },
+          "stepSection": {
+            "type": "component",
+            "repeatable": false,
+            "component": "education.step-section"
+          },
+          "useCaseSection": {
+            "type": "component",
+            "repeatable": false,
+            "component": "education.use-cases-section"
+          },
+          "whySection": {
+            "type": "component",
+            "repeatable": false,
+            "component": "education.why-section"
+          },
+          "howSection": {
+            "displayName": "Heading",
+            "type": "component",
+            "repeatable": false,
+            "component": "generic.heading"
           }
         },
         "kind": "singleType"
@@ -3973,6 +6207,31 @@
           "type": "component",
           "repeatable": false,
           "component": "shared.seo"
+        },
+        "headerSection": {
+          "type": "component",
+          "repeatable": false,
+          "component": "generic.header"
+        },
+        "stepSection": {
+          "type": "component",
+          "repeatable": false,
+          "component": "education.step-section"
+        },
+        "useCasesSection": {
+          "type": "component",
+          "repeatable": false,
+          "component": "education.use-cases-section"
+        },
+        "whySection": {
+          "type": "component",
+          "repeatable": false,
+          "component": "education.why-section"
+        },
+        "howSection": {
+          "type": "component",
+          "repeatable": false,
+          "component": "generic.heading"
         },
         "createdAt": {
           "type": "datetime"
@@ -4024,6 +6283,31 @@
             "type": "component",
             "repeatable": false,
             "component": "shared.seo"
+          },
+          "headerSection": {
+            "type": "component",
+            "repeatable": false,
+            "component": "generic.header"
+          },
+          "stepSection": {
+            "type": "component",
+            "repeatable": false,
+            "component": "education.step-section"
+          },
+          "useCasesSection": {
+            "type": "component",
+            "repeatable": false,
+            "component": "education.use-cases-section"
+          },
+          "whySection": {
+            "type": "component",
+            "repeatable": false,
+            "component": "education.why-section"
+          },
+          "howSection": {
+            "type": "component",
+            "repeatable": false,
+            "component": "generic.heading"
           }
         },
         "kind": "singleType"
@@ -4116,6 +6400,204 @@
       "uid": "api::sectors-web3.sectors-web3",
       "apiName": "sectors-web3",
       "globalId": "SectorsWeb3",
+      "actions": {},
+      "lifecycles": {}
+    },
+    "api::step.step": {
+      "kind": "collectionType",
+      "collectionName": "steps",
+      "info": {
+        "singularName": "step",
+        "pluralName": "steps",
+        "displayName": "Step"
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "text"
+        },
+        "number": {
+          "type": "integer"
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "steps",
+        "info": {
+          "singularName": "step",
+          "pluralName": "steps",
+          "displayName": "Step"
+        },
+        "options": {
+          "draftAndPublish": true
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "text"
+          },
+          "number": {
+            "type": "integer"
+          }
+        },
+        "kind": "collectionType"
+      },
+      "modelType": "contentType",
+      "modelName": "step",
+      "connection": "default",
+      "uid": "api::step.step",
+      "apiName": "step",
+      "globalId": "Step",
+      "actions": {},
+      "lifecycles": {}
+    },
+    "api::success-story.success-story": {
+      "kind": "collectionType",
+      "collectionName": "success_stories",
+      "info": {
+        "singularName": "success-story",
+        "pluralName": "success-stories",
+        "displayName": "Success Story",
+        "description": ""
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "text"
+        },
+        "listTitle": {
+          "type": "string"
+        },
+        "credentials": {
+          "type": "relation",
+          "relation": "oneToMany",
+          "target": "api::credential.credential"
+        },
+        "link": {
+          "type": "component",
+          "repeatable": false,
+          "component": "generic.link"
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "success_stories",
+        "info": {
+          "singularName": "success-story",
+          "pluralName": "success-stories",
+          "displayName": "Success Story",
+          "description": ""
+        },
+        "options": {
+          "draftAndPublish": true
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "text"
+          },
+          "listTitle": {
+            "type": "string"
+          },
+          "credentials": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::credential.credential"
+          },
+          "link": {
+            "type": "component",
+            "repeatable": false,
+            "component": "generic.link"
+          }
+        },
+        "kind": "collectionType"
+      },
+      "modelType": "contentType",
+      "modelName": "success-story",
+      "connection": "default",
+      "uid": "api::success-story.success-story",
+      "apiName": "success-story",
+      "globalId": "SuccessStory",
       "actions": {},
       "lifecycles": {}
     },
@@ -4303,13 +6785,271 @@
       "actions": {},
       "lifecycles": {}
     },
+    "api::tier.tier": {
+      "kind": "collectionType",
+      "collectionName": "tiers",
+      "info": {
+        "singularName": "tier",
+        "pluralName": "tiers",
+        "displayName": "Tier",
+        "description": ""
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "button": {
+          "type": "component",
+          "repeatable": false,
+          "component": "generic.button"
+        },
+        "description": {
+          "type": "text"
+        },
+        "name": {
+          "type": "string"
+        },
+        "subPriceMonthLabel": {
+          "type": "string"
+        },
+        "subPriceYearLabel": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "monthlyPrice": {
+          "type": "decimal"
+        },
+        "yearlyPrice": {
+          "type": "decimal"
+        },
+        "features": {
+          "type": "component",
+          "repeatable": false,
+          "component": "pricing.tier-details"
+        },
+        "popular": {
+          "type": "boolean"
+        },
+        "button2": {
+          "type": "component",
+          "repeatable": false,
+          "component": "generic.button"
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "tiers",
+        "info": {
+          "singularName": "tier",
+          "pluralName": "tiers",
+          "displayName": "Tier",
+          "description": ""
+        },
+        "options": {
+          "draftAndPublish": true
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "button": {
+            "type": "component",
+            "repeatable": false,
+            "component": "generic.button"
+          },
+          "description": {
+            "type": "text"
+          },
+          "name": {
+            "type": "string"
+          },
+          "subPriceMonthLabel": {
+            "type": "string"
+          },
+          "subPriceYearLabel": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "monthlyPrice": {
+            "type": "decimal"
+          },
+          "yearlyPrice": {
+            "type": "decimal"
+          },
+          "features": {
+            "type": "component",
+            "repeatable": false,
+            "component": "pricing.tier-details"
+          },
+          "popular": {
+            "type": "boolean"
+          },
+          "button2": {
+            "type": "component",
+            "repeatable": false,
+            "component": "generic.button"
+          }
+        },
+        "kind": "collectionType"
+      },
+      "modelType": "contentType",
+      "modelName": "tier",
+      "connection": "default",
+      "uid": "api::tier.tier",
+      "apiName": "tier",
+      "globalId": "Tier",
+      "actions": {},
+      "lifecycles": {}
+    },
+    "api::use-case.use-case": {
+      "kind": "collectionType",
+      "collectionName": "use_cases",
+      "info": {
+        "singularName": "use-case",
+        "pluralName": "use-cases",
+        "displayName": "Use Case"
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "text"
+        },
+        "identifier": {
+          "type": "uid"
+        },
+        "image": {
+          "allowedTypes": [
+            "images",
+            "files",
+            "videos",
+            "audios"
+          ],
+          "type": "media",
+          "multiple": false
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "use_cases",
+        "info": {
+          "singularName": "use-case",
+          "pluralName": "use-cases",
+          "displayName": "Use Case"
+        },
+        "options": {
+          "draftAndPublish": true
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "text"
+          },
+          "identifier": {
+            "type": "uid"
+          },
+          "image": {
+            "allowedTypes": [
+              "images",
+              "files",
+              "videos",
+              "audios"
+            ],
+            "type": "media",
+            "multiple": false
+          }
+        },
+        "kind": "collectionType"
+      },
+      "modelType": "contentType",
+      "modelName": "use-case",
+      "connection": "default",
+      "uid": "api::use-case.use-case",
+      "apiName": "use-case",
+      "globalId": "UseCase",
+      "actions": {},
+      "lifecycles": {}
+    },
     "api::uses-cases-and-sector.uses-cases-and-sector": {
       "kind": "singleType",
       "collectionName": "uses_cases_and_sectors",
       "info": {
         "singularName": "uses-cases-and-sector",
         "pluralName": "uses-cases-and-sectors",
-        "displayName": "3.1. Uses Cases & Sectors",
+        "displayName": "3.1 Uses Cases & Sectors",
         "description": ""
       },
       "options": {
@@ -4321,6 +7061,24 @@
           "type": "component",
           "repeatable": false,
           "component": "shared.seo"
+        },
+        "header": {
+          "displayName": "Header",
+          "type": "component",
+          "repeatable": false,
+          "component": "generic.header"
+        },
+        "industriesSection": {
+          "displayName": "UseCasesAppliedSection",
+          "type": "component",
+          "repeatable": false,
+          "component": "use-cases.use-cases-applied-section"
+        },
+        "useCasesSection": {
+          "displayName": "UseCaseSection",
+          "type": "component",
+          "repeatable": false,
+          "component": "use-cases.use-case-section"
         },
         "createdAt": {
           "type": "datetime"
@@ -4360,7 +7118,7 @@
         "info": {
           "singularName": "uses-cases-and-sector",
           "pluralName": "uses-cases-and-sectors",
-          "displayName": "3.1. Uses Cases & Sectors",
+          "displayName": "3.1 Uses Cases & Sectors",
           "description": ""
         },
         "options": {
@@ -4372,6 +7130,24 @@
             "type": "component",
             "repeatable": false,
             "component": "shared.seo"
+          },
+          "header": {
+            "displayName": "Header",
+            "type": "component",
+            "repeatable": false,
+            "component": "generic.header"
+          },
+          "industriesSection": {
+            "displayName": "UseCasesAppliedSection",
+            "type": "component",
+            "repeatable": false,
+            "component": "use-cases.use-cases-applied-section"
+          },
+          "useCasesSection": {
+            "displayName": "UseCaseSection",
+            "type": "component",
+            "repeatable": false,
+            "component": "use-cases.use-case-section"
           }
         },
         "kind": "singleType"
@@ -4382,6 +7158,284 @@
       "uid": "api::uses-cases-and-sector.uses-cases-and-sector",
       "apiName": "uses-cases-and-sector",
       "globalId": "UsesCasesAndSector",
+      "actions": {},
+      "lifecycles": {}
+    },
+    "api::value.value": {
+      "kind": "collectionType",
+      "collectionName": "values",
+      "info": {
+        "singularName": "value",
+        "pluralName": "values",
+        "displayName": "Value"
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "number": {
+          "type": "integer"
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "values",
+        "info": {
+          "singularName": "value",
+          "pluralName": "values",
+          "displayName": "Value"
+        },
+        "options": {
+          "draftAndPublish": true
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "number": {
+            "type": "integer"
+          }
+        },
+        "kind": "collectionType"
+      },
+      "modelType": "contentType",
+      "modelName": "value",
+      "connection": "default",
+      "uid": "api::value.value",
+      "apiName": "value",
+      "globalId": "Value",
+      "actions": {},
+      "lifecycles": {}
+    },
+    "api::wallet-ad-feature.wallet-ad-feature": {
+      "kind": "collectionType",
+      "collectionName": "wallet_ad_features",
+      "info": {
+        "singularName": "wallet-ad-feature",
+        "pluralName": "wallet-ad-features",
+        "displayName": "Wallet AdFeature"
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "text"
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "wallet_ad_features",
+        "info": {
+          "singularName": "wallet-ad-feature",
+          "pluralName": "wallet-ad-features",
+          "displayName": "Wallet AdFeature"
+        },
+        "options": {
+          "draftAndPublish": true
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "text"
+          }
+        },
+        "kind": "collectionType"
+      },
+      "modelType": "contentType",
+      "modelName": "wallet-ad-feature",
+      "connection": "default",
+      "uid": "api::wallet-ad-feature.wallet-ad-feature",
+      "apiName": "wallet-ad-feature",
+      "globalId": "WalletAdFeature",
+      "actions": {},
+      "lifecycles": {}
+    },
+    "api::wallet-feature.wallet-feature": {
+      "kind": "collectionType",
+      "collectionName": "wallet_features",
+      "info": {
+        "singularName": "wallet-feature",
+        "pluralName": "wallet-features",
+        "displayName": "Wallet Feature"
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "text"
+        },
+        "image": {
+          "allowedTypes": [
+            "images",
+            "files",
+            "videos",
+            "audios"
+          ],
+          "type": "media",
+          "multiple": false
+        },
+        "identifier": {
+          "type": "uid"
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "wallet_features",
+        "info": {
+          "singularName": "wallet-feature",
+          "pluralName": "wallet-features",
+          "displayName": "Wallet Feature"
+        },
+        "options": {
+          "draftAndPublish": true
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "text"
+          },
+          "image": {
+            "allowedTypes": [
+              "images",
+              "files",
+              "videos",
+              "audios"
+            ],
+            "type": "media",
+            "multiple": false
+          },
+          "identifier": {
+            "type": "uid"
+          }
+        },
+        "kind": "collectionType"
+      },
+      "modelType": "contentType",
+      "modelName": "wallet-feature",
+      "connection": "default",
+      "uid": "api::wallet-feature.wallet-feature",
+      "apiName": "wallet-feature",
+      "globalId": "WalletFeature",
       "actions": {},
       "lifecycles": {}
     }

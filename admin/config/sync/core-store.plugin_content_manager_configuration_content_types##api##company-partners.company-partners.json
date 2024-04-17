@@ -34,6 +34,76 @@
           "sortable": false
         }
       },
+      "headerSection": {
+        "edit": {
+          "label": "headerSection",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "headerSection",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "typeSection": {
+        "edit": {
+          "label": "typeSection",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "typeSection",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "becomeSection": {
+        "edit": {
+          "label": "becomeSection",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "becomeSection",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "partnershipSection": {
+        "edit": {
+          "label": "partnershipSection",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "partnershipSection",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "applySection": {
+        "edit": {
+          "label": "applySection",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "applySection",
+          "searchable": false,
+          "sortable": false
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -74,6 +144,36 @@
         [
           {
             "name": "seo",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "headerSection",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "typeSection",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "becomeSection",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "partnershipSection",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "applySection",
             "size": 12
           }
         ]

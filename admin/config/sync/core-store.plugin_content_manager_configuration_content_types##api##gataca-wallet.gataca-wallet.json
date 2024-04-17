@@ -34,6 +34,90 @@
           "sortable": false
         }
       },
+      "headerSection": {
+        "edit": {
+          "label": "headerSection",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "headerSection",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "benefitSection": {
+        "edit": {
+          "label": "benefitSection",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "benefitSection",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "featureSection": {
+        "edit": {
+          "label": "featureSection",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "featureSection",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "walletAdFeature": {
+        "edit": {
+          "label": "walletAdFeature",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "walletAdFeature",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "howSection": {
+        "edit": {
+          "label": "howSection",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "howSection",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "credentialSection": {
+        "edit": {
+          "label": "credentialSection",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "credentialSection",
+          "searchable": false,
+          "sortable": false
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -74,6 +158,42 @@
         [
           {
             "name": "seo",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "headerSection",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "benefitSection",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "featureSection",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "walletAdFeature",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "howSection",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "credentialSection",
             "size": 12
           }
         ]

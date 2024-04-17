@@ -4,10 +4,34 @@
   "type": "public",
   "permissions": [
     {
+      "action": "api::ad-feature.ad-feature.find"
+    },
+    {
+      "action": "api::ad-feature.ad-feature.findOne"
+    },
+    {
+      "action": "api::advantage.advantage.find"
+    },
+    {
+      "action": "api::advantage.advantage.findOne"
+    },
+    {
       "action": "api::author.author.find"
     },
     {
       "action": "api::author.author.findOne"
+    },
+    {
+      "action": "api::award.award.find"
+    },
+    {
+      "action": "api::award.award.findOne"
+    },
+    {
+      "action": "api::benefit.benefit.find"
+    },
+    {
+      "action": "api::benefit.benefit.findOne"
     },
     {
       "action": "api::blog.blog.find"
@@ -22,6 +46,12 @@
       "action": "api::category.category.findOne"
     },
     {
+      "action": "api::certification.certification.find"
+    },
+    {
+      "action": "api::certification.certification.findOne"
+    },
+    {
       "action": "api::company-about-us.company-about-us.find"
     },
     {
@@ -34,10 +64,40 @@
       "action": "api::company-partners.company-partners.find"
     },
     {
+      "action": "api::contact-reason.contact-reason.find"
+    },
+    {
+      "action": "api::contact-reason.contact-reason.findOne"
+    },
+    {
       "action": "api::cookie-policy.cookie-policy.find"
     },
     {
+      "action": "api::credential.credential.find"
+    },
+    {
+      "action": "api::credential.credential.findOne"
+    },
+    {
+      "action": "api::employee.employee.find"
+    },
+    {
+      "action": "api::employee.employee.findOne"
+    },
+    {
       "action": "api::entry.entry.find"
+    },
+    {
+      "action": "api::faq.faq.find"
+    },
+    {
+      "action": "api::faq.faq.findOne"
+    },
+    {
+      "action": "api::feature.feature.find"
+    },
+    {
+      "action": "api::feature.feature.findOne"
     },
     {
       "action": "api::gataca-studio.gataca-studio.find"
@@ -46,10 +106,46 @@
       "action": "api::gataca-wallet.gataca-wallet.find"
     },
     {
+      "action": "api::industry.industry.find"
+    },
+    {
+      "action": "api::industry.industry.findOne"
+    },
+    {
+      "action": "api::operation.operation.find"
+    },
+    {
+      "action": "api::operation.operation.findOne"
+    },
+    {
+      "action": "api::page.page.find"
+    },
+    {
+      "action": "api::page.page.findOne"
+    },
+    {
+      "action": "api::partnership-ecosystem.partnership-ecosystem.find"
+    },
+    {
+      "action": "api::partnership-ecosystem.partnership-ecosystem.findOne"
+    },
+    {
+      "action": "api::partnership-type.partnership-type.find"
+    },
+    {
+      "action": "api::partnership-type.partnership-type.findOne"
+    },
+    {
       "action": "api::pricing.pricing.find"
     },
     {
       "action": "api::privacy-policy.privacy-policy.find"
+    },
+    {
+      "action": "api::property.property.find"
+    },
+    {
+      "action": "api::property.property.findOne"
     },
     {
       "action": "api::resources-blog.resources-blog.find"
@@ -79,10 +175,52 @@
       "action": "api::sectors-web3.sectors-web3.find"
     },
     {
+      "action": "api::step.step.find"
+    },
+    {
+      "action": "api::step.step.findOne"
+    },
+    {
+      "action": "api::success-story.success-story.find"
+    },
+    {
+      "action": "api::success-story.success-story.findOne"
+    },
+    {
       "action": "api::terms-of-use.terms-of-use.find"
     },
     {
+      "action": "api::tier.tier.find"
+    },
+    {
+      "action": "api::tier.tier.findOne"
+    },
+    {
+      "action": "api::use-case.use-case.find"
+    },
+    {
+      "action": "api::use-case.use-case.findOne"
+    },
+    {
       "action": "api::uses-cases-and-sector.uses-cases-and-sector.find"
+    },
+    {
+      "action": "api::value.value.find"
+    },
+    {
+      "action": "api::value.value.findOne"
+    },
+    {
+      "action": "api::wallet-ad-feature.wallet-ad-feature.find"
+    },
+    {
+      "action": "api::wallet-ad-feature.wallet-ad-feature.findOne"
+    },
+    {
+      "action": "api::wallet-feature.wallet-feature.find"
+    },
+    {
+      "action": "api::wallet-feature.wallet-feature.findOne"
     },
     {
       "action": "plugin::users-permissions.auth.callback"

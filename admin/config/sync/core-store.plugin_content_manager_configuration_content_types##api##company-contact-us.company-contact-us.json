@@ -34,6 +34,34 @@
           "sortable": false
         }
       },
+      "reasonSection": {
+        "edit": {
+          "label": "reasonSection",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "reasonSection",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "faqSection": {
+        "edit": {
+          "label": "faqSection",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "faqSection",
+          "searchable": false,
+          "sortable": false
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -74,6 +102,18 @@
         [
           {
             "name": "seo",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "reasonSection",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "faqSection",
             "size": 12
           }
         ]

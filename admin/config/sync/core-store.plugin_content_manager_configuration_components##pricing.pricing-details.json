@@ -1,0 +1,249 @@
+{
+  "key": "plugin_content_manager_configuration_components::pricing.pricing-details",
+  "value": {
+    "uid": "pricing.pricing-details",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "id",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "activeUser": {
+        "edit": {
+          "label": "activeUser",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "activeUser",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "didInPublicCatalogue": {
+        "edit": {
+          "label": "didInPublicCatalogue",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "didInPublicCatalogue",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "ebsiIntegration": {
+        "edit": {
+          "label": "ebsiIntegration",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "ebsiIntegration",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "integrationCustomFrameworks": {
+        "edit": {
+          "label": "integrationCustomFrameworks",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "integrationCustomFrameworks",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "integrationCustomInfraestructure": {
+        "edit": {
+          "label": "integrationCustomInfraestructure",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "integrationCustomInfraestructure",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "issuanceTemplate": {
+        "edit": {
+          "label": "issuanceTemplate",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "issuanceTemplate",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "issuedCredential": {
+        "edit": {
+          "label": "issuedCredential",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "issuedCredential",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "sandboxEnvironment": {
+        "edit": {
+          "label": "sandboxEnvironment",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "sandboxEnvironment",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "schemaInPublicCatalogue": {
+        "edit": {
+          "label": "schemaInPublicCatalogue",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "schemaInPublicCatalogue",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "securityFactorMechanism": {
+        "edit": {
+          "label": "securityFactorMechanism",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "securityFactorMechanism",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "verificationTemplate": {
+        "edit": {
+          "label": "verificationTemplate",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "verificationTemplate",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "activeUser",
+        "didInPublicCatalogue",
+        "ebsiIntegration"
+      ],
+      "edit": [
+        [
+          {
+            "name": "activeUser",
+            "size": 6
+          },
+          {
+            "name": "didInPublicCatalogue",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "ebsiIntegration",
+            "size": 6
+          },
+          {
+            "name": "integrationCustomFrameworks",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "integrationCustomInfraestructure",
+            "size": 6
+          },
+          {
+            "name": "issuanceTemplate",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "issuedCredential",
+            "size": 6
+          },
+          {
+            "name": "sandboxEnvironment",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "schemaInPublicCatalogue",
+            "size": 6
+          },
+          {
+            "name": "securityFactorMechanism",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "verificationTemplate",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

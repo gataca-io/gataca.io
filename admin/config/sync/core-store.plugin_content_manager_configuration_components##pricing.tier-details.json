@@ -1,0 +1,451 @@
+{
+  "key": "plugin_content_manager_configuration_components::pricing.tier-details",
+  "value": {
+    "uid": "pricing.tier-details",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "id",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "activeUsers": {
+        "edit": {
+          "label": "activeUsers",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "activeUsers",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "apiKeys": {
+        "edit": {
+          "label": "apiKeys",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "apiKeys",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "dids": {
+        "edit": {
+          "label": "dids",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "dids",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "issuanceTemplates": {
+        "edit": {
+          "label": "issuanceTemplates",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "issuanceTemplates",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "issuedCredentials": {
+        "edit": {
+          "label": "issuedCredentials",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "issuedCredentials",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "verificationTemplates": {
+        "edit": {
+          "label": "verificationTemplates",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "verificationTemplates",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "credentialsInISO28013": {
+        "edit": {
+          "label": "credentialsInISO28013",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "credentialsInISO28013",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "credentialsInW3CFormat": {
+        "edit": {
+          "label": "credentialsInW3CFormat",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "credentialsInW3CFormat",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "customGDPRPurposes": {
+        "edit": {
+          "label": "customGDPRPurposes",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "customGDPRPurposes",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "customQR": {
+        "edit": {
+          "label": "customQR",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "customQR",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "didPublicCatalogue": {
+        "edit": {
+          "label": "didPublicCatalogue",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "didPublicCatalogue",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "ebsiIntegration": {
+        "edit": {
+          "label": "ebsiIntegration",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "ebsiIntegration",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "integrationCustomTrustFrameworks": {
+        "edit": {
+          "label": "integrationCustomTrustFrameworks",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "integrationCustomTrustFrameworks",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "integrationCustomTrustInfraestructure": {
+        "edit": {
+          "label": "integrationCustomTrustInfraestructure",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "integrationCustomTrustInfraestructure",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "newSchemaPublicCatalogue": {
+        "edit": {
+          "label": "newSchemaPublicCatalogue",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "newSchemaPublicCatalogue",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "sandBoxEnvironment": {
+        "edit": {
+          "label": "sandBoxEnvironment",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "sandBoxEnvironment",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "slas": {
+        "edit": {
+          "label": "slas",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "slas",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "stadistics": {
+        "edit": {
+          "label": "stadistics",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "stadistics",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "premierSupport": {
+        "edit": {
+          "label": "premierSupport",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "premierSupport",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "standardSupport": {
+        "edit": {
+          "label": "standardSupport",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "standardSupport",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "nFactor": {
+        "edit": {
+          "label": "nFactor",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "nFactor",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "notifications": {
+        "edit": {
+          "label": "notifications",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "notifications",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "activeUsers",
+        "apiKeys",
+        "dids"
+      ],
+      "edit": [
+        [
+          {
+            "name": "activeUsers",
+            "size": 4
+          },
+          {
+            "name": "apiKeys",
+            "size": 4
+          },
+          {
+            "name": "dids",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "issuanceTemplates",
+            "size": 4
+          },
+          {
+            "name": "issuedCredentials",
+            "size": 4
+          },
+          {
+            "name": "verificationTemplates",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "credentialsInISO28013",
+            "size": 4
+          },
+          {
+            "name": "credentialsInW3CFormat",
+            "size": 4
+          },
+          {
+            "name": "customGDPRPurposes",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "customQR",
+            "size": 4
+          },
+          {
+            "name": "didPublicCatalogue",
+            "size": 4
+          },
+          {
+            "name": "ebsiIntegration",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "integrationCustomTrustFrameworks",
+            "size": 4
+          },
+          {
+            "name": "integrationCustomTrustInfraestructure",
+            "size": 4
+          },
+          {
+            "name": "newSchemaPublicCatalogue",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "sandBoxEnvironment",
+            "size": 4
+          },
+          {
+            "name": "slas",
+            "size": 4
+          },
+          {
+            "name": "stadistics",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "premierSupport",
+            "size": 6
+          },
+          {
+            "name": "standardSupport",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "nFactor",
+            "size": 6
+          },
+          {
+            "name": "notifications",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

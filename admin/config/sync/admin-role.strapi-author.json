@@ -185,9 +185,6 @@
       "subject": "api::entry.entry",
       "properties": {
         "fields": [
-          "Body",
-          "HeroImage",
-          "Title",
           "seo.metaTitle",
           "seo.metaDescription",
           "seo.keywords",
@@ -218,9 +215,6 @@
       "subject": "api::entry.entry",
       "properties": {
         "fields": [
-          "Body",
-          "HeroImage",
-          "Title",
           "seo.metaTitle",
           "seo.metaDescription",
           "seo.keywords",
@@ -239,9 +233,6 @@
       "subject": "api::entry.entry",
       "properties": {
         "fields": [
-          "Body",
-          "HeroImage",
-          "Title",
           "seo.metaTitle",
           "seo.metaDescription",
           "seo.keywords",
