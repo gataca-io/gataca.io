@@ -5,15 +5,14 @@ on:
     inputs:
       ExecuteChoice:
         type: choice
-        description: 'Deploy Strapi web in PRO?'
+        description: "Deploy Strapi web in PRO?"
         required: true
-        default: 'NO'
+        default: "NO"
         options:
-        - "YES"
-        - "NO"
+          - "YES"
+          - "NO"
 
-
-env: 
+env:
   AWS_REGION: eu-west-1
 
 jobs:
@@ -25,7 +24,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
-          token: ${{ secrets.CI_TOKEN }} 
+          token: ${{ secrets.CI_TOKEN }}
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
@@ -33,22 +32,22 @@ jobs:
           aws-access-key-id: ${{ secrets.CD_AWS_ACCESS_KEY_ID_PRO }}
           aws-secret-access-key: ${{ secrets.CD_AWS_SECRET_ACCESS_KEY_PRO }}
           aws-region: ${{ env.AWS_REGION }}
-     
+
       - name: Configure git for private modules
         run: git config --global url."https://${{ secrets.CI_TOKEN }}:x-oauth-basic@github.com/gataca-io".insteadOf "https://github.com/gataca-io"
 
       - name: Login to Docker Hub
         uses: docker/login-action@v2
         with:
-          username: navasgataca              ###############  CHANGE TO GENERIC USER ###############
-          password: ${{ secrets.DOCKERHUB_TOKEN }} 
+          username: navasgataca ###############  CHANGE TO GENERIC USER ###############
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Create and upload Docker image
         run: |
           cd admin
           make pro-release-intel-strapi
           docker image ls ## Output
-      - name: Set up deployment-dev
+      - name: Set up deployment-pro
         run: |
           git config --global user.email ${{ github.actor }}@gataca.io
           git config --global user.name ${{ github.actor }}
@@ -85,4 +84,4 @@ jobs:
             echo ${{ secrets.CD_KUBE_CONFIG_PRO }} | base64 --decode > $HOME/.kube/config
             kubectl config get-contexts
             kubectl -n web rollout restart deploy strapiweb 
-          fi 
+          fi
