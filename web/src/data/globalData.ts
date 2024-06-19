@@ -200,11 +200,11 @@ export const footerMenuOptions: LinkModel[] = [
         label: "Gataca Wallet",
         route: "/products/wallet",
       },
-      {
+      /* {
         id: "pricing",
         label: "Pricing",
         route: "/pricing",
-      },
+      }, */
       {
         id: "logIn",
         label: "Log In",

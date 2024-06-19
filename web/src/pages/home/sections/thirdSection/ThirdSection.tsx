@@ -14,11 +14,11 @@ export type ISectionProps = {
   }[]
 }
 const videosGatacaStudio = [
+  videos.wallet,
   videos.issuance,
   videos.verification,
   videos.credentialActivity,
   videos.verifiedUsers,
-  videos.wallet,
 ]
 
 const ThirdSection: React.FC<ISectionProps> = props => {

@@ -25,6 +25,7 @@ const iconsUseCases = [
   images.keyIcon,
   images.globeEarthIcon,
   images.iconBriefcase,
+  images.likeIcon,
 ]
 const ThirdSection: React.FC<ISectionProps> = props => {
   const { title, description, list } = props
