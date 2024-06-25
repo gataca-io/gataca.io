@@ -1,11 +1,11 @@
-name: web6 Pro CD
+name: web CD
 
 on:
   workflow_dispatch:
     inputs:
       ExecuteChoice:
         type: choice
-        description: 'Deploy web6 in PRO?'
+        description: 'Deploy web6 in DEV?'
         required: true
         default: 'NO'
         options:
@@ -14,8 +14,8 @@ on:
 
 
 env: 
-  AWS_REGION: eu-west-1
-  STRAPI_TOKEN: ${{ secrets.STRAPI_TOKEN_PRO }}
+  AWS_REGION: eu-central-1
+  STRAPI_TOKEN: ${{ secrets.STRAPI_TOKEN_DEV }}
 jobs:
   update:
     name: Set up Version
@@ -30,8 +30,8 @@ jobs:
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          aws-access-key-id: ${{ secrets.CD_AWS_ACCESS_KEY_ID_PRO }}
-          aws-secret-access-key: ${{ secrets.CD_AWS_SECRET_ACCESS_KEY_PRO }}
+          aws-access-key-id: ${{ secrets.CD_AWS_ACCESS_KEY_ID_DEV }}
+          aws-secret-access-key: ${{ secrets.CD_AWS_SECRET_ACCESS_KEY_DEV }}
           aws-region: ${{ env.AWS_REGION }}
      
       - name: Configure git for private modules
@@ -46,29 +46,29 @@ jobs:
       - name: Create and upload Docker image
         run: |
           cd web 
-          echo 'STRAPI_API_URL=https://strapi.gataca.io' > .env.production
+          echo 'STRAPI_API_URL=https://strapi.dev.gataca.io' > .env.production
           echo "STRAPI_TOKEN=" "$STRAPI_TOKEN" >> .env.production
-          make pro-release-intel-web6 
+          make pre-release 
           docker image ls ## Output
           rm .env.production
-      - name: Set up deployment-pro
+      - name: Set up deployment-dev
         run: |
           git config --global user.email ${{ github.actor }}@gataca.io
           git config --global user.name ${{ github.actor }}
-          # Update version pro
+          # Update version pre
           V=$(grep version web/package.json | cut -d'"' -f4)
-          echo "ver="$V >> $GITHUB_ENV
-          IMAGE=$(grep 'image:' web/deployments/deployment-pro.yml | cut -d':' -f3 | cut -d'-' -f1)
-          echo "image="$IMAGE >> $GITHUB_ENV
+          echo "ver="$V-pre >> $GITHUB_ENV
+          IMAGE=$(grep 'image:' web/deployments/deployment-dev.yml | cut -d':' -f3 | cut -d'-' -f1)
+          echo "image="$IMAGE-pre >> $GITHUB_ENV
           echo "version $V, image $IMAGE."
-      - name: Update deployment-pro
+      - name: Update deployment-dev
         run: |
           if [ "${{ github.event.inputs.ExecuteChoice }}" == "YES" ]; then
             if [ "${{ env.ver }}" != "${{ env.image }}" ]; then
-              sed -i 's/website:.*$/website:${{ env.ver }}/g' web/deployments/deployment-pro.yml          
-              echo "deployment-pro.yml:" ; grep 'website' web/deployments/deployment-pro.yml || true # output
+              sed -i 's/website:.*$/website:${{ env.ver }}/g' web/deployments/deployment-dev.yml          
+              echo "deployment-dev.yml:" ; grep 'website' web/deployments/deployment-dev.yml || true # output
               git add .
-              git commit -m "Change to image version to ${{ env.ver }} because of gataca.io CD PRO action."
+              git commit -m "Change to image version to ${{ env.ver }} because of gataca.io CD DEV action."
               git push
             fi
           fi
@@ -85,9 +85,9 @@ jobs:
             chmod +x kubectl
             sudo mv kubectl /usr/local/bin/
             mkdir $HOME/.kube/
-            echo ${{ secrets.CD_KUBE_CONFIG_PRO }} | base64 --decode > $HOME/.kube/config
+            echo ${{ secrets.CD_KUBE_CONFIG_DEV }} | base64 --decode > $HOME/.kube/config
             kubectl config get-contexts
-            kubectl diff -f web/deployments/deployment-pro.yml
+            kubectl diff -f web/deployments/deployment-dev.yml
             kubectl -n web scale deploy web6 --replicas=0
-            kubectl apply -f web/deployments/deployment-pro.yml
+            kubectl apply -f web/deployments/deployment-dev.yml
           fi 
