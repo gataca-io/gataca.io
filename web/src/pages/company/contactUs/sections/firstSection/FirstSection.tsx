@@ -9,7 +9,10 @@ export type ISectionProps = {
   title: string
   description: string
   list: {
-    title: string
+    id: number
+    attributes: {
+      title: string
+    }
   }[]
 }
 
@@ -36,7 +39,7 @@ const FirstSection: React.FC<ISectionProps> = props => {
             {description}
           </p>
           {list?.map((item, index) => {
-            const { title } = item
+            const { title } = item.attributes
             return (
               <div
                 key={"item__" + index}

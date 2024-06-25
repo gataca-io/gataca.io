@@ -34,6 +34,104 @@
           "sortable": false
         }
       },
+      "headerSection": {
+        "edit": {
+          "label": "headerSection",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "headerSection",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "ourStorySection": {
+        "edit": {
+          "label": "ourStorySection",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "ourStorySection",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "missionDescription": {
+        "edit": {
+          "label": "missionDescription",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "missionDescription",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "valuesSection": {
+        "edit": {
+          "label": "valuesSection",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "valuesSection",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "employeeSection": {
+        "edit": {
+          "label": "employeeSection",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "employeeSection",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "awardsSection": {
+        "edit": {
+          "label": "awardsSection",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "awardsSection",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "fundingDescription": {
+        "edit": {
+          "label": "fundingDescription",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "fundingDescription",
+          "searchable": true,
+          "sortable": true
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -75,6 +173,48 @@
           {
             "name": "seo",
             "size": 12
+          }
+        ],
+        [
+          {
+            "name": "headerSection",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "ourStorySection",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "missionDescription",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "valuesSection",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "employeeSection",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "awardsSection",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "fundingDescription",
+            "size": 6
           }
         ]
       ]

@@ -8,8 +8,11 @@ export type ISectionProps = {
   title: string
   description: string
   list: {
-    title: string
-    description?: string
+    id: number
+    attributes: {
+      title: string
+      description?: string
+    }
   }[]
 }
 
@@ -26,6 +29,7 @@ const FourthSection: React.FC<ISectionProps> = props => {
         imageClassName={styles.puzzleImage}
         leftSideClassName={styles.leftSide}
         rightSideClassName={styles.rightSide}
+        haslistDescription={true}
       />
     </section>
   )

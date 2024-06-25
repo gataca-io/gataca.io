@@ -9,7 +9,7 @@ const QuantityDataCell: React.FC<IQuantityDataCellProps> = props => {
   const { data } = props
   return (
     <div className={`${cx("bodyBoldSM")}`}>
-      {data === "∞" ? "Unlimited" : data}
+      {(data === "∞" || data === -1) ? "Unlimited" : new Intl.NumberFormat('en-DE').format(data)}
     </div>
   )
 }

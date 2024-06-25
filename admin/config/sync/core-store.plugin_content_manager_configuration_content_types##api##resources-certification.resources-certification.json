@@ -34,6 +34,35 @@
           "sortable": false
         }
       },
+      "headerSection": {
+        "edit": {
+          "label": "headerSection",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "headerSection",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "certifications": {
+        "edit": {
+          "label": "certifications",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "title"
+        },
+        "list": {
+          "label": "certifications",
+          "searchable": false,
+          "sortable": false
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -75,6 +104,18 @@
           {
             "name": "seo",
             "size": 12
+          }
+        ],
+        [
+          {
+            "name": "headerSection",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "certifications",
+            "size": 6
           }
         ]
       ]

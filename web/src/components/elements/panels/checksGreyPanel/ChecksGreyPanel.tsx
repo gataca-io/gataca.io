@@ -7,13 +7,17 @@ export type ISectionProps = {
   title: string
   description?: string
   list: {
-    title: string
-    description?: string
+    id: number
+    attributes: {
+      title: string
+      description?: string
+    }
   }[]
   image: string
   leftSideClassName?: string
   imageClassName?: string
   rightSideClassName?: string
+  haslistDescription?: boolean
 }
 
 const ChecksGreyPanel: React.FC<ISectionProps> = props => {
@@ -25,6 +29,7 @@ const ChecksGreyPanel: React.FC<ISectionProps> = props => {
     leftSideClassName,
     imageClassName,
     rightSideClassName,
+    haslistDescription,
   } = props
 
   return (
@@ -59,7 +64,7 @@ const ChecksGreyPanel: React.FC<ISectionProps> = props => {
 
         <div>
           {list?.map((item, index) => {
-            const { title, description } = item
+            const { title, description } = item.attributes
 
             return (
               <div
@@ -69,7 +74,7 @@ const ChecksGreyPanel: React.FC<ISectionProps> = props => {
                 <img src={images.checkIcon} />
                 <div>
                   <p className={`${cx("heading6")}`}>{title}</p>
-                  {description && (
+                  {description && haslistDescription && (
                     <p
                       className={`${cx("bodyRegularMD marginTop8")} ${
                         styles.bullets__container__description

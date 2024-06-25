@@ -24,7 +24,7 @@ const FirstSection: React.FC<ISectionProps> = props => {
         <div className={styles?.buttonContainer}>
           <PurpleButton
             label={tryForFreeButton?.label}
-            action={() => window.open(gatacaStudioURL, "_target")}
+            action={() => window.open(tryForFreeButton.url, "_target")}
           />
         </div>
       </div>

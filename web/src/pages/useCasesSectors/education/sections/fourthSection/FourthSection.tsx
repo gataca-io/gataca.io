@@ -8,8 +8,11 @@ export type ISectionProps = {
   title: string
   description: string
   list: {
-    title: string
-    description?: string
+    id: number
+    attributes: {
+      title: string
+      description?: string
+    }
   }[]
 }
 
@@ -26,6 +29,7 @@ const ThirdSection: React.FC<ISectionProps> = props => {
         imageClassName={styles.booksImage}
         leftSideClassName={styles.leftSide}
         rightSideClassName={styles.rightSide}
+        haslistDescription={false}
       />
     </section>
   )

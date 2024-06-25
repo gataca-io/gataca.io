@@ -7,8 +7,8 @@
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "Title",
-      "defaultSortBy": "Title",
+      "mainField": "id",
+      "defaultSortBy": "id",
       "defaultSortOrder": "ASC"
     },
     "metadatas": {
@@ -16,48 +16,6 @@
         "edit": {},
         "list": {
           "label": "id",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "Body": {
-        "edit": {
-          "label": "Body",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "Body",
-          "searchable": false,
-          "sortable": false
-        }
-      },
-      "HeroImage": {
-        "edit": {
-          "label": "HeroImage",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "HeroImage",
-          "searchable": false,
-          "sortable": false
-        }
-      },
-      "Title": {
-        "edit": {
-          "label": "Title",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "Title",
           "searchable": true,
           "sortable": true
         }
@@ -72,6 +30,104 @@
         },
         "list": {
           "label": "seo",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "firstSection": {
+        "edit": {
+          "label": "firstSection",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "firstSection",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "thirdSection": {
+        "edit": {
+          "label": "thirdSection",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "thirdSection",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "fourthSection": {
+        "edit": {
+          "label": "fourthSection",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "fourthSection",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "fifthSection": {
+        "edit": {
+          "label": "fifthSection",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "fifthSection",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "sixthSection": {
+        "edit": {
+          "label": "sixthSection",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "sixthSection",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "seventhSection": {
+        "edit": {
+          "label": "seventhSection",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "seventhSection",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "eighthSection": {
+        "edit": {
+          "label": "eighthSection",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "eighthSection",
           "searchable": false,
           "sortable": false
         }
@@ -108,30 +164,56 @@
     "layouts": {
       "list": [
         "id",
-        "HeroImage",
-        "Title",
-        "seo"
+        "seo",
+        "firstSection",
+        "thirdSection"
       ],
       "edit": [
         [
           {
-            "name": "Body",
+            "name": "seo",
             "size": 12
           }
         ],
         [
           {
-            "name": "HeroImage",
-            "size": 6
-          },
-          {
-            "name": "Title",
-            "size": 6
+            "name": "firstSection",
+            "size": 12
           }
         ],
         [
           {
-            "name": "seo",
+            "name": "thirdSection",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "fourthSection",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "fifthSection",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "sixthSection",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "seventhSection",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "eighthSection",
             "size": 12
           }
         ]

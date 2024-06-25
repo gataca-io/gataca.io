@@ -34,6 +34,76 @@
           "sortable": false
         }
       },
+      "headerSection": {
+        "edit": {
+          "label": "headerSection",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "headerSection",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "stepSection": {
+        "edit": {
+          "label": "stepSection",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "stepSection",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "useCaseSection": {
+        "edit": {
+          "label": "useCaseSection",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "useCaseSection",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "whySection": {
+        "edit": {
+          "label": "whySection",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "whySection",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "howSection": {
+        "edit": {
+          "label": "howSection",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "howSection",
+          "searchable": false,
+          "sortable": false
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -74,6 +144,36 @@
         [
           {
             "name": "seo",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "headerSection",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "stepSection",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "useCaseSection",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "whySection",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "howSection",
             "size": 12
           }
         ]

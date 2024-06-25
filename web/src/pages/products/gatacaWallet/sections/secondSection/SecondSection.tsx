@@ -9,9 +9,12 @@ import { useLayoutEffect } from "react"
 export type ISectionProps = {
   title: string
   list: {
-    number: string
-    title: string
-    description: string
+    id: string
+    attributes: {
+      number: string
+      title: string
+      description: string
+    }
   }[]
   setSecondSectionLoaded: (x: boolean) => void
 }
@@ -33,7 +36,7 @@ const SecondSection: React.FC<ISectionProps> = props => {
           <p className={`${cx("heading3 marginBottom8")}`}>{title}</p>
           <div className={styles.secondSection__rightSide__bullets}>
             {list?.map((item, index) => {
-              const { number, title, description } = item
+              const { number, title, description } = item.attributes
 
               return (
                 <NumberedText

@@ -11,8 +11,11 @@ export type ISectionProps = {
   linkLabel: string
   linkRoute: string
   list: {
-    title: string
-    description: string
+    id: number
+    attributes: {
+      title: string
+      description: string
+    }
   }[]
 }
 
@@ -27,7 +30,7 @@ const SecondSection: React.FC<ISectionProps> = props => {
         <h3 className={`${cx("heading3")}`}>{title}</h3>
         <div className={styles.content__cards}>
           {list?.map((item, index) => {
-            const { title, description } = item
+            const { title, description } = item.attributes
 
             return (
               <div

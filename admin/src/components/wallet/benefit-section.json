@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_wallet_benefit_sections",
+  "info": {
+    "displayName": "Benefit Section"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "benefits": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::benefit.benefit"
+    }
+  }
+}

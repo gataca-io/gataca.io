@@ -7,8 +7,11 @@ import { useOnScreenAgain } from "../../../../../utils/viewport"
 export type ISectionProps = {
   title: string
   list: {
-    title: string
-    description?: string
+    id: string
+    attributes: {
+      title: string
+      description?: string
+    }
   }[]
 }
 
@@ -30,7 +33,7 @@ const FourthSection: React.FC<ISectionProps> = props => {
 
           <div className={styles.fourthSection__rightSide__bullets}>
             {list?.map((item, index) => {
-              const { title, description } = item
+              const { title, description } = item.attributes
 
               return (
                 <div

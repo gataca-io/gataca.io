@@ -6,9 +6,12 @@ import * as styles from "./thirdSection.module.scss"
 export type ISectionProps = {
   title: string
   list: {
-    number: string
-    title: string
-    description: string
+    id: string
+    attributes: {
+      title: string
+      description: string
+      number: string
+    }
   }[]
 }
 
@@ -32,11 +35,11 @@ const ThirdSection: React.FC<ISectionProps> = props => {
                       styles.number
                     }`}
                   >
-                    {item.number}
+                    {item.attributes.number}
                   </p>
-                  <h5 className={cx("heading5 marginBottom8")}>{item.title}</h5>
+                  <h5 className={cx("heading5 marginBottom8")}>{item.attributes.title}</h5>
                   <p className={cx("bodyRegularMD neutral700")}>
-                    {item.description}
+                    {item.attributes.description}
                   </p>
                 </div>
               )

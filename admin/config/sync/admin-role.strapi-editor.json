@@ -470,13 +470,10 @@
       "subject": "api::entry.entry",
       "properties": {
         "fields": [
-          "Body",
-          "HeroImage",
-          "Title",
-          "seo.canonicalURL",
-          "seo.keywords",
+          "seo.metaTitle",
           "seo.metaDescription",
-          "seo.metaTitle"
+          "seo.keywords",
+          "seo.canonicalURL"
         ],
         "locales": [
           "en"
@@ -509,13 +506,10 @@
       "subject": "api::entry.entry",
       "properties": {
         "fields": [
-          "Body",
-          "HeroImage",
-          "Title",
-          "seo.canonicalURL",
-          "seo.keywords",
+          "seo.metaTitle",
           "seo.metaDescription",
-          "seo.metaTitle"
+          "seo.keywords",
+          "seo.canonicalURL"
         ],
         "locales": [
           "en"
@@ -528,13 +522,10 @@
       "subject": "api::entry.entry",
       "properties": {
         "fields": [
-          "Body",
-          "HeroImage",
-          "Title",
-          "seo.canonicalURL",
-          "seo.keywords",
+          "seo.metaTitle",
           "seo.metaDescription",
-          "seo.metaTitle"
+          "seo.keywords",
+          "seo.canonicalURL"
         ],
         "locales": [
           "en"

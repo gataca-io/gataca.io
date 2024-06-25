@@ -1,0 +1,155 @@
+{
+  "key": "plugin_content_manager_configuration_components::pricing.on-premise",
+  "value": {
+    "uid": "pricing.on-premise",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "identifier",
+      "defaultSortBy": "identifier",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "button": {
+        "edit": {
+          "label": "button",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "button",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "identifier": {
+        "edit": {
+          "label": "identifier",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "identifier",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "title": {
+        "edit": {
+          "label": "title",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "title",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "panelTitle": {
+        "edit": {
+          "label": "panelTitle",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "panelTitle",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "paragraph_1": {
+        "edit": {
+          "label": "paragraph_1",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "paragraph_1",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "paragraph_2": {
+        "edit": {
+          "label": "paragraph_2",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "paragraph_2",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "button",
+        "identifier",
+        "title"
+      ],
+      "edit": [
+        [
+          {
+            "name": "button",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "identifier",
+            "size": 6
+          },
+          {
+            "name": "title",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "panelTitle",
+            "size": 6
+          },
+          {
+            "name": "paragraph_1",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "paragraph_2",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

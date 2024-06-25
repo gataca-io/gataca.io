@@ -42,15 +42,15 @@ const FirstSection: React.FC<ISectionProps> = props => {
               {leftButton && (
                 <PurpleButton
                   label={leftButton?.label}
-                  action={() => window.open(gatacaStudioURL, "_blank")}
+                  action={() => window.open(leftButton?.url, "_blank")}
                 />
               )}
               {rightButton && (
                 <PurpleButton
                   label={rightButton?.label}
                   className={`${rightButton.className}`}
-                  outlined
-                  action={() => scrollToVideo()}
+                  outlined={rightButton?.outlined ? true : false}
+                  action={() => window.open(rightButton?.url, "_blank")}
                 />
               )}
             </div>

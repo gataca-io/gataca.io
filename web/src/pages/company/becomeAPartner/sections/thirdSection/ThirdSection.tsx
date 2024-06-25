@@ -6,9 +6,12 @@ export type ISectionProps = {
   title: string
   description: string
   list: {
-    number: string
-    title: string
-    description: string
+    id: number
+    attributes: {
+      number: string
+      title: string
+      description: string
+    }
   }[]
 }
 
@@ -32,13 +35,13 @@ const ThirdSection: React.FC<ISectionProps> = props => {
                       styles.number
                     }`}
                   >
-                    {item.number}
+                    {item.attributes.number}
                   </p>
                   <h5 className={cx("heading5 marginBottom12")}>
-                    {item.title}
+                    {item.attributes.title}
                   </h5>
                   <p className={cx("bodyRegularXL neutral700")}>
-                    {item.description}
+                    {item.attributes.description}
                   </p>
                 </div>
               )

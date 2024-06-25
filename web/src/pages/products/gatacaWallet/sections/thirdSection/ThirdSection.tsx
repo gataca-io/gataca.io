@@ -8,9 +8,12 @@ export type ISectionProps = {
   title: string
   description: string
   list: {
-    title: string
-    description: string
-    image: string
+    id: string
+    attributes: {
+      title: string
+      description: string
+      image: string
+    }
   }[]
 }
 
@@ -100,7 +103,7 @@ const ThirdSection: React.FC<ISectionProps> = props => {
                     "heading4"
                   )}
                 >
-                  {list[firstItem]?.title}
+                  {list[firstItem]?.attributes.title}
                 </p>
                 <p
                   className={cx(
@@ -108,7 +111,7 @@ const ThirdSection: React.FC<ISectionProps> = props => {
                     "bodyRegularXL marginTop12 neutral700"
                   )}
                 >
-                  {list[firstItem]?.description}
+                  {list[firstItem]?.attributes.description}
                 </p>
               </div>
             )}

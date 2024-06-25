@@ -17,7 +17,6 @@ import SeventhSection from "./home/sections/seventhSection/SeventhSection"
 
 const IndexPage: React.FC<PageProps> = () => {
   const [blogsItems, setBlogsItems] = React.useState<any | undefined>()
-  const [homeData, setHomeData] = useState<any | undefined>()
   const [homeStrapiData, setHomeStrapiData] = useState<any | undefined>()
 
   const {
@@ -28,20 +27,14 @@ const IndexPage: React.FC<PageProps> = () => {
     sixthSection,
     seventhSection,
     eighthSection,
-  } = homeData ? homeData : []
+  } = homeStrapiData ? homeStrapiData : []
 
   React.useEffect(() => {
     getHomeStrapiData()
-    getHomeData()
     if (!blogsItems) {
       getBlogsData()
     }
   }, [])
-
-  const getHomeData = async () => {
-    const json_data = await require("./home/data/homeData.json")
-    setHomeData(json_data?.data && json_data?.data)
-  }
 
   const getBlogsData = async () => {
     await fetch(
@@ -56,11 +49,11 @@ const IndexPage: React.FC<PageProps> = () => {
   }
 
   const getHomeStrapiData = async () => {
-    await fetch(`${process.env.STRAPI_API_URL}/api/entry?&populate=*`)
+    await fetch(`${process.env.STRAPI_API_URL}/api/entry?&populate[seo][populate]=*&populate[firstSection][populate]=*&populate[thirdSection][populate]=*&populate[fourthSection][populate]=*&populate[fifthSection][populate]=*&populate[sixthSection][populate]=*&populate[seventhSection][populate]=*&populate[eighthSection][populate]=*&populate[localizations][populate]=*`)
       .then(response => response.json())
       .then(jsonResponse => {
-        const homeData = jsonResponse?.data?.attributes
-        setHomeStrapiData(homeData)
+        const homeStrapiData = jsonResponse?.data?.attributes
+        setHomeStrapiData(homeStrapiData)
       })
   }
 
@@ -77,7 +70,7 @@ const IndexPage: React.FC<PageProps> = () => {
         <ThirdSection
           title={thirdSection?.title}
           description={thirdSection?.description}
-          list={thirdSection?.list}
+          list={thirdSection?.useCases}
         />
         <FourthSection
           title={fourthSection?.title}
@@ -86,21 +79,21 @@ const IndexPage: React.FC<PageProps> = () => {
         />
         <FifthSection
           title={fifthSection?.title}
-          subTitle={fifthSection?.subTitle}
+          subTitle={fifthSection?.subtitle}
           description={fifthSection?.description}
         />
         <SixthSection
           title={sixthSection?.title}
-          subTitle={sixthSection?.subTitle}
+          subTitle={sixthSection?.subtitle}
           description={sixthSection?.description}
-          list={sixthSection?.list}
+          list={sixthSection?.useCases}
           learnMoreButton={sixthSection?.learnMoreButton}
         />
         <SeventhSection
           title={seventhSection?.title}
-          subTitle={seventhSection?.subTitle}
+          subTitle={seventhSection?.subtitle}
           description={seventhSection?.description}
-          feedback={seventhSection?.feedback}
+          feedback={seventhSection?.feedbacks}
         />
         <EighthSection
           title={eighthSection?.title}

@@ -34,6 +34,132 @@
           "sortable": false
         }
       },
+      "title": {
+        "edit": {
+          "label": "title",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "title",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "description": {
+        "edit": {
+          "label": "description",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "description",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "button": {
+        "edit": {
+          "label": "button",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "button",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "featureSection": {
+        "edit": {
+          "label": "featureSection",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "featureSection",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "whyStudioSection": {
+        "edit": {
+          "label": "whyStudioSection",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "whyStudioSection",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "howWorksSection": {
+        "edit": {
+          "label": "howWorksSection",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "howWorksSection",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "tierSection": {
+        "edit": {
+          "label": "tierSection",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "tierSection",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "headerSection": {
+        "edit": {
+          "label": "headerSection",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "headerSection",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "adSection": {
+        "edit": {
+          "label": "adSection",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "adSection",
+          "searchable": false,
+          "sortable": false
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -74,6 +200,58 @@
         [
           {
             "name": "seo",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "title",
+            "size": 6
+          },
+          {
+            "name": "description",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "button",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "featureSection",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "whyStudioSection",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "howWorksSection",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "tierSection",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "headerSection",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "adSection",
             "size": 12
           }
         ]

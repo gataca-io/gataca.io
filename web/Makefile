@@ -9,6 +9,9 @@ build: install
 compile: install
 	docker build -f build/Dockerfile -t gatacaid/website:$(VERSION) . 
 
+snapshotX:
+	docker buildx build -f build/Dockerfile --platform linux/amd64 -t gatacaid/website:$(VERSION)-SNAPSHOT . --push
+
 release:
 	docker buildx build -f build/Dockerfile --platform linux/amd64 -t gatacaid/website:$(VERSION) -t gatacaid/website:$(VERSION)-SNAPSHOT . --push
 

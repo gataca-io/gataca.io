@@ -15,7 +15,7 @@ import * as styles from "./licensesTable.module.scss"
 import { images } from "../../../../images/images"
 
 type ILicensesTableProps = {
-  products: any[]
+  products: IProductModel[]
   switchPeriodValue: string
   infoToggles: InfoTogglesPricingModel
 }
@@ -24,7 +24,11 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
   const { products, switchPeriodValue, infoToggles } = props
 
   const getPrice = (item: any) => {
-    return switchPeriodValue === "year" ? item?.yearlyPrice : item?.monthlyPrice
+    if(switchPeriodValue === "year") {
+      return (item?.yearlyPrice == undefined || item?.yearlyPrice < 0) ? 'Custom pricing' : new Intl.NumberFormat('en-DE').format(item?.yearlyPrice);
+    } else {
+      return (item?.monthlyPrice == undefined || item?.monthlyPrice < 0) ? 'Custom pricing' : new Intl.NumberFormat('en-DE').format(item?.monthlyPrice);
+    }
   }
 
   return (
@@ -38,7 +42,7 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
               {products?.map(license => {
                 return (
                   <th
-                    key={"headerT__" + license?.type}
+                    key={"headerT__" + license?.attributes.type}
                     className={styles?.table__header__cell}
                   >
                     <div className={styles?.table__header__cell__content}>
@@ -48,9 +52,9 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
                             "bodyBoldMD"
                           )}`}
                         >
-                          {license?.type}
+                          {license?.attributes.type}
                         </p>
-                        {license?.type === "Professional" && (
+                        {license?.attributes.type === "Professional" && (
                           <Tag
                             label={"Popular"}
                             className={styles?.license__header__popularTag}
@@ -58,7 +62,7 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
                         )}
                       </div>
                       <div>
-                        {!license?.name
+                        {!license?.attributes.name
                           ?.toLowerCase()
                           ?.includes("enterprise") ? (
                           <>
@@ -69,28 +73,28 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
                                   : ""
                               } ${cx("heading4")}`}
                             >
-                              <span>{getPrice(license)}€</span>
+                              <span>{getPrice(license?.attributes)}€</span>
                               {" /"}
                               &nbsp;
                               {switchPeriodValue}
                             </p>
                             {switchPeriodValue === "month"
-                              ? license?.subPriceMonthLabel && (
+                              ? license?.attributes.subPriceMonthLabel && (
                                   <span
                                     className={`${cx(
                                       "neutral700 bodyRegularXS marginTop2"
                                     )} ${styles?.licenseSave}`}
                                   >
-                                    {license?.subPriceMonthLabel}
+                                    {license?.attributes.subPriceMonthLabel}
                                   </span>
                                 )
-                              : license?.subPriceYearLabel && (
+                              : license?.attributes.subPriceYearLabel && (
                                   <span
                                     className={`${cx(
                                       "neutral700 bodyRegularXS marginTop2"
                                     )} ${styles?.licenseSave}`}
                                   >
-                                    {license?.subPriceYearLabel}
+                                    {license?.attributes.subPriceYearLabel}
                                   </span>
                                 )}
                           </>
@@ -107,11 +111,11 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
                         )}
                         <PurpleButton
                           className={styles?.license__button}
-                          label={license?.button?.label}
+                          label={license?.attributes.button?.label}
                           action={() =>
                             window?.open(
-                              license?.button?.url,
-                              license?.button?.outsideWeb ? "_blank" : "_self"
+                              license?.attributes.button?.url,
+                              license?.attributes.button?.outsideWeb ? "_blank" : "_self"
                             )
                           }
                         />
@@ -133,8 +137,8 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
               {products?.map(license => {
                 return (
                   <QuantityDataCell
-                    key={"VT__" + license?.type}
-                    data={license?.features?.verificationTemplates}
+                    key={"VT__" + license?.attributes.type}
+                    data={license?.attributes.features?.verificationTemplates}
                   />
                 )
               })}
@@ -147,8 +151,8 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
               {products?.map(license => {
                 return (
                   <QuantityDataCell
-                    key={"AU__" + license?.type}
-                    data={license?.features?.activeUsers}
+                    key={"AU__" + license?.attributes.type}
+                    data={license?.attributes.features?.activeUsers}
                   />
                 )
               })}
@@ -162,8 +166,8 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
               {products?.map(license => {
                 return (
                   <QuantityDataCell
-                    key={"IT__" + license?.type}
-                    data={license?.features?.issuanceTemplates}
+                    key={"IT__" + license?.attributes.type}
+                    data={license?.attributes.features?.issuanceTemplates}
                   />
                 )
               })}
@@ -173,11 +177,11 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
                 subcategory={"Issued Credentials p/m"}
                 information={infoToggles?.issuedCredential}
               />
-              {products?.map((license: IProductModel) => {
+              {products?.map((license) => {
                 return (
                   <QuantityDataCell
-                    key={"IC__" + license?.type}
-                    data={license?.features?.issuedCredentials}
+                    key={"IC__" + license?.attributes.type}
+                    data={license?.attributes.features?.issuedCredentials}
                   />
                 )
               })}
@@ -188,8 +192,8 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
               {products?.map(license => {
                 return (
                   <QuantityDataCell
-                    key={"DIDS__" + license?.type}
-                    data={license?.features?.dids}
+                    key={"DIDS__" + license?.attributes.type}
+                    data={license?.attributes.features?.dids}
                   />
                 )
               })}
@@ -199,8 +203,8 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
               {products?.map(license => {
                 return (
                   <QuantityDataCell
-                    key={"AK__" + license?.type}
-                    data={license?.features?.apiKeys}
+                    key={"AK__" + license?.attributes.type}
+                    data={license?.attributes.features?.apiKeys}
                   />
                 )
               })}
@@ -213,8 +217,8 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
               {products?.map(license => {
                 return (
                   <ListDataCell
-                    key={"2FM__" + license?.type}
-                    data={license?.features?.nFactor}
+                    key={"2FM__" + license?.attributes.type}
+                    data={license?.attributes.features?.nFactor}
                   />
                 )
               })}
@@ -224,8 +228,8 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
               {products?.map(license => {
                 return (
                   <ListDataCell
-                    key={"NOT__" + license?.type}
-                    data={license?.features?.notifications}
+                    key={"NOT__" + license?.attributes.type}
+                    data={license?.attributes.features?.notifications}
                   />
                 )
               })}
@@ -235,8 +239,8 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
               {products?.map(license => {
                 return (
                   <IconDataCell
-                    key={"US__" + license?.type}
-                    data={license?.features?.stadistics}
+                    key={"US__" + license?.attributes.type}
+                    data={license?.attributes.features?.stadistics}
                   />
                 )
               })}
@@ -246,8 +250,8 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
               {products?.map(license => {
                 return (
                   <IconDataCell
-                    key={"CW3C__" + license?.type}
-                    data={license?.features?.credentialsInW3CFormat}
+                    key={"CW3C__" + license?.attributes.type}
+                    data={license?.attributes.features?.credentialsInW3CFormat}
                   />
                 )
               })}
@@ -260,8 +264,8 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
               {products?.map(license => {
                 return (
                   <IconDataCell
-                    key={"SE__" + license?.type}
-                    data={license?.features?.sandBoxEnvironment}
+                    key={"SE__" + license?.attributes.type}
+                    data={license?.attributes.features?.sandBoxEnvironment}
                   />
                 )
               })}
@@ -274,8 +278,8 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
               {products?.map(license => {
                 return (
                   <IconDataCell
-                    key={"DPC__" + license?.type}
-                    data={license?.features?.didPublicCatalogue}
+                    key={"DPC__" + license?.attributes.type}
+                    data={license?.attributes.features?.didPublicCatalogue}
                   />
                 )
               })}
@@ -288,8 +292,8 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
               {products?.map(license => {
                 return (
                   <IconDataCell
-                    key={"PSPC__" + license?.type}
-                    data={license?.features?.newSchemaPublicCatalogue}
+                    key={"PSPC__" + license?.attributes.type}
+                    data={license?.attributes.features?.newSchemaPublicCatalogue}
                   />
                 )
               })}
@@ -302,8 +306,8 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
               {products?.map(license => {
                 return (
                   <IconDataCell
-                    key={"EBSII__" + license?.type}
-                    data={license?.features?.ebsiIntegration}
+                    key={"EBSII__" + license?.attributes.type}
+                    data={license?.attributes.features?.ebsiIntegration}
                   />
                 )
               })}
@@ -314,8 +318,8 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
               {products?.map(license => {
                 return (
                   <IconDataCell
-                    key={"GDPRC__" + license?.type}
-                    data={license?.features?.customGDPRPurposes}
+                    key={"GDPRC__" + license?.attributes.type}
+                    data={license?.attributes.features?.customGDPRPurposes}
                   />
                 )
               })}
@@ -326,8 +330,8 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
               {products?.map(license => {
                 return (
                   <IconDataCell
-                    key={"CQR__" + license?.type}
-                    data={license?.features?.customQR}
+                    key={"CQR__" + license?.attributes.type}
+                    data={license?.attributes.features?.customQR}
                   />
                 )
               })}
@@ -339,8 +343,8 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
               {products?.map(license => {
                 return (
                   <IconDataCell
-                    key={"CIF__" + license?.type}
-                    data={license?.features?.credentialsInISO28013}
+                    key={"CIF__" + license?.attributes.type}
+                    data={license?.attributes.features?.credentialsInISO28013}
                   />
                 )
               })}
@@ -353,8 +357,8 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
               {products?.map(license => {
                 return (
                   <IconDataCell
-                    key={"ICF__" + license?.type}
-                    data={license?.features?.integrationCustomTrustFrameworks}
+                    key={"ICF__" + license?.attributes.type}
+                    data={license?.attributes.features?.integrationCustomTrustFrameworks}
                   />
                 )
               })}
@@ -367,9 +371,9 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
               {products?.map(license => {
                 return (
                   <IconDataCell
-                    key={"ICI__" + license?.type}
+                    key={"ICI__" + license?.attributes.type}
                     data={
-                      license?.features?.integrationCustomTrustInfraestructure
+                      license?.attributes.features?.integrationCustomTrustInfraestructure
                     }
                   />
                 )
@@ -380,26 +384,25 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
               {products?.map(license => {
                 return (
                   <td
-                    key={"SSPT__" + license?.type}
+                    key={"SSPT__" + license?.attributes.type}
                     className={`${cx("bodyBoldSM")}`}
                   >
-                    {typeof license?.features?.standardSupport == "boolean" ? (
-                      <img
-                        className={styles?.table__body__row__cell__icon}
-                        src={
-                          license?.features?.standardSupport
-                            ? images.checkIcon
-                            : images.closeIcon
-                        }
-                      ></img>
-                    ) : (
-                      <p>
-                        ${" "}
-                        <span className={`${cx("bodyRegularCap neutral700")}`}>
-                          {license?.features?.standardSupport}
-                        </span>
-                      </p>
-                    )}
+                    {license?.attributes.features?.standardSupport === "true" &&
+                        <img
+                            className={styles?.table__body__row__cell__icon}
+                            src={images.checkIcon}></img>}
+                    {license?.attributes.features?.standardSupport === "false" &&
+                        <img
+                            className={styles?.table__body__row__cell__icon}
+                            src={images.closeIcon} ></img>}
+                    {license?.attributes.features?.standardSupport === "extra" &&
+                        <p>
+                          ${" "}
+                          <span
+                              className={`${cx("bodyRegularCap neutral700")}`}>
+                              {"(Extra charges may apply)"}
+                            </span>
+                        </p>}
                   </td>
                 )
               })}
@@ -408,32 +411,27 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
               <SubcategoryCell subcategory={"Premier Support"} />
               {products?.map(license => {
                 return (
-                  <>
-                    <td
-                      key={"PSPT__" + license?.type}
-                      className={`${cx("bodyBoldSM")}`}
-                    >
-                      {typeof license?.features?.premierSupport == "boolean" ? (
+                  <td
+                    key={"PSPT__" + license?.attributes.type}
+                    className={`${cx("bodyBoldSM")}`}
+                  >
+                    {license?.attributes.features?.premierSupport === "true" &&
                         <img
-                          className={styles?.table__body__row__cell__icon}
-                          src={
-                            license?.features?.premierSupport
-                              ? images.checkIcon
-                              : images.closeIcon
-                          }
-                        ></img>
-                      ) : (
+                        className={styles?.table__body__row__cell__icon}
+                        src={images.checkIcon}></img>}
+                    {license?.attributes.features?.premierSupport === "false" &&
+                        <img
+                        className={styles?.table__body__row__cell__icon}
+                        src={images.closeIcon} ></img>}
+                    {license?.attributes.features?.premierSupport === "extra" &&
                         <p>
                           ${" "}
                           <span
-                            className={`${cx("bodyRegularCap neutral700")}`}
-                          >
-                            {license?.features?.premierSupport}
+                            className={`${cx("bodyRegularCap neutral700")}`}>
+                            {"(Extra charges may apply)"}
                           </span>
-                        </p>
-                      )}
-                    </td>
-                  </>
+                        </p>}
+                  </td>
                 )
               })}
             </tr>

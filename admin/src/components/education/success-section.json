@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_education_success_sections",
+  "info": {
+    "displayName": "Success Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "success_stories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::success-story.success-story"
+    }
+  }
+}

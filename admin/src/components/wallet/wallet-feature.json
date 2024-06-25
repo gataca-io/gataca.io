@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_wallet_wallet_features",
+  "info": {
+    "displayName": "Wallet Feature",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "wallet_features": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::wallet-feature.wallet-feature"
+    }
+  }
+}

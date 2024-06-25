@@ -1,0 +1,86 @@
+{
+  "collectionName": "components_pricing_tier_details",
+  "info": {
+    "displayName": "TierDetails",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "activeUsers": {
+      "type": "integer"
+    },
+    "apiKeys": {
+      "type": "integer"
+    },
+    "dids": {
+      "type": "integer"
+    },
+    "issuanceTemplates": {
+      "type": "integer"
+    },
+    "issuedCredentials": {
+      "type": "integer"
+    },
+    "verificationTemplates": {
+      "type": "integer"
+    },
+    "credentialsInISO28013": {
+      "type": "boolean"
+    },
+    "credentialsInW3CFormat": {
+      "type": "boolean"
+    },
+    "customGDPRPurposes": {
+      "type": "boolean"
+    },
+    "customQR": {
+      "type": "boolean"
+    },
+    "didPublicCatalogue": {
+      "type": "boolean"
+    },
+    "ebsiIntegration": {
+      "type": "boolean"
+    },
+    "integrationCustomTrustFrameworks": {
+      "type": "boolean"
+    },
+    "integrationCustomTrustInfraestructure": {
+      "type": "boolean"
+    },
+    "newSchemaPublicCatalogue": {
+      "type": "boolean"
+    },
+    "sandBoxEnvironment": {
+      "type": "boolean"
+    },
+    "slas": {
+      "type": "boolean"
+    },
+    "stadistics": {
+      "type": "boolean"
+    },
+    "premierSupport": {
+      "type": "enumeration",
+      "enum": [
+        "true",
+        "false",
+        "extra"
+      ]
+    },
+    "standardSupport": {
+      "type": "enumeration",
+      "enum": [
+        "true",
+        "false",
+        "extra"
+      ]
+    },
+    "nFactor": {
+      "type": "text"
+    },
+    "notifications": {
+      "type": "text"
+    }
+  }
+}

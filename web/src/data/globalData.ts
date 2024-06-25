@@ -200,11 +200,11 @@ export const footerMenuOptions: LinkModel[] = [
         label: "Gataca Wallet",
         route: "/products/wallet",
       },
-      {
+      /* {
         id: "pricing",
         label: "Pricing",
         route: "/pricing",
-      },
+      }, */
       {
         id: "logIn",
         label: "Log In",
@@ -366,7 +366,7 @@ export const footerMenuOptions: LinkModel[] = [
   },
   {
     id: "rightsReservedGataca",
-    label: "© 2023 - Gataca",
+    label: "© 2024 - Gataca",
     route: "/",
   },
 ]

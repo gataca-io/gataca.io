@@ -8,11 +8,14 @@ export type ISectionProps = {
   title: string
   description: string
   list: {
-    index: number
-    id: string
-    icon: string
-    title: string
-    description: string
+    id: number
+    attributes: {
+      index: number
+      identifier: string
+      icon: string
+      title: string
+      description: string
+    }
   }[]
 }
 
@@ -22,6 +25,7 @@ const iconsUseCases = [
   images.keyIcon,
   images.globeEarthIcon,
   images.iconBriefcase,
+  images.likeIcon,
 ]
 const ThirdSection: React.FC<ISectionProps> = props => {
   const { title, description, list } = props
@@ -42,7 +46,7 @@ const ThirdSection: React.FC<ISectionProps> = props => {
       </div>
       <div className={styles?.useCasesSection__container}>
         {list?.map((item, index) => {
-          const { title, description } = item
+          const { title, description } = item.attributes
           return (
             <CardList
               id={"useCaseItem__" + index}

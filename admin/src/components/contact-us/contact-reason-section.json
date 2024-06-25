@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_contact_us_contact_reason_sections",
+  "info": {
+    "displayName": "Contact Reason Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "list": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::contact-reason.contact-reason"
+    }
+  }
+}
