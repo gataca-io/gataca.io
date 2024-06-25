@@ -10,11 +10,11 @@ compile: install
 	docker build -f build/Dockerfile -t gatacaid/website:$(VERSION) . 
 
 release:
-	docker buildx build -f build/Dockerfile --platform linux/amd64 -t gatacaid/website:$(VERSION)-new . --push
+	docker buildx build -f build/Dockerfile --platform linux/amd64 -t gatacaid/website:$(VERSION) -t gatacaid/website:$(VERSION)-SNAPSHOT . --push
 
-pre-release-intel-web6:
-	docker buildx build -f build/Dockerfile --platform linux/amd64 -t gatacaid/website:$(VERSION)-web6-SNAPSHOT . --push
+pre-release:
+	docker buildx build -f build/Dockerfile --platform linux/amd64 -t gatacaid/website:$(VERSION)-SNAPSHOT . --push
 
-pro-release-intel-web6:
-	docker buildx build -f build/Dockerfile --platform linux/amd64 -t gatacaid/website:$(VERSION)-web6 . --push
+pro-release:
+	docker buildx build -f build/Dockerfile --platform linux/amd64 -t gatacaid/website:$(VERSION) . --push
 

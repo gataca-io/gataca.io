@@ -1,11 +1,11 @@
-name: web6 Pro CD
+name: web Pro CD
 
 on:
   workflow_dispatch:
     inputs:
       ExecuteChoice:
         type: choice
-        description: 'Deploy web6 in PRO?'
+        description: 'Deploy web in PRO?'
         required: true
         default: 'NO'
         options:
@@ -48,7 +48,7 @@ jobs:
           cd web 
           echo 'STRAPI_API_URL=https://strapi.gataca.io' > .env.production
           echo "STRAPI_TOKEN=" "$STRAPI_TOKEN" >> .env.production
-          make pro-release-intel-web6 
+          make pro-release
           docker image ls ## Output
           rm .env.production
       - name: Set up deployment-pro
@@ -88,6 +88,6 @@ jobs:
             echo ${{ secrets.CD_KUBE_CONFIG_PRO }} | base64 --decode > $HOME/.kube/config
             kubectl config get-contexts
             kubectl diff -f web/deployments/deployment-pro.yml
-            kubectl -n web scale deploy web6 --replicas=0
+            kubectl -n web scale deploy web --replicas=0
             kubectl apply -f web/deployments/deployment-pro.yml
           fi 
