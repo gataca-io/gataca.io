@@ -1,0 +1,70 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: web7
+  name: web7
+  namespace: web
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: web7
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: web7
+    spec:
+      securityContext:
+        sysctls:
+          - name: net.ipv4.ip_unprivileged_port_start
+            value: "80"
+      containers:
+        - name: web6
+          image: gatacaid/website:7.0.0
+          imagePullPolicy: Always
+          securityContext:
+            runAsNonRoot: true
+            runAsUser: 1000
+            allowPrivilegeEscalation: false
+            seccompProfile:
+              type: RuntimeDefault
+            capabilities:
+              drop:
+                - ALL
+          ports:
+            - containerPort: 80
+              name: web7
+              protocol: TCP
+          env:
+            - name: STRAPI_API_URL
+              value: "https://strapi.gataca.io"
+            - name: STRAPI_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  key: STRAPI_TOKEN
+                  name: strapi-api
+      imagePullSecrets:
+        - name: regcred
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: web7
+  namespace: web
+  labels:
+    app: web7
+spec:
+  type: NodePort
+  ports:
+    - port: 80
+      name: web7port
+      protocol: TCP
+      targetPort: 80
+  selector:
+    app: web7
