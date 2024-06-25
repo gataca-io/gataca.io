@@ -35,7 +35,9 @@ const FirstSection: React.FC<ISectionProps> = props => {
     >
       <section className={`${styles.firstSection} ${cx("containerMaxWidth")}`}>
         <div className={styles.firstSection__leftSide}>
-          <h1 className={`${cx("heading1 marginBottom32")}`}>{title}</h1>
+          <h1 className={`${cx("heading1 marginBottom32")}`}>
+            Issue, verify and manage identity credentials
+          </h1>
           <p className={`${cx("bodyRegularXL")}`}>{description}</p>
           {leftButton || rightButton ? (
             <div className={styles.buttons_container}>

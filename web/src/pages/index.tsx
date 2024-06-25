@@ -15,6 +15,9 @@ import { sortByDate } from "../utils/sort"
 import { gatacaStudioURL } from "../data/globalData"
 import SeventhSection from "./home/sections/seventhSection/SeventhSection"
 
+// Check if window is defined (so if in the browser or in node.js).
+const isBrowser = typeof window !== "undefined"
+
 const IndexPage: React.FC<PageProps> = () => {
   const [blogsItems, setBlogsItems] = React.useState<any | undefined>()
   const [homeData, setHomeData] = useState<any | undefined>()
@@ -64,68 +67,78 @@ const IndexPage: React.FC<PageProps> = () => {
       })
   }
 
-  return (
-    <Layout seoData={homeStrapiData?.seo}>
-      <>
-        <FirstSection
-          title={firstSection?.title}
-          description={firstSection?.description}
-          leftButton={firstSection?.leftButton}
-          rightButton={firstSection?.rightButton}
-        />
-        <LogosSlider />
-        <ThirdSection
-          title={thirdSection?.title}
-          description={thirdSection?.description}
-          list={thirdSection?.list}
-        />
-        <FourthSection
-          title={fourthSection?.title}
-          description={fourthSection?.description}
-          advantages={fourthSection?.advantages}
-        />
-        <FifthSection
-          title={fifthSection?.title}
-          subTitle={fifthSection?.subTitle}
-          description={fifthSection?.description}
-        />
-        <SixthSection
-          title={sixthSection?.title}
-          subTitle={sixthSection?.subTitle}
-          description={sixthSection?.description}
-          list={sixthSection?.list}
-          learnMoreButton={sixthSection?.learnMoreButton}
-        />
-        <SeventhSection
-          title={seventhSection?.title}
-          subTitle={seventhSection?.subTitle}
-          description={seventhSection?.description}
-          feedback={seventhSection?.feedback}
-        />
-        <EighthSection
-          title={eighthSection?.title}
-          description={eighthSection?.description}
-          blogs={blogsItems}
-          moreButton={eighthSection?.moreButton}
-        />
-        <PreFooterCTASection
-          className={styles.prefooter}
-          title={"Ready to start?"}
-          description={
-            "Create an account in Gataca Studio and start experiencing decentralized identity today. Fast & seamless integration"
-          }
-          leftButton={{
-            label: "Contact us",
-            action: () => navigate("/company/contact"),
-          }}
-          rightButton={{
-            label: "Try for free",
-            action: () => window.open(gatacaStudioURL, "_blank"),
-          }}
-        />
-      </>
-    </Layout>
-  )
+  const MyComponent = () => {
+    let loggedIn = false
+    if (isBrowser) {
+      window.localStorage.getItem("isLoggedIn") === "true"
+    }
+    console.log("Am I logged in? " + loggedIn)
+
+    return <div>Am I logged in? {loggedIn}</div>
+  }
+
+  return MyComponent()
+  //     <Layout seoData={homeStrapiData?.seo}>
+  //       <>
+  //         <FirstSection
+  //           title={firstSection?.title}
+  //           description={firstSection?.description}
+  //           leftButton={firstSection?.leftButton}
+  //           rightButton={firstSection?.rightButton}
+  //         />
+  //         <LogosSlider />
+  //         <ThirdSection
+  //           title={thirdSection?.title}
+  //           description={thirdSection?.description}
+  //           list={thirdSection?.list}
+  //         />
+  //         <FourthSection
+  //           title={fourthSection?.title}
+  //           description={fourthSection?.description}
+  //           advantages={fourthSection?.advantages}
+  //         />
+  //         <FifthSection
+  //           title={fifthSection?.title}
+  //           subTitle={fifthSection?.subTitle}
+  //           description={fifthSection?.description}
+  //         />
+  //         <SixthSection
+  //           title={sixthSection?.title}
+  //           subTitle={sixthSection?.subTitle}
+  //           description={sixthSection?.description}
+  //           list={sixthSection?.list}
+  //           learnMoreButton={sixthSection?.learnMoreButton}
+  //         />
+  //         <SeventhSection
+  //           title={seventhSection?.title}
+  //           subTitle={seventhSection?.subTitle}
+  //           description={seventhSection?.description}
+  //           feedback={seventhSection?.feedback}
+  //         />
+  //         <EighthSection
+  //           title={eighthSection?.title}
+  //           description={eighthSection?.description}
+  //           blogs={blogsItems}
+  //           moreButton={eighthSection?.moreButton}
+  //         />
+  //         <PreFooterCTASection
+  //           className={styles.prefooter}
+  //           title={"Ready to start?"}
+  //           description={
+  //             "Create an account in Gataca Studio and start experiencing decentralized identity today. Fast & seamless integration"
+  //           }
+  //           leftButton={{
+  //             label: "Contact us",
+  //             action: () => navigate("/company/contact"),
+  //           }}
+  //           rightButton={{
+  //             label: "Try for free",
+  //             action: () => window.open(gatacaStudioURL, "_blank"),
+  //           }}
+  //         />
+  //       </>
+  //     </Layout>
+  //   )
 }
 
 export default IndexPage

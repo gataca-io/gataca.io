@@ -63,3 +63,17 @@ exports.createPages = ({ actions, graphql }) => {
   // Query for articles nodes to use in creating pages.
   return getArticles
 }
+exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
+  if (stage === "build-html" || stage === "develop-html") {
+    actions.setWebpackConfig({
+      module: {
+        rules: [
+          {
+            test: /bad-module/,
+            use: loaders.null(),
+          },
+        ],
+      },
+    })
+  }
+}
