@@ -2,14 +2,14 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: web7
-  name: web7
+    app: web-new
+  name: web-new
   namespace: web
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: web7
+      app: web-new
   strategy:
     rollingUpdate:
       maxSurge: 25%
@@ -18,15 +18,15 @@ spec:
   template:
     metadata:
       labels:
-        app: web7
+        app: web-new
     spec:
       securityContext:
         sysctls:
           - name: net.ipv4.ip_unprivileged_port_start
             value: "80"
       containers:
-        - name: web6
-          image: gatacaid/website:7.0.0
+        - name: web-new
+          image: gatacaid/website:7.0.1
           imagePullPolicy: Always
           securityContext:
             runAsNonRoot: true
@@ -39,7 +39,7 @@ spec:
                 - ALL
           ports:
             - containerPort: 80
-              name: web7
+              name: web-new
               protocol: TCP
           env:
             - name: STRAPI_API_URL
@@ -55,16 +55,16 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: web7
+  name: web-new
   namespace: web
   labels:
-    app: web7
+    app: web-new
 spec:
   type: NodePort
   ports:
     - port: 80
-      name: web7port
+      name: web-new-port
       protocol: TCP
       targetPort: 80
   selector:
-    app: web7
+    app: web-new
