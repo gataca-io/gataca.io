@@ -1,11 +1,11 @@
-name: web6 CD
+name: web CD DEV
 
 on:
   workflow_dispatch:
     inputs:
       ExecuteChoice:
         type: choice
-        description: 'Deploy web6 in DEV?'
+        description: 'Deploy web in DEV?'
         required: true
         default: 'NO'
         options:
@@ -48,7 +48,7 @@ jobs:
           cd web 
           echo 'STRAPI_API_URL=https://strapi.dev.gataca.io' > .env.production
           echo "STRAPI_TOKEN=" "$STRAPI_TOKEN" >> .env.production
-          make pre-release-intel-web6 
+          make pre-release 
           docker image ls ## Output
           rm .env.production
       - name: Set up deployment-dev
@@ -88,6 +88,6 @@ jobs:
             echo ${{ secrets.CD_KUBE_CONFIG_DEV }} | base64 --decode > $HOME/.kube/config
             kubectl config get-contexts
             kubectl diff -f web/deployments/deployment-dev.yml
-            kubectl -n web scale deploy web6 --replicas=0
+            kubectl -n web scale deploy web --replicas=0
             kubectl apply -f web/deployments/deployment-dev.yml
           fi 

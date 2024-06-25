@@ -13,11 +13,11 @@ snapshotX:
 	docker buildx build -f build/Dockerfile --platform linux/amd64 -t gatacaid/website:$(VERSION)-SNAPSHOT . --push
 
 release:
-	docker buildx build -f build/Dockerfile --platform linux/amd64 -t gatacaid/website:$(VERSION) . --push
+	docker buildx build -f build/Dockerfile --platform linux/amd64 -t gatacaid/website:$(VERSION) -t gatacaid/website:$(VERSION)-SNAPSHOT . --push
 
-pre-release-intel-web6:
+pre-release:
 	docker buildx build -f build/Dockerfile --platform linux/amd64 -t gatacaid/website:$(VERSION)-SNAPSHOT . --push
 
-pro-release-intel-web6:
+pro-release:
 	docker buildx build -f build/Dockerfile --platform linux/amd64 -t gatacaid/website:$(VERSION) . --push
 
