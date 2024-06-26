@@ -13,3 +13,4 @@ export const backLink__text: string
 export const closeMenuIcon: string
 export const menuContentVisible: string
 export const menuIconContainer: string
+export const demoLink__mobile: string

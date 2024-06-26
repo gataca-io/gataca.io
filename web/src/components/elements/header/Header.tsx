@@ -6,6 +6,7 @@ import { images } from "../../../images/images"
 import { Link } from "gatsby"
 import ButtonsHeader from "./headerComponents/buttonsHeader/ButtonsHeader"
 import MenuOpenMobile from "./headerComponents/buttonsHeader/menuOpenMobile/MenuOpenMobile"
+import cx from "classnames"
 
 const Header: React.FC = () => {
   const [subMenuOpenedID, setSubMenuOpened] = React.useState("")
@@ -28,15 +29,15 @@ const Header: React.FC = () => {
               />
             )
           })}
-        </div>
-        <div>
-          <a
-            className={styles?.header}
-            href={`https://gataca.io/demo`}
-            target="_blank"
-          >
-            Demo
-          </a>
+          <div className={styles?.demoLink}>
+            <a
+              className={cx("buttonMD", styles?.demoLink)}
+              href={`https://gataca.io/demo`}
+              target="_blank"
+            >
+              Demo
+            </a>
+          </div>
         </div>
         <div className={styles?.buttonsDesktop}>
           <ButtonsHeader />

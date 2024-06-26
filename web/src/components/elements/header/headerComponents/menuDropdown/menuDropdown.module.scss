@@ -3,7 +3,7 @@
 
 .menuDropdownRoute {
     display: none;
-    @include min-width($desktopMD) {
+    @include min-width(1145px) {
       padding: 14px 20px;
       position: relative;
       cursor: pointer;
