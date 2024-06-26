@@ -29,15 +29,13 @@ const Header: React.FC = () => {
               />
             )
           })}
-          <div className={styles?.demoLink}>
-            <a
-              className={cx("buttonMD", styles?.demoLink)}
-              href={`https://gataca.io/demo`}
-              target="_blank"
-            >
-              Demo
-            </a>
-          </div>
+          <a
+            className={cx("buttonMD", styles?.demoLink)}
+            href={`https://gataca.io/demo`}
+            target="_blank"
+          >
+            Demo
+          </a>
         </div>
         <div className={styles?.buttonsDesktop}>
           <ButtonsHeader />
