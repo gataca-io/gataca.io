@@ -29,6 +29,15 @@ const Header: React.FC = () => {
             )
           })}
         </div>
+        <div>
+          <a
+            className={styles?.header}
+            href={`https://gataca.io/demo`}
+            target="_blank"
+          >
+            Demo
+          </a>
+        </div>
         <div className={styles?.buttonsDesktop}>
           <ButtonsHeader />
         </div>
