@@ -1,0 +1,70 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: web-new
+  name: web-new
+  namespace: web
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: web-new
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: web-new
+    spec:
+      securityContext:
+        sysctls:
+          - name: net.ipv4.ip_unprivileged_port_start
+            value: "80"
+      containers:
+        - name: web-new
+          image: gatacaid/website:7.0.2-SNAPSHOT
+          imagePullPolicy: Always
+          securityContext:
+            runAsNonRoot: true
+            runAsUser: 1000
+            allowPrivilegeEscalation: false
+            seccompProfile:
+              type: RuntimeDefault
+            capabilities:
+              drop:
+                - ALL
+          ports:
+            - containerPort: 80
+              name: web-new
+              protocol: TCP
+          env:
+            - name: STRAPI_API_URL
+              value: "https://strapi.dev.gataca.io"
+            - name: STRAPI_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  key: STRAPI_TOKEN
+                  name: strapi-api
+      imagePullSecrets:
+        - name: regcred
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: web-new
+  namespace: web
+  labels:
+    app: web-new
+spec:
+  type: NodePort
+  ports:
+    - port: 80
+      name: web-new-port
+      protocol: TCP
+      targetPort: 80
+  selector:
+    app: web-new
