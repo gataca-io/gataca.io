@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_generic_logo_links",
+  "info": {
+    "displayName": "logo-link"
+  },
+  "options": {},
+  "attributes": {
+    "logoImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "alt": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

@@ -113,6 +113,15 @@ const MenuOpenMobile: React.FC<IMenuDropdownProps> = props => {
                 />
               )
             })}
+            <div className={styles.demoLink__mobile}>
+              <a
+                className={cx("buttonSM")}
+                href={`https://gataca.io/demo`}
+                target="_blank"
+              >
+                Demo
+              </a>
+            </div>
             <div className={styles.buttonsContainer}>
               <ButtonsHeader />
             </div>

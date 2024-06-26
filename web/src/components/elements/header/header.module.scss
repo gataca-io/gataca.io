@@ -24,38 +24,56 @@
   @include min-width($mobileXL) {
     padding: 24px 40px 0;
   }
-  @include min-width($desktopMD) {
+  @include min-width(1145px) {
     padding: 24px 32px 0;
   }
  
 
   & > div {
-      z-index: 9999;
+    z-index: 9999;
     @include flexbox();
     @include flex-wrap(wrap);
     @include justify-content(space-between);
+
+    & > .demoLink {
+      display: none;
+      @include min-width(1145px) {
+        padding: 14px 20px;
+        position: relative;
+        cursor: pointer;
+        @include flexbox();
+        @include flex-wrap(wrap);
+        @include justify-content(center);
+        @include align-items(center);
+        > *:hover {
+          color: $primary700;
+          stroke: $primary700;
+        }
+      }
+    }
   }
+
   .buttonsDesktop {
     display: none;
-    @include min-width($desktopMD) {
+    @include min-width(1145px) {
       @include flexbox();
     }
     button {
       padding: 12px 24px;
-      @include min-width($desktopMD) {
+      @include min-width(1145px) {
         padding: 6px 8px;
         height: auto;
       }
-      @include min-width(1200px) {
+      @include min-width(1220px) {
         padding: 12px 24px;
         height: 48px;
       }
       &:first-child {
-        @include min-width($desktopMD) {
+        @include min-width(1145px) {
           margin-right: 14px;
         }
       
-        @include min-width(1200px) {
+        @include min-width(1220px) {
           margin-right: 20px;
         }
       }
@@ -64,7 +82,7 @@
   .header__logo {
     img {
       max-width: 170px;
-      @include min-width($desktopMD) {
+      @include min-width(1145px) {
         width: 100%;
         height: auto;
         max-width: 140px;

@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_layout_headers",
+  "info": {
+    "displayName": "header"
+  },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "displayName": "logo-link",
+      "type": "component",
+      "repeatable": false,
+      "component": "generic.logo-link"
+    },
+    "signInButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "generic.cta"
+    }
+  }
+}

@@ -4,7 +4,7 @@
 div.mobileMenu {
   cursor: pointer;
   max-height: 40px;
-  @include min-width($desktopMD) {
+  @include min-width(1145px) {
     display: none;
   }
   &.opened {
@@ -27,7 +27,7 @@ div.mobileMenu {
       width: 100%;
       max-width: 335px;
     }
-    @include min-width($desktopMD) {
+    @include min-width(1145px) {
       display: none;
     }
   }
@@ -171,6 +171,21 @@ div.mobileMenu {
   100% {
     opacity: 10;
     transform: translateX(-100%);
+  }
+}
+
+.demoLink__mobile {
+  padding: 16px 0;
+  padding-left: 16px;
+  cursor: auto;
+  > a {
+    padding: 16px;
+    padding-left: 0;
+    cursor: pointer;
+    *:hover {
+      color: $primary700;
+      stroke: $primary700;
+    }
   }
 }
 
