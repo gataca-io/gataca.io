@@ -43,14 +43,14 @@ jobs:
           username: navasgataca              ###############  CHANGE TO GENERIC USER ###############
           password: ${{ secrets.DOCKERHUB_TOKEN }} 
 
-      - name: Create and upload Docker image
-        run: |
-          cd web 
-          echo 'STRAPI_API_URL=https://strapi.dev.gataca.io' > .env.production
-          echo "STRAPI_TOKEN=" "$STRAPI_TOKEN" >> .env.production
-          make pre-release-intel-web6 ##
-          docker image ls ## Output
-          rm .env.production
+#      - name: Create and upload Docker image
+#        run: |
+#          cd web 
+#          echo 'STRAPI_API_URL=https://strapi.dev.gataca.io' > .env.production
+#          echo "STRAPI_TOKEN=" "$STRAPI_TOKEN" >> .env.production
+#          make pre-release-intel-web6 ##
+#          docker image ls ## Output
+#          rm .env.production
       - name: Set up deployment-dev
         run: |
           git config --global user.email ${{ github.actor }}@gataca.io
