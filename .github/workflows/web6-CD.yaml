@@ -48,7 +48,7 @@ jobs:
           cd web 
           echo 'STRAPI_API_URL=https://strapi.dev.gataca.io' > .env.production
           echo "STRAPI_TOKEN=" "$STRAPI_TOKEN" >> .env.production
-          make pre-release-intel-web6 
+#          make pre-release-intel-web6 
           docker image ls ## Output
           rm .env.production
       - name: Set up deployment-dev
