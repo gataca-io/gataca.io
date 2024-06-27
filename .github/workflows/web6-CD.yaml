@@ -7,11 +7,12 @@ on:
         type: choice
         description: 'Deploy web6 in DEV?'
         required: true
-        default: 'NO'
+        default: 'YES'
         options:
         - "YES"
         - "NO"
-
+  push:
+    branches: fix_gh_action
 
 env: 
   AWS_REGION: eu-central-1
