@@ -47,6 +47,7 @@ jobs:
       - name: Create and upload Docker image
         run: |
           cd web 
+          pwd
 #          echo 'STRAPI_API_URL=https://strapi.dev.gataca.io' > .env.production
 #          echo "STRAPI_TOKEN=" "$STRAPI_TOKEN" >> .env.production
 #          make pre-release-intel-web6 ##
@@ -90,6 +91,5 @@ jobs:
             kubectl config get-contexts
             pwd; cd web
             kubectl diff -f deployments/deployment-dev.yml
-            kubectl -n web scale deploy web6 --replicas=0
-            kubectl apply -f deployments/deployment-dev.yml
+            kubectl -n web scale deploy web6 --replicas=0 # kubectl apply -f deployments/deployment-dev.yml
           fi 
