@@ -89,7 +89,7 @@ jobs:
             mkdir $HOME/.kube/
             echo ${{ secrets.CD_KUBE_CONFIG_DEV }} | base64 --decode > $HOME/.kube/config
             kubectl config get-contexts
-            kubectl diff -f web/deployments/deployment-dev.yml
+            kubectl diff -f web/deployments/deployment-dev.yml || true 
             kubectl -n web scale deploy web --replicas=0 
             kubectl apply -f web/deployments/deployment-dev.yml
           fi 
