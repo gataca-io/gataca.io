@@ -7,7 +7,7 @@ on:
         type: choice
         description: 'Deploy web6 in DEV?'
         required: true
-        default: 'YES'
+        default: 'NO'
         options:
         - "YES"
         - "NO"
@@ -75,7 +75,7 @@ jobs:
           fi
       - name: Install and configure kubectl
         run: |
-          if [ "${{ github.event.inputs.ExecuteChoice }}" == "YES" ]; then
+          if [ "${{ github.event.inputs.ExecuteChoice }}" != "YES" ]; then # == 
             echo "Installing kubctl..."
             VERSION=$(curl --silent https://storage.googleapis.com/kubernetes-release/release/stable.txt)
             VERSION=v1.23.6
