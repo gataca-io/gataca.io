@@ -11,8 +11,6 @@ on:
         options:
         - "YES"
         - "NO"
-  push:
-    branch: fix_gh_action2
 
 
 env: 
@@ -50,7 +48,7 @@ jobs:
           cd web 
           echo 'STRAPI_API_URL=https://strapi.dev.gataca.io' > .env.production
           echo "STRAPI_TOKEN=" "$STRAPI_TOKEN" >> .env.production
-          #make pre-release 
+          make pre-release 
           docker image ls ## Output
           rm .env.production
       - name: Set up deployment-dev
