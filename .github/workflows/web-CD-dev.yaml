@@ -11,6 +11,8 @@ on:
         options:
         - "YES"
         - "NO"
+  push:
+    branch: fix_gh_action2
 
 
 env: 
@@ -48,7 +50,7 @@ jobs:
           cd web 
           echo 'STRAPI_API_URL=https://strapi.dev.gataca.io' > .env.production
           echo "STRAPI_TOKEN=" "$STRAPI_TOKEN" >> .env.production
-          make pre-release 
+          #make pre-release 
           docker image ls ## Output
           rm .env.production
       - name: Set up deployment-dev
@@ -74,7 +76,7 @@ jobs:
           fi
       - name: Install and configure kubectl
         run: |
-          if [ "${{ github.event.inputs.ExecuteChoice }}" == "YES" ]; then
+          if [ "${{ github.event.inputs.ExecuteChoice }}" != "YES" ]; then
             echo "Installing kubctl..."
             VERSION=$(curl --silent https://storage.googleapis.com/kubernetes-release/release/stable.txt)
             VERSION=v1.23.6
@@ -88,5 +90,5 @@ jobs:
             echo ${{ secrets.CD_KUBE_CONFIG_DEV }} | base64 --decode > $HOME/.kube/config
             kubectl config get-contexts
             kubectl diff -f web/deployments/deployment-dev.yml
-            kubectl -n web scale deploy web --replicas=0 && kubectl apply -f web/deployments/deployment-dev.yml
+            kubectl -n web scale deploy web --replicas=0 #&& kubectl apply -f web/deployments/deployment-dev.yml
           fi 
