@@ -1,0 +1,56 @@
+@import "../../../../../styles/_colors.scss";
+@import "../../../../../styles/mixins.scss";
+
+.gatacaVouchSection {
+  margin-bottom: 132px;
+  padding: 0 20px;
+  @include min-width($mobileXL) {
+    margin-bottom: 220px;
+    padding: 0 40px;
+  }
+  @include min-width($desktopMD) {
+    padding: 0 60px;
+  }
+
+  .description {
+    @include min-width($desktopSM) {
+      max-width: 473px;
+    }
+  }
+
+  .gatacaVouchSection__container {
+    @include flexbox();
+    @include flex-direction(column);
+    @include justify-content(center);
+    @include flex-wrap(wrap);
+    gap: 60px;
+    padding-top: 93.97px;
+    @include min-width($mobileXL) {
+    padding-top: 190px;
+    }
+
+    @include min-width($desktopSM) {
+      @include flex-direction(row);
+      @include flex-wrap(nowrap);
+      @include justify-content(space-between);
+      @include align-items(center);
+      gap: 135px;
+    }
+    .gatacaVouchSection__leftSide {
+      @include flex(0, 0, 100%);
+      @include min-width($desktopSM) {
+        @include flex(0, 0, calc((100%/2) - (135px/2)));
+        max-width: 573px;
+      }
+    }
+    .gatacaVouchSection__rightSide {
+      @include min-width($desktopSM) {
+        @include flex(0, 0, calc((100%/2) - (135px/2)));
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}

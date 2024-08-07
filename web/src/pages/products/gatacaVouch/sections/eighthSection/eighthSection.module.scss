@@ -1,0 +1,137 @@
+@import "../../../../../styles/_colors.scss";
+@import "../../../../../styles/mixins.scss";
+
+.eighthSection__container {
+  margin: 0px 0px 178px;
+  padding: 0 20px;
+  @include min-width($mobileXL) {
+    margin: 0;
+    padding: 0 40px;
+  }
+  @include min-width($desktopMD) {
+    padding: 0 60px;
+  }
+}
+
+.eighthSection {
+  position: relative;
+  margin: 0px auto -98px;
+  width: 100%;
+  @include flexbox();
+  @include flex-direction(column);
+  @include flex-wrap(wrap);
+
+  @include min-width($mobileXL) {
+    height: auto;
+  }
+}
+
+.eighthSection__leftSide {
+  margin: 0;
+  width: 100%;
+  text-align: left;
+  @include flexbox();
+  @include flex-direction(column);
+  @include align-items(flex-start);
+
+  @include min-width($mobileXL) {
+    margin: 0 auto 0 0;
+  }
+
+  & > .eighthSection__leftSide__header {
+    width: 100%;
+    @include flexbox();
+    @include flex-direction(column);
+    @include align-items(flex-start);
+
+    @include min-width($desktopMD) {
+      @include align-items(flex-end);
+      @include justify-content(space-between);
+      @include flex-direction(row);
+    }
+
+    & > div > p, h1 {
+      z-index: 9999;
+      @include min-width($mobileXL) {
+        max-width: 576px;
+      }
+    }
+
+    & > button {
+      margin-top: 40px;
+      @include min-width($desktopMD) {
+        margin-top: 0;
+      }
+      span {
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+  }
+
+  & > .blogs__container {
+    padding: 10px;
+    padding-bottom: 0px;
+    margin-left: -10px;
+    top: 0px;
+    width: 100%;
+    z-index: 0;
+    margin-top: 70px;
+    border-radius: 12px;
+    display: inline-grid;
+
+    justify-content: space-between;
+    align-items: space-between;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 32px;
+
+    @include min-width($mobileXL) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    @include min-width(712px) {
+      gap: 32px;
+    }
+    & > div {
+      min-width: 0;
+      width: calc(100% - 48px);
+    }
+
+    @include min-width($desktopMD) {
+      overflow: visible;
+      width: 100%;
+      margin-top: 80px;
+    }
+
+    @media (min-width: $mobileXL) and (max-width: $desktopMD) {
+      & > div:nth-child(3)  {
+        display: none;
+      }
+    }
+
+    & > div:nth-child(4)  {
+      margin-right: 660px;
+      @include min-width($desktopMD) {
+        margin-right: 0px;
+      }
+    }
+  }
+
+  & > .eighthSection__rightSide {
+    position: relative;
+    width: 100%;
+    display: block;
+    z-index: 0;
+    @include flexbox();
+    @include flex-direction(column);
+    @include justify-content(center);
+    @include align-items(center);
+  }
+}
+
+.blogSkeleton {
+  height: 471px !important;
+  &::before {
+    height: 471px !important;
+  }
+}

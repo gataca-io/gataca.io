@@ -1,0 +1,144 @@
+@import "../../../../../styles/_colors.scss";
+@import "../../../../../styles/mixins.scss";
+@import "../../../../../styles/_types.scss";
+
+.plansSection {
+  margin-bottom: calc(132px - 32px);
+  padding: 0 20px;
+  @include min-width($mobileXL) {
+    margin-bottom: calc(220px - 32px);
+    padding: 0 40px;
+  }
+  @include min-width($desktopMD) {
+    padding: 0 60px;
+  }
+
+  .description {
+    margin-bottom: 80px;
+    @include min-width($tabletXL) {
+      @include flexbox();
+      @include flex-wrap(nowrap);
+      @include justify-content(space-between);
+      @include align-items(center);
+    }
+
+    p {
+      margin-bottom: 35px;
+      @include min-width($tabletXL) {
+        margin-bottom: 0;
+      }
+    }
+
+    .buttonContainer {
+      max-width: 144px;
+      @include min-width($tabletXL) {
+        min-width: 163px;
+        max-width: 100%;
+      }
+
+      button {
+        width: 100%;
+      }
+    }
+  }
+
+  .max-width {
+    @include min-width($mobileXL) {
+      max-width: 576px;
+    }
+  }
+
+  & > .plansSection__container::-webkit-scrollbar {
+    display: none; /* Opera and Chrome */
+  }
+
+  .plansSection__container {
+    overflow-x: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+    gap: 0 32px;
+    padding: 5px;
+    width: 100vw;
+    @include flexbox();
+
+    @media (min-width: 1230px) {
+      margin-left: 0;
+      padding: 0;
+      overflow: visible;
+      width: 100%;
+      @include justify-content(center);
+      @include flex-wrap(nowrap);
+    }
+
+    & > div:nth-child(4)  {
+      margin-right: calc(100vw + 304px);
+      @media (min-width: 1230px) {
+        margin-right: 0px;
+      }
+    }
+
+    .plansSection__list {
+      min-height: 164px;
+      background: $neutral100;
+      box-shadow: 0px 0px 12px $boxShadowLigh;
+      border-radius: 20px;
+      padding: 20px;
+      width: 232px;
+      min-width: 213px;
+      cursor: pointer;
+      @include flexbox();
+      @include flex-direction(column);
+      
+      @include min-width(1229px) {
+        cursor: auto;
+      }
+
+      & > .cardHeader {
+        margin-bottom: 8px;
+        @include flexbox();
+        @include justify-content(space-between);
+        @include align-items(center);
+
+        & > div {
+          background-color: $primary700;
+          color: $neutral100;
+        }
+      }
+
+      img {
+        margin-bottom: 17px;
+      }
+
+      h5 {
+        font-family: $custom;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+        text-decoration: none;
+        margin-bottom: 16px;
+      }
+
+      button {
+        width: 100%;
+        margin-top: auto;
+        position: relative;
+      }
+
+      & > p {
+        max-width: 188px;
+        &:nth-child(1) > p:nth-child(2) {
+          max-width: 149px;
+        }
+      }
+
+      &:nth-child(1) {
+        & > p:nth-child(2) {
+          max-width: 149px;
+        }
+        button {
+          padding: 12px 8px;
+        }
+      }
+    }
+  }
+}
