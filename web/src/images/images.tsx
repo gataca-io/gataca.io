@@ -163,6 +163,8 @@ import gatacaDiscordLink from "./icons/gat-icon-discord.svg"
 import cfoTeam from "./team/monica-mayoral.png"
 import adminExecutiveTeam from "./team/marisol-esqueda.png"
 import mobileAppDeveloper from "./team/johan-cruz.png"
+import impactedIndustries from "./images3d/impactedIndustries.png"
+import vouchLanding from "./images3d/vouch_landing.png"
 
 export const images = {
   favicon: favicon,
@@ -331,4 +333,6 @@ export const images = {
   number3: number3,
   number4: number4,
   gatacaDiscordLink: gatacaDiscordLink,
+  impactedIndustries: impactedIndustries,
+  vouchLanding: vouchLanding,
 }
