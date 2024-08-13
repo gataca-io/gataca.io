@@ -2029,6 +2029,102 @@
     },
     {
       "action": "plugin::content-manager.explorer.create",
+      "subject": "api::gataca-vouch.gataca-vouch",
+      "properties": {
+        "fields": [
+          "title",
+          "description",
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL",
+          "button.label",
+          "button.url",
+          "button.outsideWeb",
+          "button.outlined",
+          "button.filename",
+          "headerSection.title",
+          "headerSection.subtitle",
+          "headerSection.description",
+          "headerSection.hero",
+          "headerSection.cta.label",
+          "headerSection.cta.url",
+          "headerSection.cta.external_url"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::gataca-vouch.gataca-vouch",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::gataca-vouch.gataca-vouch",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::gataca-vouch.gataca-vouch",
+      "properties": {
+        "fields": [
+          "title",
+          "description",
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL",
+          "button.label",
+          "button.url",
+          "button.outsideWeb",
+          "button.outlined",
+          "button.filename",
+          "headerSection.title",
+          "headerSection.subtitle",
+          "headerSection.description",
+          "headerSection.hero",
+          "headerSection.cta.label",
+          "headerSection.cta.url",
+          "headerSection.cta.external_url"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::gataca-vouch.gataca-vouch",
+      "properties": {
+        "fields": [
+          "title",
+          "description",
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL",
+          "button.label",
+          "button.url",
+          "button.outsideWeb",
+          "button.outlined",
+          "button.filename",
+          "headerSection.title",
+          "headerSection.subtitle",
+          "headerSection.description",
+          "headerSection.hero",
+          "headerSection.cta.label",
+          "headerSection.cta.url",
+          "headerSection.cta.external_url"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
       "subject": "api::gataca-wallet.gataca-wallet",
       "properties": {
         "fields": [
