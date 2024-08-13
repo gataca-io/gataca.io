@@ -4427,6 +4427,120 @@
       "actions": {},
       "lifecycles": {}
     },
+    "api::gataca-vouch.gataca-vouch": {
+      "kind": "singleType",
+      "collectionName": "gataca_vouches",
+      "info": {
+        "singularName": "gataca-vouch",
+        "pluralName": "gataca-vouches",
+        "displayName": "2.3 Products - Vouch",
+        "description": ""
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "text"
+        },
+        "seo": {
+          "type": "component",
+          "repeatable": false,
+          "component": "shared.seo"
+        },
+        "button": {
+          "type": "component",
+          "repeatable": false,
+          "component": "generic.button"
+        },
+        "headerSection": {
+          "type": "component",
+          "repeatable": false,
+          "component": "generic.header"
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "gataca_vouches",
+        "info": {
+          "singularName": "gataca-vouch",
+          "pluralName": "gataca-vouches",
+          "displayName": "2.3 Products - Vouch",
+          "description": ""
+        },
+        "options": {
+          "draftAndPublish": true
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "text"
+          },
+          "seo": {
+            "type": "component",
+            "repeatable": false,
+            "component": "shared.seo"
+          },
+          "button": {
+            "type": "component",
+            "repeatable": false,
+            "component": "generic.button"
+          },
+          "headerSection": {
+            "type": "component",
+            "repeatable": false,
+            "component": "generic.header"
+          }
+        },
+        "kind": "singleType"
+      },
+      "modelType": "contentType",
+      "modelName": "gataca-vouch",
+      "connection": "default",
+      "uid": "api::gataca-vouch.gataca-vouch",
+      "apiName": "gataca-vouch",
+      "globalId": "GatacaVouch",
+      "actions": {},
+      "lifecycles": {}
+    },
     "api::gataca-wallet.gataca-wallet": {
       "kind": "singleType",
       "collectionName": "gataca_wallets",
