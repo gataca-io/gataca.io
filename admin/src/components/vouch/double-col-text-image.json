@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_vouch_double_col_text_images",
+  "info": {
+    "displayName": "DoubleColTextImage",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "rightImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

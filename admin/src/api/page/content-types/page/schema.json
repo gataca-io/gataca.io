@@ -4,7 +4,8 @@
   "info": {
     "singularName": "page",
     "pluralName": "pages",
-    "displayName": "Page"
+    "displayName": "Page",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,13 +16,18 @@
       "type": "dynamiczone",
       "components": [
         "generic.button",
-        "generic.section"
+        "generic.section",
+        "generic.header",
+        "vouch.double-col-text-image"
       ]
     },
     "seo": {
       "type": "component",
       "repeatable": false,
       "component": "shared.seo"
+    },
+    "Title": {
+      "type": "string"
     }
   }
 }

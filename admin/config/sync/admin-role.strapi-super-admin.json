@@ -2363,7 +2363,8 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "Title"
         ]
       },
       "conditions": []
@@ -2390,7 +2391,8 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "Title"
         ]
       },
       "conditions": []
@@ -2405,7 +2407,8 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "Title"
         ]
       },
       "conditions": []

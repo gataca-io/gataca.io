@@ -48,6 +48,20 @@
           "sortable": false
         }
       },
+      "Title": {
+        "edit": {
+          "label": "Title",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Title",
+          "searchable": true,
+          "sortable": true
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -78,12 +92,6 @@
       }
     },
     "layouts": {
-      "list": [
-        "id",
-        "seo",
-        "createdAt",
-        "updatedAt"
-      ],
       "edit": [
         [
           {
@@ -96,7 +104,20 @@
             "name": "seo",
             "size": 12
           }
+        ],
+        [
+          {
+            "name": "Title",
+            "size": 6
+          }
         ]
+      ],
+      "list": [
+        "id",
+        "Title",
+        "seo",
+        "createdAt",
+        "updatedAt"
       ]
     }
   },

@@ -103,6 +103,9 @@
       "action": "api::gataca-studio.gataca-studio.find"
     },
     {
+      "action": "api::gataca-vouch.gataca-vouch.find"
+    },
+    {
       "action": "api::gataca-wallet.gataca-wallet.find"
     },
     {
