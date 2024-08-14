@@ -23,7 +23,7 @@ const GatacaVouchPage: React.FC<PageProps> = () => {
   >()
 
   const {
-    headerSection,
+    // headerSection,
     featureSection,
     adSection,
     whyStudioSection,
@@ -32,7 +32,7 @@ const GatacaVouchPage: React.FC<PageProps> = () => {
   } = strapiData ? strapiData : []
   const { eighthSection } = homeStrapiData ? homeStrapiData : []
   const { faqSection } = faqData ? faqData : []
-  // const { headerSection } = vouchStrapiData ? vouchStrapiData : []
+  const { headerSection } = vouchStrapiData ? vouchStrapiData : []
 
   React.useEffect(() => {
     if (!strapiData) {
@@ -55,7 +55,7 @@ const GatacaVouchPage: React.FC<PageProps> = () => {
 
   const getStrapiData = async () => {
     await fetch(
-      `${process.env.STRAPI_API_URL}/api/gataca-studio?populate[seo]=*&populate[featureSection][populate]=*&populate[whyStudioSection][populate]=*&populate[howWorksSection][populate]=*&populate[tierSection][populate][tiers][populate]=*&populate[headerSection][populate]=*&populate[adSection][populate]=*`
+      `${process.env.STRAPI_API_URL}/api/gataca-studio?populate[seo]=*&populate[featureSection][populate]=*&populate[whyStudioSection][populate]=*&populate[howWorksSection][populate]=*&populate[tierSection][populate][tiers][populate]=*&populate[adSection][populate]=*`
     )
       .then(response => response.json())
       .then(jsonResponse => {
@@ -100,7 +100,7 @@ const GatacaVouchPage: React.FC<PageProps> = () => {
 
   const getVouchData = async () => {
     await fetch(
-      `${process.env.STRAPI_API_URL}/api/gataca-vouch?populate[seo][populate]=*&populate[headerSection][populate]=*`
+      `${process.env.STRAPI_API_URL}/api/gataca-vouch?&populate[seo][populate]=*&populate[headerSection][populate]=*`
     )
       .then(response => response.json())
       .then(jsonResponse => {
