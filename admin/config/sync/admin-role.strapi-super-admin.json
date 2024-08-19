@@ -2364,7 +2364,8 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
-          "Title"
+          "title",
+          "slugURL"
         ]
       },
       "conditions": []
@@ -2392,7 +2393,8 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
-          "Title"
+          "title",
+          "slugURL"
         ]
       },
       "conditions": []
@@ -2408,7 +2410,8 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
-          "Title"
+          "title",
+          "slugURL"
         ]
       },
       "conditions": []

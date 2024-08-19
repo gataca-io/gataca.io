@@ -48,16 +48,30 @@
           "sortable": false
         }
       },
-      "Title": {
+      "title": {
         "edit": {
-          "label": "Title",
+          "label": "title",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "Title",
+          "label": "title",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "slugURL": {
+        "edit": {
+          "label": "slugURL",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "slugURL",
           "searchable": true,
           "sortable": true
         }
@@ -107,17 +121,18 @@
         ],
         [
           {
-            "name": "Title",
+            "name": "title",
+            "size": 6
+          },
+          {
+            "name": "slugURL",
             "size": 6
           }
         ]
       ],
       "list": [
         "id",
-        "Title",
-        "seo",
-        "createdAt",
-        "updatedAt"
+        "title"
       ]
     }
   },

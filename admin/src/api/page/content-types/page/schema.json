@@ -26,8 +26,15 @@
       "repeatable": false,
       "component": "shared.seo"
     },
-    "Title": {
-      "type": "string"
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "slugURL": {
+      "type": "string",
+      "required": true,
+      "unique": true
     }
   }
 }
