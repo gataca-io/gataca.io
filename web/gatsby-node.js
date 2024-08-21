@@ -30,7 +30,7 @@ exports.createPages = ({ actions, graphql }) => {
       isPermanent: true,
     })
   )
-  const getArticles = makeRequest(
+  const getPages = makeRequest(
     graphql,
     `
     {
@@ -42,11 +42,31 @@ exports.createPages = ({ actions, graphql }) => {
             slugURL,
           }
         }
+      },
+      allStrapiPage {
+        edges {
+          node {
+            id
+            slugURL
+            sections {
+              ... on STRAPI__COMPONENT_GENERIC_HEADER {
+                id
+                title
+                description
+              }
+              ... on STRAPI__COMPONENT_VOUCH_DOUBLE_COL_TEXT_IMAGE {
+                id
+                description
+                title
+              }
+            }
+          }
+        }
       }
     }
     `
   ).then(result => {
-    // Create pages for each article.
+    // Create landing for each article.
     result.data.allStrapiBlog.edges.forEach(({ node }) => {
       createPage({
         path: `/blog/${node?.slugURL}`,
@@ -57,9 +77,25 @@ exports.createPages = ({ actions, graphql }) => {
           title: node.title,
         },
       })
-    })
+    }),
+      // Create landing for each page.
+      result.data.allStrapiPage.edges.forEach(({ node }) => {
+        createPage({
+          path: `/${node?.slugURL}`,
+          component: path.resolve(`src/templates/page/pageTemplate.tsx`),
+          context: {
+            id: node.id,
+            slugURL: node.slugURL,
+            sections: {
+              id: node.id,
+              description: node.description,
+              title: node.title,
+            },
+          },
+        })
+      })
   })
 
-  // Query for articles nodes to use in creating pages.
-  return getArticles
+  // Query for pages nodes to use in creating pages.
+  return getPages
 }

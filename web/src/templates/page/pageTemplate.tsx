@@ -1,0 +1,51 @@
+import React from "react"
+import { navigate } from "gatsby"
+import Layout from "../../components/templates/mainLayout/MainLayout"
+import PreFooterCTASection from "../../components/templates/sections/preFooterCTA/PreFooterCTA"
+import { SeoHelmet } from "../../components/elements/seo/SeoHelmet"
+import { PageModel } from "../../interfaces/interfaces"
+import PageSkeleton from "./components/introBlogSkeleton/PageSkeleton"
+import MainHeader from "./sections/MainHeader/MainHeader"
+
+const PageTemplate: React.FC = (props: any) => {
+  const [page, setPage] = React.useState<PageModel | undefined>()
+  const pageData = page && page?.attributes
+
+  React.useEffect(() => {
+    getPageData()
+  }, [props?.pageContext?.slugURL])
+
+  const getPageData = async () => {
+    await fetch(
+      `${process.env.STRAPI_API_URL}/api/pages?filters[slugURL]=${props?.pageContext?.slugURL}&populate=deep`
+    )
+      .then(response => response.json())
+      .then(jsonResponse => {
+        jsonResponse &&
+          jsonResponse?.data &&
+          jsonResponse?.data[0] &&
+          setPage(jsonResponse?.data[0])
+      })
+  }
+
+  return (
+    <Layout seoData={pageData?.seo}>
+      <>
+        {pageData?.title ? <MainHeader {...pageData} /> : <PageSkeleton />}
+
+        <PreFooterCTASection
+          title={"Ready to start?"}
+          description={
+            "Confirm your users meet age requirements with absolute privacy and minimal friction using ID Wallets"
+          }
+          rightButton={{
+            label: "Contact us",
+            action: () => navigate("/company/contact"),
+          }}
+        />
+      </>
+    </Layout>
+  )
+}
+
+export default PageTemplate
