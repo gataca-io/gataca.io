@@ -64,6 +64,9 @@ module.exports = {
           {
             singularName: "blog",
           },
+          {
+            singularName: "page",
+          },
         ],
         singleTypes: [
           {

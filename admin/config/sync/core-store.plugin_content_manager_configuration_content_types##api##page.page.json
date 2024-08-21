@@ -20,16 +20,16 @@
           "sortable": true
         }
       },
-      "Page": {
+      "sections": {
         "edit": {
-          "label": "Page",
+          "label": "sections",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "Page",
+          "label": "sections",
           "searchable": false,
           "sortable": false
         }
@@ -106,13 +106,11 @@
       }
     },
     "layouts": {
+      "list": [
+        "id",
+        "title"
+      ],
       "edit": [
-        [
-          {
-            "name": "Page",
-            "size": 12
-          }
-        ],
         [
           {
             "name": "seo",
@@ -128,11 +126,13 @@
             "name": "slugURL",
             "size": 6
           }
+        ],
+        [
+          {
+            "name": "sections",
+            "size": 12
+          }
         ]
-      ],
-      "list": [
-        "id",
-        "title"
       ]
     }
   },

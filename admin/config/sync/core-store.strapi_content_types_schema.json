@@ -5027,7 +5027,7 @@
       },
       "pluginOptions": {},
       "attributes": {
-        "Page": {
+        "sections": {
           "type": "dynamiczone",
           "components": [
             "generic.button",
@@ -5097,7 +5097,7 @@
         },
         "pluginOptions": {},
         "attributes": {
-          "Page": {
+          "sections": {
             "type": "dynamiczone",
             "components": [
               "generic.button",

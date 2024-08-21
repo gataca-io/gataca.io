@@ -2358,7 +2358,7 @@
       "subject": "api::page.page",
       "properties": {
         "fields": [
-          "Page",
+          "sections",
           "seo.metaTitle",
           "seo.metaDescription",
           "seo.rrssImg",
@@ -2387,7 +2387,7 @@
       "subject": "api::page.page",
       "properties": {
         "fields": [
-          "Page",
+          "sections",
           "seo.metaTitle",
           "seo.metaDescription",
           "seo.rrssImg",
@@ -2404,7 +2404,7 @@
       "subject": "api::page.page",
       "properties": {
         "fields": [
-          "Page",
+          "sections",
           "seo.metaTitle",
           "seo.metaDescription",
           "seo.rrssImg",
