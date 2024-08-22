@@ -59,14 +59,18 @@ export interface PageModel extends PagePreviewModel {
   sections: InsideSectionsModel[]
   title: string
   slugURL: string
+  subPath: string
 }
 
 export interface InsideSectionsModel {
+  id: any
   title: string
   description: string
   cta?: ButtonModel
   hero?: any
-  rightImage?: any
+  icon?: any
+  __component?: string
+  subtitle?: string
 }
 export interface SeoModel {
   id: string

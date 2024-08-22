@@ -2,10 +2,9 @@ import React from "react"
 import { navigate } from "gatsby"
 import Layout from "../../components/templates/mainLayout/MainLayout"
 import PreFooterCTASection from "../../components/templates/sections/preFooterCTA/PreFooterCTA"
-import { SeoHelmet } from "../../components/elements/seo/SeoHelmet"
 import { PageModel } from "../../interfaces/interfaces"
 import PageSkeleton from "./components/introBlogSkeleton/PageSkeleton"
-import MainHeader from "./sections/MainHeader/MainHeader"
+import AllSectionsTemplate from "./sections/AllSectionsTemplate"
 
 const PageTemplate: React.FC = (props: any) => {
   const [page, setPage] = React.useState<PageModel | undefined>()
@@ -13,7 +12,7 @@ const PageTemplate: React.FC = (props: any) => {
 
   React.useEffect(() => {
     getPageData()
-  }, [props?.pageContext?.slugURL])
+  }, [props?.pageContext?.slugURL, props?.pageContext?.subPath])
 
   const getPageData = async () => {
     await fetch(
@@ -31,7 +30,11 @@ const PageTemplate: React.FC = (props: any) => {
   return (
     <Layout seoData={pageData?.seo}>
       <>
-        {pageData?.title ? <MainHeader {...pageData} /> : <PageSkeleton />}
+        {pageData?.title ? (
+          <AllSectionsTemplate {...pageData} />
+        ) : (
+          <PageSkeleton />
+        )}
 
         <PreFooterCTASection
           title={"Ready to start?"}
