@@ -2365,7 +2365,8 @@
           "seo.keywords",
           "seo.canonicalURL",
           "title",
-          "slugURL"
+          "slugURL",
+          "subPath"
         ]
       },
       "conditions": []
@@ -2394,7 +2395,8 @@
           "seo.keywords",
           "seo.canonicalURL",
           "title",
-          "slugURL"
+          "slugURL",
+          "subPath"
         ]
       },
       "conditions": []
@@ -2411,7 +2413,8 @@
           "seo.keywords",
           "seo.canonicalURL",
           "title",
-          "slugURL"
+          "slugURL",
+          "subPath"
         ]
       },
       "conditions": []

@@ -76,6 +76,20 @@
           "sortable": true
         }
       },
+      "subPath": {
+        "edit": {
+          "label": "subPath",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "subPath",
+          "searchable": true,
+          "sortable": true
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -106,10 +120,6 @@
       }
     },
     "layouts": {
-      "list": [
-        "id",
-        "title"
-      ],
       "edit": [
         [
           {
@@ -132,7 +142,19 @@
             "name": "sections",
             "size": 12
           }
+        ],
+        [
+          {
+            "name": "subPath",
+            "size": 6
+          }
         ]
+      ],
+      "list": [
+        "id",
+        "title",
+        "subPath",
+        "slugURL"
       ]
     }
   },

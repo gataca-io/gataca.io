@@ -5051,6 +5051,9 @@
           "required": true,
           "unique": true
         },
+        "subPath": {
+          "type": "string"
+        },
         "createdAt": {
           "type": "datetime"
         },
@@ -5120,6 +5123,9 @@
             "type": "string",
             "required": true,
             "unique": true
+          },
+          "subPath": {
+            "type": "string"
           }
         },
         "kind": "collectionType"
