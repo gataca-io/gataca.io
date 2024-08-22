@@ -4,7 +4,8 @@
   "info": {
     "singularName": "benefit",
     "pluralName": "benefits",
-    "displayName": "Benefit"
+    "displayName": "Benefit",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -19,6 +20,16 @@
     },
     "description": {
       "type": "text"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

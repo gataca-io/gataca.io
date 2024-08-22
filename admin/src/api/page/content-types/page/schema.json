@@ -18,7 +18,9 @@
         "generic.button",
         "generic.section",
         "generic.header",
-        "shared.double-col-text-image"
+        "shared.double-col-text-image",
+        "shared.double-col-image-text-bg",
+        "wallet.benefit-section"
       ]
     },
     "seo": {

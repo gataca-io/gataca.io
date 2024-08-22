@@ -48,6 +48,7 @@ exports.createPages = ({ actions, graphql }) => {
           node {
             id
             slugURL
+            subPath
             sections {
               ... on STRAPI__COMPONENT_GENERIC_HEADER {
                 id
@@ -81,15 +82,15 @@ exports.createPages = ({ actions, graphql }) => {
       // Create landing for each page.
       result.data.allStrapiPage.edges.forEach(({ node }) => {
         createPage({
-          subPath: `/${node?.subPath}`,
           path:
-            subPath != null
+            !!node?.subPath && !!node?.subPath
               ? `/${node?.subPath}/${node?.slugURL}`
               : `/${node?.slugURL}`,
           component: path.resolve(`src/templates/page/pageTemplate.tsx`),
           context: {
             id: node.id,
             slugURL: node.slugURL,
+            subPath: node.subPath || null,
             sections: {
               id: node.id,
               description: node.description,
