@@ -2417,7 +2417,8 @@
       "info": {
         "singularName": "benefit",
         "pluralName": "benefits",
-        "displayName": "Benefit"
+        "displayName": "Benefit",
+        "description": ""
       },
       "options": {
         "draftAndPublish": true
@@ -2432,6 +2433,16 @@
         },
         "description": {
           "type": "text"
+        },
+        "icon": {
+          "allowedTypes": [
+            "images",
+            "files",
+            "videos",
+            "audios"
+          ],
+          "type": "media",
+          "multiple": false
         },
         "createdAt": {
           "type": "datetime"
@@ -2471,7 +2482,8 @@
         "info": {
           "singularName": "benefit",
           "pluralName": "benefits",
-          "displayName": "Benefit"
+          "displayName": "Benefit",
+          "description": ""
         },
         "options": {
           "draftAndPublish": true
@@ -2486,6 +2498,16 @@
           },
           "description": {
             "type": "text"
+          },
+          "icon": {
+            "allowedTypes": [
+              "images",
+              "files",
+              "videos",
+              "audios"
+            ],
+            "type": "media",
+            "multiple": false
           }
         },
         "kind": "collectionType"
@@ -5034,7 +5056,8 @@
             "generic.section",
             "generic.header",
             "shared.double-col-text-image",
-            "shared.double-col-image-text-bg"
+            "shared.double-col-image-text-bg",
+            "wallet.benefit-section"
           ]
         },
         "seo": {
@@ -5108,7 +5131,8 @@
               "generic.section",
               "generic.header",
               "shared.double-col-text-image",
-              "shared.double-col-image-text-bg"
+              "shared.double-col-image-text-bg",
+              "wallet.benefit-section"
             ]
           },
           "seo": {

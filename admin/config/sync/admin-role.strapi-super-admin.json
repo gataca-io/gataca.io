@@ -205,7 +205,8 @@
         "fields": [
           "title",
           "number",
-          "description"
+          "description",
+          "icon"
         ]
       },
       "conditions": []
@@ -229,7 +230,8 @@
         "fields": [
           "title",
           "number",
-          "description"
+          "description",
+          "icon"
         ]
       },
       "conditions": []
@@ -241,7 +243,8 @@
         "fields": [
           "title",
           "number",
-          "description"
+          "description",
+          "icon"
         ]
       },
       "conditions": []
@@ -2142,6 +2145,7 @@
           "headerSection.cta.external_url",
           "benefitSection.title",
           "benefitSection.benefits",
+          "benefitSection.hero",
           "featureSection.title",
           "featureSection.wallet_features",
           "walletAdFeature.title",
@@ -2197,6 +2201,7 @@
           "headerSection.cta.external_url",
           "benefitSection.title",
           "benefitSection.benefits",
+          "benefitSection.hero",
           "featureSection.title",
           "featureSection.wallet_features",
           "walletAdFeature.title",
@@ -2232,6 +2237,7 @@
           "headerSection.cta.external_url",
           "benefitSection.title",
           "benefitSection.benefits",
+          "benefitSection.hero",
           "featureSection.title",
           "featureSection.wallet_features",
           "walletAdFeature.title",
