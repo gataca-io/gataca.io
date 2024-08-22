@@ -61,13 +61,28 @@
           "searchable": true,
           "sortable": true
         }
+      },
+      "hero": {
+        "edit": {
+          "label": "hero",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "hero",
+          "searchable": false,
+          "sortable": false
+        }
       }
     },
     "layouts": {
       "list": [
         "id",
         "title",
-        "subtitle"
+        "subtitle",
+        "hero"
       ],
       "edit": [
         [
@@ -85,6 +100,10 @@
         [
           {
             "name": "subtitle",
+            "size": 6
+          },
+          {
+            "name": "hero",
             "size": 6
           }
         ]
