@@ -12,17 +12,6 @@
     "subtitle": {
       "type": "string"
     },
-    "hero": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
     "description": {
       "type": "text"
     }

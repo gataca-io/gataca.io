@@ -13,17 +13,6 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::benefit.benefit"
-    },
-    "hero": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
     }
   }
 }

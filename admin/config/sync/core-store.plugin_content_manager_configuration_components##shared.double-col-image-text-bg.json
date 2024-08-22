@@ -48,20 +48,6 @@
           "sortable": true
         }
       },
-      "hero": {
-        "edit": {
-          "label": "hero",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "hero",
-          "searchable": false,
-          "sortable": false
-        }
-      },
       "description": {
         "edit": {
           "label": "description",
@@ -81,7 +67,6 @@
       "list": [
         "id",
         "title",
-        "hero",
         "subtitle"
       ],
       "edit": [
@@ -92,10 +77,6 @@
           }
         ],
         [
-          {
-            "name": "hero",
-            "size": 6
-          },
           {
             "name": "description",
             "size": 6

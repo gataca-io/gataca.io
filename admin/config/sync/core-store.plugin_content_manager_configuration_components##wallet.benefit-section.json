@@ -48,28 +48,13 @@
           "searchable": false,
           "sortable": false
         }
-      },
-      "hero": {
-        "edit": {
-          "label": "hero",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "hero",
-          "searchable": false,
-          "sortable": false
-        }
       }
     },
     "layouts": {
       "list": [
         "id",
         "title",
-        "benefits",
-        "hero"
+        "benefits"
       ],
       "edit": [
         [
@@ -79,12 +64,6 @@
           },
           {
             "name": "benefits",
-            "size": 6
-          }
-        ],
-        [
-          {
-            "name": "hero",
             "size": 6
           }
         ]
