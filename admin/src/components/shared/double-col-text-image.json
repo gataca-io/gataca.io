@@ -12,7 +12,7 @@
     "description": {
       "type": "text"
     },
-    "rightImage": {
+    "hero": {
       "type": "media",
       "multiple": false,
       "required": false,

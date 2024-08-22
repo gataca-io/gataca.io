@@ -54,7 +54,7 @@ exports.createPages = ({ actions, graphql }) => {
                 title
                 description
               }
-              ... on STRAPI__COMPONENT_VOUCH_DOUBLE_COL_TEXT_IMAGE {
+              ... on STRAPI__COMPONENT_SHARED_DOUBLE_COL_TEXT_IMAGE {
                 id
                 description
                 title

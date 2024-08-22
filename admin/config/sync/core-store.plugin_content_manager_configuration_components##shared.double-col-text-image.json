@@ -1,7 +1,7 @@
 {
-  "key": "plugin_content_manager_configuration_components::vouch.double-col-text-image",
+  "key": "plugin_content_manager_configuration_components::shared.double-col-text-image",
   "value": {
-    "uid": "vouch.double-col-text-image",
+    "uid": "shared.double-col-text-image",
     "settings": {
       "bulkable": true,
       "filterable": true,
@@ -48,16 +48,16 @@
           "sortable": true
         }
       },
-      "rightImage": {
+      "hero": {
         "edit": {
-          "label": "rightImage",
+          "label": "hero",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "rightImage",
+          "label": "hero",
           "searchable": false,
           "sortable": false
         }
@@ -68,7 +68,7 @@
         "id",
         "title",
         "description",
-        "rightImage"
+        "hero"
       ],
       "edit": [
         [
@@ -83,7 +83,7 @@
         ],
         [
           {
-            "name": "rightImage",
+            "name": "hero",
             "size": 6
           }
         ]
