@@ -5,10 +5,11 @@ import { InsideSectionsModel } from "../../../../../../interfaces/interfaces"
 import StrapiImage from "../../../../../../components/atoms/images/StrapiImage"
 
 const DoubleColImageTextBg: React.FC<InsideSectionsModel> = props => {
-  const { title, subtitle, description, hero } = props
+  const { id, title, subtitle, description, hero } = props
 
   return (
     <section
+      key={`doubleColImageTextBg_` + id}
       className={`${styles.doubleColImageTextBg} ${cx("containerMaxWidth")}`}
     >
       <div className={styles?.doubleColImageTextBg__container}>

@@ -1,31 +1,32 @@
 @import "../../../../../../styles/colors.scss";
 @import "../../../../../../styles/mixins.scss";
 
-.header__container {
+.header{
   position: relative;
-  margin: 162px 0 0;
+  margin: 162px 0 132px;
   padding: 0 20px;
 
   @include min-width($mobileXL) {
-    margin: 150px 0 103px;
+    margin: 150px 0 220px;
     padding: 0 40px;
   }
 
   @include min-width($desktopMD) {
-    margin: 150px 0px 184px;
     padding: 0 60px;
+    margin: 150px 0 390px;
   }
-
-  @include min-width($desktopXL) {
-    margin: 150px 0px 264px;
-  }
-
   @include min-width($desktopXXL) {
-    margin: 150px 0px 371px;
+    margin: 150px 0 500px;
+  }
+  @include min-width(1710px) {
+    margin: 150px 0 700px;
+  }
+  @include min-width(2000px) {
+    margin: 150px 0 800px;
   }
 }
 
-.header {
+.header__container {
   margin: 0px 0;
   width: 100%;
   @include flexbox();
@@ -84,14 +85,6 @@
   }
 
   @include min-width($desktopMD) {
-    width: calc(52% - 60px)
-  }
-
-  @include min-width($desktopXL) {
-    width: calc(52% - 60px)
-  }
-
-  @include min-width($desktopXXL) {
     width: calc(52% - 60px)
   }
 

@@ -20,21 +20,20 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
           cta,
           hero,
           __component,
-          data,
+          benefits,
         } = item
 
         return (
           <>
             {__component === "generic.header" && (
-              <div key={`section_` + id + index}>
-                <Header
-                  id={id}
-                  title={title}
-                  description={description}
-                  cta={cta}
-                  hero={hero}
-                />
-              </div>
+              <Header
+                id={id}
+                title={title}
+                description={description}
+                cta={cta}
+                hero={hero}
+                key={`header_` + id + index}
+              />
             )}
             {__component === "shared.double-col-text-image" && (
               <DoubleColTextImage
@@ -43,6 +42,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
                 description={description}
                 cta={cta}
                 hero={hero}
+                key={`double_col_text_image_` + id + index}
               />
             )}
             {__component === "shared.double-col-image-text-bg" && (
@@ -50,16 +50,19 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
                 id={id}
                 title={title}
                 description={description}
-                cta={cta}
+                hero={hero}
                 subtitle={subtitle}
+                key={`double_col_image_text_bg_` + id + index}
               />
             )}
             {__component === "wallet.benefit-section" && (
               <Benefits
                 id={id}
                 title={title}
-                list={data}
+                list={benefits?.data}
+                hero={hero}
                 setBenefitsLoaded={setBenefitsLoaded}
+                key={`benefit_section_` + id + index}
               />
             )}
           </>

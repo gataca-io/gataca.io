@@ -6,15 +6,16 @@ import * as styles from "./benefits.module.scss"
 import { useLayoutEffect } from "react"
 import NumberedText from "../../../../../../pages/products/gatacaWallet/components/numberedText/NumberedText"
 import StrapiImage from "../../../../../../components/atoms/images/StrapiImage"
+import List from "./components/list/List"
 
 export type ISectionProps = {
   title: string
   hero: any
   id: any
   list: {
-    id: string
     attributes: {
       number: string
+      icon: any
       title: string
       description: string
     }
@@ -30,20 +31,28 @@ const Benefits: React.FC<ISectionProps> = props => {
   }, [])
 
   return (
-    <div style={{ position: "relative" }}>
+    <div
+      className={styles.benefits__container}
+      style={{ position: "relative" }}
+      key={`benefits_` + id}
+    >
       <section className={`${styles.benefits} ${cx("containerMaxWidth")}`}>
-        <div className={`${cx("heading3")} ${styles.benefits__leftSide}`}>
-          <StrapiImage image={hero ? hero : null} />
+        <div className={`${styles.benefits__leftSide}`}>
+          <StrapiImage
+            className={styles.benefits__imageContainer}
+            image={hero ? hero : null}
+          />
         </div>
         <div className={styles.benefits__rightSide}>
-          <p className={`${cx("heading3 marginBottom8")}`}>{title}</p>
+          <p className={`${cx("heading3")}`}>{title}</p>
           <div className={styles.benefits__rightSide__bullets}>
             {list?.map((item, index) => {
-              const { number, title, description } = item.attributes
-
+              const { icon, number, title, description } = item.attributes
+              console.log("datos ", icon)
               return (
-                <NumberedText
-                  key={"benefits__" + index}
+                <List
+                  key={"list__" + index}
+                  icon={icon}
                   number={number}
                   title={title}
                   description={description}

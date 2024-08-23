@@ -71,6 +71,7 @@ export interface InsideSectionsModel {
   icon?: any
   __component?: string
   subtitle?: string
+  benefits?: any
 }
 export interface SeoModel {
   id: string

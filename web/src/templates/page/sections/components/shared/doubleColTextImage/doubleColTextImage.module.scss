@@ -23,33 +23,38 @@
     @include flex-direction(column);
     @include justify-content(center);
     @include flex-wrap(wrap);
-    gap: 60px;
-    padding-top: 93.97px;
+    gap: 52px;
     @include min-width($mobileXL) {
-      padding-top: 190px;
-    }
-
-    @include min-width($desktopSM) {
       @include flex-direction(row);
       @include flex-wrap(nowrap);
       @include justify-content(space-between);
       @include align-items(center);
+      gap: 60px;   
+    }
+    @include min-width($desktopMD) {
       gap: 135px;
     }
+    
     .doubleColTextImage__leftSide {
       @include flex(0, 0, 100%);
-      @include min-width($desktopSM) {
+      @include min-width($mobileXL) {
+        @include flex(0, 0, calc((100%/2) - (60px/2)));
+      }
+      @include min-width($desktopMD) {
         @include flex(0, 0, calc((100%/2) - (135px/2)));
-        max-width: 573px;
       }
     }
     .doubleColTextImage__rightSide {
-      @include min-width($desktopSM) {
+      @include min-width($mobileXL) {
+        @include flex(0, 0, calc((100%/2) - (60px/2)));
+      }
+    
+      @include min-width($desktopMD) {
         @include flex(0, 0, calc((100%/2) - (135px/2)));
-        .doubleColTextImage__imageContainer {
-          max-width: 100%;
-          height: auto;
-        }
+      }
+      .doubleColTextImage__imageContainer {
+        max-width: 100%;
+        height: auto;
       }
     }
   }

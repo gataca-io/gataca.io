@@ -9,12 +9,12 @@ const Header: React.FC<InsideSectionsModel> = props => {
   const { id, title, description, cta, hero } = props
 
   return (
-    <div
-      className={styles.header__container}
+    <section
+      className={styles.header}
       style={{ position: "relative" }}
-      key={`section_` + id}
+      key={`header_` + id}
     >
-      <section className={`${styles.header} ${cx("containerMaxWidth")}`}>
+      <div className={`${styles.header__container} ${cx("containerMaxWidth")}`}>
         <div className={styles.header__leftSide}>
           <h1 className={`${cx("heading1 marginBottom32")}`}>{title}</h1>
           <p className={`${cx("bodyRegularXL")}`}>{description}</p>
@@ -33,8 +33,8 @@ const Header: React.FC<InsideSectionsModel> = props => {
             image={hero ? hero : null}
           />
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   )
 }
 

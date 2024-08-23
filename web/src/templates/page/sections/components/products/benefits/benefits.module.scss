@@ -2,100 +2,106 @@
 @import "../../../../../../styles/colors.scss";
 @import "../../../../../../styles/mixins.scss";
 
-.benefits {
+.benefits__container {
+  position: relative;
+  margin: 162px 0 132px;
   padding: 0 20px;
-  margin: 120px 0 30px;
-  @include flexbox();
-  @include flex-direction(column);
-  @include flex-wrap(wrap);
-
   @include min-width($mobileXL) {
-    @include flex-direction(row);
-    @include align-items(center);
-    @include justify-content(space-between);
+    margin: 150px 0 220px;
     padding: 0 40px;
   }
-
-  @include min-width($tabletMD) {
-    @include justify-content(flex-end);
-    margin: 80px 0 80px;
-    margin-top: 130px;
-  }
-  @include min-width($desktopSM) {
-    @include justify-content(center);
-    margin: 152px auto 80px;
-  }
-
   @include min-width($desktopMD) {
     padding: 0 60px;
+    margin: 150px 0 390px;
+  }
+  @include min-width($desktopXXL) {
+    margin: 150px 0 500px;
+  }
+  @include min-width(1710px) {
+    margin: 150px 0 700px;
+  }
+  @include min-width(2000px) {
+    margin: 150px 0 800px;
+  }
+}
+.benefits {
+  margin: 0px 0;
+  width: 100%;
+  @include flexbox();
+  @include flex-direction(column);
+  @include justify-content(space-around);
+  @include flex-wrap(wrap);
+
+  @include min-width($tabletMD) {
+    @include flex-direction(row);
+    margin: 0px auto 0px;
   }
 
   .benefits__leftSide {
     width: 100%;
-    margin-left: -111px;
-    margin-bottom: 100px;
-
+    position: relative;
+    @include flexbox();
+    @include flex-direction(column);
     @include min-width($tabletMD) {
-     
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;
-      width: calc(50% - 202px);
-      margin-left: -30px;
-      margin-bottom: 0px;
-      position: absolute;
-      max-height: 600px;
-      left: -101px;
-      top: 50%;
-      padding-right: 202px;
-      transform: translateY(-50%);
-      max-width: 35%;
-      height: 100%;
-      @include flex(0, 0, calc(40% - 40px));
-      @include flexbox();
-      @include flex-direction(column);
+
       @include justify-content(center);
+      @include align-items(center);
+      position: inherit;
+      margin-bottom: auto;
+      height: 100%;
+      @include flex(0, 0, calc(23% - 40px));
     }
-
-    @include min-width($desktopSM) {
-        left: -202px;
-    }
-
-    & > img {
-      display: block;
-      margin-top: 8px;
-      width: 100%;
-
-      @include min-width($mobileXL) {
-        @include flex(0, 0, calc(50% - 40px));
-      }
+    .benefits__imageContainer {
+      max-width: 166px;
       @include min-width($tabletMD) {
-        display: none
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-height: 382px;
+        max-width: none;
+        width: auto;
+      }
+    
+      @include min-width($desktopSM) {
+        max-height: 492px;
+        display: block;
+      }
+      @include min-width($desktopXL) {
+        max-height: 592px;
+      }
+      @include min-width($desktopXXL) {
+        max-height: 692px;
+      }
+      @include min-width(1560px) {
+        max-height: 742px;
+      }
+      @include min-width(1700px) {
+        max-height: 820px;
+      }
+      @include min-width(1850px) {
+        max-height: 905px;
       }
     }
-
   }
 
   .benefits__rightSide {
+    width: calc(77% - 40px);
+    @include flex(0, 0, calc(77% - 40px));
     @include flexbox();
     @include flex-direction(column);
     @include justify-content(center);
     @include flex-wrap(wrap);
-
-    @include min-width($tabletXL) {
-      margin-left:35%;
-    }
-    @include min-width($desktopSM) {
-        margin-left:45%;
-    }
-
+    gap: 60px;
     .benefits__rightSide__bullets {
       @include flexbox();
       @include flex-direction(column);
       @include justify-content(space-between);
       @include flex-wrap(wrap);
-      @include min-width($desktopSM) {
+      gap: 32px;
+      @include min-width($tabletMD) {
         @include flex-direction(row);
+        gap: 60px 32px;
       }
     }
   }
