@@ -20,7 +20,11 @@
         "generic.header",
         "shared.double-col-text-image",
         "shared.double-col-image-text-bg",
-        "wallet.benefit-section"
+        "wallet.benefit-section",
+        "studio.why-studio-section",
+        "shared.faqs-section",
+        "studio.feature-section",
+        "shared.blog-section"
       ]
     },
     "seo": {
