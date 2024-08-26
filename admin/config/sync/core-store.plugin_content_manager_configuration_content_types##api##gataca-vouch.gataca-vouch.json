@@ -124,7 +124,7 @@
         "id",
         "title",
         "description",
-        "createdAt"
+        "seo"
       ],
       "edit": [
         [

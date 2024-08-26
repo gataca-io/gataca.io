@@ -1,7 +1,8 @@
 {
   "collectionName": "components_shared_blog_sections",
   "info": {
-    "displayName": "blogSection"
+    "displayName": "blogSection",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -11,15 +12,15 @@
     "subtitle": {
       "type": "string"
     },
+    "blogs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog.blog"
+    },
     "cta": {
       "type": "component",
-      "repeatable": true,
+      "repeatable": false,
       "component": "generic.cta"
-    },
-    "blog": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::blog.blog"
     }
   }
 }

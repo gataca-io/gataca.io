@@ -82,24 +82,22 @@
         "id",
         "title",
         "subtitle",
-        "hero"
+        "description"
       ],
       "edit": [
         [
           {
             "name": "title",
             "size": 6
-          }
-        ],
-        [
+          },
           {
-            "name": "description",
+            "name": "subtitle",
             "size": 6
           }
         ],
         [
           {
-            "name": "subtitle",
+            "name": "description",
             "size": 6
           },
           {
