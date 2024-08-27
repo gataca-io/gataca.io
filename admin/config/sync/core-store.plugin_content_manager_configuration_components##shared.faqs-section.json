@@ -34,23 +34,23 @@
           "sortable": true
         }
       },
-      "description": {
+      "subtitle": {
         "edit": {
-          "label": "description",
+          "label": "subtitle",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "description",
+          "label": "subtitle",
           "searchable": true,
           "sortable": true
         }
       },
-      "faq": {
+      "faqs": {
         "edit": {
-          "label": "faq",
+          "label": "faqs",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -58,9 +58,9 @@
           "mainField": "title"
         },
         "list": {
-          "label": "faq",
-          "searchable": true,
-          "sortable": true
+          "label": "faqs",
+          "searchable": false,
+          "sortable": false
         }
       },
       "hero": {
@@ -82,27 +82,29 @@
       "list": [
         "id",
         "title",
-        "description",
-        "faq"
+        "subtitle",
+        "faqs"
       ],
       "edit": [
         [
           {
             "name": "title",
             "size": 6
+          }
+        ],
+        [
+          {
+            "name": "hero",
+            "size": 6
           },
           {
-            "name": "description",
+            "name": "subtitle",
             "size": 6
           }
         ],
         [
           {
-            "name": "faq",
-            "size": 6
-          },
-          {
-            "name": "hero",
+            "name": "faqs",
             "size": 6
           }
         ]

@@ -9,23 +9,24 @@
     "title": {
       "type": "string"
     },
-    "description": {
-      "type": "text"
+    "subtitle": {
+      "type": "string"
     },
-    "faq": {
+    "faqs": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "oneToMany",
       "target": "api::faq.faq"
     },
     "hero": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }
