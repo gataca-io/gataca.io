@@ -16,8 +16,8 @@
         "edit": {},
         "list": {
           "label": "id",
-          "searchable": false,
-          "sortable": false
+          "searchable": true,
+          "sortable": true
         }
       },
       "title": {
@@ -83,7 +83,7 @@
         "id",
         "title",
         "subtitle",
-        "cta"
+        "blogs"
       ],
       "edit": [
         [

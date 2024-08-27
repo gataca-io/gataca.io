@@ -1807,12 +1807,13 @@
       "subject": "api::page.page",
       "properties": {
         "fields": [
-          "Page",
           "seo.metaTitle",
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "title",
+          "slugURL"
         ]
       },
       "conditions": []
@@ -1834,12 +1835,13 @@
       "subject": "api::page.page",
       "properties": {
         "fields": [
-          "Page",
           "seo.metaTitle",
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "title",
+          "slugURL"
         ]
       },
       "conditions": []
@@ -1849,12 +1851,13 @@
       "subject": "api::page.page",
       "properties": {
         "fields": [
-          "Page",
           "seo.metaTitle",
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "title",
+          "slugURL"
         ]
       },
       "conditions": []

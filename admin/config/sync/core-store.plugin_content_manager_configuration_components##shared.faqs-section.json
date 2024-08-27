@@ -16,8 +16,8 @@
         "edit": {},
         "list": {
           "label": "id",
-          "searchable": false,
-          "sortable": false
+          "searchable": true,
+          "sortable": true
         }
       },
       "title": {
@@ -90,12 +90,6 @@
           {
             "name": "title",
             "size": 6
-          }
-        ],
-        [
-          {
-            "name": "hero",
-            "size": 6
           },
           {
             "name": "subtitle",
@@ -105,6 +99,10 @@
         [
           {
             "name": "faqs",
+            "size": 6
+          },
+          {
+            "name": "hero",
             "size": 6
           }
         ]
