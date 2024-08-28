@@ -20,8 +20,10 @@ const DoubleColImageTextBg: React.FC<InsideSectionsModel> = props => {
           />
         </div>
         <div className={styles.doubleColImageTextBg__rightSide}>
-          <h6 className={cx("heading6 marginBottom12 neutral700")}>{title}</h6>
-          <h4 className={cx("heading4 marginBottom12")}>{subtitle}</h4>
+          <h6 className={cx("heading6 marginBottom12 neutral700")}>
+            {subtitle}
+          </h6>
+          <h4 className={cx("heading4 marginBottom12")}>{title}</h4>
           <p
             className={`${styles?.description} ${cx(
               "bodyRegularXL neutral700"

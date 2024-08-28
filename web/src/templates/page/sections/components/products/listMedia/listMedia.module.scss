@@ -63,22 +63,17 @@
   @include flex-wrap(wrap);
 
   @include min-width($mobileXL) {
-    @include flex(0, 0, 47%);
-  }
-
-  @include min-width($desktopMD) {
-    @include flex(0, 0, 48%);
-  }
-
-  @include min-width($desktopMD) {
-    @include flex(0, 0, 46%);
+    @include flex(0, 0, calc(50% - 16px));
   }
 
   &>img {
-    // position: absolute;
-    // top: 0;
+    position: absolute;
     max-width: 100%;
     height: auto;
+    z-index: -1;
+  }
+  video {
+    max-width: 100%;
   }
 }
 

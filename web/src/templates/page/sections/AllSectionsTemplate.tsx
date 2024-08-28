@@ -7,6 +7,7 @@ import DoubleColImageTextBg from "./components/shared/doubleColImageTextBg/Doubl
 import ListOpensHover from "./components/products/listOpensHover/ListOpensHover"
 import ListMedia from "./components/products/listMedia/ListMedia"
 import FaqsSection from "./components/shared/faqsSection/FaqsSection"
+import ChosenBlogsSection from "./components/shared/chosenBlogsSection/ChosenBlogsSection"
 
 const AllSectionsTemplate: React.FC<PageModel> = props => {
   const [benefitsLoaded, setBenefitsLoaded] = React.useState<boolean>(false)
@@ -22,11 +23,13 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
           description,
           cta,
           hero,
+          media,
           __component,
           benefits,
           advantages,
           operations,
           faqs,
+          blogs,
         } = item
 
         return (
@@ -82,7 +85,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
             {__component === "wallet.how-section" && (
               <ListMedia
                 title={title}
-                description={description}
+                media={media}
                 list={operations?.data}
                 key={`.list_media_` + id + index}
               />
@@ -94,6 +97,14 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
                 hero={hero}
                 info={faqs?.data}
                 key={`.faqs_section_` + id + index}
+              />
+            )}
+            {__component === "shared.blog-section" && (
+              <ChosenBlogsSection
+                title={title}
+                subtitle={subtitle}
+                blogs={blogs?.data}
+                key={`.blogs_section_` + id + index}
               />
             )}
           </>

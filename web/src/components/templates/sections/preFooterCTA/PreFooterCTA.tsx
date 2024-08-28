@@ -48,7 +48,7 @@ const PreFooterCTASection: React.FC<IPreFooterCTAProps> = props => {
         </div>
       ) : leftButton || rightButton ? (
         <div>
-          {leftButton && (
+          {leftButton?.label && (
             <WhiteButton
               label={leftButton?.label}
               className={`${leftButton.className} ${
@@ -58,7 +58,7 @@ const PreFooterCTASection: React.FC<IPreFooterCTAProps> = props => {
               action={leftButton?.action}
             />
           )}
-          {rightButton && (
+          {rightButton?.label && (
             <PurpleButton
               label={rightButton?.label}
               className={`${rightButton?.className} ${cx("margin10")}`}

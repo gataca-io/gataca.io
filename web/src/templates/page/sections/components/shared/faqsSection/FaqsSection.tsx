@@ -7,7 +7,7 @@ import StrapiImage from "../../../../../../components/atoms/images/StrapiImage"
 
 export type ISectionProps = {
   title: string
-  subtitle: string
+  subtitle?: string
   hero: any
   info: {
     id: number
@@ -56,7 +56,6 @@ const FaqsSection: React.FC<ISectionProps> = props => {
               >
                 {info?.map((item, index) => {
                   const { title } = item.attributes
-                  console.log("info " + info[0]?.attributes?.list)
 
                   return (
                     <ListInfo

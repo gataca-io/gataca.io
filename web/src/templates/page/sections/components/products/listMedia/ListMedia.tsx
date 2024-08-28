@@ -2,11 +2,11 @@ import * as React from "react"
 import cx from "classnames"
 import * as styles from "./listMedia.module.scss"
 import SingleFeature from "./components/singleFeature/SingleFeature"
-import { images } from "../../../../../../images/images"
+import StrapiImage from "../../../../../../components/atoms/images/StrapiImage"
 
 export type ISectionProps = {
   title: string
-  description: string
+  media: any
   list: {
     id: string
     attributes: {
@@ -18,7 +18,7 @@ export type ISectionProps = {
 }
 
 const ListMedia: React.FC<ISectionProps> = props => {
-  const { title, description, list } = props
+  const { title, media, list } = props
   const [openItem, setOpenItem] = React.useState<number>(1)
 
   let bullets: HTMLElement | null | undefined
@@ -72,16 +72,14 @@ const ListMedia: React.FC<ISectionProps> = props => {
           </div>
         </div>
         <div className={styles.listMedia__rightSide}>
-          {/* <img src={images.phoneFrameShadow} /> */}
-          {list?.map((item, index) => {
+          <StrapiImage image={media ? media : null} />
+          {list?.map(item => {
             const { image } = item.attributes
-
             return (
               <>
                 {list && openItem && list[openItem - 1] && (
                   <video
-                    width="250"
-                    src={image?.data?.attributes?.url[openItem - 1]}
+                    src={image?.data?.attributes?.url}
                     autoPlay
                     playsInline
                     muted

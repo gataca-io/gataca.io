@@ -67,14 +67,18 @@ export interface InsideSectionsModel {
   title: string
   description: string
   cta?: ButtonModel
+  rightButton?: any
+  leftButton?: any
   hero?: any
   icon?: any
+  media?: any
   __component?: string
   subtitle?: string
   benefits?: any
   advantages?: any
   operations?: any
   faqs?: any
+  blogs?: any
 }
 export interface SeoModel {
   id: string

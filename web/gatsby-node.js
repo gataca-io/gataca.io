@@ -82,10 +82,7 @@ exports.createPages = ({ actions, graphql }) => {
       // Create landing for each page.
       result.data.allStrapiPage.edges.forEach(({ node }) => {
         createPage({
-          path:
-            !!node?.subPath && !!node?.subPath
-              ? `/${node?.subPath}/${node?.slugURL}`
-              : `/${node?.slugURL}`,
+          path: `${node?.subPath}${node?.slugURL}`,
           component: path.resolve(`src/templates/page/pageTemplate.tsx`),
           context: {
             id: node.id,

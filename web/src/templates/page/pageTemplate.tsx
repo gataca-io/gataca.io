@@ -5,6 +5,7 @@ import PreFooterCTASection from "../../components/templates/sections/preFooterCT
 import { PageModel } from "../../interfaces/interfaces"
 import PageSkeleton from "./components/introBlogSkeleton/PageSkeleton"
 import AllSectionsTemplate from "./sections/AllSectionsTemplate"
+import * as styles from "./pageTemplate.module.scss"
 
 const PageTemplate: React.FC = (props: any) => {
   const [page, setPage] = React.useState<PageModel | undefined>()
@@ -16,7 +17,7 @@ const PageTemplate: React.FC = (props: any) => {
 
   const getPageData = async () => {
     await fetch(
-      `${process.env.STRAPI_API_URL}/api/pages?filters[slugURL]=${props?.pageContext?.slugURL}&populate=deep`
+      `${process.env.STRAPI_API_URL}/api/pages?filters[slugURL]=${props?.pageContext?.slugURL}&populate=deep,10`
     )
       .then(response => response.json())
       .then(jsonResponse => {
@@ -35,17 +36,30 @@ const PageTemplate: React.FC = (props: any) => {
         ) : (
           <PageSkeleton />
         )}
+        {pageData?.sections?.map(item => {
+          const { __component, title, description, rightButton, leftButton } =
+            item
 
-        <PreFooterCTASection
-          title={"Ready to start?"}
-          description={
-            "Confirm your users meet age requirements with absolute privacy and minimal friction using ID Wallets"
-          }
-          rightButton={{
-            label: "Contact us",
-            action: () => navigate("/company/contact"),
-          }}
-        />
+          return (
+            <>
+              {__component === "generic.prefooter" && (
+                <PreFooterCTASection
+                  className={styles.prefooter}
+                  title={title}
+                  description={description}
+                  rightButton={{
+                    label: rightButton?.label,
+                    action: () => navigate(rightButton?.url),
+                  }}
+                  leftButton={{
+                    label: leftButton?.label,
+                    action: () => navigate(leftButton?.url),
+                  }}
+                />
+              )}
+            </>
+          )
+        })}
       </>
     </Layout>
   )

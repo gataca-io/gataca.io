@@ -3,10 +3,10 @@
 @import "../../../../../../styles/types";
 
 .faqsSection {
-  margin-bottom: 351px;
+  margin-bottom: 132px;
   padding: 0 20px;
   @include min-width($mobileXL) {
-    margin-bottom: 409px;
+    margin-bottom: 220px;
     padding: 0 40px;
   }
   @include min-width($desktopMD) {
