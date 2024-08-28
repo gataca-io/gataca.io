@@ -1,10 +1,8 @@
 import type { PageProps } from "gatsby"
 import * as React from "react"
 import cx from "classnames"
-import { images } from "../../../../../../images/images"
 import * as styles from "./benefits.module.scss"
 import { useLayoutEffect } from "react"
-import NumberedText from "../../../../../../pages/products/gatacaWallet/components/numberedText/NumberedText"
 import StrapiImage from "../../../../../../components/atoms/images/StrapiImage"
 import List from "./components/list/List"
 
@@ -48,7 +46,7 @@ const Benefits: React.FC<ISectionProps> = props => {
           <div className={styles.benefits__rightSide__bullets}>
             {list?.map((item, index) => {
               const { icon, number, title, description } = item.attributes
-              console.log("datos ", icon)
+
               return (
                 <List
                   key={"list__" + index}

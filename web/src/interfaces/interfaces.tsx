@@ -72,6 +72,9 @@ export interface InsideSectionsModel {
   __component?: string
   subtitle?: string
   benefits?: any
+  advantages?: any
+  operations?: any
+  faqs?: any
 }
 export interface SeoModel {
   id: string

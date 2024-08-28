@@ -12,16 +12,6 @@
   }
   @include min-width($desktopMD) {
     padding: 0 60px;
-    margin: 150px 0 390px;
-  }
-  @include min-width($desktopXXL) {
-    margin: 150px 0 500px;
-  }
-  @include min-width(1710px) {
-    margin: 150px 0 700px;
-  }
-  @include min-width(2000px) {
-    margin: 150px 0 800px;
   }
 }
 .benefits {
