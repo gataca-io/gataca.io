@@ -48,13 +48,28 @@
           "searchable": false,
           "sortable": false
         }
+      },
+      "media": {
+        "edit": {
+          "label": "media",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "media",
+          "searchable": false,
+          "sortable": false
+        }
       }
     },
     "layouts": {
       "list": [
         "id",
         "title",
-        "operations"
+        "operations",
+        "media"
       ],
       "edit": [
         [
@@ -64,6 +79,12 @@
           },
           {
             "name": "operations",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "media",
             "size": 6
           }
         ]

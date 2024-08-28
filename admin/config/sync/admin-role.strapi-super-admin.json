@@ -2152,6 +2152,7 @@
           "walletAdFeature.wallet_ad_features",
           "howSection.title",
           "howSection.operations",
+          "howSection.media",
           "credentialSection.title",
           "credentialSection.credentials",
           "credentialSection.properties"
@@ -2208,6 +2209,7 @@
           "walletAdFeature.wallet_ad_features",
           "howSection.title",
           "howSection.operations",
+          "howSection.media",
           "credentialSection.title",
           "credentialSection.credentials",
           "credentialSection.properties"
@@ -2244,6 +2246,7 @@
           "walletAdFeature.wallet_ad_features",
           "howSection.title",
           "howSection.operations",
+          "howSection.media",
           "credentialSection.title",
           "credentialSection.credentials",
           "credentialSection.properties"

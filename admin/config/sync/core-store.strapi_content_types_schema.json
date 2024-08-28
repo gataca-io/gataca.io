@@ -4939,7 +4939,8 @@
       "info": {
         "singularName": "operation",
         "pluralName": "operations",
-        "displayName": "Operation"
+        "displayName": "Operation",
+        "description": ""
       },
       "options": {
         "draftAndPublish": true
@@ -4960,7 +4961,7 @@
             "audios"
           ],
           "type": "media",
-          "multiple": true
+          "multiple": false
         },
         "createdAt": {
           "type": "datetime"
@@ -5000,7 +5001,8 @@
         "info": {
           "singularName": "operation",
           "pluralName": "operations",
-          "displayName": "Operation"
+          "displayName": "Operation",
+          "description": ""
         },
         "options": {
           "draftAndPublish": true
@@ -5021,7 +5023,7 @@
               "audios"
             ],
             "type": "media",
-            "multiple": true
+            "multiple": false
           }
         },
         "kind": "collectionType"
@@ -5062,7 +5064,8 @@
             "shared.faqs-section",
             "studio.feature-section",
             "shared.blog-section",
-            "wallet.how-section"
+            "wallet.how-section",
+            "generic.prefooter"
           ]
         },
         "seo": {
@@ -5142,7 +5145,8 @@
               "shared.faqs-section",
               "studio.feature-section",
               "shared.blog-section",
-              "wallet.how-section"
+              "wallet.how-section",
+              "generic.prefooter"
             ]
           },
           "seo": {

@@ -25,7 +25,8 @@
         "shared.faqs-section",
         "studio.feature-section",
         "shared.blog-section",
-        "wallet.how-section"
+        "wallet.how-section",
+        "generic.prefooter"
       ]
     },
     "seo": {
