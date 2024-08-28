@@ -4,7 +4,8 @@
   "info": {
     "singularName": "operation",
     "pluralName": "operations",
-    "displayName": "Operation"
+    "displayName": "Operation",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,14 +19,15 @@
       "type": "text"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     }
   }
 }
