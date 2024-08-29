@@ -62,6 +62,20 @@
           "sortable": true
         }
       },
+      "icon": {
+        "edit": {
+          "label": "icon",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "icon",
+          "searchable": false,
+          "sortable": false
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -112,6 +126,10 @@
         [
           {
             "name": "description",
+            "size": 6
+          },
+          {
+            "name": "icon",
             "size": 6
           }
         ]

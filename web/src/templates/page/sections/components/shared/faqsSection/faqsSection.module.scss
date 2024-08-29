@@ -1,0 +1,125 @@
+@import "../../../../../../styles/colors.scss";
+@import "../../../../../../styles/mixins.scss";
+@import "../../../../../../styles/types";
+
+.faqsSection {
+  margin-bottom: 132px;
+  padding: 0 20px;
+  @include min-width($mobileXL) {
+    margin-bottom: 220px;
+    padding: 0 40px;
+  }
+  @include min-width($desktopMD) {
+    padding: 0 60px;
+  }
+  .faqsSection__container{
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 50%;
+      height: 575px;
+      right: -20px;
+      top: 0;
+      background: $neutral200;
+      border-radius: 40px 0px 0px 40px;
+      z-index: -1;
+      @include min-width($mobileXL) {
+        right: -40px;
+      }
+      @include min-width($desktopMD) {
+        width: 1000px;
+        right: -500px;
+      }
+
+    }
+    .faqsSection__options {
+      @include flexbox();
+      @include flex-direction(column);
+      @include justify-content(center);
+      @include flex-wrap(wrap);
+      margin-top: 80px;
+      @include min-width($mobileXL) {
+        @include flex-direction(row);
+        @include flex-wrap(nowrap);
+        @include justify-content(space-between);
+        margin-top: 102px;
+      }
+      .faqsSection__leftSide {
+        position: relative;
+        max-width: 100%;
+        @include min-width($mobileXL) {
+          @include flex(0, 0, calc(30));
+          margin-right: 32px;
+        }
+        @include min-width($desktopXL) {
+          @include flex(0, 0, calc(100%/3));
+        }
+        .faqsSection__leftSide__bullets {
+          @include flexbox();
+          @include flex-direction(row);
+          @include justify-content(flex-start);
+          @include align-items(center);
+          width: 100%;
+          max-width: 100%;
+          height: 68px;
+          overflow-x: scroll;
+          -ms-overflow-style: none; /* IE and Edge */
+          scrollbar-width: none; /* Firefox */
+          @include min-width($mobileXL) {
+            margin-left: -4px;
+            height: auto;
+            @include flex-direction(column);
+            @include align-items(inherit);
+          }
+          .listTitle {
+            font-size: 16px;
+            font-family: $base;
+            &.selected {
+              font-size: 18px;
+            }
+          }
+          & > div:nth-child(5) {
+            min-width: 660px;
+            @include min-width($mobileXL) {
+              min-width: 180px;
+            }
+            & > div > h6, p {
+              max-width: 180px;
+            }
+          }
+        }
+      }
+      .faqsSection__rightSide {
+        @include flex(0, 0, 100%);
+        margin-top: 20px;
+        @include min-width($mobileXL) {
+          @include flex(0, 0, 50.5%);
+          margin-top: 0;
+        }
+        @include min-width($desktopXL) {
+          @include flex(0, 0, calc(66% - 32px));
+        }
+        a {
+          color: $primary700;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .image__container {
+      margin-top: 80px;
+      text-align: right;
+      @include min-width($tabletSM) {
+        position: absolute;
+        top: -140px;
+        right: 0;
+      }
+    }
+  }
+}
+.faqsSection__leftSide__bullets::-webkit-scrollbar {
+  display: none; /* Opera and Chrome */
+}
+

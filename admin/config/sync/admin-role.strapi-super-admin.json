@@ -205,7 +205,8 @@
         "fields": [
           "title",
           "number",
-          "description"
+          "description",
+          "icon"
         ]
       },
       "conditions": []
@@ -229,7 +230,8 @@
         "fields": [
           "title",
           "number",
-          "description"
+          "description",
+          "icon"
         ]
       },
       "conditions": []
@@ -241,7 +243,8 @@
         "fields": [
           "title",
           "number",
-          "description"
+          "description",
+          "icon"
         ]
       },
       "conditions": []
@@ -2046,12 +2049,14 @@
           "headerSection.cta.external_url",
           "benefitSection.title",
           "benefitSection.benefits",
+          "benefitSection.hero",
           "featureSection.title",
           "featureSection.wallet_features",
           "walletAdFeature.title",
           "walletAdFeature.wallet_ad_features",
           "howSection.title",
           "howSection.operations",
+          "howSection.media",
           "credentialSection.title",
           "credentialSection.credentials",
           "credentialSection.properties"
@@ -2101,12 +2106,14 @@
           "headerSection.cta.external_url",
           "benefitSection.title",
           "benefitSection.benefits",
+          "benefitSection.hero",
           "featureSection.title",
           "featureSection.wallet_features",
           "walletAdFeature.title",
           "walletAdFeature.wallet_ad_features",
           "howSection.title",
           "howSection.operations",
+          "howSection.media",
           "credentialSection.title",
           "credentialSection.credentials",
           "credentialSection.properties"
@@ -2136,12 +2143,14 @@
           "headerSection.cta.external_url",
           "benefitSection.title",
           "benefitSection.benefits",
+          "benefitSection.hero",
           "featureSection.title",
           "featureSection.wallet_features",
           "walletAdFeature.title",
           "walletAdFeature.wallet_ad_features",
           "howSection.title",
           "howSection.operations",
+          "howSection.media",
           "credentialSection.title",
           "credentialSection.credentials",
           "credentialSection.properties"
@@ -2262,12 +2271,15 @@
       "subject": "api::page.page",
       "properties": {
         "fields": [
-          "Page",
+          "sections",
           "seo.metaTitle",
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "title",
+          "slugURL",
+          "subPath"
         ]
       },
       "conditions": []
@@ -2289,12 +2301,15 @@
       "subject": "api::page.page",
       "properties": {
         "fields": [
-          "Page",
+          "sections",
           "seo.metaTitle",
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "title",
+          "slugURL",
+          "subPath"
         ]
       },
       "conditions": []
@@ -2304,12 +2319,15 @@
       "subject": "api::page.page",
       "properties": {
         "fields": [
-          "Page",
+          "sections",
           "seo.metaTitle",
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "title",
+          "slugURL",
+          "subPath"
         ]
       },
       "conditions": []

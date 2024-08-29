@@ -4,24 +4,48 @@
   "info": {
     "singularName": "page",
     "pluralName": "pages",
-    "displayName": "Page"
+    "displayName": "Page",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "Page": {
+    "sections": {
       "type": "dynamiczone",
       "components": [
         "generic.button",
-        "generic.section"
+        "generic.section",
+        "generic.header",
+        "shared.double-col-text-image",
+        "shared.double-col-image-text-bg",
+        "wallet.benefit-section",
+        "studio.why-studio-section",
+        "shared.faqs-section",
+        "studio.feature-section",
+        "shared.blog-section",
+        "wallet.how-section",
+        "generic.prefooter"
       ]
     },
     "seo": {
       "type": "component",
       "repeatable": false,
       "component": "shared.seo"
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "slugURL": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "subPath": {
+      "type": "string"
     }
   }
 }

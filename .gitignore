@@ -64,3 +64,5 @@ package-lock.json
 
 .parcel-cache
 
+# environment files
+admin/.env.*

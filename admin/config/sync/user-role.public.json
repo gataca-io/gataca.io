@@ -34,6 +34,9 @@
       "action": "api::benefit.benefit.findOne"
     },
     {
+      "action": "api::blog.blog.create"
+    },
+    {
       "action": "api::blog.blog.find"
     },
     {
@@ -116,6 +119,9 @@
     },
     {
       "action": "api::operation.operation.findOne"
+    },
+    {
+      "action": "api::page.page.create"
     },
     {
       "action": "api::page.page.find"

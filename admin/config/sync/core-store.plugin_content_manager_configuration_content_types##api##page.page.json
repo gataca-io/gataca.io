@@ -20,16 +20,16 @@
           "sortable": true
         }
       },
-      "Page": {
+      "sections": {
         "edit": {
-          "label": "Page",
+          "label": "sections",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "Page",
+          "label": "sections",
           "searchable": false,
           "sortable": false
         }
@@ -46,6 +46,48 @@
           "label": "seo",
           "searchable": false,
           "sortable": false
+        }
+      },
+      "title": {
+        "edit": {
+          "label": "title",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "title",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "slugURL": {
+        "edit": {
+          "label": "slugURL",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "slugURL",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "subPath": {
+        "edit": {
+          "label": "subPath",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "subPath",
+          "searchable": true,
+          "sortable": true
         }
       },
       "createdAt": {
@@ -80,21 +122,37 @@
     "layouts": {
       "list": [
         "id",
-        "seo",
-        "createdAt",
-        "updatedAt"
+        "title",
+        "slugURL",
+        "subPath"
       ],
       "edit": [
         [
           {
-            "name": "Page",
+            "name": "seo",
             "size": 12
           }
         ],
         [
           {
-            "name": "seo",
+            "name": "sections",
             "size": 12
+          }
+        ],
+        [
+          {
+            "name": "title",
+            "size": 6
+          },
+          {
+            "name": "slugURL",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "subPath",
+            "size": 6
           }
         ]
       ]

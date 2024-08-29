@@ -1,0 +1,61 @@
+@import "../../../../../../styles/colors.scss";
+@import "../../../../../../styles/mixins.scss";
+
+.doubleColTextImage {
+  margin-bottom: 132px;
+  padding: 0 20px;
+  @include min-width($mobileXL) {
+    margin-bottom: 220px;
+    padding: 0 40px;
+  }
+  @include min-width($desktopMD) {
+    padding: 0 60px;
+  }
+
+  .description {
+    @include min-width($desktopSM) {
+      max-width: 473px;
+    }
+  }
+
+  .doubleColTextImage__container {
+    @include flexbox();
+    @include flex-direction(column);
+    @include justify-content(center);
+    @include flex-wrap(wrap);
+    gap: 52px;
+    @include min-width($mobileXL) {
+      @include flex-direction(row);
+      @include flex-wrap(nowrap);
+      @include justify-content(space-between);
+      @include align-items(center);
+      gap: 60px;   
+    }
+    @include min-width($desktopMD) {
+      gap: 135px;
+    }
+    
+    .doubleColTextImage__leftSide {
+      @include flex(0, 0, 100%);
+      @include min-width($mobileXL) {
+        @include flex(0, 0, calc((100%/2) - (60px/2)));
+      }
+      @include min-width($desktopMD) {
+        @include flex(0, 0, calc((100%/2) - (135px/2)));
+      }
+    }
+    .doubleColTextImage__rightSide {
+      @include min-width($mobileXL) {
+        @include flex(0, 0, calc((100%/2) - (60px/2)));
+      }
+    
+      @include min-width($desktopMD) {
+        @include flex(0, 0, calc((100%/2) - (135px/2)));
+      }
+      .doubleColTextImage__imageContainer {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

@@ -2417,7 +2417,8 @@
       "info": {
         "singularName": "benefit",
         "pluralName": "benefits",
-        "displayName": "Benefit"
+        "displayName": "Benefit",
+        "description": ""
       },
       "options": {
         "draftAndPublish": true
@@ -2432,6 +2433,16 @@
         },
         "description": {
           "type": "text"
+        },
+        "icon": {
+          "allowedTypes": [
+            "images",
+            "files",
+            "videos",
+            "audios"
+          ],
+          "type": "media",
+          "multiple": false
         },
         "createdAt": {
           "type": "datetime"
@@ -2471,7 +2482,8 @@
         "info": {
           "singularName": "benefit",
           "pluralName": "benefits",
-          "displayName": "Benefit"
+          "displayName": "Benefit",
+          "description": ""
         },
         "options": {
           "draftAndPublish": true
@@ -2486,6 +2498,16 @@
           },
           "description": {
             "type": "text"
+          },
+          "icon": {
+            "allowedTypes": [
+              "images",
+              "files",
+              "videos",
+              "audios"
+            ],
+            "type": "media",
+            "multiple": false
           }
         },
         "kind": "collectionType"
@@ -4803,7 +4825,8 @@
       "info": {
         "singularName": "operation",
         "pluralName": "operations",
-        "displayName": "Operation"
+        "displayName": "Operation",
+        "description": ""
       },
       "options": {
         "draftAndPublish": true
@@ -4824,7 +4847,7 @@
             "audios"
           ],
           "type": "media",
-          "multiple": true
+          "multiple": false
         },
         "createdAt": {
           "type": "datetime"
@@ -4864,7 +4887,8 @@
         "info": {
           "singularName": "operation",
           "pluralName": "operations",
-          "displayName": "Operation"
+          "displayName": "Operation",
+          "description": ""
         },
         "options": {
           "draftAndPublish": true
@@ -4885,7 +4909,7 @@
               "audios"
             ],
             "type": "media",
-            "multiple": true
+            "multiple": false
           }
         },
         "kind": "collectionType"
@@ -4905,24 +4929,48 @@
       "info": {
         "singularName": "page",
         "pluralName": "pages",
-        "displayName": "Page"
+        "displayName": "Page",
+        "description": ""
       },
       "options": {
         "draftAndPublish": true
       },
       "pluginOptions": {},
       "attributes": {
-        "Page": {
+        "sections": {
           "type": "dynamiczone",
           "components": [
             "generic.button",
-            "generic.section"
+            "generic.section",
+            "generic.header",
+            "shared.double-col-text-image",
+            "shared.double-col-image-text-bg",
+            "wallet.benefit-section",
+            "studio.why-studio-section",
+            "shared.faqs-section",
+            "studio.feature-section",
+            "shared.blog-section",
+            "wallet.how-section",
+            "generic.prefooter"
           ]
         },
         "seo": {
           "type": "component",
           "repeatable": false,
           "component": "shared.seo"
+        },
+        "title": {
+          "type": "string",
+          "required": true,
+          "unique": true
+        },
+        "slugURL": {
+          "type": "string",
+          "required": true,
+          "unique": true
+        },
+        "subPath": {
+          "type": "string"
         },
         "createdAt": {
           "type": "datetime"
@@ -4962,24 +5010,48 @@
         "info": {
           "singularName": "page",
           "pluralName": "pages",
-          "displayName": "Page"
+          "displayName": "Page",
+          "description": ""
         },
         "options": {
           "draftAndPublish": true
         },
         "pluginOptions": {},
         "attributes": {
-          "Page": {
+          "sections": {
             "type": "dynamiczone",
             "components": [
               "generic.button",
-              "generic.section"
+              "generic.section",
+              "generic.header",
+              "shared.double-col-text-image",
+              "shared.double-col-image-text-bg",
+              "wallet.benefit-section",
+              "studio.why-studio-section",
+              "shared.faqs-section",
+              "studio.feature-section",
+              "shared.blog-section",
+              "wallet.how-section",
+              "generic.prefooter"
             ]
           },
           "seo": {
             "type": "component",
             "repeatable": false,
             "component": "shared.seo"
+          },
+          "title": {
+            "type": "string",
+            "required": true,
+            "unique": true
+          },
+          "slugURL": {
+            "type": "string",
+            "required": true,
+            "unique": true
+          },
+          "subPath": {
+            "type": "string"
           }
         },
         "kind": "collectionType"

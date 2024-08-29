@@ -4,7 +4,8 @@
   "info": {
     "singularName": "operation",
     "pluralName": "operations",
-    "displayName": "Operation"
+    "displayName": "Operation",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -25,7 +26,7 @@
         "audios"
       ],
       "type": "media",
-      "multiple": true
+      "multiple": false
     }
   }
 }

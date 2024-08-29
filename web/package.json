@@ -6,8 +6,8 @@
   ],
   "name": "gataca.io",
   "overrides": {
-    "xml2js": "^0.5.0",
-    "semver": "^7.5.4"
+    "semver": "^7.5.4",
+    "xml2js": "^0.5.0"
   },
   "private": true,
   "resolutions": {
@@ -21,7 +21,7 @@
     "start": "gatsby develop",
     "typecheck": "tsc --noEmit"
   },
-  "version": "7.0.3",
+  "version": "7.0.4",
   "dependencies": {
     "@bakkenbaeck/gatsby-plugin-rename-routes": "^1.0.0",
     "@types/classnames": "^2.3.1",

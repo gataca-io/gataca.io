@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_generic_prefooters",
+  "info": {
+    "displayName": "Prefooter"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "rightButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "generic.cta"
+    },
+    "leftButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "generic.cta"
+    }
+  }
+}

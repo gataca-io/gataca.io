@@ -31,6 +31,11 @@ export interface BlogPreviewModel {
   attributes: BlogModel
 }
 
+export interface PagePreviewModel {
+  id: string
+  attributes: PageModel
+}
+
 export interface BlogModel extends BlogPreviewModel {
   seo: SeoModel
   date: string
@@ -49,6 +54,32 @@ export interface BlogModel extends BlogPreviewModel {
   content: string
 }
 
+export interface PageModel extends PagePreviewModel {
+  seo: SeoModel
+  sections: InsideSectionsModel[]
+  title: string
+  slugURL: string
+  subPath: string
+}
+
+export interface InsideSectionsModel {
+  id: any
+  title: string
+  description: string
+  cta?: ButtonModel
+  rightButton?: any
+  leftButton?: any
+  hero?: any
+  icon?: any
+  media?: any
+  __component?: string
+  subtitle?: string
+  benefits?: any
+  advantages?: any
+  operations?: any
+  faqs?: any
+  blogs?: any
+}
 export interface SeoModel {
   id: string
   metaTitle: string
@@ -70,7 +101,7 @@ export interface StrapiImageModel {
 
 export interface IProductModel {
   id: string
-  attributes:  {
+  attributes: {
     name: string
     description: string
     prices: IPriceModel[]
