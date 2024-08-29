@@ -13,16 +13,18 @@
 
   @include min-width($desktopMD) {
     padding: 0 60px;
-    margin: 150px 0 390px;
+  }
+  @include min-width($desktopXL) {
+    margin: 150px 0 320px;
   }
   @include min-width($desktopXXL) {
-    margin: 150px 0 500px;
+    margin: 150px 0 280px;
   }
-  @include min-width(1710px) {
-    margin: 150px 0 700px;
+  @include min-width(1760px) {
+    margin: 150px 0 450px;
   }
-  @include min-width(2000px) {
-    margin: 150px 0 800px;
+  @include min-width(1910px) {
+    margin: 150px 0 550px;
   }
 }
 
@@ -91,20 +93,26 @@
   .header__imageContainer {
     position: absolute;
     top: 0;
-    right: -40px;
+    right: -50px;
     width: 100%;
-
+    @include min-width($mobileXL) {
+      right: -70px;
+    } 
     @include min-width($tabletMD) {
       max-height: 382px;
       max-width: none;
       width: auto;
-      right: 0;
+      right: -30px;
     }
 
     @include min-width($desktopSM) {
-      max-height: 492px;
+      max-height: 462px;
       top: -109px;
       display: block;
+
+    }
+    @include min-width($desktopMD) {
+      max-height: 500px;
 
     }
 
@@ -113,19 +121,21 @@
     }
 
     @include min-width($desktopXXL) {
-      max-height: 692px;
+      max-height: 532px;
+      right: 125px;
     }
 
     @include min-width(1560px) {
-      max-height: 742px;
+      max-height: 572px;
+      right: 165px;
     }
 
     @include min-width(1700px) {
-      max-height: 820px;
+      max-height: 640px;
     }
 
     @include min-width(1850px) {
-      max-height: 905px;
+      max-height: 695px;
     }
   }
 }
