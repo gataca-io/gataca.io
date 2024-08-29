@@ -26,7 +26,10 @@
         "studio.feature-section",
         "shared.blog-section",
         "wallet.how-section",
-        "generic.prefooter"
+        "generic.prefooter",
+        "generic.centered-header",
+        "shared.slider",
+        "generic.table"
       ]
     },
     "seo": {

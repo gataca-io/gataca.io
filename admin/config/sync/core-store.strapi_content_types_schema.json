@@ -4819,6 +4819,108 @@
       "actions": {},
       "lifecycles": {}
     },
+    "api::logo.logo": {
+      "kind": "collectionType",
+      "collectionName": "logos",
+      "info": {
+        "singularName": "logo",
+        "pluralName": "logos",
+        "displayName": "Logo"
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "title": {
+          "type": "string"
+        },
+        "idClient": {
+          "type": "string"
+        },
+        "icon": {
+          "allowedTypes": [
+            "images",
+            "files",
+            "videos",
+            "audios"
+          ],
+          "type": "media",
+          "multiple": false
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "logos",
+        "info": {
+          "singularName": "logo",
+          "pluralName": "logos",
+          "displayName": "Logo"
+        },
+        "options": {
+          "draftAndPublish": true
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "title": {
+            "type": "string"
+          },
+          "idClient": {
+            "type": "string"
+          },
+          "icon": {
+            "allowedTypes": [
+              "images",
+              "files",
+              "videos",
+              "audios"
+            ],
+            "type": "media",
+            "multiple": false
+          }
+        },
+        "kind": "collectionType"
+      },
+      "modelType": "contentType",
+      "modelName": "logo",
+      "connection": "default",
+      "uid": "api::logo.logo",
+      "apiName": "logo",
+      "globalId": "Logo",
+      "actions": {},
+      "lifecycles": {}
+    },
     "api::operation.operation": {
       "kind": "collectionType",
       "collectionName": "operations",
@@ -4951,7 +5053,10 @@
             "studio.feature-section",
             "shared.blog-section",
             "wallet.how-section",
-            "generic.prefooter"
+            "generic.prefooter",
+            "generic.centered-header",
+            "shared.slider",
+            "generic.table"
           ]
         },
         "seo": {
@@ -5032,7 +5137,10 @@
               "studio.feature-section",
               "shared.blog-section",
               "wallet.how-section",
-              "generic.prefooter"
+              "generic.prefooter",
+              "generic.centered-header",
+              "shared.slider",
+              "generic.table"
             ]
           },
           "seo": {

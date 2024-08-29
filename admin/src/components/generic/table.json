@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_generic_tables",
+  "info": {
+    "displayName": "Table"
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "richtext"
+    }
+  }
+}
