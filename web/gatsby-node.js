@@ -49,18 +49,6 @@ exports.createPages = ({ actions, graphql }) => {
             id
             slugURL
             subPath
-            sections {
-              ... on STRAPI__COMPONENT_GENERIC_HEADER {
-                id
-                title
-                description
-              }
-              ... on STRAPI__COMPONENT_SHARED_DOUBLE_COL_TEXT_IMAGE {
-                id
-                description
-                title
-              }
-            }
           }
         }
       }
@@ -87,12 +75,7 @@ exports.createPages = ({ actions, graphql }) => {
           context: {
             id: node.id,
             slugURL: node.slugURL,
-            subPath: node.subPath || null,
-            sections: {
-              id: node.id,
-              description: node.description,
-              title: node.title,
-            },
+            subPath: node.subPath,
           },
         })
       })
