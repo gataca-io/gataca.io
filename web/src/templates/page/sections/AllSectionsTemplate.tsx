@@ -59,7 +59,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
               />
             )}
             {__component === "shared.slider" && (
-              <LogosSlider list={logos?.data} />
+              <LogosSlider list={logos?.data} lightLogos={logos?.data} />
             )}
             {__component === "shared.double-col-text-image" && (
               <DoubleColTextImage

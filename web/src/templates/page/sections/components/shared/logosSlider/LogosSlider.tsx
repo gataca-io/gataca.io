@@ -3,11 +3,11 @@ import * as styles from "./logosSlider.module.scss"
 import StrapiImage from "../../../../../../components/atoms/images/StrapiImage"
 
 export type ILogosSliderProps = {
-  // lightLogos?: boolean
+  lightLogos?: boolean
   className?: string
   list: {
     attributes: {
-      image: any
+      icon: any
       title: string
       idClient: string
     }
@@ -16,26 +16,28 @@ export type ILogosSliderProps = {
 
 const timesToRepeatLogos = 15
 const LogosSlider: React.FC<ILogosSliderProps> = props => {
-  const { className, list } = props
-  // console.log("list ", list[0]?.attributes)
-
-  // const logosToDisplay = lightLogos ? clientsClearLogos : clientsLogos
+  const { className, lightLogos, list } = props
 
   return (
-    <div className={`${className && className} ${styles.logosSlider} `}>
+    <div
+      className={`${className && className} ${styles.logosSlider} ${
+        lightLogos ? styles.darkBackground : styles.lightBackground
+      }
+      `}
+    >
       <div className={styles.clientsLogo}>
         <div className={styles.clientsLogo__container}>
           <div className={styles.clientsLogo__slider}>
             {[...Array(timesToRepeatLogos)].map((e, i) => {
               return list?.map((item, index) => {
-                const { image, title } = item.attributes
+                const { icon, title } = item.attributes
                 console.log("titleImage ", title)
                 return (
                   <div
                     className={styles?.clientsLogo__sliderItem}
                     key={"LogosSlider__" + index}
                   >
-                    <StrapiImage image={image ? image : null} />
+                    <StrapiImage image={icon ? icon : null} />
                     {/* <img src={item.image} id={item.idClient} /> */}
                   </div>
                 )
