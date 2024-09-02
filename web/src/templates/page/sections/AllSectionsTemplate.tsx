@@ -8,9 +8,9 @@ import ListOpensHover from "./components/products/listOpensHover/ListOpensHover"
 import ListMedia from "./components/products/listMedia/ListMedia"
 import FaqsSection from "./components/shared/faqsSection/FaqsSection"
 import ChosenBlogsSection from "./components/shared/chosenBlogsSection/ChosenBlogsSection"
-import CenteredHeader from "./components/generic/centeredHeader/centeredHeader"
 import LogosSlider from "./components/shared/logosSlider/LogosSlider"
 import Table from "./components/shared/table/Table"
+import CenteredHeader from "./components/generic/centeredHeader/CenteredHeader"
 
 const AllSectionsTemplate: React.FC<PageModel> = props => {
   const [benefitsLoaded, setBenefitsLoaded] = React.useState<boolean>(false)
