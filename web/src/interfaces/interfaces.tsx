@@ -72,6 +72,7 @@ export interface InsideSectionsModel {
   hero?: any
   icon?: any
   media?: any
+  content?: string
   __component?: string
   subtitle?: string
   benefits?: any
@@ -79,6 +80,7 @@ export interface InsideSectionsModel {
   operations?: any
   faqs?: any
   blogs?: any
+  logos?: any
 }
 export interface SeoModel {
   id: string

@@ -5,6 +5,7 @@
 .faqsSection {
   margin-bottom: 132px;
   padding: 0 20px;
+  margin-top: 200px;
   @include min-width($mobileXL) {
     margin-bottom: 220px;
     padding: 0 40px;
@@ -109,11 +110,10 @@
       }
     }
     .image__container {
-      margin-top: 80px;
       text-align: right;
       @include min-width($tabletSM) {
         position: absolute;
-        top: -140px;
+        top: -80px;
         right: 0;
       }
     }

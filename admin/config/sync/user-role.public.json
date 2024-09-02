@@ -115,6 +115,12 @@
       "action": "api::industry.industry.findOne"
     },
     {
+      "action": "api::logo.logo.find"
+    },
+    {
+      "action": "api::logo.logo.findOne"
+    },
+    {
       "action": "api::operation.operation.find"
     },
     {

@@ -8,6 +8,9 @@ import ListOpensHover from "./components/products/listOpensHover/ListOpensHover"
 import ListMedia from "./components/products/listMedia/ListMedia"
 import FaqsSection from "./components/shared/faqsSection/FaqsSection"
 import ChosenBlogsSection from "./components/shared/chosenBlogsSection/ChosenBlogsSection"
+import LogosSlider from "./components/shared/logosSlider/LogosSlider"
+import Table from "./components/shared/table/Table"
+import CenteredHeader from "./components/generic/centeredHeader/CenteredHeader"
 
 const AllSectionsTemplate: React.FC<PageModel> = props => {
   const [benefitsLoaded, setBenefitsLoaded] = React.useState<boolean>(false)
@@ -30,6 +33,8 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
           operations,
           faqs,
           blogs,
+          logos,
+          content,
         } = item
 
         return (
@@ -43,6 +48,18 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
                 hero={hero}
                 key={`header_` + id + index}
               />
+            )}
+            {__component === "generic.centered-header" && (
+              <CenteredHeader
+                id={id}
+                title={title}
+                description={description}
+                cta={cta}
+                key={`centered_header_` + id + index}
+              />
+            )}
+            {__component === "shared.slider" && (
+              <LogosSlider list={logos?.data} lightLogos={logos?.data} />
             )}
             {__component === "shared.double-col-text-image" && (
               <DoubleColTextImage
@@ -107,6 +124,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
                 key={`.blogs_section_` + id + index}
               />
             )}
+            {__component === "generic.table" && <Table content={content} />}
           </>
         )
       })}

@@ -2220,6 +2220,54 @@
     },
     {
       "action": "plugin::content-manager.explorer.create",
+      "subject": "api::logo.logo",
+      "properties": {
+        "fields": [
+          "title",
+          "idClient",
+          "icon"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::logo.logo",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::logo.logo",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::logo.logo",
+      "properties": {
+        "fields": [
+          "title",
+          "idClient",
+          "icon"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::logo.logo",
+      "properties": {
+        "fields": [
+          "title",
+          "idClient",
+          "icon"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
       "subject": "api::operation.operation",
       "properties": {
         "fields": [

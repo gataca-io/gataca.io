@@ -1,0 +1,48 @@
+
+@import "../../../../../../styles/colors.scss";
+@import "../../../../../../styles/mixins.scss";
+@import "../../../../../../styles/types";
+
+.tableContainer {
+  padding: 0 20px;
+  margin-bottom: 132px;
+  @include min-width($mobileXL) {
+    padding: 0 40px;
+    margin-bottom: 220px;
+  }
+  @include min-width($desktopMD) {
+    padding: 0 60px;
+  }
+
+  thead th {
+    font-family: $custom !important;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 24px;
+  }
+
+  p {
+    font-family: $base;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-decoration: none;
+    color: $neutral700;
+  }
+
+  b,
+  strong {
+    font-family: $base;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-decoration: none;
+  }
+
+  
+  a {
+    color: $primary700;
+    font-family: $base;
+  }
+
+}
