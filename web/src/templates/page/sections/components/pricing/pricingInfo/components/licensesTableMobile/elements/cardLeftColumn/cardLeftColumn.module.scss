@@ -1,0 +1,23 @@
+@import "../../../../../../../../../../styles/mixins";
+
+.card__row {
+    @include flexbox();
+    & > div:nth-child(1) {
+      min-width: 140px;
+      width: 140px;
+      @include min-width($mobileXL) {
+        width: 178px;
+      }
+
+      & > div {
+        @include flexbox();
+        @include flex-wrap(nowrap);
+        @include align-items(space-between);
+        @include justify-content(space-between);
+        & > p {
+          margin-right: 10px;
+          width: calc(100% - 10px)
+        }
+      }
+    }
+}

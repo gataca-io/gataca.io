@@ -1,4 +1,5 @@
 import * as React from "react"
+import { useState } from "react"
 import { PageModel } from "../../../interfaces/interfaces"
 import Header from "./components/generic/header/Header"
 import DoubleColTextImage from "./components/shared/doubleColTextImage/DoubleColTextImage"
@@ -11,10 +12,40 @@ import ChosenBlogsSection from "./components/shared/chosenBlogsSection/ChosenBlo
 import LogosSlider from "./components/shared/logosSlider/LogosSlider"
 import Table from "./components/shared/table/Table"
 import CenteredHeader from "./components/generic/centeredHeader/CenteredHeader"
+import PricingInfo from "./components/pricing/pricingInfo/PricingInfo"
 
 const AllSectionsTemplate: React.FC<PageModel> = props => {
   const [benefitsLoaded, setBenefitsLoaded] = React.useState<boolean>(false)
   const { sections } = props
+
+  const [pricingData, setPricing] = useState<any | undefined>()
+  const [pricingStrapiData, setStrapiData] = React.useState<any | undefined>()
+  const { firstSection } = pricingData ? pricingData : []
+
+  const { onPremiseSection } = pricingStrapiData ? pricingStrapiData : []
+
+  React.useEffect(() => {
+    if (!pricingStrapiData) {
+      getStrapiData()
+    }
+    getPricing()
+  }, [])
+
+  const getPricing = async () => {
+    const json_data = require("./components/pricing/pricingInfo/data/pricingData.json")
+    setPricing(json_data?.data && json_data?.data)
+  }
+
+  const getStrapiData = async () => {
+    await fetch(
+      `${process.env.STRAPI_API_URL}/api/pricing?populate%5BfaqSection%5D%5Bpopulate%5D%5Binfo%5D%5Bpopulate%5D=*&populate%5BcloudSection%5D%5Bpopulate%5D%5Btiers%5D%5Bpopulate%5D=*&populate%5BonPremiseSection%5D%5Bpopulate%5D=*`
+    )
+      .then(response => response.json())
+      .then(jsonResponse => {
+        const pricingStrapiData = jsonResponse?.data?.attributes
+        setStrapiData(pricingStrapiData)
+      })
+  }
 
   return (
     <div>
@@ -35,8 +66,16 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
           blogs,
           logos,
           content,
+          tiers,
+          panelTitle,
+          paragraph_1,
+          paragraph_2,
+          button,
+          infoToggles,
         } = item
 
+        console.log("title ", panelTitle)
+        console.log("paragraph ", paragraph_1)
         return (
           <>
             {__component === "generic.header" && (
@@ -125,6 +164,23 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
               />
             )}
             {__component === "generic.table" && <Table content={content} />}
+
+            {__component === "pricing.cloud" && "pricing.on-premise" && (
+              <PricingInfo
+                title={title}
+                description={description}
+                categories={firstSection?.categories}
+                index={0}
+                infoToggles={infoToggles}
+                licenses={tiers?.data}
+                onPremise={onPremiseSection}
+                // panelTitle={panelTitle}
+                // paragraph_1={paragraph_1}
+                // paragraph_2={paragraph_2}
+                // button={button}
+                subOptionClickedID={props?.location?.hash?.substring(1)}
+              />
+            )}
           </>
         )
       })}
