@@ -1,0 +1,57 @@
+{
+  "key": "plugin_content_manager_configuration_components::pricing.pricing-all-info",
+  "value": {
+    "uid": "pricing.pricing-all-info",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "switchText",
+      "defaultSortBy": "switchText",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "switchText": {
+        "edit": {
+          "label": "switchText",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "switchText",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "switchText"
+      ],
+      "edit": [
+        [
+          {
+            "name": "switchText",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

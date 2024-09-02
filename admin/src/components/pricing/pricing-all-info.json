@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_pricing_pricing_all_infos",
+  "info": {
+    "displayName": "PricingAllInfo"
+  },
+  "options": {},
+  "attributes": {
+    "switchText": {
+      "type": "string"
+    }
+  }
+}

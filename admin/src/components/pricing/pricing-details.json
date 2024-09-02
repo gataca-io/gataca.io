@@ -1,7 +1,8 @@
 {
   "collectionName": "components_pricing_pricing_details",
   "info": {
-    "displayName": "PricingDetails"
+    "displayName": "PricingDetails",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -37,6 +38,24 @@
     },
     "verificationTemplate": {
       "type": "text"
+    },
+    "dataAgreements": {
+      "type": "text"
+    },
+    "verifiableIds": {
+      "type": "string"
+    },
+    "customSchemas": {
+      "type": "string"
+    },
+    "ageVerification": {
+      "type": "string"
+    },
+    "qualifiedCertificates": {
+      "type": "string"
+    },
+    "enterpriseWallet": {
+      "type": "string"
     }
   }
 }

@@ -7,8 +7,8 @@
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "id",
-      "defaultSortBy": "id",
+      "mainField": "verifiableIds",
+      "defaultSortBy": "verifiableIds",
       "defaultSortOrder": "ASC"
     },
     "metadatas": {
@@ -173,6 +173,90 @@
           "searchable": true,
           "sortable": true
         }
+      },
+      "dataAgreements": {
+        "edit": {
+          "label": "dataAgreements",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "dataAgreements",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "verifiableIds": {
+        "edit": {
+          "label": "verifiableIds",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "verifiableIds",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "customSchemas": {
+        "edit": {
+          "label": "customSchemas",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "customSchemas",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "ageVerification": {
+        "edit": {
+          "label": "ageVerification",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "ageVerification",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "qualifiedCertificates": {
+        "edit": {
+          "label": "qualifiedCertificates",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "qualifiedCertificates",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "enterpriseWallet": {
+        "edit": {
+          "label": "enterpriseWallet",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "enterpriseWallet",
+          "searchable": true,
+          "sortable": true
+        }
       }
     },
     "layouts": {
@@ -236,6 +320,36 @@
         [
           {
             "name": "verificationTemplate",
+            "size": 6
+          },
+          {
+            "name": "dataAgreements",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "verifiableIds",
+            "size": 6
+          },
+          {
+            "name": "customSchemas",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "ageVerification",
+            "size": 6
+          },
+          {
+            "name": "qualifiedCertificates",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "enterpriseWallet",
             "size": 6
           }
         ]
