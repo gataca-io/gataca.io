@@ -30,15 +30,13 @@ const LogosSlider: React.FC<ILogosSliderProps> = props => {
           <div className={styles.clientsLogo__slider}>
             {[...Array(timesToRepeatLogos)].map((e, i) => {
               return list?.map((item, index) => {
-                const { icon, title } = item.attributes
-                console.log("titleImage ", title)
+                const { icon } = item.attributes
                 return (
                   <div
                     className={styles?.clientsLogo__sliderItem}
                     key={"LogosSlider__" + index}
                   >
                     <StrapiImage image={icon ? icon : null} />
-                    {/* <img src={item.image} id={item.idClient} /> */}
                   </div>
                 )
               })

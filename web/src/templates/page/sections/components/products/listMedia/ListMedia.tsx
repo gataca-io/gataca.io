@@ -83,6 +83,7 @@ const ListMedia: React.FC<ISectionProps> = props => {
                     autoPlay
                     playsInline
                     muted
+                    loop
                   ></video>
                 )}
               </>

@@ -59,7 +59,6 @@ const FirstSection: React.FC<ISectionProps> = props => {
               formId="b7c7e863-372f-4ff1-a529-8a30c37913cc"
               onSubmit={() => {
                 setFormSubmitted(true)
-                console.log("Submit!")
               }}
               onReady={() => {}}
               loading={<FormSkeleton />}

@@ -8,7 +8,7 @@ export type ISectionProps = {
   title: string
   description: string
   list: {
-    id: number,
+    id: number
     attributes: {
       title: string
       description: string
@@ -74,7 +74,7 @@ const UseCasesSection: React.FC<ISectionProps> = props => {
         >
           {list?.map((item, index) => {
             const { title, description, identifier } = item.attributes
-            console.log("listItem__" + index);
+
             return (
               <>
                 <div id={list[index + 1]?.attributes.identifier}></div>

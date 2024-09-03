@@ -1,0 +1,124 @@
+@import "../../../../../../../../styles/colors.scss";
+@import "../../../../../../../../styles/mixins.scss";
+@import "../../../../../../../../styles/types.scss";
+
+.tableContainer {
+  margin-top: 60px;
+  display: block;
+  @include min-width(1386px) {
+    display: none;
+  }
+
+  & > .header__container {
+    & > div:nth-child(2) {
+      & > p {
+        margin-bottom: 24px;
+      }
+    }
+  }
+}
+
+.card {
+  margin-top: 32px;
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid $neutral300;
+  overflow: hidden;
+  background-color: $neutral100;
+
+  & > .card__header {
+    padding: 12px 20px;
+    border-bottom: 1px solid $neutral300;
+  }
+
+  & > .card__row {
+    @include flexbox();
+    
+    & > div:nth-child(1) {
+      padding: 12px;
+      border-right: 1px solid $neutral300;
+      min-width: 140px;
+      width: 140px;
+      @include min-width($mobileXL) {
+        width: 178px;
+      }
+
+      & > div {
+        @include flexbox();
+        @include flex-wrap(nowrap);
+        @include align-items(space-between);
+        @include justify-content(space-between);
+        & > p {
+          margin-right: 10px;
+        }
+      }
+    }
+
+    & > div:nth-child(2) {
+      padding: 12px;
+    }
+  }
+
+  & > .card__row:not(:last-child) {
+    border-bottom: 1px solid $neutral300;
+  }
+
+  .icon {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.header__container {
+  margin-top: 40px;
+  @include flexbox();
+  @include justify-content(space-between);
+  & > div:nth-child(1) {
+    width: 100%;
+    @include flexbox();
+    @include flex-direction(column);
+  }
+}
+.license__button {
+  margin-top: 24px;
+  width: 100%;
+}
+
+.popularTag {
+  background-color: $primary700;
+  border-radius: 5px;
+  padding: 3px 8px;
+  width: fit-content;
+  margin-left: auto;
+  height: 18px;
+  & > p {
+    color: $neutral100;
+    font-weight: 400;
+    font-size: 12px;
+  }
+}
+.selector {
+  margin-top: 60px;
+  width: 100%;
+  padding: 8px 12px;
+  height: 40px;
+  border: 1px solid $neutral400;
+  border-radius: 8px;
+  background-color: $neutral100;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 5px;
+  border: 1px solid #dfdfdf;
+  border-radius: 2px;
+  margin-right: 2rem;
+  padding: 1rem;
+  padding-right: 2rem;
+}
+

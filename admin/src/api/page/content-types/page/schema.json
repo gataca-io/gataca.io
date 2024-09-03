@@ -29,7 +29,9 @@
         "generic.prefooter",
         "generic.centered-header",
         "shared.slider",
-        "generic.table"
+        "generic.table",
+        "pricing.on-premise",
+        "pricing.cloud"
       ]
     },
     "seo": {

@@ -24,10 +24,8 @@ export function actionInViewport(el: any) {
   const observer = new window.IntersectionObserver(
     ([entry]) => {
       if (entry.isIntersecting) {
-        console.log("ENTER")
         return
       }
-      console.log("LEAVE")
     },
     {
       root: null,
@@ -71,12 +69,9 @@ export function useOnScreenAgain(
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        console.log(entry)
-
         if (entry.isIntersecting) {
           //do your actions here
           actionOnView()
-          console.log("It works!")
         }
       },
       {
@@ -101,10 +96,8 @@ export function checkScrollDirection(
 ) {
   const window = event?.scrollTop
   if (y > event?.scrollTop) {
-    console.log("scrolling up")
     return scrollDirections.up
   } else if (y < event?.scrollTop) {
-    console.log("scrolling down")
     return scrollDirections.down
   }
 }

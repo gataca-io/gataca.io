@@ -31,11 +31,7 @@ const PageTemplate: React.FC = (props: any) => {
   return (
     <Layout seoData={pageData?.seo}>
       <>
-        {pageData?.title ? (
-          <AllSectionsTemplate {...pageData} />
-        ) : (
-          <PageSkeleton />
-        )}
+        {pageData ? <AllSectionsTemplate {...pageData} /> : <PageSkeleton />}
         {pageData?.sections?.map(item => {
           const { __component, title, description, rightButton, leftButton } =
             item

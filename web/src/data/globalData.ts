@@ -39,7 +39,7 @@ export const headerMenuOptions: LinkModel[] = [
       // {
       //   id: "gatacaVouch",
       //   label: "Gataca Vouch",
-      //   route: "/products/gatacaVouch",
+      //   route: "/products/gataca-vouch",
       // },
     ],
   },
@@ -208,7 +208,7 @@ export const footerMenuOptions: LinkModel[] = [
       // {
       //   id: "gatacaVouch",
       //   label: "Gataca Vouch",
-      //   route: "/products/gatacaVouch",
+      //   route: "/products/gataca-vouch",
       // },
       /* {
         id: "pricing",

@@ -37,7 +37,6 @@ const ThirdSection: React.FC<ISectionProps> = props => {
               formId="ac9e22c8-e8fb-46db-b28c-2be7c72bfe16"
               onSubmit={() => {
                 setFormSubmitted(true)
-                console.log("Submit!")
               }}
               onReady={() => {}}
               loading={<FormSkeleton />}

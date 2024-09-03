@@ -60,6 +60,7 @@ export interface PageModel extends PagePreviewModel {
   title: string
   slugURL: string
   subPath: string
+  location: any
 }
 
 export interface InsideSectionsModel {
@@ -81,6 +82,12 @@ export interface InsideSectionsModel {
   faqs?: any
   blogs?: any
   logos?: any
+  tiers?: any
+  panelTitle?: string
+  paragraph_1?: string
+  paragraph_2?: string
+  button?: ButtonModel
+  infoToggles?: string
 }
 export interface SeoModel {
   id: string
@@ -118,6 +125,20 @@ export interface IProductModel {
       url: "/company/contact"
     }
   }
+
+  name: string
+  description: string
+  prices: IPriceModel[]
+  type?: string
+  features?: IProductFeaturesModel
+  subPriceMonthLabel?: string
+  subPriceYearLabel?: string
+
+  button: {
+    label: "Contact us"
+    outsideWeb: false
+    url: "/company/contact"
+  }
 }
 
 export interface IPriceModel {
@@ -153,6 +174,11 @@ export interface IProductFeaturesModel {
   integrationCustomTrustInfraestructure: boolean
   standardSupport: boolean | string
   premierSupport: boolean | string
+  dataAgreements: boolean | string
+  verifiableIds: boolean | string
+  customSchemas: boolean | string
+  sandboxEnvironment: boolean | string
+  extraCredentials: boolean | string
 }
 
 export interface ImageModel {
@@ -177,6 +203,13 @@ export interface InfoTogglesPricingModel {
   ebsiIntegration: string
   integrationCustomFrameworks: string
   integrationCustomInfraestructure: string
+  dataAgreements: string
+  verifiableIds: string
+  customSchemas: string
+  extraCredentials: string
+  ageVerification: string
+  qualifiedCertificates: string
+  enterpriseWallet: string
 }
 export interface LegalModel {
   seo: SeoModel

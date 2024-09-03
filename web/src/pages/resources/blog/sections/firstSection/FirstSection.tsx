@@ -35,7 +35,7 @@ const FirstSection: React.FC<ISectionProps> = props => {
               formId="1bf27d65-2e72-4db1-8ec8-8b8a83fb388d"
               onSubmit={() => {
                 setFormSubmitted(true)
-                console.log("Submit!")
+
                 const formContainer =
                   document && document?.getElementById("formContainer")
                 const formLabel =
