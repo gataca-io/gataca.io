@@ -2,14 +2,18 @@
 @import "../../../../../../styles/mixins.scss";
 
 .pricingInfo {
-  margin-top: 162px;
+  margin-top: -70px;
   margin-bottom: 132px;
   padding: 0 20px;
 
   @include min-width($mobileXL) {
-    margin-top: 146px;
+    margin-top: -86px;
     margin-bottom: 132px;
     padding: 0 40px;
+  }
+
+  @include min-width($tabletMD) {
+    margin-top: -160px;
   }
 
   @include min-width($desktopMD) {

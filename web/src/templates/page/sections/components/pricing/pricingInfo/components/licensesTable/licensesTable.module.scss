@@ -19,6 +19,7 @@ table {
   height: 100%;
   margin: 60px auto 0;
   max-width: 1260px;
+  width: 100%;
 }
 
 .table__header__container {
@@ -43,16 +44,13 @@ table {
   &__cell {
     height: 143px;
     padding: 15px !important;
-    text-align: center;
     line-height: 16px;
-    width: 175px;
 
     &__content {
       @include inline-flex();
       @include flex-direction(column);
       width: 100%;
       vertical-align: top;
-      align-items: center;
       text-align: left;
 
       .license__header {
@@ -131,7 +129,8 @@ table {
         height: 150px;
         @include flexbox();
         @include flex-direction(column);
-        @include justify-content(space-between)
+        @include justify-content(space-between);
+       
       }
     }
   }
@@ -140,12 +139,14 @@ table {
       -moz-border-top-left-radius: 12px;
       -webkit-border-top-left-radius: 12px;
       border-top-left-radius: 12px;
+      width: 50%;
 
     }
     & > .table__header__cell:last-child {
       -moz-border-top-right-radius: 12px;
       -webkit-border-top-right-radius: 12px;
       border-top-right-radius: 12px;
+        width: 50%;
     }
     & > .table__header__cell:nth-child(4)  {
       & > .table__header__cell__content {
@@ -179,7 +180,20 @@ table {
 .table__body {
   border-top-left-radius: 12px;
   overflow: hidden;
-  & > tr:nth-child(6) {
+      &>tr:nth-of-type(2) {
+
+      
+          &>td {
+            &:last-child {
+              -moz-border-top-right-radius: 12px;
+              -webkit-border-top-right-radius: 12px;
+              border-top-right-radius: 12px;
+            }
+          }
+      
+        }
+
+  & > tr:nth-child(20) {
     & > td:nth-child(1) {
       border-bottom-left-radius: 12px;
     }
@@ -193,6 +207,7 @@ table {
       & > td:nth-child(1) {
         height: 36px;
         border-top-left-radius: 12px;
+        max-width: 80px;
       }
       & > td:nth-child(6) {
         border-top-right-radius: 12px;
@@ -209,6 +224,7 @@ table {
       width: 16px;
       height: 16px;
     }
+
     &:last-child {
       &:last-child {
         & > td {

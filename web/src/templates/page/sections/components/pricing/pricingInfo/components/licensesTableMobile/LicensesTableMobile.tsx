@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import cx from "classnames"
 import PurpleButton from "../../../../../../../../components/atoms/buttons/purple/PurpleButton"
 import Tag from "../../../../../../../../components/atoms/tags/Tag"
@@ -14,11 +14,74 @@ import CardLeftColumn from "./elements/cardLeftColumn/CardLeftColumn"
 import * as styles from "./licensesTableMobile.module.scss"
 import { images } from "../../../../../../../../images/images"
 
+export const gatacaLicensesList = [
+  {
+    features: {
+      verificationTemplates: "Unlimited",
+      issuanceTemplates: "Unlimited",
+      activeUsers: "1.000",
+      issuedCredentials: "2.000",
+      dataAgreements: true,
+      verifiableIds: true,
+      customSchemas: true,
+      sandboxTesting: true,
+      extraCredentials: false,
+      ageVerification: false,
+      appIntegrations: false,
+      didMethods: "did:gatc",
+      trustRegistries: "Gataca, EBSI",
+      qualifiedCertificates: false,
+      enterpriseWallet: false,
+      statistics: true,
+      roleAccess: true,
+      customRoles: false,
+      emailSupport: true,
+      slackSupport: false,
+      accountTeam: false,
+      available24x7: false,
+      slas: false,
+      onboardAndTraining: false,
+    },
+    name: "Essential",
+    type: "Essential",
+  },
+  {
+    features: {
+      verificationTemplates: "Unlimited",
+      issuanceTemplates: "Unlimited",
+      activeUsers: "Custom",
+      issuedCredentials: "Custom",
+      dataAgreements: true,
+      verifiableIds: true,
+      customSchemas: true,
+      sandboxTesting: true,
+      extraCredentials: true,
+      ageVerification: "Add On",
+      appIntegrations: "Add On",
+      didMethods: "did:gatc, did:ebsi, did:web",
+      trustRegistries: `Gataca, EBSI, Custom`,
+      qualifiedCertificates: true,
+      enterpriseWallet: "Add On",
+      statistics: true,
+      roleAccess: true,
+      customRoles: true,
+      emailSupport: true,
+      slackSupport: true,
+      accountTeam: true,
+      available24x7: "Add On",
+      slas: "Add On",
+      onboardAndTraining: "Add On",
+    },
+    name: "Enterprise",
+    type: "Enterprise",
+  },
+]
+
 type ILicensesTableMobileProps = {
-  license: IProductModel
+  license: any
   licenseIndex: number
   switchPeriodValue: string
-  infoToggles: InfoTogglesPricingModel
+  infoToggles?: any
   selectLicense: (x: any) => void
 }
 
@@ -43,6 +106,19 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
     }
   }
 
+  const getGatacaTiersLicense = () => {
+    const correspondingLicense = gatacaLicensesList?.find(mockedLicense => {
+      const tierName = license?.attributes?.name?.toLowerCase()
+      const licenseName = mockedLicense?.name?.toLowerCase()
+
+      return !!tierName?.includes(licenseName)
+    })
+
+    const fullTier = { ...correspondingLicense, ...license }
+
+    return fullTier
+  }
+
   return (
     <>
       <div className={styles?.tableContainer}>
@@ -58,30 +134,16 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
             }}
           >
             <option
-              defaultChecked={licenseIndex === 0}
-              className={`${cx("bodyRegularMD")}`}
-              value={0}
-            >
-              Starter
-            </option>
-            <option
-              defaultChecked={licenseIndex === 1}
-              className={`${cx("bodyRegularMD")}`}
-              value={1}
-            >
-              Profesional
-            </option>
-            <option
               defaultChecked={licenseIndex === 2}
               className={`${cx("bodyRegularMD")}`}
-              value={2}
+              value={0}
             >
               Essential
             </option>
             <option
               defaultChecked={licenseIndex === 3}
               className={`${cx("bodyRegularMD")}`}
-              value={3}
+              value={1}
             >
               Enterprise
             </option>
@@ -142,8 +204,7 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
             }
           />
         </div>
-
-        {/* Verification features */}
+        {/* Verifiable Credentials */}
         <div className={styles?.card}>
           <CardHeader title={"Verification Features"} />
 
@@ -152,188 +213,238 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
               text={"Verification Templates"}
               information={infoToggles?.verificationTemplate}
             />
-            <QuantityDataCell
-              data={license?.attributes.features?.verificationTemplates}
-            />
+            <div className={`${cx("bodyBoldSM")}`}>
+              <p>{getGatacaTiersLicense()?.features?.verificationTemplates}</p>
+            </div>
           </div>
-          <div className={styles?.card__row}>
-            <CardLeftColumn
-              text={"Active users p/m"}
-              information={infoToggles?.activeUser}
-            />
-            <QuantityDataCell
-              data={license?.attributes.features?.activeUsers}
-            />
-          </div>
-        </div>
-
-        {/* Issuance features */}
-        <div className={styles?.card}>
-          <CardHeader title={"Issuance Features"} />
-
-          <div key={0} className={styles?.card__row}>
+          <div key={1} className={styles?.card__row}>
             <CardLeftColumn
               text={"Issuance Templates"}
               information={infoToggles?.issuanceTemplate}
             />
-            <QuantityDataCell
-              data={license?.attributes.features?.issuanceTemplates}
-            />
+            <div className={`${cx("bodyBoldSM")}`}>
+              <p>{getGatacaTiersLicense()?.features?.issuanceTemplates}</p>
+            </div>
           </div>
-          <div className={styles?.card__row}>
+          <div key={2} className={styles?.card__row}>
+            <CardLeftColumn
+              text={"Active Users"}
+              information={infoToggles?.activeUser}
+            />
+            <div className={`${cx("bodyBoldSM")}`}>
+              <p>{getGatacaTiersLicense()?.features?.activeUsers}</p>
+            </div>
+          </div>
+          <div key={3} className={styles?.card__row}>
             <CardLeftColumn
               text={"Issued Credentials"}
               information={infoToggles?.issuedCredential}
             />
-            <QuantityDataCell
-              data={license?.attributes.features?.issuedCredentials}
+            <div className={`${cx("bodyBoldSM")}`}>
+              <p>{getGatacaTiersLicense()?.features?.issuedCredentials}</p>
+            </div>
+          </div>
+          <div key={4} className={styles?.card__row}>
+            <CardLeftColumn
+              text={"Data agreements"}
+              information={infoToggles?.dataAgreements}
+            />
+            <IconDataCell
+              key={"SE__" + license?.type}
+              data={getGatacaTiersLicense()?.features?.dataAgreements}
+            />
+          </div>
+          <div key={5} className={styles?.card__row}>
+            <CardLeftColumn
+              text={"Verifiable IDs"}
+              information={infoToggles?.verifiableIds}
+            />
+            <IconDataCell
+              key={"SE__" + license?.type}
+              data={getGatacaTiersLicense()?.features?.verifiableIds}
+            />
+          </div>
+          <div key={6} className={styles?.card__row}>
+            <CardLeftColumn
+              text={"Custom schemas"}
+              information={infoToggles?.customSchemas}
+            />
+            <IconDataCell
+              key={"SE__" + license?.type}
+              data={getGatacaTiersLicense()?.features?.customSchemas}
+            />
+          </div>
+          <div key={7} className={styles?.card__row}>
+            <CardLeftColumn
+              text={"Sandbox testing"}
+              information={infoToggles?.sandboxEnvironment}
+            />
+            <IconDataCell key={"SE__" + license?.type} data={true} />
+          </div>
+          <div key={8} className={styles?.card__row}>
+            <CardLeftColumn
+              text={"Extra credentials"}
+              information={infoToggles?.extraCredentials}
+            />
+            <IconDataCell
+              key={"SE__" + license?.type}
+              data={getGatacaTiersLicense()?.features?.extraCredentials}
             />
           </div>
         </div>
+        {/* Single Sign on */}
+        <div key={9} className={styles?.card}>
+          <CardHeader title={"Single Sing On"} />
 
-        {/* Other features */}
-        <div className={styles?.card}>
-          <CardHeader title={"Other Features"} />
-
-          <div key={0} className={styles?.card__row}>
-            <CardLeftColumn text={"DIDs"} />
-            <QuantityDataCell data={license?.attributes.features?.dids} />
-          </div>
-          <div className={styles?.card__row}>
-            <CardLeftColumn text={"API Keys"} />
-            <QuantityDataCell data={license?.attributes.features?.apiKeys} />
-          </div>
           <div className={styles?.card__row}>
             <CardLeftColumn
-              text={"2FA Security Mechanism"}
-              information={infoToggles?.securityFactorMechanism}
+              text={"Age Verification"}
+              information={infoToggles?.ageVerification}
             />
-            <ListDataCell data={license?.attributes.features?.nFactor} />
-          </div>
-          <div className={styles?.card__row}>
-            <CardLeftColumn text={"Notifications"} />
-            <ListDataCell data={license?.attributes.features?.notifications} />
-          </div>
-          <div className={styles?.card__row}>
-            <CardLeftColumn text={"Usage Statistics"} />
-            <IconDataCell data={license?.attributes.features?.stadistics} />
-          </div>
-          <div className={styles?.card__row}>
-            <CardLeftColumn text={"Credentials in W3C VC format"} />
-            <IconDataCell
-              data={license?.attributes.features?.credentialsInW3CFormat}
-            />
-          </div>
-          <div className={styles?.card__row}>
-            <CardLeftColumn
-              text={"Sandbox environment"}
-              information={infoToggles?.sandboxEnvironment}
-            />
-            <IconDataCell
-              data={license?.attributes.features?.sandBoxEnvironment}
-            />
-          </div>
-          <div className={styles?.card__row}>
-            <CardLeftColumn
-              text={"DID in Public Catalogue"}
-              information={infoToggles?.didInPublicCatalogue}
-            />
-            <IconDataCell
-              data={license?.attributes.features?.didPublicCatalogue}
-            />
-          </div>
-          <div className={styles?.card__row}>
-            <CardLeftColumn
-              text={"Publish Schemas in Public Catalogue"}
-              information={infoToggles?.schemaInPublicCatalogue}
-            />
-            <IconDataCell
-              data={license?.attributes.features?.newSchemaPublicCatalogue}
-            />
-          </div>
-          <div className={styles?.card__row}>
-            <CardLeftColumn
-              text={"EBSI integration"}
-              information={infoToggles?.ebsiIntegration}
-            />
-            <IconDataCell
-              data={license?.attributes.features?.ebsiIntegration}
-            />
-          </div>
-          <div className={styles?.card__row}>
-            <CardLeftColumn text={"Customization of GDPR purposes"} />
-            <IconDataCell
-              data={license?.attributes.features?.customGDPRPurposes}
-            />
-          </div>
-          <div className={styles?.card__row}>
-            <CardLeftColumn text={"Custom QR"} />
-            <IconDataCell data={license?.attributes.features?.customQR} />
-          </div>
-          <div className={styles?.card__row}>
-            <CardLeftColumn text={"Credentials in ISO 18013:5 format"} />
-            <IconDataCell
-              data={license?.attributes.features?.credentialsInISO28013}
-            />
-          </div>
-          <div className={styles?.card__row}>
-            <CardLeftColumn
-              text={"Integration with custom trust Frameworks"}
-              information={infoToggles?.integrationCustomFrameworks}
-            />
-            <IconDataCell
-              data={
-                license?.attributes.features?.integrationCustomTrustFrameworks
-              }
-            />
-          </div>
-          <div className={styles?.card__row}>
-            <CardLeftColumn
-              text={"Integration with custom infrastructure"}
-              information={infoToggles?.integrationCustomInfraestructure}
-            />
-            <IconDataCell
-              data={
-                license?.attributes.features
-                  ?.integrationCustomTrustInfraestructure
-              }
-            />
-          </div>
-          <div className={styles?.card__row}>
-            <CardLeftColumn text={"Standard Support"} />
             <div className={`${cx("bodyBoldSM")}`}>
-              {license?.attributes.features?.standardSupport === "true" && (
-                <img className={styles?.icon} src={images.checkIcon}></img>
+              {typeof getGatacaTiersLicense()?.features?.ageVerification ==
+              "boolean" ? (
+                <IconDataCell
+                  data={getGatacaTiersLicense()?.features?.ageVerification}
+                />
+              ) : (
+                <p>{getGatacaTiersLicense()?.features?.ageVerification}</p>
               )}
-              {license?.attributes.features?.standardSupport === "false" && (
-                <img className={styles?.icon} src={images.closeIcon}></img>
+            </div>
+          </div>
+          <div key={10} className={styles?.card__row}>
+            <CardLeftColumn text={"App integrations"} />
+            <div className={`${cx("bodyBoldSM")}`}>
+              {typeof getGatacaTiersLicense()?.features?.appIntegrations ==
+              "boolean" ? (
+                <IconDataCell
+                  data={getGatacaTiersLicense()?.features?.appIntegrations}
+                />
+              ) : (
+                <p>{getGatacaTiersLicense()?.features?.appIntegrations}</p>
               )}
-              {license?.attributes.features?.standardSupport === "extra" && (
-                <p>
-                  ${" "}
-                  <span className={`${cx("bodyRegularCap neutral700")}`}>
-                    {"(Extra charges may apply)"}
-                  </span>
-                </p>
+            </div>
+          </div>
+        </div>
+        {/* Enterprise */}
+        <div key={11} className={styles?.card}>
+          <CardHeader title={"Enterprise"} />
+
+          <div className={styles?.card__row}>
+            <CardLeftColumn text={"DID methods"} />
+            <div className={`${cx("bodyBoldSM")}`}>
+              <p>{getGatacaTiersLicense()?.features?.didMethods}</p>
+            </div>
+          </div>
+          <div className={styles?.card__row}>
+            <CardLeftColumn text={"Trust registries"} />
+            <div className={`${cx("bodyBoldSM")}`}>
+              <p>{getGatacaTiersLicense()?.features?.trustRegistries}</p>
+            </div>
+          </div>
+          <div className={styles?.card__row}>
+            <CardLeftColumn
+              text={"Qualified certificates"}
+              information={infoToggles?.qualifiedCertificates}
+            />
+            <IconDataCell
+              data={getGatacaTiersLicense()?.features?.qualifiedCertificates}
+            />
+          </div>
+          <div className={styles?.card__row}>
+            <CardLeftColumn
+              text={"Enterprise wallet"}
+              information={infoToggles?.enterpriseWallet}
+            />
+            <div className={`${cx("bodyBoldSM")}`}>
+              {typeof getGatacaTiersLicense()?.features?.enterpriseWallet ==
+              "boolean" ? (
+                <IconDataCell
+                  data={getGatacaTiersLicense()?.features?.enterpriseWallet}
+                />
+              ) : (
+                <p>{getGatacaTiersLicense()?.features?.enterpriseWallet}</p>
+              )}
+            </div>
+          </div>
+        </div>
+        {/* Administration */}
+        <div className={styles?.card}>
+          <CardHeader title={"Administration"} />
+          <div className={styles?.card__row}>
+            <CardLeftColumn text={"Statistics"} />
+            <IconDataCell data={true} />
+          </div>
+          <div className={styles?.card__row}>
+            <CardLeftColumn text={"Role based access control"} />
+            <IconDataCell
+              data={getGatacaTiersLicense()?.features?.roleAccess}
+            />
+          </div>
+          <div className={styles?.card__row}>
+            <CardLeftColumn text={"Custom roles"} />
+            <IconDataCell
+              data={getGatacaTiersLicense()?.features?.customRoles}
+            />
+          </div>
+        </div>
+        {/* Support Services */}
+        <div className={styles?.card}>
+          <CardHeader title={"Support Services"} />
+          <div className={styles?.card__row}>
+            <CardLeftColumn text={"Email support"} />
+            <IconDataCell
+              data={getGatacaTiersLicense()?.features?.emailSupport}
+            />
+          </div>
+          <div className={styles?.card__row}>
+            <CardLeftColumn text={"Slack support"} />
+            <IconDataCell
+              data={getGatacaTiersLicense()?.features?.slackSupport}
+            />
+          </div>
+          <div className={styles?.card__row}>
+            <CardLeftColumn text={"Account team"} />
+            <IconDataCell
+              data={getGatacaTiersLicense()?.features?.accountTeam}
+            />
+          </div>
+          <div className={styles?.card__row}>
+            <CardLeftColumn text={"24x7"} />
+            <div className={`${cx("bodyBoldSM")}`}>
+              {typeof getGatacaTiersLicense()?.features?.available24x7 ==
+              "boolean" ? (
+                <IconDataCell
+                  data={getGatacaTiersLicense()?.features?.available24x7}
+                />
+              ) : (
+                <p>{getGatacaTiersLicense()?.features?.available24x7}</p>
               )}
             </div>
           </div>
           <div className={styles?.card__row}>
-            <CardLeftColumn text={"Premier Support"} />
+            <CardLeftColumn text={"SLAs"} />
             <div className={`${cx("bodyBoldSM")}`}>
-              {license?.attributes.features?.premierSupport === "true" && (
-                <img className={styles?.icon} src={images.checkIcon}></img>
+              {typeof getGatacaTiersLicense()?.features?.slas == "boolean" ? (
+                <IconDataCell data={getGatacaTiersLicense()?.features?.slas} />
+              ) : (
+                <p>{getGatacaTiersLicense()?.features?.slas}</p>
               )}
-              {license?.attributes.features?.premierSupport === "false" && (
-                <img className={styles?.icon} src={images.closeIcon}></img>
-              )}
-              {license?.attributes.features?.premierSupport === "extra" && (
-                <p>
-                  ${" "}
-                  <span className={`${cx("bodyRegularCap neutral700")}`}>
-                    {"(Extra charges may apply)"}
-                  </span>
-                </p>
+            </div>
+          </div>
+          <div className={styles?.card__row}>
+            <CardLeftColumn
+              text={"Onboarding and training"}
+              // information={t(infoToggles?.integrationCustomInfraestructure)}
+            />
+            <div className={`${cx("bodyBoldSM")}`}>
+              {typeof getGatacaTiersLicense()?.features?.onboardAndTraining ==
+              "boolean" ? (
+                <IconDataCell
+                  data={getGatacaTiersLicense()?.features?.onboardAndTraining}
+                />
+              ) : (
+                <p>{getGatacaTiersLicense()?.features?.onboardAndTraining}</p>
               )}
             </div>
           </div>

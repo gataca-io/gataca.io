@@ -74,8 +74,6 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
           infoToggles,
         } = item
 
-        console.log("title ", panelTitle)
-        console.log("paragraph ", paragraph_1)
         return (
           <>
             {__component === "generic.header" && (

@@ -17,7 +17,7 @@ import { images } from "../../../../../../../../images/images"
 type ILicensesTableProps = {
   products: IProductModel[]
   switchPeriodValue: string
-  infoToggles: InfoTogglesPricingModel
+  infoToggles: any
 }
 
 const LicensesTable: React.FC<ILicensesTableProps> = props => {
@@ -209,7 +209,7 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
                 ></img>
               </td>
             </tr>
-            <tr key={5} className={styles?.table__body__row}>
+            <tr key={6} className={styles?.table__body__row}>
               <SubcategoryCell
                 subcategory={"Verifiable IDs"}
                 information={infoToggles?.verifiableIds}
@@ -227,7 +227,7 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
                 ></img>
               </td>
             </tr>
-            <tr key={6} className={styles?.table__body__row}>
+            <tr key={7} className={styles?.table__body__row}>
               <SubcategoryCell
                 subcategory={"Custom schemas"}
                 information={infoToggles?.customSchemas}
@@ -245,7 +245,7 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
                 ></img>
               </td>
             </tr>
-            <tr key={7} className={styles?.table__body__row}>
+            <tr key={8} className={styles?.table__body__row}>
               <SubcategoryCell
                 subcategory={"Sandbox testing"}
                 information={infoToggles?.sandboxEnvironment}
@@ -263,7 +263,7 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
                 ></img>
               </td>
             </tr>
-            <tr key={8} className={styles?.table__body__row}>
+            <tr key={9} className={styles?.table__body__row}>
               <SubcategoryCell
                 subcategory={"Extra credentials"}
                 information={infoToggles?.extraCredentials}
@@ -281,7 +281,7 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
                 ></img>
               </td>
             </tr>
-            <tr key={9} className={styles?.table__body__row}>
+            <tr key={10} className={styles?.table__body__row}>
               <CategoryCell category={"Single Sing On"} rowsPan={2} />
               <SubcategoryCell
                 subcategory={"Age Verification"}
@@ -295,7 +295,7 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
               </td>
               <td className={`${cx("bodyBoldSM")}`}>Add-on</td>
             </tr>
-            <tr key={10} className={styles?.table__body__row}>
+            <tr key={11} className={styles?.table__body__row}>
               <SubcategoryCell subcategory={"App integrations"} />
 
               <td key={"Appintegrations__"} className={`${cx("bodyBoldSM")}`}>
@@ -306,7 +306,7 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
               </td>
               <td className={`${cx("bodyBoldSM")}`}>Add-on</td>
             </tr>
-            <tr key={11} className={styles?.table__body__row}>
+            <tr key={12} className={styles?.table__body__row}>
               <CategoryCell category={"Enterprise"} rowsPan={4} />
               <SubcategoryCell subcategory={"DID methods"} />
               <td className={`${cx("bodyBoldSM")}`}>did:gatc</td>
@@ -314,12 +314,12 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
                 did:gatc, did:ebsi, did:web
               </td>
             </tr>
-            <tr key={12} className={styles?.table__body__row}>
+            <tr key={13} className={styles?.table__body__row}>
               <SubcategoryCell subcategory={"Trust registries"} />
               <td className={`${cx("bodyBoldSM")}`}>Gataca, EBSI</td>
               <td className={`${cx("bodyBoldSM")}`}>Gataca, EBSI, custom</td>
             </tr>
-            <tr key={13} className={styles?.table__body__row}>
+            <tr key={14} className={styles?.table__body__row}>
               <SubcategoryCell
                 subcategory={"Qualified certificates"}
                 information={infoToggles?.qualifiedCertificates}
@@ -338,7 +338,7 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
                 ></img>
               </td>
             </tr>
-            <tr key={14} className={styles?.table__body__row}>
+            <tr key={15} className={styles?.table__body__row}>
               <SubcategoryCell
                 subcategory={"Enterprise wallet"}
                 information={infoToggles?.enterpriseWallet}
@@ -352,7 +352,7 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
               </td>
               <td className={`${cx("bodyBoldSM")}`}>Add-on</td>
             </tr>
-            <tr key={15} className={styles?.table__body__row}>
+            <tr key={16} className={styles?.table__body__row}>
               <CategoryCell category={"Administration"} rowsPan={3} />
               <SubcategoryCell subcategory={"Statistics"} />
               <td className={`${cx("bodyBoldSM")}`}>
@@ -368,7 +368,7 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
                 ></img>
               </td>
             </tr>
-            <tr key={16} className={styles?.table__body__row}>
+            <tr key={17} className={styles?.table__body__row}>
               <SubcategoryCell subcategory={"Role based access control"} />
               <td className={`${cx("bodyBoldSM")}`}>
                 <img
@@ -383,7 +383,7 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
                 ></img>
               </td>
             </tr>
-            <tr key={17} className={styles?.table__body__row}>
+            <tr key={18} className={styles?.table__body__row}>
               <SubcategoryCell subcategory={"Custom roles"} />
 
               <td className={`${cx("bodyBoldSM")}`}>
@@ -399,8 +399,8 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
                 ></img>
               </td>
             </tr>
-            <tr key={18} className={styles?.table__body__row}>
-              <CategoryCell category={"Administration"} rowsPan={6} />
+            <tr key={19} className={styles?.table__body__row}>
+              <CategoryCell category={"Support Services"} rowsPan={6} />
               <SubcategoryCell subcategory={"Email support"} />
               <td className={`${cx("bodyBoldSM")}`}>
                 <img
@@ -415,7 +415,7 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
                 ></img>
               </td>
             </tr>
-            <tr key={19} className={styles?.table__body__row}>
+            <tr key={20} className={styles?.table__body__row}>
               <SubcategoryCell subcategory={"Slack support"} />
               <td className={`${cx("bodyBoldSM")}`}>
                 <img
@@ -430,7 +430,7 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
                 ></img>
               </td>
             </tr>
-            <tr key={20} className={styles?.table__body__row}>
+            <tr key={21} className={styles?.table__body__row}>
               <SubcategoryCell subcategory={"Account team"} />
 
               <td className={`${cx("bodyBoldSM")}`}>
@@ -446,7 +446,7 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
                 ></img>
               </td>
             </tr>
-            <tr key={21} className={styles?.table__body__row}>
+            <tr key={22} className={styles?.table__body__row}>
               <SubcategoryCell subcategory={"24x7"} />
               <td className={`${cx("bodyBoldSM")}`}>
                 <img
@@ -456,7 +456,7 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
               </td>
               <td className={`${cx("bodyBoldSM")}`}>Add-on</td>
             </tr>
-            <tr key={22} className={styles?.table__body__row}>
+            <tr key={23} className={styles?.table__body__row}>
               <SubcategoryCell subcategory={"SLAs"} />
               <td className={`${cx("bodyBoldSM")}`}>
                 <img
@@ -466,7 +466,7 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
               </td>
               <td className={`${cx("bodyBoldSM")}`}>Add-on</td>
             </tr>
-            <tr key={23} className={styles?.table__body__row}>
+            <tr key={24} className={styles?.table__body__row}>
               <SubcategoryCell subcategory={"Onboarding and training"} />
               <td className={`${cx("bodyBoldSM")}`}>
                 <img

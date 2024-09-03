@@ -35,7 +35,6 @@ const ChosenBlogsSection: React.FC<ISectionProps> = props => {
           <div className={styles.blogs__container}>
             {blogs ? (
               blogs?.map((el, index) => {
-                console.log("blogs", blogs)
                 return (
                   <BlogDetailedPreview
                     id={el?.id}

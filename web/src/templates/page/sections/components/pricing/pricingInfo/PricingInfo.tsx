@@ -30,12 +30,12 @@ export type ISectionProps = {
     paragraph_2: string
     button: ButtonModel
   }
-  panelTitle: string
-  paragraph_1: string
-  paragraph_2: string
+  panelTitle?: string
+  paragraph_1?: string
+  paragraph_2?: string
   button?: ButtonModel
   licenses: IProductModel[]
-  infoToggles: InfoTogglesPricingModel
+  infoToggles?: any
   subOptionClickedID?: string
 }
 
