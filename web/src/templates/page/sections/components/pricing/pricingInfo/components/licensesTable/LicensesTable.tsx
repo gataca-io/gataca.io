@@ -403,7 +403,7 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
             </tr>
             <tr key={19} className={styles?.table__body__row}>
               <CategoryCell category={"Support Services"} rowsPan={6} />
-              <SubcategoryCell subcategory={"Email support"} />
+              <SubcategoryCell subcategory={"Ticketing System"} />
               <td className={`${cx("bodyBoldSM")}`}>
                 <img
                   className={styles?.table__body__row__cell__icon}

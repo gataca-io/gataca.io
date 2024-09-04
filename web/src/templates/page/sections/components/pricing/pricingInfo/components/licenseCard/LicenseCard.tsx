@@ -163,7 +163,7 @@ const LicenseCard: React.FC<ILicenseCardProps> = props => {
                   label="Credentials"
                 />
 
-                <Feature label="Email Support" />
+                <Feature label="Standard support" />
               </>
             ) : null}
 
