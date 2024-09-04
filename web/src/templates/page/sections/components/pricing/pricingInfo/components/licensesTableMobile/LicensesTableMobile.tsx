@@ -394,7 +394,7 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
         <div className={styles?.card}>
           <CardHeader title={"Support Services"} />
           <div className={styles?.card__row}>
-            <CardLeftColumn text={"Email support"} />
+            <CardLeftColumn text={"Ticketing System"} />
             <IconDataCell
               data={getGatacaTiersLicense()?.features?.emailSupport}
             />
