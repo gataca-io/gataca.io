@@ -36,11 +36,11 @@ export const headerMenuOptions: LinkModel[] = [
         label: "Gataca Wallet",
         route: "/products/wallet",
       },
-      // {
-      //   id: "gatacaVouch",
-      //   label: "Gataca Vouch",
-      //   route: "/products/gataca-vouch",
-      // },
+      {
+        id: "gatacaVouch",
+        label: "Gataca Vouch",
+        route: "/products/gataca-vouch",
+      },
     ],
   },
   {
@@ -205,16 +205,16 @@ export const footerMenuOptions: LinkModel[] = [
         label: "Gataca Wallet",
         route: "/products/wallet",
       },
-      // {
-      //   id: "gatacaVouch",
-      //   label: "Gataca Vouch",
-      //   route: "/products/gataca-vouch",
-      // },
-      /* {
+      {
+        id: "gatacaVouch",
+        label: "Gataca Vouch",
+        route: "/products/gataca-vouch",
+      },
+      {
         id: "pricing",
         label: "Pricing",
         route: "/pricing",
-      }, */
+      },
       {
         id: "logIn",
         label: "Log In",
