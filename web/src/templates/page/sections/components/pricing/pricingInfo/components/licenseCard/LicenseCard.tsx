@@ -34,7 +34,7 @@ const Feature: React.FC<IFeatureProps> = props => {
     >
       {!notAvailableNow && (
         <>
-          <img src={images.greenCheckIcon} alt={"Gataca Google Play"} />
+          <img src={images.greenCheckIcon} alt={"Check icon image"} />
         </>
       )}
       <div

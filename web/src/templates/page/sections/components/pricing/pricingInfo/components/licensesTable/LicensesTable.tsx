@@ -266,7 +266,9 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
             <tr key={9} className={styles?.table__body__row}>
               <SubcategoryCell
                 subcategory={"Extra credentials"}
-                information={infoToggles?.extraCredentials}
+                information={
+                  "Purchase additional pools of credentials for issuance"
+                }
               />
               <td className={`${cx("bodyBoldSM")}`}>
                 <img

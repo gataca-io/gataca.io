@@ -284,7 +284,9 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
           <div key={8} className={styles?.card__row}>
             <CardLeftColumn
               text={"Extra credentials"}
-              information={infoToggles?.extraCredentials}
+              information={
+                "Purchase additional pools of credentials for issuance"
+              }
             />
             <IconDataCell
               key={"SE__" + license?.type}

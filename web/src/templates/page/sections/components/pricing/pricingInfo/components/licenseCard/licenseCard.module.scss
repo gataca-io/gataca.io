@@ -129,11 +129,16 @@
           margin-left: 9px;
           & > span {
             font-weight: bold;
-            font-size: 13px;
+            font-family: "Poppins";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
             line-height: 15px !important;
           }
           & > .featureName {
-            font-size: 13px;
+            font-family: "Poppins";
+            font-size: 16px;
+            font-style: normal;
             font-weight: normal !important;
             width: fit-content;
             margin-bottom: 0;
