@@ -115,6 +115,7 @@ module.exports = {
           "/company/becomeAPartner/": "/company/partnership/",
           "/privacyPolicy/": "/privacy-policy/",
           "/cookiePolicy/": "/cookie-policy/",
+          "/legalNotice/": "/legal-notice/",
           "/termsOfUse/": "/generic-terms-of-service/",
           "/termsOfUseWallet/": "/terms-of-service-wallet/",
           "/termsOfServiceStudio/": "/terms-of-service-studio/",
