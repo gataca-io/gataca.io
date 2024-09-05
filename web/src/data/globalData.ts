@@ -356,8 +356,8 @@ export const footerMenuOptions: LinkModel[] = [
         route: "/cookie-policy",
       },
       {
-        id: "termsOfUse",
-        label: "Terms of Use",
+        id: "legalNotice",
+        label: "Legal Notice",
         route: "/legal-notice",
       },
       /*
