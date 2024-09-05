@@ -371,17 +371,11 @@ const CookiePolicy: React.FC<PageProps> = () => {
               <h4 className={cx("heading4 marginBottom32")}>8. Contact</h4>
               <p className={cx("marginBottom20")}>
                 If you have any questions about this Cookie Policy, please
-                contact us by e-mail:{" "}
-                <a href="mailto: legal@gataca.io" type="email">
-                  legal@gataca.io
+                contact our Data Protection Officer at
+                <a href="mailto: dpo@gataca.io" type="email">
+                  dpo@gataca.io
                 </a>
-              </p>
-              <p className={cx("marginBottom20")}>
-                We also inform you that Gataca has a Data Protection Officer,
-                who may be contacted at the following address
-                <a href="mailto: gdpr@gataca.io" type="email">
-                  gdpr@gataca.io
-                </a>
+                .
               </p>
             </div>
           </div>
