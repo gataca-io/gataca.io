@@ -358,7 +358,7 @@ export const footerMenuOptions: LinkModel[] = [
       {
         id: "termsOfUse",
         label: "Terms of Use",
-        route: "/generic-terms-of-service",
+        route: "/legal-notice",
       },
       /*
       {
