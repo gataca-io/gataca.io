@@ -371,7 +371,7 @@ const CookiePolicy: React.FC<PageProps> = () => {
               <h4 className={cx("heading4 marginBottom32")}>8. Contact</h4>
               <p className={cx("marginBottom20")}>
                 If you have any questions about this Cookie Policy, please
-                contact our Data Protection Officer at
+                contact our Data Protection Officer at{" "}
                 <a href="mailto: dpo@gataca.io" type="email">
                   dpo@gataca.io
                 </a>
