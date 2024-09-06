@@ -57,31 +57,71 @@ const TermsOfUseWallet: React.FC<PageProps> = () => {
           <h1 className={cx("heading1 marginBottom32")}>
             Gataca Wallet | Terms of service
           </h1>
-          <p className={cx("bodyRegularXL")}>Effective date: August 19, 2022</p>
+          <p className={cx("bodyRegularXL")}>
+            Effective date: September 5th, 2024
+          </p>
         </div>
         <div className={styles?.sectionMain}>
           <div className={styles?.sectionMain__dataContentCol}>
+            <div className={styles?.contentCol__section}>
+              <p className={cx("marginBottom20")}>
+                <b>
+                  PLEASE READ THESE TERMS AND CONDITIONS CAREFULLY BEFORE
+                  STARTING TO USE THE Gataca WALLET
+                </b>
+              </p>
+            </div>
             <div className={styles?.contentCol__section} id="introduction__1">
               <h4 className={cx("heading4 marginBottom32")}>1. Introduction</h4>
-
               <p className={cx("marginBottom20")}>
-                These specific Terms of Service (“<b>Agreement</b>”) is a legal
-                agreement between you and Gataca for the use of our Wallet.
+                Gataca Labs S.L.U. and its affiliates (referred to as “
+                <b>Gataca</b>” or “<b>we</b>”, “<b>our</b>” or “<b>us</b>”) is a
+                cybersecurity company incorporated under the laws of Spain that
+                provides decentralized digital identity technology through our
+                software applications, including but not limited to our mobile
+                ID wallet (the “<b>Wallet</b>”), and our identity platform for
+                companies (“<b>Gataca Studio</b>”).
               </p>
               <p className={cx("marginBottom20")}>
-                For generic Terms of Services related to all Gataca’s offerings,
-                please refer to{" "}
-                <Link to={"https://gataca.io/generic-terms-of-service"}>
-                  Generic Terms of Service
-                </Link>
-                .
+                The terms “<b>you</b>”, “<b>your</b>”, and “<b>user</b>” refer
+                to you as an individual.
               </p>
               <p className={cx("marginBottom20")}>
-                The Wallet and its electronic interactions with any products and
-                services provided by Gataca, such as the Website or the Gataca
-                Platform, are referred to here as (collectively the “
-                <b>Contents</b>”).
+                These specific Terms of Service (“<b>Terms</b>” or the “
+                <b>Agreement</b>”) is a legal agreement between you and Gataca
+                for the use of the Wallet.
               </p>
+              <p className={cx("marginBottom20")}>
+                The Wallet includes graphics, photographs, artwork, images,
+                screen shots, text, digital files, trademarks, logos, product
+                names, slogans, other materials, and third-party content (the “
+                <b>Content</b>”) provided by Gataca or its licensors.
+              </p>
+              <p className={cx("marginBottom20")}>
+                These Terms include by reference the following additional terms
+                and policies which shall constitute a part of this Agreement:
+              </p>
+              <ul>
+                <li className={cx("marginBottom20")}>
+                  <p>
+                    Gataca's,{" "}
+                    <a href="https://gataca.io/privacy-policy/" target="_blank">
+                      Privacy Policy
+                    </a>{" "}
+                    and{" "}
+                    <a href="https://gataca.io/cookie-policy/" target="_blank">
+                      Cookies Policy
+                    </a>
+                    .
+                  </p>
+                </li>
+                <li className={cx("marginBottom20")}>
+                  <p>
+                    <b></b>Additional terms and conditions, which may include
+                    those from third parties.
+                  </p>
+                </li>
+              </ul>
             </div>
             <div
               className={styles?.contentCol__section}
@@ -91,132 +131,166 @@ const TermsOfUseWallet: React.FC<PageProps> = () => {
                 2. Acceptance of Terms
               </h4>
               <p className={cx("marginBottom20")}>
-                To use the Service, you must review and accept these Terms. By
-                clicking on “Create Wallet,” or “Open your Wallet”, indicating
-                acceptance electronically, or by accessing or using our Service,
-                you agree to a full, complete and unreserved acceptance of each
-                and every one of the terms included in this Agreement.
+                You must be over 14 years old to use the Wallet.
               </p>
               <p className={cx("marginBottom20")}>
-                This Agreement includes by reference:
+                By clicking on “Create Wallet,” or “Open your Wallet”,
+                indicating acceptance electronically, or by accessing or using
+                the Wallet, you agree to a full, complete and unreserved
+                acceptance of each and every one of the terms included in these
+                Terms.
               </p>
-              <ul>
-                <li className={cx("marginBottom20")}>
-                  <p>
-                    Gataca’s{" "}
-                    <Link to={termOfServiceURL}> Generic Terms of Service</Link>
-                    : includes generic clauses and clauses common to all
-                    products and services, including the Service subject matter
-                    of this Agreement.
-                  </p>
-                </li>
-                <li className={cx("marginBottom20")}>
-                  <p>
-                    Gataca's <Link to={privacyPolicyURL}>Privacy Policy</Link>
-                  </p>
-                </li>
-                <li className={cx("marginBottom20")}>
-                  <p>
-                    Gataca’s <Link to={cookiePolicyURL}>Cookies Policy</Link>
-                  </p>
-                </li>
-                <li className={cx("marginBottom20")}>
-                  <p>
-                    Any terms provided separately to you for the Service,
-                    including product terms, payment terms, data processing
-                    agreements, etc. <Link to={""}></Link>
-                  </p>
-                </li>
-                <li className={cx("marginBottom20")}>
-                  <p>
-                    Additional terms and conditions, which may include those
-                    from third parties.
-                    <Link to={""}></Link>
-                  </p>
-                </li>
-              </ul>
               <p className={cx("marginBottom20")}>
-                <b>
-                  IF YOU DO NOT AGREE TO ALL THESE TERMS, YOU SHALL REFRAIN FROM
-                  USING THE SERVICE.
-                </b>
+                If you do not agree to all these Terms, you shall refrain from
+                using the Wallet.
               </p>
             </div>
-            <div
-              className={styles?.contentCol__section}
-              id="rightsUseOfService__3"
-            >
+            <div className={styles?.contentCol__section} id="accessToWallet__3">
               <h4 className={cx("heading4 marginBottom32")}>
-                3. Your rights to use the service
+                3. Access to the Wallet
               </h4>
               <p className={cx("marginBottom20")}>
-                The Service is protected by copyright, trade secret, and other
-                intellectual property laws. You are only granted the right to
-                use the Service and only for the purposes described by Gataca.
+                The operating systems that support the download of the Wallet
+                are iOS and Android.
               </p>
               <p className={cx("marginBottom20")}>
-                Until termination of this Agreement and as long as you meet any
-                applicable payment obligations and comply with this Agreement,
-                Gataca grants to you a non-exclusive, non-transferable,
-                revocable license to you for the purpose of using the Wallet, at
-                your election and without obligation. Gataca reserves all other
-                rights in the Service.
+                In order to use the Wallet you must access Google Play or Apple
+                Store and download the application (hereinafter "<b>App</b>").
+                Once the App is downloaded, you must provide a valid email
+                address, and accept these Terms to create your Wallet account.
+              </p>
+              <p className={cx("marginBottom20")}>
+                The creation of a Wallet account and the use of the Wallet are
+                free of charge.
               </p>
             </div>
             <div
               className={styles?.contentCol__section}
-              id="accountRegistration__4"
+              id="rightsUseOfService__4"
             >
               <h4 className={cx("heading4 marginBottom32")}>
-                4. Account Registration and User Data
+                4. Your rights to use the service
+              </h4>
+              <p className={cx("marginBottom20")}>
+                You are only granted the right to use the Wallet and only for
+                the purposes described by Gataca.
+              </p>
+              <p className={cx("marginBottom20")}>
+                Until termination of these Terms and as long as you comply with
+                these Terms, Gataca grants to you a non-exclusive,
+                non-transferable, revocable license to you for the purpose of
+                using the Wallet, at your election and without obligation.
+                Gataca reserves all other rights in the Wallet.
+              </p>
+              <p className={cx("marginBottom20")}>
+                These Terms shall be in force for as long as you use the Wallet.
+              </p>
+            </div>
+            <div
+              className={styles?.contentCol__section}
+              id="responsibilitiesRestrictions__5"
+            >
+              <h4 className={cx("heading4 marginBottom32")}>
+                5. Responsibilities and restrictions
               </h4>
               <p className={cx("marginBottom20")}>
                 <b>4.1 Account Registration</b>
               </p>
               <p className={cx("marginBottom20")}>
-                During the Gataca Wallet registration process, you shall provide
-                an email address. Upon successful registration, you will have in
-                your Wallet two Credentials issued by Gataca, one created from
-                the email address you provided, and another Credential with your
-                Device ID automatically retrieved from your mobile device.
+                You will use the Wallet only in compliance with these Terms,
+                then in effect and all applicable laws and regulations. You
+                shall also be responsible for maintaining the security of your
+                account and of the device you install the App.
               </p>
               <p className={cx("marginBottom20")}>
-                The email address provided during the registration process is
-                used as a User account identifier. Gataca will store both your
-                email address and Device ID with the sole purpose of providing
-                the Service and sending you communications related to the
-                Service.
+                You shall not, directly or indirectly:
+              </p>
+              <ul>
+                <li className={cx("marginBottom20")}>
+                  <p>
+                    <b></b>attempt to discover the source code, object code or
+                    underlying structure, ideas, know-how or algorithms relevant
+                    to the Wallet or any software, documentation or data related
+                    to the Wallet;
+                  </p>
+                </li>
+                <li className={cx("marginBottom20")}>
+                  <p>
+                    <b></b>interfere with any license key mechanism in the
+                    Wallet or otherwise circumvent mechanisms in the Wallet
+                    intended to limit the authorized use;
+                  </p>
+                </li>
+                <li className={cx("marginBottom20")}>
+                  <p>
+                    <b></b>attempt to gain unauthorized access to the Wallet or
+                    to any server, computer or database related to the Wallet;
+                  </p>
+                </li>
+                <li className={cx("marginBottom20")}>
+                  <p>
+                    <b></b>launch or facilitate, whether intentionally or
+                    unintentionally, any activity that adversely impacts the
+                    availability, reliability, or stability of the Wallet
+                    service;
+                  </p>
+                </li>
+                <li className={cx("marginBottom20")}>
+                  <p>
+                    <b></b>use the Wallet to engage in dangerous and illegal
+                    activities including its use for purposes other than those
+                    intended;
+                  </p>
+                </li>
+                <li className={cx("marginBottom20")}>
+                  <p>
+                    <b></b>use the Wallet for competitive analysis or to build
+                    competitive products;
+                  </p>
+                </li>
+                <li className={cx("marginBottom20")}>
+                  <p>
+                    <b></b>modify, translate, or create derivative works based
+                    on the Wallet or its Content;
+                  </p>
+                </li>
+                <li className={cx("marginBottom20")}>
+                  <p>
+                    <b></b>rent, lease, distribute, sell, sublicense, transfer,
+                    or provide access to the Wallet to a third party;
+                  </p>
+                </li>
+                <li className={cx("marginBottom20")}>
+                  <p>
+                    <b></b>remove any proprietary notices or labels;
+                  </p>
+                </li>
+                <li className={cx("marginBottom20")}>
+                  <p>
+                    <b></b>attempt to access another user’s account, impersonate
+                    a person or organization, or misrepresent your identity.
+                  </p>
+                </li>
+              </ul>
+              <p className={cx("marginBottom20")}>
+                Access to the Wallet and any associated accounts may be
+                suspended, as outlined in Clause 12.2, if Gataca determines that
+                you have committed multiple violations or a material breach of
+                these Terms. Additionally, you may be barred from creating a new
+                account
               </p>
               <p className={cx("marginBottom20")}>
-                <b>4.2 User Data</b>
+                Also, failure to comply with this clause may lead to the
+                commission of offenses punishable by the applicable regulations.
+                We will report any such breach to the relevant authorities and
+                will cooperate with them to discover the identity of the
+                attacker.
               </p>
+            </div>
+            <div className={styles?.contentCol__section} id="userData__6">
+              <h4 className={cx("heading4 marginBottom32")}>6. User Data</h4>
               <p className={cx("marginBottom20")}>
-                Your DIDs, your cryptographic key pairs, Credentials licitly
-                obtained and stored in your Wallet, and your backup files and
-                any other data, included but not limited to End User Personal
-                Data that the End User provides to us or to our Clients, are
-                referred to here as “User Data”.
-              </p>
-              <p className={cx("marginBottom20")}>
-                YOU ACKNOWLEDGE AND ACCEPT THAT YOU ARE SOLELY RESPONSIBLE FOR
-                THE CUSTODY OF YOUR USER DATA.
-              </p>
-              <p className={cx("marginBottom20")}>
-                You have the ability to delete all User Data from your device
-                via the Wallet interface.
-              </p>
-              <p className={cx("marginBottom20")}>
-                You acknowledge and accept that deleting the App from your
-                device does not delete the User Data from your device.
-              </p>
-              <p className={cx("marginBottom20")}>
-                To obtain further information about the processing of the User
-                Data, please visit our{" "}
-                <Link to={privacyPolicyURL}>Privacy Policy</Link>
-              </p>
-
-              <p className={cx("marginBottom20")}>
-                <b>4.2.1 DIDs</b>
+                <b>6.1 Definitions</b>
               </p>
               <p className={cx("marginBottom20")}>
                 When setting up a Wallet account with Gataca, you acknowledge
@@ -224,176 +298,72 @@ const TermsOfUseWallet: React.FC<PageProps> = () => {
                 <b>DIDs</b>”) on your behalf.
               </p>
               <p className={cx("marginBottom20")}>
-                Gataca publishes DIDs and associated public cryptographic keys
-                on one of the supported blockchain networks to serve as on-chain
-                identifiers. You understand and accept that information on
-                blockchain networks cannot be deleted due to the immutability
-                property of such technologies.
-              </p>
-              <p className={cx("marginBottom20")}>
-                <b>4.2.2 Cryptographic keys</b>
-              </p>
-              <p className={cx("marginBottom20")}>
                 The Gataca Wallet creates on your behalf one or more
-                cryptographic key pairs for each DID. Cryptographic key pairs
-                are composed of one or more public key and associated private
-                keys. The public keys will be linked to your DIDs and published
-                on a designated blockchain network.
-              </p>
-              <p className={cx("marginBottom20")}>
-                The private keys will be used by the Wallet to execute signing
-                and encryption or decryption activities within the Wallet. The
-                private keys are stored in the secure enclave of your device and
-                are only accessible by the Wallet using your biometric
-                information (fingerprint or face ID) enabled by hardware-based
-                device capabilities. You shall have biometric capabilities in
-                your device for the use of the Service.
-              </p>
-              <p className={cx("marginBottom20")}>
-                You agree to (a) keep your private keys confidential and to not
-                share it with anyone else and (b) to not enable biometric
-                information from other individuals in your device where the
-                Wallet is installed.
-              </p>
-              <p className={cx("marginBottom20")}>
-                <b>4.2.3 Verifiable Credentials</b>
+                cryptographic key pairs for each DID. Cryptographic key pairs (“
+                <b>Cryptographic Keys</b>”) are composed of one or more public
+                key and associated private keys. The private keys will be used
+                by the Wallet to execute signing and encryption or decryption
+                activities within the Wallet. You agree to keep your private
+                keys confidential and to not share them with anyone else.
               </p>
               <p className={cx("marginBottom20")}>
                 With the Wallet you can download, create, store, share and
                 manage personal information in electronic format, following the
-                Verifiable Credentials data model specified by the W3C
-                (“Credentials”). You may (a) download Credentials into your
-                Wallet that contain claims about you and are attested by Gataca
-                or third-parties, (b) create your own Credentials from the
-                limited set of Credential types offered in the Wallet and (c)
-                share any of the Credentials stored in your Wallet with third
-                parties that have Credential validation capabilities.
+                Verifiable Credentials data model (“<b>Credentials</b>”).
+                Self-issued and downloaded Credentials are stored in your mobile
+                device.
               </p>
               <p className={cx("marginBottom20")}>
-                GATACA DOES NOT HAVE ACCESS TO, NOR COLLECTS DATA ABOUT
-                DOWNLOADED CREDENTIALS ATTESTED BY THIRD PARTIES OR
-                SELF-ATTESTED CREDENTIALS THAT ARE NOT VALIDATED BY Gataca, OR
-                HOW CREDENTIALS ARE USED OR SHARED WITH THIRD PARTIES.
+                Your DIDs, your Cryptographic Keys, your Credentials licitly
+                obtained and stored in your Wallet, and your backup files and
+                any other data, included but not limited to your Personal Data
+                that you provides to us or to our Clients, are referred to here
+                as “<b>User Data</b>”.
               </p>
               <p className={cx("marginBottom20")}>
-                Gataca makes no representation or warranty regarding the
-                veracity or accuracy of Credentials issued by you or Third
-                Parties, or regarding the use of any or all of your Credentials
-                in your relationship with Third Parties. You are responsible for
-                complying with the Terms and Conditions that these Third Parties
-                may impose on Credentials ISSUED TO YOU or on your use of their
-                Services and you agree not hold Gataca liable for any
-                infringement of such Terms and Conditions.
+                <b>6.2 Processing of User Data</b>
+              </p>
+              <p className={cx("marginBottom20")}>
+                You acknowledge and accept that you are solely responsible for
+                the custody of your User Data.
+              </p>
+              <p className={cx("marginBottom20")}>
+                You acknowledge and accept that in the event of loss, damage or
+                stolen mobile device, or due to service errors, you may
+                experience a total/partial loss of User Data.
+              </p>
+              <p className={cx("marginBottom20")}>
+                Gataca does not have access to, nor collects data about
+                Credentials or how they are used or shared with third parties.
               </p>
               <p className={cx("marginBottom20")}>
                 Notwithstanding the foregoing, you acknowledge and accept that
                 Gataca stores information (a) about Credentials that are issued
-                by Gataca, for the sole purpose of providing the Service and (b)
-                about Credentials that you explicitly consent to sharing with
-                Gataca for the purpose of accessing other services provided by
-                Gataca.
+                by Gataca, for the sole purpose of providing the requested
+                Credential, (b) about Credentials that you explicitly consent to
+                sharing with Gataca, and (c) about Credentials that are issued
+                by third parties or shared with third parties by means of our
+                cloud-based Gataca Studio platform.
               </p>
               <p className={cx("marginBottom20")}>
-                <b>4.2.4 Backup services</b>
+                Where User Data includes Personal Data, clause 8 below (Data
+                Protection) of these Terms will apply.
               </p>
               <p className={cx("marginBottom20")}>
-                Gataca also provides backup and recovery services for the
-                content of your Wallet. The backup file generated by the Wallet
-                includes all your User Data and any other User-specific
-                information. The backup file is stored in a cloud storage system
-                provided by you in any of the cloud services that Gataca
-                supports. The backup file is protected by (a) a 6-digit security
-                code chosen by you and (b) a recovery code consisting of 44
-                case-sensitive letters provided by the Wallet (collectively, the
-                “<b>Secrets</b>”).
+                Gataca makes no representation or warranty regarding the
+                veracity or accuracy of your Credentials issued by you or third
+                parties, or regarding the use of any or all of your Credentials
+                in your relationship with third parties. You are responsible for
+                complying with the Terms and Conditions that these third parties
+                may impose on Credentials issued to you or on your use of their
+                services and you agree not hold Gataca liable for any
+                infringement of such terms and conditions.
               </p>
               <p className={cx("marginBottom20")}>
-                Gataca will not have access to or store any of your Secrets.
-              </p>
-              <p className={cx("marginBottom20")}>
-                You acknowledge and agree that you will be responsible for
-                keeping your Secrets and backup file secure, private,
-                confidential and to not share it with anyone else.
-              </p>
-            </div>
-            <div className={styles?.contentCol__section} id="responsibleUse__5">
-              <h4 className={cx("heading4 marginBottom32")}>
-                5. Responsible Use
-              </h4>
-              <p className={cx("marginBottom20")}>
-                You are obliged and undertake to use the Service and its
-                Contents, including the Contents in accordance with the
-                regulations applicable at all times, following the provisions of
-                these Terms and any other notice or instructions made known to
-                you, either by means of this document or any other means within
-                the Contents that are part of the Service, as well as complying
-                with the generally accepted rules of coexistence, respect,
-                morality and good customs.
-              </p>
-              <p className={cx("marginBottom20")}>
-                You are obliged and undertake not to use the Service and its
-                Contents for illicit purposes or effects, prohibited in this
-                document or by the applicable regulations, including but not
-                limited to actions that: (a) violates any third-party right,
-                including any copyright, trademark, patent, trade secret, moral
-                right, privacy right, right of publicity, or any other
-                intellectual property or proprietary right; (b) is harassing,
-                abusive, threatening, harmful, invasive of another’s privacy,
-                defamatory, false, intentionally misleading, pornographic,
-                patently offensive, promotes hatred or physical harm of any kind
-                against any group or individual or is otherwise objectionable;
-                (c) is in violation of any law, regulation, or obligations or
-                restrictions imposed by any third party; (d) attempts to bypass
-                or break any security mechanism on the Service which could pose
-                a security or service risk to us, other CLIENTS or END USERS;
-                (e) attempts to reverse-engineer the Service in order to find
-                limitations, vulnerabilities, or steal our Intellectual Property
-                including trade secrets, and copyrighted works; (f) launches or
-                facilitates, whether intentionally or unintentionally, any
-                activity that adversely impacts the availability, reliability,
-                or stability of the Services; (g) transmits any material or data
-                that contains viruses, Trojan horses, spyware, works, or any
-                other malicious or harmful program; (h) engages in any
-                unsolicited advertising, marketing, or other activities
-                prohibited by applicable law or regulation covering anti-spam,
-                data protection, or privacy legislation in any relevant
-                jurisdiction; (i) attempts to solicit information from
-                individuals without their explicit consent or under false
-                pretenses; (j) creates false identities, DIDs, credentials, or
-                any other attempt to use the Service for nefarious purposes.{" "}
-              </p>
-            </div>
-            <div
-              className={styles?.contentCol__section}
-              id="intellectualPropertyRights__6"
-            >
-              <h4 className={cx("heading4 marginBottom32")}>
-                6. Intellectual property rights
-              </h4>
-              <p className={cx("marginBottom20")}>
-                All trademarks, trade names, distinctive signs of any kind and
-                any intellectual property rights over the Service and its
-                Contents are the property of Gataca or, where appropriate, of
-                third parties.
-              </p>
-              <p className={cx("marginBottom20")}>
-                Under no circumstances does access to the Service imply any kind
-                of permission, waiver, transmission, license or total or partial
-                transfer of said rights.
-              </p>
-              <p className={cx("marginBottom20")}>
-                The unauthorised use of the information contained in this
-                Service, as well as any breach of the intellectual or industrial
-                property rights of Gataca or of third parties who have licensed
-                or assigned part of the Content, will give rise to the legally
-                established responsibilities.
-              </p>
-              <p className={cx("marginBottom20")}>
-                All copyrights of this document are also reserved by the
-                regulations and international treaties of intellectual property
-                that are applicable. Copying, reproduction or dissemination, in
-                whole or in part, by any means whatsoever, is expressly
-                prohibited.
+                You have the ability to delete all User Data from your device
+                via the Wallet interface. You acknowledge and accept that
+                deleting the App from your device may not delete the User Data
+                from your device.{" "}
               </p>
             </div>
             <div
@@ -401,53 +371,52 @@ const TermsOfUseWallet: React.FC<PageProps> = () => {
               id="securityRisksAndDowntime__7"
             >
               <h4 className={cx("heading4 marginBottom32")}>
-                7. Security Risks & Downtime
+                7. Security risks & downtime
               </h4>
               <p className={cx("marginBottom20")}>
                 <b>7.1 Security</b>
               </p>
               <p className={cx("marginBottom20")}>
-                You understand and agree that cryptography and blockchain
-                technologies are progressive fields. Technical advances in
-                decryption, quantum computing, or security flaws exploitation
-                may present risks to the Service or the Contents.
+                You acknowledge that cryptography technologies are continuously
+                evolving fields, which may pose risks to the Services and its
+                Content due to advancements in decryption, quantum computing, or
+                security vulnerabilities.
               </p>
               <p className={cx("marginBottom20")}>
                 Gataca takes security very seriously. Gataca will strive for
-                maximum levels of protection for the Service, by continuously
-                updating the code underlying the Service and incorporating new
+                maximum levels of protection for the Wallet, by continuously
+                updating the code underlying the Wallet and incorporating new
                 security measures that account for the risks of such technical
-                advances. Security risks may not be avoided despite our best
-                efforts. As such, Gataca does not guarantee or otherwise warrant
-                security of the Service. By using the Service or accessing the
-                Contents, you acknowledge these inherent risks.
+                advances.
               </p>
               <p className={cx("marginBottom20")}>
-                You agree to (a) regularly update the operating system of your
-                device and of any other computing system of the User that
-                interacts with the Service, and (b) to keep the Wallet always
-                updated with the last available version. Gataca is not
-                responsible for possible damages that may be caused as a
-                consequence of the presence of a virus or an unauthorized use in
-                the computer system used by you for the connection to the
-                Service and the Contents.
+                While Gataca is committed to implementing robust security
+                measures and regularly updating the Wallet's code to mitigate
+                these risks, we cannot guarantee absolute security. By using the
+                Wallet, you accept these inherent risks.
               </p>
               <p className={cx("marginBottom20")}>
-                You agree to notify Gataca of any breach of security or
-                unauthorized use to the Service.
-              </p>
-              <p className={cx("marginBottom20")}>
-                You shall not attempt to gain unauthorized access to this
-                Service or to any server, computer or database related to the
-                Service. You agree not to attack the Service through a denial of
-                service attack or a distributed denial of service attack.
-                Failure to comply with this clause may lead to the commission of
-                offenses punishable by the applicable regulations. We will
-                report any such breach to the relevant authorities and will
-                co-operate with them to discover the identity of the attacker.
+                You agree to keep your device's operating system up to date.
+                Gataca is not liable for damages resulting from viruses or
+                unauthorized use of your device in connection with the Wallet.
+                You also agree to promptly report any security breaches or
+                unauthorized use of the Wallet to Gataca.
               </p>
               <p className={cx("marginBottom20")}>
                 <b>7.2 Downtime</b>
+              </p>
+              <p className={cx("marginBottom20")}>
+                We strive to provide uninterrupted access to the Wallet. There
+                may be occasions where the Wallet may be unavailable due to
+                scheduled maintenance, upgrades, or circumstances beyond our
+                control such as internet outages, force majeure events, or
+                hardware failures. We will make reasonable efforts to minimize
+                any downtime and to promptly restore the Wallet to full
+                functionality. Gataca will, if possible, give notice of such
+                circumstances (suspension or interruption of access to the
+                Wallet and the Content) by including the information referred to
+                through the means of communication it deems appropriate for its
+                wider circulation.
               </p>
               <p className={cx("marginBottom20")}>
                 Gataca does not guarantee the non-existence of interruptions or
@@ -456,35 +425,23 @@ const TermsOfUseWallet: React.FC<PageProps> = () => {
                 you 100% of the time.
               </p>
               <p className={cx("marginBottom20")}>
-                Gataca will have no liability for any damage, liabilities,
-                losses (including any loss of data or profits) or any other
-                consequences that you may incur due to downtime of the Services.{" "}
+                <b>7.3 Developments, improvements and upgrades</b>
               </p>
               <p className={cx("marginBottom20")}>
-                Gataca, in an effort to mitigate risk inherent to Service errors
-                or to improve the Wallet capabilities, will release from time to
-                time, with or without notice, new releases of the Wallet. You
-                understand and acknowledge that such modifications may require
-                you to upgrade your hardware or software in order to use the
-                Wallet.
-              </p>
-
-              <p className={cx("marginBottom20")}>
-                <b>7.3 Loss of User data</b>
-              </p>
-              <p className={cx("marginBottom20")}>
-                You acknowledge and accept that in the event of loss, damage or
-                stolen mobile device, or due to Service errors, you may
-                experience a total/partial loss of User Data.
+                The developments, improvements and upgrades may refer to
+                performing any functional, technical, or technological
+                modifications from time to time (i) to accommodate changes in
+                the Wallet or its operation, (ii) to maintain or correct any
+                possible malfunction or anomaly that has been detected during
+                the use of the Service; (iii) to accommodate changes in the
+                applicable Law, and/or (iv) whenever Gataca deemed useful or
+                necessary, or simply for the achievement of better or new
+                functionalities.
               </p>
               <p className={cx("marginBottom20")}>
-                You may regain access to your User Data by recovering it from a
-                backup file, but you are responsible for the generation and
-                provisioning of said file and the necessary Secrets.
-              </p>
-              <p className={cx("marginBottom20")}>
-                Gataca will not be held liable for any total/partial loss of
-                User Data.
+                You understand and acknowledge that the Wallet is subject to
+                modifications by Gataca and that such modifications may require
+                you to upgrade your hardware or operating system.
               </p>
             </div>
             <div
@@ -498,11 +455,19 @@ const TermsOfUseWallet: React.FC<PageProps> = () => {
                 <b>8.1 Warranties</b>
               </p>
               <p className={cx("marginBottom20")}>
-                YOU UNDERSTAND AND AGREE THAT YOUR USE OF THE SERVICE IT AT YOUR
-                SOLE RISK. Gataca makes no warranties of any kind, including but
-                not limited to with respect to the Service and the Contents,
-                whether express, implied, statutory, of merchantability,
-                non-infringement or otherwise.
+                You understand and agree that your use of the Wallet is at your
+                sole risk. Gataca makes no warranties of any kind, including but
+                not limited to with respect to the Wallet, the Content, and the
+                User Data, whether express, implied, statutory, of
+                merchantability, non-infringement or the absence of
+                interruptions or errors in the Wallet or its Content; however,
+                we will make commercially reasonable efforts to ensure the
+                Wallet remains available to you as consistently as possible.
+              </p>
+              <p className={cx("marginBottom20")}>
+                Without prejudice to the aforementioned, if you are acting as a
+                consumer you are entitled to all the legal rights granted to
+                consumers by your country's legislation.
               </p>
               <p className={cx("marginBottom20")}>
                 <b>8.2 Liabilities</b>
@@ -512,92 +477,206 @@ const TermsOfUseWallet: React.FC<PageProps> = () => {
                 legislation in force, any liability for damages of any nature,
                 including but not limited to damages that may be due to the lack
                 of availability, security, continuity or quality of the
-                functioning of the Service and the Contents, and the
-                non-fulfilment of the expectation of usefulness that you may
-                have attributed to the Service and the Contents.
+                functioning of the Wallet and the Content, any total/partial
+                loss of User Data and the non-fulfilment of the expectation of
+                usefulness that you may have attributed to the Wallet and the
+                Content.
+              </p>
+              <p className={cx("marginBottom20")}>
+                Additionally, except as otherwise provided by applicable law,
+                Gataca shall have no liability for: (a) lost profits, revenues,
+                business opportunities, goodwill or anticipated savings; (b)
+                indirect or consequential losses; (c) punitive damages; (d)
+                losses not caused by our breach of these Terms or by our
+                actions;and/or (e) losses that neither we nor you can foresee at
+                the time these Terms come into force, or events beyond our
+                control.
+              </p>
+              <p className={cx("marginBottom20")}>
+                Without prejudice to the aforementioned, if you are acting as a
+                consumer you are entitled to all the legal rights granted to
+                consumers by your country's legislation.
               </p>
               <p className={cx("marginBottom20")}>
                 <b>8.3 Indemnity</b>
               </p>
               <p className={cx("marginBottom20")}>
-                You agree to defend, indemnify, and hold Gataca harmless,
-                including its subsidiaries, affiliates, and all of its
-                respective officers, agents, partners, and employees, from and
-                against any loss, damage, liability, claim, or demand, including
-                reasonable attorneys’ fees and expenses, made by any third party
-                due to or arising out of: (1) your contributions; (2) use of the
-                Service; (3) breach of these Terms; (4) any breach of your
+                To the extent permitted by applicable law, specifically if If
+                you are business user or an organization, you agree to defend,
+                indemnify, and hold Gataca harmless, including its subsidiaries,
+                affiliates, and all of its respective officers, agents,
+                partners, and employees, from and against any loss, damage,
+                liability, claim, or demand, including reasonable attorneys’
+                fees and expenses, made by any third party due to or arising out
+                of: (1) your use of your User Data; (2) your use of the Wallet;
+                (3) breach of these Terms; (4) any breach of your
                 representations and warranties set forth in these Terms; (5)
                 your violation of the rights of a third party, including but not
                 limited to intellectual property rights; or (6) any harmful act
                 toward any other User of the Service with whom you connected via
-                the Service. Notwithstanding the foregoing, Gataca reserves the
-                right, at its own expense, to assume exclusive defense and
-                control of any matter otherwise subject to indemnification by
-                you and, in such case, you agree to cooperate with Gataca in the
-                defense of such matter.
+                the Wallet.
+              </p>
+              <p className={cx("marginBottom20")}>
+                Notwithstanding the foregoing, Gataca reserves the right, at its
+                own expense, to assume exclusive defense and control of any
+                matter otherwise subject to indemnification by you and, in such
+                case, you agree to cooperate with Gataca in the defense of such
+                matter.
+              </p>
+              <p className={cx("marginBottom20")}>
+                <b>8.4 Force Majeure</b>
+              </p>
+              <p className={cx("marginBottom20")}>
+                Gataca will not be liable for any failure or delay in its
+                performance under these Terms due to any cause beyond its
+                reasonable control, including acts of war, acts of God,
+                pandemia, labor shortages or disputes, governmental acts or
+                failure or degradation of the Internet or telecommunications
+                services. Gataca will give you prompt notice of such cause and
+                will make commercially reasonable efforts to promptly correct
+                such failure or delay in performance.
               </p>
             </div>
-            <div
-              className={styles?.contentCol__section}
-              id="linksOtherSites__9"
-            >
+            <div className={styles?.contentCol__section} id="dataProtection__9">
               <h4 className={cx("heading4 marginBottom32")}>
-                9. Links to other sites
+                9. Data protection
               </h4>
               <p className={cx("marginBottom20")}>
-                Our Service may contain links to other sites that are not
-                operated by Gataca. If you click a third-party link, you will be
-                directed to that third party's site. We strongly advise you to
-                review the Privacy Policy of every site you visit.
-              </p>
-              <p className={cx("marginBottom20")}>
-                We have no control over and assume no responsibility for the
-                content, privacy policies or practices of any third-party sites
-                or services.
+                In accordance with the applicable data protection regulations,
+                all Personal Data (as defined in Art. 4 of the GDPR) provided by
+                you or to you while using the Wallet will be processed in
+                accordance with the provisions of our{" "}
+                <a href="https://gataca.io/privacy-policy" target="_blank">
+                  Privacy Policy
+                </a>{" "}
+                and, where applicable, the{" "}
+                <a href="https://gataca.io/cookie-policy" target="_blank">
+                  Cookies Policy
+                </a>
+                . By using the Wallet, you acknowledge and accept the processing
+                of such Personal Data and declare that all information or data
+                provided is true, current and corresponds to reality.
               </p>
             </div>
             <div
               className={styles?.contentCol__section}
-              id="amendmentTermination__10"
+              id="intellectualProperty__10"
             >
               <h4 className={cx("heading4 marginBottom32")}>
-                10. Amendment and Termination
+                10. Intellectual Property
               </h4>
               <p className={cx("marginBottom20")}>
-                Gataca advises Users to read this document carefully each time
-                they access the Contents and/or Service hosted and reproduced.
+                The Wallet and the Content are protected by copyright, trade
+                secret, and other intellectual property laws.
               </p>
               <p className={cx("marginBottom20")}>
-                Gataca reserves the right to unilaterally modify these Terms at
-                any time, in whole or in part. The modification shall take
-                effect as soon as it is published in the permanent link or in
-                the conditions associated with the registration. If you do not
-                agree to the modifications introduced, you shall refrain from
-                using the Service.
+                Gataca shall remain the exclusive owner of any and all
+                intellectual property rights, whether registered or not, owned,
+                owned or licensed by Gataca. These Terms in no case implies the
+                assignment, transfer, acquisition or license of the Gataca’s
+                intellectual property over the Wallet, software or any other
+                information and documentation owned by Gataca. You are only
+                authorized to use the Gataca’s intellectual property when you
+                have an explicit and unequivocal permission, and in the manner
+                specified by Gataca in these Terms or order forms and associated
+                with the Wallet.
               </p>
               <p className={cx("marginBottom20")}>
-                Gataca may choose to unilaterally interrupt, suspend or
-                terminate access to the Service and the Contents, regardless of
-                the provisions of the conditions governing the provision of the
-                Service and/or Contents provided. Such situations shall not
-                alter the validity of the prohibitions on the use of the
-                Contents set forth herein.
+                Any new intellectual property generated during the term of this
+                Agreement and in connection with the Wallet, improvements,
+                enhancements or modifications thereto, and all intellectual
+                property rights related thereto, and/or Gataca Technology shall,
+                in any case, automatically and exclusively belong to Gataca.
               </p>
               <p className={cx("marginBottom20")}>
-                Gataca will, if possible, give notice of such circumstances
-                (suspension, interruption or termination of access to the
-                Contents) by including the information referred to through the
-                means of communication it deems appropriate for its wider
-                circulation.
+                Any ideas, questions, answers, suggestions, or comments
+                ("Feedback") provided by you to us shall not be considered
+                confidential or proprietary information. By providing us with
+                Feedback, you authorize us to use it, along with any
+                developments or derivatives thereof, determined at our sole
+                discretion, without requiring additional permission from you or
+                payment of compensation to you.
+              </p>
+              <p className={cx("marginBottom20")}>
+                You agree that (i) by submitting unsolicited ideas to us or any
+                of our representatives, you automatically forfeit your right to
+                any intellectual property rights in these ideas; and (ii)
+                unsolicited ideas submitted to us, our employees, or
+                representatives automatically become the property of Gataca. You
+                hereby assign all rights, title, and interest you have in such
+                Feedback and ideas to Gataca, including all intellectual
+                property rights therein.
+              </p>
+            </div>
+            <div className={styles?.contentCol__section} id="amendment__11">
+              <h4 className={cx("heading4 marginBottom32")}>11. Amendment</h4>
+              <p className={cx("marginBottom20")}>
+                We may revise these Terms from time to time. If we do, those
+                revised Terms will supersede prior versions. Unless we say
+                otherwise, revisions will be effective upon the effective date
+                indicated at the top of these Terms.
+              </p>
+              <p className={cx("marginBottom20")}>
+                You will receive notifications via email or the Wallet regarding
+                any material changes or updates to the Terms. It is essential to
+                regularly check for notifications to stay informed about any
+                modifications to these Terms.
+              </p>
+              <p className={cx("marginBottom20")}>
+                Your continued access or use of the Wallet constitutes your
+                acceptance of any revisions. If you do not agree to the
+                revisions, you should stop using the Wallet.
               </p>
             </div>
             <div
               className={styles?.contentCol__section}
-              id="agreementEntirety__11"
+              id="terminationSuspension__12"
             >
               <h4 className={cx("heading4 marginBottom32")}>
-                11. Agreement in its entirety
+                12. Termination and suspension
+              </h4>
+              <p className={cx("marginBottom20")}>
+                <b>12.1 Termination</b>
+              </p>
+              <p className={cx("marginBottom20")}>
+                You may terminate these Terms at any time, by deleting your
+                account via the Wallet interface and deleting the App.
+              </p>
+              <p className={cx("marginBottom20")}>
+                <b>12.2 Suspension</b>
+              </p>
+              <p className={cx("marginBottom20")}>
+                Gataca may unilaterally interrupt, suspend or terminate these
+                Terms and access to the Wallet and the Content at any time in
+                any of these cases: (a) if you breach these Terms substantially
+                or repeatedly or any Gataca’s policies; (b) if we are required
+                to do so to comply with a legal requirement or a court order;
+                (c) if we have sufficient reason to believe that your conduct
+                (such as hacking, impersonation, harassment, spamming, deceit,
+                or any other) causes harm or incurs liabilities to a user, a
+                third party, or Gataca.
+              </p>
+              <p className={cx("marginBottom20")}>
+                Gataca will give notice of such circumstance by including the
+                information referred to through the means of communication it
+                deems appropriate for your knowledge.
+              </p>
+              <p className={cx("marginBottom20")}>
+                If you believe your Gataca account has been suspended or
+                terminated in error, you can appeal the decision by contacting
+                Gataca at{" "}
+                <a href="mailto: legal@gataca.io" type="email">
+                  legal@gataca.io
+                </a>
+                .
+              </p>
+            </div>
+            <div
+              className={styles?.contentCol__section}
+              id="agreementEntirety__13"
+            >
+              <h4 className={cx("heading4 marginBottom32")}>
+                13. Agreement in its entirety
               </h4>
               <p className={cx("marginBottom20")}>
                 These Terms and any document expressly referred to in these
@@ -607,18 +686,13 @@ const TermsOfUseWallet: React.FC<PageProps> = () => {
                 promises made between you and Gataca orally or in writing in
                 relation to the subject matter of these Terms.
               </p>
-              <p className={cx("marginBottom20")}>
-                In the case of any conflict between the terms of this Agreement
-                and the terms of Gataca’s Generic Terms of Service, the terms of
-                this service-specific Agreement shall prevail.
-              </p>
             </div>
             <div
               className={styles?.contentCol__section}
-              id="lawJurisdiction__12"
+              id="agreementEntirety__14"
             >
               <h4 className={cx("heading4 marginBottom32")}>
-                12. Applicable law and jurisdiction
+                14. Applicable law and jurisdiction
               </h4>
               <p className={cx("marginBottom20")}>
                 All the conditions included in this document are governed by
@@ -627,14 +701,20 @@ const TermsOfUseWallet: React.FC<PageProps> = () => {
                 formal legal case.
               </p>
               <p className={cx("marginBottom20")}>
-                You agree that all disputes, controversies or situations arising
-                from these Terms that cannot be resolved through our support
-                team shall be resolved by binding arbitration to the Courts and
-                Tribunals of the city of Madrid.
+                For the resolution of all disputes, controversies or situations
+                arising from these Terms that cannot be resolved through our
+                support team the Spanish Courts and Tribunals shall have
+                jurisdiction in accordance with the terms established in article
+                52.3 of the Spanish Civil Procedure Act.
+              </p>
+              <p className={cx("marginBottom20")}>
+                For users who are not acting as consumers and users, the Courts
+                and Tribunals of the city of Madrid shall have jurisdiction,
+                renouncing any other jurisdiction that may correspond to them.
               </p>
             </div>
-            <div className={styles?.contentCol__section} id="contact__13">
-              <h4 className={cx("heading4 marginBottom32")}>13. Contact</h4>
+            <div className={styles?.contentCol__section} id="contact__15">
+              <h4 className={cx("heading4 marginBottom32")}>15. Contact</h4>
               <p className={cx("marginBottom20")}>
                 If you have any questions, comments or suggestions regarding the
                 Terms, please send such comments, suggestions and queries to{" "}
