@@ -109,6 +109,21 @@ const Table: React.FC = () => {
           <td data-th="Active time">While session is active</td>
         </tr>
         <tr>
+          <td>_gatc_tutS</td>
+          <td data-th="Location">
+            <p>Gataca Studio</p>
+          </td>
+          <td data-th="Purpose">
+            <p>Necessary functional</p>
+          </td>
+          <td data-th="Description">
+            Used to store the user's preferences regarding whether or not to
+            display a tutorial when using the technology.
+          </td>
+          <td data-th="Entity">Gataca</td>
+          <td data-th="Active time">180 days</td>
+        </tr>
+        <tr>
           <td>__cf_bm</td>
           <td data-th="Location">
             <p>Gataca Studio</p>
