@@ -244,34 +244,6 @@
           "sortable": true
         }
       },
-      "slas": {
-        "edit": {
-          "label": "slas",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "slas",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "stadistics": {
-        "edit": {
-          "label": "stadistics",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "stadistics",
-          "searchable": true,
-          "sortable": true
-        }
-      },
       "premierSupport": {
         "edit": {
           "label": "premierSupport",
@@ -327,6 +299,300 @@
           "searchable": true,
           "sortable": true
         }
+      },
+      "customLimits": {
+        "edit": {
+          "label": "customLimits",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "customLimits",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "advanceFunctionalities": {
+        "edit": {
+          "label": "advanceFunctionalities",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "advanceFunctionalities",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "dataAgreements": {
+        "edit": {
+          "label": "dataAgreements",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "dataAgreements",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "verifiableIds": {
+        "edit": {
+          "label": "verifiableIds",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "verifiableIds",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "customSchemas": {
+        "edit": {
+          "label": "customSchemas",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "customSchemas",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "extraCredentials": {
+        "edit": {
+          "label": "extraCredentials",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "extraCredentials",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "didMethods": {
+        "edit": {
+          "label": "didMethods",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "didMethods",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "trustRegistries": {
+        "edit": {
+          "label": "trustRegistries",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "trustRegistries",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "qualifiedCertificates": {
+        "edit": {
+          "label": "qualifiedCertificates",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "qualifiedCertificates",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "enterpriseWallet": {
+        "edit": {
+          "label": "enterpriseWallet",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "enterpriseWallet",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "roleBasedAccessControl": {
+        "edit": {
+          "label": "roleBasedAccessControl",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "roleBasedAccessControl",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "customRoles": {
+        "edit": {
+          "label": "customRoles",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "customRoles",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "ticketingSystem": {
+        "edit": {
+          "label": "ticketingSystem",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "ticketingSystem",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "slackSupport": {
+        "edit": {
+          "label": "slackSupport",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "slackSupport",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "accountTeam": {
+        "edit": {
+          "label": "accountTeam",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "accountTeam",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "twentyFourSeven": {
+        "edit": {
+          "label": "twentyFourSeven",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "twentyFourSeven",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "onboardingTraining": {
+        "edit": {
+          "label": "onboardingTraining",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "onboardingTraining",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "statistics": {
+        "edit": {
+          "label": "statistics",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "statistics",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "ageVerification": {
+        "edit": {
+          "label": "ageVerification",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "ageVerification",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "appIntegrations": {
+        "edit": {
+          "label": "appIntegrations",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "appIntegrations",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "slas": {
+        "edit": {
+          "label": "slas",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "slas",
+          "searchable": false,
+          "sortable": false
+        }
       }
     },
     "layouts": {
@@ -339,7 +605,41 @@
       "edit": [
         [
           {
+            "name": "standardSupport",
+            "size": 6
+          },
+          {
+            "name": "premierSupport",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "customLimits",
+            "size": 6
+          },
+          {
+            "name": "advanceFunctionalities",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "verificationTemplates",
+            "size": 4
+          },
+          {
+            "name": "issuanceTemplates",
+            "size": 4
+          },
+          {
             "name": "activeUsers",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "issuedCredentials",
             "size": 4
           },
           {
@@ -348,20 +648,6 @@
           },
           {
             "name": "dids",
-            "size": 4
-          }
-        ],
-        [
-          {
-            "name": "issuanceTemplates",
-            "size": 4
-          },
-          {
-            "name": "issuedCredentials",
-            "size": 4
-          },
-          {
-            "name": "verificationTemplates",
             "size": 4
           }
         ],
@@ -413,22 +699,56 @@
             "size": 4
           },
           {
-            "name": "slas",
+            "name": "dataAgreements",
             "size": 4
           },
           {
-            "name": "stadistics",
+            "name": "verifiableIds",
             "size": 4
           }
         ],
         [
           {
-            "name": "premierSupport",
-            "size": 6
+            "name": "customSchemas",
+            "size": 4
           },
           {
-            "name": "standardSupport",
-            "size": 6
+            "name": "extraCredentials",
+            "size": 4
+          },
+          {
+            "name": "qualifiedCertificates",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "roleBasedAccessControl",
+            "size": 4
+          },
+          {
+            "name": "customRoles",
+            "size": 4
+          },
+          {
+            "name": "ticketingSystem",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "slackSupport",
+            "size": 4
+          },
+          {
+            "name": "accountTeam",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "statistics",
+            "size": 12
           }
         ],
         [
@@ -439,6 +759,54 @@
           {
             "name": "notifications",
             "size": 6
+          }
+        ],
+        [
+          {
+            "name": "enterpriseWallet",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "didMethods",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "trustRegistries",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "twentyFourSeven",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "onboardingTraining",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "slas",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "ageVerification",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "appIntegrations",
+            "size": 12
           }
         ]
       ]

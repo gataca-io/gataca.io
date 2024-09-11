@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pricing_categories",
+  "info": {
+    "singularName": "pricing-category",
+    "pluralName": "pricing-categories",
+    "displayName": "Pricing Category",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "generic.cta"
+    }
+  }
+}

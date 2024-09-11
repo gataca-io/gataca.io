@@ -33,17 +33,36 @@
           "searchable": true,
           "sortable": true
         }
+      },
+      "pricingCategories": {
+        "edit": {
+          "label": "pricingCategories",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "pricingCategories",
+          "searchable": true,
+          "sortable": true
+        }
       }
     },
     "layouts": {
       "list": [
         "id",
-        "switchText"
+        "switchText",
+        "pricingCategories"
       ],
       "edit": [
         [
           {
             "name": "switchText",
+            "size": 6
+          },
+          {
+            "name": "pricingCategories",
             "size": 6
           }
         ]

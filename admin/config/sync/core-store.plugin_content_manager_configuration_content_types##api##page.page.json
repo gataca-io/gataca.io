@@ -120,22 +120,10 @@
       }
     },
     "layouts": {
-      "list": [
-        "id",
-        "title",
-        "slugURL",
-        "subPath"
-      ],
       "edit": [
         [
           {
             "name": "seo",
-            "size": 12
-          }
-        ],
-        [
-          {
-            "name": "sections",
             "size": 12
           }
         ],
@@ -154,7 +142,19 @@
             "name": "subPath",
             "size": 6
           }
+        ],
+        [
+          {
+            "name": "sections",
+            "size": 12
+          }
         ]
+      ],
+      "list": [
+        "id",
+        "title",
+        "slugURL",
+        "subPath"
       ]
     }
   },

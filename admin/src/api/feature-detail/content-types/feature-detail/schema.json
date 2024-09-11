@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "feature_details",
+  "info": {
+    "singularName": "feature-detail",
+    "pluralName": "feature-details",
+    "displayName": "Feature Detail",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "infoToggle": {
+      "type": "text"
+    },
+    "tiers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tier.tier"
+    }
+  }
+}

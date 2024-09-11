@@ -6,12 +6,6 @@
   },
   "options": {},
   "attributes": {
-    "infoToggles": {
-      "displayName": "PricingDetails",
-      "type": "component",
-      "repeatable": false,
-      "component": "pricing.pricing-details"
-    },
     "title": {
       "type": "string"
     },
@@ -25,6 +19,19 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::tier.tier"
+    },
+    "pricing_categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::pricing-category.pricing-category"
+    },
+    "switchLabel": {
+      "type": "string"
+    },
+    "tier_tables": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tier-table.tier-table"
     }
   }
 }

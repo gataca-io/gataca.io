@@ -97,6 +97,12 @@
       "action": "api::faq.faq.findOne"
     },
     {
+      "action": "api::feature-detail.feature-detail.find"
+    },
+    {
+      "action": "api::feature-detail.feature-detail.findOne"
+    },
+    {
       "action": "api::feature.feature.find"
     },
     {
@@ -146,6 +152,12 @@
     },
     {
       "action": "api::partnership-type.partnership-type.findOne"
+    },
+    {
+      "action": "api::pricing-category.pricing-category.find"
+    },
+    {
+      "action": "api::pricing-category.pricing-category.findOne"
     },
     {
       "action": "api::pricing.pricing.find"
@@ -200,6 +212,12 @@
     },
     {
       "action": "api::terms-of-use.terms-of-use.find"
+    },
+    {
+      "action": "api::tier-table.tier-table.find"
+    },
+    {
+      "action": "api::tier-table.tier-table.findOne"
     },
     {
       "action": "api::tier.tier.find"

@@ -1,12 +1,21 @@
 {
   "collectionName": "components_pricing_pricing_all_infos",
   "info": {
-    "displayName": "PricingAllInfo"
+    "displayName": "PricingOptions",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "switchText": {
       "type": "string"
+    },
+    "pricingCategories": {
+      "type": "enumeration",
+      "enum": [
+        "Cloud",
+        "On-premise"
+      ],
+      "default": "Cloud"
     }
   }
 }

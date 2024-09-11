@@ -54,12 +54,6 @@
     "sandBoxEnvironment": {
       "type": "boolean"
     },
-    "slas": {
-      "type": "boolean"
-    },
-    "stadistics": {
-      "type": "boolean"
-    },
     "premierSupport": {
       "type": "enumeration",
       "enum": [
@@ -81,6 +75,77 @@
     },
     "notifications": {
       "type": "text"
+    },
+    "customLimits": {
+      "type": "enumeration",
+      "enum": [
+        "true",
+        "false"
+      ]
+    },
+    "advanceFunctionalities": {
+      "type": "enumeration",
+      "enum": [
+        "true",
+        "false"
+      ]
+    },
+    "dataAgreements": {
+      "type": "boolean"
+    },
+    "verifiableIds": {
+      "type": "boolean"
+    },
+    "customSchemas": {
+      "type": "boolean"
+    },
+    "extraCredentials": {
+      "type": "boolean"
+    },
+    "didMethods": {
+      "type": "richtext"
+    },
+    "trustRegistries": {
+      "type": "richtext"
+    },
+    "qualifiedCertificates": {
+      "type": "boolean"
+    },
+    "enterpriseWallet": {
+      "type": "richtext"
+    },
+    "roleBasedAccessControl": {
+      "type": "boolean"
+    },
+    "customRoles": {
+      "type": "boolean"
+    },
+    "ticketingSystem": {
+      "type": "boolean"
+    },
+    "slackSupport": {
+      "type": "boolean"
+    },
+    "accountTeam": {
+      "type": "boolean"
+    },
+    "twentyFourSeven": {
+      "type": "richtext"
+    },
+    "onboardingTraining": {
+      "type": "richtext"
+    },
+    "statistics": {
+      "type": "boolean"
+    },
+    "ageVerification": {
+      "type": "richtext"
+    },
+    "appIntegrations": {
+      "type": "richtext"
+    },
+    "slas": {
+      "type": "richtext"
     }
   }
 }

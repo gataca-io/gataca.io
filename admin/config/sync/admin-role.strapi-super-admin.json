@@ -1846,6 +1846,54 @@
     },
     {
       "action": "plugin::content-manager.explorer.create",
+      "subject": "api::feature-detail.feature-detail",
+      "properties": {
+        "fields": [
+          "title",
+          "infoToggle",
+          "tiers"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::feature-detail.feature-detail",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::feature-detail.feature-detail",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::feature-detail.feature-detail",
+      "properties": {
+        "fields": [
+          "title",
+          "infoToggle",
+          "tiers"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::feature-detail.feature-detail",
+      "properties": {
+        "fields": [
+          "title",
+          "infoToggle",
+          "tiers"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
       "subject": "api::feature.feature",
       "properties": {
         "fields": [
@@ -2466,6 +2514,63 @@
         "fields": [
           "title",
           "description"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::pricing-category.pricing-category",
+      "properties": {
+        "fields": [
+          "label",
+          "title",
+          "description",
+          "cta.label",
+          "cta.url",
+          "cta.external_url"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::pricing-category.pricing-category",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::pricing-category.pricing-category",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::pricing-category.pricing-category",
+      "properties": {
+        "fields": [
+          "label",
+          "title",
+          "description",
+          "cta.label",
+          "cta.url",
+          "cta.external_url"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::pricing-category.pricing-category",
+      "properties": {
+        "fields": [
+          "label",
+          "title",
+          "description",
+          "cta.label",
+          "cta.url",
+          "cta.external_url"
         ]
       },
       "conditions": []
@@ -2489,27 +2594,13 @@
           "faqSection.info.list.description",
           "faqSection.info.list.icon",
           "faqSection.info.list.image",
-          "cloudSection.infoToggles.activeUser",
-          "cloudSection.infoToggles.didInPublicCatalogue",
-          "cloudSection.infoToggles.ebsiIntegration",
-          "cloudSection.infoToggles.integrationCustomFrameworks",
-          "cloudSection.infoToggles.integrationCustomInfraestructure",
-          "cloudSection.infoToggles.issuanceTemplate",
-          "cloudSection.infoToggles.issuedCredential",
-          "cloudSection.infoToggles.sandboxEnvironment",
-          "cloudSection.infoToggles.schemaInPublicCatalogue",
-          "cloudSection.infoToggles.securityFactorMechanism",
-          "cloudSection.infoToggles.verificationTemplate",
-          "cloudSection.infoToggles.dataAgreements",
-          "cloudSection.infoToggles.verifiableIds",
-          "cloudSection.infoToggles.customSchemas",
-          "cloudSection.infoToggles.ageVerification",
-          "cloudSection.infoToggles.qualifiedCertificates",
-          "cloudSection.infoToggles.enterpriseWallet",
           "cloudSection.title",
           "cloudSection.description",
           "cloudSection.identifier",
           "cloudSection.tiers",
+          "cloudSection.pricing_categories",
+          "cloudSection.switchLabel",
+          "cloudSection.tier_tables",
           "onPremiseSection.button.label",
           "onPremiseSection.button.url",
           "onPremiseSection.button.outsideWeb",
@@ -2556,27 +2647,13 @@
           "faqSection.info.list.description",
           "faqSection.info.list.icon",
           "faqSection.info.list.image",
-          "cloudSection.infoToggles.activeUser",
-          "cloudSection.infoToggles.didInPublicCatalogue",
-          "cloudSection.infoToggles.ebsiIntegration",
-          "cloudSection.infoToggles.integrationCustomFrameworks",
-          "cloudSection.infoToggles.integrationCustomInfraestructure",
-          "cloudSection.infoToggles.issuanceTemplate",
-          "cloudSection.infoToggles.issuedCredential",
-          "cloudSection.infoToggles.sandboxEnvironment",
-          "cloudSection.infoToggles.schemaInPublicCatalogue",
-          "cloudSection.infoToggles.securityFactorMechanism",
-          "cloudSection.infoToggles.verificationTemplate",
-          "cloudSection.infoToggles.dataAgreements",
-          "cloudSection.infoToggles.verifiableIds",
-          "cloudSection.infoToggles.customSchemas",
-          "cloudSection.infoToggles.ageVerification",
-          "cloudSection.infoToggles.qualifiedCertificates",
-          "cloudSection.infoToggles.enterpriseWallet",
           "cloudSection.title",
           "cloudSection.description",
           "cloudSection.identifier",
           "cloudSection.tiers",
+          "cloudSection.pricing_categories",
+          "cloudSection.switchLabel",
+          "cloudSection.tier_tables",
           "onPremiseSection.button.label",
           "onPremiseSection.button.url",
           "onPremiseSection.button.outsideWeb",
@@ -2611,27 +2688,13 @@
           "faqSection.info.list.description",
           "faqSection.info.list.icon",
           "faqSection.info.list.image",
-          "cloudSection.infoToggles.activeUser",
-          "cloudSection.infoToggles.didInPublicCatalogue",
-          "cloudSection.infoToggles.ebsiIntegration",
-          "cloudSection.infoToggles.integrationCustomFrameworks",
-          "cloudSection.infoToggles.integrationCustomInfraestructure",
-          "cloudSection.infoToggles.issuanceTemplate",
-          "cloudSection.infoToggles.issuedCredential",
-          "cloudSection.infoToggles.sandboxEnvironment",
-          "cloudSection.infoToggles.schemaInPublicCatalogue",
-          "cloudSection.infoToggles.securityFactorMechanism",
-          "cloudSection.infoToggles.verificationTemplate",
-          "cloudSection.infoToggles.dataAgreements",
-          "cloudSection.infoToggles.verifiableIds",
-          "cloudSection.infoToggles.customSchemas",
-          "cloudSection.infoToggles.ageVerification",
-          "cloudSection.infoToggles.qualifiedCertificates",
-          "cloudSection.infoToggles.enterpriseWallet",
           "cloudSection.title",
           "cloudSection.description",
           "cloudSection.identifier",
           "cloudSection.tiers",
+          "cloudSection.pricing_categories",
+          "cloudSection.switchLabel",
+          "cloudSection.tier_tables",
           "onPremiseSection.button.label",
           "onPremiseSection.button.url",
           "onPremiseSection.button.outsideWeb",
@@ -3663,6 +3726,54 @@
           "SEO.rrssImg",
           "SEO.keywords",
           "SEO.canonicalURL"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::tier-table.tier-table",
+      "properties": {
+        "fields": [
+          "title",
+          "feature_details",
+          "rows"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::tier-table.tier-table",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::tier-table.tier-table",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::tier-table.tier-table",
+      "properties": {
+        "fields": [
+          "title",
+          "feature_details",
+          "rows"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::tier-table.tier-table",
+      "properties": {
+        "fields": [
+          "title",
+          "feature_details",
+          "rows"
         ]
       },
       "conditions": []
@@ -3700,12 +3811,31 @@
           "features.integrationCustomTrustInfraestructure",
           "features.newSchemaPublicCatalogue",
           "features.sandBoxEnvironment",
-          "features.slas",
-          "features.stadistics",
           "features.premierSupport",
           "features.standardSupport",
           "features.nFactor",
           "features.notifications",
+          "features.customLimits",
+          "features.advanceFunctionalities",
+          "features.dataAgreements",
+          "features.verifiableIds",
+          "features.customSchemas",
+          "features.extraCredentials",
+          "features.didMethods",
+          "features.trustRegistries",
+          "features.qualifiedCertificates",
+          "features.enterpriseWallet",
+          "features.roleBasedAccessControl",
+          "features.customRoles",
+          "features.ticketingSystem",
+          "features.slackSupport",
+          "features.accountTeam",
+          "features.twentyFourSeven",
+          "features.onboardingTraining",
+          "features.statistics",
+          "features.ageVerification",
+          "features.appIntegrations",
+          "features.slas",
           "popular",
           "button2.label",
           "button2.url",
@@ -3761,12 +3891,31 @@
           "features.integrationCustomTrustInfraestructure",
           "features.newSchemaPublicCatalogue",
           "features.sandBoxEnvironment",
-          "features.slas",
-          "features.stadistics",
           "features.premierSupport",
           "features.standardSupport",
           "features.nFactor",
           "features.notifications",
+          "features.customLimits",
+          "features.advanceFunctionalities",
+          "features.dataAgreements",
+          "features.verifiableIds",
+          "features.customSchemas",
+          "features.extraCredentials",
+          "features.didMethods",
+          "features.trustRegistries",
+          "features.qualifiedCertificates",
+          "features.enterpriseWallet",
+          "features.roleBasedAccessControl",
+          "features.customRoles",
+          "features.ticketingSystem",
+          "features.slackSupport",
+          "features.accountTeam",
+          "features.twentyFourSeven",
+          "features.onboardingTraining",
+          "features.statistics",
+          "features.ageVerification",
+          "features.appIntegrations",
+          "features.slas",
           "popular",
           "button2.label",
           "button2.url",
@@ -3810,12 +3959,31 @@
           "features.integrationCustomTrustInfraestructure",
           "features.newSchemaPublicCatalogue",
           "features.sandBoxEnvironment",
-          "features.slas",
-          "features.stadistics",
           "features.premierSupport",
           "features.standardSupport",
           "features.nFactor",
           "features.notifications",
+          "features.customLimits",
+          "features.advanceFunctionalities",
+          "features.dataAgreements",
+          "features.verifiableIds",
+          "features.customSchemas",
+          "features.extraCredentials",
+          "features.didMethods",
+          "features.trustRegistries",
+          "features.qualifiedCertificates",
+          "features.enterpriseWallet",
+          "features.roleBasedAccessControl",
+          "features.customRoles",
+          "features.ticketingSystem",
+          "features.slackSupport",
+          "features.accountTeam",
+          "features.twentyFourSeven",
+          "features.onboardingTraining",
+          "features.statistics",
+          "features.ageVerification",
+          "features.appIntegrations",
+          "features.slas",
           "popular",
           "button2.label",
           "button2.url",
