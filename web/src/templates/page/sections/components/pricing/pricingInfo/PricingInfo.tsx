@@ -8,7 +8,6 @@ import PurpleButton from "../../../../../../components/atoms/buttons/purple/Purp
 import {
   ButtonModel,
   IProductModel,
-  InfoTogglesPricingModel,
 } from "../../../../../../interfaces/interfaces"
 import OnPremisePanel from "./components/onPremisePanel/OnPremisePanel"
 import Categories from "./components/categories/Categories"
@@ -17,42 +16,35 @@ import ChevronUpSVG from "../../../../../../images/icons/ChevronUpSVG"
 import * as styles from "./pricingInfo.module.scss"
 
 export type ISectionProps = {
-  title: string
-  description: string
+  switchLabel?: string
   index: number
   categories: {
-    id: string
-    title: string
+    attributes: {
+      id?: string
+      label: string
+      title: string
+      description: string
+      cta: ButtonModel
+    }
   }[]
-  onPremise: {
-    panelTitle: string
-    paragraph_1: string
-    paragraph_2: string
-    button: ButtonModel
-  }
-  panelTitle?: string
-  paragraph_1?: string
-  paragraph_2?: string
-  button?: ButtonModel
+
   licenses: IProductModel[]
   infoToggles?: any
+  tier_tables?: any
+  tiersDetail: IProductModel[]
   subOptionClickedID?: string
 }
 
 const PricingInfo: React.FC<ISectionProps> = props => {
   const {
-    title,
-    description,
+    switchLabel,
     index,
     categories,
     licenses,
-    onPremise,
     infoToggles,
+    tier_tables,
+    tiersDetail,
     subOptionClickedID,
-    panelTitle,
-    paragraph_1,
-    paragraph_2,
-    button,
   } = props
   const [switchPeriodValue, setmonthlyChecked] = React.useState("month")
   const [showAllFeatures, setShowAllFeatures] = React.useState(false)
@@ -65,7 +57,7 @@ const PricingInfo: React.FC<ISectionProps> = props => {
   const switchButton = {
     options: [
       { text: "", value: "month" },
-      { text: "Pay Yearly (Save 2 months)", value: "year" },
+      { text: "", value: "year" },
     ],
     function: selectPeriod,
   }
@@ -119,13 +111,13 @@ const PricingInfo: React.FC<ISectionProps> = props => {
         <div className={styles?.pricingInfo__header}>
           <div className={styles?.categories}>
             {categories?.map((item, index) => {
-              const { title } = item
+              const { label } = item.attributes
               return (
                 <Categories
-                  id={"categories__" + item?.id + index}
+                  id={"categories__" + index}
                   key={"categoriesP__" + index}
                   index={index + 1}
-                  title={title}
+                  label={label}
                   selected={openItem === index + 1}
                   showItem={index => {
                     const element =
@@ -143,7 +135,7 @@ const PricingInfo: React.FC<ISectionProps> = props => {
             <>
               <div className={styles?.switchButtonContainer}>
                 <SwitchButton
-                  rightLabel={"Pay Yearly (Save 2 months)"}
+                  rightLabel={switchLabel}
                   checkedValue={switchPeriodValue}
                   options={switchButton.options}
                   onChangeSwitchSelect={switchButton.function}
@@ -168,9 +160,10 @@ const PricingInfo: React.FC<ISectionProps> = props => {
               {showAllFeatures && licenses && (
                 <div>
                   <LicensesTable
+                    tier_tables={tier_tables}
                     products={licenses}
                     switchPeriodValue={switchPeriodValue}
-                    infoToggles={infoToggles}
+                    tiers={tiersDetail}
                   />
                   <LicensesTableMobile
                     licenseIndex={selectedLicense}
@@ -178,6 +171,8 @@ const PricingInfo: React.FC<ISectionProps> = props => {
                     switchPeriodValue={switchPeriodValue}
                     infoToggles={infoToggles}
                     selectLicense={setSelectedLicense}
+                    tier_tables={tier_tables}
+                    tiers={tiersDetail}
                   />
                 </div>
               )}
@@ -200,11 +195,13 @@ const PricingInfo: React.FC<ISectionProps> = props => {
               />
             </>
           ) : (
-            <OnPremisePanel
-              panelTitle={onPremise?.panelTitle}
-              paragraphs={[onPremise?.paragraph_1, onPremise?.paragraph_2]}
-              button={onPremise?.button}
-            />
+            <>
+              <OnPremisePanel
+                panelTitle={categories[1]?.attributes?.title}
+                description={categories[1]?.attributes?.description}
+                button={categories[1]?.attributes?.cta}
+              />
+            </>
           )}
         </div>
       </section>

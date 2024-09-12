@@ -18,35 +18,6 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
   const [benefitsLoaded, setBenefitsLoaded] = React.useState<boolean>(false)
   const { sections } = props
 
-  const [pricingData, setPricing] = useState<any | undefined>()
-  const [pricingStrapiData, setStrapiData] = React.useState<any | undefined>()
-  const { firstSection } = pricingData ? pricingData : []
-
-  const { onPremiseSection } = pricingStrapiData ? pricingStrapiData : []
-
-  React.useEffect(() => {
-    if (!pricingStrapiData) {
-      getStrapiData()
-    }
-    getPricing()
-  }, [])
-
-  const getPricing = async () => {
-    const json_data = require("./components/pricing/pricingInfo/data/pricingData.json")
-    setPricing(json_data?.data && json_data?.data)
-  }
-
-  const getStrapiData = async () => {
-    await fetch(
-      `${process.env.STRAPI_API_URL}/api/pricing?populate%5BfaqSection%5D%5Bpopulate%5D%5Binfo%5D%5Bpopulate%5D=*&populate%5BcloudSection%5D%5Bpopulate%5D%5Btiers%5D%5Bpopulate%5D=*&populate%5BonPremiseSection%5D%5Bpopulate%5D=*`
-    )
-      .then(response => response.json())
-      .then(jsonResponse => {
-        const pricingStrapiData = jsonResponse?.data?.attributes
-        setStrapiData(pricingStrapiData)
-      })
-  }
-
   return (
     <div>
       {sections?.map((item, index) => {
@@ -55,6 +26,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
           title,
           subtitle,
           description,
+          switchLabel,
           cta,
           hero,
           media,
@@ -67,11 +39,9 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
           logos,
           content,
           tiers,
-          panelTitle,
-          paragraph_1,
-          paragraph_2,
-          button,
+          pricing_categories,
           infoToggles,
+          tier_tables,
         } = item
 
         return (
@@ -165,17 +135,17 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
 
             {__component === "pricing.cloud" && "pricing.on-premise" && (
               <PricingInfo
-                title={title}
-                description={description}
-                categories={firstSection?.categories}
+                categories={pricing_categories?.data}
                 index={0}
+                switchLabel={switchLabel}
                 infoToggles={infoToggles}
+                tier_tables={tier_tables?.data}
+                tiersDetail={
+                  tier_tables?.data[index]?.attributes?.feature_details?.data[
+                    index
+                  ]?.attributes?.tiers?.data
+                }
                 licenses={tiers?.data}
-                onPremise={onPremiseSection}
-                // panelTitle={panelTitle}
-                // paragraph_1={paragraph_1}
-                // paragraph_2={paragraph_2}
-                // button={button}
                 subOptionClickedID={props?.location?.hash?.substring(1)}
               />
             )}
