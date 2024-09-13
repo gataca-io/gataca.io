@@ -53,6 +53,7 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
     return fullTier
   }
 
+  console.log("tiersMobileLength ", tiers?.length)
   return (
     <>
       <div className={styles?.tableContainer}>
@@ -67,20 +68,42 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
               selectLicense(event?.target?.value)
             }}
           >
-            <option
-              defaultChecked={licenseIndex === 2}
-              className={`${cx("bodyRegularMD")}`}
-              value={0}
-            >
-              {tiers[0]?.attributes?.name}
-            </option>
+            {tiers[0]?.attributes?.name?.length && (
+              <option
+                defaultChecked={licenseIndex === 1}
+                className={`${cx("bodyRegularMD")}`}
+                value={0}
+              >
+                {tiers[0]?.attributes?.name}
+              </option>
+            )}
+            {tiers[1]?.attributes?.name.length && (
+              <option
+                defaultChecked={licenseIndex === 2}
+                className={`${cx("bodyRegularMD")}`}
+                value={1}
+              >
+                {tiers[1]?.attributes?.name}
+              </option>
+            )}
+            {/* {tiers[2]?.attributes?.name.length && ( */}
             <option
               defaultChecked={licenseIndex === 3}
               className={`${cx("bodyRegularMD")}`}
-              value={1}
+              value={2}
             >
-              {tiers[1]?.attributes?.name}
+              {tiers[2]?.attributes?.name}
             </option>
+            {/* )}
+            {tiers[3]?.attributes?.name.length && ( */}
+            <option
+              defaultChecked={licenseIndex === 4}
+              className={`${cx("bodyRegularMD")}`}
+              value={3}
+            >
+              {tiers[3]?.attributes?.name}
+            </option>
+            {/* )} */}
           </select>
           <div className={styles?.header__container}>
             <div>

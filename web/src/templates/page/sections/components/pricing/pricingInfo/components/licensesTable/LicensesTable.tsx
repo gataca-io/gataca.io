@@ -150,6 +150,7 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
                   }
                 />
                 {tiers?.map(item => {
+                  console.log("tiersLength " + tiers?.length)
                   return (
                     <QuantityDataCell
                       key={"VT__" + item?.id}
