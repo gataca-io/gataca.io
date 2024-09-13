@@ -55,7 +55,7 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
                         >
                           {license?.attributes.type}
                         </p>
-                        {license?.attributes.type === "Professional" && (
+                        {license?.attributes.popular === true && (
                           <Tag
                             label={"Popular"}
                             className={styles?.license__header__popularTag}

@@ -122,7 +122,7 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
             </div>
 
             <div>
-              {license?.attributes.type === "Professional" && (
+              {license?.attributes.popular === true && (
                 <Tag label={"Popular"} className={styles?.popularTag} />
               )}
             </div>

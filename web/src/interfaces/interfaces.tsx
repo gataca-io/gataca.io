@@ -119,6 +119,7 @@ export interface IProductModel {
     features?: IProductFeaturesModel
     subPriceMonthLabel?: string
     subPriceYearLabel?: string
+    popular: boolean
 
     button: {
       label: "Contact us"
