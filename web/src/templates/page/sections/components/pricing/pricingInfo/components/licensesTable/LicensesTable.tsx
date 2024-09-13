@@ -149,12 +149,22 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
                       ?.attributes?.infoToggle
                   }
                 />
-                {tiers?.map(item => {
-                  console.log("tiersLength " + tiers?.length)
+                {tier_tables?.map((item, index) => {
+                  console.log("tiersTableLength " + tier_tables?.length)
+                  console.log(
+                    "detail ",
+                    tier_tables?.item?.attributes?.feature_details?.data[0]
+                      ?.attributes?.tiers?.data[0]?.attributes?.features
+                      ?.verificationTemplates
+                  )
                   return (
                     <QuantityDataCell
                       key={"VT__" + item?.id}
-                      data={item?.attributes.features?.verificationTemplates}
+                      data={
+                        item?.attributes?.feature_details?.data[index]
+                          ?.attributes?.tiers?.data[index]?.attributes?.features
+                          ?.verificationTemplates
+                      }
                     />
                   )
                 })}

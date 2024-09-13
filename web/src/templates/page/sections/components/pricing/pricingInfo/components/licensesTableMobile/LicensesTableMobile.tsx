@@ -68,7 +68,18 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
               selectLicense(event?.target?.value)
             }}
           >
-            {tiers[0]?.attributes?.name?.length && (
+            {tiers?.map((item: any, index: any) => {
+              return (
+                <option
+                  defaultChecked={licenseIndex === index + 1}
+                  className={`${cx("bodyRegularMD")}`}
+                  value={index}
+                >
+                  {item?.attributes?.name}
+                </option>
+              )
+            })}
+            {/* {tiers[0]?.attributes?.name?.length && (
               <option
                 defaultChecked={licenseIndex === 1}
                 className={`${cx("bodyRegularMD")}`}
@@ -86,24 +97,25 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
                 {tiers[1]?.attributes?.name}
               </option>
             )}
-            {/* {tiers[2]?.attributes?.name.length && ( */}
-            <option
-              defaultChecked={licenseIndex === 3}
-              className={`${cx("bodyRegularMD")}`}
-              value={2}
-            >
-              {tiers[2]?.attributes?.name}
-            </option>
-            {/* )}
-            {tiers[3]?.attributes?.name.length && ( */}
-            <option
-              defaultChecked={licenseIndex === 4}
-              className={`${cx("bodyRegularMD")}`}
-              value={3}
-            >
-              {tiers[3]?.attributes?.name}
-            </option>
-            {/* )} */}
+            {tiers[2]?.attributes?.name.length && (
+              <option
+                defaultChecked={licenseIndex === 3}
+                className={`${cx("bodyRegularMD")}`}
+                value={2}
+              >
+                {tiers[2]?.attributes?.name}
+              </option>
+            )}
+
+            {tiers[3]?.attributes?.name.length && (
+              <option
+                defaultChecked={licenseIndex === 4}
+                className={`${cx("bodyRegularMD")}`}
+                value={3}
+              >
+                {tiers[3]?.attributes?.name}
+              </option>
+            )} */}
           </select>
           <div className={styles?.header__container}>
             <div>
