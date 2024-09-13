@@ -20,20 +20,6 @@
           "sortable": false
         }
       },
-      "infoToggles": {
-        "edit": {
-          "label": "infoToggles",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "infoToggles",
-          "searchable": false,
-          "sortable": false
-        }
-      },
       "title": {
         "edit": {
           "label": "title",
@@ -90,22 +76,59 @@
           "searchable": false,
           "sortable": false
         }
+      },
+      "pricing_categories": {
+        "edit": {
+          "label": "pricing_categories",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "label"
+        },
+        "list": {
+          "label": "pricing_categories",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "switchLabel": {
+        "edit": {
+          "label": "switchLabel",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "switchLabel",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "tier_tables": {
+        "edit": {
+          "label": "tier_tables",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "title"
+        },
+        "list": {
+          "label": "tier_tables",
+          "searchable": false,
+          "sortable": false
+        }
       }
     },
     "layouts": {
       "list": [
         "id",
-        "infoToggles",
         "title",
         "description"
       ],
       "edit": [
-        [
-          {
-            "name": "infoToggles",
-            "size": 12
-          }
-        ],
         [
           {
             "name": "title",
@@ -123,6 +146,22 @@
           },
           {
             "name": "tiers",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "pricing_categories",
+            "size": 6
+          },
+          {
+            "name": "switchLabel",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "tier_tables",
             "size": 6
           }
         ]

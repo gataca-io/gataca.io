@@ -2,10 +2,7 @@ import * as React from "react"
 import cx from "classnames"
 
 import * as styles from "./centeredHeader.module.scss"
-import {
-  ButtonModel,
-  InsideSectionsModel,
-} from "../../../../../../interfaces/interfaces"
+import { InsideSectionsModel } from "../../../../../../interfaces/interfaces"
 import PurpleButton from "../../../../../../components/atoms/buttons/purple/PurpleButton"
 
 const CenteredHeader: React.FC<InsideSectionsModel> = props => {

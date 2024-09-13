@@ -43,19 +43,19 @@
       "type": "text"
     },
     "verifiableIds": {
-      "type": "string"
+      "type": "text"
     },
     "customSchemas": {
-      "type": "string"
+      "type": "text"
     },
     "ageVerification": {
-      "type": "string"
+      "type": "text"
     },
     "qualifiedCertificates": {
-      "type": "string"
+      "type": "text"
     },
     "enterpriseWallet": {
-      "type": "string"
+      "type": "text"
     }
   }
 }

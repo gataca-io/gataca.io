@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tier_tables",
+  "info": {
+    "singularName": "tier-table",
+    "pluralName": "tier-tables",
+    "displayName": "Tier Table"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "feature_details": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::feature-detail.feature-detail"
+    },
+    "rows": {
+      "type": "integer"
+    }
+  }
+}

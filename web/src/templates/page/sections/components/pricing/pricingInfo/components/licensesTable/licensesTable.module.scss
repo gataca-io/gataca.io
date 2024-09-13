@@ -220,10 +220,6 @@ table {
       padding: 12px;
       line-height: 16px;
     }
-    .table__body__row__cell__icon {
-      width: 16px;
-      height: 16px;
-    }
 
     &:last-child {
       &:last-child {
@@ -242,4 +238,20 @@ table {
 .license__button {
   font-size: 15px;
   padding: 14px 6.5px;
+}
+
+td img, td.markdown p img {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+}
+
+td.markdown div p {
+  font-family: $base;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  color: var(--neutral1000);
+  margin: 0;
 }

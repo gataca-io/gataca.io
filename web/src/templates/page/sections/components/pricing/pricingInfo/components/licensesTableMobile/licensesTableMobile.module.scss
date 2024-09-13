@@ -122,3 +122,19 @@ select {
   padding-right: 2rem;
 }
 
+td img,
+td.markdown p img {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+}
+
+td.markdown div p {
+  font-family: $base;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  color: var(--neutral1000);
+  margin: 0;
+}

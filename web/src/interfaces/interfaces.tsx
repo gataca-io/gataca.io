@@ -67,6 +67,7 @@ export interface InsideSectionsModel {
   id: any
   title: string
   description: string
+  switchLabel?: string
   cta?: ButtonModel
   rightButton?: any
   leftButton?: any
@@ -83,11 +84,11 @@ export interface InsideSectionsModel {
   blogs?: any
   logos?: any
   tiers?: any
-  panelTitle?: string
-  paragraph_1?: string
-  paragraph_2?: string
-  button?: ButtonModel
   infoToggles?: string
+  pricing_categories?: any
+  tier_tables?: any
+  feature_details?: any
+  tiersDetail?: any
 }
 export interface SeoModel {
   id: string
@@ -118,6 +119,7 @@ export interface IProductModel {
     features?: IProductFeaturesModel
     subPriceMonthLabel?: string
     subPriceYearLabel?: string
+    popular: boolean
 
     button: {
       label: "Contact us"
@@ -158,13 +160,13 @@ export interface IProductFeaturesModel {
   dids: string
   apiKeys: string
   notifications: string[]
-  stadistics: boolean
+  statistics: boolean
   nFactor: string[]
   didPublicCatalogue: boolean
   newSchemaPublicCatalogue: string
   customQR: string
   support: string
-  slas: boolean
+  slas: string
   credentialsInW3CFormat: boolean
   sandBoxEnvironment: boolean
   ebsiIntegration: boolean
@@ -179,6 +181,21 @@ export interface IProductFeaturesModel {
   customSchemas: boolean | string
   sandboxEnvironment: boolean | string
   extraCredentials: boolean | string
+  customLimits: boolean | string
+  advanceFunctionalities: boolean | string
+  ageVerification: string
+  appIntegrations: string
+  didMethods: string
+  trustRegistries: string
+  enterpriseWallet: string
+  qualifiedCertificates: boolean | string
+  roleBasedAccessControl: boolean
+  customRoles: boolean
+  ticketingSystem: boolean
+  slackSupport: boolean
+  accountTeam: boolean
+  twentyFourSeven: string
+  onboardingTraining: string
 }
 
 export interface ImageModel {

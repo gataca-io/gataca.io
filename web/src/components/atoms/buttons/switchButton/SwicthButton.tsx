@@ -5,7 +5,7 @@ import * as styles from "./switchButton.module.scss"
 
 type SwitchButtonProps = {
   options: OptionModel[]
-  rightLabel: string
+  rightLabel?: string
   checkedValue: string
   className?: string
   onChangeSwitchSelect?: ((x?: any) => void) | any

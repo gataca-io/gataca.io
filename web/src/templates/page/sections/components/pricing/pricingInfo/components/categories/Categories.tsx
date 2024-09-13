@@ -4,13 +4,13 @@ import * as styles from "./categories.module.scss"
 
 export type ICategoriesProps = {
   id: string
-  title: string
+  label: string
   index: number
   selected: boolean
   showItem: (x: number) => void
 }
 const Categories: React.FC<ICategoriesProps> = props => {
-  const { id, title, index, selected, showItem } = props
+  const { id, label, index, selected, showItem } = props
   return (
     <>
       <span
@@ -20,7 +20,7 @@ const Categories: React.FC<ICategoriesProps> = props => {
           selected ? styles?.selected : ""
         )}`}
       >
-        {title}
+        {label}
       </span>
     </>
   )

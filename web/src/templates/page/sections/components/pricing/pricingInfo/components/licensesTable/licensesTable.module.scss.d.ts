@@ -19,4 +19,4 @@ export const table__body: string
 export const table__body__row: string
 export const table__body__row__category: string
 export const table__body__row__subcategory: string
-export const table__body__row__cell__icon: string
+export const markdown: string

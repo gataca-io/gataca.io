@@ -40,7 +40,12 @@
   p {
     max-width: 777px;
     text-align: center;
-    
+    font-family: $base;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-decoration: none;
+    margin-bottom: 24px;
     color: $neutral700
   }
 

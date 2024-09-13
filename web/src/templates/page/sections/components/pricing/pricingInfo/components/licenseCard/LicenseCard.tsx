@@ -1,11 +1,7 @@
 import React from "react" // we need this to make JSX compile
 import cx from "classnames"
 import PurpleButton from "../../../../../../../../components/atoms/buttons/purple/PurpleButton"
-import {
-  ButtonModel,
-  IProductModel,
-} from "../../../../../../../../interfaces/interfaces"
-import Tag from "../../../../../../../../components/atoms/tags/Tag"
+import { IProductModel } from "../../../../../../../../interfaces/interfaces"
 import * as styles from "./licenseCard.module.scss"
 import { images } from "../../../../../../../../images/images"
 
@@ -162,16 +158,35 @@ const LicenseCard: React.FC<ILicenseCardProps> = props => {
                   feature={license?.features?.issuedCredentials}
                   label="Credentials"
                 />
-
-                <Feature label="Standard support" />
+                {license?.features?.customLimits === "true" ? (
+                  <Feature label="Custom Limits" />
+                ) : null}
+                {license?.features?.advanceFunctionalities === "true" ? (
+                  <Feature label="Advanced Functionalities" />
+                ) : null}
+                {license?.features?.standardSupport === "true" ? (
+                  <Feature label="Standard support" />
+                ) : null}
+                {license?.features?.premierSupport === "true" ? (
+                  <Feature label="Premium support" />
+                ) : null}
               </>
             ) : null}
 
             {licenseIsEnterprise ? (
               <>
-                <Feature label="Custom Limits" />
-                <Feature label="Advance Functionalities" />
-                <Feature label="Premium Support" />
+                {license?.features?.customLimits === "true" ? (
+                  <Feature label="Custom Limits" />
+                ) : null}
+                {license?.features?.advanceFunctionalities === "true" ? (
+                  <Feature label="Advanced Functionalities" />
+                ) : null}
+                {license?.features?.standardSupport === "true" ? (
+                  <Feature label="Standard support" />
+                ) : null}
+                {license?.features?.premierSupport === "true" ? (
+                  <Feature label="Premium support" />
+                ) : null}
               </>
             ) : null}
           </ul>

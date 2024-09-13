@@ -7,3 +7,4 @@ export const card__header: string
 export const popularTag: string
 export const card__row: string
 export const icon: string
+export const markdown: string
