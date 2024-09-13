@@ -133,7 +133,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
             )}
             {__component === "generic.table" && <Table content={content} />}
 
-            {__component === "pricing.cloud" && "pricing.on-premise" && (
+            {__component === "pricing.cloud" && (
               <PricingInfo
                 categories={pricing_categories?.data}
                 index={0}
