@@ -149,7 +149,6 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
                       ?.attributes?.infoToggle
                   }
                 />
-
                 {tiers?.map(item => {
                   return (
                     <QuantityDataCell

@@ -188,7 +188,7 @@ const LicenseCard: React.FC<ILicenseCardProps> = props => {
           </ul>
         </div>
       </div>
-      <div className={styles?.license__buttonContainer}>
+      <div>
         <PurpleButton
           className={styles?.license__button}
           label={license?.button?.label}
