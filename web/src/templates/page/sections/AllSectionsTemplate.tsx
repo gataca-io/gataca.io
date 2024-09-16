@@ -44,8 +44,6 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
           tier_tables,
         } = item
 
-        console.log("tiers", tiers)
-        console.log("tiersTable ", tier_tables)
         return (
           <>
             {__component === "generic.header" && (
