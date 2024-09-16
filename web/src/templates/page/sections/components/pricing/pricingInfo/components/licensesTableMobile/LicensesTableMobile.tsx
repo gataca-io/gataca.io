@@ -67,20 +67,17 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
               selectLicense(event?.target?.value)
             }}
           >
-            <option
-              defaultChecked={licenseIndex === 2}
-              className={`${cx("bodyRegularMD")}`}
-              value={0}
-            >
-              {tiers[0]?.attributes?.name}
-            </option>
-            <option
-              defaultChecked={licenseIndex === 3}
-              className={`${cx("bodyRegularMD")}`}
-              value={1}
-            >
-              {tiers[1]?.attributes?.name}
-            </option>
+            {tiers?.map((item: any, index: any) => {
+              return (
+                <option
+                  defaultChecked={licenseIndex === index + 1}
+                  className={`${cx("bodyRegularMD")}`}
+                  value={index}
+                >
+                  {item?.attributes?.name}
+                </option>
+              )
+            })}
           </select>
           <div className={styles?.header__container}>
             <div>

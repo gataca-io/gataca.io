@@ -63,11 +63,13 @@
   &__price {
     height: 90px;
     margin-bottom: 0;
+    border-bottom: 1px solid $neutral300;
   }
 
   &__customPrice {
-    height: 54px;
-    margin-bottom: 34px;
+    height: 90px;
+    margin-bottom: 0;
+    border-bottom: 1px solid $neutral300;
   }
 
   &__save {
@@ -85,12 +87,11 @@
   }
 
   &__features {
-    padding-top: 8px;
-    border-top: 1px solid $neutral300;
     width: 100%;
     @include flexbox();
     @include justify-content(space-between);
     @include flex-wrap(wrap);
+    min-height: 90px;
     & > div {
       min-width: 232px;
       width: 100%;
@@ -117,11 +118,16 @@
       }
 
       &__item {
-        margin-top: 16px;
         font-size: 13px;
         align-items: center;
         @include flexbox();
         @include flex-direction(row);
+        &:not(:last-child) {
+          margin-bottom: 16px;
+        }
+        &:first-child {
+          margin-top: 16px;
+        }
         &__content {
           @include flexbox();
           @include flex-direction(row);

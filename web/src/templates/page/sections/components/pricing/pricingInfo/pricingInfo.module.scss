@@ -79,7 +79,9 @@
 
     & > div {
       width: 100%;
-
+      @include flexbox;
+      @include flex-direction(column);
+      @include justify-content(space-between);
       & > div:nth-child(4) {
         gap: 12px;
 
