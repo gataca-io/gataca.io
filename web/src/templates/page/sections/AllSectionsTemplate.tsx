@@ -143,9 +143,8 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
                 infoToggles={infoToggles}
                 tier_tables={tier_tables?.data}
                 tiersDetail={
-                  tier_tables?.data[index]?.attributes?.feature_details?.data[
-                    index
-                  ]?.attributes?.tiers?.data
+                  tier_tables?.data[0]?.attributes?.feature_details?.data[0]
+                    ?.attributes?.tiers?.data
                 }
                 licenses={tiers?.data}
                 subOptionClickedID={props?.location?.hash?.substring(1)}
