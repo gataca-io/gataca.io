@@ -91,16 +91,17 @@ const LicenseCard: React.FC<ILicenseCardProps> = props => {
         <p className={`${styles?.license__header__title} ${cx("bodyBoldXL")}`}>
           {license?.type}
         </p>
+        {license?.description && (
+          <p
+            className={`${styles?.license__description} ${cx(
+              "marginTop8 bodyRegularSM neutral700"
+            )}`}
+          >
+            {license?.description}
+          </p>
+        )}
       </div>
-      {license?.description && (
-        <p
-          className={`${styles?.license__description} ${cx(
-            "marginTop8 bodyRegularSM neutral700"
-          )}`}
-        >
-          {license?.description}
-        </p>
-      )}
+
       {!licenseIsEnterprise ? (
         <div className={`${styles?.license__price}`}>
           <p className={`${cx("heading3")}`}>
@@ -142,11 +143,6 @@ const LicenseCard: React.FC<ILicenseCardProps> = props => {
       )}
       <div className={styles?.license__features}>
         <div>
-          <p
-            className={`${styles?.license__features__title} ${cx(
-              "bodyBoldXS neutral700"
-            )}`}
-          ></p>
           <ul className={styles?.license__features__list}>
             {!licenseIsEnterprise ? (
               <>
@@ -192,17 +188,18 @@ const LicenseCard: React.FC<ILicenseCardProps> = props => {
           </ul>
         </div>
       </div>
-
-      <PurpleButton
-        className={styles?.license__button}
-        label={license?.button?.label}
-        action={() =>
-          window?.open(
-            license?.button?.url,
-            license?.button?.outsideWeb ? "_blank" : "_self"
-          )
-        }
-      />
+      <div className={styles?.license__buttonContainer}>
+        <PurpleButton
+          className={styles?.license__button}
+          label={license?.button?.label}
+          action={() =>
+            window?.open(
+              license?.button?.url,
+              license?.button?.outsideWeb ? "_blank" : "_self"
+            )
+          }
+        />
+      </div>
     </div>
   )
 }

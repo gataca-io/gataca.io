@@ -47,11 +47,13 @@ table {
     line-height: 16px;
 
     &__content {
-      @include inline-flex();
+      @include flexbox();
       @include flex-direction(column);
+      @include justify-content(space-between);
       width: 100%;
       vertical-align: top;
       text-align: left;
+      min-height: 174px;
 
       .license__header {
         width: 100%;
@@ -94,13 +96,12 @@ table {
         }
 
         & > .licensePriceLarge {
-          margin: 34px 0 0;
+          margin: 34px 0 34px;
         }
 
         & > .licenseCustomPrice {
-          margin: 34px 0 0;
+          margin: 34px 0 34px;
           line-height: 16px;
-          margin-bottom: 0;
         }
 
         & > .licenseSave {

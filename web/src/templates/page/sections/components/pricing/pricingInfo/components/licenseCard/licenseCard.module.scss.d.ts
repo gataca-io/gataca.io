@@ -19,3 +19,4 @@ export const license__features: string
 export const license__features__title: string
 export const license__features__list: string
 export const license__button: string
+export const license__buttonContainer: string
