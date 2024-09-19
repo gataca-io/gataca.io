@@ -24,7 +24,7 @@ const teamImages = [
   images.ceoTeam,
   images.ctoTeam,
   images.csoTeam,
-  images.businessTeam,
+  //images.businessTeam,
   images.backendTeam,
   images.frontend1Team,
   images.designTeam,
