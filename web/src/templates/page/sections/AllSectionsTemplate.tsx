@@ -13,6 +13,7 @@ import LogosSlider from "./components/shared/logosSlider/LogosSlider"
 import Table from "./components/shared/table/Table"
 import CenteredHeader from "./components/generic/centeredHeader/CenteredHeader"
 import PricingInfo from "./components/pricing/pricingInfo/PricingInfo"
+import ContentHeadingContainer from "./components/generic/contentHeadingContainer/ContentHeadingContainer"
 
 const AllSectionsTemplate: React.FC<PageModel> = props => {
   const [benefitsLoaded, setBenefitsLoaded] = React.useState<boolean>(false)
@@ -42,6 +43,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
           pricing_categories,
           infoToggles,
           tier_tables,
+          contents,
         } = item
 
         return (
@@ -146,6 +148,12 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
                 }
                 licenses={tiers?.data}
                 subOptionClickedID={props?.location?.hash?.substring(1)}
+              />
+            )}
+            {__component === "generic.content-heading-container" && (
+              <ContentHeadingContainer
+                listContent={contents?.data}
+                key={`.content-heading-container_` + index}
               />
             )}
           </>

@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_generic_content_heading_containers",
+  "info": {
+    "displayName": "ContentHeadingContainer",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "contents": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::content.content"
+    }
+  }
+}

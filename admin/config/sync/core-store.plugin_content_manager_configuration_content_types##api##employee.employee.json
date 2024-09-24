@@ -106,12 +106,6 @@
       }
     },
     "layouts": {
-      "list": [
-        "id",
-        "role",
-        "name",
-        "linkedinRoute"
-      ],
       "edit": [
         [
           {
@@ -133,6 +127,12 @@
             "size": 6
           }
         ]
+      ],
+      "list": [
+        "name",
+        "id",
+        "role",
+        "linkedinRoute"
       ]
     }
   },

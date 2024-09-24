@@ -869,6 +869,60 @@
     },
     {
       "action": "plugin::content-manager.explorer.create",
+      "subject": "api::content.content",
+      "properties": {
+        "fields": [
+          "title",
+          "content",
+          "idContent",
+          "media",
+          "titleSize"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::content.content",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::content.content",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::content.content",
+      "properties": {
+        "fields": [
+          "title",
+          "content",
+          "idContent",
+          "media",
+          "titleSize"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::content.content",
+      "properties": {
+        "fields": [
+          "title",
+          "content",
+          "idContent",
+          "media",
+          "titleSize"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
       "subject": "api::cookie-policy.cookie-policy",
       "properties": {
         "fields": [
