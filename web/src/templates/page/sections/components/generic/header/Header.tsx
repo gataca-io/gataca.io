@@ -18,7 +18,7 @@ const Header: React.FC<InsideSectionsModel> = props => {
         <div className={styles.header__leftSide}>
           <h1 className={`${cx("heading1 marginBottom32")}`}>{title}</h1>
           <p className={`${cx("bodyRegularXL")}`}>{description}</p>
-          {cta && (
+          {cta?.label && (
             <div className={styles.buttons_container}>
               <PurpleButton
                 label={cta?.label}
