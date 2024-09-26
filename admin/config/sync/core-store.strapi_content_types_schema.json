@@ -2721,6 +2721,106 @@
       "actions": {},
       "lifecycles": {}
     },
+    "api::card-table-content.card-table-content": {
+      "kind": "collectionType",
+      "collectionName": "card_table_contents",
+      "info": {
+        "singularName": "card-table-content",
+        "pluralName": "card-table-contents",
+        "displayName": "Card Table Content",
+        "description": ""
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "title": {
+          "type": "string"
+        },
+        "contents": {
+          "type": "relation",
+          "relation": "oneToMany",
+          "target": "api::content.content"
+        },
+        "numberList": {
+          "type": "integer"
+        },
+        "idContent": {
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "card_table_contents",
+        "info": {
+          "singularName": "card-table-content",
+          "pluralName": "card-table-contents",
+          "displayName": "Card Table Content",
+          "description": ""
+        },
+        "options": {
+          "draftAndPublish": true
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "title": {
+            "type": "string"
+          },
+          "contents": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::content.content"
+          },
+          "numberList": {
+            "type": "integer"
+          },
+          "idContent": {
+            "type": "string"
+          }
+        },
+        "kind": "collectionType"
+      },
+      "modelType": "contentType",
+      "modelName": "card-table-content",
+      "connection": "default",
+      "uid": "api::card-table-content.card-table-content",
+      "apiName": "card-table-content",
+      "globalId": "CardTableContent",
+      "actions": {},
+      "lifecycles": {}
+    },
     "api::category.category": {
       "kind": "collectionType",
       "collectionName": "categories",
@@ -3554,6 +3654,11 @@
           ],
           "default": "small"
         },
+        "table": {
+          "type": "component",
+          "repeatable": false,
+          "component": "generic.table"
+        },
         "createdAt": {
           "type": "datetime"
         },
@@ -3628,6 +3733,11 @@
               "large"
             ],
             "default": "small"
+          },
+          "table": {
+            "type": "component",
+            "repeatable": false,
+            "component": "generic.table"
           }
         },
         "kind": "collectionType"
@@ -5282,7 +5392,8 @@
             "shared.slider",
             "generic.table",
             "pricing.cloud",
-            "generic.content-heading-container"
+            "generic.content-heading-container",
+            "shared.content-table"
           ]
         },
         "seo": {
@@ -5368,7 +5479,8 @@
               "shared.slider",
               "generic.table",
               "pricing.cloud",
-              "generic.content-heading-container"
+              "generic.content-heading-container",
+              "shared.content-table"
             ]
           },
           "seo": {

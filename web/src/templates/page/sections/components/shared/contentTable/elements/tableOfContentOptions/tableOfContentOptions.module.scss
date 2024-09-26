@@ -1,0 +1,8 @@
+@import "../../../../../../../../styles/colors.scss";
+@import "../../../../../../../../styles/mixins.scss";
+
+.tableOfContenOptions {
+  li:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}

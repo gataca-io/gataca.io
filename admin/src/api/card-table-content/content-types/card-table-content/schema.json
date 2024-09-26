@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "card_table_contents",
+  "info": {
+    "singularName": "card-table-content",
+    "pluralName": "card-table-contents",
+    "displayName": "Card Table Content",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "contents": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::content.content"
+    },
+    "numberList": {
+      "type": "integer"
+    },
+    "idContent": {
+      "type": "string"
+    }
+  }
+}

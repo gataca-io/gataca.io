@@ -65,6 +65,7 @@ export interface PageModel extends PagePreviewModel {
 
 export interface InsideSectionsModel {
   id: any
+  idContent?: string
   title: string
   description: string
   switchLabel?: string
@@ -90,6 +91,7 @@ export interface InsideSectionsModel {
   feature_details?: any
   tiersDetail?: any
   contents?: any
+  card_table_contents?: any
 }
 export interface SeoModel {
   id: string

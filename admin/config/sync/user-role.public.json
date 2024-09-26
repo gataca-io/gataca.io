@@ -43,6 +43,12 @@
       "action": "api::blog.blog.findOne"
     },
     {
+      "action": "api::card-table-content.card-table-content.find"
+    },
+    {
+      "action": "api::card-table-content.card-table-content.findOne"
+    },
+    {
       "action": "api::category.category.find"
     },
     {
