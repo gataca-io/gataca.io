@@ -13,6 +13,7 @@ import LogosSlider from "./components/shared/logosSlider/LogosSlider"
 import Table from "./components/shared/table/Table"
 import CenteredHeader from "./components/generic/centeredHeader/CenteredHeader"
 import PricingInfo from "./components/pricing/pricingInfo/PricingInfo"
+import ContentHeadingContainer from "./components/generic/contentHeadingContainer/ContentHeadingContainer"
 
 const AllSectionsTemplate: React.FC<PageModel> = props => {
   const [benefitsLoaded, setBenefitsLoaded] = React.useState<boolean>(false)
@@ -42,6 +43,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
           pricing_categories,
           infoToggles,
           tier_tables,
+          contents,
         } = item
 
         return (
@@ -103,7 +105,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
                 id={id}
                 title={title}
                 list={advantages?.data}
-                key={`.why_section_` + id + index}
+                key={`why_section_` + id + index}
               />
             )}
             {__component === "wallet.how-section" && (
@@ -111,7 +113,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
                 title={title}
                 media={media}
                 list={operations?.data}
-                key={`.list_media_` + id + index}
+                key={`list_media_` + id + index}
               />
             )}
             {__component === "shared.faqs-section" && (
@@ -120,7 +122,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
                 subtitle={subtitle}
                 hero={hero}
                 info={faqs?.data}
-                key={`.faqs_section_` + id + index}
+                key={`faqs_section_` + id + index}
               />
             )}
             {__component === "shared.blog-section" && (
@@ -128,7 +130,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
                 title={title}
                 subtitle={subtitle}
                 blogs={blogs?.data}
-                key={`.blogs_section_` + id + index}
+                key={`blogs_section_` + id + index}
               />
             )}
             {__component === "generic.table" && <Table content={content} />}
@@ -146,6 +148,12 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
                 }
                 licenses={tiers?.data}
                 subOptionClickedID={props?.location?.hash?.substring(1)}
+              />
+            )}
+            {__component === "generic.content-heading-container" && (
+              <ContentHeadingContainer
+                listContent={contents?.data}
+                key={`content-heading-container_` + index}
               />
             )}
           </>

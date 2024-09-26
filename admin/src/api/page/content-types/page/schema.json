@@ -30,7 +30,8 @@
         "generic.centered-header",
         "shared.slider",
         "generic.table",
-        "pricing.cloud"
+        "pricing.cloud",
+        "generic.content-heading-container"
       ]
     },
     "seo": {

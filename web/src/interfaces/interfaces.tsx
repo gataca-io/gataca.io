@@ -74,7 +74,7 @@ export interface InsideSectionsModel {
   hero?: any
   icon?: any
   media?: any
-  content?: string
+  content?: string | any
   __component?: string
   subtitle?: string
   benefits?: any
@@ -89,6 +89,7 @@ export interface InsideSectionsModel {
   tier_tables?: any
   feature_details?: any
   tiersDetail?: any
+  contents?: any
 }
 export interface SeoModel {
   id: string

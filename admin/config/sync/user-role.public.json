@@ -73,6 +73,12 @@
       "action": "api::contact-reason.contact-reason.findOne"
     },
     {
+      "action": "api::content.content.find"
+    },
+    {
+      "action": "api::content.content.findOne"
+    },
+    {
       "action": "api::cookie-policy.cookie-policy.find"
     },
     {

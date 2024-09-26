@@ -1,0 +1,1 @@
+export const contentHeadingContainer: string

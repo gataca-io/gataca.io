@@ -3511,6 +3511,136 @@
       "actions": {},
       "lifecycles": {}
     },
+    "api::content.content": {
+      "kind": "collectionType",
+      "collectionName": "contents",
+      "info": {
+        "singularName": "content",
+        "pluralName": "contents",
+        "displayName": "Content",
+        "description": ""
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "title": {
+          "type": "string"
+        },
+        "content": {
+          "type": "richtext"
+        },
+        "idContent": {
+          "type": "string"
+        },
+        "media": {
+          "type": "media",
+          "multiple": false,
+          "required": false,
+          "allowedTypes": [
+            "images",
+            "files",
+            "videos",
+            "audios"
+          ]
+        },
+        "titleSize": {
+          "type": "enumeration",
+          "enum": [
+            "small",
+            "medium",
+            "large"
+          ],
+          "default": "small"
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "contents",
+        "info": {
+          "singularName": "content",
+          "pluralName": "contents",
+          "displayName": "Content",
+          "description": ""
+        },
+        "options": {
+          "draftAndPublish": true
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "title": {
+            "type": "string"
+          },
+          "content": {
+            "type": "richtext"
+          },
+          "idContent": {
+            "type": "string"
+          },
+          "media": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": [
+              "images",
+              "files",
+              "videos",
+              "audios"
+            ]
+          },
+          "titleSize": {
+            "type": "enumeration",
+            "enum": [
+              "small",
+              "medium",
+              "large"
+            ],
+            "default": "small"
+          }
+        },
+        "kind": "collectionType"
+      },
+      "modelType": "contentType",
+      "modelName": "content",
+      "connection": "default",
+      "uid": "api::content.content",
+      "apiName": "content",
+      "globalId": "Content",
+      "actions": {},
+      "lifecycles": {}
+    },
     "api::cookie-policy.cookie-policy": {
       "kind": "singleType",
       "collectionName": "cookie_policies",
@@ -5151,7 +5281,8 @@
             "generic.centered-header",
             "shared.slider",
             "generic.table",
-            "pricing.cloud"
+            "pricing.cloud",
+            "generic.content-heading-container"
           ]
         },
         "seo": {
@@ -5236,7 +5367,8 @@
               "generic.centered-header",
               "shared.slider",
               "generic.table",
-              "pricing.cloud"
+              "pricing.cloud",
+              "generic.content-heading-container"
             ]
           },
           "seo": {
