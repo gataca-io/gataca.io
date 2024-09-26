@@ -105,7 +105,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
                 id={id}
                 title={title}
                 list={advantages?.data}
-                key={`.why_section_` + id + index}
+                key={`why_section_` + id + index}
               />
             )}
             {__component === "wallet.how-section" && (
@@ -113,7 +113,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
                 title={title}
                 media={media}
                 list={operations?.data}
-                key={`.list_media_` + id + index}
+                key={`list_media_` + id + index}
               />
             )}
             {__component === "shared.faqs-section" && (
@@ -122,7 +122,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
                 subtitle={subtitle}
                 hero={hero}
                 info={faqs?.data}
-                key={`.faqs_section_` + id + index}
+                key={`faqs_section_` + id + index}
               />
             )}
             {__component === "shared.blog-section" && (
@@ -130,7 +130,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
                 title={title}
                 subtitle={subtitle}
                 blogs={blogs?.data}
-                key={`.blogs_section_` + id + index}
+                key={`blogs_section_` + id + index}
               />
             )}
             {__component === "generic.table" && <Table content={content} />}
@@ -153,7 +153,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
             {__component === "generic.content-heading-container" && (
               <ContentHeadingContainer
                 listContent={contents?.data}
-                key={`.content-heading-container_` + index}
+                key={`content-heading-container_` + index}
               />
             )}
           </>
