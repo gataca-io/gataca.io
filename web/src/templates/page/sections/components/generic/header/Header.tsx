@@ -27,12 +27,14 @@ const Header: React.FC<InsideSectionsModel> = props => {
             </div>
           )}
         </div>
-        <div className={styles.header__rightSide}>
-          <StrapiImage
-            className={styles.header__imageContainer}
-            image={hero ? hero : null}
-          />
-        </div>
+        {hero.data?.attributes?.url && (
+          <div className={styles.header__rightSide}>
+            <StrapiImage
+              className={styles.header__imageContainer}
+              image={hero ? hero : null}
+            />
+          </div>
+        )}
       </div>
     </section>
   )
