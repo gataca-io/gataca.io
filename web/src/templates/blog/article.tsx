@@ -4,7 +4,7 @@ import Layout from "../../components/templates/mainLayout/MainLayout"
 import PreFooterCTASection from "../../components/templates/sections/preFooterCTA/PreFooterCTA"
 import FirstSection from "./sections/firstSection/FirstSection"
 import SecondSection from "./sections/secondSection/SecondSection"
-import { gatacaStudioURL } from "../../data/globalData"
+import { demolandURL, gatacaStudioURL } from "../../data/globalData"
 import { readingMarkdownTime } from "../../utils/time"
 import IntroBlogSkeleton from "./components/introBlogSkeleton/IntroBlogSkeleton"
 import { SeoHelmet } from "../../components/elements/seo/SeoHelmet"
@@ -54,8 +54,8 @@ const ArticleTemplate: React.FC = (props: any) => {
             action: () => navigate("/company/contact"),
           }}
           rightButton={{
-            label: "Try for free",
-            action: () => window.open(gatacaStudioURL, "_blank"),
+            label: "Try Demo",
+            action: () => window.open(demolandURL, "_blank"),
           }}
         />
       </>

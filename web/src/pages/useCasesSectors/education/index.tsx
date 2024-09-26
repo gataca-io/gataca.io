@@ -9,7 +9,7 @@ import PreFooterCTASection from "../../../components/templates/sections/preFoote
 import ThirdSection from "./sections/thirdSection/ThirdSection"
 import FifthSection from "./sections/fifthSection/FifthSection"
 import FourthSection from "./sections/fourthSection/FourthSection"
-import { gatacaStudioURL } from "../../../data/globalData"
+import { demolandURL, gatacaStudioURL } from "../../../data/globalData"
 
 const EducationPage: React.FC<PageProps> = () => {
   const [strapiData, setStrapiData] = useState<any | undefined>()
@@ -27,11 +27,8 @@ const EducationPage: React.FC<PageProps> = () => {
     }
   }, [])
 
-
-
   const getStrapiData = async () => {
     await fetch(
-
       `${process.env.STRAPI_API_URL}/api/sectors-education?populate[headerSection][populate]=*&populate[stepsSection][populate]=*&populate[useCasesSection][populate]=*&populate[whySection][populate][advantages][populate]=*&populate[successSection][populate][success_stories][populate][link]=*&populate[successSection][populate][success_stories][populate][credentials]=*`
     )
       .then(response => response.json())
@@ -75,8 +72,8 @@ const EducationPage: React.FC<PageProps> = () => {
             action: () => navigate("/company/contact"),
           }}
           rightButton={{
-            label: "Try for free",
-            action: () => window.open(gatacaStudioURL, "_blank"),
+            label: "Try Demo",
+            action: () => window.open(demolandURL, "_blank"),
           }}
         />
       </>

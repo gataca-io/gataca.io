@@ -2,7 +2,7 @@ import type { PageProps } from "gatsby"
 import * as React from "react"
 import Layout from "../../../components/templates/mainLayout/MainLayout"
 import { navigate } from "gatsby"
-import { gatacaStudioURL } from "../../../data/globalData"
+import { demolandURL, gatacaStudioURL } from "../../../data/globalData"
 import PreFooterCTASection from "../../../components/templates/sections/preFooterCTA/PreFooterCTA"
 import FirstSection from "./sections/firstSection/FirstSection"
 import SecondSection from "./sections/secondSection/SecondSection"
@@ -12,13 +12,8 @@ import FifthSection from "./sections/fifthSection/FifthSection"
 
 const FinancePage: React.FC<PageProps> = () => {
   const [strapiData, setStrapiData] = React.useState<any | undefined>()
-  const {
-    headerSection,
-    stepSection,
-    useCaseSection,
-    whySection,
-    howSection,
-  } = strapiData ? strapiData : []
+  const { headerSection, stepSection, useCaseSection, whySection, howSection } =
+    strapiData ? strapiData : []
 
   React.useEffect(() => {
     if (!strapiData) {
@@ -27,7 +22,9 @@ const FinancePage: React.FC<PageProps> = () => {
   }, [])
 
   const getStrapiData = async () => {
-    await fetch(`${process.env.STRAPI_API_URL}/api/sectors-finance?populate[headerSection][populate]=*&populate[stepSection][populate]=*&populate[useCaseSection][populate]=*&populate[whySection][populate][advantages][populate]=*&populate[howSection]=*`)
+    await fetch(
+      `${process.env.STRAPI_API_URL}/api/sectors-finance?populate[headerSection][populate]=*&populate[stepSection][populate]=*&populate[useCaseSection][populate]=*&populate[whySection][populate][advantages][populate]=*&populate[howSection]=*`
+    )
       .then(response => response.json())
       .then(jsonResponse => {
         const strapiData = jsonResponse?.data?.attributes
@@ -68,8 +65,8 @@ const FinancePage: React.FC<PageProps> = () => {
             action: () => navigate("/company/contact"),
           }}
           rightButton={{
-            label: "Try for free",
-            action: () => window.open(gatacaStudioURL, "_blank"),
+            label: "Try Demo",
+            action: () => window.open(demolandURL, "_blank"),
           }}
         />
       </>

@@ -24,7 +24,9 @@ const ContactUsPage: React.FC<PageProps> = () => {
   // }
 
   const getStrapiData = async () => {
-    await fetch(`${process.env.STRAPI_API_URL}/api/company-contact-us?populate%5Bseo%5D%5Bpopulate%5D=*&populate%5BreasonSection%5D%5Bpopulate%5D=*&populate%5BfaqSection%5D%5Bpopulate%5D%5Bfaqs%5D%5Bpopulate%5D=*`)
+    await fetch(
+      `${process.env.STRAPI_API_URL}/api/company-contact-us?populate%5Bseo%5D%5Bpopulate%5D=*&populate%5BreasonSection%5D%5Bpopulate%5D=*&populate%5BfaqSection%5D%5Bpopulate%5D%5Bfaqs%5D%5Bpopulate%5D=*`
+    )
       .then(response => response.json())
       .then(jsonResponse => {
         const strapiData = jsonResponse?.data?.attributes
@@ -55,7 +57,7 @@ const ContactUsPage: React.FC<PageProps> = () => {
             action: () => navigate("/pricing"),
           }}
           rightButton={{
-            label: "Try for free",
+            label: "Getting Started",
             action: () => window.open(gatacaStudioURL, "_blank"),
           }}
         />
