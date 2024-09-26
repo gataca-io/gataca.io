@@ -4,7 +4,7 @@ import { useState } from "react"
 import Layout from "../../../components/templates/mainLayout/MainLayout"
 import PreFooterCTASection from "../../../components/templates/sections/preFooterCTA/PreFooterCTA"
 import { navigate } from "gatsby"
-import { gatacaStudioURL } from "../../../data/globalData"
+import { demolandURL, gatacaStudioURL } from "../../../data/globalData"
 import FirstSection from "./sections/firstSection/FirstSection"
 import SecondSection from "./sections/secondSection/SecondSection"
 import ThirdSection from "./sections/thirdSection/ThirdSection"
@@ -53,17 +53,27 @@ const AboutUsPage: React.FC<PageProps> = () => {
           titleHeader={headerSection?.title}
           descriptionHeader={headerSection?.subtitle}
           title={ourStorySection?.title}
-          descriptionParagraphs={[ourStorySection?.firstParagraph, ourStorySection?.secondParagraph, ourStorySection?.thirdParagraph]}
+          descriptionParagraphs={[
+            ourStorySection?.firstParagraph,
+            ourStorySection?.secondParagraph,
+            ourStorySection?.thirdParagraph,
+          ]}
         />
         <SecondSection description={missionDescription} />
-        <ThirdSection title={valuesSection?.title} list={valuesSection?.values.data} />
+        <ThirdSection
+          title={valuesSection?.title}
+          list={valuesSection?.values.data}
+        />
         <FourthSection
           title={employeeSection?.title}
           description={employeeSection?.description}
           button={employeeSection?.button}
           list={employeeSection?.employees?.data}
         />
-        <FifthSection title={awardsSection?.title} list={awardsSection?.awards.data} />
+        <FifthSection
+          title={awardsSection?.title}
+          list={awardsSection?.awards.data}
+        />
         <SixthSection description={fundingDescription} />
         <PreFooterCTASection
           title={"Ready to start?"}
@@ -75,8 +85,8 @@ const AboutUsPage: React.FC<PageProps> = () => {
             action: () => navigate("/company/contact"),
           }}
           rightButton={{
-            label: "Try for free",
-            action: () => window.open(gatacaStudioURL, "_blank"),
+            label: "Try Demo",
+            action: () => window.open(demolandURL, "_blank"),
           }}
         />
       </>

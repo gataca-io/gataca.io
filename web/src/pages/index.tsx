@@ -12,7 +12,7 @@ import ThirdSection from "./home/sections/thirdSection/ThirdSection"
 import FirstSection from "./home/sections/firstSection/FirstSection"
 import * as styles from "./home/home.module.scss"
 import { sortByDate } from "../utils/sort"
-import { gatacaStudioURL } from "../data/globalData"
+import { demolandURL, gatacaStudioURL } from "../data/globalData"
 import SeventhSection from "./home/sections/seventhSection/SeventhSection"
 
 const IndexPage: React.FC<PageProps> = () => {
@@ -49,7 +49,9 @@ const IndexPage: React.FC<PageProps> = () => {
   }
 
   const getHomeStrapiData = async () => {
-    await fetch(`${process.env.STRAPI_API_URL}/api/entry?&populate[seo][populate]=*&populate[firstSection][populate]=*&populate[thirdSection][populate]=*&populate[fourthSection][populate]=*&populate[fifthSection][populate]=*&populate[sixthSection][populate]=*&populate[seventhSection][populate]=*&populate[eighthSection][populate]=*&populate[localizations][populate]=*`)
+    await fetch(
+      `${process.env.STRAPI_API_URL}/api/entry?&populate[seo][populate]=*&populate[firstSection][populate]=*&populate[thirdSection][populate]=*&populate[fourthSection][populate]=*&populate[fifthSection][populate]=*&populate[sixthSection][populate]=*&populate[seventhSection][populate]=*&populate[eighthSection][populate]=*&populate[localizations][populate]=*`
+    )
       .then(response => response.json())
       .then(jsonResponse => {
         const homeStrapiData = jsonResponse?.data?.attributes
@@ -112,8 +114,8 @@ const IndexPage: React.FC<PageProps> = () => {
             action: () => navigate("/company/contact"),
           }}
           rightButton={{
-            label: "Try for free",
-            action: () => window.open(gatacaStudioURL, "_blank"),
+            label: "Try Demo",
+            action: () => window.open(demolandURL, "_blank"),
           }}
         />
       </>

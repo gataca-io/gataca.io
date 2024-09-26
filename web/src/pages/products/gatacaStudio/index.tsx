@@ -8,7 +8,7 @@ import ThirdSection from "./sections/thirdSection/ThirdSection"
 import FourthSection from "./sections/fourthSection/FourthSection"
 import FifthSection from "./sections/fifthSection/FifthSection"
 import SixthSection from "./sections/sixthSection/SixthSection"
-import { gatacaStudioURL } from "../../../data/globalData"
+import { demolandURL } from "../../../data/globalData"
 
 const GatacaStudioPage: React.FC<PageProps> = () => {
   const [gatacaStudioData, setGatacaStudioData] = React.useState<
@@ -37,7 +37,9 @@ const GatacaStudioPage: React.FC<PageProps> = () => {
   // }
 
   const getStrapiData = async () => {
-    await fetch(`${process.env.STRAPI_API_URL}/api/gataca-studio?populate[seo]=*&populate[featureSection][populate]=*&populate[whyStudioSection][populate]=*&populate[howWorksSection][populate]=*&populate[tierSection][populate][tiers][populate]=*&populate[headerSection][populate]=*&populate[adSection][populate]=*`)
+    await fetch(
+      `${process.env.STRAPI_API_URL}/api/gataca-studio?populate[seo]=*&populate[featureSection][populate]=*&populate[whyStudioSection][populate]=*&populate[howWorksSection][populate]=*&populate[tierSection][populate][tiers][populate]=*&populate[headerSection][populate]=*&populate[adSection][populate]=*`
+    )
       .then(response => response.json())
       .then(jsonResponse => {
         const strapiData = jsonResponse?.data?.attributes
@@ -58,7 +60,10 @@ const GatacaStudioPage: React.FC<PageProps> = () => {
           list={featureSection?.features?.data}
           description={featureSection?.description}
         />
-        <ThirdSection title={adSection?.title} list={adSection?.ad_features?.data} />
+        <ThirdSection
+          title={adSection?.title}
+          list={adSection?.ad_features?.data}
+        />
         <FourthSection
           title={whyStudioSection?.title}
           description={whyStudioSection?.description}
@@ -84,8 +89,8 @@ const GatacaStudioPage: React.FC<PageProps> = () => {
             action: () => navigate("/company/contact"),
           }}
           rightButton={{
-            label: "Try for free",
-            action: () => window.open(gatacaStudioURL, "_blank"),
+            label: "Try Demo",
+            action: () => window.open(demolandURL, "_blank"),
           }}
         />
       </>

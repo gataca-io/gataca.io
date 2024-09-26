@@ -3,6 +3,7 @@ import cx from "classnames"
 import PurpleButton from "../../../../components/atoms/buttons/purple/PurpleButton"
 import * as styles from "./headerSection.module.scss"
 import { gatacaStudioURL } from "../../../../data/globalData"
+import { navigate } from "gatsby"
 
 export type ISectionProps = {
   title: string
@@ -29,8 +30,8 @@ const UseCasesSection: React.FC<ISectionProps> = props => {
           <p className={cx("bodyRegularXL marginBottom32")}>{description}</p>
           <div className={styles?.buttonContainer}>
             <PurpleButton
-              label={"Try for free"}
-              action={() => window.open(gatacaStudioURL, "_blank")}
+              label={"Contact Us"}
+              action={() => navigate("/company/contact")}
             />
           </div>
         </div>

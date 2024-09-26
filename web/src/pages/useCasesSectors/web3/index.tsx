@@ -2,7 +2,7 @@ import type { PageProps } from "gatsby"
 import * as React from "react"
 import Layout from "../../../components/templates/mainLayout/MainLayout"
 import { navigate } from "gatsby"
-import { gatacaStudioURL } from "../../../data/globalData"
+import { demolandURL, gatacaStudioURL } from "../../../data/globalData"
 import PreFooterCTASection from "../../../components/templates/sections/preFooterCTA/PreFooterCTA"
 import FirstSection from "./sections/firstSection/FirstSection"
 import SecondSection from "./sections/secondSection/SecondSection"
@@ -75,8 +75,8 @@ const Web3Page: React.FC<PageProps> = () => {
             action: () => navigate("/company/contact"),
           }}
           rightButton={{
-            label: "Try for free",
-            action: () => window.open(gatacaStudioURL, "_blank"),
+            label: "Try Demo",
+            action: () => window.open(demolandURL, "_blank"),
           }}
         />
       </>

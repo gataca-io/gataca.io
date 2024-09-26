@@ -5,6 +5,7 @@ import PurpleButton from "../../../../../components/atoms/buttons/purple/PurpleB
 import { ButtonModel } from "../../../../../interfaces/interfaces"
 import { gatacaStudioURL } from "../../../../../data/globalData"
 import * as styles from "./firstSection.module.scss"
+import { navigate } from "gatsby"
 
 export type ISectionProps = {
   title: string
@@ -29,7 +30,7 @@ const FirstSection: React.FC<ISectionProps> = props => {
             {button && (
               <PurpleButton
                 label={button?.label}
-                action={() => window.open(gatacaStudioURL, "_blank")}
+                action={() => navigate("/company/contact")}
               />
             )}
           </div>
