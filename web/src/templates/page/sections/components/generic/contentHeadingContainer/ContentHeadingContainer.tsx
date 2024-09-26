@@ -46,8 +46,14 @@ const ContentHeadingContainer: React.FC<ISectionProps> = props => {
 
             {media && (
               <>
-                {media?.data?.attributes?.ext !=
-                (".mp4" || ".mpeg" || ".mov" || "wmv" || ".avi" || ".flv") ? (
+                {media?.data?.attributes?.ext ===
+                (".jpeg" ||
+                  ".png" ||
+                  ".gif" ||
+                  ".scg" ||
+                  ".tiff" ||
+                  ".ico" ||
+                  ".dvu") ? (
                   <div className={cx("marginBottom32")}>
                     <StrapiImage image={media ? media : null} />
                   </div>
