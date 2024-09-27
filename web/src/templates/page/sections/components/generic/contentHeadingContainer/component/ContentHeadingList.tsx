@@ -48,8 +48,8 @@ const ContentHeadingList: React.FC<ISectionProps> = props => {
             {media && (
               <>
                 {media?.data?.attributes?.ext ===
-                (".jpeg" ||
-                  ".png" ||
+                (".png" ||
+                  ".jpeg" ||
                   ".gif" ||
                   ".scg" ||
                   ".tiff" ||
