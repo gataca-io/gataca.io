@@ -3,7 +3,7 @@ import cx from "classnames"
 import { ButtonModel } from "../../../../../interfaces/interfaces"
 import PurpleButton from "../../../../../components/atoms/buttons/purple/PurpleButton"
 import * as styles from "./firstSection.module.scss"
-import { gatacaStudioURL } from "../../../../../data/globalData"
+import { navigate } from "gatsby"
 
 export type ISectionProps = {
   title: string
@@ -24,7 +24,7 @@ const FirstSection: React.FC<ISectionProps> = props => {
         <div className={styles?.buttonContainer}>
           <PurpleButton
             label={contactButton?.label}
-            action={() => window.open(gatacaStudioURL, "_target")}
+            action={() => navigate("/company/contact")}
           />
         </div>
       </div>
