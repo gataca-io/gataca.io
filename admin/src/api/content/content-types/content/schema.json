@@ -40,6 +40,11 @@
         "large"
       ],
       "default": "small"
+    },
+    "table": {
+      "type": "component",
+      "repeatable": false,
+      "component": "generic.table"
     }
   }
 }

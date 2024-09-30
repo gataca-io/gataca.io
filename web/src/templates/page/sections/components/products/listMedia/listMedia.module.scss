@@ -12,7 +12,7 @@
   gap: 32px;
 
   @include min-width($mobileXL) {
-    margin: 0 auto 220px;
+    margin: 0 auto 200px;
     padding: 0 40px;
     @include flex-direction(row);
     @include align-items(center);

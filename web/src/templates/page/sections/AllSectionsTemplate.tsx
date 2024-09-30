@@ -14,6 +14,7 @@ import Table from "./components/shared/table/Table"
 import CenteredHeader from "./components/generic/centeredHeader/CenteredHeader"
 import PricingInfo from "./components/pricing/pricingInfo/PricingInfo"
 import ContentHeadingContainer from "./components/generic/contentHeadingContainer/ContentHeadingContainer"
+import ContentTable from "./components/shared/contentTable/ContentTable"
 
 const AllSectionsTemplate: React.FC<PageModel> = props => {
   const [benefitsLoaded, setBenefitsLoaded] = React.useState<boolean>(false)
@@ -44,6 +45,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
           infoToggles,
           tier_tables,
           contents,
+          card_table_contents,
         } = item
 
         return (
@@ -154,6 +156,13 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
               <ContentHeadingContainer
                 listContent={contents?.data}
                 key={`content-heading-container_` + index}
+              />
+            )}
+            {__component === "shared.content-table" && (
+              <ContentTable
+                listContent={contents?.data}
+                tableOfContent={card_table_contents?.data}
+                key={`content-table_` + index}
               />
             )}
           </>

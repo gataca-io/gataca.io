@@ -90,6 +90,20 @@
           "sortable": true
         }
       },
+      "table": {
+        "edit": {
+          "label": "table",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "table",
+          "searchable": false,
+          "sortable": false
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -120,6 +134,12 @@
       }
     },
     "layouts": {
+      "list": [
+        "id",
+        "idContent",
+        "title",
+        "table"
+      ],
       "edit": [
         [
           {
@@ -148,12 +168,13 @@
             "name": "media",
             "size": 6
           }
+        ],
+        [
+          {
+            "name": "table",
+            "size": 12
+          }
         ]
-      ],
-      "list": [
-        "id",
-        "idContent",
-        "title"
       ]
     }
   },

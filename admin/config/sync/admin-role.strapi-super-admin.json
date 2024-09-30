@@ -329,6 +329,57 @@
     },
     {
       "action": "plugin::content-manager.explorer.create",
+      "subject": "api::card-table-content.card-table-content",
+      "properties": {
+        "fields": [
+          "title",
+          "contents",
+          "numberList",
+          "idContent"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::card-table-content.card-table-content",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::card-table-content.card-table-content",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::card-table-content.card-table-content",
+      "properties": {
+        "fields": [
+          "title",
+          "contents",
+          "numberList",
+          "idContent"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::card-table-content.card-table-content",
+      "properties": {
+        "fields": [
+          "title",
+          "contents",
+          "numberList",
+          "idContent"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
       "subject": "api::category.category",
       "properties": {
         "fields": [
@@ -876,7 +927,8 @@
           "content",
           "idContent",
           "media",
-          "titleSize"
+          "titleSize",
+          "table.content"
         ]
       },
       "conditions": []
@@ -902,7 +954,8 @@
           "content",
           "idContent",
           "media",
-          "titleSize"
+          "titleSize",
+          "table.content"
         ]
       },
       "conditions": []
@@ -916,7 +969,8 @@
           "content",
           "idContent",
           "media",
-          "titleSize"
+          "titleSize",
+          "table.content"
         ]
       },
       "conditions": []

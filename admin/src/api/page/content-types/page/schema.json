@@ -31,7 +31,8 @@
         "shared.slider",
         "generic.table",
         "pricing.cloud",
-        "generic.content-heading-container"
+        "generic.content-heading-container",
+        "shared.content-table"
       ]
     },
     "seo": {
