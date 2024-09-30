@@ -8,7 +8,6 @@ export type ISectionProps = {
   tableClassName?: string
   listContent: {
     attributes: {
-      id: any
       title?: string
       idContent?: string
       content?: string | any
@@ -28,11 +27,11 @@ const ContentHeadingList: React.FC<ISectionProps> = props => {
   return (
     <>
       {listContent?.map(item => {
-        const { id, idContent, title, content, media, titleSize, table } =
+        const { idContent, title, content, media, titleSize, table } =
           item.attributes
 
         return (
-          <div id={idContent} key={`content_` + id}>
+          <div id={idContent} key={`content_` + idContent}>
             {titleSize === "small" && (
               <h4 className={`${cx("heading4 marginBottom32")}`}>{title}</h4>
             )}
