@@ -61,6 +61,8 @@ export interface PageModel extends PagePreviewModel {
   slugURL: string
   subPath: string
   location: any
+  locale?: string
+  localizations?: LocalizationsModel
 }
 
 export interface InsideSectionsModel {
@@ -92,6 +94,18 @@ export interface InsideSectionsModel {
   tiersDetail?: any
   contents?: any
   card_table_contents?: any
+}
+
+export interface LocalizationsModel {
+  data: [
+    {
+      attributes: {
+        locale: string
+        slugURL: string
+        subPath: string
+      }
+    }
+  ]
 }
 export interface SeoModel {
   id: string

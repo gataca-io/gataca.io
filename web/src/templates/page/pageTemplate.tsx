@@ -13,11 +13,15 @@ const PageTemplate: React.FC = (props: any) => {
 
   React.useEffect(() => {
     getPageData()
-  }, [props?.pageContext?.slugURL, props?.pageContext?.subPath])
+  }, [
+    props?.pageContext?.slugURL,
+    props?.pageContext?.subPath,
+    props?.pageContext?.locale,
+  ])
 
   const getPageData = async () => {
     await fetch(
-      `${process.env.STRAPI_API_URL}/api/pages?filters[slugURL]=${props?.pageContext?.slugURL}&populate=deep,6`
+      `${process.env.STRAPI_API_URL}/api/pages?locale=${props?.pageContext?.locale}&filters[slugURL]=${props?.pageContext?.slugURL}&populate=deep,6`
     )
       .then(response => response.json())
       .then(jsonResponse => {

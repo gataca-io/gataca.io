@@ -148,6 +148,9 @@
       "action": "api::page.page.create"
     },
     {
+      "action": "api::page.page.createLocalization"
+    },
+    {
       "action": "api::page.page.find"
     },
     {
@@ -263,6 +266,9 @@
     },
     {
       "action": "api::wallet-feature.wallet-feature.findOne"
+    },
+    {
+      "action": "plugin::i18n.locales.listLocales"
     },
     {
       "action": "plugin::users-permissions.auth.callback"

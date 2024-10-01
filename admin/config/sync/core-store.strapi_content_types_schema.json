@@ -5371,7 +5371,11 @@
       "options": {
         "draftAndPublish": true
       },
-      "pluginOptions": {},
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
       "attributes": {
         "sections": {
           "type": "dynamiczone",
@@ -5394,25 +5398,52 @@
             "pricing.cloud",
             "generic.content-heading-container",
             "shared.content-table"
-          ]
+          ],
+          "pluginOptions": {
+            "i18n": {
+              "localized": true
+            }
+          }
         },
         "seo": {
           "type": "component",
           "repeatable": false,
-          "component": "shared.seo"
+          "component": "shared.seo",
+          "pluginOptions": {
+            "i18n": {
+              "localized": true
+            }
+          }
         },
         "title": {
           "type": "string",
           "required": true,
-          "unique": true
+          "unique": true,
+          "pluginOptions": {
+            "i18n": {
+              "localized": true
+            }
+          }
         },
         "slugURL": {
           "type": "string",
           "required": true,
-          "unique": true
+          "unique": false,
+          "pluginOptions": {
+            "i18n": {
+              "localized": true
+            }
+          }
         },
         "subPath": {
-          "type": "string"
+          "type": "string",
+          "pluginOptions": {
+            "i18n": {
+              "localized": true
+            }
+          },
+          "required": true,
+          "default": "/"
         },
         "createdAt": {
           "type": "datetime"
@@ -5445,6 +5476,22 @@
           "visible": false,
           "useJoinTable": false,
           "private": true
+        },
+        "localizations": {
+          "writable": true,
+          "private": false,
+          "configurable": false,
+          "visible": false,
+          "type": "relation",
+          "relation": "oneToMany",
+          "target": "api::page.page"
+        },
+        "locale": {
+          "writable": true,
+          "private": false,
+          "configurable": false,
+          "visible": false,
+          "type": "string"
         }
       },
       "__schema__": {
@@ -5458,7 +5505,11 @@
         "options": {
           "draftAndPublish": true
         },
-        "pluginOptions": {},
+        "pluginOptions": {
+          "i18n": {
+            "localized": true
+          }
+        },
         "attributes": {
           "sections": {
             "type": "dynamiczone",
@@ -5481,25 +5532,52 @@
               "pricing.cloud",
               "generic.content-heading-container",
               "shared.content-table"
-            ]
+            ],
+            "pluginOptions": {
+              "i18n": {
+                "localized": true
+              }
+            }
           },
           "seo": {
             "type": "component",
             "repeatable": false,
-            "component": "shared.seo"
+            "component": "shared.seo",
+            "pluginOptions": {
+              "i18n": {
+                "localized": true
+              }
+            }
           },
           "title": {
             "type": "string",
             "required": true,
-            "unique": true
+            "unique": true,
+            "pluginOptions": {
+              "i18n": {
+                "localized": true
+              }
+            }
           },
           "slugURL": {
             "type": "string",
             "required": true,
-            "unique": true
+            "unique": false,
+            "pluginOptions": {
+              "i18n": {
+                "localized": true
+              }
+            }
           },
           "subPath": {
-            "type": "string"
+            "type": "string",
+            "pluginOptions": {
+              "i18n": {
+                "localized": true
+              }
+            },
+            "required": true,
+            "default": "/"
           }
         },
         "kind": "collectionType"
