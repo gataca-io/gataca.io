@@ -22,7 +22,7 @@
   "strapi": {
     "uuid": "a015373d-29e4-444c-ad10-e94229114663"
   },
-  "version": "6.1.1",
+  "version": "6.1.2",
   "dependencies": {
     "@strapi/plugin-documentation": "4.7.1",
     "@strapi/plugin-i18n": "4.7.1",
