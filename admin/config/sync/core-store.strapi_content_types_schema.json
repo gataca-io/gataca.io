@@ -2189,6 +2189,96 @@
       "actions": {},
       "lifecycles": {}
     },
+    "api::alternate-url.alternate-url": {
+      "kind": "collectionType",
+      "collectionName": "alternate_urls",
+      "info": {
+        "singularName": "alternate-url",
+        "pluralName": "alternate-urls",
+        "displayName": "Alternate Url",
+        "description": ""
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "url": {
+          "type": "string"
+        },
+        "hreflangLocale": {
+          "type": "string"
+        },
+        "label": {
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "alternate_urls",
+        "info": {
+          "singularName": "alternate-url",
+          "pluralName": "alternate-urls",
+          "displayName": "Alternate Url",
+          "description": ""
+        },
+        "options": {
+          "draftAndPublish": true
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "url": {
+            "type": "string"
+          },
+          "hreflangLocale": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          }
+        },
+        "kind": "collectionType"
+      },
+      "modelType": "contentType",
+      "modelName": "alternate-url",
+      "connection": "default",
+      "uid": "api::alternate-url.alternate-url",
+      "apiName": "alternate-url",
+      "globalId": "AlternateUrl",
+      "actions": {},
+      "lifecycles": {}
+    },
     "api::author.author": {
       "kind": "collectionType",
       "collectionName": "authors",

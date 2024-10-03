@@ -36,6 +36,11 @@
       "type": "string",
       "unique": false,
       "required": false
+    },
+    "alternate_urls": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::alternate-url.alternate-url"
     }
   }
 }

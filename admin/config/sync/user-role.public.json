@@ -16,6 +16,12 @@
       "action": "api::advantage.advantage.findOne"
     },
     {
+      "action": "api::alternate-url.alternate-url.find"
+    },
+    {
+      "action": "api::alternate-url.alternate-url.findOne"
+    },
+    {
       "action": "api::author.author.find"
     },
     {

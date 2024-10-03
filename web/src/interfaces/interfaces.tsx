@@ -114,6 +114,14 @@ export interface SeoModel {
   keywords?: string
   canonicalURL?: string
   rrssImg?: StrapiImageModel
+  alternateURL?: {
+    data: {
+      attributes: {
+        url: string
+        hreflangLocale: string
+      }
+    }[]
+  }
 }
 
 export interface StrapiImageModel {
