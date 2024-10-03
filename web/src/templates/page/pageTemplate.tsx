@@ -6,6 +6,7 @@ import { PageModel } from "../../interfaces/interfaces"
 import PageSkeleton from "./components/introBlogSkeleton/PageSkeleton"
 import AllSectionsTemplate from "./sections/AllSectionsTemplate"
 import * as styles from "./pageTemplate.module.scss"
+import LocaleLink from "./components/localeLink/LocaleLink"
 
 const PageTemplate: React.FC = (props: any) => {
   const [page, setPage] = React.useState<PageModel | undefined>()
@@ -35,6 +36,7 @@ const PageTemplate: React.FC = (props: any) => {
   return (
     <Layout seoData={pageData?.seo}>
       <>
+        <LocaleLink pageContext={props?.pageContext} />
         {pageData ? <AllSectionsTemplate {...pageData} /> : <PageSkeleton />}
         {pageData?.sections?.map(item => {
           const { __component, title, description, rightButton, leftButton } =
