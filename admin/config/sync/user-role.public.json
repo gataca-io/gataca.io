@@ -16,6 +16,12 @@
       "action": "api::advantage.advantage.findOne"
     },
     {
+      "action": "api::alternate-url.alternate-url.find"
+    },
+    {
+      "action": "api::alternate-url.alternate-url.findOne"
+    },
+    {
       "action": "api::author.author.find"
     },
     {
@@ -41,6 +47,9 @@
     },
     {
       "action": "api::blog.blog.findOne"
+    },
+    {
+      "action": "api::card-table-content.card-table-content.createLocalization"
     },
     {
       "action": "api::card-table-content.card-table-content.find"
@@ -77,6 +86,9 @@
     },
     {
       "action": "api::contact-reason.contact-reason.findOne"
+    },
+    {
+      "action": "api::content.content.createLocalization"
     },
     {
       "action": "api::content.content.find"
@@ -146,6 +158,9 @@
     },
     {
       "action": "api::page.page.create"
+    },
+    {
+      "action": "api::page.page.createLocalization"
     },
     {
       "action": "api::page.page.find"
@@ -263,6 +278,9 @@
     },
     {
       "action": "api::wallet-feature.wallet-feature.findOne"
+    },
+    {
+      "action": "plugin::i18n.locales.listLocales"
     },
     {
       "action": "plugin::users-permissions.auth.callback"

@@ -49,6 +49,14 @@ exports.createPages = ({ actions, graphql }) => {
             id
             slugURL
             subPath
+            locale
+            localizations {
+              data  {
+                attributes {
+                  locale
+                }
+              }
+            }
           }
         }
       }
@@ -69,6 +77,24 @@ exports.createPages = ({ actions, graphql }) => {
     }),
       // Create landing for each page.
       result.data.allStrapiPage.edges.forEach(({ node }) => {
+        if (node.localizations.data.length > 0) {
+          node.localizations.data.forEach(localization => {
+            localization.attributes.locale
+            createPage({
+              path: `${localization.attributes.locale.toLowerCase()}${
+                node?.subPath
+              }${node?.slugURL}`,
+              component: path.resolve(`src/templates/page/pageTemplate.tsx`),
+              context: {
+                id: node.id,
+                slugURL: node.slugURL,
+                subPath: node.subPath,
+                locale: localization.attributes.locale,
+                localizations: node.localizations,
+              },
+            })
+          })
+        }
         createPage({
           path: `${node?.subPath}${node?.slugURL}`,
           component: path.resolve(`src/templates/page/pageTemplate.tsx`),
@@ -76,6 +102,8 @@ exports.createPages = ({ actions, graphql }) => {
             id: node.id,
             slugURL: node.slugURL,
             subPath: node.subPath,
+            locale: node.locale,
+            localizations: node.localizations,
           },
         })
       })

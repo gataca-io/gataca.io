@@ -61,6 +61,8 @@ export interface PageModel extends PagePreviewModel {
   slugURL: string
   subPath: string
   location: any
+  locale?: string
+  localizations?: LocalizationsModel
 }
 
 export interface InsideSectionsModel {
@@ -93,6 +95,18 @@ export interface InsideSectionsModel {
   contents?: any
   card_table_contents?: any
 }
+
+export interface LocalizationsModel {
+  data: [
+    {
+      attributes: {
+        locale: string
+        slugURL: string
+        subPath: string
+      }
+    }
+  ]
+}
 export interface SeoModel {
   id: string
   metaTitle: string
@@ -100,6 +114,14 @@ export interface SeoModel {
   keywords?: string
   canonicalURL?: string
   rrssImg?: StrapiImageModel
+  alternateURL?: {
+    data: {
+      attributes: {
+        url: string
+        hreflangLocale: string
+      }
+    }[]
+  }
 }
 
 export interface StrapiImageModel {

@@ -6,6 +6,7 @@ import { PageModel } from "../../interfaces/interfaces"
 import PageSkeleton from "./components/introBlogSkeleton/PageSkeleton"
 import AllSectionsTemplate from "./sections/AllSectionsTemplate"
 import * as styles from "./pageTemplate.module.scss"
+import LocaleLink from "./components/localeLink/LocaleLink"
 
 const PageTemplate: React.FC = (props: any) => {
   const [page, setPage] = React.useState<PageModel | undefined>()
@@ -13,11 +14,15 @@ const PageTemplate: React.FC = (props: any) => {
 
   React.useEffect(() => {
     getPageData()
-  }, [props?.pageContext?.slugURL, props?.pageContext?.subPath])
+  }, [
+    props?.pageContext?.slugURL,
+    props?.pageContext?.subPath,
+    props?.pageContext?.locale,
+  ])
 
   const getPageData = async () => {
     await fetch(
-      `${process.env.STRAPI_API_URL}/api/pages?filters[slugURL]=${props?.pageContext?.slugURL}&populate=deep,6`
+      `${process.env.STRAPI_API_URL}/api/pages?locale=${props?.pageContext?.locale}&filters[slugURL]=${props?.pageContext?.slugURL}&populate=deep,6`
     )
       .then(response => response.json())
       .then(jsonResponse => {
@@ -31,6 +36,7 @@ const PageTemplate: React.FC = (props: any) => {
   return (
     <Layout seoData={pageData?.seo}>
       <>
+        <LocaleLink pageContext={props?.pageContext} />
         {pageData ? <AllSectionsTemplate {...pageData} /> : <PageSkeleton />}
         {pageData?.sections?.map(item => {
           const { __component, title, description, rightButton, leftButton } =

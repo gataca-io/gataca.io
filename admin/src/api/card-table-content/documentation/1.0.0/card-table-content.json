@@ -503,5 +503,97 @@
       ],
       "operationId": "delete/card-table-contents/{id}"
     }
+  },
+  "/card-table-contents/{id}/localizations": {
+    "post": {
+      "responses": {
+        "200": {
+          "description": "OK",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CardTableContentLocalizationResponse"
+              }
+            }
+          }
+        },
+        "400": {
+          "description": "Bad Request",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Error"
+              }
+            }
+          }
+        },
+        "401": {
+          "description": "Unauthorized",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Error"
+              }
+            }
+          }
+        },
+        "403": {
+          "description": "Forbidden",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Error"
+              }
+            }
+          }
+        },
+        "404": {
+          "description": "Not Found",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Error"
+              }
+            }
+          }
+        },
+        "500": {
+          "description": "Internal Server Error",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Error"
+              }
+            }
+          }
+        }
+      },
+      "tags": [
+        "Card-table-content"
+      ],
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "description": "",
+          "deprecated": false,
+          "required": true,
+          "schema": {
+            "type": "number"
+          }
+        }
+      ],
+      "operationId": "post/card-table-contents/{id}/localizations",
+      "requestBody": {
+        "required": true,
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/CardTableContentLocalizationRequest"
+            }
+          }
+        }
+      }
+    }
   }
 }

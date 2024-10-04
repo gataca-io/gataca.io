@@ -27,7 +27,7 @@
           "placeholder": "",
           "visible": true,
           "editable": true,
-          "mainField": "title"
+          "mainField": "idContent"
         },
         "list": {
           "label": "card_table_contents",
@@ -42,7 +42,7 @@
           "placeholder": "",
           "visible": true,
           "editable": true,
-          "mainField": "title"
+          "mainField": "idContent"
         },
         "list": {
           "label": "contents",

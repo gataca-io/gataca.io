@@ -101,6 +101,54 @@
     },
     {
       "action": "plugin::content-manager.explorer.create",
+      "subject": "api::alternate-url.alternate-url",
+      "properties": {
+        "fields": [
+          "url",
+          "hreflangLocale",
+          "label"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::alternate-url.alternate-url",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::alternate-url.alternate-url",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::alternate-url.alternate-url",
+      "properties": {
+        "fields": [
+          "url",
+          "hreflangLocale",
+          "label"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::alternate-url.alternate-url",
+      "properties": {
+        "fields": [
+          "url",
+          "hreflangLocale",
+          "label"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
       "subject": "api::author.author",
       "properties": {
         "fields": [
@@ -259,6 +307,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "title",
           "date",
           "previewImage",
@@ -293,6 +342,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "title",
           "date",
           "previewImage",
@@ -315,6 +365,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "title",
           "date",
           "previewImage",
@@ -336,6 +387,10 @@
           "contents",
           "numberList",
           "idContent"
+        ],
+        "locales": [
+          "en",
+          "es"
         ]
       },
       "conditions": []
@@ -343,13 +398,23 @@
     {
       "action": "plugin::content-manager.explorer.delete",
       "subject": "api::card-table-content.card-table-content",
-      "properties": {},
+      "properties": {
+        "locales": [
+          "en",
+          "es"
+        ]
+      },
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.publish",
       "subject": "api::card-table-content.card-table-content",
-      "properties": {},
+      "properties": {
+        "locales": [
+          "en",
+          "es"
+        ]
+      },
       "conditions": []
     },
     {
@@ -361,6 +426,10 @@
           "contents",
           "numberList",
           "idContent"
+        ],
+        "locales": [
+          "en",
+          "es"
         ]
       },
       "conditions": []
@@ -374,6 +443,10 @@
           "contents",
           "numberList",
           "idContent"
+        ],
+        "locales": [
+          "en",
+          "es"
         ]
       },
       "conditions": []
@@ -508,6 +581,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "headerSection.title",
           "headerSection.subtitle",
           "headerSection.description",
@@ -560,6 +634,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "headerSection.title",
           "headerSection.subtitle",
           "headerSection.description",
@@ -600,6 +675,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "headerSection.title",
           "headerSection.subtitle",
           "headerSection.description",
@@ -639,7 +715,8 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "seo.alternate_urls"
         ]
       },
       "conditions": []
@@ -665,7 +742,8 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "seo.alternate_urls"
         ]
       },
       "conditions": []
@@ -679,7 +757,8 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "seo.alternate_urls"
         ]
       },
       "conditions": []
@@ -694,6 +773,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "reasonSection.title",
           "reasonSection.description",
           "reasonSection.list",
@@ -726,6 +806,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "reasonSection.title",
           "reasonSection.description",
           "reasonSection.list",
@@ -746,6 +827,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "reasonSection.title",
           "reasonSection.description",
           "reasonSection.list",
@@ -766,6 +848,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "headerSection.title",
           "headerSection.subtitle",
           "headerSection.description",
@@ -814,6 +897,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "headerSection.title",
           "headerSection.subtitle",
           "headerSection.description",
@@ -850,6 +934,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "headerSection.title",
           "headerSection.subtitle",
           "headerSection.description",
@@ -929,6 +1014,10 @@
           "media",
           "titleSize",
           "table.content"
+        ],
+        "locales": [
+          "en",
+          "es"
         ]
       },
       "conditions": []
@@ -936,13 +1025,23 @@
     {
       "action": "plugin::content-manager.explorer.delete",
       "subject": "api::content.content",
-      "properties": {},
+      "properties": {
+        "locales": [
+          "en",
+          "es"
+        ]
+      },
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.publish",
       "subject": "api::content.content",
-      "properties": {},
+      "properties": {
+        "locales": [
+          "en",
+          "es"
+        ]
+      },
       "conditions": []
     },
     {
@@ -956,6 +1055,10 @@
           "media",
           "titleSize",
           "table.content"
+        ],
+        "locales": [
+          "en",
+          "es"
         ]
       },
       "conditions": []
@@ -971,6 +1074,10 @@
           "media",
           "titleSize",
           "table.content"
+        ],
+        "locales": [
+          "en",
+          "es"
         ]
       },
       "conditions": []
@@ -991,7 +1098,8 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "seo.alternate_urls"
         ]
       },
       "conditions": []
@@ -1024,7 +1132,8 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "seo.alternate_urls"
         ]
       },
       "conditions": []
@@ -1045,7 +1154,8 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "seo.alternate_urls"
         ]
       },
       "conditions": []
@@ -1171,6 +1281,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "firstSection.leftButton.label",
           "firstSection.leftButton.url",
           "firstSection.leftButton.outsideWeb",
@@ -1397,7 +1508,8 @@
           "eighthSection.subtitle"
         ],
         "locales": [
-          "en"
+          "en",
+          "es"
         ]
       },
       "conditions": []
@@ -1407,7 +1519,8 @@
       "subject": "api::entry.entry",
       "properties": {
         "locales": [
-          "en"
+          "en",
+          "es"
         ]
       },
       "conditions": []
@@ -1417,7 +1530,8 @@
       "subject": "api::entry.entry",
       "properties": {
         "locales": [
-          "en"
+          "en",
+          "es"
         ]
       },
       "conditions": []
@@ -1432,6 +1546,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "firstSection.leftButton.label",
           "firstSection.leftButton.url",
           "firstSection.leftButton.outsideWeb",
@@ -1658,7 +1773,8 @@
           "eighthSection.subtitle"
         ],
         "locales": [
-          "en"
+          "en",
+          "es"
         ]
       },
       "conditions": []
@@ -1673,6 +1789,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "firstSection.leftButton.label",
           "firstSection.leftButton.url",
           "firstSection.leftButton.outsideWeb",
@@ -1899,7 +2016,8 @@
           "eighthSection.subtitle"
         ],
         "locales": [
-          "en"
+          "en",
+          "es"
         ]
       },
       "conditions": []
@@ -2058,6 +2176,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "title",
           "description",
           "button.label",
@@ -2112,6 +2231,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "title",
           "description",
           "button.label",
@@ -2154,6 +2274,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "title",
           "description",
           "button.label",
@@ -2196,6 +2317,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "headerSection.title",
           "headerSection.subtitle",
           "headerSection.description",
@@ -2218,7 +2340,8 @@
           "credentialSection.properties"
         ],
         "locales": [
-          "en"
+          "en",
+          "es"
         ]
       },
       "conditions": []
@@ -2228,7 +2351,8 @@
       "subject": "api::gataca-wallet.gataca-wallet",
       "properties": {
         "locales": [
-          "en"
+          "en",
+          "es"
         ]
       },
       "conditions": []
@@ -2238,7 +2362,8 @@
       "subject": "api::gataca-wallet.gataca-wallet",
       "properties": {
         "locales": [
-          "en"
+          "en",
+          "es"
         ]
       },
       "conditions": []
@@ -2253,6 +2378,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "headerSection.title",
           "headerSection.subtitle",
           "headerSection.description",
@@ -2275,7 +2401,8 @@
           "credentialSection.properties"
         ],
         "locales": [
-          "en"
+          "en",
+          "es"
         ]
       },
       "conditions": []
@@ -2290,6 +2417,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "headerSection.title",
           "headerSection.subtitle",
           "headerSection.description",
@@ -2312,7 +2440,8 @@
           "credentialSection.properties"
         ],
         "locales": [
-          "en"
+          "en",
+          "es"
         ]
       },
       "conditions": []
@@ -2481,9 +2610,14 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "title",
           "slugURL",
           "subPath"
+        ],
+        "locales": [
+          "en",
+          "es"
         ]
       },
       "conditions": []
@@ -2491,13 +2625,23 @@
     {
       "action": "plugin::content-manager.explorer.delete",
       "subject": "api::page.page",
-      "properties": {},
+      "properties": {
+        "locales": [
+          "en",
+          "es"
+        ]
+      },
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.publish",
       "subject": "api::page.page",
-      "properties": {},
+      "properties": {
+        "locales": [
+          "en",
+          "es"
+        ]
+      },
       "conditions": []
     },
     {
@@ -2511,9 +2655,14 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "title",
           "slugURL",
           "subPath"
+        ],
+        "locales": [
+          "en",
+          "es"
         ]
       },
       "conditions": []
@@ -2529,9 +2678,14 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "title",
           "slugURL",
           "subPath"
+        ],
+        "locales": [
+          "en",
+          "es"
         ]
       },
       "conditions": []
@@ -2693,6 +2847,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "title",
           "description",
           "faqSection.title",
@@ -2746,6 +2901,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "title",
           "description",
           "faqSection.title",
@@ -2787,6 +2943,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "title",
           "description",
           "faqSection.title",
@@ -2834,7 +2991,8 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "seo.alternate_urls"
         ]
       },
       "conditions": []
@@ -2867,7 +3025,8 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "seo.alternate_urls"
         ]
       },
       "conditions": []
@@ -2888,7 +3047,8 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "seo.alternate_urls"
         ]
       },
       "conditions": []
@@ -2950,7 +3110,8 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "seo.alternate_urls"
         ]
       },
       "conditions": []
@@ -2976,7 +3137,8 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "seo.alternate_urls"
         ]
       },
       "conditions": []
@@ -2990,7 +3152,8 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "seo.alternate_urls"
         ]
       },
       "conditions": []
@@ -3005,6 +3168,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "headerSection.title",
           "headerSection.subtitle",
           "headerSection.description",
@@ -3039,6 +3203,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "headerSection.title",
           "headerSection.subtitle",
           "headerSection.description",
@@ -3061,6 +3226,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "headerSection.title",
           "headerSection.subtitle",
           "headerSection.description",
@@ -3082,7 +3248,8 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "seo.alternate_urls"
         ]
       },
       "conditions": []
@@ -3108,7 +3275,8 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "seo.alternate_urls"
         ]
       },
       "conditions": []
@@ -3122,7 +3290,8 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "seo.alternate_urls"
         ]
       },
       "conditions": []
@@ -3136,7 +3305,8 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "seo.alternate_urls"
         ]
       },
       "conditions": []
@@ -3162,7 +3332,8 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "seo.alternate_urls"
         ]
       },
       "conditions": []
@@ -3176,7 +3347,8 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "seo.alternate_urls"
         ]
       },
       "conditions": []
@@ -3190,7 +3362,8 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "seo.alternate_urls"
         ]
       },
       "conditions": []
@@ -3216,7 +3389,8 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "seo.alternate_urls"
         ]
       },
       "conditions": []
@@ -3230,7 +3404,8 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "seo.alternate_urls"
         ]
       },
       "conditions": []
@@ -3245,6 +3420,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "headerSection.title",
           "headerSection.subtitle",
           "headerSection.description",
@@ -3287,6 +3463,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "headerSection.title",
           "headerSection.subtitle",
           "headerSection.description",
@@ -3317,6 +3494,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "headerSection.title",
           "headerSection.subtitle",
           "headerSection.description",
@@ -3347,6 +3525,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "headerSection.title",
           "headerSection.subtitle",
           "headerSection.description",
@@ -3390,6 +3569,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "headerSection.title",
           "headerSection.subtitle",
           "headerSection.description",
@@ -3421,6 +3601,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "headerSection.title",
           "headerSection.subtitle",
           "headerSection.description",
@@ -3452,6 +3633,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "headerSection.title",
           "headerSection.subtitle",
           "headerSection.description",
@@ -3495,6 +3677,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "headerSection.title",
           "headerSection.subtitle",
           "headerSection.description",
@@ -3526,6 +3709,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "headerSection.title",
           "headerSection.subtitle",
           "headerSection.description",
@@ -3556,7 +3740,8 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "seo.alternate_urls"
         ]
       },
       "conditions": []
@@ -3582,7 +3767,8 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "seo.alternate_urls"
         ]
       },
       "conditions": []
@@ -3596,7 +3782,8 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "seo.alternate_urls"
         ]
       },
       "conditions": []
@@ -3722,7 +3909,8 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "seo.alternate_urls"
         ]
       },
       "conditions": []
@@ -3755,7 +3943,8 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "seo.alternate_urls"
         ]
       },
       "conditions": []
@@ -3776,7 +3965,8 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "seo.alternate_urls"
         ]
       },
       "conditions": []
@@ -3791,7 +3981,8 @@
           "SEO.metaDescription",
           "SEO.rrssImg",
           "SEO.keywords",
-          "SEO.canonicalURL"
+          "SEO.canonicalURL",
+          "SEO.alternate_urls"
         ]
       },
       "conditions": []
@@ -3818,7 +4009,8 @@
           "SEO.metaDescription",
           "SEO.rrssImg",
           "SEO.keywords",
-          "SEO.canonicalURL"
+          "SEO.canonicalURL",
+          "SEO.alternate_urls"
         ]
       },
       "conditions": []
@@ -3833,7 +4025,8 @@
           "SEO.metaDescription",
           "SEO.rrssImg",
           "SEO.keywords",
-          "SEO.canonicalURL"
+          "SEO.canonicalURL",
+          "SEO.alternate_urls"
         ]
       },
       "conditions": []
@@ -4163,6 +4356,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "header.title",
           "header.subtitle",
           "header.description",
@@ -4205,6 +4399,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "header.title",
           "header.subtitle",
           "header.description",
@@ -4235,6 +4430,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "header.title",
           "header.subtitle",
           "header.description",

@@ -2189,6 +2189,96 @@
       "actions": {},
       "lifecycles": {}
     },
+    "api::alternate-url.alternate-url": {
+      "kind": "collectionType",
+      "collectionName": "alternate_urls",
+      "info": {
+        "singularName": "alternate-url",
+        "pluralName": "alternate-urls",
+        "displayName": "Alternate Url",
+        "description": ""
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "url": {
+          "type": "string"
+        },
+        "hreflangLocale": {
+          "type": "string"
+        },
+        "label": {
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "alternate_urls",
+        "info": {
+          "singularName": "alternate-url",
+          "pluralName": "alternate-urls",
+          "displayName": "Alternate Url",
+          "description": ""
+        },
+        "options": {
+          "draftAndPublish": true
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "url": {
+            "type": "string"
+          },
+          "hreflangLocale": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          }
+        },
+        "kind": "collectionType"
+      },
+      "modelType": "contentType",
+      "modelName": "alternate-url",
+      "connection": "default",
+      "uid": "api::alternate-url.alternate-url",
+      "apiName": "alternate-url",
+      "globalId": "AlternateUrl",
+      "actions": {},
+      "lifecycles": {}
+    },
     "api::author.author": {
       "kind": "collectionType",
       "collectionName": "authors",
@@ -2733,10 +2823,19 @@
       "options": {
         "draftAndPublish": true
       },
-      "pluginOptions": {},
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
       "attributes": {
         "title": {
-          "type": "string"
+          "type": "string",
+          "pluginOptions": {
+            "i18n": {
+              "localized": true
+            }
+          }
         },
         "contents": {
           "type": "relation",
@@ -2744,10 +2843,20 @@
           "target": "api::content.content"
         },
         "numberList": {
-          "type": "integer"
+          "type": "integer",
+          "pluginOptions": {
+            "i18n": {
+              "localized": true
+            }
+          }
         },
         "idContent": {
-          "type": "string"
+          "type": "string",
+          "pluginOptions": {
+            "i18n": {
+              "localized": true
+            }
+          }
         },
         "createdAt": {
           "type": "datetime"
@@ -2780,6 +2889,22 @@
           "visible": false,
           "useJoinTable": false,
           "private": true
+        },
+        "localizations": {
+          "writable": true,
+          "private": false,
+          "configurable": false,
+          "visible": false,
+          "type": "relation",
+          "relation": "oneToMany",
+          "target": "api::card-table-content.card-table-content"
+        },
+        "locale": {
+          "writable": true,
+          "private": false,
+          "configurable": false,
+          "visible": false,
+          "type": "string"
         }
       },
       "__schema__": {
@@ -2793,10 +2918,19 @@
         "options": {
           "draftAndPublish": true
         },
-        "pluginOptions": {},
+        "pluginOptions": {
+          "i18n": {
+            "localized": true
+          }
+        },
         "attributes": {
           "title": {
-            "type": "string"
+            "type": "string",
+            "pluginOptions": {
+              "i18n": {
+                "localized": true
+              }
+            }
           },
           "contents": {
             "type": "relation",
@@ -2804,10 +2938,20 @@
             "target": "api::content.content"
           },
           "numberList": {
-            "type": "integer"
+            "type": "integer",
+            "pluginOptions": {
+              "i18n": {
+                "localized": true
+              }
+            }
           },
           "idContent": {
-            "type": "string"
+            "type": "string",
+            "pluginOptions": {
+              "i18n": {
+                "localized": true
+              }
+            }
           }
         },
         "kind": "collectionType"
@@ -3623,16 +3767,35 @@
       "options": {
         "draftAndPublish": true
       },
-      "pluginOptions": {},
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
       "attributes": {
         "title": {
-          "type": "string"
+          "type": "string",
+          "pluginOptions": {
+            "i18n": {
+              "localized": true
+            }
+          }
         },
         "content": {
-          "type": "richtext"
+          "type": "richtext",
+          "pluginOptions": {
+            "i18n": {
+              "localized": true
+            }
+          }
         },
         "idContent": {
-          "type": "string"
+          "type": "string",
+          "pluginOptions": {
+            "i18n": {
+              "localized": true
+            }
+          }
         },
         "media": {
           "type": "media",
@@ -3643,7 +3806,12 @@
             "files",
             "videos",
             "audios"
-          ]
+          ],
+          "pluginOptions": {
+            "i18n": {
+              "localized": true
+            }
+          }
         },
         "titleSize": {
           "type": "enumeration",
@@ -3652,12 +3820,22 @@
             "medium",
             "large"
           ],
-          "default": "small"
+          "default": "small",
+          "pluginOptions": {
+            "i18n": {
+              "localized": true
+            }
+          }
         },
         "table": {
           "type": "component",
           "repeatable": false,
-          "component": "generic.table"
+          "component": "generic.table",
+          "pluginOptions": {
+            "i18n": {
+              "localized": true
+            }
+          }
         },
         "createdAt": {
           "type": "datetime"
@@ -3690,6 +3868,22 @@
           "visible": false,
           "useJoinTable": false,
           "private": true
+        },
+        "localizations": {
+          "writable": true,
+          "private": false,
+          "configurable": false,
+          "visible": false,
+          "type": "relation",
+          "relation": "oneToMany",
+          "target": "api::content.content"
+        },
+        "locale": {
+          "writable": true,
+          "private": false,
+          "configurable": false,
+          "visible": false,
+          "type": "string"
         }
       },
       "__schema__": {
@@ -3703,16 +3897,35 @@
         "options": {
           "draftAndPublish": true
         },
-        "pluginOptions": {},
+        "pluginOptions": {
+          "i18n": {
+            "localized": true
+          }
+        },
         "attributes": {
           "title": {
-            "type": "string"
+            "type": "string",
+            "pluginOptions": {
+              "i18n": {
+                "localized": true
+              }
+            }
           },
           "content": {
-            "type": "richtext"
+            "type": "richtext",
+            "pluginOptions": {
+              "i18n": {
+                "localized": true
+              }
+            }
           },
           "idContent": {
-            "type": "string"
+            "type": "string",
+            "pluginOptions": {
+              "i18n": {
+                "localized": true
+              }
+            }
           },
           "media": {
             "type": "media",
@@ -3723,7 +3936,12 @@
               "files",
               "videos",
               "audios"
-            ]
+            ],
+            "pluginOptions": {
+              "i18n": {
+                "localized": true
+              }
+            }
           },
           "titleSize": {
             "type": "enumeration",
@@ -3732,12 +3950,22 @@
               "medium",
               "large"
             ],
-            "default": "small"
+            "default": "small",
+            "pluginOptions": {
+              "i18n": {
+                "localized": true
+              }
+            }
           },
           "table": {
             "type": "component",
             "repeatable": false,
-            "component": "generic.table"
+            "component": "generic.table",
+            "pluginOptions": {
+              "i18n": {
+                "localized": true
+              }
+            }
           }
         },
         "kind": "collectionType"
@@ -5371,7 +5599,11 @@
       "options": {
         "draftAndPublish": true
       },
-      "pluginOptions": {},
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
       "attributes": {
         "sections": {
           "type": "dynamiczone",
@@ -5394,25 +5626,52 @@
             "pricing.cloud",
             "generic.content-heading-container",
             "shared.content-table"
-          ]
+          ],
+          "pluginOptions": {
+            "i18n": {
+              "localized": true
+            }
+          }
         },
         "seo": {
           "type": "component",
           "repeatable": false,
-          "component": "shared.seo"
+          "component": "shared.seo",
+          "pluginOptions": {
+            "i18n": {
+              "localized": true
+            }
+          }
         },
         "title": {
           "type": "string",
           "required": true,
-          "unique": true
+          "unique": true,
+          "pluginOptions": {
+            "i18n": {
+              "localized": true
+            }
+          }
         },
         "slugURL": {
           "type": "string",
           "required": true,
-          "unique": true
+          "unique": false,
+          "pluginOptions": {
+            "i18n": {
+              "localized": true
+            }
+          }
         },
         "subPath": {
-          "type": "string"
+          "type": "string",
+          "pluginOptions": {
+            "i18n": {
+              "localized": true
+            }
+          },
+          "required": true,
+          "default": "/"
         },
         "createdAt": {
           "type": "datetime"
@@ -5445,6 +5704,22 @@
           "visible": false,
           "useJoinTable": false,
           "private": true
+        },
+        "localizations": {
+          "writable": true,
+          "private": false,
+          "configurable": false,
+          "visible": false,
+          "type": "relation",
+          "relation": "oneToMany",
+          "target": "api::page.page"
+        },
+        "locale": {
+          "writable": true,
+          "private": false,
+          "configurable": false,
+          "visible": false,
+          "type": "string"
         }
       },
       "__schema__": {
@@ -5458,7 +5733,11 @@
         "options": {
           "draftAndPublish": true
         },
-        "pluginOptions": {},
+        "pluginOptions": {
+          "i18n": {
+            "localized": true
+          }
+        },
         "attributes": {
           "sections": {
             "type": "dynamiczone",
@@ -5481,25 +5760,52 @@
               "pricing.cloud",
               "generic.content-heading-container",
               "shared.content-table"
-            ]
+            ],
+            "pluginOptions": {
+              "i18n": {
+                "localized": true
+              }
+            }
           },
           "seo": {
             "type": "component",
             "repeatable": false,
-            "component": "shared.seo"
+            "component": "shared.seo",
+            "pluginOptions": {
+              "i18n": {
+                "localized": true
+              }
+            }
           },
           "title": {
             "type": "string",
             "required": true,
-            "unique": true
+            "unique": true,
+            "pluginOptions": {
+              "i18n": {
+                "localized": true
+              }
+            }
           },
           "slugURL": {
             "type": "string",
             "required": true,
-            "unique": true
+            "unique": false,
+            "pluginOptions": {
+              "i18n": {
+                "localized": true
+              }
+            }
           },
           "subPath": {
-            "type": "string"
+            "type": "string",
+            "pluginOptions": {
+              "i18n": {
+                "localized": true
+              }
+            },
+            "required": true,
+            "default": "/"
           }
         },
         "kind": "collectionType"
