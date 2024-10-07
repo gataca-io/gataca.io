@@ -15,7 +15,11 @@ const Header: React.FC<InsideSectionsModel> = props => {
       key={`header_` + id}
     >
       <div className={`${styles.header__container} ${cx("containerMaxWidth")}`}>
-        <div className={styles.header__leftSide}>
+        <div
+          className={`${styles.headerMaxWidth} ${
+            hero.data?.attributes?.url ? styles.header__leftSide : ""
+          }`}
+        >
           <h1 className={`${cx("heading1 marginBottom32")}`}>{title}</h1>
           <p className={`${cx("bodyRegularXL")}`}>{description}</p>
           {cta?.label && (

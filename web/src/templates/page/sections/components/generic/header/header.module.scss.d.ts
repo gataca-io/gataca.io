@@ -1,5 +1,6 @@
 export const header__container: string
 export const header: string
+export const headerMaxWidth: string
 export const header__leftSide: string
 export const buttons_container: string
 export const header__rightSide: string
