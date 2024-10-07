@@ -96,7 +96,7 @@
         font-family: $base;
         font-size: 14px;
         font-weight: 400;
-        line-height: 20px;
+        line-height: 16px;
         text-decoration: none;
     }
 
@@ -112,7 +112,7 @@
         font-family: $base;
         font-size: 11px;
         font-weight: 400;
-        line-height: 16px;
+        line-height: 14px;
         text-decoration: none;
     }
 
@@ -145,7 +145,7 @@
         font-family: $base;
         font-size: 14px;
         font-weight: 700;
-        line-height: 20px;
+        line-height: 16px;
         text-decoration: none;
     }
 
@@ -161,7 +161,7 @@
         font-family: $base;
         font-size: 11px;
         font-weight: 700;
-        line-height: 16px;
+        line-height: 14px;
         text-decoration: none;
     }
 
@@ -194,7 +194,7 @@
         font-family: $base;
         font-size: 14px;
         font-weight: 400;
-        line-height: 20px;
+        line-height: 16px;
         text-decoration: underline;
     }
 
@@ -210,7 +210,7 @@
         font-family: $base;
         font-size: 11px;
         font-weight: 400;
-        line-height: 16px;
+        line-height: 14px;
         text-decoration: underline;
     }
 
@@ -235,6 +235,15 @@
         font-family: $base;
         font-size: 14px;
         font-weight: 500;
+        line-height: 16px;
+        text-decoration: none;
+    }
+
+    .buttonXS {
+        font-family: $base;
+        font-size: 9px;
+        font-weight: 700;
+        line-height: 11px;
         text-decoration: none;
     }
 
@@ -794,6 +803,69 @@
 
     .primary200{
         color: $primary200
+    }
+
+    // Radius
+
+    .radius7x {
+        border-radius: 28px;
+    }
+
+    .radius6x {
+        border-radius: 24px;
+    }
+
+    .radius5x {
+        border-radius: 20px;
+    }
+
+    .radius4x {
+        border-radius: 16px;
+    }
+
+    .radius3x {
+        border-radius: 12px;
+    }
+
+    .radius2x {
+        border-radius: 8px;
+    }
+
+    .radius1x {
+        border-radius: 4px;
+    }
+
+    // Icons Size
+
+    .iconXL {
+        width: 60px;
+        height: 60px;
+    }
+    .iconLG {
+        width: 48px;
+        height: 48px;
+    }
+    .iconMD {
+        width: 40px;
+        height: 40px;
+    }
+    .iconSM {
+        width: 32px;
+        height: 32px;
+    }
+
+    // Illustration Sizes
+
+    .illustrationLG {
+        max-width: 284px;
+        width: 284px;
+        height: auto;
+    }
+
+    .illustrationSM {
+        max-width: 212px;
+        width: 212px;
+        height: auto;
     }
 
     // Background vertical lines
