@@ -51,8 +51,8 @@ const Heading: React.FC<HeadingModel> = props => {
         }`}
       >
         {(chip?.text?.length ||
-          chip?.leadingIcon.data?.attributes?.url?.length ||
-          chip?.trailingIcon.data?.attributes?.url?.length) && (
+          chip?.leadingIcon?.data?.attributes?.url?.length ||
+          chip?.trailingIcon?.data?.attributes?.url?.length) && (
           <div className={styles?.chip_extraText__container}>
             <Chip
               idChip={chip?.idChip}

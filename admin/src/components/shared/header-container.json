@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_shared_header_containers",
+  "info": {
+    "displayName": "HeaderContainer",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "idHeader": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "heading": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::heading.heading"
+    }
+  }
+}

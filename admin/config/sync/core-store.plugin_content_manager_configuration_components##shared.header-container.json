@@ -1,0 +1,98 @@
+{
+  "key": "plugin_content_manager_configuration_components::shared.header-container",
+  "value": {
+    "uid": "shared.header-container",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "idHeader",
+      "defaultSortBy": "idHeader",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "idHeader": {
+        "edit": {
+          "label": "idHeader",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "idHeader",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "image": {
+        "edit": {
+          "label": "image",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "image",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "heading": {
+        "edit": {
+          "label": "heading",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "idHeading"
+        },
+        "list": {
+          "label": "heading",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "idHeader",
+        "image",
+        "heading"
+      ],
+      "edit": [
+        [
+          {
+            "name": "idHeader",
+            "size": 6
+          },
+          {
+            "name": "heading",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "image",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

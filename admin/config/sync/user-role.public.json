@@ -151,6 +151,12 @@
       "action": "api::gataca-wallet.gataca-wallet.find"
     },
     {
+      "action": "api::heading.heading.find"
+    },
+    {
+      "action": "api::heading.heading.findOne"
+    },
+    {
       "action": "api::industry.industry.find"
     },
     {

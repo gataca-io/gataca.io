@@ -5441,6 +5441,92 @@
       "actions": {},
       "lifecycles": {}
     },
+    "api::heading.heading": {
+      "kind": "collectionType",
+      "collectionName": "headings",
+      "info": {
+        "singularName": "heading",
+        "pluralName": "headings",
+        "displayName": "Heading"
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "heading": {
+          "type": "component",
+          "repeatable": false,
+          "component": "shared.heading"
+        },
+        "idHeading": {
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "headings",
+        "info": {
+          "singularName": "heading",
+          "pluralName": "headings",
+          "displayName": "Heading"
+        },
+        "options": {
+          "draftAndPublish": true
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "heading": {
+            "type": "component",
+            "repeatable": false,
+            "component": "shared.heading"
+          },
+          "idHeading": {
+            "type": "string"
+          }
+        },
+        "kind": "collectionType"
+      },
+      "modelType": "contentType",
+      "modelName": "heading",
+      "connection": "default",
+      "uid": "api::heading.heading",
+      "apiName": "heading",
+      "globalId": "Heading",
+      "actions": {},
+      "lifecycles": {}
+    },
     "api::industry.industry": {
       "kind": "collectionType",
       "collectionName": "industries",
@@ -5960,8 +6046,8 @@
             "shared.action-card",
             "shared.list-group",
             "shared.sub-heading",
-            "shared.heading",
-            "generic.selector-list"
+            "generic.selector-list",
+            "shared.header-container"
           ],
           "pluginOptions": {
             "i18n": {
@@ -6104,8 +6190,8 @@
               "shared.action-card",
               "shared.list-group",
               "shared.sub-heading",
-              "shared.heading",
-              "generic.selector-list"
+              "generic.selector-list",
+              "shared.header-container"
             ],
             "pluginOptions": {
               "i18n": {

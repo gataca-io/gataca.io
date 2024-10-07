@@ -14,7 +14,9 @@
     }
     &.alignCenter {
       @include align-items(center);
-      p {
+      max-width: 778px;
+      margin: 0 auto;
+      * {
         text-align: center;
       }
     }

@@ -25,9 +25,8 @@ import CardComponent from "./components/shared/card/Card"
 import ActionCard from "./components/shared/actionCard/ActionCard"
 import ListGroup from "./components/shared/list/listGroup/ListGroup"
 import SubHeading from "./components/shared/subHeading/SubHeading"
-import Heading from "./components/shared/Heading/Heading"
 import SelectorList from "./components/generic/selectorList/SelectorList"
-import BrandButton from "./components/generic/brandButton/BrandButton"
+import HeaderContainer from "./components/shared/headerContainer/HeaderContainer"
 
 const AllSectionsTemplate: React.FC<PageModel> = props => {
   const [benefitsLoaded, setBenefitsLoaded] = React.useState<boolean>(false)
@@ -89,20 +88,16 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
           idSubHeading,
           idCard,
           idActionCard,
-          idHeading,
-          titleSize,
-          extraText,
-          sectionName,
-          buttonGroup,
-          list,
-          segmentedButton,
-          table,
           selector_lists,
           brand_buttons,
+          heading,
+          image,
         } = item
 
         return (
           <>
+            {/* The followings two components will be deleted after the changes of headerContainer are merged,
+            because this one replaces both components */}
             {__component === "generic.header" && (
               <Header
                 id={id}
@@ -120,6 +115,13 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
                 description={description}
                 cta={cta}
                 key={`centered_header_` + Math.random()}
+              />
+            )}
+            {__component === "shared.header-container" && (
+              <HeaderContainer
+                heading={heading?.data?.attributes?.heading}
+                image={image}
+                key={`headerContainer_` + Math.random()}
               />
             )}
             {__component === "shared.slider" && (
@@ -400,51 +402,6 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
                   title={title}
                   content={content}
                   key={`subheading_` + Math.random()}
-                />
-              </section>
-            )}
-            {__component === "shared.heading" && (
-              <section
-                className={`${styles?.container} ${cx("containerMaxWidth")}`}
-              >
-                <Heading
-                  idHeading={idHeading}
-                  titleSize={titleSize}
-                  align={align}
-                  extraText={extraText}
-                  title={title}
-                  sectionName={sectionName}
-                  content={content}
-                  buttonGroup={buttonGroup?.buttons?.data}
-                  list={list?.list_options?.data}
-                  segmentedButton={segmentedButton?.buttons?.data}
-                  table={table?.content}
-                  chip={{
-                    idChip: chip?.idChip,
-                    text: chip?.text,
-                    type: chip?.type,
-                    form: chip?.form,
-                    disabled: chip?.disabled,
-                    color: chip?.color,
-                    chipSize: chip?.chipSize,
-                    leadingIcon: chip?.leadingIcon,
-                    trailingIcon: chip?.trailingIcon,
-                  }}
-                  button={{
-                    idButton: button?.idButton,
-                    label: button?.label,
-                    icon: button?.icon,
-                    style: button?.style,
-                    color: button?.color,
-                    size: button?.size,
-                    noPaddingText: button?.noPaddingText,
-                    disabled: button?.disabled,
-                    link: button?.link,
-                    url: button?.url,
-                    outsideWeb: button?.outsideWeb,
-                    action: () => window.open(button?.url, "_blank"),
-                  }}
-                  key={`heading_` + Math.random()}
                 />
               </section>
             )}

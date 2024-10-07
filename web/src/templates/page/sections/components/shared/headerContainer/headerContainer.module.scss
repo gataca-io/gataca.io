@@ -1,0 +1,90 @@
+@import "../../../../../../styles/colors.scss";
+@import "../../../../../../styles/mixins.scss";
+
+.header{
+  margin: 162px 0 132px;
+  padding: 0 20px;
+  @include min-width($mobileXL) {
+    margin: 84px 0 200px;
+    padding: 0 40px;
+  }
+  @include min-width($desktopMD) {
+    padding: 0 60px;
+  }
+}
+
+.header__container {
+  width: 100%;
+  @include flexbox();
+  @include flex-direction(column);
+  @include justify-content(space-between);
+  @include flex-wrap(wrap);
+  gap: 80px;
+  @include min-width($tabletMD) {
+    @include flex-direction(row);
+    @include align-items(center);
+    @include flex-wrap(nowrap);
+  }
+}
+
+.header__heading {
+  @include min-width($tabletMD) {
+    @include flex(0, 1, auto);
+    width: 100%;
+  }
+}
+.header__imageContainer {
+  width: 100%;
+  height: 88vw;
+  @include flexbox();
+  @include flex-direction(column);
+  @include justify-content(center);
+  @include align-items(center);
+  position: relative;
+  @include min-width($tabletMD) {
+    position: inherit;
+    height: 100%;
+    width: calc(47% - 40px);
+  }
+  @include min-width($desktopMD) {
+    width: calc(52% - 40px);
+  }
+  .header__image {
+    position: relative;
+    top: 0;
+    right: -50px;
+    width: 100%;
+    @include min-width($mobileXL) {
+      right: -70px;
+    } 
+    @include min-width($tabletMD) {
+      max-height: 382px;
+      max-width: none;
+      width: auto;
+      right: 0;
+    }
+
+    @include min-width($desktopSM) {
+      max-height: 462px;
+      right: 0;
+    }
+    @include min-width($desktopMD) {
+      max-height: 470px;
+      right: -60px;
+    }
+    @include min-width($desktopXL) {
+      max-height: 575px;
+      right: -40px;
+    }
+    @include min-width($desktopXXL) {
+      right: -90px;
+    }
+    @include min-width(1560px) {
+      right: 0;
+    }
+    @include min-width(1850px) {
+      max-height: 695px;
+      right: -90px;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "headings",
+  "info": {
+    "singularName": "heading",
+    "pluralName": "headings",
+    "displayName": "Heading"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.heading"
+    },
+    "idHeading": {
+      "type": "string"
+    }
+  }
+}
