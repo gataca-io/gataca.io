@@ -7,10 +7,26 @@ import * as styles from "./secondSection.module.scss"
 export type IContentProps = {
   content?: any
   className?: string
-  author: string
+  avatarSize: string
+  employee: {
+    data: {
+      attributes: {
+        name: string
+        role: string
+        linkedinRoute: string
+        portrait: {
+          data: {
+            attributes: {
+              url: string
+            }
+          }
+        }
+      }
+    }
+  }
 }
 const SecondSection: React.FC<IContentProps> = props => {
-  const { content, author } = props
+  const { content, employee, avatarSize } = props
 
   return (
     <section
@@ -23,7 +39,7 @@ const SecondSection: React.FC<IContentProps> = props => {
           {content?.length && <MarkDownContent content={content} />}
         </div>
         <div className={styles.secondSection__rightSide}>
-          <StrapiAuthor author={author} />
+          <StrapiAuthor employee={employee?.data} avatarSize={avatarSize} />
         </div>
       </div>
     </section>
