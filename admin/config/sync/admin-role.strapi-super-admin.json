@@ -312,10 +312,11 @@
           "date",
           "previewImage",
           "heroImage",
-          "author",
           "content",
           "slugURL",
-          "category"
+          "category",
+          "employee",
+          "avatarSize"
         ]
       },
       "conditions": []
@@ -347,10 +348,11 @@
           "date",
           "previewImage",
           "heroImage",
-          "author",
           "content",
           "slugURL",
-          "category"
+          "category",
+          "employee",
+          "avatarSize"
         ]
       },
       "conditions": []
@@ -370,10 +372,11 @@
           "date",
           "previewImage",
           "heroImage",
-          "author",
           "content",
           "slugURL",
-          "category"
+          "category",
+          "employee",
+          "avatarSize"
         ]
       },
       "conditions": []

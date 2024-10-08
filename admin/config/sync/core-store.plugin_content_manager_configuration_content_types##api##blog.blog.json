@@ -90,20 +90,6 @@
           "sortable": false
         }
       },
-      "author": {
-        "edit": {
-          "label": "author",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "author",
-          "searchable": true,
-          "sortable": true
-        }
-      },
       "content": {
         "edit": {
           "label": "content",
@@ -147,6 +133,35 @@
           "sortable": true
         }
       },
+      "employee": {
+        "edit": {
+          "label": "employee",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "employee",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "avatarSize": {
+        "edit": {
+          "label": "avatarSize",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "avatarSize",
+          "searchable": true,
+          "sortable": true
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -177,12 +192,6 @@
       }
     },
     "layouts": {
-      "list": [
-        "id",
-        "title",
-        "category",
-        "seo"
-      ],
       "edit": [
         [
           {
@@ -208,9 +217,15 @@
           {
             "name": "heroImage",
             "size": 6
+          }
+        ],
+        [
+          {
+            "name": "employee",
+            "size": 6
           },
           {
-            "name": "author",
+            "name": "avatarSize",
             "size": 6
           }
         ],
@@ -232,6 +247,12 @@
             "size": 12
           }
         ]
+      ],
+      "list": [
+        "id",
+        "title",
+        "category",
+        "seo"
       ]
     }
   },
