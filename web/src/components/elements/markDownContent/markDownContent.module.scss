@@ -3,7 +3,7 @@
 @import "../../../styles/types";
 
 .markDownContent{
-  & > p, span, li {
+  & > p, span, li, li > p {
     margin-bottom: 20px;
     font-family: $base;
     font-size: 18px;
