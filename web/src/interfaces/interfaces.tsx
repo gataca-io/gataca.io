@@ -8,7 +8,7 @@ export interface LinkModel {
   action?: (...args: any[]) => {}
 }
 
-export interface ButtonModel {
+export interface ButtonModelOld {
   label: string
   icon?: string
   IconComponent?: any
@@ -17,6 +17,24 @@ export interface ButtonModel {
   url?: string
   fileName?: string
   action: (x?: any) => void
+}
+
+export interface ButtonModel {
+  idButton?: string
+  label?: string
+  icon?: any
+  IconComponent?: any
+  className?: any
+  url?: string
+  fileName?: string
+  action?: (x?: any) => void
+  link?: boolean
+  style?: string
+  fillColor?: string
+  size?: string
+  disabled?: boolean
+  outsideWeb?: boolean
+  noPaddingText?: boolean
 }
 
 export interface IconModel {
