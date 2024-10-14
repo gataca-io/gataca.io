@@ -164,11 +164,7 @@ export interface IProductModel {
     subPriceYearLabel?: string
     popular: boolean
 
-    button: {
-      label: "Contact us"
-      outsideWeb: false
-      url: "/company/contact"
-    }
+    button: ButtonModel
   }
 
   name: string
@@ -179,11 +175,7 @@ export interface IProductModel {
   subPriceMonthLabel?: string
   subPriceYearLabel?: string
 
-  button: {
-    label: "Contact us"
-    outsideWeb: false
-    url: "/company/contact"
-  }
+  button: ButtonModel
 }
 
 export interface IPriceModel {

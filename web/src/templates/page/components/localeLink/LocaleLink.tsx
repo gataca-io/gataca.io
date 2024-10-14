@@ -1,7 +1,7 @@
 import React from "react"
 import cx from "classnames"
-import { Link } from "gatsby"
 import * as styles from "./localeLink.module.scss"
+import Button from "../../sections/components/shared/button/Button"
 
 export type ILocaleLinkProps = {
   pageContext: any
@@ -50,13 +50,15 @@ const LocaleLink: React.FC<ILocaleLinkProps> = props => {
               <div
                 className={`${styles?.localeLink} ${cx("containerMaxWidth")}`}
               >
-                <Link
-                  id={"localeLink__"}
-                  className={cx("buttonMD")}
-                  to={localeType === "en" ? "/es" + localeURL : localeURL}
-                >
-                  {localeText}
-                </Link>
+                <Button
+                  link
+                  label={localeText}
+                  idButton={"localeLink__"}
+                  style={"onlyText"}
+                  url={localeType === "en" ? "/es" + localeURL : localeURL}
+                  fillColor={"black"}
+                  noPaddingText
+                />
               </div>
             ) : null}
           </>

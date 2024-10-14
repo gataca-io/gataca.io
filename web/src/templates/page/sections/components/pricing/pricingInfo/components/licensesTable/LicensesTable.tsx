@@ -1,6 +1,5 @@
 import React from "react"
 import cx from "classnames"
-import PurpleButton from "../../../../../../../../components/atoms/buttons/purple/PurpleButton"
 import Tag from "../../../../../../../../components/atoms/tags/Tag"
 import QuantityDataCell from "./elements/cells/quantityDataCell/QuantityDataCell"
 import SubcategoryCell from "./elements/cells/subcategoryCell/SubcategoryCell"
@@ -9,6 +8,7 @@ import { IProductModel } from "../../../../../../../../interfaces/interfaces"
 import * as styles from "./licensesTable.module.scss"
 import { images } from "../../../../../../../../images/images"
 import MarkDownContent from "../../../../../../../../components/elements/markDownContent/MarkDownContent"
+import Button from "../../../../shared/button/Button"
 
 type ILicensesTableProps = {
   products: IProductModel[]
@@ -110,9 +110,22 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
                             </p>
                           </>
                         )}
-                        <PurpleButton
+                        <Button
+                          idButton={license?.attributes.button?.idButton}
                           className={styles?.license__button}
                           label={license?.attributes.button?.label}
+                          icon={license?.attributes.button?.icon}
+                          style={license?.attributes.button?.style}
+                          fillColor={license?.attributes.button?.fillColor}
+                          size={license?.attributes.button?.size}
+                          fileName={license?.attributes.button?.fileName}
+                          noPaddingText={
+                            license?.attributes.button?.noPaddingText
+                          }
+                          disabled={license?.attributes.button?.disabled}
+                          link={license?.attributes.button?.link}
+                          url={license?.attributes.button?.url}
+                          outsideWeb={license?.attributes.button?.outsideWeb}
                           action={() =>
                             window?.open(
                               license?.attributes.button?.url,
