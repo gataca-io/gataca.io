@@ -1,14 +1,14 @@
 import * as React from "react"
 import { navigate } from "gatsby"
 import cx from "classnames"
-import { ButtonModel } from "../../../../interfaces/interfaces"
+import { ButtonModelOld } from "../../../../interfaces/interfaces"
 import PurpleButton from "../../../../components/atoms/buttons/purple/PurpleButton"
 import * as styles from "./onPremisePanel.module.scss"
 
 export type IOnPremisePanelProps = {
   panelTitle: string
   paragraphs: string[]
-  button: ButtonModel
+  button: ButtonModelOld
 }
 
 const OnPremisePanel: React.FC<IOnPremisePanelProps> = props => {

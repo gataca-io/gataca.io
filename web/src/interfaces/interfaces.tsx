@@ -9,7 +9,7 @@ export interface LinkModel {
 }
 
 export interface ButtonModelOld {
-  label: string
+  label?: string
   icon?: string
   IconComponent?: any
   outlined?: boolean

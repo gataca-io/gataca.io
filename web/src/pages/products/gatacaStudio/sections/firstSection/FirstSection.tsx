@@ -2,7 +2,7 @@ import * as React from "react"
 import cx from "classnames"
 import { images } from "../../../../../images/images"
 import PurpleButton from "../../../../../components/atoms/buttons/purple/PurpleButton"
-import { ButtonModel } from "../../../../../interfaces/interfaces"
+import { ButtonModelOld } from "../../../../../interfaces/interfaces"
 import { gatacaStudioURL } from "../../../../../data/globalData"
 import * as styles from "./firstSection.module.scss"
 import { navigate } from "gatsby"
@@ -10,7 +10,7 @@ import { navigate } from "gatsby"
 export type ISectionProps = {
   title: string
   description: string
-  button?: ButtonModel
+  button?: ButtonModelOld
 }
 
 const FirstSection: React.FC<ISectionProps> = props => {

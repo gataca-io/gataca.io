@@ -1,6 +1,6 @@
 import * as React from "react"
 import cx from "classnames"
-import { ButtonModel } from "../../../../interfaces/interfaces"
+import { ButtonModelOld } from "../../../../interfaces/interfaces"
 import { images } from "../../../../images/images"
 import PurpleButton from "../../../../components/atoms/buttons/purple/PurpleButton"
 import CardList from "../../../../components/templates/cards/cardList/CardList"
@@ -17,7 +17,7 @@ export type ISectionProps = {
     title: string
     description: string
   }[]
-  learnMoreButton: ButtonModel
+  learnMoreButton: ButtonModelOld
 }
 
 const iconsUseCases = [
