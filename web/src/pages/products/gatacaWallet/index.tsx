@@ -9,6 +9,8 @@ import PreFooterCTASection from "../../../components/templates/sections/preFoote
 import SixthSection from "./sections/sixthSection/SixthSection"
 import FifthSection from "./sections/fifthSection/FifthSection"
 import ThirdSection from "./sections/thirdSection/ThirdSection"
+import { images } from "../../../images/images"
+import { marketAndroidURI, marketIosURI } from "../../../data/globalData"
 
 const GatacaWalletPage: React.FC<PageProps> = () => {
   const [fistSectionLoaded, setFistSectionLoaded] = useState<boolean>(false)
@@ -73,12 +75,23 @@ const GatacaWalletPage: React.FC<PageProps> = () => {
               credentials={credentialSection?.credentials?.data}
           />
           <PreFooterCTASection
-              title={"Ready To Start?"}
-              description={
-                "Protect your privacy and take control of your digital identity"
-              }
-              storeButtons={true}
-          />
+          title={"Ready To Start?"}
+          description={
+            "Protect your privacy and take control of your digital identity"
+          }
+          leftButton={{
+            icon: images.brandAppleButton,
+            link: true,
+            url: marketIosURI,
+            outsideWeb: true,
+          }}
+          rightButton={{
+            icon: images.brandGoogleButton,
+            link: true,
+            url: marketAndroidURI,
+            outsideWeb: true,
+          }}
+        />
         </>
       </Layout>
   )

@@ -1,7 +1,8 @@
 {
   "collectionName": "components_generic_prefooters",
   "info": {
-    "displayName": "Prefooter"
+    "displayName": "Prefooter",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -14,12 +15,12 @@
     "rightButton": {
       "type": "component",
       "repeatable": false,
-      "component": "generic.cta"
+      "component": "generic.button"
     },
     "leftButton": {
       "type": "component",
       "repeatable": false,
-      "component": "generic.cta"
+      "component": "generic.button"
     }
   }
 }
