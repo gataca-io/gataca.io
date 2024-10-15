@@ -76,20 +76,6 @@
           "sortable": true
         }
       },
-      "filename": {
-        "edit": {
-          "label": "filename",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "filename",
-          "searchable": true,
-          "sortable": true
-        }
-      },
       "idButton": {
         "edit": {
           "label": "idButton",
@@ -225,10 +211,6 @@
           {
             "name": "url",
             "size": 6
-          },
-          {
-            "name": "filename",
-            "size": 6
           }
         ],
         [
@@ -247,28 +229,28 @@
         ],
         [
           {
-            "name": "icon",
-            "size": 6
-          },
-          {
             "name": "style",
             "size": 6
-          }
-        ],
-        [
+          },
           {
             "name": "fillColor",
             "size": 6
-          },
-          {
-            "name": "size",
-            "size": 6
           }
         ],
         [
           {
+            "name": "size",
+            "size": 6
+          },
+          {
             "name": "noPaddingText",
             "size": 4
+          }
+        ],
+        [
+          {
+            "name": "icon",
+            "size": 6
           }
         ]
       ]
