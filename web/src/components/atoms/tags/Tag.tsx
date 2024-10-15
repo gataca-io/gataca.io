@@ -1,7 +1,6 @@
 import * as React from "react"
 import * as styles from "./tag.module.scss"
 import cx from "classnames"
-import { ButtonModel } from "../../../interfaces/interfaces"
 
 export type ITagProps = {
   label: string

@@ -4,7 +4,6 @@ import LicenseCard from "./components/licenseCard/LicenseCard"
 import SwitchButton from "../../../../../../components/atoms/buttons/switchButton/SwicthButton"
 import LicensesTableMobile from "./components/licensesTableMobile/LicensesTableMobile"
 import LicensesTable from "./components/licensesTable/LicensesTable"
-import PurpleButton from "../../../../../../components/atoms/buttons/purple/PurpleButton"
 import {
   ButtonModel,
   IProductModel,
@@ -14,6 +13,7 @@ import Categories from "./components/categories/Categories"
 import CrevronDownSVG from "../../../../../../images/icons/ChevronDownSVG"
 import ChevronUpSVG from "../../../../../../images/icons/ChevronUpSVG"
 import * as styles from "./pricingInfo.module.scss"
+import Button from "../../shared/button/Button"
 
 export type ISectionProps = {
   switchLabel?: string
@@ -176,14 +176,14 @@ const PricingInfo: React.FC<ISectionProps> = props => {
                   />
                 </div>
               )}
-              <PurpleButton
+              <Button
                 label={
                   showAllFeatures ? "Hide all features" : "See all features"
                 }
-                outlined
                 IconComponent={
                   showAllFeatures ? <ChevronUpSVG /> : <CrevronDownSVG />
                 }
+                style={"outlined"}
                 className={`${cx("marginTop32")} ${styles?.allFeaturesButton}`}
                 action={() => {
                   setShowAllFeatures(!showAllFeatures),

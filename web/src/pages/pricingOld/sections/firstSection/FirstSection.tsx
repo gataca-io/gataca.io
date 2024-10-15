@@ -6,7 +6,7 @@ import LicensesTableMobile from "../../components/licensesTableMobile/LicensesTa
 import LicensesTable from "../../components/licensesTable/LicensesTable"
 import PurpleButton from "../../../../components/atoms/buttons/purple/PurpleButton"
 import {
-  ButtonModel,
+  ButtonModelOld,
   IProductModel,
   InfoTogglesPricingModel,
 } from "../../../../interfaces/interfaces"
@@ -28,7 +28,7 @@ export type ISectionProps = {
     panelTitle: string
     paragraph_1: string
     paragraph_2: string
-    button: ButtonModel
+    button: ButtonModelOld
   }
   licenses: IProductModel[]
   infoToggles: InfoTogglesPricingModel

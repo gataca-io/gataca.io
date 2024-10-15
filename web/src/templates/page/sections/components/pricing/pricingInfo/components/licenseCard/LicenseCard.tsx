@@ -1,9 +1,9 @@
 import React from "react" // we need this to make JSX compile
 import cx from "classnames"
-import PurpleButton from "../../../../../../../../components/atoms/buttons/purple/PurpleButton"
 import { IProductModel } from "../../../../../../../../interfaces/interfaces"
 import * as styles from "./licenseCard.module.scss"
 import { images } from "../../../../../../../../images/images"
+import Button from "../../../../shared/button/Button"
 
 type ILicenseCardProps = {
   license: IProductModel
@@ -189,9 +189,19 @@ const LicenseCard: React.FC<ILicenseCardProps> = props => {
         </div>
       </div>
       <div>
-        <PurpleButton
+        <Button
+          idButton={license?.button?.idButton}
           className={styles?.license__button}
           label={license?.button?.label}
+          icon={license?.button?.icon}
+          style={license?.button?.style}
+          fillColor={license?.button?.fillColor}
+          size={license?.button?.size}
+          noPaddingText={license?.button?.noPaddingText}
+          disabled={license?.button?.disabled}
+          link={license?.button?.link}
+          url={license?.button?.url}
+          outsideWeb={license?.button?.outsideWeb}
           action={() =>
             window?.open(
               license?.button?.url,

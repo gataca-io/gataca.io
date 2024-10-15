@@ -4,7 +4,7 @@ import PurpleButton from "../../../../../components/atoms/buttons/purple/PurpleB
 import Tag from "../../../../../components/atoms/tags/Tag"
 import * as styles from "./sixthSection.module.scss"
 import { navigate } from "gatsby"
-import { ButtonModel } from "../../../../../interfaces/interfaces";
+import { ButtonModelOld } from "../../../../../interfaces/interfaces"
 
 export type ISectionProps = {
   title: string
@@ -20,8 +20,8 @@ export type ISectionProps = {
           type: string
           monthlyPrice: number
           yearlyPrice: number
-          button: ButtonModel
-          button2: ButtonModel
+          button: ButtonModelOld
+          button2: ButtonModelOld
           popular: boolean
           createdAt?: string
           updatedAt?: string

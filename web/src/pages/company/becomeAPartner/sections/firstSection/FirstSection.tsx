@@ -2,14 +2,14 @@ import * as React from "react"
 import cx from "classnames"
 import { images } from "../../../../../images/images"
 import { gatacaStudioURL } from "../../../../../data/globalData"
-import { ButtonModel } from "../../../../../interfaces/interfaces"
+import { ButtonModelOld } from "../../../../../interfaces/interfaces"
 import PurpleButton from "../../../../../components/atoms/buttons/purple/PurpleButton"
 import * as styles from "./firstSection.module.scss"
 
 export type ISectionProps = {
   title: string
   descriptionParagraphs: string | string[]
-  button: ButtonModel
+  button: ButtonModelOld
 }
 
 const FirstSection: React.FC<ISectionProps> = props => {

@@ -8,8 +8,8 @@ export interface LinkModel {
   action?: (...args: any[]) => {}
 }
 
-export interface ButtonModel {
-  label: string
+export interface ButtonModelOld {
+  label?: string
   icon?: string
   IconComponent?: any
   outlined?: boolean
@@ -17,6 +17,23 @@ export interface ButtonModel {
   url?: string
   fileName?: string
   action: (x?: any) => void
+}
+
+export interface ButtonModel {
+  idButton?: string
+  label?: string
+  icon?: any
+  IconComponent?: any
+  className?: any
+  url?: string
+  action?: (x?: any) => void
+  link?: boolean
+  style?: string
+  fillColor?: string
+  size?: string
+  disabled?: boolean
+  outsideWeb?: boolean
+  noPaddingText?: boolean
 }
 
 export interface IconModel {
@@ -146,11 +163,7 @@ export interface IProductModel {
     subPriceYearLabel?: string
     popular: boolean
 
-    button: {
-      label: "Contact us"
-      outsideWeb: false
-      url: "/company/contact"
-    }
+    button: ButtonModel
   }
 
   name: string
@@ -161,11 +174,7 @@ export interface IProductModel {
   subPriceMonthLabel?: string
   subPriceYearLabel?: string
 
-  button: {
-    label: "Contact us"
-    outsideWeb: false
-    url: "/company/contact"
-  }
+  button: ButtonModel
 }
 
 export interface IPriceModel {

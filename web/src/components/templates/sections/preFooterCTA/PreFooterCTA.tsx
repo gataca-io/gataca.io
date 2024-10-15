@@ -2,10 +2,7 @@ import * as React from "react"
 import * as styles from "./preFooterCTA.module.scss"
 import { ButtonModel } from "../../../../interfaces/interfaces"
 import cx from "classnames"
-import { images } from "../../../../images/images"
-import { marketAndroidURI, marketIosURI } from "../../../../data/globalData"
-import PurpleButton from "../../../atoms/buttons/purple/PurpleButton"
-import WhiteButton from "../../../atoms/buttons/white/WhiteButton"
+import Button from "../../../../templates/page/sections/components/shared/button/Button"
 
 export type IPreFooterCTAProps = {
   title: string
@@ -17,51 +14,42 @@ export type IPreFooterCTAProps = {
 }
 
 const PreFooterCTASection: React.FC<IPreFooterCTAProps> = props => {
-  const {
-    title,
-    description,
-    storeButtons,
-    leftButton,
-    rightButton,
-    className,
-  } = props
+  const { title, description, leftButton, rightButton, className } = props
   return (
     <section className={`${styles?.preFooterCTA} ${className && className}`}>
       <h6 className={`${cx("heading1 marginBottom24")}`}>{title}</h6>
-      <p className={`${cx("bodyRegularXL marginBottom14")}`}>{description}</p>
-      {storeButtons ? (
+      <p className={`${cx("bodyRegularXL marginBottom24")}`}>{description}</p>
+      {leftButton || rightButton ? (
         <div>
-          <a
-            className={`${cx("bodyRegularXL margin10")}`}
-            href={marketIosURI}
-            target="_blank"
-          >
-            <img src={images.brandAppleButton} />
-          </a>
-          <a
-            href={marketAndroidURI}
-            target="_blank"
-            className={`${cx("margin10")}`}
-          >
-            <img src={images.brandGoogleButton} />
-          </a>
-        </div>
-      ) : leftButton || rightButton ? (
-        <div>
-          {leftButton?.label && (
-            <WhiteButton
+          {(leftButton?.label || leftButton?.icon?.length)  && (
+            <Button
+              idButton={leftButton?.idButton}
               label={leftButton?.label}
-              className={`${leftButton.className} ${
-                leftButton && cx("margin10")
-              }`}
-              outlined
+              icon={leftButton?.icon}
+              style={leftButton?.style}
+              fillColor={leftButton?.fillColor}
+              size={leftButton?.size}
+              noPaddingText={leftButton?.noPaddingText}
+              disabled={leftButton?.disabled}
+              link={leftButton?.link}
+              url={leftButton?.url}
+              outsideWeb={leftButton?.outsideWeb}
               action={leftButton?.action}
             />
           )}
-          {rightButton?.label && (
-            <PurpleButton
+          {(rightButton?.label || rightButton?.icon?.length) && (
+            <Button
+              idButton={rightButton?.idButton}
               label={rightButton?.label}
-              className={`${rightButton?.className} ${cx("margin10")}`}
+              icon={rightButton?.icon}
+              style={rightButton?.style}
+              fillColor={rightButton?.fillColor}
+              size={rightButton?.size}
+              noPaddingText={rightButton?.noPaddingText}
+              disabled={rightButton?.disabled}
+              link={rightButton?.link}
+              url={rightButton?.url}
+              outsideWeb={rightButton?.outsideWeb}
               action={rightButton?.action}
             />
           )}

@@ -1,6 +1,6 @@
 import * as React from "react"
 import cx from "classnames"
-import { ButtonModel } from "../../../../../interfaces/interfaces"
+import { ButtonModelOld } from "../../../../../interfaces/interfaces"
 import PurpleButton from "../../../../../components/atoms/buttons/purple/PurpleButton"
 import * as styles from "./firstSection.module.scss"
 import { navigate } from "gatsby"
@@ -8,7 +8,7 @@ import { navigate } from "gatsby"
 export type ISectionProps = {
   title: string
   description: string
-  contactButton: ButtonModel
+  contactButton: ButtonModelOld
 }
 
 const FirstSection: React.FC<ISectionProps> = props => {

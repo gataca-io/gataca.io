@@ -50,12 +50,40 @@ const PageTemplate: React.FC = (props: any) => {
                   title={title}
                   description={description}
                   rightButton={{
+                    idButton: rightButton?.label,
                     label: rightButton?.label,
-                    action: () => navigate(rightButton?.url),
+                    icon: rightButton?.icon,
+                    style: rightButton?.style,
+                    fillColor: rightButton?.fillColor,
+                    size: rightButton?.size,
+                    noPaddingText: rightButton?.noPaddingText,
+                    disabled: rightButton?.disabled,
+                    link: rightButton?.link,
+                    url: rightButton?.url,
+                    outsideWeb: rightButton?.outsideWeb,
+                    action: () =>
+                      window?.open(
+                        rightButton?.url,
+                        rightButton?.outsideWeb ? "_blank" : "_self"
+                      ),
                   }}
                   leftButton={{
+                    idButton: leftButton?.label,
                     label: leftButton?.label,
-                    action: () => navigate(leftButton?.url),
+                    icon: leftButton?.icon,
+                    style: leftButton?.style,
+                    fillColor: leftButton?.fillColor,
+                    size: leftButton?.size,
+                    noPaddingText: leftButton?.noPaddingText,
+                    disabled: leftButton?.disabled,
+                    link: leftButton?.link,
+                    url: leftButton?.url,
+                    outsideWeb: leftButton?.outsideWeb,
+                    action: () =>
+                      window?.open(
+                        leftButton?.url,
+                        leftButton?.outsideWeb ? "_blank" : "_self"
+                      ),
                   }}
                 />
               )}

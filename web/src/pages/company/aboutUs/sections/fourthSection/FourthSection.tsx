@@ -2,14 +2,14 @@ import * as React from "react"
 import { Link } from "gatsby"
 import cx from "classnames"
 import { images } from "../../../../../images/images"
-import { ButtonModel } from "../../../../../interfaces/interfaces"
+import { ButtonModelOld } from "../../../../../interfaces/interfaces"
 import PurpleButton from "../../../../../components/atoms/buttons/purple/PurpleButton"
 import * as styles from "./fourthSection.module.scss"
 
 export type ISectionProps = {
   title: string
   description: string
-  button: ButtonModel
+  button: ButtonModelOld
   list: {
     id: string
     attributes: {

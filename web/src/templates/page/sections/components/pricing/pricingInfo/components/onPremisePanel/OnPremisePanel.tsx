@@ -7,6 +7,7 @@ import PurpleButton from "../../../../../../../../components/atoms/buttons/purpl
 import ReactMarkdown from "react-markdown"
 import remarkGfm from "remark-gfm"
 import rehypeRaw from "rehype-raw"
+import Button from "../../../../shared/button/Button"
 
 export type IOnPremisePanelProps = {
   panelTitle: string
@@ -27,9 +28,21 @@ const OnPremisePanel: React.FC<IOnPremisePanelProps> = props => {
         {description}
       </ReactMarkdown>
 
-      <PurpleButton
+      <Button
+        idButton={button?.idButton}
         label={button?.label}
-        action={() => button?.url && navigate(button?.url)}
+        icon={button?.icon}
+        style={button?.style}
+        fillColor={button?.fillColor}
+        size={button?.size}
+        noPaddingText={button?.noPaddingText}
+        disabled={button?.disabled}
+        link={button?.link}
+        url={button?.url}
+        outsideWeb={button?.outsideWeb}
+        action={() =>
+          window?.open(button?.url, button?.outsideWeb ? "_blank" : "_self")
+        }
       />
     </div>
   )

@@ -2,7 +2,7 @@ import * as React from "react"
 import cx from "classnames"
 import { images } from "../../../../../images/images"
 import { files } from "../../../../../assets/files/files"
-import { ButtonModel } from "../../../../../interfaces/interfaces"
+import { ButtonModelOld } from "../../../../../interfaces/interfaces"
 import * as styles from "./firstSection.module.scss"
 import PurpleButton from "../../../../../components/atoms/buttons/purple/PurpleButton";
 import {gatacaStudioURL} from "../../../../../data/globalData";
@@ -18,7 +18,7 @@ export type ISectionProps = {
       secondParagraph: string
       thirdParagraph: string
       fourthParagraph: string
-      button: ButtonModel
+      button: ButtonModelOld
       image: {
         data: {
           attributes: {
