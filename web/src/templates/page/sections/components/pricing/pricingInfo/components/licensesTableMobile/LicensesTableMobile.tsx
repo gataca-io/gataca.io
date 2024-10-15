@@ -132,7 +132,6 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
             style={license?.attributes.button?.style}
             fillColor={license?.attributes.button?.fillColor}
             size={license?.attributes.button?.size}
-            fileName={license?.attributes.button?.fileName}
             noPaddingText={license?.attributes.button?.noPaddingText}
             disabled={license?.attributes.button?.disabled}
             link={license?.attributes.button?.link}

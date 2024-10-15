@@ -35,7 +35,6 @@ const OnPremisePanel: React.FC<IOnPremisePanelProps> = props => {
         style={button?.style}
         fillColor={button?.fillColor}
         size={button?.size}
-        fileName={button?.fileName}
         noPaddingText={button?.noPaddingText}
         disabled={button?.disabled}
         link={button?.link}

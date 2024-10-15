@@ -18,9 +18,6 @@
     "outlined": {
       "type": "boolean"
     },
-    "filename": {
-      "type": "string"
-    },
     "idButton": {
       "type": "string"
     },

@@ -17,6 +17,7 @@
     box-sizing: border-box;
     &:hover {
         background-color: $primary900;
+        color: $neutral100;
     }
     &:focus {
         box-shadow: inset 0px 0px 0px 2px $primary300;

@@ -197,7 +197,6 @@ const LicenseCard: React.FC<ILicenseCardProps> = props => {
           style={license?.button?.style}
           fillColor={license?.button?.fillColor}
           size={license?.button?.size}
-          fileName={license?.button?.fileName}
           noPaddingText={license?.button?.noPaddingText}
           disabled={license?.button?.disabled}
           link={license?.button?.link}

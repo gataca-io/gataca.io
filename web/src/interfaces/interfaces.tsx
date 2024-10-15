@@ -26,7 +26,6 @@ export interface ButtonModel {
   IconComponent?: any
   className?: any
   url?: string
-  fileName?: string
   action?: (x?: any) => void
   link?: boolean
   style?: string

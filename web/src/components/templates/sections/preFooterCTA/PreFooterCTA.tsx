@@ -29,7 +29,6 @@ const PreFooterCTASection: React.FC<IPreFooterCTAProps> = props => {
               style={leftButton?.style}
               fillColor={leftButton?.fillColor}
               size={leftButton?.size}
-              fileName={leftButton?.fileName}
               noPaddingText={leftButton?.noPaddingText}
               disabled={leftButton?.disabled}
               link={leftButton?.link}
@@ -46,7 +45,6 @@ const PreFooterCTASection: React.FC<IPreFooterCTAProps> = props => {
               style={rightButton?.style}
               fillColor={rightButton?.fillColor}
               size={rightButton?.size}
-              fileName={rightButton?.fileName}
               noPaddingText={rightButton?.noPaddingText}
               disabled={rightButton?.disabled}
               link={rightButton?.link}

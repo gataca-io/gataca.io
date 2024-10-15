@@ -118,7 +118,6 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
                           style={license?.attributes.button?.style}
                           fillColor={license?.attributes.button?.fillColor}
                           size={license?.attributes.button?.size}
-                          fileName={license?.attributes.button?.fileName}
                           noPaddingText={
                             license?.attributes.button?.noPaddingText
                           }

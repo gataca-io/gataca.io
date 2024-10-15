@@ -11,7 +11,6 @@ const Button: React.FC<ButtonModel> = props => {
     icon,
     className,
     url,
-    fileName,
     action,
     link,
     style,
@@ -47,7 +46,6 @@ const Button: React.FC<ButtonModel> = props => {
           }`}
           target={outsideWeb ? "_blank" : "_self"}
           href={url}
-          download={fileName ? fileName : undefined}
         >
           {label ? (
             <span className={cx(size ? size : "buttonMD")}>{label}</span>
