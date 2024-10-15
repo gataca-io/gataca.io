@@ -132,16 +132,16 @@
           "sortable": true
         }
       },
-      "fillColor": {
+      "color": {
         "edit": {
-          "label": "fillColor",
+          "label": "color",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "fillColor",
+          "label": "color",
           "searchable": true,
           "sortable": true
         }
@@ -211,19 +211,9 @@
           {
             "name": "url",
             "size": 6
-          }
-        ],
-        [
+          },
           {
             "name": "outsideWeb",
-            "size": 4
-          },
-          {
-            "name": "link",
-            "size": 4
-          },
-          {
-            "name": "disabled",
             "size": 4
           }
         ],
@@ -231,16 +221,22 @@
           {
             "name": "style",
             "size": 6
-          },
-          {
-            "name": "fillColor",
-            "size": 6
           }
         ],
         [
           {
             "name": "size",
             "size": 6
+          }
+        ],
+        [
+          {
+            "name": "disabled",
+            "size": 4
+          },
+          {
+            "name": "link",
+            "size": 4
           },
           {
             "name": "noPaddingText",
@@ -250,6 +246,10 @@
         [
           {
             "name": "icon",
+            "size": 6
+          },
+          {
+            "name": "color",
             "size": 6
           }
         ]

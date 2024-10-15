@@ -127,9 +127,9 @@
       ],
       "list": [
         "id",
+        "idContent",
         "title",
-        "contents",
-        "numberList"
+        "contents"
       ]
     }
   },

@@ -226,6 +226,12 @@
       "action": "api::sectors-web3.sectors-web3.find"
     },
     {
+      "action": "api::segmented-button.segmented-button.find"
+    },
+    {
+      "action": "api::segmented-button.segmented-button.findOne"
+    },
+    {
       "action": "api::step.step.find"
     },
     {

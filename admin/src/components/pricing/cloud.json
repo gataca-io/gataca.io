@@ -32,6 +32,11 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::tier-table.tier-table"
+    },
+    "buttons": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::segmented-button.segmented-button"
     }
   }
 }

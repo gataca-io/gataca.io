@@ -40,12 +40,12 @@
       "type": "enumeration",
       "enum": [
         "fill",
-        "outlined",
-        "onlyText"
+        "outline",
+        "text"
       ],
       "default": "fill"
     },
-    "fillColor": {
+    "color": {
       "type": "enumeration",
       "enum": [
         "purple",

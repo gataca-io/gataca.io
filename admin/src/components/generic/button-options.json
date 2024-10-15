@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_shared_button_options",
+  "info": {
+    "displayName": "SegmentedButton",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "buttons": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::segmented-button.segmented-button"
+    }
+  }
+}

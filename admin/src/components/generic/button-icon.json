@@ -1,0 +1,65 @@
+{
+  "collectionName": "components_generic_button_icons",
+  "info": {
+    "displayName": "buttonIcon",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "idButton": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "url": {
+      "type": "string"
+    },
+    "outsideWeb": {
+      "type": "boolean",
+      "default": false
+    },
+    "style": {
+      "type": "enumeration",
+      "enum": [
+        "rounded",
+        "square"
+      ],
+      "default": "rounded"
+    },
+    "color": {
+      "type": "enumeration",
+      "enum": [
+        "purple",
+        "red",
+        "green",
+        "yellow",
+        "blue",
+        "light-purple",
+        "teal",
+        "pink"
+      ],
+      "default": "purple"
+    },
+    "size": {
+      "type": "enumeration",
+      "enum": [
+        "buttonLG",
+        "buttonSM"
+      ],
+      "default": "buttonLG"
+    },
+    "disabled": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

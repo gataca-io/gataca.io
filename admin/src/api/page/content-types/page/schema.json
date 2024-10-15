@@ -36,7 +36,10 @@
         "generic.table",
         "pricing.cloud",
         "generic.content-heading-container",
-        "shared.content-table"
+        "shared.content-table",
+        "generic.button-icon",
+        "generic.button-options",
+        "generic.button-group"
       ],
       "pluginOptions": {
         "i18n": {

@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_generic_button_groups",
+  "info": {
+    "displayName": "ButtonGroup"
+  },
+  "options": {},
+  "attributes": {
+    "buttons": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::segmented-button.segmented-button"
+    }
+  }
+}
