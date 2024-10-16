@@ -30,7 +30,7 @@
         color: $neutral500;
         pointer-events: none;
     }
-    &.outlinedButton {
+    &.outlineButton {
         background-color: transparent;
         border: 1px solid $primary700;
         color: $neutral1000;
@@ -43,7 +43,7 @@
             color: $neutral500;
         }
     }
-    &.onlyText {
+    &.text {
         border: none;
         background-color: transparent;
         color: $neutral1000;
@@ -82,7 +82,7 @@
         padding: 8px 16px;
         height: 40px;
     }
-    &.whiteFill {
+    &.whiteColor {
         background-color: $neutral100;
         color: $neutral1000;
         border: 1px solid $neutral100;
@@ -95,7 +95,7 @@
         &:focus-visible {
             outline: $neutral300 auto 2px;
         }
-        &.outlinedButton {
+        &.outlineButton {
             background-color: transparent;
             border: 1px solid $neutral100;
             color: $neutral100;
@@ -108,7 +108,7 @@
                 color: $neutral500;
             }
         }
-        &.onlyText {
+        &.text {
             border: none;
             background-color: transparent;
             color: $neutral100;
@@ -148,7 +148,7 @@
         }
     }
 
-    &.blackFill {
+    &.blackColor {
         background-color: $neutral1000;
         color: $neutral100;
         &:hover {
@@ -160,7 +160,7 @@
         &:focus-visible {
             outline: $neutral300 auto 2px;
         }
-        &.outlinedButton {
+        &.outlineButton {
             background-color: transparent;
             border: 1px solid $neutral1000;
             color: $neutral1000;
@@ -181,7 +181,7 @@
                 background-color: transparent;
             }
         }
-        &.onlyText {
+        &.text {
             border: none;
             background-color: transparent;
             color: $neutral1000;
@@ -219,7 +219,7 @@
             background-color: $neutral400;
         }
     }
-    &.greyFill {
+    &.greyColor {
         background-color: $neutral500;
         color: $neutral100;
         &:hover {
@@ -231,7 +231,7 @@
         &:focus-visible {
             outline: $neutral300 auto 2px;
         }
-        &.outlinedButton {
+        &.outlineButton {
             background-color: transparent;
             border: 1px solid $neutral500;
             color: $neutral1000;
@@ -252,7 +252,7 @@
                 background-color: transparent;
             }
         }
-        &.onlyText {
+        &.text {
             border: none;
             background-color: transparent;
             color: $neutral700;

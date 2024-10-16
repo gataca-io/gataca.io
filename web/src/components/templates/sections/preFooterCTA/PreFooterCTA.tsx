@@ -2,7 +2,7 @@ import * as React from "react"
 import * as styles from "./preFooterCTA.module.scss"
 import { ButtonModel } from "../../../../interfaces/interfaces"
 import cx from "classnames"
-import Button from "../../../../templates/page/sections/components/shared/button/Button"
+import Button from "../../../../templates/page/sections/components/generic/button/Button"
 
 export type IPreFooterCTAProps = {
   title: string
@@ -21,13 +21,13 @@ const PreFooterCTASection: React.FC<IPreFooterCTAProps> = props => {
       <p className={`${cx("bodyRegularXL marginBottom24")}`}>{description}</p>
       {leftButton || rightButton ? (
         <div>
-          {(leftButton?.label || leftButton?.icon?.length)  && (
+          {(leftButton?.label || leftButton?.icon?.length) && (
             <Button
               idButton={leftButton?.idButton}
               label={leftButton?.label}
               icon={leftButton?.icon}
               style={leftButton?.style}
-              fillColor={leftButton?.fillColor}
+              color={leftButton?.color}
               size={leftButton?.size}
               noPaddingText={leftButton?.noPaddingText}
               disabled={leftButton?.disabled}
@@ -43,7 +43,7 @@ const PreFooterCTASection: React.FC<IPreFooterCTAProps> = props => {
               label={rightButton?.label}
               icon={rightButton?.icon}
               style={rightButton?.style}
-              fillColor={rightButton?.fillColor}
+              color={rightButton?.color}
               size={rightButton?.size}
               noPaddingText={rightButton?.noPaddingText}
               disabled={rightButton?.disabled}

@@ -16,7 +16,7 @@ import CenteredHeader from "./components/generic/centeredHeader/CenteredHeader"
 import PricingInfo from "./components/pricing/pricingInfo/PricingInfo"
 import ContentHeadingContainer from "./components/generic/contentHeadingContainer/ContentHeadingContainer"
 import ContentTable from "./components/shared/contentTable/ContentTable"
-import Button from "./components/shared/button/Button"
+import Button from "./components/generic/button/Button"
 import ButtonIcon from "./components/generic/buttonIcon/ButtonIcon"
 import SegmentedButtonsContainer from "./components/generic/segmentedButtons/SegmentedButtonsContainer"
 import ButtonGroup from "./components/generic/buttonGroup/ButtonGroup"
@@ -57,7 +57,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
           url,
           link,
           style,
-          fillColor,
+          color,
           size,
           disabled,
           outsideWeb,
@@ -192,7 +192,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
                   label={label}
                   icon={icon}
                   style={style}
-                  fillColor={fillColor}
+                  color={color}
                   size={size}
                   noPaddingText={noPaddingText}
                   disabled={disabled}
@@ -212,8 +212,9 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
                   idButton={idButton}
                   icon={icon}
                   style={style}
-                  fillColor={fillColor}
+                  color={color}
                   size={size}
+                  disabled={disabled}
                   action={() =>
                     window?.open(url, outsideWeb ? "_blank" : "_self")
                   }

@@ -12,7 +12,7 @@ import OnPremisePanel from "./components/onPremisePanel/OnPremisePanel"
 import CrevronDownSVG from "../../../../../../images/icons/ChevronDownSVG"
 import ChevronUpSVG from "../../../../../../images/icons/ChevronUpSVG"
 import * as styles from "./pricingInfo.module.scss"
-import Button from "../../shared/button/Button"
+import Button from "../../generic/button/Button"
 import SegmentedButtonsContainer from "../../generic/segmentedButtons/SegmentedButtonsContainer"
 import SegmentedButtons from "../../generic/segmentedButtons/components/SegmentedButtons"
 
@@ -125,7 +125,7 @@ const PricingInfo: React.FC<ISectionProps> = props => {
                   key={"categoriesP__" + index}
                   index={index + 1}
                   label={button?.label}
-                  fillColor={button?.fillColor}
+                  color={button?.color}
                   size={button?.size}
                   noPaddingText={button?.noPaddingText}
                   disabled={button?.disabled}
@@ -194,7 +194,7 @@ const PricingInfo: React.FC<ISectionProps> = props => {
                 IconComponent={
                   showAllFeatures ? <ChevronUpSVG /> : <CrevronDownSVG />
                 }
-                style={"outlined"}
+                style={"outline"}
                 className={`${cx("marginTop32")} ${styles?.allFeaturesButton}`}
                 action={() => {
                   setShowAllFeatures(!showAllFeatures),

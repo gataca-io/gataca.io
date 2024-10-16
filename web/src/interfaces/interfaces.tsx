@@ -29,7 +29,7 @@ export interface ButtonModel {
   action?: (x?: any) => void
   link?: boolean
   style?: string
-  fillColor?: string
+  color?: string
   size?: string
   disabled?: boolean
   outsideWeb?: boolean
@@ -43,7 +43,7 @@ export interface SegmentedButtonModel {
   icon?: any
   selected: boolean
   showItem: (x: number) => void
-  fillColor?: string
+  color?: string
   size?: string
   disabled?: boolean
   outsideWeb?: boolean
@@ -130,7 +130,7 @@ export interface InsideSectionsModel {
   url?: string
   link?: boolean
   style?: string
-  fillColor?: string
+  color?: string
   size?: string
   disabled?: boolean
   outsideWeb?: boolean

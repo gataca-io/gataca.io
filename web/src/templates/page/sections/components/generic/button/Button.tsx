@@ -14,7 +14,7 @@ const Button: React.FC<ButtonModel> = props => {
     action,
     link,
     style,
-    fillColor,
+    color,
     size,
     disabled,
     outsideWeb,
@@ -22,26 +22,32 @@ const Button: React.FC<ButtonModel> = props => {
     IconComponent,
   } = props
 
+  const buttonStyles: Record<string, string> = {
+    outline: styles?.outlineButton,
+    text: styles?.text,
+  }
+
+  const sizeStyles: Record<string, string> = {
+    buttonSM: styles?.buttonSM,
+    buttonLG: styles?.buttonLG,
+  }
+
+  const colorStyles: Record<string, string> = {
+    white: styles?.whiteColor,
+    black: styles?.blackColor,
+    grey: styles?.greyColor,
+  }
+
   return (
     <>
       {link ? (
         <a
           id={idButton}
-          className={`${
-            style === "outlined"
-              ? styles?.outlinedButton
-              : style === "onlyText"
-              ? styles?.onlyText
-              : ""
-          } ${size === "buttonSM" ? styles?.buttonSM : styles?.buttonStrapi} ${
-            fillColor === "white"
-              ? styles?.whiteFill
-              : fillColor === "black"
-              ? styles?.blackFill
-              : fillColor === "grey"
-              ? styles?.greyFill
-              : styles?.buttonStrapi
-          } ${styles.buttonStrapi} ${disabled ? styles.disabled : ""} ${
+          className={`${style ? buttonStyles[style] : styles?.buttonStrapi} ${
+            size ? sizeStyles[size] : styles?.buttonStrapi
+          } ${color ? colorStyles[color] : styles?.buttonStrapi} ${
+            styles.buttonStrapi
+          } ${disabled ? styles.disabled : ""} ${
             noPaddingText ? styles.noPadding : ""
           }`}
           target={outsideWeb ? "_blank" : "_self"}
@@ -59,21 +65,12 @@ const Button: React.FC<ButtonModel> = props => {
       ) : (
         <button
           id={idButton}
-          className={`${
-            style === "outlined"
-              ? styles?.outlinedButton
-              : style === "onlyText"
-              ? styles?.onlyText
-              : ""
-          } ${size === "buttonSM" ? styles?.buttonSM : styles?.buttonStrapi} ${
-            fillColor === "white"
-              ? styles?.whiteFill
-              : fillColor === "black"
-              ? styles?.blackFill
-              : fillColor === "grey"
-              ? styles?.greyFill
-              : styles?.buttonStrapi
-          } ${styles.buttonStrapi} ${disabled ? styles.disabled : ""} ${
+          className={`
+            ${style ? buttonStyles[style] : styles?.buttonStrapi} ${
+            size ? sizeStyles[size] : styles?.buttonStrapi
+          } ${color ? colorStyles[color] : styles?.buttonStrapi} ${
+            styles.buttonStrapi
+          } ${disabled ? styles.disabled : ""} ${
             noPaddingText ? styles.noPadding : ""
           } ${className && className}`}
           onClick={action}

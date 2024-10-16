@@ -38,7 +38,7 @@
     &.squareButton {
         border-radius: 8px;
     }
-    &.redFill {
+    &.redColor {
         background-color: $alert300;
         &:hover {
             background-color: $alert400;
@@ -47,7 +47,7 @@
             background-color: $neutral400;
         }
     }
-    &.greenFill {
+    &.greenColor {
         background-color: $success300;
        
         &:hover {
@@ -58,7 +58,7 @@
         }
 
     }
-    &.yellowFill {
+    &.yellowColor {
         background-color: $warning300;
         &:hover {
             background-color: $warning400;
@@ -67,7 +67,7 @@
             background-color: $neutral400;
         }
     }
-    &.blueFill {
+    &.blueColor {
         background-color: $info300;
         &:hover {
             background-color: $info400;
@@ -76,7 +76,7 @@
             background-color: $neutral400;
         }
     }
-    &.lightPurpleFill {
+    &.lightPurpleColor {
         background-color: $primary100;
         &:hover {
             background-color: $primary300;
@@ -85,7 +85,7 @@
             background-color: $neutral400;
         }
     }
-    &.tealFill {
+    &.tealColor {
         background-color: $secondary600;
         &:hover {
             background-color: $secondary800;
@@ -94,7 +94,7 @@
             background-color: $neutral400;
         }
     }
-    &.pinkFill {
+    &.pinkColor {
         background-color: $tertiary600;
         &:hover {
             background-color: $tertiary800;

@@ -4,31 +4,35 @@ import { ButtonModel } from "../../../../../../interfaces/interfaces"
 import StrapiImage from "../../../../../../components/atoms/images/StrapiImage"
 
 const ButtonIcon: React.FC<ButtonModel> = props => {
-  const { idButton, icon, action, style, fillColor, size } = props
+  const { idButton, icon, action, style, color, size, disabled } = props
+
+  const buttonStyles: Record<string, string> = {
+    square: styles?.squareButton,
+  }
+
+  const sizeStyles: Record<string, string> = {
+    buttonSM: styles?.buttonSM,
+  }
+
+  const colorStyles: Record<string, string> = {
+    green: styles?.greenColor,
+    yellow: styles?.yellowColor,
+    blue: styles?.blueColor,
+    lightPurple: styles?.blueColor,
+    teal: styles?.tealColor,
+    pink: styles?.pinkColor,
+    red: styles?.redColor,
+  }
 
   return (
     <>
       <button
         id={idButton}
-        className={`${
-          style === "square" ? styles?.squareButton : styles?.buttonIcon
-        } ${size === "buttonSM" ? styles?.buttonSM : styles?.buttonIcon} ${
-          fillColor === "green"
-            ? styles?.greenFill
-            : fillColor === "yellow"
-            ? styles?.yellowFill
-            : fillColor === "blue"
-            ? styles?.blueFill
-            : fillColor === "light-purple"
-            ? styles?.lightPurpleFill
-            : fillColor === "teal"
-            ? styles?.tealFill
-            : fillColor === "pink"
-            ? styles?.pinkFill
-            : fillColor === "red"
-            ? styles?.redFill
-            : styles?.buttonIcon
-        } ${styles.buttonIcon}`}
+        className={`${style ? buttonStyles[style] : styles?.buttonIcon} ${
+          size ? sizeStyles[size] : styles?.buttonIcon
+        } ${color ? colorStyles[color] : styles?.buttonIcon}  ${
+          styles.buttonIcon
+        } ${disabled ? styles.disabled : ""}`}
         onClick={action}
       >
         {icon ? <StrapiImage image={icon ? icon : null} /> : null}

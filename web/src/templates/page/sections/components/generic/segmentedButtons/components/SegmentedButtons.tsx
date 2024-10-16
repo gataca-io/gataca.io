@@ -1,5 +1,5 @@
 import * as React from "react"
-import Button from "../../../shared/button/Button"
+import Button from "../../button/Button"
 import { SegmentedButtonModel } from "../../../../../../../interfaces/interfaces"
 
 const SegmentedButtons: React.FC<SegmentedButtonModel> = props => {
@@ -8,7 +8,7 @@ const SegmentedButtons: React.FC<SegmentedButtonModel> = props => {
     label,
     icon,
     index,
-    fillColor,
+    color,
     size,
     noPaddingText,
     disabled,
@@ -22,8 +22,8 @@ const SegmentedButtons: React.FC<SegmentedButtonModel> = props => {
         idButton={id}
         label={label}
         icon={icon}
-        style={selected ? "" : "onlyText"}
-        fillColor={fillColor}
+        style={selected ? "" : "text"}
+        color={color}
         size={size}
         noPaddingText={noPaddingText}
         disabled={disabled}

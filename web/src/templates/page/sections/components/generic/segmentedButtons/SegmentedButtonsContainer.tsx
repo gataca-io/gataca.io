@@ -26,7 +26,7 @@ const SegmentedButtonsContainer: React.FC<
               key={"segmentedButton__" + index}
               index={index + 1}
               label={button?.label}
-              fillColor={button?.fillColor}
+              color={button?.color}
               size={button?.size}
               noPaddingText={button?.noPaddingText}
               disabled={button?.disabled}

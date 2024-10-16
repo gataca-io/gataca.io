@@ -8,7 +8,7 @@ import { IProductModel } from "../../../../../../../../interfaces/interfaces"
 import * as styles from "./licensesTable.module.scss"
 import { images } from "../../../../../../../../images/images"
 import MarkDownContent from "../../../../../../../../components/elements/markDownContent/MarkDownContent"
-import Button from "../../../../shared/button/Button"
+import Button from "../../../../generic/button/Button"
 
 type ILicensesTableProps = {
   products: IProductModel[]
@@ -116,7 +116,7 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
                           label={license?.attributes.button?.label}
                           icon={license?.attributes.button?.icon}
                           style={license?.attributes.button?.style}
-                          fillColor={license?.attributes.button?.fillColor}
+                          color={license?.attributes.button?.color}
                           size={license?.attributes.button?.size}
                           noPaddingText={
                             license?.attributes.button?.noPaddingText

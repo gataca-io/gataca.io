@@ -54,8 +54,8 @@ const ContactUsPage: React.FC<PageProps> = () => {
           }
           leftButton={{
             label: "See pricing plans",
-            style: "outlined",
-            fillColor: "white",
+            style: "outline",
+            color: "white",
             action: () => navigate("/pricing"),
           }}
           rightButton={{

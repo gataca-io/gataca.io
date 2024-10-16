@@ -7,7 +7,7 @@ import CardLeftColumn from "./elements/cardLeftColumn/CardLeftColumn"
 import * as styles from "./licensesTableMobile.module.scss"
 import QuantityDataCell from "../licensesTable/elements/cells/quantityDataCell/QuantityDataCell"
 import MarkDownContent from "../../../../../../../../components/elements/markDownContent/MarkDownContent"
-import Button from "../../../../shared/button/Button"
+import Button from "../../../../generic/button/Button"
 
 type ILicensesTableMobileProps = {
   license: any
@@ -130,7 +130,7 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
             label={license?.attributes.button?.label}
             icon={license?.attributes.button?.icon}
             style={license?.attributes.button?.style}
-            fillColor={license?.attributes.button?.fillColor}
+            color={license?.attributes.button?.color}
             size={license?.attributes.button?.size}
             noPaddingText={license?.attributes.button?.noPaddingText}
             disabled={license?.attributes.button?.disabled}

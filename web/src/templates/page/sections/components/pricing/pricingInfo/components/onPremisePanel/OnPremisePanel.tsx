@@ -7,7 +7,7 @@ import PurpleButton from "../../../../../../../../components/atoms/buttons/purpl
 import ReactMarkdown from "react-markdown"
 import remarkGfm from "remark-gfm"
 import rehypeRaw from "rehype-raw"
-import Button from "../../../../shared/button/Button"
+import Button from "../../../../generic/button/Button"
 
 export type IOnPremisePanelProps = {
   panelTitle: string
@@ -33,7 +33,7 @@ const OnPremisePanel: React.FC<IOnPremisePanelProps> = props => {
         label={button?.label}
         icon={button?.icon}
         style={button?.style}
-        fillColor={button?.fillColor}
+        color={button?.color}
         size={button?.size}
         noPaddingText={button?.noPaddingText}
         disabled={button?.disabled}

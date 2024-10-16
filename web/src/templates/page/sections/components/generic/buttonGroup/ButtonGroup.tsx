@@ -1,6 +1,6 @@
 import * as React from "react"
 import * as styles from "./buttonGroup.module.scss"
-import Button from "../../shared/button/Button"
+import Button from "../button/Button"
 
 export type IButtonGroupProps = {
   buttonGroup: any
@@ -21,7 +21,7 @@ const ButtonGroup: React.FC<IButtonGroupProps> = props => {
               label={button?.label}
               icon={button?.icon}
               style={button?.style}
-              fillColor={button?.fillColor}
+              color={button?.color}
               size={button?.size}
               noPaddingText={button?.noPaddingText}
               disabled={button?.disabled}
