@@ -18,7 +18,7 @@ const ButtonIcon: React.FC<ButtonModel> = props => {
     green: styles?.greenColor,
     yellow: styles?.yellowColor,
     blue: styles?.blueColor,
-    lightPurple: styles?.blueColor,
+    lightPurple: styles?.lightPurpleColor,
     teal: styles?.tealColor,
     pink: styles?.pinkColor,
     red: styles?.redColor,
