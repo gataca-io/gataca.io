@@ -3207,6 +3207,100 @@
       "actions": {},
       "lifecycles": {}
     },
+    "api::chip-option.chip-option": {
+      "kind": "collectionType",
+      "collectionName": "chip_options",
+      "info": {
+        "singularName": "chip-option",
+        "pluralName": "chip-options",
+        "displayName": "Chip option",
+        "description": ""
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "chip": {
+          "type": "component",
+          "repeatable": false,
+          "component": "generic.chip"
+        },
+        "title": {
+          "type": "string"
+        },
+        "content": {
+          "type": "richtext"
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "chip_options",
+        "info": {
+          "singularName": "chip-option",
+          "pluralName": "chip-options",
+          "displayName": "Chip option",
+          "description": ""
+        },
+        "options": {
+          "draftAndPublish": true
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "chip": {
+            "type": "component",
+            "repeatable": false,
+            "component": "generic.chip"
+          },
+          "title": {
+            "type": "string"
+          },
+          "content": {
+            "type": "richtext"
+          }
+        },
+        "kind": "collectionType"
+      },
+      "modelType": "contentType",
+      "modelName": "chip-option",
+      "connection": "default",
+      "uid": "api::chip-option.chip-option",
+      "apiName": "chip-option",
+      "globalId": "ChipOption",
+      "actions": {},
+      "lifecycles": {}
+    },
     "api::company-about-us.company-about-us": {
       "kind": "singleType",
       "collectionName": "company_about_uses",
@@ -5632,7 +5726,8 @@
             "shared.content-table",
             "generic.button-icon",
             "generic.button-options",
-            "generic.button-group"
+            "generic.button-group",
+            "generic.chip-group"
           ],
           "pluginOptions": {
             "i18n": {
@@ -5769,7 +5864,8 @@
               "shared.content-table",
               "generic.button-icon",
               "generic.button-options",
-              "generic.button-group"
+              "generic.button-group",
+              "generic.chip-group"
             ],
             "pluginOptions": {
               "i18n": {

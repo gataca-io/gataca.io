@@ -1,0 +1,80 @@
+{
+  "collectionName": "components_generic_chips",
+  "info": {
+    "displayName": "chip"
+  },
+  "options": {},
+  "attributes": {
+    "idChip": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "fill",
+        "outline",
+        "text"
+      ],
+      "default": "fill"
+    },
+    "form": {
+      "type": "enumeration",
+      "enum": [
+        "square",
+        "round"
+      ],
+      "default": "square"
+    },
+    "disabled": {
+      "type": "boolean",
+      "default": false
+    },
+    "color": {
+      "type": "enumeration",
+      "enum": [
+        "white",
+        "purple",
+        "red",
+        "green",
+        "yellow",
+        "blue",
+        "teal",
+        "pink",
+        "black",
+        "grey"
+      ],
+      "default": "white"
+    },
+    "chipSize": {
+      "type": "enumeration",
+      "enum": [
+        "xsmall",
+        "small"
+      ],
+      "default": "xsmall"
+    },
+    "leadingIcon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "trailingIcon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
