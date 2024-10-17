@@ -3,7 +3,7 @@ import cx from "classnames"
 import { IProductModel } from "../../../../../../../../interfaces/interfaces"
 import * as styles from "./licenseCard.module.scss"
 import { images } from "../../../../../../../../images/images"
-import Button from "../../../../shared/button/Button"
+import Button from "../../../../generic/button/Button"
 
 type ILicenseCardProps = {
   license: IProductModel
@@ -195,7 +195,7 @@ const LicenseCard: React.FC<ILicenseCardProps> = props => {
           label={license?.button?.label}
           icon={license?.button?.icon}
           style={license?.button?.style}
-          fillColor={license?.button?.fillColor}
+          color={license?.button?.color}
           size={license?.button?.size}
           noPaddingText={license?.button?.noPaddingText}
           disabled={license?.button?.disabled}

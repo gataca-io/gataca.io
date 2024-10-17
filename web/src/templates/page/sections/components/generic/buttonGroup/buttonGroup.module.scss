@@ -1,0 +1,12 @@
+
+@import "../../../../../../styles/colors.scss";
+@import "../../../../../../styles/mixins.scss";
+
+.buttonGroup__container {
+    @include flexbox();
+    @include flex-wrap(wrap);
+    @include align-items(center);
+    width: fit-content;
+    gap: 20px;
+}
+

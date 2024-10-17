@@ -29,7 +29,21 @@ export interface ButtonModel {
   action?: (x?: any) => void
   link?: boolean
   style?: string
-  fillColor?: string
+  color?: string
+  size?: string
+  disabled?: boolean
+  outsideWeb?: boolean
+  noPaddingText?: boolean
+}
+
+export interface SegmentedButtonModel {
+  id: string
+  label: string
+  index: number
+  icon?: any
+  selected: boolean
+  showItem: (x: number) => void
+  color?: string
   size?: string
   disabled?: boolean
   outsideWeb?: boolean
@@ -111,6 +125,17 @@ export interface InsideSectionsModel {
   tiersDetail?: any
   contents?: any
   card_table_contents?: any
+  idButton?: string
+  label?: string
+  url?: string
+  link?: boolean
+  style?: string
+  color?: string
+  size?: string
+  disabled?: boolean
+  outsideWeb?: boolean
+  noPaddingText?: boolean
+  buttons?: any
 }
 
 export interface LocalizationsModel {

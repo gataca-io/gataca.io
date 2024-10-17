@@ -51,8 +51,8 @@ const ArticleTemplate: React.FC = (props: any) => {
           }
           leftButton={{
             label: "Contact us",
-            style: "outlined",
-            fillColor: "white",
+            style: "outline",
+            color: "white",
             action: () => navigate("/company/contact"),
           }}
           rightButton={{

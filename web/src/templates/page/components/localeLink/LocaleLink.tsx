@@ -1,7 +1,7 @@
 import React from "react"
 import cx from "classnames"
 import * as styles from "./localeLink.module.scss"
-import Button from "../../sections/components/shared/button/Button"
+import Button from "../../sections/components/generic/button/Button"
 
 export type ILocaleLinkProps = {
   pageContext: any
@@ -54,9 +54,9 @@ const LocaleLink: React.FC<ILocaleLinkProps> = props => {
                   link
                   label={localeText}
                   idButton={"localeLink__"}
-                  style={"onlyText"}
+                  style={"text"}
                   url={localeType === "en" ? "/es" + localeURL : localeURL}
-                  fillColor={"black"}
+                  color={"black"}
                   noPaddingText
                 />
               </div>

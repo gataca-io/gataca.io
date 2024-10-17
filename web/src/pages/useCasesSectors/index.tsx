@@ -67,8 +67,8 @@ const UseCasesPage: React.FC<PageProps> = props => {
           }
           leftButton={{
             label: "Contact Us",
-            style: "outlined",
-            fillColor: "white",
+            style: "outline",
+            color: "white",
             action: () => navigate("/company/contact"),
           }}
           rightButton={{

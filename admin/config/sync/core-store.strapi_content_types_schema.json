@@ -5629,7 +5629,10 @@
             "generic.table",
             "pricing.cloud",
             "generic.content-heading-container",
-            "shared.content-table"
+            "shared.content-table",
+            "generic.button-icon",
+            "generic.button-options",
+            "generic.button-group"
           ],
           "pluginOptions": {
             "i18n": {
@@ -5763,7 +5766,10 @@
               "generic.table",
               "pricing.cloud",
               "generic.content-heading-container",
-              "shared.content-table"
+              "shared.content-table",
+              "generic.button-icon",
+              "generic.button-options",
+              "generic.button-group"
             ],
             "pluginOptions": {
               "i18n": {
@@ -7330,6 +7336,100 @@
       "uid": "api::sectors-web3.sectors-web3",
       "apiName": "sectors-web3",
       "globalId": "SectorsWeb3",
+      "actions": {},
+      "lifecycles": {}
+    },
+    "api::segmented-button.segmented-button": {
+      "kind": "collectionType",
+      "collectionName": "segmented_buttons",
+      "info": {
+        "singularName": "segmented-button",
+        "pluralName": "segmented-buttons",
+        "displayName": "Buttons",
+        "description": ""
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "button": {
+          "type": "component",
+          "repeatable": false,
+          "component": "generic.button"
+        },
+        "content": {
+          "type": "richtext"
+        },
+        "title": {
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "segmented_buttons",
+        "info": {
+          "singularName": "segmented-button",
+          "pluralName": "segmented-buttons",
+          "displayName": "Buttons",
+          "description": ""
+        },
+        "options": {
+          "draftAndPublish": true
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "button": {
+            "type": "component",
+            "repeatable": false,
+            "component": "generic.button"
+          },
+          "content": {
+            "type": "richtext"
+          },
+          "title": {
+            "type": "string"
+          }
+        },
+        "kind": "collectionType"
+      },
+      "modelType": "contentType",
+      "modelName": "segmented-button",
+      "connection": "default",
+      "uid": "api::segmented-button.segmented-button",
+      "apiName": "segmented-button",
+      "globalId": "SegmentedButton",
       "actions": {},
       "lifecycles": {}
     },

@@ -1,5 +1,6 @@
 import * as React from "react"
-import { useState } from "react"
+import cx from "classnames"
+import * as styles from "./allSectionsTemplate.module.scss"
 import { PageModel } from "../../../interfaces/interfaces"
 import Header from "./components/generic/header/Header"
 import DoubleColTextImage from "./components/shared/doubleColTextImage/DoubleColTextImage"
@@ -15,6 +16,10 @@ import CenteredHeader from "./components/generic/centeredHeader/CenteredHeader"
 import PricingInfo from "./components/pricing/pricingInfo/PricingInfo"
 import ContentHeadingContainer from "./components/generic/contentHeadingContainer/ContentHeadingContainer"
 import ContentTable from "./components/shared/contentTable/ContentTable"
+import Button from "./components/generic/button/Button"
+import ButtonIcon from "./components/generic/buttonIcon/ButtonIcon"
+import SegmentedButtonsContainer from "./components/generic/segmentedButtons/SegmentedButtonsContainer"
+import ButtonGroup from "./components/generic/buttonGroup/ButtonGroup"
 
 const AllSectionsTemplate: React.FC<PageModel> = props => {
   const [benefitsLoaded, setBenefitsLoaded] = React.useState<boolean>(false)
@@ -46,6 +51,18 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
           tier_tables,
           contents,
           card_table_contents,
+          idButton,
+          label,
+          icon,
+          url,
+          link,
+          style,
+          color,
+          size,
+          disabled,
+          outsideWeb,
+          noPaddingText,
+          buttons,
         } = item
 
         return (
@@ -140,6 +157,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
             {__component === "pricing.cloud" && (
               <PricingInfo
                 categories={pricing_categories?.data}
+                segmentedButtons={buttons?.data}
                 index={0}
                 switchLabel={switchLabel}
                 infoToggles={infoToggles}
@@ -164,6 +182,58 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
                 tableOfContent={card_table_contents?.data}
                 key={`content-table_` + index}
               />
+            )}
+            {__component === "generic.button" && (
+              <section
+                className={`${styles?.container} ${cx("containerMaxWidth")}`}
+              >
+                <Button
+                  idButton={idButton}
+                  label={label}
+                  icon={icon}
+                  style={style}
+                  color={color}
+                  size={size}
+                  noPaddingText={noPaddingText}
+                  disabled={disabled}
+                  link={link}
+                  url={url}
+                  action={() =>
+                    window?.open(url, outsideWeb ? "_blank" : "_self")
+                  }
+                />
+              </section>
+            )}
+            {__component === "generic.button-icon" && (
+              <section
+                className={`${styles?.container} ${cx("containerMaxWidth")}`}
+              >
+                <ButtonIcon
+                  idButton={idButton}
+                  icon={icon}
+                  style={style}
+                  color={color}
+                  size={size}
+                  disabled={disabled}
+                  action={() =>
+                    window?.open(url, outsideWeb ? "_blank" : "_self")
+                  }
+                />
+              </section>
+            )}
+            {__component === "generic.button-options" && (
+              <section
+                className={`${styles?.container} ${cx("containerMaxWidth")}`}
+              >
+                <SegmentedButtonsContainer segmentedOptions={buttons?.data} />
+              </section>
+            )}
+            {__component === "generic.button-group" && (
+              <section
+                className={`${styles?.container} ${cx("containerMaxWidth")}`}
+              >
+                <ButtonGroup buttonGroup={buttons?.data} />
+              </section>
             )}
           </>
         )
