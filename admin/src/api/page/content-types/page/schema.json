@@ -40,7 +40,9 @@
         "generic.button-icon",
         "generic.button-options",
         "generic.button-group",
-        "generic.chip-group"
+        "generic.chip-group",
+        "shared.card",
+        "shared.action-card"
       ],
       "pluginOptions": {
         "i18n": {

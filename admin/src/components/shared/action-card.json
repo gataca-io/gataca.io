@@ -1,0 +1,61 @@
+{
+  "collectionName": "components_shared_action_cards",
+  "info": {
+    "displayName": "ActionCard"
+  },
+  "options": {},
+  "attributes": {
+    "idActionCard": {
+      "type": "string"
+    },
+    "titleCard": {
+      "type": "string"
+    },
+    "upperIconOpened": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "upperIconClosed": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "chip": {
+      "type": "component",
+      "repeatable": false,
+      "component": "generic.chip"
+    },
+    "titleContent": {
+      "type": "string"
+    },
+    "content": {
+      "type": "text"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "generic.button"
+    },
+    "trailingIcon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
