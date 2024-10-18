@@ -1,0 +1,373 @@
+@import "../../../../../../styles/colors.scss";
+@import "../../../../../../styles/mixins.scss";
+
+.chipStrapi {
+    background-color: $neutral100;
+    color: $neutral1000;
+    padding: 4px 8px;
+    height: 24px;
+    border-radius: 4px;
+    @include flexbox();
+    @include justify-content(center);
+    @include align-items(center);
+    @include flex-wrap(nowrap);
+    gap: 4px;
+    cursor: pointer;
+    width: fit-content;
+    box-sizing: border-box;
+    &.noAction {
+        pointer-events: none;
+    }
+    &:hover {
+        background-color: $neutral200;
+    }
+    &:focus {
+        box-shadow: none;
+    }
+    &:focus-visible {
+        outline: none;
+    }
+    &:active {
+        color: $primary700;
+        span {
+            font-weight: 700;
+        }
+    }
+    &.disabled {
+        background-color: $neutral400;
+        color: $neutral500;
+        pointer-events: none;
+    }
+    &.redColor, &.greenColor, &.purpleColor, &.yellowColor, &.blueColor, &.greyColor, &.tealColor, &.pinkColor, &.blackColor {
+        &.disabled {
+            background-color: $neutral400;
+            color: $neutral500;
+            pointer-events: none;
+        }
+        &.outlineChip {
+            background-color: transparent;
+            &.disabled {
+                background-color: transparent;
+                border: 1px solid $neutral400;
+                color: $neutral400;
+            }
+            &:hover {
+                background-color: transparent;
+            }
+            &:active, &:focus {
+                span {
+                    font-weight: 700;
+                }
+            }
+        }
+        &.text {
+            border: none;
+            background-color: transparent;
+            &.disabled {
+                background-color: $neutral400;
+                color: $neutral500;
+                border: none;
+                pointer-events: none;
+            }
+            &:hover {
+                background-color: transparent;
+            }
+        }
+        &:active, &:focus {
+            span {
+                font-weight: 700;
+            }
+        }
+    }
+    &.roundChip {
+        border-radius: 20px;
+        span {
+            font-weight: 700;
+        }
+    }
+    &.outlineChip {
+        background-color: transparent;
+        border: 1px solid $neutral100;
+        color: $neutral100;
+        &:hover {
+            border: 1px solid $neutral200;
+            color: $neutral200;
+        }
+        &:active, &:focus {
+            border: 1px solid $neutral200;
+            color: $primary700;
+        }
+    }
+    &.text {
+        color: $neutral100;
+        &:hover {
+            color: $neutral200;
+        }
+        &:active, &:focus {
+            border: 1px solid $neutral100;  
+        }
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    // Colors
+    &.purpleColor {
+        background-color: $primary200;
+        color: $primary700;
+        &:hover {
+            background-color: $primary400;
+        }
+        &.outlineChip {
+            border: 1px solid $primary700;
+            color: $primary700;
+            &:hover, &:active,
+            &:focus {
+                border: 1px solid $primary800;
+                color: $primary800;
+            }
+        }
+        &.text {
+            color: $primary700;
+            &:hover {
+                color: $primary800;
+            }
+            &:active, &:focus {
+                border: 1px solid $primary800;
+                color: $primary800;
+            }
+        }
+    }
+
+    &.redColor {
+        background-color: $alert300;
+        color: $neutral100;
+        &:hover {
+            background-color: $alert400;
+        }
+        &.outlineChip {
+            border: 1px solid $alert300;
+            color: $alert300;
+            &:hover, &:active,
+            &:focus { 
+                border: 1px solid $alert400;
+                color: $alert400;
+            }
+        }
+        &.text {
+            color: $alert300;
+            &:hover {
+                color: $alert400;
+            }
+            &:active, &:focus {
+                border: 1px solid $alert400;
+                color: $alert400;
+            }
+        }
+    }
+
+    &.greenColor {
+        background-color: $success300;
+        color: $neutral100;
+        &:hover {
+            background-color: $success400;
+        }
+        &.outlineChip {
+            border: 1px solid $success300;
+            color: $success300;
+            &:hover, &:active,
+            &:focus {
+                border: 1px solid $success400;
+                color: $success400;
+            }
+        }
+        &.text {
+            color: $success300;
+            &:hover {
+                color: $success400;
+            }
+            &:active,
+            &:focus {
+                border: 1px solid $success400;
+                color: $success400;
+            }
+        }
+    }
+    &.yellowColor {
+        background-color: $warning300;
+        color: $neutral900;
+        &:hover {
+            background-color: $warning400;
+            color: $neutral1000;
+        }
+        &.outlineChip {
+            border: 1px solid $warning300;
+            color: $neutral1000;
+            &:hover, &:active,
+            &:focus { 
+                border: 1px solid $warning400;
+            }
+        }
+        &.text {
+            color: $neutral1000;
+            &:hover {
+                color: $neutral1000;
+            }
+            &:active,
+            &:focus {
+                border: 1px solid $warning400;
+                color: $neutral1000;
+            }
+        }
+    }
+    &.blueColor {
+        background-color: $info300;
+        color: $neutral100;
+        &:hover {
+            background-color: $info400;
+        }
+        &.outlineChip {
+            background-color: transparent;
+            border: 1px solid $info300;
+            color: $info300;
+            &:hover, &:active,
+            &:focus {
+                border: 1px solid $info400;
+                color: $info400;
+            }
+        }
+        &.text {
+            color: $info300;
+            &:hover {
+                color: $info400;
+            }
+            &:active,
+            &:focus {
+                border: 1px solid $info400;
+                color: $info400;
+            }
+        }
+    }
+    &.tealColor {
+        background-color: $secondary600;
+        color: $neutral100;
+        &:hover {
+            background-color: $secondary800;
+        }
+        &.outlineChip {
+            background-color: transparent;
+            border: 1px solid $secondary600;
+            color: $secondary600;
+            &:hover, &:active,
+            &:focus {
+                border: 1px solid $secondary800;
+                color: $secondary800;
+            }
+        }
+        &.text {
+            color: $secondary600;
+            &:hover {
+                color: $secondary800;
+            }
+            &:active,
+            &:focus {
+                border: 1px solid $secondary800;
+                color: $secondary800;
+            }
+        }
+    }
+    &.pinkColor {
+        background-color: $tertiary600;
+        color: $neutral100;
+        &:hover {
+            background-color: $tertiary800;
+        }
+        &.outlineChip {
+            background-color: transparent;
+            border: 1px solid $tertiary600;
+            color: $tertiary600;
+            &:hover, &:active,
+            &:focus {
+                border: 1px solid $tertiary800;
+                color: $tertiary800;
+            }
+        }
+        &.text {
+            color: $tertiary600;
+            &:hover {
+                color: $tertiary900;
+            }
+            &:active,
+            &:focus {
+                border: 1px solid $tertiary900;
+                color: $tertiary900;
+            }
+        }
+    }
+
+    &.blackColor {
+        background-color: $neutral1000;
+        color: $neutral100;
+        &:hover {
+            background-color: $neutral800;
+        }
+        &.outlineChip {
+            background-color: transparent;
+            border: 1px solid $neutral1000;
+            color: $neutral1000;
+            &:hover {
+                border: 1px solid $neutral800;
+                color: $neutral800;
+            }
+            &:active, &:focus {
+                border: 1px solid $neutral700;
+                color: $primary700;
+            }
+        }
+        &.text {
+            color: $neutral1000;
+            &:hover {
+                color: $neutral800;
+            }
+            &:active,
+            &:focus {
+                border: 1px solid $primary700;
+                color: $primary700;
+            }
+        }
+    }
+    &.greyColor {
+        background-color: $neutral300;
+        color: $neutral700;
+        &:hover {
+            background-color: $neutral400;
+        }
+        &:active, &:focus {
+            color: $primary700;
+        }
+        &.outlineChip {
+            background-color: transparent;
+            border: 1px solid $neutral400;
+            color: $neutral400;
+            &:hover {
+                border: 1px solid $neutral600;
+                color: $neutral600;
+            }
+            &:active, &:focus {
+                color: $primary700;
+            }
+        }
+        &.text {
+            color: $neutral400;
+            &:hover {
+                color: $neutral600;
+            }
+            &:active,
+            &:focus {
+                border: 1px solid $primary700;
+                color: $primary700;
+            }
+        }
+    }
+}

@@ -20,6 +20,7 @@ import Button from "./components/generic/button/Button"
 import ButtonIcon from "./components/generic/buttonIcon/ButtonIcon"
 import SegmentedButtonsContainer from "./components/generic/segmentedButtons/SegmentedButtonsContainer"
 import ButtonGroup from "./components/generic/buttonGroup/ButtonGroup"
+import ChipGroup from "./components/generic/chipGroup/ChipGroup"
 
 const AllSectionsTemplate: React.FC<PageModel> = props => {
   const [benefitsLoaded, setBenefitsLoaded] = React.useState<boolean>(false)
@@ -63,6 +64,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
           outsideWeb,
           noPaddingText,
           buttons,
+          chip_options,
         } = item
 
         return (
@@ -233,6 +235,13 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
                 className={`${styles?.container} ${cx("containerMaxWidth")}`}
               >
                 <ButtonGroup buttonGroup={buttons?.data} />
+              </section>
+            )}
+            {__component === "generic.chip-group" && (
+              <section
+                className={`${styles?.container} ${cx("containerMaxWidth")}`}
+              >
+                <ChipGroup chipOptions={chip_options?.data} />
               </section>
             )}
           </>

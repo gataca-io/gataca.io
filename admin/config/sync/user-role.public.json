@@ -70,6 +70,12 @@
       "action": "api::certification.certification.findOne"
     },
     {
+      "action": "api::chip-option.chip-option.find"
+    },
+    {
+      "action": "api::chip-option.chip-option.findOne"
+    },
+    {
       "action": "api::company-about-us.company-about-us.find"
     },
     {

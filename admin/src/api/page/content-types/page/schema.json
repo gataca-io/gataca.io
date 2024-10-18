@@ -39,7 +39,8 @@
         "shared.content-table",
         "generic.button-icon",
         "generic.button-options",
-        "generic.button-group"
+        "generic.button-group",
+        "generic.chip-group"
       ],
       "pluginOptions": {
         "i18n": {

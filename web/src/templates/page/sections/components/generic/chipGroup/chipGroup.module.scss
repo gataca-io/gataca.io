@@ -1,0 +1,15 @@
+
+@import "../../../../../../styles/colors.scss";
+@import "../../../../../../styles/mixins.scss";
+
+.chipGroup__container {
+    @include flexbox();
+    @include flex-wrap(wrap);
+    @include align-items(center);
+    width: fit-content;
+    gap: 12px 20px;
+}
+.content__container {
+    margin-top: 60px;
+}
+

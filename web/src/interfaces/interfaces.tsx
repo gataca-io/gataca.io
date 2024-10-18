@@ -57,6 +57,33 @@ export interface IconModel {
   route?: string
 }
 
+export interface ChipModel {
+  idChip?: string
+  text?: string
+  action?: (x?: any) => void
+  type?: string
+  form?: string
+  color?: string
+  leadingIcon?: any
+  trailingIcon?: any
+  chipSize?: string
+  disabled?: boolean
+}
+
+export interface SegmentedChipModel {
+  index: number
+  id: string
+  text?: string
+  selected: boolean
+  showItem: (x: number) => void
+  type?: string
+  form?: string
+  color?: string
+  leadingIcon?: any
+  trailingIcon?: any
+  chipSize?: string
+  disabled?: boolean
+}
 export interface BlogPreviewModel {
   id: string
   attributes: BlogModel
@@ -136,6 +163,7 @@ export interface InsideSectionsModel {
   outsideWeb?: boolean
   noPaddingText?: boolean
   buttons?: any
+  chip_options?: any
 }
 
 export interface LocalizationsModel {
