@@ -1,0 +1,251 @@
+{
+  "key": "plugin_content_manager_configuration_components::shared.card",
+  "value": {
+    "uid": "shared.card",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "idCard",
+      "defaultSortBy": "idCard",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "idCard": {
+        "edit": {
+          "label": "idCard",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "idCard",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "size": {
+        "edit": {
+          "label": "size",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "size",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "contentAlign": {
+        "edit": {
+          "label": "contentAlign",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "contentAlign",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "numberIconText": {
+        "edit": {
+          "label": "numberIconText",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "numberIconText",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "upperIcon": {
+        "edit": {
+          "label": "upperIcon",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "upperIcon",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "chip": {
+        "edit": {
+          "label": "chip",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "chip",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "mainIcon": {
+        "edit": {
+          "label": "mainIcon",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "mainIcon",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "title": {
+        "edit": {
+          "label": "title",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "title",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "content": {
+        "edit": {
+          "label": "content",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "content",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "button": {
+        "edit": {
+          "label": "button",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "button",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "dynamicCard": {
+        "edit": {
+          "label": "dynamicCard",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "dynamicCard",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "idCard",
+        "size",
+        "contentAlign"
+      ],
+      "edit": [
+        [
+          {
+            "name": "idCard",
+            "size": 6
+          },
+          {
+            "name": "title",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "content",
+            "size": 6
+          },
+          {
+            "name": "numberIconText",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "contentAlign",
+            "size": 6
+          },
+          {
+            "name": "size",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "upperIcon",
+            "size": 6
+          },
+          {
+            "name": "mainIcon",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "dynamicCard",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "chip",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "button",
+            "size": 12
+          }
+        ]
+      ]
+    },
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}
