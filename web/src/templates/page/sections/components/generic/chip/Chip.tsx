@@ -56,7 +56,7 @@ const Chip: React.FC<ChipModel> = props => {
           styles.chipStrapi
         } ${form ? chipForm[form] : styles?.chipStrapi} ${
           disabled ? styles.disabled : styles?.chipStrapi
-        } ${styles.chipStrapi}`}
+        } ${styles.chipStrapi} ${!action ? styles?.noAction : ""}`}
         onClick={action}
       >
         {leadingIcon ? (

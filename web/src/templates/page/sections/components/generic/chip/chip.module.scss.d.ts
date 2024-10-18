@@ -17,3 +17,4 @@ export const blackColor: string
 export const roundChip: string
 export const roundChip: string
 export const text: string
+export const noAction: string
