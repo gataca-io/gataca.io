@@ -64,7 +64,7 @@ const Chip: React.FC<ChipModel> = props => {
         ) : null}
         {text ? (
           <span
-            className={cx(chipSize ? sizeStyles[chipSize] : "bodyRegularXS")}
+            className={cx(chipSize ? sizeStyles[chipSize] : "bodyRegularSM")}
           >
             {text}
           </span>
