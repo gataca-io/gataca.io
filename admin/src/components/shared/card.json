@@ -29,17 +29,6 @@
     "numberIconText": {
       "type": "integer"
     },
-    "upperIcon": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
     "chip": {
       "type": "component",
       "repeatable": false,
@@ -70,6 +59,29 @@
     "dynamicCard": {
       "type": "boolean",
       "default": false
+    },
+    "upperIconClosed": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "upperIconOpened": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "moreContent": {
+      "type": "text"
     }
   }
 }

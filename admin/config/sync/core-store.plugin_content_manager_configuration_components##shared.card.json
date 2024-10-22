@@ -76,20 +76,6 @@
           "sortable": true
         }
       },
-      "upperIcon": {
-        "edit": {
-          "label": "upperIcon",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "upperIcon",
-          "searchable": false,
-          "sortable": false
-        }
-      },
       "chip": {
         "edit": {
           "label": "chip",
@@ -173,6 +159,48 @@
           "searchable": true,
           "sortable": true
         }
+      },
+      "upperIconClosed": {
+        "edit": {
+          "label": "upperIconClosed",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "upperIconClosed",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "upperIconOpened": {
+        "edit": {
+          "label": "upperIconOpened",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "upperIconOpened",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "moreContent": {
+        "edit": {
+          "label": "moreContent",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "moreContent",
+          "searchable": true,
+          "sortable": true
+        }
       }
     },
     "layouts": {
@@ -215,11 +243,23 @@
         ],
         [
           {
-            "name": "upperIcon",
+            "name": "mainIcon",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "upperIconOpened",
             "size": 6
           },
           {
-            "name": "mainIcon",
+            "name": "upperIconClosed",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "moreContent",
             "size": 6
           }
         ],

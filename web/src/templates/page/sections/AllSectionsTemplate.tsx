@@ -23,6 +23,7 @@ import ButtonGroup from "./components/generic/buttonGroup/ButtonGroup"
 import ChipGroup from "./components/generic/chipGroup/ChipGroup"
 import CardComponent from "./components/shared/card/Card"
 import ActionCard from "./components/shared/actionCard/ActionCard"
+import { images } from "../../../images/images"
 
 const AllSectionsTemplate: React.FC<PageModel> = props => {
   const [benefitsLoaded, setBenefitsLoaded] = React.useState<boolean>(false)
@@ -67,7 +68,6 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
           noPaddingText,
           buttons,
           chip_options,
-          upperIcon,
           numberIconText,
           mainIcon,
           button,
@@ -79,6 +79,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
           titleContent,
           contentAlign,
           dynamicCard,
+          moreContent,
         } = item
 
         return (
@@ -264,13 +265,15 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
               >
                 <CardComponent
                   dynamicCard={dynamicCard}
-                  upperIcon={upperIcon}
+                  upperIconOpened={upperIconOpened}
+                  upperIconClosed={upperIconClosed}
                   numberIconText={numberIconText}
                   mainIcon={mainIcon}
                   title={title}
                   content={content}
                   size={size}
                   contentAlign={contentAlign}
+                  moreContent={moreContent}
                   button={{
                     idButton: button?.idButton,
                     label: button?.label,

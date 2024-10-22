@@ -5,10 +5,10 @@
 .card__container {
   @include flexbox();
   @include flex-direction(column);
-  @include justify-content(center);
+  @include justify-content(flex-start);
   @include flex-wrap(wrap);
   @include align-items(flex-start);
-  gap: 16px;
+  gap: 8px;
   padding: 32px;
   background-color: $neutral100;
   border-radius: 20px;
@@ -16,9 +16,6 @@
   &.smallSize {
     border-radius: 16px;
     padding: 24px;
-  }
-  &.contentAlignCenter{
-    @include align-items(center);
   }
   .upperIcon {
     width: 100%;
@@ -32,6 +29,42 @@
   }
   &.dynamicCard{
     cursor: pointer;
+  }
+  &.showMoreContent {
+    background-color: $neutral200;
+  }
+  .contentContainer {
+    position: relative;
+    width: 100%;
+    > div {
+      @include flexbox();
+      @include flex-direction(column);
+      @include justify-content(flex-start);
+      @include flex-wrap(wrap);
+      @include align-items(flex-start);
+      gap: 16px;
+      &.contentAlignCenter {
+        @include align-items(center);
+      }
+    }
+    .contentHide {
+      transition: opacity 500ms;
+      opacity: 0;
+    }
+    .contentShow {
+      transition: opacity 500ms;
+      opacity: 1;
+    }
+    .transitionContainer {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      background-color: $neutral200;
+      p {
+        color: $neutral1000;
+      }
+    } 
   }
   
 }

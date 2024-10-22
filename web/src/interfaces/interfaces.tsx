@@ -171,6 +171,7 @@ export interface InsideSectionsModel extends CardModel {
   titleContent?: string
   contentAlign?: string
   dynamicCard?: boolean
+  moreContent?: string
 }
 
 export interface LocalizationsModel {
@@ -344,7 +345,8 @@ export interface CardModel {
   idCard?: string
   size?: string
   contentAlign?: string
-  upperIcon?: any
+  upperIconOpened?: any
+  upperIconClosed?: any
   numberIconText?: number
   chip?: ChipModel
   mainIcon?: any
@@ -352,6 +354,7 @@ export interface CardModel {
   content?: any
   button?: ButtonModel
   dynamicCard?: boolean
+  moreContent?: string
 }
 
 export interface ActionCardModel {
