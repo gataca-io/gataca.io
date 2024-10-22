@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_shared_list_groups",
+  "info": {
+    "displayName": "listGroup"
+  },
+  "options": {},
+  "attributes": {
+    "list_options": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::list-option.list-option"
+    }
+  }
+}

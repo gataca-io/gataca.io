@@ -1,0 +1,182 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::list-option.list-option",
+  "value": {
+    "uid": "api::list-option.list-option",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "id",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "list": {
+        "edit": {
+          "label": "list",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "list",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "idListOption": {
+        "edit": {
+          "label": "idListOption",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "idListOption",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "spacing": {
+        "edit": {
+          "label": "spacing",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "spacing",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "titleFontSize": {
+        "edit": {
+          "label": "titleFontSize",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "titleFontSize",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "titleFontWeight": {
+        "edit": {
+          "label": "titleFontWeight",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "titleFontWeight",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "title": {
+        "edit": {
+          "label": "title",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "title",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "edit": [
+        [
+          {
+            "name": "idListOption",
+            "size": 6
+          },
+          {
+            "name": "spacing",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "title",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "titleFontSize",
+            "size": 6
+          },
+          {
+            "name": "titleFontWeight",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "list",
+            "size": 12
+          }
+        ]
+      ],
+      "list": [
+        "id",
+        "idListOption",
+        "list",
+        "title"
+      ]
+    }
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

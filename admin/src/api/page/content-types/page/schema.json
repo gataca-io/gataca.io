@@ -42,7 +42,8 @@
         "generic.button-group",
         "generic.chip-group",
         "shared.card",
-        "shared.action-card"
+        "shared.action-card",
+        "shared.list-group"
       ],
       "pluginOptions": {
         "i18n": {
