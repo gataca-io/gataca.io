@@ -597,6 +597,78 @@
     },
     {
       "action": "plugin::content-manager.explorer.create",
+      "subject": "api::chip-option.chip-option",
+      "properties": {
+        "fields": [
+          "chip.idChip",
+          "chip.text",
+          "chip.type",
+          "chip.form",
+          "chip.disabled",
+          "chip.color",
+          "chip.chipSize",
+          "chip.leadingIcon",
+          "chip.trailingIcon",
+          "title",
+          "content"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::chip-option.chip-option",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::chip-option.chip-option",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::chip-option.chip-option",
+      "properties": {
+        "fields": [
+          "chip.idChip",
+          "chip.text",
+          "chip.type",
+          "chip.form",
+          "chip.disabled",
+          "chip.color",
+          "chip.chipSize",
+          "chip.leadingIcon",
+          "chip.trailingIcon",
+          "title",
+          "content"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::chip-option.chip-option",
+      "properties": {
+        "fields": [
+          "chip.idChip",
+          "chip.text",
+          "chip.type",
+          "chip.form",
+          "chip.disabled",
+          "chip.color",
+          "chip.chipSize",
+          "chip.leadingIcon",
+          "chip.trailingIcon",
+          "title",
+          "content"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
       "subject": "api::company-about-us.company-about-us",
       "properties": {
         "fields": [

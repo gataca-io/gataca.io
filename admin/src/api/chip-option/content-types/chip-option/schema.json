@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "chip_options",
+  "info": {
+    "singularName": "chip-option",
+    "pluralName": "chip-options",
+    "displayName": "Chip option",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "chip": {
+      "type": "component",
+      "repeatable": false,
+      "component": "generic.chip"
+    },
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    }
+  }
+}

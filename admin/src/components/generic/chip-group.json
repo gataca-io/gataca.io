@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_generic_chip_groups",
+  "info": {
+    "displayName": "Chip group"
+  },
+  "options": {},
+  "attributes": {
+    "chip_options": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::chip-option.chip-option"
+    }
+  }
+}
