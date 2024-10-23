@@ -1,0 +1,22 @@
+@import "../../../../../../styles/colors.scss";
+@import "../../../../../../styles/mixins.scss";
+@import "../../../../../../styles/types";
+
+.subheading__container {
+  > div {
+    @include flexbox();
+    @include flex-direction(column);
+    @include justify-content(flex-start);
+    @include flex-wrap(wrap);
+    gap: 16px;
+    &.alignCenter {
+      @include align-items(center);
+      p {
+        text-align: center;
+      }
+    }
+    &.alignLeft {
+      @include align-items(flex-start);
+    }
+  }
+}
