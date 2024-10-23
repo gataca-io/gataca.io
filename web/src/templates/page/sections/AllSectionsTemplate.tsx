@@ -21,6 +21,9 @@ import ButtonIcon from "./components/generic/buttonIcon/ButtonIcon"
 import SegmentedButtonsContainer from "./components/generic/segmentedButtons/SegmentedButtonsContainer"
 import ButtonGroup from "./components/generic/buttonGroup/ButtonGroup"
 import ChipGroup from "./components/generic/chipGroup/ChipGroup"
+import CardComponent from "./components/shared/card/Card"
+import ActionCard from "./components/shared/actionCard/ActionCard"
+import { images } from "../../../images/images"
 
 const AllSectionsTemplate: React.FC<PageModel> = props => {
   const [benefitsLoaded, setBenefitsLoaded] = React.useState<boolean>(false)
@@ -65,6 +68,18 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
           noPaddingText,
           buttons,
           chip_options,
+          numberIconText,
+          mainIcon,
+          button,
+          chip,
+          upperIconOpened,
+          upperIconClosed,
+          trailingIcon,
+          titleCard,
+          titleContent,
+          contentAlign,
+          dynamicCard,
+          moreContent,
         } = item
 
         return (
@@ -242,6 +257,88 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
                 className={`${styles?.container} ${cx("containerMaxWidth")}`}
               >
                 <ChipGroup chipOptions={chip_options?.data} />
+              </section>
+            )}
+            {__component === "shared.card" && (
+              <section
+                className={`${styles?.container} ${cx("containerMaxWidth")}`}
+              >
+                <CardComponent
+                  dynamicCard={dynamicCard}
+                  upperIconOpened={upperIconOpened}
+                  upperIconClosed={upperIconClosed}
+                  numberIconText={numberIconText}
+                  mainIcon={mainIcon}
+                  title={title}
+                  content={content}
+                  size={size}
+                  contentAlign={contentAlign}
+                  moreContent={moreContent}
+                  button={{
+                    idButton: button?.idButton,
+                    label: button?.label,
+                    icon: button?.icon,
+                    style: button?.style,
+                    color: button?.color,
+                    size: button?.size,
+                    noPaddingText: button?.noPaddingText,
+                    disabled: button?.disabled,
+                    link: button?.link,
+                    url: button?.url,
+                    outsideWeb: button?.outsideWeb,
+                    action: () => window.open(button?.url, "_blank"),
+                  }}
+                  chip={{
+                    idChip: chip?.idChip,
+                    text: chip?.text,
+                    type: chip?.type,
+                    form: chip?.form,
+                    disabled: chip?.disabled,
+                    color: chip?.color,
+                    chipSize: chip?.chipSize,
+                    leadingIcon: chip?.leadingIcon,
+                    trailingIcon: chip?.trailingIcon,
+                  }}
+                />
+              </section>
+            )}
+            {__component === "shared.action-card" && (
+              <section
+                className={`${styles?.container} ${cx("containerMaxWidth")}`}
+              >
+                <ActionCard
+                  upperIconOpened={upperIconOpened}
+                  upperIconClosed={upperIconClosed}
+                  trailingIcon={trailingIcon}
+                  titleCard={titleCard}
+                  titleContent={titleContent}
+                  content={content}
+                  button={{
+                    idButton: button?.idButton,
+                    label: button?.label,
+                    icon: button?.icon,
+                    style: button?.style,
+                    color: button?.color,
+                    size: button?.size,
+                    noPaddingText: button?.noPaddingText,
+                    disabled: button?.disabled,
+                    link: button?.link,
+                    url: button?.url,
+                    outsideWeb: button?.outsideWeb,
+                    action: () => window.open(button?.url, "_blank"),
+                  }}
+                  chip={{
+                    idChip: chip?.idChip,
+                    text: chip?.text,
+                    type: chip?.type,
+                    form: chip?.form,
+                    disabled: chip?.disabled,
+                    color: chip?.color,
+                    chipSize: chip?.chipSize,
+                    leadingIcon: chip?.leadingIcon,
+                    trailingIcon: chip?.trailingIcon,
+                  }}
+                />
               </section>
             )}
           </>

@@ -123,7 +123,7 @@ export interface PageModel extends PagePreviewModel {
   localizations?: LocalizationsModel
 }
 
-export interface InsideSectionsModel {
+export interface InsideSectionsModel extends CardModel {
   id: any
   idContent?: string
   title: string
@@ -164,6 +164,14 @@ export interface InsideSectionsModel {
   noPaddingText?: boolean
   buttons?: any
   chip_options?: any
+  upperIconOpened?: any
+  upperIconClosed?: any
+  trailingIcon?: any
+  titleCard?: string
+  titleContent?: string
+  contentAlign?: string
+  dynamicCard?: boolean
+  moreContent?: string
 }
 
 export interface LocalizationsModel {
@@ -331,4 +339,32 @@ export interface LegalModel {
       id: string
     }[]
   }
+}
+
+export interface CardModel {
+  idCard?: string
+  size?: string
+  contentAlign?: string
+  upperIconOpened?: any
+  upperIconClosed?: any
+  numberIconText?: number
+  chip?: ChipModel
+  mainIcon?: any
+  title?: string
+  content?: any
+  button?: ButtonModel
+  dynamicCard?: boolean
+  moreContent?: string
+}
+
+export interface ActionCardModel {
+  idActionCard?: string
+  titleCard?: string
+  upperIconOpened?: any
+  upperIconClosed?: any
+  chip?: ChipModel
+  titleContent?: string
+  content?: any
+  button?: ButtonModel
+  trailingIcon?: any
 }

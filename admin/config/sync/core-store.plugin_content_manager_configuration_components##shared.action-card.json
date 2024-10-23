@@ -1,0 +1,213 @@
+{
+  "key": "plugin_content_manager_configuration_components::shared.action-card",
+  "value": {
+    "uid": "shared.action-card",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "idActionCard",
+      "defaultSortBy": "idActionCard",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "idActionCard": {
+        "edit": {
+          "label": "idActionCard",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "idActionCard",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "titleCard": {
+        "edit": {
+          "label": "titleCard",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "titleCard",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "upperIconOpened": {
+        "edit": {
+          "label": "upperIconOpened",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "upperIconOpened",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "upperIconClosed": {
+        "edit": {
+          "label": "upperIconClosed",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "upperIconClosed",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "chip": {
+        "edit": {
+          "label": "chip",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "chip",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "titleContent": {
+        "edit": {
+          "label": "titleContent",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "titleContent",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "content": {
+        "edit": {
+          "label": "content",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "content",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "button": {
+        "edit": {
+          "label": "button",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "button",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "trailingIcon": {
+        "edit": {
+          "label": "trailingIcon",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "trailingIcon",
+          "searchable": false,
+          "sortable": false
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "idActionCard",
+        "titleCard",
+        "upperIconOpened"
+      ],
+      "edit": [
+        [
+          {
+            "name": "idActionCard",
+            "size": 6
+          },
+          {
+            "name": "titleCard",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "titleContent",
+            "size": 6
+          },
+          {
+            "name": "content",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "upperIconOpened",
+            "size": 6
+          },
+          {
+            "name": "upperIconClosed",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "trailingIcon",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "chip",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "button",
+            "size": 12
+          }
+        ]
+      ]
+    },
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

@@ -1,0 +1,50 @@
+@import "../../../../../../styles/colors.scss";
+@import "../../../../../../styles/mixins.scss";
+@import "../../../../../../styles/types";
+
+.actionCard {
+  &__container {
+    padding: 20px;
+    background-color: $neutral100;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.12);
+    @include flexbox();
+    @include justify-content(center);
+    @include align-items(center);
+    @include flex-wrap(nowrap);
+    gap: 20px;
+  }
+  &__leftSide {
+    @include flexbox();
+    @include flex-direction(column);
+    @include justify-content(center);
+    @include flex-wrap(wrap);
+    @include flex(0, 1, auto);
+    width: 100%;
+    gap: 16px;
+    .titleContainer {
+      @include flexbox();
+      @include justify-content(space-between);
+      @include flex-wrap(nowrap);
+      img {
+        max-width: 24px;
+      }
+    }
+    .mainContentContainer {
+      @include flexbox();
+      @include flex-direction(column);
+      @include justify-content(center);
+      @include flex-wrap(wrap);
+    }
+  }
+  &__rightSide {
+    @include flexbox();
+    @include justify-content(center);
+    @include flex-wrap(nowrap);
+    @include align-items(center);
+    gap: 20px;
+    @include flex(0, 0, 25%);
+  }
+
+  
+}
