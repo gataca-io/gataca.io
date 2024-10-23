@@ -151,6 +151,12 @@
       "action": "api::industry.industry.findOne"
     },
     {
+      "action": "api::list-option.list-option.find"
+    },
+    {
+      "action": "api::list-option.list-option.findOne"
+    },
+    {
       "action": "api::logo.logo.find"
     },
     {

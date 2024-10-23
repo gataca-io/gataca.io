@@ -173,6 +173,8 @@ export interface InsideSectionsModel extends CardModel {
   dynamicCard?: boolean
   moreContent?: string
   list_options?: any
+  idSubHeading?: string
+  align?: string
 }
 
 export interface LocalizationsModel {
@@ -377,4 +379,14 @@ export interface ListModel {
   title?: string
   extraInfo?: string
   color?: string
+}
+
+export interface SubHeadingModel {
+  idSubHeading?: string
+  size?: string
+  align?: string
+  numberIconText?: number
+  icon?: any
+  title?: string
+  content?: string
 }
