@@ -23,7 +23,7 @@ import ButtonGroup from "./components/generic/buttonGroup/ButtonGroup"
 import ChipGroup from "./components/generic/chipGroup/ChipGroup"
 import CardComponent from "./components/shared/card/Card"
 import ActionCard from "./components/shared/actionCard/ActionCard"
-import { images } from "../../../images/images"
+import ListGroup from "./components/shared/list/listGroup/ListGroup"
 
 const AllSectionsTemplate: React.FC<PageModel> = props => {
   const [benefitsLoaded, setBenefitsLoaded] = React.useState<boolean>(false)
@@ -80,6 +80,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
           contentAlign,
           dynamicCard,
           moreContent,
+          list_options,
         } = item
 
         return (
@@ -339,6 +340,13 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
                     trailingIcon: chip?.trailingIcon,
                   }}
                 />
+              </section>
+            )}
+            {__component === "shared.list-group" && (
+              <section
+                className={`${styles?.container} ${cx("containerMaxWidth")}`}
+              >
+                <ListGroup listOptions={list_options?.data} />
               </section>
             )}
           </>

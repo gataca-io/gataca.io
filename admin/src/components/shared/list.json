@@ -1,0 +1,48 @@
+{
+  "collectionName": "components_shared_lists",
+  "info": {
+    "displayName": "list",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "idList": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "extraInfo": {
+      "type": "string"
+    },
+    "leadingIcon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "size": {
+      "type": "enumeration",
+      "enum": [
+        "small",
+        "medium",
+        "large",
+        "xlarge"
+      ],
+      "default": "xlarge"
+    },
+    "color": {
+      "type": "enumeration",
+      "enum": [
+        "black",
+        "grey"
+      ],
+      "default": "grey"
+    }
+  }
+}

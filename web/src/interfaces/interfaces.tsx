@@ -172,6 +172,7 @@ export interface InsideSectionsModel extends CardModel {
   contentAlign?: string
   dynamicCard?: boolean
   moreContent?: string
+  list_options?: any
 }
 
 export interface LocalizationsModel {
@@ -367,4 +368,13 @@ export interface ActionCardModel {
   content?: any
   button?: ButtonModel
   trailingIcon?: any
+}
+
+export interface ListModel {
+  idList?: string
+  size?: string
+  leadingIcon?: any
+  title?: string
+  extraInfo?: string
+  color?: string
 }
