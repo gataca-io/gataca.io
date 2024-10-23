@@ -106,7 +106,7 @@ module.exports = {
           "/useCasesSectors/": "/use-cases/",
           "/useCasesSectors/government/": "/use-cases/government/",
           "/useCasesSectors/education/": "/use-cases/education/",
-          "/useCasesSectors/finance/": "/use-cases/finance/",
+          "/useCasesSectors/finance/": "/use-cases/financial/",
           "/useCasesSectors/web3/": "/use-cases/web3/",
           "/products/gatacaWallet/": "/products/wallet/",
           "/company/aboutUs/": "/company/about/",
