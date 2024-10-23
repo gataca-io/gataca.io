@@ -20,6 +20,7 @@
   .upperIcon {
     width: 100%;
     text-align: right;
+    cursor: pointer;
     img {
       max-width: 24px;
     }
@@ -45,6 +46,9 @@
       gap: 16px;
       &.contentAlignCenter {
         @include align-items(center);
+        p {
+          text-align: center;
+        }
       }
     }
     .contentHide {

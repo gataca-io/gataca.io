@@ -175,6 +175,7 @@ export interface InsideSectionsModel extends CardModel {
   list_options?: any
   idSubHeading?: string
   align?: string
+  idActionCard?: string
 }
 
 export interface LocalizationsModel {
