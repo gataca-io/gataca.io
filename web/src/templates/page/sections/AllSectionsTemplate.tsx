@@ -84,6 +84,8 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
           list_options,
           align,
           idSubHeading,
+          idCard,
+          idActionCard,
         } = item
 
         return (
@@ -268,6 +270,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
                 className={`${styles?.container} ${cx("containerMaxWidth")}`}
               >
                 <CardComponent
+                  idCard={idCard}
                   dynamicCard={dynamicCard}
                   upperIconOpened={upperIconOpened}
                   upperIconClosed={upperIconClosed}
@@ -311,6 +314,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
                 className={`${styles?.container} ${cx("containerMaxWidth")}`}
               >
                 <ActionCard
+                  idActionCard={idActionCard}
                   upperIconOpened={upperIconOpened}
                   upperIconClosed={upperIconClosed}
                   trailingIcon={trailingIcon}
