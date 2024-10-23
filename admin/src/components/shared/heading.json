@@ -1,0 +1,73 @@
+{
+  "collectionName": "components_shared_headings",
+  "info": {
+    "displayName": "Heading",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "idHeading": {
+      "type": "string"
+    },
+    "chip": {
+      "type": "component",
+      "repeatable": false,
+      "component": "generic.chip"
+    },
+    "extraText": {
+      "type": "string"
+    },
+    "sectionName": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "text"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "generic.button"
+    },
+    "buttonGroup": {
+      "type": "component",
+      "repeatable": false,
+      "component": "generic.button-group"
+    },
+    "segmentedButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "generic.button-options"
+    },
+    "table": {
+      "type": "component",
+      "repeatable": false,
+      "component": "generic.table"
+    },
+    "titleSize": {
+      "type": "enumeration",
+      "enum": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "default": "large"
+    },
+    "align": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "center",
+        "right"
+      ],
+      "default": "left"
+    },
+    "list": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.list-group"
+    }
+  }
+}

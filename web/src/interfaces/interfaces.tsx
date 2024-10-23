@@ -176,6 +176,14 @@ export interface InsideSectionsModel extends CardModel {
   idSubHeading?: string
   align?: string
   idActionCard?: string
+  idHeading?: string
+  titleSize?: string
+  extraText?: string
+  sectionName?: string
+  buttonGroup?: any
+  list?: any
+  segmentedButton?: any
+  table?: any
 }
 
 export interface LocalizationsModel {
@@ -390,4 +398,20 @@ export interface SubHeadingModel {
   icon?: any
   title?: string
   content?: string
+}
+
+export interface HeadingModel {
+  idHeading?: string
+  titleSize?: string
+  align?: string
+  chip?: ChipModel
+  extraText?: string
+  sectionName?: string
+  title?: string
+  content?: string
+  button?: any
+  buttonGroup?: any
+  segmentedButton?: any
+  list?: any
+  table?: any
 }
