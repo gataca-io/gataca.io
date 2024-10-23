@@ -25,6 +25,7 @@ import CardComponent from "./components/shared/card/Card"
 import ActionCard from "./components/shared/actionCard/ActionCard"
 import ListGroup from "./components/shared/list/listGroup/ListGroup"
 import SubHeading from "./components/shared/subHeading/SubHeading"
+import Heading from "./components/shared/Heading/Heading"
 
 const AllSectionsTemplate: React.FC<PageModel> = props => {
   const [benefitsLoaded, setBenefitsLoaded] = React.useState<boolean>(false)
@@ -86,6 +87,14 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
           idSubHeading,
           idCard,
           idActionCard,
+          idHeading,
+          titleSize,
+          extraText,
+          sectionName,
+          buttonGroup,
+          list,
+          segmentedButton,
+          table,
         } = item
 
         return (
@@ -368,6 +377,48 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
                   icon={icon}
                   title={title}
                   content={content}
+            {__component === "shared.heading" && (
+              <section
+                className={`${styles?.container} ${cx("containerMaxWidth")}`}
+              >
+                <Heading
+                  idHeading={idHeading}
+                  titleSize={titleSize}
+                  align={align}
+                  extraText={extraText}
+                  title={title}
+                  sectionName={sectionName}
+                  content={content}
+                  buttonGroup={buttonGroup?.buttons?.data}
+                  list={list?.list_options?.data}
+                  segmentedButton={segmentedButton?.buttons?.data}
+                  table={table?.content}
+                  chip={{
+                    idChip: chip?.idChip,
+                    text: chip?.text,
+                    type: chip?.type,
+                    form: chip?.form,
+                    disabled: chip?.disabled,
+                    color: chip?.color,
+                    chipSize: chip?.chipSize,
+                    leadingIcon: chip?.leadingIcon,
+                    trailingIcon: chip?.trailingIcon,
+                  }}
+                  button={{
+                    idButton: button?.idButton,
+                    label: button?.label,
+                    icon: button?.icon,
+                    style: button?.style,
+                    color: button?.color,
+                    size: button?.size,
+                    noPaddingText: button?.noPaddingText,
+                    disabled: button?.disabled,
+                    link: button?.link,
+                    url: button?.url,
+                    outsideWeb: button?.outsideWeb,
+                    action: () => window.open(button?.url, "_blank"),
+                  }}
+                  key={`heading_` + Math.random()}
                 />
               </section>
             )}
