@@ -24,6 +24,7 @@ import ChipGroup from "./components/generic/chipGroup/ChipGroup"
 import CardComponent from "./components/shared/card/Card"
 import ActionCard from "./components/shared/actionCard/ActionCard"
 import ListGroup from "./components/shared/list/listGroup/ListGroup"
+import SubHeading from "./components/shared/subHeading/SubHeading"
 
 const AllSectionsTemplate: React.FC<PageModel> = props => {
   const [benefitsLoaded, setBenefitsLoaded] = React.useState<boolean>(false)
@@ -81,6 +82,8 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
           dynamicCard,
           moreContent,
           list_options,
+          align,
+          idSubHeading,
         } = item
 
         return (
@@ -347,6 +350,21 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
                 className={`${styles?.container} ${cx("containerMaxWidth")}`}
               >
                 <ListGroup listOptions={list_options?.data} />
+              </section>
+            )}
+            {__component === "shared.sub-heading" && (
+              <section
+                className={`${styles?.container} ${cx("containerMaxWidth")}`}
+              >
+                <SubHeading
+                  idSubHeading={idSubHeading}
+                  size={size}
+                  align={align}
+                  numberIconText={numberIconText}
+                  icon={icon}
+                  title={title}
+                  content={content}
+                />
               </section>
             )}
           </>
