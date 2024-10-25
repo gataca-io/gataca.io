@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "list_options",
+  "info": {
+    "singularName": "list-option",
+    "pluralName": "list-options",
+    "displayName": "List Option",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "list": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.list"
+    },
+    "idListOption": {
+      "type": "string"
+    },
+    "spacing": {
+      "type": "enumeration",
+      "enum": [
+        "small",
+        "large"
+      ],
+      "default": "large"
+    },
+    "titleFontSize": {
+      "type": "enumeration",
+      "enum": [
+        "small",
+        "large"
+      ],
+      "default": "large"
+    },
+    "titleFontWeight": {
+      "type": "enumeration",
+      "enum": [
+        "medium",
+        "bold"
+      ],
+      "default": "bold"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

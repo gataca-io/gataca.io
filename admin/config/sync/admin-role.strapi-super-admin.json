@@ -3231,6 +3231,78 @@
     },
     {
       "action": "plugin::content-manager.explorer.create",
+      "subject": "api::list-option.list-option",
+      "properties": {
+        "fields": [
+          "list.idList",
+          "list.title",
+          "list.extraInfo",
+          "list.leadingIcon",
+          "list.size",
+          "list.color",
+          "idListOption",
+          "spacing",
+          "titleFontSize",
+          "titleFontWeight",
+          "title"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::list-option.list-option",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::list-option.list-option",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::list-option.list-option",
+      "properties": {
+        "fields": [
+          "list.idList",
+          "list.title",
+          "list.extraInfo",
+          "list.leadingIcon",
+          "list.size",
+          "list.color",
+          "idListOption",
+          "spacing",
+          "titleFontSize",
+          "titleFontWeight",
+          "title"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::list-option.list-option",
+      "properties": {
+        "fields": [
+          "list.idList",
+          "list.title",
+          "list.extraInfo",
+          "list.leadingIcon",
+          "list.size",
+          "list.color",
+          "idListOption",
+          "spacing",
+          "titleFontSize",
+          "titleFontWeight",
+          "title"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
       "subject": "api::logo.logo",
       "properties": {
         "fields": [
