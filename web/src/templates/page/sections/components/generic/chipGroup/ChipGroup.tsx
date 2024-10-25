@@ -16,7 +16,7 @@ const ChipGroup: React.FC<IChipGroupProps> = props => {
     <>
       <div className={styles?.chipGroup__container}>
         {chipOptions?.map((item: any, index: number) => {
-          const { chip, content } = item.attributes
+          const { chip } = item.attributes
 
           return (
             <>
@@ -44,13 +44,16 @@ const ChipGroup: React.FC<IChipGroupProps> = props => {
       </div>
       <>
         {chipOptions[0]?.attributes?.content?.length ? (
-          <div className={styles?.content__container}>
+          <div
+            key={"contentContainer__" + Math.random()}
+            className={styles?.content__container}
+          >
             {chipOptions?.map((item: any, index: number) => {
               const { content } = item.attributes
 
               return (
                 <>
-                  <div>
+                  <div key={"chipContent__" + index}>
                     {openItem === index + 1 ? (
                       <>
                         {content?.length && (

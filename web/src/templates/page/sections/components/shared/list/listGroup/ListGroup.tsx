@@ -5,10 +5,11 @@ import List from "../components/List"
 
 export type IListGroupProps = {
   listOptions: any
+  className?: string
 }
 
 const ListGroup: React.FC<IListGroupProps> = props => {
-  const { listOptions } = props
+  const { listOptions, className } = props
 
   const spacingStyles: Record<string, string> = {
     small: styles?.spacingSmall,
@@ -26,14 +27,17 @@ const ListGroup: React.FC<IListGroupProps> = props => {
   }
 
   return (
-    <div className={`${styles?.listGroup__container} `}>
-      {listOptions?.map((item: any) => {
+    <div
+      className={`${styles?.listGroup__container} ${className && className}`}
+    >
+      {listOptions?.map((item: any, index: number) => {
         const { list, title, spacing, titleFontSize, titleFontWeight } =
           item?.attributes
 
         return (
           <>
             <div
+              key={"listOption__" + index}
               className={`${styles?.listGroup} ${cx(
                 spacing ? spacingStyles[spacing] : styles?.spacingSmall
               )}`}
@@ -49,7 +53,10 @@ const ListGroup: React.FC<IListGroupProps> = props => {
               >
                 {title}
               </p>
-              <div className={styles?.listOptions}>
+              <div
+                key={"listOptions__" + Math.random()}
+                className={styles?.listOptions}
+              >
                 {list?.map((el: any, index: number) => {
                   const { idList, size, title, leadingIcon, extraInfo, color } =
                     el
