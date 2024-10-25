@@ -244,6 +244,12 @@
       "action": "api::segmented-button.segmented-button.findOne"
     },
     {
+      "action": "api::selector-list.selector-list.find"
+    },
+    {
+      "action": "api::selector-list.selector-list.findOne"
+    },
+    {
       "action": "api::step.step.find"
     },
     {
