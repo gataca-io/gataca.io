@@ -1,0 +1,68 @@
+@import "../../../../../../../styles/colors.scss";
+@import "../../../../../../../styles/mixins.scss";
+
+.selector__container {
+    min-width: 275px;
+    max-width: 275px;
+    margin-right: 20px;
+    margin-top: 0;
+    @include min-width($desktopSM) {
+        margin-right: 0px;
+        max-width: 385px;
+    }
+    .selector__titleContainer {
+        position: relative;
+        @include flexbox();
+        .title {
+            color: $primary700;
+            @include min-width($desktopSM) {
+                margin-left: 70px;
+            }
+            @include min-width($desktopMD) {
+                margin-left: 103px;
+            }
+        }
+        .notSelected {
+            color: $neutral1000;
+            cursor: pointer;
+            margin-bottom: 20px;
+            text-decoration: none;
+            @include min-width($desktopSM) {
+                margin-left: 70px;
+            }
+        
+            @include min-width($desktopMD) {
+                margin-left: 103px;
+            }
+        }
+        & > img {
+            display: none;
+            @include min-width($desktopSM) {
+                position: absolute;
+                top: 2px;
+                width: 50px;
+                display: block;
+            }
+            @include min-width($desktopMD) {
+                left: 0;
+                top: -3px;
+                width: 71px;
+            }
+            @include min-width($desktopXL) {
+                top: -4px;
+            }
+        }
+    }
+    .content {
+        @include min-width($desktopSM) {
+            margin-left: 70px;
+        }
+        @include min-width($desktopMD) {
+            margin-left: 103px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+}

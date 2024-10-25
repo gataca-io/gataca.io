@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_generic_selectors",
+  "info": {
+    "displayName": "selector",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "showSelector": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

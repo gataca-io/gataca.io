@@ -5874,7 +5874,8 @@
             "shared.action-card",
             "shared.list-group",
             "shared.sub-heading",
-            "shared.heading"
+            "shared.heading",
+            "generic.selector-list"
           ],
           "pluginOptions": {
             "i18n": {
@@ -6017,7 +6018,8 @@
               "shared.action-card",
               "shared.list-group",
               "shared.sub-heading",
-              "shared.heading"
+              "shared.heading",
+              "generic.selector-list"
             ],
             "pluginOptions": {
               "i18n": {
@@ -7678,6 +7680,92 @@
       "uid": "api::segmented-button.segmented-button",
       "apiName": "segmented-button",
       "globalId": "SegmentedButton",
+      "actions": {},
+      "lifecycles": {}
+    },
+    "api::selector-list.selector-list": {
+      "kind": "collectionType",
+      "collectionName": "selector_lists",
+      "info": {
+        "singularName": "selector-list",
+        "pluralName": "selector-lists",
+        "displayName": "Selector List"
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "idSelectorList": {
+          "type": "string"
+        },
+        "selector": {
+          "type": "component",
+          "repeatable": true,
+          "component": "generic.selector"
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "selector_lists",
+        "info": {
+          "singularName": "selector-list",
+          "pluralName": "selector-lists",
+          "displayName": "Selector List"
+        },
+        "options": {
+          "draftAndPublish": true
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "idSelectorList": {
+            "type": "string"
+          },
+          "selector": {
+            "type": "component",
+            "repeatable": true,
+            "component": "generic.selector"
+          }
+        },
+        "kind": "collectionType"
+      },
+      "modelType": "contentType",
+      "modelName": "selector-list",
+      "connection": "default",
+      "uid": "api::selector-list.selector-list",
+      "apiName": "selector-list",
+      "globalId": "SelectorList",
       "actions": {},
       "lifecycles": {}
     },

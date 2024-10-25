@@ -4693,6 +4693,57 @@
     },
     {
       "action": "plugin::content-manager.explorer.create",
+      "subject": "api::selector-list.selector-list",
+      "properties": {
+        "fields": [
+          "idSelectorList",
+          "selector.title",
+          "selector.content",
+          "selector.showSelector"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::selector-list.selector-list",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::selector-list.selector-list",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::selector-list.selector-list",
+      "properties": {
+        "fields": [
+          "idSelectorList",
+          "selector.title",
+          "selector.content",
+          "selector.showSelector"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::selector-list.selector-list",
+      "properties": {
+        "fields": [
+          "idSelectorList",
+          "selector.title",
+          "selector.content",
+          "selector.showSelector"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
       "subject": "api::step.step",
       "properties": {
         "fields": [
