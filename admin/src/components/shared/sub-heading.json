@@ -1,0 +1,50 @@
+{
+  "collectionName": "components_shared_sub_headings",
+  "info": {
+    "displayName": "SubHeading",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "idSubHeading": {
+      "type": "string"
+    },
+    "size": {
+      "type": "enumeration",
+      "enum": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "default": "large"
+    },
+    "numberIconText": {
+      "type": "integer"
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "text"
+    },
+    "align": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "center"
+      ],
+      "default": "left"
+    }
+  }
+}

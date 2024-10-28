@@ -24,6 +24,8 @@ import ChipGroup from "./components/generic/chipGroup/ChipGroup"
 import CardComponent from "./components/shared/card/Card"
 import ActionCard from "./components/shared/actionCard/ActionCard"
 import ListGroup from "./components/shared/list/listGroup/ListGroup"
+import SubHeading from "./components/shared/subHeading/SubHeading"
+import Heading from "./components/shared/Heading/Heading"
 
 const AllSectionsTemplate: React.FC<PageModel> = props => {
   const [benefitsLoaded, setBenefitsLoaded] = React.useState<boolean>(false)
@@ -81,6 +83,18 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
           dynamicCard,
           moreContent,
           list_options,
+          align,
+          idSubHeading,
+          idCard,
+          idActionCard,
+          idHeading,
+          titleSize,
+          extraText,
+          sectionName,
+          buttonGroup,
+          list,
+          segmentedButton,
+          table,
         } = item
 
         return (
@@ -92,7 +106,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
                 description={description}
                 cta={cta}
                 hero={hero}
-                key={`header_` + id + index}
+                key={`header_` + Math.random()}
               />
             )}
             {__component === "generic.centered-header" && (
@@ -101,7 +115,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
                 title={title}
                 description={description}
                 cta={cta}
-                key={`centered_header_` + id + index}
+                key={`centered_header_` + Math.random()}
               />
             )}
             {__component === "shared.slider" && (
@@ -114,7 +128,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
                 description={description}
                 cta={cta}
                 hero={hero}
-                key={`double_col_text_image_` + id + index}
+                key={`double_col_text_image_` + Math.random()}
               />
             )}
             {__component === "shared.double-col-image-text-bg" && (
@@ -124,7 +138,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
                 description={description}
                 hero={hero}
                 subtitle={subtitle}
-                key={`double_col_image_text_bg_` + id + index}
+                key={`double_col_image_text_bg_` + Math.random()}
               />
             )}
             {__component === "wallet.benefit-section" && (
@@ -134,7 +148,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
                 list={benefits?.data}
                 hero={hero}
                 setBenefitsLoaded={setBenefitsLoaded}
-                key={`benefit_section_` + id + index}
+                key={`benefit_section_` + Math.random()}
               />
             )}
             {__component === "studio.why-studio-section" && (
@@ -142,7 +156,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
                 id={id}
                 title={title}
                 list={advantages?.data}
-                key={`why_section_` + id + index}
+                key={`why_section_` + Math.random()}
               />
             )}
             {__component === "wallet.how-section" && (
@@ -150,7 +164,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
                 title={title}
                 media={media}
                 list={operations?.data}
-                key={`list_media_` + id + index}
+                key={`list_media_` + Math.random()}
               />
             )}
             {__component === "shared.faqs-section" && (
@@ -159,7 +173,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
                 subtitle={subtitle}
                 hero={hero}
                 info={faqs?.data}
-                key={`faqs_section_` + id + index}
+                key={`faqs_section_` + Math.random()}
               />
             )}
             {__component === "shared.blog-section" && (
@@ -167,7 +181,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
                 title={title}
                 subtitle={subtitle}
                 blogs={blogs?.data}
-                key={`blogs_section_` + id + index}
+                key={`blogs_section_` + Math.random()}
               />
             )}
             {__component === "generic.table" && <Table content={content} />}
@@ -186,6 +200,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
                 }
                 licenses={tiers?.data}
                 subOptionClickedID={props?.location?.hash?.substring(1)}
+                key={`pricing_info` + Math.random()}
               />
             )}
             {__component === "generic.content-heading-container" && (
@@ -219,6 +234,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
                   action={() =>
                     window?.open(url, outsideWeb ? "_blank" : "_self")
                   }
+                  key={`button_` + Math.random()}
                 />
               </section>
             )}
@@ -236,6 +252,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
                   action={() =>
                     window?.open(url, outsideWeb ? "_blank" : "_self")
                   }
+                  key={`button_icon` + Math.random()}
                 />
               </section>
             )}
@@ -243,21 +260,30 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
               <section
                 className={`${styles?.container} ${cx("containerMaxWidth")}`}
               >
-                <SegmentedButtonsContainer segmentedOptions={buttons?.data} />
+                <SegmentedButtonsContainer
+                  segmentedOptions={buttons?.data}
+                  key={`segmented_buttons` + Math.random()}
+                />
               </section>
             )}
             {__component === "generic.button-group" && (
               <section
                 className={`${styles?.container} ${cx("containerMaxWidth")}`}
               >
-                <ButtonGroup buttonGroup={buttons?.data} />
+                <ButtonGroup
+                  buttonGroup={buttons?.data}
+                  key={`button_group_` + Math.random()}
+                />
               </section>
             )}
             {__component === "generic.chip-group" && (
               <section
                 className={`${styles?.container} ${cx("containerMaxWidth")}`}
               >
-                <ChipGroup chipOptions={chip_options?.data} />
+                <ChipGroup
+                  chipOptions={chip_options?.data}
+                  key={`chip_group_` + Math.random()}
+                />
               </section>
             )}
             {__component === "shared.card" && (
@@ -265,6 +291,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
                 className={`${styles?.container} ${cx("containerMaxWidth")}`}
               >
                 <CardComponent
+                  idCard={idCard}
                   dynamicCard={dynamicCard}
                   upperIconOpened={upperIconOpened}
                   upperIconClosed={upperIconClosed}
@@ -300,6 +327,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
                     leadingIcon: chip?.leadingIcon,
                     trailingIcon: chip?.trailingIcon,
                   }}
+                  key={`card_` + Math.random()}
                 />
               </section>
             )}
@@ -308,6 +336,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
                 className={`${styles?.container} ${cx("containerMaxWidth")}`}
               >
                 <ActionCard
+                  idActionCard={idActionCard}
                   upperIconOpened={upperIconOpened}
                   upperIconClosed={upperIconClosed}
                   trailingIcon={trailingIcon}
@@ -339,6 +368,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
                     leadingIcon: chip?.leadingIcon,
                     trailingIcon: chip?.trailingIcon,
                   }}
+                  key={`action_card` + Math.random()}
                 />
               </section>
             )}
@@ -346,7 +376,71 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
               <section
                 className={`${styles?.container} ${cx("containerMaxWidth")}`}
               >
-                <ListGroup listOptions={list_options?.data} />
+                <ListGroup
+                  listOptions={list_options?.data}
+                  key={`list_group` + Math.random()}
+                />
+              </section>
+            )}
+            {__component === "shared.sub-heading" && (
+              <section
+                className={`${styles?.container} ${cx("containerMaxWidth")}`}
+              >
+                <SubHeading
+                  idSubHeading={idSubHeading}
+                  size={size}
+                  align={align}
+                  numberIconText={numberIconText}
+                  icon={icon}
+                  title={title}
+                  content={content}
+                  key={`subheading_` + Math.random()}
+                />
+              </section>
+            )}
+            {__component === "shared.heading" && (
+              <section
+                className={`${styles?.container} ${cx("containerMaxWidth")}`}
+              >
+                <Heading
+                  idHeading={idHeading}
+                  titleSize={titleSize}
+                  align={align}
+                  extraText={extraText}
+                  title={title}
+                  sectionName={sectionName}
+                  content={content}
+                  buttonGroup={buttonGroup?.buttons?.data}
+                  list={list?.list_options?.data}
+                  segmentedButton={segmentedButton?.buttons?.data}
+                  table={table?.content}
+                  chip={{
+                    idChip: chip?.idChip,
+                    text: chip?.text,
+                    type: chip?.type,
+                    form: chip?.form,
+                    disabled: chip?.disabled,
+                    color: chip?.color,
+                    chipSize: chip?.chipSize,
+                    leadingIcon: chip?.leadingIcon,
+                    trailingIcon: chip?.trailingIcon,
+                  }}
+                  button={{
+                    idButton: button?.idButton,
+                    label: button?.label,
+                    icon: button?.icon,
+                    style: button?.style,
+                    color: button?.color,
+                    size: button?.size,
+                    noPaddingText: button?.noPaddingText,
+                    disabled: button?.disabled,
+                    link: button?.link,
+                    url: button?.url,
+                    outsideWeb: button?.outsideWeb,
+                    action: () => window.open(button?.url, "_blank"),
+                  }}
+                  key={`heading_` + Math.random()}
+                />
               </section>
             )}
           </>

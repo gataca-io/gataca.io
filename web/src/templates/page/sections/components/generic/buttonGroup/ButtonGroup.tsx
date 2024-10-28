@@ -4,19 +4,25 @@ import Button from "../button/Button"
 
 export type IButtonGroupProps = {
   buttonGroup: any
+  className?: string
 }
 
 const ButtonGroup: React.FC<IButtonGroupProps> = props => {
-  const { buttonGroup } = props
+  const { buttonGroup, className } = props
 
   return (
     <>
-      <div className={styles?.buttonGroup__container}>
-        {buttonGroup?.map((item: any) => {
+      <div
+        className={`${styles?.buttonGroup__container} ${
+          className && className
+        }`}
+      >
+        {buttonGroup?.map((item: any, index: number) => {
           const { button } = item.attributes
 
           return (
             <Button
+              key={"button__" + index}
               idButton={button?.idButton}
               label={button?.label}
               icon={button?.icon}

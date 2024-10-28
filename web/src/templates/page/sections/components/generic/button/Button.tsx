@@ -29,7 +29,6 @@ const Button: React.FC<ButtonModel> = props => {
 
   const sizeStyles: Record<string, string> = {
     buttonSM: styles?.buttonSM,
-    buttonLG: styles?.buttonLG,
   }
 
   const colorStyles: Record<string, string> = {
