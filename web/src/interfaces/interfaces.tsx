@@ -185,6 +185,7 @@ export interface InsideSectionsModel extends CardModel {
   segmentedButton?: any
   table?: any
   selector_lists?: any
+  brand_buttons?: any
 }
 
 export interface LocalizationsModel {

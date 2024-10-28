@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "brand_buttons",
+  "info": {
+    "singularName": "brand-button",
+    "pluralName": "brand-buttons",
+    "displayName": "Brand button"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "idButton": {
+      "type": "string"
+    },
+    "brandButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "generic.brand-button"
+    }
+  }
+}

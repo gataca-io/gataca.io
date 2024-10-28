@@ -1,0 +1,105 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::brand-button.brand-button",
+  "value": {
+    "uid": "api::brand-button.brand-button",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "idButton",
+      "defaultSortBy": "idButton",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "idButton": {
+        "edit": {
+          "label": "idButton",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "idButton",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "brandButton": {
+        "edit": {
+          "label": "brandButton",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "brandButton",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "edit": [
+        [
+          {
+            "name": "idButton",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "brandButton",
+            "size": 12
+          }
+        ]
+      ],
+      "list": [
+        "id",
+        "idButton",
+        "brandButton"
+      ]
+    }
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

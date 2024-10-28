@@ -27,6 +27,7 @@ import ListGroup from "./components/shared/list/listGroup/ListGroup"
 import SubHeading from "./components/shared/subHeading/SubHeading"
 import Heading from "./components/shared/Heading/Heading"
 import SelectorList from "./components/generic/selectorList/SelectorList"
+import BrandButton from "./components/generic/brandButton/BrandButton"
 
 const AllSectionsTemplate: React.FC<PageModel> = props => {
   const [benefitsLoaded, setBenefitsLoaded] = React.useState<boolean>(false)
@@ -97,6 +98,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
           segmentedButton,
           table,
           selector_lists,
+          brand_buttons,
         } = item
 
         return (
@@ -274,6 +276,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
               >
                 <ButtonGroup
                   buttonGroup={buttons?.data}
+                  brandButtonGroup={brand_buttons?.data}
                   key={`button_group_` + Math.random()}
                 />
               </section>

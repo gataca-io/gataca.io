@@ -1,7 +1,8 @@
 {
   "collectionName": "components_generic_button_groups",
   "info": {
-    "displayName": "ButtonGroup"
+    "displayName": "ButtonGroup",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -9,6 +10,11 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::segmented-button.segmented-button"
+    },
+    "brand_buttons": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::brand-button.brand-button"
     }
   }
 }

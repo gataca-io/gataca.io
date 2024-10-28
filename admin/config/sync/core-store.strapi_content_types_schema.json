@@ -2815,6 +2815,92 @@
       "actions": {},
       "lifecycles": {}
     },
+    "api::brand-button.brand-button": {
+      "kind": "collectionType",
+      "collectionName": "brand_buttons",
+      "info": {
+        "singularName": "brand-button",
+        "pluralName": "brand-buttons",
+        "displayName": "Brand button"
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "idButton": {
+          "type": "string"
+        },
+        "brandButton": {
+          "type": "component",
+          "repeatable": false,
+          "component": "generic.brand-button"
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "brand_buttons",
+        "info": {
+          "singularName": "brand-button",
+          "pluralName": "brand-buttons",
+          "displayName": "Brand button"
+        },
+        "options": {
+          "draftAndPublish": true
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "idButton": {
+            "type": "string"
+          },
+          "brandButton": {
+            "type": "component",
+            "repeatable": false,
+            "component": "generic.brand-button"
+          }
+        },
+        "kind": "collectionType"
+      },
+      "modelType": "contentType",
+      "modelName": "brand-button",
+      "connection": "default",
+      "uid": "api::brand-button.brand-button",
+      "apiName": "brand-button",
+      "globalId": "BrandButton",
+      "actions": {},
+      "lifecycles": {}
+    },
     "api::card-table-content.card-table-content": {
       "kind": "collectionType",
       "collectionName": "card_table_contents",

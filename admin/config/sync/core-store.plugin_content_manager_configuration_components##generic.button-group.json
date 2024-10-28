@@ -34,17 +34,37 @@
           "searchable": false,
           "sortable": false
         }
+      },
+      "brand_buttons": {
+        "edit": {
+          "label": "brand_buttons",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "idButton"
+        },
+        "list": {
+          "label": "brand_buttons",
+          "searchable": false,
+          "sortable": false
+        }
       }
     },
     "layouts": {
       "list": [
         "id",
-        "buttons"
+        "buttons",
+        "brand_buttons"
       ],
       "edit": [
         [
           {
             "name": "buttons",
+            "size": 6
+          },
+          {
+            "name": "brand_buttons",
             "size": 6
           }
         ]
