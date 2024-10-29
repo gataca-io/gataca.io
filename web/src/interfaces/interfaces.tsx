@@ -173,13 +173,14 @@ export interface InsideSectionsModel extends CardModel {
   dynamicCard?: boolean
   moreContent?: string
   list_options?: any
-  idSubHeading?: string
-  align?: string
   idActionCard?: string
   selector_lists?: any
   brand_buttons?: any
   heading?: any
   image?: any
+  subHeading?: any
+  columns?: string
+  idSection?: string
 }
 
 export interface LocalizationsModel {
@@ -426,4 +427,10 @@ export interface HeaderContainerModel {
   idHeader?: string
   heading: HeadingModel
   image?: any
+}
+
+export interface SubHeadingContainerModel {
+  idSection?: string
+  subHeading: SubHeadingModel[]
+  columns?: string
 }

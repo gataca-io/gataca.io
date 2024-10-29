@@ -6047,7 +6047,8 @@
             "shared.list-group",
             "shared.sub-heading",
             "generic.selector-list",
-            "shared.header-container"
+            "shared.header-container",
+            "shared.sub-heading-container"
           ],
           "pluginOptions": {
             "i18n": {
@@ -6191,7 +6192,8 @@
               "shared.list-group",
               "shared.sub-heading",
               "generic.selector-list",
-              "shared.header-container"
+              "shared.header-container",
+              "shared.sub-heading-container"
             ],
             "pluginOptions": {
               "i18n": {

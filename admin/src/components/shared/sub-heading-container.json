@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_shared_sub_heading_containers",
+  "info": {
+    "displayName": "SubHeadingContainer",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "idSection": {
+      "type": "string"
+    },
+    "subHeading": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.sub-heading"
+    },
+    "columns": {
+      "type": "enumeration",
+      "enum": [
+        "one",
+        "two",
+        "three",
+        "four"
+      ],
+      "default": "two"
+    }
+  }
+}

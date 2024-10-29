@@ -24,9 +24,9 @@ import ChipGroup from "./components/generic/chipGroup/ChipGroup"
 import CardComponent from "./components/shared/card/Card"
 import ActionCard from "./components/shared/actionCard/ActionCard"
 import ListGroup from "./components/shared/list/listGroup/ListGroup"
-import SubHeading from "./components/shared/subHeading/SubHeading"
 import SelectorList from "./components/generic/selectorList/SelectorList"
 import HeaderContainer from "./components/shared/headerContainer/HeaderContainer"
+import SubHeadingContainer from "./components/shared/subHeadingContainer/SubHeadingContainer"
 
 const AllSectionsTemplate: React.FC<PageModel> = props => {
   const [benefitsLoaded, setBenefitsLoaded] = React.useState<boolean>(false)
@@ -84,14 +84,15 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
           dynamicCard,
           moreContent,
           list_options,
-          align,
-          idSubHeading,
           idCard,
           idActionCard,
           selector_lists,
           brand_buttons,
           heading,
           image,
+          subHeading,
+          columns,
+          idSection,
         } = item
 
         return (
@@ -389,21 +390,13 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
                 />
               </section>
             )}
-            {__component === "shared.sub-heading" && (
-              <section
-                className={`${styles?.container} ${cx("containerMaxWidth")}`}
-              >
-                <SubHeading
-                  idSubHeading={idSubHeading}
-                  size={size}
-                  align={align}
-                  numberIconText={numberIconText}
-                  icon={icon}
-                  title={title}
-                  content={content}
-                  key={`subheading_` + Math.random()}
-                />
-              </section>
+            {__component === "shared.sub-heading-container" && (
+              <SubHeadingContainer
+                idSection={idSection}
+                subHeading={subHeading}
+                columns={columns}
+                key={`subHeadingContainer_` + Math.random()}
+              />
             )}
             {__component === "generic.selector-list" && (
               <section
