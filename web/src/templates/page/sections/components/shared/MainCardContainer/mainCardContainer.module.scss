@@ -1,0 +1,121 @@
+@import "../../../../../../styles/colors.scss";
+@import "../../../../../../styles/mixins.scss";
+
+$paddingCard: 32px;
+$paddingSmallCard: 24px;
+
+.card{
+  margin-bottom:  132px;
+  padding: 0 20px;
+  @include min-width($mobileXL) {
+    margin-bottom: 200px;
+    padding: 0 40px;
+  }
+  @include min-width($desktopMD) {
+    padding: 0 60px;
+  }
+}
+
+.card__container {
+  width: 100%;
+  @include flexbox();
+  @include flex-direction(column);
+  @include justify-content(flex-start);
+  @include flex-wrap(wrap);
+  gap: 32px;
+  @include min-width($tabletMD) {
+    @include flex-direction(row);
+    @include align-items(flex-start);
+  }
+  &.oneColumn {
+    > div {
+      @include min-width($tabletMD) {
+        width: calc(100% - $paddingCard * 2);
+        @include flex(0, 0, calc(100% - $paddingCard * 2));
+        
+      }
+      &.smallCard {
+        @include min-width($tabletMD) {
+          width: calc(100% - $paddingSmallCard * 2);
+          @include flex(0, 0, calc(100% - $paddingSmallCard * 2));
+        }
+      }
+    }
+  }
+  &.twoColumns {
+    > div {
+      @include min-width($tabletMD) {
+        min-width: calc(272px - $paddingCard * 2);
+        width: calc(calc(50% - $paddingCard * 2) - calc(64px / 4));
+        @include flex(0, 0, calc(calc(50% - $paddingCard * 2) - calc(64px / 4)));
+      }
+      &.smallCard {
+        @include min-width($tabletMD) {
+          min-width: calc(272px - $paddingSmallCard * 2);
+          width: calc(calc(50% - $paddingSmallCard * 2) - calc(64px / 4));
+          @include flex(0, 0, calc(calc(50% - $paddingSmallCard * 2) - calc(64px / 4)));
+        }
+      }
+    }
+  }
+  &.threeColumns {
+    > div {
+      @include min-width($tabletMD) {
+        min-width: calc(272px - $paddingCard * 2);
+        width: calc(calc(50% - $paddingCard * 2) - calc(64px / 4));
+        @include flex(0, 0, calc((50% - $paddingCard * 2) - calc(64px / 4)));
+      }
+
+      @include min-width($desktopMD) {
+        width: calc(calc(100%/3) - $paddingCard * 2 - calc(64px / 3));
+        @include flex(0, 0, calc(calc(100%/3) - $paddingCard * 2 - calc(64px / 3)));
+
+      }
+      &.smallCard {
+        @include min-width($tabletMD) {
+          min-width: calc(272px - $paddingSmallCard * 2);
+          width: calc(calc(50% - $paddingSmallCard * 2) - calc(64px / 4));
+          @include flex(0, 0, calc(calc(50% - $paddingSmallCard * 2) - calc(64px / 4)));
+        }
+        @include min-width($desktopMD) {
+          width: calc(calc(100%/3) - $paddingSmallCard * 2 - calc(64px / 3));
+          @include flex(0, 0, calc(calc(100%/3) - $paddingSmallCard * 2 - calc(64px / 3)));
+        }
+      }
+    }
+  }
+  &.fourColumns {
+    > div {
+      @include min-width($tabletMD) {
+        min-width: calc(272px - $paddingCard * 2);
+        width: calc(calc(50% - $paddingCard * 2) - calc(64px / 4));
+        @include flex(0, 0, calc(calc(50% - $paddingCard * 2) - calc(64px / 4)))
+      }
+      @include min-width($desktopMD) {
+        width: calc(calc(100%/3) - $paddingCard * 2 - calc(64px / 3));
+        @include flex(0, 0, calc(calc(100%/3) - $paddingCard * 2 - calc(64px / 3)));
+
+      }
+      @include min-width(1304px) {
+        width: calc(calc(25% - $paddingCard * 2) - calc(64px / 2));
+        @include flex(0, 0, calc(calc(25% - $paddingCard * 2) - calc(64px / 2)));
+      }
+      &.smallCard {
+        @include min-width($tabletMD) {
+          min-width: calc(272px - $paddingSmallCard * 2);
+          width: calc(calc(50% - $paddingSmallCard * 2) - calc(64px / 4));
+          @include flex(0, 0, calc(calc(50% - $paddingSmallCard * 2) - calc(64px / 4)));
+        }
+        @include min-width($desktopMD) {
+          width: calc(calc(100%/3) - $paddingSmallCard * 2 - calc(64px / 3));
+          @include flex(0, 0, calc(calc(100%/3) - $paddingSmallCard * 2 - calc(64px / 3)));
+        }
+        @include min-width(1304px) {
+          width: calc(calc(25% - $paddingSmallCard * 2) - calc(64px / 2));
+          @include flex(0, 0, calc(calc(25% - $paddingSmallCard * 2) - calc(64px / 2)));
+        }
+      }
+    }
+  }
+}
+

@@ -2901,6 +2901,94 @@
       "actions": {},
       "lifecycles": {}
     },
+    "api::card.card": {
+      "kind": "collectionType",
+      "collectionName": "cards",
+      "info": {
+        "singularName": "card",
+        "pluralName": "cards",
+        "displayName": "Card",
+        "description": ""
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "idCard": {
+          "type": "string"
+        },
+        "card": {
+          "type": "component",
+          "repeatable": true,
+          "component": "shared.card"
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "cards",
+        "info": {
+          "singularName": "card",
+          "pluralName": "cards",
+          "displayName": "Card",
+          "description": ""
+        },
+        "options": {
+          "draftAndPublish": true
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "idCard": {
+            "type": "string"
+          },
+          "card": {
+            "type": "component",
+            "repeatable": true,
+            "component": "shared.card"
+          }
+        },
+        "kind": "collectionType"
+      },
+      "modelType": "contentType",
+      "modelName": "card",
+      "connection": "default",
+      "uid": "api::card.card",
+      "apiName": "card",
+      "globalId": "Card",
+      "actions": {},
+      "lifecycles": {}
+    },
     "api::card-table-content.card-table-content": {
       "kind": "collectionType",
       "collectionName": "card_table_contents",
@@ -6042,13 +6130,12 @@
             "generic.button-options",
             "generic.button-group",
             "generic.chip-group",
-            "shared.card",
             "shared.action-card",
             "shared.list-group",
-            "shared.sub-heading",
             "generic.selector-list",
             "shared.header-container",
-            "shared.sub-heading-container"
+            "shared.sub-heading-container",
+            "shared.card-container"
           ],
           "pluginOptions": {
             "i18n": {
@@ -6187,13 +6274,12 @@
               "generic.button-options",
               "generic.button-group",
               "generic.chip-group",
-              "shared.card",
               "shared.action-card",
               "shared.list-group",
-              "shared.sub-heading",
               "generic.selector-list",
               "shared.header-container",
-              "shared.sub-heading-container"
+              "shared.sub-heading-container",
+              "shared.card-container"
             ],
             "pluginOptions": {
               "i18n": {

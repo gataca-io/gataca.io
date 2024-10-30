@@ -8,6 +8,7 @@ import Chip from "../../generic/chip/Chip"
 
 const CardComponent: React.FC<CardModel> = props => {
   const {
+    className,
     idCard,
     size,
     contentAlign,
@@ -58,7 +59,7 @@ const CardComponent: React.FC<CardModel> = props => {
         size ? cardSizeStyles[size] : ""
       } ${dynamicCard ? styles.dynamicCard : ""} ${
         showContent ? styles.showMoreContent : ""
-      }`}
+      } ${className && className}`}
       onMouseEnter={() => {
         dynamicCard && window?.innerWidth > 1066 && setOpenedCard(!openedCard)
       }}
@@ -128,8 +129,8 @@ const CardComponent: React.FC<CardModel> = props => {
               )}
 
               {(chip?.text?.length ||
-                chip?.leadingIcon ||
-                chip?.trailingIcon) && (
+                chip?.leadingIcon?.data?.attributes?.url?.length ||
+                chip?.trailingIcon?.data?.attributes?.url?.length) && (
                 <Chip
                   idChip={chip?.idChip}
                   text={chip?.text}
@@ -143,7 +144,8 @@ const CardComponent: React.FC<CardModel> = props => {
                 />
               )}
 
-              {(button?.label?.length || button?.icon) && (
+              {(button?.label?.length ||
+                button?.icon?.data?.attributes?.url?.length) && (
                 <Button
                   idButton={button?.idButton}
                   label={button?.label}

@@ -123,7 +123,7 @@ export interface PageModel extends PagePreviewModel {
   localizations?: LocalizationsModel
 }
 
-export interface InsideSectionsModel extends CardModel {
+export interface InsideSectionsModel {
   id: any
   idContent?: string
   title: string
@@ -181,6 +181,9 @@ export interface InsideSectionsModel extends CardModel {
   subHeading?: any
   columns?: string
   idSection?: string
+  card?: MainCardContainerModel
+  button?: ButtonModel
+  chip?: ChipModel
 }
 
 export interface LocalizationsModel {
@@ -351,6 +354,7 @@ export interface LegalModel {
 }
 
 export interface CardModel {
+  className?: string
   idCard?: string
   size?: string
   contentAlign?: string
@@ -432,5 +436,11 @@ export interface HeaderContainerModel {
 export interface SubHeadingContainerModel {
   idSection?: string
   subHeading: SubHeadingModel[]
+  columns?: string
+}
+
+export interface MainCardContainerModel {
+  idSection?: string
+  card: CardModel[]
   columns?: string
 }

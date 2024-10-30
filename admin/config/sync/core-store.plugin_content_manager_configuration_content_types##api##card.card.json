@@ -1,0 +1,105 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::card.card",
+  "value": {
+    "uid": "api::card.card",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "idCard",
+      "defaultSortBy": "idCard",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "idCard": {
+        "edit": {
+          "label": "idCard",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "idCard",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "card": {
+        "edit": {
+          "label": "card",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "card",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "edit": [
+        [
+          {
+            "name": "idCard",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "card",
+            "size": 12
+          }
+        ]
+      ],
+      "list": [
+        "id",
+        "idCard",
+        "card"
+      ]
+    }
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}
