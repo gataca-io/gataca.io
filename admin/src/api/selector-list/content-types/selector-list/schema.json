@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "selector_lists",
+  "info": {
+    "singularName": "selector-list",
+    "pluralName": "selector-lists",
+    "displayName": "Selector List"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "idSelectorList": {
+      "type": "string"
+    },
+    "selector": {
+      "type": "component",
+      "repeatable": true,
+      "component": "generic.selector"
+    }
+  }
+}

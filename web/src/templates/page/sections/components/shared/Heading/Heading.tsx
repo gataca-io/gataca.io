@@ -26,8 +26,6 @@ const Heading: React.FC<HeadingModel> = props => {
     table,
   } = props
 
-  console.log("length ", buttonGroup?.length)
-
   const titleSizeStyles: Record<string, string> = {
     small: "heading4",
     medium: "heading3",

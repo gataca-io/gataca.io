@@ -383,6 +383,66 @@
     },
     {
       "action": "plugin::content-manager.explorer.create",
+      "subject": "api::brand-button.brand-button",
+      "properties": {
+        "fields": [
+          "idButton",
+          "brandButton.idButton",
+          "brandButton.url",
+          "brandButton.color",
+          "brandButton.size",
+          "brandButton.outsideWeb",
+          "brandButton.icon"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::brand-button.brand-button",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::brand-button.brand-button",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::brand-button.brand-button",
+      "properties": {
+        "fields": [
+          "idButton",
+          "brandButton.idButton",
+          "brandButton.url",
+          "brandButton.color",
+          "brandButton.size",
+          "brandButton.outsideWeb",
+          "brandButton.icon"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::brand-button.brand-button",
+      "properties": {
+        "fields": [
+          "idButton",
+          "brandButton.idButton",
+          "brandButton.url",
+          "brandButton.color",
+          "brandButton.size",
+          "brandButton.outsideWeb",
+          "brandButton.icon"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
       "subject": "api::card-table-content.card-table-content",
       "properties": {
         "fields": [
@@ -4687,6 +4747,57 @@
           "button.noPaddingText",
           "content",
           "title"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::selector-list.selector-list",
+      "properties": {
+        "fields": [
+          "idSelectorList",
+          "selector.title",
+          "selector.content",
+          "selector.showSelector"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::selector-list.selector-list",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::selector-list.selector-list",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::selector-list.selector-list",
+      "properties": {
+        "fields": [
+          "idSelectorList",
+          "selector.title",
+          "selector.content",
+          "selector.showSelector"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::selector-list.selector-list",
+      "properties": {
+        "fields": [
+          "idSelectorList",
+          "selector.title",
+          "selector.content",
+          "selector.showSelector"
         ]
       },
       "conditions": []

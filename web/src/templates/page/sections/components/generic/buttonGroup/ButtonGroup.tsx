@@ -1,14 +1,16 @@
 import * as React from "react"
 import * as styles from "./buttonGroup.module.scss"
 import Button from "../button/Button"
+import BrandButton from "../brandButton/BrandButton"
 
 export type IButtonGroupProps = {
-  buttonGroup: any
+  buttonGroup?: any
+  brandButtonGroup?: any
   className?: string
 }
 
 const ButtonGroup: React.FC<IButtonGroupProps> = props => {
-  const { buttonGroup, className } = props
+  const { buttonGroup, brandButtonGroup, className } = props
 
   return (
     <>
@@ -40,6 +42,21 @@ const ButtonGroup: React.FC<IButtonGroupProps> = props => {
                   button?.outsideWeb ? "_blank" : "_self"
                 )
               }
+            />
+          )
+        })}
+
+        {brandButtonGroup?.map((item: any, index: number) => {
+          const { brandButton } = item.attributes
+
+          return (
+            <BrandButton
+              key={"brandButton__" + index}
+              icon={brandButton?.icon}
+              color={brandButton?.color}
+              size={brandButton?.size}
+              url={brandButton?.url}
+              outsideWeb={brandButton?.outsideWeb}
             />
           )
         })}

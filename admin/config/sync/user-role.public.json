@@ -49,6 +49,12 @@
       "action": "api::blog.blog.findOne"
     },
     {
+      "action": "api::brand-button.brand-button.find"
+    },
+    {
+      "action": "api::brand-button.brand-button.findOne"
+    },
+    {
       "action": "api::card-table-content.card-table-content.createLocalization"
     },
     {
@@ -242,6 +248,12 @@
     },
     {
       "action": "api::segmented-button.segmented-button.findOne"
+    },
+    {
+      "action": "api::selector-list.selector-list.find"
+    },
+    {
+      "action": "api::selector-list.selector-list.findOne"
     },
     {
       "action": "api::step.step.find"

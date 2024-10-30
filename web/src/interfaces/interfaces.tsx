@@ -184,6 +184,8 @@ export interface InsideSectionsModel extends CardModel {
   list?: any
   segmentedButton?: any
   table?: any
+  selector_lists?: any
+  brand_buttons?: any
 }
 
 export interface LocalizationsModel {
@@ -414,4 +416,14 @@ export interface HeadingModel {
   segmentedButton?: any
   list?: any
   table?: any
+}
+
+export interface SelectorModel {
+  index: number
+  idSelector?: string
+  title?: string
+  content?: any
+  showSelector?: boolean
+  selected: boolean
+  showItem: (x: number) => void
 }

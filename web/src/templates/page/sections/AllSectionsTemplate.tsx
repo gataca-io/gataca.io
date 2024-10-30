@@ -26,6 +26,8 @@ import ActionCard from "./components/shared/actionCard/ActionCard"
 import ListGroup from "./components/shared/list/listGroup/ListGroup"
 import SubHeading from "./components/shared/subHeading/SubHeading"
 import Heading from "./components/shared/Heading/Heading"
+import SelectorList from "./components/generic/selectorList/SelectorList"
+import BrandButton from "./components/generic/brandButton/BrandButton"
 
 const AllSectionsTemplate: React.FC<PageModel> = props => {
   const [benefitsLoaded, setBenefitsLoaded] = React.useState<boolean>(false)
@@ -95,6 +97,8 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
           list,
           segmentedButton,
           table,
+          selector_lists,
+          brand_buttons,
         } = item
 
         return (
@@ -272,6 +276,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
               >
                 <ButtonGroup
                   buttonGroup={buttons?.data}
+                  brandButtonGroup={brand_buttons?.data}
                   key={`button_group_` + Math.random()}
                 />
               </section>
@@ -440,6 +445,16 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
                     action: () => window.open(button?.url, "_blank"),
                   }}
                   key={`heading_` + Math.random()}
+                />
+              </section>
+            )}
+            {__component === "generic.selector-list" && (
+              <section
+                className={`${styles?.container} ${cx("containerMaxWidth")}`}
+              >
+                <SelectorList
+                  list={selector_lists?.data}
+                  key={`list_group` + Math.random()}
                 />
               </section>
             )}
