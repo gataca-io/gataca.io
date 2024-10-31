@@ -1,0 +1,98 @@
+{
+  "key": "plugin_content_manager_configuration_components::shared.card-container",
+  "value": {
+    "uid": "shared.card-container",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "idSection",
+      "defaultSortBy": "idSection",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "idSection": {
+        "edit": {
+          "label": "idSection",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "idSection",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "columns": {
+        "edit": {
+          "label": "columns",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "columns",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "card": {
+        "edit": {
+          "label": "card",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "idCard"
+        },
+        "list": {
+          "label": "card",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "idSection",
+        "columns",
+        "card"
+      ],
+      "edit": [
+        [
+          {
+            "name": "idSection",
+            "size": 6
+          },
+          {
+            "name": "columns",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "card",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

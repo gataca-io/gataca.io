@@ -64,6 +64,12 @@
       "action": "api::card-table-content.card-table-content.findOne"
     },
     {
+      "action": "api::card.card.find"
+    },
+    {
+      "action": "api::card.card.findOne"
+    },
+    {
       "action": "api::category.category.find"
     },
     {

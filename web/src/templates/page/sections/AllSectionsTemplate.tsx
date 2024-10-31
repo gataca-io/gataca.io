@@ -21,12 +21,12 @@ import ButtonIcon from "./components/generic/buttonIcon/ButtonIcon"
 import SegmentedButtonsContainer from "./components/generic/segmentedButtons/SegmentedButtonsContainer"
 import ButtonGroup from "./components/generic/buttonGroup/ButtonGroup"
 import ChipGroup from "./components/generic/chipGroup/ChipGroup"
-import CardComponent from "./components/shared/card/Card"
 import ActionCard from "./components/shared/actionCard/ActionCard"
 import ListGroup from "./components/shared/list/listGroup/ListGroup"
 import SelectorList from "./components/generic/selectorList/SelectorList"
 import HeaderContainer from "./components/shared/headerContainer/HeaderContainer"
 import SubHeadingContainer from "./components/shared/subHeadingContainer/SubHeadingContainer"
+import MainCardContainer from "./components/shared/MainCardContainer/MainCardContainer"
 
 const AllSectionsTemplate: React.FC<PageModel> = props => {
   const [benefitsLoaded, setBenefitsLoaded] = React.useState<boolean>(false)
@@ -71,8 +71,6 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
           noPaddingText,
           buttons,
           chip_options,
-          numberIconText,
-          mainIcon,
           button,
           chip,
           upperIconOpened,
@@ -80,11 +78,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
           trailingIcon,
           titleCard,
           titleContent,
-          contentAlign,
-          dynamicCard,
-          moreContent,
           list_options,
-          idCard,
           idActionCard,
           selector_lists,
           brand_buttons,
@@ -93,6 +87,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
           subHeading,
           columns,
           idSection,
+          card,
         } = item
 
         return (
@@ -294,50 +289,13 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
                 />
               </section>
             )}
-            {__component === "shared.card" && (
-              <section
-                className={`${styles?.container} ${cx("containerMaxWidth")}`}
-              >
-                <CardComponent
-                  idCard={idCard}
-                  dynamicCard={dynamicCard}
-                  upperIconOpened={upperIconOpened}
-                  upperIconClosed={upperIconClosed}
-                  numberIconText={numberIconText}
-                  mainIcon={mainIcon}
-                  title={title}
-                  content={content}
-                  size={size}
-                  contentAlign={contentAlign}
-                  moreContent={moreContent}
-                  button={{
-                    idButton: button?.idButton,
-                    label: button?.label,
-                    icon: button?.icon,
-                    style: button?.style,
-                    color: button?.color,
-                    size: button?.size,
-                    noPaddingText: button?.noPaddingText,
-                    disabled: button?.disabled,
-                    link: button?.link,
-                    url: button?.url,
-                    outsideWeb: button?.outsideWeb,
-                    action: () => window.open(button?.url, "_blank"),
-                  }}
-                  chip={{
-                    idChip: chip?.idChip,
-                    text: chip?.text,
-                    type: chip?.type,
-                    form: chip?.form,
-                    disabled: chip?.disabled,
-                    color: chip?.color,
-                    chipSize: chip?.chipSize,
-                    leadingIcon: chip?.leadingIcon,
-                    trailingIcon: chip?.trailingIcon,
-                  }}
-                  key={`card_` + Math.random()}
-                />
-              </section>
+            {__component === "shared.card-container" && (
+              <MainCardContainer
+                idSection={idSection}
+                columns={columns}
+                card={card?.data?.attributes?.card}
+                key={`cardContainer__` + Math.random()}
+              />
             )}
             {__component === "shared.action-card" && (
               <section
