@@ -41,7 +41,7 @@ const FirstSection: React.FC<ISectionProps> = props => {
       )}`}
     >
       <div className={styles?.header}>
-        <h1 className={`${cx("heading1 marginBottom32")}`}>{title}</h1>
+        <h1 className={`${cx("heading1 marginBottom32")}`}>Certifications</h1>
         <p className={`${cx("bodyRegularXL neutral700")}`}>{description}</p>
       </div>
 

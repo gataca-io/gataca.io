@@ -32,27 +32,28 @@ const FirstSection: React.FC<ISectionProps> = props => {
       <div className={styles.firstSection__content}>
         <div className={styles.leftColumn}>
           <div className={cx("marginBottom32")}>
-            <h1 className={`${cx("heading1 marginBottom32")}`}>{title}</h1>
+            <h1 className={`${cx("heading1 marginBottom32")}`}>
+              Gataca Partnership Program
+            </h1>
 
-            {(!Array.isArray(descriptionParagraphs) && typeof descriptionParagraphs === "string" ? (
-                <p
-                  className={`${cx("bodyRegularXL neutral700")}`}
-                >
-                  {descriptionParagraphs}
-                </p>
-              ) : (
-                Array.isArray(descriptionParagraphs) &&
-                descriptionParagraphs?.map((el: string, index: number) => {
-                  return (
-                    <p
-                      key={"paragraph" + index}
-                      className={`${cx("bodyRegularXL neutral700")}`}
-                    >
-                      {el}
-                    </p>
-                  )
-                })
-              ))}
+            {!Array.isArray(descriptionParagraphs) &&
+            typeof descriptionParagraphs === "string" ? (
+              <p className={`${cx("bodyRegularXL neutral700")}`}>
+                {descriptionParagraphs}
+              </p>
+            ) : (
+              Array.isArray(descriptionParagraphs) &&
+              descriptionParagraphs?.map((el: string, index: number) => {
+                return (
+                  <p
+                    key={"paragraph" + index}
+                    className={`${cx("bodyRegularXL neutral700")}`}
+                  >
+                    {el}
+                  </p>
+                )
+              })
+            )}
           </div>
 
           <PurpleButton

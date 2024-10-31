@@ -17,7 +17,7 @@ const FirstSection: React.FC<ISectionProps> = props => {
   return (
     <section className={`${styles?.headerSection} ${cx("containerMaxWidth")}`}>
       <div className={styles?.headerSection__container}>
-        <h1 className={cx("heading1 marginBottom32")}>{title}</h1>
+        <h1 className={cx("heading1 marginBottom32")}>Web3</h1>
         <p className={`${styles?.maxWidth} ${cx("bodyRegularXL neutral700")}`}>
           {description}
         </p>
