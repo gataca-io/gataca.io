@@ -30,14 +30,22 @@
   }
 }
 
-.header__leftSide {
+.headerMaxWidth {
   margin: 0px 0 80px;
   width: 100%;
 
   @include min-width($tabletMD) {
-    max-width: 576px;
-    width: 48%;
     margin: 0 auto 0 0;
+  }
+  &.header__leftSide {
+    @include min-width($tabletMD) {
+      width: calc(53% - 40px);
+      margin: 0 auto 0 0;
+    }
+  
+    @include min-width($desktopMD) {
+      width: calc(48% - 40px);
+    }
   }
 
   &>p {
@@ -71,11 +79,11 @@
     position: inherit;
     margin-bottom: auto;
     height: 100%;
-    width: calc(47% - 60px)
+    width: calc(47% - 40px);
   }
 
   @include min-width($desktopMD) {
-    width: calc(52% - 60px)
+    width: calc(52% - 40px);
   }
 
   .header__imageContainer {

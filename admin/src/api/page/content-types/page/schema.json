@@ -45,8 +45,9 @@
         "shared.action-card",
         "shared.list-group",
         "shared.sub-heading",
-        "shared.heading",
-        "generic.selector-list"
+        "generic.selector-list",
+        "shared.header-container",
+        "shared.sub-heading-container"
       ],
       "pluginOptions": {
         "i18n": {

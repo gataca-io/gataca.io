@@ -173,19 +173,14 @@ export interface InsideSectionsModel extends CardModel {
   dynamicCard?: boolean
   moreContent?: string
   list_options?: any
-  idSubHeading?: string
-  align?: string
   idActionCard?: string
-  idHeading?: string
-  titleSize?: string
-  extraText?: string
-  sectionName?: string
-  buttonGroup?: any
-  list?: any
-  segmentedButton?: any
-  table?: any
   selector_lists?: any
   brand_buttons?: any
+  heading?: any
+  image?: any
+  subHeading?: any
+  columns?: string
+  idSection?: string
 }
 
 export interface LocalizationsModel {
@@ -426,4 +421,16 @@ export interface SelectorModel {
   showSelector?: boolean
   selected: boolean
   showItem: (x: number) => void
+}
+
+export interface HeaderContainerModel {
+  idHeader?: string
+  heading: HeadingModel
+  image?: any
+}
+
+export interface SubHeadingContainerModel {
+  idSection?: string
+  subHeading: SubHeadingModel[]
+  columns?: string
 }
