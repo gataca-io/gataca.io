@@ -36,7 +36,7 @@ const PageTemplate: React.FC = (props: any) => {
   return (
     <Layout seoData={pageData?.seo}>
       <>
-        {/* <LocaleLink pageContext={props?.pageContext} /> */}
+        <LocaleLink pageContext={props?.pageContext} />
         {pageData ? <AllSectionsTemplate {...pageData} /> : <PageSkeleton />}
         {pageData?.sections?.map(item => {
           const { __component, title, description, rightButton, leftButton } =
