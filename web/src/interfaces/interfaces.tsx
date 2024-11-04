@@ -180,7 +180,7 @@ export interface InsideSectionsModel {
   image?: StrapiImageModel
   subHeading?: any
   columns?: string
-  idSection?: string
+  idItem?: string
   card?: any
   button?: ButtonModel
   chip?: ChipModel
@@ -437,13 +437,13 @@ export interface HeaderContainerModel {
 }
 
 export interface SubHeadingContainerModel {
-  idSection?: string
+  idItem?: string
   subHeading: SubHeadingModel[]
   columns?: string
 }
 
 export interface MainCardContainerModel {
-  idSection?: string
+  idItem?: string
   card: CardModel[]
   columns?: string
 }

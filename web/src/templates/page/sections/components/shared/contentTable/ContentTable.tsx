@@ -40,7 +40,7 @@ const ContentTable: React.FC<ISectionProps> = props => {
   const [tableOfContentOpenedID, setTableOfContentOpened] = React.useState("")
 
   return (
-    <section className={`${styles?.contentTable} ${cx("containerMaxWidth")}`}>
+    <div className={`${styles?.contentTable} ${cx("containerMaxWidth")}`}>
       {tableOfContent?.map((item, index) => {
         return (
           <TableOfContentContainer
@@ -75,7 +75,7 @@ const ContentTable: React.FC<ISectionProps> = props => {
           )
         })}
       </div>
-    </section>
+    </div>
   )
 }
 

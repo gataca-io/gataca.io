@@ -5,7 +5,7 @@ import * as styles from "./subHeadingContainer.module.scss"
 import SubHeading from "../subHeading/SubHeading"
 
 const SubHeadingContainer: React.FC<SubHeadingContainerModel> = props => {
-  const { idSection, columns, subHeading } = props
+  const { idItem, columns, subHeading } = props
 
   const columnStyles: Record<string, string> = {
     one: styles?.oneColumn,
@@ -15,8 +15,8 @@ const SubHeadingContainer: React.FC<SubHeadingContainerModel> = props => {
   }
 
   return (
-    <section
-      id={idSection}
+    <div
+      id={idItem}
       className={`${styles.subHeading} ${cx("containerMaxWidth")} `}
     >
       <div
@@ -49,7 +49,7 @@ const SubHeadingContainer: React.FC<SubHeadingContainerModel> = props => {
           )
         })}
       </div>
-    </section>
+    </div>
   )
 }
 

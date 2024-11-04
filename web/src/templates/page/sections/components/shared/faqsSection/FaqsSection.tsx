@@ -40,7 +40,7 @@ const FaqsSection: React.FC<ISectionProps> = props => {
   }
 
   return (
-    <section className={`${styles?.faqsSection} ${cx("containerMaxWidth")}`}>
+    <div className={`${styles?.faqsSection} ${cx("containerMaxWidth")}`}>
       <div className={styles?.faqsSection__container}>
         <h6 className={` ${cx("heading6  neutral700 marginBottom6")}`}>
           {subtitle}
@@ -115,7 +115,7 @@ const FaqsSection: React.FC<ISectionProps> = props => {
           <StrapiImage image={hero ? hero : null} />
         </div>
       </div>
-    </section>
+    </div>
   )
 }
 

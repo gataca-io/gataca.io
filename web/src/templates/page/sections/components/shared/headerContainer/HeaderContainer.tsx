@@ -9,11 +9,12 @@ const HeaderContainer: React.FC<HeaderContainerModel> = props => {
   const { idHeader, heading, image } = props
 
   return (
-    <section className={styles.header} style={{ position: "relative" }}>
-      <div
-        id={idHeader}
-        className={`${styles.header__container} ${cx("containerMaxWidth")}`}
-      >
+    <div
+      id={idHeader}
+      className={`${styles.header}`}
+      style={{ position: "relative" }}
+    >
+      <div className={`${styles.header__container} ${cx("containerMaxWidth")}`}>
         <div className={`${styles.header__heading}`}>
           <Heading
             idHeading={heading?.idHeading}
@@ -64,7 +65,7 @@ const HeaderContainer: React.FC<HeaderContainerModel> = props => {
           </div>
         )}
       </div>
-    </section>
+    </div>
   )
 }
 

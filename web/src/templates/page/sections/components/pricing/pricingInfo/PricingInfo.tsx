@@ -111,7 +111,7 @@ const PricingInfo: React.FC<ISectionProps> = props => {
 
   return (
     <>
-      <section
+      <div
         id={"gatacaStudioFeatures"}
         className={`${styles?.pricingInfo} ${cx("containerMaxWidth")}`}
       >
@@ -215,7 +215,7 @@ const PricingInfo: React.FC<ISectionProps> = props => {
             </>
           )}
         </div>
-      </section>
+      </div>
     </>
   )
 }
