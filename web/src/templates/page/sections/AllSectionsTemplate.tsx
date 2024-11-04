@@ -2,7 +2,6 @@ import * as React from "react"
 import cx from "classnames"
 import * as styles from "./allSectionsTemplate.module.scss"
 import { PageModel } from "../../../interfaces/interfaces"
-import Header from "./components/generic/header/Header"
 import DoubleColTextImage from "./components/shared/doubleColTextImage/DoubleColTextImage"
 import Benefits from "./components/products/benefits/benefits"
 import DoubleColImageTextBg from "./components/shared/doubleColImageTextBg/DoubleColImageTextBg"
@@ -12,7 +11,6 @@ import FaqsSection from "./components/shared/faqsSection/FaqsSection"
 import ChosenBlogsSection from "./components/shared/chosenBlogsSection/ChosenBlogsSection"
 import LogosSlider from "./components/shared/logosSlider/LogosSlider"
 import Table from "./components/shared/table/Table"
-import CenteredHeader from "./components/generic/centeredHeader/CenteredHeader"
 import PricingInfo from "./components/pricing/pricingInfo/PricingInfo"
 import ContentHeadingContainer from "./components/generic/contentHeadingContainer/ContentHeadingContainer"
 import ContentTable from "./components/shared/contentTable/ContentTable"
@@ -92,27 +90,6 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
 
         return (
           <>
-            {/* The followings two components will be deleted after the changes of headerContainer are merged,
-            because this one replaces both components */}
-            {__component === "generic.header" && (
-              <Header
-                id={id}
-                title={title}
-                description={description}
-                cta={cta}
-                hero={hero}
-                key={`header_` + Math.random()}
-              />
-            )}
-            {__component === "generic.centered-header" && (
-              <CenteredHeader
-                id={id}
-                title={title}
-                description={description}
-                cta={cta}
-                key={`centered_header_` + Math.random()}
-              />
-            )}
             {__component === "shared.header-container" && (
               <HeaderContainer
                 heading={heading?.data?.attributes?.heading}
