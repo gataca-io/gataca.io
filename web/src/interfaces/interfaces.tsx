@@ -164,24 +164,24 @@ export interface InsideSectionsModel {
   noPaddingText?: boolean
   buttons?: any
   chip_options?: any
-  upperIconOpened?: any
-  upperIconClosed?: any
-  trailingIcon?: any
+  upperIconOpened?: StrapiImageModel
+  upperIconClosed?: StrapiImageModel
+  trailingIcon?: StrapiImageModel
   titleCard?: string
   titleContent?: string
   contentAlign?: string
   dynamicCard?: boolean
   moreContent?: string
-  list_options?: any
+  list_options?: ListModel
   idActionCard?: string
-  selector_lists?: any
+  selector_lists?: ListModel
   brand_buttons?: any
   heading?: any
-  image?: any
+  image?: StrapiImageModel
   subHeading?: any
   columns?: string
   idSection?: string
-  card?: MainCardContainerModel
+  card?: any
   button?: ButtonModel
   chip?: ChipModel
 }
@@ -431,6 +431,9 @@ export interface HeaderContainerModel {
   idHeader?: string
   heading: HeadingModel
   image?: any
+  data?: {
+    attributes?: []
+  }
 }
 
 export interface SubHeadingContainerModel {

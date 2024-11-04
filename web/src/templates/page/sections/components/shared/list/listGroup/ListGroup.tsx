@@ -30,7 +30,7 @@ const ListGroup: React.FC<IListGroupProps> = props => {
     <div
       className={`${styles?.listGroup__container} ${className && className}`}
     >
-      {listOptions?.map((item: any, index: number) => {
+      {listOptions?.data?.map((item: any, index: number) => {
         const { list, title, spacing, titleFontSize, titleFontWeight } =
           item?.attributes
 

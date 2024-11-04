@@ -343,7 +343,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
                 className={`${styles?.container} ${cx("containerMaxWidth")}`}
               >
                 <ListGroup
-                  listOptions={list_options?.data}
+                  listOptions={list_options}
                   key={`list_group` + Math.random()}
                 />
               </section>
@@ -361,7 +361,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
                 className={`${styles?.container} ${cx("containerMaxWidth")}`}
               >
                 <SelectorList
-                  list={selector_lists?.data}
+                  list={selector_lists}
                   key={`list_group` + Math.random()}
                 />
               </section>

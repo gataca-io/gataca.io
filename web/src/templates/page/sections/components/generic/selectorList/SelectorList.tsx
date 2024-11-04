@@ -35,7 +35,7 @@ const SelectorList: React.FC<ISelectorListProps> = props => {
       >
         <div className={styles?.selectorList__leftSide}>
           <div id="bullets" className={styles?.selectorList__leftSide__bullets}>
-            {list?.map((item: any, index: number) => {
+            {list?.data?.map((item: any, index: number) => {
               const { selector } = item?.attributes
 
               return selector?.map((el: any, index: number) => {
