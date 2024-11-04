@@ -30,6 +30,69 @@ const ContentHeadingList: React.FC<ISectionProps> = props => {
         const { idContent, title, content, media, titleSize, table } =
           item.attributes
 
+        const getmediaExt = () => {
+          let divContent = null
+          const mediaExt = media?.data?.attributes?.ext
+          const videoContent = (
+            <div className={cx("marginBottom32")}>
+              <video src={media?.data?.attributes?.url} controls></video>
+            </div>
+          )
+          const imageContent = (
+            <div className={cx("marginBottom32")}>
+              <StrapiImage image={media ? media : null} />
+            </div>
+          )
+
+          if (mediaExt) {
+            switch (mediaExt) {
+              case ".png":
+                divContent = imageContent
+                break
+              case ".jpeg":
+                divContent = imageContent
+                break
+              case ".gif":
+                divContent = imageContent
+                break
+              case ".scg":
+                divContent = imageContent
+                break
+              case ".tiff":
+                divContent = imageContent
+                break
+              case ".ico":
+                divContent = imageContent
+                break
+              case ".dvu":
+                divContent = imageContent
+                break
+              case ".mp4":
+                divContent = videoContent
+                break
+              case ".mpeg":
+                divContent = videoContent
+                break
+              case ".mov":
+                divContent = videoContent
+                break
+              case ".wmv":
+                divContent = videoContent
+                break
+              case ".avi":
+                divContent = videoContent
+                break
+              case ".flv":
+                divContent = videoContent
+                break
+              default:
+                divContent = null
+            }
+          }
+
+          return divContent
+        }
+
         return (
           <div id={idContent} key={`content_` + idContent}>
             {titleSize === "small" && (
@@ -44,29 +107,7 @@ const ContentHeadingList: React.FC<ISectionProps> = props => {
 
             {content && <MarkDownContent content={content} />}
 
-            {media && (
-              <>
-                {media?.data?.attributes?.ext ===
-                (".png" ||
-                  ".jpeg" ||
-                  ".gif" ||
-                  ".scg" ||
-                  ".tiff" ||
-                  ".ico" ||
-                  ".dvu") ? (
-                  <div className={cx("marginBottom32")}>
-                    <StrapiImage image={media ? media : null} />
-                  </div>
-                ) : null}
-
-                {media?.data?.attributes?.ext ===
-                (".mp4" || ".mpeg" || ".mov" || "wmv" || ".avi" || ".flv") ? (
-                  <div className={cx("marginBottom32")}>
-                    <video src={media?.data?.attributes?.url} controls></video>
-                  </div>
-                ) : null}
-              </>
-            )}
+            {media && getmediaExt()}
             {table?.content && (
               <Table className={tableClassName} content={table?.content} />
             )}

@@ -18,7 +18,7 @@ const ChosenBlogsSection: React.FC<ISectionProps> = props => {
       className={styles.chosenBlogsSection__container}
       style={{ position: "relative" }}
     >
-      <section
+      <div
         className={`${styles.chosenBlogsSection} ${cx("containerMaxWidth")}`}
       >
         <div className={styles.chosenBlogsSection__leftSide}>
@@ -51,7 +51,7 @@ const ChosenBlogsSection: React.FC<ISectionProps> = props => {
             )}
           </div>
         </div>
-      </section>
+      </div>
     </div>
   )
 }

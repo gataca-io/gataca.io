@@ -6,7 +6,7 @@
   },
   "options": {},
   "attributes": {
-    "idSection": {
+    "idItem": {
       "type": "string"
     },
     "subHeading": {

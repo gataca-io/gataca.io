@@ -8,7 +8,7 @@ const DoubleColTextImage: React.FC<InsideSectionsModel> = props => {
   const { id, title, description, hero } = props
 
   return (
-    <section
+    <div
       key={`doubleColTextImage_` + id}
       className={`${styles.doubleColTextImage} ${cx("containerMaxWidth")}`}
     >
@@ -30,7 +30,7 @@ const DoubleColTextImage: React.FC<InsideSectionsModel> = props => {
           />
         </div>
       </div>
-    </section>
+    </div>
   )
 }
 

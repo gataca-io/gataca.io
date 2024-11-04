@@ -40,9 +40,7 @@ const ListOpensHover: React.FC<ISectionProps> = props => {
       className={styles.listOpensHover__container}
       style={{ position: "relative" }}
     >
-      <section
-        className={`${styles.listOpensHover} ${cx("containerMaxWidth")}`}
-      >
+      <div className={`${styles.listOpensHover} ${cx("containerMaxWidth")}`}>
         <div className={styles.listOpensHover__leftSide}>
           <h3 className={`${cx("heading3")}`}>{title}</h3>
 
@@ -91,7 +89,7 @@ const ListOpensHover: React.FC<ISectionProps> = props => {
           </div>
         </div>
         <div className={styles.listOpensHover__rightSide}></div>
-      </section>
+      </div>
     </div>
   )
 }

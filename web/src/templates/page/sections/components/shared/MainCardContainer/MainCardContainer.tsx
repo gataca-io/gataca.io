@@ -5,7 +5,7 @@ import * as styles from "./mainCardContainer.module.scss"
 import Card from "../card/Card"
 
 const MainCardContainer: React.FC<MainCardContainerModel> = props => {
-  const { idSection, columns, card } = props
+  const { idItem, columns, card } = props
 
   const columnStyles: Record<string, string> = {
     one: styles?.oneColumn,
@@ -15,10 +15,7 @@ const MainCardContainer: React.FC<MainCardContainerModel> = props => {
   }
 
   return (
-    <section
-      id={idSection}
-      className={`${styles.card} ${cx("containerMaxWidth")} `}
-    >
+    <div id={idItem} className={`${styles.card} ${cx("containerMaxWidth")} `}>
       <div
         className={`${styles.card__container} ${cx(
           columns ? columnStyles[columns] : ""
@@ -85,7 +82,7 @@ const MainCardContainer: React.FC<MainCardContainerModel> = props => {
           )
         })}
       </div>
-    </section>
+    </div>
   )
 }
 

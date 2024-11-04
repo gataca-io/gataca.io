@@ -12,13 +12,13 @@ const Table: React.FC<ISectionProps> = props => {
 
   return (
     <>
-      <section
+      <div
         className={`${styles?.tableContainer} ${cx("containerMaxWidth")} ${
           className && className
         }`}
       >
         {content?.length && <MarkDownContent content={content} />}
-      </section>
+      </div>
     </>
   )
 }

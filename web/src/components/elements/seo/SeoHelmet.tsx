@@ -25,7 +25,14 @@ export const SeoHelmet: React.FC<SeoModel> = props => {
       {!!canonicalURL?.length && <link rel="canonical" href={canonicalURL} />}
       {alternateURL?.data?.map(item => {
         const { url, hreflangLocale } = item.attributes
-        return <link rel="alternate" href={url} hreflang={hreflangLocale} />
+        return (
+          <link
+            key={"hrefLangLocale__" + Math.random()}
+            rel="alternate"
+            href={url}
+            hreflang={hreflangLocale}
+          />
+        )
       })}
 
       {!!keywords?.length && <meta name="keywords" content={keywords} />}

@@ -33,7 +33,7 @@ const Benefits: React.FC<ISectionProps> = props => {
       style={{ position: "relative" }}
       key={`benefits_` + id}
     >
-      <section className={`${styles.benefits} ${cx("containerMaxWidth")}`}>
+      <div className={`${styles.benefits} ${cx("containerMaxWidth")}`}>
         <div className={`${styles.benefits__leftSide}`}>
           <StrapiImage
             className={styles.benefits__imageContainer}
@@ -58,7 +58,7 @@ const Benefits: React.FC<ISectionProps> = props => {
             })}
           </div>
         </div>
-      </section>
+      </div>
     </div>
   )
 }

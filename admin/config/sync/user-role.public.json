@@ -115,9 +115,6 @@
       "action": "api::content.content.findOne"
     },
     {
-      "action": "api::cookie-policy.cookie-policy.find"
-    },
-    {
       "action": "api::credential.credential.find"
     },
     {
@@ -217,12 +214,6 @@
       "action": "api::pricing-category.pricing-category.findOne"
     },
     {
-      "action": "api::pricing.pricing.find"
-    },
-    {
-      "action": "api::privacy-policy.privacy-policy.find"
-    },
-    {
       "action": "api::property.property.find"
     },
     {
@@ -278,9 +269,6 @@
     },
     {
       "action": "api::success-story.success-story.findOne"
-    },
-    {
-      "action": "api::terms-of-use.terms-of-use.find"
     },
     {
       "action": "api::tier-table.tier-table.find"

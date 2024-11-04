@@ -7,8 +7,8 @@
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "idSection",
-      "defaultSortBy": "idSection",
+      "mainField": "idItem",
+      "defaultSortBy": "idItem",
       "defaultSortOrder": "ASC"
     },
     "metadatas": {
@@ -20,16 +20,16 @@
           "sortable": false
         }
       },
-      "idSection": {
+      "idItem": {
         "edit": {
-          "label": "idSection",
+          "label": "idItem",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "idSection",
+          "label": "idItem",
           "searchable": true,
           "sortable": true
         }
@@ -67,14 +67,14 @@
     "layouts": {
       "list": [
         "id",
-        "idSection",
         "columns",
-        "card"
+        "card",
+        "idItem"
       ],
       "edit": [
         [
           {
-            "name": "idSection",
+            "name": "idItem",
             "size": 6
           },
           {

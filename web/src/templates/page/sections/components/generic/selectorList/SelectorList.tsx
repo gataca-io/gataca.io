@@ -35,34 +35,30 @@ const SelectorList: React.FC<ISelectorListProps> = props => {
       >
         <div className={styles?.selectorList__leftSide}>
           <div id="bullets" className={styles?.selectorList__leftSide__bullets}>
-            {list?.map((item: any, index: number) => {
+            {list?.data?.map((item: any, index: number) => {
               const { selector } = item?.attributes
 
-              return (
-                <>
-                  {selector?.map((el: any, index: number) => {
-                    const { title, content, showSelector } = el
+              return selector?.map((el: any, index: number) => {
+                const { title, content, showSelector } = el
 
-                    return (
-                      <Selector
-                        idSelector={"listItem__" + index}
-                        key={"selector__" + index}
-                        index={index + 1}
-                        title={title}
-                        content={content}
-                        showSelector={showSelector}
-                        selected={openItem === index + 1}
-                        showItem={index => {
-                          const element = document.getElementById(
-                            "listItem__" + (index - 1)
-                          )
-                          setOpenItem(index), element && scrollIntoView(element)
-                        }}
-                      />
-                    )
-                  })}
-                </>
-              )
+                return (
+                  <Selector
+                    idSelector={"listItem__" + index}
+                    key={"selector__" + index}
+                    index={index + 1}
+                    title={title}
+                    content={content}
+                    showSelector={showSelector}
+                    selected={openItem === index + 1}
+                    showItem={index => {
+                      const element = document.getElementById(
+                        "listItem__" + (index - 1)
+                      )
+                      setOpenItem(index), element && scrollIntoView(element)
+                    }}
+                  />
+                )
+              })
             })}
           </div>
         </div>

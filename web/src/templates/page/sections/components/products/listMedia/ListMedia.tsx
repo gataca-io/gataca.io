@@ -37,7 +37,7 @@ const ListMedia: React.FC<ISectionProps> = props => {
 
   return (
     <div style={{ position: "relative" }}>
-      <section className={styles.listMedia}>
+      <div className={styles.listMedia}>
         <div
           className={`${cx("heading3")} ${styles.listMedia__leftSide}`}
           id="leftSide"
@@ -90,7 +90,7 @@ const ListMedia: React.FC<ISectionProps> = props => {
             )
           })}
         </div>
-      </section>
+      </div>
     </div>
   )
 }

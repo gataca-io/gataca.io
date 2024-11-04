@@ -30,52 +30,48 @@ const ListGroup: React.FC<IListGroupProps> = props => {
     <div
       className={`${styles?.listGroup__container} ${className && className}`}
     >
-      {listOptions?.map((item: any, index: number) => {
+      {listOptions?.data?.map((item: any, index: number) => {
         const { list, title, spacing, titleFontSize, titleFontWeight } =
           item?.attributes
 
         return (
-          <>
-            <div
-              key={"listOption__" + index}
-              className={`${styles?.listGroup} ${cx(
-                spacing ? spacingStyles[spacing] : styles?.spacingSmall
+          <div
+            key={"listOption__" + index}
+            className={`${styles?.listGroup} ${cx(
+              spacing ? spacingStyles[spacing] : styles?.spacingSmall
+            )}`}
+          >
+            <p
+              className={`${styles.titleHeader} ${cx(
+                titleFontSize ? titleSizeStyles[titleFontSize] : "bodyRegularLG"
+              )} ${cx(
+                titleFontWeight ? titleFontWeightStyles[titleFontWeight] : ""
               )}`}
             >
-              <p
-                className={`${styles.titleHeader} ${cx(
-                  titleFontSize
-                    ? titleSizeStyles[titleFontSize]
-                    : "bodyRegularLG"
-                )} ${cx(
-                  titleFontWeight ? titleFontWeightStyles[titleFontWeight] : ""
-                )}`}
-              >
-                {title}
-              </p>
-              <div
-                key={"listOptions__" + Math.random()}
-                className={styles?.listOptions}
-              >
-                {list?.map((el: any, index: number) => {
-                  const { idList, size, title, leadingIcon, extraInfo, color } =
-                    el
+              {title}
+            </p>
+            <div
+              key={"listOptions__" + Math.random()}
+              className={styles?.listOptions}
+            >
+              {list?.map((el: any, index: number) => {
+                const { idList, size, title, leadingIcon, extraInfo, color } =
+                  el
 
-                  return (
-                    <List
-                      idList={idList}
-                      key={"list__" + index}
-                      size={size}
-                      title={title}
-                      leadingIcon={leadingIcon}
-                      extraInfo={extraInfo}
-                      color={color}
-                    />
-                  )
-                })}
-              </div>
+                return (
+                  <List
+                    idList={idList}
+                    key={"list__" + index}
+                    size={size}
+                    title={title}
+                    leadingIcon={leadingIcon}
+                    extraInfo={extraInfo}
+                    color={color}
+                  />
+                )
+              })}
             </div>
-          </>
+          </div>
         )
       })}
     </div>
