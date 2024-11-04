@@ -1,11 +1,9 @@
 import React from "react"
-import { navigate } from "gatsby"
 import Layout from "../../components/templates/mainLayout/MainLayout"
-import PreFooterCTASection from "../../components/templates/sections/preFooterCTA/PreFooterCTA"
+import Highlight from "./sections/components/shared/Highlight/Highlight"
 import { PageModel } from "../../interfaces/interfaces"
 import PageSkeleton from "./components/introBlogSkeleton/PageSkeleton"
 import AllSectionsTemplate from "./sections/AllSectionsTemplate"
-import * as styles from "./pageTemplate.module.scss"
 import LocaleLink from "./components/localeLink/LocaleLink"
 
 const PageTemplate: React.FC = (props: any) => {
@@ -39,52 +37,16 @@ const PageTemplate: React.FC = (props: any) => {
         <LocaleLink pageContext={props?.pageContext} />
         {pageData ? <AllSectionsTemplate {...pageData} /> : <PageSkeleton />}
         {pageData?.sections?.map(item => {
-          const { __component, title, description, rightButton, leftButton } =
-            item
+          const { __component, idItem, heading, color, align } = item
 
           return (
-            __component === "generic.prefooter" && (
-              <PreFooterCTASection
-                key={"preFooter__" + Math.random()}
-                className={styles.prefooter}
-                title={title}
-                description={description}
-                rightButton={{
-                  idButton: rightButton?.label,
-                  label: rightButton?.label,
-                  icon: rightButton?.icon,
-                  style: rightButton?.style,
-                  color: rightButton?.color,
-                  size: rightButton?.size,
-                  noPaddingText: rightButton?.noPaddingText,
-                  disabled: rightButton?.disabled,
-                  link: rightButton?.link,
-                  url: rightButton?.url,
-                  outsideWeb: rightButton?.outsideWeb,
-                  action: () =>
-                    window?.open(
-                      rightButton?.url,
-                      rightButton?.outsideWeb ? "_blank" : "_self"
-                    ),
-                }}
-                leftButton={{
-                  idButton: leftButton?.label,
-                  label: leftButton?.label,
-                  icon: leftButton?.icon,
-                  style: leftButton?.style,
-                  color: leftButton?.color,
-                  size: leftButton?.size,
-                  noPaddingText: leftButton?.noPaddingText,
-                  disabled: leftButton?.disabled,
-                  link: leftButton?.link,
-                  url: leftButton?.url,
-                  outsideWeb: leftButton?.outsideWeb,
-                  action: () =>
-                    window?.open(
-                      leftButton?.url,
-                      leftButton?.outsideWeb ? "_blank" : "_self"
-                    ),
-                }}
+            __component === "shared.highlight" && (
+              <Highlight
+                key={"highlight__" + Math.random()}
+                idItem={idItem}
+                heading={heading?.data?.attributes?.heading}
+                color={color}
+                align={align}
               />
             )
           )

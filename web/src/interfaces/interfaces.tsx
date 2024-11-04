@@ -170,6 +170,7 @@ export interface InsideSectionsModel {
   titleCard?: string
   titleContent?: string
   contentAlign?: string
+  align?: string
   dynamicCard?: boolean
   moreContent?: string
   list_options?: ListModel
