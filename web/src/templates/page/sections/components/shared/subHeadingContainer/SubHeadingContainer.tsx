@@ -36,18 +36,16 @@ const SubHeadingContainer: React.FC<SubHeadingContainerModel> = props => {
           } = item
 
           return (
-            <>
-              <SubHeading
-                idSubHeading={idSubHeading}
-                size={size}
-                align={align}
-                numberIconText={numberIconText}
-                icon={icon}
-                title={title}
-                content={content}
-                key={`subHeading__` + index}
-              />
-            </>
+            <SubHeading
+              idSubHeading={idSubHeading}
+              size={size}
+              align={align}
+              numberIconText={numberIconText}
+              icon={icon}
+              title={title}
+              content={content}
+              key={`subHeading__` + index}
+            />
           )
         })}
       </div>

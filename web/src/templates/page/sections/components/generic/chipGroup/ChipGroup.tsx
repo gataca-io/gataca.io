@@ -19,26 +19,24 @@ const ChipGroup: React.FC<IChipGroupProps> = props => {
           const { chip } = item.attributes
 
           return (
-            <>
-              <SegmentedChip
-                id={"segmentedChip__" + index}
-                key={"segmentedChip__" + index}
-                index={index + 1}
-                text={chip?.text}
-                type={chip?.type}
-                form={chip?.form}
-                disabled={chip?.disabled}
-                color={chip?.color}
-                chipSize={chip?.chipSize}
-                leadingIcon={chip?.leadingIcon}
-                trailingIcon={chip?.trailingIcon}
-                selected={openItem === index + 1}
-                showItem={index => {
-                  const element = index - 1
-                  setOpenItem(index), element
-                }}
-              />
-            </>
+            <SegmentedChip
+              id={"segmentedChip__" + index}
+              key={"segmentedChip__" + index}
+              index={index + 1}
+              text={chip?.text}
+              type={chip?.type}
+              form={chip?.form}
+              disabled={chip?.disabled}
+              color={chip?.color}
+              chipSize={chip?.chipSize}
+              leadingIcon={chip?.leadingIcon}
+              trailingIcon={chip?.trailingIcon}
+              selected={openItem === index + 1}
+              showItem={index => {
+                const element = index - 1
+                setOpenItem(index), element
+              }}
+            />
           )
         })}
       </div>
@@ -52,17 +50,13 @@ const ChipGroup: React.FC<IChipGroupProps> = props => {
               const { content } = item.attributes
 
               return (
-                <>
-                  <div key={"chipContent__" + index}>
-                    {openItem === index + 1 ? (
-                      <>
-                        {content?.length && (
-                          <MarkDownContent content={content} />
-                        )}
-                      </>
-                    ) : null}
-                  </div>
-                </>
+                <div key={"chipContent__" + index}>
+                  {openItem === index + 1 ? (
+                    <>
+                      {content?.length && <MarkDownContent content={content} />}
+                    </>
+                  ) : null}
+                </div>
               )
             })}
           </div>

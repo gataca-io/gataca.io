@@ -44,25 +44,22 @@ const LocaleLink: React.FC<ILocaleLinkProps> = props => {
       {termsPages?.map(item => {
         const { slug, localeURL } = item
 
-        return (
-          <>
-            {slug ? (
-              <div
-                className={`${styles?.localeLink} ${cx("containerMaxWidth")}`}
-              >
-                <Button
-                  link
-                  label={localeText}
-                  idButton={"localeLink__"}
-                  style={"text"}
-                  url={localeType === "en" ? "/es" + localeURL : localeURL}
-                  color={"black"}
-                  noPaddingText
-                />
-              </div>
-            ) : null}
-          </>
-        )
+        return slug ? (
+          <div
+            key={"localeLink__" + Math.random()}
+            className={`${styles?.localeLink} ${cx("containerMaxWidth")}`}
+          >
+            <Button
+              link
+              label={localeText}
+              idButton={"localeLink__"}
+              style={"text"}
+              url={localeType === "en" ? "/es" + localeURL : localeURL}
+              color={"black"}
+              noPaddingText
+            />
+          </div>
+        ) : null
       })}
     </>
   )
