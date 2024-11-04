@@ -6024,7 +6024,6 @@
             "shared.blog-section",
             "wallet.how-section",
             "generic.prefooter",
-            "shared.slider",
             "generic.table",
             "pricing.cloud",
             "generic.content-heading-container",
@@ -6038,7 +6037,8 @@
             "generic.selector-list",
             "shared.header-container",
             "shared.sub-heading-container",
-            "shared.card-container"
+            "shared.card-container",
+            "shared.carrousel-logos"
           ],
           "pluginOptions": {
             "i18n": {
@@ -6167,7 +6167,6 @@
               "shared.blog-section",
               "wallet.how-section",
               "generic.prefooter",
-              "shared.slider",
               "generic.table",
               "pricing.cloud",
               "generic.content-heading-container",
@@ -6181,7 +6180,8 @@
               "generic.selector-list",
               "shared.header-container",
               "shared.sub-heading-container",
-              "shared.card-container"
+              "shared.card-container",
+              "shared.carrousel-logos"
             ],
             "pluginOptions": {
               "i18n": {
