@@ -187,6 +187,8 @@ export interface InsideSectionsModel {
   chip?: ChipModel
   loop?: boolean
   lightLogos?: boolean
+  layout?: string
+  sizeSlot?: string
 }
 
 export interface LocalizationsModel {

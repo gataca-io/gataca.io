@@ -6016,7 +6016,6 @@
             "generic.section",
             "generic.header",
             "shared.double-col-text-image",
-            "shared.double-col-image-text-bg",
             "wallet.benefit-section",
             "studio.why-studio-section",
             "shared.faqs-section",
@@ -6038,7 +6037,8 @@
             "shared.sub-heading-container",
             "shared.card-container",
             "shared.carrousel-logos",
-            "shared.highlight"
+            "shared.highlight",
+            "shared.full-width-card"
           ],
           "pluginOptions": {
             "i18n": {
@@ -6159,7 +6159,6 @@
               "generic.section",
               "generic.header",
               "shared.double-col-text-image",
-              "shared.double-col-image-text-bg",
               "wallet.benefit-section",
               "studio.why-studio-section",
               "shared.faqs-section",
@@ -6181,7 +6180,8 @@
               "shared.sub-heading-container",
               "shared.card-container",
               "shared.carrousel-logos",
-              "shared.highlight"
+              "shared.highlight",
+              "shared.full-width-card"
             ],
             "pluginOptions": {
               "i18n": {
