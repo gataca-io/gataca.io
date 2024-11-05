@@ -266,7 +266,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
         )}
         {__component === "shared.list-group" && (
           <div className={`${styles?.container} ${cx("containerMaxWidth")}`}>
-            <ListGroup listOptions={list_options} />
+            <ListGroup listOptions={list_options?.data} />
           </div>
         )}
         {__component === "shared.sub-heading-container" && (
