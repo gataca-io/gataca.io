@@ -6038,7 +6038,8 @@
             "shared.carrousel-logos",
             "shared.highlight",
             "shared.full-width-card",
-            "shared.text-media"
+            "shared.text-media",
+            "shared.video"
           ],
           "pluginOptions": {
             "i18n": {
@@ -6181,7 +6182,8 @@
               "shared.carrousel-logos",
               "shared.highlight",
               "shared.full-width-card",
-              "shared.text-media"
+              "shared.text-media",
+              "shared.video"
             ],
             "pluginOptions": {
               "i18n": {

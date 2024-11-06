@@ -25,6 +25,7 @@ import SubHeadingContainer from "./components/shared/subHeadingContainer/SubHead
 import MainCardContainer from "./components/shared/MainCardContainer/MainCardContainer"
 import FullWidthCard from "./components/shared/fullWidthCard/FullWidthCard"
 import TextMedia from "./components/shared/textMedia/TextMedia"
+import Video from "./components/shared/video/Video"
 
 const AllSectionsTemplate: React.FC<PageModel> = props => {
   const [benefitsLoaded, setBenefitsLoaded] = React.useState<boolean>(false)
@@ -89,6 +90,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
       layout,
       sizeSlot,
       textAlign,
+      video,
     } = item
 
     return (
@@ -289,6 +291,15 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
             heading={heading?.data?.attributes?.heading}
             image={image}
             textAlign={textAlign}
+          />
+        )}
+        {__component === "shared.video" && (
+          <Video
+            idItem={idItem}
+            heading={heading?.data?.attributes?.heading}
+            image={image}
+            video={video}
+            color={color}
           />
         )}
       </section>

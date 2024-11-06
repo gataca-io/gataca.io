@@ -190,6 +190,7 @@ export interface InsideSectionsModel {
   layout?: string
   sizeSlot?: string
   textAlign?: string
+  video?: any
 }
 
 export interface LocalizationsModel {
