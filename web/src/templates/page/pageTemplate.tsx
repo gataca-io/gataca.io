@@ -20,7 +20,7 @@ const PageTemplate: React.FC = (props: any) => {
 
   const getPageData = async () => {
     await fetch(
-      `${process.env.STRAPI_API_URL}/api/pages?locale=${props?.pageContext?.locale}&filters[slugURL]=${props?.pageContext?.slugURL}&populate=deep,7`
+      `${process.env.STRAPI_API_URL}/api/pages?locale=${props?.pageContext?.locale}&filters[slugURL]=${props?.pageContext?.slugURL}&populate=deep,8`
     )
       .then(response => response.json())
       .then(jsonResponse => {

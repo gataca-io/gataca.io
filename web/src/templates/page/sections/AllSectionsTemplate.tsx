@@ -4,7 +4,6 @@ import * as styles from "./allSectionsTemplate.module.scss"
 import { PageModel } from "../../../interfaces/interfaces"
 import DoubleColTextImage from "./components/shared/doubleColTextImage/DoubleColTextImage"
 import Benefits from "./components/products/benefits/benefits"
-import DoubleColImageTextBg from "./components/shared/doubleColImageTextBg/DoubleColImageTextBg"
 import ListOpensHover from "./components/products/listOpensHover/ListOpensHover"
 import ListMedia from "./components/products/listMedia/ListMedia"
 import FaqsSection from "./components/shared/faqsSection/FaqsSection"
@@ -25,6 +24,7 @@ import SelectorList from "./components/generic/selectorList/SelectorList"
 import HeaderContainer from "./components/shared/headerContainer/HeaderContainer"
 import SubHeadingContainer from "./components/shared/subHeadingContainer/SubHeadingContainer"
 import MainCardContainer from "./components/shared/MainCardContainer/MainCardContainer"
+import FullWidthCard from "./components/shared/fullWidthCard/FullWidthCard"
 
 const AllSectionsTemplate: React.FC<PageModel> = props => {
   const [benefitsLoaded, setBenefitsLoaded] = React.useState<boolean>(false)
@@ -86,6 +86,8 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
       card,
       loop,
       lightLogos,
+      layout,
+      sizeSlot,
     } = item
 
     return (
@@ -110,15 +112,6 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
             description={description}
             cta={cta}
             hero={hero}
-          />
-        )}
-        {__component === "shared.double-col-image-text-bg" && (
-          <DoubleColImageTextBg
-            id={id}
-            title={title}
-            description={description}
-            hero={hero}
-            subtitle={subtitle}
           />
         )}
         {__component === "wallet.benefit-section" && (
@@ -273,7 +266,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
         )}
         {__component === "shared.list-group" && (
           <div className={`${styles?.container} ${cx("containerMaxWidth")}`}>
-            <ListGroup listOptions={list_options} />
+            <ListGroup listOptions={list_options?.data} />
           </div>
         )}
         {__component === "shared.sub-heading-container" && (
@@ -287,6 +280,16 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
           <div className={`${styles?.container} ${cx("containerMaxWidth")}`}>
             <SelectorList list={selector_lists} />
           </div>
+        )}
+        {__component === "shared.full-width-card" && (
+          <FullWidthCard
+            idItem={idItem}
+            heading={heading?.data?.attributes?.heading}
+            image={image}
+            color={color}
+            layout={layout}
+            sizeSlot={sizeSlot}
+          />
         )}
       </section>
     )

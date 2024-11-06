@@ -76,11 +76,15 @@ const Heading: React.FC<HeadingModel> = props => {
           <h6 className={cx("heading6 neutral700")}>{sectionName}</h6>
         )}
         {title?.length && (
-          <h1
-            className={cx(titleSize ? titleSizeStyles[titleSize] : "heading1")}
-          >
-            {title}
-          </h1>
+          <>
+            {titleSize === "large" ? (
+              <h1 className={cx("heading1")}>{title}</h1>
+            ) : titleSize === "medium" ? (
+              <h3 className={cx("heading3")}>{title}</h3>
+            ) : (
+              <h4 className={cx("heading4")}>{title}</h4>
+            )}
+          </>
         )}
         {content?.length && (
           <p className={cx("bodyRegularXL neutral700")}>{content}</p>

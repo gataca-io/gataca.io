@@ -30,7 +30,7 @@ const ListGroup: React.FC<IListGroupProps> = props => {
     <div
       className={`${styles?.listGroup__container} ${className && className}`}
     >
-      {listOptions?.data?.map((item: any, index: number) => {
+      {listOptions?.map((item: any, index: number) => {
         const { list, title, spacing, titleFontSize, titleFontWeight } =
           item?.attributes
 
@@ -41,15 +41,19 @@ const ListGroup: React.FC<IListGroupProps> = props => {
               spacing ? spacingStyles[spacing] : styles?.spacingSmall
             )}`}
           >
-            <p
-              className={`${styles.titleHeader} ${cx(
-                titleFontSize ? titleSizeStyles[titleFontSize] : "bodyRegularLG"
-              )} ${cx(
-                titleFontWeight ? titleFontWeightStyles[titleFontWeight] : ""
-              )}`}
-            >
-              {title}
-            </p>
+            {title?.length && (
+              <p
+                className={`${styles.titleHeader} ${cx(
+                  titleFontSize
+                    ? titleSizeStyles[titleFontSize]
+                    : "bodyRegularLG"
+                )} ${cx(
+                  titleFontWeight ? titleFontWeightStyles[titleFontWeight] : ""
+                )}`}
+              >
+                {title}
+              </p>
+            )}
             <div
               key={"listOptions__" + Math.random()}
               className={styles?.listOptions}

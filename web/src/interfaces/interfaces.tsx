@@ -173,7 +173,7 @@ export interface InsideSectionsModel {
   align?: string
   dynamicCard?: boolean
   moreContent?: string
-  list_options?: ListModel
+  list_options?: any
   idActionCard?: string
   selector_lists?: ListModel
   brand_buttons?: any
@@ -187,6 +187,8 @@ export interface InsideSectionsModel {
   chip?: ChipModel
   loop?: boolean
   lightLogos?: boolean
+  layout?: string
+  sizeSlot?: string
 }
 
 export interface LocalizationsModel {
