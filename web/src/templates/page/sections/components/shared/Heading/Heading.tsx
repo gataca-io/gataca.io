@@ -92,7 +92,7 @@ const Heading: React.FC<HeadingModel> = props => {
               button?.icon?.data?.attributes?.url?.length) && (
               <Button
                 idButton={button?.idButton}
-                className={cx("marginTop32")}
+                className={cx("marginTop20")}
                 label={button?.label}
                 icon={button?.icon}
                 style={button?.style}
@@ -115,19 +115,19 @@ const Heading: React.FC<HeadingModel> = props => {
         {buttonGroup?.length > 0 && (
           <ButtonGroup
             buttonGroup={buttonGroup}
-            className={cx("marginTop32")}
+            className={cx("marginTop20")}
           />
         )}
         {segmentedButton?.length > 0 && (
           <SegmentedButtonsContainer
-            className={cx("marginTop32")}
+            className={cx("marginTop20")}
             segmentedOptions={segmentedButton}
           />
         )}
         {list?.length > 0 && (
-          <ListGroup listOptions={list} className={cx("marginTop32")} />
+          <ListGroup listOptions={list} className={cx("marginTop20")} />
         )}
-        {table && <Table content={table} className={cx("marginTop32")} />}
+        {table && <Table content={table} className={cx("marginTop20")} />}
       </div>
     </div>
   )

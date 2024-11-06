@@ -1,0 +1,29 @@
+@import "../../../../../../styles/colors.scss";
+@import "../../../../../../styles/mixins.scss";
+
+.highlight {
+  &.blackBackground {
+    background-color: $neutral1000;
+    & > div > div > div {
+      & > h1, h6 {
+        color: $neutral100;
+      }
+      & > p {
+        color: $neutral400;
+      }
+    }
+  }
+  &.greyBackground {
+    background-color: $neutral200;
+  }
+  .alignCenter {
+    padding: 100px 0;
+  }
+  .alignBottom {
+    padding: 198px 0 100px;
+  }
+  
+}
+
+
+

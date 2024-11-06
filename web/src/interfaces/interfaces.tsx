@@ -170,6 +170,7 @@ export interface InsideSectionsModel {
   titleCard?: string
   titleContent?: string
   contentAlign?: string
+  align?: string
   dynamicCard?: boolean
   moreContent?: string
   list_options?: ListModel
@@ -184,6 +185,8 @@ export interface InsideSectionsModel {
   card?: any
   button?: ButtonModel
   chip?: ChipModel
+  loop?: boolean
+  lightLogos?: boolean
 }
 
 export interface LocalizationsModel {

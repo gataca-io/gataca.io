@@ -9,7 +9,7 @@ import ListOpensHover from "./components/products/listOpensHover/ListOpensHover"
 import ListMedia from "./components/products/listMedia/ListMedia"
 import FaqsSection from "./components/shared/faqsSection/FaqsSection"
 import ChosenBlogsSection from "./components/shared/chosenBlogsSection/ChosenBlogsSection"
-import LogosSlider from "./components/shared/logosSlider/LogosSlider"
+import CarrouselLogos from "./components/shared/carrouselLogos/CarrouselLogos"
 import Table from "./components/shared/table/Table"
 import PricingInfo from "./components/pricing/pricingInfo/PricingInfo"
 import ContentHeadingContainer from "./components/generic/contentHeadingContainer/ContentHeadingContainer"
@@ -84,6 +84,8 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
       columns,
       idItem,
       card,
+      loop,
+      lightLogos,
     } = item
 
     return (
@@ -94,8 +96,12 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
             image={image}
           />
         )}
-        {__component === "shared.slider" && (
-          <LogosSlider list={logos?.data} lightLogos={logos?.data} />
+        {__component === "shared.carrousel-logos" && (
+          <CarrouselLogos
+            list={logos?.data}
+            lightLogos={lightLogos}
+            loop={loop}
+          />
         )}
         {__component === "shared.double-col-text-image" && (
           <DoubleColTextImage

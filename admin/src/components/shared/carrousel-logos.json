@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_shared_carrousel_logos",
+  "info": {
+    "displayName": "CarrouselLogos"
+  },
+  "options": {},
+  "attributes": {
+    "lightLogos": {
+      "type": "boolean",
+      "default": true
+    },
+    "loop": {
+      "type": "boolean",
+      "default": true
+    },
+    "logos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::logo.logo"
+    }
+  }
+}
