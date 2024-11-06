@@ -189,6 +189,7 @@ export interface InsideSectionsModel {
   lightLogos?: boolean
   layout?: string
   sizeSlot?: string
+  textAlign?: string
 }
 
 export interface LocalizationsModel {
