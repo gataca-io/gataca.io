@@ -20,6 +20,7 @@
   @include justify-content(space-between);
   @include flex-wrap(wrap);
   border-radius: 40px;
+  overflow: hidden;
   @include min-width($tabletMD) {
     @include flex-direction(row);
     @include align-items(flex-end);
@@ -50,7 +51,9 @@
     padding: 60px 60px 60px 40px;
   }
   &.fiftyFifty {
+    @include order(0);
     @include min-width($tabletMD) {
+      @include order(1);
       width: calc(50% - 80px);
       @include flex(0, 0, calc(50% - 80px));
       @include flex-grow(1);
@@ -62,7 +65,9 @@
     }
   }
   &.twentyFiveSeventyFive {
+    @include order(0);
     @include min-width($tabletMD) {
+      @include order(1);
       width: calc(75% - 80px);
       @include flex(0, 0, calc(75% - 80px));
       @include flex-grow(1);
@@ -78,14 +83,18 @@
 .fullWidthCard__imageContainer {
   width: 100%;
   &.fiftyFifty {
+    @include order(1);
     @include min-width($tabletMD) {
+      @include order(0);
       padding-right: 40px;
       width: calc(50% - 40px);
       @include flex(0, 0, calc(50% - 40px));
     }
   }
   &.twentyFiveSeventyFive {
+    @include order(1);
     @include min-width($tabletMD) {
+      @include order(0);
       padding-right: 40px;
       width: calc(25% - 40px);
       @include flex(0, 0, calc(25% - 40px));
