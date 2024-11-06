@@ -36,9 +36,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
       id,
       title,
       subtitle,
-      description,
       switchLabel,
-      cta,
       hero,
       media,
       __component,
@@ -91,6 +89,10 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
       sizeSlot,
       textAlign,
       video,
+      employee,
+      avatarSize,
+      sub_heading,
+      highlight_card,
     } = item
 
     return (
@@ -161,8 +163,12 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
         )}
         {__component === "shared.content-table" && (
           <ContentTable
+            employee={employee}
             listContent={contents?.data}
             tableOfContent={card_table_contents?.data}
+            avatarSize={avatarSize}
+            sub_heading={sub_heading}
+            highlightCard={highlight_card?.data?.attributes}
           />
         )}
         {__component === "generic.button" && (

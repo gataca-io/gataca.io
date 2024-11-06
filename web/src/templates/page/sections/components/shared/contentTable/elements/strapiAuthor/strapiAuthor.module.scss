@@ -1,0 +1,19 @@
+@import "../../../../../../../../styles/colors.scss";
+@import "../../../../../../../../styles/mixins.scss";
+
+.strapiAuthor__container {
+  @include flexbox();
+  @include flex-direction(row);
+  @include flex-wrap(nowrap);
+  @include justify-content(flex-start);
+  @include align-items(center);
+
+  @include min-width($desktopMD) {
+    @include justify-content(center);
+  }
+  img {
+    margin-right: 20px;
+    border-radius: 35px;
+  }
+  
+}

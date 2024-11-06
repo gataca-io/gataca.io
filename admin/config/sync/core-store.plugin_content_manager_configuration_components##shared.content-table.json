@@ -49,13 +49,73 @@
           "searchable": false,
           "sortable": false
         }
+      },
+      "employee": {
+        "edit": {
+          "label": "employee",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "employee",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "sub_heading": {
+        "edit": {
+          "label": "sub_heading",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "idItem"
+        },
+        "list": {
+          "label": "sub_heading",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "avatarSize": {
+        "edit": {
+          "label": "avatarSize",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "avatarSize",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "highlight_card": {
+        "edit": {
+          "label": "highlight_card",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "idItem"
+        },
+        "list": {
+          "label": "highlight_card",
+          "searchable": true,
+          "sortable": true
+        }
       }
     },
     "layouts": {
       "list": [
         "id",
         "card_table_contents",
-        "contents"
+        "contents",
+        "employee"
       ],
       "edit": [
         [
@@ -64,7 +124,27 @@
             "size": 6
           },
           {
+            "name": "highlight_card",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "employee",
+            "size": 6
+          },
+          {
+            "name": "avatarSize",
+            "size": 6
+          }
+        ],
+        [
+          {
             "name": "contents",
+            "size": 6
+          },
+          {
+            "name": "sub_heading",
             "size": 6
           }
         ]

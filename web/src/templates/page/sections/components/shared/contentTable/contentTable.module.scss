@@ -15,20 +15,37 @@
     @include justify-content(space-between);
     padding: 0 20px;
   
-    @include min-width($mobileXL) {
+    @include min-width($tabletMD) {
       @include flex-wrap(nowrap);
     }
     @include min-width($desktopXL) {
       padding: 0;
     }
-    .contentHeadingContainer {
+    .slotsContainer {
       width: 100%;
+      order: 1;
       @include min-width($tabletMD) {
         width: calc(100% - 304px);
       }
       > div:not(:last-child) {
         margin-bottom: 60px;
       }
+      .contentTable__subHeadingContainer {
+        padding: 0;
+        max-width: 100%;
+        margin: 0;
+      }
+    }
+    .rightColumnContainer__changeOrder {
+      @include order(0);
+      margin-bottom: 132px;
+      @include min-width($tabletMD) {
+        @include order(1);
+        margin-bottom: 0;
+      }
+    }
+    .rightColumnContainer {
+      @include order(1);
     }
   }
   img {
@@ -47,6 +64,7 @@
 .showDesktop {
   display: none;
   @include min-width($tabletMD) {
+    @include order(2);
     @include flexbox();
     @include flex-direction(column);
   }

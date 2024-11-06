@@ -4,7 +4,7 @@ import Avatar from "../../../templates/page/sections/components/shared/avatar/Av
 
 export interface IStrapiAuthorProps {
   className?: string
-  avatarSize: string
+  avatarSize?: string
   employee: {
     attributes: {
       name: string

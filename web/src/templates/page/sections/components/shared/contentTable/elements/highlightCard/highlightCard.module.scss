@@ -1,0 +1,31 @@
+@import "../../../../../../../../styles/colors.scss";
+@import "../../../../../../../../styles/mixins.scss";
+
+$cardPadding: 32px;
+
+.highlightCard__container {
+  padding: $cardPadding;
+  background-color: $neutral100;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  @include flexbox();
+  @include flex-direction(column);
+  gap: 24px;
+  margin-top: 72px;
+  @include min-width($tabletMD) {
+    margin-top: 0px;
+  }
+  @include min-width($tabletMD)  {
+    max-width: calc(252px - $cardPadding * 2);
+    min-width: calc(252px - $cardPadding * 2);
+  }
+  @include min-width($tabletXL) {
+    max-width: calc(272px - $cardPadding * 2);
+    min-width: calc(272px - $cardPadding * 2);
+  }
+  > div {
+    @include flexbox();
+    @include flex-direction(column);
+    gap: 24px;
+  }
+}

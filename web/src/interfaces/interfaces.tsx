@@ -191,6 +191,10 @@ export interface InsideSectionsModel {
   sizeSlot?: string
   textAlign?: string
   video?: any
+  employee?: any
+  avatarSize?: string
+  sub_heading?: any
+  highlight_card?: any
 }
 
 export interface LocalizationsModel {
@@ -444,6 +448,7 @@ export interface HeaderContainerModel {
 }
 
 export interface SubHeadingContainerModel {
+  className?: string
   idItem?: string
   subHeading: SubHeadingModel[]
   columns?: string
