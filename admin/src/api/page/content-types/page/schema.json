@@ -23,7 +23,6 @@
         "generic.section",
         "generic.header",
         "wallet.benefit-section",
-        "studio.why-studio-section",
         "shared.faqs-section",
         "studio.feature-section",
         "shared.blog-section",
@@ -46,7 +45,8 @@
         "shared.highlight",
         "shared.full-width-card",
         "shared.text-media",
-        "shared.video"
+        "shared.video",
+        "shared.dynamic-card-component"
       ],
       "pluginOptions": {
         "i18n": {

@@ -548,7 +548,6 @@
           "card.button.size",
           "card.button.disabled",
           "card.button.noPaddingText",
-          "card.dynamicCard",
           "card.upperIconClosed",
           "card.upperIconOpened",
           "card.moreContent"
@@ -602,7 +601,6 @@
           "card.button.size",
           "card.button.disabled",
           "card.button.noPaddingText",
-          "card.dynamicCard",
           "card.upperIconClosed",
           "card.upperIconOpened",
           "card.moreContent"
@@ -644,7 +642,6 @@
           "card.button.size",
           "card.button.disabled",
           "card.button.noPaddingText",
-          "card.dynamicCard",
           "card.upperIconClosed",
           "card.upperIconOpened",
           "card.moreContent"
@@ -1453,6 +1450,135 @@
           "mainData",
           "validated",
           "expirationDate"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::dynamic-card.dynamic-card",
+      "properties": {
+        "fields": [
+          "dynamicCards.size",
+          "dynamicCards.contentAlign",
+          "dynamicCards.numberIconText",
+          "dynamicCards.chip.idChip",
+          "dynamicCards.chip.text",
+          "dynamicCards.chip.type",
+          "dynamicCards.chip.form",
+          "dynamicCards.chip.disabled",
+          "dynamicCards.chip.color",
+          "dynamicCards.chip.chipSize",
+          "dynamicCards.chip.leadingIcon",
+          "dynamicCards.chip.trailingIcon",
+          "dynamicCards.mainIcon",
+          "dynamicCards.title",
+          "dynamicCards.content",
+          "dynamicCards.button.label",
+          "dynamicCards.button.url",
+          "dynamicCards.button.outsideWeb",
+          "dynamicCards.button.outlined",
+          "dynamicCards.button.idButton",
+          "dynamicCards.button.icon",
+          "dynamicCards.button.link",
+          "dynamicCards.button.style",
+          "dynamicCards.button.color",
+          "dynamicCards.button.size",
+          "dynamicCards.button.disabled",
+          "dynamicCards.button.noPaddingText",
+          "dynamicCards.upperIconClosed",
+          "dynamicCards.upperIconOpened",
+          "idItem"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::dynamic-card.dynamic-card",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::dynamic-card.dynamic-card",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::dynamic-card.dynamic-card",
+      "properties": {
+        "fields": [
+          "dynamicCards.size",
+          "dynamicCards.contentAlign",
+          "dynamicCards.numberIconText",
+          "dynamicCards.chip.idChip",
+          "dynamicCards.chip.text",
+          "dynamicCards.chip.type",
+          "dynamicCards.chip.form",
+          "dynamicCards.chip.disabled",
+          "dynamicCards.chip.color",
+          "dynamicCards.chip.chipSize",
+          "dynamicCards.chip.leadingIcon",
+          "dynamicCards.chip.trailingIcon",
+          "dynamicCards.mainIcon",
+          "dynamicCards.title",
+          "dynamicCards.content",
+          "dynamicCards.button.label",
+          "dynamicCards.button.url",
+          "dynamicCards.button.outsideWeb",
+          "dynamicCards.button.outlined",
+          "dynamicCards.button.idButton",
+          "dynamicCards.button.icon",
+          "dynamicCards.button.link",
+          "dynamicCards.button.style",
+          "dynamicCards.button.color",
+          "dynamicCards.button.size",
+          "dynamicCards.button.disabled",
+          "dynamicCards.button.noPaddingText",
+          "dynamicCards.upperIconClosed",
+          "dynamicCards.upperIconOpened",
+          "idItem"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::dynamic-card.dynamic-card",
+      "properties": {
+        "fields": [
+          "dynamicCards.size",
+          "dynamicCards.contentAlign",
+          "dynamicCards.numberIconText",
+          "dynamicCards.chip.idChip",
+          "dynamicCards.chip.text",
+          "dynamicCards.chip.type",
+          "dynamicCards.chip.form",
+          "dynamicCards.chip.disabled",
+          "dynamicCards.chip.color",
+          "dynamicCards.chip.chipSize",
+          "dynamicCards.chip.leadingIcon",
+          "dynamicCards.chip.trailingIcon",
+          "dynamicCards.mainIcon",
+          "dynamicCards.title",
+          "dynamicCards.content",
+          "dynamicCards.button.label",
+          "dynamicCards.button.url",
+          "dynamicCards.button.outsideWeb",
+          "dynamicCards.button.outlined",
+          "dynamicCards.button.idButton",
+          "dynamicCards.button.icon",
+          "dynamicCards.button.link",
+          "dynamicCards.button.style",
+          "dynamicCards.button.color",
+          "dynamicCards.button.size",
+          "dynamicCards.button.disabled",
+          "dynamicCards.button.noPaddingText",
+          "dynamicCards.upperIconClosed",
+          "dynamicCards.upperIconOpened",
+          "idItem"
         ]
       },
       "conditions": []

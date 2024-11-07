@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_shared_dynamic_card_components",
+  "info": {
+    "displayName": "dynamicCardComponent",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "idItem": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::heading.heading"
+    },
+    "background": {
+      "type": "boolean",
+      "default": false
+    },
+    "bgVerticalAlign": {
+      "type": "enumeration",
+      "enum": [
+        "center",
+        "bottom"
+      ],
+      "default": "center"
+    },
+    "dynamic_cards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::dynamic-card.dynamic-card"
+    }
+  }
+}

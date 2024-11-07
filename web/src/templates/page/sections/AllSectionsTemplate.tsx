@@ -26,6 +26,7 @@ import MainCardContainer from "./components/shared/MainCardContainer/MainCardCon
 import FullWidthCard from "./components/shared/fullWidthCard/FullWidthCard"
 import TextMedia from "./components/shared/textMedia/TextMedia"
 import Video from "./components/shared/video/Video"
+import DynamicCardComponent from "./components/shared/dynamicCardComponent/DynamicCardComponent"
 
 const AllSectionsTemplate: React.FC<PageModel> = props => {
   const [benefitsLoaded, setBenefitsLoaded] = React.useState<boolean>(false)
@@ -93,6 +94,9 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
       avatarSize,
       sub_heading,
       highlight_card,
+      dynamic_cards,
+      background,
+      bgVerticalAlign,
     } = item
 
     return (
@@ -119,8 +123,19 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
             setBenefitsLoaded={setBenefitsLoaded}
           />
         )}
+
+        {/* Borrar */}
         {__component === "studio.why-studio-section" && (
           <ListOpensHover id={id} title={title} list={advantages?.data} />
+        )}
+        {__component === "shared.dynamic-card-component" && (
+          <DynamicCardComponent
+            idItem={idItem}
+            heading={heading?.data?.attributes?.heading}
+            dynamicCards={dynamic_cards?.data[0]?.attributes?.dynamicCards}
+            background={background}
+            bgVerticalAlign={bgVerticalAlign}
+          />
         )}
         {__component === "wallet.how-section" && (
           <ListMedia title={title} media={media} list={operations?.data} />

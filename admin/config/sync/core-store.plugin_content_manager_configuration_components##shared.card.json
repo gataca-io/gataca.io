@@ -146,20 +146,6 @@
           "sortable": false
         }
       },
-      "dynamicCard": {
-        "edit": {
-          "label": "dynamicCard",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "dynamicCard",
-          "searchable": true,
-          "sortable": true
-        }
-      },
       "upperIconClosed": {
         "edit": {
           "label": "upperIconClosed",
@@ -265,19 +251,13 @@
         ],
         [
           {
-            "name": "dynamicCard",
-            "size": 4
-          }
-        ],
-        [
-          {
-            "name": "chip",
+            "name": "button",
             "size": 12
           }
         ],
         [
           {
-            "name": "button",
+            "name": "chip",
             "size": 12
           }
         ]

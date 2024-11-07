@@ -1,0 +1,137 @@
+{
+  "key": "plugin_content_manager_configuration_components::shared.dynamic-card-component",
+  "value": {
+    "uid": "shared.dynamic-card-component",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "idItem",
+      "defaultSortBy": "idItem",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "idItem": {
+        "edit": {
+          "label": "idItem",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "idItem",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "heading": {
+        "edit": {
+          "label": "heading",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "idHeading"
+        },
+        "list": {
+          "label": "heading",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "background": {
+        "edit": {
+          "label": "background",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "background",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "bgVerticalAlign": {
+        "edit": {
+          "label": "bgVerticalAlign",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "bgVerticalAlign",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "dynamic_cards": {
+        "edit": {
+          "label": "dynamic_cards",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "idItem"
+        },
+        "list": {
+          "label": "dynamic_cards",
+          "searchable": false,
+          "sortable": false
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "idItem",
+        "heading",
+        "background"
+      ],
+      "edit": [
+        [
+          {
+            "name": "idItem",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "background",
+            "size": 4
+          },
+          {
+            "name": "bgVerticalAlign",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "heading",
+            "size": 6
+          },
+          {
+            "name": "dynamic_cards",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}
