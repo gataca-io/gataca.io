@@ -2,7 +2,6 @@ import * as React from "react"
 import cx from "classnames"
 import * as styles from "./allSectionsTemplate.module.scss"
 import { PageModel } from "../../../interfaces/interfaces"
-import DoubleColTextImage from "./components/shared/doubleColTextImage/DoubleColTextImage"
 import Benefits from "./components/products/benefits/benefits"
 import ListOpensHover from "./components/products/listOpensHover/ListOpensHover"
 import ListMedia from "./components/products/listMedia/ListMedia"
@@ -25,6 +24,8 @@ import HeaderContainer from "./components/shared/headerContainer/HeaderContainer
 import SubHeadingContainer from "./components/shared/subHeadingContainer/SubHeadingContainer"
 import MainCardContainer from "./components/shared/MainCardContainer/MainCardContainer"
 import FullWidthCard from "./components/shared/fullWidthCard/FullWidthCard"
+import TextMedia from "./components/shared/textMedia/TextMedia"
+import Video from "./components/shared/video/Video"
 
 const AllSectionsTemplate: React.FC<PageModel> = props => {
   const [benefitsLoaded, setBenefitsLoaded] = React.useState<boolean>(false)
@@ -88,6 +89,8 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
       lightLogos,
       layout,
       sizeSlot,
+      textAlign,
+      video,
     } = item
 
     return (
@@ -103,15 +106,6 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
             list={logos?.data}
             lightLogos={lightLogos}
             loop={loop}
-          />
-        )}
-        {__component === "shared.double-col-text-image" && (
-          <DoubleColTextImage
-            id={id}
-            title={title}
-            description={description}
-            cta={cta}
-            hero={hero}
           />
         )}
         {__component === "wallet.benefit-section" && (
@@ -289,6 +283,23 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
             color={color}
             layout={layout}
             sizeSlot={sizeSlot}
+          />
+        )}
+        {__component === "shared.text-media" && (
+          <TextMedia
+            idItem={idItem}
+            heading={heading?.data?.attributes?.heading}
+            image={image}
+            textAlign={textAlign}
+          />
+        )}
+        {__component === "shared.video" && (
+          <Video
+            idItem={idItem}
+            heading={heading?.data?.attributes?.heading}
+            image={image}
+            video={video}
+            color={color}
           />
         )}
       </section>
