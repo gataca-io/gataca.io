@@ -160,6 +160,12 @@
       "action": "api::heading.heading.findOne"
     },
     {
+      "action": "api::highlight-card.highlight-card.find"
+    },
+    {
+      "action": "api::highlight-card.highlight-card.findOne"
+    },
+    {
       "action": "api::industry.industry.find"
     },
     {
@@ -263,6 +269,12 @@
     },
     {
       "action": "api::step.step.findOne"
+    },
+    {
+      "action": "api::sub-heading.sub-heading.find"
+    },
+    {
+      "action": "api::sub-heading.sub-heading.findOne"
     },
     {
       "action": "api::success-story.success-story.find"

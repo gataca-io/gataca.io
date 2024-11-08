@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "highlight_cards",
+  "info": {
+    "singularName": "highlight-card",
+    "pluralName": "highlight-cards",
+    "displayName": "Highlight Card"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "idItem": {
+      "type": "string"
+    },
+    "highlight_card_list": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.highlight-card"
+    }
+  }
+}

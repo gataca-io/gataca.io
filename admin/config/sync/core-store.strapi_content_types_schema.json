@@ -5519,6 +5519,92 @@
       "actions": {},
       "lifecycles": {}
     },
+    "api::highlight-card.highlight-card": {
+      "kind": "collectionType",
+      "collectionName": "highlight_cards",
+      "info": {
+        "singularName": "highlight-card",
+        "pluralName": "highlight-cards",
+        "displayName": "Highlight Card"
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "idItem": {
+          "type": "string"
+        },
+        "highlight_card_list": {
+          "type": "component",
+          "repeatable": false,
+          "component": "shared.highlight-card"
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "highlight_cards",
+        "info": {
+          "singularName": "highlight-card",
+          "pluralName": "highlight-cards",
+          "displayName": "Highlight Card"
+        },
+        "options": {
+          "draftAndPublish": true
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "idItem": {
+            "type": "string"
+          },
+          "highlight_card_list": {
+            "type": "component",
+            "repeatable": false,
+            "component": "shared.highlight-card"
+          }
+        },
+        "kind": "collectionType"
+      },
+      "modelType": "contentType",
+      "modelName": "highlight-card",
+      "connection": "default",
+      "uid": "api::highlight-card.highlight-card",
+      "apiName": "highlight-card",
+      "globalId": "HighlightCard",
+      "actions": {},
+      "lifecycles": {}
+    },
     "api::industry.industry": {
       "kind": "collectionType",
       "collectionName": "industries",
@@ -7788,6 +7874,94 @@
       "uid": "api::step.step",
       "apiName": "step",
       "globalId": "Step",
+      "actions": {},
+      "lifecycles": {}
+    },
+    "api::sub-heading.sub-heading": {
+      "kind": "collectionType",
+      "collectionName": "sub_headings",
+      "info": {
+        "singularName": "sub-heading",
+        "pluralName": "sub-headings",
+        "displayName": "subHeading",
+        "description": ""
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "subHeadingContainer": {
+          "type": "component",
+          "repeatable": false,
+          "component": "shared.sub-heading-container"
+        },
+        "idItem": {
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "sub_headings",
+        "info": {
+          "singularName": "sub-heading",
+          "pluralName": "sub-headings",
+          "displayName": "subHeading",
+          "description": ""
+        },
+        "options": {
+          "draftAndPublish": true
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "subHeadingContainer": {
+            "type": "component",
+            "repeatable": false,
+            "component": "shared.sub-heading-container"
+          },
+          "idItem": {
+            "type": "string"
+          }
+        },
+        "kind": "collectionType"
+      },
+      "modelType": "contentType",
+      "modelName": "sub-heading",
+      "connection": "default",
+      "uid": "api::sub-heading.sub-heading",
+      "apiName": "sub-heading",
+      "globalId": "SubHeading",
       "actions": {},
       "lifecycles": {}
     },

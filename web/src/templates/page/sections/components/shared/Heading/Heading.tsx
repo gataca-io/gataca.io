@@ -26,12 +26,6 @@ const Heading: React.FC<HeadingModel> = props => {
     table,
   } = props
 
-  const titleSizeStyles: Record<string, string> = {
-    small: "heading4",
-    medium: "heading3",
-    large: "heading1",
-  }
-
   const spacingStyles: Record<string, string> = {
     small: styles?.smallSpacing,
     medium: styles?.smallSpacing,

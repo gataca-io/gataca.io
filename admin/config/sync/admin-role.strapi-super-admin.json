@@ -3435,6 +3435,54 @@
     },
     {
       "action": "plugin::content-manager.explorer.create",
+      "subject": "api::highlight-card.highlight-card",
+      "properties": {
+        "fields": [
+          "idItem",
+          "highlight_card_list.title",
+          "highlight_card_list.listGroup.list_options"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::highlight-card.highlight-card",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::highlight-card.highlight-card",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::highlight-card.highlight-card",
+      "properties": {
+        "fields": [
+          "idItem",
+          "highlight_card_list.title",
+          "highlight_card_list.listGroup.list_options"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::highlight-card.highlight-card",
+      "properties": {
+        "fields": [
+          "idItem",
+          "highlight_card_list.title",
+          "highlight_card_list.listGroup.list_options"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
       "subject": "api::industry.industry",
       "properties": {
         "fields": [
@@ -4807,6 +4855,75 @@
           "title",
           "description",
           "number"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::sub-heading.sub-heading",
+      "properties": {
+        "fields": [
+          "subHeadingContainer.idItem",
+          "subHeadingContainer.subHeading.idSubHeading",
+          "subHeadingContainer.subHeading.size",
+          "subHeadingContainer.subHeading.numberIconText",
+          "subHeadingContainer.subHeading.icon",
+          "subHeadingContainer.subHeading.title",
+          "subHeadingContainer.subHeading.content",
+          "subHeadingContainer.subHeading.align",
+          "subHeadingContainer.columns",
+          "idItem"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::sub-heading.sub-heading",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::sub-heading.sub-heading",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::sub-heading.sub-heading",
+      "properties": {
+        "fields": [
+          "subHeadingContainer.idItem",
+          "subHeadingContainer.subHeading.idSubHeading",
+          "subHeadingContainer.subHeading.size",
+          "subHeadingContainer.subHeading.numberIconText",
+          "subHeadingContainer.subHeading.icon",
+          "subHeadingContainer.subHeading.title",
+          "subHeadingContainer.subHeading.content",
+          "subHeadingContainer.subHeading.align",
+          "subHeadingContainer.columns",
+          "idItem"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::sub-heading.sub-heading",
+      "properties": {
+        "fields": [
+          "subHeadingContainer.idItem",
+          "subHeadingContainer.subHeading.idSubHeading",
+          "subHeadingContainer.subHeading.size",
+          "subHeadingContainer.subHeading.numberIconText",
+          "subHeadingContainer.subHeading.icon",
+          "subHeadingContainer.subHeading.title",
+          "subHeadingContainer.subHeading.content",
+          "subHeadingContainer.subHeading.align",
+          "subHeadingContainer.columns",
+          "idItem"
         ]
       },
       "conditions": []
