@@ -3,8 +3,6 @@ import cx from "classnames"
 import * as styles from "./allSectionsTemplate.module.scss"
 import { PageModel } from "../../../interfaces/interfaces"
 import Benefits from "./components/products/benefits/benefits"
-import ListMedia from "./components/products/listMedia/ListMedia"
-import FaqsSection from "./components/shared/faqsSection/FaqsSection"
 import ChosenBlogsSection from "./components/shared/chosenBlogsSection/ChosenBlogsSection"
 import CarrouselLogos from "./components/shared/carrouselLogos/CarrouselLogos"
 import Table from "./components/shared/table/Table"
@@ -16,9 +14,7 @@ import ButtonIcon from "./components/generic/buttonIcon/ButtonIcon"
 import SegmentedButtonsContainer from "./components/generic/segmentedButtons/SegmentedButtonsContainer"
 import ButtonGroup from "./components/generic/buttonGroup/ButtonGroup"
 import ChipGroup from "./components/generic/chipGroup/ChipGroup"
-import ActionCard from "./components/shared/actionCard/ActionCard"
 import ListGroup from "./components/shared/list/listGroup/ListGroup"
-import SelectorList from "./components/generic/selectorList/SelectorList"
 import HeaderContainer from "./components/shared/headerContainer/HeaderContainer"
 import SubHeadingContainer from "./components/shared/subHeadingContainer/SubHeadingContainer"
 import MainCardContainer from "./components/shared/MainCardContainer/MainCardContainer"
@@ -26,6 +22,7 @@ import FullWidthCard from "./components/shared/fullWidthCard/FullWidthCard"
 import TextMedia from "./components/shared/textMedia/TextMedia"
 import Video from "./components/shared/video/Video"
 import DynamicCardComponent from "./components/shared/dynamicCardComponent/DynamicCardComponent"
+import DynamicSelector from "./components/shared/dynamicSelector/DynamicSelector"
 
 const AllSectionsTemplate: React.FC<PageModel> = props => {
   const [benefitsLoaded, setBenefitsLoaded] = React.useState<boolean>(false)
@@ -38,12 +35,8 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
       subtitle,
       switchLabel,
       hero,
-      media,
       __component,
       benefits,
-      advantages,
-      operations,
-      faqs,
       blogs,
       logos,
       content,
@@ -66,16 +59,8 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
       noPaddingText,
       buttons,
       chip_options,
-      button,
-      chip,
-      upperIconOpened,
-      upperIconClosed,
-      trailingIcon,
-      titleCard,
-      titleContent,
       list_options,
-      idActionCard,
-      selector_lists,
+      selector_list,
       brand_buttons,
       heading,
       image,
@@ -96,6 +81,10 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
       dynamic_cards,
       background,
       bgVerticalAlign,
+      mainTitleIllustration,
+      selectorIllustration,
+      headingSelector,
+      selectorAlign,
     } = item
 
     return (
@@ -130,17 +119,6 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
             dynamicCards={dynamic_cards?.data[0]?.attributes?.dynamicCards}
             background={background}
             bgVerticalAlign={bgVerticalAlign}
-          />
-        )}
-        {__component === "wallet.how-section" && (
-          <ListMedia title={title} media={media} list={operations?.data} />
-        )}
-        {__component === "shared.faqs-section" && (
-          <FaqsSection
-            title={title}
-            subtitle={subtitle}
-            hero={hero}
-            info={faqs?.data}
           />
         )}
         {__component === "shared.blog-section" && (
@@ -236,43 +214,18 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
             card={card?.data?.attributes?.card}
           />
         )}
-        {__component === "shared.action-card" && (
-          <div className={`${styles?.container} ${cx("containerMaxWidth")}`}>
-            <ActionCard
-              idActionCard={idActionCard}
-              upperIconOpened={upperIconOpened}
-              upperIconClosed={upperIconClosed}
-              trailingIcon={trailingIcon}
-              titleCard={titleCard}
-              titleContent={titleContent}
-              content={content}
-              button={{
-                idButton: button?.idButton,
-                label: button?.label,
-                icon: button?.icon,
-                style: button?.style,
-                color: button?.color,
-                size: button?.size,
-                noPaddingText: button?.noPaddingText,
-                disabled: button?.disabled,
-                link: button?.link,
-                url: button?.url,
-                outsideWeb: button?.outsideWeb,
-                action: () => window.open(button?.url, "_blank"),
-              }}
-              chip={{
-                idChip: chip?.idChip,
-                text: chip?.text,
-                type: chip?.type,
-                form: chip?.form,
-                disabled: chip?.disabled,
-                color: chip?.color,
-                chipSize: chip?.chipSize,
-                leadingIcon: chip?.leadingIcon,
-                trailingIcon: chip?.trailingIcon,
-              }}
-            />
-          </div>
+        {__component === "shared.dynamic-selector" && (
+          <DynamicSelector
+            idItem={idItem}
+            selector_list={selector_list?.data?.attributes?.selector}
+            background={background}
+            heading={heading?.data?.attributes?.heading}
+            heading_selector={headingSelector?.data?.attributes?.heading}
+            mainTitleIllustration={mainTitleIllustration}
+            selectorIllustration={selectorIllustration}
+            selectorAlign={selectorAlign}
+            layout={layout}
+          />
         )}
         {__component === "shared.list-group" && (
           <div className={`${styles?.container} ${cx("containerMaxWidth")}`}>
@@ -285,11 +238,6 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
             subHeading={subHeading}
             columns={columns}
           />
-        )}
-        {__component === "generic.selector-list" && (
-          <div className={`${styles?.container} ${cx("containerMaxWidth")}`}>
-            <SelectorList list={selector_lists} />
-          </div>
         )}
         {__component === "shared.full-width-card" && (
           <FullWidthCard

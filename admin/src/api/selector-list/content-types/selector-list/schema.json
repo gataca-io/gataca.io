@@ -4,7 +4,8 @@
   "info": {
     "singularName": "selector-list",
     "pluralName": "selector-lists",
-    "displayName": "Selector List"
+    "displayName": "Selector List",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true

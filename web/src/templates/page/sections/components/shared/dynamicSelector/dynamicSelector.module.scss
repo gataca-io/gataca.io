@@ -1,0 +1,159 @@
+@import "../../../../../../styles/colors.scss";
+@import "../../../../../../styles/mixins.scss";
+@import "../../../../../../styles/types";
+
+.dynamicSelector {
+  margin-bottom: 132px;
+  padding: 0 20px;
+  @include min-width($mobileXL) {
+    margin-bottom: 200px;
+    padding: 0 40px;
+  }
+  @include min-width($tabletSM) {
+    padding: 80px 40px 0;
+  }
+  @include min-width($desktopMD) {
+    padding: 80px 60px 0;
+  }
+  .dynamicSelector__container{
+    position: relative;
+    &.background {
+      &::before {
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 575px;
+        right: -20px;
+        top: 0;
+        background: $neutral200;
+        border-radius: 40px 0px 0px 40px;
+        z-index: -1;
+        @include min-width($mobileXL) {
+          right: -40px;
+        }
+        @include min-width($desktopMD) {
+          width: 1000px;
+          right: -500px;
+        }
+
+      }
+    }
+    .dynamicSelector__options {
+      @include flexbox();
+      @include flex-direction(column);
+      @include justify-content(center);
+      @include flex-wrap(wrap);
+      gap: 32px;
+      @include min-width($mobileXL) {
+        @include flex-direction(row);
+        @include flex-wrap(nowrap);
+        @include justify-content(space-between);
+        
+      }
+      &.selectorAlignTop {
+        @include align-items(flex-start);
+      }
+      &.selectorAlignCenter {
+        @include align-items(center);
+      }
+      .dynamicSelector__leftSide {
+        position: relative;
+        max-width: 100%;
+        @include min-width($mobileXL) {
+          @include flex(0, 1, auto);
+          max-width: calc(280px - 16px);
+          min-width: calc(280px - 16px);
+          @include flexbox;
+          @include flex-direction(column);
+          @include justify-content(space-between);
+          @include align-items(stretch);
+          height: 100%;
+        }
+        @include min-width($desktopMD) {
+          max-width: calc(385px - 16px);
+          min-width: calc(385px - 16px);
+        }
+        .selectorImage__desktop {
+          display: none;
+          @include min-width($mobileXL) {
+            display: block;
+          }
+          img {
+            max-width: 100%;
+            height: auto;
+          }
+        }
+      }
+      .dynamicSelector__rightSide {
+        &.fiftyFifty {
+          @include flex(0, 0, 100%);
+          @include min-width($mobileXL) {
+            @include flex(0, 1, auto);
+          }
+          @include min-width($desktopMD) {
+            @include flex(0, 1, calc(50% - 16px));
+          }
+        }
+        &.twentyFiveSeventyFive {
+          @include flex(0, 0, 100%);
+          @include min-width($mobileXL) {
+            @include flex(0, 1, auto);
+          }
+          @include min-width($desktopMD) {
+            @include flex(0, 1, calc(75% - 16px));
+          }
+        }
+        .media__container {
+          img, video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, .12);
+          }
+          
+        }
+      }
+    }
+    .image__container {
+      text-align: right;
+      margin-top: 40px;
+      @include min-width($tabletSM) {
+        position: absolute;
+        top: -80px;
+        right: 0;
+        margin-top: 0;
+      }
+    }
+    .selectorImage__mobile {
+      display: block;
+      margin-top: 56px;
+      @include min-width($mobileXL) {
+        display: none;
+        margin-top: 0px;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+.dynamicSelector__leftSide__bullets::-webkit-scrollbar {
+  display: none; /* Opera and Chrome */
+}
+
+.headingContainer {
+  margin-bottom: 120px;
+  &.maxWidth {
+    @include min-width($tabletSM) {
+      max-width: 330px;
+    }
+    @include min-width($tabletXL) {
+      max-width: calc(100% - 30%);
+    }
+  }
+}
+.heading_selector_container {
+  margin-bottom: 60px;
+}
+

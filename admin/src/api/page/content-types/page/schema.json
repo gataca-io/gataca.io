@@ -23,10 +23,8 @@
         "generic.section",
         "generic.header",
         "wallet.benefit-section",
-        "shared.faqs-section",
         "studio.feature-section",
         "shared.blog-section",
-        "wallet.how-section",
         "generic.table",
         "pricing.cloud",
         "generic.content-heading-container",
@@ -37,7 +35,6 @@
         "generic.chip-group",
         "shared.action-card",
         "shared.list-group",
-        "generic.selector-list",
         "shared.header-container",
         "shared.sub-heading-container",
         "shared.card-container",
@@ -46,7 +43,8 @@
         "shared.full-width-card",
         "shared.text-media",
         "shared.video",
-        "shared.dynamic-card-component"
+        "shared.dynamic-card-component",
+        "shared.dynamic-selector"
       ],
       "pluginOptions": {
         "i18n": {

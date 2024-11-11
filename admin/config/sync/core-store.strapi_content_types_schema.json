@@ -1999,6 +1999,92 @@
       "plugin": "users-permissions",
       "globalId": "UsersPermissionsUser"
     },
+    "api::action-card.action-card": {
+      "kind": "collectionType",
+      "collectionName": "action_cards",
+      "info": {
+        "singularName": "action-card",
+        "pluralName": "action-cards",
+        "displayName": "Action Card"
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "idItem": {
+          "type": "string"
+        },
+        "actionCard": {
+          "type": "component",
+          "repeatable": true,
+          "component": "shared.action-card"
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "action_cards",
+        "info": {
+          "singularName": "action-card",
+          "pluralName": "action-cards",
+          "displayName": "Action Card"
+        },
+        "options": {
+          "draftAndPublish": true
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "idItem": {
+            "type": "string"
+          },
+          "actionCard": {
+            "type": "component",
+            "repeatable": true,
+            "component": "shared.action-card"
+          }
+        },
+        "kind": "collectionType"
+      },
+      "modelType": "contentType",
+      "modelName": "action-card",
+      "connection": "default",
+      "uid": "api::action-card.action-card",
+      "apiName": "action-card",
+      "globalId": "ActionCard",
+      "actions": {},
+      "lifecycles": {}
+    },
     "api::ad-feature.ad-feature": {
       "kind": "collectionType",
       "collectionName": "ad_features",
@@ -6190,10 +6276,8 @@
             "generic.section",
             "generic.header",
             "wallet.benefit-section",
-            "shared.faqs-section",
             "studio.feature-section",
             "shared.blog-section",
-            "wallet.how-section",
             "generic.table",
             "pricing.cloud",
             "generic.content-heading-container",
@@ -6204,7 +6288,6 @@
             "generic.chip-group",
             "shared.action-card",
             "shared.list-group",
-            "generic.selector-list",
             "shared.header-container",
             "shared.sub-heading-container",
             "shared.card-container",
@@ -6213,7 +6296,8 @@
             "shared.full-width-card",
             "shared.text-media",
             "shared.video",
-            "shared.dynamic-card-component"
+            "shared.dynamic-card-component",
+            "shared.dynamic-selector"
           ],
           "pluginOptions": {
             "i18n": {
@@ -6334,10 +6418,8 @@
               "generic.section",
               "generic.header",
               "wallet.benefit-section",
-              "shared.faqs-section",
               "studio.feature-section",
               "shared.blog-section",
-              "wallet.how-section",
               "generic.table",
               "pricing.cloud",
               "generic.content-heading-container",
@@ -6348,7 +6430,6 @@
               "generic.chip-group",
               "shared.action-card",
               "shared.list-group",
-              "generic.selector-list",
               "shared.header-container",
               "shared.sub-heading-container",
               "shared.card-container",
@@ -6357,7 +6438,8 @@
               "shared.full-width-card",
               "shared.text-media",
               "shared.video",
-              "shared.dynamic-card-component"
+              "shared.dynamic-card-component",
+              "shared.dynamic-selector"
             ],
             "pluginOptions": {
               "i18n": {
@@ -7797,7 +7879,8 @@
       "info": {
         "singularName": "selector-list",
         "pluralName": "selector-lists",
-        "displayName": "Selector List"
+        "displayName": "Selector List",
+        "description": ""
       },
       "options": {
         "draftAndPublish": true
@@ -7850,7 +7933,8 @@
         "info": {
           "singularName": "selector-list",
           "pluralName": "selector-lists",
-          "displayName": "Selector List"
+          "displayName": "Selector List",
+          "description": ""
         },
         "options": {
           "draftAndPublish": true

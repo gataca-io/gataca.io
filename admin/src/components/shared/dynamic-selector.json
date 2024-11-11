@@ -1,0 +1,68 @@
+{
+  "collectionName": "components_shared_dynamic_selectors",
+  "info": {
+    "displayName": "DynamicSelector",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::heading.heading"
+    },
+    "headingSelector": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::heading.heading"
+    },
+    "background": {
+      "type": "boolean",
+      "default": false
+    },
+    "layout": {
+      "type": "enumeration",
+      "enum": [
+        "fiftyFifty",
+        "twentyFiveSeventyFive"
+      ],
+      "default": "twentyFiveSeventyFive"
+    },
+    "selector_list": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::selector-list.selector-list"
+    },
+    "idItem": {
+      "type": "string"
+    },
+    "selectorAlign": {
+      "type": "enumeration",
+      "enum": [
+        "top",
+        "center"
+      ],
+      "default": "top"
+    },
+    "mainTitleIllustration": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "selectorIllustration": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

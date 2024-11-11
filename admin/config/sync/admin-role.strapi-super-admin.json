@@ -5,6 +5,132 @@
   "permissions": [
     {
       "action": "plugin::content-manager.explorer.create",
+      "subject": "api::action-card.action-card",
+      "properties": {
+        "fields": [
+          "idItem",
+          "actionCard.idActionCard",
+          "actionCard.titleCard",
+          "actionCard.upperIconOpened",
+          "actionCard.upperIconClosed",
+          "actionCard.chip.idChip",
+          "actionCard.chip.text",
+          "actionCard.chip.type",
+          "actionCard.chip.form",
+          "actionCard.chip.disabled",
+          "actionCard.chip.color",
+          "actionCard.chip.chipSize",
+          "actionCard.chip.leadingIcon",
+          "actionCard.chip.trailingIcon",
+          "actionCard.titleContent",
+          "actionCard.content",
+          "actionCard.button.label",
+          "actionCard.button.url",
+          "actionCard.button.outsideWeb",
+          "actionCard.button.outlined",
+          "actionCard.button.idButton",
+          "actionCard.button.icon",
+          "actionCard.button.link",
+          "actionCard.button.style",
+          "actionCard.button.color",
+          "actionCard.button.size",
+          "actionCard.button.disabled",
+          "actionCard.button.noPaddingText",
+          "actionCard.trailingIcon"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::action-card.action-card",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::action-card.action-card",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::action-card.action-card",
+      "properties": {
+        "fields": [
+          "idItem",
+          "actionCard.idActionCard",
+          "actionCard.titleCard",
+          "actionCard.upperIconOpened",
+          "actionCard.upperIconClosed",
+          "actionCard.chip.idChip",
+          "actionCard.chip.text",
+          "actionCard.chip.type",
+          "actionCard.chip.form",
+          "actionCard.chip.disabled",
+          "actionCard.chip.color",
+          "actionCard.chip.chipSize",
+          "actionCard.chip.leadingIcon",
+          "actionCard.chip.trailingIcon",
+          "actionCard.titleContent",
+          "actionCard.content",
+          "actionCard.button.label",
+          "actionCard.button.url",
+          "actionCard.button.outsideWeb",
+          "actionCard.button.outlined",
+          "actionCard.button.idButton",
+          "actionCard.button.icon",
+          "actionCard.button.link",
+          "actionCard.button.style",
+          "actionCard.button.color",
+          "actionCard.button.size",
+          "actionCard.button.disabled",
+          "actionCard.button.noPaddingText",
+          "actionCard.trailingIcon"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::action-card.action-card",
+      "properties": {
+        "fields": [
+          "idItem",
+          "actionCard.idActionCard",
+          "actionCard.titleCard",
+          "actionCard.upperIconOpened",
+          "actionCard.upperIconClosed",
+          "actionCard.chip.idChip",
+          "actionCard.chip.text",
+          "actionCard.chip.type",
+          "actionCard.chip.form",
+          "actionCard.chip.disabled",
+          "actionCard.chip.color",
+          "actionCard.chip.chipSize",
+          "actionCard.chip.leadingIcon",
+          "actionCard.chip.trailingIcon",
+          "actionCard.titleContent",
+          "actionCard.content",
+          "actionCard.button.label",
+          "actionCard.button.url",
+          "actionCard.button.outsideWeb",
+          "actionCard.button.outlined",
+          "actionCard.button.idButton",
+          "actionCard.button.icon",
+          "actionCard.button.link",
+          "actionCard.button.style",
+          "actionCard.button.color",
+          "actionCard.button.size",
+          "actionCard.button.disabled",
+          "actionCard.button.noPaddingText",
+          "actionCard.trailingIcon"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
       "subject": "api::ad-feature.ad-feature",
       "properties": {
         "fields": [
@@ -4893,8 +5019,11 @@
         "fields": [
           "idSelectorList",
           "selector.title",
+          "selector.showSelector",
+          "selector.media",
+          "selector.action_card",
           "selector.content",
-          "selector.showSelector"
+          "selector.idItem"
         ]
       },
       "conditions": []
@@ -4918,8 +5047,11 @@
         "fields": [
           "idSelectorList",
           "selector.title",
+          "selector.showSelector",
+          "selector.media",
+          "selector.action_card",
           "selector.content",
-          "selector.showSelector"
+          "selector.idItem"
         ]
       },
       "conditions": []
@@ -4931,8 +5063,11 @@
         "fields": [
           "idSelectorList",
           "selector.title",
+          "selector.showSelector",
+          "selector.media",
+          "selector.action_card",
           "selector.content",
-          "selector.showSelector"
+          "selector.idItem"
         ]
       },
       "conditions": []

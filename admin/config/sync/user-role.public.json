@@ -4,6 +4,12 @@
   "type": "public",
   "permissions": [
     {
+      "action": "api::action-card.action-card.find"
+    },
+    {
+      "action": "api::action-card.action-card.findOne"
+    },
+    {
       "action": "api::ad-feature.ad-feature.find"
     },
     {

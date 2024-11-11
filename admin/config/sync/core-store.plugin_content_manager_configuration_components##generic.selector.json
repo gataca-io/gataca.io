@@ -7,7 +7,7 @@
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "title",
+      "mainField": "idItem",
       "defaultSortBy": "title",
       "defaultSortOrder": "ASC"
     },
@@ -34,6 +34,49 @@
           "sortable": true
         }
       },
+      "showSelector": {
+        "edit": {
+          "label": "showSelector",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "showSelector",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "media": {
+        "edit": {
+          "label": "media",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "media",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "action_card": {
+        "edit": {
+          "label": "action_card",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "idItem"
+        },
+        "list": {
+          "label": "action_card",
+          "searchable": true,
+          "sortable": true
+        }
+      },
       "content": {
         "edit": {
           "label": "content",
@@ -48,16 +91,16 @@
           "sortable": false
         }
       },
-      "showSelector": {
+      "idItem": {
         "edit": {
-          "label": "showSelector",
+          "label": "idItem",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "showSelector",
+          "label": "idItem",
           "searchable": true,
           "sortable": true
         }
@@ -67,12 +110,13 @@
       "list": [
         "id",
         "title",
-        "showSelector"
+        "showSelector",
+        "media"
       ],
       "edit": [
         [
           {
-            "name": "title",
+            "name": "idItem",
             "size": 6
           },
           {
@@ -82,8 +126,24 @@
         ],
         [
           {
+            "name": "title",
+            "size": 6
+          }
+        ],
+        [
+          {
             "name": "content",
             "size": 12
+          }
+        ],
+        [
+          {
+            "name": "action_card",
+            "size": 6
+          },
+          {
+            "name": "media",
+            "size": 6
           }
         ]
       ]

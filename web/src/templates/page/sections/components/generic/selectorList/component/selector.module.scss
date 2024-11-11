@@ -6,8 +6,12 @@
     max-width: 275px;
     margin-right: 20px;
     margin-top: 0;
-    @include min-width($desktopSM) {
+    @include min-width($mobileXL) {
+        min-width: auto;
+        max-width: none;
         margin-right: 0px;
+    }
+    @include min-width($desktopSM) {
         max-width: 385px;
     }
     .selector__titleContainer {

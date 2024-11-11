@@ -134,14 +134,10 @@ export interface InsideSectionsModel {
   leftButton?: any
   hero?: any
   icon?: any
-  media?: any
   content?: string | any
   __component?: string
   subtitle?: string
   benefits?: any
-  advantages?: any
-  operations?: any
-  faqs?: any
   blogs?: any
   logos?: any
   tiers?: any
@@ -164,17 +160,11 @@ export interface InsideSectionsModel {
   noPaddingText?: boolean
   buttons?: any
   chip_options?: any
-  upperIconOpened?: StrapiImageModel
-  upperIconClosed?: StrapiImageModel
-  trailingIcon?: StrapiImageModel
-  titleCard?: string
-  titleContent?: string
   contentAlign?: string
   align?: string
   moreContent?: string
   list_options?: any
-  idActionCard?: string
-  selector_lists?: ListModel
+  selector_list?: any
   brand_buttons?: any
   heading?: any
   image?: StrapiImageModel
@@ -182,8 +172,6 @@ export interface InsideSectionsModel {
   columns?: string
   idItem?: string
   card?: any
-  button?: ButtonModel
-  chip?: ChipModel
   loop?: boolean
   lightLogos?: boolean
   layout?: string
@@ -197,6 +185,10 @@ export interface InsideSectionsModel {
   dynamic_cards?: any
   background?: boolean
   bgVerticalAlign?: string
+  mainTitleIllustration?: StrapiImageModel
+  selectorIllustration?: StrapiImageModel
+  headingSelector?: any
+  selectorAlign?: string
 }
 
 export interface LocalizationsModel {
@@ -391,6 +383,9 @@ export interface ActionCardModel {
   content?: any
   button?: ButtonModel
   trailingIcon?: any
+  selected: boolean
+  showItem: (x: number) => void
+  index: number
 }
 
 export interface ListModel {
