@@ -3,7 +3,6 @@ import cx from "classnames"
 import * as styles from "./allSectionsTemplate.module.scss"
 import { PageModel } from "../../../interfaces/interfaces"
 import Benefits from "./components/products/benefits/benefits"
-import ListOpensHover from "./components/products/listOpensHover/ListOpensHover"
 import ListMedia from "./components/products/listMedia/ListMedia"
 import FaqsSection from "./components/shared/faqsSection/FaqsSection"
 import ChosenBlogsSection from "./components/shared/chosenBlogsSection/ChosenBlogsSection"
@@ -124,10 +123,6 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
           />
         )}
 
-        {/* Borrar */}
-        {__component === "studio.why-studio-section" && (
-          <ListOpensHover id={id} title={title} list={advantages?.data} />
-        )}
         {__component === "shared.dynamic-card-component" && (
           <DynamicCardComponent
             idItem={idItem}
