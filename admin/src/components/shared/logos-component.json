@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_shared_logos_components",
+  "info": {
+    "displayName": "LogosComponent",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "idItem": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::heading.heading"
+    },
+    "logoContainer": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.logo-container"
+    },
+    "background": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

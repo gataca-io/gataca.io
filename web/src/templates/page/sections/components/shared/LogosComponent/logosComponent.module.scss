@@ -1,0 +1,34 @@
+@import "../../../../../../styles/colors.scss";
+@import "../../../../../../styles/mixins.scss";
+
+
+
+.generalCardsLayout__container {
+  margin-bottom: 132px;
+  padding: 0 20px;
+  @include flexbox();
+  @include flex-direction(column);
+  gap: 60px;
+  @include min-width($mobileXL) {
+    margin-bottom: 200px;
+    padding: 0 40px;
+  }
+  @include min-width($desktopMD) {
+    padding: 0 60px;
+  }
+  &.backgroundDark {
+    background-color: $neutral1000;
+    border-radius: 40px;
+    padding: 80px 20px;
+    @include min-width($mobileXL) {
+      padding: 120px 40px;
+    }
+    @include min-width($desktopMD) {
+      padding: 120px 60px;
+    }
+
+    > h1, h3, h4, h6, p {
+      color: $neutral100;
+    }
+  }
+}

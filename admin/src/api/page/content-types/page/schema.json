@@ -44,7 +44,8 @@
         "shared.video",
         "shared.dynamic-card-component",
         "shared.dynamic-selector",
-        "shared.general-cards-layout"
+        "shared.general-cards-layout",
+        "shared.logos-component"
       ],
       "pluginOptions": {
         "i18n": {

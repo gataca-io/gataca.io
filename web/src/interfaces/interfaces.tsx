@@ -190,6 +190,7 @@ export interface InsideSectionsModel {
   selectorAlign?: string
   button?: ButtonModel
   mainCardContainer?: any
+  logoContainer?: any
 }
 
 export interface LocalizationsModel {

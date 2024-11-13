@@ -3864,6 +3864,57 @@
     },
     {
       "action": "plugin::content-manager.explorer.create",
+      "subject": "api::logo-info.logo-info",
+      "properties": {
+        "fields": [
+          "idItem",
+          "logoInfo.idItem",
+          "logoInfo.title",
+          "logoInfo.image"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::logo-info.logo-info",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::logo-info.logo-info",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::logo-info.logo-info",
+      "properties": {
+        "fields": [
+          "idItem",
+          "logoInfo.idItem",
+          "logoInfo.title",
+          "logoInfo.image"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::logo-info.logo-info",
+      "properties": {
+        "fields": [
+          "idItem",
+          "logoInfo.idItem",
+          "logoInfo.title",
+          "logoInfo.image"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
       "subject": "api::logo.logo",
       "properties": {
         "fields": [

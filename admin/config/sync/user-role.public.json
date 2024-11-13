@@ -190,6 +190,12 @@
       "action": "api::list-option.list-option.findOne"
     },
     {
+      "action": "api::logo-info.logo-info.find"
+    },
+    {
+      "action": "api::logo-info.logo-info.findOne"
+    },
+    {
       "action": "api::logo.logo.find"
     },
     {

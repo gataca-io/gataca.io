@@ -6147,6 +6147,92 @@
       "actions": {},
       "lifecycles": {}
     },
+    "api::logo-info.logo-info": {
+      "kind": "collectionType",
+      "collectionName": "logo_infos",
+      "info": {
+        "singularName": "logo-info",
+        "pluralName": "logo-infos",
+        "displayName": "Logo info"
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "idItem": {
+          "type": "string"
+        },
+        "logoInfo": {
+          "type": "component",
+          "repeatable": true,
+          "component": "shared.logo"
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "logo_infos",
+        "info": {
+          "singularName": "logo-info",
+          "pluralName": "logo-infos",
+          "displayName": "Logo info"
+        },
+        "options": {
+          "draftAndPublish": true
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "idItem": {
+            "type": "string"
+          },
+          "logoInfo": {
+            "type": "component",
+            "repeatable": true,
+            "component": "shared.logo"
+          }
+        },
+        "kind": "collectionType"
+      },
+      "modelType": "contentType",
+      "modelName": "logo-info",
+      "connection": "default",
+      "uid": "api::logo-info.logo-info",
+      "apiName": "logo-info",
+      "globalId": "LogoInfo",
+      "actions": {},
+      "lifecycles": {}
+    },
     "api::operation.operation": {
       "kind": "collectionType",
       "collectionName": "operations",
@@ -6297,7 +6383,8 @@
             "shared.video",
             "shared.dynamic-card-component",
             "shared.dynamic-selector",
-            "shared.general-cards-layout"
+            "shared.general-cards-layout",
+            "shared.logos-component"
           ],
           "pluginOptions": {
             "i18n": {
@@ -6439,7 +6526,8 @@
               "shared.video",
               "shared.dynamic-card-component",
               "shared.dynamic-selector",
-              "shared.general-cards-layout"
+              "shared.general-cards-layout",
+              "shared.logos-component"
             ],
             "pluginOptions": {
               "i18n": {

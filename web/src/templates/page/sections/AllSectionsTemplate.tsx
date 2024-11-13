@@ -24,6 +24,7 @@ import Video from "./components/shared/video/Video"
 import DynamicCardComponent from "./components/shared/dynamicCardComponent/DynamicCardComponent"
 import DynamicSelector from "./components/shared/dynamicSelector/DynamicSelector"
 import GeneralCardsLayout from "./components/shared/GeneralCardsLayout/GeneralCardsLayout"
+import LogosComponent from "./components/shared/LogosComponent/LogosComponent"
 
 const AllSectionsTemplate: React.FC<PageModel> = props => {
   const [benefitsLoaded, setBenefitsLoaded] = React.useState<boolean>(false)
@@ -87,6 +88,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
       selectorAlign,
       button,
       mainCardContainer,
+      logoContainer,
     } = item
 
     return (
@@ -267,6 +269,14 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
             image={image}
             video={video}
             color={color}
+          />
+        )}
+        {__component === "shared.logos-component" && (
+          <LogosComponent
+            idItem={idItem}
+            heading={heading?.data?.attributes?.heading}
+            logoContainer={logoContainer}
+            background={background}
           />
         )}
       </section>
