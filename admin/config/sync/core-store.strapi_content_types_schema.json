@@ -4381,6 +4381,94 @@
       "actions": {},
       "lifecycles": {}
     },
+    "api::dynamic-card.dynamic-card": {
+      "kind": "collectionType",
+      "collectionName": "dynamic_cards",
+      "info": {
+        "singularName": "dynamic-card",
+        "pluralName": "dynamic-cards",
+        "displayName": "Dynamic Card",
+        "description": ""
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "dynamicCards": {
+          "type": "component",
+          "repeatable": true,
+          "component": "shared.dynamic-card"
+        },
+        "idItem": {
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "dynamic_cards",
+        "info": {
+          "singularName": "dynamic-card",
+          "pluralName": "dynamic-cards",
+          "displayName": "Dynamic Card",
+          "description": ""
+        },
+        "options": {
+          "draftAndPublish": true
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "dynamicCards": {
+            "type": "component",
+            "repeatable": true,
+            "component": "shared.dynamic-card"
+          },
+          "idItem": {
+            "type": "string"
+          }
+        },
+        "kind": "collectionType"
+      },
+      "modelType": "contentType",
+      "modelName": "dynamic-card",
+      "connection": "default",
+      "uid": "api::dynamic-card.dynamic-card",
+      "apiName": "dynamic-card",
+      "globalId": "DynamicCard",
+      "actions": {},
+      "lifecycles": {}
+    },
     "api::employee.employee": {
       "kind": "collectionType",
       "collectionName": "employees",
@@ -6102,7 +6190,6 @@
             "generic.section",
             "generic.header",
             "wallet.benefit-section",
-            "studio.why-studio-section",
             "shared.faqs-section",
             "studio.feature-section",
             "shared.blog-section",
@@ -6125,7 +6212,8 @@
             "shared.highlight",
             "shared.full-width-card",
             "shared.text-media",
-            "shared.video"
+            "shared.video",
+            "shared.dynamic-card-component"
           ],
           "pluginOptions": {
             "i18n": {
@@ -6246,7 +6334,6 @@
               "generic.section",
               "generic.header",
               "wallet.benefit-section",
-              "studio.why-studio-section",
               "shared.faqs-section",
               "studio.feature-section",
               "shared.blog-section",
@@ -6269,7 +6356,8 @@
               "shared.highlight",
               "shared.full-width-card",
               "shared.text-media",
-              "shared.video"
+              "shared.video",
+              "shared.dynamic-card-component"
             ],
             "pluginOptions": {
               "i18n": {

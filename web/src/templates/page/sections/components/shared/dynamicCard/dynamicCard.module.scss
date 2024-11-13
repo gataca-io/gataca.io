@@ -1,0 +1,51 @@
+@import "../../../../../../styles/colors.scss";
+@import "../../../../../../styles/mixins.scss";
+@import "../../../../../../styles/types";
+
+.dynamicCard {
+  @include flexbox();
+  @include flex-direction(column);
+  @include justify-content(flex-start);
+  @include flex-wrap(wrap);
+  @include align-items(flex-start);
+  gap: 8px;
+  padding: 32px;
+  background-color: $neutral100;
+  border-radius: 20px;
+  box-shadow: 0px 0px 12px 0px rgba(12, 11, 51, 0.12);
+  cursor: pointer;
+  &.smallSize {
+    border-radius: 16px;
+    padding: 24px;
+  }
+  .upperIcon {
+    width: 100%;
+    text-align: right;
+    cursor: pointer;
+    img {
+      max-width: 24px;
+    }
+  }
+  .numberIconText {
+    color: $primary200;
+  }
+  .contentContainer {
+    position: relative;
+    width: 100%;
+    > div {
+      @include flexbox();
+      @include flex-direction(column);
+      @include justify-content(flex-start);
+      @include flex-wrap(wrap);
+      @include align-items(flex-start);
+      gap: 16px;
+      &.contentAlignCenter {
+        @include align-items(center);
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
+  
+}

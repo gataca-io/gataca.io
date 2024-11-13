@@ -121,6 +121,12 @@
       "action": "api::credential.credential.findOne"
     },
     {
+      "action": "api::dynamic-card.dynamic-card.find"
+    },
+    {
+      "action": "api::dynamic-card.dynamic-card.findOne"
+    },
+    {
       "action": "api::employee.employee.find"
     },
     {

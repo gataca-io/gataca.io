@@ -11,6 +11,7 @@ import Table from "../table/Table"
 
 const Heading: React.FC<HeadingModel> = props => {
   const {
+    className,
     idHeading,
     titleSize,
     align,
@@ -38,7 +39,10 @@ const Heading: React.FC<HeadingModel> = props => {
   }
 
   return (
-    <div id={idHeading} className={`${styles?.heading__container} `}>
+    <div
+      id={idHeading}
+      className={`${styles?.heading__container} ${className && className}`}
+    >
       <div
         className={`${align ? alignStyles[align] : styles?.alignLeft} ${
           titleSize ? spacingStyles[titleSize] : styles?.alignLeft

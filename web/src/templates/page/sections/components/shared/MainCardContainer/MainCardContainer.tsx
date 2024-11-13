@@ -24,7 +24,6 @@ const MainCardContainer: React.FC<MainCardContainerModel> = props => {
         {card?.map((item: any, index: number) => {
           const {
             idCard,
-            dynamicCard,
             upperIconOpened,
             upperIconClosed,
             numberIconText,
@@ -42,7 +41,6 @@ const MainCardContainer: React.FC<MainCardContainerModel> = props => {
             <Card
               key={`card__` + index}
               idCard={idCard}
-              dynamicCard={dynamicCard}
               upperIconOpened={upperIconOpened}
               upperIconClosed={upperIconClosed}
               numberIconText={numberIconText}

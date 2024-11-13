@@ -56,29 +56,27 @@
       "repeatable": false,
       "component": "generic.button"
     },
-    "dynamicCard": {
-      "type": "boolean",
-      "default": false
-    },
     "upperIconClosed": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "upperIconOpened": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "moreContent": {
       "type": "text"

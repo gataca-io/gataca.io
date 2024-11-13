@@ -20,7 +20,6 @@ const CardComponent: React.FC<CardModel> = props => {
     title,
     content,
     button,
-    dynamicCard,
     moreContent,
   } = props
 
@@ -49,7 +48,6 @@ const CardComponent: React.FC<CardModel> = props => {
     center: styles?.contentAlignCenter,
   }
 
-  const [openedCard, setOpenedCard] = React.useState(true)
   const [showContent, setShowContent] = React.useState(false)
 
   return (
@@ -57,15 +55,7 @@ const CardComponent: React.FC<CardModel> = props => {
       id={idCard}
       className={`${styles?.card__container} ${
         size ? cardSizeStyles[size] : ""
-      } ${dynamicCard ? styles.dynamicCard : ""} ${
-        showContent ? styles.showMoreContent : ""
-      } ${className && className}`}
-      onMouseEnter={() => {
-        dynamicCard && window?.innerWidth > 1066 && setOpenedCard(!openedCard)
-      }}
-      onClick={() => {
-        dynamicCard && window?.innerWidth < 1067 && setOpenedCard(!openedCard)
-      }}
+      } ${showContent ? styles.showMoreContent : ""} ${className && className}`}
     >
       {!showContent ? (
         <>
@@ -116,57 +106,54 @@ const CardComponent: React.FC<CardModel> = props => {
               {title}
             </h4>
           )}
-          {openedCard ? (
-            <>
-              {content?.length && (
-                <p
-                  className={cx(
-                    size ? contentSizeStyles[size] : "bodyRegularLG neutral700"
-                  )}
-                >
-                  {content}
-                </p>
-              )}
 
-              {(chip?.text?.length ||
-                chip?.leadingIcon?.data?.attributes?.url?.length ||
-                chip?.trailingIcon?.data?.attributes?.url?.length) && (
-                <Chip
-                  idChip={chip?.idChip}
-                  text={chip?.text}
-                  type={chip?.type}
-                  form={chip?.form}
-                  disabled={chip?.disabled}
-                  color={chip?.color}
-                  chipSize={chip?.chipSize}
-                  leadingIcon={chip?.leadingIcon}
-                  trailingIcon={chip?.trailingIcon}
-                />
+          {content?.length && (
+            <p
+              className={cx(
+                size ? contentSizeStyles[size] : "bodyRegularLG neutral700"
               )}
+            >
+              {content}
+            </p>
+          )}
 
-              {(button?.label?.length ||
-                button?.icon?.data?.attributes?.url?.length) && (
-                <Button
-                  idButton={button?.idButton}
-                  label={button?.label}
-                  icon={button?.icon}
-                  style={button?.style}
-                  color={button?.color}
-                  size={button?.size}
-                  noPaddingText={button?.noPaddingText}
-                  disabled={button?.disabled}
-                  link={button?.link}
-                  url={button?.url}
-                  action={() =>
-                    window?.open(
-                      button?.url,
-                      button?.outsideWeb ? "_blank" : "_self"
-                    )
-                  }
-                />
-              )}
-            </>
-          ) : null}
+          {(chip?.text?.length ||
+            chip?.leadingIcon?.data?.attributes?.url?.length ||
+            chip?.trailingIcon?.data?.attributes?.url?.length) && (
+            <Chip
+              idChip={chip?.idChip}
+              text={chip?.text}
+              type={chip?.type}
+              form={chip?.form}
+              disabled={chip?.disabled}
+              color={chip?.color}
+              chipSize={chip?.chipSize}
+              leadingIcon={chip?.leadingIcon}
+              trailingIcon={chip?.trailingIcon}
+            />
+          )}
+
+          {(button?.label?.length ||
+            button?.icon?.data?.attributes?.url?.length) && (
+            <Button
+              idButton={button?.idButton}
+              label={button?.label}
+              icon={button?.icon}
+              style={button?.style}
+              color={button?.color}
+              size={button?.size}
+              noPaddingText={button?.noPaddingText}
+              disabled={button?.disabled}
+              link={button?.link}
+              url={button?.url}
+              action={() =>
+                window?.open(
+                  button?.url,
+                  button?.outsideWeb ? "_blank" : "_self"
+                )
+              }
+            />
+          )}
         </div>
         {showContent && (
           <div

@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dynamic_cards",
+  "info": {
+    "singularName": "dynamic-card",
+    "pluralName": "dynamic-cards",
+    "displayName": "Dynamic Card",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "dynamicCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.dynamic-card"
+    },
+    "idItem": {
+      "type": "string"
+    }
+  }
+}

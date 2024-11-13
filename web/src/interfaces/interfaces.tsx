@@ -171,7 +171,6 @@ export interface InsideSectionsModel {
   titleContent?: string
   contentAlign?: string
   align?: string
-  dynamicCard?: boolean
   moreContent?: string
   list_options?: any
   idActionCard?: string
@@ -195,6 +194,9 @@ export interface InsideSectionsModel {
   avatarSize?: string
   sub_heading?: any
   highlight_card?: any
+  dynamic_cards?: any
+  background?: boolean
+  bgVerticalAlign?: string
 }
 
 export interface LocalizationsModel {
@@ -363,7 +365,6 @@ export interface LegalModel {
     }[]
   }
 }
-
 export interface CardModel {
   className?: string
   idCard?: string
@@ -377,7 +378,6 @@ export interface CardModel {
   title?: string
   content?: any
   button?: ButtonModel
-  dynamicCard?: boolean
   moreContent?: string
 }
 
@@ -413,6 +413,7 @@ export interface SubHeadingModel {
 }
 
 export interface HeadingModel {
+  className?: string
   idHeading?: string
   titleSize?: string
   align?: string
