@@ -4,18 +4,6 @@
 $paddingCard: 32px;
 $paddingSmallCard: 24px;
 
-.card{
-  margin-bottom:  132px;
-  padding: 0 20px;
-  @include min-width($mobileXL) {
-    margin-bottom: 200px;
-    padding: 0 40px;
-  }
-  @include min-width($desktopMD) {
-    padding: 0 60px;
-  }
-}
-
 .card__container {
   width: 100%;
   @include flexbox();
@@ -26,6 +14,7 @@ $paddingSmallCard: 24px;
   @include min-width($tabletMD) {
     @include flex-direction(row);
     @include align-items(flex-start);
+    @include align-items(stretch);
   }
   &.oneColumn {
     > div {

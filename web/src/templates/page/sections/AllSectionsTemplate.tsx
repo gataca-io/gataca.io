@@ -23,6 +23,7 @@ import TextMedia from "./components/shared/textMedia/TextMedia"
 import Video from "./components/shared/video/Video"
 import DynamicCardComponent from "./components/shared/dynamicCardComponent/DynamicCardComponent"
 import DynamicSelector from "./components/shared/dynamicSelector/DynamicSelector"
+import GeneralCardsLayout from "./components/shared/GeneralCardsLayout/GeneralCardsLayout"
 
 const AllSectionsTemplate: React.FC<PageModel> = props => {
   const [benefitsLoaded, setBenefitsLoaded] = React.useState<boolean>(false)
@@ -67,7 +68,6 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
       subHeading,
       columns,
       idItem,
-      card,
       loop,
       lightLogos,
       layout,
@@ -85,6 +85,8 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
       selectorIllustration,
       headingSelector,
       selectorAlign,
+      button,
+      mainCardContainer,
     } = item
 
     return (
@@ -207,11 +209,12 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
             <ChipGroup chipOptions={chip_options?.data} />
           </div>
         )}
-        {__component === "shared.card-container" && (
-          <MainCardContainer
+        {__component === "shared.general-cards-layout" && (
+          <GeneralCardsLayout
             idItem={idItem}
-            columns={columns}
-            card={card?.data?.attributes?.card}
+            heading={heading?.data?.attributes?.heading}
+            button={button}
+            mainCardContainer={mainCardContainer}
           />
         )}
         {__component === "shared.dynamic-selector" && (
