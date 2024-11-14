@@ -2901,6 +2901,94 @@
       "actions": {},
       "lifecycles": {}
     },
+    "api::blog-card.blog-card": {
+      "kind": "collectionType",
+      "collectionName": "blog_cards",
+      "info": {
+        "singularName": "blog-card",
+        "pluralName": "blog-cards",
+        "displayName": "Blog Card",
+        "description": ""
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "idItem": {
+          "type": "string"
+        },
+        "blog": {
+          "type": "component",
+          "repeatable": true,
+          "component": "shared.blog-card"
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "blog_cards",
+        "info": {
+          "singularName": "blog-card",
+          "pluralName": "blog-cards",
+          "displayName": "Blog Card",
+          "description": ""
+        },
+        "options": {
+          "draftAndPublish": true
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "idItem": {
+            "type": "string"
+          },
+          "blog": {
+            "type": "component",
+            "repeatable": true,
+            "component": "shared.blog-card"
+          }
+        },
+        "kind": "collectionType"
+      },
+      "modelType": "contentType",
+      "modelName": "blog-card",
+      "connection": "default",
+      "uid": "api::blog-card.blog-card",
+      "apiName": "blog-card",
+      "globalId": "BlogCard",
+      "actions": {},
+      "lifecycles": {}
+    },
     "api::brand-button.brand-button": {
       "kind": "collectionType",
       "collectionName": "brand_buttons",
@@ -6363,7 +6451,6 @@
             "generic.header",
             "wallet.benefit-section",
             "studio.feature-section",
-            "shared.blog-section",
             "generic.table",
             "pricing.cloud",
             "generic.content-heading-container",
@@ -6384,7 +6471,8 @@
             "shared.dynamic-card-component",
             "shared.dynamic-selector",
             "shared.general-cards-layout",
-            "shared.logos-component"
+            "shared.logos-component",
+            "shared.blog-highlight-card"
           ],
           "pluginOptions": {
             "i18n": {
@@ -6506,7 +6594,6 @@
               "generic.header",
               "wallet.benefit-section",
               "studio.feature-section",
-              "shared.blog-section",
               "generic.table",
               "pricing.cloud",
               "generic.content-heading-container",
@@ -6527,7 +6614,8 @@
               "shared.dynamic-card-component",
               "shared.dynamic-selector",
               "shared.general-cards-layout",
-              "shared.logos-component"
+              "shared.logos-component",
+              "shared.blog-highlight-card"
             ],
             "pluginOptions": {
               "i18n": {

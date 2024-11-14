@@ -3,7 +3,6 @@ export const smallSize: string
 export const contentAlignCenter: string
 export const upperIcon: string
 export const numberIconText: string
-export const dynamicCard: string
 export const transitionContainer: string
 export const showMoreContent: string
 export const contentContainer: string

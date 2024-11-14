@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blog_cards",
+  "info": {
+    "singularName": "blog-card",
+    "pluralName": "blog-cards",
+    "displayName": "Blog Card",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "idItem": {
+      "type": "string"
+    },
+    "blog": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.blog-card"
+    }
+  }
+}

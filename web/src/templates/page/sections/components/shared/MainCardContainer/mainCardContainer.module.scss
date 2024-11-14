@@ -13,7 +13,6 @@ $paddingSmallCard: 24px;
   gap: 32px;
   @include min-width($tabletMD) {
     @include flex-direction(row);
-    @include align-items(flex-start);
     @include align-items(stretch);
   }
   &.oneColumn {
