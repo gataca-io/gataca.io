@@ -111,11 +111,7 @@ const ActionCard: React.FC<ActionCardModel> = props => {
               {titleContent?.length && (
                 <h4 className={cx("bodyBoldXL")}>{titleContent}</h4>
               )}
-              {content?.length && (
-                <p className={cx("bodyRegularLG neutral700")}>
-                  <MarkDownContent content={content} />
-                </p>
-              )}
+              {content?.length && <MarkDownContent content={content} />}
             </div>
           </div>
         ) : null}

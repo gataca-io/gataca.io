@@ -231,7 +231,7 @@ const DynamicSelector: React.FC<ISectionProps> = props => {
                   }}
                 />
               )}
-              {selector_list[0]?.title && (
+              {selector_list && selector_list[0]?.title && (
                 <SelectorList
                   openItem={openItem}
                   setOpenItem={setOpenItem}
@@ -252,20 +252,23 @@ const DynamicSelector: React.FC<ISectionProps> = props => {
                 layout ? layoutStyles[layout] : styles?.twentyFiveSeventyFive
               }`}
             >
-              {selector_list[openItem]?.action_card?.data?.attributes
-                ?.actionCard?.length && (
-                <ActionCardList
-                  showItem={showItem}
-                  setShowItem={setShowItem}
-                  list={selector_list[openItem]}
-                />
-              )}
-              {selector_list[openItem]?.media && (
+              {selector_list &&
+                selector_list[openItem]?.action_card?.data?.attributes
+                  ?.actionCard?.length && (
+                  <ActionCardList
+                    showItem={showItem}
+                    setShowItem={setShowItem}
+                    list={selector_list[openItem]}
+                  />
+                )}
+              {selector_list && selector_list[openItem]?.media && (
                 <div
                   className={styles?.media__container}
                   key={`media__` + Math.random()}
                 >
-                  {selector_list[openItem]?.media && getmediaExt()}
+                  {selector_list &&
+                    selector_list[openItem]?.media &&
+                    getmediaExt()}
                 </div>
               )}
             </div>
