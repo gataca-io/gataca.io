@@ -75,6 +75,7 @@ const DynamicCard: React.FC<ISectionProps> = props => {
     return (
       <div
         id={`dynamicCard__` + index}
+        key={`dynamicCard__` + index}
         className={`${styles?.dynamicCard} ${
           size ? cardSizeStyles[size] : ""
         } ${className && className}`}

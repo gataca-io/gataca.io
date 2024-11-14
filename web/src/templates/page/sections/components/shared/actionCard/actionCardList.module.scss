@@ -1,0 +1,12 @@
+@import "../../../../../../styles/colors.scss";
+@import "../../../../../../styles/mixins.scss";
+
+
+.actionCardList__container {
+  gap: 20px;
+  @include flexbox();
+  @include flex-direction(column);
+  
+}
+
+

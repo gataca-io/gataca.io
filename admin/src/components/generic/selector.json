@@ -9,12 +9,31 @@
     "title": {
       "type": "string"
     },
-    "content": {
-      "type": "richtext"
-    },
     "showSelector": {
       "type": "boolean",
       "default": true
+    },
+    "media": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "action_card": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::action-card.action-card"
+    },
+    "content": {
+      "type": "text"
+    },
+    "idItem": {
+      "type": "string"
     }
   }
 }

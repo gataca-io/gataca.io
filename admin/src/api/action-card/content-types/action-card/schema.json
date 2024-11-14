@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "action_cards",
+  "info": {
+    "singularName": "action-card",
+    "pluralName": "action-cards",
+    "displayName": "Action Card"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "idItem": {
+      "type": "string"
+    },
+    "actionCard": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.action-card"
+    }
+  }
+}
