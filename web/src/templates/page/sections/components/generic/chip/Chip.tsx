@@ -6,6 +6,7 @@ import StrapiImage from "../../../../../../components/atoms/images/StrapiImage"
 
 const Chip: React.FC<ChipModel> = props => {
   const {
+    className,
     idChip,
     text,
     action,
@@ -64,7 +65,9 @@ const Chip: React.FC<ChipModel> = props => {
         ) : null}
         {text ? (
           <span
-            className={cx(chipSize ? sizeStyles[chipSize] : "bodyRegularSM")}
+            className={`${cx(
+              chipSize ? sizeStyles[chipSize] : "bodyRegularSM"
+            )} ${className && className}`}
           >
             {text}
           </span>

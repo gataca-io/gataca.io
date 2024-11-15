@@ -34,17 +34,37 @@
           "searchable": false,
           "sortable": false
         }
+      },
+      "categories": {
+        "edit": {
+          "label": "categories",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "categories",
+          "searchable": false,
+          "sortable": false
+        }
       }
     },
     "layouts": {
       "list": [
         "id",
-        "chip_options"
+        "chip_options",
+        "categories"
       ],
       "edit": [
         [
           {
             "name": "chip_options",
+            "size": 6
+          },
+          {
+            "name": "categories",
             "size": 6
           }
         ]

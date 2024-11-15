@@ -1,7 +1,8 @@
 {
   "collectionName": "components_generic_chip_groups",
   "info": {
-    "displayName": "Chip group"
+    "displayName": "Chip group",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -9,6 +10,11 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::chip-option.chip-option"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category"
     }
   }
 }

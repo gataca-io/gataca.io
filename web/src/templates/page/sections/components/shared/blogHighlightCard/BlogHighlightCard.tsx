@@ -7,7 +7,7 @@ import {
 } from "../../../../../../interfaces/interfaces"
 import Heading from "../Heading/Heading"
 import Button from "../../generic/button/Button"
-import BlogHighlightCardContainer from "../BlogCardContainer/BlogCardContainer"
+import BlogCardContainer from "../BlogCardContainer/BlogCardContainer"
 
 export type ISectionProps = {
   idItem?: string
@@ -94,7 +94,7 @@ const BlogHighlightCard: React.FC<ISectionProps> = props => {
           )}
         </div>
       )}
-      <BlogHighlightCardContainer
+      <BlogCardContainer
         idItem={blogHighlightCardContainer?.idItem}
         blog_card={
           blogHighlightCardContainer?.blog_card?.data?.attributes?.blog

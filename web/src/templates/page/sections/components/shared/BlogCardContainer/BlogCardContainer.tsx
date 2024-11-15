@@ -7,11 +7,13 @@ import BlogPreviewSkeleton from "../../../../../../components/elements/skeletons
 export type BlogCardContainerModel = {
   idItem?: string
   blog_card: any
+  blogs: any
   columns: string
+  loadMoreCounter: any
 }
 
 const BlogCardContainer: React.FC<BlogCardContainerModel> = props => {
-  const { idItem, columns, blog_card } = props
+  const { idItem, columns, blog_card, blogs, loadMoreCounter } = props
 
   const columnStyles: Record<string, string> = {
     two: styles?.twoColumns,
@@ -29,39 +31,36 @@ const BlogCardContainer: React.FC<BlogCardContainerModel> = props => {
     >
       {blog_card ? (
         blog_card?.map((el: any, index: number) => {
-          const { idItem, button, showChip, chip, blog } = el
+          const { idItem, showChip, blog } = el
 
           return (
             <BlogCard
               id={el?.id}
-              idItem={idItem}
-              key={"blogPreview_" + index}
+              idItem={idItem || "blogCard__" + index}
+              key={"blogCard__" + index}
               attributes={blog?.data?.attributes}
               showChip={showChip}
+              chip={{ ...el?.chip }}
               button={{
-                idButton: button?.idButton,
-                label: button?.label,
-                icon: button?.icon,
-                style: button?.style,
-                color: button?.color,
-                size: button?.size,
-                noPaddingText: button?.noPaddingText,
-                disabled: button?.disabled,
-                link: button?.link,
-                url: button?.url,
-                outsideWeb: button?.outsideWeb,
-                action: () => window.open(button?.url, "_blank"),
+                ...el?.button,
+                action: () => window.open(el?.button?.url, "_blank"),
               }}
-              chip={{
-                idChip: chip?.idChip,
-                text: chip?.text,
-                type: chip?.type,
-                form: chip?.form,
-                disabled: chip?.disabled,
-                color: chip?.color,
-                chipSize: chip?.chipSize,
-                leadingIcon: chip?.leadingIcon,
-                trailingIcon: chip?.trailingIcon,
+            />
+          )
+        })
+      ) : blogs ? (
+        blogs?.slice(0, 6 * loadMoreCounter)?.map((el: any, index: number) => {
+          return (
+            <BlogCard
+              id={el?.id}
+              idItem={"blog__" + index}
+              key={"blog__" + index}
+              attributes={el?.attributes}
+              showChip={true}
+              chip={{ ...el?.chip }}
+              button={{
+                ...el?.button,
+                action: () => window.open(el?.button?.url, "_blank"),
               }}
             />
           )

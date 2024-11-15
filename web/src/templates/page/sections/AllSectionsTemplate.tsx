@@ -24,6 +24,7 @@ import DynamicSelector from "./components/shared/dynamicSelector/DynamicSelector
 import GeneralCardsLayout from "./components/shared/GeneralCardsLayout/GeneralCardsLayout"
 import LogosComponent from "./components/shared/LogosComponent/LogosComponent"
 import BlogHighlightCard from "./components/shared/blogHighlightCard/BlogHighlightCard"
+import MainBlogLayout from "./components/shared/mainBlogLayout/MainBlogLayout"
 
 const AllSectionsTemplate: React.FC<PageModel> = props => {
   const [benefitsLoaded, setBenefitsLoaded] = React.useState<boolean>(false)
@@ -87,6 +88,8 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
       mainCardContainer,
       logoContainer,
       blogHighlightCardContainer,
+      blogsAll,
+      allCategory,
     } = item
 
     return (
@@ -276,6 +279,18 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
             heading={heading?.data?.attributes?.heading}
             logoContainer={logoContainer}
             background={background}
+          />
+        )}
+        {__component === "shared.main-blog-layout" && (
+          <MainBlogLayout
+            idItem={idItem}
+            heading={heading?.data?.attributes?.heading}
+            button={button}
+            chip_options={chip_options?.chip_options?.data}
+            category_options={chip_options?.categories?.data}
+            blogHighlightCardContainer={blogHighlightCardContainer}
+            blogsAll={blogsAll?.data}
+            allCategory={allCategory}
           />
         )}
       </section>

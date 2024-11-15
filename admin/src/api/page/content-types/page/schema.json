@@ -45,7 +45,8 @@
         "shared.dynamic-selector",
         "shared.general-cards-layout",
         "shared.logos-component",
-        "shared.blog-highlight-card"
+        "shared.blog-highlight-card",
+        "shared.main-blog-layout"
       ],
       "pluginOptions": {
         "i18n": {
