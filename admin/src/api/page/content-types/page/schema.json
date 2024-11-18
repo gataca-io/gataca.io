@@ -37,14 +37,15 @@
         "shared.list-group",
         "shared.header-container",
         "shared.sub-heading-container",
-        "shared.card-container",
         "shared.carrousel-logos",
         "shared.highlight",
         "shared.full-width-card",
         "shared.text-media",
         "shared.video",
         "shared.dynamic-card-component",
-        "shared.dynamic-selector"
+        "shared.dynamic-selector",
+        "shared.general-cards-layout",
+        "shared.logos-component"
       ],
       "pluginOptions": {
         "i18n": {

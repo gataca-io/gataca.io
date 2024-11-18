@@ -1,0 +1,22 @@
+@import "../../../../../../../styles/colors.scss";
+@import "../../../../../../../styles/mixins.scss";
+@import "../../../../../../../styles/types";
+
+.logo__container {
+  @include flexbox();
+  @include flex-direction(column);
+  @include justify-content(flex-start);
+  @include align-items(center);
+  gap: 20px;
+  .imageContainer {
+    min-height: 60px;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+ 
+  p {
+    text-align: center;
+  }
+}

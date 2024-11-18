@@ -171,7 +171,6 @@ export interface InsideSectionsModel {
   subHeading?: any
   columns?: string
   idItem?: string
-  card?: any
   loop?: boolean
   lightLogos?: boolean
   layout?: string
@@ -189,6 +188,9 @@ export interface InsideSectionsModel {
   selectorIllustration?: StrapiImageModel
   headingSelector?: any
   selectorAlign?: string
+  button?: ButtonModel
+  mainCardContainer?: any
+  logoContainer?: any
 }
 
 export interface LocalizationsModel {

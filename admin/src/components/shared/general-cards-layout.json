@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_shared_general_cards_layouts",
+  "info": {
+    "displayName": "GeneralCardsLayout"
+  },
+  "options": {},
+  "attributes": {
+    "idItem": {
+      "type": "string"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "generic.button"
+    },
+    "heading": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::heading.heading"
+    },
+    "mainCardContainer": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.card-container"
+    }
+  }
+}

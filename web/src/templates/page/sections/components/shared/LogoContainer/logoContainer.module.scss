@@ -1,0 +1,65 @@
+@import "../../../../../../styles/colors.scss";
+@import "../../../../../../styles/mixins.scss";
+
+$paddingContainer: 0px;
+
+.logo__container {
+  width: 100%;
+  @include flexbox();
+  @include flex-direction(column);
+  @include justify-content(space-around);
+  @include flex-wrap(wrap);
+  @include align-items(center);
+  gap: 32px;
+  @include min-width($mobileXL) {
+    @include flex-direction(row);
+    @include align-items(stretch);
+  }
+  > div  {
+    max-width: 200px;
+    @include min-width($mobileXL) {
+      max-width: 100%;
+    }
+  }
+  &.fourColumns {
+    > div {
+      @include min-width($mobileXL) {
+        width: calc(calc(50% - $paddingContainer * 2) - calc(64px / 4));
+        @include flex(0, 0, calc(calc(50% - $paddingContainer * 2) - calc(64px / 4)))
+      }
+      @include min-width($tabletSM) {
+        width: calc(calc(100%/3) - $paddingContainer * 2 - calc(64px / 3));
+        @include flex(0, 0, calc(calc(100%/3) - $paddingContainer * 2 - calc(64px / 3)));
+    
+      }
+      @include min-width($desktopMD) {
+        width: calc(calc(25% - $paddingContainer * 2) - calc(64px / 2));
+        @include flex(0, 0, calc(calc(25% - $paddingContainer * 2) - calc(64px / 2)));
+      }
+    }
+  }
+  &.fiveColumns {
+    > div {
+      @include min-width($mobileXL) {
+        width: calc(calc(50% - $paddingContainer * 2) - calc(64px / 4));
+        @include flex(0, 0, calc(calc(50% - $paddingContainer * 2) - calc(64px / 4)))
+      }
+    
+      @include min-width($tabletSM) {
+        width: calc(calc(100%/3) - $paddingContainer * 2 - calc(64px / 3));
+        @include flex(0, 0, calc(calc(100%/3) - $paddingContainer * 2 - calc(64px / 3)));
+    
+      }
+      @include min-width($desktopMD) {
+        width: calc(calc(25% - $paddingContainer * 2) - calc(64px / 2));
+        @include flex(0, 0, calc(calc(25% - $paddingContainer * 2) - calc(64px / 2)));
+      }
+      @include min-width(1304px) {
+        width: calc(calc(20% - $paddingContainer * 2) - calc(64px / 2));
+        @include flex(0, 0, calc(calc(20% - $paddingContainer * 2) - calc(64px / 2)));
+      }
+
+    }
+  }
+}
+
