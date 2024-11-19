@@ -127,6 +127,12 @@
       "action": "api::content.content.findOne"
     },
     {
+      "action": "api::credential-example.credential-example.find"
+    },
+    {
+      "action": "api::credential-example.credential-example.findOne"
+    },
+    {
       "action": "api::credential.credential.find"
     },
     {
@@ -170,6 +176,12 @@
     },
     {
       "action": "api::gataca-wallet.gataca-wallet.find"
+    },
+    {
+      "action": "api::heading-credential.heading-credential.find"
+    },
+    {
+      "action": "api::heading-credential.heading-credential.findOne"
     },
     {
       "action": "api::heading.heading.find"
@@ -305,6 +317,12 @@
     },
     {
       "action": "api::success-story.success-story.findOne"
+    },
+    {
+      "action": "api::testimonial-card.testimonial-card.find"
+    },
+    {
+      "action": "api::testimonial-card.testimonial-card.findOne"
     },
     {
       "action": "api::tier-table.tier-table.find"

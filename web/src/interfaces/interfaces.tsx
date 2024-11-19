@@ -197,6 +197,13 @@ export interface InsideSectionsModel {
   blogHighlightCardContainer?: any
   blogsAll?: any
   allCategory?: string
+  buttonLeft?: ButtonModel
+  buttonRight?: ButtonModel
+  cards?: any
+  cardWidth?: number
+  cardHeight?: number
+  credentials?: any
+  testimonial_card?: any
 }
 
 export interface LocalizationsModel {
@@ -462,4 +469,29 @@ export interface MainCardContainerModel {
   idItem?: string
   card: CardModel[]
   columns?: string
+}
+
+export interface CredentialModel {
+  className?: string
+  idItem?: string
+  chip?: ChipModel
+  color?: string
+  iconSize?: string
+  logoSize?: string
+  icon?: any
+  logo?: any
+  actionItemText?: string
+  actionItemIcon?: any
+  headingCredential?: any
+  headingCredentialHeader?: boolean
+}
+
+export interface TestimonialCardModel {
+  className?: string
+  idItem?: string
+  content?: string
+  image?: any
+  name?: string
+  workTitle?: string
+  color?: string
 }

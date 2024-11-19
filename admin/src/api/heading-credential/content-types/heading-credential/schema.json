@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "heading_credentials",
+  "info": {
+    "singularName": "heading-credential",
+    "pluralName": "heading-credentials",
+    "displayName": "Heading Credential"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "idItem": {
+      "type": "string"
+    },
+    "headingCredential": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.heading-credential"
+    }
+  }
+}

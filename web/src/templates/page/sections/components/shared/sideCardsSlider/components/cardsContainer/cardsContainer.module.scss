@@ -1,0 +1,16 @@
+@import "../../../../../../../../styles/colors.scss";
+@import "../../../../../../../../styles/mixins.scss";
+
+.cards__container {
+  @include flexbox();
+  @include flex-direction(row);
+  @include flex-wrap(nowrap);
+  @include align-items(stretch);
+  gap: 32px;
+  > div {
+    @include flexbox();
+    @include align-items(stretch);
+    margin-top: 12px;
+  }
+}
+

@@ -1,0 +1,175 @@
+@import "../../../../../../styles/colors.scss";
+@import "../../../../../../styles/mixins.scss";
+
+.sideCardsSlider{
+  margin: 0 0 132px;
+  padding: 0 20px;
+  @include min-width($mobileXL) {
+    margin: 0 0 200px;
+    padding: 0 40px;
+  }
+  @include min-width($desktopMD) {
+    padding: 0 60px;
+  }
+}
+
+.sideCardsSlider__container {
+  width: 100%;
+  @include flexbox();
+  @include flex-direction(column);
+  @include justify-content(space-between);
+  @include flex-wrap(wrap);
+  gap: 60px;
+  @include min-width($mobileXL) {
+    @include flex-direction(row);
+    @include align-items(center);
+    @include flex-wrap(nowrap);
+    @include justify-content(flex-start);
+    gap: 30px;
+  }
+  @include min-width($tabletSM) {
+    gap: 50px;
+  }
+  @include min-width($tabletXL) {
+    gap: 90px;
+  }
+  @include min-width($desktopSM) {
+    gap: 133px;
+  }
+  &.textAlignRight {
+    @include min-width($mobileXL) {
+      margin-left: -20px;
+    }
+    @include min-width($desktopMD) {
+      margin-left: -40px;
+    }
+  }
+}
+
+.sideCardsSlider__heading {
+  @include order(0);
+  @include flex(0, 0, 100%);
+  @include min-width($mobileXL) {
+    @include flex(0, 0, calc(40% - 30px));
+  }
+  @include min-width($tabletSM) {
+    @include flex(0, 0, calc(40% - 50px));
+  }
+  @include min-width($tabletXL) {
+    @include flex(0, 0, calc(40% - 90px));
+  }
+  @include min-width($desktopSM) {
+    @include flex(0, 0, calc(40% - 133px));
+  }
+  &.textAlignRight {
+    @include order(1);
+    &.background {
+      &::before {
+        @include min-width($mobileXL) {
+          border-radius: 40px 0px 0px 40px;
+          right: 0px;
+          left: inherit;
+        }
+      }
+    }
+  }
+  &.background {
+    &::before{
+      @include min-width($mobileXL) {
+        content: "";
+        position: absolute;
+        width: 75vw;
+        height: calc(100% + 164px);
+        border-radius: 0px 40px 40px 0px;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background: $neutral200;
+        z-index: -1;
+      }
+    }
+  }
+}
+
+.sideCardsSlider__slotsButtonContainer{
+  @include order(1);
+  position: relative;
+  @include min-width($mobileXL) {
+    @include flex(0, 0, 100%);
+    overflow-y: hidden
+  }
+  &.textAlignRight {
+    @include order(0);
+    @include min-width($mobileXL) {
+      @include flex(0, 0, 58%);
+    }
+    @include min-width($tabletSM) {
+      @include flex(0, 0, 60%);
+    }
+    @include min-width($tabletXL) {
+      @include flex(0, 0, calc(65% - 40px));
+    }
+    @include min-width(1300px) {
+      @include flex(0, 0, calc(74% - 120px));
+    }
+
+    @include min-width($desktopXXL) {
+      @include flex(0, 0, calc(79% - 120px));
+    }
+    @include min-width(1680px) {
+      @include flex(0, 0, calc(90% - 120px));
+    }
+    @include min-width(1860px) {
+      @include flex(0, 0, calc(95% - 120px));
+    }
+    .sideCardsSlider__slotsButton {
+      @include min-width($mobileXL) {
+        left: inherit;
+        right: 0;
+      }
+      .slots__elements {
+        @include min-width($mobileXL) {
+          margin-right: 12px;
+        }
+      }
+      .sideCardsSlider__buttons {
+        @include min-width($mobileXL) {
+          margin-left: 0;
+          margin-right: 12px;
+          right: 0;
+        }
+      }
+    }
+  }
+  .sideCardsSlider__slotsButton {
+    width: 1148px;
+    overflow-x: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    .slots__elements {
+      @include flexbox();
+      @include flex-direction(row);
+      position: absolute;
+      top: 0;
+      margin-left: 2px;
+      @include min-width($mobileXL) {
+        margin-left: 12px;
+      }
+    }
+    .sideCardsSlider__buttons {
+      @include flexbox();
+      @include flex-direction(row);
+      @include justify-content(flex-start);
+      @include flex-wrap(nowrap);
+      gap: 20px;
+      position: absolute;
+      bottom: 0;
+      margin-left: 2px;
+      @include min-width($mobileXL) {
+        margin-left: 12px;
+      }
+    }
+  }
+}
+

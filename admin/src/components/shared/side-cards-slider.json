@@ -1,0 +1,62 @@
+{
+  "collectionName": "components_shared_side_cards_sliders",
+  "info": {
+    "displayName": "sideCardsSlider",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "idItem": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::heading.heading"
+    },
+    "background": {
+      "type": "boolean"
+    },
+    "textAlign": {
+      "type": "enumeration",
+      "enum": [
+        "right",
+        "left"
+      ],
+      "default": "right"
+    },
+    "cards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::card.card"
+    },
+    "buttonLeft": {
+      "type": "component",
+      "repeatable": false,
+      "component": "generic.button-icon"
+    },
+    "buttonRight": {
+      "type": "component",
+      "repeatable": false,
+      "component": "generic.button-icon"
+    },
+    "cardWidth": {
+      "type": "integer",
+      "default": 343
+    },
+    "cardHeight": {
+      "type": "integer",
+      "default": 212
+    },
+    "credentials": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::credential-example.credential-example"
+    },
+    "testimonial_card": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::testimonial-card.testimonial-card"
+    }
+  }
+}
