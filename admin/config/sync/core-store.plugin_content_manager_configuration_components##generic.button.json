@@ -221,11 +221,15 @@
           {
             "name": "style",
             "size": 6
+          },
+          {
+            "name": "size",
+            "size": 6
           }
         ],
         [
           {
-            "name": "size",
+            "name": "color",
             "size": 6
           }
         ],
@@ -246,10 +250,6 @@
         [
           {
             "name": "icon",
-            "size": 6
-          },
-          {
-            "name": "color",
             "size": 6
           }
         ]

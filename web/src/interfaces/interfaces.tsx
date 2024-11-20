@@ -58,6 +58,7 @@ export interface IconModel {
 }
 
 export interface ChipModel {
+  className?: string
   idChip?: string
   text?: string
   action?: (x?: any) => void
@@ -74,8 +75,8 @@ export interface SegmentedChipModel {
   index: number
   id: string
   text?: string
-  selected: boolean
-  showItem: (x: number) => void
+  selected?: boolean
+  showItem?: (x: number) => void
   type?: string
   form?: string
   color?: string
@@ -87,6 +88,10 @@ export interface SegmentedChipModel {
 export interface BlogPreviewModel {
   id: string
   attributes: BlogModel
+  idItem?: string
+  chip?: ChipModel
+  button?: ButtonModel
+  showChip?: boolean
 }
 
 export interface PagePreviewModel {
@@ -136,9 +141,7 @@ export interface InsideSectionsModel {
   icon?: any
   content?: string | any
   __component?: string
-  subtitle?: string
   benefits?: any
-  blogs?: any
   logos?: any
   tiers?: any
   infoToggles?: string
@@ -191,6 +194,9 @@ export interface InsideSectionsModel {
   button?: ButtonModel
   mainCardContainer?: any
   logoContainer?: any
+  blogHighlightCardContainer?: any
+  blogsAll?: any
+  allCategory?: string
 }
 
 export interface LocalizationsModel {

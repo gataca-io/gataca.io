@@ -1,4 +1,5 @@
 import * as React from "react"
+import cx from "classnames"
 import { SegmentedChipModel } from "../../../../../../../interfaces/interfaces"
 import Chip from "../../chip/Chip"
 
@@ -30,7 +31,8 @@ const SegmentedChip: React.FC<SegmentedChipModel> = props => {
         chipSize={chipSize}
         leadingIcon={leadingIcon}
         trailingIcon={trailingIcon}
-        action={() => !selected && showItem(index)}
+        className={selected ? cx("fontWeigth700") : ""}
+        action={() => !selected && showItem && showItem(index)}
       />
     </>
   )

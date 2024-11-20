@@ -1,0 +1,22 @@
+@import "../../../../../../styles/colors.scss";
+@import "../../../../../../styles/mixins.scss";
+
+.blogHighlightCard__container {
+  padding: 0 20px;
+  @include flexbox();
+  @include flex-direction(column);
+  gap: 80px;
+  margin-bottom: 132px;
+  @include min-width($mobileXL) {
+    padding: 0 40px;
+    margin-bottom: 200px;
+  }
+  @include min-width($desktopMD) {
+    padding: 0 60px;
+  }
+  .buttonContainer {
+    width: 100%;
+    @include flexbox;
+    @include justify-content(center);
+  }
+}

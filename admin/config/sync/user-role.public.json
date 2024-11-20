@@ -46,6 +46,12 @@
       "action": "api::benefit.benefit.findOne"
     },
     {
+      "action": "api::blog-card.blog-card.find"
+    },
+    {
+      "action": "api::blog-card.blog-card.findOne"
+    },
+    {
       "action": "api::blog.blog.create"
     },
     {

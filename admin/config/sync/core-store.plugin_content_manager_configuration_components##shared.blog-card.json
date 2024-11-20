@@ -1,14 +1,14 @@
 {
-  "key": "plugin_content_manager_configuration_components::shared.blog-section",
+  "key": "plugin_content_manager_configuration_components::shared.blog-card",
   "value": {
-    "uid": "shared.blog-section",
+    "uid": "shared.blog-card",
     "settings": {
       "bulkable": true,
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "title",
-      "defaultSortBy": "title",
+      "mainField": "idItem",
+      "defaultSortBy": "idItem",
       "defaultSortOrder": "ASC"
     },
     "metadatas": {
@@ -20,37 +20,65 @@
           "sortable": false
         }
       },
-      "title": {
+      "idItem": {
         "edit": {
-          "label": "title",
+          "label": "idItem",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "title",
+          "label": "idItem",
           "searchable": true,
           "sortable": true
         }
       },
-      "subtitle": {
+      "button": {
         "edit": {
-          "label": "subtitle",
+          "label": "button",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "subtitle",
+          "label": "button",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "chip": {
+        "edit": {
+          "label": "chip",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "chip",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "showChip": {
+        "edit": {
+          "label": "showChip",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "showChip",
           "searchable": true,
           "sortable": true
         }
       },
-      "blogs": {
+      "blog": {
         "edit": {
-          "label": "blogs",
+          "label": "blog",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -58,53 +86,45 @@
           "mainField": "title"
         },
         "list": {
-          "label": "blogs",
-          "searchable": false,
-          "sortable": false
-        }
-      },
-      "cta": {
-        "edit": {
-          "label": "cta",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "cta",
-          "searchable": false,
-          "sortable": false
+          "label": "blog",
+          "searchable": true,
+          "sortable": true
         }
       }
     },
     "layouts": {
       "list": [
         "id",
-        "title",
-        "subtitle",
-        "blogs"
+        "idItem",
+        "button",
+        "chip"
       ],
       "edit": [
         [
           {
-            "name": "title",
+            "name": "idItem",
             "size": 6
+          }
+        ],
+        [
+          {
+            "name": "showChip",
+            "size": 4
           },
           {
-            "name": "subtitle",
+            "name": "blog",
             "size": 6
           }
         ],
         [
           {
-            "name": "blogs",
-            "size": 6
+            "name": "button",
+            "size": 12
           }
         ],
         [
           {
-            "name": "cta",
+            "name": "chip",
             "size": 12
           }
         ]

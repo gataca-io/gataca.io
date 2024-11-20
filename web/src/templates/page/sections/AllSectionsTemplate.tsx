@@ -3,7 +3,6 @@ import cx from "classnames"
 import * as styles from "./allSectionsTemplate.module.scss"
 import { PageModel } from "../../../interfaces/interfaces"
 import Benefits from "./components/products/benefits/benefits"
-import ChosenBlogsSection from "./components/shared/chosenBlogsSection/ChosenBlogsSection"
 import CarrouselLogos from "./components/shared/carrouselLogos/CarrouselLogos"
 import Table from "./components/shared/table/Table"
 import PricingInfo from "./components/pricing/pricingInfo/PricingInfo"
@@ -17,7 +16,6 @@ import ChipGroup from "./components/generic/chipGroup/ChipGroup"
 import ListGroup from "./components/shared/list/listGroup/ListGroup"
 import HeaderContainer from "./components/shared/headerContainer/HeaderContainer"
 import SubHeadingContainer from "./components/shared/subHeadingContainer/SubHeadingContainer"
-import MainCardContainer from "./components/shared/MainCardContainer/MainCardContainer"
 import FullWidthCard from "./components/shared/fullWidthCard/FullWidthCard"
 import TextMedia from "./components/shared/textMedia/TextMedia"
 import Video from "./components/shared/video/Video"
@@ -25,6 +23,8 @@ import DynamicCardComponent from "./components/shared/dynamicCardComponent/Dynam
 import DynamicSelector from "./components/shared/dynamicSelector/DynamicSelector"
 import GeneralCardsLayout from "./components/shared/GeneralCardsLayout/GeneralCardsLayout"
 import LogosComponent from "./components/shared/LogosComponent/LogosComponent"
+import BlogHighlightCard from "./components/shared/blogHighlightCard/BlogHighlightCard"
+import MainBlogLayout from "./components/shared/mainBlogLayout/MainBlogLayout"
 
 const AllSectionsTemplate: React.FC<PageModel> = props => {
   const [benefitsLoaded, setBenefitsLoaded] = React.useState<boolean>(false)
@@ -34,12 +34,10 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
     const {
       id,
       title,
-      subtitle,
       switchLabel,
       hero,
       __component,
       benefits,
-      blogs,
       logos,
       content,
       tiers,
@@ -89,6 +87,9 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
       button,
       mainCardContainer,
       logoContainer,
+      blogHighlightCardContainer,
+      blogsAll,
+      allCategory,
     } = item
 
     return (
@@ -125,11 +126,12 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
             bgVerticalAlign={bgVerticalAlign}
           />
         )}
-        {__component === "shared.blog-section" && (
-          <ChosenBlogsSection
-            title={title}
-            subtitle={subtitle}
-            blogs={blogs?.data}
+        {__component === "shared.blog-highlight-card" && (
+          <BlogHighlightCard
+            idItem={idItem}
+            heading={heading?.data?.attributes?.heading}
+            button={button}
+            blogHighlightCardContainer={blogHighlightCardContainer}
           />
         )}
         {__component === "generic.table" && <Table content={content} />}
@@ -277,6 +279,18 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
             heading={heading?.data?.attributes?.heading}
             logoContainer={logoContainer}
             background={background}
+          />
+        )}
+        {__component === "shared.main-blog-layout" && (
+          <MainBlogLayout
+            idItem={idItem}
+            heading={heading?.data?.attributes?.heading}
+            button={button}
+            chip_options={chip_options?.chip_options?.data}
+            category_options={chip_options?.categories?.data}
+            blogHighlightCardContainer={blogHighlightCardContainer}
+            blogsAll={blogsAll?.data}
+            allCategory={allCategory}
           />
         )}
       </section>

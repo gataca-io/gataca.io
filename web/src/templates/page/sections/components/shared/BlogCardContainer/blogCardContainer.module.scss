@@ -1,0 +1,48 @@
+@import "../../../../../../styles/colors.scss";
+@import "../../../../../../styles/mixins.scss";
+
+$paddingCard: 24px;
+
+.card__container {
+  width: 100%;
+  @include flexbox();
+  @include flex-direction(column);
+  @include justify-content(flex-start);
+  @include flex-wrap(wrap);
+  gap: 32px;
+  @include min-width($tabletMD) {
+    @include flex-direction(row);
+    @include align-items(stretch);
+  }
+  &.twoColumns {
+    > div {
+      @include min-width($tabletMD) {
+        min-width: calc(272px - $paddingCard * 2);
+        width: calc(calc(50% - $paddingCard * 2) - calc(64px / 4));
+        @include flex(0, 0, calc(calc(50% - $paddingCard * 2) - calc(64px / 4)));
+      }
+    }
+  }
+  &.threeColumns {
+    > div {
+      @include min-width($tabletMD) {
+        min-width: calc(272px - $paddingCard * 2);
+        width: calc(calc(50% - $paddingCard * 2) - calc(64px / 4));
+        @include flex(0, 0, calc((50% - $paddingCard * 2) - calc(64px / 4)));
+      }
+
+      @include min-width($desktopMD) {
+        width: calc(calc(100%/3) - $paddingCard * 2 - calc(64px / 3));
+        @include flex(0, 0, calc(calc(100%/3) - $paddingCard * 2 - calc(64px / 3)));
+
+      }
+    }
+   }
+}
+
+.blogSkeleton {
+  height: 686px;
+  &::before {
+    height: 686px;
+  }
+}

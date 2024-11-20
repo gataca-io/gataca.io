@@ -150,29 +150,9 @@ const DynamicSelector: React.FC<ISectionProps> = props => {
             className={`${styles?.headingContainer} ${
               mainIllustrationImage ? styles?.maxWidth : ""
             }`}
-            chip={{
-              idChip: heading?.chip?.idChip,
-              text: heading?.chip?.text,
-              type: heading?.chip?.type,
-              form: heading?.chip?.form,
-              disabled: heading?.chip?.disabled,
-              color: heading?.chip?.color,
-              chipSize: heading?.chip?.chipSize,
-              leadingIcon: heading?.chip?.leadingIcon,
-              trailingIcon: heading?.chip?.trailingIcon,
-            }}
+            chip={{ ...heading?.chip }}
             button={{
-              idButton: heading?.button?.idButton,
-              label: heading?.button?.label,
-              icon: heading?.button?.icon,
-              style: heading?.button?.style,
-              color: heading?.button?.color,
-              size: heading?.button?.size,
-              noPaddingText: heading?.button?.noPaddingText,
-              disabled: heading?.button?.disabled,
-              link: heading?.button?.link,
-              url: heading?.button?.url,
-              outsideWeb: heading?.button?.outsideWeb,
+              ...heading?.button,
               action: () => window.open(heading?.button?.url, "_blank"),
             }}
           />
@@ -203,35 +183,15 @@ const DynamicSelector: React.FC<ISectionProps> = props => {
                   }
                   table={heading_selector?.table?.content}
                   className={styles?.heading_selector_container}
-                  chip={{
-                    idChip: heading_selector?.chip?.idChip,
-                    text: heading_selector?.chip?.text,
-                    type: heading_selector?.chip?.type,
-                    form: heading_selector?.chip?.form,
-                    disabled: heading_selector?.chip?.disabled,
-                    color: heading_selector?.chip?.color,
-                    chipSize: heading_selector?.chip?.chipSize,
-                    leadingIcon: heading_selector?.chip?.leadingIcon,
-                    trailingIcon: heading_selector?.chip?.trailingIcon,
-                  }}
+                  chip={{ ...heading_selector?.chip }}
                   button={{
-                    idButton: heading_selector?.button?.idButton,
-                    label: heading_selector?.button?.label,
-                    icon: heading_selector?.button?.icon,
-                    style: heading_selector?.button?.style,
-                    color: heading_selector?.button?.color,
-                    size: heading_selector?.button?.size,
-                    noPaddingText: heading_selector?.button?.noPaddingText,
-                    disabled: heading_selector?.button?.disabled,
-                    link: heading_selector?.button?.link,
-                    url: heading_selector?.button?.url,
-                    outsideWeb: heading_selector?.button?.outsideWeb,
+                    ...heading_selector?.button,
                     action: () =>
                       window.open(heading_selector?.button?.url, "_blank"),
                   }}
                 />
               )}
-              {selector_list[0]?.title && (
+              {selector_list && selector_list[0]?.title && (
                 <SelectorList
                   openItem={openItem}
                   setOpenItem={setOpenItem}
@@ -252,20 +212,23 @@ const DynamicSelector: React.FC<ISectionProps> = props => {
                 layout ? layoutStyles[layout] : styles?.twentyFiveSeventyFive
               }`}
             >
-              {selector_list[openItem]?.action_card?.data?.attributes
-                ?.actionCard?.length && (
-                <ActionCardList
-                  showItem={showItem}
-                  setShowItem={setShowItem}
-                  list={selector_list[openItem]}
-                />
-              )}
-              {selector_list[openItem]?.media && (
+              {selector_list &&
+                selector_list[openItem]?.action_card?.data?.attributes
+                  ?.actionCard?.length && (
+                  <ActionCardList
+                    showItem={showItem}
+                    setShowItem={setShowItem}
+                    list={selector_list[openItem]}
+                  />
+                )}
+              {selector_list && selector_list[openItem]?.media && (
                 <div
                   className={styles?.media__container}
                   key={`media__` + Math.random()}
                 >
-                  {selector_list[openItem]?.media && getmediaExt()}
+                  {selector_list &&
+                    selector_list[openItem]?.media &&
+                    getmediaExt()}
                 </div>
               )}
             </div>

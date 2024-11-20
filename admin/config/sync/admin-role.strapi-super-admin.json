@@ -425,6 +425,120 @@
     },
     {
       "action": "plugin::content-manager.explorer.create",
+      "subject": "api::blog-card.blog-card",
+      "properties": {
+        "fields": [
+          "idItem",
+          "blog.idItem",
+          "blog.button.label",
+          "blog.button.url",
+          "blog.button.outsideWeb",
+          "blog.button.outlined",
+          "blog.button.idButton",
+          "blog.button.icon",
+          "blog.button.link",
+          "blog.button.style",
+          "blog.button.color",
+          "blog.button.size",
+          "blog.button.disabled",
+          "blog.button.noPaddingText",
+          "blog.chip.idChip",
+          "blog.chip.text",
+          "blog.chip.type",
+          "blog.chip.form",
+          "blog.chip.disabled",
+          "blog.chip.color",
+          "blog.chip.chipSize",
+          "blog.chip.leadingIcon",
+          "blog.chip.trailingIcon",
+          "blog.showChip",
+          "blog.blog"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::blog-card.blog-card",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::blog-card.blog-card",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::blog-card.blog-card",
+      "properties": {
+        "fields": [
+          "idItem",
+          "blog.idItem",
+          "blog.button.label",
+          "blog.button.url",
+          "blog.button.outsideWeb",
+          "blog.button.outlined",
+          "blog.button.idButton",
+          "blog.button.icon",
+          "blog.button.link",
+          "blog.button.style",
+          "blog.button.color",
+          "blog.button.size",
+          "blog.button.disabled",
+          "blog.button.noPaddingText",
+          "blog.chip.idChip",
+          "blog.chip.text",
+          "blog.chip.type",
+          "blog.chip.form",
+          "blog.chip.disabled",
+          "blog.chip.color",
+          "blog.chip.chipSize",
+          "blog.chip.leadingIcon",
+          "blog.chip.trailingIcon",
+          "blog.showChip",
+          "blog.blog"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::blog-card.blog-card",
+      "properties": {
+        "fields": [
+          "idItem",
+          "blog.idItem",
+          "blog.button.label",
+          "blog.button.url",
+          "blog.button.outsideWeb",
+          "blog.button.outlined",
+          "blog.button.idButton",
+          "blog.button.icon",
+          "blog.button.link",
+          "blog.button.style",
+          "blog.button.color",
+          "blog.button.size",
+          "blog.button.disabled",
+          "blog.button.noPaddingText",
+          "blog.chip.idChip",
+          "blog.chip.text",
+          "blog.chip.type",
+          "blog.chip.form",
+          "blog.chip.disabled",
+          "blog.chip.color",
+          "blog.chip.chipSize",
+          "blog.chip.leadingIcon",
+          "blog.chip.trailingIcon",
+          "blog.showChip",
+          "blog.blog"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
       "subject": "api::blog.blog",
       "properties": {
         "fields": [
