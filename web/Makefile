@@ -9,15 +9,9 @@ build: install
 compile: install
 	docker build -f build/Dockerfile -t gatacaid/website:$(VERSION) . 
 
-snapshotX:
-	docker buildx build -f build/Dockerfile --platform linux/amd64 -t gatacaid/website:$(VERSION)-SNAPSHOT . --push
-
-release:
-	docker buildx build -f build/Dockerfile --platform linux/amd64 -t gatacaid/website:$(VERSION) -t gatacaid/website:$(VERSION)-SNAPSHOT . --push
-
 pre-release:
-	docker buildx build -f build/Dockerfile --platform linux/amd64 -t gatacaid/website:$(VERSION)-SNAPSHOT . --push
+	docker buildx build -f build/Dockerfile --platform linux/amd64 -t ghcr.io/gataca.io/website:$(VERSION)-SNAPSHOT . --push
 
 pro-release:
-	docker buildx build -f build/Dockerfile --platform linux/amd64 -t gatacaid/website:$(VERSION) . --push
+	docker buildx build -f build/Dockerfile --platform linux/amd64 -t ghcr.io/gataca.io/website:$(VERSION) . --push
 
