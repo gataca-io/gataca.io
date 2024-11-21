@@ -108,7 +108,7 @@
       },
       "allCategory": {
         "edit": {
-          "label": "allCategory",
+          "label": "allCategoryText",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -149,6 +149,10 @@
           {
             "name": "blogsAll",
             "size": 6
+          },
+          {
+            "name": "allCategory",
+            "size": 6
           }
         ],
         [
@@ -161,12 +165,6 @@
           {
             "name": "blogHighlightCardContainer",
             "size": 12
-          }
-        ],
-        [
-          {
-            "name": "allCategory",
-            "size": 6
           }
         ]
       ]

@@ -1636,6 +1636,105 @@
     },
     {
       "action": "plugin::content-manager.explorer.create",
+      "subject": "api::credential-example.credential-example",
+      "properties": {
+        "fields": [
+          "idItem",
+          "credential.idItem",
+          "credential.chip.idChip",
+          "credential.chip.text",
+          "credential.chip.type",
+          "credential.chip.form",
+          "credential.chip.disabled",
+          "credential.chip.color",
+          "credential.chip.chipSize",
+          "credential.chip.leadingIcon",
+          "credential.chip.trailingIcon",
+          "credential.iconSize",
+          "credential.logoSize",
+          "credential.color",
+          "credential.logo",
+          "credential.icon",
+          "credential.actionItemText",
+          "credential.actionItemIcon",
+          "credential.headingCredentialHeader",
+          "credential.heading_credential"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::credential-example.credential-example",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::credential-example.credential-example",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::credential-example.credential-example",
+      "properties": {
+        "fields": [
+          "idItem",
+          "credential.idItem",
+          "credential.chip.idChip",
+          "credential.chip.text",
+          "credential.chip.type",
+          "credential.chip.form",
+          "credential.chip.disabled",
+          "credential.chip.color",
+          "credential.chip.chipSize",
+          "credential.chip.leadingIcon",
+          "credential.chip.trailingIcon",
+          "credential.iconSize",
+          "credential.logoSize",
+          "credential.color",
+          "credential.logo",
+          "credential.icon",
+          "credential.actionItemText",
+          "credential.actionItemIcon",
+          "credential.headingCredentialHeader",
+          "credential.heading_credential"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::credential-example.credential-example",
+      "properties": {
+        "fields": [
+          "idItem",
+          "credential.idItem",
+          "credential.chip.idChip",
+          "credential.chip.text",
+          "credential.chip.type",
+          "credential.chip.form",
+          "credential.chip.disabled",
+          "credential.chip.color",
+          "credential.chip.chipSize",
+          "credential.chip.leadingIcon",
+          "credential.chip.trailingIcon",
+          "credential.iconSize",
+          "credential.logoSize",
+          "credential.color",
+          "credential.logo",
+          "credential.icon",
+          "credential.actionItemText",
+          "credential.actionItemIcon",
+          "credential.headingCredentialHeader",
+          "credential.heading_credential"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
       "subject": "api::credential.credential",
       "properties": {
         "fields": [
@@ -3660,6 +3759,93 @@
     },
     {
       "action": "plugin::content-manager.explorer.create",
+      "subject": "api::heading-credential.heading-credential",
+      "properties": {
+        "fields": [
+          "idItem",
+          "headingCredential.idItem",
+          "headingCredential.type",
+          "headingCredential.align",
+          "headingCredential.typeText",
+          "headingCredential.valueText",
+          "headingCredential.image",
+          "headingCredential.chip.idChip",
+          "headingCredential.chip.text",
+          "headingCredential.chip.type",
+          "headingCredential.chip.form",
+          "headingCredential.chip.disabled",
+          "headingCredential.chip.color",
+          "headingCredential.chip.chipSize",
+          "headingCredential.chip.leadingIcon",
+          "headingCredential.chip.trailingIcon"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::heading-credential.heading-credential",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::heading-credential.heading-credential",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::heading-credential.heading-credential",
+      "properties": {
+        "fields": [
+          "idItem",
+          "headingCredential.idItem",
+          "headingCredential.type",
+          "headingCredential.align",
+          "headingCredential.typeText",
+          "headingCredential.valueText",
+          "headingCredential.image",
+          "headingCredential.chip.idChip",
+          "headingCredential.chip.text",
+          "headingCredential.chip.type",
+          "headingCredential.chip.form",
+          "headingCredential.chip.disabled",
+          "headingCredential.chip.color",
+          "headingCredential.chip.chipSize",
+          "headingCredential.chip.leadingIcon",
+          "headingCredential.chip.trailingIcon"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::heading-credential.heading-credential",
+      "properties": {
+        "fields": [
+          "idItem",
+          "headingCredential.idItem",
+          "headingCredential.type",
+          "headingCredential.align",
+          "headingCredential.typeText",
+          "headingCredential.valueText",
+          "headingCredential.image",
+          "headingCredential.chip.idChip",
+          "headingCredential.chip.text",
+          "headingCredential.chip.type",
+          "headingCredential.chip.form",
+          "headingCredential.chip.disabled",
+          "headingCredential.chip.color",
+          "headingCredential.chip.chipSize",
+          "headingCredential.chip.leadingIcon",
+          "headingCredential.chip.trailingIcon"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
       "subject": "api::heading.heading",
       "properties": {
         "fields": [
@@ -5467,6 +5653,66 @@
           "SEO.keywords",
           "SEO.canonicalURL",
           "SEO.alternate_urls"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::testimonial-card.testimonial-card",
+      "properties": {
+        "fields": [
+          "idItem",
+          "card.idItem",
+          "card.content",
+          "card.name",
+          "card.workTitle",
+          "card.color",
+          "card.image"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::testimonial-card.testimonial-card",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::testimonial-card.testimonial-card",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::testimonial-card.testimonial-card",
+      "properties": {
+        "fields": [
+          "idItem",
+          "card.idItem",
+          "card.content",
+          "card.name",
+          "card.workTitle",
+          "card.color",
+          "card.image"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::testimonial-card.testimonial-card",
+      "properties": {
+        "fields": [
+          "idItem",
+          "card.idItem",
+          "card.content",
+          "card.name",
+          "card.workTitle",
+          "card.color",
+          "card.image"
         ]
       },
       "conditions": []

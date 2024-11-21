@@ -46,7 +46,8 @@
         "shared.general-cards-layout",
         "shared.logos-component",
         "shared.blog-highlight-card",
-        "shared.main-blog-layout"
+        "shared.main-blog-layout",
+        "shared.side-cards-slider"
       ],
       "pluginOptions": {
         "i18n": {

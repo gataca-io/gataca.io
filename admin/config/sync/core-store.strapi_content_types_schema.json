@@ -4555,6 +4555,92 @@
       "actions": {},
       "lifecycles": {}
     },
+    "api::credential-example.credential-example": {
+      "kind": "collectionType",
+      "collectionName": "credential_examples",
+      "info": {
+        "singularName": "credential-example",
+        "pluralName": "credential-examples",
+        "displayName": "Credential Example"
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "idItem": {
+          "type": "string"
+        },
+        "credential": {
+          "type": "component",
+          "repeatable": true,
+          "component": "shared.credential"
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "credential_examples",
+        "info": {
+          "singularName": "credential-example",
+          "pluralName": "credential-examples",
+          "displayName": "Credential Example"
+        },
+        "options": {
+          "draftAndPublish": true
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "idItem": {
+            "type": "string"
+          },
+          "credential": {
+            "type": "component",
+            "repeatable": true,
+            "component": "shared.credential"
+          }
+        },
+        "kind": "collectionType"
+      },
+      "modelType": "contentType",
+      "modelName": "credential-example",
+      "connection": "default",
+      "uid": "api::credential-example.credential-example",
+      "apiName": "credential-example",
+      "globalId": "CredentialExample",
+      "actions": {},
+      "lifecycles": {}
+    },
     "api::dynamic-card.dynamic-card": {
       "kind": "collectionType",
       "collectionName": "dynamic_cards",
@@ -5781,6 +5867,92 @@
       "actions": {},
       "lifecycles": {}
     },
+    "api::heading-credential.heading-credential": {
+      "kind": "collectionType",
+      "collectionName": "heading_credentials",
+      "info": {
+        "singularName": "heading-credential",
+        "pluralName": "heading-credentials",
+        "displayName": "Heading Credential"
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "idItem": {
+          "type": "string"
+        },
+        "headingCredential": {
+          "type": "component",
+          "repeatable": false,
+          "component": "shared.heading-credential"
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "heading_credentials",
+        "info": {
+          "singularName": "heading-credential",
+          "pluralName": "heading-credentials",
+          "displayName": "Heading Credential"
+        },
+        "options": {
+          "draftAndPublish": true
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "idItem": {
+            "type": "string"
+          },
+          "headingCredential": {
+            "type": "component",
+            "repeatable": false,
+            "component": "shared.heading-credential"
+          }
+        },
+        "kind": "collectionType"
+      },
+      "modelType": "contentType",
+      "modelName": "heading-credential",
+      "connection": "default",
+      "uid": "api::heading-credential.heading-credential",
+      "apiName": "heading-credential",
+      "globalId": "HeadingCredential",
+      "actions": {},
+      "lifecycles": {}
+    },
     "api::highlight-card.highlight-card": {
       "kind": "collectionType",
       "collectionName": "highlight_cards",
@@ -6473,7 +6645,8 @@
             "shared.general-cards-layout",
             "shared.logos-component",
             "shared.blog-highlight-card",
-            "shared.main-blog-layout"
+            "shared.main-blog-layout",
+            "shared.side-cards-slider"
           ],
           "pluginOptions": {
             "i18n": {
@@ -6617,7 +6790,8 @@
               "shared.general-cards-layout",
               "shared.logos-component",
               "shared.blog-highlight-card",
-              "shared.main-blog-layout"
+              "shared.main-blog-layout",
+              "shared.side-cards-slider"
             ],
             "pluginOptions": {
               "i18n": {
@@ -8512,6 +8686,94 @@
       "uid": "api::test-sync.test-sync",
       "apiName": "test-sync",
       "globalId": "TestSync",
+      "actions": {},
+      "lifecycles": {}
+    },
+    "api::testimonial-card.testimonial-card": {
+      "kind": "collectionType",
+      "collectionName": "testimonial_cards",
+      "info": {
+        "singularName": "testimonial-card",
+        "pluralName": "testimonial-cards",
+        "displayName": "Testimonial Card",
+        "description": ""
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "idItem": {
+          "type": "string"
+        },
+        "card": {
+          "type": "component",
+          "repeatable": true,
+          "component": "shared.testimonial-card"
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "testimonial_cards",
+        "info": {
+          "singularName": "testimonial-card",
+          "pluralName": "testimonial-cards",
+          "displayName": "Testimonial Card",
+          "description": ""
+        },
+        "options": {
+          "draftAndPublish": true
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "idItem": {
+            "type": "string"
+          },
+          "card": {
+            "type": "component",
+            "repeatable": true,
+            "component": "shared.testimonial-card"
+          }
+        },
+        "kind": "collectionType"
+      },
+      "modelType": "contentType",
+      "modelName": "testimonial-card",
+      "connection": "default",
+      "uid": "api::testimonial-card.testimonial-card",
+      "apiName": "testimonial-card",
+      "globalId": "TestimonialCard",
       "actions": {},
       "lifecycles": {}
     },

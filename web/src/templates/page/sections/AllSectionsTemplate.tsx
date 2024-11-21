@@ -25,6 +25,7 @@ import GeneralCardsLayout from "./components/shared/GeneralCardsLayout/GeneralCa
 import LogosComponent from "./components/shared/LogosComponent/LogosComponent"
 import BlogHighlightCard from "./components/shared/blogHighlightCard/BlogHighlightCard"
 import MainBlogLayout from "./components/shared/mainBlogLayout/MainBlogLayout"
+import SideCardsSlider from "./components/shared/sideCardsSlider/SideCardsSlider"
 
 const AllSectionsTemplate: React.FC<PageModel> = props => {
   const [benefitsLoaded, setBenefitsLoaded] = React.useState<boolean>(false)
@@ -90,6 +91,13 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
       blogHighlightCardContainer,
       blogsAll,
       allCategory,
+      buttonLeft,
+      buttonRight,
+      cards,
+      cardHeight,
+      cardWidth,
+      credentials,
+      testimonial_card,
     } = item
 
     return (
@@ -291,6 +299,21 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
             blogHighlightCardContainer={blogHighlightCardContainer}
             blogsAll={blogsAll?.data}
             allCategory={allCategory}
+          />
+        )}
+        {__component === "shared.side-cards-slider" && (
+          <SideCardsSlider
+            idItem={idItem}
+            heading={heading?.data?.attributes?.heading}
+            buttonLeft={buttonLeft}
+            buttonRight={buttonRight}
+            background={background}
+            textAlign={textAlign}
+            cards={cards?.data[0]?.attributes}
+            cardWidth={cardWidth || 343}
+            cardHeight={cardHeight || 212}
+            credentials={credentials?.data?.attributes}
+            testimonialCards={testimonial_card?.data?.attributes}
           />
         )}
       </section>
