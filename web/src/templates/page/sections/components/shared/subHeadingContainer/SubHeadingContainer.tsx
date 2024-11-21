@@ -17,40 +17,13 @@ const SubHeadingContainer: React.FC<SubHeadingContainerModel> = props => {
   return (
     <div
       id={idItem}
-      className={`${styles.subHeading} ${cx("containerMaxWidth")} ${
-        className && className
-      }`}
+      className={`${styles.subHeading__container} ${cx(
+        columns ? columnStyles[columns] : ""
+      )} ${className && className}`}
     >
-      <div
-        className={`${styles.subHeading__container} ${cx(
-          columns ? columnStyles[columns] : ""
-        )}`}
-      >
-        {subHeading?.map((item: any, index: number) => {
-          const {
-            idSubHeading,
-            size,
-            align,
-            numberIconText,
-            icon,
-            title,
-            content,
-          } = item
-
-          return (
-            <SubHeading
-              idSubHeading={idSubHeading}
-              size={size}
-              align={align}
-              numberIconText={numberIconText}
-              icon={icon}
-              title={title}
-              content={content}
-              key={`subHeading__` + index}
-            />
-          )
-        })}
-      </div>
+      {subHeading?.map((item: any, index: number) => {
+        return <SubHeading key={`subHeading__` + index} {...item} />
+      })}
     </div>
   )
 }
