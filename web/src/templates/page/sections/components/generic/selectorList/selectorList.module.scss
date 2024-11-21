@@ -1,0 +1,45 @@
+@import "../../../../../../styles/colors.scss";
+@import "../../../../../../styles/mixins.scss";
+
+
+.selectorList__container {
+  max-width: 100%;
+  position: relative;
+  .selectorList__bullets {
+    @include flexbox();
+    @include flex-direction(row);
+    @include justify-content(flex-start);
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    overflow-x: scroll;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    @include min-width($mobileXL) {
+      margin-left: -4px;
+      height: auto;
+      @include flex-direction(column);
+      overflow-x: hidden;
+    }
+    & > div:last-child {
+      min-width: 660px;
+      @include min-width($mobileXL) {
+        min-width: auto;
+      }
+      @include min-width($desktopMD) {
+        min-width: 275px;
+      }
+      & > * {
+        max-width: 275px;
+        @include min-width($mobileXL) {
+          max-width: none;
+        }
+      }
+    }
+  }
+}
+
+.selectorList__leftSide__bullets::-webkit-scrollbar {
+  display: none; /* Opera and Chrome */
+}
+

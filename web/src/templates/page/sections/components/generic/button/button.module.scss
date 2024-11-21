@@ -1,0 +1,293 @@
+@import "../../../../../../styles/colors.scss";
+@import "../../../../../../styles/mixins.scss";
+
+.buttonStrapi {
+    background-color: $primary700;
+    color: $neutral100;
+    padding: 12px 24px;
+    height: 48px;
+    border-radius: 8px;
+    @include flexbox();
+    @include justify-content(center);
+    @include align-items(center);
+    @include flex-wrap(nowrap);
+    gap: 8px;
+    cursor: pointer;
+    width: fit-content;
+    box-sizing: border-box;
+    &:hover {
+        background-color: $primary900;
+        color: $neutral100;
+    }
+    &:focus {
+        box-shadow: inset 0px 0px 0px 2px $primary300;
+    }
+    &:focus-visible {
+        outline: $primary300 auto 2px;
+    }
+    &.disabled {
+        background-color: $neutral400;
+        color: $neutral500;
+        pointer-events: none;
+    }
+    &.outlineButton {
+        background-color: transparent;
+        border: 1px solid $primary700;
+        color: $neutral1000;
+        &:hover {
+            color: $primary700;
+        }
+        &.disabled {
+            background-color: transparent;
+            border: 1px solid $neutral500;
+            color: $neutral500;
+        }
+    }
+    &.text {
+        border: none;
+        background-color: transparent;
+        color: $neutral1000;
+        &:hover {
+            color: $primary700;
+            background-color: $neutral200;
+        }
+        &:focus {
+            color: $primary700;
+            background-color: $neutral200;
+            box-shadow: none;
+        }
+        &:focus-visible {
+            color: $primary700;
+            background-color: $neutral200;
+            outline: none;
+        }
+        &.disabled {
+            color: $neutral500;
+        }
+        &.noPadding {
+            padding: 0;
+            &:hover {
+                background-color: transparent;
+            }
+            &:focus, &:focus-visible  {
+                background-color: transparent;
+            }
+        }
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    &.buttonSM {
+        padding: 8px 16px;
+        height: 40px;
+    }
+    &.whiteColor {
+        background-color: $neutral100;
+        color: $neutral1000;
+        border: 1px solid $neutral100;
+        &:hover {
+            background-color: $neutral200;
+        }
+        &:focus {
+            box-shadow: inset 0px 0px 0px 2px $neutral300;
+        }
+        &:focus-visible {
+            outline: $neutral300 auto 2px;
+        }
+        &.outlineButton {
+            background-color: transparent;
+            border: 1px solid $neutral100;
+            color: $neutral100;
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.20);
+            }
+            &.disabled {
+                background-color: transparent;
+                border: 1px solid $neutral500;
+                color: $neutral500;
+            }
+        }
+        &.text {
+            border: none;
+            background-color: transparent;
+            color: $neutral100;
+            &:hover {
+                color: $neutral100;
+                background-color: $neutral300;
+            }
+            &:focus {
+                background-color: $neutral300;
+                box-shadow: inset 0px 0px 0px 2px $neutral300;
+            }
+            &:focus-visible {
+                background-color: $neutral300;
+                outline: $neutral300 auto 2px;
+            }
+            &.disabled {
+                color: $neutral500;
+                background-color: transparent;
+            }
+            &.noPadding {
+                padding: 0;
+                &:hover {
+                    background-color: transparent;
+                }
+                &:focus,
+                &:focus-visible {
+                    background-color: transparent;
+                    box-shadow: none;
+                    outline: none;
+                }
+            }
+        }
+        &.disabled {
+            background-color: $neutral400;
+            color: $neutral500;
+            border: none;
+        }
+    }
+
+    &.blackColor {
+        background-color: $neutral1000;
+        color: $neutral100;
+        &:hover {
+            background-color: $neutral800;
+        }
+        &:focus {
+            box-shadow: inset 0px 0px 0px 2px $neutral300;
+        }
+        &:focus-visible {
+            outline: $neutral300 auto 2px;
+        }
+        &.outlineButton {
+            background-color: transparent;
+            border: 1px solid $neutral1000;
+            color: $neutral1000;
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.20);
+            }
+            &:focus {
+                background-color: rgba(0, 0, 0, 0.20);
+                box-shadow: inset 0px 0px 0px 1px $neutral600;
+            }
+            &:focus-visible {
+                background-color: rgba(0, 0, 0, 0.20);
+                outline: $neutral600 auto 1px;
+            }
+            &.disabled {
+                color: $neutral500;
+                border: 1px solid $neutral500;
+                background-color: transparent;
+            }
+        }
+        &.text {
+            border: none;
+            background-color: transparent;
+            color: $neutral1000;
+            &:hover {
+                color: $primary700;
+                background-color: $neutral200;
+            }
+            &:focus {
+                box-shadow: none;
+                background-color: $neutral200;
+                color: $primary700;
+            }
+            &:focus-visible {
+                outline: none;
+                background-color: $neutral200;
+                color: $primary700;
+            }
+            &.disabled {
+                color: $neutral500;
+                background-color: transparent;
+            }
+            &.noPadding {
+                padding: 0;
+                &:hover {
+                    background-color: transparent;
+                }
+                &:focus,
+                &:focus-visible {
+                    background-color: transparent;
+                }
+            }
+        }
+        &.disabled {
+            color: $neutral500;
+            background-color: $neutral400;
+        }
+    }
+    &.greyColor {
+        background-color: $neutral500;
+        color: $neutral100;
+        &:hover {
+            background-color: $neutral800;
+        }
+        &:focus {
+            box-shadow: inset 0px 0px 0px 2px $neutral300;
+        }
+        &:focus-visible {
+            outline: $neutral300 auto 2px;
+        }
+        &.outlineButton {
+            background-color: transparent;
+            border: 1px solid $neutral500;
+            color: $neutral1000;
+            &:hover {
+                background-color: rgba(169, 169, 172, 0.20);
+            }
+            &:focus {
+                background-color: rgba(169, 169, 172, 0.20);
+                box-shadow: inset 0px 0px 0px 1px $neutral500;
+            }
+            &:focus-visible {
+                background-color: rgba(169, 169, 172, 0.20);
+                outline: $neutral500 auto 1px;
+            }
+            &.disabled {
+                color: $neutral500;
+                border: 1px solid $neutral500;
+                background-color: transparent;
+            }
+        }
+        &.text {
+            border: none;
+            background-color: transparent;
+            color: $neutral700;
+            &:hover {
+                color: $primary700;
+                background-color: $neutral200;
+            }
+            &:focus {
+                box-shadow: none;
+                background-color: $neutral200;
+                color: $primary700;
+            }
+            &:focus-visible {
+                outline: none;
+                background-color: $neutral200;
+                color: $primary700;
+            }
+            &.disabled {
+                color: $neutral500;
+                background-color: transparent;
+            }
+            &.noPadding {
+                padding: 0;
+                &:hover {
+                    background-color: transparent;
+                }
+                &:focus,
+                &:focus-visible {
+                    background-color: transparent;
+                }
+            }
+        }
+        &.disabled {
+            color: $neutral500;
+            background-color: $neutral400;
+        }
+    }
+}

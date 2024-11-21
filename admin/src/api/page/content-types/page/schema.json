@@ -10,7 +10,11 @@
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "sections": {
       "type": "dynamiczone",
@@ -18,39 +22,77 @@
         "generic.button",
         "generic.section",
         "generic.header",
-        "shared.double-col-text-image",
-        "shared.double-col-image-text-bg",
         "wallet.benefit-section",
-        "studio.why-studio-section",
-        "shared.faqs-section",
         "studio.feature-section",
-        "shared.blog-section",
-        "wallet.how-section",
-        "generic.prefooter",
-        "generic.centered-header",
-        "shared.slider",
         "generic.table",
         "pricing.cloud",
-        "generic.content-heading-container"
-      ]
+        "generic.content-heading-container",
+        "shared.content-table",
+        "generic.button-icon",
+        "generic.button-options",
+        "generic.button-group",
+        "generic.chip-group",
+        "shared.action-card",
+        "shared.list-group",
+        "shared.header-container",
+        "shared.sub-heading-container",
+        "shared.carrousel-logos",
+        "shared.highlight",
+        "shared.full-width-card",
+        "shared.text-media",
+        "shared.video",
+        "shared.dynamic-card-component",
+        "shared.dynamic-selector",
+        "shared.general-cards-layout",
+        "shared.logos-component",
+        "shared.blog-highlight-card",
+        "shared.main-blog-layout"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "seo": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.seo"
+      "component": "shared.seo",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "title": {
       "type": "string",
       "required": true,
-      "unique": true
+      "unique": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "slugURL": {
       "type": "string",
       "required": true,
-      "unique": true
+      "unique": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "subPath": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true,
+      "default": "/"
     }
   }
 }

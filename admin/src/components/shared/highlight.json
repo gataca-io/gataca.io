@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_shared_highlights",
+  "info": {
+    "displayName": "Highlight"
+  },
+  "options": {},
+  "attributes": {
+    "idItem": {
+      "type": "string"
+    },
+    "color": {
+      "type": "enumeration",
+      "enum": [
+        "black",
+        "grey"
+      ],
+      "default": "black"
+    },
+    "align": {
+      "type": "enumeration",
+      "enum": [
+        "center",
+        "bottom"
+      ],
+      "default": "center"
+    },
+    "heading": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::heading.heading"
+    }
+  }
+}

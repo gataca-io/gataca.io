@@ -1,0 +1,40 @@
+@import "../../../../../../styles/colors.scss";
+@import "../../../../../../styles/mixins.scss";
+@import "../../../../../../styles/types";
+
+.heading__container {
+  > div {
+    @include flexbox();
+    @include flex-direction(column);
+    @include justify-content(flex-start);
+    @include flex-wrap(wrap);
+    gap: 12px;
+    &.smallSpacing {
+      gap: 8px;
+    }
+    &.alignCenter {
+      @include align-items(center);
+      max-width: 778px;
+      margin: 0 auto;
+      * {
+        text-align: center;
+      }
+    }
+    &.alignRight {
+      @include align-items(end);
+      p {
+        text-align: right;
+      }
+    }
+    &.alignLeft {
+      @include align-items(flex-start);
+    }
+    .chip_extraText__container {
+      @include flexbox();
+      @include justify-content(flex-start);
+      @include flex-wrap(nowrap);
+      @include align-items(center);
+      gap: 12px;
+    }
+  }
+}

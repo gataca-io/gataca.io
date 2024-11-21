@@ -134,6 +134,8 @@ const Layout = props => {
           rrssImg={seoData?.rrssImg}
           keywords={seoData?.keywords}
           id={seoData?.id}
+          canonicalURL={seoData?.canonicalURL}
+          alternateURL={seoData?.alternate_urls}
         />
       )}
       <main className={styles?.mainLayout}>{props.children}</main>

@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "logo_infos",
+  "info": {
+    "singularName": "logo-info",
+    "pluralName": "logo-infos",
+    "displayName": "Logo info"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "idItem": {
+      "type": "string"
+    },
+    "logoInfo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.logo"
+    }
+  }
+}

@@ -1,9 +1,9 @@
 import * as React from "react"
 import * as styles from "./whiteButton.module.scss"
 import cx from "classnames"
-import { ButtonModel } from "../../../../interfaces/interfaces"
+import { ButtonModelOld } from "../../../../interfaces/interfaces"
 
-const WhiteButton: React.FC<ButtonModel> = props => {
+const WhiteButton: React.FC<ButtonModelOld> = props => {
   const { label, icon, outlined, className, action } = props
   return (
     <button

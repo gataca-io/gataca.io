@@ -24,6 +24,7 @@
     @include justify-content(center);
     @include align-items(center);
     @include flex-direction(column);
+    gap: 24px;
     @include min-width($mobileXL) {
       @include flex-direction(row);
     }

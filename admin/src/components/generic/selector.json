@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_generic_selectors",
+  "info": {
+    "displayName": "selector",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "showSelector": {
+      "type": "boolean",
+      "default": true
+    },
+    "media": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "action_card": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::action-card.action-card"
+    },
+    "content": {
+      "type": "text"
+    },
+    "idItem": {
+      "type": "string"
+    }
+  }
+}

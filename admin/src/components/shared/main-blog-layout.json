@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_shared_main_blog_layouts",
+  "info": {
+    "displayName": "MainBlogLayout",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "idItem": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::heading.heading"
+    },
+    "chip_options": {
+      "type": "component",
+      "repeatable": false,
+      "component": "generic.chip-group"
+    },
+    "blogHighlightCardContainer": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.blog-card-container"
+    },
+    "blogsAll": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog.blog"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "generic.button"
+    },
+    "allCategory": {
+      "type": "string"
+    }
+  }
+}

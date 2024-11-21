@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "alternate_urls",
+  "info": {
+    "singularName": "alternate-url",
+    "pluralName": "alternate-urls",
+    "displayName": "Alternate Url",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "url": {
+      "type": "string"
+    },
+    "hreflangLocale": {
+      "type": "string"
+    },
+    "label": {
+      "type": "string"
+    }
+  }
+}

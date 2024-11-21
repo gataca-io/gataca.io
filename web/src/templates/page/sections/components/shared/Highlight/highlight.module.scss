@@ -1,0 +1,41 @@
+@import "../../../../../../styles/colors.scss";
+@import "../../../../../../styles/mixins.scss";
+
+.highlight {
+  &.blackBackground {
+    background-color: $neutral1000;
+    & > div > div > div {
+      & > h1, h6 {
+        color: $neutral100;
+      }
+      & > p {
+        color: $neutral400;
+      }
+    }
+  }
+  &.greyBackground {
+    background-color: $neutral200;
+  }
+  .alignCenter {
+    padding: 100px 20px;
+    @include min-width($mobileXL) {
+      padding: 100px 40px;
+    }
+    @include min-width($desktopMD) {
+      padding: 100px 60px;
+    }
+  }
+  .alignBottom {
+    padding: 198px 20px 100px;
+    @include min-width($mobileXL) {
+      padding: 198px 40px 100px;
+    }
+    @include min-width($desktopMD) {
+      padding: 198px 60px 100px;
+    }
+  }
+  
+}
+
+
+

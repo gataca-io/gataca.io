@@ -89,6 +89,21 @@
           "searchable": true,
           "sortable": true
         }
+      },
+      "alternate_urls": {
+        "edit": {
+          "label": "alternate_urls",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "label"
+        },
+        "list": {
+          "label": "alternate_urls",
+          "searchable": false,
+          "sortable": false
+        }
       }
     },
     "layouts": {
@@ -122,6 +137,12 @@
           },
           {
             "name": "rrssImg",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "alternate_urls",
             "size": 6
           }
         ]

@@ -1,0 +1,158 @@
+{
+  "key": "plugin_content_manager_configuration_components::shared.content-table",
+  "value": {
+    "uid": "shared.content-table",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "id",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "card_table_contents": {
+        "edit": {
+          "label": "card_table_contents",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "idContent"
+        },
+        "list": {
+          "label": "card_table_contents",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "contents": {
+        "edit": {
+          "label": "contents",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "idContent"
+        },
+        "list": {
+          "label": "contents",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "employee": {
+        "edit": {
+          "label": "employee",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "employee",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "sub_heading": {
+        "edit": {
+          "label": "sub_heading",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "idItem"
+        },
+        "list": {
+          "label": "sub_heading",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "avatarSize": {
+        "edit": {
+          "label": "avatarSize",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "avatarSize",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "highlight_card": {
+        "edit": {
+          "label": "highlight_card",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "idItem"
+        },
+        "list": {
+          "label": "highlight_card",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "card_table_contents",
+        "contents",
+        "employee"
+      ],
+      "edit": [
+        [
+          {
+            "name": "card_table_contents",
+            "size": 6
+          },
+          {
+            "name": "highlight_card",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "employee",
+            "size": 6
+          },
+          {
+            "name": "avatarSize",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "contents",
+            "size": 6
+          },
+          {
+            "name": "sub_heading",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

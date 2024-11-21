@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_shared_blog_card_containers",
+  "info": {
+    "displayName": "BlogCardContainer"
+  },
+  "options": {},
+  "attributes": {
+    "idItem": {
+      "type": "string"
+    },
+    "blog_card": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::blog-card.blog-card"
+    },
+    "columns": {
+      "type": "enumeration",
+      "enum": [
+        "two",
+        "three"
+      ],
+      "default": "three"
+    }
+  }
+}

@@ -1,166 +1,301 @@
 import * as React from "react"
-import { useState } from "react"
+import cx from "classnames"
+import * as styles from "./allSectionsTemplate.module.scss"
 import { PageModel } from "../../../interfaces/interfaces"
-import Header from "./components/generic/header/Header"
-import DoubleColTextImage from "./components/shared/doubleColTextImage/DoubleColTextImage"
 import Benefits from "./components/products/benefits/benefits"
-import DoubleColImageTextBg from "./components/shared/doubleColImageTextBg/DoubleColImageTextBg"
-import ListOpensHover from "./components/products/listOpensHover/ListOpensHover"
-import ListMedia from "./components/products/listMedia/ListMedia"
-import FaqsSection from "./components/shared/faqsSection/FaqsSection"
-import ChosenBlogsSection from "./components/shared/chosenBlogsSection/ChosenBlogsSection"
-import LogosSlider from "./components/shared/logosSlider/LogosSlider"
+import CarrouselLogos from "./components/shared/carrouselLogos/CarrouselLogos"
 import Table from "./components/shared/table/Table"
-import CenteredHeader from "./components/generic/centeredHeader/CenteredHeader"
 import PricingInfo from "./components/pricing/pricingInfo/PricingInfo"
 import ContentHeadingContainer from "./components/generic/contentHeadingContainer/ContentHeadingContainer"
+import ContentTable from "./components/shared/contentTable/ContentTable"
+import Button from "./components/generic/button/Button"
+import ButtonIcon from "./components/generic/buttonIcon/ButtonIcon"
+import SegmentedButtonsContainer from "./components/generic/segmentedButtons/SegmentedButtonsContainer"
+import ButtonGroup from "./components/generic/buttonGroup/ButtonGroup"
+import ChipGroup from "./components/generic/chipGroup/ChipGroup"
+import ListGroup from "./components/shared/list/listGroup/ListGroup"
+import HeaderContainer from "./components/shared/headerContainer/HeaderContainer"
+import SubHeadingContainer from "./components/shared/subHeadingContainer/SubHeadingContainer"
+import FullWidthCard from "./components/shared/fullWidthCard/FullWidthCard"
+import TextMedia from "./components/shared/textMedia/TextMedia"
+import Video from "./components/shared/video/Video"
+import DynamicCardComponent from "./components/shared/dynamicCardComponent/DynamicCardComponent"
+import DynamicSelector from "./components/shared/dynamicSelector/DynamicSelector"
+import GeneralCardsLayout from "./components/shared/GeneralCardsLayout/GeneralCardsLayout"
+import LogosComponent from "./components/shared/LogosComponent/LogosComponent"
+import BlogHighlightCard from "./components/shared/blogHighlightCard/BlogHighlightCard"
+import MainBlogLayout from "./components/shared/mainBlogLayout/MainBlogLayout"
 
 const AllSectionsTemplate: React.FC<PageModel> = props => {
   const [benefitsLoaded, setBenefitsLoaded] = React.useState<boolean>(false)
   const { sections } = props
 
-  return (
-    <div>
-      {sections?.map((item, index) => {
-        const {
-          id,
-          title,
-          subtitle,
-          description,
-          switchLabel,
-          cta,
-          hero,
-          media,
-          __component,
-          benefits,
-          advantages,
-          operations,
-          faqs,
-          blogs,
-          logos,
-          content,
-          tiers,
-          pricing_categories,
-          infoToggles,
-          tier_tables,
-          contents,
-        } = item
+  return sections?.map((item, index) => {
+    const {
+      id,
+      title,
+      switchLabel,
+      hero,
+      __component,
+      benefits,
+      logos,
+      content,
+      tiers,
+      pricing_categories,
+      infoToggles,
+      tier_tables,
+      contents,
+      card_table_contents,
+      idButton,
+      label,
+      icon,
+      url,
+      link,
+      style,
+      color,
+      size,
+      disabled,
+      outsideWeb,
+      noPaddingText,
+      buttons,
+      chip_options,
+      list_options,
+      selector_list,
+      brand_buttons,
+      heading,
+      image,
+      subHeading,
+      columns,
+      idItem,
+      loop,
+      lightLogos,
+      layout,
+      sizeSlot,
+      textAlign,
+      video,
+      employee,
+      avatarSize,
+      sub_heading,
+      highlight_card,
+      dynamic_cards,
+      background,
+      bgVerticalAlign,
+      mainTitleIllustration,
+      selectorIllustration,
+      headingSelector,
+      selectorAlign,
+      button,
+      mainCardContainer,
+      logoContainer,
+      blogHighlightCardContainer,
+      blogsAll,
+      allCategory,
+    } = item
 
-        return (
-          <>
-            {__component === "generic.header" && (
-              <Header
-                id={id}
-                title={title}
-                description={description}
-                cta={cta}
-                hero={hero}
-                key={`header_` + id + index}
-              />
-            )}
-            {__component === "generic.centered-header" && (
-              <CenteredHeader
-                id={id}
-                title={title}
-                description={description}
-                cta={cta}
-                key={`centered_header_` + id + index}
-              />
-            )}
-            {__component === "shared.slider" && (
-              <LogosSlider list={logos?.data} lightLogos={logos?.data} />
-            )}
-            {__component === "shared.double-col-text-image" && (
-              <DoubleColTextImage
-                id={id}
-                title={title}
-                description={description}
-                cta={cta}
-                hero={hero}
-                key={`double_col_text_image_` + id + index}
-              />
-            )}
-            {__component === "shared.double-col-image-text-bg" && (
-              <DoubleColImageTextBg
-                id={id}
-                title={title}
-                description={description}
-                hero={hero}
-                subtitle={subtitle}
-                key={`double_col_image_text_bg_` + id + index}
-              />
-            )}
-            {__component === "wallet.benefit-section" && (
-              <Benefits
-                id={id}
-                title={title}
-                list={benefits?.data}
-                hero={hero}
-                setBenefitsLoaded={setBenefitsLoaded}
-                key={`benefit_section_` + id + index}
-              />
-            )}
-            {__component === "studio.why-studio-section" && (
-              <ListOpensHover
-                id={id}
-                title={title}
-                list={advantages?.data}
-                key={`why_section_` + id + index}
-              />
-            )}
-            {__component === "wallet.how-section" && (
-              <ListMedia
-                title={title}
-                media={media}
-                list={operations?.data}
-                key={`list_media_` + id + index}
-              />
-            )}
-            {__component === "shared.faqs-section" && (
-              <FaqsSection
-                title={title}
-                subtitle={subtitle}
-                hero={hero}
-                info={faqs?.data}
-                key={`faqs_section_` + id + index}
-              />
-            )}
-            {__component === "shared.blog-section" && (
-              <ChosenBlogsSection
-                title={title}
-                subtitle={subtitle}
-                blogs={blogs?.data}
-                key={`blogs_section_` + id + index}
-              />
-            )}
-            {__component === "generic.table" && <Table content={content} />}
+    return (
+      <section key={`sectionContainer_` + Math.random()}>
+        {__component === "shared.header-container" && (
+          <HeaderContainer
+            heading={heading?.data?.attributes?.heading}
+            image={image}
+          />
+        )}
+        {__component === "shared.carrousel-logos" && (
+          <CarrouselLogos
+            list={logos?.data}
+            lightLogos={lightLogos}
+            loop={loop}
+          />
+        )}
+        {__component === "wallet.benefit-section" && (
+          <Benefits
+            id={id}
+            title={title}
+            list={benefits?.data}
+            hero={hero}
+            setBenefitsLoaded={setBenefitsLoaded}
+          />
+        )}
 
-            {__component === "pricing.cloud" && (
-              <PricingInfo
-                categories={pricing_categories?.data}
-                index={0}
-                switchLabel={switchLabel}
-                infoToggles={infoToggles}
-                tier_tables={tier_tables?.data}
-                tiersDetail={
-                  tier_tables?.data[0]?.attributes?.feature_details?.data[0]
-                    ?.attributes?.tiers?.data
-                }
-                licenses={tiers?.data}
-                subOptionClickedID={props?.location?.hash?.substring(1)}
-              />
-            )}
-            {__component === "generic.content-heading-container" && (
-              <ContentHeadingContainer
-                listContent={contents?.data}
-                key={`content-heading-container_` + index}
-              />
-            )}
-          </>
-        )
-      })}
-    </div>
-  )
+        {__component === "shared.dynamic-card-component" && (
+          <DynamicCardComponent
+            idItem={idItem}
+            heading={heading?.data?.attributes?.heading}
+            dynamicCards={dynamic_cards?.data[0]?.attributes?.dynamicCards}
+            background={background}
+            bgVerticalAlign={bgVerticalAlign}
+          />
+        )}
+        {__component === "shared.blog-highlight-card" && (
+          <BlogHighlightCard
+            idItem={idItem}
+            heading={heading?.data?.attributes?.heading}
+            button={button}
+            blogHighlightCardContainer={blogHighlightCardContainer}
+          />
+        )}
+        {__component === "generic.table" && <Table content={content} />}
+
+        {__component === "pricing.cloud" && (
+          <PricingInfo
+            categories={pricing_categories?.data}
+            segmentedButtons={buttons?.data}
+            index={0}
+            switchLabel={switchLabel}
+            infoToggles={infoToggles}
+            tier_tables={tier_tables?.data}
+            tiersDetail={
+              tier_tables?.data[0]?.attributes?.feature_details?.data[0]
+                ?.attributes?.tiers?.data
+            }
+            licenses={tiers?.data}
+            subOptionClickedID={props?.location?.hash?.substring(1)}
+          />
+        )}
+        {__component === "generic.content-heading-container" && (
+          <ContentHeadingContainer listContent={contents?.data} />
+        )}
+        {__component === "shared.content-table" && (
+          <ContentTable
+            employee={employee}
+            listContent={contents?.data}
+            tableOfContent={card_table_contents?.data}
+            avatarSize={avatarSize}
+            sub_heading={sub_heading}
+            highlightCard={highlight_card?.data?.attributes}
+          />
+        )}
+        {__component === "generic.button" && (
+          <div className={`${styles?.container} ${cx("containerMaxWidth")}`}>
+            <Button
+              idButton={idButton}
+              label={label}
+              icon={icon}
+              style={style}
+              color={color}
+              size={size}
+              noPaddingText={noPaddingText}
+              disabled={disabled}
+              link={link}
+              url={url}
+              action={() => window?.open(url, outsideWeb ? "_blank" : "_self")}
+            />
+          </div>
+        )}
+        {__component === "generic.button-icon" && (
+          <div className={`${styles?.container} ${cx("containerMaxWidth")}`}>
+            <ButtonIcon
+              idButton={idButton}
+              icon={icon}
+              style={style}
+              color={color}
+              size={size}
+              disabled={disabled}
+              action={() => window?.open(url, outsideWeb ? "_blank" : "_self")}
+            />
+          </div>
+        )}
+        {__component === "generic.button-options" && (
+          <div className={`${styles?.container} ${cx("containerMaxWidth")}`}>
+            <SegmentedButtonsContainer segmentedOptions={buttons?.data} />
+          </div>
+        )}
+        {__component === "generic.button-group" && (
+          <div className={`${styles?.container} ${cx("containerMaxWidth")}`}>
+            <ButtonGroup
+              buttonGroup={buttons?.data}
+              brandButtonGroup={brand_buttons?.data}
+            />
+          </div>
+        )}
+        {__component === "generic.chip-group" && (
+          <div className={`${styles?.container} ${cx("containerMaxWidth")}`}>
+            <ChipGroup chipOptions={chip_options?.data} />
+          </div>
+        )}
+        {__component === "shared.general-cards-layout" && (
+          <GeneralCardsLayout
+            idItem={idItem}
+            heading={heading?.data?.attributes?.heading}
+            button={button}
+            mainCardContainer={mainCardContainer}
+          />
+        )}
+        {__component === "shared.dynamic-selector" && (
+          <DynamicSelector
+            idItem={idItem}
+            selector_list={selector_list?.data?.attributes?.selector}
+            background={background}
+            heading={heading?.data?.attributes?.heading}
+            heading_selector={headingSelector?.data?.attributes?.heading}
+            mainTitleIllustration={mainTitleIllustration}
+            selectorIllustration={selectorIllustration}
+            selectorAlign={selectorAlign}
+            layout={layout}
+          />
+        )}
+        {__component === "shared.list-group" && (
+          <div className={`${styles?.container} ${cx("containerMaxWidth")}`}>
+            <ListGroup listOptions={list_options?.data} />
+          </div>
+        )}
+        {__component === "shared.sub-heading-container" && (
+          <SubHeadingContainer
+            idItem={idItem}
+            subHeading={subHeading}
+            columns={columns}
+          />
+        )}
+        {__component === "shared.full-width-card" && (
+          <FullWidthCard
+            idItem={idItem}
+            heading={heading?.data?.attributes?.heading}
+            image={image}
+            color={color}
+            layout={layout}
+            sizeSlot={sizeSlot}
+          />
+        )}
+        {__component === "shared.text-media" && (
+          <TextMedia
+            idItem={idItem}
+            heading={heading?.data?.attributes?.heading}
+            image={image}
+            textAlign={textAlign}
+          />
+        )}
+        {__component === "shared.video" && (
+          <Video
+            idItem={idItem}
+            heading={heading?.data?.attributes?.heading}
+            image={image}
+            video={video}
+            color={color}
+          />
+        )}
+        {__component === "shared.logos-component" && (
+          <LogosComponent
+            idItem={idItem}
+            heading={heading?.data?.attributes?.heading}
+            logoContainer={logoContainer}
+            background={background}
+          />
+        )}
+        {__component === "shared.main-blog-layout" && (
+          <MainBlogLayout
+            idItem={idItem}
+            heading={heading?.data?.attributes?.heading}
+            button={button}
+            chip_options={chip_options?.chip_options?.data}
+            category_options={chip_options?.categories?.data}
+            blogHighlightCardContainer={blogHighlightCardContainer}
+            blogsAll={blogsAll?.data}
+            allCategory={allCategory}
+          />
+        )}
+      </section>
+    )
+  })
 }
 
 export default AllSectionsTemplate

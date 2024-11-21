@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_shared_blog_cards",
+  "info": {
+    "displayName": "blogCard"
+  },
+  "options": {},
+  "attributes": {
+    "idItem": {
+      "type": "string"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "generic.button"
+    },
+    "chip": {
+      "type": "component",
+      "repeatable": false,
+      "component": "generic.chip"
+    },
+    "showChip": {
+      "type": "boolean",
+      "default": true
+    },
+    "blog": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::blog.blog"
+    }
+  }
+}

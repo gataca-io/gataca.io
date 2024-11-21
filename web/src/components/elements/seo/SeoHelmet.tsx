@@ -5,7 +5,14 @@ import { SeoModel, StrapiImageModel } from "../../../interfaces/interfaces"
 import { images } from "../../../images/images"
 
 export const SeoHelmet: React.FC<SeoModel> = props => {
-  const { metaTitle, metaDescription, rrssImg, keywords, canonicalURL } = props
+  const {
+    metaTitle,
+    metaDescription,
+    rrssImg,
+    keywords,
+    canonicalURL,
+    alternateURL,
+  } = props
 
   const getSeoRRSSImgURL = (image?: StrapiImageModel) =>
     image?.data?.attributes?.url ? image?.data?.attributes?.url : undefined
@@ -16,6 +23,18 @@ export const SeoHelmet: React.FC<SeoModel> = props => {
       <title>{metaTitle}</title>
       <meta name="description" content={metaDescription} />
       {!!canonicalURL?.length && <link rel="canonical" href={canonicalURL} />}
+      {alternateURL?.data?.map(item => {
+        const { url, hreflangLocale } = item.attributes
+        return (
+          <link
+            key={"hrefLangLocale__" + Math.random()}
+            rel="alternate"
+            href={url}
+            hreflang={hreflangLocale}
+          />
+        )
+      })}
+
       {!!keywords?.length && <meta name="keywords" content={keywords} />}
       {/*FACEBOOK*/}
       <meta property="og:url" content={gatacaURL} />

@@ -61,17 +61,16 @@
       "subject": "api::blog.blog",
       "properties": {
         "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.keywords",
           "title",
           "date",
           "previewImage",
           "heroImage",
-          "author",
           "content",
           "slugURL",
-          "category",
-          "seo.metaTitle",
-          "seo.metaDescription",
-          "seo.keywords"
+          "category"
         ]
       },
       "conditions": [
@@ -91,17 +90,16 @@
       "subject": "api::blog.blog",
       "properties": {
         "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.keywords",
           "title",
           "date",
           "previewImage",
           "heroImage",
-          "author",
           "content",
           "slugURL",
-          "category",
-          "seo.metaTitle",
-          "seo.metaDescription",
-          "seo.keywords"
+          "category"
         ]
       },
       "conditions": [
@@ -113,17 +111,16 @@
       "subject": "api::blog.blog",
       "properties": {
         "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.keywords",
           "title",
           "date",
           "previewImage",
           "heroImage",
-          "author",
           "content",
           "slugURL",
-          "category",
-          "seo.metaTitle",
-          "seo.metaDescription",
-          "seo.keywords"
+          "category"
         ]
       },
       "conditions": [

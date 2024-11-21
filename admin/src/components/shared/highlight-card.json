@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_shared_highlight_cards",
+  "info": {
+    "displayName": "HighlightCard"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "listGroup": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.list-group"
+    }
+  }
+}

@@ -62,6 +62,8 @@ const FinancePage: React.FC<PageProps> = () => {
           }
           leftButton={{
             label: "Contact us",
+            style: "outline",
+            color: "white",
             action: () => navigate("/company/contact"),
           }}
           rightButton={{

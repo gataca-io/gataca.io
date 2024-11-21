@@ -47,21 +47,6 @@
         "audios"
       ]
     },
-    "author": {
-      "type": "enumeration",
-      "enum": [
-        "Esther",
-        "Chiara",
-        "Irene",
-        "Samuel",
-        "Jose",
-        "Jorge",
-        "Mayra",
-        "Tefy",
-        "Ángela"
-      ],
-      "required": true
-    },
     "content": {
       "type": "richtext",
       "required": true
@@ -75,6 +60,23 @@
       "relation": "manyToOne",
       "target": "api::category.category",
       "inversedBy": "blogs"
+    },
+    "employee": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::employee.employee"
+    },
+    "avatarSize": {
+      "type": "enumeration",
+      "enum": [
+        "XXL",
+        "XL",
+        "LG",
+        "MD",
+        "SM",
+        "XS"
+      ],
+      "default": "LG"
     }
   }
 }

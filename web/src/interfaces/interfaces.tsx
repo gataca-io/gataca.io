@@ -8,8 +8,8 @@ export interface LinkModel {
   action?: (...args: any[]) => {}
 }
 
-export interface ButtonModel {
-  label: string
+export interface ButtonModelOld {
+  label?: string
   icon?: string
   IconComponent?: any
   outlined?: boolean
@@ -19,6 +19,37 @@ export interface ButtonModel {
   action: (x?: any) => void
 }
 
+export interface ButtonModel {
+  idButton?: string
+  label?: string
+  icon?: any
+  IconComponent?: any
+  className?: any
+  url?: string
+  action?: (x?: any) => void
+  link?: boolean
+  style?: string
+  color?: string
+  size?: string
+  disabled?: boolean
+  outsideWeb?: boolean
+  noPaddingText?: boolean
+}
+
+export interface SegmentedButtonModel {
+  id: string
+  label: string
+  index: number
+  icon?: any
+  selected: boolean
+  showItem: (x: number) => void
+  color?: string
+  size?: string
+  disabled?: boolean
+  outsideWeb?: boolean
+  noPaddingText?: boolean
+}
+
 export interface IconModel {
   id: string
   alt: string
@@ -26,9 +57,41 @@ export interface IconModel {
   route?: string
 }
 
+export interface ChipModel {
+  className?: string
+  idChip?: string
+  text?: string
+  action?: (x?: any) => void
+  type?: string
+  form?: string
+  color?: string
+  leadingIcon?: any
+  trailingIcon?: any
+  chipSize?: string
+  disabled?: boolean
+}
+
+export interface SegmentedChipModel {
+  index: number
+  id: string
+  text?: string
+  selected?: boolean
+  showItem?: (x: number) => void
+  type?: string
+  form?: string
+  color?: string
+  leadingIcon?: any
+  trailingIcon?: any
+  chipSize?: string
+  disabled?: boolean
+}
 export interface BlogPreviewModel {
   id: string
   attributes: BlogModel
+  idItem?: string
+  chip?: ChipModel
+  button?: ButtonModel
+  showChip?: boolean
 }
 
 export interface PagePreviewModel {
@@ -61,10 +124,13 @@ export interface PageModel extends PagePreviewModel {
   slugURL: string
   subPath: string
   location: any
+  locale?: string
+  localizations?: LocalizationsModel
 }
 
 export interface InsideSectionsModel {
   id: any
+  idContent?: string
   title: string
   description: string
   switchLabel?: string
@@ -73,15 +139,9 @@ export interface InsideSectionsModel {
   leftButton?: any
   hero?: any
   icon?: any
-  media?: any
   content?: string | any
   __component?: string
-  subtitle?: string
   benefits?: any
-  advantages?: any
-  operations?: any
-  faqs?: any
-  blogs?: any
   logos?: any
   tiers?: any
   infoToggles?: string
@@ -90,6 +150,65 @@ export interface InsideSectionsModel {
   feature_details?: any
   tiersDetail?: any
   contents?: any
+  card_table_contents?: any
+  idButton?: string
+  label?: string
+  url?: string
+  link?: boolean
+  style?: string
+  color?: string
+  size?: string
+  disabled?: boolean
+  outsideWeb?: boolean
+  noPaddingText?: boolean
+  buttons?: any
+  chip_options?: any
+  contentAlign?: string
+  align?: string
+  moreContent?: string
+  list_options?: any
+  selector_list?: any
+  brand_buttons?: any
+  heading?: any
+  image?: StrapiImageModel
+  subHeading?: any
+  columns?: string
+  idItem?: string
+  loop?: boolean
+  lightLogos?: boolean
+  layout?: string
+  sizeSlot?: string
+  textAlign?: string
+  video?: any
+  employee?: any
+  avatarSize?: string
+  sub_heading?: any
+  highlight_card?: any
+  dynamic_cards?: any
+  background?: boolean
+  bgVerticalAlign?: string
+  mainTitleIllustration?: StrapiImageModel
+  selectorIllustration?: StrapiImageModel
+  headingSelector?: any
+  selectorAlign?: string
+  button?: ButtonModel
+  mainCardContainer?: any
+  logoContainer?: any
+  blogHighlightCardContainer?: any
+  blogsAll?: any
+  allCategory?: string
+}
+
+export interface LocalizationsModel {
+  data: [
+    {
+      attributes: {
+        locale: string
+        slugURL: string
+        subPath: string
+      }
+    }
+  ]
 }
 export interface SeoModel {
   id: string
@@ -98,6 +217,14 @@ export interface SeoModel {
   keywords?: string
   canonicalURL?: string
   rrssImg?: StrapiImageModel
+  alternateURL?: {
+    data: {
+      attributes: {
+        url: string
+        hreflangLocale: string
+      }
+    }[]
+  }
 }
 
 export interface StrapiImageModel {
@@ -122,11 +249,7 @@ export interface IProductModel {
     subPriceYearLabel?: string
     popular: boolean
 
-    button: {
-      label: "Contact us"
-      outsideWeb: false
-      url: "/company/contact"
-    }
+    button: ButtonModel
   }
 
   name: string
@@ -137,11 +260,7 @@ export interface IProductModel {
   subPriceMonthLabel?: string
   subPriceYearLabel?: string
 
-  button: {
-    label: "Contact us"
-    outsideWeb: false
-    url: "/company/contact"
-  }
+  button: ButtonModel
 }
 
 export interface IPriceModel {
@@ -245,4 +364,102 @@ export interface LegalModel {
       id: string
     }[]
   }
+}
+export interface CardModel {
+  className?: string
+  idCard?: string
+  size?: string
+  contentAlign?: string
+  upperIconOpened?: any
+  upperIconClosed?: any
+  numberIconText?: number
+  chip?: ChipModel
+  mainIcon?: any
+  title?: string
+  content?: any
+  button?: ButtonModel
+  moreContent?: string
+}
+
+export interface ActionCardModel {
+  idActionCard?: string
+  titleCard?: string
+  upperIconOpened?: any
+  upperIconClosed?: any
+  chip?: ChipModel
+  titleContent?: string
+  content?: any
+  button?: ButtonModel
+  trailingIcon?: any
+  selected: boolean
+  showItem: (x: number) => void
+  index: number
+}
+
+export interface ListModel {
+  idList?: string
+  size?: string
+  leadingIcon?: any
+  title?: string
+  extraInfo?: string
+  color?: string
+}
+
+export interface SubHeadingModel {
+  idSubHeading?: string
+  size?: string
+  align?: string
+  numberIconText?: number
+  icon?: any
+  title?: string
+  content?: string
+}
+
+export interface HeadingModel {
+  className?: string
+  idHeading?: string
+  titleSize?: string
+  align?: string
+  chip?: ChipModel
+  extraText?: string
+  sectionName?: string
+  title?: string
+  content?: string
+  button?: any
+  buttonGroup?: any
+  segmentedButton?: any
+  list?: any
+  table?: any
+}
+
+export interface SelectorModel {
+  index: number
+  idSelector?: string
+  title?: string
+  content?: any
+  showSelector?: boolean
+  selected: boolean
+  showItem: (x: number) => void
+}
+
+export interface HeaderContainerModel {
+  idHeader?: string
+  heading: HeadingModel
+  image?: any
+  data?: {
+    attributes?: []
+  }
+}
+
+export interface SubHeadingContainerModel {
+  className?: string
+  idItem?: string
+  subHeading: SubHeadingModel[]
+  columns?: string
+}
+
+export interface MainCardContainerModel {
+  idItem?: string
+  card: CardModel[]
+  columns?: string
 }

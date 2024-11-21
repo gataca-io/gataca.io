@@ -1,0 +1,47 @@
+
+@import "../../../../../../styles/colors.scss";
+@import "../../../../../../styles/mixins.scss";
+@import "../../../../../../styles/types";
+
+.avatarContainer {
+  img {
+    height: auto;
+  }
+  
+  &.mediaSizeXXL {
+    img {
+      max-width: 116px;
+      width: 116px;
+    }
+  } 
+  &.mediaSizeXL {
+    img {
+      max-width: 82px;
+      width: 82px;
+    }
+  }
+  &.mediaSizeLG{
+    img {
+      max-width: 64px;
+      width: 64px;
+    }
+  }
+  &.mediaSizeMD {
+    img {
+      max-width: 44px;
+      width: 44px;
+    }
+  }
+  &.mediaSizeSM {
+    img {
+      max-width: 32px;
+      width: 32px;
+    }
+  }
+  &.mediaSizeXS {
+    img {
+      max-width: 24px;
+      width: 24px;
+    }
+  }
+}

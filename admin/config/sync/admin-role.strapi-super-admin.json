@@ -5,6 +5,132 @@
   "permissions": [
     {
       "action": "plugin::content-manager.explorer.create",
+      "subject": "api::action-card.action-card",
+      "properties": {
+        "fields": [
+          "idItem",
+          "actionCard.idActionCard",
+          "actionCard.titleCard",
+          "actionCard.upperIconOpened",
+          "actionCard.upperIconClosed",
+          "actionCard.chip.idChip",
+          "actionCard.chip.text",
+          "actionCard.chip.type",
+          "actionCard.chip.form",
+          "actionCard.chip.disabled",
+          "actionCard.chip.color",
+          "actionCard.chip.chipSize",
+          "actionCard.chip.leadingIcon",
+          "actionCard.chip.trailingIcon",
+          "actionCard.titleContent",
+          "actionCard.content",
+          "actionCard.button.label",
+          "actionCard.button.url",
+          "actionCard.button.outsideWeb",
+          "actionCard.button.outlined",
+          "actionCard.button.idButton",
+          "actionCard.button.icon",
+          "actionCard.button.link",
+          "actionCard.button.style",
+          "actionCard.button.color",
+          "actionCard.button.size",
+          "actionCard.button.disabled",
+          "actionCard.button.noPaddingText",
+          "actionCard.trailingIcon"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::action-card.action-card",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::action-card.action-card",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::action-card.action-card",
+      "properties": {
+        "fields": [
+          "idItem",
+          "actionCard.idActionCard",
+          "actionCard.titleCard",
+          "actionCard.upperIconOpened",
+          "actionCard.upperIconClosed",
+          "actionCard.chip.idChip",
+          "actionCard.chip.text",
+          "actionCard.chip.type",
+          "actionCard.chip.form",
+          "actionCard.chip.disabled",
+          "actionCard.chip.color",
+          "actionCard.chip.chipSize",
+          "actionCard.chip.leadingIcon",
+          "actionCard.chip.trailingIcon",
+          "actionCard.titleContent",
+          "actionCard.content",
+          "actionCard.button.label",
+          "actionCard.button.url",
+          "actionCard.button.outsideWeb",
+          "actionCard.button.outlined",
+          "actionCard.button.idButton",
+          "actionCard.button.icon",
+          "actionCard.button.link",
+          "actionCard.button.style",
+          "actionCard.button.color",
+          "actionCard.button.size",
+          "actionCard.button.disabled",
+          "actionCard.button.noPaddingText",
+          "actionCard.trailingIcon"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::action-card.action-card",
+      "properties": {
+        "fields": [
+          "idItem",
+          "actionCard.idActionCard",
+          "actionCard.titleCard",
+          "actionCard.upperIconOpened",
+          "actionCard.upperIconClosed",
+          "actionCard.chip.idChip",
+          "actionCard.chip.text",
+          "actionCard.chip.type",
+          "actionCard.chip.form",
+          "actionCard.chip.disabled",
+          "actionCard.chip.color",
+          "actionCard.chip.chipSize",
+          "actionCard.chip.leadingIcon",
+          "actionCard.chip.trailingIcon",
+          "actionCard.titleContent",
+          "actionCard.content",
+          "actionCard.button.label",
+          "actionCard.button.url",
+          "actionCard.button.outsideWeb",
+          "actionCard.button.outlined",
+          "actionCard.button.idButton",
+          "actionCard.button.icon",
+          "actionCard.button.link",
+          "actionCard.button.style",
+          "actionCard.button.color",
+          "actionCard.button.size",
+          "actionCard.button.disabled",
+          "actionCard.button.noPaddingText",
+          "actionCard.trailingIcon"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
       "subject": "api::ad-feature.ad-feature",
       "properties": {
         "fields": [
@@ -95,6 +221,54 @@
           "title",
           "description",
           "icon"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::alternate-url.alternate-url",
+      "properties": {
+        "fields": [
+          "url",
+          "hreflangLocale",
+          "label"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::alternate-url.alternate-url",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::alternate-url.alternate-url",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::alternate-url.alternate-url",
+      "properties": {
+        "fields": [
+          "url",
+          "hreflangLocale",
+          "label"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::alternate-url.alternate-url",
+      "properties": {
+        "fields": [
+          "url",
+          "hreflangLocale",
+          "label"
         ]
       },
       "conditions": []
@@ -251,6 +425,120 @@
     },
     {
       "action": "plugin::content-manager.explorer.create",
+      "subject": "api::blog-card.blog-card",
+      "properties": {
+        "fields": [
+          "idItem",
+          "blog.idItem",
+          "blog.button.label",
+          "blog.button.url",
+          "blog.button.outsideWeb",
+          "blog.button.outlined",
+          "blog.button.idButton",
+          "blog.button.icon",
+          "blog.button.link",
+          "blog.button.style",
+          "blog.button.color",
+          "blog.button.size",
+          "blog.button.disabled",
+          "blog.button.noPaddingText",
+          "blog.chip.idChip",
+          "blog.chip.text",
+          "blog.chip.type",
+          "blog.chip.form",
+          "blog.chip.disabled",
+          "blog.chip.color",
+          "blog.chip.chipSize",
+          "blog.chip.leadingIcon",
+          "blog.chip.trailingIcon",
+          "blog.showChip",
+          "blog.blog"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::blog-card.blog-card",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::blog-card.blog-card",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::blog-card.blog-card",
+      "properties": {
+        "fields": [
+          "idItem",
+          "blog.idItem",
+          "blog.button.label",
+          "blog.button.url",
+          "blog.button.outsideWeb",
+          "blog.button.outlined",
+          "blog.button.idButton",
+          "blog.button.icon",
+          "blog.button.link",
+          "blog.button.style",
+          "blog.button.color",
+          "blog.button.size",
+          "blog.button.disabled",
+          "blog.button.noPaddingText",
+          "blog.chip.idChip",
+          "blog.chip.text",
+          "blog.chip.type",
+          "blog.chip.form",
+          "blog.chip.disabled",
+          "blog.chip.color",
+          "blog.chip.chipSize",
+          "blog.chip.leadingIcon",
+          "blog.chip.trailingIcon",
+          "blog.showChip",
+          "blog.blog"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::blog-card.blog-card",
+      "properties": {
+        "fields": [
+          "idItem",
+          "blog.idItem",
+          "blog.button.label",
+          "blog.button.url",
+          "blog.button.outsideWeb",
+          "blog.button.outlined",
+          "blog.button.idButton",
+          "blog.button.icon",
+          "blog.button.link",
+          "blog.button.style",
+          "blog.button.color",
+          "blog.button.size",
+          "blog.button.disabled",
+          "blog.button.noPaddingText",
+          "blog.chip.idChip",
+          "blog.chip.text",
+          "blog.chip.type",
+          "blog.chip.form",
+          "blog.chip.disabled",
+          "blog.chip.color",
+          "blog.chip.chipSize",
+          "blog.chip.leadingIcon",
+          "blog.chip.trailingIcon",
+          "blog.showChip",
+          "blog.blog"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
       "subject": "api::blog.blog",
       "properties": {
         "fields": [
@@ -259,14 +547,16 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "title",
           "date",
           "previewImage",
           "heroImage",
-          "author",
           "content",
           "slugURL",
-          "category"
+          "category",
+          "employee",
+          "avatarSize"
         ]
       },
       "conditions": []
@@ -293,14 +583,16 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "title",
           "date",
           "previewImage",
           "heroImage",
-          "author",
           "content",
           "slugURL",
-          "category"
+          "category",
+          "employee",
+          "avatarSize"
         ]
       },
       "conditions": []
@@ -315,14 +607,284 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "title",
           "date",
           "previewImage",
           "heroImage",
-          "author",
           "content",
           "slugURL",
-          "category"
+          "category",
+          "employee",
+          "avatarSize"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::brand-button.brand-button",
+      "properties": {
+        "fields": [
+          "idButton",
+          "brandButton.idButton",
+          "brandButton.url",
+          "brandButton.color",
+          "brandButton.size",
+          "brandButton.outsideWeb",
+          "brandButton.icon"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::brand-button.brand-button",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::brand-button.brand-button",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::brand-button.brand-button",
+      "properties": {
+        "fields": [
+          "idButton",
+          "brandButton.idButton",
+          "brandButton.url",
+          "brandButton.color",
+          "brandButton.size",
+          "brandButton.outsideWeb",
+          "brandButton.icon"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::brand-button.brand-button",
+      "properties": {
+        "fields": [
+          "idButton",
+          "brandButton.idButton",
+          "brandButton.url",
+          "brandButton.color",
+          "brandButton.size",
+          "brandButton.outsideWeb",
+          "brandButton.icon"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::card-table-content.card-table-content",
+      "properties": {
+        "fields": [
+          "title",
+          "contents",
+          "numberList",
+          "idContent"
+        ],
+        "locales": [
+          "en",
+          "es"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::card-table-content.card-table-content",
+      "properties": {
+        "locales": [
+          "en",
+          "es"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::card-table-content.card-table-content",
+      "properties": {
+        "locales": [
+          "en",
+          "es"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::card-table-content.card-table-content",
+      "properties": {
+        "fields": [
+          "title",
+          "contents",
+          "numberList",
+          "idContent"
+        ],
+        "locales": [
+          "en",
+          "es"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::card-table-content.card-table-content",
+      "properties": {
+        "fields": [
+          "title",
+          "contents",
+          "numberList",
+          "idContent"
+        ],
+        "locales": [
+          "en",
+          "es"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::card.card",
+      "properties": {
+        "fields": [
+          "idCard",
+          "card.idCard",
+          "card.size",
+          "card.contentAlign",
+          "card.numberIconText",
+          "card.chip.idChip",
+          "card.chip.text",
+          "card.chip.type",
+          "card.chip.form",
+          "card.chip.disabled",
+          "card.chip.color",
+          "card.chip.chipSize",
+          "card.chip.leadingIcon",
+          "card.chip.trailingIcon",
+          "card.mainIcon",
+          "card.title",
+          "card.content",
+          "card.button.label",
+          "card.button.url",
+          "card.button.outsideWeb",
+          "card.button.outlined",
+          "card.button.idButton",
+          "card.button.icon",
+          "card.button.link",
+          "card.button.style",
+          "card.button.color",
+          "card.button.size",
+          "card.button.disabled",
+          "card.button.noPaddingText",
+          "card.upperIconClosed",
+          "card.upperIconOpened",
+          "card.moreContent"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::card.card",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::card.card",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::card.card",
+      "properties": {
+        "fields": [
+          "idCard",
+          "card.idCard",
+          "card.size",
+          "card.contentAlign",
+          "card.numberIconText",
+          "card.chip.idChip",
+          "card.chip.text",
+          "card.chip.type",
+          "card.chip.form",
+          "card.chip.disabled",
+          "card.chip.color",
+          "card.chip.chipSize",
+          "card.chip.leadingIcon",
+          "card.chip.trailingIcon",
+          "card.mainIcon",
+          "card.title",
+          "card.content",
+          "card.button.label",
+          "card.button.url",
+          "card.button.outsideWeb",
+          "card.button.outlined",
+          "card.button.idButton",
+          "card.button.icon",
+          "card.button.link",
+          "card.button.style",
+          "card.button.color",
+          "card.button.size",
+          "card.button.disabled",
+          "card.button.noPaddingText",
+          "card.upperIconClosed",
+          "card.upperIconOpened",
+          "card.moreContent"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::card.card",
+      "properties": {
+        "fields": [
+          "idCard",
+          "card.idCard",
+          "card.size",
+          "card.contentAlign",
+          "card.numberIconText",
+          "card.chip.idChip",
+          "card.chip.text",
+          "card.chip.type",
+          "card.chip.form",
+          "card.chip.disabled",
+          "card.chip.color",
+          "card.chip.chipSize",
+          "card.chip.leadingIcon",
+          "card.chip.trailingIcon",
+          "card.mainIcon",
+          "card.title",
+          "card.content",
+          "card.button.label",
+          "card.button.url",
+          "card.button.outsideWeb",
+          "card.button.outlined",
+          "card.button.idButton",
+          "card.button.icon",
+          "card.button.link",
+          "card.button.style",
+          "card.button.color",
+          "card.button.size",
+          "card.button.disabled",
+          "card.button.noPaddingText",
+          "card.upperIconClosed",
+          "card.upperIconOpened",
+          "card.moreContent"
         ]
       },
       "conditions": []
@@ -390,7 +952,14 @@
           "button.url",
           "button.outsideWeb",
           "button.outlined",
-          "button.filename"
+          "button.idButton",
+          "button.icon",
+          "button.link",
+          "button.style",
+          "button.color",
+          "button.size",
+          "button.disabled",
+          "button.noPaddingText"
         ]
       },
       "conditions": []
@@ -422,7 +991,14 @@
           "button.url",
           "button.outsideWeb",
           "button.outlined",
-          "button.filename"
+          "button.idButton",
+          "button.icon",
+          "button.link",
+          "button.style",
+          "button.color",
+          "button.size",
+          "button.disabled",
+          "button.noPaddingText"
         ]
       },
       "conditions": []
@@ -442,7 +1018,86 @@
           "button.url",
           "button.outsideWeb",
           "button.outlined",
-          "button.filename"
+          "button.idButton",
+          "button.icon",
+          "button.link",
+          "button.style",
+          "button.color",
+          "button.size",
+          "button.disabled",
+          "button.noPaddingText"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::chip-option.chip-option",
+      "properties": {
+        "fields": [
+          "chip.idChip",
+          "chip.text",
+          "chip.type",
+          "chip.form",
+          "chip.disabled",
+          "chip.color",
+          "chip.chipSize",
+          "chip.leadingIcon",
+          "chip.trailingIcon",
+          "title",
+          "content"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::chip-option.chip-option",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::chip-option.chip-option",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::chip-option.chip-option",
+      "properties": {
+        "fields": [
+          "chip.idChip",
+          "chip.text",
+          "chip.type",
+          "chip.form",
+          "chip.disabled",
+          "chip.color",
+          "chip.chipSize",
+          "chip.leadingIcon",
+          "chip.trailingIcon",
+          "title",
+          "content"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::chip-option.chip-option",
+      "properties": {
+        "fields": [
+          "chip.idChip",
+          "chip.text",
+          "chip.type",
+          "chip.form",
+          "chip.disabled",
+          "chip.color",
+          "chip.chipSize",
+          "chip.leadingIcon",
+          "chip.trailingIcon",
+          "title",
+          "content"
         ]
       },
       "conditions": []
@@ -457,6 +1112,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "headerSection.title",
           "headerSection.subtitle",
           "headerSection.description",
@@ -478,7 +1134,14 @@
           "employeeSection.button.url",
           "employeeSection.button.outsideWeb",
           "employeeSection.button.outlined",
-          "employeeSection.button.filename",
+          "employeeSection.button.idButton",
+          "employeeSection.button.icon",
+          "employeeSection.button.link",
+          "employeeSection.button.style",
+          "employeeSection.button.color",
+          "employeeSection.button.size",
+          "employeeSection.button.disabled",
+          "employeeSection.button.noPaddingText",
           "employeeSection.employees",
           "awardsSection.title",
           "awardsSection.awards",
@@ -509,6 +1172,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "headerSection.title",
           "headerSection.subtitle",
           "headerSection.description",
@@ -530,7 +1194,14 @@
           "employeeSection.button.url",
           "employeeSection.button.outsideWeb",
           "employeeSection.button.outlined",
-          "employeeSection.button.filename",
+          "employeeSection.button.idButton",
+          "employeeSection.button.icon",
+          "employeeSection.button.link",
+          "employeeSection.button.style",
+          "employeeSection.button.color",
+          "employeeSection.button.size",
+          "employeeSection.button.disabled",
+          "employeeSection.button.noPaddingText",
           "employeeSection.employees",
           "awardsSection.title",
           "awardsSection.awards",
@@ -549,6 +1220,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "headerSection.title",
           "headerSection.subtitle",
           "headerSection.description",
@@ -570,7 +1242,14 @@
           "employeeSection.button.url",
           "employeeSection.button.outsideWeb",
           "employeeSection.button.outlined",
-          "employeeSection.button.filename",
+          "employeeSection.button.idButton",
+          "employeeSection.button.icon",
+          "employeeSection.button.link",
+          "employeeSection.button.style",
+          "employeeSection.button.color",
+          "employeeSection.button.size",
+          "employeeSection.button.disabled",
+          "employeeSection.button.noPaddingText",
           "employeeSection.employees",
           "awardsSection.title",
           "awardsSection.awards",
@@ -588,7 +1267,8 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "seo.alternate_urls"
         ]
       },
       "conditions": []
@@ -614,7 +1294,8 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "seo.alternate_urls"
         ]
       },
       "conditions": []
@@ -628,7 +1309,8 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "seo.alternate_urls"
         ]
       },
       "conditions": []
@@ -643,6 +1325,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "reasonSection.title",
           "reasonSection.description",
           "reasonSection.list",
@@ -675,6 +1358,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "reasonSection.title",
           "reasonSection.description",
           "reasonSection.list",
@@ -695,6 +1379,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "reasonSection.title",
           "reasonSection.description",
           "reasonSection.list",
@@ -715,6 +1400,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "headerSection.title",
           "headerSection.subtitle",
           "headerSection.description",
@@ -763,6 +1449,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "headerSection.title",
           "headerSection.subtitle",
           "headerSection.description",
@@ -799,6 +1486,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "headerSection.title",
           "headerSection.subtitle",
           "headerSection.description",
@@ -876,7 +1564,12 @@
           "content",
           "idContent",
           "media",
-          "titleSize"
+          "titleSize",
+          "table.content"
+        ],
+        "locales": [
+          "en",
+          "es"
         ]
       },
       "conditions": []
@@ -884,13 +1577,23 @@
     {
       "action": "plugin::content-manager.explorer.delete",
       "subject": "api::content.content",
-      "properties": {},
+      "properties": {
+        "locales": [
+          "en",
+          "es"
+        ]
+      },
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.publish",
       "subject": "api::content.content",
-      "properties": {},
+      "properties": {
+        "locales": [
+          "en",
+          "es"
+        ]
+      },
       "conditions": []
     },
     {
@@ -902,7 +1605,12 @@
           "content",
           "idContent",
           "media",
-          "titleSize"
+          "titleSize",
+          "table.content"
+        ],
+        "locales": [
+          "en",
+          "es"
         ]
       },
       "conditions": []
@@ -916,82 +1624,12 @@
           "content",
           "idContent",
           "media",
-          "titleSize"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.create",
-      "subject": "api::cookie-policy.cookie-policy",
-      "properties": {
-        "fields": [
-          "pageContent.title",
-          "pageContent.date.dateText",
-          "pageContent.date.date",
-          "pageContent.introSectionText",
-          "pageContent.contentSectionItem.title",
-          "pageContent.contentSectionItem.description",
-          "pageContent.contentSectionItem.idName",
-          "seo.metaTitle",
-          "seo.metaDescription",
-          "seo.rrssImg",
-          "seo.keywords",
-          "seo.canonicalURL"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::cookie-policy.cookie-policy",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.publish",
-      "subject": "api::cookie-policy.cookie-policy",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.read",
-      "subject": "api::cookie-policy.cookie-policy",
-      "properties": {
-        "fields": [
-          "pageContent.title",
-          "pageContent.date.dateText",
-          "pageContent.date.date",
-          "pageContent.introSectionText",
-          "pageContent.contentSectionItem.title",
-          "pageContent.contentSectionItem.description",
-          "pageContent.contentSectionItem.idName",
-          "seo.metaTitle",
-          "seo.metaDescription",
-          "seo.rrssImg",
-          "seo.keywords",
-          "seo.canonicalURL"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
-      "subject": "api::cookie-policy.cookie-policy",
-      "properties": {
-        "fields": [
-          "pageContent.title",
-          "pageContent.date.dateText",
-          "pageContent.date.date",
-          "pageContent.introSectionText",
-          "pageContent.contentSectionItem.title",
-          "pageContent.contentSectionItem.description",
-          "pageContent.contentSectionItem.idName",
-          "seo.metaTitle",
-          "seo.metaDescription",
-          "seo.rrssImg",
-          "seo.keywords",
-          "seo.canonicalURL"
+          "titleSize",
+          "table.content"
+        ],
+        "locales": [
+          "en",
+          "es"
         ]
       },
       "conditions": []
@@ -1058,6 +1696,135 @@
     },
     {
       "action": "plugin::content-manager.explorer.create",
+      "subject": "api::dynamic-card.dynamic-card",
+      "properties": {
+        "fields": [
+          "dynamicCards.size",
+          "dynamicCards.contentAlign",
+          "dynamicCards.numberIconText",
+          "dynamicCards.chip.idChip",
+          "dynamicCards.chip.text",
+          "dynamicCards.chip.type",
+          "dynamicCards.chip.form",
+          "dynamicCards.chip.disabled",
+          "dynamicCards.chip.color",
+          "dynamicCards.chip.chipSize",
+          "dynamicCards.chip.leadingIcon",
+          "dynamicCards.chip.trailingIcon",
+          "dynamicCards.mainIcon",
+          "dynamicCards.title",
+          "dynamicCards.content",
+          "dynamicCards.button.label",
+          "dynamicCards.button.url",
+          "dynamicCards.button.outsideWeb",
+          "dynamicCards.button.outlined",
+          "dynamicCards.button.idButton",
+          "dynamicCards.button.icon",
+          "dynamicCards.button.link",
+          "dynamicCards.button.style",
+          "dynamicCards.button.color",
+          "dynamicCards.button.size",
+          "dynamicCards.button.disabled",
+          "dynamicCards.button.noPaddingText",
+          "dynamicCards.upperIconClosed",
+          "dynamicCards.upperIconOpened",
+          "idItem"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::dynamic-card.dynamic-card",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::dynamic-card.dynamic-card",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::dynamic-card.dynamic-card",
+      "properties": {
+        "fields": [
+          "dynamicCards.size",
+          "dynamicCards.contentAlign",
+          "dynamicCards.numberIconText",
+          "dynamicCards.chip.idChip",
+          "dynamicCards.chip.text",
+          "dynamicCards.chip.type",
+          "dynamicCards.chip.form",
+          "dynamicCards.chip.disabled",
+          "dynamicCards.chip.color",
+          "dynamicCards.chip.chipSize",
+          "dynamicCards.chip.leadingIcon",
+          "dynamicCards.chip.trailingIcon",
+          "dynamicCards.mainIcon",
+          "dynamicCards.title",
+          "dynamicCards.content",
+          "dynamicCards.button.label",
+          "dynamicCards.button.url",
+          "dynamicCards.button.outsideWeb",
+          "dynamicCards.button.outlined",
+          "dynamicCards.button.idButton",
+          "dynamicCards.button.icon",
+          "dynamicCards.button.link",
+          "dynamicCards.button.style",
+          "dynamicCards.button.color",
+          "dynamicCards.button.size",
+          "dynamicCards.button.disabled",
+          "dynamicCards.button.noPaddingText",
+          "dynamicCards.upperIconClosed",
+          "dynamicCards.upperIconOpened",
+          "idItem"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::dynamic-card.dynamic-card",
+      "properties": {
+        "fields": [
+          "dynamicCards.size",
+          "dynamicCards.contentAlign",
+          "dynamicCards.numberIconText",
+          "dynamicCards.chip.idChip",
+          "dynamicCards.chip.text",
+          "dynamicCards.chip.type",
+          "dynamicCards.chip.form",
+          "dynamicCards.chip.disabled",
+          "dynamicCards.chip.color",
+          "dynamicCards.chip.chipSize",
+          "dynamicCards.chip.leadingIcon",
+          "dynamicCards.chip.trailingIcon",
+          "dynamicCards.mainIcon",
+          "dynamicCards.title",
+          "dynamicCards.content",
+          "dynamicCards.button.label",
+          "dynamicCards.button.url",
+          "dynamicCards.button.outsideWeb",
+          "dynamicCards.button.outlined",
+          "dynamicCards.button.idButton",
+          "dynamicCards.button.icon",
+          "dynamicCards.button.link",
+          "dynamicCards.button.style",
+          "dynamicCards.button.color",
+          "dynamicCards.button.size",
+          "dynamicCards.button.disabled",
+          "dynamicCards.button.noPaddingText",
+          "dynamicCards.upperIconClosed",
+          "dynamicCards.upperIconOpened",
+          "idItem"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
       "subject": "api::employee.employee",
       "properties": {
         "fields": [
@@ -1117,26 +1884,55 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "firstSection.leftButton.label",
           "firstSection.leftButton.url",
           "firstSection.leftButton.outsideWeb",
           "firstSection.leftButton.outlined",
-          "firstSection.leftButton.filename",
+          "firstSection.leftButton.idButton",
+          "firstSection.leftButton.icon",
+          "firstSection.leftButton.link",
+          "firstSection.leftButton.style",
+          "firstSection.leftButton.color",
+          "firstSection.leftButton.size",
+          "firstSection.leftButton.disabled",
+          "firstSection.leftButton.noPaddingText",
           "firstSection.rightButton.label",
           "firstSection.rightButton.url",
           "firstSection.rightButton.outsideWeb",
           "firstSection.rightButton.outlined",
-          "firstSection.rightButton.filename",
+          "firstSection.rightButton.idButton",
+          "firstSection.rightButton.icon",
+          "firstSection.rightButton.link",
+          "firstSection.rightButton.style",
+          "firstSection.rightButton.color",
+          "firstSection.rightButton.size",
+          "firstSection.rightButton.disabled",
+          "firstSection.rightButton.noPaddingText",
           "firstSection.moreButton.label",
           "firstSection.moreButton.url",
           "firstSection.moreButton.outsideWeb",
           "firstSection.moreButton.outlined",
-          "firstSection.moreButton.filename",
+          "firstSection.moreButton.idButton",
+          "firstSection.moreButton.icon",
+          "firstSection.moreButton.link",
+          "firstSection.moreButton.style",
+          "firstSection.moreButton.color",
+          "firstSection.moreButton.size",
+          "firstSection.moreButton.disabled",
+          "firstSection.moreButton.noPaddingText",
           "firstSection.learnMoreButton.label",
           "firstSection.learnMoreButton.url",
           "firstSection.learnMoreButton.outsideWeb",
           "firstSection.learnMoreButton.outlined",
-          "firstSection.learnMoreButton.filename",
+          "firstSection.learnMoreButton.idButton",
+          "firstSection.learnMoreButton.icon",
+          "firstSection.learnMoreButton.link",
+          "firstSection.learnMoreButton.style",
+          "firstSection.learnMoreButton.color",
+          "firstSection.learnMoreButton.size",
+          "firstSection.learnMoreButton.disabled",
+          "firstSection.learnMoreButton.noPaddingText",
           "firstSection.advantages.description",
           "firstSection.advantages.icon",
           "firstSection.advantages.title",
@@ -1153,22 +1949,50 @@
           "thirdSection.leftButton.url",
           "thirdSection.leftButton.outsideWeb",
           "thirdSection.leftButton.outlined",
-          "thirdSection.leftButton.filename",
+          "thirdSection.leftButton.idButton",
+          "thirdSection.leftButton.icon",
+          "thirdSection.leftButton.link",
+          "thirdSection.leftButton.style",
+          "thirdSection.leftButton.color",
+          "thirdSection.leftButton.size",
+          "thirdSection.leftButton.disabled",
+          "thirdSection.leftButton.noPaddingText",
           "thirdSection.rightButton.label",
           "thirdSection.rightButton.url",
           "thirdSection.rightButton.outsideWeb",
           "thirdSection.rightButton.outlined",
-          "thirdSection.rightButton.filename",
+          "thirdSection.rightButton.idButton",
+          "thirdSection.rightButton.icon",
+          "thirdSection.rightButton.link",
+          "thirdSection.rightButton.style",
+          "thirdSection.rightButton.color",
+          "thirdSection.rightButton.size",
+          "thirdSection.rightButton.disabled",
+          "thirdSection.rightButton.noPaddingText",
           "thirdSection.moreButton.label",
           "thirdSection.moreButton.url",
           "thirdSection.moreButton.outsideWeb",
           "thirdSection.moreButton.outlined",
-          "thirdSection.moreButton.filename",
+          "thirdSection.moreButton.idButton",
+          "thirdSection.moreButton.icon",
+          "thirdSection.moreButton.link",
+          "thirdSection.moreButton.style",
+          "thirdSection.moreButton.color",
+          "thirdSection.moreButton.size",
+          "thirdSection.moreButton.disabled",
+          "thirdSection.moreButton.noPaddingText",
           "thirdSection.learnMoreButton.label",
           "thirdSection.learnMoreButton.url",
           "thirdSection.learnMoreButton.outsideWeb",
           "thirdSection.learnMoreButton.outlined",
-          "thirdSection.learnMoreButton.filename",
+          "thirdSection.learnMoreButton.idButton",
+          "thirdSection.learnMoreButton.icon",
+          "thirdSection.learnMoreButton.link",
+          "thirdSection.learnMoreButton.style",
+          "thirdSection.learnMoreButton.color",
+          "thirdSection.learnMoreButton.size",
+          "thirdSection.learnMoreButton.disabled",
+          "thirdSection.learnMoreButton.noPaddingText",
           "thirdSection.advantages.description",
           "thirdSection.advantages.icon",
           "thirdSection.advantages.title",
@@ -1185,22 +2009,50 @@
           "fourthSection.leftButton.url",
           "fourthSection.leftButton.outsideWeb",
           "fourthSection.leftButton.outlined",
-          "fourthSection.leftButton.filename",
+          "fourthSection.leftButton.idButton",
+          "fourthSection.leftButton.icon",
+          "fourthSection.leftButton.link",
+          "fourthSection.leftButton.style",
+          "fourthSection.leftButton.color",
+          "fourthSection.leftButton.size",
+          "fourthSection.leftButton.disabled",
+          "fourthSection.leftButton.noPaddingText",
           "fourthSection.rightButton.label",
           "fourthSection.rightButton.url",
           "fourthSection.rightButton.outsideWeb",
           "fourthSection.rightButton.outlined",
-          "fourthSection.rightButton.filename",
+          "fourthSection.rightButton.idButton",
+          "fourthSection.rightButton.icon",
+          "fourthSection.rightButton.link",
+          "fourthSection.rightButton.style",
+          "fourthSection.rightButton.color",
+          "fourthSection.rightButton.size",
+          "fourthSection.rightButton.disabled",
+          "fourthSection.rightButton.noPaddingText",
           "fourthSection.moreButton.label",
           "fourthSection.moreButton.url",
           "fourthSection.moreButton.outsideWeb",
           "fourthSection.moreButton.outlined",
-          "fourthSection.moreButton.filename",
+          "fourthSection.moreButton.idButton",
+          "fourthSection.moreButton.icon",
+          "fourthSection.moreButton.link",
+          "fourthSection.moreButton.style",
+          "fourthSection.moreButton.color",
+          "fourthSection.moreButton.size",
+          "fourthSection.moreButton.disabled",
+          "fourthSection.moreButton.noPaddingText",
           "fourthSection.learnMoreButton.label",
           "fourthSection.learnMoreButton.url",
           "fourthSection.learnMoreButton.outsideWeb",
           "fourthSection.learnMoreButton.outlined",
-          "fourthSection.learnMoreButton.filename",
+          "fourthSection.learnMoreButton.idButton",
+          "fourthSection.learnMoreButton.icon",
+          "fourthSection.learnMoreButton.link",
+          "fourthSection.learnMoreButton.style",
+          "fourthSection.learnMoreButton.color",
+          "fourthSection.learnMoreButton.size",
+          "fourthSection.learnMoreButton.disabled",
+          "fourthSection.learnMoreButton.noPaddingText",
           "fourthSection.advantages.description",
           "fourthSection.advantages.icon",
           "fourthSection.advantages.title",
@@ -1217,22 +2069,50 @@
           "fifthSection.leftButton.url",
           "fifthSection.leftButton.outsideWeb",
           "fifthSection.leftButton.outlined",
-          "fifthSection.leftButton.filename",
+          "fifthSection.leftButton.idButton",
+          "fifthSection.leftButton.icon",
+          "fifthSection.leftButton.link",
+          "fifthSection.leftButton.style",
+          "fifthSection.leftButton.color",
+          "fifthSection.leftButton.size",
+          "fifthSection.leftButton.disabled",
+          "fifthSection.leftButton.noPaddingText",
           "fifthSection.rightButton.label",
           "fifthSection.rightButton.url",
           "fifthSection.rightButton.outsideWeb",
           "fifthSection.rightButton.outlined",
-          "fifthSection.rightButton.filename",
+          "fifthSection.rightButton.idButton",
+          "fifthSection.rightButton.icon",
+          "fifthSection.rightButton.link",
+          "fifthSection.rightButton.style",
+          "fifthSection.rightButton.color",
+          "fifthSection.rightButton.size",
+          "fifthSection.rightButton.disabled",
+          "fifthSection.rightButton.noPaddingText",
           "fifthSection.moreButton.label",
           "fifthSection.moreButton.url",
           "fifthSection.moreButton.outsideWeb",
           "fifthSection.moreButton.outlined",
-          "fifthSection.moreButton.filename",
+          "fifthSection.moreButton.idButton",
+          "fifthSection.moreButton.icon",
+          "fifthSection.moreButton.link",
+          "fifthSection.moreButton.style",
+          "fifthSection.moreButton.color",
+          "fifthSection.moreButton.size",
+          "fifthSection.moreButton.disabled",
+          "fifthSection.moreButton.noPaddingText",
           "fifthSection.learnMoreButton.label",
           "fifthSection.learnMoreButton.url",
           "fifthSection.learnMoreButton.outsideWeb",
           "fifthSection.learnMoreButton.outlined",
-          "fifthSection.learnMoreButton.filename",
+          "fifthSection.learnMoreButton.idButton",
+          "fifthSection.learnMoreButton.icon",
+          "fifthSection.learnMoreButton.link",
+          "fifthSection.learnMoreButton.style",
+          "fifthSection.learnMoreButton.color",
+          "fifthSection.learnMoreButton.size",
+          "fifthSection.learnMoreButton.disabled",
+          "fifthSection.learnMoreButton.noPaddingText",
           "fifthSection.advantages.description",
           "fifthSection.advantages.icon",
           "fifthSection.advantages.title",
@@ -1249,22 +2129,50 @@
           "sixthSection.leftButton.url",
           "sixthSection.leftButton.outsideWeb",
           "sixthSection.leftButton.outlined",
-          "sixthSection.leftButton.filename",
+          "sixthSection.leftButton.idButton",
+          "sixthSection.leftButton.icon",
+          "sixthSection.leftButton.link",
+          "sixthSection.leftButton.style",
+          "sixthSection.leftButton.color",
+          "sixthSection.leftButton.size",
+          "sixthSection.leftButton.disabled",
+          "sixthSection.leftButton.noPaddingText",
           "sixthSection.rightButton.label",
           "sixthSection.rightButton.url",
           "sixthSection.rightButton.outsideWeb",
           "sixthSection.rightButton.outlined",
-          "sixthSection.rightButton.filename",
+          "sixthSection.rightButton.idButton",
+          "sixthSection.rightButton.icon",
+          "sixthSection.rightButton.link",
+          "sixthSection.rightButton.style",
+          "sixthSection.rightButton.color",
+          "sixthSection.rightButton.size",
+          "sixthSection.rightButton.disabled",
+          "sixthSection.rightButton.noPaddingText",
           "sixthSection.moreButton.label",
           "sixthSection.moreButton.url",
           "sixthSection.moreButton.outsideWeb",
           "sixthSection.moreButton.outlined",
-          "sixthSection.moreButton.filename",
+          "sixthSection.moreButton.idButton",
+          "sixthSection.moreButton.icon",
+          "sixthSection.moreButton.link",
+          "sixthSection.moreButton.style",
+          "sixthSection.moreButton.color",
+          "sixthSection.moreButton.size",
+          "sixthSection.moreButton.disabled",
+          "sixthSection.moreButton.noPaddingText",
           "sixthSection.learnMoreButton.label",
           "sixthSection.learnMoreButton.url",
           "sixthSection.learnMoreButton.outsideWeb",
           "sixthSection.learnMoreButton.outlined",
-          "sixthSection.learnMoreButton.filename",
+          "sixthSection.learnMoreButton.idButton",
+          "sixthSection.learnMoreButton.icon",
+          "sixthSection.learnMoreButton.link",
+          "sixthSection.learnMoreButton.style",
+          "sixthSection.learnMoreButton.color",
+          "sixthSection.learnMoreButton.size",
+          "sixthSection.learnMoreButton.disabled",
+          "sixthSection.learnMoreButton.noPaddingText",
           "sixthSection.advantages.description",
           "sixthSection.advantages.icon",
           "sixthSection.advantages.title",
@@ -1281,22 +2189,50 @@
           "seventhSection.leftButton.url",
           "seventhSection.leftButton.outsideWeb",
           "seventhSection.leftButton.outlined",
-          "seventhSection.leftButton.filename",
+          "seventhSection.leftButton.idButton",
+          "seventhSection.leftButton.icon",
+          "seventhSection.leftButton.link",
+          "seventhSection.leftButton.style",
+          "seventhSection.leftButton.color",
+          "seventhSection.leftButton.size",
+          "seventhSection.leftButton.disabled",
+          "seventhSection.leftButton.noPaddingText",
           "seventhSection.rightButton.label",
           "seventhSection.rightButton.url",
           "seventhSection.rightButton.outsideWeb",
           "seventhSection.rightButton.outlined",
-          "seventhSection.rightButton.filename",
+          "seventhSection.rightButton.idButton",
+          "seventhSection.rightButton.icon",
+          "seventhSection.rightButton.link",
+          "seventhSection.rightButton.style",
+          "seventhSection.rightButton.color",
+          "seventhSection.rightButton.size",
+          "seventhSection.rightButton.disabled",
+          "seventhSection.rightButton.noPaddingText",
           "seventhSection.moreButton.label",
           "seventhSection.moreButton.url",
           "seventhSection.moreButton.outsideWeb",
           "seventhSection.moreButton.outlined",
-          "seventhSection.moreButton.filename",
+          "seventhSection.moreButton.idButton",
+          "seventhSection.moreButton.icon",
+          "seventhSection.moreButton.link",
+          "seventhSection.moreButton.style",
+          "seventhSection.moreButton.color",
+          "seventhSection.moreButton.size",
+          "seventhSection.moreButton.disabled",
+          "seventhSection.moreButton.noPaddingText",
           "seventhSection.learnMoreButton.label",
           "seventhSection.learnMoreButton.url",
           "seventhSection.learnMoreButton.outsideWeb",
           "seventhSection.learnMoreButton.outlined",
-          "seventhSection.learnMoreButton.filename",
+          "seventhSection.learnMoreButton.idButton",
+          "seventhSection.learnMoreButton.icon",
+          "seventhSection.learnMoreButton.link",
+          "seventhSection.learnMoreButton.style",
+          "seventhSection.learnMoreButton.color",
+          "seventhSection.learnMoreButton.size",
+          "seventhSection.learnMoreButton.disabled",
+          "seventhSection.learnMoreButton.noPaddingText",
           "seventhSection.advantages.description",
           "seventhSection.advantages.icon",
           "seventhSection.advantages.title",
@@ -1313,22 +2249,50 @@
           "eighthSection.leftButton.url",
           "eighthSection.leftButton.outsideWeb",
           "eighthSection.leftButton.outlined",
-          "eighthSection.leftButton.filename",
+          "eighthSection.leftButton.idButton",
+          "eighthSection.leftButton.icon",
+          "eighthSection.leftButton.link",
+          "eighthSection.leftButton.style",
+          "eighthSection.leftButton.color",
+          "eighthSection.leftButton.size",
+          "eighthSection.leftButton.disabled",
+          "eighthSection.leftButton.noPaddingText",
           "eighthSection.rightButton.label",
           "eighthSection.rightButton.url",
           "eighthSection.rightButton.outsideWeb",
           "eighthSection.rightButton.outlined",
-          "eighthSection.rightButton.filename",
+          "eighthSection.rightButton.idButton",
+          "eighthSection.rightButton.icon",
+          "eighthSection.rightButton.link",
+          "eighthSection.rightButton.style",
+          "eighthSection.rightButton.color",
+          "eighthSection.rightButton.size",
+          "eighthSection.rightButton.disabled",
+          "eighthSection.rightButton.noPaddingText",
           "eighthSection.moreButton.label",
           "eighthSection.moreButton.url",
           "eighthSection.moreButton.outsideWeb",
           "eighthSection.moreButton.outlined",
-          "eighthSection.moreButton.filename",
+          "eighthSection.moreButton.idButton",
+          "eighthSection.moreButton.icon",
+          "eighthSection.moreButton.link",
+          "eighthSection.moreButton.style",
+          "eighthSection.moreButton.color",
+          "eighthSection.moreButton.size",
+          "eighthSection.moreButton.disabled",
+          "eighthSection.moreButton.noPaddingText",
           "eighthSection.learnMoreButton.label",
           "eighthSection.learnMoreButton.url",
           "eighthSection.learnMoreButton.outsideWeb",
           "eighthSection.learnMoreButton.outlined",
-          "eighthSection.learnMoreButton.filename",
+          "eighthSection.learnMoreButton.idButton",
+          "eighthSection.learnMoreButton.icon",
+          "eighthSection.learnMoreButton.link",
+          "eighthSection.learnMoreButton.style",
+          "eighthSection.learnMoreButton.color",
+          "eighthSection.learnMoreButton.size",
+          "eighthSection.learnMoreButton.disabled",
+          "eighthSection.learnMoreButton.noPaddingText",
           "eighthSection.advantages.description",
           "eighthSection.advantages.icon",
           "eighthSection.advantages.title",
@@ -1343,7 +2307,8 @@
           "eighthSection.subtitle"
         ],
         "locales": [
-          "en"
+          "en",
+          "es"
         ]
       },
       "conditions": []
@@ -1353,7 +2318,8 @@
       "subject": "api::entry.entry",
       "properties": {
         "locales": [
-          "en"
+          "en",
+          "es"
         ]
       },
       "conditions": []
@@ -1363,7 +2329,8 @@
       "subject": "api::entry.entry",
       "properties": {
         "locales": [
-          "en"
+          "en",
+          "es"
         ]
       },
       "conditions": []
@@ -1378,26 +2345,55 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "firstSection.leftButton.label",
           "firstSection.leftButton.url",
           "firstSection.leftButton.outsideWeb",
           "firstSection.leftButton.outlined",
-          "firstSection.leftButton.filename",
+          "firstSection.leftButton.idButton",
+          "firstSection.leftButton.icon",
+          "firstSection.leftButton.link",
+          "firstSection.leftButton.style",
+          "firstSection.leftButton.color",
+          "firstSection.leftButton.size",
+          "firstSection.leftButton.disabled",
+          "firstSection.leftButton.noPaddingText",
           "firstSection.rightButton.label",
           "firstSection.rightButton.url",
           "firstSection.rightButton.outsideWeb",
           "firstSection.rightButton.outlined",
-          "firstSection.rightButton.filename",
+          "firstSection.rightButton.idButton",
+          "firstSection.rightButton.icon",
+          "firstSection.rightButton.link",
+          "firstSection.rightButton.style",
+          "firstSection.rightButton.color",
+          "firstSection.rightButton.size",
+          "firstSection.rightButton.disabled",
+          "firstSection.rightButton.noPaddingText",
           "firstSection.moreButton.label",
           "firstSection.moreButton.url",
           "firstSection.moreButton.outsideWeb",
           "firstSection.moreButton.outlined",
-          "firstSection.moreButton.filename",
+          "firstSection.moreButton.idButton",
+          "firstSection.moreButton.icon",
+          "firstSection.moreButton.link",
+          "firstSection.moreButton.style",
+          "firstSection.moreButton.color",
+          "firstSection.moreButton.size",
+          "firstSection.moreButton.disabled",
+          "firstSection.moreButton.noPaddingText",
           "firstSection.learnMoreButton.label",
           "firstSection.learnMoreButton.url",
           "firstSection.learnMoreButton.outsideWeb",
           "firstSection.learnMoreButton.outlined",
-          "firstSection.learnMoreButton.filename",
+          "firstSection.learnMoreButton.idButton",
+          "firstSection.learnMoreButton.icon",
+          "firstSection.learnMoreButton.link",
+          "firstSection.learnMoreButton.style",
+          "firstSection.learnMoreButton.color",
+          "firstSection.learnMoreButton.size",
+          "firstSection.learnMoreButton.disabled",
+          "firstSection.learnMoreButton.noPaddingText",
           "firstSection.advantages.description",
           "firstSection.advantages.icon",
           "firstSection.advantages.title",
@@ -1414,22 +2410,50 @@
           "thirdSection.leftButton.url",
           "thirdSection.leftButton.outsideWeb",
           "thirdSection.leftButton.outlined",
-          "thirdSection.leftButton.filename",
+          "thirdSection.leftButton.idButton",
+          "thirdSection.leftButton.icon",
+          "thirdSection.leftButton.link",
+          "thirdSection.leftButton.style",
+          "thirdSection.leftButton.color",
+          "thirdSection.leftButton.size",
+          "thirdSection.leftButton.disabled",
+          "thirdSection.leftButton.noPaddingText",
           "thirdSection.rightButton.label",
           "thirdSection.rightButton.url",
           "thirdSection.rightButton.outsideWeb",
           "thirdSection.rightButton.outlined",
-          "thirdSection.rightButton.filename",
+          "thirdSection.rightButton.idButton",
+          "thirdSection.rightButton.icon",
+          "thirdSection.rightButton.link",
+          "thirdSection.rightButton.style",
+          "thirdSection.rightButton.color",
+          "thirdSection.rightButton.size",
+          "thirdSection.rightButton.disabled",
+          "thirdSection.rightButton.noPaddingText",
           "thirdSection.moreButton.label",
           "thirdSection.moreButton.url",
           "thirdSection.moreButton.outsideWeb",
           "thirdSection.moreButton.outlined",
-          "thirdSection.moreButton.filename",
+          "thirdSection.moreButton.idButton",
+          "thirdSection.moreButton.icon",
+          "thirdSection.moreButton.link",
+          "thirdSection.moreButton.style",
+          "thirdSection.moreButton.color",
+          "thirdSection.moreButton.size",
+          "thirdSection.moreButton.disabled",
+          "thirdSection.moreButton.noPaddingText",
           "thirdSection.learnMoreButton.label",
           "thirdSection.learnMoreButton.url",
           "thirdSection.learnMoreButton.outsideWeb",
           "thirdSection.learnMoreButton.outlined",
-          "thirdSection.learnMoreButton.filename",
+          "thirdSection.learnMoreButton.idButton",
+          "thirdSection.learnMoreButton.icon",
+          "thirdSection.learnMoreButton.link",
+          "thirdSection.learnMoreButton.style",
+          "thirdSection.learnMoreButton.color",
+          "thirdSection.learnMoreButton.size",
+          "thirdSection.learnMoreButton.disabled",
+          "thirdSection.learnMoreButton.noPaddingText",
           "thirdSection.advantages.description",
           "thirdSection.advantages.icon",
           "thirdSection.advantages.title",
@@ -1446,22 +2470,50 @@
           "fourthSection.leftButton.url",
           "fourthSection.leftButton.outsideWeb",
           "fourthSection.leftButton.outlined",
-          "fourthSection.leftButton.filename",
+          "fourthSection.leftButton.idButton",
+          "fourthSection.leftButton.icon",
+          "fourthSection.leftButton.link",
+          "fourthSection.leftButton.style",
+          "fourthSection.leftButton.color",
+          "fourthSection.leftButton.size",
+          "fourthSection.leftButton.disabled",
+          "fourthSection.leftButton.noPaddingText",
           "fourthSection.rightButton.label",
           "fourthSection.rightButton.url",
           "fourthSection.rightButton.outsideWeb",
           "fourthSection.rightButton.outlined",
-          "fourthSection.rightButton.filename",
+          "fourthSection.rightButton.idButton",
+          "fourthSection.rightButton.icon",
+          "fourthSection.rightButton.link",
+          "fourthSection.rightButton.style",
+          "fourthSection.rightButton.color",
+          "fourthSection.rightButton.size",
+          "fourthSection.rightButton.disabled",
+          "fourthSection.rightButton.noPaddingText",
           "fourthSection.moreButton.label",
           "fourthSection.moreButton.url",
           "fourthSection.moreButton.outsideWeb",
           "fourthSection.moreButton.outlined",
-          "fourthSection.moreButton.filename",
+          "fourthSection.moreButton.idButton",
+          "fourthSection.moreButton.icon",
+          "fourthSection.moreButton.link",
+          "fourthSection.moreButton.style",
+          "fourthSection.moreButton.color",
+          "fourthSection.moreButton.size",
+          "fourthSection.moreButton.disabled",
+          "fourthSection.moreButton.noPaddingText",
           "fourthSection.learnMoreButton.label",
           "fourthSection.learnMoreButton.url",
           "fourthSection.learnMoreButton.outsideWeb",
           "fourthSection.learnMoreButton.outlined",
-          "fourthSection.learnMoreButton.filename",
+          "fourthSection.learnMoreButton.idButton",
+          "fourthSection.learnMoreButton.icon",
+          "fourthSection.learnMoreButton.link",
+          "fourthSection.learnMoreButton.style",
+          "fourthSection.learnMoreButton.color",
+          "fourthSection.learnMoreButton.size",
+          "fourthSection.learnMoreButton.disabled",
+          "fourthSection.learnMoreButton.noPaddingText",
           "fourthSection.advantages.description",
           "fourthSection.advantages.icon",
           "fourthSection.advantages.title",
@@ -1478,22 +2530,50 @@
           "fifthSection.leftButton.url",
           "fifthSection.leftButton.outsideWeb",
           "fifthSection.leftButton.outlined",
-          "fifthSection.leftButton.filename",
+          "fifthSection.leftButton.idButton",
+          "fifthSection.leftButton.icon",
+          "fifthSection.leftButton.link",
+          "fifthSection.leftButton.style",
+          "fifthSection.leftButton.color",
+          "fifthSection.leftButton.size",
+          "fifthSection.leftButton.disabled",
+          "fifthSection.leftButton.noPaddingText",
           "fifthSection.rightButton.label",
           "fifthSection.rightButton.url",
           "fifthSection.rightButton.outsideWeb",
           "fifthSection.rightButton.outlined",
-          "fifthSection.rightButton.filename",
+          "fifthSection.rightButton.idButton",
+          "fifthSection.rightButton.icon",
+          "fifthSection.rightButton.link",
+          "fifthSection.rightButton.style",
+          "fifthSection.rightButton.color",
+          "fifthSection.rightButton.size",
+          "fifthSection.rightButton.disabled",
+          "fifthSection.rightButton.noPaddingText",
           "fifthSection.moreButton.label",
           "fifthSection.moreButton.url",
           "fifthSection.moreButton.outsideWeb",
           "fifthSection.moreButton.outlined",
-          "fifthSection.moreButton.filename",
+          "fifthSection.moreButton.idButton",
+          "fifthSection.moreButton.icon",
+          "fifthSection.moreButton.link",
+          "fifthSection.moreButton.style",
+          "fifthSection.moreButton.color",
+          "fifthSection.moreButton.size",
+          "fifthSection.moreButton.disabled",
+          "fifthSection.moreButton.noPaddingText",
           "fifthSection.learnMoreButton.label",
           "fifthSection.learnMoreButton.url",
           "fifthSection.learnMoreButton.outsideWeb",
           "fifthSection.learnMoreButton.outlined",
-          "fifthSection.learnMoreButton.filename",
+          "fifthSection.learnMoreButton.idButton",
+          "fifthSection.learnMoreButton.icon",
+          "fifthSection.learnMoreButton.link",
+          "fifthSection.learnMoreButton.style",
+          "fifthSection.learnMoreButton.color",
+          "fifthSection.learnMoreButton.size",
+          "fifthSection.learnMoreButton.disabled",
+          "fifthSection.learnMoreButton.noPaddingText",
           "fifthSection.advantages.description",
           "fifthSection.advantages.icon",
           "fifthSection.advantages.title",
@@ -1510,22 +2590,50 @@
           "sixthSection.leftButton.url",
           "sixthSection.leftButton.outsideWeb",
           "sixthSection.leftButton.outlined",
-          "sixthSection.leftButton.filename",
+          "sixthSection.leftButton.idButton",
+          "sixthSection.leftButton.icon",
+          "sixthSection.leftButton.link",
+          "sixthSection.leftButton.style",
+          "sixthSection.leftButton.color",
+          "sixthSection.leftButton.size",
+          "sixthSection.leftButton.disabled",
+          "sixthSection.leftButton.noPaddingText",
           "sixthSection.rightButton.label",
           "sixthSection.rightButton.url",
           "sixthSection.rightButton.outsideWeb",
           "sixthSection.rightButton.outlined",
-          "sixthSection.rightButton.filename",
+          "sixthSection.rightButton.idButton",
+          "sixthSection.rightButton.icon",
+          "sixthSection.rightButton.link",
+          "sixthSection.rightButton.style",
+          "sixthSection.rightButton.color",
+          "sixthSection.rightButton.size",
+          "sixthSection.rightButton.disabled",
+          "sixthSection.rightButton.noPaddingText",
           "sixthSection.moreButton.label",
           "sixthSection.moreButton.url",
           "sixthSection.moreButton.outsideWeb",
           "sixthSection.moreButton.outlined",
-          "sixthSection.moreButton.filename",
+          "sixthSection.moreButton.idButton",
+          "sixthSection.moreButton.icon",
+          "sixthSection.moreButton.link",
+          "sixthSection.moreButton.style",
+          "sixthSection.moreButton.color",
+          "sixthSection.moreButton.size",
+          "sixthSection.moreButton.disabled",
+          "sixthSection.moreButton.noPaddingText",
           "sixthSection.learnMoreButton.label",
           "sixthSection.learnMoreButton.url",
           "sixthSection.learnMoreButton.outsideWeb",
           "sixthSection.learnMoreButton.outlined",
-          "sixthSection.learnMoreButton.filename",
+          "sixthSection.learnMoreButton.idButton",
+          "sixthSection.learnMoreButton.icon",
+          "sixthSection.learnMoreButton.link",
+          "sixthSection.learnMoreButton.style",
+          "sixthSection.learnMoreButton.color",
+          "sixthSection.learnMoreButton.size",
+          "sixthSection.learnMoreButton.disabled",
+          "sixthSection.learnMoreButton.noPaddingText",
           "sixthSection.advantages.description",
           "sixthSection.advantages.icon",
           "sixthSection.advantages.title",
@@ -1542,22 +2650,50 @@
           "seventhSection.leftButton.url",
           "seventhSection.leftButton.outsideWeb",
           "seventhSection.leftButton.outlined",
-          "seventhSection.leftButton.filename",
+          "seventhSection.leftButton.idButton",
+          "seventhSection.leftButton.icon",
+          "seventhSection.leftButton.link",
+          "seventhSection.leftButton.style",
+          "seventhSection.leftButton.color",
+          "seventhSection.leftButton.size",
+          "seventhSection.leftButton.disabled",
+          "seventhSection.leftButton.noPaddingText",
           "seventhSection.rightButton.label",
           "seventhSection.rightButton.url",
           "seventhSection.rightButton.outsideWeb",
           "seventhSection.rightButton.outlined",
-          "seventhSection.rightButton.filename",
+          "seventhSection.rightButton.idButton",
+          "seventhSection.rightButton.icon",
+          "seventhSection.rightButton.link",
+          "seventhSection.rightButton.style",
+          "seventhSection.rightButton.color",
+          "seventhSection.rightButton.size",
+          "seventhSection.rightButton.disabled",
+          "seventhSection.rightButton.noPaddingText",
           "seventhSection.moreButton.label",
           "seventhSection.moreButton.url",
           "seventhSection.moreButton.outsideWeb",
           "seventhSection.moreButton.outlined",
-          "seventhSection.moreButton.filename",
+          "seventhSection.moreButton.idButton",
+          "seventhSection.moreButton.icon",
+          "seventhSection.moreButton.link",
+          "seventhSection.moreButton.style",
+          "seventhSection.moreButton.color",
+          "seventhSection.moreButton.size",
+          "seventhSection.moreButton.disabled",
+          "seventhSection.moreButton.noPaddingText",
           "seventhSection.learnMoreButton.label",
           "seventhSection.learnMoreButton.url",
           "seventhSection.learnMoreButton.outsideWeb",
           "seventhSection.learnMoreButton.outlined",
-          "seventhSection.learnMoreButton.filename",
+          "seventhSection.learnMoreButton.idButton",
+          "seventhSection.learnMoreButton.icon",
+          "seventhSection.learnMoreButton.link",
+          "seventhSection.learnMoreButton.style",
+          "seventhSection.learnMoreButton.color",
+          "seventhSection.learnMoreButton.size",
+          "seventhSection.learnMoreButton.disabled",
+          "seventhSection.learnMoreButton.noPaddingText",
           "seventhSection.advantages.description",
           "seventhSection.advantages.icon",
           "seventhSection.advantages.title",
@@ -1574,22 +2710,50 @@
           "eighthSection.leftButton.url",
           "eighthSection.leftButton.outsideWeb",
           "eighthSection.leftButton.outlined",
-          "eighthSection.leftButton.filename",
+          "eighthSection.leftButton.idButton",
+          "eighthSection.leftButton.icon",
+          "eighthSection.leftButton.link",
+          "eighthSection.leftButton.style",
+          "eighthSection.leftButton.color",
+          "eighthSection.leftButton.size",
+          "eighthSection.leftButton.disabled",
+          "eighthSection.leftButton.noPaddingText",
           "eighthSection.rightButton.label",
           "eighthSection.rightButton.url",
           "eighthSection.rightButton.outsideWeb",
           "eighthSection.rightButton.outlined",
-          "eighthSection.rightButton.filename",
+          "eighthSection.rightButton.idButton",
+          "eighthSection.rightButton.icon",
+          "eighthSection.rightButton.link",
+          "eighthSection.rightButton.style",
+          "eighthSection.rightButton.color",
+          "eighthSection.rightButton.size",
+          "eighthSection.rightButton.disabled",
+          "eighthSection.rightButton.noPaddingText",
           "eighthSection.moreButton.label",
           "eighthSection.moreButton.url",
           "eighthSection.moreButton.outsideWeb",
           "eighthSection.moreButton.outlined",
-          "eighthSection.moreButton.filename",
+          "eighthSection.moreButton.idButton",
+          "eighthSection.moreButton.icon",
+          "eighthSection.moreButton.link",
+          "eighthSection.moreButton.style",
+          "eighthSection.moreButton.color",
+          "eighthSection.moreButton.size",
+          "eighthSection.moreButton.disabled",
+          "eighthSection.moreButton.noPaddingText",
           "eighthSection.learnMoreButton.label",
           "eighthSection.learnMoreButton.url",
           "eighthSection.learnMoreButton.outsideWeb",
           "eighthSection.learnMoreButton.outlined",
-          "eighthSection.learnMoreButton.filename",
+          "eighthSection.learnMoreButton.idButton",
+          "eighthSection.learnMoreButton.icon",
+          "eighthSection.learnMoreButton.link",
+          "eighthSection.learnMoreButton.style",
+          "eighthSection.learnMoreButton.color",
+          "eighthSection.learnMoreButton.size",
+          "eighthSection.learnMoreButton.disabled",
+          "eighthSection.learnMoreButton.noPaddingText",
           "eighthSection.advantages.description",
           "eighthSection.advantages.icon",
           "eighthSection.advantages.title",
@@ -1604,7 +2768,8 @@
           "eighthSection.subtitle"
         ],
         "locales": [
-          "en"
+          "en",
+          "es"
         ]
       },
       "conditions": []
@@ -1619,26 +2784,55 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "firstSection.leftButton.label",
           "firstSection.leftButton.url",
           "firstSection.leftButton.outsideWeb",
           "firstSection.leftButton.outlined",
-          "firstSection.leftButton.filename",
+          "firstSection.leftButton.idButton",
+          "firstSection.leftButton.icon",
+          "firstSection.leftButton.link",
+          "firstSection.leftButton.style",
+          "firstSection.leftButton.color",
+          "firstSection.leftButton.size",
+          "firstSection.leftButton.disabled",
+          "firstSection.leftButton.noPaddingText",
           "firstSection.rightButton.label",
           "firstSection.rightButton.url",
           "firstSection.rightButton.outsideWeb",
           "firstSection.rightButton.outlined",
-          "firstSection.rightButton.filename",
+          "firstSection.rightButton.idButton",
+          "firstSection.rightButton.icon",
+          "firstSection.rightButton.link",
+          "firstSection.rightButton.style",
+          "firstSection.rightButton.color",
+          "firstSection.rightButton.size",
+          "firstSection.rightButton.disabled",
+          "firstSection.rightButton.noPaddingText",
           "firstSection.moreButton.label",
           "firstSection.moreButton.url",
           "firstSection.moreButton.outsideWeb",
           "firstSection.moreButton.outlined",
-          "firstSection.moreButton.filename",
+          "firstSection.moreButton.idButton",
+          "firstSection.moreButton.icon",
+          "firstSection.moreButton.link",
+          "firstSection.moreButton.style",
+          "firstSection.moreButton.color",
+          "firstSection.moreButton.size",
+          "firstSection.moreButton.disabled",
+          "firstSection.moreButton.noPaddingText",
           "firstSection.learnMoreButton.label",
           "firstSection.learnMoreButton.url",
           "firstSection.learnMoreButton.outsideWeb",
           "firstSection.learnMoreButton.outlined",
-          "firstSection.learnMoreButton.filename",
+          "firstSection.learnMoreButton.idButton",
+          "firstSection.learnMoreButton.icon",
+          "firstSection.learnMoreButton.link",
+          "firstSection.learnMoreButton.style",
+          "firstSection.learnMoreButton.color",
+          "firstSection.learnMoreButton.size",
+          "firstSection.learnMoreButton.disabled",
+          "firstSection.learnMoreButton.noPaddingText",
           "firstSection.advantages.description",
           "firstSection.advantages.icon",
           "firstSection.advantages.title",
@@ -1655,22 +2849,50 @@
           "thirdSection.leftButton.url",
           "thirdSection.leftButton.outsideWeb",
           "thirdSection.leftButton.outlined",
-          "thirdSection.leftButton.filename",
+          "thirdSection.leftButton.idButton",
+          "thirdSection.leftButton.icon",
+          "thirdSection.leftButton.link",
+          "thirdSection.leftButton.style",
+          "thirdSection.leftButton.color",
+          "thirdSection.leftButton.size",
+          "thirdSection.leftButton.disabled",
+          "thirdSection.leftButton.noPaddingText",
           "thirdSection.rightButton.label",
           "thirdSection.rightButton.url",
           "thirdSection.rightButton.outsideWeb",
           "thirdSection.rightButton.outlined",
-          "thirdSection.rightButton.filename",
+          "thirdSection.rightButton.idButton",
+          "thirdSection.rightButton.icon",
+          "thirdSection.rightButton.link",
+          "thirdSection.rightButton.style",
+          "thirdSection.rightButton.color",
+          "thirdSection.rightButton.size",
+          "thirdSection.rightButton.disabled",
+          "thirdSection.rightButton.noPaddingText",
           "thirdSection.moreButton.label",
           "thirdSection.moreButton.url",
           "thirdSection.moreButton.outsideWeb",
           "thirdSection.moreButton.outlined",
-          "thirdSection.moreButton.filename",
+          "thirdSection.moreButton.idButton",
+          "thirdSection.moreButton.icon",
+          "thirdSection.moreButton.link",
+          "thirdSection.moreButton.style",
+          "thirdSection.moreButton.color",
+          "thirdSection.moreButton.size",
+          "thirdSection.moreButton.disabled",
+          "thirdSection.moreButton.noPaddingText",
           "thirdSection.learnMoreButton.label",
           "thirdSection.learnMoreButton.url",
           "thirdSection.learnMoreButton.outsideWeb",
           "thirdSection.learnMoreButton.outlined",
-          "thirdSection.learnMoreButton.filename",
+          "thirdSection.learnMoreButton.idButton",
+          "thirdSection.learnMoreButton.icon",
+          "thirdSection.learnMoreButton.link",
+          "thirdSection.learnMoreButton.style",
+          "thirdSection.learnMoreButton.color",
+          "thirdSection.learnMoreButton.size",
+          "thirdSection.learnMoreButton.disabled",
+          "thirdSection.learnMoreButton.noPaddingText",
           "thirdSection.advantages.description",
           "thirdSection.advantages.icon",
           "thirdSection.advantages.title",
@@ -1687,22 +2909,50 @@
           "fourthSection.leftButton.url",
           "fourthSection.leftButton.outsideWeb",
           "fourthSection.leftButton.outlined",
-          "fourthSection.leftButton.filename",
+          "fourthSection.leftButton.idButton",
+          "fourthSection.leftButton.icon",
+          "fourthSection.leftButton.link",
+          "fourthSection.leftButton.style",
+          "fourthSection.leftButton.color",
+          "fourthSection.leftButton.size",
+          "fourthSection.leftButton.disabled",
+          "fourthSection.leftButton.noPaddingText",
           "fourthSection.rightButton.label",
           "fourthSection.rightButton.url",
           "fourthSection.rightButton.outsideWeb",
           "fourthSection.rightButton.outlined",
-          "fourthSection.rightButton.filename",
+          "fourthSection.rightButton.idButton",
+          "fourthSection.rightButton.icon",
+          "fourthSection.rightButton.link",
+          "fourthSection.rightButton.style",
+          "fourthSection.rightButton.color",
+          "fourthSection.rightButton.size",
+          "fourthSection.rightButton.disabled",
+          "fourthSection.rightButton.noPaddingText",
           "fourthSection.moreButton.label",
           "fourthSection.moreButton.url",
           "fourthSection.moreButton.outsideWeb",
           "fourthSection.moreButton.outlined",
-          "fourthSection.moreButton.filename",
+          "fourthSection.moreButton.idButton",
+          "fourthSection.moreButton.icon",
+          "fourthSection.moreButton.link",
+          "fourthSection.moreButton.style",
+          "fourthSection.moreButton.color",
+          "fourthSection.moreButton.size",
+          "fourthSection.moreButton.disabled",
+          "fourthSection.moreButton.noPaddingText",
           "fourthSection.learnMoreButton.label",
           "fourthSection.learnMoreButton.url",
           "fourthSection.learnMoreButton.outsideWeb",
           "fourthSection.learnMoreButton.outlined",
-          "fourthSection.learnMoreButton.filename",
+          "fourthSection.learnMoreButton.idButton",
+          "fourthSection.learnMoreButton.icon",
+          "fourthSection.learnMoreButton.link",
+          "fourthSection.learnMoreButton.style",
+          "fourthSection.learnMoreButton.color",
+          "fourthSection.learnMoreButton.size",
+          "fourthSection.learnMoreButton.disabled",
+          "fourthSection.learnMoreButton.noPaddingText",
           "fourthSection.advantages.description",
           "fourthSection.advantages.icon",
           "fourthSection.advantages.title",
@@ -1719,22 +2969,50 @@
           "fifthSection.leftButton.url",
           "fifthSection.leftButton.outsideWeb",
           "fifthSection.leftButton.outlined",
-          "fifthSection.leftButton.filename",
+          "fifthSection.leftButton.idButton",
+          "fifthSection.leftButton.icon",
+          "fifthSection.leftButton.link",
+          "fifthSection.leftButton.style",
+          "fifthSection.leftButton.color",
+          "fifthSection.leftButton.size",
+          "fifthSection.leftButton.disabled",
+          "fifthSection.leftButton.noPaddingText",
           "fifthSection.rightButton.label",
           "fifthSection.rightButton.url",
           "fifthSection.rightButton.outsideWeb",
           "fifthSection.rightButton.outlined",
-          "fifthSection.rightButton.filename",
+          "fifthSection.rightButton.idButton",
+          "fifthSection.rightButton.icon",
+          "fifthSection.rightButton.link",
+          "fifthSection.rightButton.style",
+          "fifthSection.rightButton.color",
+          "fifthSection.rightButton.size",
+          "fifthSection.rightButton.disabled",
+          "fifthSection.rightButton.noPaddingText",
           "fifthSection.moreButton.label",
           "fifthSection.moreButton.url",
           "fifthSection.moreButton.outsideWeb",
           "fifthSection.moreButton.outlined",
-          "fifthSection.moreButton.filename",
+          "fifthSection.moreButton.idButton",
+          "fifthSection.moreButton.icon",
+          "fifthSection.moreButton.link",
+          "fifthSection.moreButton.style",
+          "fifthSection.moreButton.color",
+          "fifthSection.moreButton.size",
+          "fifthSection.moreButton.disabled",
+          "fifthSection.moreButton.noPaddingText",
           "fifthSection.learnMoreButton.label",
           "fifthSection.learnMoreButton.url",
           "fifthSection.learnMoreButton.outsideWeb",
           "fifthSection.learnMoreButton.outlined",
-          "fifthSection.learnMoreButton.filename",
+          "fifthSection.learnMoreButton.idButton",
+          "fifthSection.learnMoreButton.icon",
+          "fifthSection.learnMoreButton.link",
+          "fifthSection.learnMoreButton.style",
+          "fifthSection.learnMoreButton.color",
+          "fifthSection.learnMoreButton.size",
+          "fifthSection.learnMoreButton.disabled",
+          "fifthSection.learnMoreButton.noPaddingText",
           "fifthSection.advantages.description",
           "fifthSection.advantages.icon",
           "fifthSection.advantages.title",
@@ -1751,22 +3029,50 @@
           "sixthSection.leftButton.url",
           "sixthSection.leftButton.outsideWeb",
           "sixthSection.leftButton.outlined",
-          "sixthSection.leftButton.filename",
+          "sixthSection.leftButton.idButton",
+          "sixthSection.leftButton.icon",
+          "sixthSection.leftButton.link",
+          "sixthSection.leftButton.style",
+          "sixthSection.leftButton.color",
+          "sixthSection.leftButton.size",
+          "sixthSection.leftButton.disabled",
+          "sixthSection.leftButton.noPaddingText",
           "sixthSection.rightButton.label",
           "sixthSection.rightButton.url",
           "sixthSection.rightButton.outsideWeb",
           "sixthSection.rightButton.outlined",
-          "sixthSection.rightButton.filename",
+          "sixthSection.rightButton.idButton",
+          "sixthSection.rightButton.icon",
+          "sixthSection.rightButton.link",
+          "sixthSection.rightButton.style",
+          "sixthSection.rightButton.color",
+          "sixthSection.rightButton.size",
+          "sixthSection.rightButton.disabled",
+          "sixthSection.rightButton.noPaddingText",
           "sixthSection.moreButton.label",
           "sixthSection.moreButton.url",
           "sixthSection.moreButton.outsideWeb",
           "sixthSection.moreButton.outlined",
-          "sixthSection.moreButton.filename",
+          "sixthSection.moreButton.idButton",
+          "sixthSection.moreButton.icon",
+          "sixthSection.moreButton.link",
+          "sixthSection.moreButton.style",
+          "sixthSection.moreButton.color",
+          "sixthSection.moreButton.size",
+          "sixthSection.moreButton.disabled",
+          "sixthSection.moreButton.noPaddingText",
           "sixthSection.learnMoreButton.label",
           "sixthSection.learnMoreButton.url",
           "sixthSection.learnMoreButton.outsideWeb",
           "sixthSection.learnMoreButton.outlined",
-          "sixthSection.learnMoreButton.filename",
+          "sixthSection.learnMoreButton.idButton",
+          "sixthSection.learnMoreButton.icon",
+          "sixthSection.learnMoreButton.link",
+          "sixthSection.learnMoreButton.style",
+          "sixthSection.learnMoreButton.color",
+          "sixthSection.learnMoreButton.size",
+          "sixthSection.learnMoreButton.disabled",
+          "sixthSection.learnMoreButton.noPaddingText",
           "sixthSection.advantages.description",
           "sixthSection.advantages.icon",
           "sixthSection.advantages.title",
@@ -1783,22 +3089,50 @@
           "seventhSection.leftButton.url",
           "seventhSection.leftButton.outsideWeb",
           "seventhSection.leftButton.outlined",
-          "seventhSection.leftButton.filename",
+          "seventhSection.leftButton.idButton",
+          "seventhSection.leftButton.icon",
+          "seventhSection.leftButton.link",
+          "seventhSection.leftButton.style",
+          "seventhSection.leftButton.color",
+          "seventhSection.leftButton.size",
+          "seventhSection.leftButton.disabled",
+          "seventhSection.leftButton.noPaddingText",
           "seventhSection.rightButton.label",
           "seventhSection.rightButton.url",
           "seventhSection.rightButton.outsideWeb",
           "seventhSection.rightButton.outlined",
-          "seventhSection.rightButton.filename",
+          "seventhSection.rightButton.idButton",
+          "seventhSection.rightButton.icon",
+          "seventhSection.rightButton.link",
+          "seventhSection.rightButton.style",
+          "seventhSection.rightButton.color",
+          "seventhSection.rightButton.size",
+          "seventhSection.rightButton.disabled",
+          "seventhSection.rightButton.noPaddingText",
           "seventhSection.moreButton.label",
           "seventhSection.moreButton.url",
           "seventhSection.moreButton.outsideWeb",
           "seventhSection.moreButton.outlined",
-          "seventhSection.moreButton.filename",
+          "seventhSection.moreButton.idButton",
+          "seventhSection.moreButton.icon",
+          "seventhSection.moreButton.link",
+          "seventhSection.moreButton.style",
+          "seventhSection.moreButton.color",
+          "seventhSection.moreButton.size",
+          "seventhSection.moreButton.disabled",
+          "seventhSection.moreButton.noPaddingText",
           "seventhSection.learnMoreButton.label",
           "seventhSection.learnMoreButton.url",
           "seventhSection.learnMoreButton.outsideWeb",
           "seventhSection.learnMoreButton.outlined",
-          "seventhSection.learnMoreButton.filename",
+          "seventhSection.learnMoreButton.idButton",
+          "seventhSection.learnMoreButton.icon",
+          "seventhSection.learnMoreButton.link",
+          "seventhSection.learnMoreButton.style",
+          "seventhSection.learnMoreButton.color",
+          "seventhSection.learnMoreButton.size",
+          "seventhSection.learnMoreButton.disabled",
+          "seventhSection.learnMoreButton.noPaddingText",
           "seventhSection.advantages.description",
           "seventhSection.advantages.icon",
           "seventhSection.advantages.title",
@@ -1815,22 +3149,50 @@
           "eighthSection.leftButton.url",
           "eighthSection.leftButton.outsideWeb",
           "eighthSection.leftButton.outlined",
-          "eighthSection.leftButton.filename",
+          "eighthSection.leftButton.idButton",
+          "eighthSection.leftButton.icon",
+          "eighthSection.leftButton.link",
+          "eighthSection.leftButton.style",
+          "eighthSection.leftButton.color",
+          "eighthSection.leftButton.size",
+          "eighthSection.leftButton.disabled",
+          "eighthSection.leftButton.noPaddingText",
           "eighthSection.rightButton.label",
           "eighthSection.rightButton.url",
           "eighthSection.rightButton.outsideWeb",
           "eighthSection.rightButton.outlined",
-          "eighthSection.rightButton.filename",
+          "eighthSection.rightButton.idButton",
+          "eighthSection.rightButton.icon",
+          "eighthSection.rightButton.link",
+          "eighthSection.rightButton.style",
+          "eighthSection.rightButton.color",
+          "eighthSection.rightButton.size",
+          "eighthSection.rightButton.disabled",
+          "eighthSection.rightButton.noPaddingText",
           "eighthSection.moreButton.label",
           "eighthSection.moreButton.url",
           "eighthSection.moreButton.outsideWeb",
           "eighthSection.moreButton.outlined",
-          "eighthSection.moreButton.filename",
+          "eighthSection.moreButton.idButton",
+          "eighthSection.moreButton.icon",
+          "eighthSection.moreButton.link",
+          "eighthSection.moreButton.style",
+          "eighthSection.moreButton.color",
+          "eighthSection.moreButton.size",
+          "eighthSection.moreButton.disabled",
+          "eighthSection.moreButton.noPaddingText",
           "eighthSection.learnMoreButton.label",
           "eighthSection.learnMoreButton.url",
           "eighthSection.learnMoreButton.outsideWeb",
           "eighthSection.learnMoreButton.outlined",
-          "eighthSection.learnMoreButton.filename",
+          "eighthSection.learnMoreButton.idButton",
+          "eighthSection.learnMoreButton.icon",
+          "eighthSection.learnMoreButton.link",
+          "eighthSection.learnMoreButton.style",
+          "eighthSection.learnMoreButton.color",
+          "eighthSection.learnMoreButton.size",
+          "eighthSection.learnMoreButton.disabled",
+          "eighthSection.learnMoreButton.noPaddingText",
           "eighthSection.advantages.description",
           "eighthSection.advantages.icon",
           "eighthSection.advantages.title",
@@ -1845,7 +3207,8 @@
           "eighthSection.subtitle"
         ],
         "locales": [
-          "en"
+          "en",
+          "es"
         ]
       },
       "conditions": []
@@ -2004,13 +3367,21 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "title",
           "description",
           "button.label",
           "button.url",
           "button.outsideWeb",
           "button.outlined",
-          "button.filename",
+          "button.idButton",
+          "button.icon",
+          "button.link",
+          "button.style",
+          "button.color",
+          "button.size",
+          "button.disabled",
+          "button.noPaddingText",
           "featureSection.title",
           "featureSection.description",
           "featureSection.features",
@@ -2058,13 +3429,21 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "title",
           "description",
           "button.label",
           "button.url",
           "button.outsideWeb",
           "button.outlined",
-          "button.filename",
+          "button.idButton",
+          "button.icon",
+          "button.link",
+          "button.style",
+          "button.color",
+          "button.size",
+          "button.disabled",
+          "button.noPaddingText",
           "featureSection.title",
           "featureSection.description",
           "featureSection.features",
@@ -2100,13 +3479,21 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "title",
           "description",
           "button.label",
           "button.url",
           "button.outsideWeb",
           "button.outlined",
-          "button.filename",
+          "button.idButton",
+          "button.icon",
+          "button.link",
+          "button.style",
+          "button.color",
+          "button.size",
+          "button.disabled",
+          "button.noPaddingText",
           "featureSection.title",
           "featureSection.description",
           "featureSection.features",
@@ -2142,6 +3529,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "headerSection.title",
           "headerSection.subtitle",
           "headerSection.description",
@@ -2164,7 +3552,8 @@
           "credentialSection.properties"
         ],
         "locales": [
-          "en"
+          "en",
+          "es"
         ]
       },
       "conditions": []
@@ -2174,7 +3563,8 @@
       "subject": "api::gataca-wallet.gataca-wallet",
       "properties": {
         "locales": [
-          "en"
+          "en",
+          "es"
         ]
       },
       "conditions": []
@@ -2184,7 +3574,8 @@
       "subject": "api::gataca-wallet.gataca-wallet",
       "properties": {
         "locales": [
-          "en"
+          "en",
+          "es"
         ]
       },
       "conditions": []
@@ -2199,6 +3590,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "headerSection.title",
           "headerSection.subtitle",
           "headerSection.description",
@@ -2221,7 +3613,8 @@
           "credentialSection.properties"
         ],
         "locales": [
-          "en"
+          "en",
+          "es"
         ]
       },
       "conditions": []
@@ -2236,6 +3629,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "headerSection.title",
           "headerSection.subtitle",
           "headerSection.description",
@@ -2258,7 +3652,197 @@
           "credentialSection.properties"
         ],
         "locales": [
-          "en"
+          "en",
+          "es"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::heading.heading",
+      "properties": {
+        "fields": [
+          "heading.idHeading",
+          "heading.chip.idChip",
+          "heading.chip.text",
+          "heading.chip.type",
+          "heading.chip.form",
+          "heading.chip.disabled",
+          "heading.chip.color",
+          "heading.chip.chipSize",
+          "heading.chip.leadingIcon",
+          "heading.chip.trailingIcon",
+          "heading.extraText",
+          "heading.sectionName",
+          "heading.title",
+          "heading.content",
+          "heading.button.label",
+          "heading.button.url",
+          "heading.button.outsideWeb",
+          "heading.button.outlined",
+          "heading.button.idButton",
+          "heading.button.icon",
+          "heading.button.link",
+          "heading.button.style",
+          "heading.button.color",
+          "heading.button.size",
+          "heading.button.disabled",
+          "heading.button.noPaddingText",
+          "heading.buttonGroup.buttons",
+          "heading.buttonGroup.brand_buttons",
+          "heading.segmentedButton.buttons",
+          "heading.table.content",
+          "heading.titleSize",
+          "heading.align",
+          "heading.list.list_options",
+          "idHeading"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::heading.heading",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::heading.heading",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::heading.heading",
+      "properties": {
+        "fields": [
+          "heading.idHeading",
+          "heading.chip.idChip",
+          "heading.chip.text",
+          "heading.chip.type",
+          "heading.chip.form",
+          "heading.chip.disabled",
+          "heading.chip.color",
+          "heading.chip.chipSize",
+          "heading.chip.leadingIcon",
+          "heading.chip.trailingIcon",
+          "heading.extraText",
+          "heading.sectionName",
+          "heading.title",
+          "heading.content",
+          "heading.button.label",
+          "heading.button.url",
+          "heading.button.outsideWeb",
+          "heading.button.outlined",
+          "heading.button.idButton",
+          "heading.button.icon",
+          "heading.button.link",
+          "heading.button.style",
+          "heading.button.color",
+          "heading.button.size",
+          "heading.button.disabled",
+          "heading.button.noPaddingText",
+          "heading.buttonGroup.buttons",
+          "heading.buttonGroup.brand_buttons",
+          "heading.segmentedButton.buttons",
+          "heading.table.content",
+          "heading.titleSize",
+          "heading.align",
+          "heading.list.list_options",
+          "idHeading"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::heading.heading",
+      "properties": {
+        "fields": [
+          "heading.idHeading",
+          "heading.chip.idChip",
+          "heading.chip.text",
+          "heading.chip.type",
+          "heading.chip.form",
+          "heading.chip.disabled",
+          "heading.chip.color",
+          "heading.chip.chipSize",
+          "heading.chip.leadingIcon",
+          "heading.chip.trailingIcon",
+          "heading.extraText",
+          "heading.sectionName",
+          "heading.title",
+          "heading.content",
+          "heading.button.label",
+          "heading.button.url",
+          "heading.button.outsideWeb",
+          "heading.button.outlined",
+          "heading.button.idButton",
+          "heading.button.icon",
+          "heading.button.link",
+          "heading.button.style",
+          "heading.button.color",
+          "heading.button.size",
+          "heading.button.disabled",
+          "heading.button.noPaddingText",
+          "heading.buttonGroup.buttons",
+          "heading.buttonGroup.brand_buttons",
+          "heading.segmentedButton.buttons",
+          "heading.table.content",
+          "heading.titleSize",
+          "heading.align",
+          "heading.list.list_options",
+          "idHeading"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::highlight-card.highlight-card",
+      "properties": {
+        "fields": [
+          "idItem",
+          "highlight_card_list.title",
+          "highlight_card_list.listGroup.list_options"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::highlight-card.highlight-card",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::highlight-card.highlight-card",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::highlight-card.highlight-card",
+      "properties": {
+        "fields": [
+          "idItem",
+          "highlight_card_list.title",
+          "highlight_card_list.listGroup.list_options"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::highlight-card.highlight-card",
+      "properties": {
+        "fields": [
+          "idItem",
+          "highlight_card_list.title",
+          "highlight_card_list.listGroup.list_options"
         ]
       },
       "conditions": []
@@ -2316,6 +3900,129 @@
           "link",
           "link_route",
           "inside_description"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::list-option.list-option",
+      "properties": {
+        "fields": [
+          "list.idList",
+          "list.title",
+          "list.extraInfo",
+          "list.leadingIcon",
+          "list.size",
+          "list.color",
+          "idListOption",
+          "spacing",
+          "titleFontSize",
+          "titleFontWeight",
+          "title"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::list-option.list-option",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::list-option.list-option",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::list-option.list-option",
+      "properties": {
+        "fields": [
+          "list.idList",
+          "list.title",
+          "list.extraInfo",
+          "list.leadingIcon",
+          "list.size",
+          "list.color",
+          "idListOption",
+          "spacing",
+          "titleFontSize",
+          "titleFontWeight",
+          "title"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::list-option.list-option",
+      "properties": {
+        "fields": [
+          "list.idList",
+          "list.title",
+          "list.extraInfo",
+          "list.leadingIcon",
+          "list.size",
+          "list.color",
+          "idListOption",
+          "spacing",
+          "titleFontSize",
+          "titleFontWeight",
+          "title"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::logo-info.logo-info",
+      "properties": {
+        "fields": [
+          "idItem",
+          "logoInfo.idItem",
+          "logoInfo.title",
+          "logoInfo.image"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::logo-info.logo-info",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::logo-info.logo-info",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::logo-info.logo-info",
+      "properties": {
+        "fields": [
+          "idItem",
+          "logoInfo.idItem",
+          "logoInfo.title",
+          "logoInfo.image"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::logo-info.logo-info",
+      "properties": {
+        "fields": [
+          "idItem",
+          "logoInfo.idItem",
+          "logoInfo.title",
+          "logoInfo.image"
         ]
       },
       "conditions": []
@@ -2427,9 +4134,14 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "title",
           "slugURL",
           "subPath"
+        ],
+        "locales": [
+          "en",
+          "es"
         ]
       },
       "conditions": []
@@ -2437,13 +4149,23 @@
     {
       "action": "plugin::content-manager.explorer.delete",
       "subject": "api::page.page",
-      "properties": {},
+      "properties": {
+        "locales": [
+          "en",
+          "es"
+        ]
+      },
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.publish",
       "subject": "api::page.page",
-      "properties": {},
+      "properties": {
+        "locales": [
+          "en",
+          "es"
+        ]
+      },
       "conditions": []
     },
     {
@@ -2457,9 +4179,14 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "title",
           "slugURL",
           "subPath"
+        ],
+        "locales": [
+          "en",
+          "es"
         ]
       },
       "conditions": []
@@ -2475,9 +4202,14 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "title",
           "slugURL",
           "subPath"
+        ],
+        "locales": [
+          "en",
+          "es"
         ]
       },
       "conditions": []
@@ -2631,216 +4363,6 @@
     },
     {
       "action": "plugin::content-manager.explorer.create",
-      "subject": "api::pricing.pricing",
-      "properties": {
-        "fields": [
-          "seo.metaTitle",
-          "seo.metaDescription",
-          "seo.rrssImg",
-          "seo.keywords",
-          "seo.canonicalURL",
-          "title",
-          "description",
-          "faqSection.title",
-          "faqSection.subtitle",
-          "faqSection.info.title",
-          "faqSection.info.list.title",
-          "faqSection.info.list.description",
-          "faqSection.info.list.icon",
-          "faqSection.info.list.image",
-          "cloudSection.title",
-          "cloudSection.description",
-          "cloudSection.identifier",
-          "cloudSection.tiers",
-          "cloudSection.pricing_categories",
-          "cloudSection.switchLabel",
-          "cloudSection.tier_tables",
-          "onPremiseSection.button.label",
-          "onPremiseSection.button.url",
-          "onPremiseSection.button.outsideWeb",
-          "onPremiseSection.button.outlined",
-          "onPremiseSection.button.filename",
-          "onPremiseSection.identifier",
-          "onPremiseSection.title",
-          "onPremiseSection.panelTitle",
-          "onPremiseSection.paragraph_1",
-          "onPremiseSection.paragraph_2",
-          "test"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::pricing.pricing",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.publish",
-      "subject": "api::pricing.pricing",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.read",
-      "subject": "api::pricing.pricing",
-      "properties": {
-        "fields": [
-          "seo.metaTitle",
-          "seo.metaDescription",
-          "seo.rrssImg",
-          "seo.keywords",
-          "seo.canonicalURL",
-          "title",
-          "description",
-          "faqSection.title",
-          "faqSection.subtitle",
-          "faqSection.info.title",
-          "faqSection.info.list.title",
-          "faqSection.info.list.description",
-          "faqSection.info.list.icon",
-          "faqSection.info.list.image",
-          "cloudSection.title",
-          "cloudSection.description",
-          "cloudSection.identifier",
-          "cloudSection.tiers",
-          "cloudSection.pricing_categories",
-          "cloudSection.switchLabel",
-          "cloudSection.tier_tables",
-          "onPremiseSection.button.label",
-          "onPremiseSection.button.url",
-          "onPremiseSection.button.outsideWeb",
-          "onPremiseSection.button.outlined",
-          "onPremiseSection.button.filename",
-          "onPremiseSection.identifier",
-          "onPremiseSection.title",
-          "onPremiseSection.panelTitle",
-          "onPremiseSection.paragraph_1",
-          "onPremiseSection.paragraph_2",
-          "test"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
-      "subject": "api::pricing.pricing",
-      "properties": {
-        "fields": [
-          "seo.metaTitle",
-          "seo.metaDescription",
-          "seo.rrssImg",
-          "seo.keywords",
-          "seo.canonicalURL",
-          "title",
-          "description",
-          "faqSection.title",
-          "faqSection.subtitle",
-          "faqSection.info.title",
-          "faqSection.info.list.title",
-          "faqSection.info.list.description",
-          "faqSection.info.list.icon",
-          "faqSection.info.list.image",
-          "cloudSection.title",
-          "cloudSection.description",
-          "cloudSection.identifier",
-          "cloudSection.tiers",
-          "cloudSection.pricing_categories",
-          "cloudSection.switchLabel",
-          "cloudSection.tier_tables",
-          "onPremiseSection.button.label",
-          "onPremiseSection.button.url",
-          "onPremiseSection.button.outsideWeb",
-          "onPremiseSection.button.outlined",
-          "onPremiseSection.button.filename",
-          "onPremiseSection.identifier",
-          "onPremiseSection.title",
-          "onPremiseSection.panelTitle",
-          "onPremiseSection.paragraph_1",
-          "onPremiseSection.paragraph_2",
-          "test"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.create",
-      "subject": "api::privacy-policy.privacy-policy",
-      "properties": {
-        "fields": [
-          "pageContent.title",
-          "pageContent.date.dateText",
-          "pageContent.date.date",
-          "pageContent.introSectionText",
-          "pageContent.contentSectionItem.title",
-          "pageContent.contentSectionItem.description",
-          "pageContent.contentSectionItem.idName",
-          "seo.metaTitle",
-          "seo.metaDescription",
-          "seo.rrssImg",
-          "seo.keywords",
-          "seo.canonicalURL"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::privacy-policy.privacy-policy",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.publish",
-      "subject": "api::privacy-policy.privacy-policy",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.read",
-      "subject": "api::privacy-policy.privacy-policy",
-      "properties": {
-        "fields": [
-          "pageContent.title",
-          "pageContent.date.dateText",
-          "pageContent.date.date",
-          "pageContent.introSectionText",
-          "pageContent.contentSectionItem.title",
-          "pageContent.contentSectionItem.description",
-          "pageContent.contentSectionItem.idName",
-          "seo.metaTitle",
-          "seo.metaDescription",
-          "seo.rrssImg",
-          "seo.keywords",
-          "seo.canonicalURL"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
-      "subject": "api::privacy-policy.privacy-policy",
-      "properties": {
-        "fields": [
-          "pageContent.title",
-          "pageContent.date.dateText",
-          "pageContent.date.date",
-          "pageContent.introSectionText",
-          "pageContent.contentSectionItem.title",
-          "pageContent.contentSectionItem.description",
-          "pageContent.contentSectionItem.idName",
-          "seo.metaTitle",
-          "seo.metaDescription",
-          "seo.rrssImg",
-          "seo.keywords",
-          "seo.canonicalURL"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.create",
       "subject": "api::property.property",
       "properties": {
         "fields": [
@@ -2896,7 +4418,8 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "seo.alternate_urls"
         ]
       },
       "conditions": []
@@ -2922,7 +4445,8 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "seo.alternate_urls"
         ]
       },
       "conditions": []
@@ -2936,7 +4460,8 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "seo.alternate_urls"
         ]
       },
       "conditions": []
@@ -2951,6 +4476,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "headerSection.title",
           "headerSection.subtitle",
           "headerSection.description",
@@ -2985,6 +4511,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "headerSection.title",
           "headerSection.subtitle",
           "headerSection.description",
@@ -3007,6 +4534,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "headerSection.title",
           "headerSection.subtitle",
           "headerSection.description",
@@ -3028,7 +4556,8 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "seo.alternate_urls"
         ]
       },
       "conditions": []
@@ -3054,7 +4583,8 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "seo.alternate_urls"
         ]
       },
       "conditions": []
@@ -3068,7 +4598,8 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "seo.alternate_urls"
         ]
       },
       "conditions": []
@@ -3082,7 +4613,8 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "seo.alternate_urls"
         ]
       },
       "conditions": []
@@ -3108,7 +4640,8 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "seo.alternate_urls"
         ]
       },
       "conditions": []
@@ -3122,7 +4655,8 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "seo.alternate_urls"
         ]
       },
       "conditions": []
@@ -3136,7 +4670,8 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "seo.alternate_urls"
         ]
       },
       "conditions": []
@@ -3162,7 +4697,8 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "seo.alternate_urls"
         ]
       },
       "conditions": []
@@ -3176,7 +4712,8 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "seo.alternate_urls"
         ]
       },
       "conditions": []
@@ -3191,6 +4728,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "headerSection.title",
           "headerSection.subtitle",
           "headerSection.description",
@@ -3233,6 +4771,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "headerSection.title",
           "headerSection.subtitle",
           "headerSection.description",
@@ -3263,6 +4802,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "headerSection.title",
           "headerSection.subtitle",
           "headerSection.description",
@@ -3293,6 +4833,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "headerSection.title",
           "headerSection.subtitle",
           "headerSection.description",
@@ -3336,6 +4877,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "headerSection.title",
           "headerSection.subtitle",
           "headerSection.description",
@@ -3367,6 +4909,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "headerSection.title",
           "headerSection.subtitle",
           "headerSection.description",
@@ -3398,6 +4941,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "headerSection.title",
           "headerSection.subtitle",
           "headerSection.description",
@@ -3441,6 +4985,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "headerSection.title",
           "headerSection.subtitle",
           "headerSection.description",
@@ -3472,6 +5017,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "headerSection.title",
           "headerSection.subtitle",
           "headerSection.description",
@@ -3502,7 +5048,8 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "seo.alternate_urls"
         ]
       },
       "conditions": []
@@ -3528,7 +5075,8 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "seo.alternate_urls"
         ]
       },
       "conditions": []
@@ -3542,7 +5090,149 @@
           "seo.metaDescription",
           "seo.rrssImg",
           "seo.keywords",
-          "seo.canonicalURL"
+          "seo.canonicalURL",
+          "seo.alternate_urls"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::segmented-button.segmented-button",
+      "properties": {
+        "fields": [
+          "button.label",
+          "button.url",
+          "button.outsideWeb",
+          "button.outlined",
+          "button.idButton",
+          "button.icon",
+          "button.link",
+          "button.style",
+          "button.color",
+          "button.size",
+          "button.disabled",
+          "button.noPaddingText",
+          "content",
+          "title"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::segmented-button.segmented-button",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::segmented-button.segmented-button",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::segmented-button.segmented-button",
+      "properties": {
+        "fields": [
+          "button.label",
+          "button.url",
+          "button.outsideWeb",
+          "button.outlined",
+          "button.idButton",
+          "button.icon",
+          "button.link",
+          "button.style",
+          "button.color",
+          "button.size",
+          "button.disabled",
+          "button.noPaddingText",
+          "content",
+          "title"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::segmented-button.segmented-button",
+      "properties": {
+        "fields": [
+          "button.label",
+          "button.url",
+          "button.outsideWeb",
+          "button.outlined",
+          "button.idButton",
+          "button.icon",
+          "button.link",
+          "button.style",
+          "button.color",
+          "button.size",
+          "button.disabled",
+          "button.noPaddingText",
+          "content",
+          "title"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::selector-list.selector-list",
+      "properties": {
+        "fields": [
+          "idSelectorList",
+          "selector.title",
+          "selector.showSelector",
+          "selector.media",
+          "selector.action_card",
+          "selector.content",
+          "selector.idItem"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::selector-list.selector-list",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::selector-list.selector-list",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::selector-list.selector-list",
+      "properties": {
+        "fields": [
+          "idSelectorList",
+          "selector.title",
+          "selector.showSelector",
+          "selector.media",
+          "selector.action_card",
+          "selector.content",
+          "selector.idItem"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::selector-list.selector-list",
+      "properties": {
+        "fields": [
+          "idSelectorList",
+          "selector.title",
+          "selector.showSelector",
+          "selector.media",
+          "selector.action_card",
+          "selector.content",
+          "selector.idItem"
         ]
       },
       "conditions": []
@@ -3591,6 +5281,75 @@
           "title",
           "description",
           "number"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::sub-heading.sub-heading",
+      "properties": {
+        "fields": [
+          "subHeadingContainer.idItem",
+          "subHeadingContainer.subHeading.idSubHeading",
+          "subHeadingContainer.subHeading.size",
+          "subHeadingContainer.subHeading.numberIconText",
+          "subHeadingContainer.subHeading.icon",
+          "subHeadingContainer.subHeading.title",
+          "subHeadingContainer.subHeading.content",
+          "subHeadingContainer.subHeading.align",
+          "subHeadingContainer.columns",
+          "idItem"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::sub-heading.sub-heading",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::sub-heading.sub-heading",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::sub-heading.sub-heading",
+      "properties": {
+        "fields": [
+          "subHeadingContainer.idItem",
+          "subHeadingContainer.subHeading.idSubHeading",
+          "subHeadingContainer.subHeading.size",
+          "subHeadingContainer.subHeading.numberIconText",
+          "subHeadingContainer.subHeading.icon",
+          "subHeadingContainer.subHeading.title",
+          "subHeadingContainer.subHeading.content",
+          "subHeadingContainer.subHeading.align",
+          "subHeadingContainer.columns",
+          "idItem"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::sub-heading.sub-heading",
+      "properties": {
+        "fields": [
+          "subHeadingContainer.idItem",
+          "subHeadingContainer.subHeading.idSubHeading",
+          "subHeadingContainer.subHeading.size",
+          "subHeadingContainer.subHeading.numberIconText",
+          "subHeadingContainer.subHeading.icon",
+          "subHeadingContainer.subHeading.title",
+          "subHeadingContainer.subHeading.content",
+          "subHeadingContainer.subHeading.align",
+          "subHeadingContainer.columns",
+          "idItem"
         ]
       },
       "conditions": []
@@ -3654,81 +5413,6 @@
     },
     {
       "action": "plugin::content-manager.explorer.create",
-      "subject": "api::terms-of-use.terms-of-use",
-      "properties": {
-        "fields": [
-          "pageContent.title",
-          "pageContent.date.dateText",
-          "pageContent.date.date",
-          "pageContent.introSectionText",
-          "pageContent.contentSectionItem.title",
-          "pageContent.contentSectionItem.description",
-          "pageContent.contentSectionItem.idName",
-          "seo.metaTitle",
-          "seo.metaDescription",
-          "seo.rrssImg",
-          "seo.keywords",
-          "seo.canonicalURL"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::terms-of-use.terms-of-use",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.publish",
-      "subject": "api::terms-of-use.terms-of-use",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.read",
-      "subject": "api::terms-of-use.terms-of-use",
-      "properties": {
-        "fields": [
-          "pageContent.title",
-          "pageContent.date.dateText",
-          "pageContent.date.date",
-          "pageContent.introSectionText",
-          "pageContent.contentSectionItem.title",
-          "pageContent.contentSectionItem.description",
-          "pageContent.contentSectionItem.idName",
-          "seo.metaTitle",
-          "seo.metaDescription",
-          "seo.rrssImg",
-          "seo.keywords",
-          "seo.canonicalURL"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
-      "subject": "api::terms-of-use.terms-of-use",
-      "properties": {
-        "fields": [
-          "pageContent.title",
-          "pageContent.date.dateText",
-          "pageContent.date.date",
-          "pageContent.introSectionText",
-          "pageContent.contentSectionItem.title",
-          "pageContent.contentSectionItem.description",
-          "pageContent.contentSectionItem.idName",
-          "seo.metaTitle",
-          "seo.metaDescription",
-          "seo.rrssImg",
-          "seo.keywords",
-          "seo.canonicalURL"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.create",
       "subject": "api::test-sync.test-sync",
       "properties": {
         "fields": [
@@ -3737,7 +5421,8 @@
           "SEO.metaDescription",
           "SEO.rrssImg",
           "SEO.keywords",
-          "SEO.canonicalURL"
+          "SEO.canonicalURL",
+          "SEO.alternate_urls"
         ]
       },
       "conditions": []
@@ -3764,7 +5449,8 @@
           "SEO.metaDescription",
           "SEO.rrssImg",
           "SEO.keywords",
-          "SEO.canonicalURL"
+          "SEO.canonicalURL",
+          "SEO.alternate_urls"
         ]
       },
       "conditions": []
@@ -3779,7 +5465,8 @@
           "SEO.metaDescription",
           "SEO.rrssImg",
           "SEO.keywords",
-          "SEO.canonicalURL"
+          "SEO.canonicalURL",
+          "SEO.alternate_urls"
         ]
       },
       "conditions": []
@@ -3841,7 +5528,14 @@
           "button.url",
           "button.outsideWeb",
           "button.outlined",
-          "button.filename",
+          "button.idButton",
+          "button.icon",
+          "button.link",
+          "button.style",
+          "button.color",
+          "button.size",
+          "button.disabled",
+          "button.noPaddingText",
           "description",
           "name",
           "subPriceMonthLabel",
@@ -3895,7 +5589,14 @@
           "button2.url",
           "button2.outsideWeb",
           "button2.outlined",
-          "button2.filename"
+          "button2.idButton",
+          "button2.icon",
+          "button2.link",
+          "button2.style",
+          "button2.color",
+          "button2.size",
+          "button2.disabled",
+          "button2.noPaddingText"
         ]
       },
       "conditions": []
@@ -3921,7 +5622,14 @@
           "button.url",
           "button.outsideWeb",
           "button.outlined",
-          "button.filename",
+          "button.idButton",
+          "button.icon",
+          "button.link",
+          "button.style",
+          "button.color",
+          "button.size",
+          "button.disabled",
+          "button.noPaddingText",
           "description",
           "name",
           "subPriceMonthLabel",
@@ -3975,7 +5683,14 @@
           "button2.url",
           "button2.outsideWeb",
           "button2.outlined",
-          "button2.filename"
+          "button2.idButton",
+          "button2.icon",
+          "button2.link",
+          "button2.style",
+          "button2.color",
+          "button2.size",
+          "button2.disabled",
+          "button2.noPaddingText"
         ]
       },
       "conditions": []
@@ -3989,7 +5704,14 @@
           "button.url",
           "button.outsideWeb",
           "button.outlined",
-          "button.filename",
+          "button.idButton",
+          "button.icon",
+          "button.link",
+          "button.style",
+          "button.color",
+          "button.size",
+          "button.disabled",
+          "button.noPaddingText",
           "description",
           "name",
           "subPriceMonthLabel",
@@ -4043,7 +5765,14 @@
           "button2.url",
           "button2.outsideWeb",
           "button2.outlined",
-          "button2.filename"
+          "button2.idButton",
+          "button2.icon",
+          "button2.link",
+          "button2.style",
+          "button2.color",
+          "button2.size",
+          "button2.disabled",
+          "button2.noPaddingText"
         ]
       },
       "conditions": []
@@ -4109,6 +5838,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "header.title",
           "header.subtitle",
           "header.description",
@@ -4151,6 +5881,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "header.title",
           "header.subtitle",
           "header.description",
@@ -4181,6 +5912,7 @@
           "seo.rrssImg",
           "seo.keywords",
           "seo.canonicalURL",
+          "seo.alternate_urls",
           "header.title",
           "header.subtitle",
           "header.description",

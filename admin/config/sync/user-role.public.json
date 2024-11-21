@@ -4,6 +4,12 @@
   "type": "public",
   "permissions": [
     {
+      "action": "api::action-card.action-card.find"
+    },
+    {
+      "action": "api::action-card.action-card.findOne"
+    },
+    {
       "action": "api::ad-feature.ad-feature.find"
     },
     {
@@ -14,6 +20,12 @@
     },
     {
       "action": "api::advantage.advantage.findOne"
+    },
+    {
+      "action": "api::alternate-url.alternate-url.find"
+    },
+    {
+      "action": "api::alternate-url.alternate-url.findOne"
     },
     {
       "action": "api::author.author.find"
@@ -34,6 +46,12 @@
       "action": "api::benefit.benefit.findOne"
     },
     {
+      "action": "api::blog-card.blog-card.find"
+    },
+    {
+      "action": "api::blog-card.blog-card.findOne"
+    },
+    {
       "action": "api::blog.blog.create"
     },
     {
@@ -41,6 +59,27 @@
     },
     {
       "action": "api::blog.blog.findOne"
+    },
+    {
+      "action": "api::brand-button.brand-button.find"
+    },
+    {
+      "action": "api::brand-button.brand-button.findOne"
+    },
+    {
+      "action": "api::card-table-content.card-table-content.createLocalization"
+    },
+    {
+      "action": "api::card-table-content.card-table-content.find"
+    },
+    {
+      "action": "api::card-table-content.card-table-content.findOne"
+    },
+    {
+      "action": "api::card.card.find"
+    },
+    {
+      "action": "api::card.card.findOne"
     },
     {
       "action": "api::category.category.find"
@@ -53,6 +92,12 @@
     },
     {
       "action": "api::certification.certification.findOne"
+    },
+    {
+      "action": "api::chip-option.chip-option.find"
+    },
+    {
+      "action": "api::chip-option.chip-option.findOne"
     },
     {
       "action": "api::company-about-us.company-about-us.find"
@@ -73,19 +118,25 @@
       "action": "api::contact-reason.contact-reason.findOne"
     },
     {
+      "action": "api::content.content.createLocalization"
+    },
+    {
       "action": "api::content.content.find"
     },
     {
       "action": "api::content.content.findOne"
     },
     {
-      "action": "api::cookie-policy.cookie-policy.find"
-    },
-    {
       "action": "api::credential.credential.find"
     },
     {
       "action": "api::credential.credential.findOne"
+    },
+    {
+      "action": "api::dynamic-card.dynamic-card.find"
+    },
+    {
+      "action": "api::dynamic-card.dynamic-card.findOne"
     },
     {
       "action": "api::employee.employee.find"
@@ -121,10 +172,34 @@
       "action": "api::gataca-wallet.gataca-wallet.find"
     },
     {
+      "action": "api::heading.heading.find"
+    },
+    {
+      "action": "api::heading.heading.findOne"
+    },
+    {
+      "action": "api::highlight-card.highlight-card.find"
+    },
+    {
+      "action": "api::highlight-card.highlight-card.findOne"
+    },
+    {
       "action": "api::industry.industry.find"
     },
     {
       "action": "api::industry.industry.findOne"
+    },
+    {
+      "action": "api::list-option.list-option.find"
+    },
+    {
+      "action": "api::list-option.list-option.findOne"
+    },
+    {
+      "action": "api::logo-info.logo-info.find"
+    },
+    {
+      "action": "api::logo-info.logo-info.findOne"
     },
     {
       "action": "api::logo.logo.find"
@@ -140,6 +215,9 @@
     },
     {
       "action": "api::page.page.create"
+    },
+    {
+      "action": "api::page.page.createLocalization"
     },
     {
       "action": "api::page.page.find"
@@ -164,12 +242,6 @@
     },
     {
       "action": "api::pricing-category.pricing-category.findOne"
-    },
-    {
-      "action": "api::pricing.pricing.find"
-    },
-    {
-      "action": "api::privacy-policy.privacy-policy.find"
     },
     {
       "action": "api::property.property.find"
@@ -205,19 +277,34 @@
       "action": "api::sectors-web3.sectors-web3.find"
     },
     {
+      "action": "api::segmented-button.segmented-button.find"
+    },
+    {
+      "action": "api::segmented-button.segmented-button.findOne"
+    },
+    {
+      "action": "api::selector-list.selector-list.find"
+    },
+    {
+      "action": "api::selector-list.selector-list.findOne"
+    },
+    {
       "action": "api::step.step.find"
     },
     {
       "action": "api::step.step.findOne"
     },
     {
+      "action": "api::sub-heading.sub-heading.find"
+    },
+    {
+      "action": "api::sub-heading.sub-heading.findOne"
+    },
+    {
       "action": "api::success-story.success-story.find"
     },
     {
       "action": "api::success-story.success-story.findOne"
-    },
-    {
-      "action": "api::terms-of-use.terms-of-use.find"
     },
     {
       "action": "api::tier-table.tier-table.find"
@@ -257,6 +344,9 @@
     },
     {
       "action": "api::wallet-feature.wallet-feature.findOne"
+    },
+    {
+      "action": "plugin::i18n.locales.listLocales"
     },
     {
       "action": "plugin::users-permissions.auth.callback"

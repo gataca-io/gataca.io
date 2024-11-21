@@ -2,7 +2,7 @@ import * as React from "react"
 import cx from "classnames"
 import {
   BlogPreviewModel,
-  ButtonModel,
+  ButtonModelOld,
 } from "../../../../interfaces/interfaces"
 import PurpleButton from "../../../../components/atoms/buttons/purple/PurpleButton"
 import BlogDetailedPreview from "../../../../components/elements/blogPreview/blogDetailedPreview/BlogDetailedPreview"
@@ -14,7 +14,7 @@ export type ISectionProps = {
   title: string
   description: string
   blogs: BlogPreviewModel[]
-  moreButton: ButtonModel
+  moreButton: ButtonModelOld
 }
 
 const EighthSection: React.FC<ISectionProps> = props => {

@@ -5,17 +5,20 @@ import MarkDownContent from "../../../../../../components/elements/markDownConte
 
 export type ISectionProps = {
   content?: string
+  className?: string
 }
 const Table: React.FC<ISectionProps> = props => {
-  const { content } = props
+  const { content, className } = props
 
   return (
     <>
-      <section
-        className={`${styles?.tableContainer} ${cx("containerMaxWidth")}`}
+      <div
+        className={`${styles?.tableContainer} ${cx("containerMaxWidth")} ${
+          className && className
+        }`}
       >
         {content?.length && <MarkDownContent content={content} />}
-      </section>
+      </div>
     </>
   )
 }

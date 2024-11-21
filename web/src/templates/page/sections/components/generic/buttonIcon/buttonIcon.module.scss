@@ -1,0 +1,106 @@
+@import "../../../../../../styles/colors.scss";
+@import "../../../../../../styles/mixins.scss";
+
+.buttonIcon {
+    background-color: $primary700;
+    padding: 12px;
+    height: 48px;
+    width: 48px; 
+    border-radius: 32px;
+    cursor: pointer;
+    box-sizing: border-box;
+    &:hover {
+        background-color: $primary900;
+    }
+    &.disabled {
+        background-color: $neutral400;
+        pointer-events: none;
+    }
+    &:focus {
+        box-shadow: inset 0px 0px 0px 2px $neutral300;
+    }
+    &:focus-visible {
+        outline: $neutral300 auto 2px;
+    }
+    img {
+        width: 24px;
+        height: 24px;
+    }
+    &.buttonSM {
+        padding: 8px;
+        height: 32px;
+        width: 32px;
+        img {
+            width: 16px;
+            height: 16px;
+        }
+    }
+    &.squareButton {
+        border-radius: 8px;
+    }
+    &.redColor {
+        background-color: $alert300;
+        &:hover {
+            background-color: $alert400;
+        }
+        &.disabled {
+            background-color: $neutral400;
+        }
+    }
+    &.greenColor {
+        background-color: $success300;
+       
+        &:hover {
+            background-color: $success400;
+        }
+        &.disabled {
+            background-color: $neutral400;
+        }
+
+    }
+    &.yellowColor {
+        background-color: $warning300;
+        &:hover {
+            background-color: $warning400;
+        }
+        &.disabled {
+            background-color: $neutral400;
+        }
+    }
+    &.blueColor {
+        background-color: $info300;
+        &:hover {
+            background-color: $info400;
+        }
+        &.disabled {
+            background-color: $neutral400;
+        }
+    }
+    &.lightPurpleColor {
+        background-color: $primary100;
+        &:hover {
+            background-color: $primary300;
+        }
+        &.disabled {
+            background-color: $neutral400;
+        }
+    }
+    &.tealColor {
+        background-color: $secondary600;
+        &:hover {
+            background-color: $secondary800;
+        }
+        &.disabled {
+            background-color: $neutral400;
+        }
+    }
+    &.pinkColor {
+        background-color: $tertiary600;
+        &:hover {
+            background-color: $tertiary800;
+        }
+        &.disabled {
+            background-color: $neutral400;
+        }
+    }
+}

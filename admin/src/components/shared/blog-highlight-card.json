@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_shared_blog_highlight_cards",
+  "info": {
+    "displayName": "BlogHighlightCard"
+  },
+  "options": {},
+  "attributes": {
+    "idItem": {
+      "type": "string"
+    },
+    "blogHighlightCardContainer": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.blog-card-container"
+    },
+    "heading": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::heading.heading"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "generic.button"
+    }
+  }
+}

@@ -18,8 +18,59 @@
     "outlined": {
       "type": "boolean"
     },
-    "filename": {
+    "idButton": {
       "type": "string"
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "link": {
+      "type": "boolean",
+      "default": false
+    },
+    "style": {
+      "type": "enumeration",
+      "enum": [
+        "fill",
+        "outline",
+        "text"
+      ],
+      "default": "fill"
+    },
+    "color": {
+      "type": "enumeration",
+      "enum": [
+        "purple",
+        "white",
+        "black",
+        "grey"
+      ],
+      "default": "purple"
+    },
+    "size": {
+      "type": "enumeration",
+      "enum": [
+        "buttonLG",
+        "buttonMD",
+        "buttonSM"
+      ],
+      "default": "buttonMD"
+    },
+    "disabled": {
+      "type": "boolean",
+      "default": false
+    },
+    "noPaddingText": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

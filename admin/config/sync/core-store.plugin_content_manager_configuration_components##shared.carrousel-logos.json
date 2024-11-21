@@ -1,0 +1,98 @@
+{
+  "key": "plugin_content_manager_configuration_components::shared.carrousel-logos",
+  "value": {
+    "uid": "shared.carrousel-logos",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "id",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "lightLogos": {
+        "edit": {
+          "label": "lightLogos",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "lightLogos",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "loop": {
+        "edit": {
+          "label": "loop",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "loop",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "logos": {
+        "edit": {
+          "label": "logos",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "title"
+        },
+        "list": {
+          "label": "logos",
+          "searchable": false,
+          "sortable": false
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "lightLogos",
+        "loop",
+        "logos"
+      ],
+      "edit": [
+        [
+          {
+            "name": "lightLogos",
+            "size": 4
+          },
+          {
+            "name": "loop",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "logos",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

@@ -76,16 +76,114 @@
           "sortable": true
         }
       },
-      "filename": {
+      "idButton": {
         "edit": {
-          "label": "filename",
+          "label": "idButton",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "filename",
+          "label": "idButton",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "icon": {
+        "edit": {
+          "label": "icon",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "icon",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "link": {
+        "edit": {
+          "label": "link",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "link",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "style": {
+        "edit": {
+          "label": "style",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "style",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "color": {
+        "edit": {
+          "label": "color",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "color",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "size": {
+        "edit": {
+          "label": "size",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "size",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "disabled": {
+        "edit": {
+          "label": "disabled",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "disabled",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "noPaddingText": {
+        "edit": {
+          "label": "noPaddingText",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "noPaddingText",
           "searchable": true,
           "sortable": true
         }
@@ -101,27 +199,57 @@
       "edit": [
         [
           {
-            "name": "label",
+            "name": "idButton",
             "size": 6
           },
+          {
+            "name": "label",
+            "size": 6
+          }
+        ],
+        [
           {
             "name": "url",
             "size": 6
-          }
-        ],
-        [
+          },
           {
             "name": "outsideWeb",
             "size": 4
+          }
+        ],
+        [
+          {
+            "name": "style",
+            "size": 6
           },
           {
-            "name": "outlined",
+            "name": "size",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "color",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "disabled",
+            "size": 4
+          },
+          {
+            "name": "link",
+            "size": 4
+          },
+          {
+            "name": "noPaddingText",
             "size": 4
           }
         ],
         [
           {
-            "name": "filename",
+            "name": "icon",
             "size": 6
           }
         ]

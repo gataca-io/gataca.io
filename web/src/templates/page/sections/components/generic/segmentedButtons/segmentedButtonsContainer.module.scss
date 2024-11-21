@@ -1,0 +1,22 @@
+
+@import "../../../../../../styles/colors.scss";
+@import "../../../../../../styles/mixins.scss";
+
+.segmentedButtons__container {
+    width: 100%;
+    .segmentedOptions {
+        @include flexbox();
+        @include flex-wrap(nowrap);
+        @include justify-content(center);
+        @include align-items(center);
+        width: fit-content;
+        margin: 0 auto;
+        height: 48px;
+        background-color: $neutral200;
+        padding: 8px;
+        border-radius: 12px;
+        text-align: center;
+        margin-bottom: 120px;
+    }
+}
+

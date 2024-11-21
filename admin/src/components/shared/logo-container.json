@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_shared_logo_containers",
+  "info": {
+    "displayName": "LogoContainer",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "idItem": {
+      "type": "string"
+    },
+    "columns": {
+      "type": "enumeration",
+      "enum": [
+        "four",
+        "five"
+      ],
+      "default": "five"
+    },
+    "logo_info": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::logo-info.logo-info"
+    }
+  }
+}

@@ -59,17 +59,16 @@
       "subject": "api::blog.blog",
       "properties": {
         "fields": [
-          "author",
-          "category",
-          "content",
-          "date",
-          "heroImage",
-          "previewImage",
-          "seo.keywords",
-          "seo.metaDescription",
           "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.keywords",
+          "title",
+          "date",
+          "previewImage",
+          "heroImage",
+          "content",
           "slugURL",
-          "title"
+          "category"
         ]
       },
       "conditions": []
@@ -91,17 +90,16 @@
       "subject": "api::blog.blog",
       "properties": {
         "fields": [
-          "author",
-          "category",
-          "content",
-          "date",
-          "heroImage",
-          "previewImage",
-          "seo.keywords",
-          "seo.metaDescription",
           "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.keywords",
+          "title",
+          "date",
+          "previewImage",
+          "heroImage",
+          "content",
           "slugURL",
-          "title"
+          "category"
         ]
       },
       "conditions": []
@@ -111,17 +109,16 @@
       "subject": "api::blog.blog",
       "properties": {
         "fields": [
-          "author",
-          "category",
-          "content",
-          "date",
-          "heroImage",
-          "previewImage",
-          "seo.keywords",
-          "seo.metaDescription",
           "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.keywords",
+          "title",
+          "date",
+          "previewImage",
+          "heroImage",
+          "content",
           "slugURL",
-          "title"
+          "category"
         ]
       },
       "conditions": []
@@ -392,81 +389,6 @@
     },
     {
       "action": "plugin::content-manager.explorer.create",
-      "subject": "api::cookie-policy.cookie-policy",
-      "properties": {
-        "fields": [
-          "pageContent.title",
-          "pageContent.date.dateText",
-          "pageContent.date.date",
-          "pageContent.introSectionText",
-          "pageContent.contentSectionItem.title",
-          "pageContent.contentSectionItem.description",
-          "seo.metaTitle",
-          "seo.metaDescription",
-          "seo.rrssImg",
-          "seo.keywords",
-          "seo.canonicalURL",
-          "pageContent.contentSectionItem.idName"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::cookie-policy.cookie-policy",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.publish",
-      "subject": "api::cookie-policy.cookie-policy",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.read",
-      "subject": "api::cookie-policy.cookie-policy",
-      "properties": {
-        "fields": [
-          "pageContent.title",
-          "pageContent.date.dateText",
-          "pageContent.date.date",
-          "pageContent.introSectionText",
-          "pageContent.contentSectionItem.title",
-          "pageContent.contentSectionItem.description",
-          "seo.metaTitle",
-          "seo.metaDescription",
-          "seo.rrssImg",
-          "seo.keywords",
-          "seo.canonicalURL",
-          "pageContent.contentSectionItem.idName"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
-      "subject": "api::cookie-policy.cookie-policy",
-      "properties": {
-        "fields": [
-          "pageContent.title",
-          "pageContent.date.dateText",
-          "pageContent.date.date",
-          "pageContent.introSectionText",
-          "pageContent.contentSectionItem.title",
-          "pageContent.contentSectionItem.description",
-          "seo.metaTitle",
-          "seo.metaDescription",
-          "seo.rrssImg",
-          "seo.keywords",
-          "seo.canonicalURL",
-          "pageContent.contentSectionItem.idName"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.create",
       "subject": "api::entry.entry",
       "properties": {
         "fields": [
@@ -660,135 +582,6 @@
     },
     {
       "action": "plugin::content-manager.explorer.create",
-      "subject": "api::pricing.pricing",
-      "properties": {
-        "fields": [
-          "seo.canonicalURL",
-          "seo.keywords",
-          "seo.metaDescription",
-          "seo.metaTitle",
-          "seo.rrssImg"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::pricing.pricing",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.publish",
-      "subject": "api::pricing.pricing",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.read",
-      "subject": "api::pricing.pricing",
-      "properties": {
-        "fields": [
-          "seo.canonicalURL",
-          "seo.keywords",
-          "seo.metaDescription",
-          "seo.metaTitle",
-          "seo.rrssImg"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
-      "subject": "api::pricing.pricing",
-      "properties": {
-        "fields": [
-          "seo.canonicalURL",
-          "seo.keywords",
-          "seo.metaDescription",
-          "seo.metaTitle",
-          "seo.rrssImg"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.create",
-      "subject": "api::privacy-policy.privacy-policy",
-      "properties": {
-        "fields": [
-          "pageContent.title",
-          "pageContent.date.dateText",
-          "pageContent.date.date",
-          "pageContent.introSectionText",
-          "pageContent.contentSectionItem.title",
-          "pageContent.contentSectionItem.description",
-          "seo.metaTitle",
-          "seo.metaDescription",
-          "seo.rrssImg",
-          "seo.keywords",
-          "seo.canonicalURL",
-          "pageContent.contentSectionItem.idName"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::privacy-policy.privacy-policy",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.publish",
-      "subject": "api::privacy-policy.privacy-policy",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.read",
-      "subject": "api::privacy-policy.privacy-policy",
-      "properties": {
-        "fields": [
-          "pageContent.title",
-          "pageContent.date.dateText",
-          "pageContent.date.date",
-          "pageContent.introSectionText",
-          "pageContent.contentSectionItem.title",
-          "pageContent.contentSectionItem.description",
-          "seo.metaTitle",
-          "seo.metaDescription",
-          "seo.rrssImg",
-          "seo.keywords",
-          "seo.canonicalURL",
-          "pageContent.contentSectionItem.idName"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
-      "subject": "api::privacy-policy.privacy-policy",
-      "properties": {
-        "fields": [
-          "pageContent.title",
-          "pageContent.date.dateText",
-          "pageContent.date.date",
-          "pageContent.introSectionText",
-          "pageContent.contentSectionItem.title",
-          "pageContent.contentSectionItem.description",
-          "seo.metaTitle",
-          "seo.metaDescription",
-          "seo.rrssImg",
-          "seo.keywords",
-          "seo.canonicalURL",
-          "pageContent.contentSectionItem.idName"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.create",
       "subject": "api::resources-blog.resources-blog",
       "properties": {
         "fields": [
@@ -1269,81 +1062,6 @@
           "seo.metaDescription",
           "seo.metaTitle",
           "seo.rrssImg"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.create",
-      "subject": "api::terms-of-use.terms-of-use",
-      "properties": {
-        "fields": [
-          "pageContent.title",
-          "pageContent.date.dateText",
-          "pageContent.date.date",
-          "pageContent.introSectionText",
-          "pageContent.contentSectionItem.title",
-          "pageContent.contentSectionItem.description",
-          "seo.metaTitle",
-          "seo.metaDescription",
-          "seo.rrssImg",
-          "seo.keywords",
-          "seo.canonicalURL",
-          "pageContent.contentSectionItem.idName"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::terms-of-use.terms-of-use",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.publish",
-      "subject": "api::terms-of-use.terms-of-use",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.read",
-      "subject": "api::terms-of-use.terms-of-use",
-      "properties": {
-        "fields": [
-          "pageContent.title",
-          "pageContent.date.dateText",
-          "pageContent.date.date",
-          "pageContent.introSectionText",
-          "pageContent.contentSectionItem.title",
-          "pageContent.contentSectionItem.description",
-          "seo.metaTitle",
-          "seo.metaDescription",
-          "seo.rrssImg",
-          "seo.keywords",
-          "seo.canonicalURL",
-          "pageContent.contentSectionItem.idName"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
-      "subject": "api::terms-of-use.terms-of-use",
-      "properties": {
-        "fields": [
-          "pageContent.title",
-          "pageContent.date.dateText",
-          "pageContent.date.date",
-          "pageContent.introSectionText",
-          "pageContent.contentSectionItem.title",
-          "pageContent.contentSectionItem.description",
-          "seo.metaTitle",
-          "seo.metaDescription",
-          "seo.rrssImg",
-          "seo.keywords",
-          "seo.canonicalURL",
-          "pageContent.contentSectionItem.idName"
         ]
       },
       "conditions": []

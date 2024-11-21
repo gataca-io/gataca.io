@@ -1,0 +1,13 @@
+@import "../../../../styles/mixins.scss";
+@import "../../../../styles/colors.scss";
+
+.localeLink {
+    padding: 0 20px;
+    @include min-width($mobileXL) {
+        padding: 0 40px;
+    }
+  
+    @include min-width($desktopMD) {
+        padding: 0 60px;
+    }
+}

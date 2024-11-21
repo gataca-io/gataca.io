@@ -1,0 +1,45 @@
+{
+  "collectionName": "components_generic_brand_buttons",
+  "info": {
+    "displayName": "brandButton"
+  },
+  "options": {},
+  "attributes": {
+    "idButton": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "color": {
+      "type": "enumeration",
+      "enum": [
+        "white",
+        "black"
+      ],
+      "default": "black"
+    },
+    "size": {
+      "type": "enumeration",
+      "enum": [
+        "web",
+        "app"
+      ],
+      "default": "web"
+    },
+    "outsideWeb": {
+      "type": "boolean",
+      "default": true
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

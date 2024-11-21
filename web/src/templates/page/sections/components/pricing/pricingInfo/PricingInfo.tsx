@@ -4,16 +4,17 @@ import LicenseCard from "./components/licenseCard/LicenseCard"
 import SwitchButton from "../../../../../../components/atoms/buttons/switchButton/SwicthButton"
 import LicensesTableMobile from "./components/licensesTableMobile/LicensesTableMobile"
 import LicensesTable from "./components/licensesTable/LicensesTable"
-import PurpleButton from "../../../../../../components/atoms/buttons/purple/PurpleButton"
 import {
   ButtonModel,
   IProductModel,
 } from "../../../../../../interfaces/interfaces"
 import OnPremisePanel from "./components/onPremisePanel/OnPremisePanel"
-import Categories from "./components/categories/Categories"
 import CrevronDownSVG from "../../../../../../images/icons/ChevronDownSVG"
 import ChevronUpSVG from "../../../../../../images/icons/ChevronUpSVG"
 import * as styles from "./pricingInfo.module.scss"
+import Button from "../../generic/button/Button"
+import SegmentedButtonsContainer from "../../generic/segmentedButtons/SegmentedButtonsContainer"
+import SegmentedButtons from "../../generic/segmentedButtons/components/SegmentedButtons"
 
 export type ISectionProps = {
   switchLabel?: string
@@ -25,6 +26,11 @@ export type ISectionProps = {
       title: string
       description: string
       cta: ButtonModel
+    }
+  }[]
+  segmentedButtons: {
+    attributes: {
+      button: ButtonModel
     }
   }[]
 
@@ -40,6 +46,7 @@ const PricingInfo: React.FC<ISectionProps> = props => {
     switchLabel,
     index,
     categories,
+    segmentedButtons,
     licenses,
     infoToggles,
     tier_tables,
@@ -104,20 +111,24 @@ const PricingInfo: React.FC<ISectionProps> = props => {
 
   return (
     <>
-      <section
+      <div
         id={"gatacaStudioFeatures"}
         className={`${styles?.pricingInfo} ${cx("containerMaxWidth")}`}
       >
         <div className={styles?.pricingInfo__header}>
           <div className={styles?.categories}>
-            {categories?.map((item, index) => {
-              const { label } = item.attributes
+            {segmentedButtons?.map((item: any, index) => {
+              const { button } = item.attributes
               return (
-                <Categories
+                <SegmentedButtons
                   id={"categories__" + index}
                   key={"categoriesP__" + index}
                   index={index + 1}
-                  label={label}
+                  label={button?.label}
+                  color={button?.color}
+                  size={button?.size}
+                  noPaddingText={button?.noPaddingText}
+                  disabled={button?.disabled}
                   selected={openItem === index + 1}
                   showItem={index => {
                     const element =
@@ -176,14 +187,14 @@ const PricingInfo: React.FC<ISectionProps> = props => {
                   />
                 </div>
               )}
-              <PurpleButton
+              <Button
                 label={
                   showAllFeatures ? "Hide all features" : "See all features"
                 }
-                outlined
                 IconComponent={
                   showAllFeatures ? <ChevronUpSVG /> : <CrevronDownSVG />
                 }
+                style={"outline"}
                 className={`${cx("marginTop32")} ${styles?.allFeaturesButton}`}
                 action={() => {
                   setShowAllFeatures(!showAllFeatures),
@@ -204,7 +215,7 @@ const PricingInfo: React.FC<ISectionProps> = props => {
             </>
           )}
         </div>
-      </section>
+      </div>
     </>
   )
 }

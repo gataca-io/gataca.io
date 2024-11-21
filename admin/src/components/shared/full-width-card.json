@@ -1,0 +1,54 @@
+{
+  "collectionName": "components_shared_full_width_cards",
+  "info": {
+    "displayName": "FullWidthCard",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "idItem": {
+      "type": "string"
+    },
+    "color": {
+      "type": "enumeration",
+      "enum": [
+        "white",
+        "grey",
+        "lightPurple"
+      ],
+      "default": "white"
+    },
+    "layout": {
+      "type": "enumeration",
+      "enum": [
+        "fiftyFifty",
+        "twentyFiveSeventyFive"
+      ],
+      "default": "fiftyFifty"
+    },
+    "sizeSlot": {
+      "type": "enumeration",
+      "enum": [
+        "full",
+        "padding"
+      ],
+      "default": "padding"
+    },
+    "heading": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::heading.heading"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

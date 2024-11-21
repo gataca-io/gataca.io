@@ -1,0 +1,105 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::selector-list.selector-list",
+  "value": {
+    "uid": "api::selector-list.selector-list",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "idSelectorList",
+      "defaultSortBy": "idSelectorList",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "idSelectorList": {
+        "edit": {
+          "label": "idSelectorList",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "idSelectorList",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "selector": {
+        "edit": {
+          "label": "selector",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "selector",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "edit": [
+        [
+          {
+            "name": "idSelectorList",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "selector",
+            "size": 12
+          }
+        ]
+      ],
+      "list": [
+        "id",
+        "idSelectorList",
+        "selector"
+      ]
+    }
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

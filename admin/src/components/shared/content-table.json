@@ -1,0 +1,47 @@
+{
+  "collectionName": "components_shared_content_tables",
+  "info": {
+    "displayName": "contentTable",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "card_table_contents": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::card-table-content.card-table-content"
+    },
+    "contents": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::content.content"
+    },
+    "employee": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::employee.employee"
+    },
+    "sub_heading": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::sub-heading.sub-heading"
+    },
+    "avatarSize": {
+      "type": "enumeration",
+      "enum": [
+        "XXL",
+        "XL",
+        "LG",
+        "MD",
+        "SM",
+        "XS"
+      ],
+      "default": "LG"
+    },
+    "highlight_card": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::highlight-card.highlight-card"
+    }
+  }
+}

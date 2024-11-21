@@ -1,0 +1,69 @@
+@import "../../../../../../styles/colors.scss";
+@import "../../../../../../styles/mixins.scss";
+
+.textMedia{
+  margin-bottom: 132px;
+  padding: 0 20px;
+  @include min-width($mobileXL) {
+    margin-bottom: 200px;
+    padding: 0 40px;
+  }
+  @include min-width($desktopMD) {
+    padding: 0 60px;
+  }
+}
+
+.textMedia__container {
+  width: 100%;
+  @include flexbox();
+  @include flex-direction(column);
+  @include justify-content(space-between);
+  @include flex-wrap(wrap);
+  border-radius: 40px;
+  gap: 40px;
+  @include min-width($tabletMD) {
+    @include flex-direction(row);
+    @include align-items(center);
+    @include flex-wrap(nowrap);
+    gap: 80px;
+  }
+  &.textAlignLeft {
+    .textMedia__heading {
+      @include order(0);
+    }
+    .textMedia__imageContainer {
+      @include order(1);
+    }
+  }
+  &.textAlignRight{
+    .textMedia__heading {
+      @include order(1);
+    }
+    .textMedia__imageContainer {
+      @include order(0);
+    }
+  }
+}
+
+.textMedia__heading {
+  width: 100%;
+  @include flex(0, 0, 100%);
+  @include min-width($tabletMD) {
+      width: calc(50% - 40px);
+      @include flex(0, 0, calc(50% - 40px));
+  }
+}
+
+.textMedia__imageContainer {
+  width: 100%;
+  @include flex(0, 0, 100%);
+  @include min-width($tabletMD) {
+    width: calc(50% - 40px);
+    @include flex(0, 0, calc(50% - 40px));
+  }
+  .textMedia__image {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
