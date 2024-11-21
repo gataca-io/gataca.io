@@ -8,12 +8,23 @@ export type ITestimonialCardContainerProps = {
   card?: TestimonialCardModel[]
   cardWidth?: number
   cardHeight?: number
+  smallResolution: boolean
+  mediumResolution: boolean
+  testimonialCardWidth: number
 }
 
 const TestimonialCardContainer: React.FC<
   ITestimonialCardContainerProps
 > = props => {
-  const { idItem, card, cardWidth, cardHeight } = props
+  const {
+    idItem,
+    card,
+    cardWidth,
+    cardHeight,
+    smallResolution,
+    mediumResolution,
+    testimonialCardWidth,
+  } = props
 
   return (
     <div id={idItem} className={`${styles.card__container}`}>
@@ -23,7 +34,13 @@ const TestimonialCardContainer: React.FC<
         return (
           <div
             key={`testimonialCard__` + index}
-            style={{ width: cardWidth, height: cardHeight }}
+            style={
+              smallResolution
+                ? { width: testimonialCardWidth, height: cardHeight }
+                : mediumResolution
+                ? { width: testimonialCardWidth, height: cardHeight }
+                : { width: cardWidth, height: cardHeight }
+            }
           >
             <TestimonialCard
               idItem={idItem}

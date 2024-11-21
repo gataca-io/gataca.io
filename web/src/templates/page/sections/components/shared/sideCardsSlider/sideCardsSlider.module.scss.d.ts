@@ -7,3 +7,4 @@ export const slots__elements: string
 export const sideCardsSlider__buttons: string
 export const textAlignRight: string
 export const background: string
+export const oneTestimonialCard: string

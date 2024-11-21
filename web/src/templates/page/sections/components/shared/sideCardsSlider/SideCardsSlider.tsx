@@ -10,6 +10,7 @@ import CardsContainer from "./components/cardsContainer/CardsContainer"
 import CredentialsContainer from "./components/credentialsContainer/CredentialsContainer"
 import ButtonIcon from "../../generic/buttonIcon/ButtonIcon"
 import TestimonialCardContainer from "./components/testimonialCardContainer/TestimonialCardContainer"
+import { inherits } from "util"
 
 export type ISideCardsSliderProps = {
   idItem?: string
@@ -67,17 +68,23 @@ const SideCardsSlider: React.FC<ISideCardsSliderProps> = props => {
 
   const width = Math.min(dimensions)
   const smallResolution = width < 640
+  const mediumResolution = width < 968
+  const testimonialCardWidth = 332
 
   return (
     <div
       id={idItem}
-      className={`${styles.sideCardsSlider}`}
+      className={`${styles.sideCardsSlider} ${
+        background ? styles?.background : ""
+      }`}
       style={{ position: "relative" }}
     >
       <div
         className={`${styles.sideCardsSlider__container} ${cx(
           "containerMaxWidth"
-        )} ${textAlign ? textAlignStyles[textAlign] : ""}`}
+        )} ${
+          testimonialCards?.card?.length < 2 ? styles?.oneTestimonialCard : ""
+        } ${textAlign ? textAlignStyles[textAlign] : ""}`}
       >
         <div
           className={`${styles.sideCardsSlider__heading} ${
@@ -106,6 +113,8 @@ const SideCardsSlider: React.FC<ISideCardsSliderProps> = props => {
         <div
           className={`${styles.sideCardsSlider__slotsButtonContainer} ${
             textAlign ? textAlignStyles[textAlign] : ""
+          } ${
+            testimonialCards?.card?.length < 2 ? styles?.oneTestimonialCard : ""
           }`}
           style={{ height: cardHeight + 48 + 32 + 12 }}
         >
@@ -118,8 +127,12 @@ const SideCardsSlider: React.FC<ISideCardsSliderProps> = props => {
               style={
                 textAlign === "left"
                   ? { left: -firstItem * (cardWidth + 32) }
-                  : smallResolution
+                  : smallResolution && !testimonialCards?.card
                   ? { left: -firstItem * (cardWidth + 32) }
+                  : testimonialCards?.card && smallResolution
+                  ? { left: -firstItem * (testimonialCardWidth + 32) }
+                  : testimonialCards?.card && mediumResolution
+                  ? { right: -firstItem * (testimonialCardWidth + 32) }
                   : { right: -firstItem * (cardWidth + 32) }
               }
             >
@@ -142,6 +155,9 @@ const SideCardsSlider: React.FC<ISideCardsSliderProps> = props => {
                   cardWidth={cardWidth}
                   cardHeight={cardHeight}
                   card={testimonialCards?.card}
+                  smallResolution={smallResolution}
+                  mediumResolution={mediumResolution}
+                  testimonialCardWidth={testimonialCardWidth}
                 />
               )}
             </div>
