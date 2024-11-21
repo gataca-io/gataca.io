@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
         - name: strapiweb
-          image: ghrc.io/gataca-io/gataca.io/strapi:6.1.0
+          image: ghcr.io/gataca-io/gataca.io/strapi:6.1.0
           imagePullPolicy: Always
           securityContext:
             runAsNonRoot: true
