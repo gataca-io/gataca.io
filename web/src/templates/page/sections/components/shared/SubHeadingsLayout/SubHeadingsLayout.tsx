@@ -30,6 +30,8 @@ const SubHeadingsLayout: React.FC<ISubHeadingsLayoutProps> = props => {
     left: styles?.slotAlignLeft,
     right: styles?.slotAlignRight,
   }
+
+  const imageData = image?.data?.attributes?.url
   return (
     <div
       id={idItem}
@@ -39,12 +41,16 @@ const SubHeadingsLayout: React.FC<ISubHeadingsLayoutProps> = props => {
         slotAlign ? slotAlignStyles[slotAlign] : ""
       } `}
     >
-      {image && (
+      {imageData && (
         <div className={styles?.image__container}>
           <StrapiImage image={image ? image : null} />
         </div>
       )}
-      <div className={styles?.subHeading__container}>
+      <div
+        className={`${styles?.subHeading__container} ${
+          !imageData ? styles?.containerMaxWidth : ""
+        }`}
+      >
         {heading && (
           <Heading
             idHeading={heading?.idHeading}

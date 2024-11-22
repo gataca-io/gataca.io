@@ -132,7 +132,12 @@
     @include justify-content(flex-start);
     gap: 60px;
     @include min-width($tabletMD) {
-      @include flex(0, 0, calc(75% - 0px));
+      @include flex(0, 0, 75%);
+    }
+    &.containerMaxWidth {
+      @include min-width($tabletMD) {
+        @include flex(0, 1, auto);
+      }
     }
   }
   .image__container {
