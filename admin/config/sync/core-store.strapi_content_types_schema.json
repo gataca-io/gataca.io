@@ -6493,6 +6493,132 @@
       "actions": {},
       "lifecycles": {}
     },
+    "api::media-step.media-step": {
+      "kind": "collectionType",
+      "collectionName": "media_steps",
+      "info": {
+        "singularName": "media-step",
+        "pluralName": "media-steps",
+        "displayName": "Media Step"
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "idItem": {
+          "type": "string"
+        },
+        "headingStep": {
+          "type": "component",
+          "repeatable": false,
+          "component": "shared.heading"
+        },
+        "image": {
+          "allowedTypes": [
+            "images",
+            "files",
+            "videos",
+            "audios"
+          ],
+          "type": "media",
+          "multiple": false
+        },
+        "stepImage": {
+          "allowedTypes": [
+            "images",
+            "files",
+            "videos",
+            "audios"
+          ],
+          "type": "media",
+          "multiple": false
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "media_steps",
+        "info": {
+          "singularName": "media-step",
+          "pluralName": "media-steps",
+          "displayName": "Media Step"
+        },
+        "options": {
+          "draftAndPublish": true
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "idItem": {
+            "type": "string"
+          },
+          "headingStep": {
+            "type": "component",
+            "repeatable": false,
+            "component": "shared.heading"
+          },
+          "image": {
+            "allowedTypes": [
+              "images",
+              "files",
+              "videos",
+              "audios"
+            ],
+            "type": "media",
+            "multiple": false
+          },
+          "stepImage": {
+            "allowedTypes": [
+              "images",
+              "files",
+              "videos",
+              "audios"
+            ],
+            "type": "media",
+            "multiple": false
+          }
+        },
+        "kind": "collectionType"
+      },
+      "modelType": "contentType",
+      "modelName": "media-step",
+      "connection": "default",
+      "uid": "api::media-step.media-step",
+      "apiName": "media-step",
+      "globalId": "MediaStep",
+      "actions": {},
+      "lifecycles": {}
+    },
     "api::operation.operation": {
       "kind": "collectionType",
       "collectionName": "operations",
@@ -6645,7 +6771,8 @@
             "shared.blog-highlight-card",
             "shared.main-blog-layout",
             "shared.side-cards-slider",
-            "shared.sub-headings-layout"
+            "shared.sub-headings-layout",
+            "shared.media-steps-slider"
           ],
           "pluginOptions": {
             "i18n": {
@@ -6789,7 +6916,8 @@
               "shared.blog-highlight-card",
               "shared.main-blog-layout",
               "shared.side-cards-slider",
-              "shared.sub-headings-layout"
+              "shared.sub-headings-layout",
+              "shared.media-steps-slider"
             ],
             "pluginOptions": {
               "i18n": {

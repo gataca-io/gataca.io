@@ -46,7 +46,8 @@
         "shared.blog-highlight-card",
         "shared.main-blog-layout",
         "shared.side-cards-slider",
-        "shared.sub-headings-layout"
+        "shared.sub-headings-layout",
+        "shared.media-steps-slider"
       ],
       "pluginOptions": {
         "i18n": {
