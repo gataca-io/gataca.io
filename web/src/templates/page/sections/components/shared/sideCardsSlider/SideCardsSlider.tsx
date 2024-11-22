@@ -115,7 +115,7 @@ const SideCardsSlider: React.FC<ISideCardsSliderProps> = props => {
             textAlign ? textAlignStyles[textAlign] : ""
           } ${
             testimonialCards?.card?.length < 2 ? styles?.oneTestimonialCard : ""
-          }`}
+          } ${background ? styles?.background : ""}`}
           style={{ height: cardHeight + 48 + 32 + 12 }}
         >
           <div
