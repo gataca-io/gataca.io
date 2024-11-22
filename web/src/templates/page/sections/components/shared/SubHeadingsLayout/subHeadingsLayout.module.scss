@@ -49,7 +49,7 @@
       margin-left: -60px;
     }
     .subHeading__container {
-      max-width: calc(854px - 20px);
+      max-width: calc(854px - 30px);
       @include min-width($tabletMD) {
         @include flex(0, 0, calc(64% - 0px));
       }
@@ -99,7 +99,7 @@
       margin-right: -60px;
     }
     .subHeading__container {
-      max-width: calc(854px - 20px);
+      max-width: calc(854px - 30px);
 
       @include min-width($tabletMD) {
         @include flex(0, 0, calc(64% - 0px));
