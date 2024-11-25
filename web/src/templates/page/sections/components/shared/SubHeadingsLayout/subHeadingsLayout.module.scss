@@ -1,0 +1,155 @@
+@import "../../../../../../styles/colors.scss";
+@import "../../../../../../styles/mixins.scss";
+
+
+
+.subHeadingsLayout__container {
+  margin-bottom: 132px;
+  padding: 0 20px;
+  @include flexbox();
+  @include flex-wrap(wrap);
+  gap: 40px;
+  @include min-width($mobileXL) {
+    gap: 80px;
+    margin-bottom: 200px;
+    padding: 0 40px;
+  }
+  @include min-width($desktopMD) {
+    padding: 0 60px;
+  }
+  &.slotAlignRight{
+    .subHeading__container {
+      @include order(0);
+    }
+    .image__container {
+      @include order(1);
+    }
+    &.blockAlignLeft, &.blockAlignRight {
+      .image__container {
+        @include max-width($tabletMD) {
+          margin-left: -20px;
+        }
+      }
+    }
+  }
+  &.slotAlignLeft {
+    .subHeading__container {
+      @include order(1);
+    }
+    .image__container {
+      @include order(0);
+    }
+  }
+  &.blockAlignLeft {
+    @include min-width($tabletMD) {
+      margin-left: -40px;
+      @include justify-content(flex-start);
+    }
+    @include min-width($desktopMD) {
+      margin-left: -60px;
+    }
+    .subHeading__container {
+      max-width: calc(854px - 30px);
+      @include min-width($tabletMD) {
+        @include flex(0, 0, calc(64% - 0px));
+      }
+    }
+    .image__container {
+      @include min-width($tabletMD) {
+        @include flex(0, 0, calc(36% - 80px));
+      }
+    }
+    &.slotAlignRight {
+      .image__container {
+        @include min-width($desktopSM) {
+          @include flexbox;
+          @include justify-content(flex-end);
+        }
+      }
+    }
+    &.slotAlignLeft {
+      .image__container {
+        @include max-width($tabletMD) {
+          margin-left: -20px;
+        }
+      }
+    }
+  }
+  &.blockAlignCenter {
+    @include min-width($tabletMD) {
+      @include justify-content(center);
+    }
+    &.slotAlignRight {
+      .image__container {
+        @include min-width($desktopSM) {
+          @include flexbox;
+          @include flex-direction(column);
+          @include justify-content(flex-start);
+          @include align-items(flex-end);
+        }
+      }
+    }
+  }
+  &.blockAlignRight {
+    @include min-width($tabletMD) {
+      margin-right: -40px;
+      @include justify-content(flex-end);
+    }
+    @include min-width($desktopMD) {
+      margin-right: -60px;
+    }
+    .subHeading__container {
+      max-width: calc(854px - 30px);
+
+      @include min-width($tabletMD) {
+        @include flex(0, 0, calc(64% - 0px));
+      }
+    }
+    .image__container {
+      @include min-width($tabletMD) {
+        @include flex(0, 0, calc(36% - 80px));
+      }
+    }
+    &.slotAlignRight {
+      .image__container {
+        @include min-width($desktopSM) {
+          @include flexbox;
+          @include justify-content(flex-end);
+        }
+      }
+    }
+    &.slotAlignLeft {
+      .image__container {
+        @include max-width($tabletMD) {
+          margin-left: -20px;
+        }
+      }
+    }
+  }
+  .subHeading__container {
+    @include flexbox();
+    @include flex-direction(column);
+    @include justify-content(flex-start);
+    gap: 60px;
+    @include min-width($tabletMD) {
+      @include flex(0, 0, 75%);
+    }
+    &.containerMaxWidth {
+      @include min-width($tabletMD) {
+        @include flex(0, 1, auto);
+      }
+    }
+  }
+  .image__container {
+    @include min-width($tabletMD) {
+      @include flex(0, 0, calc(25% - 80px));
+    }
+    img {
+      max-width: 186px;
+      @include min-width($tabletMD) {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

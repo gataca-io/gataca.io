@@ -129,26 +129,15 @@ export interface PageModel extends PagePreviewModel {
 }
 
 export interface InsideSectionsModel {
-  id: any
-  idContent?: string
-  title: string
-  description: string
   switchLabel?: string
-  cta?: ButtonModel
-  rightButton?: any
-  leftButton?: any
-  hero?: any
   icon?: any
   content?: string | any
   __component?: string
-  benefits?: any
   logos?: any
   tiers?: any
   infoToggles?: string
   pricing_categories?: any
   tier_tables?: any
-  feature_details?: any
-  tiersDetail?: any
   contents?: any
   card_table_contents?: any
   idButton?: string
@@ -163,16 +152,11 @@ export interface InsideSectionsModel {
   noPaddingText?: boolean
   buttons?: any
   chip_options?: any
-  contentAlign?: string
-  align?: string
-  moreContent?: string
   list_options?: any
   selector_list?: any
   brand_buttons?: any
   heading?: any
   image?: StrapiImageModel
-  subHeading?: any
-  columns?: string
   idItem?: string
   loop?: boolean
   lightLogos?: boolean
@@ -204,6 +188,8 @@ export interface InsideSectionsModel {
   cardHeight?: number
   credentials?: any
   testimonial_card?: any
+  blockAlign?: string
+  slotAlign?: string
 }
 
 export interface LocalizationsModel {

@@ -2,7 +2,6 @@ import * as React from "react"
 import cx from "classnames"
 import * as styles from "./allSectionsTemplate.module.scss"
 import { PageModel } from "../../../interfaces/interfaces"
-import Benefits from "./components/products/benefits/benefits"
 import CarrouselLogos from "./components/shared/carrouselLogos/CarrouselLogos"
 import Table from "./components/shared/table/Table"
 import PricingInfo from "./components/pricing/pricingInfo/PricingInfo"
@@ -26,19 +25,15 @@ import LogosComponent from "./components/shared/LogosComponent/LogosComponent"
 import BlogHighlightCard from "./components/shared/blogHighlightCard/BlogHighlightCard"
 import MainBlogLayout from "./components/shared/mainBlogLayout/MainBlogLayout"
 import SideCardsSlider from "./components/shared/sideCardsSlider/SideCardsSlider"
+import SubHeadingsLayout from "./components/shared/SubHeadingsLayout/SubHeadingsLayout"
 
 const AllSectionsTemplate: React.FC<PageModel> = props => {
-  const [benefitsLoaded, setBenefitsLoaded] = React.useState<boolean>(false)
   const { sections } = props
 
-  return sections?.map((item, index) => {
+  return sections?.map(item => {
     const {
-      id,
-      title,
       switchLabel,
-      hero,
       __component,
-      benefits,
       logos,
       content,
       tiers,
@@ -65,8 +60,6 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
       brand_buttons,
       heading,
       image,
-      subHeading,
-      columns,
       idItem,
       loop,
       lightLogos,
@@ -98,6 +91,8 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
       cardWidth,
       credentials,
       testimonial_card,
+      blockAlign,
+      slotAlign,
     } = item
 
     return (
@@ -113,15 +108,6 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
             list={logos?.data}
             lightLogos={lightLogos}
             loop={loop}
-          />
-        )}
-        {__component === "wallet.benefit-section" && (
-          <Benefits
-            id={id}
-            title={title}
-            list={benefits?.data}
-            hero={hero}
-            setBenefitsLoaded={setBenefitsLoaded}
           />
         )}
 
@@ -247,11 +233,14 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
             <ListGroup listOptions={list_options?.data} />
           </div>
         )}
-        {__component === "shared.sub-heading-container" && (
-          <SubHeadingContainer
+        {__component === "shared.sub-headings-layout" && (
+          <SubHeadingsLayout
             idItem={idItem}
-            subHeading={subHeading}
-            columns={columns}
+            heading={heading?.data?.attributes?.heading}
+            subHeadingContainer={sub_heading?.data?.attributes}
+            image={image}
+            blockAlign={blockAlign}
+            slotAlign={slotAlign}
           />
         )}
         {__component === "shared.full-width-card" && (

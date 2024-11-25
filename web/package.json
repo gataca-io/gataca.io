@@ -21,7 +21,7 @@
     "start": "gatsby develop",
     "typecheck": "tsc --noEmit"
   },
-  "version": "7.1.11",
+  "version": "7.1.12",
   "dependencies": {
     "@bakkenbaeck/gatsby-plugin-rename-routes": "^1.0.0",
     "@types/classnames": "^2.3.1",

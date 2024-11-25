@@ -1,9 +1,0 @@
-@import "../../../../../../../../styles/colors.scss";
-@import "../../../../../../../../styles/mixins.scss";
-
-.container {
-    @include flex(0, 0, 100%);
-    @include min-width($tabletMD) {
-        @include flex(0, 0, calc(50% - calc(32px/2)));
-    }
-}
