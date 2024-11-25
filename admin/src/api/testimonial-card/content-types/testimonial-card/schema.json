@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "testimonial_cards",
+  "info": {
+    "singularName": "testimonial-card",
+    "pluralName": "testimonial-cards",
+    "displayName": "Testimonial Card",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "idItem": {
+      "type": "string"
+    },
+    "card": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.testimonial-card"
+    }
+  }
+}

@@ -1,18 +1,6 @@
 @import "../../../../../../styles/colors.scss";
 @import "../../../../../../styles/mixins.scss";
 
-.subHeading{
-  margin-bottom:  132px;
-  padding: 0 20px;
-  @include min-width($mobileXL) {
-    margin-bottom: 200px;
-    padding: 0 40px;
-  }
-  @include min-width($desktopMD) {
-    padding: 0 60px;
-  }
-}
-
 .subHeading__container {
   width: 100%;
   @include flexbox();
@@ -36,7 +24,7 @@
   &.twoColumns {
     > div {
       @include min-width($tabletMD) {
-        min-width: 272px;
+        //min-width: 272px;
         width: calc(50% - calc(64px / 4));
         @include flex(0, 0, calc(50% - calc(64px / 4)));
       }
@@ -45,7 +33,7 @@
   &.threeColumns {
     > div {
       @include min-width($tabletMD) {
-        min-width: 272px;
+        //min-width: 272px;
         width: calc(50% - calc(64px / 4));
         @include flex(0, 0, calc(50% - calc(64px / 4)));
       }
@@ -60,7 +48,7 @@
   &.fourColumns {
     > div {
       @include min-width($tabletMD) {
-        min-width: 272px;
+        //min-width: 272px;
         width: calc(50% - calc(64px / 4));
         @include flex(0, 0, calc(50% - calc(64px / 4)))
       }

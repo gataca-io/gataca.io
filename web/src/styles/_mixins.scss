@@ -25,7 +25,7 @@ $desktopXXL: 1430px !default;
 }
 
 @mixin max-width($breakpoint) {
-  @media (min-width: $breakpoint) {
+  @media (max-width: $breakpoint) {
     @content;
   }
 }

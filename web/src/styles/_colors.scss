@@ -86,5 +86,14 @@ $skeletonBG: #e0e0e0;
 // Grey
 $grey600: #757575;
 
+// Orange
+$orange: #EF6F00;
+
 // Box Shadows
 $boxShadowLigh: rgba(12, 11, 51, 0.12);
+
+// Gradients
+
+$primaryGradient: linear-gradient(180deg, $primary700 0%, $primary1000 100%);
+$tealGradient: linear-gradient(180deg, $secondary600 0%, $secondary1000 100%);
+$tertiaryGradient: linear-gradient(180deg, $tertiary600 0%, $tertiary1000 100%);

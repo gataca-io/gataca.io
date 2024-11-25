@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_shared_testimonial_cards",
+  "info": {
+    "displayName": "TestimonialCard"
+  },
+  "options": {},
+  "attributes": {
+    "idItem": {
+      "type": "string"
+    },
+    "content": {
+      "type": "text"
+    },
+    "name": {
+      "type": "string"
+    },
+    "workTitle": {
+      "type": "string"
+    },
+    "color": {
+      "type": "enumeration",
+      "enum": [
+        "teal",
+        "purple",
+        "pink"
+      ],
+      "default": "purple"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

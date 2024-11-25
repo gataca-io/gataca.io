@@ -7,9 +7,9 @@ import BlogPreviewSkeleton from "../../../../../../components/elements/skeletons
 export type BlogCardContainerModel = {
   idItem?: string
   blog_card: any
-  blogs: any
+  blogs?: any
   columns: string
-  loadMoreCounter: any
+  loadMoreCounter?: any
 }
 
 const BlogCardContainer: React.FC<BlogCardContainerModel> = props => {

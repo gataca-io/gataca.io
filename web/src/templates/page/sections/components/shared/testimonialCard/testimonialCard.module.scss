@@ -1,0 +1,45 @@
+@import "../../../../../../styles/colors.scss";
+@import "../../../../../../styles/mixins.scss";
+@import "../../../../../../styles/types";
+
+.card__container {
+  @include flexbox();
+  @include flex-direction(column);
+  @include justify-content(space-between);
+  gap: 40px;
+  padding: 40px;
+  width: calc(100% - 80px);
+  height: calc(100% - 80px);
+  border-radius: 20px;
+  &.teal {
+    background-color: $secondary100;
+  }
+  &.purple {
+    background-color: $primary200;
+  }
+  &.pink{
+    background-color: $tertiary200;
+  }
+  .content__container {
+    @include flexbox();
+    @include flex-direction(column);
+    @include justify-content(space-between);
+    gap: 16px;
+    .content {
+      height: 220px;
+      overflow-y: auto;
+    }
+  }
+  .footer__container {
+    @include flexbox();
+    @include align-items(center);
+    gap: 28px;
+    .image__container {
+      img {
+        max-width: 80px;
+        max-height: auto;
+      }
+    }
+  }
+  
+}

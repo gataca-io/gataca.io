@@ -37,7 +37,7 @@ const SubHeading: React.FC<SubHeadingModel> = props => {
         {numberIconText ? (
           <h1 className={cx("heading1 primary200")}>{numberIconText}</h1>
         ) : null}
-        {icon && (
+        {icon?.data?.attributes?.url && (
           <div>
             <StrapiImage
               image={icon ? icon : null}

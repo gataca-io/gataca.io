@@ -129,26 +129,15 @@ export interface PageModel extends PagePreviewModel {
 }
 
 export interface InsideSectionsModel {
-  id: any
-  idContent?: string
-  title: string
-  description: string
   switchLabel?: string
-  cta?: ButtonModel
-  rightButton?: any
-  leftButton?: any
-  hero?: any
   icon?: any
   content?: string | any
   __component?: string
-  benefits?: any
   logos?: any
   tiers?: any
   infoToggles?: string
   pricing_categories?: any
   tier_tables?: any
-  feature_details?: any
-  tiersDetail?: any
   contents?: any
   card_table_contents?: any
   idButton?: string
@@ -163,16 +152,11 @@ export interface InsideSectionsModel {
   noPaddingText?: boolean
   buttons?: any
   chip_options?: any
-  contentAlign?: string
-  align?: string
-  moreContent?: string
   list_options?: any
   selector_list?: any
   brand_buttons?: any
   heading?: any
   image?: StrapiImageModel
-  subHeading?: any
-  columns?: string
   idItem?: string
   loop?: boolean
   lightLogos?: boolean
@@ -197,6 +181,15 @@ export interface InsideSectionsModel {
   blogHighlightCardContainer?: any
   blogsAll?: any
   allCategory?: string
+  buttonLeft?: ButtonModel
+  buttonRight?: ButtonModel
+  cards?: any
+  cardWidth?: number
+  cardHeight?: number
+  credentials?: any
+  testimonial_card?: any
+  blockAlign?: string
+  slotAlign?: string
 }
 
 export interface LocalizationsModel {
@@ -462,4 +455,29 @@ export interface MainCardContainerModel {
   idItem?: string
   card: CardModel[]
   columns?: string
+}
+
+export interface CredentialModel {
+  className?: string
+  idItem?: string
+  chip?: ChipModel
+  color?: string
+  iconSize?: string
+  logoSize?: string
+  icon?: any
+  logo?: any
+  actionItemText?: string
+  actionItemIcon?: any
+  headingCredential?: any
+  headingCredentialHeader?: boolean
+}
+
+export interface TestimonialCardModel {
+  className?: string
+  idItem?: string
+  content?: string
+  image?: any
+  name?: string
+  workTitle?: string
+  color?: string
 }

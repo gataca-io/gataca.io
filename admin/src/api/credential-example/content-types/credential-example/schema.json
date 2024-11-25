@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "credential_examples",
+  "info": {
+    "singularName": "credential-example",
+    "pluralName": "credential-examples",
+    "displayName": "Credential Example"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "idItem": {
+      "type": "string"
+    },
+    "credential": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.credential"
+    }
+  }
+}

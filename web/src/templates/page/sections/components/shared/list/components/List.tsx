@@ -21,6 +21,13 @@ const ListComponent: React.FC<ListModel> = props => {
     xlarge: "bodyRegularXL",
   }
 
+  const titleSizeStyles: Record<string, string> = {
+    small: "heading7",
+    medium: "heading6",
+    large: "heading6",
+    xlarge: "heading5",
+  }
+
   const colorStyles: Record<string, string> = {
     black: "neutral1000",
     grey: "neutral700",
@@ -37,7 +44,13 @@ const ListComponent: React.FC<ListModel> = props => {
 
       <div className={styles.contentContainer}>
         {title?.length && (
-          <h5 className={cx("heading5 neutral1000")}>{title}</h5>
+          <h5
+            className={cx(
+              size ? titleSizeStyles[size] : "heading5 neutral1000"
+            )}
+          >
+            {title}
+          </h5>
         )}
         {extraInfo?.length && (
           <p
