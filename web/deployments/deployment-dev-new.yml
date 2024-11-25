@@ -50,7 +50,7 @@ spec:
                   key: STRAPI_TOKEN
                   name: strapi-api
       imagePullSecrets:
-        - name: regcred
+        - name: ghcr
 ---
 apiVersion: v1
 kind: Service
