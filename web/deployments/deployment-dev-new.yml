@@ -26,7 +26,7 @@ spec:
             value: "80"
       containers:
         - name: web-new
-          image: gatacaid/website:7.0.2-SNAPSHOT
+          image: ghcr.io/gataca-io/gataca.io/website:7.0.2-SNAPSHOT
           imagePullPolicy: Always
           securityContext:
             runAsNonRoot: true
@@ -50,7 +50,7 @@ spec:
                   key: STRAPI_TOKEN
                   name: strapi-api
       imagePullSecrets:
-        - name: regcred
+        - name: ghcr
 ---
 apiVersion: v1
 kind: Service
