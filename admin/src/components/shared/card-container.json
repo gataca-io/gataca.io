@@ -23,6 +23,11 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::card.card"
+    },
+    "pricing": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::pricing.pricing"
     }
   }
 }

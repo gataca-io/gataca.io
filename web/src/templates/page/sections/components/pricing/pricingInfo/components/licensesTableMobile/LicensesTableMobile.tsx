@@ -17,8 +17,10 @@ type ILicensesTableMobileProps = {
   selectLicense: (x: any) => void
   tier_tables: any
   tiers: any
+  pricing: any
+  pricingSelected: any
+  titleFeaturesTableMobile?: string
 }
-
 const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
   const {
     license,
@@ -27,17 +29,22 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
     tier_tables,
     tiers,
     selectLicense,
+    pricing,
+    pricingSelected,
+    titleFeaturesTableMobile,
   } = props
 
+  const periodYear = switchPeriodValue === "year"
+
   const getPrice = (item: any) => {
-    if (switchPeriodValue === "year") {
-      return item?.yearlyPrice == undefined || item?.yearlyPrice < 0
-        ? "Custom pricing"
-        : new Intl.NumberFormat("en-DE").format(item?.yearlyPrice)
+    if (periodYear) {
+      return item?.amountYearly == undefined || item?.amountYearly < 0
+        ? item?.customPrice
+        : new Intl.NumberFormat("en-DE").format(item?.amountYearly)
     } else {
-      return item?.monthlyPrice == undefined || item?.monthlyPrice < 0
-        ? "Custom pricing"
-        : new Intl.NumberFormat("en-DE").format(item?.monthlyPrice)
+      return item?.amountMonthly == undefined || item?.amountMonthly < 0
+        ? item?.customPrice
+        : new Intl.NumberFormat("en-DE").format(item?.amountMonthly)
     }
   }
 
@@ -58,7 +65,7 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
       <div className={styles?.tableContainer}>
         <div>
           <p className={`${cx("heading4")}`} id={"featuresTable"}>
-            All features
+            {titleFeaturesTableMobile}
           </p>
           <select
             className={`${styles?.selector} ${cx("bodyRegularMD")}`}
@@ -67,83 +74,50 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
               selectLicense(event?.target?.value)
             }}
           >
-            {tiers?.map((item: any, index: any) => {
+            {pricing?.map((item: any, index: any) => {
               return (
                 <option
+                  key={"pricingOption__" + index}
                   defaultChecked={licenseIndex === index + 1}
                   className={`${cx("bodyRegularMD")}`}
                   value={index}
                 >
-                  {item?.attributes?.name}
+                  {item?.name}
                 </option>
               )
             })}
           </select>
           <div className={styles?.header__container}>
             <div>
-              {!license?.attributes.name
-                ?.toLowerCase()
-                ?.includes("enterprise") ? (
-                <>
-                  <p className={`${cx("heading3")}`}>
-                    <span>{getPrice(license?.attributes)}€</span>
-                    {" /"}
-                    &nbsp;
-                    {switchPeriodValue}
-                  </p>
-                  {switchPeriodValue === "month"
-                    ? license?.attributes.subPriceMonthLabel && (
-                        <span
-                          className={`${cx(
-                            "neutral700 bodyRegularXS marginTop2"
-                          )}`}
-                        >
-                          {license?.attributes.subPriceMonthLabel}
-                        </span>
-                      )
-                    : license?.attributes.subPriceYearLabel && (
-                        <span
-                          className={`${cx(
-                            "neutral700 bodyRegularXS marginTop2"
-                          )}`}
-                        >
-                          {license?.attributes.subPriceYearLabel}
-                        </span>
-                      )}
-                </>
-              ) : (
-                <>
-                  <p className={`${cx("heading3")}`}>{getPrice(license)}</p>
-                </>
-              )}
-            </div>
+              <p className={cx("heading3")}>
+                <span>{getPrice(pricingSelected)}</span>
+                <span>
+                  {(pricingSelected?.amountYearly ||
+                    pricingSelected?.amountMonthly) && <span>€</span>}
+                </span>
 
-            <div>
-              {license?.attributes.popular === true && (
-                <Tag label={"Popular"} className={styles?.popularTag} />
-              )}
+                <span className={cx("marginLeft8")}>
+                  {periodYear
+                    ? pricingSelected?.frecuencyYearly
+                    : pricingSelected?.frecuencyMonthly}
+                </span>
+              </p>
             </div>
+            {(pricingSelected?.button?.label?.length ||
+              pricingSelected?.button?.icon?.data?.attributes?.url?.length) && (
+              <div>
+                <Button
+                  {...pricingSelected?.button}
+                  action={() =>
+                    window?.open(
+                      pricingSelected?.button?.url,
+                      pricingSelected?.button?.outsideWeb ? "_blank" : "_self"
+                    )
+                  }
+                />
+              </div>
+            )}
           </div>
-          <Button
-            idButton={license?.attributes.button?.idButton}
-            className={styles?.license__button}
-            label={license?.attributes.button?.label}
-            icon={license?.attributes.button?.icon}
-            style={license?.attributes.button?.style}
-            color={license?.attributes.button?.color}
-            size={license?.attributes.button?.size}
-            noPaddingText={license?.attributes.button?.noPaddingText}
-            disabled={license?.attributes.button?.disabled}
-            link={license?.attributes.button?.link}
-            url={license?.attributes.button?.url}
-            outsideWeb={license?.attributes.button?.outsideWeb}
-            action={() =>
-              window?.open(
-                license?.attributes.button?.url,
-                license?.attributes.button?.outsideWeb ? "_blank" : "_self"
-              )
-            }
-          />
         </div>
         {/* Verifiable Credentials */}
         <div className={styles?.card}>

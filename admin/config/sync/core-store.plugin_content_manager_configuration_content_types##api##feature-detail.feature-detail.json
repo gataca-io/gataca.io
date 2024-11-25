@@ -55,7 +55,7 @@
           "placeholder": "",
           "visible": true,
           "editable": true,
-          "mainField": "name"
+          "mainField": "idItem"
         },
         "list": {
           "label": "tiers",
@@ -93,12 +93,6 @@
       }
     },
     "layouts": {
-      "list": [
-        "id",
-        "title",
-        "infoToggle",
-        "tiers"
-      ],
       "edit": [
         [
           {
@@ -116,6 +110,12 @@
             "size": 6
           }
         ]
+      ],
+      "list": [
+        "id",
+        "title",
+        "infoToggle",
+        "tiers"
       ]
     }
   },

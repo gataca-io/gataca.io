@@ -1,0 +1,269 @@
+{
+  "key": "plugin_content_manager_configuration_components::shared.pricing-card",
+  "value": {
+    "uid": "shared.pricing-card",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "idItem",
+      "defaultSortBy": "idItem",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "idItem": {
+        "edit": {
+          "label": "idItem",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "idItem",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "name": {
+        "edit": {
+          "label": "name",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "name",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "description": {
+        "edit": {
+          "label": "description",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "description",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "frecuencyMonthly": {
+        "edit": {
+          "label": "frecuencyMonthly",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "frecuencyMonthly",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "amountYearly": {
+        "edit": {
+          "label": "amountYearly",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "amountYearly",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "amountMonthly": {
+        "edit": {
+          "label": "amountMonthly",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "amountMonthly",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "customPrice": {
+        "edit": {
+          "label": "customPrice",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "customPrice",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "titleAmountSize": {
+        "edit": {
+          "label": "titleAmountSize",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "titleAmountSize",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "list": {
+        "edit": {
+          "label": "list",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "list",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "button": {
+        "edit": {
+          "label": "button",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "button",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "frecuencyYearly": {
+        "edit": {
+          "label": "frecuencyYearly",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "frecuencyYearly",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "extraInfo": {
+        "edit": {
+          "label": "extraInfo",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "extraInfo",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "idItem",
+        "name",
+        "description"
+      ],
+      "edit": [
+        [
+          {
+            "name": "idItem",
+            "size": 6
+          },
+          {
+            "name": "name",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "description",
+            "size": 6
+          },
+          {
+            "name": "extraInfo",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "amountYearly",
+            "size": 4
+          },
+          {
+            "name": "frecuencyYearly",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "amountMonthly",
+            "size": 4
+          },
+          {
+            "name": "frecuencyMonthly",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "customPrice",
+            "size": 6
+          },
+          {
+            "name": "titleAmountSize",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "list",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "button",
+            "size": 12
+          }
+        ]
+      ]
+    },
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

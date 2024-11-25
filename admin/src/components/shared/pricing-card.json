@@ -1,0 +1,55 @@
+{
+  "collectionName": "components_shared_pricing_cards",
+  "info": {
+    "displayName": "PricingCard",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "idItem": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "frecuencyMonthly": {
+      "type": "string"
+    },
+    "amountYearly": {
+      "type": "integer"
+    },
+    "amountMonthly": {
+      "type": "integer"
+    },
+    "customPrice": {
+      "type": "string"
+    },
+    "titleAmountSize": {
+      "type": "enumeration",
+      "enum": [
+        "medium",
+        "large"
+      ],
+      "default": "large"
+    },
+    "list": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.list-group"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "generic.button"
+    },
+    "frecuencyYearly": {
+      "type": "string"
+    },
+    "extraInfo": {
+      "type": "text"
+    }
+  }
+}

@@ -7,8 +7,8 @@
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "name",
-      "defaultSortBy": "name",
+      "mainField": "id",
+      "defaultSortBy": "id",
       "defaultSortOrder": "ASC"
     },
     "metadatas": {
@@ -16,118 +16,6 @@
         "edit": {},
         "list": {
           "label": "id",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "button": {
-        "edit": {
-          "label": "button",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "button",
-          "searchable": false,
-          "sortable": false
-        }
-      },
-      "description": {
-        "edit": {
-          "label": "description",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "description",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "name": {
-        "edit": {
-          "label": "name",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "name",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "subPriceMonthLabel": {
-        "edit": {
-          "label": "subPriceMonthLabel",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "subPriceMonthLabel",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "subPriceYearLabel": {
-        "edit": {
-          "label": "subPriceYearLabel",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "subPriceYearLabel",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "type": {
-        "edit": {
-          "label": "type",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "type",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "monthlyPrice": {
-        "edit": {
-          "label": "monthlyPrice",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "monthlyPrice",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "yearlyPrice": {
-        "edit": {
-          "label": "yearlyPrice",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "yearlyPrice",
           "searchable": true,
           "sortable": true
         }
@@ -146,32 +34,18 @@
           "sortable": false
         }
       },
-      "popular": {
+      "idItem": {
         "edit": {
-          "label": "popular",
+          "label": "idItem",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "popular",
+          "label": "idItem",
           "searchable": true,
           "sortable": true
-        }
-      },
-      "button2": {
-        "edit": {
-          "label": "button2",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "button2",
-          "searchable": false,
-          "sortable": false
         }
       },
       "createdAt": {
@@ -204,53 +78,11 @@
       }
     },
     "layouts": {
-      "list": [
-        "id",
-        "button",
-        "description",
-        "name"
-      ],
       "edit": [
         [
           {
-            "name": "button",
-            "size": 12
-          }
-        ],
-        [
-          {
-            "name": "description",
+            "name": "idItem",
             "size": 6
-          },
-          {
-            "name": "name",
-            "size": 6
-          }
-        ],
-        [
-          {
-            "name": "subPriceMonthLabel",
-            "size": 6
-          },
-          {
-            "name": "subPriceYearLabel",
-            "size": 6
-          }
-        ],
-        [
-          {
-            "name": "type",
-            "size": 6
-          },
-          {
-            "name": "monthlyPrice",
-            "size": 4
-          }
-        ],
-        [
-          {
-            "name": "yearlyPrice",
-            "size": 4
           }
         ],
         [
@@ -258,19 +90,11 @@
             "name": "features",
             "size": 12
           }
-        ],
-        [
-          {
-            "name": "popular",
-            "size": 4
-          }
-        ],
-        [
-          {
-            "name": "button2",
-            "size": 12
-          }
         ]
+      ],
+      "list": [
+        "id",
+        "idItem"
       ]
     }
   },

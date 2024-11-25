@@ -28,7 +28,7 @@ table {
     content: "";
     width: calc(100vw - 15px);
     position: absolute;
-    height: 206px;
+    height: 214px;
     left: 0;
     box-shadow: 0px 4px 8px 0px #0000001F;
     z-index: -1;
@@ -53,123 +53,29 @@ table {
       width: 100%;
       vertical-align: top;
       text-align: left;
-      min-height: 174px;
-
-      .license__header {
-        width: 100%;
-        @include flexbox();
-        @include flex-wrap(wrap);
-        @include justify-content(space-between);
-        width: 190px;
-        align-items: center;
-        & > .licenseName {
-          width: 100%;
-          width: calc(100% - 70px);
-        }
-        &__popularTag {
-          background-color: $primary700;
-          border-radius: 5px;
-          padding: 3px 8px;
-          width: fit-content;
-          margin-left: auto;
-          height: 18px;
-          & > p {
-            color: $neutral100;
-            font-weight: 400;
-            font-size: 12px;
-          }
-        }
-      }
-
-      & > div {
-        width: 100%;
-        & > .licensePrice {
-          margin: 34px 0 0;
-          font-weight:400;
-          line-height: 18px;
-          font-size: 16px;
-          width: 100%;
-          & > span {
-            font-size: 25px;
-            font-weight: bold;
-          }
-        }
-
-        & > .licensePriceLarge {
-          margin: 34px 0 34px;
-        }
-
-        & > .licenseCustomPrice {
-          margin: 34px 0 34px;
-          line-height: 16px;
-        }
-
-        & > .licenseSave {
-          font-size: 12px;
-          margin-bottom: 30px;
-          height: 14px;
-        }
-
-        & > .licenseAdapted {
-          font-size: 12px;
-          margin-bottom: 20px;
-
-        }
-        & > button {
-          margin-top: auto;
-          width: 100%;
-          text-align: center;
-          @include flexbox();
-          @include justify-content(center);
-          cursor: pointer;
-        }
-      }
-
-
-      & > div:nth-child(2) {
-        height: 150px;
+      gap: 24px;
+      height: 184px;
+      & > div:first-child {
         @include flexbox();
         @include flex-direction(column);
         @include justify-content(space-between);
-       
+        gap: 24px;
+      }
+      & > div:nth-child(2) {
+        width: 100%;
+        button {
+          width: 100%;
+        }
       }
     }
   }
   &:first-child {
-    & > .table__header__cell:nth-child(2) {
+    & > .table__header__cell {
       -moz-border-top-left-radius: 12px;
       -webkit-border-top-left-radius: 12px;
       border-top-left-radius: 12px;
-      width: 50%;
-
-    }
-    & > .table__header__cell:last-child {
-      -moz-border-top-right-radius: 12px;
-      -webkit-border-top-right-radius: 12px;
-      border-top-right-radius: 12px;
-        width: 50%;
-    }
-    & > .table__header__cell:nth-child(4)  {
-      & > .table__header__cell__content {
-        & > div:nth-child(2) {
-          height: 146px;
-            & > .licensePrice {
-            margin: 30px 0 0;
-            font-weight:400;
-            line-height: 18px;
-            font-size: 16px;
-            width: 100%;
-
-            & > span {
-              font-size: 25px;
-              font-weight: bold;
-            }
-          }
-          & > .licensePriceLarge {
-              margin: 30px 0 0;
-          }
-        }
-      }
+      width: auto;
+      min-width: 280px;
     }
   }
 
@@ -235,12 +141,6 @@ table {
     }
   }
 }
-
-.license__button {
-  font-size: 15px;
-  padding: 14px 6.5px;
-}
-
 td img, td.markdown p img {
   width: 16px;
   height: 16px;

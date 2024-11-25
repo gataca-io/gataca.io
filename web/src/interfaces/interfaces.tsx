@@ -136,7 +136,6 @@ export interface InsideSectionsModel {
   content?: string | any
   __component?: string
   logos?: any
-  tiers?: any
   infoToggles?: string
   pricing_categories?: any
   tier_tables?: any
@@ -186,6 +185,10 @@ export interface InsideSectionsModel {
   media_steps?: any
   showSwitch?: boolean
   button_icons?: any
+  pricing?: any
+  titleFeaturesTableMobile?: string
+  showAllFeaturesText?: string
+  hideAllFeaturesText?: string
 }
 
 export interface LocalizationsModel {
@@ -386,6 +389,23 @@ export interface ActionCardModel {
   subOptionClickedID?: string
 }
 
+export interface PricingCardModel {
+  className?: string
+  idItem?: string
+  titleAmountSize?: string
+  list?: any
+  name?: string
+  description?: string
+  frecuencyYearly?: string
+  frecuencyMonthly?: string
+  amountMonthly?: number
+  amountYearly?: number
+  customPrice?: string
+  button?: ButtonModel
+  extraInfo?: string
+  period?: string
+}
+
 export interface ListModel {
   idList?: string
   size?: string
@@ -453,7 +473,8 @@ export interface SubHeadingContainerModel {
 
 export interface MainCardContainerModel {
   idItem?: string
-  card: CardModel[]
+  card?: CardModel[]
+  pricing?: PricingCardModel[]
   columns?: string
 }
 
