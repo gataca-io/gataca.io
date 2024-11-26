@@ -94,6 +94,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
       blockAlign,
       slotAlign,
       media_steps,
+      showSwitch,
     } = item
 
     return (
@@ -145,6 +146,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
             }
             licenses={tiers?.data}
             subOptionClickedID={props?.location?.hash?.substring(1)}
+            showSwitch={showSwitch}
           />
         )}
         {__component === "generic.content-heading-container" && (

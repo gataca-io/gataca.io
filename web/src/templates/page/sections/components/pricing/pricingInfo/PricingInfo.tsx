@@ -39,6 +39,7 @@ export type ISectionProps = {
   tier_tables?: any
   tiersDetail: IProductModel[]
   subOptionClickedID?: string
+  showSwitch?: boolean
 }
 
 const PricingInfo: React.FC<ISectionProps> = props => {
@@ -52,6 +53,7 @@ const PricingInfo: React.FC<ISectionProps> = props => {
     tier_tables,
     tiersDetail,
     subOptionClickedID,
+    showSwitch,
   } = props
   const [switchPeriodValue, setmonthlyChecked] = React.useState("month")
   const [showAllFeatures, setShowAllFeatures] = React.useState(false)
@@ -144,14 +146,16 @@ const PricingInfo: React.FC<ISectionProps> = props => {
         <div id="cloud" className={styles?.pricingInfo__sectors}>
           {openItem === 1 ? (
             <>
-              <div className={styles?.switchButtonContainer}>
-                <SwitchButton
-                  rightLabel={switchLabel}
-                  checkedValue={switchPeriodValue}
-                  options={switchButton.options}
-                  onChangeSwitchSelect={switchButton.function}
-                />
-              </div>
+              {showSwitch ? (
+                <div className={styles?.switchButtonContainer}>
+                  <SwitchButton
+                    rightLabel={switchLabel}
+                    checkedValue={switchPeriodValue}
+                    options={switchButton.options}
+                    onChangeSwitchSelect={switchButton.function}
+                  />
+                </div>
+              ) : null}
               <div
                 className={styles?.pricingInfo__sectors__cardsContainer}
                 id={"allLicensesFeatures"}

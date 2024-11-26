@@ -192,6 +192,7 @@ export interface InsideSectionsModel {
   slotAlign?: string
   align?: string
   media_steps?: any
+  showSwitch?: boolean
 }
 
 export interface LocalizationsModel {

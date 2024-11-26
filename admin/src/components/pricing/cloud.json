@@ -37,6 +37,10 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::segmented-button.segmented-button"
+    },
+    "showSwitch": {
+      "type": "boolean",
+      "default": true
     }
   }
 }
