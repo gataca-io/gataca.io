@@ -14,7 +14,6 @@ import ButtonGroup from "./components/generic/buttonGroup/ButtonGroup"
 import ChipGroup from "./components/generic/chipGroup/ChipGroup"
 import ListGroup from "./components/shared/list/listGroup/ListGroup"
 import HeaderContainer from "./components/shared/headerContainer/HeaderContainer"
-import SubHeadingContainer from "./components/shared/subHeadingContainer/SubHeadingContainer"
 import FullWidthCard from "./components/shared/fullWidthCard/FullWidthCard"
 import TextMedia from "./components/shared/textMedia/TextMedia"
 import Video from "./components/shared/video/Video"
@@ -26,6 +25,7 @@ import BlogHighlightCard from "./components/shared/blogHighlightCard/BlogHighlig
 import MainBlogLayout from "./components/shared/mainBlogLayout/MainBlogLayout"
 import SideCardsSlider from "./components/shared/sideCardsSlider/SideCardsSlider"
 import SubHeadingsLayout from "./components/shared/SubHeadingsLayout/SubHeadingsLayout"
+import MediaStepsSlider from "./components/shared/mediaStepsSlider/MediaStepsSlider"
 
 const AllSectionsTemplate: React.FC<PageModel> = props => {
   const { sections } = props
@@ -93,6 +93,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
       testimonial_card,
       blockAlign,
       slotAlign,
+      media_steps,
     } = item
 
     return (
@@ -303,6 +304,15 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
             cardHeight={cardHeight || 212}
             credentials={credentials?.data?.attributes}
             testimonialCards={testimonial_card?.data?.attributes}
+          />
+        )}
+        {__component === "shared.media-steps-slider" && (
+          <MediaStepsSlider
+            idItem={idItem}
+            heading={heading?.data?.attributes?.heading}
+            buttonLeft={buttonLeft}
+            buttonRight={buttonRight}
+            mediaSteps={media_steps?.data}
           />
         )}
       </section>

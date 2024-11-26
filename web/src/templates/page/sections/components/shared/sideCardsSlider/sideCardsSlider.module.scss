@@ -12,9 +12,9 @@
     padding: 0 60px;
   }
   &.background {
-    padding-top: 82px;
     margin: 0 0 calc(132px + 82px);
     @include min-width($mobileXL) {
+      padding-top: 82px;
       margin: 0 0 calc(200px + 82px);
     }
     .sideCardsSlider__container {
@@ -107,7 +107,9 @@
     @include flex(0, 0, calc(40% - 133px));
   }
   &.textAlignRight {
-    @include order(1);
+    @include min-width($mobileXL) {
+      @include order(1);
+    }
     &.background {
       &::before {
         @include min-width($mobileXL) {
@@ -241,6 +243,23 @@
       margin-left: 2px;
       @include min-width($mobileXL) {
         margin-left: 12px;
+      }
+    }
+  }
+  &.background {
+    margin-top: 82px;
+    &::before {
+      @include max-width($mobileXL) {
+        content: "";
+        position: absolute;
+        width: 75vw;
+        height: calc(100% + 164px);
+        border-radius: 40px 0px 0px 40px;
+        right: -20px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: $neutral200;
+        z-index: -1;
       }
     }
   }

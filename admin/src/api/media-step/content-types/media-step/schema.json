@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "media_steps",
+  "info": {
+    "singularName": "media-step",
+    "pluralName": "media-steps",
+    "displayName": "Media Step"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "idItem": {
+      "type": "string"
+    },
+    "headingStep": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.heading"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "stepImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

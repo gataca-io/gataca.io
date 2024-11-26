@@ -220,6 +220,12 @@
       "action": "api::logo.logo.findOne"
     },
     {
+      "action": "api::media-step.media-step.find"
+    },
+    {
+      "action": "api::media-step.media-step.findOne"
+    },
+    {
       "action": "api::operation.operation.find"
     },
     {

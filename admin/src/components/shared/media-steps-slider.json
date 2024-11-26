@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_shared_media_steps_sliders",
+  "info": {
+    "displayName": "MediaStepsSlider",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "idItem": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::heading.heading"
+    },
+    "media_steps": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::media-step.media-step"
+    },
+    "buttonLeft": {
+      "type": "component",
+      "repeatable": false,
+      "component": "generic.button-icon"
+    },
+    "buttonRight": {
+      "type": "component",
+      "repeatable": false,
+      "component": "generic.button-icon"
+    }
+  }
+}

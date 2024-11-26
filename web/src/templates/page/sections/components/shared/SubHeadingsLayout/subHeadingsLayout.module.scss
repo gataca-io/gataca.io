@@ -26,8 +26,12 @@
     }
     &.blockAlignLeft, &.blockAlignRight {
       .image__container {
-        @include max-width($tabletMD) {
-          margin-left: -20px;
+        margin-left: -20px;
+        @include min-width($mobileXL) {
+          margin-left: -40px;
+        }
+        @include min-width($tabletMD) {
+          margin-left: 0;
         }
       }
     }
@@ -62,15 +66,18 @@
     &.slotAlignRight {
       .image__container {
         @include min-width($desktopSM) {
-          @include flexbox;
-          @include justify-content(flex-end);
+          text-align: right;
         }
       }
     }
     &.slotAlignLeft {
       .image__container {
-        @include max-width($tabletMD) {
-          margin-left: -20px;
+        margin-left: -20px;
+        @include min-width($mobileXL) {
+          margin-left: -40px;
+        }
+        @include min-width($tabletMD) {
+          margin-left: 0;
         }
       }
     }
@@ -113,15 +120,18 @@
     &.slotAlignRight {
       .image__container {
         @include min-width($desktopSM) {
-          @include flexbox;
-          @include justify-content(flex-end);
+          text-align: right;
         }
       }
     }
     &.slotAlignLeft {
       .image__container {
-        @include max-width($tabletMD) {
-          margin-left: -20px;
+        margin-left: -20px;
+        @include min-width($mobileXL) {
+          margin-left: -40px;
+        }
+        @include min-width($tabletMD) {
+          margin-left: 0;
         }
       }
     }

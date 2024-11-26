@@ -190,6 +190,8 @@ export interface InsideSectionsModel {
   testimonial_card?: any
   blockAlign?: string
   slotAlign?: string
+  align?: string
+  media_steps?: any
 }
 
 export interface LocalizationsModel {
