@@ -9,8 +9,7 @@ export const hiddenLogo: string
 export const backLink: string
 export const visibleBackLink: string
 export const hiddenBackLink: string
-export const backLink__text: string
 export const closeMenuIcon: string
 export const menuContentVisible: string
 export const menuIconContainer: string
-export const demoLink__mobile: string
+export const mobileMenu__localeLink: string

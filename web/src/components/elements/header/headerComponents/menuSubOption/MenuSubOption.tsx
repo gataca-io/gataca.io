@@ -1,21 +1,18 @@
-import { Link } from "gatsby"
 import * as React from "react"
 import * as styles from "./menuSubOption.module.scss"
-import cx from "classnames"
-import { LinkModel } from "../../../../../interfaces/interfaces"
+import List from "../../../../../templates/page/sections/components/shared/list/components/List"
+import ListGroup from "../../../../../templates/page/sections/components/shared/list/listGroup/ListGroup"
 
 export type IMenuSubOptionProps = {
-  item: LinkModel
+  item: any
   open: boolean
 }
 
 const MenuSubOption: React.FC<IMenuSubOptionProps> = props => {
   const { item, open } = props
-  const categoriesAvailable = item?.categories
+  const categoriesAvailable = item?.list_options?.data
 
-  return (item?.categories && item?.categories?.length) ||
-    (item?.subRoutes && item?.subRoutes?.length) ||
-    (item?.mainRoute && item?.mainRoute?.length) ? (
+  return (
     <div
       id={item?.id}
       className={`${styles?.menuSubOption} ${
@@ -26,66 +23,25 @@ const MenuSubOption: React.FC<IMenuSubOptionProps> = props => {
           : ""
       } ${open ? styles?.subItemActive : styles?.subItemInActive}`}
     >
-      {item?.mainRoute && (
-        <div className={styles?.mainRoute}>
-          {item?.mainRoute?.map((subItem, index) => {
-            return (
-              <Link
-                key={"mainRoute__" + index}
-                className={`${cx("buttonSM")}`}
-                to={subItem?.route || ""}
-              >
-                {subItem?.label}
-              </Link>
-            )
-          })}
-        </div>
-      )}
-      {item?.categories && (
-        <div className={styles?.menuCategory}>
-          {item?.categories?.map((subItem, index) => {
-            return (
-              <div key={"menuSubOptionCategories__" + index}>
-                <div
-                  key={"menuSubOptionCategoryItem__" + index}
-                  className={`${styles?.menuCategoryItem__title} ${cx(
-                    "buttonSM"
-                  )}`}
-                >
-                  {subItem?.label}
-                </div>
-
-                {subItem?.subRoutes?.map((item, index) => {
-                  return (
-                    <Link
-                      key={"menuSubOption__" + index}
-                      className={`${styles?.menuSubOptionItem} ${cx(
-                        "buttonSM"
-                      )}`}
-                      to={item?.route || ""}
-                    >
-                      {item?.label}
-                    </Link>
-                  )
-                })}
-              </div>
-            )
-          })}
-        </div>
-      )}
-      {item?.subRoutes?.map((subItem, index) => {
+      {item?.list?.map((item: any, index: number) => {
         return (
-          <Link
+          <List
             key={"menuSubOption__" + index}
-            className={`${styles?.menuSubOptionItem} ${cx("buttonSM")}`}
-            to={subItem?.route || ""}
-          >
-            {subItem?.label}
-          </Link>
+            {...item}
+            classNameButton={styles?.listLink}
+          />
         )
       })}
+      {item?.list_options?.data?.length > 0 && (
+        <div className={styles?.menuCategory}>
+          <ListGroup
+            listOptions={item?.list_options?.data}
+            className={styles?.listOptions_link}
+          />
+        </div>
+      )}
     </div>
-  ) : null
+  )
 }
 
 export default MenuSubOption

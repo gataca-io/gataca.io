@@ -20,6 +20,7 @@ const Button: React.FC<ButtonModel> = props => {
     outsideWeb,
     noPaddingText,
     IconComponent,
+    onMouseEnterAction,
   } = props
 
   const buttonStyles: Record<string, string> = {
@@ -73,6 +74,7 @@ const Button: React.FC<ButtonModel> = props => {
             noPaddingText ? styles.noPadding : ""
           } ${className && className}`}
           onClick={action}
+          onMouseEnter={onMouseEnterAction}
         >
           {label ? (
             <span className={cx(size ? size : "buttonMD")}>{label} </span>

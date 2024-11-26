@@ -1,88 +1,41 @@
 @import "../../../styles/colors";
 @import "../../../styles/mixins";
 
-.headerLayout {
-  position: absolute;
-  width: 100vw;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  height: 100vh;
-  background-color: transparent;
-  opacity: 0.6;
-}
-
 .header {
   @include flexbox();
   @include flex-wrap(wrap);
   @include justify-content(space-between);
   height: 48px;
-  padding: 24px 20px 0;
-  margin-bottom: 30px;
+  padding: 26px 20px 0;
   @include align-items(center);
   @include min-width($mobileXL) {
-    padding: 24px 40px 0;
+    padding: 26px 40px 0;
   }
-  @include min-width(1145px) {
-    padding: 24px 32px 0;
+  @include min-width(1200px) {
+    padding: 26px 32px 0;
   }
- 
-
-  & > div {
-    z-index: 9999;
+  .menuDropdown {
     @include flexbox();
-    @include flex-wrap(wrap);
-    @include justify-content(space-between);
-
-    & > .demoLink {
-      display: none;
-      @include min-width(1145px) {
-        padding: 14px 20px;
-        position: relative;
-        cursor: pointer;
-        @include flexbox();
-        @include flex-wrap(wrap);
-        @include justify-content(center);
-        @include align-items(center);
-        > *:hover {
-          color: $primary700;
-          stroke: $primary700;
-        }
-      }
+    @include flex-wrap(nowrap);
+    gap: 20px;
+    @include min-width(1300px) {
+      gap: 40px;
     }
   }
-
+  > div {
+    z-index: 9999;
+  }
   .buttonsDesktop {
     display: none;
-    @include min-width(1145px) {
+    @include min-width(1200px) {
       @include flexbox();
-    }
-    button {
-      padding: 12px 24px;
-      @include min-width(1145px) {
-        padding: 6px 8px;
-        height: auto;
-      }
-      @include min-width(1220px) {
-        padding: 12px 24px;
-        height: 48px;
-      }
-      &:first-child {
-        @include min-width(1145px) {
-          margin-right: 14px;
-        }
-      
-        @include min-width(1220px) {
-          margin-right: 20px;
-        }
-      }
+      gap: 20px;
     }
   }
   .header__logo {
     img {
       max-width: 170px;
-      @include min-width(1145px) {
+      @include min-width(1200px) {
         width: 100%;
         height: auto;
         max-width: 140px;

@@ -12,7 +12,6 @@ import ButtonIcon from "./components/generic/buttonIcon/ButtonIcon"
 import SegmentedButtonsContainer from "./components/generic/segmentedButtons/SegmentedButtonsContainer"
 import ButtonGroup from "./components/generic/buttonGroup/ButtonGroup"
 import ChipGroup from "./components/generic/chipGroup/ChipGroup"
-import ListGroup from "./components/shared/list/listGroup/ListGroup"
 import HeaderContainer from "./components/shared/headerContainer/HeaderContainer"
 import FullWidthCard from "./components/shared/fullWidthCard/FullWidthCard"
 import TextMedia from "./components/shared/textMedia/TextMedia"
@@ -55,7 +54,6 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
       noPaddingText,
       buttons,
       chip_options,
-      list_options,
       selector_list,
       brand_buttons,
       heading,
@@ -230,11 +228,6 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
             selectorAlign={selectorAlign}
             layout={layout}
           />
-        )}
-        {__component === "shared.list-group" && (
-          <div className={`${styles?.container} ${cx("containerMaxWidth")}`}>
-            <ListGroup listOptions={list_options?.data} />
-          </div>
         )}
         {__component === "shared.sub-headings-layout" && (
           <SubHeadingsLayout

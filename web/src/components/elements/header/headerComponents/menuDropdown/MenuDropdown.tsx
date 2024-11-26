@@ -1,32 +1,39 @@
-import { Link } from "gatsby"
 import * as React from "react"
 import * as styles from "./menuDropdown.module.scss"
-import cx from "classnames"
-import { LinkModel } from "../../../../../interfaces/interfaces"
 import MenuSubOption from "../menuSubOption/MenuSubOption"
-import CrevronDownSVG from "../../../../../images/icons/ChevronDownSVG"
-import CrevronUpSVG from "../../../../../images/icons/ChevronUpSVG"
+import Button from "../../../../../templates/page/sections/components/generic/button/Button"
 
 export type IMenuDropdownProps = {
-  item: LinkModel
-  open: boolean
   setOptionOpened: (x: string) => void
+  subMenuOpenedID?: any
+  open?: boolean
+  button?: any
+  subItem?: any
+  openSubOption?: any
+  list_option?: any
 }
 
 const MenuDropdown: React.FC<IMenuDropdownProps> = props => {
-  const { item, open, setOptionOpened } = props
+  const { open, button, setOptionOpened, openSubOption, list_option } = props
 
-  return item?.route ? null : (
-    <div
-      className={styles.menuDropdownRoute}
-      onClick={() => setOptionOpened(!open ? item?.id : "")}
-    >
-      <div className={`${styles.dropdownLabel} ${cx("buttonMD")}`}>
-        {item?.label}
-        {open ? <CrevronUpSVG /> : <CrevronDownSVG />}
-      </div>
+  return (
+    <div className={styles.menuDropdownRoute}>
+      <Button
+        {...button}
+        onMouseEnterAction={() =>
+          setOptionOpened(!open ? button?.idButton : "")
+        }
+        action={() =>
+          button?.url?.length
+            ? window?.open(button?.url, button?.outsideWeb ? "_blank" : "_self")
+            : setOptionOpened(!open ? button?.idButton : "")
+        }
+      />
 
-      <MenuSubOption item={item} open={open} />
+      <MenuSubOption
+        item={list_option?.data?.attributes}
+        open={openSubOption}
+      />
     </div>
   )
 }

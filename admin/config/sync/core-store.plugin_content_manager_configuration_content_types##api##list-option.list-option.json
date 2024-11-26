@@ -104,6 +104,21 @@
           "sortable": true
         }
       },
+      "list_options": {
+        "edit": {
+          "label": "list_options",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "idListOption"
+        },
+        "list": {
+          "label": "list_options",
+          "searchable": false,
+          "sortable": false
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -148,6 +163,10 @@
         [
           {
             "name": "title",
+            "size": 6
+          },
+          {
+            "name": "list_options",
             "size": 6
           }
         ],

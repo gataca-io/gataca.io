@@ -27,11 +27,13 @@ const CertificationsPage: React.FC<PageProps> = () => {
 
   return (
     <Layout seoData={strapiData?.seo}>
-      <FirstSection
-        title={headerSection?.title}
-        description={headerSection?.description}
-        list={certifications?.data}
-      />
+      <>
+        <FirstSection
+          title={headerSection?.title}
+          description={headerSection?.description}
+          list={certifications?.data}
+        />
+      </>
     </Layout>
   )
 }

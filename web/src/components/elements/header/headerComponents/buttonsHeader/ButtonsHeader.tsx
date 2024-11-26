@@ -1,22 +1,15 @@
 import * as React from "react"
-import { gatacaStudioURL } from "../../../../../data/globalData"
-import PurpleButton from "../../../../atoms/buttons/purple/PurpleButton"
-import cx from "classnames"
-import { navigate } from "gatsby"
+import ButtonGroup from "../../../../../templates/page/sections/components/generic/buttonGroup/ButtonGroup"
 
-const ButtonsHeader: React.FC = () => {
+export type IButtonsHeaderProps = {
+  buttonGroup?: any
+}
+const ButtonsHeader: React.FC<IButtonsHeaderProps> = props => {
+  const { buttonGroup } = props
+
   return (
     <>
-      <PurpleButton
-        label={"Log In"}
-        outlined
-        className={cx("marginRight20")}
-        action={() => window.open(gatacaStudioURL, "_blank")}
-      />
-      <PurpleButton
-        label={"Contact Us"}
-        action={() => navigate("/company/contact")}
-      />
+      <ButtonGroup buttonGroup={buttonGroup} />
     </>
   )
 }

@@ -126,7 +126,7 @@ const Layout = props => {
 
   return (
     <>
-      <Header />
+      <Header >{props.children} </Header>
       {seoData && (
         <SeoHelmet
           metaTitle={seoData?.metaTitle}

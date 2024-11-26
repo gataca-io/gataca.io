@@ -1,14 +1,24 @@
 import React from "react"
-import cx from "classnames"
-import * as styles from "./localeLink.module.scss"
 import Button from "../../sections/components/generic/button/Button"
+import { ButtonModel } from "../../../../interfaces/interfaces"
 
 export type ILocaleLinkProps = {
   pageContext: any
+  className?: string
+  languageButton?: ButtonModel
+  languageOptionES?: string
+  languageOptionEN?: string
 }
 
 const LocaleLink: React.FC<ILocaleLinkProps> = props => {
-  const { pageContext } = props
+  const {
+    pageContext,
+    languageButton,
+    languageOptionES,
+    languageOptionEN,
+    className,
+  } = props
+
   const localeType = pageContext?.locale
   const slugData = pageContext?.slugURL
 
@@ -24,7 +34,7 @@ const LocaleLink: React.FC<ILocaleLinkProps> = props => {
   const termsOfServiceWalletPage = slugData === slugTermsOfServiceWalletPage
   const termsOfServiceStudioPage = slugData === slugTermsOfServiceStudioPage
 
-  const localeText = localeType === "en" ? "View in Spanish" : "Ver en Inglés"
+  const localeText = localeType === "en" ? languageOptionES : languageOptionEN
 
   const termsPages = [
     { slug: privacyPolicyPage, localeURL: "/" + slugPrivacyPolicyPage },
@@ -39,6 +49,7 @@ const LocaleLink: React.FC<ILocaleLinkProps> = props => {
       localeURL: "/" + slugTermsOfServiceStudioPage,
     },
   ]
+
   return (
     <>
       {termsPages?.map(item => {
@@ -46,17 +57,13 @@ const LocaleLink: React.FC<ILocaleLinkProps> = props => {
 
         return slug ? (
           <div
+            className={className && className}
             key={"localeLink__" + Math.random()}
-            className={`${styles?.localeLink} ${cx("containerMaxWidth")}`}
           >
             <Button
-              link
+              {...languageButton}
               label={localeText}
-              idButton={"localeLink__"}
-              style={"text"}
               url={localeType === "en" ? "/es" + localeURL : localeURL}
-              color={"black"}
-              noPaddingText
             />
           </div>
         ) : null

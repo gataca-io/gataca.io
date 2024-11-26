@@ -2,17 +2,16 @@
 @import "../../../../../styles/mixins";
 
 .menuDropdownRoute {
-  padding: 16px;
-  cursor: pointer;
-  > *:hover {
-    color: $primary700;
-    stroke: $primary700;
+  padding: 8px 16px;
+  width: calc(100% - 32px);
+  @include min-width(1200px) {
+    width: inherit;
   }
 }
 
-.dropdownLabel {
-  @include flexbox();
+.dropdownLabel__button {
   @include justify-content(space-between);
-  @include align-items(center);
-  margin-right: 4px;
+  width: 100%;
 }
+
+

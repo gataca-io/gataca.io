@@ -4092,6 +4092,54 @@
     },
     {
       "action": "plugin::content-manager.explorer.create",
+      "subject": "api::language.language",
+      "properties": {
+        "fields": [
+          "languageAbbreviationStrapi",
+          "label",
+          "idItem"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::language.language",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::language.language",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::language.language",
+      "properties": {
+        "fields": [
+          "languageAbbreviationStrapi",
+          "label",
+          "idItem"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::language.language",
+      "properties": {
+        "fields": [
+          "languageAbbreviationStrapi",
+          "label",
+          "idItem"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
       "subject": "api::list-option.list-option",
       "properties": {
         "fields": [
@@ -4101,11 +4149,14 @@
           "list.leadingIcon",
           "list.size",
           "list.color",
+          "list.url",
+          "list.noPaddingText",
           "idListOption",
           "spacing",
           "titleFontSize",
           "titleFontWeight",
-          "title"
+          "title",
+          "list_options"
         ]
       },
       "conditions": []
@@ -4133,11 +4184,14 @@
           "list.leadingIcon",
           "list.size",
           "list.color",
+          "list.url",
+          "list.noPaddingText",
           "idListOption",
           "spacing",
           "titleFontSize",
           "titleFontWeight",
-          "title"
+          "title",
+          "list_options"
         ]
       },
       "conditions": []
@@ -4153,11 +4207,14 @@
           "list.leadingIcon",
           "list.size",
           "list.color",
+          "list.url",
+          "list.noPaddingText",
           "idListOption",
           "spacing",
           "titleFontSize",
           "titleFontWeight",
-          "title"
+          "title",
+          "list_options"
         ]
       },
       "conditions": []
@@ -4404,6 +4461,144 @@
           "headingStep.list.list_options",
           "image",
           "stepImage"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::menu.menu",
+      "properties": {
+        "fields": [
+          "idItem",
+          "logo",
+          "menuDropdown.buttons",
+          "menuDropdown.brand_buttons",
+          "button.buttons",
+          "button.brand_buttons",
+          "backButtonMobile.label",
+          "backButtonMobile.url",
+          "backButtonMobile.outsideWeb",
+          "backButtonMobile.outlined",
+          "backButtonMobile.idButton",
+          "backButtonMobile.icon",
+          "backButtonMobile.link",
+          "backButtonMobile.style",
+          "backButtonMobile.color",
+          "backButtonMobile.size",
+          "backButtonMobile.disabled",
+          "backButtonMobile.noPaddingText",
+          "iconBackButtonMobile",
+          "iconMenuOptionsMobile",
+          "languageOptions",
+          "languageButton.label",
+          "languageButton.url",
+          "languageButton.outsideWeb",
+          "languageButton.outlined",
+          "languageButton.idButton",
+          "languageButton.icon",
+          "languageButton.link",
+          "languageButton.style",
+          "languageButton.color",
+          "languageButton.size",
+          "languageButton.disabled",
+          "languageButton.noPaddingText"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::menu.menu",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::menu.menu",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::menu.menu",
+      "properties": {
+        "fields": [
+          "idItem",
+          "logo",
+          "menuDropdown.buttons",
+          "menuDropdown.brand_buttons",
+          "button.buttons",
+          "button.brand_buttons",
+          "backButtonMobile.label",
+          "backButtonMobile.url",
+          "backButtonMobile.outsideWeb",
+          "backButtonMobile.outlined",
+          "backButtonMobile.idButton",
+          "backButtonMobile.icon",
+          "backButtonMobile.link",
+          "backButtonMobile.style",
+          "backButtonMobile.color",
+          "backButtonMobile.size",
+          "backButtonMobile.disabled",
+          "backButtonMobile.noPaddingText",
+          "iconBackButtonMobile",
+          "iconMenuOptionsMobile",
+          "languageOptions",
+          "languageButton.label",
+          "languageButton.url",
+          "languageButton.outsideWeb",
+          "languageButton.outlined",
+          "languageButton.idButton",
+          "languageButton.icon",
+          "languageButton.link",
+          "languageButton.style",
+          "languageButton.color",
+          "languageButton.size",
+          "languageButton.disabled",
+          "languageButton.noPaddingText"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::menu.menu",
+      "properties": {
+        "fields": [
+          "idItem",
+          "logo",
+          "menuDropdown.buttons",
+          "menuDropdown.brand_buttons",
+          "button.buttons",
+          "button.brand_buttons",
+          "backButtonMobile.label",
+          "backButtonMobile.url",
+          "backButtonMobile.outsideWeb",
+          "backButtonMobile.outlined",
+          "backButtonMobile.idButton",
+          "backButtonMobile.icon",
+          "backButtonMobile.link",
+          "backButtonMobile.style",
+          "backButtonMobile.color",
+          "backButtonMobile.size",
+          "backButtonMobile.disabled",
+          "backButtonMobile.noPaddingText",
+          "iconBackButtonMobile",
+          "iconMenuOptionsMobile",
+          "languageOptions",
+          "languageButton.label",
+          "languageButton.url",
+          "languageButton.outsideWeb",
+          "languageButton.outlined",
+          "languageButton.idButton",
+          "languageButton.icon",
+          "languageButton.link",
+          "languageButton.style",
+          "languageButton.color",
+          "languageButton.size",
+          "languageButton.disabled",
+          "languageButton.noPaddingText"
         ]
       },
       "conditions": []
@@ -5447,7 +5642,8 @@
           "button.disabled",
           "button.noPaddingText",
           "content",
-          "title"
+          "title",
+          "list_option"
         ]
       },
       "conditions": []
@@ -5482,7 +5678,8 @@
           "button.disabled",
           "button.noPaddingText",
           "content",
-          "title"
+          "title",
+          "list_option"
         ]
       },
       "conditions": []
@@ -5505,7 +5702,8 @@
           "button.disabled",
           "button.noPaddingText",
           "content",
-          "title"
+          "title",
+          "list_option"
         ]
       },
       "conditions": []

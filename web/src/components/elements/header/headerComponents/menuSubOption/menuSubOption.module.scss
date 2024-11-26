@@ -6,46 +6,34 @@
   top: 0;
   left: 0;
   right: 0;
-  padding: 16px 8px;
+  padding: 0 4px;
   width: auto;
   height: 100%;
   max-height: 724px;
   z-index: 9999;
   background-color: $neutral100;
   transform: translateX(100%);
-  @include min-width($desktopMD) {
+  @include min-width(1200.01px) {
     top: 50px;
-    left: 14px;
     border-radius: 6px;
     box-shadow: 0px 0px 5px 0px #0000001A;
-    padding: 16px;
-    min-width: 155px;
+    min-width: 175px;
+    padding: 16px 4px;
     height: auto;
   }
   &.menuCategoryContainer {
-    padding: 16px 0;
-    @include min-width($desktopMD) {
+    @include min-width(1200.01px) {
       padding: 16px;
-      min-width: 210px;
+      min-width: 160px;
     }
     &.twoCategories {
-      @include min-width($desktopMD) {
+      @include min-width(1200.01px) {
         min-width: 510px;
       }
-    }
-    .mainRoute {
-      margin-bottom: 16px;
-      padding: 0 8px;
-      @include min-width($desktopMD) {
-        padding: 0;
-        margin-bottom: 24px;
-      }
-      a {
-        display: block;
-        padding: 12px;
-        &:hover {
-          background-color: $neutral200;
-          border-radius: 8px;
+      > div:first-child {
+        padding: 16px 0;
+        @include min-width(1200.01px) {
+          padding: 0;
         }
       }
     }
@@ -53,22 +41,25 @@
   .menuCategory {
     @include flexbox();
     @include flex-direction(column);
-    padding: 0 0 8px;
-    gap: 16px 0;
-    @include min-width($desktopMD) {
+    @include min-width(1200.01px) {
       @include flex-direction(row);
       @include flex-wrap(nowrap);
-      gap: 0 32px;
+      padding: 16px 16px 0;
+    }
+    .listOptions_link {
+      button span{
+        font-weight: 500;
+      }
     }
     & > div {
-      padding: 0 8px;
-      @include min-width($desktopMD) {
+      padding: 0 20px;
+      @include min-width(1200.01px) {
         padding: 0;
       }
       &:first-child {
         border-top: 2px solid $neutral300;
-        padding: 28px 8px 0;
-        @include min-width($desktopMD) {
+        padding: 28px 20px 0;
+        @include min-width(1200.01px) {
           border: none;
           padding: 0;
         }
@@ -76,37 +67,20 @@
       &:nth-child(2) {
         border-top: 2px solid $neutral300;
         padding-top: 28px;
-        @include min-width($desktopMD) {
+        @include min-width(1200.01px) {
           border: none;
           padding: 0;
         }
       }
     }
-    .menuCategoryItem__title {
-      color: $neutral500;
-      padding: 0 12px;
-      margin-bottom: 20px;
-      cursor: auto;
-      @include min-width($desktopMD) {
-        margin-bottom: 12px;
-      }
-    }
   }
 }
 
-.menuSubOptionItem {
-  display: block;
-  padding: 12px;
-  &:hover {
-    background-color: $neutral200;
-    border-radius: 8px;
-  }
-}
 
 .subItemActive {
   transform: translateX(0);
   animation: open 0.2s ease-out;
-  @include min-width($desktopMD) {
+  @include min-width(1200.01px) {
     animation: none;
     transform: none;
   }
@@ -115,7 +89,7 @@
 .subItemInActive {
   transform: translateX(100%);
   animation: close 0.2s ease-out;
-  @include min-width($desktopMD) {
+  @include min-width(1200.01px) {
     display: none;
   }
 }
@@ -139,5 +113,11 @@
 
   100% {
     transform: translateX(100%);
+  }
+}
+
+.listLink {
+  span {
+    font-weight: 500;
   }
 }

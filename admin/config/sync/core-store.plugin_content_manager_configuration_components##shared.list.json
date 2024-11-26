@@ -103,6 +103,34 @@
           "searchable": true,
           "sortable": true
         }
+      },
+      "url": {
+        "edit": {
+          "label": "url",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "url",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "noPaddingText": {
+        "edit": {
+          "label": "noPaddingText",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "noPaddingText",
+          "searchable": true,
+          "sortable": true
+        }
       }
     },
     "layouts": {
@@ -117,15 +145,19 @@
           {
             "name": "idList",
             "size": 6
+          },
+          {
+            "name": "title",
+            "size": 6
           }
         ],
         [
           {
-            "name": "title",
+            "name": "extraInfo",
             "size": 6
           },
           {
-            "name": "extraInfo",
+            "name": "url",
             "size": 6
           }
         ],
@@ -140,6 +172,10 @@
           }
         ],
         [
+          {
+            "name": "noPaddingText",
+            "size": 4
+          },
           {
             "name": "leadingIcon",
             "size": 6

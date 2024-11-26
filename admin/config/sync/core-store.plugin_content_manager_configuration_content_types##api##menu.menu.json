@@ -1,0 +1,243 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::menu.menu",
+  "value": {
+    "uid": "api::menu.menu",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "idItem",
+      "defaultSortBy": "idItem",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "idItem": {
+        "edit": {
+          "label": "idItem",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "idItem",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "logo": {
+        "edit": {
+          "label": "logo",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "logo",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "menuDropdown": {
+        "edit": {
+          "label": "menuDropdown",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "menuDropdown",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "button": {
+        "edit": {
+          "label": "button",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "button",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "backButtonMobile": {
+        "edit": {
+          "label": "backButtonMobile",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "backButtonMobile",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "iconBackButtonMobile": {
+        "edit": {
+          "label": "iconBackButtonMobile",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "iconBackButtonMobile",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "iconMenuOptionsMobile": {
+        "edit": {
+          "label": "iconMenuOptionsMobile",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "iconMenuOptionsMobile",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "languageOptions": {
+        "edit": {
+          "label": "languageOptions",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "languageAbbreviationStrapi"
+        },
+        "list": {
+          "label": "languageOptions",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "languageButton": {
+        "edit": {
+          "label": "languageButton",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "languageButton",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "idItem",
+        "logo",
+        "menuDropdown"
+      ],
+      "edit": [
+        [
+          {
+            "name": "idItem",
+            "size": 6
+          },
+          {
+            "name": "logo",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "menuDropdown",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "button",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "languageOptions",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "languageButton",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "backButtonMobile",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "iconBackButtonMobile",
+            "size": 6
+          },
+          {
+            "name": "iconMenuOptionsMobile",
+            "size": 6
+          }
+        ]
+      ]
+    }
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

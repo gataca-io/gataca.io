@@ -4,7 +4,6 @@ import Highlight from "./sections/components/shared/Highlight/Highlight"
 import { PageModel } from "../../interfaces/interfaces"
 import PageSkeleton from "./components/introBlogSkeleton/PageSkeleton"
 import AllSectionsTemplate from "./sections/AllSectionsTemplate"
-import LocaleLink from "./components/localeLink/LocaleLink"
 
 const PageTemplate: React.FC = (props: any) => {
   const [page, setPage] = React.useState<PageModel | undefined>()
@@ -34,8 +33,11 @@ const PageTemplate: React.FC = (props: any) => {
   return (
     <Layout seoData={pageData?.seo}>
       <>
-        <LocaleLink pageContext={props?.pageContext} />
-        {pageData ? <AllSectionsTemplate {...pageData} /> : <PageSkeleton />}
+        {pageData ? (
+          <AllSectionsTemplate {...pageData} pageContext={props?.pageContext} />
+        ) : (
+          <PageSkeleton />
+        )}
         {pageData?.sections?.map(item => {
           const { __component, idItem, heading, color, align } = item
 

@@ -25,4 +25,7 @@
     @include align-items(flex-start);
     gap: 4px;
   }
+  .list__button span {
+    text-align: left;
+  }
 }
