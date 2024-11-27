@@ -98,7 +98,7 @@ spec:
               protocol: TCP
           volumeMounts:
       imagePullSecrets:
-        - name: regcred
+        - name: ghcr
 ---
 apiVersion: v1
 kind: Service

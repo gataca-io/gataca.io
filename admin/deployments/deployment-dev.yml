@@ -98,7 +98,7 @@ spec:
       #            - mountPath: /etc/config
       #              name: postgres-configuration-file
       imagePullSecrets:
-        - name: regcred
+        - name: ghcr
 #      volumes:
 #      - name: postgres-ssl-certs
 #        secret:
