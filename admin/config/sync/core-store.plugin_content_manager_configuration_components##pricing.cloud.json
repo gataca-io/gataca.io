@@ -135,6 +135,20 @@
           "searchable": false,
           "sortable": false
         }
+      },
+      "showSwitch": {
+        "edit": {
+          "label": "showSwitch",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "showSwitch",
+          "searchable": true,
+          "sortable": true
+        }
       }
     },
     "layouts": {
@@ -151,17 +165,23 @@
             "size": 6
           },
           {
+            "name": "identifier",
+            "size": 6
+          }
+        ],
+        [
+          {
             "name": "description",
             "size": 6
           }
         ],
         [
           {
-            "name": "identifier",
-            "size": 6
+            "name": "showSwitch",
+            "size": 4
           },
           {
-            "name": "tiers",
+            "name": "switchLabel",
             "size": 6
           }
         ],
@@ -177,7 +197,7 @@
         ],
         [
           {
-            "name": "switchLabel",
+            "name": "tiers",
             "size": 6
           },
           {
