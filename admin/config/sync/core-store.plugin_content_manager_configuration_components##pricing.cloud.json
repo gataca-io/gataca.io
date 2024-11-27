@@ -135,6 +135,35 @@
           "searchable": false,
           "sortable": false
         }
+      },
+      "Testcomponent1": {
+        "edit": {
+          "label": "Testcomponent1",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Testcomponent1",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "Testcomponentrel1": {
+        "edit": {
+          "label": "Testcomponentrel1",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "label"
+        },
+        "list": {
+          "label": "Testcomponentrel1",
+          "searchable": true,
+          "sortable": true
+        }
       }
     },
     "layouts": {
@@ -182,6 +211,16 @@
           },
           {
             "name": "tier_tables",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "Testcomponent1",
+            "size": 6
+          },
+          {
+            "name": "Testcomponentrel1",
             "size": 6
           }
         ]

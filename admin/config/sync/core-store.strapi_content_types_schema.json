@@ -8903,6 +8903,82 @@
       "actions": {},
       "lifecycles": {}
     },
+    "api::testsingle1.testsingle1": {
+      "kind": "singleType",
+      "collectionName": "testsingle1s",
+      "info": {
+        "singularName": "testsingle1",
+        "pluralName": "testsingle1s",
+        "displayName": "testsingle1"
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "Testboolean1": {
+          "type": "boolean"
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "testsingle1s",
+        "info": {
+          "singularName": "testsingle1",
+          "pluralName": "testsingle1s",
+          "displayName": "testsingle1"
+        },
+        "options": {
+          "draftAndPublish": true
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "Testboolean1": {
+            "type": "boolean"
+          }
+        },
+        "kind": "singleType"
+      },
+      "modelType": "contentType",
+      "modelName": "testsingle1",
+      "connection": "default",
+      "uid": "api::testsingle1.testsingle1",
+      "apiName": "testsingle1",
+      "globalId": "Testsingle1",
+      "actions": {},
+      "lifecycles": {}
+    },
     "api::tier.tier": {
       "kind": "collectionType",
       "collectionName": "tiers",

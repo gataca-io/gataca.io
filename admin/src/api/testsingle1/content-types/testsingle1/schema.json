@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "testsingle1s",
+  "info": {
+    "singularName": "testsingle1",
+    "pluralName": "testsingle1s",
+    "displayName": "testsingle1"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Testboolean1": {
+      "type": "boolean"
+    }
+  }
+}

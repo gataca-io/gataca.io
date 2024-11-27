@@ -37,6 +37,14 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::segmented-button.segmented-button"
+    },
+    "Testcomponent1": {
+      "type": "string"
+    },
+    "Testcomponentrel1": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::pricing-category.pricing-category"
     }
   }
 }
