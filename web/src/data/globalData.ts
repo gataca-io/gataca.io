@@ -108,7 +108,7 @@ export const headerMenuOptions: LinkModel[] = [
           {
             id: "finance",
             label: "Finance",
-            route: "/use-cases/finance",
+            route: "/use-cases/financial",
           },
           {
             id: "web3",
@@ -276,7 +276,7 @@ export const footerMenuOptions: LinkModel[] = [
       {
         id: "finance",
         label: "Finance",
-        route: "/use-cases/finance",
+        route: "/use-cases/financial",
       },
       {
         id: "web3",

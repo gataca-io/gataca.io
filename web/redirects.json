@@ -16,6 +16,10 @@
     "toPath": "/resources/documentation"
   },
   {
+    "fromPath": "/blog/",
+    "toPath": "/resources/blog/"
+  },
+  {
     "fromPath": "/company/press/",
     "toPath": "/company/about/"
   },
