@@ -2,15 +2,17 @@ import * as React from "react"
 import * as styles from "./buttonGroup.module.scss"
 import Button from "../button/Button"
 import BrandButton from "../brandButton/BrandButton"
+import ButtonIcon from "../buttonIcon/ButtonIcon"
 
 export type IButtonGroupProps = {
   buttonGroup?: any
   brandButtonGroup?: any
+  buttonIconGroup?: any
   className?: string
 }
 
 const ButtonGroup: React.FC<IButtonGroupProps> = props => {
-  const { buttonGroup, brandButtonGroup, className } = props
+  const { buttonGroup, brandButtonGroup, buttonIconGroup, className } = props
 
   return (
     <>
@@ -25,17 +27,7 @@ const ButtonGroup: React.FC<IButtonGroupProps> = props => {
           return (
             <Button
               key={"button__" + index}
-              idButton={button?.idButton}
-              label={button?.label}
-              icon={button?.icon}
-              style={button?.style}
-              color={button?.color}
-              size={button?.size}
-              noPaddingText={button?.noPaddingText}
-              disabled={button?.disabled}
-              link={button?.link}
-              url={button?.url}
-              outsideWeb={button?.outsideWeb}
+              {...button}
               action={() =>
                 window?.open(
                   button?.url,
@@ -49,14 +41,21 @@ const ButtonGroup: React.FC<IButtonGroupProps> = props => {
         {brandButtonGroup?.map((item: any, index: number) => {
           const { brandButton } = item.attributes
 
+          return <BrandButton key={"brandButton__" + index} {...brandButton} />
+        })}
+
+        {buttonIconGroup?.map((item: any, index: number) => {
+          const { buttonIcon } = item.attributes
           return (
-            <BrandButton
-              key={"brandButton__" + index}
-              icon={brandButton?.icon}
-              color={brandButton?.color}
-              size={brandButton?.size}
-              url={brandButton?.url}
-              outsideWeb={brandButton?.outsideWeb}
+            <ButtonIcon
+              key={"buttonIcon__" + index}
+              {...buttonIcon}
+              action={() =>
+                window?.open(
+                  buttonIcon?.url,
+                  buttonIcon?.outsideWeb ? "_blank" : "_self"
+                )
+              }
             />
           )
         })}

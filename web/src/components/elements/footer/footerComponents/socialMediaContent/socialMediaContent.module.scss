@@ -1,8 +1,0 @@
-@import "../../../../../styles/mixins";
-
-.socialMediaList {
-  @include flexbox();
-  li {
-    margin-right: 24px;
-  }
-}

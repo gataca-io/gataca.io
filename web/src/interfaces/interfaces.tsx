@@ -142,16 +142,7 @@ export interface InsideSectionsModel {
   tier_tables?: any
   contents?: any
   card_table_contents?: any
-  idButton?: string
-  label?: string
-  url?: string
-  link?: boolean
-  style?: string
   color?: string
-  size?: string
-  disabled?: boolean
-  outsideWeb?: boolean
-  noPaddingText?: boolean
   buttons?: any
   chip_options?: any
   selector_list?: any
@@ -194,6 +185,7 @@ export interface InsideSectionsModel {
   align?: string
   media_steps?: any
   showSwitch?: boolean
+  button_icons?: any
 }
 
 export interface LocalizationsModel {
@@ -502,5 +494,20 @@ export interface MenuModel {
     iconMenuOptionsMobile?: StrapiImageModel
     languageButton?: ButtonModel
     languageOptions?: any
+  }
+}
+
+export interface FooterModel {
+  attributes: {
+    idItem?: string
+    className?: string
+    logo?: any
+    certificationImage?: any
+    linksList?: any
+    languageButton?: ButtonModel
+    languageOptions?: any
+    termsButton?: any
+    socialMediaButton?: any
+    rightsReserved?: string
   }
 }

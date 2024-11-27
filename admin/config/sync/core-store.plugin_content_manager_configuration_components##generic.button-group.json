@@ -49,13 +49,29 @@
           "searchable": false,
           "sortable": false
         }
+      },
+      "button_icons": {
+        "edit": {
+          "label": "button_icons",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "idButton"
+        },
+        "list": {
+          "label": "button_icons",
+          "searchable": false,
+          "sortable": false
+        }
       }
     },
     "layouts": {
       "list": [
         "id",
         "buttons",
-        "brand_buttons"
+        "brand_buttons",
+        "button_icons"
       ],
       "edit": [
         [
@@ -65,6 +81,12 @@
           },
           {
             "name": "brand_buttons",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "button_icons",
             "size": 6
           }
         ]

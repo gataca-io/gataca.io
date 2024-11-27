@@ -683,6 +683,72 @@
     },
     {
       "action": "plugin::content-manager.explorer.create",
+      "subject": "api::button-icon.button-icon",
+      "properties": {
+        "fields": [
+          "idButton",
+          "buttonIcon.idButton",
+          "buttonIcon.icon",
+          "buttonIcon.url",
+          "buttonIcon.outsideWeb",
+          "buttonIcon.style",
+          "buttonIcon.color",
+          "buttonIcon.size",
+          "buttonIcon.disabled"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::button-icon.button-icon",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::button-icon.button-icon",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::button-icon.button-icon",
+      "properties": {
+        "fields": [
+          "idButton",
+          "buttonIcon.idButton",
+          "buttonIcon.icon",
+          "buttonIcon.url",
+          "buttonIcon.outsideWeb",
+          "buttonIcon.style",
+          "buttonIcon.color",
+          "buttonIcon.size",
+          "buttonIcon.disabled"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::button-icon.button-icon",
+      "properties": {
+        "fields": [
+          "idButton",
+          "buttonIcon.idButton",
+          "buttonIcon.icon",
+          "buttonIcon.url",
+          "buttonIcon.outsideWeb",
+          "buttonIcon.style",
+          "buttonIcon.color",
+          "buttonIcon.size",
+          "buttonIcon.disabled"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
       "subject": "api::card-table-content.card-table-content",
       "properties": {
         "fields": [
@@ -3452,6 +3518,117 @@
           "title",
           "firstParagraph",
           "secondParagraph"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::footer.footer",
+      "properties": {
+        "fields": [
+          "idItem",
+          "logo",
+          "certificationImage",
+          "linksList.list_options",
+          "languageOptions",
+          "languageButton.label",
+          "languageButton.url",
+          "languageButton.outsideWeb",
+          "languageButton.outlined",
+          "languageButton.idButton",
+          "languageButton.icon",
+          "languageButton.link",
+          "languageButton.style",
+          "languageButton.color",
+          "languageButton.size",
+          "languageButton.disabled",
+          "languageButton.noPaddingText",
+          "termsButton.buttons",
+          "termsButton.brand_buttons",
+          "termsButton.button_icons",
+          "socialMediaButton.buttons",
+          "socialMediaButton.brand_buttons",
+          "socialMediaButton.button_icons",
+          "rightsReserved"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::footer.footer",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::footer.footer",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::footer.footer",
+      "properties": {
+        "fields": [
+          "idItem",
+          "logo",
+          "certificationImage",
+          "linksList.list_options",
+          "languageOptions",
+          "languageButton.label",
+          "languageButton.url",
+          "languageButton.outsideWeb",
+          "languageButton.outlined",
+          "languageButton.idButton",
+          "languageButton.icon",
+          "languageButton.link",
+          "languageButton.style",
+          "languageButton.color",
+          "languageButton.size",
+          "languageButton.disabled",
+          "languageButton.noPaddingText",
+          "termsButton.buttons",
+          "termsButton.brand_buttons",
+          "termsButton.button_icons",
+          "socialMediaButton.buttons",
+          "socialMediaButton.brand_buttons",
+          "socialMediaButton.button_icons",
+          "rightsReserved"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::footer.footer",
+      "properties": {
+        "fields": [
+          "idItem",
+          "logo",
+          "certificationImage",
+          "linksList.list_options",
+          "languageOptions",
+          "languageButton.label",
+          "languageButton.url",
+          "languageButton.outsideWeb",
+          "languageButton.outlined",
+          "languageButton.idButton",
+          "languageButton.icon",
+          "languageButton.link",
+          "languageButton.style",
+          "languageButton.color",
+          "languageButton.size",
+          "languageButton.disabled",
+          "languageButton.noPaddingText",
+          "termsButton.buttons",
+          "termsButton.brand_buttons",
+          "termsButton.button_icons",
+          "socialMediaButton.buttons",
+          "socialMediaButton.brand_buttons",
+          "socialMediaButton.button_icons",
+          "rightsReserved"
         ]
       },
       "conditions": []
@@ -3877,6 +4054,7 @@
           "heading.button.noPaddingText",
           "heading.buttonGroup.buttons",
           "heading.buttonGroup.brand_buttons",
+          "heading.buttonGroup.button_icons",
           "heading.segmentedButton.buttons",
           "heading.table.content",
           "heading.titleSize",
@@ -3932,6 +4110,7 @@
           "heading.button.noPaddingText",
           "heading.buttonGroup.buttons",
           "heading.buttonGroup.brand_buttons",
+          "heading.buttonGroup.button_icons",
           "heading.segmentedButton.buttons",
           "heading.table.content",
           "heading.titleSize",
@@ -3975,6 +4154,7 @@
           "heading.button.noPaddingText",
           "heading.buttonGroup.buttons",
           "heading.buttonGroup.brand_buttons",
+          "heading.buttonGroup.button_icons",
           "heading.segmentedButton.buttons",
           "heading.table.content",
           "heading.titleSize",
@@ -4352,6 +4532,7 @@
           "headingStep.button.noPaddingText",
           "headingStep.buttonGroup.buttons",
           "headingStep.buttonGroup.brand_buttons",
+          "headingStep.buttonGroup.button_icons",
           "headingStep.segmentedButton.buttons",
           "headingStep.table.content",
           "headingStep.titleSize",
@@ -4409,6 +4590,7 @@
           "headingStep.button.noPaddingText",
           "headingStep.buttonGroup.buttons",
           "headingStep.buttonGroup.brand_buttons",
+          "headingStep.buttonGroup.button_icons",
           "headingStep.segmentedButton.buttons",
           "headingStep.table.content",
           "headingStep.titleSize",
@@ -4454,6 +4636,7 @@
           "headingStep.button.noPaddingText",
           "headingStep.buttonGroup.buttons",
           "headingStep.buttonGroup.brand_buttons",
+          "headingStep.buttonGroup.button_icons",
           "headingStep.segmentedButton.buttons",
           "headingStep.table.content",
           "headingStep.titleSize",
@@ -4474,8 +4657,10 @@
           "logo",
           "menuDropdown.buttons",
           "menuDropdown.brand_buttons",
+          "menuDropdown.button_icons",
           "button.buttons",
           "button.brand_buttons",
+          "button.button_icons",
           "backButtonMobile.label",
           "backButtonMobile.url",
           "backButtonMobile.outsideWeb",
@@ -4528,8 +4713,10 @@
           "logo",
           "menuDropdown.buttons",
           "menuDropdown.brand_buttons",
+          "menuDropdown.button_icons",
           "button.buttons",
           "button.brand_buttons",
+          "button.button_icons",
           "backButtonMobile.label",
           "backButtonMobile.url",
           "backButtonMobile.outsideWeb",
@@ -4570,8 +4757,10 @@
           "logo",
           "menuDropdown.buttons",
           "menuDropdown.brand_buttons",
+          "menuDropdown.button_icons",
           "button.buttons",
           "button.brand_buttons",
+          "button.button_icons",
           "backButtonMobile.label",
           "backButtonMobile.url",
           "backButtonMobile.outsideWeb",

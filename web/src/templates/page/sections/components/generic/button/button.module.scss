@@ -66,6 +66,7 @@
         }
         &.noPadding {
             padding: 0;
+            height: auto;
             &:hover {
                 background-color: transparent;
             }
@@ -130,6 +131,7 @@
             }
             &.noPadding {
                 padding: 0;
+                height: auto;
                 &:hover {
                     background-color: transparent;
                 }
@@ -205,6 +207,7 @@
             }
             &.noPadding {
                 padding: 0;
+                height: auto;
                 &:hover {
                     background-color: transparent;
                 }
@@ -276,6 +279,7 @@
             }
             &.noPadding {
                 padding: 0;
+                height: auto;
                 &:hover {
                     background-color: transparent;
                 }

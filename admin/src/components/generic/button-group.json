@@ -15,6 +15,11 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::brand-button.brand-button"
+    },
+    "button_icons": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::button-icon.button-icon"
     }
   }
 }
