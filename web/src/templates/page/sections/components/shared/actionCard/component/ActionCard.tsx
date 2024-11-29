@@ -21,6 +21,7 @@ const ActionCard: React.FC<ActionCardModel> = props => {
     selected,
     showItem,
     index,
+    subOptionClickedID,
   } = props
 
   return (

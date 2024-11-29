@@ -389,8 +389,9 @@ export interface ActionCardModel {
   button?: ButtonModel
   trailingIcon?: any
   selected: boolean
-  showItem: (x: number) => void
+  showItem: (x: any) => void
   index: number
+  subOptionClickedID?: string
 }
 
 export interface ListModel {

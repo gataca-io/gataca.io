@@ -27,7 +27,7 @@ import SubHeadingsLayout from "./components/shared/SubHeadingsLayout/SubHeadings
 import MediaStepsSlider from "./components/shared/mediaStepsSlider/MediaStepsSlider"
 
 const AllSectionsTemplate: React.FC<PageModel> = props => {
-  const { sections } = props
+  const { sections, location } = props
 
   return sections?.map(item => {
     const {
@@ -227,6 +227,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
             selectorIllustration={selectorIllustration}
             selectorAlign={selectorAlign}
             layout={layout}
+            subOptionClickedID={location?.substring(1)}
           />
         )}
         {__component === "shared.sub-headings-layout" && (

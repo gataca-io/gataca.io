@@ -17,6 +17,7 @@ export type ISectionProps = {
   selectorIllustration?: any
   selectorAlign?: string
   selector_list?: any
+  subOptionClickedID?: any
 }
 
 const DynamicSelector: React.FC<ISectionProps> = props => {
@@ -30,6 +31,7 @@ const DynamicSelector: React.FC<ISectionProps> = props => {
     selectorIllustration,
     selectorAlign,
     selector_list,
+    subOptionClickedID,
   } = props
 
   const layoutStyles: Record<string, string> = {
@@ -48,7 +50,37 @@ const DynamicSelector: React.FC<ISectionProps> = props => {
     selectorIllustration?.data?.attributes?.url?.length
 
   const [openItem, setOpenItem] = React.useState<number>(0)
-  const [showItem, setShowItem] = React.useState<number>()
+  const [showItem, setShowItem] = React.useState<string | number>(
+    (subOptionClickedID && subOptionClickedID) || undefined
+  )
+
+  let useCasesBullets: HTMLElement | null
+  let selectedUseCase: HTMLElement | null
+
+  const idItemComponent =
+    selector_list[openItem]?.action_card?.data?.attributes?.idItem
+
+  React.useEffect(() => {
+    useCasesBullets = document && document?.getElementById(idItemComponent)
+  }, [subOptionClickedID])
+
+  React.useEffect(() => {
+    selectedUseCase =
+      document && document?.getElementById(subOptionClickedID || 0)
+    subOptionClickedID &&
+      showItem &&
+      subOptionClickedID === showItem &&
+      selectedUseCase?.scrollIntoView({ behavior: "smooth" })
+  })
+
+  const scrollIntoView = (el: any) => {
+    useCasesBullets
+      ? useCasesBullets?.scroll({
+          behavior: "smooth",
+          left: el.offsetLeft,
+        })
+      : null
+  }
 
   const getmediaExt = () => {
     let divContent = null
@@ -219,6 +251,8 @@ const DynamicSelector: React.FC<ISectionProps> = props => {
                     showItem={showItem}
                     setShowItem={setShowItem}
                     list={selector_list[openItem]}
+                    subOptionClickedID={subOptionClickedID}
+                    scrollIntoView={scrollIntoView}
                   />
                 )}
               {selector_list && selector_list[openItem]?.media && (
