@@ -57,7 +57,6 @@ div.mobileMenu {
     @include flexbox();
     padding: 20px;
     border-top: 2px solid $neutral300;
-    margin-top: 16px;
   }
   .backLink {
     @include flexbox();
@@ -69,7 +68,7 @@ div.mobileMenu {
   }
 }
 .mobileMenu__localeLink {
-  padding: 8px 16px;
+  padding: 20px 16px;
   width: calc(100% - 32px);
 }
 .menuContentVisible {

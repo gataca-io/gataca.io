@@ -79,6 +79,7 @@ const ListComponent: React.FC<ListModel> = props => {
             color={color}
             noPaddingText={noPaddingText}
             url={url}
+            link={true}
             action={() => window?.open(url, "_self")}
             className={`${classNameButton} ${styles?.list__button}`}
           />
