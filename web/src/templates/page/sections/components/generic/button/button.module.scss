@@ -52,7 +52,6 @@
             background-color: $neutral200;
         }
         &:focus {
-            color: $primary700;
             background-color: $neutral200;
             box-shadow: none;
         }
@@ -194,12 +193,10 @@
             &:focus {
                 box-shadow: none;
                 background-color: $neutral200;
-                color: $primary700;
             }
             &:focus-visible {
                 outline: none;
                 background-color: $neutral200;
-                color: $primary700;
             }
             &.disabled {
                 color: $neutral500;
@@ -266,12 +263,10 @@
             &:focus {
                 box-shadow: none;
                 background-color: $neutral200;
-                color: $primary700;
             }
             &:focus-visible {
                 outline: none;
                 background-color: $neutral200;
-                color: $primary700;
             }
             &.disabled {
                 color: $neutral500;
