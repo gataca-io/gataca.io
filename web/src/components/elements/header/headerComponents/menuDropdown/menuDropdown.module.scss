@@ -2,27 +2,9 @@
 @import "../../../../../styles/mixins";
 
 .menuDropdownRoute {
-    display: none;
-    @include min-width(1145px) {
-      padding: 14px 20px;
-      position: relative;
-      cursor: pointer;
-      @include flexbox();
-      @include flex-wrap(wrap);
-      @include justify-content(center);
-      @include align-items(center);
-      > *:hover {
-        color: $primary700;
-        stroke: $primary700;
-      }
-    }
-}
-
-.dropdownLabel {
-    margin-right: 4px;
-    @include flexbox();
-    @include flex-wrap(nowrap);
-    @include justify-content(center);
-    @include align-items(center);
-
+  display: none;
+  @include min-width(1200px) {
+    position: relative;
+    display: block;
+  }
 }

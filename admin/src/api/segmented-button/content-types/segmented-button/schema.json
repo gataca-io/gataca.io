@@ -22,6 +22,11 @@
     },
     "title": {
       "type": "string"
+    },
+    "list_option": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::list-option.list-option"
     }
   }
 }

@@ -1,0 +1,77 @@
+{
+  "kind": "singleType",
+  "collectionName": "menus",
+  "info": {
+    "singularName": "menu",
+    "pluralName": "menus",
+    "displayName": "Menu",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "idItem": {
+      "type": "string"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "menuDropdown": {
+      "type": "component",
+      "repeatable": false,
+      "component": "generic.button-group"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "generic.button-group"
+    },
+    "backButtonMobile": {
+      "type": "component",
+      "repeatable": false,
+      "component": "generic.button"
+    },
+    "iconBackButtonMobile": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "iconMenuOptionsMobile": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "languageOptions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::language.language"
+    },
+    "languageButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "generic.button"
+    }
+  }
+}

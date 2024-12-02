@@ -1,0 +1,122 @@
+@import "../../../../../styles/colors";
+@import "../../../../../styles/mixins";
+
+.headerSkeleton__container {
+  padding: 26px 20px 0;
+  height: 48px;
+  position: relative;
+  @include flexbox();
+  @include justify-content(space-between);
+  @include min-width($mobileXL) {
+    padding: 26px 40px 0;
+  }
+  @include min-width(1200px) {
+    padding: 26px 32px 0;
+  }
+}
+
+.skeleton {
+    background: $skeletonBG;
+    overflow: hidden;
+    width: 200px;
+    height: 48px;
+    border-radius: 20px;
+    &:nth-child(2) {
+        display: none;
+        @include min-width(1200px) {
+            display: block;
+            width: calc(100% - 800px);
+            &::before {
+                width: calc(100% - 800px);
+            }
+        }
+    }
+    &:nth-child(3) {
+        width: 60px;
+        @include min-width(1200px) {
+            width: 400px;
+        }
+        &::before {
+            width: 60px;
+            @include min-width(1200px) {
+                width: 400px;
+            }
+        }
+    }
+    
+}
+
+.skeleton:before {
+    position: absolute;
+    display: block;
+    width: 200px;
+    height: 48px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0), $neutral100, rgba(255, 255, 255, 0));
+    content: "";
+    animation: skeleton-animation 2s infinite;
+}
+
+
+@keyframes skeleton {
+    0% {
+        opacity: 0.3;
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+
+    20% {
+        opacity: 1;
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+
+    28% {
+        transform: scaleX(1);
+        transform-origin: right;
+    }
+
+    51% {
+        transform: scaleX(0);
+        transform-origin: right;
+    }
+
+    58% {
+        transform: scaleX(0);
+        transform-origin: right;
+    }
+
+    82% {
+        transform: scaleX(1);
+        transform-origin: right;
+    }
+
+    83% {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+
+    96% {
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+
+    100% {
+        opacity: 0.3;
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+}
+
+@keyframes skeleton-animation {
+    0% {
+        right: 100%;
+    }
+
+    50% {
+        right: -128px;
+    }
+
+    100% {
+        right: 100%;
+    }
+}

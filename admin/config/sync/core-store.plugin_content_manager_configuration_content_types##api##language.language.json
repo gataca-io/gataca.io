@@ -1,0 +1,124 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::language.language",
+  "value": {
+    "uid": "api::language.language",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "languageAbbreviationStrapi",
+      "defaultSortBy": "languageAbbreviationStrapi",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "languageAbbreviationStrapi": {
+        "edit": {
+          "label": "languageAbbreviationStrapi",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "languageAbbreviationStrapi",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "label": {
+        "edit": {
+          "label": "label",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "label",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "idItem": {
+        "edit": {
+          "label": "idItem",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "idItem",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "edit": [
+        [
+          {
+            "name": "idItem",
+            "size": 6
+          },
+          {
+            "name": "languageAbbreviationStrapi",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "label",
+            "size": 6
+          }
+        ]
+      ],
+      "list": [
+        "id",
+        "languageAbbreviationStrapi",
+        "label",
+        "idItem"
+      ]
+    }
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

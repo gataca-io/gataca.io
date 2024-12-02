@@ -4,7 +4,7 @@
 div.mobileMenu {
   cursor: pointer;
   max-height: 40px;
-  @include min-width(1145px) {
+  @include min-width(1200px) {
     display: none;
   }
   &.opened {
@@ -14,7 +14,7 @@ div.mobileMenu {
     width: calc(100% - 40px);
     max-width: 100%;
     height: auto;
-    min-height: 724px;
+    min-height: 804px;
     background-color: $neutral100;
     box-shadow: 0px 0px 12px $boxShadowLigh;
     border-radius: 6px;
@@ -23,11 +23,12 @@ div.mobileMenu {
     overflow-x: hidden;
     overflow-y: hidden;
     transition: all 0.2s ease-out;
+    cursor: auto;
     @include min-width(598px) {
       width: 100%;
       max-width: 335px;
     }
-    @include min-width(1145px) {
+    @include min-width(1200px) {
       display: none;
     }
   }
@@ -51,7 +52,6 @@ div.mobileMenu {
     height: auto;
     left: 0;
     top: 77px;
-    padding-top: 16px;
   }
   .buttonsContainer {
     @include flexbox();
@@ -63,21 +63,20 @@ div.mobileMenu {
     @include flexbox();
     @include align-items(center);
     margin-left: 9px;
-    .backLink__text {
+    button {
       margin-left: 13px;
-
     }
   }
 }
-
+.mobileMenu__localeLink {
+  padding: 8px 16px;
+  width: calc(100% - 32px);
+}
 .menuContentVisible {
    animation: openMenu 0.5s ease-out;
 }
 
 .logo {
-  position: absolute;
-  top: 16px;
-  left: 16px;
   opacity: 1;
   transform: translateX(0);
   & > a > img {
@@ -99,9 +98,6 @@ div.mobileMenu {
 
 .backLink {
   height: 40px;
-  position: absolute;
-  top: 16px;
-  left: 16px;
   opacity: 0;
   transform: translateX(100%);
 }
@@ -171,21 +167,6 @@ div.mobileMenu {
   100% {
     opacity: 10;
     transform: translateX(-100%);
-  }
-}
-
-.demoLink__mobile {
-  padding: 16px 0;
-  padding-left: 16px;
-  cursor: auto;
-  > a {
-    padding: 16px;
-    padding-left: 0;
-    cursor: pointer;
-    *:hover {
-      color: $primary700;
-      stroke: $primary700;
-    }
   }
 }
 

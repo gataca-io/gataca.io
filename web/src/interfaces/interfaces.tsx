@@ -34,6 +34,7 @@ export interface ButtonModel {
   disabled?: boolean
   outsideWeb?: boolean
   noPaddingText?: boolean
+  onMouseEnterAction?: (x?: any) => void
 }
 
 export interface SegmentedButtonModel {
@@ -126,6 +127,7 @@ export interface PageModel extends PagePreviewModel {
   location: any
   locale?: string
   localizations?: LocalizationsModel
+  pageContext?: string
 }
 
 export interface InsideSectionsModel {
@@ -152,7 +154,6 @@ export interface InsideSectionsModel {
   noPaddingText?: boolean
   buttons?: any
   chip_options?: any
-  list_options?: any
   selector_list?: any
   brand_buttons?: any
   heading?: any
@@ -399,6 +400,9 @@ export interface ListModel {
   title?: string
   extraInfo?: string
   color?: string
+  url?: string
+  classNameButton?: string
+  noPaddingText?: boolean
 }
 
 export interface SubHeadingModel {
@@ -483,4 +487,19 @@ export interface TestimonialCardModel {
   name?: string
   workTitle?: string
   color?: string
+}
+
+export interface MenuModel {
+  attributes: {
+    idItem?: string
+    className?: string
+    logo?: any
+    menuDropdown?: any
+    button?: any
+    backButtonMobile?: ButtonModel
+    iconBackButtonMobile?: StrapiImageModel
+    iconMenuOptionsMobile?: StrapiImageModel
+    languageButton?: ButtonModel
+    languageOptions?: any
+  }
 }

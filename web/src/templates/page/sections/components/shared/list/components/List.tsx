@@ -3,9 +3,20 @@ import cx from "classnames"
 import * as styles from "./list.module.scss"
 import { ListModel } from "../../../../../../../interfaces/interfaces"
 import StrapiImage from "../../../../../../../components/atoms/images/StrapiImage"
+import Button from "../../../generic/button/Button"
 
 const ListComponent: React.FC<ListModel> = props => {
-  const { idList, size, title, leadingIcon, extraInfo, color } = props
+  const {
+    idList,
+    size,
+    title,
+    leadingIcon,
+    extraInfo,
+    color,
+    url,
+    classNameButton,
+    noPaddingText,
+  } = props
 
   const iconSizeStyles: Record<string, string> = {
     small: styles?.smallIcon,
@@ -33,6 +44,13 @@ const ListComponent: React.FC<ListModel> = props => {
     grey: "neutral700",
   }
 
+  const buttonSizeStyles: Record<string, string> = {
+    small: "buttonSM",
+    medium: "buttonMD",
+    large: "buttonMD",
+    xlarge: "buttonMD",
+  }
+
   return (
     <div id={idList} className={`${styles?.list__container} `}>
       {leadingIcon && (
@@ -52,7 +70,19 @@ const ListComponent: React.FC<ListModel> = props => {
             {title}
           </h5>
         )}
-        {extraInfo?.length && (
+
+        {url?.length ? (
+          <Button
+            label={extraInfo}
+            style={"text"}
+            color={cx(color ? colorStyles[color] : "neutral1000")}
+            size={cx(size ? buttonSizeStyles[size] : "buttonMD")}
+            noPaddingText={noPaddingText}
+            url={url}
+            action={() => window?.open(url, "_self")}
+            className={`${classNameButton} ${styles?.list__button}`}
+          />
+        ) : extraInfo?.length ? (
           <p
             className={`${cx(
               size ? extraInfoSizeStyles[size] : "bodyRegularXL"
@@ -60,7 +90,7 @@ const ListComponent: React.FC<ListModel> = props => {
           >
             {extraInfo}
           </p>
-        )}
+        ) : null}
       </div>
     </div>
   )

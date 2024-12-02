@@ -1,32 +1,47 @@
 import * as React from "react"
 import * as styles from "./menuDropdownMobile.module.scss"
-import cx from "classnames"
-import { LinkModel } from "../../../../../interfaces/interfaces"
 import MenuSubOption from "../menuSubOption/MenuSubOption"
-import CrevronRightMenuSVG from "../../../../../images/icons/ChevronRightMenuSVG"
+import Button from "../../../../../templates/page/sections/components/generic/button/Button"
 
 export type IMenuDropdownProps = {
-  item: LinkModel
-  open: boolean
+  button?: any
   setOptionOpened: (x: string) => void
+  menuSubOption?: any
+  subMenuOpenedID?: any
+  open?: boolean
+  menuData?: any
+  openSubOption?: any
+  list_option?: any
 }
 
 const MenuDropdownMobile: React.FC<IMenuDropdownProps> = props => {
-  const { item, open, setOptionOpened } = props
+  const {
+    button,
+    setOptionOpened,
+    openSubOption,
+    list_option,
+    open,
+    menuData,
+  } = props
 
-  return item?.route ? null : (
-    <div
-      className={styles.menuDropdownRoute}
-      onClick={() => setOptionOpened(!open ? item?.id : "")}
-    >
-      <div className={`${styles.dropdownLabel}`}>
-        <span className={cx("buttonSM")}>{item?.label}</span>
-        <span>
-          <CrevronRightMenuSVG />
-        </span>
-      </div>
+  const iconButton = menuData?.iconMenuOptionsMobile?.data?.attributes?.url
+  return (
+    <div className={styles.menuDropdownRoute}>
+      <Button
+        {...button}
+        className={`${styles?.dropdownLabel__button}`}
+        icon={button?.url?.length ? "" : iconButton ? iconButton : button?.icon}
+        action={() =>
+          button?.url?.length
+            ? window?.open(button?.url, button?.outsideWeb ? "_blank" : "_self")
+            : setOptionOpened(!open ? button?.idButton : "")
+        }
+      />
 
-      <MenuSubOption item={item} open={open} />
+      <MenuSubOption
+        item={list_option?.data?.attributes}
+        open={openSubOption}
+      />
     </div>
   )
 }

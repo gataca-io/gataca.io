@@ -6163,6 +6163,96 @@
       "actions": {},
       "lifecycles": {}
     },
+    "api::language.language": {
+      "kind": "collectionType",
+      "collectionName": "languages",
+      "info": {
+        "singularName": "language",
+        "pluralName": "languages",
+        "displayName": "Language",
+        "description": ""
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "languageAbbreviationStrapi": {
+          "type": "string"
+        },
+        "label": {
+          "type": "string"
+        },
+        "idItem": {
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "languages",
+        "info": {
+          "singularName": "language",
+          "pluralName": "languages",
+          "displayName": "Language",
+          "description": ""
+        },
+        "options": {
+          "draftAndPublish": true
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "languageAbbreviationStrapi": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "idItem": {
+            "type": "string"
+          }
+        },
+        "kind": "collectionType"
+      },
+      "modelType": "contentType",
+      "modelName": "language",
+      "connection": "default",
+      "uid": "api::language.language",
+      "apiName": "language",
+      "globalId": "Language",
+      "actions": {},
+      "lifecycles": {}
+    },
     "api::list-option.list-option": {
       "kind": "collectionType",
       "collectionName": "list_options",
@@ -6211,6 +6301,11 @@
         },
         "title": {
           "type": "string"
+        },
+        "list_options": {
+          "type": "relation",
+          "relation": "oneToMany",
+          "target": "api::list-option.list-option"
         },
         "createdAt": {
           "type": "datetime"
@@ -6292,6 +6387,11 @@
           },
           "title": {
             "type": "string"
+          },
+          "list_options": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::list-option.list-option"
           }
         },
         "kind": "collectionType"
@@ -6619,6 +6719,200 @@
       "actions": {},
       "lifecycles": {}
     },
+    "api::menu.menu": {
+      "kind": "singleType",
+      "collectionName": "menus",
+      "info": {
+        "singularName": "menu",
+        "pluralName": "menus",
+        "displayName": "Menu",
+        "description": ""
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "idItem": {
+          "type": "string"
+        },
+        "logo": {
+          "type": "media",
+          "multiple": false,
+          "required": false,
+          "allowedTypes": [
+            "images",
+            "files",
+            "videos",
+            "audios"
+          ]
+        },
+        "menuDropdown": {
+          "type": "component",
+          "repeatable": false,
+          "component": "generic.button-group"
+        },
+        "button": {
+          "type": "component",
+          "repeatable": false,
+          "component": "generic.button-group"
+        },
+        "backButtonMobile": {
+          "type": "component",
+          "repeatable": false,
+          "component": "generic.button"
+        },
+        "iconBackButtonMobile": {
+          "type": "media",
+          "multiple": false,
+          "required": false,
+          "allowedTypes": [
+            "images",
+            "files",
+            "videos",
+            "audios"
+          ]
+        },
+        "iconMenuOptionsMobile": {
+          "type": "media",
+          "multiple": false,
+          "required": false,
+          "allowedTypes": [
+            "images",
+            "files",
+            "videos",
+            "audios"
+          ]
+        },
+        "languageOptions": {
+          "type": "relation",
+          "relation": "oneToMany",
+          "target": "api::language.language"
+        },
+        "languageButton": {
+          "type": "component",
+          "repeatable": false,
+          "component": "generic.button"
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "menus",
+        "info": {
+          "singularName": "menu",
+          "pluralName": "menus",
+          "displayName": "Menu",
+          "description": ""
+        },
+        "options": {
+          "draftAndPublish": true
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "idItem": {
+            "type": "string"
+          },
+          "logo": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": [
+              "images",
+              "files",
+              "videos",
+              "audios"
+            ]
+          },
+          "menuDropdown": {
+            "type": "component",
+            "repeatable": false,
+            "component": "generic.button-group"
+          },
+          "button": {
+            "type": "component",
+            "repeatable": false,
+            "component": "generic.button-group"
+          },
+          "backButtonMobile": {
+            "type": "component",
+            "repeatable": false,
+            "component": "generic.button"
+          },
+          "iconBackButtonMobile": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": [
+              "images",
+              "files",
+              "videos",
+              "audios"
+            ]
+          },
+          "iconMenuOptionsMobile": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": [
+              "images",
+              "files",
+              "videos",
+              "audios"
+            ]
+          },
+          "languageOptions": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::language.language"
+          },
+          "languageButton": {
+            "type": "component",
+            "repeatable": false,
+            "component": "generic.button"
+          }
+        },
+        "kind": "singleType"
+      },
+      "modelType": "contentType",
+      "modelName": "menu",
+      "connection": "default",
+      "uid": "api::menu.menu",
+      "apiName": "menu",
+      "globalId": "Menu",
+      "actions": {},
+      "lifecycles": {}
+    },
     "api::operation.operation": {
       "kind": "collectionType",
       "collectionName": "operations",
@@ -6757,7 +7051,6 @@
             "generic.button-group",
             "generic.chip-group",
             "shared.action-card",
-            "shared.list-group",
             "shared.header-container",
             "shared.carrousel-logos",
             "shared.highlight",
@@ -6902,7 +7195,6 @@
               "generic.button-group",
               "generic.chip-group",
               "shared.action-card",
-              "shared.list-group",
               "shared.header-container",
               "shared.carrousel-logos",
               "shared.highlight",
@@ -8282,6 +8574,11 @@
         "title": {
           "type": "string"
         },
+        "list_option": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "api::list-option.list-option"
+        },
         "createdAt": {
           "type": "datetime"
         },
@@ -8338,6 +8635,11 @@
           },
           "title": {
             "type": "string"
+          },
+          "list_option": {
+            "type": "relation",
+            "relation": "oneToOne",
+            "target": "api::list-option.list-option"
           }
         },
         "kind": "collectionType"

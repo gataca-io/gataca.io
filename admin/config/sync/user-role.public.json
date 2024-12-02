@@ -202,6 +202,12 @@
       "action": "api::industry.industry.findOne"
     },
     {
+      "action": "api::language.language.find"
+    },
+    {
+      "action": "api::language.language.findOne"
+    },
+    {
       "action": "api::list-option.list-option.find"
     },
     {
@@ -224,6 +230,9 @@
     },
     {
       "action": "api::media-step.media-step.findOne"
+    },
+    {
+      "action": "api::menu.menu.find"
     },
     {
       "action": "api::operation.operation.find"

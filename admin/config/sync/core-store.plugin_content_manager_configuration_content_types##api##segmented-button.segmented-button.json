@@ -62,6 +62,21 @@
           "sortable": true
         }
       },
+      "list_option": {
+        "edit": {
+          "label": "list_option",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "idListOption"
+        },
+        "list": {
+          "label": "list_option",
+          "searchable": true,
+          "sortable": true
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -107,6 +122,12 @@
         ],
         [
           {
+            "name": "list_option",
+            "size": 6
+          }
+        ],
+        [
+          {
             "name": "content",
             "size": 12
           }
@@ -115,7 +136,8 @@
       "list": [
         "id",
         "title",
-        "button"
+        "button",
+        "list_option"
       ]
     }
   },

@@ -1,19 +1,26 @@
 import { Link } from "gatsby"
 import * as React from "react"
-import cx from "classnames"
 import * as styles from "./menuOpenMobile.module.scss"
 import { images } from "../../../../../../images/images"
-import { headerMenuOptions } from "../../../../../../data/globalData"
 import MenuDropdownMobile from "../../menuDropdownMobile/MenuDropdownMobile"
 import ButtonsHeader from "../ButtonsHeader"
+import StrapiImage from "../../../../../atoms/images/StrapiImage"
+import Button from "../../../../../../templates/page/sections/components/generic/button/Button"
+import { ButtonModel } from "../../../../../../interfaces/interfaces"
+import LocaleLink from "../../../../../../templates/page/components/localeLink/LocaleLink"
 
 export type IMenuDropdownProps = {
   open: boolean
   setMenuOpened: (x: boolean) => void
+  menuData?: any
+  button?: any
+  pageContext?: string
+  buttonGroup?: ButtonModel
 }
 
 const MenuOpenMobile: React.FC<IMenuDropdownProps> = props => {
-  const { open, setMenuOpened } = props
+  const { open, setMenuOpened, menuData, button, pageContext, buttonGroup } =
+    props
   const [subMenuOpenedID, setSubMenuOpened] = React.useState("")
   const refMenuMobile = React.useRef<HTMLDivElement>(null)
   const refMenuMobileHeader = React.useRef<HTMLDivElement>(null)
@@ -66,28 +73,38 @@ const MenuOpenMobile: React.FC<IMenuDropdownProps> = props => {
                 } ${open ? styles.menuContentVisible : ""}`}
               >
                 <Link to="/">
-                  <img src={images.gatacIconAndText} />
+                  {menuData?.logo?.data?.attributes?.url && (
+                    <StrapiImage
+                      image={menuData?.logo ? menuData?.logo : null}
+                    />
+                  )}
                 </Link>
               </div>
             )}
             {subMenuOpenedID && (
-              <div
-                onClick={() => setSubMenuOpened("")}
-                className={`${styles.backLink} ${
-                  subMenuOpenedID ? styles.visibleBackLink : ""
-                } ${open ? styles.menuContentVisible : ""}`}
-              >
-                <span>
-                  <img src={images.chevronLeftIcon}></img>
-                </span>
-                <span
-                  className={`${styles?.backLink__text} ${cx(
-                    "buttonRgularMD"
-                  )}`}
+              <>
+                <div
+                  className={`${styles.backLink} ${
+                    subMenuOpenedID ? styles.visibleBackLink : ""
+                  } ${open ? styles.menuContentVisible : ""}`}
                 >
-                  Back
-                </span>
-              </div>
+                  {menuData?.iconBackButtonMobile?.data?.attributes?.url && (
+                    <span>
+                      <StrapiImage
+                        image={
+                          menuData?.iconBackButtonMobile
+                            ? menuData?.iconBackButtonMobile
+                            : null
+                        }
+                      />
+                    </span>
+                  )}
+                  <Button
+                    {...menuData?.backButtonMobile}
+                    action={() => setSubMenuOpened("")}
+                  />
+                </div>
+              </>
             )}
           </>
         )}
@@ -103,27 +120,41 @@ const MenuOpenMobile: React.FC<IMenuDropdownProps> = props => {
       {open && (
         <div ref={refMenuMobileOptions}>
           <div className={styles.mobileMenu__Content}>
-            {headerMenuOptions?.map((item, index) => {
+            {button?.map((item: any, index: number) => {
+              const { button, list_option } = item.attributes
+
+              const open = subMenuOpenedID === button?.idButton
+              const openSubOption =
+                subMenuOpenedID === list_option?.data?.attributes?.idListOption
+
               return (
                 <MenuDropdownMobile
-                  key={"menuDropdown__" + index}
-                  open={subMenuOpenedID === item?.id}
-                  item={item}
+                  key={"menuDropdownMobile__" + index}
+                  button={button}
+                  open={open}
                   setOptionOpened={setSubMenuOpened}
+                  openSubOption={openSubOption}
+                  subMenuOpenedID={subMenuOpenedID}
+                  menuData={menuData}
+                  list_option={list_option}
                 />
               )
             })}
-            <div className={styles.demoLink__mobile}>
-              <a
-                className={cx("buttonSM")}
-                href={`https://gataca.io/demo`}
-                target="_blank"
-              >
-                Demo
-              </a>
-            </div>
+
+            <LocaleLink
+              languageOptionES={
+                menuData?.languageOptions?.data[0]?.attributes?.label
+              }
+              languageOptionEN={
+                menuData?.languageOptions?.data[1]?.attributes?.label
+              }
+              languageButton={menuData?.languageButton}
+              className={styles?.mobileMenu__localeLink}
+              pageContext={pageContext}
+            />
+
             <div className={styles.buttonsContainer}>
-              <ButtonsHeader />
+              <ButtonsHeader buttonGroup={buttonGroup} />
             </div>
           </div>
         </div>

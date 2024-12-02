@@ -59,20 +59,7 @@ const ListGroup: React.FC<IListGroupProps> = props => {
               className={styles?.listOptions}
             >
               {list?.map((el: any, index: number) => {
-                const { idList, size, title, leadingIcon, extraInfo, color } =
-                  el
-
-                return (
-                  <List
-                    idList={idList}
-                    key={"list__" + index}
-                    size={size}
-                    title={title}
-                    leadingIcon={leadingIcon}
-                    extraInfo={extraInfo}
-                    color={color}
-                  />
-                )
+                return <List key={"list__" + index} {...el} />
               })}
             </div>
           </div>
