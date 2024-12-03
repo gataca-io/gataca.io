@@ -3075,6 +3075,94 @@
       "actions": {},
       "lifecycles": {}
     },
+    "api::button-icon.button-icon": {
+      "kind": "collectionType",
+      "collectionName": "button_icons",
+      "info": {
+        "singularName": "button-icon",
+        "pluralName": "button-icons",
+        "displayName": "Button Icon",
+        "description": ""
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "idButton": {
+          "type": "string"
+        },
+        "buttonIcon": {
+          "type": "component",
+          "repeatable": false,
+          "component": "generic.button-icon"
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "button_icons",
+        "info": {
+          "singularName": "button-icon",
+          "pluralName": "button-icons",
+          "displayName": "Button Icon",
+          "description": ""
+        },
+        "options": {
+          "draftAndPublish": true
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "idButton": {
+            "type": "string"
+          },
+          "buttonIcon": {
+            "type": "component",
+            "repeatable": false,
+            "component": "generic.button-icon"
+          }
+        },
+        "kind": "collectionType"
+      },
+      "modelType": "contentType",
+      "modelName": "button-icon",
+      "connection": "default",
+      "uid": "api::button-icon.button-icon",
+      "apiName": "button-icon",
+      "globalId": "ButtonIcon",
+      "actions": {},
+      "lifecycles": {}
+    },
     "api::card.card": {
       "kind": "collectionType",
       "collectionName": "cards",
@@ -5363,6 +5451,178 @@
       "actions": {},
       "lifecycles": {}
     },
+    "api::footer.footer": {
+      "kind": "singleType",
+      "collectionName": "footers",
+      "info": {
+        "singularName": "footer",
+        "pluralName": "footers",
+        "displayName": "Footer"
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "idItem": {
+          "type": "string"
+        },
+        "logo": {
+          "allowedTypes": [
+            "images",
+            "files",
+            "videos",
+            "audios"
+          ],
+          "type": "media",
+          "multiple": false
+        },
+        "certificationImage": {
+          "allowedTypes": [
+            "images",
+            "files",
+            "videos",
+            "audios"
+          ],
+          "type": "media",
+          "multiple": false
+        },
+        "linksList": {
+          "type": "component",
+          "repeatable": false,
+          "component": "shared.list-group"
+        },
+        "languageOptions": {
+          "type": "relation",
+          "relation": "oneToMany",
+          "target": "api::language.language"
+        },
+        "languageButton": {
+          "type": "component",
+          "repeatable": false,
+          "component": "generic.button"
+        },
+        "termsButton": {
+          "type": "component",
+          "repeatable": false,
+          "component": "generic.button-group"
+        },
+        "socialMediaButton": {
+          "type": "component",
+          "repeatable": false,
+          "component": "generic.button-group"
+        },
+        "rightsReserved": {
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "footers",
+        "info": {
+          "singularName": "footer",
+          "pluralName": "footers",
+          "displayName": "Footer"
+        },
+        "options": {
+          "draftAndPublish": true
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "idItem": {
+            "type": "string"
+          },
+          "logo": {
+            "allowedTypes": [
+              "images",
+              "files",
+              "videos",
+              "audios"
+            ],
+            "type": "media",
+            "multiple": false
+          },
+          "certificationImage": {
+            "allowedTypes": [
+              "images",
+              "files",
+              "videos",
+              "audios"
+            ],
+            "type": "media",
+            "multiple": false
+          },
+          "linksList": {
+            "type": "component",
+            "repeatable": false,
+            "component": "shared.list-group"
+          },
+          "languageOptions": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::language.language"
+          },
+          "languageButton": {
+            "type": "component",
+            "repeatable": false,
+            "component": "generic.button"
+          },
+          "termsButton": {
+            "type": "component",
+            "repeatable": false,
+            "component": "generic.button-group"
+          },
+          "socialMediaButton": {
+            "type": "component",
+            "repeatable": false,
+            "component": "generic.button-group"
+          },
+          "rightsReserved": {
+            "type": "string"
+          }
+        },
+        "kind": "singleType"
+      },
+      "modelType": "contentType",
+      "modelName": "footer",
+      "connection": "default",
+      "uid": "api::footer.footer",
+      "apiName": "footer",
+      "globalId": "Footer",
+      "actions": {},
+      "lifecycles": {}
+    },
     "api::gataca-studio.gataca-studio": {
       "kind": "singleType",
       "collectionName": "gataca_studios",
@@ -7038,7 +7298,6 @@
         "sections": {
           "type": "dynamiczone",
           "components": [
-            "generic.button",
             "generic.section",
             "generic.header",
             "studio.feature-section",
@@ -7046,7 +7305,6 @@
             "pricing.cloud",
             "generic.content-heading-container",
             "shared.content-table",
-            "generic.button-icon",
             "generic.button-options",
             "generic.button-group",
             "generic.chip-group",
@@ -7182,7 +7440,6 @@
           "sections": {
             "type": "dynamiczone",
             "components": [
-              "generic.button",
               "generic.section",
               "generic.header",
               "studio.feature-section",
@@ -7190,7 +7447,6 @@
               "pricing.cloud",
               "generic.content-heading-container",
               "shared.content-table",
-              "generic.button-icon",
               "generic.button-options",
               "generic.button-group",
               "generic.chip-group",

@@ -2,20 +2,56 @@ import { Link } from "gatsby"
 import * as React from "react"
 import * as styles from "./footer.module.scss"
 import cx from "classnames"
-import { images } from "../../../images/images"
-import {
-  companyFooterMenu,
-  resourcesFooterMenu,
-  productsFooterMenu,
-  rightsReservedGataca,
-  sectorsFooterMenu,
-  subFooterMenu,
-  useCasesFooterMenu,
-} from "../../../data/globalData"
-import SectionContent from "./footerComponents/sectionContent/SectionContent"
 import SocialMediaContent from "./footerComponents/socialMediaContent/SocialMediaContent"
+import { FooterModel, PageModel } from "../../../interfaces/interfaces"
+import StrapiImage from "../../atoms/images/StrapiImage"
+import ButtonGroup from "../../../templates/page/sections/components/generic/buttonGroup/ButtonGroup"
+import LocaleLink from "../../../templates/page/components/localeLink/LocaleLink"
+import ListGroup from "../../../templates/page/sections/components/shared/list/listGroup/ListGroup"
 
-const Footer: React.FC = () => {
+const Footer: React.FC = (props: any) => {
+  const [footer, setFooter] = React.useState<FooterModel | undefined>()
+  const footerData = footer && footer?.attributes
+
+  const [page, setPage] = React.useState<PageModel | undefined>()
+
+  React.useEffect(() => {
+    getFooterData()
+  }, [])
+
+  React.useEffect(() => {
+    getPageData()
+  }, [
+    props?.pageContext?.slugURL,
+    props?.pageContext?.subPath,
+    props?.pageContext?.locale,
+  ])
+
+  console.log("footerData", footerData)
+
+  const getFooterData = async () => {
+    await fetch(`${process.env.STRAPI_API_URL}/api/footer?populate=deep,6`)
+      .then(response => response.json())
+      .then(jsonResponse => {
+        jsonResponse &&
+          jsonResponse?.data &&
+          jsonResponse?.data &&
+          setFooter(jsonResponse?.data)
+      })
+  }
+
+  const getPageData = async () => {
+    await fetch(
+      `${process.env.STRAPI_API_URL}/api/pages?locale=${props?.pageContext?.locale}&filters[slugURL]=${props?.pageContext?.slugURL}&populate=deep,8`
+    )
+      .then(response => response.json())
+      .then(jsonResponse => {
+        jsonResponse &&
+          jsonResponse?.data &&
+          jsonResponse?.data[0] &&
+          setPage(jsonResponse?.data[0])
+      })
+  }
   return (
     <footer className={styles?.footer}>
       <section
@@ -24,74 +60,71 @@ const Footer: React.FC = () => {
         <div
           className={`${styles?.iconsContainer} ${styles?.mainSectionFooter__column}`}
         >
-          <div className={styles?.logo}>
-            <Link to="/">
-              <img
-                src={images.gatacIconAndText}
-                id="footer__gatacaLogo"
-                key={"footer__" + "gatacaLogo"}
-                alt="Gataca Logo"
+          <div className={styles?.iconsContainer__items}>
+            <div className={styles?.logo}>
+              <Link to="/">
+                {footerData?.logo?.data?.attributes?.url && (
+                  <StrapiImage
+                    image={footerData?.logo ? footerData?.logo : null}
+                  />
+                )}
+              </Link>
+            </div>
+            <div className={`${styles?.showDesktop}`}>
+              <SocialMediaContent
+                socialMediaButtonIcon={
+                  footerData?.socialMediaButton?.button_icons?.data
+                }
               />
-            </Link>
+            </div>
           </div>
-          <div
-            className={`${styles?.socialMediaContainer} ${styles?.showDesktop}`}
-          >
-            <SocialMediaContent />
-          </div>
+
+          {props?.children[0]?.props?.children[0]?.props?.pageContext && (
+            <div className={`${styles?.showDesktop}`}>
+              <LocaleLink
+                languageOptionES={
+                  footerData?.languageOptions?.data[0]?.attributes?.label
+                }
+                languageOptionEN={
+                  footerData?.languageOptions?.data[1]?.attributes?.label
+                }
+                languageButton={footerData?.languageButton}
+                pageContext={
+                  props?.children[0]?.props?.children[0]?.props?.pageContext
+                }
+              />
+            </div>
+          )}
+        </div>
+        <div className={`${styles?.footerSections}`}>
+          {footerData?.linksList?.list_options?.data?.length > 0 && (
+            <ListGroup
+              listOptions={footerData?.linksList?.list_options?.data}
+            />
+          )}
         </div>
         <div
-          className={`${styles?.footerSections} ${
-            styles?.mainSectionFooter__column
-          } ${styles?.showDesktop} ${cx("marginTop10")}`}
+          className={`${styles?.socialMediaLanguage__container} ${styles?.showMobile}`}
         >
-          <SectionContent navigationObject={productsFooterMenu} />
-        </div>
-        <div
-          className={`${styles?.footerSections} ${
-            styles?.mainSectionFooter__column
-          } ${styles?.showMobile} ${cx("marginTop10")}`}
-        >
-          <SectionContent navigationObject={productsFooterMenu} />
-          <SectionContent navigationObject={companyFooterMenu} />
-        </div>
-        <div
-          className={`${styles?.footerSections} ${
-            styles?.mainSectionFooter__column
-          } ${cx("marginTop10")}`}
-        >
-          <SectionContent navigationObject={useCasesFooterMenu} />
-          <SectionContent
-            navigationObject={sectorsFooterMenu}
-            className={styles?.showDesktop}
+          <SocialMediaContent
+            socialMediaButtonIcon={
+              footerData?.socialMediaButton?.button_icons?.data
+            }
           />
-        </div>
-        <div
-          className={`${styles?.footerSections} ${
-            styles?.mainSectionFooter__column
-          } ${styles?.showDesktop} ${cx("marginTop10")}`}
-        >
-          <SectionContent navigationObject={companyFooterMenu} />
-          <SectionContent navigationObject={resourcesFooterMenu} />
-        </div>
-        <div
-          className={`${styles?.footerSections} ${
-            styles?.mainSectionFooter__column
-          } ${styles?.showMobile} ${cx("marginTop10")}`}
-        >
-          <SectionContent navigationObject={resourcesFooterMenu} />
-        </div>
-        <div
-          className={`${styles?.footerSections} ${
-            styles?.mainSectionFooter__column
-          } ${styles?.showMobile} ${cx("marginTop10")}`}
-        >
-          <SectionContent navigationObject={sectorsFooterMenu} />
-        </div>
-        <div
-          className={`${styles?.socialMediaContainer} ${styles?.showMobile}`}
-        >
-          <SocialMediaContent />
+          {props?.children[0]?.props?.children[0]?.props?.pageContext && (
+            <LocaleLink
+              languageOptionES={
+                footerData?.languageOptions?.data[0]?.attributes?.label
+              }
+              languageOptionEN={
+                footerData?.languageOptions?.data[1]?.attributes?.label
+              }
+              languageButton={footerData?.languageButton}
+              pageContext={
+                props?.children[0]?.props?.children[0]?.props?.pageContext
+              }
+            />
+          )}
         </div>
       </section>
       <hr></hr>
@@ -100,34 +133,29 @@ const Footer: React.FC = () => {
           "containerMaxWidth"
         )}`}
       >
-        <div>
-          <img src={images.ISO27001Certification}></img>
-        </div>
+        {footerData?.certificationImage?.data?.attributes?.url && (
+          <div>
+            <StrapiImage
+              image={
+                footerData?.certificationImage
+                  ? footerData?.certificationImage
+                  : null
+              }
+            />
+          </div>
+        )}
+
         <div>
           <div>
-            <div>
-              <ul>
-                {subFooterMenu?.subRoutes?.map((item, index) => {
-                  return (
-                    <li key={"subFooter__" + item.id + index}>
-                      <Link
-                        id={"subFooter__" + item.id}
-                        className={cx("buttonMD")}
-                        to={item.route || ""}
-                      >
-                        {item.label}
-                      </Link>
-                    </li>
-                  )
-                })}
-              </ul>
-            </div>
+            <ButtonGroup buttonGroup={footerData?.termsButton?.buttons?.data} />
+
             <div
-              className={`${styles?.rightsReserved} ${cx("buttonMD")}`}
-              id={rightsReservedGataca?.id}
-              key={"footer__" + rightsReservedGataca?.id}
+              className={`${styles?.rightsReserved} ${cx(
+                "buttonMD neutral700"
+              )}`}
+              id={"rightsReservedGataca"}
             >
-              {rightsReservedGataca?.label}
+              {footerData?.rightsReserved}
             </div>
           </div>
         </div>

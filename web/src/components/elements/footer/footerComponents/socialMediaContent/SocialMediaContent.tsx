@@ -1,21 +1,16 @@
-import { Link } from "gatsby"
 import * as React from "react"
-import * as styles from "./socialMediaContent.module.scss"
-import { socialMedia } from "../../../../../data/globalData"
+import ButtonGroup from "../../../../../templates/page/sections/components/generic/buttonGroup/ButtonGroup"
 
-const SocialMediaContent: React.FC = () => {
+export type ISocialMediaContentProps = {
+  socialMediaButtonIcon?: any
+}
+
+const SocialMediaContent: React.FC<ISocialMediaContentProps> = props => {
+  const { socialMediaButtonIcon } = props
   return (
-    <ul className={styles?.socialMediaList}>
-      {socialMedia.map((item, index) => {
-        return (
-          <li key={"footer__" + item.id + index}>
-            <a href={item.route || ""} target="_blank">
-              <img src={item.icon} id={"footer__" + item.id} alt={item.alt} />
-            </a>
-          </li>
-        )
-      })}
-    </ul>
+    <>
+      <ButtonGroup buttonIconGroup={socialMediaButtonIcon} />
+    </>
   )
 }
 

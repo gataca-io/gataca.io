@@ -52,7 +52,6 @@
             background-color: $neutral200;
         }
         &:focus {
-            color: $primary700;
             background-color: $neutral200;
             box-shadow: none;
         }
@@ -66,6 +65,7 @@
         }
         &.noPadding {
             padding: 0;
+            height: auto;
             &:hover {
                 background-color: transparent;
             }
@@ -130,6 +130,7 @@
             }
             &.noPadding {
                 padding: 0;
+                height: auto;
                 &:hover {
                     background-color: transparent;
                 }
@@ -192,12 +193,10 @@
             &:focus {
                 box-shadow: none;
                 background-color: $neutral200;
-                color: $primary700;
             }
             &:focus-visible {
                 outline: none;
                 background-color: $neutral200;
-                color: $primary700;
             }
             &.disabled {
                 color: $neutral500;
@@ -205,6 +204,7 @@
             }
             &.noPadding {
                 padding: 0;
+                height: auto;
                 &:hover {
                     background-color: transparent;
                 }
@@ -263,12 +263,10 @@
             &:focus {
                 box-shadow: none;
                 background-color: $neutral200;
-                color: $primary700;
             }
             &:focus-visible {
                 outline: none;
                 background-color: $neutral200;
-                color: $primary700;
             }
             &.disabled {
                 color: $neutral500;
@@ -276,6 +274,7 @@
             }
             &.noPadding {
                 padding: 0;
+                height: auto;
                 &:hover {
                     background-color: transparent;
                 }

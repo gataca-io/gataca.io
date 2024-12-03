@@ -67,6 +67,12 @@
       "action": "api::brand-button.brand-button.findOne"
     },
     {
+      "action": "api::button-icon.button-icon.find"
+    },
+    {
+      "action": "api::button-icon.button-icon.findOne"
+    },
+    {
       "action": "api::card-table-content.card-table-content.createLocalization"
     },
     {
@@ -170,6 +176,9 @@
     },
     {
       "action": "api::feature.feature.findOne"
+    },
+    {
+      "action": "api::footer.footer.find"
     },
     {
       "action": "api::gataca-studio.gataca-studio.find"

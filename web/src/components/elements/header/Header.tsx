@@ -56,7 +56,10 @@ const Header: React.FC = (props: any) => {
   return (
     <>
       {menuData ? (
-        <header className={styles?.header}>
+        <header
+          className={styles?.header}
+          onMouseLeave={() => setSubMenuOpened("")}
+        >
           <Link className={styles?.header__logo} to="/">
             {menuData?.logo?.data?.attributes?.url && (
               <StrapiImage image={menuData?.logo ? menuData?.logo : null} />

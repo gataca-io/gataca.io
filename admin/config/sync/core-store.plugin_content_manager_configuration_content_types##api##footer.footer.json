@@ -1,0 +1,243 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::footer.footer",
+  "value": {
+    "uid": "api::footer.footer",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "idItem",
+      "defaultSortBy": "idItem",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "idItem": {
+        "edit": {
+          "label": "idItem",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "idItem",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "logo": {
+        "edit": {
+          "label": "logo",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "logo",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "certificationImage": {
+        "edit": {
+          "label": "certificationImage",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "certificationImage",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "linksList": {
+        "edit": {
+          "label": "linksList",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "linksList",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "languageOptions": {
+        "edit": {
+          "label": "languageOptions",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "languageAbbreviationStrapi"
+        },
+        "list": {
+          "label": "languageOptions",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "languageButton": {
+        "edit": {
+          "label": "languageButton",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "languageButton",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "termsButton": {
+        "edit": {
+          "label": "termsButton",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "termsButton",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "socialMediaButton": {
+        "edit": {
+          "label": "socialMediaButton",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "socialMediaButton",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "rightsReserved": {
+        "edit": {
+          "label": "rightsReserved",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "rightsReserved",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "edit": [
+        [
+          {
+            "name": "idItem",
+            "size": 6
+          },
+          {
+            "name": "rightsReserved",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "logo",
+            "size": 6
+          },
+          {
+            "name": "certificationImage",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "linksList",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "languageOptions",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "languageButton",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "termsButton",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "socialMediaButton",
+            "size": 12
+          }
+        ]
+      ],
+      "list": [
+        "id",
+        "idItem",
+        "logo",
+        "certificationImage"
+      ]
+    }
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

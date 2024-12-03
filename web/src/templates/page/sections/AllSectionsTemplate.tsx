@@ -7,8 +7,6 @@ import Table from "./components/shared/table/Table"
 import PricingInfo from "./components/pricing/pricingInfo/PricingInfo"
 import ContentHeadingContainer from "./components/generic/contentHeadingContainer/ContentHeadingContainer"
 import ContentTable from "./components/shared/contentTable/ContentTable"
-import Button from "./components/generic/button/Button"
-import ButtonIcon from "./components/generic/buttonIcon/ButtonIcon"
 import SegmentedButtonsContainer from "./components/generic/segmentedButtons/SegmentedButtonsContainer"
 import ButtonGroup from "./components/generic/buttonGroup/ButtonGroup"
 import ChipGroup from "./components/generic/chipGroup/ChipGroup"
@@ -27,7 +25,7 @@ import SubHeadingsLayout from "./components/shared/SubHeadingsLayout/SubHeadings
 import MediaStepsSlider from "./components/shared/mediaStepsSlider/MediaStepsSlider"
 
 const AllSectionsTemplate: React.FC<PageModel> = props => {
-  const { sections } = props
+  const { sections, location } = props
 
   return sections?.map(item => {
     const {
@@ -41,17 +39,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
       tier_tables,
       contents,
       card_table_contents,
-      idButton,
-      label,
-      icon,
-      url,
-      link,
-      style,
       color,
-      size,
-      disabled,
-      outsideWeb,
-      noPaddingText,
       buttons,
       chip_options,
       selector_list,
@@ -93,6 +81,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
       slotAlign,
       media_steps,
       showSwitch,
+      button_icons,
     } = item
 
     return (
@@ -160,36 +149,6 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
             highlightCard={highlight_card?.data?.attributes}
           />
         )}
-        {__component === "generic.button" && (
-          <div className={`${styles?.container} ${cx("containerMaxWidth")}`}>
-            <Button
-              idButton={idButton}
-              label={label}
-              icon={icon}
-              style={style}
-              color={color}
-              size={size}
-              noPaddingText={noPaddingText}
-              disabled={disabled}
-              link={link}
-              url={url}
-              action={() => window?.open(url, outsideWeb ? "_blank" : "_self")}
-            />
-          </div>
-        )}
-        {__component === "generic.button-icon" && (
-          <div className={`${styles?.container} ${cx("containerMaxWidth")}`}>
-            <ButtonIcon
-              idButton={idButton}
-              icon={icon}
-              style={style}
-              color={color}
-              size={size}
-              disabled={disabled}
-              action={() => window?.open(url, outsideWeb ? "_blank" : "_self")}
-            />
-          </div>
-        )}
         {__component === "generic.button-options" && (
           <div className={`${styles?.container} ${cx("containerMaxWidth")}`}>
             <SegmentedButtonsContainer segmentedOptions={buttons?.data} />
@@ -200,6 +159,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
             <ButtonGroup
               buttonGroup={buttons?.data}
               brandButtonGroup={brand_buttons?.data}
+              buttonIconGroup={button_icons?.data}
             />
           </div>
         )}
@@ -227,6 +187,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
             selectorIllustration={selectorIllustration}
             selectorAlign={selectorAlign}
             layout={layout}
+            subOptionClickedID={location?.substring(1)}
           />
         )}
         {__component === "shared.sub-headings-layout" && (

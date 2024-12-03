@@ -34,7 +34,11 @@ const PageTemplate: React.FC = (props: any) => {
     <Layout seoData={pageData?.seo}>
       <>
         {pageData ? (
-          <AllSectionsTemplate {...pageData} pageContext={props?.pageContext} />
+          <AllSectionsTemplate
+            {...pageData}
+            location={props?.location?.hash}
+            pageContext={props?.pageContext}
+          />
         ) : (
           <PageSkeleton />
         )}

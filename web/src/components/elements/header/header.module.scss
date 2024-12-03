@@ -29,6 +29,7 @@
     display: none;
     @include min-width(1200px) {
       @include flexbox();
+      @include align-items(center);
       gap: 20px;
     }
   }

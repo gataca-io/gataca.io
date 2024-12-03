@@ -14,7 +14,7 @@
   background-color: $neutral100;
   transform: translateX(100%);
   @include min-width(1200.01px) {
-    top: 50px;
+    top: 30px;
     border-radius: 6px;
     box-shadow: 0px 0px 5px 0px #0000001A;
     min-width: 175px;

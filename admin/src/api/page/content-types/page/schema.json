@@ -19,7 +19,6 @@
     "sections": {
       "type": "dynamiczone",
       "components": [
-        "generic.button",
         "generic.section",
         "generic.header",
         "studio.feature-section",
@@ -27,7 +26,6 @@
         "pricing.cloud",
         "generic.content-heading-container",
         "shared.content-table",
-        "generic.button-icon",
         "generic.button-options",
         "generic.button-group",
         "generic.chip-group",

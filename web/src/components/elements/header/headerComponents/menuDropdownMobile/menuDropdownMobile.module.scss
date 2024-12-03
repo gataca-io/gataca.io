@@ -2,10 +2,11 @@
 @import "../../../../../styles/mixins";
 
 .menuDropdownRoute {
-  padding: 8px 16px;
+  padding: 20px 16px;
   width: calc(100% - 32px);
   @include min-width(1200px) {
     width: inherit;
+    padding: 8px 16px;
   }
 }
 

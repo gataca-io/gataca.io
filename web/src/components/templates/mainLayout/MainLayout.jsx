@@ -139,7 +139,7 @@ const Layout = props => {
         />
       )}
       <main className={styles?.mainLayout}>{props.children}</main>
-      <Footer />
+      <Footer>{props.children} </Footer>
     </>
   )
 }

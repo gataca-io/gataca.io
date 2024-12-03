@@ -75,10 +75,11 @@ const ListComponent: React.FC<ListModel> = props => {
           <Button
             label={extraInfo}
             style={"text"}
-            color={cx(color ? colorStyles[color] : "neutral1000")}
             size={cx(size ? buttonSizeStyles[size] : "buttonMD")}
+            color={color}
             noPaddingText={noPaddingText}
             url={url}
+            link={true}
             action={() => window?.open(url, "_self")}
             className={`${classNameButton} ${styles?.list__button}`}
           />

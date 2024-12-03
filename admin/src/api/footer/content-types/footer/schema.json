@@ -1,0 +1,66 @@
+{
+  "kind": "singleType",
+  "collectionName": "footers",
+  "info": {
+    "singularName": "footer",
+    "pluralName": "footers",
+    "displayName": "Footer"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "idItem": {
+      "type": "string"
+    },
+    "logo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "certificationImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "linksList": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.list-group"
+    },
+    "languageOptions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::language.language"
+    },
+    "languageButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "generic.button"
+    },
+    "termsButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "generic.button-group"
+    },
+    "socialMediaButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "generic.button-group"
+    },
+    "rightsReserved": {
+      "type": "string"
+    }
+  }
+}
