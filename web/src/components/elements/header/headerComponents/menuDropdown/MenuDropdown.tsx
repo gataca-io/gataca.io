@@ -20,9 +20,7 @@ const MenuDropdown: React.FC<IMenuDropdownProps> = props => {
     <div className={styles.menuDropdownRoute}>
       <Button
         {...button}
-        onMouseEnterAction={() =>
-          setOptionOpened(!open ? button?.idButton : "")
-        }
+        onMouseEnterAction={() => setOptionOpened(button?.idButton)}
         action={() =>
           button?.url?.length
             ? window?.open(button?.url, button?.outsideWeb ? "_blank" : "_self")

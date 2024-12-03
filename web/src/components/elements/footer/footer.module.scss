@@ -138,7 +138,10 @@
          
         }
         > div:first-child {
-          gap: 32px;
+          @include justify-content(center);
+          @include min-width(1214px) {
+            @include justify-content(flex-start);
+          }
         }
       }
     } 
