@@ -23,6 +23,7 @@ import MainBlogLayout from "./components/shared/mainBlogLayout/MainBlogLayout"
 import SideCardsSlider from "./components/shared/sideCardsSlider/SideCardsSlider"
 import SubHeadingsLayout from "./components/shared/SubHeadingsLayout/SubHeadingsLayout"
 import MediaStepsSlider from "./components/shared/mediaStepsSlider/MediaStepsSlider"
+import StepsContent from "./components/shared/stepsContent/StepsContent"
 
 const AllSectionsTemplate: React.FC<PageModel> = props => {
   const { sections, location } = props
@@ -85,6 +86,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
       titleFeaturesTableMobile,
       showAllFeaturesText,
       hideAllFeaturesText,
+      headings,
     } = item
 
     return (
@@ -280,6 +282,9 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
             buttonRight={buttonRight}
             mediaSteps={media_steps?.data}
           />
+        )}
+        {__component === "shared.steps-content" && (
+          <StepsContent idItem={idItem} headings={headings?.data} />
         )}
       </section>
     )

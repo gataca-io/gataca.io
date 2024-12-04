@@ -1,0 +1,125 @@
+@import "../../../../../../styles/_types.scss";
+@import "../../../../../../styles/colors.scss";
+@import "../../../../../../styles/mixins.scss";
+
+.stepsContent{
+  position: relative;
+  margin-bottom: 132px;
+  margin-top: 420px;
+  padding: 0 20px;
+  @include min-width($mobileXL) {
+    margin-bottom: 200px;
+    margin-top: 480px;
+    padding: 0 40px;
+  }
+  @include min-width($tabletMD) {
+    margin-top: 0px;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 2px;
+      height: 120%;
+      left: 50%;
+      top: -10%;
+      background-image: -webkit-linear-gradient(transparent 0%, $primary700 40%, $primary700 60%, transparent 100%);
+      background: linear-gradient(transparent 0%, $primary700 40%, $primary700 60%,  transparent 100%);
+      
+    }
+  }
+  @include min-width($desktopMD) {
+    padding: 0 60px;
+  }
+  .stepsContent__container {
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 4px;
+      height: 240px;
+      left: 50%;
+      top: -250px;
+      background-image: -webkit-linear-gradient(transparent 0%, $primary700 40%, $primary700 60%, transparent 100%);
+      background: linear-gradient(transparent 0%, $primary700 40%, $primary700 60%, transparent 100%);
+    }
+    @include min-width($tabletMD) {
+      @include flexbox();
+      @include justify-content(center);
+      @include flex-wrap(nowrap);
+      @include align-items(center);
+      &::before {
+        content: none;
+      }
+    }
+    &:nth-child(2) {
+      .numberContainer {
+        order: 1;
+        .number {
+          @include min-width($tabletMD) {
+            text-align: left;
+            margin-left: 80px;
+          }
+        }
+      }
+      .textContainer {
+        > div {
+          @include min-width($tabletMD) {
+            margin-right: 80px;
+          }
+        }
+      }
+    }
+    &:nth-child(2n+1) {
+      .numberContainer {
+        .number {
+          @include min-width($tabletMD) {
+            text-align: right;
+            margin-right: 80px;
+          }
+        }
+      }
+      .textContainer {
+        > div {
+          @include min-width($tabletMD) {
+            margin-left: 80px;
+          }
+        }
+      }
+    }
+    &:not(:last-child) {
+      @include min-width($tabletMD) {
+        margin-bottom: 160px;
+      }
+    }
+    .numberContainer {
+      @include min-width($tabletMD) {
+        @include flex(0, 0, 50%);
+      }
+      .number {
+        color: $primary100;
+        font-family: $custom;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 280px;
+        line-height: 280px;
+        text-align: center;
+        margin-bottom: 40px;
+        @include min-width($tabletMD) {
+          font-size: 330.75px;
+          line-height: 276px;
+          margin-bottom: 0;
+        }
+        
+      }
+    }
+    .textContainer {
+      margin-bottom: 280px;
+      @include min-width($tabletMD) {
+        margin-bottom: 0;
+      }
+      @include min-width($tabletMD) {
+        @include flex(0, 0, 50%);
+      }
+    }
+  }
+}
+

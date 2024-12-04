@@ -189,6 +189,7 @@ export interface InsideSectionsModel {
   titleFeaturesTableMobile?: string
   showAllFeaturesText?: string
   hideAllFeaturesText?: string
+  headings?: any
 }
 
 export interface LocalizationsModel {
