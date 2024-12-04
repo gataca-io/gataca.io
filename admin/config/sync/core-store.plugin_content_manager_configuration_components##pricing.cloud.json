@@ -62,21 +62,6 @@
           "sortable": true
         }
       },
-      "tiers": {
-        "edit": {
-          "label": "tiers",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true,
-          "mainField": "name"
-        },
-        "list": {
-          "label": "tiers",
-          "searchable": false,
-          "sortable": false
-        }
-      },
       "pricing_categories": {
         "edit": {
           "label": "pricing_categories",
@@ -149,6 +134,63 @@
           "searchable": true,
           "sortable": true
         }
+      },
+      "pricing": {
+        "edit": {
+          "label": "pricing",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "idItem"
+        },
+        "list": {
+          "label": "pricing",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "titleFeaturesTableMobile": {
+        "edit": {
+          "label": "titleFeaturesTableMobile",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "titleFeaturesTableMobile",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "showAllFeaturesText": {
+        "edit": {
+          "label": "showAllFeaturesText",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "showAllFeaturesText",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "hideAllFeaturesText": {
+        "edit": {
+          "label": "hideAllFeaturesText",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "hideAllFeaturesText",
+          "searchable": true,
+          "sortable": true
+        }
       }
     },
     "layouts": {
@@ -173,6 +215,10 @@
           {
             "name": "description",
             "size": 6
+          },
+          {
+            "name": "titleFeaturesTableMobile",
+            "size": 6
           }
         ],
         [
@@ -182,6 +228,16 @@
           },
           {
             "name": "switchLabel",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "showAllFeaturesText",
+            "size": 6
+          },
+          {
+            "name": "hideAllFeaturesText",
             "size": 6
           }
         ],
@@ -197,11 +253,11 @@
         ],
         [
           {
-            "name": "tiers",
+            "name": "tier_tables",
             "size": 6
           },
           {
-            "name": "tier_tables",
+            "name": "pricing",
             "size": 6
           }
         ]

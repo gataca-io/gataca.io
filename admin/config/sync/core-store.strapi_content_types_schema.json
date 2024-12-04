@@ -7689,6 +7689,94 @@
       "actions": {},
       "lifecycles": {}
     },
+    "api::pricing.pricing": {
+      "kind": "collectionType",
+      "collectionName": "pricings",
+      "info": {
+        "singularName": "pricing",
+        "pluralName": "pricings",
+        "displayName": "Pricing",
+        "description": ""
+      },
+      "options": {
+        "draftAndPublish": true
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "idItem": {
+          "type": "string"
+        },
+        "pricingInfo": {
+          "type": "component",
+          "repeatable": true,
+          "component": "shared.pricing-card"
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "publishedAt": {
+          "type": "datetime",
+          "configurable": false,
+          "writable": true,
+          "visible": false
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "pricings",
+        "info": {
+          "singularName": "pricing",
+          "pluralName": "pricings",
+          "displayName": "Pricing",
+          "description": ""
+        },
+        "options": {
+          "draftAndPublish": true
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "idItem": {
+            "type": "string"
+          },
+          "pricingInfo": {
+            "type": "component",
+            "repeatable": true,
+            "component": "shared.pricing-card"
+          }
+        },
+        "kind": "collectionType"
+      },
+      "modelType": "contentType",
+      "modelName": "pricing",
+      "connection": "default",
+      "uid": "api::pricing.pricing",
+      "apiName": "pricing",
+      "globalId": "Pricing",
+      "actions": {},
+      "lifecycles": {}
+    },
     "api::pricing-category.pricing-category": {
       "kind": "collectionType",
       "collectionName": "pricing_categories",
@@ -9475,44 +9563,13 @@
       },
       "pluginOptions": {},
       "attributes": {
-        "button": {
-          "type": "component",
-          "repeatable": false,
-          "component": "generic.button"
-        },
-        "description": {
-          "type": "text"
-        },
-        "name": {
-          "type": "string"
-        },
-        "subPriceMonthLabel": {
-          "type": "string"
-        },
-        "subPriceYearLabel": {
-          "type": "string"
-        },
-        "type": {
-          "type": "string"
-        },
-        "monthlyPrice": {
-          "type": "decimal"
-        },
-        "yearlyPrice": {
-          "type": "decimal"
-        },
         "features": {
           "type": "component",
           "repeatable": false,
           "component": "pricing.tier-details"
         },
-        "popular": {
-          "type": "boolean"
-        },
-        "button2": {
-          "type": "component",
-          "repeatable": false,
-          "component": "generic.button"
+        "idItem": {
+          "type": "string"
         },
         "createdAt": {
           "type": "datetime"
@@ -9560,44 +9617,13 @@
         },
         "pluginOptions": {},
         "attributes": {
-          "button": {
-            "type": "component",
-            "repeatable": false,
-            "component": "generic.button"
-          },
-          "description": {
-            "type": "text"
-          },
-          "name": {
-            "type": "string"
-          },
-          "subPriceMonthLabel": {
-            "type": "string"
-          },
-          "subPriceYearLabel": {
-            "type": "string"
-          },
-          "type": {
-            "type": "string"
-          },
-          "monthlyPrice": {
-            "type": "decimal"
-          },
-          "yearlyPrice": {
-            "type": "decimal"
-          },
           "features": {
             "type": "component",
             "repeatable": false,
             "component": "pricing.tier-details"
           },
-          "popular": {
-            "type": "boolean"
-          },
-          "button2": {
-            "type": "component",
-            "repeatable": false,
-            "component": "generic.button"
+          "idItem": {
+            "type": "string"
           }
         },
         "kind": "collectionType"

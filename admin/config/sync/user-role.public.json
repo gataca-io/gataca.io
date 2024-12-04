@@ -280,6 +280,12 @@
       "action": "api::pricing-category.pricing-category.findOne"
     },
     {
+      "action": "api::pricing.pricing.find"
+    },
+    {
+      "action": "api::pricing.pricing.findOne"
+    },
+    {
       "action": "api::property.property.find"
     },
     {

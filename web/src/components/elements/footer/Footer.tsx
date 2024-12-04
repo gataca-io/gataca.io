@@ -27,8 +27,6 @@ const Footer: React.FC = (props: any) => {
     props?.pageContext?.locale,
   ])
 
-  console.log("footerData", footerData)
-
   const getFooterData = async () => {
     await fetch(`${process.env.STRAPI_API_URL}/api/footer?populate=deep,6`)
       .then(response => response.json())

@@ -33,7 +33,6 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
       __component,
       logos,
       content,
-      tiers,
       pricing_categories,
       infoToggles,
       tier_tables,
@@ -82,6 +81,10 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
       media_steps,
       showSwitch,
       button_icons,
+      pricing,
+      titleFeaturesTableMobile,
+      showAllFeaturesText,
+      hideAllFeaturesText,
     } = item
 
     return (
@@ -131,9 +134,16 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
               tier_tables?.data[0]?.attributes?.feature_details?.data[0]
                 ?.attributes?.tiers?.data
             }
-            licenses={tiers?.data}
+            licenses={
+              tier_tables?.data[0]?.attributes?.feature_details?.data[0]
+                ?.attributes?.tiers?.data
+            }
             subOptionClickedID={props?.location?.hash?.substring(1)}
             showSwitch={showSwitch}
+            pricing={pricing}
+            titleFeaturesTableMobile={titleFeaturesTableMobile}
+            showAllFeaturesText={showAllFeaturesText}
+            hideAllFeaturesText={hideAllFeaturesText}
           />
         )}
         {__component === "generic.content-heading-container" && (

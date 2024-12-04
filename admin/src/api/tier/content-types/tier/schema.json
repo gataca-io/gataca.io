@@ -12,44 +12,13 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "button": {
-      "type": "component",
-      "repeatable": false,
-      "component": "generic.button"
-    },
-    "description": {
-      "type": "text"
-    },
-    "name": {
-      "type": "string"
-    },
-    "subPriceMonthLabel": {
-      "type": "string"
-    },
-    "subPriceYearLabel": {
-      "type": "string"
-    },
-    "type": {
-      "type": "string"
-    },
-    "monthlyPrice": {
-      "type": "decimal"
-    },
-    "yearlyPrice": {
-      "type": "decimal"
-    },
     "features": {
       "type": "component",
       "repeatable": false,
       "component": "pricing.tier-details"
     },
-    "popular": {
-      "type": "boolean"
-    },
-    "button2": {
-      "type": "component",
-      "repeatable": false,
-      "component": "generic.button"
+    "idItem": {
+      "type": "string"
     }
   }
 }

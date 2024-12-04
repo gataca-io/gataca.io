@@ -75,11 +75,13 @@ const GeneralCardsLayout: React.FC<IGeneralCardsLayoutProps> = props => {
           )}
         </div>
       )}
-      {mainCardContainer?.card?.data?.attributes?.card && (
+      {(mainCardContainer?.card?.data?.attributes?.card ||
+        mainCardContainer?.pricing?.data?.attributes?.pricingInfo) && (
         <MainCardContainer
           idItem={mainCardContainer?.idItem}
           columns={mainCardContainer?.columns}
           card={mainCardContainer?.card?.data?.attributes?.card}
+          pricing={mainCardContainer?.pricing?.data?.attributes?.pricingInfo}
         />
       )}
     </div>

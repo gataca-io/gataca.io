@@ -1,0 +1,35 @@
+@import "../../../../../../styles/colors.scss";
+@import "../../../../../../styles/mixins.scss";
+
+.pricingCard {
+  @include flexbox();
+  @include flex-direction(column);
+  @include justify-content(space-between);
+  @include flex-wrap(wrap);
+  @include align-items(flex-start);
+  gap: 24px;
+  padding: 24px;
+  background-color: $neutral100;
+  border-radius: 12px;
+  box-shadow: 0px 0px 12px 0px rgba(12, 11, 51, 0.12);
+  &__price {
+    border-bottom: 1px solid $neutral300;
+    width: 100%;
+    p:last-child {
+      margin-bottom: 24px;
+    }
+    &.minHeigth {
+      min-height: 80px;
+    }
+  }
+  &__pricingCard {
+    width: 100%;
+  }
+  .maxWidthButton {
+    width: 100%;
+    button {
+      width: 100%;
+    }
+  }
+}
+

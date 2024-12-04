@@ -1,6 +1,5 @@
 import * as React from "react"
 import cx from "classnames"
-import LicenseCard from "./components/licenseCard/LicenseCard"
 import SwitchButton from "../../../../../../components/atoms/buttons/switchButton/SwicthButton"
 import LicensesTableMobile from "./components/licensesTableMobile/LicensesTableMobile"
 import LicensesTable from "./components/licensesTable/LicensesTable"
@@ -13,8 +12,8 @@ import CrevronDownSVG from "../../../../../../images/icons/ChevronDownSVG"
 import ChevronUpSVG from "../../../../../../images/icons/ChevronUpSVG"
 import * as styles from "./pricingInfo.module.scss"
 import Button from "../../generic/button/Button"
-import SegmentedButtonsContainer from "../../generic/segmentedButtons/SegmentedButtonsContainer"
 import SegmentedButtons from "../../generic/segmentedButtons/components/SegmentedButtons"
+import PricingCard from "../../shared/PricingCard/PricingCard"
 
 export type ISectionProps = {
   switchLabel?: string
@@ -40,6 +39,10 @@ export type ISectionProps = {
   tiersDetail: IProductModel[]
   subOptionClickedID?: string
   showSwitch?: boolean
+  pricing?: any
+  titleFeaturesTableMobile?: string
+  showAllFeaturesText?: string
+  hideAllFeaturesText?: string
 }
 
 const PricingInfo: React.FC<ISectionProps> = props => {
@@ -54,6 +57,10 @@ const PricingInfo: React.FC<ISectionProps> = props => {
     tiersDetail,
     subOptionClickedID,
     showSwitch,
+    pricing,
+    titleFeaturesTableMobile,
+    showAllFeaturesText,
+    hideAllFeaturesText,
   } = props
   const [switchPeriodValue, setmonthlyChecked] = React.useState("month")
   const [showAllFeatures, setShowAllFeatures] = React.useState(false)
@@ -70,6 +77,8 @@ const PricingInfo: React.FC<ISectionProps> = props => {
     ],
     function: selectPeriod,
   }
+
+  const pricingData = pricing?.data?.attributes?.pricingInfo
 
   const [openItem, setOpenItem] = React.useState<number>(1)
   let typeCategories: HTMLElement | null
@@ -160,23 +169,31 @@ const PricingInfo: React.FC<ISectionProps> = props => {
                 className={styles?.pricingInfo__sectors__cardsContainer}
                 id={"allLicensesFeatures"}
               >
-                {licenses?.map((item: any, index) => {
-                  return (
-                    <LicenseCard
-                      key={"licenseP__" + item?.attributes.type + index}
-                      license={item?.attributes}
-                      period={switchPeriodValue}
-                      isCurrentLicense={false}
-                    />
-                  )
-                })}
+                {pricing?.data?.attributes?.pricingInfo?.map(
+                  (el: any, index: number) => {
+                    const { button } = el
+
+                    el.button
+                      ? (el.button.action = () =>
+                          window.open(button?.url, "_blank"))
+                      : null
+
+                    return (
+                      <PricingCard
+                        key={`pricingCard__` + index}
+                        {...el}
+                        period={switchPeriodValue}
+                      />
+                    )
+                  }
+                )}
               </div>
               <div id={"allFeatures"}></div>
-              {showAllFeatures && licenses && (
+              {showAllFeatures && licenses && pricingData && (
                 <div>
                   <LicensesTable
                     tier_tables={tier_tables}
-                    products={licenses}
+                    pricing={pricingData}
                     switchPeriodValue={switchPeriodValue}
                     tiers={tiersDetail}
                   />
@@ -188,12 +205,15 @@ const PricingInfo: React.FC<ISectionProps> = props => {
                     selectLicense={setSelectedLicense}
                     tier_tables={tier_tables}
                     tiers={tiersDetail}
+                    pricing={pricingData}
+                    pricingSelected={pricingData[selectedLicense]}
+                    titleFeaturesTableMobile={titleFeaturesTableMobile}
                   />
                 </div>
               )}
               <Button
                 label={
-                  showAllFeatures ? "Hide all features" : "See all features"
+                  showAllFeatures ? hideAllFeaturesText : showAllFeaturesText
                 }
                 IconComponent={
                   showAllFeatures ? <ChevronUpSVG /> : <CrevronDownSVG />
@@ -205,7 +225,7 @@ const PricingInfo: React.FC<ISectionProps> = props => {
                     setSelectedLicense(0),
                     document
                       ?.getElementById("allFeatures")
-                      ?.scrollIntoView(true)
+                      ?.scrollIntoView({ behavior: "smooth" })
                 }}
               />
             </>

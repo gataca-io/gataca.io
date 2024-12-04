@@ -15,11 +15,6 @@
     "identifier": {
       "type": "string"
     },
-    "tiers": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::tier.tier"
-    },
     "pricing_categories": {
       "type": "relation",
       "relation": "oneToMany",
@@ -41,6 +36,20 @@
     "showSwitch": {
       "type": "boolean",
       "default": true
+    },
+    "pricing": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::pricing.pricing"
+    },
+    "titleFeaturesTableMobile": {
+      "type": "string"
+    },
+    "showAllFeaturesText": {
+      "type": "string"
+    },
+    "hideAllFeaturesText": {
+      "type": "string"
     }
   }
 }
