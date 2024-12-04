@@ -163,7 +163,12 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
         )}
         {__component === "generic.button-options" && (
           <div className={`${styles?.container} ${cx("containerMaxWidth")}`}>
-            <SegmentedButtonsContainer segmentedOptions={buttons?.data} />
+            <SegmentedButtonsContainer
+              idItem={idItem}
+              heading={heading?.data?.attributes?.heading}
+              segmentedOptions={buttons?.data}
+              subOptionClickedID={location?.substring(1)}
+            />
           </div>
         )}
         {__component === "generic.button-group" && (

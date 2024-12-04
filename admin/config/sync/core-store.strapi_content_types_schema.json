@@ -7298,9 +7298,6 @@
         "sections": {
           "type": "dynamiczone",
           "components": [
-            "generic.section",
-            "generic.header",
-            "studio.feature-section",
             "generic.table",
             "pricing.cloud",
             "generic.content-heading-container",
@@ -7441,9 +7438,6 @@
           "sections": {
             "type": "dynamiczone",
             "components": [
-              "generic.section",
-              "generic.header",
-              "studio.feature-section",
               "generic.table",
               "pricing.cloud",
               "generic.content-heading-container",
@@ -8925,6 +8919,11 @@
           "relation": "oneToOne",
           "target": "api::list-option.list-option"
         },
+        "generalCardsLayout": {
+          "type": "component",
+          "repeatable": false,
+          "component": "shared.general-cards-layout"
+        },
         "createdAt": {
           "type": "datetime"
         },
@@ -8986,6 +8985,11 @@
             "type": "relation",
             "relation": "oneToOne",
             "target": "api::list-option.list-option"
+          },
+          "generalCardsLayout": {
+            "type": "component",
+            "repeatable": false,
+            "component": "shared.general-cards-layout"
           }
         },
         "kind": "collectionType"

@@ -49,6 +49,8 @@ export interface SegmentedButtonModel {
   disabled?: boolean
   outsideWeb?: boolean
   noPaddingText?: boolean
+  link?: boolean
+  url?: string
 }
 
 export interface IconModel {

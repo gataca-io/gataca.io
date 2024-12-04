@@ -19,9 +19,6 @@
     "sections": {
       "type": "dynamiczone",
       "components": [
-        "generic.section",
-        "generic.header",
-        "studio.feature-section",
         "generic.table",
         "pricing.cloud",
         "generic.content-heading-container",

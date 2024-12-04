@@ -77,6 +77,20 @@
           "sortable": true
         }
       },
+      "generalCardsLayout": {
+        "edit": {
+          "label": "generalCardsLayout",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "generalCardsLayout",
+          "searchable": false,
+          "sortable": false
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -107,6 +121,12 @@
       }
     },
     "layouts": {
+      "list": [
+        "id",
+        "title",
+        "button",
+        "list_option"
+      ],
       "edit": [
         [
           {
@@ -131,13 +151,13 @@
             "name": "content",
             "size": 12
           }
+        ],
+        [
+          {
+            "name": "generalCardsLayout",
+            "size": 12
+          }
         ]
-      ],
-      "list": [
-        "id",
-        "title",
-        "button",
-        "list_option"
       ]
     }
   },

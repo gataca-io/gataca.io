@@ -4,6 +4,9 @@
 
 .segmentedButtons__container {
     width: 100%;
+    @include flexbox();
+    @include flex-direction(column);
+    gap: 60px;
     .segmentedOptions {
         @include flexbox();
         @include flex-wrap(nowrap);
@@ -16,7 +19,9 @@
         padding: 8px;
         border-radius: 12px;
         text-align: center;
-        margin-bottom: 120px;
+    }
+    .segmentButtons__generalCardsLayout {
+        padding: 0;
     }
 }
 

@@ -27,6 +27,11 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::list-option.list-option"
+    },
+    "generalCardsLayout": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.general-cards-layout"
     }
   }
 }
