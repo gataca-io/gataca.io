@@ -1,7 +1,8 @@
 {
   "collectionName": "components_shared_blog_cards",
   "info": {
-    "displayName": "blogCard"
+    "displayName": "BlogCard",
+    "description": ""
   },
   "options": {},
   "attributes": {

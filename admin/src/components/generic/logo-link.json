@@ -1,19 +1,21 @@
 {
   "collectionName": "components_generic_logo_links",
   "info": {
-    "displayName": "logo-link"
+    "displayName": "Logo-link",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "logoImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "alt": {
       "type": "string"

@@ -1,7 +1,8 @@
 {
   "collectionName": "components_shared_use_cases",
   "info": {
-    "displayName": "useCase"
+    "displayName": "UseCase",
+    "description": ""
   },
   "options": {},
   "attributes": {

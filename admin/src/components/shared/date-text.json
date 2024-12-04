@@ -1,7 +1,8 @@
 {
   "collectionName": "components_shared_date_texts",
   "info": {
-    "displayName": "dateText"
+    "displayName": "DateText",
+    "description": ""
   },
   "options": {},
   "attributes": {

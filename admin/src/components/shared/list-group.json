@@ -1,7 +1,8 @@
 {
   "collectionName": "components_shared_list_groups",
   "info": {
-    "displayName": "listGroup"
+    "displayName": "ListGroup",
+    "description": ""
   },
   "options": {},
   "attributes": {
