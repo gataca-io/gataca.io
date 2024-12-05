@@ -408,7 +408,14 @@ export interface PricingCardModel {
   extraInfo?: string
   period?: string
 }
-
+export interface PhotoCardModel {
+  className?: string
+  idCard?: string
+  image?: any
+  name?: string
+  jobTitle?: string
+  buttonIcon?: ButtonModel
+}
 export interface ListModel {
   idList?: string
   size?: string
@@ -478,6 +485,11 @@ export interface MainCardContainerModel {
   card?: CardModel[]
   pricing?: PricingCardModel[]
   columns?: string
+}
+
+export interface PhotoCardContainerModel {
+  idItem?: string
+  photoCard?: PhotoCardModel[]
 }
 
 export interface CredentialModel {

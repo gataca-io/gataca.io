@@ -1,0 +1,25 @@
+@import "../../../../../../../styles/colors.scss";
+@import "../../../../../../../styles/mixins.scss";
+
+
+.photoCard__container {
+  width: 100%;
+  @include flexbox();
+  @include flex-direction(column);
+  @include justify-content(flex-start);
+  @include flex-wrap(wrap);
+  gap: 32px 72px;
+  @include min-width($tabletMD) {
+    @include flex-direction(row);
+    @include align-items(stretch);
+  }
+  > div {
+    @include flex(0, 0, 100%);
+    @include min-width($mobileXL) {
+      @include flex(0, 0, calc((100% / 3) - 30px));
+    }
+    @include min-width($desktopMD) {
+      @include flex(0, 0, calc((100% / 4) - 20px));
+    }
+  }
+}

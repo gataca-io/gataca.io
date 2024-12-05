@@ -1,0 +1,29 @@
+@import "../../../../../../styles/colors.scss";
+@import "../../../../../../styles/mixins.scss";
+
+
+
+.teamLayout__container {
+  margin-bottom: 132px;
+  padding: 0 20px;
+  @include flexbox();
+  @include flex-direction(column);
+  gap: 80px;
+  @include min-width($mobileXL) {
+    margin-bottom: 200px;
+    padding: 0 40px;
+  }
+  @include min-width($desktopMD) {
+    padding: 0 60px;
+  }
+  .mainTitle__container {
+    @include flexbox();
+    @include justify-content(space-between);
+    @include align-items(flex-end);
+    @include flex-wrap(wrap);
+    gap: 40px;
+    .headingCards {
+      max-width: 576px;
+    }
+  }
+}
