@@ -78,12 +78,6 @@
       }
     },
     "layouts": {
-      "list": [
-        "id",
-        "idItem",
-        "logoInfo",
-        "createdAt"
-      ],
       "edit": [
         [
           {
@@ -97,6 +91,11 @@
             "size": 12
           }
         ]
+      ],
+      "list": [
+        "id",
+        "idItem",
+        "logoInfo"
       ]
     }
   },

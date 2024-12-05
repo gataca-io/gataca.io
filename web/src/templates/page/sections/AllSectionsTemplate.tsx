@@ -161,7 +161,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
             highlightCard={highlight_card?.data?.attributes}
           />
         )}
-        {__component === "generic.button-options" && (
+        {__component === "shared.button-options" && (
           <div className={`${styles?.container} ${cx("containerMaxWidth")}`}>
             <SegmentedButtonsContainer
               idItem={idItem}
@@ -171,7 +171,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
             />
           </div>
         )}
-        {__component === "generic.button-group" && (
+        {__component === "shared.button-group" && (
           <div className={`${styles?.container} ${cx("containerMaxWidth")}`}>
             <ButtonGroup
               buttonGroup={buttons?.data}

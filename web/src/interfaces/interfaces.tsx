@@ -443,7 +443,6 @@ export interface HeadingModel {
   content?: string
   button?: any
   buttonGroup?: any
-  segmentedButton?: any
   list?: any
   table?: any
 }

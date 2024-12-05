@@ -36,11 +36,6 @@
       "repeatable": false,
       "component": "generic.button-group"
     },
-    "segmentedButton": {
-      "type": "component",
-      "repeatable": false,
-      "component": "generic.button-options"
-    },
     "table": {
       "type": "component",
       "repeatable": false,

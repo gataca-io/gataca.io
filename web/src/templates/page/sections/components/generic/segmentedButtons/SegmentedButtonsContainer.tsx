@@ -33,6 +33,8 @@ const SegmentedButtonsContainer: React.FC<
       {heading && (
         <Heading
           {...heading}
+          list={heading?.list?.list_options?.data}
+          buttonGroup={heading?.buttonGroup?.buttons?.data}
           table={heading?.table?.content}
           button={{
             ...heading?.button,
