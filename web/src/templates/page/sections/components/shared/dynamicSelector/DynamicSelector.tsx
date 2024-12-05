@@ -168,21 +168,13 @@ const DynamicSelector: React.FC<ISectionProps> = props => {
       >
         {heading && (
           <Heading
-            idHeading={heading?.idHeading}
-            titleSize={heading?.titleSize}
-            align={heading?.align}
-            extraText={heading?.extraText}
-            title={heading?.title}
-            sectionName={heading?.sectionName}
-            content={heading?.content}
+            {...heading}
             buttonGroup={heading?.buttonGroup?.buttons?.data}
             list={heading?.list?.list_options?.data}
-            segmentedButton={heading?.segmentedButton?.buttons?.data}
             table={heading?.table?.content}
             className={`${styles?.headingContainer} ${
               mainIllustrationImage ? styles?.maxWidth : ""
             }`}
-            chip={{ ...heading?.chip }}
             button={{
               ...heading?.button,
               action: () => window.open(heading?.button?.url, "_blank"),
@@ -201,21 +193,11 @@ const DynamicSelector: React.FC<ISectionProps> = props => {
             <div className={styles?.dynamicSelector__leftSide}>
               {heading_selector && (
                 <Heading
-                  idHeading={heading_selector?.idHeading}
-                  titleSize={heading_selector?.titleSize}
-                  align={heading_selector?.align}
-                  extraText={heading_selector?.extraText}
-                  title={heading_selector?.title}
-                  sectionName={heading_selector?.sectionName}
-                  content={heading_selector?.content}
+                  {...heading}
                   buttonGroup={heading_selector?.buttonGroup?.buttons?.data}
                   list={heading_selector?.list?.list_options?.data}
-                  segmentedButton={
-                    heading_selector?.segmentedButton?.buttons?.data
-                  }
                   table={heading_selector?.table?.content}
                   className={styles?.heading_selector_container}
-                  chip={{ ...heading_selector?.chip }}
                   button={{
                     ...heading_selector?.button,
                     action: () =>

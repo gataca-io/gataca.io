@@ -132,34 +132,6 @@
           "sortable": false
         }
       },
-      "segmentedButton": {
-        "edit": {
-          "label": "segmentedButton",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "segmentedButton",
-          "searchable": false,
-          "sortable": false
-        }
-      },
-      "list": {
-        "edit": {
-          "label": "list",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "list",
-          "searchable": false,
-          "sortable": false
-        }
-      },
       "table": {
         "edit": {
           "label": "table",
@@ -200,6 +172,20 @@
           "label": "align",
           "searchable": true,
           "sortable": true
+        }
+      },
+      "list": {
+        "edit": {
+          "label": "list",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "list",
+          "searchable": false,
+          "sortable": false
         }
       }
     },
@@ -262,12 +248,6 @@
         [
           {
             "name": "buttonGroup",
-            "size": 12
-          }
-        ],
-        [
-          {
-            "name": "segmentedButton",
             "size": 12
           }
         ],

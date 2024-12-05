@@ -1,7 +1,7 @@
 {
-  "key": "plugin_content_manager_configuration_components::generic.button-options",
+  "key": "plugin_content_manager_configuration_components::shared.button-options",
   "value": {
-    "uid": "generic.button-options",
+    "uid": "shared.button-options",
     "settings": {
       "bulkable": true,
       "filterable": true,

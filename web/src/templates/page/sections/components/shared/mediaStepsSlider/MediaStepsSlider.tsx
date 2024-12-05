@@ -57,18 +57,10 @@ const MediaStepsSlider: React.FC<IMediaStepsSliderProps> = props => {
         <div className={`${styles.heading__mobile}`}>
           {heading && (
             <Heading
-              idHeading={heading?.idHeading}
-              titleSize={heading?.titleSize}
-              align={heading?.align}
-              extraText={heading?.extraText}
-              title={heading?.title}
-              sectionName={heading?.sectionName}
-              content={heading?.content}
+              {...heading}
               buttonGroup={heading?.buttonGroup?.buttons?.data}
               list={heading?.list?.list_options?.data}
-              segmentedButton={heading?.segmentedButton?.buttons?.data}
               table={heading?.table?.content}
-              chip={{ ...heading?.chip }}
               button={{
                 ...heading?.button,
                 action: () => window.open(heading?.button?.url, "_blank"),
@@ -93,18 +85,10 @@ const MediaStepsSlider: React.FC<IMediaStepsSliderProps> = props => {
           <div className={`${styles.heading__desktop}`}>
             {heading && (
               <Heading
-                idHeading={heading?.idHeading}
-                titleSize={heading?.titleSize}
-                align={heading?.align}
-                extraText={heading?.extraText}
-                title={heading?.title}
-                sectionName={heading?.sectionName}
-                content={heading?.content}
+                {...heading}
                 buttonGroup={heading?.buttonGroup?.buttons?.data}
                 list={heading?.list?.list_options?.data}
-                segmentedButton={heading?.segmentedButton?.buttons?.data}
                 table={heading?.table?.content}
-                chip={{ ...heading?.chip }}
                 button={{
                   ...heading?.button,
                   action: () => window.open(heading?.button?.url, "_blank"),
@@ -131,32 +115,7 @@ const MediaStepsSlider: React.FC<IMediaStepsSliderProps> = props => {
                     </div>
                     <div className={styles?.heading}>
                       <Heading
-                        idHeading={
-                          mediaSteps?.[firstItem]?.attributes?.headingStep
-                            .idHeading
-                        }
-                        titleSize={
-                          mediaSteps?.[firstItem]?.attributes?.headingStep
-                            .titleSize
-                        }
-                        align={
-                          mediaSteps?.[firstItem]?.attributes?.headingStep.align
-                        }
-                        extraText={
-                          mediaSteps?.[firstItem]?.attributes?.headingStep
-                            .extraText
-                        }
-                        title={
-                          mediaSteps?.[firstItem]?.attributes?.headingStep.title
-                        }
-                        sectionName={
-                          mediaSteps?.[firstItem]?.attributes?.headingStep
-                            .sectionName
-                        }
-                        content={
-                          mediaSteps?.[firstItem]?.attributes?.headingStep
-                            .content
-                        }
+                        {...mediaSteps?.[firstItem]?.attributes?.headingStep}
                         buttonGroup={
                           mediaSteps?.[firstItem]?.attributes?.headingStep
                             .buttonGroup?.buttons?.data
@@ -165,18 +124,10 @@ const MediaStepsSlider: React.FC<IMediaStepsSliderProps> = props => {
                           mediaSteps?.[firstItem]?.attributes?.headingStep.list
                             ?.list_options?.data
                         }
-                        segmentedButton={
-                          mediaSteps?.[firstItem]?.attributes?.headingStep
-                            .segmentedButton?.buttons?.data
-                        }
                         table={
                           mediaSteps?.[firstItem]?.attributes?.headingStep.table
                             ?.content
                         }
-                        chip={{
-                          ...mediaSteps?.[firstItem]?.attributes?.headingStep
-                            .chip,
-                        }}
                         button={{
                           ...mediaSteps?.[firstItem]?.attributes?.headingStep
                             .button,

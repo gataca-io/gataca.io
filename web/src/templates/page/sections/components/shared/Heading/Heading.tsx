@@ -4,7 +4,6 @@ import * as styles from "./heading.module.scss"
 import { HeadingModel } from "../../../../../../interfaces/interfaces"
 import Chip from "../../generic/chip/Chip"
 import ButtonGroup from "../../generic/buttonGroup/ButtonGroup"
-import SegmentedButtonsContainer from "../../generic/segmentedButtons/SegmentedButtonsContainer"
 import ListGroup from "../list/listGroup/ListGroup"
 import Button from "../../generic/button/Button"
 import Table from "../table/Table"
@@ -22,7 +21,6 @@ const Heading: React.FC<HeadingModel> = props => {
     content,
     button,
     buttonGroup,
-    segmentedButton,
     list,
     table,
   } = props
@@ -118,12 +116,6 @@ const Heading: React.FC<HeadingModel> = props => {
           <ButtonGroup
             buttonGroup={buttonGroup}
             className={cx("marginTop20")}
-          />
-        )}
-        {segmentedButton?.length > 0 && (
-          <SegmentedButtonsContainer
-            className={cx("marginTop20")}
-            segmentedOptions={segmentedButton}
           />
         )}
         {list?.length > 0 && (
