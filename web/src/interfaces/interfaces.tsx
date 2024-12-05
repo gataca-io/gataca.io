@@ -192,6 +192,8 @@ export interface InsideSectionsModel {
   showAllFeaturesText?: string
   hideAllFeaturesText?: string
   headings?: any
+  buttonIcon?: ButtonModel
+  employees?: any
 }
 
 export interface LocalizationsModel {
@@ -408,7 +410,14 @@ export interface PricingCardModel {
   extraInfo?: string
   period?: string
 }
-
+export interface PhotoCardModel {
+  className?: string
+  idItem?: string
+  employee?: {
+    attributes: EmployeeInfoModel
+  }
+  buttonIcon?: ButtonModel
+}
 export interface ListModel {
   idList?: string
   size?: string
@@ -480,6 +489,12 @@ export interface MainCardContainerModel {
   columns?: string
 }
 
+export interface PhotoCardContainerModel {
+  idItem?: string
+  photoCard?: EmployeeInfoModel[]
+  buttonIcon?: ButtonModel
+}
+
 export interface CredentialModel {
   className?: string
   idItem?: string
@@ -532,5 +547,18 @@ export interface FooterModel {
     termsButton?: any
     socialMediaButton?: any
     rightsReserved?: string
+  }
+}
+
+export interface EmployeeInfoModel {
+  name: string
+  role: string
+  linkedinRoute: string
+  portrait: {
+    data: {
+      attributes: {
+        url: string
+      }
+    }
   }
 }

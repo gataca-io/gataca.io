@@ -1,0 +1,35 @@
+@import "../../../../../../../../styles/mixins.scss";
+
+.photoCard__container {
+  @include flexbox();
+  @include flex-direction(column);
+  @include justify-content(flex-start);
+  @include flex-wrap(wrap);
+  @include align-items(flex-start);
+  gap: 20px;
+  img {
+    width: 100%;
+    height: auto;
+    max-width: 232px;
+  }
+  .photoCard__content {
+    @include flexbox();
+    @include justify-content(space-between);
+    @include flex-wrap(nowrap);
+    @include align-items(flex-start);
+    width: 100%;
+    gap: 8px;
+    .photoCard__content__leftCol {
+      @include flexbox();
+      @include flex-direction(column);
+      @include justify-content(flex-start);
+      @include flex-wrap(wrap);
+      @include align-items(flex-start);
+      gap: 8px;
+    }
+    .photoCard__content__rightCol {
+      text-align: right;
+    }
+  }
+  
+}

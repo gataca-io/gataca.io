@@ -42,7 +42,8 @@
         "shared.side-cards-slider",
         "shared.sub-headings-layout",
         "shared.media-steps-slider",
-        "shared.steps-content"
+        "shared.steps-content",
+        "shared.team-layout"
       ],
       "pluginOptions": {
         "i18n": {

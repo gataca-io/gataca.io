@@ -24,6 +24,7 @@ import SideCardsSlider from "./components/shared/sideCardsSlider/SideCardsSlider
 import SubHeadingsLayout from "./components/shared/SubHeadingsLayout/SubHeadingsLayout"
 import MediaStepsSlider from "./components/shared/mediaStepsSlider/MediaStepsSlider"
 import StepsContent from "./components/shared/stepsContent/StepsContent"
+import TeamLayout from "./components/shared/TeamLayout/TeamLayout"
 
 const AllSectionsTemplate: React.FC<PageModel> = props => {
   const { sections, location } = props
@@ -87,6 +88,8 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
       showAllFeaturesText,
       hideAllFeaturesText,
       headings,
+      buttonIcon,
+      employees,
     } = item
 
     return (
@@ -290,6 +293,14 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
         )}
         {__component === "shared.steps-content" && (
           <StepsContent idItem={idItem} headings={headings?.data} />
+        )}
+        {__component === "shared.team-layout" && (
+          <TeamLayout
+            idItem={idItem}
+            employees={employees}
+            heading={heading?.data?.attributes?.heading}
+            buttonIcon={buttonIcon}
+          />
         )}
       </section>
     )

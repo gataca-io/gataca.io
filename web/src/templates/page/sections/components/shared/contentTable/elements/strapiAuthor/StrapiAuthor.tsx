@@ -2,23 +2,13 @@ import * as React from "react"
 import cx from "classnames"
 import * as styles from "./strapiAuthor.module.scss"
 import Avatar from "../../../avatar/Avatar"
+import { EmployeeInfoModel } from "../../../../../../../../interfaces/interfaces"
 
 export interface IStrapiAuthorProps {
   className?: string
   avatarSize?: string
   employee: {
-    attributes: {
-      name: string
-      role: string
-      linkedinRoute: string
-      portrait: {
-        data: {
-          attributes: {
-            url: string
-          }
-        }
-      }
-    }
+    attributes: EmployeeInfoModel
   }
 }
 
