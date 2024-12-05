@@ -49,6 +49,8 @@ export interface SegmentedButtonModel {
   disabled?: boolean
   outsideWeb?: boolean
   noPaddingText?: boolean
+  link?: boolean
+  url?: string
 }
 
 export interface IconModel {
@@ -189,6 +191,7 @@ export interface InsideSectionsModel {
   titleFeaturesTableMobile?: string
   showAllFeaturesText?: string
   hideAllFeaturesText?: string
+  headings?: any
 }
 
 export interface LocalizationsModel {

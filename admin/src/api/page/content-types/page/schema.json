@@ -19,9 +19,6 @@
     "sections": {
       "type": "dynamiczone",
       "components": [
-        "generic.section",
-        "generic.header",
-        "studio.feature-section",
         "generic.table",
         "pricing.cloud",
         "generic.content-heading-container",
@@ -44,7 +41,8 @@
         "shared.main-blog-layout",
         "shared.side-cards-slider",
         "shared.sub-headings-layout",
-        "shared.media-steps-slider"
+        "shared.media-steps-slider",
+        "shared.steps-content"
       ],
       "pluginOptions": {
         "i18n": {

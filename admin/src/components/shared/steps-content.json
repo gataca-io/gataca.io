@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_shared_steps_contents",
+  "info": {
+    "displayName": "StepsContent"
+  },
+  "options": {},
+  "attributes": {
+    "idItem": {
+      "type": "string"
+    },
+    "headings": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::heading.heading"
+    }
+  }
+}

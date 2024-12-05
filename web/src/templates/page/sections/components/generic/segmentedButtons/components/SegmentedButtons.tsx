@@ -13,6 +13,8 @@ const SegmentedButtons: React.FC<SegmentedButtonModel> = props => {
     noPaddingText,
     disabled,
     selected,
+    link,
+    url,
     showItem,
   } = props
 
@@ -25,6 +27,8 @@ const SegmentedButtons: React.FC<SegmentedButtonModel> = props => {
         style={selected ? "" : "text"}
         color={color}
         size={size}
+        link={link}
+        url={url}
         noPaddingText={noPaddingText}
         disabled={disabled}
         action={() => !selected && showItem(index)}

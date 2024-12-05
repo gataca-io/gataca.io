@@ -135,11 +135,7 @@ const PricingInfo: React.FC<ISectionProps> = props => {
                   id={"categories__" + index}
                   key={"categoriesP__" + index}
                   index={index + 1}
-                  label={button?.label}
-                  color={button?.color}
-                  size={button?.size}
-                  noPaddingText={button?.noPaddingText}
-                  disabled={button?.disabled}
+                  {...button}
                   selected={openItem === index + 1}
                   showItem={index => {
                     const element =

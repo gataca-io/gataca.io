@@ -1,7 +1,8 @@
 {
   "collectionName": "components_shared_advantages",
   "info": {
-    "displayName": "advantage"
+    "displayName": "Advantage",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -9,14 +10,15 @@
       "type": "text"
     },
     "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "title": {
       "type": "string"

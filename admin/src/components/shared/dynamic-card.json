@@ -1,7 +1,8 @@
 {
   "collectionName": "components_shared_dynamic_cards",
   "info": {
-    "displayName": "dynamicCard"
+    "displayName": "DynamicCard",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -31,14 +32,15 @@
       "component": "generic.chip"
     },
     "mainIcon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "title": {
       "type": "string"
@@ -52,24 +54,26 @@
       "component": "generic.button"
     },
     "upperIconClosed": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "upperIconOpened": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }

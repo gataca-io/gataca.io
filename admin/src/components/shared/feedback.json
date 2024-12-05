@@ -1,7 +1,8 @@
 {
   "collectionName": "components_shared_feedbacks",
   "info": {
-    "displayName": "feedback"
+    "displayName": "Feedback",
+    "description": ""
   },
   "options": {},
   "attributes": {

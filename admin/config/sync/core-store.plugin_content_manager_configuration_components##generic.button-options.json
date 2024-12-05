@@ -7,8 +7,8 @@
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "id",
-      "defaultSortBy": "id",
+      "mainField": "idItem",
+      "defaultSortBy": "idItem",
       "defaultSortOrder": "ASC"
     },
     "metadatas": {
@@ -34,15 +34,56 @@
           "searchable": false,
           "sortable": false
         }
+      },
+      "heading": {
+        "edit": {
+          "label": "heading",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "idHeading"
+        },
+        "list": {
+          "label": "heading",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "idItem": {
+        "edit": {
+          "label": "idItem",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "idItem",
+          "searchable": true,
+          "sortable": true
+        }
       }
     },
     "layouts": {
       "list": [
         "id",
-        "buttons"
+        "buttons",
+        "heading",
+        "idItem"
       ],
       "edit": [
         [
+          {
+            "name": "idItem",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "heading",
+            "size": 6
+          },
           {
             "name": "buttons",
             "size": 6

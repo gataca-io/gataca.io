@@ -1,7 +1,8 @@
 {
   "collectionName": "components_generic_brand_buttons",
   "info": {
-    "displayName": "brandButton"
+    "displayName": "BrandButton",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -32,14 +33,15 @@
       "default": true
     },
     "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }

@@ -14,17 +14,18 @@ export type IGeneralCardsLayoutProps = {
   heading?: HeadingModel
   button?: ButtonModel
   mainCardContainer?: any
+  className?: string
 }
 
 const GeneralCardsLayout: React.FC<IGeneralCardsLayoutProps> = props => {
-  const { idItem, heading, button, mainCardContainer } = props
+  const { idItem, heading, button, mainCardContainer, className } = props
 
   return (
     <div
       id={idItem}
       className={`${styles?.generalCardsLayout__container} ${cx(
         "containerMaxWidth"
-      )} `}
+      )} ${className && className}`}
     >
       {(heading ||
         button?.label?.length ||
