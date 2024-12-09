@@ -35,6 +35,7 @@ export interface ButtonModel {
   outsideWeb?: boolean
   noPaddingText?: boolean
   onMouseEnterAction?: (x?: any) => void
+  fullWidth?: boolean
 }
 
 export interface SegmentedButtonModel {

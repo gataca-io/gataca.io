@@ -187,6 +187,20 @@
           "searchable": true,
           "sortable": true
         }
+      },
+      "fullWidth": {
+        "edit": {
+          "label": "fullWidth",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "fullWidth",
+          "searchable": true,
+          "sortable": true
+        }
       }
     },
     "layouts": {
@@ -231,6 +245,10 @@
           {
             "name": "color",
             "size": 6
+          },
+          {
+            "name": "fullWidth",
+            "size": 4
           }
         ],
         [
