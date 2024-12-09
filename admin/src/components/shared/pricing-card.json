@@ -35,11 +35,6 @@
       ],
       "default": "large"
     },
-    "list": {
-      "type": "component",
-      "repeatable": false,
-      "component": "shared.list-group"
-    },
     "button": {
       "type": "component",
       "repeatable": false,
@@ -50,6 +45,11 @@
     },
     "extraInfo": {
       "type": "text"
+    },
+    "lists": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::list-option.list-option"
     }
   }
 }

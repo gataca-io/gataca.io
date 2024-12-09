@@ -132,20 +132,6 @@
           "sortable": true
         }
       },
-      "list": {
-        "edit": {
-          "label": "list",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "list",
-          "searchable": false,
-          "sortable": false
-        }
-      },
       "button": {
         "edit": {
           "label": "button",
@@ -186,6 +172,21 @@
           "label": "extraInfo",
           "searchable": true,
           "sortable": true
+        }
+      },
+      "lists": {
+        "edit": {
+          "label": "lists",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "idListOption"
+        },
+        "list": {
+          "label": "lists",
+          "searchable": false,
+          "sortable": false
         }
       }
     },
@@ -249,8 +250,8 @@
         ],
         [
           {
-            "name": "list",
-            "size": 12
+            "name": "lists",
+            "size": 6
           }
         ],
         [

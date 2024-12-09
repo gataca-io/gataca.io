@@ -59,10 +59,10 @@
       ],
       "default": "left"
     },
-    "list": {
-      "type": "component",
-      "repeatable": false,
-      "component": "shared.list-group"
+    "lists": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::list-option.list-option"
     }
   }
 }

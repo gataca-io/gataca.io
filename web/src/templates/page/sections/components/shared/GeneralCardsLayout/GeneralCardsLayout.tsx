@@ -35,7 +35,6 @@ const GeneralCardsLayout: React.FC<IGeneralCardsLayoutProps> = props => {
             <Heading
               {...heading}
               buttonGroup={heading?.buttonGroup?.buttons?.data}
-              list={heading?.list?.list_options?.data}
               table={heading?.table?.content}
               className={styles?.headingCards}
               button={{

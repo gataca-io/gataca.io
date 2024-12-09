@@ -174,16 +174,17 @@
           "sortable": true
         }
       },
-      "list": {
+      "lists": {
         "edit": {
-          "label": "list",
+          "label": "lists",
           "description": "",
           "placeholder": "",
           "visible": true,
-          "editable": true
+          "editable": true,
+          "mainField": "idListOption"
         },
         "list": {
-          "label": "list",
+          "label": "lists",
           "searchable": false,
           "sortable": false
         }
@@ -231,6 +232,10 @@
           {
             "name": "content",
             "size": 6
+          },
+          {
+            "name": "lists",
+            "size": 6
           }
         ],
         [
@@ -248,18 +253,6 @@
         [
           {
             "name": "buttonGroup",
-            "size": 12
-          }
-        ],
-        [
-          {
-            "name": "list",
-            "size": 12
-          }
-        ],
-        [
-          {
-            "name": "table",
             "size": 12
           }
         ]

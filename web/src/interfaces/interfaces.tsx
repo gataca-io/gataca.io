@@ -400,7 +400,7 @@ export interface PricingCardModel {
   className?: string
   idItem?: string
   titleAmountSize?: string
-  list?: any
+  lists?: any
   name?: string
   description?: string
   frecuencyYearly?: string
@@ -454,7 +454,7 @@ export interface HeadingModel {
   content?: string
   button?: any
   buttonGroup?: any
-  list?: any
+  lists?: any
   table?: any
 }
 

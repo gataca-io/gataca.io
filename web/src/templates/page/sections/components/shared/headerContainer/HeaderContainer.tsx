@@ -23,7 +23,6 @@ const HeaderContainer: React.FC<HeaderContainerModel> = props => {
           <Heading
             {...heading}
             buttonGroup={heading?.buttonGroup?.buttons?.data}
-            list={heading?.list?.list_options?.data}
             table={heading?.table?.content}
             button={{
               ...heading?.button,

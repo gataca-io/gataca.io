@@ -4167,7 +4167,7 @@
           "heading.table.content",
           "heading.titleSize",
           "heading.align",
-          "heading.list.list_options",
+          "heading.lists",
           "idHeading"
         ]
       },
@@ -4223,7 +4223,7 @@
           "heading.table.content",
           "heading.titleSize",
           "heading.align",
-          "heading.list.list_options",
+          "heading.lists",
           "idHeading"
         ]
       },
@@ -4267,7 +4267,7 @@
           "heading.table.content",
           "heading.titleSize",
           "heading.align",
-          "heading.list.list_options",
+          "heading.lists",
           "idHeading"
         ]
       },
@@ -4645,7 +4645,7 @@
           "headingStep.table.content",
           "headingStep.titleSize",
           "headingStep.align",
-          "headingStep.list.list_options",
+          "headingStep.lists",
           "image",
           "stepImage"
         ]
@@ -4703,7 +4703,7 @@
           "headingStep.table.content",
           "headingStep.titleSize",
           "headingStep.align",
-          "headingStep.list.list_options",
+          "headingStep.lists",
           "image",
           "stepImage"
         ]
@@ -4749,7 +4749,7 @@
           "headingStep.table.content",
           "headingStep.titleSize",
           "headingStep.align",
-          "headingStep.list.list_options",
+          "headingStep.lists",
           "image",
           "stepImage"
         ]
@@ -5206,7 +5206,6 @@
           "pricingInfo.amountMonthly",
           "pricingInfo.customPrice",
           "pricingInfo.titleAmountSize",
-          "pricingInfo.list.list_options",
           "pricingInfo.button.label",
           "pricingInfo.button.url",
           "pricingInfo.button.outsideWeb",
@@ -5221,7 +5220,8 @@
           "pricingInfo.button.noPaddingText",
           "pricingInfo.button.fullWidth",
           "pricingInfo.frecuencyYearly",
-          "pricingInfo.extraInfo"
+          "pricingInfo.extraInfo",
+          "pricingInfo.lists"
         ]
       },
       "conditions": []
@@ -5252,7 +5252,6 @@
           "pricingInfo.amountMonthly",
           "pricingInfo.customPrice",
           "pricingInfo.titleAmountSize",
-          "pricingInfo.list.list_options",
           "pricingInfo.button.label",
           "pricingInfo.button.url",
           "pricingInfo.button.outsideWeb",
@@ -5267,7 +5266,8 @@
           "pricingInfo.button.noPaddingText",
           "pricingInfo.button.fullWidth",
           "pricingInfo.frecuencyYearly",
-          "pricingInfo.extraInfo"
+          "pricingInfo.extraInfo",
+          "pricingInfo.lists"
         ]
       },
       "conditions": []
@@ -5286,7 +5286,6 @@
           "pricingInfo.amountMonthly",
           "pricingInfo.customPrice",
           "pricingInfo.titleAmountSize",
-          "pricingInfo.list.list_options",
           "pricingInfo.button.label",
           "pricingInfo.button.url",
           "pricingInfo.button.outsideWeb",
@@ -5301,7 +5300,8 @@
           "pricingInfo.button.noPaddingText",
           "pricingInfo.button.fullWidth",
           "pricingInfo.frecuencyYearly",
-          "pricingInfo.extraInfo"
+          "pricingInfo.extraInfo",
+          "pricingInfo.lists"
         ]
       },
       "conditions": []

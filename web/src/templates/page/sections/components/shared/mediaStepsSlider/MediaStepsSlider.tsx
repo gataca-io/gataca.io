@@ -59,7 +59,6 @@ const MediaStepsSlider: React.FC<IMediaStepsSliderProps> = props => {
             <Heading
               {...heading}
               buttonGroup={heading?.buttonGroup?.buttons?.data}
-              list={heading?.list?.list_options?.data}
               table={heading?.table?.content}
               button={{
                 ...heading?.button,
@@ -87,7 +86,6 @@ const MediaStepsSlider: React.FC<IMediaStepsSliderProps> = props => {
               <Heading
                 {...heading}
                 buttonGroup={heading?.buttonGroup?.buttons?.data}
-                list={heading?.list?.list_options?.data}
                 table={heading?.table?.content}
                 button={{
                   ...heading?.button,
@@ -119,10 +117,6 @@ const MediaStepsSlider: React.FC<IMediaStepsSliderProps> = props => {
                         buttonGroup={
                           mediaSteps?.[firstItem]?.attributes?.headingStep
                             .buttonGroup?.buttons?.data
-                        }
-                        list={
-                          mediaSteps?.[firstItem]?.attributes?.headingStep.list
-                            ?.list_options?.data
                         }
                         table={
                           mediaSteps?.[firstItem]?.attributes?.headingStep.table
