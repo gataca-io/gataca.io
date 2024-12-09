@@ -98,14 +98,12 @@ const PricingCard: React.FC<PricingCardModel> = props => {
 
       {(button?.label?.length ||
         button?.icon?.data?.attributes?.url?.length) && (
-        <div className={styles?.maxWidthButton}>
-          <Button
-            {...button}
-            action={() =>
-              window?.open(button?.url, button?.outsideWeb ? "_blank" : "_self")
-            }
-          />
-        </div>
+        <Button
+          {...button}
+          action={() =>
+            window?.open(button?.url, button?.outsideWeb ? "_blank" : "_self")
+          }
+        />
       )}
     </div>
   )

@@ -21,6 +21,7 @@ const Button: React.FC<ButtonModel> = props => {
     noPaddingText,
     IconComponent,
     onMouseEnterAction,
+    fullWidth,
   } = props
 
   const buttonStyles: Record<string, string> = {
@@ -49,7 +50,7 @@ const Button: React.FC<ButtonModel> = props => {
             styles.buttonStrapi
           } ${disabled ? styles.disabled : ""} ${
             noPaddingText ? styles.noPadding : ""
-          }`}
+          } ${fullWidth ? styles?.fullWidthButton : ""}`}
           target={outsideWeb ? "_blank" : "_self"}
           href={url}
         >
@@ -72,7 +73,9 @@ const Button: React.FC<ButtonModel> = props => {
             styles.buttonStrapi
           } ${disabled ? styles.disabled : ""} ${
             noPaddingText ? styles.noPadding : ""
-          } ${className && className}`}
+          } ${fullWidth ? styles?.fullWidthButton : ""} ${
+            className && className
+          }`}
           onClick={action}
           onMouseEnter={onMouseEnterAction}
         >

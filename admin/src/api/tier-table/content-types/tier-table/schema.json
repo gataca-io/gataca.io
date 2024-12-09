@@ -4,7 +4,8 @@
   "info": {
     "singularName": "tier-table",
     "pluralName": "tier-tables",
-    "displayName": "Tier Table"
+    "displayName": "Tier Table",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true

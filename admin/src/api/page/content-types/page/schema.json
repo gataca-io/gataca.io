@@ -23,7 +23,7 @@
         "pricing.cloud",
         "generic.content-heading-container",
         "shared.content-table",
-        "generic.button-options",
+        "shared.button-options",
         "generic.button-group",
         "generic.chip-group",
         "shared.action-card",
@@ -42,7 +42,8 @@
         "shared.side-cards-slider",
         "shared.sub-headings-layout",
         "shared.media-steps-slider",
-        "shared.steps-content"
+        "shared.steps-content",
+        "shared.team-layout"
       ],
       "pluginOptions": {
         "i18n": {

@@ -3,6 +3,7 @@ import cx from "classnames"
 import StrapiAuthor from "../../../../components/atoms/strapi/StrapiAuthor"
 import MarkDownContent from "../../../../components/elements/markDownContent/MarkDownContent"
 import * as styles from "./secondSection.module.scss"
+import { EmployeeInfoModel } from "../../../../interfaces/interfaces"
 
 export type IContentProps = {
   content?: any
@@ -10,18 +11,7 @@ export type IContentProps = {
   avatarSize: string
   employee: {
     data: {
-      attributes: {
-        name: string
-        role: string
-        linkedinRoute: string
-        portrait: {
-          data: {
-            attributes: {
-              url: string
-            }
-          }
-        }
-      }
+      attributes: EmployeeInfoModel
     }
   }
 }

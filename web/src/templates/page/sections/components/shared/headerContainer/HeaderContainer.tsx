@@ -6,29 +6,25 @@ import * as styles from "./headerContainer.module.scss"
 import Heading from "../Heading/Heading"
 
 const HeaderContainer: React.FC<HeaderContainerModel> = props => {
-  const { idHeader, heading, image } = props
+  const { idItem, heading, image, centerText } = props
 
   return (
     <div
-      id={idHeader}
+      id={idItem}
       className={`${styles.header}`}
       style={{ position: "relative" }}
     >
       <div className={`${styles.header__container} ${cx("containerMaxWidth")}`}>
-        <div className={`${styles.header__heading}`}>
+        <div
+          className={`${styles.header__heading} ${
+            centerText ? styles?.centeredText : ""
+          }`}
+        >
           <Heading
-            idHeading={heading?.idHeading}
-            titleSize={heading?.titleSize}
-            align={heading?.align}
-            extraText={heading?.extraText}
-            title={heading?.title}
-            sectionName={heading?.sectionName}
-            content={heading?.content}
+            {...heading}
             buttonGroup={heading?.buttonGroup?.buttons?.data}
             list={heading?.list?.list_options?.data}
-            segmentedButton={heading?.segmentedButton?.buttons?.data}
             table={heading?.table?.content}
-            chip={{ ...heading?.chip }}
             button={{
               ...heading?.button,
               action: () => window.open(heading?.button?.url, "_blank"),

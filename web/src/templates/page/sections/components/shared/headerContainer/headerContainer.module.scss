@@ -32,6 +32,12 @@
     @include flex(0, 1, auto);
     width: 100%;
   }
+  &.centeredText {
+    @include min-width($tabletMD) {
+      max-width: 778px;
+      margin: 0 auto;
+    }
+  }
 }
 .header__imageContainer {
   width: 100%;

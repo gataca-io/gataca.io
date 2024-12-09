@@ -43,18 +43,10 @@ const TextMedia: React.FC<ISectionProps> = props => {
         )}
         <div className={`${styles.textMedia__heading} `}>
           <Heading
-            idHeading={heading?.idHeading}
-            titleSize={heading?.titleSize}
-            align={heading?.align}
-            extraText={heading?.extraText}
-            title={heading?.title}
-            sectionName={heading?.sectionName}
-            content={heading?.content}
+            {...heading}
             buttonGroup={heading?.buttonGroup?.buttons?.data}
             list={heading?.list?.list_options?.data}
-            segmentedButton={heading?.segmentedButton?.buttons?.data}
             table={heading?.table?.content}
-            chip={{ ...heading?.chip }}
             button={{
               ...heading?.button,
               action: () => window.open(heading?.button?.url, "_blank"),

@@ -35,6 +35,7 @@ export interface ButtonModel {
   outsideWeb?: boolean
   noPaddingText?: boolean
   onMouseEnterAction?: (x?: any) => void
+  fullWidth?: boolean
 }
 
 export interface SegmentedButtonModel {
@@ -192,6 +193,9 @@ export interface InsideSectionsModel {
   showAllFeaturesText?: string
   hideAllFeaturesText?: string
   headings?: any
+  buttonIcon?: ButtonModel
+  employees?: any
+  centerText?: boolean
 }
 
 export interface LocalizationsModel {
@@ -408,7 +412,14 @@ export interface PricingCardModel {
   extraInfo?: string
   period?: string
 }
-
+export interface PhotoCardModel {
+  className?: string
+  idItem?: string
+  employee?: {
+    attributes: EmployeeInfoModel
+  }
+  buttonIcon?: ButtonModel
+}
 export interface ListModel {
   idList?: string
   size?: string
@@ -443,7 +454,6 @@ export interface HeadingModel {
   content?: string
   button?: any
   buttonGroup?: any
-  segmentedButton?: any
   list?: any
   table?: any
 }
@@ -459,9 +469,10 @@ export interface SelectorModel {
 }
 
 export interface HeaderContainerModel {
-  idHeader?: string
+  idItem?: string
   heading: HeadingModel
   image?: any
+  centerText?: boolean
   data?: {
     attributes?: []
   }
@@ -479,6 +490,12 @@ export interface MainCardContainerModel {
   card?: CardModel[]
   pricing?: PricingCardModel[]
   columns?: string
+}
+
+export interface PhotoCardContainerModel {
+  idItem?: string
+  photoCard?: EmployeeInfoModel[]
+  buttonIcon?: ButtonModel
 }
 
 export interface CredentialModel {
@@ -533,5 +550,18 @@ export interface FooterModel {
     termsButton?: any
     socialMediaButton?: any
     rightsReserved?: string
+  }
+}
+
+export interface EmployeeInfoModel {
+  name: string
+  role: string
+  linkedinRoute: string
+  portrait: {
+    data: {
+      attributes: {
+        url: string
+      }
+    }
   }
 }
