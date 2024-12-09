@@ -6,16 +6,20 @@ import * as styles from "./headerContainer.module.scss"
 import Heading from "../Heading/Heading"
 
 const HeaderContainer: React.FC<HeaderContainerModel> = props => {
-  const { idHeader, heading, image } = props
+  const { idItem, heading, image, centerText } = props
 
   return (
     <div
-      id={idHeader}
+      id={idItem}
       className={`${styles.header}`}
       style={{ position: "relative" }}
     >
       <div className={`${styles.header__container} ${cx("containerMaxWidth")}`}>
-        <div className={`${styles.header__heading}`}>
+        <div
+          className={`${styles.header__heading} ${
+            centerText ? styles?.centeredText : ""
+          }`}
+        >
           <Heading
             {...heading}
             buttonGroup={heading?.buttonGroup?.buttons?.data}

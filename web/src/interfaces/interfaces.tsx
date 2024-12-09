@@ -195,6 +195,7 @@ export interface InsideSectionsModel {
   headings?: any
   buttonIcon?: ButtonModel
   employees?: any
+  centerText?: boolean
 }
 
 export interface LocalizationsModel {
@@ -468,9 +469,10 @@ export interface SelectorModel {
 }
 
 export interface HeaderContainerModel {
-  idHeader?: string
+  idItem?: string
   heading: HeadingModel
   image?: any
+  centerText?: boolean
   data?: {
     attributes?: []
   }

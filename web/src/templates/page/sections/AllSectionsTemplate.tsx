@@ -90,14 +90,17 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
       headings,
       buttonIcon,
       employees,
+      centerText,
     } = item
 
     return (
       <section key={`sectionContainer_` + Math.random()}>
         {__component === "shared.header-container" && (
           <HeaderContainer
+            idItem={idItem}
             heading={heading?.data?.attributes?.heading}
             image={image}
+            centerText={centerText}
           />
         )}
         {__component === "shared.carrousel-logos" && (
