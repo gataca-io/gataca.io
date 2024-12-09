@@ -6047,20 +6047,71 @@
       "info": {
         "singularName": "heading",
         "pluralName": "headings",
-        "displayName": "Heading"
+        "displayName": "Heading",
+        "description": ""
       },
       "options": {
         "draftAndPublish": true
       },
       "pluginOptions": {},
       "attributes": {
-        "heading": {
+        "idItem": {
+          "type": "string"
+        },
+        "align": {
+          "type": "enumeration",
+          "enum": [
+            "left",
+            "center",
+            "right"
+          ],
+          "default": "left"
+        },
+        "extraText": {
+          "type": "string"
+        },
+        "sectionName": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "titleSize": {
+          "type": "enumeration",
+          "enum": [
+            "small",
+            "medium",
+            "large"
+          ],
+          "default": "large"
+        },
+        "content": {
+          "type": "text"
+        },
+        "button": {
           "type": "component",
           "repeatable": false,
-          "component": "shared.heading"
+          "component": "generic.button"
         },
-        "idHeading": {
-          "type": "string"
+        "chip": {
+          "type": "component",
+          "repeatable": false,
+          "component": "generic.chip"
+        },
+        "buttonGroup": {
+          "type": "component",
+          "repeatable": false,
+          "component": "generic.button-group"
+        },
+        "table": {
+          "type": "component",
+          "repeatable": false,
+          "component": "generic.table"
+        },
+        "lists": {
+          "type": "relation",
+          "relation": "oneToMany",
+          "target": "api::list-option.list-option"
         },
         "createdAt": {
           "type": "datetime"
@@ -6100,20 +6151,71 @@
         "info": {
           "singularName": "heading",
           "pluralName": "headings",
-          "displayName": "Heading"
+          "displayName": "Heading",
+          "description": ""
         },
         "options": {
           "draftAndPublish": true
         },
         "pluginOptions": {},
         "attributes": {
-          "heading": {
+          "idItem": {
+            "type": "string"
+          },
+          "align": {
+            "type": "enumeration",
+            "enum": [
+              "left",
+              "center",
+              "right"
+            ],
+            "default": "left"
+          },
+          "extraText": {
+            "type": "string"
+          },
+          "sectionName": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "titleSize": {
+            "type": "enumeration",
+            "enum": [
+              "small",
+              "medium",
+              "large"
+            ],
+            "default": "large"
+          },
+          "content": {
+            "type": "text"
+          },
+          "button": {
             "type": "component",
             "repeatable": false,
-            "component": "shared.heading"
+            "component": "generic.button"
           },
-          "idHeading": {
-            "type": "string"
+          "chip": {
+            "type": "component",
+            "repeatable": false,
+            "component": "generic.chip"
+          },
+          "buttonGroup": {
+            "type": "component",
+            "repeatable": false,
+            "component": "generic.button-group"
+          },
+          "table": {
+            "type": "component",
+            "repeatable": false,
+            "component": "generic.table"
+          },
+          "lists": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::list-option.list-option"
           }
         },
         "kind": "collectionType"
@@ -6859,7 +6961,8 @@
       "info": {
         "singularName": "media-step",
         "pluralName": "media-steps",
-        "displayName": "Media Step"
+        "displayName": "Media Step",
+        "description": ""
       },
       "options": {
         "draftAndPublish": true
@@ -6869,30 +6972,32 @@
         "idItem": {
           "type": "string"
         },
-        "headingStep": {
-          "type": "component",
-          "repeatable": false,
-          "component": "shared.heading"
-        },
         "image": {
+          "type": "media",
+          "multiple": false,
+          "required": false,
           "allowedTypes": [
             "images",
             "files",
             "videos",
             "audios"
-          ],
-          "type": "media",
-          "multiple": false
+          ]
         },
         "stepImage": {
+          "type": "media",
+          "multiple": false,
+          "required": false,
           "allowedTypes": [
             "images",
             "files",
             "videos",
             "audios"
-          ],
-          "type": "media",
-          "multiple": false
+          ]
+        },
+        "headingStep": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "api::heading.heading"
         },
         "createdAt": {
           "type": "datetime"
@@ -6932,7 +7037,8 @@
         "info": {
           "singularName": "media-step",
           "pluralName": "media-steps",
-          "displayName": "Media Step"
+          "displayName": "Media Step",
+          "description": ""
         },
         "options": {
           "draftAndPublish": true
@@ -6942,30 +7048,32 @@
           "idItem": {
             "type": "string"
           },
-          "headingStep": {
-            "type": "component",
-            "repeatable": false,
-            "component": "shared.heading"
-          },
           "image": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
             "allowedTypes": [
               "images",
               "files",
               "videos",
               "audios"
-            ],
-            "type": "media",
-            "multiple": false
+            ]
           },
           "stepImage": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
             "allowedTypes": [
               "images",
               "files",
               "videos",
               "audios"
-            ],
-            "type": "media",
-            "multiple": false
+            ]
+          },
+          "headingStep": {
+            "type": "relation",
+            "relation": "oneToOne",
+            "target": "api::heading.heading"
           }
         },
         "kind": "collectionType"

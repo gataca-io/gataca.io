@@ -4,7 +4,8 @@
   "info": {
     "singularName": "media-step",
     "pluralName": "media-steps",
-    "displayName": "Media Step"
+    "displayName": "Media Step",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,30 +15,32 @@
     "idItem": {
       "type": "string"
     },
-    "headingStep": {
-      "type": "component",
-      "repeatable": false,
-      "component": "shared.heading"
-    },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "stepImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "headingStep": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::heading.heading"
     }
   }
 }

@@ -18,7 +18,6 @@ const StepsContent: React.FC<IStepsContentProps> = props => {
       className={`${styles?.stepsContent} ${cx("containerMaxWidth")}`}
     >
       {headings?.map((item: any, index: number) => {
-        const { heading } = item?.attributes
         return (
           <div
             key={"stepsContent__container__" + index}
@@ -28,15 +27,15 @@ const StepsContent: React.FC<IStepsContentProps> = props => {
               <div className={styles?.number}>{index + 1}</div>
             </div>
             <div className={styles?.textContainer}>
-              {heading && (
+              {item?.attributes && (
                 <Heading
-                  {...heading}
-                  buttonGroup={heading?.buttonGroup?.buttons?.data}
-                  list={heading?.list?.list_options?.data}
-                  table={heading?.table?.content}
+                  {...item?.attributes}
+                  buttonGroup={item?.attributes?.buttonGroup?.buttons?.data}
+                  table={item?.attributes?.table?.content}
                   button={{
-                    ...heading?.button,
-                    action: () => window.open(heading?.button?.url, "_blank"),
+                    ...item?.attributes?.button,
+                    action: () =>
+                      window.open(item?.attributes?.button?.url, "_blank"),
                   }}
                 />
               )}

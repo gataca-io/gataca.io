@@ -33,7 +33,6 @@ const SegmentedButtonsContainer: React.FC<
       {heading && (
         <Heading
           {...heading}
-          list={heading?.list?.list_options?.data}
           buttonGroup={heading?.buttonGroup?.buttons?.data}
           table={heading?.table?.content}
           button={{
@@ -84,9 +83,11 @@ const SegmentedButtonsContainer: React.FC<
               <GeneralCardsLayout
                 key={"generalCardsLayout__" + index}
                 idItem={generalCardsLayout?.idItem}
-                heading={generalCardsLayout?.heading?.data?.attributes?.heading}
+                heading={generalCardsLayout?.heading?.data?.attributes}
                 button={generalCardsLayout?.button}
-                mainCardContainer={generalCardsLayout?.mainCardContainer}
+                columns={generalCardsLayout?.columns}
+                card={generalCardsLayout?.card}
+                pricing={generalCardsLayout?.pricing}
                 className={styles?.segmentButtons__generalCardsLayout}
               />
             ) : null

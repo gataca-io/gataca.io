@@ -13,12 +13,14 @@ export type IGeneralCardsLayoutProps = {
   idItem?: string
   heading?: HeadingModel
   button?: ButtonModel
-  mainCardContainer?: any
   className?: string
+  columns?: string
+  card?: any
+  pricing?: any
 }
 
 const GeneralCardsLayout: React.FC<IGeneralCardsLayoutProps> = props => {
-  const { idItem, heading, button, mainCardContainer, className } = props
+  const { idItem, heading, button, columns, card, pricing, className } = props
 
   return (
     <div
@@ -35,7 +37,6 @@ const GeneralCardsLayout: React.FC<IGeneralCardsLayoutProps> = props => {
             <Heading
               {...heading}
               buttonGroup={heading?.buttonGroup?.buttons?.data}
-              list={heading?.list?.list_options?.data}
               table={heading?.table?.content}
               className={styles?.headingCards}
               button={{
@@ -68,13 +69,12 @@ const GeneralCardsLayout: React.FC<IGeneralCardsLayoutProps> = props => {
           )}
         </div>
       )}
-      {(mainCardContainer?.card?.data?.attributes?.card ||
-        mainCardContainer?.pricing?.data?.attributes?.pricingInfo) && (
+      {(card?.data?.attributes?.card ||
+        pricing?.data?.attributes?.pricingInfo) && (
         <MainCardContainer
-          idItem={mainCardContainer?.idItem}
-          columns={mainCardContainer?.columns}
-          card={mainCardContainer?.card?.data?.attributes?.card}
-          pricing={mainCardContainer?.pricing?.data?.attributes?.pricingInfo}
+          columns={columns}
+          card={card?.data?.attributes?.card}
+          pricing={pricing?.data?.attributes?.pricingInfo}
         />
       )}
     </div>

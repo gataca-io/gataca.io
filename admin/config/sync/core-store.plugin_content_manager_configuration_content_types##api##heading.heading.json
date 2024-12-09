@@ -7,8 +7,8 @@
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "idHeading",
-      "defaultSortBy": "idHeading",
+      "mainField": "idItem",
+      "defaultSortBy": "idItem",
       "defaultSortOrder": "ASC"
     },
     "metadatas": {
@@ -20,32 +20,173 @@
           "sortable": true
         }
       },
-      "heading": {
+      "idItem": {
         "edit": {
-          "label": "heading",
+          "label": "idItem",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "heading",
+          "label": "idItem",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "align": {
+        "edit": {
+          "label": "align",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "align",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "extraText": {
+        "edit": {
+          "label": "extraText",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "extraText",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "sectionName": {
+        "edit": {
+          "label": "sectionName",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "sectionName",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "title": {
+        "edit": {
+          "label": "title",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "title",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "titleSize": {
+        "edit": {
+          "label": "titleSize",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "titleSize",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "content": {
+        "edit": {
+          "label": "content",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "content",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "button": {
+        "edit": {
+          "label": "button",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "button",
           "searchable": false,
           "sortable": false
         }
       },
-      "idHeading": {
+      "chip": {
         "edit": {
-          "label": "idHeading",
+          "label": "chip",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "idHeading",
-          "searchable": true,
-          "sortable": true
+          "label": "chip",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "buttonGroup": {
+        "edit": {
+          "label": "buttonGroup",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "buttonGroup",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "table": {
+        "edit": {
+          "label": "table",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "table",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "lists": {
+        "edit": {
+          "label": "lists",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "idListOption"
+        },
+        "list": {
+          "label": "lists",
+          "searchable": false,
+          "sortable": false
         }
       },
       "createdAt": {
@@ -81,21 +222,74 @@
       "edit": [
         [
           {
-            "name": "idHeading",
+            "name": "idItem",
+            "size": 6
+          },
+          {
+            "name": "align",
             "size": 6
           }
         ],
         [
           {
-            "name": "heading",
+            "name": "extraText",
+            "size": 6
+          },
+          {
+            "name": "sectionName",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "title",
+            "size": 6
+          },
+          {
+            "name": "titleSize",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "content",
+            "size": 6
+          },
+          {
+            "name": "lists",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "button",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "chip",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "buttonGroup",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "table",
             "size": 12
           }
         ]
       ],
       "list": [
         "id",
-        "idHeading",
-        "heading"
+        "idItem",
+        "title",
+        "lists"
       ]
     }
   },

@@ -11,7 +11,7 @@ import Table from "../table/Table"
 const Heading: React.FC<HeadingModel> = props => {
   const {
     className,
-    idHeading,
+    idItem,
     titleSize,
     align,
     chip,
@@ -21,7 +21,7 @@ const Heading: React.FC<HeadingModel> = props => {
     content,
     button,
     buttonGroup,
-    list,
+    lists,
     table,
   } = props
 
@@ -38,7 +38,7 @@ const Heading: React.FC<HeadingModel> = props => {
 
   return (
     <div
-      id={idHeading}
+      id={idItem}
       className={`${styles?.heading__container} ${className && className}`}
     >
       <div
@@ -118,8 +118,8 @@ const Heading: React.FC<HeadingModel> = props => {
             className={cx("marginTop20")}
           />
         )}
-        {list?.length > 0 && (
-          <ListGroup listOptions={list} className={cx("marginTop20")} />
+        {lists?.data?.length > 0 && (
+          <ListGroup listOptions={lists?.data} className={cx("marginTop20")} />
         )}
         {table && <Table content={table} className={cx("marginTop20")} />}
       </div>

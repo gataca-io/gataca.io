@@ -121,12 +121,6 @@
       }
     },
     "layouts": {
-      "list": [
-        "id",
-        "title",
-        "button",
-        "list_option"
-      ],
       "edit": [
         [
           {
@@ -148,16 +142,22 @@
         ],
         [
           {
-            "name": "content",
+            "name": "generalCardsLayout",
             "size": 12
           }
         ],
         [
           {
-            "name": "generalCardsLayout",
+            "name": "content",
             "size": 12
           }
         ]
+      ],
+      "list": [
+        "id",
+        "title",
+        "button",
+        "list_option"
       ]
     }
   },

@@ -55,7 +55,7 @@
           "placeholder": "",
           "visible": true,
           "editable": true,
-          "mainField": "idHeading"
+          "mainField": "idItem"
         },
         "list": {
           "label": "heading",
@@ -63,18 +63,48 @@
           "sortable": true
         }
       },
-      "mainCardContainer": {
+      "columns": {
         "edit": {
-          "label": "mainCardContainer",
+          "label": "columns",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "mainCardContainer",
-          "searchable": false,
-          "sortable": false
+          "label": "columns",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "card": {
+        "edit": {
+          "label": "card",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "idCard"
+        },
+        "list": {
+          "label": "card",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "pricing": {
+        "edit": {
+          "label": "pricing",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "idItem"
+        },
+        "list": {
+          "label": "pricing",
+          "searchable": true,
+          "sortable": true
         }
       }
     },
@@ -90,16 +120,26 @@
           {
             "name": "idItem",
             "size": 6
-          },
+          }
+        ],
+        [
           {
             "name": "heading",
+            "size": 6
+          },
+          {
+            "name": "columns",
             "size": 6
           }
         ],
         [
           {
-            "name": "mainCardContainer",
-            "size": 12
+            "name": "card",
+            "size": 6
+          },
+          {
+            "name": "pricing",
+            "size": 6
           }
         ],
         [
