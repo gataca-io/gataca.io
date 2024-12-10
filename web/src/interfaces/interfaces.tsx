@@ -197,6 +197,7 @@ export interface InsideSectionsModel {
   centerText?: boolean
   columns?: string
   card?: any
+  fullWidthCard?: any
 }
 
 export interface LocalizationsModel {

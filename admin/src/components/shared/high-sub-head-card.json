@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_shared_high_sub_head_cards",
+  "info": {
+    "displayName": "HighSubHeadCard"
+  },
+  "options": {},
+  "attributes": {
+    "idItem": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::heading.heading"
+    },
+    "sub_heading": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::sub-heading.sub-heading"
+    },
+    "fullWidthCard": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.full-width-card"
+    }
+  }
+}

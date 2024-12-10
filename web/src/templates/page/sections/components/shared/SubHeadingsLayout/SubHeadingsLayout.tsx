@@ -63,9 +63,9 @@ const SubHeadingsLayout: React.FC<ISubHeadingsLayoutProps> = props => {
 
         {subHeadingContainer && (
           <SubHeadingContainer
-            idItem={subHeadingContainer?.subHeadingContainer?.idItem}
-            columns={subHeadingContainer?.subHeadingContainer?.columns}
-            subHeading={subHeadingContainer?.subHeadingContainer?.subHeading}
+            idItem={subHeadingContainer?.idItem}
+            columns={subHeadingContainer?.columns}
+            subHeading={subHeadingContainer?.subHeading}
           />
         )}
       </div>

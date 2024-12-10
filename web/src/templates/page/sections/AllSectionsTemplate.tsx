@@ -25,6 +25,7 @@ import SubHeadingsLayout from "./components/shared/SubHeadingsLayout/SubHeadings
 import MediaStepsSlider from "./components/shared/mediaStepsSlider/MediaStepsSlider"
 import StepsContent from "./components/shared/stepsContent/StepsContent"
 import TeamLayout from "./components/shared/TeamLayout/TeamLayout"
+import HighlightSubHeadingCard from "./components/shared/HighlightSubHeadingCard/HighlightSubHeadingCard"
 
 const AllSectionsTemplate: React.FC<PageModel> = props => {
   const { sections, location } = props
@@ -92,6 +93,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
       centerText,
       columns,
       card,
+      fullWidthCard,
     } = item
 
     return (
@@ -304,6 +306,14 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
             employees={employees}
             heading={heading?.data?.attributes}
             buttonIcon={buttonIcon}
+          />
+        )}
+        {__component === "shared.high-sub-head-card" && (
+          <HighlightSubHeadingCard
+            idItem={idItem}
+            heading={heading?.data?.attributes}
+            subHeadingContainer={sub_heading?.data?.attributes}
+            fullWidthCard={fullWidthCard}
           />
         )}
       </section>

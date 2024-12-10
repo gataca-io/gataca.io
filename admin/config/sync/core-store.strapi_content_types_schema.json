@@ -7430,7 +7430,8 @@
             "shared.sub-headings-layout",
             "shared.media-steps-slider",
             "shared.steps-content",
-            "shared.team-layout"
+            "shared.team-layout",
+            "shared.high-sub-head-card"
           ],
           "pluginOptions": {
             "i18n": {
@@ -7571,7 +7572,8 @@
               "shared.sub-headings-layout",
               "shared.media-steps-slider",
               "shared.steps-content",
-              "shared.team-layout"
+              "shared.team-layout",
+              "shared.high-sub-head-card"
             ],
             "pluginOptions": {
               "i18n": {
@@ -9303,13 +9305,23 @@
       },
       "pluginOptions": {},
       "attributes": {
-        "subHeadingContainer": {
-          "type": "component",
-          "repeatable": false,
-          "component": "shared.sub-heading-container"
-        },
         "idItem": {
           "type": "string"
+        },
+        "columns": {
+          "type": "enumeration",
+          "enum": [
+            "one",
+            "two",
+            "three",
+            "four"
+          ],
+          "default": "two"
+        },
+        "subHeading": {
+          "type": "component",
+          "repeatable": true,
+          "component": "shared.sub-heading"
         },
         "createdAt": {
           "type": "datetime"
@@ -9357,13 +9369,23 @@
         },
         "pluginOptions": {},
         "attributes": {
-          "subHeadingContainer": {
-            "type": "component",
-            "repeatable": false,
-            "component": "shared.sub-heading-container"
-          },
           "idItem": {
             "type": "string"
+          },
+          "columns": {
+            "type": "enumeration",
+            "enum": [
+              "one",
+              "two",
+              "three",
+              "four"
+            ],
+            "default": "two"
+          },
+          "subHeading": {
+            "type": "component",
+            "repeatable": true,
+            "component": "shared.sub-heading"
           }
         },
         "kind": "collectionType"

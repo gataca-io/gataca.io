@@ -139,12 +139,12 @@
         ],
         [
           {
-            "name": "numberIconText",
-            "size": 4
-          },
-          {
             "name": "content",
             "size": 6
+          },
+          {
+            "name": "numberIconText",
+            "size": 4
           }
         ],
         [

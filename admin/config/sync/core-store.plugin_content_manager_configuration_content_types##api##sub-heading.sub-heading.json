@@ -20,20 +20,6 @@
           "sortable": true
         }
       },
-      "subHeadingContainer": {
-        "edit": {
-          "label": "subHeadingContainer",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "subHeadingContainer",
-          "searchable": false,
-          "sortable": false
-        }
-      },
       "idItem": {
         "edit": {
           "label": "idItem",
@@ -46,6 +32,34 @@
           "label": "idItem",
           "searchable": true,
           "sortable": true
+        }
+      },
+      "columns": {
+        "edit": {
+          "label": "columns",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "columns",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "subHeading": {
+        "edit": {
+          "label": "subHeading",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "subHeading",
+          "searchable": false,
+          "sortable": false
         }
       },
       "createdAt": {
@@ -78,24 +92,29 @@
       }
     },
     "layouts": {
+      "list": [
+        "id",
+        "idItem",
+        "columns",
+        "subHeading"
+      ],
       "edit": [
         [
           {
             "name": "idItem",
             "size": 6
+          },
+          {
+            "name": "columns",
+            "size": 6
           }
         ],
         [
           {
-            "name": "subHeadingContainer",
+            "name": "subHeading",
             "size": 12
           }
         ]
-      ],
-      "list": [
-        "id",
-        "idItem",
-        "subHeadingContainer"
       ]
     }
   },

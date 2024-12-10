@@ -6193,16 +6193,15 @@
       "subject": "api::sub-heading.sub-heading",
       "properties": {
         "fields": [
-          "subHeadingContainer.idItem",
-          "subHeadingContainer.subHeading.idSubHeading",
-          "subHeadingContainer.subHeading.size",
-          "subHeadingContainer.subHeading.numberIconText",
-          "subHeadingContainer.subHeading.icon",
-          "subHeadingContainer.subHeading.title",
-          "subHeadingContainer.subHeading.content",
-          "subHeadingContainer.subHeading.align",
-          "subHeadingContainer.columns",
-          "idItem"
+          "idItem",
+          "columns",
+          "subHeading.idSubHeading",
+          "subHeading.size",
+          "subHeading.numberIconText",
+          "subHeading.icon",
+          "subHeading.title",
+          "subHeading.content",
+          "subHeading.align"
         ]
       },
       "conditions": []
@@ -6224,16 +6223,15 @@
       "subject": "api::sub-heading.sub-heading",
       "properties": {
         "fields": [
-          "subHeadingContainer.idItem",
-          "subHeadingContainer.subHeading.idSubHeading",
-          "subHeadingContainer.subHeading.size",
-          "subHeadingContainer.subHeading.numberIconText",
-          "subHeadingContainer.subHeading.icon",
-          "subHeadingContainer.subHeading.title",
-          "subHeadingContainer.subHeading.content",
-          "subHeadingContainer.subHeading.align",
-          "subHeadingContainer.columns",
-          "idItem"
+          "idItem",
+          "columns",
+          "subHeading.idSubHeading",
+          "subHeading.size",
+          "subHeading.numberIconText",
+          "subHeading.icon",
+          "subHeading.title",
+          "subHeading.content",
+          "subHeading.align"
         ]
       },
       "conditions": []
@@ -6243,16 +6241,15 @@
       "subject": "api::sub-heading.sub-heading",
       "properties": {
         "fields": [
-          "subHeadingContainer.idItem",
-          "subHeadingContainer.subHeading.idSubHeading",
-          "subHeadingContainer.subHeading.size",
-          "subHeadingContainer.subHeading.numberIconText",
-          "subHeadingContainer.subHeading.icon",
-          "subHeadingContainer.subHeading.title",
-          "subHeadingContainer.subHeading.content",
-          "subHeadingContainer.subHeading.align",
-          "subHeadingContainer.columns",
-          "idItem"
+          "idItem",
+          "columns",
+          "subHeading.idSubHeading",
+          "subHeading.size",
+          "subHeading.numberIconText",
+          "subHeading.icon",
+          "subHeading.title",
+          "subHeading.content",
+          "subHeading.align"
         ]
       },
       "conditions": []

@@ -54,11 +54,9 @@ export type ISectionProps = {
   sub_heading: {
     data: {
       attributes: {
-        subHeadingContainer: {
-          idItem?: any
-          subHeading?: any
-          columns?: string
-        }
+        idItem?: any
+        subHeading?: any
+        columns?: string
       }
     }
   }
@@ -108,17 +106,11 @@ const ContentTable: React.FC<ISectionProps> = props => {
               listContent={listContent}
             />
           )}
-          {sub_heading?.data?.attributes?.subHeadingContainer?.subHeading && (
+          {sub_heading?.data?.attributes?.subHeading && (
             <SubHeadingContainer
-              idItem={
-                sub_heading?.data?.attributes?.subHeadingContainer?.idItem
-              }
-              subHeading={
-                sub_heading?.data?.attributes?.subHeadingContainer?.subHeading
-              }
-              columns={
-                sub_heading?.data?.attributes?.subHeadingContainer?.columns
-              }
+              idItem={sub_heading?.data?.attributes?.idItem}
+              subHeading={sub_heading?.data?.attributes?.subHeading}
+              columns={sub_heading?.data?.attributes?.columns}
               className={styles?.contentTable__subHeadingContainer}
             />
           )}
