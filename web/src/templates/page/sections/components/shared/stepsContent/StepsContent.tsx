@@ -30,8 +30,6 @@ const StepsContent: React.FC<IStepsContentProps> = props => {
               {item?.attributes && (
                 <Heading
                   {...item?.attributes}
-                  buttonGroup={item?.attributes?.buttonGroup?.buttons?.data}
-                  table={item?.attributes?.table?.content}
                   button={{
                     ...item?.attributes?.button,
                     action: () =>

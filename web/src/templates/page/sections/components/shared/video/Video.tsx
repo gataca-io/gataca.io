@@ -81,8 +81,6 @@ const Video: React.FC<ISectionProps> = props => {
         <div className={`${styles?.video__heading} ${className && className}`}>
           <Heading
             {...heading}
-            buttonGroup={heading?.buttonGroup?.buttons?.data}
-            table={heading?.table?.content}
             button={{
               ...heading?.button,
               action: () => window.open(heading?.button?.url, "_blank"),

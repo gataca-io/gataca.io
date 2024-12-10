@@ -112,16 +112,25 @@ const Heading: React.FC<HeadingModel> = props => {
             )}
           </>
         )}
-        {buttonGroup?.length > 0 && (
+        {(buttonGroup?.buttons?.data?.length > 0 ||
+          buttonGroup?.brand_buttons?.data?.length > 0 ||
+          buttonGroup?.button_icons?.data?.length > 0) && (
           <ButtonGroup
-            buttonGroup={buttonGroup}
+            buttonGroup={buttonGroup?.buttons?.data}
+            brandButtonGroup={buttonGroup?.brand_buttons?.data}
+            buttonIconGroup={buttonGroup?.button_icons?.data}
             className={cx("marginTop20")}
           />
         )}
         {lists?.data?.length > 0 && (
           <ListGroup listOptions={lists?.data} className={cx("marginTop20")} />
         )}
-        {table && <Table content={table} className={cx("marginTop20")} />}
+        {table?.content && (
+          <Table
+            content={table?.content}
+            className={`${cx("marginTop20")} ${styles?.tableContainer}`}
+          />
+        )}
       </div>
     </div>
   )

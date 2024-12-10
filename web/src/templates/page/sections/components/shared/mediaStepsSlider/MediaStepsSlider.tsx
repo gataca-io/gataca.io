@@ -58,8 +58,6 @@ const MediaStepsSlider: React.FC<IMediaStepsSliderProps> = props => {
           {heading && (
             <Heading
               {...heading}
-              buttonGroup={heading?.buttonGroup?.buttons?.data}
-              table={heading?.table?.content}
               button={{
                 ...heading?.button,
                 action: () => window.open(heading?.button?.url, "_blank"),
@@ -85,8 +83,6 @@ const MediaStepsSlider: React.FC<IMediaStepsSliderProps> = props => {
             {heading && (
               <Heading
                 {...heading}
-                buttonGroup={heading?.buttonGroup?.buttons?.data}
-                table={heading?.table?.content}
                 button={{
                   ...heading?.button,
                   action: () => window.open(heading?.button?.url, "_blank"),
@@ -115,14 +111,6 @@ const MediaStepsSlider: React.FC<IMediaStepsSliderProps> = props => {
                       <Heading
                         {...mediaSteps?.[firstItem]?.attributes?.headingStep
                           ?.data?.attributes}
-                        buttonGroup={
-                          mediaSteps?.[firstItem]?.attributes?.headingStep
-                            .buttonGroup?.buttons?.data
-                        }
-                        table={
-                          mediaSteps?.[firstItem]?.attributes?.headingStep.table
-                            ?.content
-                        }
                         button={{
                           ...mediaSteps?.[firstItem]?.attributes?.headingStep
                             .button,

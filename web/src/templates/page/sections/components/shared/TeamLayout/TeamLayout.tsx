@@ -34,8 +34,6 @@ const TeamLayout: React.FC<ITeamLayoutProps> = props => {
           {heading && (
             <Heading
               {...heading}
-              buttonGroup={heading?.buttonGroup?.buttons?.data}
-              table={heading?.table?.content}
               className={styles?.headingCards}
               button={{
                 ...heading?.button,

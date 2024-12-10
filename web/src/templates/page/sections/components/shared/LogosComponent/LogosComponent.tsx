@@ -25,8 +25,6 @@ const LogosComponent: React.FC<ILogosComponentProps> = props => {
       {heading && (
         <Heading
           {...heading}
-          buttonGroup={heading?.buttonGroup?.buttons?.data}
-          table={heading?.table?.content}
           className={cx("containerMaxWidth")}
           button={{
             ...heading?.button,
