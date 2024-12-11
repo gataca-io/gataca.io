@@ -5,51 +5,342 @@
   "permissions": [
     {
       "action": "plugin::content-manager.explorer.create",
-      "subject": "api::author.author",
+      "subject": "api::action-card.action-card",
       "properties": {
         "fields": [
-          "Image",
-          "LinkedInURL",
-          "Name",
-          "Role"
+          "idItem",
+          "actionCard.idActionCard",
+          "actionCard.titleCard",
+          "actionCard.upperIconOpened",
+          "actionCard.upperIconClosed",
+          "actionCard.chip.idChip",
+          "actionCard.chip.text",
+          "actionCard.chip.type",
+          "actionCard.chip.form",
+          "actionCard.chip.disabled",
+          "actionCard.chip.color",
+          "actionCard.chip.chipSize",
+          "actionCard.chip.leadingIcon",
+          "actionCard.chip.trailingIcon",
+          "actionCard.titleContent",
+          "actionCard.content",
+          "actionCard.button.label",
+          "actionCard.button.url",
+          "actionCard.button.outsideWeb",
+          "actionCard.button.outlined",
+          "actionCard.button.idButton",
+          "actionCard.button.icon",
+          "actionCard.button.link",
+          "actionCard.button.style",
+          "actionCard.button.color",
+          "actionCard.button.size",
+          "actionCard.button.disabled",
+          "actionCard.button.noPaddingText",
+          "actionCard.button.fullWidth",
+          "actionCard.trailingIcon"
         ]
       },
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::author.author",
+      "subject": "api::action-card.action-card",
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.publish",
-      "subject": "api::author.author",
+      "subject": "api::action-card.action-card",
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.read",
-      "subject": "api::author.author",
+      "subject": "api::action-card.action-card",
       "properties": {
         "fields": [
-          "Image",
-          "LinkedInURL",
-          "Name",
-          "Role"
+          "idItem",
+          "actionCard.idActionCard",
+          "actionCard.titleCard",
+          "actionCard.upperIconOpened",
+          "actionCard.upperIconClosed",
+          "actionCard.chip.idChip",
+          "actionCard.chip.text",
+          "actionCard.chip.type",
+          "actionCard.chip.form",
+          "actionCard.chip.disabled",
+          "actionCard.chip.color",
+          "actionCard.chip.chipSize",
+          "actionCard.chip.leadingIcon",
+          "actionCard.chip.trailingIcon",
+          "actionCard.titleContent",
+          "actionCard.content",
+          "actionCard.button.label",
+          "actionCard.button.url",
+          "actionCard.button.outsideWeb",
+          "actionCard.button.outlined",
+          "actionCard.button.idButton",
+          "actionCard.button.icon",
+          "actionCard.button.link",
+          "actionCard.button.style",
+          "actionCard.button.color",
+          "actionCard.button.size",
+          "actionCard.button.disabled",
+          "actionCard.button.noPaddingText",
+          "actionCard.button.fullWidth",
+          "actionCard.trailingIcon"
         ]
       },
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.update",
-      "subject": "api::author.author",
+      "subject": "api::action-card.action-card",
       "properties": {
         "fields": [
-          "Image",
-          "LinkedInURL",
-          "Name",
-          "Role"
+          "idItem",
+          "actionCard.idActionCard",
+          "actionCard.titleCard",
+          "actionCard.upperIconOpened",
+          "actionCard.upperIconClosed",
+          "actionCard.chip.idChip",
+          "actionCard.chip.text",
+          "actionCard.chip.type",
+          "actionCard.chip.form",
+          "actionCard.chip.disabled",
+          "actionCard.chip.color",
+          "actionCard.chip.chipSize",
+          "actionCard.chip.leadingIcon",
+          "actionCard.chip.trailingIcon",
+          "actionCard.titleContent",
+          "actionCard.content",
+          "actionCard.button.label",
+          "actionCard.button.url",
+          "actionCard.button.outsideWeb",
+          "actionCard.button.outlined",
+          "actionCard.button.idButton",
+          "actionCard.button.icon",
+          "actionCard.button.link",
+          "actionCard.button.style",
+          "actionCard.button.color",
+          "actionCard.button.size",
+          "actionCard.button.disabled",
+          "actionCard.button.noPaddingText",
+          "actionCard.button.fullWidth",
+          "actionCard.trailingIcon"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::ad-feature.ad-feature",
+      "properties": {
+        "fields": [
+          "title",
+          "description",
+          "identifier"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::ad-feature.ad-feature",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::ad-feature.ad-feature",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::ad-feature.ad-feature",
+      "properties": {
+        "fields": [
+          "title",
+          "description",
+          "identifier"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::ad-feature.ad-feature",
+      "properties": {
+        "fields": [
+          "title",
+          "description",
+          "identifier"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::alternate-url.alternate-url",
+      "properties": {
+        "fields": [
+          "url",
+          "hreflangLocale",
+          "label"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::alternate-url.alternate-url",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::alternate-url.alternate-url",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::alternate-url.alternate-url",
+      "properties": {
+        "fields": [
+          "url",
+          "hreflangLocale",
+          "label"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::alternate-url.alternate-url",
+      "properties": {
+        "fields": [
+          "url",
+          "hreflangLocale",
+          "label"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::blog-card.blog-card",
+      "properties": {
+        "fields": [
+          "idItem",
+          "blog.idItem",
+          "blog.button.label",
+          "blog.button.url",
+          "blog.button.outsideWeb",
+          "blog.button.outlined",
+          "blog.button.idButton",
+          "blog.button.icon",
+          "blog.button.link",
+          "blog.button.style",
+          "blog.button.color",
+          "blog.button.size",
+          "blog.button.disabled",
+          "blog.button.noPaddingText",
+          "blog.button.fullWidth",
+          "blog.chip.idChip",
+          "blog.chip.text",
+          "blog.chip.type",
+          "blog.chip.form",
+          "blog.chip.disabled",
+          "blog.chip.color",
+          "blog.chip.chipSize",
+          "blog.chip.leadingIcon",
+          "blog.chip.trailingIcon",
+          "blog.showChip",
+          "blog.blog"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::blog-card.blog-card",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::blog-card.blog-card",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::blog-card.blog-card",
+      "properties": {
+        "fields": [
+          "idItem",
+          "blog.idItem",
+          "blog.button.label",
+          "blog.button.url",
+          "blog.button.outsideWeb",
+          "blog.button.outlined",
+          "blog.button.idButton",
+          "blog.button.icon",
+          "blog.button.link",
+          "blog.button.style",
+          "blog.button.color",
+          "blog.button.size",
+          "blog.button.disabled",
+          "blog.button.noPaddingText",
+          "blog.button.fullWidth",
+          "blog.chip.idChip",
+          "blog.chip.text",
+          "blog.chip.type",
+          "blog.chip.form",
+          "blog.chip.disabled",
+          "blog.chip.color",
+          "blog.chip.chipSize",
+          "blog.chip.leadingIcon",
+          "blog.chip.trailingIcon",
+          "blog.showChip",
+          "blog.blog"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::blog-card.blog-card",
+      "properties": {
+        "fields": [
+          "idItem",
+          "blog.idItem",
+          "blog.button.label",
+          "blog.button.url",
+          "blog.button.outsideWeb",
+          "blog.button.outlined",
+          "blog.button.idButton",
+          "blog.button.icon",
+          "blog.button.link",
+          "blog.button.style",
+          "blog.button.color",
+          "blog.button.size",
+          "blog.button.disabled",
+          "blog.button.noPaddingText",
+          "blog.button.fullWidth",
+          "blog.chip.idChip",
+          "blog.chip.text",
+          "blog.chip.type",
+          "blog.chip.form",
+          "blog.chip.disabled",
+          "blog.chip.color",
+          "blog.chip.chipSize",
+          "blog.chip.leadingIcon",
+          "blog.chip.trailingIcon",
+          "blog.showChip",
+          "blog.blog"
         ]
       },
       "conditions": []
@@ -61,14 +352,19 @@
         "fields": [
           "seo.metaTitle",
           "seo.metaDescription",
+          "seo.rrssImg",
           "seo.keywords",
+          "seo.canonicalURL",
+          "seo.alternate_urls",
           "title",
           "date",
           "previewImage",
           "heroImage",
           "content",
           "slugURL",
-          "category"
+          "category",
+          "employee",
+          "avatarSize"
         ]
       },
       "conditions": []
@@ -92,14 +388,19 @@
         "fields": [
           "seo.metaTitle",
           "seo.metaDescription",
+          "seo.rrssImg",
           "seo.keywords",
+          "seo.canonicalURL",
+          "seo.alternate_urls",
           "title",
           "date",
           "previewImage",
           "heroImage",
           "content",
           "slugURL",
-          "category"
+          "category",
+          "employee",
+          "avatarSize"
         ]
       },
       "conditions": []
@@ -111,14 +412,356 @@
         "fields": [
           "seo.metaTitle",
           "seo.metaDescription",
+          "seo.rrssImg",
           "seo.keywords",
+          "seo.canonicalURL",
+          "seo.alternate_urls",
           "title",
           "date",
           "previewImage",
           "heroImage",
           "content",
           "slugURL",
-          "category"
+          "category",
+          "employee",
+          "avatarSize"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::brand-button.brand-button",
+      "properties": {
+        "fields": [
+          "idButton",
+          "brandButton.idButton",
+          "brandButton.url",
+          "brandButton.color",
+          "brandButton.size",
+          "brandButton.outsideWeb",
+          "brandButton.icon"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::brand-button.brand-button",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::brand-button.brand-button",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::brand-button.brand-button",
+      "properties": {
+        "fields": [
+          "idButton",
+          "brandButton.idButton",
+          "brandButton.url",
+          "brandButton.color",
+          "brandButton.size",
+          "brandButton.outsideWeb",
+          "brandButton.icon"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::brand-button.brand-button",
+      "properties": {
+        "fields": [
+          "idButton",
+          "brandButton.idButton",
+          "brandButton.url",
+          "brandButton.color",
+          "brandButton.size",
+          "brandButton.outsideWeb",
+          "brandButton.icon"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::button-icon.button-icon",
+      "properties": {
+        "fields": [
+          "idButton",
+          "buttonIcon.idButton",
+          "buttonIcon.icon",
+          "buttonIcon.url",
+          "buttonIcon.outsideWeb",
+          "buttonIcon.style",
+          "buttonIcon.color",
+          "buttonIcon.size",
+          "buttonIcon.disabled"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::button-icon.button-icon",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::button-icon.button-icon",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::button-icon.button-icon",
+      "properties": {
+        "fields": [
+          "idButton",
+          "buttonIcon.idButton",
+          "buttonIcon.icon",
+          "buttonIcon.url",
+          "buttonIcon.outsideWeb",
+          "buttonIcon.style",
+          "buttonIcon.color",
+          "buttonIcon.size",
+          "buttonIcon.disabled"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::button-icon.button-icon",
+      "properties": {
+        "fields": [
+          "idButton",
+          "buttonIcon.idButton",
+          "buttonIcon.icon",
+          "buttonIcon.url",
+          "buttonIcon.outsideWeb",
+          "buttonIcon.style",
+          "buttonIcon.color",
+          "buttonIcon.size",
+          "buttonIcon.disabled"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::card-table-content.card-table-content",
+      "properties": {
+        "fields": [
+          "title",
+          "contents",
+          "numberList",
+          "idContent"
+        ],
+        "locales": [
+          "en",
+          "es"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::card-table-content.card-table-content",
+      "properties": {
+        "locales": [
+          "en",
+          "es"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::card-table-content.card-table-content",
+      "properties": {
+        "locales": [
+          "en",
+          "es"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::card-table-content.card-table-content",
+      "properties": {
+        "fields": [
+          "title",
+          "contents",
+          "numberList",
+          "idContent"
+        ],
+        "locales": [
+          "en",
+          "es"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::card-table-content.card-table-content",
+      "properties": {
+        "fields": [
+          "title",
+          "contents",
+          "numberList",
+          "idContent"
+        ],
+        "locales": [
+          "en",
+          "es"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::card.card",
+      "properties": {
+        "fields": [
+          "idCard",
+          "card.idCard",
+          "card.size",
+          "card.contentAlign",
+          "card.numberIconText",
+          "card.chip.idChip",
+          "card.chip.text",
+          "card.chip.type",
+          "card.chip.form",
+          "card.chip.disabled",
+          "card.chip.color",
+          "card.chip.chipSize",
+          "card.chip.leadingIcon",
+          "card.chip.trailingIcon",
+          "card.mainIcon",
+          "card.title",
+          "card.content",
+          "card.button.label",
+          "card.button.url",
+          "card.button.outsideWeb",
+          "card.button.outlined",
+          "card.button.idButton",
+          "card.button.icon",
+          "card.button.link",
+          "card.button.style",
+          "card.button.color",
+          "card.button.size",
+          "card.button.disabled",
+          "card.button.noPaddingText",
+          "card.button.fullWidth",
+          "card.upperIconClosed",
+          "card.upperIconOpened",
+          "card.moreContent"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::card.card",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::card.card",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::card.card",
+      "properties": {
+        "fields": [
+          "idCard",
+          "card.idCard",
+          "card.size",
+          "card.contentAlign",
+          "card.numberIconText",
+          "card.chip.idChip",
+          "card.chip.text",
+          "card.chip.type",
+          "card.chip.form",
+          "card.chip.disabled",
+          "card.chip.color",
+          "card.chip.chipSize",
+          "card.chip.leadingIcon",
+          "card.chip.trailingIcon",
+          "card.mainIcon",
+          "card.title",
+          "card.content",
+          "card.button.label",
+          "card.button.url",
+          "card.button.outsideWeb",
+          "card.button.outlined",
+          "card.button.idButton",
+          "card.button.icon",
+          "card.button.link",
+          "card.button.style",
+          "card.button.color",
+          "card.button.size",
+          "card.button.disabled",
+          "card.button.noPaddingText",
+          "card.button.fullWidth",
+          "card.upperIconClosed",
+          "card.upperIconOpened",
+          "card.moreContent"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::card.card",
+      "properties": {
+        "fields": [
+          "idCard",
+          "card.idCard",
+          "card.size",
+          "card.contentAlign",
+          "card.numberIconText",
+          "card.chip.idChip",
+          "card.chip.text",
+          "card.chip.type",
+          "card.chip.form",
+          "card.chip.disabled",
+          "card.chip.color",
+          "card.chip.chipSize",
+          "card.chip.leadingIcon",
+          "card.chip.trailingIcon",
+          "card.mainIcon",
+          "card.title",
+          "card.content",
+          "card.button.label",
+          "card.button.url",
+          "card.button.outsideWeb",
+          "card.button.outlined",
+          "card.button.idButton",
+          "card.button.icon",
+          "card.button.link",
+          "card.button.style",
+          "card.button.color",
+          "card.button.size",
+          "card.button.disabled",
+          "card.button.noPaddingText",
+          "card.button.fullWidth",
+          "card.upperIconClosed",
+          "card.upperIconOpened",
+          "card.moreContent"
         ]
       },
       "conditions": []
@@ -128,9 +771,9 @@
       "subject": "api::category.category",
       "properties": {
         "fields": [
-          "blogs",
           "name",
-          "order"
+          "order",
+          "blogs"
         ]
       },
       "conditions": []
@@ -152,9 +795,9 @@
       "subject": "api::category.category",
       "properties": {
         "fields": [
-          "blogs",
           "name",
-          "order"
+          "order",
+          "blogs"
         ]
       },
       "conditions": []
@@ -164,1072 +807,2111 @@
       "subject": "api::category.category",
       "properties": {
         "fields": [
-          "blogs",
           "name",
-          "order"
+          "order",
+          "blogs"
         ]
       },
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.create",
-      "subject": "api::company-about-us.company-about-us",
+      "subject": "api::chip-option.chip-option",
       "properties": {
         "fields": [
-          "seo.canonicalURL",
-          "seo.keywords",
-          "seo.metaDescription",
-          "seo.metaTitle",
-          "seo.rrssImg"
+          "chip.idChip",
+          "chip.text",
+          "chip.type",
+          "chip.form",
+          "chip.disabled",
+          "chip.color",
+          "chip.chipSize",
+          "chip.leadingIcon",
+          "chip.trailingIcon",
+          "title",
+          "content"
         ]
       },
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::company-about-us.company-about-us",
+      "subject": "api::chip-option.chip-option",
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.publish",
-      "subject": "api::company-about-us.company-about-us",
+      "subject": "api::chip-option.chip-option",
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.read",
-      "subject": "api::company-about-us.company-about-us",
+      "subject": "api::chip-option.chip-option",
       "properties": {
         "fields": [
-          "seo.canonicalURL",
-          "seo.keywords",
-          "seo.metaDescription",
-          "seo.metaTitle",
-          "seo.rrssImg"
+          "chip.idChip",
+          "chip.text",
+          "chip.type",
+          "chip.form",
+          "chip.disabled",
+          "chip.color",
+          "chip.chipSize",
+          "chip.leadingIcon",
+          "chip.trailingIcon",
+          "title",
+          "content"
         ]
       },
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.update",
-      "subject": "api::company-about-us.company-about-us",
+      "subject": "api::chip-option.chip-option",
       "properties": {
         "fields": [
-          "seo.canonicalURL",
-          "seo.keywords",
-          "seo.metaDescription",
-          "seo.metaTitle",
-          "seo.rrssImg"
+          "chip.idChip",
+          "chip.text",
+          "chip.type",
+          "chip.form",
+          "chip.disabled",
+          "chip.color",
+          "chip.chipSize",
+          "chip.leadingIcon",
+          "chip.trailingIcon",
+          "title",
+          "content"
         ]
       },
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.create",
-      "subject": "api::company-careers.company-careers",
+      "subject": "api::content.content",
       "properties": {
         "fields": [
-          "seo.canonicalURL",
-          "seo.keywords",
-          "seo.metaDescription",
-          "seo.metaTitle",
-          "seo.rrssImg"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::company-careers.company-careers",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.publish",
-      "subject": "api::company-careers.company-careers",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.read",
-      "subject": "api::company-careers.company-careers",
-      "properties": {
-        "fields": [
-          "seo.canonicalURL",
-          "seo.keywords",
-          "seo.metaDescription",
-          "seo.metaTitle",
-          "seo.rrssImg"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
-      "subject": "api::company-careers.company-careers",
-      "properties": {
-        "fields": [
-          "seo.canonicalURL",
-          "seo.keywords",
-          "seo.metaDescription",
-          "seo.metaTitle",
-          "seo.rrssImg"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.create",
-      "subject": "api::company-contact-us.company-contact-us",
-      "properties": {
-        "fields": [
-          "seo.canonicalURL",
-          "seo.keywords",
-          "seo.metaDescription",
-          "seo.metaTitle",
-          "seo.rrssImg"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::company-contact-us.company-contact-us",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.publish",
-      "subject": "api::company-contact-us.company-contact-us",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.read",
-      "subject": "api::company-contact-us.company-contact-us",
-      "properties": {
-        "fields": [
-          "seo.canonicalURL",
-          "seo.keywords",
-          "seo.metaDescription",
-          "seo.metaTitle",
-          "seo.rrssImg"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
-      "subject": "api::company-contact-us.company-contact-us",
-      "properties": {
-        "fields": [
-          "seo.canonicalURL",
-          "seo.keywords",
-          "seo.metaDescription",
-          "seo.metaTitle",
-          "seo.rrssImg"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.create",
-      "subject": "api::company-partners.company-partners",
-      "properties": {
-        "fields": [
-          "seo.canonicalURL",
-          "seo.keywords",
-          "seo.metaDescription",
-          "seo.metaTitle",
-          "seo.rrssImg"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::company-partners.company-partners",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.publish",
-      "subject": "api::company-partners.company-partners",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.read",
-      "subject": "api::company-partners.company-partners",
-      "properties": {
-        "fields": [
-          "seo.canonicalURL",
-          "seo.keywords",
-          "seo.metaDescription",
-          "seo.metaTitle",
-          "seo.rrssImg"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
-      "subject": "api::company-partners.company-partners",
-      "properties": {
-        "fields": [
-          "seo.canonicalURL",
-          "seo.keywords",
-          "seo.metaDescription",
-          "seo.metaTitle",
-          "seo.rrssImg"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.create",
-      "subject": "api::entry.entry",
-      "properties": {
-        "fields": [
-          "seo.metaTitle",
-          "seo.metaDescription",
-          "seo.keywords",
-          "seo.canonicalURL"
+          "title",
+          "content",
+          "idContent",
+          "media",
+          "titleSize",
+          "table.content"
         ],
         "locales": [
-          "en"
+          "en",
+          "es"
         ]
       },
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::entry.entry",
+      "subject": "api::content.content",
       "properties": {
         "locales": [
-          "en"
+          "en",
+          "es"
         ]
       },
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.publish",
-      "subject": "api::entry.entry",
+      "subject": "api::content.content",
       "properties": {
         "locales": [
-          "en"
+          "en",
+          "es"
         ]
       },
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.read",
-      "subject": "api::entry.entry",
+      "subject": "api::content.content",
       "properties": {
         "fields": [
-          "seo.metaTitle",
-          "seo.metaDescription",
-          "seo.keywords",
-          "seo.canonicalURL"
+          "title",
+          "content",
+          "idContent",
+          "media",
+          "titleSize",
+          "table.content"
         ],
         "locales": [
-          "en"
+          "en",
+          "es"
         ]
       },
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.update",
-      "subject": "api::entry.entry",
+      "subject": "api::content.content",
       "properties": {
         "fields": [
-          "seo.metaTitle",
-          "seo.metaDescription",
-          "seo.keywords",
-          "seo.canonicalURL"
+          "title",
+          "content",
+          "idContent",
+          "media",
+          "titleSize",
+          "table.content"
         ],
         "locales": [
-          "en"
+          "en",
+          "es"
         ]
       },
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.create",
-      "subject": "api::gataca-studio.gataca-studio",
+      "subject": "api::credential-example.credential-example",
       "properties": {
         "fields": [
-          "seo.canonicalURL",
-          "seo.keywords",
-          "seo.metaDescription",
-          "seo.metaTitle",
-          "seo.rrssImg"
+          "idItem",
+          "credential.idItem",
+          "credential.chip.idChip",
+          "credential.chip.text",
+          "credential.chip.type",
+          "credential.chip.form",
+          "credential.chip.disabled",
+          "credential.chip.color",
+          "credential.chip.chipSize",
+          "credential.chip.leadingIcon",
+          "credential.chip.trailingIcon",
+          "credential.iconSize",
+          "credential.logoSize",
+          "credential.color",
+          "credential.logo",
+          "credential.icon",
+          "credential.actionItemText",
+          "credential.actionItemIcon",
+          "credential.headingCredentialHeader",
+          "credential.heading_credential"
         ]
       },
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::gataca-studio.gataca-studio",
+      "subject": "api::credential-example.credential-example",
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.publish",
-      "subject": "api::gataca-studio.gataca-studio",
+      "subject": "api::credential-example.credential-example",
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.read",
-      "subject": "api::gataca-studio.gataca-studio",
+      "subject": "api::credential-example.credential-example",
       "properties": {
         "fields": [
-          "seo.canonicalURL",
-          "seo.keywords",
-          "seo.metaDescription",
-          "seo.metaTitle",
-          "seo.rrssImg"
+          "idItem",
+          "credential.idItem",
+          "credential.chip.idChip",
+          "credential.chip.text",
+          "credential.chip.type",
+          "credential.chip.form",
+          "credential.chip.disabled",
+          "credential.chip.color",
+          "credential.chip.chipSize",
+          "credential.chip.leadingIcon",
+          "credential.chip.trailingIcon",
+          "credential.iconSize",
+          "credential.logoSize",
+          "credential.color",
+          "credential.logo",
+          "credential.icon",
+          "credential.actionItemText",
+          "credential.actionItemIcon",
+          "credential.headingCredentialHeader",
+          "credential.heading_credential"
         ]
       },
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.update",
-      "subject": "api::gataca-studio.gataca-studio",
+      "subject": "api::credential-example.credential-example",
       "properties": {
         "fields": [
-          "seo.canonicalURL",
-          "seo.keywords",
-          "seo.metaDescription",
-          "seo.metaTitle",
-          "seo.rrssImg"
+          "idItem",
+          "credential.idItem",
+          "credential.chip.idChip",
+          "credential.chip.text",
+          "credential.chip.type",
+          "credential.chip.form",
+          "credential.chip.disabled",
+          "credential.chip.color",
+          "credential.chip.chipSize",
+          "credential.chip.leadingIcon",
+          "credential.chip.trailingIcon",
+          "credential.iconSize",
+          "credential.logoSize",
+          "credential.color",
+          "credential.logo",
+          "credential.icon",
+          "credential.actionItemText",
+          "credential.actionItemIcon",
+          "credential.headingCredentialHeader",
+          "credential.heading_credential"
         ]
       },
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.create",
-      "subject": "api::gataca-wallet.gataca-wallet",
+      "subject": "api::dynamic-card.dynamic-card",
       "properties": {
         "fields": [
-          "seo.canonicalURL",
-          "seo.keywords",
-          "seo.metaDescription",
-          "seo.metaTitle",
-          "seo.rrssImg"
-        ],
-        "locales": [
-          "en"
+          "dynamicCards.size",
+          "dynamicCards.contentAlign",
+          "dynamicCards.numberIconText",
+          "dynamicCards.chip.idChip",
+          "dynamicCards.chip.text",
+          "dynamicCards.chip.type",
+          "dynamicCards.chip.form",
+          "dynamicCards.chip.disabled",
+          "dynamicCards.chip.color",
+          "dynamicCards.chip.chipSize",
+          "dynamicCards.chip.leadingIcon",
+          "dynamicCards.chip.trailingIcon",
+          "dynamicCards.mainIcon",
+          "dynamicCards.title",
+          "dynamicCards.content",
+          "dynamicCards.button.label",
+          "dynamicCards.button.url",
+          "dynamicCards.button.outsideWeb",
+          "dynamicCards.button.outlined",
+          "dynamicCards.button.idButton",
+          "dynamicCards.button.icon",
+          "dynamicCards.button.link",
+          "dynamicCards.button.style",
+          "dynamicCards.button.color",
+          "dynamicCards.button.size",
+          "dynamicCards.button.disabled",
+          "dynamicCards.button.noPaddingText",
+          "dynamicCards.button.fullWidth",
+          "dynamicCards.upperIconClosed",
+          "dynamicCards.upperIconOpened",
+          "idItem"
         ]
       },
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::gataca-wallet.gataca-wallet",
-      "properties": {
-        "locales": [
-          "en"
-        ]
-      },
+      "subject": "api::dynamic-card.dynamic-card",
+      "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.publish",
-      "subject": "api::gataca-wallet.gataca-wallet",
-      "properties": {
-        "locales": [
-          "en"
-        ]
-      },
+      "subject": "api::dynamic-card.dynamic-card",
+      "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.read",
-      "subject": "api::gataca-wallet.gataca-wallet",
+      "subject": "api::dynamic-card.dynamic-card",
       "properties": {
         "fields": [
-          "seo.canonicalURL",
-          "seo.keywords",
-          "seo.metaDescription",
-          "seo.metaTitle",
-          "seo.rrssImg"
-        ],
-        "locales": [
-          "en"
+          "dynamicCards.size",
+          "dynamicCards.contentAlign",
+          "dynamicCards.numberIconText",
+          "dynamicCards.chip.idChip",
+          "dynamicCards.chip.text",
+          "dynamicCards.chip.type",
+          "dynamicCards.chip.form",
+          "dynamicCards.chip.disabled",
+          "dynamicCards.chip.color",
+          "dynamicCards.chip.chipSize",
+          "dynamicCards.chip.leadingIcon",
+          "dynamicCards.chip.trailingIcon",
+          "dynamicCards.mainIcon",
+          "dynamicCards.title",
+          "dynamicCards.content",
+          "dynamicCards.button.label",
+          "dynamicCards.button.url",
+          "dynamicCards.button.outsideWeb",
+          "dynamicCards.button.outlined",
+          "dynamicCards.button.idButton",
+          "dynamicCards.button.icon",
+          "dynamicCards.button.link",
+          "dynamicCards.button.style",
+          "dynamicCards.button.color",
+          "dynamicCards.button.size",
+          "dynamicCards.button.disabled",
+          "dynamicCards.button.noPaddingText",
+          "dynamicCards.button.fullWidth",
+          "dynamicCards.upperIconClosed",
+          "dynamicCards.upperIconOpened",
+          "idItem"
         ]
       },
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.update",
-      "subject": "api::gataca-wallet.gataca-wallet",
+      "subject": "api::dynamic-card.dynamic-card",
       "properties": {
         "fields": [
-          "seo.canonicalURL",
-          "seo.keywords",
-          "seo.metaDescription",
-          "seo.metaTitle",
-          "seo.rrssImg"
-        ],
-        "locales": [
-          "en"
+          "dynamicCards.size",
+          "dynamicCards.contentAlign",
+          "dynamicCards.numberIconText",
+          "dynamicCards.chip.idChip",
+          "dynamicCards.chip.text",
+          "dynamicCards.chip.type",
+          "dynamicCards.chip.form",
+          "dynamicCards.chip.disabled",
+          "dynamicCards.chip.color",
+          "dynamicCards.chip.chipSize",
+          "dynamicCards.chip.leadingIcon",
+          "dynamicCards.chip.trailingIcon",
+          "dynamicCards.mainIcon",
+          "dynamicCards.title",
+          "dynamicCards.content",
+          "dynamicCards.button.label",
+          "dynamicCards.button.url",
+          "dynamicCards.button.outsideWeb",
+          "dynamicCards.button.outlined",
+          "dynamicCards.button.idButton",
+          "dynamicCards.button.icon",
+          "dynamicCards.button.link",
+          "dynamicCards.button.style",
+          "dynamicCards.button.color",
+          "dynamicCards.button.size",
+          "dynamicCards.button.disabled",
+          "dynamicCards.button.noPaddingText",
+          "dynamicCards.button.fullWidth",
+          "dynamicCards.upperIconClosed",
+          "dynamicCards.upperIconOpened",
+          "idItem"
         ]
       },
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.create",
-      "subject": "api::resources-blog.resources-blog",
+      "subject": "api::employee.employee",
       "properties": {
         "fields": [
-          "seo.canonicalURL",
-          "seo.keywords",
-          "seo.metaDescription",
-          "seo.metaTitle",
-          "seo.rrssImg"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::resources-blog.resources-blog",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.publish",
-      "subject": "api::resources-blog.resources-blog",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.read",
-      "subject": "api::resources-blog.resources-blog",
-      "properties": {
-        "fields": [
-          "seo.canonicalURL",
-          "seo.keywords",
-          "seo.metaDescription",
-          "seo.metaTitle",
-          "seo.rrssImg"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
-      "subject": "api::resources-blog.resources-blog",
-      "properties": {
-        "fields": [
-          "seo.canonicalURL",
-          "seo.keywords",
-          "seo.metaDescription",
-          "seo.metaTitle",
-          "seo.rrssImg"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.create",
-      "subject": "api::resources-certification.resources-certification",
-      "properties": {
-        "fields": [
-          "seo.canonicalURL",
-          "seo.keywords",
-          "seo.metaDescription",
-          "seo.metaTitle",
-          "seo.rrssImg"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::resources-certification.resources-certification",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.publish",
-      "subject": "api::resources-certification.resources-certification",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.read",
-      "subject": "api::resources-certification.resources-certification",
-      "properties": {
-        "fields": [
-          "seo.canonicalURL",
-          "seo.keywords",
-          "seo.metaDescription",
-          "seo.metaTitle",
-          "seo.rrssImg"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
-      "subject": "api::resources-certification.resources-certification",
-      "properties": {
-        "fields": [
-          "seo.canonicalURL",
-          "seo.keywords",
-          "seo.metaDescription",
-          "seo.metaTitle",
-          "seo.rrssImg"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.create",
-      "subject": "api::resources-documentation.resources-documentation",
-      "properties": {
-        "fields": [
-          "seo.canonicalURL",
-          "seo.keywords",
-          "seo.metaDescription",
-          "seo.metaTitle",
-          "seo.rrssImg"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::resources-documentation.resources-documentation",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.publish",
-      "subject": "api::resources-documentation.resources-documentation",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.read",
-      "subject": "api::resources-documentation.resources-documentation",
-      "properties": {
-        "fields": [
-          "seo.canonicalURL",
-          "seo.keywords",
-          "seo.metaDescription",
-          "seo.metaTitle",
-          "seo.rrssImg"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
-      "subject": "api::resources-documentation.resources-documentation",
-      "properties": {
-        "fields": [
-          "seo.canonicalURL",
-          "seo.keywords",
-          "seo.metaDescription",
-          "seo.metaTitle",
-          "seo.rrssImg"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.create",
-      "subject": "api::resources-ssi-basic.resources-ssi-basic",
-      "properties": {
-        "fields": [
-          "seo.canonicalURL",
-          "seo.keywords",
-          "seo.metaDescription",
-          "seo.metaTitle",
-          "seo.rrssImg"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::resources-ssi-basic.resources-ssi-basic",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.publish",
-      "subject": "api::resources-ssi-basic.resources-ssi-basic",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.read",
-      "subject": "api::resources-ssi-basic.resources-ssi-basic",
-      "properties": {
-        "fields": [
-          "seo.canonicalURL",
-          "seo.keywords",
-          "seo.metaDescription",
-          "seo.metaTitle",
-          "seo.rrssImg"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
-      "subject": "api::resources-ssi-basic.resources-ssi-basic",
-      "properties": {
-        "fields": [
-          "seo.canonicalURL",
-          "seo.keywords",
-          "seo.metaDescription",
-          "seo.metaTitle",
-          "seo.rrssImg"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.create",
-      "subject": "api::resources.resources",
-      "properties": {
-        "fields": [
-          "seo.canonicalURL",
-          "seo.keywords",
-          "seo.metaDescription",
-          "seo.metaTitle",
-          "seo.rrssImg"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::resources.resources",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.publish",
-      "subject": "api::resources.resources",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.read",
-      "subject": "api::resources.resources",
-      "properties": {
-        "fields": [
-          "seo.canonicalURL",
-          "seo.keywords",
-          "seo.metaDescription",
-          "seo.metaTitle",
-          "seo.rrssImg"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
-      "subject": "api::resources.resources",
-      "properties": {
-        "fields": [
-          "seo.canonicalURL",
-          "seo.keywords",
-          "seo.metaDescription",
-          "seo.metaTitle",
-          "seo.rrssImg"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.create",
-      "subject": "api::sectors-education.sectors-education",
-      "properties": {
-        "fields": [
-          "seo.canonicalURL",
-          "seo.keywords",
-          "seo.metaDescription",
-          "seo.metaTitle",
-          "seo.rrssImg"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::sectors-education.sectors-education",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.publish",
-      "subject": "api::sectors-education.sectors-education",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.read",
-      "subject": "api::sectors-education.sectors-education",
-      "properties": {
-        "fields": [
-          "seo.canonicalURL",
-          "seo.keywords",
-          "seo.metaDescription",
-          "seo.metaTitle",
-          "seo.rrssImg"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
-      "subject": "api::sectors-education.sectors-education",
-      "properties": {
-        "fields": [
-          "seo.canonicalURL",
-          "seo.keywords",
-          "seo.metaDescription",
-          "seo.metaTitle",
-          "seo.rrssImg"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.create",
-      "subject": "api::sectors-finance.sectors-finance",
-      "properties": {
-        "fields": [
-          "seo.canonicalURL",
-          "seo.keywords",
-          "seo.metaDescription",
-          "seo.metaTitle",
-          "seo.rrssImg"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::sectors-finance.sectors-finance",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.publish",
-      "subject": "api::sectors-finance.sectors-finance",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.read",
-      "subject": "api::sectors-finance.sectors-finance",
-      "properties": {
-        "fields": [
-          "seo.canonicalURL",
-          "seo.keywords",
-          "seo.metaDescription",
-          "seo.metaTitle",
-          "seo.rrssImg"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
-      "subject": "api::sectors-finance.sectors-finance",
-      "properties": {
-        "fields": [
-          "seo.canonicalURL",
-          "seo.keywords",
-          "seo.metaDescription",
-          "seo.metaTitle",
-          "seo.rrssImg"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.create",
-      "subject": "api::sectors-government.sectors-government",
-      "properties": {
-        "fields": [
-          "seo.canonicalURL",
-          "seo.keywords",
-          "seo.metaDescription",
-          "seo.metaTitle",
-          "seo.rrssImg"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::sectors-government.sectors-government",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.publish",
-      "subject": "api::sectors-government.sectors-government",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.read",
-      "subject": "api::sectors-government.sectors-government",
-      "properties": {
-        "fields": [
-          "seo.canonicalURL",
-          "seo.keywords",
-          "seo.metaDescription",
-          "seo.metaTitle",
-          "seo.rrssImg"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
-      "subject": "api::sectors-government.sectors-government",
-      "properties": {
-        "fields": [
-          "seo.canonicalURL",
-          "seo.keywords",
-          "seo.metaDescription",
-          "seo.metaTitle",
-          "seo.rrssImg"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.create",
-      "subject": "api::sectors-web3.sectors-web3",
-      "properties": {
-        "fields": [
-          "seo.canonicalURL",
-          "seo.keywords",
-          "seo.metaDescription",
-          "seo.metaTitle",
-          "seo.rrssImg"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::sectors-web3.sectors-web3",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.publish",
-      "subject": "api::sectors-web3.sectors-web3",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.read",
-      "subject": "api::sectors-web3.sectors-web3",
-      "properties": {
-        "fields": [
-          "seo.canonicalURL",
-          "seo.keywords",
-          "seo.metaDescription",
-          "seo.metaTitle",
-          "seo.rrssImg"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
-      "subject": "api::sectors-web3.sectors-web3",
-      "properties": {
-        "fields": [
-          "seo.canonicalURL",
-          "seo.keywords",
-          "seo.metaDescription",
-          "seo.metaTitle",
-          "seo.rrssImg"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.create",
-      "subject": "api::test-sync.test-sync",
-      "properties": {
-        "fields": [
-          "SEO.canonicalURL",
-          "SEO.keywords",
-          "SEO.metaDescription",
-          "SEO.metaTitle",
-          "title"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::test-sync.test-sync",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.publish",
-      "subject": "api::test-sync.test-sync",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.read",
-      "subject": "api::test-sync.test-sync",
-      "properties": {
-        "fields": [
-          "SEO.canonicalURL",
-          "SEO.keywords",
-          "SEO.metaDescription",
-          "SEO.metaTitle",
-          "title"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
-      "subject": "api::test-sync.test-sync",
-      "properties": {
-        "fields": [
-          "SEO.canonicalURL",
-          "SEO.keywords",
-          "SEO.metaDescription",
-          "SEO.metaTitle",
-          "title"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.create",
-      "subject": "api::uses-cases-and-sector.uses-cases-and-sector",
-      "properties": {
-        "fields": [
-          "seo.canonicalURL",
-          "seo.keywords",
-          "seo.metaDescription",
-          "seo.metaTitle",
-          "seo.rrssImg"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::uses-cases-and-sector.uses-cases-and-sector",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.publish",
-      "subject": "api::uses-cases-and-sector.uses-cases-and-sector",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.read",
-      "subject": "api::uses-cases-and-sector.uses-cases-and-sector",
-      "properties": {
-        "fields": [
-          "seo.canonicalURL",
-          "seo.keywords",
-          "seo.metaDescription",
-          "seo.metaTitle",
-          "seo.rrssImg"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
-      "subject": "api::uses-cases-and-sector.uses-cases-and-sector",
-      "properties": {
-        "fields": [
-          "seo.canonicalURL",
-          "seo.keywords",
-          "seo.metaDescription",
-          "seo.metaTitle",
-          "seo.rrssImg"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.create",
-      "subject": "plugin::users-permissions.user",
-      "properties": {
-        "fields": [
-          "blocked",
-          "confirmationToken",
-          "confirmed",
-          "email",
-          "password",
-          "provider",
-          "resetPasswordToken",
           "role",
-          "username"
+          "name",
+          "linkedinRoute",
+          "portrait"
         ]
       },
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.delete",
-      "subject": "plugin::users-permissions.user",
+      "subject": "api::employee.employee",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::employee.employee",
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.read",
-      "subject": "plugin::users-permissions.user",
+      "subject": "api::employee.employee",
       "properties": {
         "fields": [
-          "blocked",
-          "confirmationToken",
-          "confirmed",
-          "email",
-          "password",
-          "provider",
-          "resetPasswordToken",
           "role",
-          "username"
+          "name",
+          "linkedinRoute",
+          "portrait"
         ]
       },
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.update",
-      "subject": "plugin::users-permissions.user",
+      "subject": "api::employee.employee",
       "properties": {
         "fields": [
-          "blocked",
-          "confirmationToken",
-          "confirmed",
-          "email",
-          "password",
-          "provider",
-          "resetPasswordToken",
           "role",
-          "username"
+          "name",
+          "linkedinRoute",
+          "portrait"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::feature-detail.feature-detail",
+      "properties": {
+        "fields": [
+          "title",
+          "infoToggle",
+          "tiers"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::feature-detail.feature-detail",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::feature-detail.feature-detail",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::feature-detail.feature-detail",
+      "properties": {
+        "fields": [
+          "title",
+          "infoToggle",
+          "tiers"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::feature-detail.feature-detail",
+      "properties": {
+        "fields": [
+          "title",
+          "infoToggle",
+          "tiers"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::footer.footer",
+      "properties": {
+        "fields": [
+          "idItem",
+          "logo",
+          "certificationImage",
+          "linksList.list_options",
+          "languageOptions",
+          "languageButton.label",
+          "languageButton.url",
+          "languageButton.outsideWeb",
+          "languageButton.outlined",
+          "languageButton.idButton",
+          "languageButton.icon",
+          "languageButton.link",
+          "languageButton.style",
+          "languageButton.color",
+          "languageButton.size",
+          "languageButton.disabled",
+          "languageButton.noPaddingText",
+          "languageButton.fullWidth",
+          "termsButton.buttons",
+          "termsButton.brand_buttons",
+          "termsButton.button_icons",
+          "socialMediaButton.buttons",
+          "socialMediaButton.brand_buttons",
+          "socialMediaButton.button_icons",
+          "rightsReserved"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::footer.footer",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::footer.footer",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::footer.footer",
+      "properties": {
+        "fields": [
+          "idItem",
+          "logo",
+          "certificationImage",
+          "linksList.list_options",
+          "languageOptions",
+          "languageButton.label",
+          "languageButton.url",
+          "languageButton.outsideWeb",
+          "languageButton.outlined",
+          "languageButton.idButton",
+          "languageButton.icon",
+          "languageButton.link",
+          "languageButton.style",
+          "languageButton.color",
+          "languageButton.size",
+          "languageButton.disabled",
+          "languageButton.noPaddingText",
+          "languageButton.fullWidth",
+          "termsButton.buttons",
+          "termsButton.brand_buttons",
+          "termsButton.button_icons",
+          "socialMediaButton.buttons",
+          "socialMediaButton.brand_buttons",
+          "socialMediaButton.button_icons",
+          "rightsReserved"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::footer.footer",
+      "properties": {
+        "fields": [
+          "idItem",
+          "logo",
+          "certificationImage",
+          "linksList.list_options",
+          "languageOptions",
+          "languageButton.label",
+          "languageButton.url",
+          "languageButton.outsideWeb",
+          "languageButton.outlined",
+          "languageButton.idButton",
+          "languageButton.icon",
+          "languageButton.link",
+          "languageButton.style",
+          "languageButton.color",
+          "languageButton.size",
+          "languageButton.disabled",
+          "languageButton.noPaddingText",
+          "languageButton.fullWidth",
+          "termsButton.buttons",
+          "termsButton.brand_buttons",
+          "termsButton.button_icons",
+          "socialMediaButton.buttons",
+          "socialMediaButton.brand_buttons",
+          "socialMediaButton.button_icons",
+          "rightsReserved"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::heading-credential.heading-credential",
+      "properties": {
+        "fields": [
+          "idItem",
+          "headingCredential.idItem",
+          "headingCredential.type",
+          "headingCredential.align",
+          "headingCredential.typeText",
+          "headingCredential.valueText",
+          "headingCredential.image",
+          "headingCredential.chip.idChip",
+          "headingCredential.chip.text",
+          "headingCredential.chip.type",
+          "headingCredential.chip.form",
+          "headingCredential.chip.disabled",
+          "headingCredential.chip.color",
+          "headingCredential.chip.chipSize",
+          "headingCredential.chip.leadingIcon",
+          "headingCredential.chip.trailingIcon"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::heading-credential.heading-credential",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::heading-credential.heading-credential",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::heading-credential.heading-credential",
+      "properties": {
+        "fields": [
+          "idItem",
+          "headingCredential.idItem",
+          "headingCredential.type",
+          "headingCredential.align",
+          "headingCredential.typeText",
+          "headingCredential.valueText",
+          "headingCredential.image",
+          "headingCredential.chip.idChip",
+          "headingCredential.chip.text",
+          "headingCredential.chip.type",
+          "headingCredential.chip.form",
+          "headingCredential.chip.disabled",
+          "headingCredential.chip.color",
+          "headingCredential.chip.chipSize",
+          "headingCredential.chip.leadingIcon",
+          "headingCredential.chip.trailingIcon"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::heading-credential.heading-credential",
+      "properties": {
+        "fields": [
+          "idItem",
+          "headingCredential.idItem",
+          "headingCredential.type",
+          "headingCredential.align",
+          "headingCredential.typeText",
+          "headingCredential.valueText",
+          "headingCredential.image",
+          "headingCredential.chip.idChip",
+          "headingCredential.chip.text",
+          "headingCredential.chip.type",
+          "headingCredential.chip.form",
+          "headingCredential.chip.disabled",
+          "headingCredential.chip.color",
+          "headingCredential.chip.chipSize",
+          "headingCredential.chip.leadingIcon",
+          "headingCredential.chip.trailingIcon"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::heading.heading",
+      "properties": {
+        "fields": [
+          "idItem",
+          "align",
+          "extraText",
+          "sectionName",
+          "title",
+          "titleSize",
+          "content",
+          "button.label",
+          "button.url",
+          "button.outsideWeb",
+          "button.outlined",
+          "button.idButton",
+          "button.icon",
+          "button.link",
+          "button.style",
+          "button.color",
+          "button.size",
+          "button.disabled",
+          "button.noPaddingText",
+          "button.fullWidth",
+          "chip.idChip",
+          "chip.text",
+          "chip.type",
+          "chip.form",
+          "chip.disabled",
+          "chip.color",
+          "chip.chipSize",
+          "chip.leadingIcon",
+          "chip.trailingIcon",
+          "buttonGroup.buttons",
+          "buttonGroup.brand_buttons",
+          "buttonGroup.button_icons",
+          "table.content",
+          "lists"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::heading.heading",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::heading.heading",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::heading.heading",
+      "properties": {
+        "fields": [
+          "idItem",
+          "align",
+          "extraText",
+          "sectionName",
+          "title",
+          "titleSize",
+          "content",
+          "button.label",
+          "button.url",
+          "button.outsideWeb",
+          "button.outlined",
+          "button.idButton",
+          "button.icon",
+          "button.link",
+          "button.style",
+          "button.color",
+          "button.size",
+          "button.disabled",
+          "button.noPaddingText",
+          "button.fullWidth",
+          "chip.idChip",
+          "chip.text",
+          "chip.type",
+          "chip.form",
+          "chip.disabled",
+          "chip.color",
+          "chip.chipSize",
+          "chip.leadingIcon",
+          "chip.trailingIcon",
+          "buttonGroup.buttons",
+          "buttonGroup.brand_buttons",
+          "buttonGroup.button_icons",
+          "table.content",
+          "lists"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::heading.heading",
+      "properties": {
+        "fields": [
+          "idItem",
+          "align",
+          "extraText",
+          "sectionName",
+          "title",
+          "titleSize",
+          "content",
+          "button.label",
+          "button.url",
+          "button.outsideWeb",
+          "button.outlined",
+          "button.idButton",
+          "button.icon",
+          "button.link",
+          "button.style",
+          "button.color",
+          "button.size",
+          "button.disabled",
+          "button.noPaddingText",
+          "button.fullWidth",
+          "chip.idChip",
+          "chip.text",
+          "chip.type",
+          "chip.form",
+          "chip.disabled",
+          "chip.color",
+          "chip.chipSize",
+          "chip.leadingIcon",
+          "chip.trailingIcon",
+          "buttonGroup.buttons",
+          "buttonGroup.brand_buttons",
+          "buttonGroup.button_icons",
+          "table.content",
+          "lists"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::highlight-card.highlight-card",
+      "properties": {
+        "fields": [
+          "idItem",
+          "highlight_card_list.title",
+          "highlight_card_list.listGroup.list_options"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::highlight-card.highlight-card",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::highlight-card.highlight-card",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::highlight-card.highlight-card",
+      "properties": {
+        "fields": [
+          "idItem",
+          "highlight_card_list.title",
+          "highlight_card_list.listGroup.list_options"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::highlight-card.highlight-card",
+      "properties": {
+        "fields": [
+          "idItem",
+          "highlight_card_list.title",
+          "highlight_card_list.listGroup.list_options"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::language.language",
+      "properties": {
+        "fields": [
+          "languageAbbreviationStrapi",
+          "label",
+          "idItem"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::language.language",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::language.language",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::language.language",
+      "properties": {
+        "fields": [
+          "languageAbbreviationStrapi",
+          "label",
+          "idItem"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::language.language",
+      "properties": {
+        "fields": [
+          "languageAbbreviationStrapi",
+          "label",
+          "idItem"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::list-option.list-option",
+      "properties": {
+        "fields": [
+          "list.idList",
+          "list.title",
+          "list.extraInfo",
+          "list.leadingIcon",
+          "list.size",
+          "list.color",
+          "list.url",
+          "list.noPaddingText",
+          "idListOption",
+          "spacing",
+          "titleFontSize",
+          "titleFontWeight",
+          "title",
+          "list_options"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::list-option.list-option",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::list-option.list-option",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::list-option.list-option",
+      "properties": {
+        "fields": [
+          "list.idList",
+          "list.title",
+          "list.extraInfo",
+          "list.leadingIcon",
+          "list.size",
+          "list.color",
+          "list.url",
+          "list.noPaddingText",
+          "idListOption",
+          "spacing",
+          "titleFontSize",
+          "titleFontWeight",
+          "title",
+          "list_options"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::list-option.list-option",
+      "properties": {
+        "fields": [
+          "list.idList",
+          "list.title",
+          "list.extraInfo",
+          "list.leadingIcon",
+          "list.size",
+          "list.color",
+          "list.url",
+          "list.noPaddingText",
+          "idListOption",
+          "spacing",
+          "titleFontSize",
+          "titleFontWeight",
+          "title",
+          "list_options"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::logo-info.logo-info",
+      "properties": {
+        "fields": [
+          "idItem",
+          "logoInfo.idItem",
+          "logoInfo.title",
+          "logoInfo.image"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::logo-info.logo-info",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::logo-info.logo-info",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::logo-info.logo-info",
+      "properties": {
+        "fields": [
+          "idItem",
+          "logoInfo.idItem",
+          "logoInfo.title",
+          "logoInfo.image"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::logo-info.logo-info",
+      "properties": {
+        "fields": [
+          "idItem",
+          "logoInfo.idItem",
+          "logoInfo.title",
+          "logoInfo.image"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::logo.logo",
+      "properties": {
+        "fields": [
+          "title",
+          "idClient",
+          "icon"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::logo.logo",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::logo.logo",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::logo.logo",
+      "properties": {
+        "fields": [
+          "title",
+          "idClient",
+          "icon"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::logo.logo",
+      "properties": {
+        "fields": [
+          "title",
+          "idClient",
+          "icon"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::media-step.media-step",
+      "properties": {
+        "fields": [
+          "idItem",
+          "image",
+          "stepImage",
+          "headingStep"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::media-step.media-step",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::media-step.media-step",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::media-step.media-step",
+      "properties": {
+        "fields": [
+          "idItem",
+          "image",
+          "stepImage",
+          "headingStep"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::media-step.media-step",
+      "properties": {
+        "fields": [
+          "idItem",
+          "image",
+          "stepImage",
+          "headingStep"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::menu.menu",
+      "properties": {
+        "fields": [
+          "idItem",
+          "logo",
+          "menuDropdown.buttons",
+          "menuDropdown.brand_buttons",
+          "menuDropdown.button_icons",
+          "button.buttons",
+          "button.brand_buttons",
+          "button.button_icons",
+          "backButtonMobile.label",
+          "backButtonMobile.url",
+          "backButtonMobile.outsideWeb",
+          "backButtonMobile.outlined",
+          "backButtonMobile.idButton",
+          "backButtonMobile.icon",
+          "backButtonMobile.link",
+          "backButtonMobile.style",
+          "backButtonMobile.color",
+          "backButtonMobile.size",
+          "backButtonMobile.disabled",
+          "backButtonMobile.noPaddingText",
+          "backButtonMobile.fullWidth",
+          "iconBackButtonMobile",
+          "iconMenuOptionsMobile",
+          "languageOptions",
+          "languageButton.label",
+          "languageButton.url",
+          "languageButton.outsideWeb",
+          "languageButton.outlined",
+          "languageButton.idButton",
+          "languageButton.icon",
+          "languageButton.link",
+          "languageButton.style",
+          "languageButton.color",
+          "languageButton.size",
+          "languageButton.disabled",
+          "languageButton.noPaddingText",
+          "languageButton.fullWidth"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::menu.menu",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::menu.menu",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::menu.menu",
+      "properties": {
+        "fields": [
+          "idItem",
+          "logo",
+          "menuDropdown.buttons",
+          "menuDropdown.brand_buttons",
+          "menuDropdown.button_icons",
+          "button.buttons",
+          "button.brand_buttons",
+          "button.button_icons",
+          "backButtonMobile.label",
+          "backButtonMobile.url",
+          "backButtonMobile.outsideWeb",
+          "backButtonMobile.outlined",
+          "backButtonMobile.idButton",
+          "backButtonMobile.icon",
+          "backButtonMobile.link",
+          "backButtonMobile.style",
+          "backButtonMobile.color",
+          "backButtonMobile.size",
+          "backButtonMobile.disabled",
+          "backButtonMobile.noPaddingText",
+          "backButtonMobile.fullWidth",
+          "iconBackButtonMobile",
+          "iconMenuOptionsMobile",
+          "languageOptions",
+          "languageButton.label",
+          "languageButton.url",
+          "languageButton.outsideWeb",
+          "languageButton.outlined",
+          "languageButton.idButton",
+          "languageButton.icon",
+          "languageButton.link",
+          "languageButton.style",
+          "languageButton.color",
+          "languageButton.size",
+          "languageButton.disabled",
+          "languageButton.noPaddingText",
+          "languageButton.fullWidth"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::menu.menu",
+      "properties": {
+        "fields": [
+          "idItem",
+          "logo",
+          "menuDropdown.buttons",
+          "menuDropdown.brand_buttons",
+          "menuDropdown.button_icons",
+          "button.buttons",
+          "button.brand_buttons",
+          "button.button_icons",
+          "backButtonMobile.label",
+          "backButtonMobile.url",
+          "backButtonMobile.outsideWeb",
+          "backButtonMobile.outlined",
+          "backButtonMobile.idButton",
+          "backButtonMobile.icon",
+          "backButtonMobile.link",
+          "backButtonMobile.style",
+          "backButtonMobile.color",
+          "backButtonMobile.size",
+          "backButtonMobile.disabled",
+          "backButtonMobile.noPaddingText",
+          "backButtonMobile.fullWidth",
+          "iconBackButtonMobile",
+          "iconMenuOptionsMobile",
+          "languageOptions",
+          "languageButton.label",
+          "languageButton.url",
+          "languageButton.outsideWeb",
+          "languageButton.outlined",
+          "languageButton.idButton",
+          "languageButton.icon",
+          "languageButton.link",
+          "languageButton.style",
+          "languageButton.color",
+          "languageButton.size",
+          "languageButton.disabled",
+          "languageButton.noPaddingText",
+          "languageButton.fullWidth"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::page.page",
+      "properties": {
+        "fields": [
+          "sections",
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL",
+          "seo.alternate_urls",
+          "title",
+          "slugURL",
+          "subPath"
+        ],
+        "locales": [
+          "en",
+          "es"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::page.page",
+      "properties": {
+        "locales": [
+          "en",
+          "es"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::page.page",
+      "properties": {
+        "locales": [
+          "en",
+          "es"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::page.page",
+      "properties": {
+        "fields": [
+          "sections",
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL",
+          "seo.alternate_urls",
+          "title",
+          "slugURL",
+          "subPath"
+        ],
+        "locales": [
+          "en",
+          "es"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::page.page",
+      "properties": {
+        "fields": [
+          "sections",
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL",
+          "seo.alternate_urls",
+          "title",
+          "slugURL",
+          "subPath"
+        ],
+        "locales": [
+          "en",
+          "es"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::pricing-category.pricing-category",
+      "properties": {
+        "fields": [
+          "label",
+          "title",
+          "description",
+          "cta.label",
+          "cta.url",
+          "cta.external_url"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::pricing-category.pricing-category",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::pricing-category.pricing-category",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::pricing-category.pricing-category",
+      "properties": {
+        "fields": [
+          "label",
+          "title",
+          "description",
+          "cta.label",
+          "cta.url",
+          "cta.external_url"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::pricing-category.pricing-category",
+      "properties": {
+        "fields": [
+          "label",
+          "title",
+          "description",
+          "cta.label",
+          "cta.url",
+          "cta.external_url"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::pricing.pricing",
+      "properties": {
+        "fields": [
+          "idItem",
+          "pricingInfo.idItem",
+          "pricingInfo.name",
+          "pricingInfo.description",
+          "pricingInfo.frecuencyMonthly",
+          "pricingInfo.amountYearly",
+          "pricingInfo.amountMonthly",
+          "pricingInfo.customPrice",
+          "pricingInfo.titleAmountSize",
+          "pricingInfo.button.label",
+          "pricingInfo.button.url",
+          "pricingInfo.button.outsideWeb",
+          "pricingInfo.button.outlined",
+          "pricingInfo.button.idButton",
+          "pricingInfo.button.icon",
+          "pricingInfo.button.link",
+          "pricingInfo.button.style",
+          "pricingInfo.button.color",
+          "pricingInfo.button.size",
+          "pricingInfo.button.disabled",
+          "pricingInfo.button.noPaddingText",
+          "pricingInfo.button.fullWidth",
+          "pricingInfo.frecuencyYearly",
+          "pricingInfo.extraInfo",
+          "pricingInfo.lists"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::pricing.pricing",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::pricing.pricing",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::pricing.pricing",
+      "properties": {
+        "fields": [
+          "idItem",
+          "pricingInfo.idItem",
+          "pricingInfo.name",
+          "pricingInfo.description",
+          "pricingInfo.frecuencyMonthly",
+          "pricingInfo.amountYearly",
+          "pricingInfo.amountMonthly",
+          "pricingInfo.customPrice",
+          "pricingInfo.titleAmountSize",
+          "pricingInfo.button.label",
+          "pricingInfo.button.url",
+          "pricingInfo.button.outsideWeb",
+          "pricingInfo.button.outlined",
+          "pricingInfo.button.idButton",
+          "pricingInfo.button.icon",
+          "pricingInfo.button.link",
+          "pricingInfo.button.style",
+          "pricingInfo.button.color",
+          "pricingInfo.button.size",
+          "pricingInfo.button.disabled",
+          "pricingInfo.button.noPaddingText",
+          "pricingInfo.button.fullWidth",
+          "pricingInfo.frecuencyYearly",
+          "pricingInfo.extraInfo",
+          "pricingInfo.lists"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::pricing.pricing",
+      "properties": {
+        "fields": [
+          "idItem",
+          "pricingInfo.idItem",
+          "pricingInfo.name",
+          "pricingInfo.description",
+          "pricingInfo.frecuencyMonthly",
+          "pricingInfo.amountYearly",
+          "pricingInfo.amountMonthly",
+          "pricingInfo.customPrice",
+          "pricingInfo.titleAmountSize",
+          "pricingInfo.button.label",
+          "pricingInfo.button.url",
+          "pricingInfo.button.outsideWeb",
+          "pricingInfo.button.outlined",
+          "pricingInfo.button.idButton",
+          "pricingInfo.button.icon",
+          "pricingInfo.button.link",
+          "pricingInfo.button.style",
+          "pricingInfo.button.color",
+          "pricingInfo.button.size",
+          "pricingInfo.button.disabled",
+          "pricingInfo.button.noPaddingText",
+          "pricingInfo.button.fullWidth",
+          "pricingInfo.frecuencyYearly",
+          "pricingInfo.extraInfo",
+          "pricingInfo.lists"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::segmented-button.segmented-button",
+      "properties": {
+        "fields": [
+          "button.label",
+          "button.url",
+          "button.outsideWeb",
+          "button.outlined",
+          "button.idButton",
+          "button.icon",
+          "button.link",
+          "button.style",
+          "button.color",
+          "button.size",
+          "button.disabled",
+          "button.noPaddingText",
+          "button.fullWidth",
+          "content",
+          "title",
+          "list_option",
+          "generalCardsLayout.idItem",
+          "generalCardsLayout.button.label",
+          "generalCardsLayout.button.url",
+          "generalCardsLayout.button.outsideWeb",
+          "generalCardsLayout.button.outlined",
+          "generalCardsLayout.button.idButton",
+          "generalCardsLayout.button.icon",
+          "generalCardsLayout.button.link",
+          "generalCardsLayout.button.style",
+          "generalCardsLayout.button.color",
+          "generalCardsLayout.button.size",
+          "generalCardsLayout.button.disabled",
+          "generalCardsLayout.button.noPaddingText",
+          "generalCardsLayout.button.fullWidth",
+          "generalCardsLayout.heading",
+          "generalCardsLayout.columns",
+          "generalCardsLayout.card",
+          "generalCardsLayout.pricing"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::segmented-button.segmented-button",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::segmented-button.segmented-button",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::segmented-button.segmented-button",
+      "properties": {
+        "fields": [
+          "button.label",
+          "button.url",
+          "button.outsideWeb",
+          "button.outlined",
+          "button.idButton",
+          "button.icon",
+          "button.link",
+          "button.style",
+          "button.color",
+          "button.size",
+          "button.disabled",
+          "button.noPaddingText",
+          "button.fullWidth",
+          "content",
+          "title",
+          "list_option",
+          "generalCardsLayout.idItem",
+          "generalCardsLayout.button.label",
+          "generalCardsLayout.button.url",
+          "generalCardsLayout.button.outsideWeb",
+          "generalCardsLayout.button.outlined",
+          "generalCardsLayout.button.idButton",
+          "generalCardsLayout.button.icon",
+          "generalCardsLayout.button.link",
+          "generalCardsLayout.button.style",
+          "generalCardsLayout.button.color",
+          "generalCardsLayout.button.size",
+          "generalCardsLayout.button.disabled",
+          "generalCardsLayout.button.noPaddingText",
+          "generalCardsLayout.button.fullWidth",
+          "generalCardsLayout.heading",
+          "generalCardsLayout.columns",
+          "generalCardsLayout.card",
+          "generalCardsLayout.pricing"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::segmented-button.segmented-button",
+      "properties": {
+        "fields": [
+          "button.label",
+          "button.url",
+          "button.outsideWeb",
+          "button.outlined",
+          "button.idButton",
+          "button.icon",
+          "button.link",
+          "button.style",
+          "button.color",
+          "button.size",
+          "button.disabled",
+          "button.noPaddingText",
+          "button.fullWidth",
+          "content",
+          "title",
+          "list_option",
+          "generalCardsLayout.idItem",
+          "generalCardsLayout.button.label",
+          "generalCardsLayout.button.url",
+          "generalCardsLayout.button.outsideWeb",
+          "generalCardsLayout.button.outlined",
+          "generalCardsLayout.button.idButton",
+          "generalCardsLayout.button.icon",
+          "generalCardsLayout.button.link",
+          "generalCardsLayout.button.style",
+          "generalCardsLayout.button.color",
+          "generalCardsLayout.button.size",
+          "generalCardsLayout.button.disabled",
+          "generalCardsLayout.button.noPaddingText",
+          "generalCardsLayout.button.fullWidth",
+          "generalCardsLayout.heading",
+          "generalCardsLayout.columns",
+          "generalCardsLayout.card",
+          "generalCardsLayout.pricing"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::selector-list.selector-list",
+      "properties": {
+        "fields": [
+          "idSelectorList",
+          "selector.title",
+          "selector.showSelector",
+          "selector.media",
+          "selector.action_card",
+          "selector.content",
+          "selector.idItem"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::selector-list.selector-list",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::selector-list.selector-list",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::selector-list.selector-list",
+      "properties": {
+        "fields": [
+          "idSelectorList",
+          "selector.title",
+          "selector.showSelector",
+          "selector.media",
+          "selector.action_card",
+          "selector.content",
+          "selector.idItem"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::selector-list.selector-list",
+      "properties": {
+        "fields": [
+          "idSelectorList",
+          "selector.title",
+          "selector.showSelector",
+          "selector.media",
+          "selector.action_card",
+          "selector.content",
+          "selector.idItem"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::sub-heading.sub-heading",
+      "properties": {
+        "fields": [
+          "idItem",
+          "columns",
+          "subHeading.idSubHeading",
+          "subHeading.size",
+          "subHeading.numberIconText",
+          "subHeading.icon",
+          "subHeading.title",
+          "subHeading.content",
+          "subHeading.align"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::sub-heading.sub-heading",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::sub-heading.sub-heading",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::sub-heading.sub-heading",
+      "properties": {
+        "fields": [
+          "idItem",
+          "columns",
+          "subHeading.idSubHeading",
+          "subHeading.size",
+          "subHeading.numberIconText",
+          "subHeading.icon",
+          "subHeading.title",
+          "subHeading.content",
+          "subHeading.align"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::sub-heading.sub-heading",
+      "properties": {
+        "fields": [
+          "idItem",
+          "columns",
+          "subHeading.idSubHeading",
+          "subHeading.size",
+          "subHeading.numberIconText",
+          "subHeading.icon",
+          "subHeading.title",
+          "subHeading.content",
+          "subHeading.align"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::testimonial-card.testimonial-card",
+      "properties": {
+        "fields": [
+          "idItem",
+          "card.idItem",
+          "card.content",
+          "card.name",
+          "card.workTitle",
+          "card.color",
+          "card.image"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::testimonial-card.testimonial-card",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::testimonial-card.testimonial-card",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::testimonial-card.testimonial-card",
+      "properties": {
+        "fields": [
+          "idItem",
+          "card.idItem",
+          "card.content",
+          "card.name",
+          "card.workTitle",
+          "card.color",
+          "card.image"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::testimonial-card.testimonial-card",
+      "properties": {
+        "fields": [
+          "idItem",
+          "card.idItem",
+          "card.content",
+          "card.name",
+          "card.workTitle",
+          "card.color",
+          "card.image"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::tier-table.tier-table",
+      "properties": {
+        "fields": [
+          "title",
+          "feature_details",
+          "rows"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::tier-table.tier-table",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::tier-table.tier-table",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::tier-table.tier-table",
+      "properties": {
+        "fields": [
+          "title",
+          "feature_details",
+          "rows"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::tier-table.tier-table",
+      "properties": {
+        "fields": [
+          "title",
+          "feature_details",
+          "rows"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::tier.tier",
+      "properties": {
+        "fields": [
+          "features.activeUsers",
+          "features.apiKeys",
+          "features.dids",
+          "features.issuanceTemplates",
+          "features.issuedCredentials",
+          "features.verificationTemplates",
+          "features.credentialsInISO28013",
+          "features.credentialsInW3CFormat",
+          "features.customGDPRPurposes",
+          "features.customQR",
+          "features.didPublicCatalogue",
+          "features.ebsiIntegration",
+          "features.integrationCustomTrustFrameworks",
+          "features.integrationCustomTrustInfraestructure",
+          "features.newSchemaPublicCatalogue",
+          "features.sandBoxEnvironment",
+          "features.premierSupport",
+          "features.standardSupport",
+          "features.nFactor",
+          "features.notifications",
+          "features.customLimits",
+          "features.advanceFunctionalities",
+          "features.dataAgreements",
+          "features.verifiableIds",
+          "features.customSchemas",
+          "features.extraCredentials",
+          "features.didMethods",
+          "features.trustRegistries",
+          "features.qualifiedCertificates",
+          "features.enterpriseWallet",
+          "features.roleBasedAccessControl",
+          "features.customRoles",
+          "features.ticketingSystem",
+          "features.slackSupport",
+          "features.accountTeam",
+          "features.twentyFourSeven",
+          "features.onboardingTraining",
+          "features.statistics",
+          "features.ageVerification",
+          "features.appIntegrations",
+          "features.slas",
+          "idItem"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::tier.tier",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::tier.tier",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::tier.tier",
+      "properties": {
+        "fields": [
+          "features.activeUsers",
+          "features.apiKeys",
+          "features.dids",
+          "features.issuanceTemplates",
+          "features.issuedCredentials",
+          "features.verificationTemplates",
+          "features.credentialsInISO28013",
+          "features.credentialsInW3CFormat",
+          "features.customGDPRPurposes",
+          "features.customQR",
+          "features.didPublicCatalogue",
+          "features.ebsiIntegration",
+          "features.integrationCustomTrustFrameworks",
+          "features.integrationCustomTrustInfraestructure",
+          "features.newSchemaPublicCatalogue",
+          "features.sandBoxEnvironment",
+          "features.premierSupport",
+          "features.standardSupport",
+          "features.nFactor",
+          "features.notifications",
+          "features.customLimits",
+          "features.advanceFunctionalities",
+          "features.dataAgreements",
+          "features.verifiableIds",
+          "features.customSchemas",
+          "features.extraCredentials",
+          "features.didMethods",
+          "features.trustRegistries",
+          "features.qualifiedCertificates",
+          "features.enterpriseWallet",
+          "features.roleBasedAccessControl",
+          "features.customRoles",
+          "features.ticketingSystem",
+          "features.slackSupport",
+          "features.accountTeam",
+          "features.twentyFourSeven",
+          "features.onboardingTraining",
+          "features.statistics",
+          "features.ageVerification",
+          "features.appIntegrations",
+          "features.slas",
+          "idItem"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::tier.tier",
+      "properties": {
+        "fields": [
+          "features.activeUsers",
+          "features.apiKeys",
+          "features.dids",
+          "features.issuanceTemplates",
+          "features.issuedCredentials",
+          "features.verificationTemplates",
+          "features.credentialsInISO28013",
+          "features.credentialsInW3CFormat",
+          "features.customGDPRPurposes",
+          "features.customQR",
+          "features.didPublicCatalogue",
+          "features.ebsiIntegration",
+          "features.integrationCustomTrustFrameworks",
+          "features.integrationCustomTrustInfraestructure",
+          "features.newSchemaPublicCatalogue",
+          "features.sandBoxEnvironment",
+          "features.premierSupport",
+          "features.standardSupport",
+          "features.nFactor",
+          "features.notifications",
+          "features.customLimits",
+          "features.advanceFunctionalities",
+          "features.dataAgreements",
+          "features.verifiableIds",
+          "features.customSchemas",
+          "features.extraCredentials",
+          "features.didMethods",
+          "features.trustRegistries",
+          "features.qualifiedCertificates",
+          "features.enterpriseWallet",
+          "features.roleBasedAccessControl",
+          "features.customRoles",
+          "features.ticketingSystem",
+          "features.slackSupport",
+          "features.accountTeam",
+          "features.twentyFourSeven",
+          "features.onboardingTraining",
+          "features.statistics",
+          "features.ageVerification",
+          "features.appIntegrations",
+          "features.slas",
+          "idItem"
         ]
       },
       "conditions": []
