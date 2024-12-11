@@ -7,13 +7,13 @@ import {
   ButtonModel,
   IProductModel,
 } from "../../../../../../interfaces/interfaces"
-import OnPremisePanel from "./components/onPremisePanel/OnPremisePanel"
 import CrevronDownSVG from "../../../../../../images/icons/ChevronDownSVG"
 import ChevronUpSVG from "../../../../../../images/icons/ChevronUpSVG"
 import * as styles from "./pricingInfo.module.scss"
 import Button from "../../generic/button/Button"
 import SegmentedButtons from "../../generic/segmentedButtons/components/SegmentedButtons"
 import PricingCard from "../../shared/PricingCard/PricingCard"
+import FullWidthCard from "../../shared/fullWidthCard/FullWidthCard"
 
 export type ISectionProps = {
   switchLabel?: string
@@ -227,10 +227,15 @@ const PricingInfo: React.FC<ISectionProps> = props => {
             </>
           ) : (
             <>
-              <OnPremisePanel
-                panelTitle={categories[1]?.attributes?.title}
-                description={categories[1]?.attributes?.description}
-                button={categories[1]?.attributes?.cta}
+              <FullWidthCard
+                color="white"
+                heading={{
+                  title: categories[1]?.attributes?.title,
+                  content: categories[1]?.attributes?.description,
+                  button: { ...categories[1]?.attributes?.cta },
+                  align: "center",
+                  titleSize: "medium",
+                }}
               />
             </>
           )}
