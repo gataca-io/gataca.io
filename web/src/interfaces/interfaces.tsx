@@ -458,6 +458,10 @@ export interface HeadingModel {
   buttonGroup?: any
   lists?: any
   table?: any
+  showForm?: boolean
+  formRegion?: string
+  formPortalId?: string
+  formId?: string
 }
 
 export interface SelectorModel {

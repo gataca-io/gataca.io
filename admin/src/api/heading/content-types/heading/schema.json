@@ -69,6 +69,19 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::list-option.list-option"
+    },
+    "showForm": {
+      "type": "boolean",
+      "default": false
+    },
+    "formRegion": {
+      "type": "string"
+    },
+    "formPortalId": {
+      "type": "string"
+    },
+    "formId": {
+      "type": "string"
     }
   }
 }

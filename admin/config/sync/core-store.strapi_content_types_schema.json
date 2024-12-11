@@ -6113,6 +6113,19 @@
           "relation": "oneToMany",
           "target": "api::list-option.list-option"
         },
+        "showForm": {
+          "type": "boolean",
+          "default": false
+        },
+        "formRegion": {
+          "type": "string"
+        },
+        "formPortalId": {
+          "type": "string"
+        },
+        "formId": {
+          "type": "string"
+        },
         "createdAt": {
           "type": "datetime"
         },
@@ -6216,6 +6229,19 @@
             "type": "relation",
             "relation": "oneToMany",
             "target": "api::list-option.list-option"
+          },
+          "showForm": {
+            "type": "boolean",
+            "default": false
+          },
+          "formRegion": {
+            "type": "string"
+          },
+          "formPortalId": {
+            "type": "string"
+          },
+          "formId": {
+            "type": "string"
           }
         },
         "kind": "collectionType"
