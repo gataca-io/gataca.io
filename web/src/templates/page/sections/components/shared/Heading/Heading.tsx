@@ -8,6 +8,8 @@ import ListGroup from "../list/listGroup/ListGroup"
 import Button from "../../generic/button/Button"
 import Table from "../table/Table"
 import MarkDownContent from "../../../../../../components/elements/markDownContent/MarkDownContent"
+import HubspotForm from "react-hubspot-form"
+import FormSkeleton from "./components/FormSkeleton"
 
 const Heading: React.FC<HeadingModel> = props => {
   const {
@@ -24,6 +26,10 @@ const Heading: React.FC<HeadingModel> = props => {
     buttonGroup,
     lists,
     table,
+    showForm,
+    formRegion,
+    formPortalId,
+    formId,
   } = props
 
   const spacingStyles: Record<string, string> = {
@@ -36,6 +42,8 @@ const Heading: React.FC<HeadingModel> = props => {
     center: styles?.alignCenter,
     right: styles?.alignRight,
   }
+
+  const [formSubmitted, setFormSubmitted] = React.useState(false)
 
   return (
     <div
@@ -134,6 +142,20 @@ const Heading: React.FC<HeadingModel> = props => {
             className={`${cx("marginTop20")} ${styles?.tableContainer}`}
           />
         )}
+        {showForm ? (
+          <div id="formContainer" className={styles?.form__container}>
+            <HubspotForm
+              region={formRegion}
+              portalId={formPortalId}
+              formId={formId}
+              onSubmit={() => {
+                setFormSubmitted(true)
+              }}
+              onReady={() => {}}
+              loading={<FormSkeleton />}
+            />
+          </div>
+        ) : null}
       </div>
     </div>
   )

@@ -189,6 +189,62 @@
           "sortable": false
         }
       },
+      "showForm": {
+        "edit": {
+          "label": "showForm",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "showForm",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "formRegion": {
+        "edit": {
+          "label": "formRegion",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "formRegion",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "formPortalId": {
+        "edit": {
+          "label": "formPortalId",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "formPortalId",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "formId": {
+        "edit": {
+          "label": "formId",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "formId",
+          "searchable": true,
+          "sortable": true
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -257,6 +313,26 @@
           },
           {
             "name": "lists",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "showForm",
+            "size": 4
+          },
+          {
+            "name": "formRegion",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "formPortalId",
+            "size": 6
+          },
+          {
+            "name": "formId",
             "size": 6
           }
         ],

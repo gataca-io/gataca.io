@@ -6,3 +6,4 @@ export const chip_extraText__container: string
 export const smallSpacing: string
 export const tableContainer: string
 export const heading__content: string
+export const form__container: string
