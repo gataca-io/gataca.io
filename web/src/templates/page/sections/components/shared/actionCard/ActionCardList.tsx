@@ -32,22 +32,13 @@ const ActionCardList: React.FC<IActionCardListProps> = props => {
     >
       {list?.action_card?.data?.attributes?.actionCard?.map(
         (el: any, index: number) => {
-          const {
-            idActionCard,
-            upperIconOpened,
-            upperIconClosed,
-            trailingIcon,
-            titleCard,
-            titleContent,
-            content,
-            button,
-            chip,
-          } = el
+          const { idActionCard } = el
 
           const subOptionClickedIDComparison =
             subOptionClickedID === idActionCard
           return (
             <ActionCard
+              {...el}
               idActionCard={idActionCard}
               key={"actionCard__" + index}
               index={index + 1}
@@ -62,36 +53,9 @@ const ActionCardList: React.FC<IActionCardListProps> = props => {
                     idActionCard && scrollIntoView(idActionCard))
                   : setShowItem(index)
               }}
-              upperIconOpened={upperIconOpened}
-              upperIconClosed={upperIconClosed}
-              trailingIcon={trailingIcon}
-              titleCard={titleCard}
-              titleContent={titleContent}
-              content={content}
               button={{
-                idButton: button?.idButton,
-                label: button?.label,
-                icon: button?.icon,
-                style: button?.style,
-                color: button?.color,
-                size: button?.size,
-                noPaddingText: button?.noPaddingText,
-                disabled: button?.disabled,
-                link: button?.link,
-                url: button?.url,
-                outsideWeb: button?.outsideWeb,
-                action: () => window.open(button?.url, "_blank"),
-              }}
-              chip={{
-                idChip: chip?.idChip,
-                text: chip?.text,
-                type: chip?.type,
-                form: chip?.form,
-                disabled: chip?.disabled,
-                color: chip?.color,
-                chipSize: chip?.chipSize,
-                leadingIcon: chip?.leadingIcon,
-                trailingIcon: chip?.trailingIcon,
+                ...el?.button,
+                action: () => window.open(el?.button?.url, "_blank"),
               }}
             />
           )

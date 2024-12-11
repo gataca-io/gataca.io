@@ -7457,7 +7457,8 @@
             "shared.media-steps-slider",
             "shared.steps-content",
             "shared.team-layout",
-            "shared.high-sub-head-card"
+            "shared.high-sub-head-card",
+            "shared.form-layout"
           ],
           "pluginOptions": {
             "i18n": {
@@ -7599,7 +7600,8 @@
               "shared.media-steps-slider",
               "shared.steps-content",
               "shared.team-layout",
-              "shared.high-sub-head-card"
+              "shared.high-sub-head-card",
+              "shared.form-layout"
             ],
             "pluginOptions": {
               "i18n": {
