@@ -198,6 +198,7 @@ export interface InsideSectionsModel {
   columns?: string
   card?: any
   fullWidthCard?: any
+  headingSlot?: any
 }
 
 export interface LocalizationsModel {

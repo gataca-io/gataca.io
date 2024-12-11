@@ -6,5 +6,5 @@ export const blockAlignRight: string
 export const slotAlignLeft: string
 export const slotAlignRight: string
 export const subHeading__container: string
-export const image__container: string
+export const slot__container: string
 export const containerMaxWidth: string

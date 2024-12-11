@@ -94,6 +94,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
       columns,
       card,
       fullWidthCard,
+      headingSlot,
     } = item
 
     return (
@@ -224,6 +225,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
             image={image}
             blockAlign={blockAlign}
             slotAlign={slotAlign}
+            headingSlot={headingSlot?.data?.attributes}
           />
         )}
         {__component === "shared.full-width-card" && (
