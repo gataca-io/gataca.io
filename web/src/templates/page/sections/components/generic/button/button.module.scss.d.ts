@@ -7,3 +7,4 @@ export const whiteColor: string
 export const blackColor: string
 export const greyColor: string
 export const noPadding: string
+export const fullWidthButton: string

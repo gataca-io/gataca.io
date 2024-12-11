@@ -1,0 +1,36 @@
+@import "../../../../../../styles/colors.scss";
+@import "../../../../../../styles/mixins.scss";
+
+.photoCard__container {
+  width: 100%;
+  @include flexbox();
+  @include flex-direction(column);
+  @include justify-content(center);
+  @include align-items(center);
+  @include flex-wrap(wrap);
+  gap: 32px 72px;
+  @include min-width($mobileMD) {
+    @include flex-direction(row);
+    @include align-items(stretch);
+    @include justify-content(space-between);
+    padding: 0 20px;
+    width: calc(100% - 40px);
+    gap: 32px
+  }
+  @include min-width($desktopMD) {
+    gap: 32px 72px;
+  }
+  > div {
+    @include flex(0, 0, 100%);
+    max-width: 232px;
+    @include min-width($mobileMD) {
+      @include flex(0, 0, calc((100% / 2) - 32px));
+    }
+    @include min-width($mobileXL) {
+      @include flex(0, 0, calc((100% / 3) - 32px));
+    }
+    @include min-width($desktopMD) {
+      @include flex(0, 0, calc((100% / 4) - 54px));
+    }
+  }
+}

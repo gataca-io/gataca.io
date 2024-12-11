@@ -24,6 +24,7 @@ import SideCardsSlider from "./components/shared/sideCardsSlider/SideCardsSlider
 import SubHeadingsLayout from "./components/shared/SubHeadingsLayout/SubHeadingsLayout"
 import MediaStepsSlider from "./components/shared/mediaStepsSlider/MediaStepsSlider"
 import StepsContent from "./components/shared/stepsContent/StepsContent"
+import TeamLayout from "./components/shared/TeamLayout/TeamLayout"
 
 const AllSectionsTemplate: React.FC<PageModel> = props => {
   const { sections, location } = props
@@ -87,14 +88,19 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
       showAllFeaturesText,
       hideAllFeaturesText,
       headings,
+      buttonIcon,
+      employees,
+      centerText,
     } = item
 
     return (
       <section key={`sectionContainer_` + Math.random()}>
         {__component === "shared.header-container" && (
           <HeaderContainer
+            idItem={idItem}
             heading={heading?.data?.attributes?.heading}
             image={image}
+            centerText={centerText}
           />
         )}
         {__component === "shared.carrousel-logos" && (
@@ -161,7 +167,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
             highlightCard={highlight_card?.data?.attributes}
           />
         )}
-        {__component === "generic.button-options" && (
+        {__component === "shared.button-options" && (
           <div className={`${styles?.container} ${cx("containerMaxWidth")}`}>
             <SegmentedButtonsContainer
               idItem={idItem}
@@ -171,7 +177,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
             />
           </div>
         )}
-        {__component === "generic.button-group" && (
+        {__component === "shared.button-group" && (
           <div className={`${styles?.container} ${cx("containerMaxWidth")}`}>
             <ButtonGroup
               buttonGroup={buttons?.data}
@@ -290,6 +296,14 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
         )}
         {__component === "shared.steps-content" && (
           <StepsContent idItem={idItem} headings={headings?.data} />
+        )}
+        {__component === "shared.team-layout" && (
+          <TeamLayout
+            idItem={idItem}
+            employees={employees}
+            heading={heading?.data?.attributes?.heading}
+            buttonIcon={buttonIcon}
+          />
         )}
       </section>
     )

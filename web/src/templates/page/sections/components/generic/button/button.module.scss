@@ -25,6 +25,9 @@
     &:focus-visible {
         outline: $primary300 auto 2px;
     }
+    &.fullWidthButton {
+        width: 100%;
+    }
     &.disabled {
         background-color: $neutral400;
         color: $neutral500;

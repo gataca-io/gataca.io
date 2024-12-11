@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_shared_team_layouts",
+  "info": {
+    "displayName": "TeamLayout"
+  },
+  "options": {},
+  "attributes": {
+    "idItem": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::heading.heading"
+    },
+    "employees": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::employee.employee"
+    },
+    "buttonIcon": {
+      "type": "component",
+      "repeatable": false,
+      "component": "generic.button-icon"
+    }
+  }
+}

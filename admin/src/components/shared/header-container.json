@@ -6,7 +6,7 @@
   },
   "options": {},
   "attributes": {
-    "idHeader": {
+    "idItem": {
       "type": "string"
     },
     "image": {
@@ -24,6 +24,10 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::heading.heading"
+    },
+    "centerText": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

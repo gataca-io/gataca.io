@@ -15,6 +15,9 @@
   }
   .video__heading {
     margin-bottom: 80px;
+    > div > div {
+      max-width: 778px;
+    }
   }
   .video__videoContainer {
     max-width: calc(1184px - 80px);
