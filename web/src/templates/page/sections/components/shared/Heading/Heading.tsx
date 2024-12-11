@@ -7,6 +7,7 @@ import ButtonGroup from "../../generic/buttonGroup/ButtonGroup"
 import ListGroup from "../list/listGroup/ListGroup"
 import Button from "../../generic/button/Button"
 import Table from "../table/Table"
+import MarkDownContent from "../../../../../../components/elements/markDownContent/MarkDownContent"
 
 const Heading: React.FC<HeadingModel> = props => {
   const {
@@ -43,7 +44,7 @@ const Heading: React.FC<HeadingModel> = props => {
     >
       <div
         className={`${align ? alignStyles[align] : styles?.alignLeft} ${
-          titleSize ? spacingStyles[titleSize] : styles?.alignLeft
+          titleSize ? spacingStyles[titleSize] : ""
         }`}
       >
         {(chip?.text?.length ||
@@ -83,7 +84,9 @@ const Heading: React.FC<HeadingModel> = props => {
           </>
         )}
         {content?.length && (
-          <p className={cx("bodyRegularXL neutral700")}>{content}</p>
+          <div className={styles?.heading__content}>
+            <MarkDownContent content={content} />
+          </div>
         )}
         {(button?.label?.length ||
           button?.icon?.data?.attributes?.url?.length) && (

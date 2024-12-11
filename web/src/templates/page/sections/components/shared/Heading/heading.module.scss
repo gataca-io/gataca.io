@@ -28,6 +28,16 @@
     &.alignLeft {
       @include align-items(flex-start);
     }
+    .heading__content {
+      p {
+        color: $neutral700;
+        font-family: $base;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 28px;
+          text-decoration: none;
+      }
+    }
     .chip_extraText__container {
       @include flexbox();
       @include justify-content(flex-start);
