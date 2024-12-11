@@ -1,0 +1,161 @@
+@import "../../../../../../styles/colors.scss";
+@import "../../../../../../styles/mixins.scss";
+@import "../../../../../../styles/types";
+
+.formLayout {
+  margin-bottom: 132px;
+  padding: 0 20px;
+  @include min-width($mobileXL) {
+    margin-bottom: 200px;
+    padding: 0 40px;
+  }
+  @include min-width($tabletXL) {
+    margin-bottom: 200px;
+  }
+  @include min-width($desktopMD) {
+    padding: 0 60px;
+  }
+  &.background {
+    margin-bottom: calc(132px + 40px);
+    @include min-width($tabletXL) {
+      margin-bottom: calc(200px + 135px);
+    }
+  }
+  .formLayout__container{
+    @include flexbox();
+    @include flex-direction(column);
+    gap: 60px;
+    @include min-width($tabletSM) {
+      gap: 120px;
+    }
+    .formLayout__header {
+      @include flexbox();
+      @include flex-direction(column);
+      gap: 80px;
+      .headingContainer {
+        @include min-width($tabletSM) {
+          max-width: 330px;
+        }
+      }
+      .actionCards__container {
+        @include flexbox();
+        @include flex-direction(column);
+        @include justify-content(center);
+        @include flex-wrap(wrap);
+        gap: 20px;
+      }
+    }
+    .formLayout__options {
+      @include flexbox();
+      @include flex-direction(column);
+      @include justify-content(center);
+      @include flex-wrap(wrap);
+      gap: 60px;
+      @include min-width($tabletXL) {
+        @include flex-direction(row);
+        @include flex-wrap(nowrap);
+        @include justify-content(space-between);
+        gap: 32px;
+      }
+      .formLayout__leftSide {
+        @include flex(0, 0, 100%);
+        @include min-width($tabletXL) {
+          @include flex(0, 1, calc(55% - 16px));
+        }
+        @include min-width($desktopMD) {
+          @include flex(0, 1, calc(50% - 16px));
+        }
+      }
+      .formLayout__rightSide {
+        position: relative;
+        @include flex(0, 0, 100%);
+        @include flexbox;
+        @include align-items(center);
+        @include flex-direction(column);
+        @include min-width($tabletXL) {
+          @include flex(0, 1, calc(45% - 16px));
+          @include align-items(flex-end);
+        }
+        @include min-width($tabletXL) {
+          @include flex(0, 1, calc(50% - 16px));
+         
+        }
+        &.background {
+          &.greyBackground {
+            &::before {
+              background-color: $neutral200;
+            }
+          }
+          &.blackBackground {
+            &::before {
+              background-color: $neutral1000;
+            }
+          }
+        }
+        &::before {
+          content: '';
+          position: absolute;
+          width: 2000px;
+          height: calc(100% - 400px);
+          border-radius: 40px 0px 0px 40px;
+          z-index: -1;
+          top: 205px;
+          left: -20px;
+          @include min-width($mobileXL) {
+            left: -40px;
+          }
+          @include min-width($tabletXL) {
+            left: -20px;
+            height: calc(100% - 135px);
+          }
+          @include min-width($desktopXL) {
+            left: -50px;
+          }
+        }
+        .form__container {
+          background-color: $neutral100;
+          padding: 20px 20px 4px;
+          border-radius: 12px;
+          box-shadow: 0px 0px 10px $boxShadowLigh;
+          @include flexbox();
+          @include flex-direction(column);
+          @include justify-content(center);
+          width: calc(100% - 40px);
+          min-height: 700px;
+          @include min-width($tabletMD) {
+            max-width: 440px;
+          }
+          @include min-width($desktopMD) {
+            margin-left: 100px;
+            min-height: 620px;
+          }
+          @include min-width($desktopXL) {
+            max-width: 475px;
+            margin-left: 150px;
+            width: 100%;
+          }
+        }
+        .image__container {
+          @include flexbox;
+          @include justify-content(center);
+          margin-top: 50px;
+          @include min-width($tabletXL) {
+            display: inline;
+            position: absolute;
+            left: -270px;
+            margin-top: 0;
+            bottom: 0;
+          }
+          img {
+            max-width: 250px;
+            height: auto;
+            @include min-width($desktopXL) {
+              max-width: 300px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

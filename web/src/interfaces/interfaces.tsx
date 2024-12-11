@@ -199,6 +199,11 @@ export interface InsideSectionsModel {
   card?: any
   fullWidthCard?: any
   headingSlot?: any
+  formId?: string
+  formRegion?: string
+  formPortalId?: string
+  showForm?: boolean
+  action_cards?: any
 }
 
 export interface LocalizationsModel {

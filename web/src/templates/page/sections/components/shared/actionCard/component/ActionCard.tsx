@@ -38,7 +38,7 @@ const ActionCard: React.FC<ActionCardModel> = props => {
             )}
             {selected ? (
               <>
-                {upperIconOpened && (
+                {upperIconOpened?.data?.attributes?.url?.length && (
                   <div>
                     <StrapiImage
                       image={upperIconOpened ? upperIconOpened : null}
@@ -48,7 +48,7 @@ const ActionCard: React.FC<ActionCardModel> = props => {
               </>
             ) : (
               <>
-                {upperIconClosed && (
+                {upperIconClosed?.data?.attributes?.url?.length && (
                   <div>
                     <StrapiImage
                       image={upperIconClosed ? upperIconClosed : null}
@@ -71,7 +71,7 @@ const ActionCard: React.FC<ActionCardModel> = props => {
               )}
               {selected ? (
                 <>
-                  {upperIconOpened && (
+                  {upperIconOpened?.data?.attributes?.url?.length && (
                     <div>
                       <StrapiImage
                         image={upperIconOpened ? upperIconOpened : null}
@@ -81,7 +81,7 @@ const ActionCard: React.FC<ActionCardModel> = props => {
                 </>
               ) : (
                 <>
-                  {upperIconClosed && (
+                  {upperIconClosed?.data?.attributes?.url?.length && (
                     <div>
                       <StrapiImage
                         image={upperIconClosed ? upperIconClosed : null}

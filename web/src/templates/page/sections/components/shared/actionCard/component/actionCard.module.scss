@@ -49,11 +49,10 @@
   }
   &__rightSide {
     @include flexbox();
-    @include justify-content(center);
+    @include justify-content(flex-end);
     @include flex-wrap(nowrap);
     @include align-items(center);
     gap: 20px;
-    @include flex(0, 0, 25%);
   }
 
   

@@ -1,0 +1,252 @@
+{
+  "key": "plugin_content_manager_configuration_components::shared.form-layout",
+  "value": {
+    "uid": "shared.form-layout",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "idItem",
+      "defaultSortBy": "idItem",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "idItem": {
+        "edit": {
+          "label": "idItem",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "idItem",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "heading": {
+        "edit": {
+          "label": "heading",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "idItem"
+        },
+        "list": {
+          "label": "heading",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "headingSlot": {
+        "edit": {
+          "label": "headingSlot",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "idItem"
+        },
+        "list": {
+          "label": "headingSlot",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "background": {
+        "edit": {
+          "label": "background",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "background",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "image": {
+        "edit": {
+          "label": "image",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "image",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "color": {
+        "edit": {
+          "label": "color",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "color",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "formRegion": {
+        "edit": {
+          "label": "formRegion",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "formRegion",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "formPortalId": {
+        "edit": {
+          "label": "formPortalId",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "formPortalId",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "formId": {
+        "edit": {
+          "label": "formId",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "formId",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "action_cards": {
+        "edit": {
+          "label": "action_cards",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "idItem"
+        },
+        "list": {
+          "label": "action_cards",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "showForm": {
+        "edit": {
+          "label": "showForm",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "showForm",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "idItem",
+        "heading",
+        "headingSlot"
+      ],
+      "edit": [
+        [
+          {
+            "name": "idItem",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "heading",
+            "size": 6
+          },
+          {
+            "name": "headingSlot",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "background",
+            "size": 4
+          },
+          {
+            "name": "color",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "showForm",
+            "size": 4
+          },
+          {
+            "name": "formRegion",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "formPortalId",
+            "size": 6
+          },
+          {
+            "name": "formId",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "action_cards",
+            "size": 6
+          },
+          {
+            "name": "image",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}
