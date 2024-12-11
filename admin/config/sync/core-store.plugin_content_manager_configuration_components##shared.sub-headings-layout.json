@@ -105,6 +105,21 @@
           "searchable": true,
           "sortable": true
         }
+      },
+      "headingSlot": {
+        "edit": {
+          "label": "headingSlot",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "idItem"
+        },
+        "list": {
+          "label": "headingSlot",
+          "searchable": true,
+          "sortable": true
+        }
       }
     },
     "layouts": {
@@ -142,6 +157,10 @@
           }
         ],
         [
+          {
+            "name": "headingSlot",
+            "size": 6
+          },
           {
             "name": "image",
             "size": 6

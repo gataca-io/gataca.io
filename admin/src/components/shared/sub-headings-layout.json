@@ -1,7 +1,8 @@
 {
   "collectionName": "components_shared_sub_headings_layouts",
   "info": {
-    "displayName": "SubHeadingsLayout"
+    "displayName": "SubHeadingsLayout",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -19,14 +20,15 @@
       "target": "api::sub-heading.sub-heading"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "blockAlign": {
       "type": "enumeration",
@@ -44,6 +46,11 @@
         "right"
       ],
       "default": "left"
+    },
+    "headingSlot": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::heading.heading"
     }
   }
 }
