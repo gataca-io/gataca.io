@@ -86,7 +86,6 @@ const SegmentedButtonsContainer: React.FC<
                 columns={generalCardsLayout?.columns}
                 card={generalCardsLayout?.card}
                 pricing={generalCardsLayout?.pricing}
-                className={styles?.segmentButtons__generalCardsLayout}
               />
             ) : null
           })}
