@@ -28,6 +28,19 @@
     "centerText": {
       "type": "boolean",
       "default": false
+    },
+    "showForm": {
+      "type": "boolean",
+      "default": false
+    },
+    "formRegion": {
+      "type": "string"
+    },
+    "formPortalId": {
+      "type": "string"
+    },
+    "formId": {
+      "type": "string"
     }
   }
 }

@@ -111,6 +111,10 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
             heading={heading?.data?.attributes}
             image={image}
             centerText={centerText}
+            showForm={showForm}
+            formRegion={formRegion}
+            formPortalId={formPortalId}
+            formId={formId}
           />
         )}
         {__component === "shared.carrousel-logos" && (

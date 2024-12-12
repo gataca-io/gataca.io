@@ -485,9 +485,10 @@ export interface HeaderContainerModel {
   heading: HeadingModel
   image?: any
   centerText?: boolean
-  data?: {
-    attributes?: []
-  }
+  showForm?: boolean
+  formRegion?: string
+  formPortalId?: string
+  formId?: string
 }
 
 export interface SubHeadingContainerModel {

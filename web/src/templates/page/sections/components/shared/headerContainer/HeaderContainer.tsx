@@ -4,9 +4,22 @@ import { HeaderContainerModel } from "../../../../../../interfaces/interfaces"
 import StrapiImage from "../../../../../../components/atoms/images/StrapiImage"
 import * as styles from "./headerContainer.module.scss"
 import Heading from "../Heading/Heading"
+import HubspotForm from "react-hubspot-form"
+import FormSkeleton from "./components/FormSkeleton"
 
 const HeaderContainer: React.FC<HeaderContainerModel> = props => {
-  const { idItem, heading, image, centerText } = props
+  const {
+    idItem,
+    heading,
+    image,
+    centerText,
+    showForm,
+    formRegion,
+    formPortalId,
+    formId,
+  } = props
+
+  const [formSubmitted, setFormSubmitted] = React.useState(false)
 
   return (
     <div
@@ -14,7 +27,11 @@ const HeaderContainer: React.FC<HeaderContainerModel> = props => {
       className={`${styles.header}`}
       style={{ position: "relative" }}
     >
-      <div className={`${styles.header__container} ${cx("containerMaxWidth")}`}>
+      <div
+        className={`${styles.header__container} ${cx("containerMaxWidth")} ${
+          showForm ? styles?.formActive : ""
+        }`}
+      >
         <div
           className={`${styles.header__heading} ${
             centerText ? styles?.centeredText : ""
@@ -37,6 +54,20 @@ const HeaderContainer: React.FC<HeaderContainerModel> = props => {
             />
           </div>
         )}
+        {showForm && formRegion && formPortalId && formId ? (
+          <div id="formContainer" className={styles?.form__container}>
+            <HubspotForm
+              region={formRegion}
+              portalId={formPortalId}
+              formId={formId}
+              onSubmit={() => {
+                setFormSubmitted(true)
+              }}
+              onReady={() => {}}
+              loading={<FormSkeleton />}
+            />
+          </div>
+        ) : null}
       </div>
     </div>
   )
