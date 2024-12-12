@@ -6,7 +6,7 @@ import Card from "../card/Card"
 import PricingCard from "../PricingCard/PricingCard"
 
 const MainCardContainer: React.FC<MainCardContainerModel> = props => {
-  const { idItem, columns, card, pricing } = props
+  const { columns, card, pricing } = props
 
   const columnStyles: Record<string, string> = {
     one: styles?.oneColumn,
@@ -17,7 +17,6 @@ const MainCardContainer: React.FC<MainCardContainerModel> = props => {
 
   return (
     <div
-      id={idItem}
       className={`${styles.card__container} ${cx(
         columns ? columnStyles[columns] : ""
       )}`}

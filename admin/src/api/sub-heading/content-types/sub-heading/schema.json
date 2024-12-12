@@ -12,13 +12,23 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "subHeadingContainer": {
-      "type": "component",
-      "repeatable": false,
-      "component": "shared.sub-heading-container"
-    },
     "idItem": {
       "type": "string"
+    },
+    "columns": {
+      "type": "enumeration",
+      "enum": [
+        "one",
+        "two",
+        "three",
+        "four"
+      ],
+      "default": "two"
+    },
+    "subHeading": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.sub-heading"
     }
   }
 }

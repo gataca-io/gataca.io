@@ -35,5 +35,11 @@
       @include align-items(center);
       gap: 12px;
     }
+    .tableContainer {
+      margin-bottom: 0;
+      margin-right: inherit;
+      margin-left: inherit;
+      padding: 0;
+    }
   }
 }

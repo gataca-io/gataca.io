@@ -1,7 +1,8 @@
 {
   "collectionName": "components_shared_general_cards_layouts",
   "info": {
-    "displayName": "GeneralCardsLayout"
+    "displayName": "GeneralCardsLayout",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -18,10 +19,25 @@
       "relation": "oneToOne",
       "target": "api::heading.heading"
     },
-    "mainCardContainer": {
-      "type": "component",
-      "repeatable": false,
-      "component": "shared.card-container"
+    "columns": {
+      "type": "enumeration",
+      "enum": [
+        "one",
+        "two",
+        "three",
+        "four"
+      ],
+      "default": "two"
+    },
+    "card": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::card.card"
+    },
+    "pricing": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::pricing.pricing"
     }
   }
 }

@@ -34,20 +34,6 @@
           "sortable": true
         }
       },
-      "headingStep": {
-        "edit": {
-          "label": "headingStep",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "headingStep",
-          "searchable": false,
-          "sortable": false
-        }
-      },
       "image": {
         "edit": {
           "label": "image",
@@ -74,6 +60,21 @@
           "label": "stepImage",
           "searchable": false,
           "sortable": false
+        }
+      },
+      "headingStep": {
+        "edit": {
+          "label": "headingStep",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "idItem"
+        },
+        "list": {
+          "label": "headingStep",
+          "searchable": true,
+          "sortable": true
         }
       },
       "createdAt": {
@@ -111,6 +112,10 @@
           {
             "name": "idItem",
             "size": 6
+          },
+          {
+            "name": "headingStep",
+            "size": 6
           }
         ],
         [
@@ -122,19 +127,13 @@
             "name": "stepImage",
             "size": 6
           }
-        ],
-        [
-          {
-            "name": "headingStep",
-            "size": 12
-          }
         ]
       ],
       "list": [
         "id",
         "idItem",
-        "headingStep",
-        "image"
+        "image",
+        "headingStep"
       ]
     }
   },

@@ -1,0 +1,57 @@
+@import "../../../../../../styles/colors.scss";
+@import "../../../../../../styles/mixins.scss";
+
+
+.highlightSubHeadingCard {
+  &__container {
+    margin-bottom: 132px;
+    padding: 0 20px;
+    @include flexbox();
+    @include flex-wrap(wrap);
+    @include justify-content(center);
+    @include flex-direction(column);
+    gap: 40px;
+    @include min-width($mobileXL) {
+      gap: 80px;
+      margin-bottom: 200px;
+      padding: 0 40px;
+    }
+    @include min-width($desktopMD) {
+      padding: 0 60px;
+    }
+  }
+  &__mainContent {
+    @include flexbox();
+      @include flex-wrap(wrap);
+    @include justify-content(center);
+    @include flex-direction(column);
+    gap: 40px;
+    @include min-width($mobileXL) {
+      gap: 80px;
+    }
+  }
+  &__subHeading {
+    background-color: $neutral100;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 0px rgba(12, 11, 51, 0.12);
+    padding: 40px;
+    width: calc(100% - 80px);
+    position: relative;
+    z-index: 1;
+    margin-bottom: -120px;
+  }
+  &__fullWidthCard {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    z-index: 0;
+    > div > div {
+      padding-top: 120px;
+      @include min-width($desktopMD) {
+        padding-top: 100px;
+        padding-left: 60px;
+      }
+    }
+  }
+}

@@ -170,7 +170,6 @@ export interface InsideSectionsModel {
   headingSelector?: any
   selectorAlign?: string
   button?: ButtonModel
-  mainCardContainer?: any
   logoContainer?: any
   blogHighlightCardContainer?: any
   blogsAll?: any
@@ -196,6 +195,9 @@ export interface InsideSectionsModel {
   buttonIcon?: ButtonModel
   employees?: any
   centerText?: boolean
+  columns?: string
+  card?: any
+  fullWidthCard?: any
 }
 
 export interface LocalizationsModel {
@@ -400,7 +402,7 @@ export interface PricingCardModel {
   className?: string
   idItem?: string
   titleAmountSize?: string
-  list?: any
+  lists?: any
   name?: string
   description?: string
   frecuencyYearly?: string
@@ -444,7 +446,7 @@ export interface SubHeadingModel {
 
 export interface HeadingModel {
   className?: string
-  idHeading?: string
+  idItem?: string
   titleSize?: string
   align?: string
   chip?: ChipModel
@@ -454,7 +456,7 @@ export interface HeadingModel {
   content?: string
   button?: any
   buttonGroup?: any
-  list?: any
+  lists?: any
   table?: any
 }
 
@@ -486,7 +488,6 @@ export interface SubHeadingContainerModel {
 }
 
 export interface MainCardContainerModel {
-  idItem?: string
   card?: CardModel[]
   pricing?: PricingCardModel[]
   columns?: string

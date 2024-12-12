@@ -54,9 +54,6 @@ const SubHeadingsLayout: React.FC<ISubHeadingsLayoutProps> = props => {
         {heading && (
           <Heading
             {...heading}
-            buttonGroup={heading?.buttonGroup?.buttons?.data}
-            list={heading?.list?.list_options?.data}
-            table={heading?.table?.content}
             button={{
               ...heading?.button,
               action: () => window.open(heading?.button?.url, "_blank"),
@@ -66,9 +63,9 @@ const SubHeadingsLayout: React.FC<ISubHeadingsLayoutProps> = props => {
 
         {subHeadingContainer && (
           <SubHeadingContainer
-            idItem={subHeadingContainer?.subHeadingContainer?.idItem}
-            columns={subHeadingContainer?.subHeadingContainer?.columns}
-            subHeading={subHeadingContainer?.subHeadingContainer?.subHeading}
+            idItem={subHeadingContainer?.idItem}
+            columns={subHeadingContainer?.columns}
+            subHeading={subHeadingContainer?.subHeading}
           />
         )}
       </div>

@@ -44,9 +44,6 @@ const TextMedia: React.FC<ISectionProps> = props => {
         <div className={`${styles.textMedia__heading} `}>
           <Heading
             {...heading}
-            buttonGroup={heading?.buttonGroup?.buttons?.data}
-            list={heading?.list?.list_options?.data}
-            table={heading?.table?.content}
             button={{
               ...heading?.button,
               action: () => window.open(heading?.button?.url, "_blank"),

@@ -169,9 +169,6 @@ const DynamicSelector: React.FC<ISectionProps> = props => {
         {heading && (
           <Heading
             {...heading}
-            buttonGroup={heading?.buttonGroup?.buttons?.data}
-            list={heading?.list?.list_options?.data}
-            table={heading?.table?.content}
             className={`${styles?.headingContainer} ${
               mainIllustrationImage ? styles?.maxWidth : ""
             }`}
@@ -193,10 +190,7 @@ const DynamicSelector: React.FC<ISectionProps> = props => {
             <div className={styles?.dynamicSelector__leftSide}>
               {heading_selector && (
                 <Heading
-                  {...heading}
-                  buttonGroup={heading_selector?.buttonGroup?.buttons?.data}
-                  list={heading_selector?.list?.list_options?.data}
-                  table={heading_selector?.table?.content}
+                  {...heading_selector}
                   className={styles?.heading_selector_container}
                   button={{
                     ...heading_selector?.button,

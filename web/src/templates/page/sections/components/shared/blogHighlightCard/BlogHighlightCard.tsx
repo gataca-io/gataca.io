@@ -33,9 +33,6 @@ const BlogHighlightCard: React.FC<ISectionProps> = props => {
           {heading && (
             <Heading
               {...heading}
-              buttonGroup={heading?.buttonGroup?.buttons?.data}
-              list={heading?.list?.list_options?.data}
-              table={heading?.table?.content}
               className={styles?.headingCards}
               button={{
                 ...heading?.button,

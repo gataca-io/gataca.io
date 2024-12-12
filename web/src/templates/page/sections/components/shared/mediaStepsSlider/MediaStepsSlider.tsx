@@ -58,9 +58,6 @@ const MediaStepsSlider: React.FC<IMediaStepsSliderProps> = props => {
           {heading && (
             <Heading
               {...heading}
-              buttonGroup={heading?.buttonGroup?.buttons?.data}
-              list={heading?.list?.list_options?.data}
-              table={heading?.table?.content}
               button={{
                 ...heading?.button,
                 action: () => window.open(heading?.button?.url, "_blank"),
@@ -86,9 +83,6 @@ const MediaStepsSlider: React.FC<IMediaStepsSliderProps> = props => {
             {heading && (
               <Heading
                 {...heading}
-                buttonGroup={heading?.buttonGroup?.buttons?.data}
-                list={heading?.list?.list_options?.data}
-                table={heading?.table?.content}
                 button={{
                   ...heading?.button,
                   action: () => window.open(heading?.button?.url, "_blank"),
@@ -115,19 +109,8 @@ const MediaStepsSlider: React.FC<IMediaStepsSliderProps> = props => {
                     </div>
                     <div className={styles?.heading}>
                       <Heading
-                        {...mediaSteps?.[firstItem]?.attributes?.headingStep}
-                        buttonGroup={
-                          mediaSteps?.[firstItem]?.attributes?.headingStep
-                            .buttonGroup?.buttons?.data
-                        }
-                        list={
-                          mediaSteps?.[firstItem]?.attributes?.headingStep.list
-                            ?.list_options?.data
-                        }
-                        table={
-                          mediaSteps?.[firstItem]?.attributes?.headingStep.table
-                            ?.content
-                        }
+                        {...mediaSteps?.[firstItem]?.attributes?.headingStep
+                          ?.data?.attributes}
                         button={{
                           ...mediaSteps?.[firstItem]?.attributes?.headingStep
                             .button,

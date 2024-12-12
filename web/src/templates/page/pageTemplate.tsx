@@ -19,7 +19,7 @@ const PageTemplate: React.FC = (props: any) => {
 
   const getPageData = async () => {
     await fetch(
-      `${process.env.STRAPI_API_URL}/api/pages?locale=${props?.pageContext?.locale}&filters[slugURL]=${props?.pageContext?.slugURL}&populate=deep,9`
+      `${process.env.STRAPI_API_URL}/api/pages?locale=${props?.pageContext?.locale}&filters[slugURL]=${props?.pageContext?.slugURL}&populate=deep,7`
     )
       .then(response => response.json())
       .then(jsonResponse => {
@@ -50,7 +50,7 @@ const PageTemplate: React.FC = (props: any) => {
               <Highlight
                 key={"highlight__" + Math.random()}
                 idItem={idItem}
-                heading={heading?.data?.attributes?.heading}
+                heading={heading?.data?.attributes}
                 color={color}
                 align={align}
               />

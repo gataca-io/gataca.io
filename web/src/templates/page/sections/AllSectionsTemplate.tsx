@@ -25,6 +25,7 @@ import SubHeadingsLayout from "./components/shared/SubHeadingsLayout/SubHeadings
 import MediaStepsSlider from "./components/shared/mediaStepsSlider/MediaStepsSlider"
 import StepsContent from "./components/shared/stepsContent/StepsContent"
 import TeamLayout from "./components/shared/TeamLayout/TeamLayout"
+import HighlightSubHeadingCard from "./components/shared/HighlightSubHeadingCard/HighlightSubHeadingCard"
 
 const AllSectionsTemplate: React.FC<PageModel> = props => {
   const { sections, location } = props
@@ -66,7 +67,6 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
       headingSelector,
       selectorAlign,
       button,
-      mainCardContainer,
       logoContainer,
       blogHighlightCardContainer,
       blogsAll,
@@ -91,6 +91,9 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
       buttonIcon,
       employees,
       centerText,
+      columns,
+      card,
+      fullWidthCard,
     } = item
 
     return (
@@ -98,7 +101,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
         {__component === "shared.header-container" && (
           <HeaderContainer
             idItem={idItem}
-            heading={heading?.data?.attributes?.heading}
+            heading={heading?.data?.attributes}
             image={image}
             centerText={centerText}
           />
@@ -114,7 +117,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
         {__component === "shared.dynamic-card-component" && (
           <DynamicCardComponent
             idItem={idItem}
-            heading={heading?.data?.attributes?.heading}
+            heading={heading?.data?.attributes}
             dynamicCards={dynamic_cards?.data[0]?.attributes?.dynamicCards}
             background={background}
             bgVerticalAlign={bgVerticalAlign}
@@ -123,7 +126,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
         {__component === "shared.blog-highlight-card" && (
           <BlogHighlightCard
             idItem={idItem}
-            heading={heading?.data?.attributes?.heading}
+            heading={heading?.data?.attributes}
             button={button}
             blogHighlightCardContainer={blogHighlightCardContainer}
           />
@@ -168,14 +171,12 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
           />
         )}
         {__component === "shared.button-options" && (
-          <div className={`${styles?.container} ${cx("containerMaxWidth")}`}>
-            <SegmentedButtonsContainer
-              idItem={idItem}
-              heading={heading?.data?.attributes?.heading}
-              segmentedOptions={buttons?.data}
-              subOptionClickedID={location?.substring(1)}
-            />
-          </div>
+          <SegmentedButtonsContainer
+            idItem={idItem}
+            heading={heading?.data?.attributes}
+            segmentedOptions={buttons?.data}
+            subOptionClickedID={location?.substring(1)}
+          />
         )}
         {__component === "shared.button-group" && (
           <div className={`${styles?.container} ${cx("containerMaxWidth")}`}>
@@ -194,9 +195,11 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
         {__component === "shared.general-cards-layout" && (
           <GeneralCardsLayout
             idItem={idItem}
-            heading={heading?.data?.attributes?.heading}
+            heading={heading?.data?.attributes}
             button={button}
-            mainCardContainer={mainCardContainer}
+            columns={columns}
+            card={card}
+            pricing={pricing}
           />
         )}
         {__component === "shared.dynamic-selector" && (
@@ -204,8 +207,8 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
             idItem={idItem}
             selector_list={selector_list?.data?.attributes?.selector}
             background={background}
-            heading={heading?.data?.attributes?.heading}
-            heading_selector={headingSelector?.data?.attributes?.heading}
+            heading={heading?.data?.attributes}
+            heading_selector={headingSelector?.data?.attributes}
             mainTitleIllustration={mainTitleIllustration}
             selectorIllustration={selectorIllustration}
             selectorAlign={selectorAlign}
@@ -216,7 +219,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
         {__component === "shared.sub-headings-layout" && (
           <SubHeadingsLayout
             idItem={idItem}
-            heading={heading?.data?.attributes?.heading}
+            heading={heading?.data?.attributes}
             subHeadingContainer={sub_heading?.data?.attributes}
             image={image}
             blockAlign={blockAlign}
@@ -226,7 +229,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
         {__component === "shared.full-width-card" && (
           <FullWidthCard
             idItem={idItem}
-            heading={heading?.data?.attributes?.heading}
+            heading={heading?.data?.attributes}
             image={image}
             color={color}
             layout={layout}
@@ -236,7 +239,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
         {__component === "shared.text-media" && (
           <TextMedia
             idItem={idItem}
-            heading={heading?.data?.attributes?.heading}
+            heading={heading?.data?.attributes}
             image={image}
             textAlign={textAlign}
           />
@@ -244,7 +247,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
         {__component === "shared.video" && (
           <Video
             idItem={idItem}
-            heading={heading?.data?.attributes?.heading}
+            heading={heading?.data?.attributes}
             image={image}
             video={video}
             color={color}
@@ -253,7 +256,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
         {__component === "shared.logos-component" && (
           <LogosComponent
             idItem={idItem}
-            heading={heading?.data?.attributes?.heading}
+            heading={heading?.data?.attributes}
             logoContainer={logoContainer}
             background={background}
           />
@@ -261,7 +264,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
         {__component === "shared.main-blog-layout" && (
           <MainBlogLayout
             idItem={idItem}
-            heading={heading?.data?.attributes?.heading}
+            heading={heading?.data?.attributes}
             button={button}
             chip_options={chip_options?.chip_options?.data}
             category_options={chip_options?.categories?.data}
@@ -273,7 +276,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
         {__component === "shared.side-cards-slider" && (
           <SideCardsSlider
             idItem={idItem}
-            heading={heading?.data?.attributes?.heading}
+            heading={heading?.data?.attributes}
             buttonLeft={buttonLeft}
             buttonRight={buttonRight}
             background={background}
@@ -288,7 +291,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
         {__component === "shared.media-steps-slider" && (
           <MediaStepsSlider
             idItem={idItem}
-            heading={heading?.data?.attributes?.heading}
+            heading={heading?.data?.attributes}
             buttonLeft={buttonLeft}
             buttonRight={buttonRight}
             mediaSteps={media_steps?.data}
@@ -301,8 +304,16 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
           <TeamLayout
             idItem={idItem}
             employees={employees}
-            heading={heading?.data?.attributes?.heading}
+            heading={heading?.data?.attributes}
             buttonIcon={buttonIcon}
+          />
+        )}
+        {__component === "shared.high-sub-head-card" && (
+          <HighlightSubHeadingCard
+            idItem={idItem}
+            heading={heading?.data?.attributes}
+            subHeadingContainer={sub_heading?.data?.attributes}
+            fullWidthCard={fullWidthCard}
           />
         )}
       </section>
