@@ -26,7 +26,7 @@ spec:
             value: "80"
       containers:
         - name: web-new
-          image: ghcr.io/gataca-io/gataca.io/website:7.0.2-SNAPSHOT
+          image: ghcr.io/gataca-io/gataca.io/website:7.0.3-SNAPSHOT
           imagePullPolicy: Always
           securityContext:
             runAsNonRoot: true
