@@ -38,21 +38,14 @@ const HighlightSubHeadingCard: React.FC<
 
         {subHeadingContainer && (
           <SubHeadingContainer
-            idItem={subHeadingContainer?.idItem}
-            columns={subHeadingContainer?.columns}
-            subHeading={subHeadingContainer?.subHeading}
+            {...subHeadingContainer}
             className={styles?.highlightSubHeadingCard__subHeading}
           />
         )}
       </div>
 
       <FullWidthCard
-        idItem={fullWidthCard?.idItem}
-        heading={fullWidthCard?.heading?.data?.attributes}
-        image={fullWidthCard?.image}
-        color={fullWidthCard?.color}
-        layout={fullWidthCard?.layout}
-        sizeSlot={fullWidthCard?.sizeSlot}
+        {...fullWidthCard}
         className={styles?.highlightSubHeadingCard__fullWidthCard}
       />
     </div>
