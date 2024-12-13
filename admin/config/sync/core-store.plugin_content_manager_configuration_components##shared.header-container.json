@@ -132,6 +132,34 @@
           "searchable": true,
           "sortable": true
         }
+      },
+      "headingRight": {
+        "edit": {
+          "label": "headingRight",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "headingRight",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "imageOutsideFrame": {
+        "edit": {
+          "label": "imageOutsideFrame",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "imageOutsideFrame",
+          "searchable": true,
+          "sortable": true
+        }
       }
     },
     "layouts": {
@@ -154,12 +182,22 @@
         ],
         [
           {
+            "name": "heading",
+            "size": 6
+          },
+          {
+            "name": "headingRight",
+            "size": 4
+          }
+        ],
+        [
+          {
             "name": "image",
             "size": 6
           },
           {
-            "name": "heading",
-            "size": 6
+            "name": "imageOutsideFrame",
+            "size": 4
           }
         ],
         [
