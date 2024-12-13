@@ -17,6 +17,7 @@ const HeaderContainer: React.FC<HeaderContainerModel> = props => {
     formRegion,
     formPortalId,
     formId,
+    headingRight,
   } = props
 
   const [formSubmitted, setFormSubmitted] = React.useState(false)
@@ -35,7 +36,7 @@ const HeaderContainer: React.FC<HeaderContainerModel> = props => {
         <div
           className={`${styles.header__heading} ${
             centerText ? styles?.centeredText : ""
-          }`}
+          } ${headingRight ? styles?.headingRight : ""}`}
         >
           <Heading
             {...heading}
@@ -47,7 +48,11 @@ const HeaderContainer: React.FC<HeaderContainerModel> = props => {
           />
         </div>
         {image?.data?.attributes?.url && (
-          <div className={styles.header__imageContainer}>
+          <div
+            className={`${styles.header__imageContainer} ${
+              headingRight ? styles?.headingRight : ""
+            }`}
+          >
             <StrapiImage
               className={styles.header__image}
               image={image ? image : null}
@@ -55,7 +60,12 @@ const HeaderContainer: React.FC<HeaderContainerModel> = props => {
           </div>
         )}
         {showForm && formRegion && formPortalId && formId ? (
-          <div id="formContainer" className={styles?.form__container}>
+          <div
+            id="formContainer"
+            className={`${styles.form__container} ${
+              headingRight ? styles?.headingRight : ""
+            }`}
+          >
             <HubspotForm
               region={formRegion}
               portalId={formPortalId}

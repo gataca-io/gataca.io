@@ -41,6 +41,10 @@
     },
     "formId": {
       "type": "string"
+    },
+    "headingRight": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

@@ -132,6 +132,20 @@
           "searchable": true,
           "sortable": true
         }
+      },
+      "headingRight": {
+        "edit": {
+          "label": "headingRight",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "headingRight",
+          "searchable": true,
+          "sortable": true
+        }
       }
     },
     "layouts": {
@@ -154,11 +168,17 @@
         ],
         [
           {
-            "name": "image",
+            "name": "heading",
             "size": 6
           },
           {
-            "name": "heading",
+            "name": "headingRight",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "image",
             "size": 6
           }
         ],
