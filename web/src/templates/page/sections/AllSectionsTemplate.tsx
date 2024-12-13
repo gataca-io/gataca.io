@@ -101,6 +101,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
       formPortalId,
       showForm,
       action_cards,
+      marginBottom,
     } = item
 
     return (
@@ -122,6 +123,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
             list={logos?.data}
             lightLogos={lightLogos}
             loop={loop}
+            marginBottom={marginBottom}
           />
         )}
 

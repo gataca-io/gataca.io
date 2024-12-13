@@ -204,6 +204,7 @@ export interface InsideSectionsModel {
   formPortalId?: string
   showForm?: boolean
   action_cards?: any
+  marginBottom?: boolean
 }
 
 export interface LocalizationsModel {

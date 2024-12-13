@@ -1,7 +1,8 @@
 {
   "collectionName": "components_shared_carrousel_logos",
   "info": {
-    "displayName": "CarrouselLogos"
+    "displayName": "CarrouselLogos",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -17,6 +18,10 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::logo.logo"
+    },
+    "marginBottom": {
+      "type": "boolean",
+      "default": true
     }
   }
 }
