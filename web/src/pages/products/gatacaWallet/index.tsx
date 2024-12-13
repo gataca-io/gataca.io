@@ -1,6 +1,7 @@
 import type { PageProps } from "gatsby"
 import * as React from "react"
 import { useState } from "react"
+import * as styles from "./gatacaWallet.module.scss"
 import Layout from "../../../components/templates/mainLayout/MainLayout"
 import FirstSection from "./sections/firstSection/FirstSection"
 import SecondSection from "./sections/secondSection/SecondSection"
@@ -84,12 +85,14 @@ const GatacaWalletPage: React.FC<PageProps> = () => {
             link: true,
             url: marketIosURI,
             outsideWeb: true,
+            className: styles?.buttonBrand,
           }}
           rightButton={{
             icon: images.brandGoogleButton,
             link: true,
             url: marketAndroidURI,
             outsideWeb: true,
+            className: styles?.buttonBrand,
           }}
         />
         </>

@@ -2,3 +2,8 @@
 @import "../../../styles/mixins";
 
 
+.buttonBrand {
+    img {
+        max-width: 100% !important;
+    }
+}
