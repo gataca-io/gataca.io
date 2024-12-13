@@ -6,3 +6,5 @@ export const header__image: string
 export const header__imageContainer: string
 export const form__container: string
 export const formActive: string
+export const headingRight: string
+export const imageOutsideFrame: string

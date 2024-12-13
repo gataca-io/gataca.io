@@ -2,7 +2,12 @@
 @import "../../../../../../styles/mixins.scss";
 
 .carrouselLogos {
-  margin-bottom: 120px;
+  &.marginBottom {
+    margin-bottom: 132px;
+    @include min-width($mobileXL) {
+      margin-bottom: 200px;
+    }
+  }
   &.lightBackground {
     background-color: $neutral200;
   }

@@ -6,6 +6,7 @@ export type IcarrouselLogosProps = {
   lightLogos?: boolean
   loop?: boolean
   className?: string
+  marginBottom?: boolean
   list: {
     attributes: {
       icon: any
@@ -17,13 +18,13 @@ export type IcarrouselLogosProps = {
 
 const timesToRepeatLogos = 15
 const CarrouselLogos: React.FC<IcarrouselLogosProps> = props => {
-  const { className, lightLogos, loop, list } = props
+  const { className, lightLogos, loop, marginBottom, list } = props
 
   return (
     <div
       className={`${className && className} ${styles.carrouselLogos} ${
         lightLogos ? styles.darkBackground : styles.lightBackground
-      }
+      } ${marginBottom ? styles?.marginBottom : ""}
       `}
     >
       {loop && loop ? (

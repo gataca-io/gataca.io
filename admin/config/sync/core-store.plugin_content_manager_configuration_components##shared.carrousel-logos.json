@@ -62,6 +62,20 @@
           "searchable": false,
           "sortable": false
         }
+      },
+      "marginBottom": {
+        "edit": {
+          "label": "marginBottom",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "marginBottom",
+          "searchable": true,
+          "sortable": true
+        }
       }
     },
     "layouts": {
@@ -79,6 +93,10 @@
           },
           {
             "name": "loop",
+            "size": 4
+          },
+          {
+            "name": "marginBottom",
             "size": 4
           }
         ],

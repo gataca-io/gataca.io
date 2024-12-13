@@ -41,6 +41,14 @@
     },
     "formId": {
       "type": "string"
+    },
+    "headingRight": {
+      "type": "boolean",
+      "default": false
+    },
+    "imageOutsideFrame": {
+      "type": "boolean",
+      "default": true
     }
   }
 }

@@ -101,6 +101,9 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
       formPortalId,
       showForm,
       action_cards,
+      marginBottom,
+      headingRight,
+      imageOutsideFrame,
     } = item
 
     return (
@@ -115,6 +118,8 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
             formRegion={formRegion}
             formPortalId={formPortalId}
             formId={formId}
+            headingRight={headingRight}
+            imageOutsideFrame={imageOutsideFrame}
           />
         )}
         {__component === "shared.carrousel-logos" && (
@@ -122,6 +127,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
             list={logos?.data}
             lightLogos={lightLogos}
             loop={loop}
+            marginBottom={marginBottom}
           />
         )}
 

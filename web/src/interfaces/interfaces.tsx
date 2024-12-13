@@ -204,6 +204,9 @@ export interface InsideSectionsModel {
   formPortalId?: string
   showForm?: boolean
   action_cards?: any
+  marginBottom?: boolean
+  headingRight?: boolean
+  imageOutsideFrame?: boolean
 }
 
 export interface LocalizationsModel {
@@ -489,6 +492,8 @@ export interface HeaderContainerModel {
   formRegion?: string
   formPortalId?: string
   formId?: string
+  headingRight?: boolean
+  imageOutsideFrame?: boolean
 }
 
 export interface SubHeadingContainerModel {

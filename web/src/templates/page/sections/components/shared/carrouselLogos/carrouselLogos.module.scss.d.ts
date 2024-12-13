@@ -7,3 +7,4 @@ export const clientsLogo__static: string
 export const clientsLogo__carrouselItem: string
 export const lightBackground: string
 export const darkBackground: string
+export const marginBottom: string
