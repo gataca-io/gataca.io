@@ -26,6 +26,7 @@ import MediaStepsSlider from "./components/shared/mediaStepsSlider/MediaStepsSli
 import StepsContent from "./components/shared/stepsContent/StepsContent"
 import TeamLayout from "./components/shared/TeamLayout/TeamLayout"
 import HighlightSubHeadingCard from "./components/shared/HighlightSubHeadingCard/HighlightSubHeadingCard"
+import FormLayout from "./components/shared/FormLayout/FormLayout"
 
 const AllSectionsTemplate: React.FC<PageModel> = props => {
   const { sections, location } = props
@@ -94,6 +95,12 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
       columns,
       card,
       fullWidthCard,
+      headingSlot,
+      formId,
+      formRegion,
+      formPortalId,
+      showForm,
+      action_cards,
     } = item
 
     return (
@@ -104,6 +111,10 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
             heading={heading?.data?.attributes}
             image={image}
             centerText={centerText}
+            showForm={showForm}
+            formRegion={formRegion}
+            formPortalId={formPortalId}
+            formId={formId}
           />
         )}
         {__component === "shared.carrousel-logos" && (
@@ -224,6 +235,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
             image={image}
             blockAlign={blockAlign}
             slotAlign={slotAlign}
+            headingSlot={headingSlot?.data?.attributes}
           />
         )}
         {__component === "shared.full-width-card" && (
@@ -314,6 +326,22 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
             heading={heading?.data?.attributes}
             subHeadingContainer={sub_heading?.data?.attributes}
             fullWidthCard={fullWidthCard}
+          />
+        )}
+        {__component === "shared.form-layout" && (
+          <FormLayout
+            idItem={idItem}
+            heading={heading?.data?.attributes}
+            headingSlot={headingSlot?.data?.attributes}
+            background={background}
+            image={image}
+            color={color}
+            formId={formId}
+            formRegion={formRegion}
+            formPortalId={formPortalId}
+            showForm={showForm}
+            action_cards={action_cards?.data}
+            subOptionClickedID={location?.substring(1)}
           />
         )}
       </section>

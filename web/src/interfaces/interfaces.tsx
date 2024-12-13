@@ -198,6 +198,12 @@ export interface InsideSectionsModel {
   columns?: string
   card?: any
   fullWidthCard?: any
+  headingSlot?: any
+  formId?: string
+  formRegion?: string
+  formPortalId?: string
+  showForm?: boolean
+  action_cards?: any
 }
 
 export interface LocalizationsModel {
@@ -458,6 +464,10 @@ export interface HeadingModel {
   buttonGroup?: any
   lists?: any
   table?: any
+  showForm?: boolean
+  formRegion?: string
+  formPortalId?: string
+  formId?: string
 }
 
 export interface SelectorModel {
@@ -475,9 +485,10 @@ export interface HeaderContainerModel {
   heading: HeadingModel
   image?: any
   centerText?: boolean
-  data?: {
-    attributes?: []
-  }
+  showForm?: boolean
+  formRegion?: string
+  formPortalId?: string
+  formId?: string
 }
 
 export interface SubHeadingContainerModel {

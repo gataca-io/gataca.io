@@ -12,13 +12,21 @@ export type ISubHeadingsLayoutProps = {
   heading?: HeadingModel
   subHeadingContainer?: any
   image?: any
+  headingSlot?: HeadingModel
   blockAlign?: string
   slotAlign?: string
 }
 
 const SubHeadingsLayout: React.FC<ISubHeadingsLayoutProps> = props => {
-  const { idItem, heading, subHeadingContainer, image, blockAlign, slotAlign } =
-    props
+  const {
+    idItem,
+    heading,
+    subHeadingContainer,
+    image,
+    blockAlign,
+    slotAlign,
+    headingSlot,
+  } = props
 
   const blockAlignStyles: Record<string, string> = {
     left: styles?.blockAlignLeft,
@@ -32,6 +40,8 @@ const SubHeadingsLayout: React.FC<ISubHeadingsLayoutProps> = props => {
   }
 
   const imageData = image?.data?.attributes?.url
+  const slotData = headingSlot || imageData
+
   return (
     <div
       id={idItem}
@@ -41,14 +51,21 @@ const SubHeadingsLayout: React.FC<ISubHeadingsLayoutProps> = props => {
         slotAlign ? slotAlignStyles[slotAlign] : ""
       } `}
     >
-      {imageData && (
-        <div className={styles?.image__container}>
+      {slotData && (
+        <div className={styles?.slot__container}>
           <StrapiImage image={image ? image : null} />
+          <Heading
+            {...headingSlot}
+            button={{
+              ...headingSlot?.button,
+              action: () => window.open(headingSlot?.button?.url, "_blank"),
+            }}
+          />
         </div>
       )}
       <div
         className={`${styles?.subHeading__container} ${
-          !imageData ? styles?.containerMaxWidth : ""
+          slotData ? "" : styles?.containerMaxWidth
         }`}
       >
         {heading && (

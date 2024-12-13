@@ -4167,7 +4167,11 @@
           "buttonGroup.brand_buttons",
           "buttonGroup.button_icons",
           "table.content",
-          "lists"
+          "lists",
+          "showForm",
+          "formRegion",
+          "formPortalId",
+          "formId"
         ]
       },
       "conditions": []
@@ -4222,7 +4226,11 @@
           "buttonGroup.brand_buttons",
           "buttonGroup.button_icons",
           "table.content",
-          "lists"
+          "lists",
+          "showForm",
+          "formRegion",
+          "formPortalId",
+          "formId"
         ]
       },
       "conditions": []
@@ -4265,7 +4273,11 @@
           "buttonGroup.brand_buttons",
           "buttonGroup.button_icons",
           "table.content",
-          "lists"
+          "lists",
+          "showForm",
+          "formRegion",
+          "formPortalId",
+          "formId"
         ]
       },
       "conditions": []

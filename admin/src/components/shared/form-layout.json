@@ -1,0 +1,64 @@
+{
+  "collectionName": "components_shared_form_layouts",
+  "info": {
+    "displayName": "FormLayout",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "idItem": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::heading.heading"
+    },
+    "headingSlot": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::heading.heading"
+    },
+    "background": {
+      "type": "boolean",
+      "default": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "color": {
+      "type": "enumeration",
+      "enum": [
+        "grey",
+        "black"
+      ],
+      "default": "black"
+    },
+    "formRegion": {
+      "type": "string"
+    },
+    "formPortalId": {
+      "type": "string"
+    },
+    "formId": {
+      "type": "string"
+    },
+    "action_cards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::action-card.action-card"
+    },
+    "showForm": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

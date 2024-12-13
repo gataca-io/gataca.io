@@ -50,7 +50,9 @@ const Button: React.FC<ButtonModel> = props => {
             styles.buttonStrapi
           } ${disabled ? styles.disabled : ""} ${
             noPaddingText ? styles.noPadding : ""
-          } ${fullWidth ? styles?.fullWidthButton : ""}`}
+          } ${fullWidth ? styles?.fullWidthButton : ""} ${
+            className && className
+          }`}
           target={outsideWeb ? "_blank" : "_self"}
           href={url}
         >

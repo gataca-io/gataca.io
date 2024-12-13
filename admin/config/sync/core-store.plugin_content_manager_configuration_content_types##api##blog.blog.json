@@ -195,6 +195,12 @@
       "edit": [
         [
           {
+            "name": "seo",
+            "size": 12
+          }
+        ],
+        [
+          {
             "name": "title",
             "size": 6
           },
@@ -217,6 +223,10 @@
           {
             "name": "heroImage",
             "size": 6
+          },
+          {
+            "name": "slugURL",
+            "size": 6
           }
         ],
         [
@@ -232,18 +242,6 @@
         [
           {
             "name": "content",
-            "size": 12
-          }
-        ],
-        [
-          {
-            "name": "slugURL",
-            "size": 6
-          }
-        ],
-        [
-          {
-            "name": "seo",
             "size": 12
           }
         ]

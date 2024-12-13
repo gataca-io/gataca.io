@@ -7,6 +7,9 @@ import ButtonGroup from "../../generic/buttonGroup/ButtonGroup"
 import ListGroup from "../list/listGroup/ListGroup"
 import Button from "../../generic/button/Button"
 import Table from "../table/Table"
+import MarkDownContent from "../../../../../../components/elements/markDownContent/MarkDownContent"
+import HubspotForm from "react-hubspot-form"
+import FormSkeleton from "./components/FormSkeleton"
 
 const Heading: React.FC<HeadingModel> = props => {
   const {
@@ -23,6 +26,10 @@ const Heading: React.FC<HeadingModel> = props => {
     buttonGroup,
     lists,
     table,
+    showForm,
+    formRegion,
+    formPortalId,
+    formId,
   } = props
 
   const spacingStyles: Record<string, string> = {
@@ -36,6 +43,8 @@ const Heading: React.FC<HeadingModel> = props => {
     right: styles?.alignRight,
   }
 
+  const [formSubmitted, setFormSubmitted] = React.useState(false)
+
   return (
     <div
       id={idItem}
@@ -43,7 +52,7 @@ const Heading: React.FC<HeadingModel> = props => {
     >
       <div
         className={`${align ? alignStyles[align] : styles?.alignLeft} ${
-          titleSize ? spacingStyles[titleSize] : styles?.alignLeft
+          titleSize ? spacingStyles[titleSize] : ""
         }`}
       >
         {(chip?.text?.length ||
@@ -83,7 +92,9 @@ const Heading: React.FC<HeadingModel> = props => {
           </>
         )}
         {content?.length && (
-          <p className={cx("bodyRegularXL neutral700")}>{content}</p>
+          <div className={styles?.heading__content}>
+            <MarkDownContent content={content} />
+          </div>
         )}
         {(button?.label?.length ||
           button?.icon?.data?.attributes?.url?.length) && (
@@ -131,6 +142,20 @@ const Heading: React.FC<HeadingModel> = props => {
             className={`${cx("marginTop20")} ${styles?.tableContainer}`}
           />
         )}
+        {showForm && formRegion && formPortalId && formId ? (
+          <div id="formContainer" className={styles?.form__container}>
+            <HubspotForm
+              region={formRegion}
+              portalId={formPortalId}
+              formId={formId}
+              onSubmit={() => {
+                setFormSubmitted(true)
+              }}
+              onReady={() => {}}
+              loading={<FormSkeleton />}
+            />
+          </div>
+        ) : null}
       </div>
     </div>
   )

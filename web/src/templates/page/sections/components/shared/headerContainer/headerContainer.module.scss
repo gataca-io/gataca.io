@@ -25,6 +25,12 @@
     @include align-items(center);
     @include flex-wrap(nowrap);
   }
+  &.formActive {
+    @include min-width($tabletMD) {
+      gap: 32px;
+      @include align-items(flex-start);
+    }
+  }
 }
 
 .header__heading {
@@ -37,6 +43,23 @@
       max-width: 778px;
       margin: 0 auto;
     }
+  }
+}
+.form__container {
+  background-color: $neutral100;
+  padding: 20px 20px 4px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 10px $boxShadowLigh;
+  @include flexbox();
+  @include flex-direction(column);
+  @include justify-content(space-between);
+  width: calc(100% - 40px);
+  @include min-width($tabletMD) {
+    max-width: 400px;
+  }
+  @include min-width($desktopXL) {
+    max-width: 475px;
+    width: 100%;
   }
 }
 .header__imageContainer {

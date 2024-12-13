@@ -22,36 +22,10 @@ const PreFooterCTASection: React.FC<IPreFooterCTAProps> = props => {
       {leftButton || rightButton ? (
         <div>
           {(leftButton?.label || leftButton?.icon?.length) && (
-            <Button
-              idButton={leftButton?.idButton}
-              label={leftButton?.label}
-              icon={leftButton?.icon}
-              style={leftButton?.style}
-              color={leftButton?.color}
-              size={leftButton?.size}
-              noPaddingText={leftButton?.noPaddingText}
-              disabled={leftButton?.disabled}
-              link={leftButton?.link}
-              url={leftButton?.url}
-              outsideWeb={leftButton?.outsideWeb}
-              action={leftButton?.action}
-            />
+            <Button {...leftButton} />
           )}
           {(rightButton?.label || rightButton?.icon?.length) && (
-            <Button
-              idButton={rightButton?.idButton}
-              label={rightButton?.label}
-              icon={rightButton?.icon}
-              style={rightButton?.style}
-              color={rightButton?.color}
-              size={rightButton?.size}
-              noPaddingText={rightButton?.noPaddingText}
-              disabled={rightButton?.disabled}
-              link={rightButton?.link}
-              url={rightButton?.url}
-              outsideWeb={rightButton?.outsideWeb}
-              action={rightButton?.action}
-            />
+            <Button {...rightButton} />
           )}
         </div>
       ) : null}
