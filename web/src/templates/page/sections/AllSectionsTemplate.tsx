@@ -5,7 +5,6 @@ import { PageModel } from "../../../interfaces/interfaces"
 import CarrouselLogos from "./components/shared/carrouselLogos/CarrouselLogos"
 import Table from "./components/shared/table/Table"
 import PricingInfo from "./components/pricing/pricingInfo/PricingInfo"
-import ContentHeadingContainer from "./components/generic/contentHeadingContainer/ContentHeadingContainer"
 import ContentTable from "./components/shared/contentTable/ContentTable"
 import SegmentedButtonsContainer from "./components/generic/segmentedButtons/SegmentedButtonsContainer"
 import ButtonGroup from "./components/generic/buttonGroup/ButtonGroup"
@@ -171,9 +170,6 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
             showAllFeaturesText={showAllFeaturesText}
             hideAllFeaturesText={hideAllFeaturesText}
           />
-        )}
-        {__component === "generic.content-heading-container" && (
-          <ContentHeadingContainer listContent={contents?.data} />
         )}
         {__component === "shared.content-table" && (
           <ContentTable
