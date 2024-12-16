@@ -6,6 +6,7 @@ import * as styles from "./headerContainer.module.scss"
 import Heading from "../Heading/Heading"
 import HubspotForm from "react-hubspot-form"
 import FormSkeleton from "./components/FormSkeleton"
+import { hubspotFormPortalId } from "../../../../../../data/globalData"
 
 const HeaderContainer: React.FC<HeaderContainerModel> = props => {
   const {
@@ -15,7 +16,6 @@ const HeaderContainer: React.FC<HeaderContainerModel> = props => {
     centerText,
     showForm,
     formRegion,
-    formPortalId,
     formId,
     headingRight,
     imageOutsideFrame,
@@ -64,7 +64,7 @@ const HeaderContainer: React.FC<HeaderContainerModel> = props => {
             />
           </div>
         )}
-        {showForm && formRegion && formPortalId && formId ? (
+        {showForm && formRegion && formId ? (
           <div
             id="formContainer"
             className={`${styles.form__container} ${
@@ -73,7 +73,7 @@ const HeaderContainer: React.FC<HeaderContainerModel> = props => {
           >
             <HubspotForm
               region={formRegion}
-              portalId={formPortalId}
+              portalId={hubspotFormPortalId}
               formId={formId}
               onSubmit={() => {
                 setFormSubmitted(true)

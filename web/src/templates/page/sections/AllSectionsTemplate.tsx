@@ -98,7 +98,6 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
       headingSlot,
       formId,
       formRegion,
-      formPortalId,
       showForm,
       action_cards,
       marginBottom,
@@ -116,7 +115,6 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
             centerText={centerText}
             showForm={showForm}
             formRegion={formRegion}
-            formPortalId={formPortalId}
             formId={formId}
             headingRight={headingRight}
             imageOutsideFrame={imageOutsideFrame}
@@ -344,7 +342,6 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
             color={color}
             formId={formId}
             formRegion={formRegion}
-            formPortalId={formPortalId}
             showForm={showForm}
             action_cards={action_cards?.data}
             subOptionClickedID={location?.substring(1)}

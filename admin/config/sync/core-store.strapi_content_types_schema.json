@@ -6120,9 +6120,6 @@
         "formRegion": {
           "type": "string"
         },
-        "formPortalId": {
-          "type": "string"
-        },
         "formId": {
           "type": "string"
         },
@@ -6235,9 +6232,6 @@
             "default": false
           },
           "formRegion": {
-            "type": "string"
-          },
-          "formPortalId": {
             "type": "string"
           },
           "formId": {

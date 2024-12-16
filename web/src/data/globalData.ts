@@ -21,6 +21,7 @@ export const gdprGatacaEmail = "gdpr@gataca.io"
 // TODO: Update TW @ when new account is created
 export const twitterHandler = "@gataca_id"
 export const demolandURL = "https://demo.gataca.io"
+export const hubspotFormPortalId = "4728390"
 
 export const scrollDirections = {
   up: "UP",
