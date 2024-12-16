@@ -7,8 +7,8 @@
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "title",
-      "defaultSortBy": "title",
+      "mainField": "idItem",
+      "defaultSortBy": "idItem",
       "defaultSortOrder": "ASC"
     },
     "metadatas": {
@@ -20,44 +20,16 @@
           "sortable": false
         }
       },
-      "title": {
+      "idItem": {
         "edit": {
-          "label": "title",
+          "label": "idItem",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "title",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "description": {
-        "edit": {
-          "label": "description",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "description",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "identifier": {
-        "edit": {
-          "label": "identifier",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "identifier",
+          "label": "idItem",
           "searchable": true,
           "sortable": true
         }
@@ -196,24 +168,13 @@
     "layouts": {
       "list": [
         "id",
-        "title",
-        "description",
-        "buttons"
+        "buttons",
+        "idItem"
       ],
       "edit": [
         [
           {
-            "name": "title",
-            "size": 6
-          },
-          {
-            "name": "identifier",
-            "size": 6
-          }
-        ],
-        [
-          {
-            "name": "description",
+            "name": "idItem",
             "size": 6
           },
           {

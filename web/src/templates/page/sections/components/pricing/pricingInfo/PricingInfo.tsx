@@ -43,6 +43,7 @@ export type ISectionProps = {
   titleFeaturesTableMobile?: string
   showAllFeaturesText?: string
   hideAllFeaturesText?: string
+  idItem?: string
 }
 
 const PricingInfo: React.FC<ISectionProps> = props => {
@@ -61,6 +62,7 @@ const PricingInfo: React.FC<ISectionProps> = props => {
     titleFeaturesTableMobile,
     showAllFeaturesText,
     hideAllFeaturesText,
+    idItem,
   } = props
   const [switchPeriodValue, setmonthlyChecked] = React.useState("month")
   const [showAllFeatures, setShowAllFeatures] = React.useState(false)
@@ -91,7 +93,7 @@ const PricingInfo: React.FC<ISectionProps> = props => {
   React.useEffect(() => {
     setAllfeaturesComponent()
     allFeatures &&
-      subOptionClickedID === "gatacaStudioFeatures" &&
+      subOptionClickedID === (idItem || "gatacaStudioFeatures") &&
       (window?.setTimeout(() => {
         window?.scrollTo({ top: 0 })
         setShowAllFeatures(true)
@@ -123,7 +125,7 @@ const PricingInfo: React.FC<ISectionProps> = props => {
   return (
     <>
       <div
-        id={"gatacaStudioFeatures"}
+        id={idItem || "gatacaStudioFeatures"}
         className={`${styles?.pricingInfo} ${cx("containerMaxWidth")}`}
       >
         <div className={styles?.pricingInfo__header}>

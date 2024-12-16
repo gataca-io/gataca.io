@@ -6,13 +6,7 @@
   },
   "options": {},
   "attributes": {
-    "title": {
-      "type": "string"
-    },
-    "description": {
-      "type": "text"
-    },
-    "identifier": {
+    "idItem": {
       "type": "string"
     },
     "pricing_categories": {
