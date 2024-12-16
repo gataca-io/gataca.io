@@ -34,21 +34,6 @@
           "sortable": true
         }
       },
-      "pricing_categories": {
-        "edit": {
-          "label": "pricing_categories",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true,
-          "mainField": "label"
-        },
-        "list": {
-          "label": "pricing_categories",
-          "searchable": false,
-          "sortable": false
-        }
-      },
       "switchLabel": {
         "edit": {
           "label": "switchLabel",
@@ -70,7 +55,7 @@
           "placeholder": "",
           "visible": true,
           "editable": true,
-          "mainField": "title"
+          "mainField": "idItem"
         },
         "list": {
           "label": "tier_tables",
@@ -163,13 +148,29 @@
           "searchable": true,
           "sortable": true
         }
+      },
+      "headingOnPremise": {
+        "edit": {
+          "label": "headingOnPremise",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "idItem"
+        },
+        "list": {
+          "label": "headingOnPremise",
+          "searchable": true,
+          "sortable": true
+        }
       }
     },
     "layouts": {
       "list": [
         "id",
         "buttons",
-        "idItem"
+        "idItem",
+        "headingOnPremise"
       ],
       "edit": [
         [
@@ -204,11 +205,11 @@
         ],
         [
           {
-            "name": "pricing_categories",
+            "name": "buttons",
             "size": 6
           },
           {
-            "name": "buttons",
+            "name": "headingOnPremise",
             "size": 6
           }
         ],

@@ -42,7 +42,7 @@
           "placeholder": "",
           "visible": true,
           "editable": true,
-          "mainField": "name"
+          "mainField": "idItem"
         },
         "list": {
           "label": "categories",

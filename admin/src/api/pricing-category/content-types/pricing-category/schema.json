@@ -12,19 +12,19 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "label": {
-      "type": "string"
-    },
     "title": {
       "type": "string"
     },
     "description": {
       "type": "richtext"
     },
-    "cta": {
+    "idItem": {
+      "type": "string"
+    },
+    "button": {
       "type": "component",
       "repeatable": false,
-      "component": "generic.cta"
+      "component": "generic.button"
     }
   }
 }

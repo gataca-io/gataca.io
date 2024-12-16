@@ -189,8 +189,8 @@
       ],
       "list": [
         "id",
-        "list",
         "idListOption",
+        "list",
         "spacing"
       ]
     }

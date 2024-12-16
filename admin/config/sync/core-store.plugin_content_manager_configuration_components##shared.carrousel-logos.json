@@ -7,8 +7,8 @@
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "id",
-      "defaultSortBy": "id",
+      "mainField": "idItem",
+      "defaultSortBy": "idItem",
       "defaultSortOrder": "ASC"
     },
     "metadatas": {
@@ -55,7 +55,7 @@
           "placeholder": "",
           "visible": true,
           "editable": true,
-          "mainField": "title"
+          "mainField": "idClient"
         },
         "list": {
           "label": "logos",
@@ -76,6 +76,20 @@
           "searchable": true,
           "sortable": true
         }
+      },
+      "idItem": {
+        "edit": {
+          "label": "idItem",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "idItem",
+          "searchable": true,
+          "sortable": true
+        }
       }
     },
     "layouts": {
@@ -88,9 +102,15 @@
       "edit": [
         [
           {
+            "name": "idItem",
+            "size": 6
+          },
+          {
             "name": "lightLogos",
             "size": 4
-          },
+          }
+        ],
+        [
           {
             "name": "loop",
             "size": 4

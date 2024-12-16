@@ -235,7 +235,8 @@
         "fields": [
           "url",
           "hreflangLocale",
-          "label"
+          "label",
+          "idItem"
         ]
       },
       "conditions": []
@@ -259,7 +260,8 @@
         "fields": [
           "url",
           "hreflangLocale",
-          "label"
+          "label",
+          "idItem"
         ]
       },
       "conditions": []
@@ -271,7 +273,8 @@
         "fields": [
           "url",
           "hreflangLocale",
-          "label"
+          "label",
+          "idItem"
         ]
       },
       "conditions": []
@@ -971,7 +974,8 @@
         "fields": [
           "name",
           "order",
-          "blogs"
+          "blogs",
+          "idItem"
         ]
       },
       "conditions": []
@@ -995,7 +999,8 @@
         "fields": [
           "name",
           "order",
-          "blogs"
+          "blogs",
+          "idItem"
         ]
       },
       "conditions": []
@@ -1007,7 +1012,8 @@
         "fields": [
           "name",
           "order",
-          "blogs"
+          "blogs",
+          "idItem"
         ]
       },
       "conditions": []
@@ -1909,6 +1915,7 @@
           "dynamicCards.button.fullWidth",
           "dynamicCards.upperIconClosed",
           "dynamicCards.upperIconOpened",
+          "dynamicCards.idItem",
           "idItem"
         ]
       },
@@ -1961,6 +1968,7 @@
           "dynamicCards.button.fullWidth",
           "dynamicCards.upperIconClosed",
           "dynamicCards.upperIconOpened",
+          "dynamicCards.idItem",
           "idItem"
         ]
       },
@@ -2001,6 +2009,7 @@
           "dynamicCards.button.fullWidth",
           "dynamicCards.upperIconClosed",
           "dynamicCards.upperIconOpened",
+          "dynamicCards.idItem",
           "idItem"
         ]
       },
@@ -2014,7 +2023,8 @@
           "role",
           "name",
           "linkedinRoute",
-          "portrait"
+          "portrait",
+          "idItem"
         ]
       },
       "conditions": []
@@ -2039,7 +2049,8 @@
           "role",
           "name",
           "linkedinRoute",
-          "portrait"
+          "portrait",
+          "idItem"
         ]
       },
       "conditions": []
@@ -2052,7 +2063,8 @@
           "role",
           "name",
           "linkedinRoute",
-          "portrait"
+          "portrait",
+          "idItem"
         ]
       },
       "conditions": []
@@ -3535,7 +3547,8 @@
         "fields": [
           "title",
           "infoToggle",
-          "tiers"
+          "tiers",
+          "idItem"
         ]
       },
       "conditions": []
@@ -3559,7 +3572,8 @@
         "fields": [
           "title",
           "infoToggle",
-          "tiers"
+          "tiers",
+          "idItem"
         ]
       },
       "conditions": []
@@ -3571,7 +3585,8 @@
         "fields": [
           "title",
           "infoToggle",
-          "tiers"
+          "tiers",
+          "idItem"
         ]
       },
       "conditions": []
@@ -5047,12 +5062,22 @@
       "subject": "api::pricing-category.pricing-category",
       "properties": {
         "fields": [
-          "label",
           "title",
           "description",
-          "cta.label",
-          "cta.url",
-          "cta.external_url"
+          "idItem",
+          "button.label",
+          "button.url",
+          "button.outsideWeb",
+          "button.outlined",
+          "button.idButton",
+          "button.icon",
+          "button.link",
+          "button.style",
+          "button.color",
+          "button.size",
+          "button.disabled",
+          "button.noPaddingText",
+          "button.fullWidth"
         ]
       },
       "conditions": []
@@ -5074,12 +5099,22 @@
       "subject": "api::pricing-category.pricing-category",
       "properties": {
         "fields": [
-          "label",
           "title",
           "description",
-          "cta.label",
-          "cta.url",
-          "cta.external_url"
+          "idItem",
+          "button.label",
+          "button.url",
+          "button.outsideWeb",
+          "button.outlined",
+          "button.idButton",
+          "button.icon",
+          "button.link",
+          "button.style",
+          "button.color",
+          "button.size",
+          "button.disabled",
+          "button.noPaddingText",
+          "button.fullWidth"
         ]
       },
       "conditions": []
@@ -5089,12 +5124,22 @@
       "subject": "api::pricing-category.pricing-category",
       "properties": {
         "fields": [
-          "label",
           "title",
           "description",
-          "cta.label",
-          "cta.url",
-          "cta.external_url"
+          "idItem",
+          "button.label",
+          "button.url",
+          "button.outsideWeb",
+          "button.outlined",
+          "button.idButton",
+          "button.icon",
+          "button.link",
+          "button.style",
+          "button.color",
+          "button.size",
+          "button.disabled",
+          "button.noPaddingText",
+          "button.fullWidth"
         ]
       },
       "conditions": []
@@ -6447,7 +6492,8 @@
         "fields": [
           "title",
           "feature_details",
-          "rows"
+          "rows",
+          "idItem"
         ]
       },
       "conditions": []
@@ -6471,7 +6517,8 @@
         "fields": [
           "title",
           "feature_details",
-          "rows"
+          "rows",
+          "idItem"
         ]
       },
       "conditions": []
@@ -6483,7 +6530,8 @@
         "fields": [
           "title",
           "feature_details",
-          "rows"
+          "rows",
+          "idItem"
         ]
       },
       "conditions": []

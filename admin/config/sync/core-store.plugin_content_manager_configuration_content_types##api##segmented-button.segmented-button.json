@@ -50,14 +50,14 @@
       },
       "title": {
         "edit": {
-          "label": "title",
+          "label": "idItem",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "title",
+          "label": "idItem",
           "searchable": true,
           "sortable": true
         }

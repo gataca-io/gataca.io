@@ -7,7 +7,7 @@
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "title",
+      "mainField": "idItem",
       "defaultSortBy": "title",
       "defaultSortOrder": "ASC"
     },
@@ -16,20 +16,6 @@
         "edit": {},
         "list": {
           "label": "id",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "label": {
-        "edit": {
-          "label": "label",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "label",
           "searchable": true,
           "sortable": true
         }
@@ -43,7 +29,7 @@
           "editable": true
         },
         "list": {
-          "label": "title",
+          "label": "idItem",
           "searchable": true,
           "sortable": true
         }
@@ -62,16 +48,30 @@
           "sortable": false
         }
       },
-      "cta": {
+      "idItem": {
         "edit": {
-          "label": "cta",
+          "label": "idItem",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "cta",
+          "label": "idItem",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "button": {
+        "edit": {
+          "label": "button",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "button",
           "searchable": false,
           "sortable": false
         }
@@ -106,14 +106,20 @@
       }
     },
     "layouts": {
+      "list": [
+        "id",
+        "title",
+        "idItem",
+        "button"
+      ],
       "edit": [
         [
           {
-            "name": "title",
+            "name": "idItem",
             "size": 6
           },
           {
-            "name": "label",
+            "name": "title",
             "size": 6
           }
         ],
@@ -125,14 +131,10 @@
         ],
         [
           {
-            "name": "cta",
+            "name": "button",
             "size": 12
           }
         ]
-      ],
-      "list": [
-        "id",
-        "label"
       ]
     }
   },

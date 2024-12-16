@@ -22,6 +22,9 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::tier.tier"
+    },
+    "idItem": {
+      "type": "string"
     }
   }
 }

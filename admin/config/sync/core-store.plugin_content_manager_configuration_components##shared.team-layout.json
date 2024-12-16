@@ -56,7 +56,7 @@
           "placeholder": "",
           "visible": true,
           "editable": true,
-          "mainField": "role"
+          "mainField": "idItem"
         },
         "list": {
           "label": "employees",

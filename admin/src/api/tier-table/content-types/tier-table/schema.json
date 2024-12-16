@@ -22,6 +22,9 @@
     },
     "rows": {
       "type": "integer"
+    },
+    "idItem": {
+      "type": "string"
     }
   }
 }

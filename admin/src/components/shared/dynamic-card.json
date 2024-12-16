@@ -74,6 +74,9 @@
         "videos",
         "audios"
       ]
+    },
+    "idItem": {
+      "type": "string"
     }
   }
 }

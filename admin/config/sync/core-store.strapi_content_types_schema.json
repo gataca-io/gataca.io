@@ -2298,6 +2298,9 @@
         "label": {
           "type": "string"
         },
+        "idItem": {
+          "type": "string"
+        },
         "createdAt": {
           "type": "datetime"
         },
@@ -2351,6 +2354,9 @@
             "type": "string"
           },
           "label": {
+            "type": "string"
+          },
+          "idItem": {
             "type": "string"
           }
         },
@@ -3435,6 +3441,9 @@
           "target": "api::blog.blog",
           "mappedBy": "category"
         },
+        "idItem": {
+          "type": "string"
+        },
         "createdAt": {
           "type": "datetime"
         },
@@ -3496,6 +3505,9 @@
             "relation": "oneToMany",
             "target": "api::blog.blog",
             "mappedBy": "category"
+          },
+          "idItem": {
+            "type": "string"
           }
         },
         "kind": "collectionType"
@@ -4823,7 +4835,8 @@
       "info": {
         "singularName": "employee",
         "pluralName": "employees",
-        "displayName": "Employee"
+        "displayName": "Employee",
+        "description": ""
       },
       "options": {
         "draftAndPublish": true
@@ -4840,14 +4853,18 @@
           "type": "string"
         },
         "portrait": {
+          "type": "media",
+          "multiple": false,
+          "required": false,
           "allowedTypes": [
             "images",
             "files",
             "videos",
             "audios"
-          ],
-          "type": "media",
-          "multiple": false
+          ]
+        },
+        "idItem": {
+          "type": "string"
         },
         "createdAt": {
           "type": "datetime"
@@ -4887,7 +4904,8 @@
         "info": {
           "singularName": "employee",
           "pluralName": "employees",
-          "displayName": "Employee"
+          "displayName": "Employee",
+          "description": ""
         },
         "options": {
           "draftAndPublish": true
@@ -4904,14 +4922,18 @@
             "type": "string"
           },
           "portrait": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
             "allowedTypes": [
               "images",
               "files",
               "videos",
               "audios"
-            ],
-            "type": "media",
-            "multiple": false
+            ]
+          },
+          "idItem": {
+            "type": "string"
           }
         },
         "kind": "collectionType"
@@ -5382,6 +5404,9 @@
           "relation": "oneToMany",
           "target": "api::tier.tier"
         },
+        "idItem": {
+          "type": "string"
+        },
         "createdAt": {
           "type": "datetime"
         },
@@ -5438,6 +5463,9 @@
             "type": "relation",
             "relation": "oneToMany",
             "target": "api::tier.tier"
+          },
+          "idItem": {
+            "type": "string"
           }
         },
         "kind": "collectionType"
@@ -7919,19 +7947,19 @@
       },
       "pluginOptions": {},
       "attributes": {
-        "label": {
-          "type": "string"
-        },
         "title": {
           "type": "string"
         },
         "description": {
           "type": "richtext"
         },
-        "cta": {
+        "idItem": {
+          "type": "string"
+        },
+        "button": {
           "type": "component",
           "repeatable": false,
-          "component": "generic.cta"
+          "component": "generic.button"
         },
         "createdAt": {
           "type": "datetime"
@@ -7979,19 +8007,19 @@
         },
         "pluginOptions": {},
         "attributes": {
-          "label": {
-            "type": "string"
-          },
           "title": {
             "type": "string"
           },
           "description": {
             "type": "richtext"
           },
-          "cta": {
+          "idItem": {
+            "type": "string"
+          },
+          "button": {
             "type": "component",
             "repeatable": false,
-            "component": "generic.cta"
+            "component": "generic.button"
           }
         },
         "kind": "collectionType"
@@ -9820,6 +9848,9 @@
         "rows": {
           "type": "integer"
         },
+        "idItem": {
+          "type": "string"
+        },
         "createdAt": {
           "type": "datetime"
         },
@@ -9876,6 +9907,9 @@
           },
           "rows": {
             "type": "integer"
+          },
+          "idItem": {
+            "type": "string"
           }
         },
         "kind": "collectionType"
