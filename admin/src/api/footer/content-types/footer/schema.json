@@ -4,40 +4,67 @@
   "info": {
     "singularName": "footer",
     "pluralName": "footers",
-    "displayName": "Footer"
+    "displayName": "Footer",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "idItem": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
       ],
-      "type": "media",
-      "multiple": false
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "certificationImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
       ],
-      "type": "media",
-      "multiple": false
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "linksList": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.list-group"
+      "component": "shared.list-group",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "languageOptions": {
       "type": "relation",
@@ -47,20 +74,40 @@
     "languageButton": {
       "type": "component",
       "repeatable": false,
-      "component": "generic.button"
+      "component": "generic.button",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "termsButton": {
       "type": "component",
       "repeatable": false,
-      "component": "generic.button-group"
+      "component": "generic.button-group",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "socialMediaButton": {
       "type": "component",
       "repeatable": false,
-      "component": "generic.button-group"
+      "component": "generic.button-group",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "rightsReserved": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }

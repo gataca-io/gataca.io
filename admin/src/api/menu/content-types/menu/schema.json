@@ -10,10 +10,19 @@
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "idItem": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "logo": {
       "type": "media",
@@ -24,22 +33,42 @@
         "files",
         "videos",
         "audios"
-      ]
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "menuDropdown": {
       "type": "component",
       "repeatable": false,
-      "component": "generic.button-group"
+      "component": "generic.button-group",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "button": {
       "type": "component",
       "repeatable": false,
-      "component": "generic.button-group"
+      "component": "generic.button-group",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "backButtonMobile": {
       "type": "component",
       "repeatable": false,
-      "component": "generic.button"
+      "component": "generic.button",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "iconBackButtonMobile": {
       "type": "media",
@@ -50,7 +79,12 @@
         "files",
         "videos",
         "audios"
-      ]
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "iconMenuOptionsMobile": {
       "type": "media",
@@ -61,7 +95,12 @@
         "files",
         "videos",
         "audios"
-      ]
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "languageOptions": {
       "type": "relation",
@@ -71,7 +110,12 @@
     "languageButton": {
       "type": "component",
       "repeatable": false,
-      "component": "generic.button"
+      "component": "generic.button",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }
