@@ -205,6 +205,9 @@
       "action": "api::highlight-card.highlight-card.findOne"
     },
     {
+      "action": "api::home-index.home-index.find"
+    },
+    {
       "action": "api::industry.industry.find"
     },
     {

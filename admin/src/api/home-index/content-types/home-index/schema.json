@@ -1,0 +1,93 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_indices",
+  "info": {
+    "singularName": "home-index",
+    "pluralName": "home-indices",
+    "displayName": "HomeIndex",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "sections": {
+      "type": "dynamiczone",
+      "components": [
+        "generic.button-group",
+        "generic.chip-group",
+        "generic.table",
+        "shared.action-card",
+        "shared.blog-highlight-card",
+        "shared.carrousel-logos",
+        "shared.content-table",
+        "shared.dynamic-card-component",
+        "shared.dynamic-selector",
+        "shared.form-layout",
+        "shared.full-width-card",
+        "shared.general-cards-layout",
+        "shared.header-container",
+        "shared.high-sub-head-card",
+        "shared.highlight-card",
+        "shared.highlight",
+        "shared.list-group",
+        "shared.list",
+        "shared.logos-component",
+        "shared.main-blog-layout",
+        "shared.media-steps-slider",
+        "shared.button-options",
+        "shared.side-cards-slider",
+        "shared.steps-content",
+        "shared.sub-headings-layout",
+        "shared.team-layout",
+        "shared.text-media",
+        "shared.video"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "title": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "slugURL": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true
+    },
+    "subPath": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    }
+  }
+}
