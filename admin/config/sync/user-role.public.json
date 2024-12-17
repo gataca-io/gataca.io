@@ -274,12 +274,6 @@
       "action": "api::partnership-type.partnership-type.findOne"
     },
     {
-      "action": "api::pricing-category.pricing-category.find"
-    },
-    {
-      "action": "api::pricing-category.pricing-category.findOne"
-    },
-    {
       "action": "api::pricing.pricing.find"
     },
     {

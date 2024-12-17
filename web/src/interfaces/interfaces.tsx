@@ -140,7 +140,7 @@ export interface InsideSectionsModel {
   __component?: string
   logos?: any
   infoToggles?: string
-  pricing_categories?: any
+  headingOnPremise?: any
   tier_tables?: any
   contents?: any
   card_table_contents?: any

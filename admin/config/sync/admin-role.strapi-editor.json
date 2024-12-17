@@ -2216,51 +2216,6 @@
     },
     {
       "action": "plugin::content-manager.explorer.create",
-      "subject": "api::pricing-category.pricing-category",
-      "properties": {
-        "fields": [
-          "title",
-          "description"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::pricing-category.pricing-category",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.publish",
-      "subject": "api::pricing-category.pricing-category",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.read",
-      "subject": "api::pricing-category.pricing-category",
-      "properties": {
-        "fields": [
-          "title",
-          "description"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
-      "subject": "api::pricing-category.pricing-category",
-      "properties": {
-        "fields": [
-          "title",
-          "description"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.create",
       "subject": "api::pricing.pricing",
       "properties": {
         "fields": [

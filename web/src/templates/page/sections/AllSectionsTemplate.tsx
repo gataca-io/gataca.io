@@ -36,7 +36,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
       __component,
       logos,
       content,
-      pricing_categories,
+      headingOnPremise,
       infoToggles,
       tier_tables,
       contents,
@@ -150,7 +150,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
         {__component === "pricing.cloud" && (
           <PricingInfo
             idItem={idItem}
-            categories={pricing_categories?.data}
+            headingOnPremise={headingOnPremise?.data?.attributes}
             segmentedButtons={buttons?.data}
             index={0}
             switchLabel={switchLabel}
