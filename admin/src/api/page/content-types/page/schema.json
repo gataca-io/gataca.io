@@ -21,7 +21,6 @@
       "components": [
         "generic.table",
         "pricing.cloud",
-        "generic.content-heading-container",
         "shared.content-table",
         "shared.button-options",
         "generic.button-group",

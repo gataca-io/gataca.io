@@ -7,8 +7,8 @@
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "title",
-      "defaultSortBy": "title",
+      "mainField": "idItem",
+      "defaultSortBy": "idItem",
       "defaultSortOrder": "ASC"
     },
     "metadatas": {
@@ -20,61 +20,18 @@
           "sortable": false
         }
       },
-      "title": {
+      "idItem": {
         "edit": {
-          "label": "title",
+          "label": "idItem",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "title",
+          "label": "idItem",
           "searchable": true,
           "sortable": true
-        }
-      },
-      "description": {
-        "edit": {
-          "label": "description",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "description",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "identifier": {
-        "edit": {
-          "label": "identifier",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "identifier",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "pricing_categories": {
-        "edit": {
-          "label": "pricing_categories",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true,
-          "mainField": "label"
-        },
-        "list": {
-          "label": "pricing_categories",
-          "searchable": false,
-          "sortable": false
         }
       },
       "switchLabel": {
@@ -98,7 +55,7 @@
           "placeholder": "",
           "visible": true,
           "editable": true,
-          "mainField": "title"
+          "mainField": "idItem"
         },
         "list": {
           "label": "tier_tables",
@@ -191,29 +148,34 @@
           "searchable": true,
           "sortable": true
         }
+      },
+      "headingOnPremise": {
+        "edit": {
+          "label": "headingOnPremise",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "idItem"
+        },
+        "list": {
+          "label": "headingOnPremise",
+          "searchable": true,
+          "sortable": true
+        }
       }
     },
     "layouts": {
       "list": [
         "id",
-        "title",
-        "description",
-        "buttons"
+        "buttons",
+        "idItem",
+        "headingOnPremise"
       ],
       "edit": [
         [
           {
-            "name": "title",
-            "size": 6
-          },
-          {
-            "name": "identifier",
-            "size": 6
-          }
-        ],
-        [
-          {
-            "name": "description",
+            "name": "idItem",
             "size": 6
           },
           {
@@ -243,11 +205,11 @@
         ],
         [
           {
-            "name": "pricing_categories",
+            "name": "buttons",
             "size": 6
           },
           {
-            "name": "buttons",
+            "name": "headingOnPremise",
             "size": 6
           }
         ],

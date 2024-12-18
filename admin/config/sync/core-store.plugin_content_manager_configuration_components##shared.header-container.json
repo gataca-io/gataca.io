@@ -105,20 +105,6 @@
           "sortable": true
         }
       },
-      "formPortalId": {
-        "edit": {
-          "label": "formPortalId",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "formPortalId",
-          "searchable": true,
-          "sortable": true
-        }
-      },
       "formId": {
         "edit": {
           "label": "formId",
@@ -204,15 +190,11 @@
           {
             "name": "showForm",
             "size": 4
-          },
-          {
-            "name": "formRegion",
-            "size": 6
           }
         ],
         [
           {
-            "name": "formPortalId",
+            "name": "formRegion",
             "size": 6
           },
           {

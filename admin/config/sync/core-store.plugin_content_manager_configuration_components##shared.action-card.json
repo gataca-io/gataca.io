@@ -193,13 +193,13 @@
         ],
         [
           {
-            "name": "chip",
+            "name": "button",
             "size": 12
           }
         ],
         [
           {
-            "name": "button",
+            "name": "chip",
             "size": 12
           }
         ]

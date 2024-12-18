@@ -5,6 +5,7 @@ import LicensesTableMobile from "./components/licensesTableMobile/LicensesTableM
 import LicensesTable from "./components/licensesTable/LicensesTable"
 import {
   ButtonModel,
+  HeadingModel,
   IProductModel,
 } from "../../../../../../interfaces/interfaces"
 import CrevronDownSVG from "../../../../../../images/icons/ChevronDownSVG"
@@ -18,15 +19,7 @@ import FullWidthCard from "../../shared/fullWidthCard/FullWidthCard"
 export type ISectionProps = {
   switchLabel?: string
   index: number
-  categories: {
-    attributes: {
-      id?: string
-      label: string
-      title: string
-      description: string
-      cta: ButtonModel
-    }
-  }[]
+  headingOnPremise: HeadingModel
   segmentedButtons: {
     attributes: {
       button: ButtonModel
@@ -43,13 +36,13 @@ export type ISectionProps = {
   titleFeaturesTableMobile?: string
   showAllFeaturesText?: string
   hideAllFeaturesText?: string
+  idItem?: string
 }
 
 const PricingInfo: React.FC<ISectionProps> = props => {
   const {
     switchLabel,
-    index,
-    categories,
+    headingOnPremise,
     segmentedButtons,
     licenses,
     infoToggles,
@@ -61,6 +54,7 @@ const PricingInfo: React.FC<ISectionProps> = props => {
     titleFeaturesTableMobile,
     showAllFeaturesText,
     hideAllFeaturesText,
+    idItem,
   } = props
   const [switchPeriodValue, setmonthlyChecked] = React.useState("month")
   const [showAllFeatures, setShowAllFeatures] = React.useState(false)
@@ -91,7 +85,7 @@ const PricingInfo: React.FC<ISectionProps> = props => {
   React.useEffect(() => {
     setAllfeaturesComponent()
     allFeatures &&
-      subOptionClickedID === "gatacaStudioFeatures" &&
+      subOptionClickedID === (idItem || "gatacaStudioFeatures") &&
       (window?.setTimeout(() => {
         window?.scrollTo({ top: 0 })
         setShowAllFeatures(true)
@@ -123,7 +117,7 @@ const PricingInfo: React.FC<ISectionProps> = props => {
   return (
     <>
       <div
-        id={"gatacaStudioFeatures"}
+        id={idItem || "gatacaStudioFeatures"}
         className={`${styles?.pricingInfo} ${cx("containerMaxWidth")}`}
       >
         <div className={styles?.pricingInfo__header}>
@@ -227,16 +221,7 @@ const PricingInfo: React.FC<ISectionProps> = props => {
             </>
           ) : (
             <>
-              <FullWidthCard
-                color="white"
-                heading={{
-                  title: categories[1]?.attributes?.title,
-                  content: categories[1]?.attributes?.description,
-                  button: { ...categories[1]?.attributes?.cta },
-                  align: "center",
-                  titleSize: "medium",
-                }}
-              />
+              <FullWidthCard color="white" heading={headingOnPremise} />
             </>
           )}
         </div>

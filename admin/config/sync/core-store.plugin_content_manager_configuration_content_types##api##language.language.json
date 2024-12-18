@@ -7,7 +7,7 @@
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "languageAbbreviationStrapi",
+      "mainField": "idItem",
       "defaultSortBy": "languageAbbreviationStrapi",
       "defaultSortOrder": "ASC"
     },
@@ -112,9 +112,9 @@
       ],
       "list": [
         "id",
+        "idItem",
         "languageAbbreviationStrapi",
-        "label",
-        "idItem"
+        "label"
       ]
     }
   },

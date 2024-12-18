@@ -7,7 +7,7 @@
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "title",
+      "mainField": "idItem",
       "defaultSortBy": "title",
       "defaultSortOrder": "ASC"
     },
@@ -159,6 +159,20 @@
           "searchable": false,
           "sortable": false
         }
+      },
+      "idItem": {
+        "edit": {
+          "label": "idItem",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "idItem",
+          "searchable": true,
+          "sortable": true
+        }
       }
     },
     "layouts": {
@@ -169,6 +183,12 @@
         "numberIconText"
       ],
       "edit": [
+        [
+          {
+            "name": "idItem",
+            "size": 6
+          }
+        ],
         [
           {
             "name": "title",

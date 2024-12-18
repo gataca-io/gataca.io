@@ -45,9 +45,6 @@
     "formRegion": {
       "type": "string"
     },
-    "formPortalId": {
-      "type": "string"
-    },
     "formId": {
       "type": "string"
     },

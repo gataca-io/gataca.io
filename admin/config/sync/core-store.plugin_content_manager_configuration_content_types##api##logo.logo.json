@@ -7,7 +7,7 @@
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "title",
+      "mainField": "idClient",
       "defaultSortBy": "title",
       "defaultSortOrder": "ASC"
     },
@@ -92,20 +92,14 @@
       }
     },
     "layouts": {
-      "list": [
-        "id",
-        "title",
-        "idClient",
-        "icon"
-      ],
       "edit": [
         [
           {
-            "name": "title",
+            "name": "idClient",
             "size": 6
           },
           {
-            "name": "idClient",
+            "name": "title",
             "size": 6
           }
         ],
@@ -115,6 +109,12 @@
             "size": 6
           }
         ]
+      ],
+      "list": [
+        "id",
+        "idClient",
+        "title",
+        "icon"
       ]
     }
   },

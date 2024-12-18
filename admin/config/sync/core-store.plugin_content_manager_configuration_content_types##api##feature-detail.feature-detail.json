@@ -7,7 +7,7 @@
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "title",
+      "mainField": "idItem",
       "defaultSortBy": "title",
       "defaultSortOrder": "ASC"
     },
@@ -63,6 +63,20 @@
           "sortable": false
         }
       },
+      "idItem": {
+        "edit": {
+          "label": "idItem",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "idItem",
+          "searchable": true,
+          "sortable": true
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -96,11 +110,11 @@
       "edit": [
         [
           {
-            "name": "title",
+            "name": "idItem",
             "size": 6
           },
           {
-            "name": "infoToggle",
+            "name": "title",
             "size": 6
           }
         ],
@@ -108,13 +122,17 @@
           {
             "name": "tiers",
             "size": 6
+          },
+          {
+            "name": "infoToggle",
+            "size": 6
           }
         ]
       ],
       "list": [
         "id",
+        "idItem",
         "title",
-        "infoToggle",
         "tiers"
       ]
     }

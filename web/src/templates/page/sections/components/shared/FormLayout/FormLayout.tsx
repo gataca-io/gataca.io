@@ -7,6 +7,7 @@ import Heading from "../Heading/Heading"
 import HubspotForm from "react-hubspot-form"
 import FormSkeleton from "./components/FormSkeleton"
 import ActionCard from "../actionCard/component/ActionCard"
+import { hubspotFormPortalId } from "../../../../../../data/globalData"
 
 export type ISectionProps = {
   idItem?: string
@@ -16,7 +17,6 @@ export type ISectionProps = {
   image?: any
   color?: string
   formRegion?: string
-  formPortalId?: string
   formId?: string
   action_cards?: any
   showForm?: boolean
@@ -32,7 +32,6 @@ const FormLayout: React.FC<ISectionProps> = props => {
     image,
     color,
     formRegion,
-    formPortalId,
     formId,
     action_cards,
     showForm,
@@ -135,7 +134,7 @@ const FormLayout: React.FC<ISectionProps> = props => {
               />
             )}
           </div>
-          {showForm && formRegion && formPortalId && formId ? (
+          {showForm && formRegion && formId ? (
             <div
               className={`${styles?.formLayout__rightSide} ${
                 background ? styles?.background : ""
@@ -144,7 +143,7 @@ const FormLayout: React.FC<ISectionProps> = props => {
               <div id="formContainer" className={styles?.form__container}>
                 <HubspotForm
                   region={formRegion}
-                  portalId={formPortalId}
+                  portalId={hubspotFormPortalId}
                   formId={formId}
                   onSubmit={() => {
                     setFormSubmitted(true)

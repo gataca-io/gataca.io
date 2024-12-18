@@ -6,19 +6,8 @@
   },
   "options": {},
   "attributes": {
-    "title": {
+    "idItem": {
       "type": "string"
-    },
-    "description": {
-      "type": "text"
-    },
-    "identifier": {
-      "type": "string"
-    },
-    "pricing_categories": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::pricing-category.pricing-category"
     },
     "switchLabel": {
       "type": "string"
@@ -50,6 +39,11 @@
     },
     "hideAllFeaturesText": {
       "type": "string"
+    },
+    "headingOnPremise": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::heading.heading"
     }
   }
 }

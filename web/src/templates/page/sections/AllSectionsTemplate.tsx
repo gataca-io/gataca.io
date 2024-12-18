@@ -5,7 +5,6 @@ import { PageModel } from "../../../interfaces/interfaces"
 import CarrouselLogos from "./components/shared/carrouselLogos/CarrouselLogos"
 import Table from "./components/shared/table/Table"
 import PricingInfo from "./components/pricing/pricingInfo/PricingInfo"
-import ContentHeadingContainer from "./components/generic/contentHeadingContainer/ContentHeadingContainer"
 import ContentTable from "./components/shared/contentTable/ContentTable"
 import SegmentedButtonsContainer from "./components/generic/segmentedButtons/SegmentedButtonsContainer"
 import ButtonGroup from "./components/generic/buttonGroup/ButtonGroup"
@@ -37,7 +36,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
       __component,
       logos,
       content,
-      pricing_categories,
+      headingOnPremise,
       infoToggles,
       tier_tables,
       contents,
@@ -98,7 +97,6 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
       headingSlot,
       formId,
       formRegion,
-      formPortalId,
       showForm,
       action_cards,
       marginBottom,
@@ -116,7 +114,6 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
             centerText={centerText}
             showForm={showForm}
             formRegion={formRegion}
-            formPortalId={formPortalId}
             formId={formId}
             headingRight={headingRight}
             imageOutsideFrame={imageOutsideFrame}
@@ -152,7 +149,8 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
 
         {__component === "pricing.cloud" && (
           <PricingInfo
-            categories={pricing_categories?.data}
+            idItem={idItem}
+            headingOnPremise={headingOnPremise?.data?.attributes}
             segmentedButtons={buttons?.data}
             index={0}
             switchLabel={switchLabel}
@@ -173,9 +171,6 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
             showAllFeaturesText={showAllFeaturesText}
             hideAllFeaturesText={hideAllFeaturesText}
           />
-        )}
-        {__component === "generic.content-heading-container" && (
-          <ContentHeadingContainer listContent={contents?.data} />
         )}
         {__component === "shared.content-table" && (
           <ContentTable
@@ -344,7 +339,6 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
             color={color}
             formId={formId}
             formRegion={formRegion}
-            formPortalId={formPortalId}
             showForm={showForm}
             action_cards={action_cards?.data}
             subOptionClickedID={location?.substring(1)}

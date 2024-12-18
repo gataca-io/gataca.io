@@ -205,6 +205,9 @@
       "action": "api::highlight-card.highlight-card.findOne"
     },
     {
+      "action": "api::home-index.home-index.find"
+    },
+    {
       "action": "api::industry.industry.find"
     },
     {
@@ -272,12 +275,6 @@
     },
     {
       "action": "api::partnership-type.partnership-type.findOne"
-    },
-    {
-      "action": "api::pricing-category.pricing-category.find"
-    },
-    {
-      "action": "api::pricing-category.pricing-category.findOne"
     },
     {
       "action": "api::pricing.pricing.find"

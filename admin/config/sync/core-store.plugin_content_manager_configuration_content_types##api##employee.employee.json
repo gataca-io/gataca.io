@@ -7,7 +7,7 @@
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "role",
+      "mainField": "idItem",
       "defaultSortBy": "role",
       "defaultSortOrder": "ASC"
     },
@@ -76,6 +76,20 @@
           "sortable": false
         }
       },
+      "idItem": {
+        "edit": {
+          "label": "idItem",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "idItem",
+          "searchable": true,
+          "sortable": true
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -109,7 +123,7 @@
       "edit": [
         [
           {
-            "name": "role",
+            "name": "idItem",
             "size": 6
           },
           {
@@ -119,9 +133,15 @@
         ],
         [
           {
-            "name": "linkedinRoute",
+            "name": "role",
             "size": 6
           },
+          {
+            "name": "linkedinRoute",
+            "size": 6
+          }
+        ],
+        [
           {
             "name": "portrait",
             "size": 6
@@ -129,10 +149,10 @@
         ]
       ],
       "list": [
-        "name",
         "id",
-        "role",
-        "linkedinRoute"
+        "idItem",
+        "name",
+        "role"
       ]
     }
   },

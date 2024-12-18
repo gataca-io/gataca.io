@@ -140,7 +140,7 @@ export interface InsideSectionsModel {
   __component?: string
   logos?: any
   infoToggles?: string
-  pricing_categories?: any
+  headingOnPremise?: any
   tier_tables?: any
   contents?: any
   card_table_contents?: any
@@ -201,7 +201,6 @@ export interface InsideSectionsModel {
   headingSlot?: any
   formId?: string
   formRegion?: string
-  formPortalId?: string
   showForm?: boolean
   action_cards?: any
   marginBottom?: boolean
@@ -469,7 +468,6 @@ export interface HeadingModel {
   table?: any
   showForm?: boolean
   formRegion?: string
-  formPortalId?: string
   formId?: string
 }
 
@@ -490,7 +488,6 @@ export interface HeaderContainerModel {
   centerText?: boolean
   showForm?: boolean
   formRegion?: string
-  formPortalId?: string
   formId?: string
   headingRight?: boolean
   imageOutsideFrame?: boolean

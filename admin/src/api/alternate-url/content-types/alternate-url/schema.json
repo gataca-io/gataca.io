@@ -20,6 +20,9 @@
     },
     "label": {
       "type": "string"
+    },
+    "idItem": {
+      "type": "string"
     }
   }
 }

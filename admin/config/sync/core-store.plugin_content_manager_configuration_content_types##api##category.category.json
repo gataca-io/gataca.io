@@ -7,7 +7,7 @@
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "name",
+      "mainField": "idItem",
       "defaultSortBy": "name",
       "defaultSortOrder": "ASC"
     },
@@ -34,6 +34,20 @@
           "sortable": true
         }
       },
+      "order": {
+        "edit": {
+          "label": "order",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "order",
+          "searchable": true,
+          "sortable": true
+        }
+      },
       "blogs": {
         "edit": {
           "label": "blogs",
@@ -49,16 +63,16 @@
           "sortable": false
         }
       },
-      "order": {
+      "idItem": {
         "edit": {
-          "label": "order",
+          "label": "idItem",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "order",
+          "label": "idItem",
           "searchable": true,
           "sortable": true
         }
@@ -93,29 +107,34 @@
       }
     },
     "layouts": {
-      "list": [
-        "id",
-        "name",
-        "blogs",
-        "order"
-      ],
       "edit": [
         [
           {
-            "name": "name",
+            "name": "idItem",
             "size": 6
           },
           {
-            "name": "blogs",
+            "name": "name",
             "size": 6
           }
         ],
         [
           {
+            "name": "blogs",
+            "size": 6
+          },
+          {
             "name": "order",
             "size": 4
           }
         ]
+      ],
+      "list": [
+        "id",
+        "idItem",
+        "name",
+        "blogs",
+        "order"
       ]
     }
   },

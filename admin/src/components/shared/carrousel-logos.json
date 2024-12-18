@@ -22,6 +22,9 @@
     "marginBottom": {
       "type": "boolean",
       "default": true
+    },
+    "idItem": {
+      "type": "string"
     }
   }
 }

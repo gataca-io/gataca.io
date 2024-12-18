@@ -235,7 +235,8 @@
         "fields": [
           "url",
           "hreflangLocale",
-          "label"
+          "label",
+          "idItem"
         ]
       },
       "conditions": []
@@ -259,7 +260,8 @@
         "fields": [
           "url",
           "hreflangLocale",
-          "label"
+          "label",
+          "idItem"
         ]
       },
       "conditions": []
@@ -271,7 +273,8 @@
         "fields": [
           "url",
           "hreflangLocale",
-          "label"
+          "label",
+          "idItem"
         ]
       },
       "conditions": []
@@ -971,7 +974,8 @@
         "fields": [
           "name",
           "order",
-          "blogs"
+          "blogs",
+          "idItem"
         ]
       },
       "conditions": []
@@ -995,7 +999,8 @@
         "fields": [
           "name",
           "order",
-          "blogs"
+          "blogs",
+          "idItem"
         ]
       },
       "conditions": []
@@ -1007,7 +1012,8 @@
         "fields": [
           "name",
           "order",
-          "blogs"
+          "blogs",
+          "idItem"
         ]
       },
       "conditions": []
@@ -1909,6 +1915,7 @@
           "dynamicCards.button.fullWidth",
           "dynamicCards.upperIconClosed",
           "dynamicCards.upperIconOpened",
+          "dynamicCards.idItem",
           "idItem"
         ]
       },
@@ -1961,6 +1968,7 @@
           "dynamicCards.button.fullWidth",
           "dynamicCards.upperIconClosed",
           "dynamicCards.upperIconOpened",
+          "dynamicCards.idItem",
           "idItem"
         ]
       },
@@ -2001,6 +2009,7 @@
           "dynamicCards.button.fullWidth",
           "dynamicCards.upperIconClosed",
           "dynamicCards.upperIconOpened",
+          "dynamicCards.idItem",
           "idItem"
         ]
       },
@@ -2014,7 +2023,8 @@
           "role",
           "name",
           "linkedinRoute",
-          "portrait"
+          "portrait",
+          "idItem"
         ]
       },
       "conditions": []
@@ -2039,7 +2049,8 @@
           "role",
           "name",
           "linkedinRoute",
-          "portrait"
+          "portrait",
+          "idItem"
         ]
       },
       "conditions": []
@@ -2052,7 +2063,8 @@
           "role",
           "name",
           "linkedinRoute",
-          "portrait"
+          "portrait",
+          "idItem"
         ]
       },
       "conditions": []
@@ -3535,7 +3547,8 @@
         "fields": [
           "title",
           "infoToggle",
-          "tiers"
+          "tiers",
+          "idItem"
         ]
       },
       "conditions": []
@@ -3559,7 +3572,8 @@
         "fields": [
           "title",
           "infoToggle",
-          "tiers"
+          "tiers",
+          "idItem"
         ]
       },
       "conditions": []
@@ -3571,7 +3585,8 @@
         "fields": [
           "title",
           "infoToggle",
-          "tiers"
+          "tiers",
+          "idItem"
         ]
       },
       "conditions": []
@@ -4170,7 +4185,6 @@
           "lists",
           "showForm",
           "formRegion",
-          "formPortalId",
           "formId"
         ]
       },
@@ -4229,7 +4243,6 @@
           "lists",
           "showForm",
           "formRegion",
-          "formPortalId",
           "formId"
         ]
       },
@@ -4276,7 +4289,6 @@
           "lists",
           "showForm",
           "formRegion",
-          "formPortalId",
           "formId"
         ]
       },
@@ -4326,6 +4338,97 @@
           "idItem",
           "highlight_card_list.title",
           "highlight_card_list.listGroup.list_options"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::home-index.home-index",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL",
+          "seo.alternate_urls",
+          "sections",
+          "title",
+          "slugURL",
+          "subPath"
+        ],
+        "locales": [
+          "en",
+          "es"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::home-index.home-index",
+      "properties": {
+        "locales": [
+          "en",
+          "es"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::home-index.home-index",
+      "properties": {
+        "locales": [
+          "en",
+          "es"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::home-index.home-index",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL",
+          "seo.alternate_urls",
+          "sections",
+          "title",
+          "slugURL",
+          "subPath"
+        ],
+        "locales": [
+          "en",
+          "es"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::home-index.home-index",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.rrssImg",
+          "seo.keywords",
+          "seo.canonicalURL",
+          "seo.alternate_urls",
+          "sections",
+          "title",
+          "slugURL",
+          "subPath"
+        ],
+        "locales": [
+          "en",
+          "es"
         ]
       },
       "conditions": []
@@ -5041,63 +5144,6 @@
         "fields": [
           "title",
           "description"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.create",
-      "subject": "api::pricing-category.pricing-category",
-      "properties": {
-        "fields": [
-          "label",
-          "title",
-          "description",
-          "cta.label",
-          "cta.url",
-          "cta.external_url"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::pricing-category.pricing-category",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.publish",
-      "subject": "api::pricing-category.pricing-category",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.read",
-      "subject": "api::pricing-category.pricing-category",
-      "properties": {
-        "fields": [
-          "label",
-          "title",
-          "description",
-          "cta.label",
-          "cta.url",
-          "cta.external_url"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
-      "subject": "api::pricing-category.pricing-category",
-      "properties": {
-        "fields": [
-          "label",
-          "title",
-          "description",
-          "cta.label",
-          "cta.url",
-          "cta.external_url"
         ]
       },
       "conditions": []
@@ -6450,7 +6496,8 @@
         "fields": [
           "title",
           "feature_details",
-          "rows"
+          "rows",
+          "idItem"
         ]
       },
       "conditions": []
@@ -6474,7 +6521,8 @@
         "fields": [
           "title",
           "feature_details",
-          "rows"
+          "rows",
+          "idItem"
         ]
       },
       "conditions": []
@@ -6486,7 +6534,8 @@
         "fields": [
           "title",
           "feature_details",
-          "rows"
+          "rows",
+          "idItem"
         ]
       },
       "conditions": []
