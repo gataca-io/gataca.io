@@ -3669,6 +3669,10 @@
           "socialMediaButton.brand_buttons",
           "socialMediaButton.button_icons",
           "rightsReserved"
+        ],
+        "locales": [
+          "en",
+          "es"
         ]
       },
       "conditions": []
@@ -3676,51 +3680,27 @@
     {
       "action": "plugin::content-manager.explorer.delete",
       "subject": "api::footer.footer",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.publish",
-      "subject": "api::footer.footer",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.read",
-      "subject": "api::footer.footer",
       "properties": {
-        "fields": [
-          "idItem",
-          "logo",
-          "certificationImage",
-          "linksList.list_options",
-          "languageOptions",
-          "languageButton.label",
-          "languageButton.url",
-          "languageButton.outsideWeb",
-          "languageButton.outlined",
-          "languageButton.idButton",
-          "languageButton.icon",
-          "languageButton.link",
-          "languageButton.style",
-          "languageButton.color",
-          "languageButton.size",
-          "languageButton.disabled",
-          "languageButton.noPaddingText",
-          "languageButton.fullWidth",
-          "termsButton.buttons",
-          "termsButton.brand_buttons",
-          "termsButton.button_icons",
-          "socialMediaButton.buttons",
-          "socialMediaButton.brand_buttons",
-          "socialMediaButton.button_icons",
-          "rightsReserved"
+        "locales": [
+          "en",
+          "es"
         ]
       },
       "conditions": []
     },
     {
-      "action": "plugin::content-manager.explorer.update",
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::footer.footer",
+      "properties": {
+        "locales": [
+          "en",
+          "es"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
       "subject": "api::footer.footer",
       "properties": {
         "fields": [
@@ -3749,6 +3729,48 @@
           "socialMediaButton.brand_buttons",
           "socialMediaButton.button_icons",
           "rightsReserved"
+        ],
+        "locales": [
+          "en",
+          "es"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::footer.footer",
+      "properties": {
+        "fields": [
+          "idItem",
+          "logo",
+          "certificationImage",
+          "linksList.list_options",
+          "languageOptions",
+          "languageButton.label",
+          "languageButton.url",
+          "languageButton.outsideWeb",
+          "languageButton.outlined",
+          "languageButton.idButton",
+          "languageButton.icon",
+          "languageButton.link",
+          "languageButton.style",
+          "languageButton.color",
+          "languageButton.size",
+          "languageButton.disabled",
+          "languageButton.noPaddingText",
+          "languageButton.fullWidth",
+          "termsButton.buttons",
+          "termsButton.brand_buttons",
+          "termsButton.button_icons",
+          "socialMediaButton.buttons",
+          "socialMediaButton.brand_buttons",
+          "socialMediaButton.button_icons",
+          "rightsReserved"
+        ],
+        "locales": [
+          "en",
+          "es"
         ]
       },
       "conditions": []
@@ -4811,6 +4833,10 @@
           "languageButton.disabled",
           "languageButton.noPaddingText",
           "languageButton.fullWidth"
+        ],
+        "locales": [
+          "en",
+          "es"
         ]
       },
       "conditions": []
@@ -4818,13 +4844,23 @@
     {
       "action": "plugin::content-manager.explorer.delete",
       "subject": "api::menu.menu",
-      "properties": {},
+      "properties": {
+        "locales": [
+          "en",
+          "es"
+        ]
+      },
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.publish",
       "subject": "api::menu.menu",
-      "properties": {},
+      "properties": {
+        "locales": [
+          "en",
+          "es"
+        ]
+      },
       "conditions": []
     },
     {
@@ -4869,6 +4905,10 @@
           "languageButton.disabled",
           "languageButton.noPaddingText",
           "languageButton.fullWidth"
+        ],
+        "locales": [
+          "en",
+          "es"
         ]
       },
       "conditions": []
@@ -4915,6 +4955,10 @@
           "languageButton.disabled",
           "languageButton.noPaddingText",
           "languageButton.fullWidth"
+        ],
+        "locales": [
+          "en",
+          "es"
         ]
       },
       "conditions": []
