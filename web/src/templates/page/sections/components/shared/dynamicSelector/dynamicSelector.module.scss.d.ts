@@ -13,5 +13,6 @@ export const fiftyFifty: string
 export const twentyFiveSeventyFive: string
 export const maxWidth: string
 export const media__container: string
+export const shadow: string
 export const selectorAlignTop: string
 export const selectorAlignCenter: string

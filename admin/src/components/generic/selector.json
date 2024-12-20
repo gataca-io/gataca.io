@@ -34,6 +34,10 @@
     },
     "idItem": {
       "type": "string"
+    },
+    "mediaShadow": {
+      "type": "boolean",
+      "default": true
     }
   }
 }

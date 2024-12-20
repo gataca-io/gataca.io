@@ -121,6 +121,10 @@
           & > img {
             max-width: 100%;
             height: auto;
+            max-height: 117.5px;
+            @include min-width($tabletMD) {
+              max-height: 239px;
+            }
           }
         }
         .heading {

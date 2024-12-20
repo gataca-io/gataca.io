@@ -104,6 +104,20 @@
           "searchable": true,
           "sortable": true
         }
+      },
+      "mediaShadow": {
+        "edit": {
+          "label": "mediaShadow",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "mediaShadow",
+          "searchable": true,
+          "sortable": true
+        }
       }
     },
     "layouts": {
@@ -119,12 +133,6 @@
             "name": "idItem",
             "size": 6
           },
-          {
-            "name": "showSelector",
-            "size": 4
-          }
-        ],
-        [
           {
             "name": "title",
             "size": 6
@@ -144,6 +152,16 @@
           {
             "name": "media",
             "size": 6
+          }
+        ],
+        [
+          {
+            "name": "showSelector",
+            "size": 4
+          },
+          {
+            "name": "mediaShadow",
+            "size": 4
           }
         ]
       ]

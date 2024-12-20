@@ -233,7 +233,9 @@ const DynamicSelector: React.FC<ISectionProps> = props => {
                 )}
               {selector_list && selector_list[openItem]?.media && (
                 <div
-                  className={styles?.media__container}
+                  className={`${styles?.media__container} ${
+                    selector_list[openItem]?.mediaShadow ? styles?.shadow : ""
+                  }`}
                   key={`media__` + Math.random()}
                 >
                   {selector_list &&
