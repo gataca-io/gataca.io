@@ -6193,7 +6193,8 @@
           "selector.media",
           "selector.action_card",
           "selector.content",
-          "selector.idItem"
+          "selector.idItem",
+          "selector.mediaShadow"
         ]
       },
       "conditions": []
@@ -6221,7 +6222,8 @@
           "selector.media",
           "selector.action_card",
           "selector.content",
-          "selector.idItem"
+          "selector.idItem",
+          "selector.mediaShadow"
         ]
       },
       "conditions": []
@@ -6237,7 +6239,8 @@
           "selector.media",
           "selector.action_card",
           "selector.content",
-          "selector.idItem"
+          "selector.idItem",
+          "selector.mediaShadow"
         ]
       },
       "conditions": []
