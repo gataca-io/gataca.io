@@ -41,7 +41,7 @@
           "placeholder": "",
           "visible": true,
           "editable": true,
-          "mainField": "title"
+          "mainField": "idItem"
         },
         "list": {
           "label": "feature_details",
