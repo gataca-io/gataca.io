@@ -26,8 +26,25 @@
       &.background {
         &::before {
           @include min-width($mobileXL) {
-            height: calc(100% + 82px);
-            margin-top: 20px;
+            height: calc(100% - 50px);
+            margin-top: 70px;
+          }
+        }
+        &.noSlider {
+          &::before {
+            @include min-width($mobileXL) {
+              height: calc(100% - 70px);
+              margin-top: 50px;
+              width: 68vw;
+            }
+          }
+        }
+        &.credentialsSlider {
+          &::before {
+            @include min-width($mobileXL) {
+              height: calc(100% + 40px);
+              margin-top: 50px;
+            }
           }
         }
       }
@@ -133,6 +150,13 @@
         transform: translateY(-50%);
         background: $neutral200;
         z-index: -1;
+      }
+    }
+    &.testimonialCardSlider {
+      &::before {
+        @include min-width($mobileXL) {
+          width: 63vw;
+        }
       }
     }
   }
@@ -252,14 +276,22 @@
       @include max-width($mobileXL) {
         content: "";
         position: absolute;
-        width: 75vw;
-        height: calc(100% + 164px);
+        width: 73vw;
+        height: calc(100% + 160px);
         border-radius: 40px 0px 0px 40px;
         right: -20px;
-        top: 50%;
+        top: 45%;
         transform: translateY(-50%);
         background: $neutral200;
         z-index: -1;
+      }
+    }
+    &.oneTestimonialCard {
+      &::before {
+        @include max-width($mobileXL) {
+          height: calc(100% + 50px);
+          top: 45%;
+        }
       }
     }
   }

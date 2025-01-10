@@ -89,7 +89,11 @@ const SideCardsSlider: React.FC<ISideCardsSliderProps> = props => {
         <div
           className={`${styles.sideCardsSlider__heading} ${
             textAlign ? textAlignStyles[textAlign] : ""
-          } ${background ? styles?.background : ""}`}
+          } ${background ? styles?.background : ""} ${
+            testimonialCards?.card?.length < 2 ? styles?.noSlider : ""
+          } ${credentials?.credential ? styles?.credentialsSlider : ""} ${
+            testimonialCards?.card?.length ? styles?.testimonialCardSlider : ""
+          }`}
         >
           <Heading
             {...heading}
