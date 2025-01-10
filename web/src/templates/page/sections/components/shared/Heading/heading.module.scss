@@ -3,6 +3,9 @@
 @import "../../../../../../styles/types";
 
 .heading__container {
+  &.alignRight, &.alignLeft {
+    width: 100%;
+  }
   > div {
     @include flexbox();
     @include flex-direction(column);
