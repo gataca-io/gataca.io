@@ -157,6 +157,12 @@
         @include min-width($mobileXL) {
           width: 63vw;
         }
+        @include min-width(2400px) {
+          width: 70%;
+        }
+        @include min-width(3000px) {
+          width: 80%;
+        }
       }
     }
   }
@@ -192,6 +198,9 @@
     }
     @include min-width(1860px) {
       @include flex(0, 0, calc(95% - 120px));
+    }
+    @include min-width(2400px) {
+      @include flex(0, 0, calc(100% - 120px));
     }
     &.oneTestimonialCard {
       @include min-width($mobileXL) {
