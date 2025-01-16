@@ -48,7 +48,9 @@ const Heading: React.FC<HeadingModel> = props => {
   return (
     <div
       id={idItem}
-      className={`${styles?.heading__container} ${className && className}`}
+      className={`${styles?.heading__container} ${className && className} ${
+        align ? alignStyles[align] : styles?.alignLeft
+      }`}
     >
       <div
         className={`${align ? alignStyles[align] : styles?.alignLeft} ${

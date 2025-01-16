@@ -71,7 +71,6 @@ const FormLayout: React.FC<ISectionProps> = props => {
           {heading && (
             <Heading
               {...heading}
-              className={`${styles?.headingContainer}`}
               button={{
                 ...heading?.button,
                 action: () => window.open(heading?.button?.url, "_blank"),
@@ -127,6 +126,7 @@ const FormLayout: React.FC<ISectionProps> = props => {
             {headingSlot && (
               <Heading
                 {...headingSlot}
+                className={`${styles?.headingSlotContainer}`}
                 button={{
                   ...headingSlot?.button,
                   action: () => window.open(headingSlot?.button?.url, "_blank"),

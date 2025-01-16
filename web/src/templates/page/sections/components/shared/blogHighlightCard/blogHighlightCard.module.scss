@@ -21,7 +21,10 @@
     gap: 40px;
 
     .headingCards {
-      max-width: 576px;
+      @include flex-grow(1);
+      > div {
+        max-width: 576px;
+      }
     }
   }
 }

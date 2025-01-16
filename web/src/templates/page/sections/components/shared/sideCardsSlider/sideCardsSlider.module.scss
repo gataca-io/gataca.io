@@ -26,8 +26,25 @@
       &.background {
         &::before {
           @include min-width($mobileXL) {
-            height: calc(100% + 82px);
-            margin-top: 20px;
+            height: calc(100% - 50px);
+            margin-top: 70px;
+          }
+        }
+        &.noSlider {
+          &::before {
+            @include min-width($mobileXL) {
+              height: calc(100% - 70px);
+              margin-top: 50px;
+              width: 68vw;
+            }
+          }
+        }
+        &.credentialsSlider {
+          &::before {
+            @include min-width($mobileXL) {
+              height: calc(100% + 40px);
+              margin-top: 50px;
+            }
           }
         }
       }
@@ -60,10 +77,10 @@
   }
   &.textAlignRight {
     @include min-width($mobileXL) {
-      margin-left: -20px;
+      margin-left: -40px;
     }
     @include min-width($desktopMD) {
-      margin-left: -40px;
+      margin-left: -60px;
     }
   }
   &.oneTestimonialCard {
@@ -135,6 +152,19 @@
         z-index: -1;
       }
     }
+    &.testimonialCardSlider {
+      &::before {
+        @include min-width($mobileXL) {
+          width: 63vw;
+        }
+        @include min-width(2400px) {
+          width: 70%;
+        }
+        @include min-width(3000px) {
+          width: 80%;
+        }
+      }
+    }
   }
 }
 
@@ -168,6 +198,9 @@
     }
     @include min-width(1860px) {
       @include flex(0, 0, calc(95% - 120px));
+    }
+    @include min-width(2400px) {
+      @include flex(0, 0, calc(100% - 120px));
     }
     &.oneTestimonialCard {
       @include min-width($mobileXL) {
@@ -252,14 +285,22 @@
       @include max-width($mobileXL) {
         content: "";
         position: absolute;
-        width: 75vw;
-        height: calc(100% + 164px);
+        width: 73vw;
+        height: calc(100% + 160px);
         border-radius: 40px 0px 0px 40px;
         right: -20px;
-        top: 50%;
+        top: 45%;
         transform: translateY(-50%);
         background: $neutral200;
         z-index: -1;
+      }
+    }
+    &.oneTestimonialCard {
+      &::before {
+        @include max-width($mobileXL) {
+          height: calc(100% + 50px);
+          top: 45%;
+        }
       }
     }
   }

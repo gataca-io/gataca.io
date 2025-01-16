@@ -8,3 +8,6 @@ export const sideCardsSlider__buttons: string
 export const textAlignRight: string
 export const background: string
 export const oneTestimonialCard: string
+export const noSlider: string
+export const credentialsSlider: string
+export const testimonialCardSlider: string

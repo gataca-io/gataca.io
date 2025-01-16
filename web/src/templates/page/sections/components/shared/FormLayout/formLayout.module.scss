@@ -32,11 +32,6 @@
       @include flexbox();
       @include flex-direction(column);
       gap: 80px;
-      .headingContainer {
-        @include min-width($tabletSM) {
-          max-width: 330px;
-        }
-      }
       .actionCards__container {
         @include flexbox();
         @include flex-direction(column);
@@ -64,6 +59,12 @@
         }
         @include min-width($desktopMD) {
           @include flex(0, 1, calc(50% - 16px));
+        }
+        .headingSlotContainer {
+          @include flex-grow(1);
+          > div {
+            max-width: 576px;
+          }
         }
       }
       .formLayout__rightSide {

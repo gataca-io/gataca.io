@@ -5,7 +5,7 @@ export const formLayout__leftSide: string
 export const formLayout__rightSide: string
 export const image__container: string
 export const background: string
-export const headingContainer: string
+export const headingSlotContainer: string
 export const greyBackground: string
 export const blackBackground: string
 export const form__container: string

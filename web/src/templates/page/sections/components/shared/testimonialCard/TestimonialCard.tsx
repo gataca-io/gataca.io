@@ -37,7 +37,7 @@ const TestimonialCard: React.FC<TestimonialCardModel> = props => {
         {(name?.length || workTitle?.length) && (
           <div>
             <p className={cx("heading6 neutral1000")}>{name}</p>
-            <p className={cx("bodyRegularSM neutral700")}>{name}</p>
+            <p className={cx("bodyRegularSM neutral700")}>{workTitle}</p>
           </div>
         )}
       </div>
