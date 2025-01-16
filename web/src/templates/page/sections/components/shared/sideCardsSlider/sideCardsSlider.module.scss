@@ -77,10 +77,10 @@
   }
   &.textAlignRight {
     @include min-width($mobileXL) {
-      margin-left: -20px;
+      margin-left: -40px;
     }
     @include min-width($desktopMD) {
-      margin-left: -40px;
+      margin-left: -60px;
     }
   }
   &.oneTestimonialCard {
