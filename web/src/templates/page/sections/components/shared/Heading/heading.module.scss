@@ -3,9 +3,9 @@
 @import "../../../../../../styles/types";
 
 .heading__container {
-  &.alignRight, &.alignLeft {
-    width: 100%;
-  }
+  // &.alignRight, &.alignLeft {
+  //   width: 100%;
+  // }
   > div {
     @include flexbox();
     @include flex-direction(column);
@@ -24,7 +24,7 @@
     }
     &.alignRight {
       @include align-items(end);
-      p {
+      p, h1, h3, h4 {
         text-align: right;
       }
     }
