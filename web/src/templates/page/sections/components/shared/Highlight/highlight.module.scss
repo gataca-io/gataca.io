@@ -5,7 +5,12 @@
   &.blackBackground {
     background-color: $neutral1000;
     & > div > div > div {
-      & > h1, h6 {
+      & > h1, h3, h4 {
+        p {
+          color: $neutral100;
+        }
+      }
+      & > h6 {
         color: $neutral100;
       }
       & > div > div > p {
@@ -33,10 +38,6 @@
     @include min-width($desktopMD) {
       padding: 198px 60px 100px;
     }
-  }
-  > div > div {
-    max-width: 778px;
-    margin: 0 auto;
   }
   
 }

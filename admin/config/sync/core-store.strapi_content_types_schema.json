@@ -6212,7 +6212,7 @@
           "type": "string"
         },
         "title": {
-          "type": "string"
+          "type": "text"
         },
         "titleSize": {
           "type": "enumeration",
@@ -6326,7 +6326,7 @@
             "type": "string"
           },
           "title": {
-            "type": "string"
+            "type": "text"
           },
           "titleSize": {
             "type": "enumeration",

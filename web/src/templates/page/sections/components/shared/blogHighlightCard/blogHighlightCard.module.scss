@@ -22,9 +22,6 @@
 
     .headingCards {
       @include flex-grow(1);
-      > div {
-        max-width: 576px;
-      }
     }
   }
 }

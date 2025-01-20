@@ -60,12 +60,6 @@
         @include min-width($desktopMD) {
           @include flex(0, 1, calc(50% - 16px));
         }
-        .headingSlotContainer {
-          @include flex-grow(1);
-          > div {
-            max-width: 576px;
-          }
-        }
       }
       .formLayout__rightSide {
         position: relative;

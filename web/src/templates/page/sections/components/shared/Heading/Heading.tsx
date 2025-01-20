@@ -85,11 +85,17 @@ const Heading: React.FC<HeadingModel> = props => {
         {title?.length && (
           <>
             {titleSize === "large" ? (
-              <h1 className={cx("heading1")}>{title}</h1>
+              <h1>
+                <MarkDownContent content={title} />
+              </h1>
             ) : titleSize === "medium" ? (
-              <h3 className={cx("heading3")}>{title}</h3>
+              <h3>
+                <MarkDownContent content={title} />
+              </h3>
             ) : (
-              <h4 className={cx("heading4")}>{title}</h4>
+              <h4>
+                <MarkDownContent content={title} />
+              </h4>
             )}
           </>
         )}
