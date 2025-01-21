@@ -56,7 +56,9 @@ const BlogCard: React.FC<BlogPreviewModel> = props => {
         <div>
           {title?.length && <h5 className={cx("heading5")}>{title}</h5>}
           {date?.length && (
-            <p className={cx("bodyRegularMD")}>{moment(date).format("LL")}</p>
+            <p className={cx("bodyRegularMD marginTop8")}>
+              {moment(date).format("LL")}
+            </p>
           )}
         </div>
 
@@ -65,22 +67,22 @@ const BlogCard: React.FC<BlogPreviewModel> = props => {
             {content?.length && <MarkDownContent content={content} />}
           </div>
         )}
-      </div>
 
-      <Button
-        idButton={button?.idButton}
-        label={button?.label || "Read More"}
-        icon={button?.icon || images.chevronRight}
-        style={button?.style || "text"}
-        color={button?.color}
-        size={button?.size}
-        noPaddingText={button?.noPaddingText || true}
-        disabled={button?.disabled}
-        link={button?.link}
-        url={button?.url}
-        className={cx("marginTop8")}
-        action={() => window?.open(`/blog/${slugURL}`, "_self")}
-      />
+        <Button
+          idButton={button?.idButton}
+          label={button?.label || "Read More"}
+          icon={button?.icon || images.chevronRight}
+          style={button?.style || "text"}
+          color={button?.color}
+          size={button?.size}
+          noPaddingText={button?.noPaddingText || true}
+          disabled={button?.disabled}
+          link={button?.link}
+          url={button?.url}
+          className={cx("marginTop8")}
+          action={() => window?.open(`/blog/${slugURL}`, "_self")}
+        />
+      </div>
     </div>
   )
 }
