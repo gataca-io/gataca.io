@@ -51,7 +51,12 @@
         
       }
       &.selectorAlignTop {
-        @include align-items(flex-start);
+        @include align-items(stretch);
+        .dynamicSelector__leftSide {
+          @include min-width($mobileXL) {
+            height: auto;
+          }
+        }
       }
       &.selectorAlignCenter {
         @include align-items(center);
