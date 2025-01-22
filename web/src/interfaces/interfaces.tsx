@@ -387,7 +387,7 @@ export interface CardModel {
   title?: string
   content?: any
   button?: ButtonModel
-  moreContent?: string
+  backContent?: string
 }
 
 export interface ActionCardModel {

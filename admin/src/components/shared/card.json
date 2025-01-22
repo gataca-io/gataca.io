@@ -78,7 +78,7 @@
         "audios"
       ]
     },
-    "moreContent": {
+    "backContent": {
       "type": "text"
     }
   }

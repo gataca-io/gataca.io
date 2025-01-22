@@ -866,7 +866,7 @@
           "card.button.fullWidth",
           "card.upperIconClosed",
           "card.upperIconOpened",
-          "card.moreContent"
+          "card.backContent"
         ]
       },
       "conditions": []
@@ -920,7 +920,7 @@
           "card.button.fullWidth",
           "card.upperIconClosed",
           "card.upperIconOpened",
-          "card.moreContent"
+          "card.backContent"
         ]
       },
       "conditions": []
@@ -962,7 +962,7 @@
           "card.button.fullWidth",
           "card.upperIconClosed",
           "card.upperIconOpened",
-          "card.moreContent"
+          "card.backContent"
         ]
       },
       "conditions": []

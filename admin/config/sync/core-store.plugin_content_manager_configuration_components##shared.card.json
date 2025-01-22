@@ -174,16 +174,16 @@
           "sortable": false
         }
       },
-      "moreContent": {
+      "backContent": {
         "edit": {
-          "label": "moreContent",
+          "label": "backContent",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "moreContent",
+          "label": "backContent",
           "searchable": true,
           "sortable": true
         }
@@ -245,7 +245,7 @@
         ],
         [
           {
-            "name": "moreContent",
+            "name": "backContent",
             "size": 6
           }
         ],

@@ -20,7 +20,6 @@
   .upperIcon {
     width: 100%;
     text-align: right;
-    cursor: pointer;
     img {
       max-width: 24px;
     }
@@ -28,8 +27,11 @@
   .numberIconText {
     color: $primary200;
   }
-  &.showMoreContent {
+  &.showBackContent {
     background-color: $neutral200;
+  }
+  &.backContentToShow {
+    cursor: pointer;
   }
   .contentContainer {
     position: relative;

@@ -667,8 +667,7 @@
           "card.button.noPaddingText",
           "card.button.fullWidth",
           "card.upperIconClosed",
-          "card.upperIconOpened",
-          "card.moreContent"
+          "card.upperIconOpened"
         ]
       },
       "conditions": []
@@ -721,8 +720,7 @@
           "card.button.noPaddingText",
           "card.button.fullWidth",
           "card.upperIconClosed",
-          "card.upperIconOpened",
-          "card.moreContent"
+          "card.upperIconOpened"
         ]
       },
       "conditions": []
@@ -763,8 +761,7 @@
           "card.button.noPaddingText",
           "card.button.fullWidth",
           "card.upperIconClosed",
-          "card.upperIconOpened",
-          "card.moreContent"
+          "card.upperIconOpened"
         ]
       },
       "conditions": []
