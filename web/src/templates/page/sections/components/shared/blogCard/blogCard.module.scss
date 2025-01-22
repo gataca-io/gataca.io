@@ -36,18 +36,34 @@
   .content__container {
     @include flexbox();
     @include flex-direction(column);
-    @include justify-content(flex-start);
+    @include justify-content(space-between);
     @include flex-wrap(wrap);
     gap: 20px;
+    @include min-width($tabletMD) {
+      @include flex(1 0 auto);
+    }
+    > div > h5 {
+      @include min-width($tabletMD) {
+        height: 96px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
   }
   
 }
 
 .description {
-  height: 70px;
+  height: 72px;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+  > div * {
+    font-size: 18px;
+  }
 }

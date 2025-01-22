@@ -37,6 +37,7 @@ const MenuSubOption: React.FC<IMenuSubOptionProps> = props => {
           <ListGroup
             listOptions={item?.list_options?.data}
             className={styles?.listOptions_link}
+            listRow
           />
         </div>
       )}

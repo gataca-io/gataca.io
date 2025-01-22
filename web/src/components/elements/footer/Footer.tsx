@@ -98,6 +98,7 @@ const Footer: React.FC = (props: any) => {
           {footerData?.linksList?.list_options?.data?.length > 0 && (
             <ListGroup
               listOptions={footerData?.linksList?.list_options?.data}
+              listRow
             />
           )}
         </div>

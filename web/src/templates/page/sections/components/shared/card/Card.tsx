@@ -20,7 +20,7 @@ const CardComponent: React.FC<CardModel> = props => {
     title,
     content,
     button,
-    moreContent,
+    backContent,
   } = props
 
   const iconSizeStyles: Record<string, string> = {
@@ -50,35 +50,32 @@ const CardComponent: React.FC<CardModel> = props => {
 
   const [showContent, setShowContent] = React.useState(false)
 
+  const backContentToShow = backContent?.length
+
   return (
     <div
       id={idCard}
       className={`${styles?.card__container} ${
         size ? cardSizeStyles[size] : ""
-      } ${showContent ? styles.showMoreContent : ""} ${className && className}`}
+      } ${showContent ? styles.showBackContent : ""} ${
+        backContentToShow ? styles?.backContentToShow : ""
+      } ${className && className}`}
+      onClick={() => {
+        backContentToShow && setShowContent(!showContent)
+      }}
     >
       {!showContent ? (
         <>
-          {upperIconClosed && (
-            <div
-              className={styles?.upperIcon}
-              onClick={() => {
-                setShowContent(!showContent)
-              }}
-            >
+          {upperIconClosed?.data?.attributes?.url && (
+            <div className={styles?.upperIcon}>
               <StrapiImage image={upperIconClosed ? upperIconClosed : null} />
             </div>
           )}
         </>
       ) : (
         <>
-          {upperIconOpened && (
-            <div
-              className={styles?.upperIcon}
-              onClick={() => {
-                setShowContent(!showContent)
-              }}
-            >
+          {upperIconOpened?.data?.attributes?.url && (
+            <div className={styles?.upperIcon}>
               <StrapiImage image={upperIconOpened ? upperIconOpened : null} />
             </div>
           )}
@@ -166,7 +163,7 @@ const CardComponent: React.FC<CardModel> = props => {
                 size ? contentSizeStyles[size] : "bodyRegularLG neutral1000"
               )}
             >
-              {moreContent}
+              {backContent}
             </p>
           </div>
         )}

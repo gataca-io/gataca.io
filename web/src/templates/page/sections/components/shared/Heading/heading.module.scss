@@ -3,7 +3,7 @@
 @import "../../../../../../styles/types";
 
 .heading__container {
-  &.alignRight, &.alignLeft {
+  &.alignRight {
     width: 100%;
   }
   > div {
@@ -24,12 +24,39 @@
     }
     &.alignRight {
       @include align-items(end);
-      p {
+      p, h1, h3, h4 {
         text-align: right;
       }
     }
     &.alignLeft {
       @include align-items(flex-start);
+    }
+    h1, h3, h4 {
+      p {
+        font-family: $custom;
+        color: $neutral1000;
+        margin-bottom: 0;
+        text-decoration: none;
+        font-weight: 700;
+      }
+    }
+    h1 {
+      p {
+        font-size: 56px;
+        line-height: 64px;
+      }
+    }
+    h3 {
+      p {
+        font-size: 40px;
+        line-height: 48px;
+      }
+    }
+    h4  {
+      p {
+        font-size: 32px;
+        line-height: 40px;
+      }
     }
     .heading__content {
       p {

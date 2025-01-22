@@ -31,7 +31,7 @@
       "type": "string"
     },
     "title": {
-      "type": "string"
+      "type": "text"
     },
     "titleSize": {
       "type": "enumeration",
@@ -79,6 +79,11 @@
     },
     "formId": {
       "type": "string"
+    },
+    "listRow": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::list-option.list-option"
     }
   }
 }

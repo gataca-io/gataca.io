@@ -387,7 +387,7 @@ export interface CardModel {
   title?: string
   content?: any
   button?: ButtonModel
-  moreContent?: string
+  backContent?: string
 }
 
 export interface ActionCardModel {
@@ -411,6 +411,7 @@ export interface PricingCardModel {
   idItem?: string
   titleAmountSize?: string
   lists?: any
+  listRow?: any
   name?: string
   description?: string
   frecuencyYearly?: string
@@ -465,6 +466,7 @@ export interface HeadingModel {
   button?: any
   buttonGroup?: any
   lists?: any
+  listRow?: any
   table?: any
   showForm?: boolean
   formRegion?: string
