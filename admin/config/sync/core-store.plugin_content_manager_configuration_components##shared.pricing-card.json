@@ -188,6 +188,21 @@
           "searchable": false,
           "sortable": false
         }
+      },
+      "listRow": {
+        "edit": {
+          "label": "listRow",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "idListOption"
+        },
+        "list": {
+          "label": "listRow",
+          "searchable": false,
+          "sortable": false
+        }
       }
     },
     "layouts": {
@@ -251,6 +266,10 @@
         [
           {
             "name": "lists",
+            "size": 6
+          },
+          {
+            "name": "listRow",
             "size": 6
           }
         ],

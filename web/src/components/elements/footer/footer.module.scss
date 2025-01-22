@@ -64,12 +64,16 @@
         }
       }
       > div {
-        @include flex(0, 0, (calc(calc(100% / 2) - 32px)));
+        flex: 0 0 !important;
+        flex-basis: calc(calc(100% / 2) - 32px) !important;
+        min-width: auto !important;
         @include min-width($mobileXL) {
-          @include flex(0, 0, (calc(calc(100% / 3) - 22px)));
+          flex: 0 0 !important;
+          flex-basis: calc(calc(100% / 3) - 22px) !important;
         }
         @include min-width($tabletXL) {
-          @include flex(0, 0, (calc(calc(100% / 3) - 40px)));
+          flex: 0 0 !important;
+          flex-basis: calc(calc(100% / 3) - 40px) !important;
         }
       }
     }

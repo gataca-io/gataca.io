@@ -7,3 +7,4 @@ export const boldFontWeight: string
 export const titleHeader: string
 export const mediumFontWeight: string
 export const smallTitle: string
+export const listRow: string

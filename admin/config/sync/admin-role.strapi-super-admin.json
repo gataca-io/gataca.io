@@ -4207,7 +4207,8 @@
           "lists",
           "showForm",
           "formRegion",
-          "formId"
+          "formId",
+          "listRow"
         ]
       },
       "conditions": []
@@ -4265,7 +4266,8 @@
           "lists",
           "showForm",
           "formRegion",
-          "formId"
+          "formId",
+          "listRow"
         ]
       },
       "conditions": []
@@ -4311,7 +4313,8 @@
           "lists",
           "showForm",
           "formRegion",
-          "formId"
+          "formId",
+          "listRow"
         ]
       },
       "conditions": []
@@ -5221,7 +5224,8 @@
           "pricingInfo.button.fullWidth",
           "pricingInfo.frecuencyYearly",
           "pricingInfo.extraInfo",
-          "pricingInfo.lists"
+          "pricingInfo.lists",
+          "pricingInfo.listRow"
         ]
       },
       "conditions": []
@@ -5267,7 +5271,8 @@
           "pricingInfo.button.fullWidth",
           "pricingInfo.frecuencyYearly",
           "pricingInfo.extraInfo",
-          "pricingInfo.lists"
+          "pricingInfo.lists",
+          "pricingInfo.listRow"
         ]
       },
       "conditions": []
@@ -5301,7 +5306,8 @@
           "pricingInfo.button.fullWidth",
           "pricingInfo.frecuencyYearly",
           "pricingInfo.extraInfo",
-          "pricingInfo.lists"
+          "pricingInfo.lists",
+          "pricingInfo.listRow"
         ]
       },
       "conditions": []

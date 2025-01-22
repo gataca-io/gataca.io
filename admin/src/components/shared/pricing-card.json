@@ -50,6 +50,11 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::list-option.list-option"
+    },
+    "listRow": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::list-option.list-option"
     }
   }
 }

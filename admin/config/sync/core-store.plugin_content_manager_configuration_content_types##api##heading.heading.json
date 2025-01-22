@@ -231,6 +231,21 @@
           "sortable": true
         }
       },
+      "listRow": {
+        "edit": {
+          "label": "listRow",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "idListOption"
+        },
+        "list": {
+          "label": "listRow",
+          "searchable": false,
+          "sortable": false
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -303,6 +318,12 @@
             "name": "lists",
             "size": 6
           },
+          {
+            "name": "listRow",
+            "size": 6
+          }
+        ],
+        [
           {
             "name": "showForm",
             "size": 4

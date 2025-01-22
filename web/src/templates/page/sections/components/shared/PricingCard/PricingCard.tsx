@@ -11,6 +11,7 @@ const PricingCard: React.FC<PricingCardModel> = props => {
     idItem,
     titleAmountSize,
     lists,
+    listRow,
     name,
     description,
     frecuencyMonthly,
@@ -93,6 +94,11 @@ const PricingCard: React.FC<PricingCardModel> = props => {
       {lists?.data && (
         <div>
           <ListGroup listOptions={lists?.data} />
+        </div>
+      )}
+      {listRow?.data && (
+        <div>
+          <ListGroup listOptions={listRow?.data} listRow />
         </div>
       )}
 

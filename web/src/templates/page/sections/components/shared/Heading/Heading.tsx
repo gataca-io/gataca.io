@@ -26,6 +26,7 @@ const Heading: React.FC<HeadingModel> = props => {
     button,
     buttonGroup,
     lists,
+    listRow,
     table,
     showForm,
     formRegion,
@@ -143,6 +144,13 @@ const Heading: React.FC<HeadingModel> = props => {
         )}
         {lists?.data?.length > 0 && (
           <ListGroup listOptions={lists?.data} className={cx("marginTop20")} />
+        )}
+        {listRow?.data?.length > 0 && (
+          <ListGroup
+            listOptions={listRow?.data}
+            listRow
+            className={cx("marginTop20")}
+          />
         )}
         {table?.content && (
           <Table

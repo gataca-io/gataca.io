@@ -7,7 +7,17 @@
   @include justify-content(flex-start);
   @include flex-wrap(wrap);
   @include align-items(flex-start);
+  @include flex-direction(column);
   gap: 20px 40px;
+  &.listRow {
+    @include flex-direction(row);
+    gap: 20px 32px;
+    width: 100%;
+    .listGroup { 
+      @include flex(1, 0, 0);
+      min-width: 180px
+    }
+  }
   .listGroup {
     @include flexbox();
     @include justify-content(flex-start);

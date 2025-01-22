@@ -6261,6 +6261,11 @@
         "formId": {
           "type": "string"
         },
+        "listRow": {
+          "type": "relation",
+          "relation": "oneToMany",
+          "target": "api::list-option.list-option"
+        },
         "createdAt": {
           "type": "datetime"
         },
@@ -6374,6 +6379,11 @@
           },
           "formId": {
             "type": "string"
+          },
+          "listRow": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::list-option.list-option"
           }
         },
         "kind": "collectionType"
