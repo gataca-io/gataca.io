@@ -20,20 +20,6 @@
           "sortable": false
         }
       },
-      "lightLogos": {
-        "edit": {
-          "label": "lightLogos",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "lightLogos",
-          "searchable": true,
-          "sortable": true
-        }
-      },
       "loop": {
         "edit": {
           "label": "loop",
@@ -90,14 +76,28 @@
           "searchable": true,
           "sortable": true
         }
+      },
+      "color": {
+        "edit": {
+          "label": "color",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "color",
+          "searchable": true,
+          "sortable": true
+        }
       }
     },
     "layouts": {
       "list": [
         "id",
-        "lightLogos",
         "loop",
-        "logos"
+        "logos",
+        "color"
       ],
       "edit": [
         [
@@ -106,8 +106,8 @@
             "size": 6
           },
           {
-            "name": "lightLogos",
-            "size": 4
+            "name": "color",
+            "size": 6
           }
         ],
         [

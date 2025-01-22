@@ -3,7 +3,7 @@ import * as styles from "./carrouselLogos.module.scss"
 import StrapiImage from "../../../../../../components/atoms/images/StrapiImage"
 
 export type IcarrouselLogosProps = {
-  lightLogos?: boolean
+  color?: string
   loop?: boolean
   className?: string
   marginBottom?: boolean
@@ -16,14 +16,19 @@ export type IcarrouselLogosProps = {
   }[]
 }
 
+const colorStyles: Record<string, string> = {
+  grey: styles?.lightBackground,
+  black: styles?.darkBackground,
+}
+
 const timesToRepeatLogos = 15
 const CarrouselLogos: React.FC<IcarrouselLogosProps> = props => {
-  const { className, lightLogos, loop, marginBottom, list } = props
+  const { className, color, loop, marginBottom, list } = props
 
   return (
     <div
       className={`${className && className} ${styles.carrouselLogos} ${
-        lightLogos ? styles.darkBackground : styles.lightBackground
+        color ? colorStyles[color] : styles?.lightBackground
       } ${marginBottom ? styles?.marginBottom : ""}
       `}
     >

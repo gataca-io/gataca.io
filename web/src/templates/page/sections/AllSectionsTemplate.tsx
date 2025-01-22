@@ -122,7 +122,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
         {__component === "shared.carrousel-logos" && (
           <CarrouselLogos
             list={logos?.data}
-            lightLogos={lightLogos}
+            color={color}
             loop={loop}
             marginBottom={marginBottom}
           />
