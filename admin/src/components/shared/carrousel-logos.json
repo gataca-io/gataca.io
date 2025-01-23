@@ -6,10 +6,6 @@
   },
   "options": {},
   "attributes": {
-    "lightLogos": {
-      "type": "boolean",
-      "default": true
-    },
     "loop": {
       "type": "boolean",
       "default": true
@@ -25,6 +21,13 @@
     },
     "idItem": {
       "type": "string"
+    },
+    "color": {
+      "type": "enumeration",
+      "enum": [
+        "black",
+        "grey"
+      ]
     }
   }
 }
