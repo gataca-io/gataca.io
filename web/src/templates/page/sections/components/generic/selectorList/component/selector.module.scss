@@ -23,7 +23,7 @@
                 margin-left: 70px;
             }
             @include min-width($desktopMD) {
-                margin-left: 103px;
+                margin-left: calc(48px + 32px);
             }
         }
         .notSelected {
@@ -36,24 +36,17 @@
             }
         
             @include min-width($desktopMD) {
-                margin-left: 103px;
+                margin-left: calc(48px + 32px);
             }
         }
         & > img {
             display: none;
             @include min-width($desktopSM) {
                 position: absolute;
-                top: 2px;
-                width: 50px;
-                display: block;
-            }
-            @include min-width($desktopMD) {
+                top: 0;
                 left: 0;
-                top: -3px;
-                width: 71px;
-            }
-            @include min-width($desktopXL) {
-                top: -4px;
+                width: 48px;
+                display: block;
             }
         }
     }
@@ -62,7 +55,7 @@
             margin-left: 70px;
         }
         @include min-width($desktopMD) {
-            margin-left: 103px;
+            margin-left: calc(48px + 32px);
         }
         p {
             font-size: 16px;

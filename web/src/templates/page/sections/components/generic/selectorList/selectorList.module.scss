@@ -16,7 +16,6 @@
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
     @include min-width($mobileXL) {
-      margin-left: -4px;
       height: auto;
       @include flex-direction(column);
       overflow-x: hidden;
