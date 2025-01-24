@@ -112,20 +112,30 @@
   @include order(0);
   @include flex(0, 0, 100%);
   @include min-width($mobileXL) {
-    @include flex(0, 0, calc(40% - 30px));
+    @include flex(0, 0, 40%);
+    max-width: 478px;
   }
-  @include min-width($tabletSM) {
-    @include flex(0, 0, calc(40% - 50px));
-  }
-  @include min-width($tabletXL) {
-    @include flex(0, 0, calc(40% - 90px));
-  }
-  @include min-width($desktopSM) {
-    @include flex(0, 0, calc(40% - 133px));
-  }
+  
   &.textAlignRight {
     @include min-width($mobileXL) {
       @include order(1);
+      @include flex(0, 0, calc(40% - 30px));
+      max-width: fit-content;
+      @include min-width($tabletSM) {
+        @include flex(0, 0, calc(40% - 20px));
+      }
+      @include min-width($tabletXL) {
+        @include flex(0, 0, calc(40% - 60px));
+      }
+      @include min-width($desktopSM) {
+        @include flex(0, 0, calc(40% - 100px));
+      }
+      @include min-width($desktopXL) {
+        @include flex(0, 0, calc(40% - 80px));
+      }
+      @include min-width(1560px) {
+        @include flex(0, 0, calc(40% - 60px));
+      }
     }
     &.background {
       &::before {
@@ -150,6 +160,9 @@
         transform: translateY(-50%);
         background: $neutral200;
         z-index: -1;
+      }
+      @include min-width($desktopXL) {
+        width: 85vw;
       }
     }
     &.testimonialCardSlider {
