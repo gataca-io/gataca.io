@@ -66,8 +66,8 @@
         max-width: 100%;
         @include min-width($mobileXL) {
           @include flex(0, 1, auto);
-          max-width: calc(280px - 16px);
-          min-width: calc(280px - 16px);
+          max-width: 280px;
+          min-width: 280px;
           @include flexbox;
           @include flex-direction(column);
           @include justify-content(space-between);
@@ -75,8 +75,8 @@
           height: 100%;
         }
         @include min-width($desktopMD) {
-          max-width: calc(385px - 16px);
-          min-width: calc(385px - 16px);
+          max-width: 385px;
+          min-width: 385px;
         }
         .selectorImage__desktop {
           display: none;
