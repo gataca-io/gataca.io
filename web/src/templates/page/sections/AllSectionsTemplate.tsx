@@ -242,7 +242,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
         {__component === "shared.full-width-card" && (
           <FullWidthCard
             idItem={idItem}
-            heading={heading?.data?.attributes}
+            heading={heading}
             image={image}
             color={color}
             layout={layout}

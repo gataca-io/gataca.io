@@ -8,7 +8,7 @@ import Heading from "../Heading/Heading"
 export type ISectionProps = {
   className?: string
   idItem?: string
-  heading: HeadingModel
+  heading: any
   image?: any
   color?: string
   layout?: string
@@ -33,6 +33,9 @@ const FullWidthCard: React.FC<ISectionProps> = props => {
     padding: styles?.padding,
   }
 
+  const fullWidthCardHeadingData = heading?.data?.attributes
+  const fullWidthCardImageData = image?.data?.attributes?.url
+
   return (
     <div
       id={idItem}
@@ -49,7 +52,17 @@ const FullWidthCard: React.FC<ISectionProps> = props => {
           <div
             className={`${styles.fullWidthCard__imageContainer} ${
               sizeSlot ? sizeSlotStyles[sizeSlot] : styles?.padding
-            } ${layout ? layoutStyles[layout] : styles?.twentyFiveSeventyFive}`}
+            } ${
+              layout ? layoutStyles[layout] : styles?.twentyFiveSeventyFive
+            } ${
+              fullWidthCardHeadingData && fullWidthCardImageData
+                ? styles?.fullWidthCardPadding
+                : ""
+            } ${
+              fullWidthCardImageData && !fullWidthCardHeadingData
+                ? styles?.imageCentered
+                : ""
+            }`}
           >
             <StrapiImage
               className={styles.fullWidthCard__image}
@@ -57,20 +70,27 @@ const FullWidthCard: React.FC<ISectionProps> = props => {
             />
           </div>
         )}
-        <div
-          className={`${styles.fullWidthCard__heading} ${
-            layout ? layoutStyles[layout] : styles?.twentyFiveSeventyFive
-          }`}
-        >
-          <Heading
-            {...heading}
-            button={{
-              ...heading?.button,
-              action: () => window.open(heading?.button?.url, "_blank"),
-            }}
-            key={`heading_` + Math.random()}
-          />
-        </div>
+        {heading?.data?.attributes && (
+          <div
+            className={`${styles.fullWidthCard__heading} ${
+              layout ? layoutStyles[layout] : styles?.twentyFiveSeventyFive
+            } ${
+              fullWidthCardHeadingData && fullWidthCardImageData
+                ? styles?.fullWidthCardPadding
+                : ""
+            }`}
+          >
+            <>
+              <Heading
+                {...heading?.data?.attributes}
+                button={{
+                  ...heading?.button,
+                  action: () => window.open(heading?.button?.url, "_blank"),
+                }}
+              />
+            </>
+          </div>
+        )}
       </div>
     </div>
   )

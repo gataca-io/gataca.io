@@ -9,3 +9,5 @@ export const lightPurpleBackground: string
 export const fiftyFifty: string
 export const twentyFiveSeventyFive: string
 export const padding: string
+export const fullWidthCardPadding: string
+export const imageCentered: string
