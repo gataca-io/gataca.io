@@ -194,7 +194,6 @@ export interface InsideSectionsModel {
   headings?: any
   buttonIcon?: ButtonModel
   employees?: any
-  centerText?: boolean
   columns?: string
   card?: any
   fullWidthCard?: any
@@ -204,8 +203,7 @@ export interface InsideSectionsModel {
   showForm?: boolean
   action_cards?: any
   marginBottom?: boolean
-  headingRight?: boolean
-  imageOutsideFrame?: boolean
+  type?: string
 }
 
 export interface LocalizationsModel {
@@ -487,12 +485,10 @@ export interface HeaderContainerModel {
   idItem?: string
   heading: HeadingModel
   image?: any
-  centerText?: boolean
   showForm?: boolean
   formRegion?: string
   formId?: string
-  headingRight?: boolean
-  imageOutsideFrame?: boolean
+  type?: string
 }
 
 export interface SubHeadingContainerModel {

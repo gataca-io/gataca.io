@@ -63,20 +63,6 @@
           "sortable": true
         }
       },
-      "centerText": {
-        "edit": {
-          "label": "centerText",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "centerText",
-          "searchable": true,
-          "sortable": true
-        }
-      },
       "showForm": {
         "edit": {
           "label": "showForm",
@@ -119,30 +105,16 @@
           "sortable": true
         }
       },
-      "headingRight": {
+      "type": {
         "edit": {
-          "label": "headingRight",
+          "label": "type",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "headingRight",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "imageOutsideFrame": {
-        "edit": {
-          "label": "imageOutsideFrame",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "imageOutsideFrame",
+          "label": "type",
           "searchable": true,
           "sortable": true
         }
@@ -162,8 +134,8 @@
             "size": 6
           },
           {
-            "name": "centerText",
-            "size": 4
+            "name": "type",
+            "size": 6
           }
         ],
         [
@@ -172,18 +144,8 @@
             "size": 6
           },
           {
-            "name": "headingRight",
-            "size": 4
-          }
-        ],
-        [
-          {
             "name": "image",
             "size": 6
-          },
-          {
-            "name": "imageOutsideFrame",
-            "size": 4
           }
         ],
         [
