@@ -25,7 +25,7 @@
         height: 575px;
         right: -20px;
         top: 0;
-        background: $neutral200;
+        background: var(--neutral200);
         border-radius: 40px 0px 0px 40px;
         z-index: -1;
         @include min-width($mobileXL) {

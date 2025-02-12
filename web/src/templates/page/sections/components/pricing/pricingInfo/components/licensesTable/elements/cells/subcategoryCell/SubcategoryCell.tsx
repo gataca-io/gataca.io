@@ -12,9 +12,13 @@ export type ISubcategoryCellProps = {
 const SubcategoryCell: React.FC<ISubcategoryCellProps> = props => {
   const { subcategory, information } = props
   return (
-    <td className={`${styles?.subcategoryCell} ${cx("bodyRegularSM")}`}>
+    <td
+      className={`${styles?.subcategoryCell} ${cx(
+        "bodyRegularSM neutral1000"
+      )}`}
+    >
       <span>
-        <p className={`${cx("bodyRegularSM")}`}>{subcategory}</p>
+        <p className={`${cx("bodyRegularSM neutral1000")}`}>{subcategory}</p>
         {information?.length && information?.length > 0 ? (
           <HoverTooltip label={information} />
         ) : null}

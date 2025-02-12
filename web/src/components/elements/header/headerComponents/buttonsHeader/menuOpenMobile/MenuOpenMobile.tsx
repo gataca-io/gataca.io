@@ -16,11 +16,19 @@ export type IMenuDropdownProps = {
   button?: any
   pageContext?: string
   buttonGroup?: ButtonModel
+  darkTheme?: boolean
 }
 
 const MenuOpenMobile: React.FC<IMenuDropdownProps> = props => {
-  const { open, setMenuOpened, menuData, button, pageContext, buttonGroup } =
-    props
+  const {
+    open,
+    setMenuOpened,
+    menuData,
+    button,
+    pageContext,
+    buttonGroup,
+    darkTheme,
+  } = props
   const [subMenuOpenedID, setSubMenuOpened] = React.useState("")
   const refMenuMobile = React.useRef<HTMLDivElement>(null)
   const refMenuMobileHeader = React.useRef<HTMLDivElement>(null)
@@ -73,9 +81,12 @@ const MenuOpenMobile: React.FC<IMenuDropdownProps> = props => {
                 } ${open ? styles.menuContentVisible : ""}`}
               >
                 <Link to="/">
-                  {menuData?.logo?.data?.attributes?.url && (
+                  {(menuData?.logo?.data?.attributes?.url ||
+                    menuData?.logoDarkTheme?.data?.attributes?.url) && (
                     <StrapiImage
-                      image={menuData?.logo ? menuData?.logo : null}
+                      image={
+                        darkTheme ? menuData?.logoDarkTheme : menuData?.logo
+                      }
                     />
                   )}
                 </Link>
@@ -114,7 +125,15 @@ const MenuOpenMobile: React.FC<IMenuDropdownProps> = props => {
             setMenuOpened(!open), setSubMenuOpened("")
           }}
         >
-          <img src={open ? images.closeMenuIcon : images.menuIcon}></img>
+          {darkTheme ? (
+            <img
+              src={
+                open ? images.closeMenuIconDarkTheme : images.menuIconDarkTheme
+              }
+            ></img>
+          ) : (
+            <img src={open ? images.closeMenuIcon : images.menuIcon}></img>
+          )}
         </div>
       </div>
       {open && (

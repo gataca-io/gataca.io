@@ -32,7 +32,7 @@
     }
 
     p {
-      color: $neutral700;
+      color: var(--neutral700);
       margin-bottom: 80px;
 
       @include min-width($mobileXL) {
@@ -49,7 +49,7 @@
       max-width: 260px;
       margin: 0 auto;
       height: 48px;
-      background-color: $neutral200;
+      background-color: var(--neutral200);
       padding: 8px;
       border-radius: 12px;
       text-align: center;

@@ -21,13 +21,13 @@
   margin-top: 32px;
   width: 100%;
   border-radius: 12px;
-  border: 1px solid $neutral300;
+  border: 1px solid var(--neutral300);
   overflow: hidden;
-  background-color: $neutral100;
+  background-color: var(--neutral100);
 
   & > .card__header {
     padding: 12px 20px;
-    border-bottom: 1px solid $neutral300;
+    border-bottom: 1px solid var(--neutral300);
   }
 
   & > .card__row {
@@ -35,7 +35,7 @@
     
     & > div:nth-child(1) {
       padding: 12px;
-      border-right: 1px solid $neutral300;
+      border-right: 1px solid var(--neutral300);
       min-width: 140px;
       width: 140px;
       @include min-width($mobileXL) {
@@ -59,7 +59,7 @@
   }
 
   & > .card__row:not(:last-child) {
-    border-bottom: 1px solid $neutral300;
+    border-bottom: 1px solid var(--neutral300);
   }
 
   .icon {
@@ -84,14 +84,14 @@
 }
 
 .popularTag {
-  background-color: $primary700;
+  background-color: var(--primary700);
   border-radius: 5px;
   padding: 3px 8px;
   width: fit-content;
   margin-left: auto;
   height: 18px;
   & > p {
-    color: $neutral100;
+    color: var(--neutral100);
     font-weight: 400;
     font-size: 12px;
   }
@@ -101,9 +101,9 @@
   width: 100%;
   padding: 8px 12px;
   height: 40px;
-  border: 1px solid $neutral400;
+  border: 1px solid var(--neutral400);
   border-radius: 8px;
-  background-color: $neutral100;
+  background-color: var(--neutral100);
 }
 
 select {

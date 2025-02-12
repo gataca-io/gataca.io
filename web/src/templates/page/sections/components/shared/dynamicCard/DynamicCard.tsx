@@ -24,9 +24,9 @@ const DynamicCard: React.FC<ISectionProps> = props => {
   }
 
   const titleSizeStyles: Record<string, string> = {
-    small: "heading6",
-    medium: "heading5",
-    large: "heading4",
+    small: "heading6 neutral1000",
+    medium: "heading5 neutral1000",
+    large: "heading4 neutral1000",
   }
 
   const contentSizeStyles: Record<string, string> = {
@@ -133,7 +133,11 @@ const DynamicCard: React.FC<ISectionProps> = props => {
               />
             ) : null}
             {title?.length && (
-              <h4 className={cx(size ? titleSizeStyles[size] : "heading4")}>
+              <h4
+                className={cx(
+                  size ? titleSizeStyles[size] : "heading4 neutral1000"
+                )}
+              >
                 {title}
               </h4>
             )}

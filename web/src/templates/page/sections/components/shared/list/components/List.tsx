@@ -33,10 +33,10 @@ const ListComponent: React.FC<ListModel> = props => {
   }
 
   const titleSizeStyles: Record<string, string> = {
-    small: "heading7",
-    medium: "heading6",
-    large: "heading6",
-    xlarge: "heading5",
+    small: "heading7 neutral1000",
+    medium: "heading6 neutral1000",
+    large: "heading6 neutral1000",
+    xlarge: "heading5 neutral1000",
   }
 
   const colorStyles: Record<string, string> = {

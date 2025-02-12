@@ -19,10 +19,13 @@ const ListDataCell: React.FC<IListDataCellProps> = props => {
   }
 
   return (
-    <div className={`${cx("bodyBoldSM")}`}>
+    <div className={`${cx("bodyBoldSM neutral1000")}`}>
       {data?.length ? (
         data?.map((el: string, index: number) => (
-          <p key={"dataCM__" + index} className={`${cx("bodyBoldSM")}`}>
+          <p
+            key={"dataCM__" + index}
+            className={`${cx("bodyBoldSM neutral1000")}`}
+          >
             {el}
             {!isLastItem(data, el) ? "," : ""}
           </p>

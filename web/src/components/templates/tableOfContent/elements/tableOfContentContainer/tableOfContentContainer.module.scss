@@ -13,7 +13,7 @@
   }
   > div {
     padding: 12px 20px;
-    background-color: $neutral200;
+    background-color: var(--neutral200);
     margin-top: -46px;
     @include min-width($tabletMD) {
       border-radius: 12px;
@@ -28,7 +28,7 @@
       @include align-items(center);
       width: 100%;
       span {
-        color: $neutral1000;
+        color: var(--neutral1000);
         font-family: "Poppins";
         font-size: 18px;
         font-weight: 700;

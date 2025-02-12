@@ -29,7 +29,7 @@
     }
     video {
       max-width: 100%;
-      box-shadow: 0px 0px 16px 0px $boxShadowLigh;
+      box-shadow: 0px 0px 16px 0px var(--boxShadowLigh);
       @include min-width($desktopXL) {
         max-width: 982px;
       }
@@ -60,12 +60,12 @@
     }
     &.blackBackground {
       &::after {
-        background: $neutral1000;
+        background: var(--neutral1000);
       }
     }
     &.greyBackground {
       &::after {
-        background: $neutral200;
+        background: var(--neutral200);
       }
     }
   }

@@ -9,7 +9,7 @@ const QuantityDataCell: React.FC<IQuantityDataCellProps> = props => {
   const { data } = props
   return (
     <>
-      <td className={`${cx("bodyBoldSM")}`}>
+      <td className={`${cx("bodyBoldSM neutral1000")}`}>
         {data === "∞" || data === -1
           ? "Unlimited"
           : data === -2

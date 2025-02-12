@@ -38,7 +38,7 @@
 
   & > div > a {
     display: block;
-    background-color: $primary700;
+    background-color: var(--primary700);
     border-radius: 8px;
     height: 52px;
     width: 178px;
@@ -49,12 +49,12 @@
     }
 
     &:hover {
-        background-color: $primary900;
+        background-color: var(--primary900);
     }
   }
 
   & > p {
-    color: $neutral700;
+    color: var(--neutral700);
   }
 }
 

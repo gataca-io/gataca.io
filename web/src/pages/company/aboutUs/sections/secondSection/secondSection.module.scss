@@ -9,7 +9,7 @@
   }
   .secondSection__container {
     text-align: center;
-    background-color: $neutral200;
+    background-color: var(--neutral200);
     padding: 80px 20px;
     @include min-width($mobileXL) {
       padding: 80px;
@@ -19,7 +19,7 @@
       margin-left: auto;
       margin-right: auto;
       span {
-        color: $primary700;
+        color: var(--primary700);
         font-family: $custom;
       }
     }

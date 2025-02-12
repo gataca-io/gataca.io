@@ -5,7 +5,7 @@ import Footer from "../../elements/footer/Footer"
 import { SeoHelmet } from "../../elements/seo/SeoHelmet"
 
 const Layout = props => {
-  const { seoData } = props
+  const { seoData, className } = props
 
   React.useEffect(() => {
         const listenConsentEvents = () => {
@@ -126,20 +126,22 @@ const Layout = props => {
 
   return (
     <>
-      <Header >{props.children} </Header>
-      {seoData && (
-        <SeoHelmet
-          metaTitle={seoData?.metaTitle}
-          metaDescription={seoData?.metaDescription}
-          rrssImg={seoData?.rrssImg}
-          keywords={seoData?.keywords}
-          id={seoData?.id}
-          canonicalURL={seoData?.canonicalURL}
-          alternateURL={seoData?.alternate_urls}
-        />
-      )}
-      <main className={styles?.mainLayout}>{props.children}</main>
-      <Footer>{props.children} </Footer>
+      <div id='mainLayout__container' className={className}>
+        <Header>{props.children} </Header>
+        {seoData && (
+          <SeoHelmet
+            metaTitle={seoData?.metaTitle}
+            metaDescription={seoData?.metaDescription}
+            rrssImg={seoData?.rrssImg}
+            keywords={seoData?.keywords}
+            id={seoData?.id}
+            canonicalURL={seoData?.canonicalURL}
+            alternateURL={seoData?.alternate_urls}
+          />
+        )}
+        <main className={styles?.main}>{props.children}</main>
+        <Footer>{props.children} </Footer>
+      </div>
     </>
   )
 }

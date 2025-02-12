@@ -10,7 +10,7 @@ export const CardHeader: React.FC<ICardHeaderProps> = props => {
   const { title } = props
   return (
     <div key={0} className={styles?.card__header}>
-      <p className={`${cx("bodyBoldLG")}`}>{title}</p>
+      <p className={`${cx("bodyBoldLG neutral1000")}`}>{title}</p>
     </div>
   )
 }

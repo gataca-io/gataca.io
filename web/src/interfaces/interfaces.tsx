@@ -131,6 +131,7 @@ export interface PageModel extends PagePreviewModel {
   locale?: string
   localizations?: LocalizationsModel
   pageContext?: string
+  darkTheme: boolean
 }
 
 export interface InsideSectionsModel {
@@ -540,6 +541,7 @@ export interface MenuModel {
     idItem?: string
     className?: string
     logo?: any
+    logoDarkTheme?: any
     menuDropdown?: any
     button?: any
     backButtonMobile?: ButtonModel
@@ -555,6 +557,7 @@ export interface FooterModel {
     idItem?: string
     className?: string
     logo?: any
+    logoDarkTheme?: any
     certificationImage?: any
     linksList?: any
     languageButton?: ButtonModel

@@ -79,13 +79,13 @@
       height: fit-content;
       min-width: 220px;
       max-width: 220px;
-      background-color: $neutral100;
+      background-color: var(--neutral100);
       padding: 40px;
       border-radius: 20px;
       text-align: left;
       overflow: hidden;
       cursor: pointer;
-      box-shadow: 0px 0px 10px $boxShadowLigh;
+      box-shadow: 0px 0px 10px var(--boxShadowLigh);
       @include flexbox();
       @include flex-direction(column);
       @include align-items(flex-start);
@@ -112,7 +112,7 @@
       }
 
       & > .advantage__description {
-        color: $neutral700;
+        color: var(--neutral700);
       }
     }
   }

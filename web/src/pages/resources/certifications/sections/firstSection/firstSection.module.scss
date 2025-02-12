@@ -20,8 +20,8 @@
     }
   }
   .certifications__cards {
-    background: $neutral100;
-    box-shadow: 0px 0px 20px $boxShadowLigh;
+    background: var(--neutral100);
+    box-shadow: 0px 0px 20px var(--boxShadowLigh);
     border-radius: 20px;
     padding: 40px;
     @include min-width($tabletXL) {
@@ -48,8 +48,8 @@
       }
       .buttonContainer {
         .purpleLink {
-          background-color: $primary700;
-          color: $primary100;
+          background-color: var(--primary700);
+          color: var(--primary100);
           padding: 12px 24px;
           height: auto;
           border-radius: 8px;
@@ -59,7 +59,7 @@
           @include align-items(center);
           cursor: pointer;
           &:hover {
-            background-color: $primary900;
+            background-color: var(--primary900);
           }
           margin: 0 auto;
           @include min-width($tabletXL) {

@@ -54,7 +54,7 @@
       position: absolute;
       width: 2000px;
       height: 820px;
-      background: $neutral200;
+      background: var(--neutral200);
       border-radius: 40px 0px 0px 40px;
       z-index: -1;
       top: 92px;
@@ -70,10 +70,10 @@
     }
 
     .form_container {
-      background-color: $neutral100;
+      background-color: var(--neutral100);
       padding: 40px;
       border-radius: 12px;
-      filter: drop-shadow(0px 0px 10px $boxShadowLigh);
+      filter: drop-shadow(0px 0px 10px var(--boxShadowLigh));
       max-width: 410px;
       margin: 0 auto;
       min-height: 685px;

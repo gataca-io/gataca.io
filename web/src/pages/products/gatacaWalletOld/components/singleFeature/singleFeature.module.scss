@@ -15,7 +15,7 @@
   }
 
   & > .description {
-    color: $neutral700;
+    color: var(--neutral700);
 
     @include min-width($mobileXL) {
       margin-left: 70px;
@@ -54,7 +54,7 @@
   }
 
   & > .title {
-    color: $primary700;
+    color: var(--primary700);
 
     @include min-width($mobileXL) {
       margin-left: 70px;
@@ -66,7 +66,7 @@
   }
 
   & > .unselectedTitle {
-    color: $neutral1000;
+    color: var(--neutral1000);
     font-family: $base;
     font-size: 20px;
     font-weight: 700;

@@ -2,8 +2,8 @@
 @import "../../../styles/mixins.scss";
 
 .tag {
-    color: $neutral700;
-    background-color: $neutral300;
+    color: var(--neutral700);
+    background-color: var(--neutral300);
     border-radius: 4px;
     padding: 4px 8px;
     height: 16px;

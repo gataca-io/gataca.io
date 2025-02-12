@@ -14,8 +14,8 @@
     min-width: 162px;
   }
   &.selected{
-    background-color: $primary700;
-    color: $neutral100;
+    background-color: var(--primary700);
+    color: var(--neutral100);
   }
   &:not(.selected){
     cursor: pointer;

@@ -54,7 +54,7 @@
         position: absolute;
         width: 67px;
         height: 427px;
-        background-color: $neutral200;
+        background-color: var(--neutral200);
         top: 235px;
         right: -20px;
         border-radius: 40px 0px 0px 40px;
@@ -80,13 +80,13 @@
       .story {
         height: fit-content;
         @include flex(0, 0, 300px);
-        background-color: $neutral100;
+        background-color: var(--neutral100);
         padding: 40px;
         border-radius: 20px;
         text-align: left;
         overflow: hidden;
         cursor: pointer;
-        box-shadow: 0px 0px 10px $boxShadowLigh;
+        box-shadow: 0px 0px 10px var(--boxShadowLigh);
         z-index: 1;
         @include flexbox();
         @include flex-direction(column);
@@ -111,7 +111,7 @@
           text-align: left;
         }
         .story__description {
-          color: $neutral700;
+          color: var(--neutral700);
           &.notOpened {
             display: -webkit-box;
             -webkit-line-clamp: 4;
@@ -131,7 +131,7 @@
           @include align-items(center);
           margin-top: 40px;
           a {
-            color: $primary700;
+            color: var(--primary700);
             &:hover {
               text-decoration: underline;
             }

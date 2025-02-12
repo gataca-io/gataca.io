@@ -158,7 +158,7 @@
         left: 0;
         top: 50%;
         transform: translateY(-50%);
-        background: $neutral200;
+        background: var(--neutral200);
         z-index: -1;
       }
       @include min-width($desktopXL) {
@@ -304,7 +304,7 @@
         right: -20px;
         top: 45%;
         transform: translateY(-50%);
-        background: $neutral200;
+        background: var(--neutral200);
         z-index: -1;
       }
     }

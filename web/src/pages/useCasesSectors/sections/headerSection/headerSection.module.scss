@@ -16,12 +16,12 @@
     }
 
     h1 span {
-      color: $primary700;
+      color: var(--primary700);
       font-family: $custom;
     }
 
     p {
-      color: $neutral700;
+      color: var(--neutral700);
     }
     .buttonContainer {
       text-align: center;

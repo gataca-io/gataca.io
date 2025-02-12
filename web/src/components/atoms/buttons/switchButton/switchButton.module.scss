@@ -21,8 +21,8 @@
   text-indent: 49px;
   width: 52px;
   height: 26px;
-  background: $neutral100;
-  border: 3px solid $neutral400;
+  background: var(--neutral100);
+  border: 3px solid var(--neutral400);
   display: block;
   border-radius: 90px;
   position: relative;
@@ -37,21 +37,21 @@
   width: 26px;
   min-width: 26px;
   height: 26px;
-  background: $neutral100;
-  border: 3px solid $neutral400;
+  background: var(--neutral100);
+  border: 3px solid var(--neutral400);
   border-radius: 90px;
   transition: 0.3s;
 }
 
 .periodCheckbox:checked + .periodCheckboxLabel {
-  background: $primary700;
-  border: 3px solid $primary700;
+  background: var(--primary700);
+  border: 3px solid var(--primary700);
 }
 
 .periodCheckbox:checked + .periodCheckboxLabel:after {
   width: 18px;
   left: calc(100% - 28px);
-  border: 3px solid $primary700;
+  border: 3px solid var(--primary700);
 }
 
 .periodCheckboxLabel:active:after {

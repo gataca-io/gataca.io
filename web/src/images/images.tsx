@@ -140,7 +140,9 @@ import thumbsUp from "./images3d/tumbsup.png"
 import cloudShieldIcon from "./icons/cloud-shield.svg"
 import usersIcon from "./icons/users.svg"
 import menuIcon from "./icons/gat-icon-menu.svg"
+import menuIconDarkTheme from "./icons/gat-icon-menu-dark.svg"
 import closeMenuIcon from "./icons/gat-icon-close.svg"
+import closeMenuIconDarkTheme from "./icons/gat-icon-close-dark-theme.svg"
 import chevronLeftIcon from "./icons/chevronLeft.svg"
 import ISO27001Certification from "./logos/iso-27001-certification.svg"
 import ISO27001Logo from "./logos/iso27001.svg"
@@ -309,7 +311,9 @@ export const images = {
   cloudShieldIcon: cloudShieldIcon,
   usersIcon: usersIcon,
   menuIcon: menuIcon,
+  menuIconDarkTheme: menuIconDarkTheme,
   closeMenuIcon: closeMenuIcon,
+  closeMenuIconDarkTheme: closeMenuIconDarkTheme,
   chevronLeftIcon: chevronLeftIcon,
   ISO27001Certification: ISO27001Certification,
   ISO27001Logo: ISO27001Logo,

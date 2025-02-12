@@ -50,7 +50,7 @@
       padding: 24px;
       border-radius: 20px;
       cursor: pointer;
-      filter: drop-shadow(0px 0px 10px $boxShadowLigh);
+      filter: drop-shadow(0px 0px 10px var(--boxShadowLigh));
       @include flexbox();
       @include flex-direction(column);
       @include align-items(center);
@@ -61,7 +61,7 @@
         margin-bottom: 26px;
       }
       & > .resource__description {
-        color: $neutral700;
+        color: var(--neutral700);
         text-align: center;
       }
     }

@@ -51,7 +51,7 @@
 
         .seventhSection__leftSide__feedbackBullet {
           position: relative;
-          background-color: $primary200;
+          background-color: var(--primary200);
 
           width: calc(100% - 80px);
           padding: 40px;
@@ -105,7 +105,7 @@
             height: calc(100% + 176px);
             right: 0px;
             right: -40px;
-            background: $neutral200;
+            background: var(--neutral200);
             border-radius: 40px 0px 0px 40px;
             z-index: -1;
             top: 50%;
@@ -144,7 +144,7 @@
           width: 75vw;
           height: 591px;
           right: -40px;
-          background: $neutral200;
+          background: var(--neutral200);
           border-radius: 40px 0px 0px 40px;
           z-index: -1;
           display: none;

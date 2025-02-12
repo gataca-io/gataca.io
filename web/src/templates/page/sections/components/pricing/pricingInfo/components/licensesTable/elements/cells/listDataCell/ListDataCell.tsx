@@ -8,8 +8,8 @@ export type IListDataCellProps = {
 const ListDataCell: React.FC<IListDataCellProps> = props => {
   let { data } = props
 
-  if(typeof data === 'string') {
-    data = data.split(',');
+  if (typeof data === "string") {
+    data = data.split(",")
   }
   const isLastItem = (itemsArray: any[], item: any) => {
     const arrLength = itemsArray?.length
@@ -19,16 +19,19 @@ const ListDataCell: React.FC<IListDataCellProps> = props => {
 
   return (
     <>
-      <td className={`${cx("bodyBoldSM")}`}>
+      <td className={`${cx("bodyBoldSM neutral1000")}`}>
         {data?.length ? (
           data?.map((el: string, index: number) => (
-            <p key={"dataC__" + index} className={`${cx("bodyBoldSM")}`}>
+            <p
+              key={"dataC__" + index}
+              className={`${cx("bodyBoldSM neutral1000")}`}
+            >
               {el}
               {!isLastItem(data, el) ? "," : ""}
             </p>
           ))
         ) : (
-          <p className={`${cx("bodyBoldSM")}`}>None</p>
+          <p className={`${cx("bodyBoldSM neutral1000")}`}>None</p>
         )}
       </td>
     </>

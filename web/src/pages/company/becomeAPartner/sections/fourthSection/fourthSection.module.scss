@@ -45,7 +45,7 @@
       margin-bottom: 0;
       @include min-width($mobileXL) { 
         @include flex(0, 0, calc((100%/2) - 72px));
-        box-shadow: 0px 0px 12px $boxShadowLigh;
+        box-shadow: 0px 0px 12px var(--boxShadowLigh);
       }
       @include min-width($tabletXL) {
         @include flex(0, 0, calc((100%/4) - 72px));

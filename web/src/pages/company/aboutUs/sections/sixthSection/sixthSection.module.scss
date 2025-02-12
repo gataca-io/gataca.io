@@ -4,7 +4,7 @@
 .sixthSection {
   .sixthSection__container {
     text-align: center;
-    background-color: $neutral200;
+    background-color: var(--neutral200);
     padding: 40px 20px;
     @include min-width($mobileXL) {
       padding: 40px;

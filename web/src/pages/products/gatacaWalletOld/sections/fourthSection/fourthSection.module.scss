@@ -14,7 +14,7 @@
 
 .fourthSection {
   position: relative;
-  background-color: $neutral200;
+  background-color: var(--neutral200);
   border-radius: 20px;
   padding: 72px 40px;
   overflow-x: hidden;
@@ -132,6 +132,6 @@
   }
 
   .bullet__description {
-    color: $neutral700;
+    color: var(--neutral700);
   }
 }

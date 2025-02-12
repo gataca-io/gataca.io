@@ -3,23 +3,23 @@
 
 .highlight {
   &.blackBackground {
-    background-color: $neutral1000;
+    background-color: var(--neutral1000);
     & > div > div > div {
       & > h1, h3, h4 {
         p {
-          color: $neutral100;
+          color: var(--neutral100);
         }
       }
       & > h6 {
-        color: $neutral100;
+        color: var(--neutral100);
       }
       & > div > div > p {
-        color: $neutral400;
+        color: var(--neutral400);
       }
     }
   }
   &.greyBackground {
-    background-color: $neutral200;
+    background-color: var(--neutral200);
   }
   .alignCenter {
     padding: 100px 20px;

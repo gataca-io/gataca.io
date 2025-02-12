@@ -18,12 +18,12 @@
       margin-bottom: 80px;
     }
     a {
-      color: $primary700;
+      color: var(--primary700);
       font-family: $base;
     }
     .content__cards {
-      background: $neutral100;
-      box-shadow: 0px 0px 12px $boxShadowLigh;
+      background: var(--neutral100);
+      box-shadow: 0px 0px 12px var(--boxShadowLigh);
       border-radius: 20px;
       max-width: 277px;
       gap: 52px;
@@ -53,7 +53,7 @@
       }
     }
     .content__footer {
-      background: $neutral200;
+      background: var(--neutral200);
       border-radius: 20px;
       padding: 120px 20px 60px;
       margin-top: -60px;

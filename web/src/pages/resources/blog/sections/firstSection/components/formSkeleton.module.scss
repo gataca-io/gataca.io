@@ -4,21 +4,21 @@
 .formSkeleton {
     & > div:nth-child(1) {
         width: 294px;
-        background: $skeletonBG;
+        background: var(--skeletonBG);
         height: 23px;
         border-radius: 3px;
     }
     & > div:nth-child(2) {
         width: 100%;
         margin-top: 4px;
-        background: $skeletonBG;
+        background: var(--skeletonBG);
         height: 40px;
         border-radius: 3px;
         margin-bottom: 18px;
     }
     & > div:nth-child(3) {
         width: 90%;
-        background: $skeletonBG;
+        background: var(--skeletonBG);
         height: 23px;
         border-radius: 3px;
         margin-bottom: 35px;
@@ -26,7 +26,7 @@
      & > div:nth-child(4) {
         width: 140px;
         margin: auto auto 17px;
-        background: $skeletonBG;
+        background: var(--skeletonBG);
         height: 42px;
         border-radius: 3px;
         margin-bottom: 17px;
@@ -116,7 +116,7 @@
     display: block;
     width: 128px;
     height: 393px;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0), $neutral100, rgba(255, 255, 255, 0));
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0), var(--neutral100), rgba(255, 255, 255, 0));
     content: "";
     animation: skeleton-animation 2s infinite;
     @include min-width($mobileXL) {

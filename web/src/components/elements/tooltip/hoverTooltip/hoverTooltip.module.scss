@@ -5,8 +5,8 @@
 .hoverTooltip .hoverTooltipText {
   visibility: hidden;
   width: 200px;
-  background-color: $neutral1000;
-  color: $neutral100;
+  background-color: var(--neutral1000);
+  color: var(--neutral100);
   text-align: left;
   border-radius: 6px;
   padding: 8px;
@@ -24,7 +24,7 @@
 
 .hoverTooltipText {
   margin-top: 5px;
-  color: $neutral100;
+  color: var(--neutral100);
 }
 
 .hoverTooltipText::before {
@@ -38,5 +38,5 @@
   position: absolute;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-bottom: 7px solid $neutral1000;
+  border-bottom: 7px solid var(--neutral1000);
 }

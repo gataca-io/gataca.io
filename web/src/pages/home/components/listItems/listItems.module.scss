@@ -15,7 +15,7 @@
     position: relative;
     @include flexbox();
     .title {
-      color: $primary700;
+      color: var(--primary700);
       @include min-width($desktopSM) {
         margin-left: 70px;
       }
@@ -24,7 +24,7 @@
       }
     }
     .notSelected {
-      color: $neutral1000;
+      color: var(--neutral1000);
       cursor: pointer;
       margin-bottom: 20px;
       font-family: $base;

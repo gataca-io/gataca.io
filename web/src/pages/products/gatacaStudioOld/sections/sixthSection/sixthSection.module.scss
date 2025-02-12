@@ -79,8 +79,8 @@
 
     .plansSection__list {
       min-height: 164px;
-      background: $neutral100;
-      box-shadow: 0px 0px 12px $boxShadowLigh;
+      background: var(--neutral100);
+      box-shadow: 0px 0px 12px var(--boxShadowLigh);
       border-radius: 20px;
       padding: 20px;
       width: 232px;
@@ -100,8 +100,8 @@
         @include align-items(center);
 
         & > div {
-          background-color: $primary700;
-          color: $neutral100;
+          background-color: var(--primary700);
+          color: var(--neutral100);
         }
       }
 

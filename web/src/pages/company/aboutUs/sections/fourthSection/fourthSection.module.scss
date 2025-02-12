@@ -57,7 +57,7 @@
           margin: 0 auto;
           .leftColumn {
             .name {
-              color: $primary700;
+              color: var(--primary700);
               text-align: left;
             }
             .title {

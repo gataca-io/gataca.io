@@ -6,13 +6,13 @@
   @include flex-direction(column);
   min-width: 0;
   width: calc(100% - 48px);
-  background-color: $neutral100;
+  background-color: var(--neutral100);
 padding: 24px;
   border-radius: 12px;
-  box-shadow: 1px 1px 12px $boxShadowLigh;
+  box-shadow: 1px 1px 12px var(--boxShadowLigh);
   cursor: pointer;
   &:hover {
-    color: $neutral1000
+    color: var(--neutral1000)
   }
   & > .header {
     @include flexbox();
@@ -22,8 +22,8 @@ padding: 24px;
     gap: 20px;
 
     & > .category {
-      color: $neutral700;
-      background-color: $neutral300;
+      color: var(--neutral700);
+      background-color: var(--neutral300);
       border-radius: 4px;
       padding: 4px 8px;
       height: 16px;
@@ -33,7 +33,7 @@ padding: 24px;
 
     & > .readTime {
       margin-left: auto;
-      color: $neutral700
+      color: var(--neutral700)
     }
   }
 

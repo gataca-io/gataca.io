@@ -4,10 +4,10 @@
 .blogDetailedPreview {
   @include flexbox();
   @include flex-direction(column);
-  background-color: $neutral100;
+  background-color: var(--neutral100);
   padding: 24px;
   border-radius: 12px;
-  box-shadow: 1px 1px 12px $boxShadowLigh;
+  box-shadow: 1px 1px 12px var(--boxShadowLigh);
 
   & > .imageContainer {
      width: 100%;
@@ -43,7 +43,7 @@
     }
 
     & > .description {
-      color: $grey600;
+      color: var(--neutral400);
       height: 60px;
       display: -webkit-box;
       -webkit-line-clamp: 3;
@@ -52,12 +52,12 @@
       text-overflow: ellipsis;
     }
     & > .date {
-      color: $grey600;
+      color: var(--neutral400);
     }
 
     & > .link {
       margin-top: 22px;
-      color: $primary700;
+      color: var(--primary700);
       cursor: pointer;
       @include flexbox();
       @include align-items(center);

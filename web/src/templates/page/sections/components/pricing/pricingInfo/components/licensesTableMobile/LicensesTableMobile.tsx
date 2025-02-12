@@ -64,11 +64,11 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
     <>
       <div className={styles?.tableContainer}>
         <div>
-          <p className={`${cx("heading4")}`} id={"featuresTable"}>
+          <p className={`${cx("heading4 neutral1000")}`} id={"featuresTable"}>
             {titleFeaturesTableMobile}
           </p>
           <select
-            className={`${styles?.selector} ${cx("bodyRegularMD")}`}
+            className={`${styles?.selector} ${cx("bodyRegularMD neutral1000")}`}
             defaultValue={licenseIndex || 0}
             onChange={event => {
               selectLicense(event?.target?.value)
@@ -79,7 +79,7 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
                 <option
                   key={"pricingOption__" + index}
                   defaultChecked={licenseIndex === index + 1}
-                  className={`${cx("bodyRegularMD")}`}
+                  className={`${cx("bodyRegularMD neutral1000")}`}
                   value={index}
                 >
                   {item?.name}
@@ -89,7 +89,7 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
           </select>
           <div className={styles?.header__container}>
             <div>
-              <p className={cx("heading3")}>
+              <p className={cx("heading3 neutral1000")}>
                 <span>{getPrice(pricingSelected)}</span>
                 <span>
                   {(pricingSelected?.amountYearly ||
@@ -134,7 +134,7 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
                   ?.infoToggle
               }
             />
-            <div className={`${cx("bodyBoldSM")}`}>
+            <div className={`${cx("bodyBoldSM neutral1000")}`}>
               <QuantityDataCell
                 data={
                   getGatacaTiersLicense()?.attributes?.features
@@ -154,7 +154,7 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
                   ?.infoToggle
               }
             />
-            <div className={`${cx("bodyBoldSM")}`}>
+            <div className={`${cx("bodyBoldSM neutral1000")}`}>
               <QuantityDataCell
                 data={
                   getGatacaTiersLicense()?.attributes?.features
@@ -174,7 +174,7 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
                   ?.infoToggle
               }
             />
-            <div className={`${cx("bodyBoldSM")}`}>
+            <div className={`${cx("bodyBoldSM neutral1000")}`}>
               <QuantityDataCell
                 data={
                   getGatacaTiersLicense()?.attributes?.features?.activeUsers
@@ -193,7 +193,7 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
                   ?.infoToggle
               }
             />
-            <div className={`${cx("bodyBoldSM")}`}>
+            <div className={`${cx("bodyBoldSM neutral1000")}`}>
               <QuantityDataCell
                 data={
                   getGatacaTiersLicense()?.attributes?.features
@@ -310,7 +310,7 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
                   ?.infoToggle
               }
             />
-            <div className={`${cx("bodyBoldSM")}`}>
+            <div className={`${cx("bodyBoldSM neutral1000")}`}>
               <td className={styles.markdown}>
                 {getGatacaTiersLicense()?.attributes.features?.ageVerification
                   ?.length && (
@@ -335,7 +335,7 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
                   ?.infoToggle
               }
             />
-            <div className={`${cx("bodyBoldSM")}`}>
+            <div className={`${cx("bodyBoldSM neutral1000")}`}>
               <td className={styles.markdown}>
                 {getGatacaTiersLicense()?.attributes.features?.appIntegrations
                   ?.length && (
@@ -365,7 +365,7 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
                   ?.infoToggle
               }
             />
-            <div className={`${cx("bodyBoldSM")}`}>
+            <div className={`${cx("bodyBoldSM neutral1000")}`}>
               <td className={styles.markdown}>
                 {getGatacaTiersLicense()?.attributes.features?.didMethods
                   ?.length && (
@@ -389,7 +389,7 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
                   ?.infoToggle
               }
             />
-            <div className={`${cx("bodyBoldSM")}`}>
+            <div className={`${cx("bodyBoldSM neutral1000")}`}>
               <td className={styles.markdown}>
                 {getGatacaTiersLicense()?.attributes.features?.trustRegistries
                   ?.length && (
@@ -432,7 +432,7 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
                   ?.infoToggle
               }
             />
-            <div className={`${cx("bodyBoldSM")}`}>
+            <div className={`${cx("bodyBoldSM neutral1000")}`}>
               <td className={styles.markdown}>
                 {getGatacaTiersLicense()?.attributes.features?.enterpriseWallet
                   ?.length && (
@@ -560,7 +560,7 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
                   ?.infoToggle
               }
             />
-            <div className={`${cx("bodyBoldSM")}`}>
+            <div className={`${cx("bodyBoldSM neutral1000")}`}>
               <td className={styles.markdown}>
                 {getGatacaTiersLicense()?.attributes.features?.twentyFourSeven
                   ?.length && (
@@ -585,7 +585,7 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
                   ?.infoToggle
               }
             />
-            <div className={`${cx("bodyBoldSM")}`}>
+            <div className={`${cx("bodyBoldSM neutral1000")}`}>
               <td className={styles.markdown}>
                 {getGatacaTiersLicense()?.attributes.features?.slas?.length && (
                   <MarkDownContent
@@ -606,7 +606,7 @@ const LicensesTableMobile: React.FC<ILicensesTableMobileProps> = props => {
                   ?.infoToggle
               }
             />
-            <div className={`${cx("bodyBoldSM")}`}>
+            <div className={`${cx("bodyBoldSM neutral1000")}`}>
               <td className={styles.markdown}>
                 {getGatacaTiersLicense()?.attributes.features
                   ?.onboardingTraining?.length && (

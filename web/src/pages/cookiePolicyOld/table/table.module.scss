@@ -22,8 +22,8 @@
       }
 
       & > th {
-        background-color: $neutral100;
-        border: 1px solid $neutral300;
+        background-color: var(--neutral100);
+        border: 1px solid var(--neutral300);
         padding: 20px 12px;
         line-height: 16px;
         font-family: "Poppins";
@@ -31,7 +31,7 @@
         font-weight: 700;
         font-size: 20px;
         line-height: 28px;
-        color: $neutral1000;
+        color: var(--neutral1000);
         text-align: left;
       }
     }
@@ -52,8 +52,8 @@
 
     & > tr {
       & > td {
-        background-color: $neutral100;
-        border: 1px solid $neutral300;
+        background-color: var(--neutral100);
+        border: 1px solid var(--neutral300);
         padding: 12px;
         font-family: "Poppins";
         font-style: normal;
@@ -61,7 +61,7 @@
         font-size: 18px;
         line-height: 24px;
         text-align: left;
-        color: $neutral700;
+        color: var(--neutral700);
 
         & > ul > li {
           margin-left: 15px !important;
@@ -91,7 +91,7 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 28px;
-    color: $neutral1000;
+    color: var(--neutral1000);
     width: fit-content;
     display: block;
     margin-bottom: 12px;

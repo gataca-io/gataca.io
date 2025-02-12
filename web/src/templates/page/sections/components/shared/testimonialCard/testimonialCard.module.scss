@@ -12,13 +12,13 @@
   height: calc(100% - 80px);
   border-radius: 20px;
   &.teal {
-    background-color: $secondary100;
+    background-color: var(--secondary100);
   }
   &.purple {
-    background-color: $primary200;
+    background-color: var(--primary200);
   }
   &.pink{
-    background-color: $tertiary200;
+    background-color: var(--tertiary200);
   }
   .content__container {
     @include flexbox();

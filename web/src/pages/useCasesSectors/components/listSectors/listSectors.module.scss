@@ -17,7 +17,7 @@
     }
   }
   > div {
-    background: $neutral100;
+    background: var(--neutral100);
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
     border-radius: 8px;
     padding: 32px;
@@ -52,14 +52,14 @@
           opacity: 0;
         }
         &.opened {
-          background-color: $neutral200;
+          background-color: var(--neutral200);
           border-radius: 8px;
           display: block;
           .transitionContainer {
             transition: opacity 1500ms;
             opacity: 1;
             p {
-              color: $neutral1000;
+              color: var(--neutral1000);
               padding: 0 32px 32px;
           
               @include min-width($mobileXL) {
@@ -96,14 +96,14 @@
       max-height: 38px;
     }
     .description {
-      color: $neutral700;
+      color: var(--neutral700);
     }
     .linkMore {
-      color: $primary700;
+      color: var(--primary700);
       @include flexbox;
       @include align-items(center);
       &:hover {
-        color: $primary900;
+        color: var(--primary900);
       }
     }
   }

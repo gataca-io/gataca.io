@@ -10,11 +10,11 @@
     font-weight: 400;
     line-height: 24px;
     text-decoration: none;
-    color: $neutral700;
+    color: var(--neutral700);
   }
 
   & > a, p > a, span > a, li > a {
-    color: $primary700;
+    color: var(--primary700);
     text-decoration: underline;
     cursor: pointer;
     font-family: $base;
@@ -31,7 +31,7 @@
         position: absolute;
         width: 6px;
         height: 6px;
-        background-color: $neutral700;
+        background-color: var(--neutral700);
         border-radius: 5px;
         top: 9px;
         left: -15px;
@@ -114,15 +114,15 @@
     & > table {
       margin: 0 auto 20px;
       border-radius: 12px;
-      border: 1px solid $neutral300;
-      background-color: $neutral100;
+      border: 1px solid var(--neutral300);
+      background-color: var(--neutral100);
       > * {
         font-family: $base;
         font-size: 18px;
         font-weight: 400;
         line-height: 24px;
         text-decoration: none;
-        color: $neutral700;
+        color: var(--neutral700);
       }
     }
     thead {
@@ -133,18 +133,18 @@
         font-weight: 700;
         line-height: 28px;
         text-decoration: none;
-        color: $neutral1000;
+        color: var(--neutral1000);
         &:not(:first-child){  
-          border-left: 1px solid $neutral300;
+          border-left: 1px solid var(--neutral300);
         }
       }
     }
     tbody {
       td{
-        border-top: 1px solid $neutral300;
+        border-top: 1px solid var(--neutral300);
         padding: 12px;
         &:not(:first-child) {
-          border-left: 1px solid $neutral300;
+          border-left: 1px solid var(--neutral300);
         }
       }
     }

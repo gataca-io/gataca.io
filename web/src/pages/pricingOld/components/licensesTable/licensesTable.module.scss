@@ -31,7 +31,7 @@ table {
     left: 0;
     box-shadow: 0px 4px 8px 0px #0000001F;
     z-index: -1;
-    background-color: $neutral100;
+    background-color: var(--neutral100);
   }
 }
 
@@ -67,14 +67,14 @@ table {
           width: calc(100% - 70px);
         }
         &__popularTag {
-          background-color: $primary700;
+          background-color: var(--primary700);
           border-radius: 5px;
           padding: 3px 8px;
           width: fit-content;
           margin-left: auto;
           height: 18px;
           & > p {
-            color: $neutral100;
+            color: var(--neutral100);
             font-weight: 400;
             font-size: 12px;
           }
@@ -199,9 +199,9 @@ table {
       }
     }
     &__row {
-        background-color: $neutral100;
+        background-color: var(--neutral100);
       & > td {
-      border: 1px solid $neutral300;
+      border: 1px solid var(--neutral300);
       padding: 12px;
       line-height: 16px;
     }

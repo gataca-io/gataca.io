@@ -53,6 +53,9 @@ const Header: React.FC = (props: any) => {
           setPage(jsonResponse?.data[0])
       })
   }
+
+  const pageTheme = props?.children[0]?.props?.children[0]?.props?.darkTheme
+
   return (
     <>
       {menuData ? (
@@ -61,8 +64,11 @@ const Header: React.FC = (props: any) => {
           onMouseLeave={() => setSubMenuOpened("")}
         >
           <Link className={styles?.header__logo} to="/">
-            {menuData?.logo?.data?.attributes?.url && (
-              <StrapiImage image={menuData?.logo ? menuData?.logo : null} />
+            {(menuData?.logo?.data?.attributes?.url ||
+              menuData?.logoDarkTheme?.data?.attributes?.url) && (
+              <StrapiImage
+                image={pageTheme ? menuData?.logoDarkTheme : menuData?.logo}
+              />
             )}
           </Link>
           <div className={styles?.menuDropdown}>
@@ -116,6 +122,7 @@ const Header: React.FC = (props: any) => {
             pageContext={
               props?.children[0]?.props?.children[0]?.props?.pageContext
             }
+            darkTheme={pageTheme}
           />
         </header>
       ) : (
