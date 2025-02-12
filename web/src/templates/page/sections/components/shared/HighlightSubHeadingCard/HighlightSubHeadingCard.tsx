@@ -18,6 +18,8 @@ const HighlightSubHeadingCard: React.FC<
 > = props => {
   const { idItem, heading, subHeadingContainer, fullWidthCard } = props
 
+  const fullWidthCardHeadingData = fullWidthCard?.heading?.data?.attributes
+  const fullWidthCardImageData = fullWidthCard?.image?.data?.attributes?.url
   return (
     <div
       id={idItem}
@@ -39,15 +41,28 @@ const HighlightSubHeadingCard: React.FC<
         {subHeadingContainer && (
           <SubHeadingContainer
             {...subHeadingContainer}
-            className={styles?.highlightSubHeadingCard__subHeading}
+            className={`${styles?.highlightSubHeadingCard__subHeading} ${
+              fullWidthCardHeadingData || fullWidthCardImageData
+                ? styles?.negativeMargin
+                : ""
+            }`}
           />
         )}
       </div>
-
-      <FullWidthCard
-        {...fullWidthCard}
-        className={styles?.highlightSubHeadingCard__fullWidthCard}
-      />
+      {(fullWidthCardHeadingData || fullWidthCardImageData) && (
+        <FullWidthCard
+          {...fullWidthCard}
+          className={`${styles?.highlightSubHeadingCard__fullWidthCard} ${
+            fullWidthCardHeadingData && !fullWidthCardImageData
+              ? styles?.headingPadding
+              : fullWidthCardImageData && !fullWidthCardHeadingData
+              ? styles?.imagePadding
+              : fullWidthCardHeadingData && fullWidthCardImageData
+              ? styles?.fullWidthCardPadding
+              : ""
+          }`}
+        />
+      )}
     </div>
   )
 }

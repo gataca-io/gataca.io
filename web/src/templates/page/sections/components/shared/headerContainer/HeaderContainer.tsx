@@ -9,20 +9,14 @@ import FormSkeleton from "./components/FormSkeleton"
 import { hubspotFormPortalId } from "../../../../../../data/globalData"
 
 const HeaderContainer: React.FC<HeaderContainerModel> = props => {
-  const {
-    idItem,
-    heading,
-    image,
-    centerText,
-    showForm,
-    formRegion,
-    formId,
-    headingRight,
-    imageOutsideFrame,
-  } = props
+  const { idItem, heading, image, showForm, formRegion, formId, type } = props
 
   const [formSubmitted, setFormSubmitted] = React.useState(false)
 
+  const typeStyles: Record<string, string> = {
+    centerText: styles?.centeredText,
+    imageThreeQuarters: styles?.imageOutsideFrame,
+  }
   return (
     <div
       id={idItem}
@@ -36,9 +30,7 @@ const HeaderContainer: React.FC<HeaderContainerModel> = props => {
       >
         <div
           className={`${styles.header__heading} ${
-            centerText ? styles?.centeredText : ""
-          } ${headingRight ? styles?.headingRight : ""} ${
-            imageOutsideFrame ? styles?.imageOutsideFrame : ""
+            type ? typeStyles[type] : ""
           }`}
         >
           <Heading
@@ -53,12 +45,12 @@ const HeaderContainer: React.FC<HeaderContainerModel> = props => {
         {image?.data?.attributes?.url && (
           <div
             className={`${styles.header__imageContainer} ${
-              headingRight ? styles?.headingRight : ""
-            } ${imageOutsideFrame ? styles?.imageOutsideFrame : ""}`}
+              type ? typeStyles[type] : ""
+            }`}
           >
             <StrapiImage
               className={`${styles.header__image} ${
-                imageOutsideFrame ? styles?.imageOutsideFrame : ""
+                type ? typeStyles[type] : ""
               }`}
               image={image ? image : null}
             />
@@ -67,9 +59,9 @@ const HeaderContainer: React.FC<HeaderContainerModel> = props => {
         {showForm && formRegion && formId ? (
           <div
             id="formContainer"
-            className={`${styles.form__container} ${
-              headingRight ? styles?.headingRight : ""
-            } ${imageOutsideFrame ? styles?.imageOutsideFrame : ""}`}
+            className={`${styles.form__container}  ${
+              type ? typeStyles[type] : ""
+            }`}
           >
             <HubspotForm
               region={formRegion}

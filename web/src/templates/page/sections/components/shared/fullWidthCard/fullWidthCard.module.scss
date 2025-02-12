@@ -48,6 +48,9 @@
   width: calc(100% - 80px);
   @include flex(0, 1, calc(100% - 80px));
   @include min-width($desktopMD) {
+    padding: 60px;
+  }
+  &.fullWidthCardPadding {
     padding: 60px 60px 60px 40px;
   }
   &.fiftyFifty {
@@ -82,6 +85,10 @@
 }
 .fullWidthCard__imageContainer {
   width: 100%;
+  &.imageCentered {
+    margin: 0 auto;
+    text-align: center;
+  }
   &.fiftyFifty {
     @include order(1);
     @include min-width($tabletMD) {
@@ -104,6 +111,9 @@
     width: calc(100% - 80px);
     padding: 40px;
     @include min-width($desktopMD) {
+      padding: 60px;
+    }
+    &.fullWidthCardPadding {
       padding: 60px 40px 60px 60px;
     }
     &.fiftyFifty {

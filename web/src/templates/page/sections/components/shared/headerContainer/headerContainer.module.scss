@@ -44,9 +44,6 @@
       margin: 0 auto;
     }
   }
-  &.headingRight {
-    @include order(1);
-  }
   &.imageOutsideFrame{
     @include min-width($tabletMD) {
       @include flex(0, 1, auto);
@@ -70,9 +67,6 @@
   @include min-width($desktopXL) {
     max-width: 475px;
     width: 100%;
-  }
-  &.headingRight {
-    @include order(0);
   }
   &:not(.imageOutsideFrame) {
     @include flex(0, 1, calc(50% - 40px));
@@ -99,54 +93,6 @@
     }
     @include min-width($desktopMD) {
       width: calc(52% - 40px);
-    }
-  }
-  &.headingRight {
-    @include order(0);
-    @include align-items(center);
-    @include min-width($tabletMD) {
-      @include align-items(flex-start);
-    }
-    &.imageOutsideFrame {
-      height: 88vw;
-      position: relative;
-      @include align-items(center);
-  
-      @include min-width($tabletMD) {
-        position: inherit;
-        height: 100%;
-        width: calc(47% - 40px);
-      }
-  
-      @include min-width($desktopMD) {
-        width: calc(52% - 40px);
-      }
-    }
-    .header__image {
-      &.imageOutsideFrame {
-        left: -50px;
-        @include min-width($mobileXL) {
-          left: -70px;
-        }
-        @include min-width($tabletMD) {
-          left: -10px;
-        }
-        @include min-width($desktopMD) {
-          left: -60px;
-        }
-        @include min-width($desktopXL) {
-          left: -40px;
-        }
-        @include min-width($desktopXXL) {
-          left: -90px;
-        }
-        @include min-width(1560px) {
-          left: 0;
-        }
-        @include min-width(1850px) {
-          left: -90px;
-        }
-      }
     }
   }
   .header__image {

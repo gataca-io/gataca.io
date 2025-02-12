@@ -90,7 +90,6 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
       headings,
       buttonIcon,
       employees,
-      centerText,
       columns,
       card,
       fullWidthCard,
@@ -100,8 +99,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
       showForm,
       action_cards,
       marginBottom,
-      headingRight,
-      imageOutsideFrame,
+      type,
     } = item
 
     return (
@@ -111,12 +109,10 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
             idItem={idItem}
             heading={heading?.data?.attributes}
             image={image}
-            centerText={centerText}
+            type={type}
             showForm={showForm}
             formRegion={formRegion}
             formId={formId}
-            headingRight={headingRight}
-            imageOutsideFrame={imageOutsideFrame}
           />
         )}
         {__component === "shared.carrousel-logos" && (
@@ -242,7 +238,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
         {__component === "shared.full-width-card" && (
           <FullWidthCard
             idItem={idItem}
-            heading={heading?.data?.attributes}
+            heading={heading}
             image={image}
             color={color}
             layout={layout}
