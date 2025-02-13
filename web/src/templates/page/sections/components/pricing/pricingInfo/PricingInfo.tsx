@@ -5,7 +5,6 @@ import LicensesTableMobile from "./components/licensesTableMobile/LicensesTableM
 import LicensesTable from "./components/licensesTable/LicensesTable"
 import {
   ButtonModel,
-  HeadingModel,
   IProductModel,
 } from "../../../../../../interfaces/interfaces"
 import CrevronDownSVG from "../../../../../../images/icons/ChevronDownSVG"
@@ -19,7 +18,7 @@ import FullWidthCard from "../../shared/fullWidthCard/FullWidthCard"
 export type ISectionProps = {
   switchLabel?: string
   index: number
-  headingOnPremise: HeadingModel
+  headingOnPremise: any
   segmentedButtons: {
     attributes: {
       button: ButtonModel
@@ -113,6 +112,8 @@ const PricingInfo: React.FC<ISectionProps> = props => {
         })
       : null
   }
+
+  const fullWidthCardHeadingData = headingOnPremise?.data?.attributes
 
   return (
     <>
@@ -221,7 +222,9 @@ const PricingInfo: React.FC<ISectionProps> = props => {
             </>
           ) : (
             <>
-              <FullWidthCard color="white" heading={headingOnPremise} />
+              {fullWidthCardHeadingData && (
+                <FullWidthCard heading={headingOnPremise} color="white" />
+              )}
             </>
           )}
         </div>
