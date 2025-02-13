@@ -146,7 +146,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
         {__component === "pricing.cloud" && (
           <PricingInfo
             idItem={idItem}
-            headingOnPremise={headingOnPremise?.data?.attributes}
+            headingOnPremise={headingOnPremise}
             segmentedButtons={buttons?.data}
             index={0}
             switchLabel={switchLabel}

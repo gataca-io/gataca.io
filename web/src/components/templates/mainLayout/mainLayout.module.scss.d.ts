@@ -1,1 +1,1 @@
-export const mainLayout: string
+export const main: string

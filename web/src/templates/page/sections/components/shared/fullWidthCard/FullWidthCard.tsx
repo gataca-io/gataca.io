@@ -1,7 +1,6 @@
 import * as React from "react"
 import cx from "classnames"
 import * as styles from "./fullWidthCard.module.scss"
-import { HeadingModel } from "../../../../../../interfaces/interfaces"
 import StrapiImage from "../../../../../../components/atoms/images/StrapiImage"
 import Heading from "../Heading/Heading"
 

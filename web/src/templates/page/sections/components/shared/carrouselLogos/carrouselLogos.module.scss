@@ -9,10 +9,10 @@
     }
   }
   &.lightBackground {
-    background-color: $neutral200;
+    background-color: var(--neutral200);
   }
   &.darkBackground {
-    background-color: $neutral1000;
+    background-color: var(--neutral1000);
   }
   .clientsLogo {
     max-width: 100vw;

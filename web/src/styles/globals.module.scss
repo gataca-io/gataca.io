@@ -794,18 +794,18 @@
 
     // Colors 
     .neutral700 {
-        color: $neutral700
+        color: var(--neutral700)
     }
 
     .neutral1000 {
-        color: $neutral1000
+        color: var(--neutral1000)
     }
 
     .primary200{
-        color: $primary200
+        color: var(--primary200)
     }
     .primary700 {
-        color: $primary700
+        color: var(--primary700)
     }
 
     // Radius
@@ -878,7 +878,9 @@
     }
 
     // Background vertical lines
-    body {
+    #mainLayout__container{
+        position: relative;
+        z-index: 1;
         &::before {
             content: '';
             position: fixed;
@@ -889,34 +891,37 @@
             left: 50%;
             transform: translate(-50%, -50%);
             background:
-                repeating-linear-gradient(#E4E4E4,
-                    #E4E4E4 3px,
+                repeating-linear-gradient(var(--neutral300),
+                    var(--neutral300) 3px,
                     transparent 3px,
                     transparent 6px) 0%,
-                repeating-linear-gradient(#E4E4E4,
-                        #E4E4E4 3px,
-                        transparent 3px,
-                        transparent 6px)25%,
-                repeating-linear-gradient(#E4E4E4,
-                        #E4E4E4 3px,
-                        transparent 3px,
-                        transparent 6px)50%,
-                repeating-linear-gradient(#E4E4E4,
-                        #E4E4E4 3px,
-                        transparent 3px,
-                        transparent 6px)75%,
-                repeating-linear-gradient(#E4E4E4,
-                        #E4E4E4 3px,
-                        transparent 3px,
-                        transparent 6px)100%;
+                repeating-linear-gradient(var(--neutral300),
+                    var(--neutral300) 3px,
+                    transparent 3px,
+                    transparent 6px)25%,
+                repeating-linear-gradient(var(--neutral300),
+                    var(--neutral300) 3px,
+                    transparent 3px,
+                    transparent 6px)50%,
+                repeating-linear-gradient(var(--neutral300),
+                    var(--neutral300) 3px,
+                    transparent 3px,
+                    transparent 6px)75%,
+                repeating-linear-gradient(var(--neutral300),
+                    var(--neutral300) 3px,
+                    transparent 3px,
+                    transparent 6px)100%;
             background-size: 1px 100%;
             background-repeat: repeat-y;
+
             @include min-width($mobileXL) {
                 width: calc(100% - 80px);
             }
+
             @include min-width($desktopMD) {
                 width: calc(100% - 120px);
             }
+
             @media (min-width: 1304px) {
                 width: 100%;
                 max-width: 1184px;

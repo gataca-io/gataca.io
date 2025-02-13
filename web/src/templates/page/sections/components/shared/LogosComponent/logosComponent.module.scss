@@ -17,7 +17,7 @@
     padding: 0 60px;
   }
   &.backgroundDark {
-    background-color: $neutral1000;
+    background-color: var(--neutral1000);
     border-radius: 40px;
     padding: 80px 20px;
     @include min-width($mobileXL) {
@@ -28,7 +28,7 @@
     }
 
     > h1, h3, h4, h6, p {
-      color: $neutral100;
+      color: var(--neutral100);
     }
   }
 }

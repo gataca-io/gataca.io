@@ -3,7 +3,7 @@
 
 .checksGreyPanel__container {
   position: relative;
-  background-color: $neutral200;
+  background-color: var(--neutral200);
   border-radius: 20px;
   padding: 40px;
   max-width: 1104px;
@@ -43,7 +43,7 @@
     }
   }
   .bullet__description {
-    color: $neutral700;
+    color: var(--neutral700);
     margin-bottom: 32px;
   }
   .checksGreyPanel__rightSide__bullets__container {
@@ -58,7 +58,7 @@
       margin-right: 12px;
     }
     .bullets__container__description {
-      color: $neutral700;
+      color: var(--neutral700);
     }
   }
 }

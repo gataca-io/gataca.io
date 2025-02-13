@@ -16,8 +16,8 @@
       height: 1565px;
       left: 50%;
       top: -130px;
-      background-image: -webkit-linear-gradient(transparent 0%, $primary700 40%, $primary700 60%, transparent 100%);
-      background: linear-gradient(transparent 0%, $primary700 40%, $primary700 60%,  transparent 100%);
+      background-image: -webkit-linear-gradient(transparent 0%, var(--primary700) 40%, var(--primary700) 60%, transparent 100%);
+      background: linear-gradient(transparent 0%, var(--primary700) 40%, var(--primary700) 60%,  transparent 100%);
       @include min-width($tabletXL) { 
         height: 1365px;
       }
@@ -47,8 +47,8 @@
       height: 240px;
       left: 50%;
       top: -250px;
-      background-image: -webkit-linear-gradient(transparent 0%, $primary700 40%, $primary700 60%, transparent 100%);
-      background: linear-gradient(transparent 0%, $primary700 40%, $primary700 60%, transparent 100%);
+      background-image: -webkit-linear-gradient(transparent 0%, var(--primary700) 40%, var(--primary700) 60%, transparent 100%);
+      background: linear-gradient(transparent 0%, var(--primary700) 40%, var(--primary700) 60%, transparent 100%);
     }
     @include min-width($tabletMD) {
       @include flexbox();
@@ -90,7 +90,7 @@
         @include flex(0, 0, 50%);
       }
       .number {
-        color: $primary100;
+        color: var(--primary100);
         font-family: $custom;
         font-style: normal;
         font-weight: 700;

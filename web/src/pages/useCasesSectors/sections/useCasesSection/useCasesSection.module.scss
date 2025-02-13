@@ -33,7 +33,7 @@
   }
   .useCasesSection__leftColumn{
     p {
-      color: $neutral700;
+      color: var(--neutral700);
       margin-bottom: 32px;
       @include min-width($tabletMD) {
         margin-bottom: 164px;

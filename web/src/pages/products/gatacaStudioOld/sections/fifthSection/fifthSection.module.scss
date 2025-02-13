@@ -33,7 +33,7 @@
 
     video {
       max-width: 100%;
-      box-shadow: 0px 0px 16px 0px $boxShadowLigh;
+      box-shadow: 0px 0px 16px 0px var(--boxShadowLigh);
       @include min-width($desktopXL) {
         max-width: 982px;
       }
@@ -46,7 +46,7 @@
       height: 70%;
       bottom: -20px;
       left: -5px;
-      background: $neutral200;
+      background: var(--neutral200);
       border-radius: 11px;
       z-index: -1;
       padding: 0 5px;

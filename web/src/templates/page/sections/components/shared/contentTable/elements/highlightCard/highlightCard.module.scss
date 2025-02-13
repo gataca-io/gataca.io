@@ -5,7 +5,7 @@ $cardPadding: 32px;
 
 .highlightCard__container {
   padding: $cardPadding;
-  background-color: $neutral100;
+  background-color: var(--neutral100);
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.12);
   border-radius: 12px;
   @include flexbox();

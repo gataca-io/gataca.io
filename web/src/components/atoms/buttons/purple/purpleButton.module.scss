@@ -2,8 +2,8 @@
 @import "../../../../styles/mixins.scss";
 
 .button {
-    background-color: $primary700;
-    color: $neutral100;
+    background-color: var(--primary700);
+    color: var(--neutral100);
     padding: 12px 24px;
     height: 48px;
     border-radius: 8px;
@@ -13,10 +13,10 @@
     cursor: pointer;
 
     &:hover {
-        background-color: $primary900;
+        background-color: var(--primary900);
     }
     &:focus {
-        box-shadow: inset 0px 0px 0px 2px $primary300;
+        box-shadow: inset 0px 0px 0px 2px var(--primary300);
     }
 
     & > svg {
@@ -25,9 +25,9 @@
 }
 
 .outlinedButton {
-    background-color: $neutral100;
-    border: 1px solid $primary700;
-    color: $neutral1000;
+    background-color: var(--neutral100);
+    border: 1px solid var(--primary700);
+    color: var(--neutral1000);
     padding: 12px 24px;
     height: 48px;
     border-radius: 8px;
@@ -38,10 +38,10 @@
 
      &:hover {
         font-weight: 600;
-        color: $primary700;
+        color: var(--primary700);
     }
     &:focus {
-        box-shadow: inset 0px 0px 0px 2px $primary300;
+        box-shadow: inset 0px 0px 0px 2px var(--primary300);
     }
 
     & > svg {

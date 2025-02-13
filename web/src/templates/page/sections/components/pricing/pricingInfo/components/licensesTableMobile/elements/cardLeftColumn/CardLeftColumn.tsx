@@ -14,7 +14,7 @@ export const CardLeftColumn: React.FC<ICardLeftColumnProps> = props => {
   return (
     <div key={0} className={styles?.card__row}>
       <div>
-        <p className={`${cx("bodyRegularSM")}`}>{text}</p>
+        <p className={`${cx("bodyRegularSM neutral1000")}`}>{text}</p>
         {information?.length && information?.length > 0 ? (
           <HoverTooltip label={information} />
         ) : null}

@@ -3,7 +3,7 @@
 
 
 .brandButton {
-    background-color: $neutral1000;
+    background-color: var(--neutral1000);
     border: 1px solid #A6A6A6;
     border-radius: 8px;
     @include flexbox();
@@ -35,11 +35,11 @@
         max-width: 150px;
     }
     &.whiteColor {
-        background-color: $neutral100;
-        border: 1px solid $neutral1000;
+        background-color: var(--neutral100);
+        border: 1px solid var(--neutral1000);
     }
     &.blackColor {
-        background-color: $neutral1000;
+        background-color: var(--neutral1000);
         border: 1px solid #A6A6A6;
     }
 }

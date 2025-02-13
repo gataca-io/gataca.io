@@ -19,7 +19,7 @@ const HighlightCard: React.FC<IHighlightCardProps> = props => {
         className && className
       }`}
     >
-      <p className={cx("bodyBoldLG  neutral1000")}>{title}</p>
+      <p className={cx("bodyBoldLG neutral1000")}>{title}</p>
       <ListGroup listOptions={list_options?.data} />
     </div>
   )

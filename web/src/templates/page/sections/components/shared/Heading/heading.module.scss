@@ -34,7 +34,7 @@
     h1, h3, h4 {
       p {
         font-family: $custom;
-        color: $neutral1000;
+        color: var(--neutral1000);
         margin-bottom: 0;
         text-decoration: none;
         font-weight: 700;
@@ -60,7 +60,7 @@
     }
     .heading__content {
       p {
-        color: $neutral700;
+        color: var(--neutral700);
         font-family: $base;
           font-size: 20px;
           font-weight: 400;
@@ -85,11 +85,11 @@
       padding: 0;
     }
     .form__container {
-      background-color: $neutral100;
+      background-color: var(--neutral100);
       padding: 20px 20px 4px;
       margin-top: 32px;
       border-radius: 12px;
-      box-shadow: 0px 0px 10px $boxShadowLigh;
+      box-shadow: 0px 0px 10px var(--boxShadowLigh);
       @include flexbox();
       @include flex-direction(column);
       @include justify-content(space-between);

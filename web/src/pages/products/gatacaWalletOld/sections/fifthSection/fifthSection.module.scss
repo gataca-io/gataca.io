@@ -48,7 +48,7 @@
     }
     
     & > .fifthSection__leftSide__description {
-      color: $neutral700;
+      color: var(--neutral700);
       margin-bottom: 40px;
       @include min-width($mobileXL) {
         margin-bottom: 52px;

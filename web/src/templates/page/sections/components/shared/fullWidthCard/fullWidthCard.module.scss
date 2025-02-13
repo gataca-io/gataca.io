@@ -30,15 +30,15 @@
     @include align-items(center);
   }
   &.whiteBackground {
-    background-color: $neutral100;
+    background-color: var(--neutral100);
     box-shadow: 0px 0px 20px 0px rgba(12, 11, 51, 0.12);
 
   }
   &.greyBackground {
-    background-color: $neutral200;
+    background-color: var(--neutral200);
   }
   &.lightPurpleBackground {
-    background-color: $primary100;
+    background-color: var(--primary100);
   }
   
 }

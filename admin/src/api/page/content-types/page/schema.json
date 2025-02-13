@@ -91,6 +91,15 @@
       },
       "required": true,
       "default": "/"
+    },
+    "darkTheme": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "boolean",
+      "default": false
     }
   }
 }

@@ -3,7 +3,7 @@
 
 .preFooterCTA {
   padding: 80px 20px 70px;
-  background-color: $neutral1000;
+  background-color: var(--neutral1000);
   @include flexbox();
   @include flex-direction(column);
   @include justify-content(center);
@@ -15,7 +15,7 @@
 
   & > p, h6 {
     text-align: center;
-    color: $neutral100;
+    color: var(--neutral100);
     max-width: 980px;
   }
 
@@ -30,12 +30,12 @@
     }
 
     & > a {
-      background-color: $primary700;
+      background-color: var(--primary700);
       border-radius: 8px;
       height: 52px;
       min-width: 178px;
       &:hover {
-         background-color: $primary900;
+         background-color: var(--primary900);
       }
     }
     & > button {

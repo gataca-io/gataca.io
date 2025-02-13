@@ -100,7 +100,7 @@
         left: 0;
         border-radius: 11px;
         z-index: -1;
-        background: $neutral200;
+        background: var(--neutral200);
         @include min-width($tabletXL) {
           border-radius: 20px;
         }

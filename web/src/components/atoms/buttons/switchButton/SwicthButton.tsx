@@ -34,7 +34,7 @@ const SwitchButton: React.FC<SwitchButtonProps> = React.memo(props => {
         }
         className={styles.periodCheckboxLabel}
       ></label>
-      <span className={`${cx("bodyRegularMD")}`}>{rightLabel}</span>
+      <span className={`${cx("bodyRegularMD neutral1000")}`}>{rightLabel}</span>
     </div>
   )
 })

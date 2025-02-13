@@ -54,12 +54,16 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
                   >
                     <div className={styles?.table__header__cell__content}>
                       <div>
-                        <p className={`${cx("bodyBoldXL")}`}>{item?.name}</p>
+                        <p className={`${cx("bodyBoldXL neutral1000")}`}>
+                          {item?.name}
+                        </p>
 
                         <div>
                           <p>
-                            <span className={cx("heading4")}>{getPrice()}</span>
-                            <span className={cx("heading4")}>
+                            <span className={cx("heading4 neutral1000")}>
+                              {getPrice()}
+                            </span>
+                            <span className={cx("heading4 neutral1000")}>
                               {(item?.amountYearly || item?.amountMonthly) && (
                                 <span>€</span>
                               )}
@@ -210,14 +214,14 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
                     {item?.attributes.features?.dataAgreements === true ? (
                       <td
                         key={"DA__" + Math.random()}
-                        className={`${cx("bodyBoldSM")}`}
+                        className={`${cx("bodyBoldSM neutral1000")}`}
                       >
                         <img src={images.checkIcon}></img>
                       </td>
                     ) : (
                       <td
                         key={"DA__" + Math.random()}
-                        className={`${cx("bodyBoldSM")}`}
+                        className={`${cx("bodyBoldSM neutral1000")}`}
                       >
                         <img src={images.closeIcon}></img>
                       </td>
@@ -241,14 +245,14 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
                 return item?.attributes.features?.verifiableIds === true ? (
                   <td
                     key={"Vids__" + Math.random()}
-                    className={`${cx("bodyBoldSM")}`}
+                    className={`${cx("bodyBoldSM neutral1000")}`}
                   >
                     <img src={images.checkIcon}></img>
                   </td>
                 ) : (
                   <td
                     key={"Vids__" + Math.random()}
-                    className={`${cx("bodyBoldSM")}`}
+                    className={`${cx("bodyBoldSM neutral1000")}`}
                   >
                     <img src={images.closeIcon}></img>
                   </td>
@@ -270,14 +274,14 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
                 return item?.attributes.features?.customSchemas === true ? (
                   <td
                     key={"CS__" + Math.random()}
-                    className={`${cx("bodyBoldSM")}`}
+                    className={`${cx("bodyBoldSM neutral1000")}`}
                   >
                     <img src={images.checkIcon}></img>
                   </td>
                 ) : (
                   <td
                     key={"CS__" + Math.random()}
-                    className={`${cx("bodyBoldSM")}`}
+                    className={`${cx("bodyBoldSM neutral1000")}`}
                   >
                     <img src={images.closeIcon}></img>
                   </td>
@@ -300,14 +304,14 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
                   true ? (
                   <td
                     key={"SE__" + Math.random()}
-                    className={`${cx("bodyBoldSM")}`}
+                    className={`${cx("bodyBoldSM neutral1000")}`}
                   >
                     <img src={images.checkIcon}></img>
                   </td>
                 ) : (
                   <td
                     key={"SE__" + Math.random()}
-                    className={`${cx("bodyBoldSM")}`}
+                    className={`${cx("bodyBoldSM neutral1000")}`}
                   >
                     <img src={images.closeIcon}></img>
                   </td>
@@ -329,14 +333,14 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
                 return item?.attributes.features?.extraCredentials === true ? (
                   <td
                     key={"EC__" + Math.random()}
-                    className={`${cx("bodyBoldSM")}`}
+                    className={`${cx("bodyBoldSM neutral1000")}`}
                   >
                     <img src={images.checkIcon}></img>
                   </td>
                 ) : (
                   <td
                     key={"EC__" + Math.random()}
-                    className={`${cx("bodyBoldSM")}`}
+                    className={`${cx("bodyBoldSM neutral1000")}`}
                   >
                     <img src={images.closeIcon}></img>
                   </td>
@@ -465,14 +469,14 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
                   true ? (
                   <td
                     key={"QC__" + Math.random()}
-                    className={`${cx("bodyBoldSM")}`}
+                    className={`${cx("bodyBoldSM neutral1000")}`}
                   >
                     <img src={images.checkIcon}></img>
                   </td>
                 ) : (
                   <td
                     key={"QC__" + Math.random()}
-                    className={`${cx("bodyBoldSM")}`}
+                    className={`${cx("bodyBoldSM neutral1000")}`}
                   >
                     <img src={images.closeIcon}></img>
                   </td>
@@ -523,14 +527,14 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
                 return item?.attributes.features?.statistics === true ? (
                   <td
                     key={"ST__" + Math.random()}
-                    className={`${cx("bodyBoldSM")}`}
+                    className={`${cx("bodyBoldSM neutral1000")}`}
                   >
                     <img src={images.checkIcon}></img>
                   </td>
                 ) : (
                   <td
                     key={"ST__" + Math.random()}
-                    className={`${cx("bodyBoldSM")}`}
+                    className={`${cx("bodyBoldSM neutral1000")}`}
                   >
                     <img src={images.closeIcon}></img>
                   </td>
@@ -553,14 +557,14 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
                   true ? (
                   <td
                     key={"Role__" + Math.random()}
-                    className={`${cx("bodyBoldSM")}`}
+                    className={`${cx("bodyBoldSM neutral1000")}`}
                   >
                     <img src={images.checkIcon}></img>
                   </td>
                 ) : (
                   <td
                     key={"Role__" + Math.random()}
-                    className={`${cx("bodyBoldSM")}`}
+                    className={`${cx("bodyBoldSM neutral1000")}`}
                   >
                     <img src={images.closeIcon}></img>
                   </td>
@@ -582,14 +586,14 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
                 return item?.attributes.features?.customRoles === true ? (
                   <td
                     key={"CR__" + Math.random()}
-                    className={`${cx("bodyBoldSM")}`}
+                    className={`${cx("bodyBoldSM neutral1000")}`}
                   >
                     <img src={images.checkIcon}></img>
                   </td>
                 ) : (
                   <td
                     key={"CR__" + Math.random()}
-                    className={`${cx("bodyBoldSM")}`}
+                    className={`${cx("bodyBoldSM neutral1000")}`}
                   >
                     <img src={images.closeIcon}></img>
                   </td>
@@ -616,14 +620,14 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
                 return item?.attributes.features?.ticketingSystem === true ? (
                   <td
                     key={"TS__" + Math.random()}
-                    className={`${cx("bodyBoldSM")}`}
+                    className={`${cx("bodyBoldSM neutral1000")}`}
                   >
                     <img src={images.checkIcon}></img>
                   </td>
                 ) : (
                   <td
                     key={"TS__" + Math.random()}
-                    className={`${cx("bodyBoldSM")}`}
+                    className={`${cx("bodyBoldSM neutral1000")}`}
                   >
                     <img src={images.closeIcon}></img>
                   </td>
@@ -645,14 +649,14 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
                 return item?.attributes.features?.slackSupport === true ? (
                   <td
                     key={"SS__" + Math.random()}
-                    className={`${cx("bodyBoldSM")}`}
+                    className={`${cx("bodyBoldSM neutral1000")}`}
                   >
                     <img src={images.checkIcon}></img>
                   </td>
                 ) : (
                   <td
                     key={"SS__" + Math.random()}
-                    className={`${cx("bodyBoldSM")}`}
+                    className={`${cx("bodyBoldSM neutral1000")}`}
                   >
                     <img src={images.closeIcon}></img>
                   </td>
@@ -674,14 +678,14 @@ const LicensesTable: React.FC<ILicensesTableProps> = props => {
                 return item?.attributes.features?.accountTeam === true ? (
                   <td
                     key={"AT__" + Math.random()}
-                    className={`${cx("bodyBoldSM")}`}
+                    className={`${cx("bodyBoldSM neutral1000")}`}
                   >
                     <img src={images.checkIcon}></img>
                   </td>
                 ) : (
                   <td
                     key={"AT" + Math.random()}
-                    className={`${cx("bodyBoldSM")}`}
+                    className={`${cx("bodyBoldSM neutral1000")}`}
                   >
                     <img src={images.closeIcon}></img>
                   </td>

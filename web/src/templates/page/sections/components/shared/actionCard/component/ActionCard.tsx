@@ -34,7 +34,7 @@ const ActionCard: React.FC<ActionCardModel> = props => {
             onClick={() => !selected && showItem(index)}
           >
             {titleCard?.length && (
-              <p className={cx("bodyBoldXL")}>{titleCard}</p>
+              <p className={cx("bodyBoldXL neutral1000")}>{titleCard}</p>
             )}
             {selected ? (
               <>
@@ -67,7 +67,7 @@ const ActionCard: React.FC<ActionCardModel> = props => {
               onClick={() => showItem(!selected ? index : 0)}
             >
               {titleCard?.length && (
-                <p className={cx("bodyBoldXL")}>{titleCard}</p>
+                <p className={cx("bodyBoldXL neutral1000")}>{titleCard}</p>
               )}
               {selected ? (
                 <>
@@ -110,7 +110,7 @@ const ActionCard: React.FC<ActionCardModel> = props => {
                 </div>
               )}
               {titleContent?.length && (
-                <h4 className={cx("bodyBoldXL")}>{titleContent}</h4>
+                <h4 className={cx("bodyBoldXL neutral1000")}>{titleContent}</h4>
               )}
               {content?.length && <MarkDownContent content={content} />}
             </div>

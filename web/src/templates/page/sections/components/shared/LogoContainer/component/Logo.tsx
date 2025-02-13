@@ -23,7 +23,7 @@ const LogoComponent: React.FC<ILogoProps> = props => {
           <StrapiImage image={image ? image : null} />{" "}
         </div>
       ) : null}
-      {title?.length && <p className={cx("bodyBoldLG")}>{title}</p>}
+      {title?.length && <p className={cx("bodyBoldLG neutral1000")}>{title}</p>}
     </div>
   )
 }

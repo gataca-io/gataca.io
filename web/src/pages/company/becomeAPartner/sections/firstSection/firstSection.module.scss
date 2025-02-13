@@ -52,7 +52,7 @@
           height: 240px;
           bottom: 0px;
           left: 100px;
-          background: $neutral200;
+          background: var(--neutral200);
           border-radius: 40px 0px 0px 40px;
           z-index: -1;
           @include min-width($mobileMD) {

@@ -5,8 +5,8 @@
 .card__list {
   @include flex(0, 0, calc(100% - 64px));
   min-height: 236px;
-  background: $neutral100;
-  box-shadow: 0px 0px 12px $boxShadowLigh;
+  background: var(--neutral100);
+  box-shadow: 0px 0px 12px var(--boxShadowLigh);
   border-radius: 20px;
   padding: 24px;
   @include flexbox();
@@ -29,11 +29,11 @@
   }
   h5 {
     max-width: 777px;
-    color: $neutral1000;
+    color: var(--neutral1000);
     margin-bottom: 24px;
      text-align: center;
     & > span {
-      color: $primary700;
+      color: var(--primary700);
       font-family: $custom;
     }
   }
@@ -41,7 +41,7 @@
     max-width: 777px;
     text-align: center;
     
-    color: $neutral700
+    color: var(--neutral700)
   }
 
   & > button {

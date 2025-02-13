@@ -4,6 +4,7 @@ import Highlight from "./sections/components/shared/Highlight/Highlight"
 import { PageModel } from "../../interfaces/interfaces"
 import PageSkeleton from "./components/introBlogSkeleton/PageSkeleton"
 import AllSectionsTemplate from "./sections/AllSectionsTemplate"
+import * as styles from "./pageTemplate.module.scss"
 
 const PageTemplate: React.FC = (props: any) => {
   const [page, setPage] = React.useState<PageModel | undefined>()
@@ -30,8 +31,13 @@ const PageTemplate: React.FC = (props: any) => {
       })
   }
 
+  const pageTheme = pageData?.darkTheme
+
   return (
-    <Layout seoData={pageData?.seo}>
+    <Layout
+      className={pageTheme ? styles?.dark__theme : styles?.light__theme}
+      seoData={pageData?.seo}
+    >
       <>
         {pageData ? (
           <AllSectionsTemplate

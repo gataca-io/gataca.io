@@ -21,7 +21,7 @@
       height: 575px;
       right: -20px;
       top: 0;
-      background: $neutral200;
+      background: var(--neutral200);
       border-radius: 40px 0px 0px 40px;
       z-index: -1;
       @include min-width($mobileXL) {
@@ -105,7 +105,7 @@
           @include flex(0, 0, calc(66% - 32px));
         }
         a {
-          color: $primary700;
+          color: var(--primary700);
           &:hover {
             text-decoration: underline;
           }

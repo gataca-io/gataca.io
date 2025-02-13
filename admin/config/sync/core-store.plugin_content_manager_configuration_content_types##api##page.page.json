@@ -90,6 +90,20 @@
           "sortable": true
         }
       },
+      "darkTheme": {
+        "edit": {
+          "label": "darkTheme",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "darkTheme",
+          "searchable": true,
+          "sortable": true
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -133,11 +147,15 @@
             "size": 6
           },
           {
-            "name": "slugURL",
-            "size": 6
+            "name": "darkTheme",
+            "size": 4
           }
         ],
         [
+          {
+            "name": "slugURL",
+            "size": 6
+          },
           {
             "name": "subPath",
             "size": 6

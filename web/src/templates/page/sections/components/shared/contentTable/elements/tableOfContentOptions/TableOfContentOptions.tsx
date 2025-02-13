@@ -24,7 +24,10 @@ const TableOfContentOptions: React.FC<ITableOfContenOptionProps> = props => {
         const routePath = "#" + idContent
 
         return (
-          <li className={cx("buttonSM")} key={"tableOfContent__" + index}>
+          <li
+            className={cx("buttonSM neutral1000")}
+            key={"tableOfContent__" + index}
+          >
             <Link to={routePath || ""}>{title}</Link>
           </li>
         )

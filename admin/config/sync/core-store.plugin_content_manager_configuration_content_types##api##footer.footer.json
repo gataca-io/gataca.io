@@ -147,6 +147,20 @@
           "sortable": true
         }
       },
+      "logoDarkTheme": {
+        "edit": {
+          "label": "logoDarkTheme",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "logoDarkTheme",
+          "searchable": false,
+          "sortable": false
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -193,6 +207,12 @@
             "name": "logo",
             "size": 6
           },
+          {
+            "name": "logoDarkTheme",
+            "size": 6
+          }
+        ],
+        [
           {
             "name": "certificationImage",
             "size": 6

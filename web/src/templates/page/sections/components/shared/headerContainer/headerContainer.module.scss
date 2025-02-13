@@ -52,10 +52,10 @@
   }
 }
 .form__container {
-  background-color: $neutral100;
+  background-color: var(--neutral100);
   padding: 20px 20px 4px;
   border-radius: 12px;
-  box-shadow: 0px 0px 10px $boxShadowLigh;
+  box-shadow: 0px 0px 10px var(--boxShadowLigh);
   @include flexbox();
   @include flex-direction(column);
   @include justify-content(space-between);

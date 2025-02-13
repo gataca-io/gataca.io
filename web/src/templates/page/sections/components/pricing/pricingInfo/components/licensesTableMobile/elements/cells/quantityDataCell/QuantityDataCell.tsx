@@ -8,8 +8,10 @@ export type IQuantityDataCellProps = {
 const QuantityDataCell: React.FC<IQuantityDataCellProps> = props => {
   const { data } = props
   return (
-    <div className={`${cx("bodyBoldSM")}`}>
-      {(data === "∞" || data === -1) ? "Unlimited" : new Intl.NumberFormat('en-DE').format(data)}
+    <div className={`${cx("bodyBoldSM neutral1000")}`}>
+      {data === "∞" || data === -1
+        ? "Unlimited"
+        : new Intl.NumberFormat("en-DE").format(data)}
     </div>
   )
 }

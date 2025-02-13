@@ -50,6 +50,9 @@ const Footer: React.FC = (props: any) => {
           setPage(jsonResponse?.data[0])
       })
   }
+
+  const pageTheme = props?.children[0]?.props?.children[0]?.props?.darkTheme
+
   return (
     <footer className={styles?.footer}>
       <section
@@ -61,9 +64,12 @@ const Footer: React.FC = (props: any) => {
           <div className={styles?.iconsContainer__items}>
             <div className={styles?.logo}>
               <Link to="/">
-                {footerData?.logo?.data?.attributes?.url && (
+                {(footerData?.logo?.data?.attributes?.url ||
+                  footerData?.logoDarkTheme?.data?.attributes?.url) && (
                   <StrapiImage
-                    image={footerData?.logo ? footerData?.logo : null}
+                    image={
+                      pageTheme ? footerData?.logoDarkTheme : footerData?.logo
+                    }
                   />
                 )}
               </Link>

@@ -51,12 +51,12 @@
     display: none; /* Opera and Chrome */
   }
   .categorySelectedOption {
-    background-color: $neutral100;
-    border: 1px solid $primary700;
+    background-color: var(--neutral100);
+    border: 1px solid var(--primary700);
     padding: 8px;
     border-radius: 8px;
     margin-right: 32px;
-    color: $primary700;
+    color: var(--primary700);
     text-align: center;
     white-space: nowrap;
     cursor: none;
@@ -72,7 +72,7 @@
     cursor: pointer;
     @include flexbox();
     &:hover {
-      color: $primary700;
+      color: var(--primary700);
     }
   }
 

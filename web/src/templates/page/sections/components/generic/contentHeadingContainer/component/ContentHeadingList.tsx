@@ -96,13 +96,19 @@ const ContentHeadingList: React.FC<ISectionProps> = props => {
         return (
           <div id={idContent} key={`content_` + idContent}>
             {titleSize === "small" && (
-              <h4 className={`${cx("heading4 marginBottom32")}`}>{title}</h4>
+              <h4 className={`${cx("heading4 neutral1000 marginBottom32")}`}>
+                {title}
+              </h4>
             )}
             {titleSize === "medium" && (
-              <h3 className={`${cx("heading3 marginBottom32")}`}>{title}</h3>
+              <h3 className={`${cx("heading3 neutral1000 marginBottom32")}`}>
+                {title}
+              </h3>
             )}
             {titleSize === "large" && (
-              <h1 className={`${cx("heading1 marginBottom32")}`}>{title}</h1>
+              <h1 className={`${cx("heading1 neutral1000 marginBottom32")}`}>
+                {title}
+              </h1>
             )}
 
             {content && <MarkDownContent content={content} />}

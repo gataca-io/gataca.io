@@ -2,7 +2,7 @@
 @import "../../../../../../styles/mixins.scss";
 
 .buttonIcon {
-    background-color: $primary700;
+    background-color: var(--primary700);
     padding: 12px;
     height: 48px;
     width: 48px; 
@@ -10,17 +10,17 @@
     cursor: pointer;
     box-sizing: border-box;
     &:hover {
-        background-color: $primary900;
+        background-color: var(--primary900);
     }
     &.disabled {
-        background-color: $neutral400;
+        background-color: var(--neutral400);
         pointer-events: none;
     }
     &:focus {
-        box-shadow: inset 0px 0px 0px 2px $neutral300;
+        box-shadow: inset 0px 0px 0px 2px var(--neutral300);
     }
     &:focus-visible {
-        outline: $neutral300 auto 2px;
+        outline: var(--neutral300) auto 2px;
     }
     img {
         width: 24px;
@@ -39,68 +39,68 @@
         border-radius: 8px;
     }
     &.redColor {
-        background-color: $alert300;
+        background-color: var(--alert300);
         &:hover {
-            background-color: $alert400;
+            background-color: var(--alert400);
         }
         &.disabled {
-            background-color: $neutral400;
+            background-color: var(--neutral400);
         }
     }
     &.greenColor {
-        background-color: $success300;
+        background-color: var(--success300);
        
         &:hover {
-            background-color: $success400;
+            background-color: var(--success400);
         }
         &.disabled {
-            background-color: $neutral400;
+            background-color: var(--neutral400);
         }
 
     }
     &.yellowColor {
-        background-color: $warning300;
+        background-color: var(--warning300);
         &:hover {
-            background-color: $warning400;
+            background-color: var(--warning400);
         }
         &.disabled {
-            background-color: $neutral400;
+            background-color: var(--neutral400);
         }
     }
     &.blueColor {
-        background-color: $info300;
+        background-color: var(--info300);
         &:hover {
-            background-color: $info400;
+            background-color: var(--info400);
         }
         &.disabled {
-            background-color: $neutral400;
+            background-color: var(--neutral400);
         }
     }
     &.lightPurpleColor {
-        background-color: $primary100;
+        background-color: var(--primary100);
         &:hover {
-            background-color: $primary300;
+            background-color: var(--primary300);
         }
         &.disabled {
-            background-color: $neutral400;
+            background-color: var(--neutral400);
         }
     }
     &.tealColor {
-        background-color: $secondary600;
+        background-color: var(--secondary600);
         &:hover {
-            background-color: $secondary800;
+            background-color: var(--secondary800);
         }
         &.disabled {
-            background-color: $neutral400;
+            background-color: var(--neutral400);
         }
     }
     &.pinkColor {
-        background-color: $tertiary600;
+        background-color: var(--tertiary600);
         &:hover {
-            background-color: $tertiary800;
+            background-color: var(--tertiary800);
         }
         &.disabled {
-            background-color: $neutral400;
+            background-color: var(--neutral400);
         }
     }
 }

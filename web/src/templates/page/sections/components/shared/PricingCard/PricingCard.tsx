@@ -25,8 +25,8 @@ const PricingCard: React.FC<PricingCardModel> = props => {
   } = props
 
   const titleAmountSizeStyles: Record<string, string> = {
-    medium: "heading4",
-    large: "heading3",
+    medium: "heading4 neutral1000",
+    large: "heading3 neutral1000",
   }
 
   const periodYear = period === "year"
@@ -49,7 +49,7 @@ const PricingCard: React.FC<PricingCardModel> = props => {
       className={`${styles?.pricingCard} ${className && className}`}
     >
       <div>
-        {name && <p className={`${cx("bodyBoldXL")}`}>{name}</p>}
+        {name && <p className={`${cx("bodyBoldXL neutral1000")}`}>{name}</p>}
         {description && (
           <p className={`${cx("marginTop8 bodyRegularMD neutral700")}`}>
             {description}
@@ -67,7 +67,7 @@ const PricingCard: React.FC<PricingCardModel> = props => {
             className={`${
               titleAmountSize
                 ? titleAmountSizeStyles[titleAmountSize]
-                : "heading3"
+                : "heading3 neutral1000"
             }`}
           >
             {getPrice()}
@@ -76,7 +76,7 @@ const PricingCard: React.FC<PricingCardModel> = props => {
             className={`${
               titleAmountSize
                 ? titleAmountSizeStyles[titleAmountSize]
-                : "heading3"
+                : "heading3 neutral1000"
             }`}
           >
             {(amountYearly || amountMonthly) && <span>€</span>}

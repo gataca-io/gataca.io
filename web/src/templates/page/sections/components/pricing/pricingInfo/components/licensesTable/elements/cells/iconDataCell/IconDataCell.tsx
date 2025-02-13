@@ -11,7 +11,7 @@ const IconDataCell: React.FC<IIconDataCellProps> = props => {
   const { data } = props
   return (
     <>
-      <td className={`${cx("bodyBoldSM")}`}>
+      <td className={`${cx("bodyBoldSM neutral1000")}`}>
         <img
           className={styles?.icon}
           src={data ? images.checkIcon : images.closeIcon}

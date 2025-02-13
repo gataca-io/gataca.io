@@ -5,8 +5,8 @@
 .card__list {
   @include flex(0, 0, calc(100% - 64px));
   min-height: 236px;
-  background: $neutral100;
-  box-shadow: 0px 0px 12px $boxShadowLigh;
+  background: var(--neutral100);
+  box-shadow: 0px 0px 12px var(--boxShadowLigh);
   border-radius: 20px;
   padding: 32px;
   @include min-width($mobileXL) {
@@ -38,6 +38,6 @@
     font-weight: 400;
     line-height: 20px;
     text-decoration: none;
-    color: $neutral700
+    color: var(--neutral700)
   }
 }

@@ -27,7 +27,7 @@
       margin-left: auto;
       margin-right: auto;
       span {
-        color: $primary700;
+        color: var(--primary700);
         font-family: $custom;
       }
     }

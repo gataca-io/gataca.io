@@ -27,9 +27,9 @@
       }
 
       &.selected {
-        color: $primary700;
+        color: var(--primary700);
         margin-bottom: 20px;
-        border: 1px solid $primary700;
+        border: 1px solid var(--primary700);
         border-radius: 8px;
         padding: 8px;
       }

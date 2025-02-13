@@ -3,6 +3,7 @@ import Layout from "../components/templates/mainLayout/MainLayout"
 import Highlight from "../templates/page/sections/components/shared/Highlight/Highlight"
 import AllSectionsTemplate from "../templates/page/sections/AllSectionsTemplate"
 import PageSkeleton from "../templates/page/components/introBlogSkeleton/PageSkeleton"
+import * as styles from "../templates/page/pageTemplate.module.scss"
 
 const IndexPage: React.FC = (props: any) => {
   const [homeStrapiData, setHomeStrapiData] = React.useState<any | undefined>()
@@ -21,8 +22,13 @@ const IndexPage: React.FC = (props: any) => {
       })
   }
 
+  const pageTheme = homeData?.darkTheme
+
   return (
-    <Layout seoData={homeData?.seo}>
+    <Layout
+      className={pageTheme ? styles?.dark__theme : styles?.light__theme}
+      seoData={homeData?.seo}
+    >
       <>
         {homeData ? (
           <AllSectionsTemplate

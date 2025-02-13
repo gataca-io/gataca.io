@@ -54,9 +54,11 @@ const BlogCard: React.FC<BlogPreviewModel> = props => {
       ) : null}
       <div className={styles?.content__container}>
         <div>
-          {title?.length && <h5 className={cx("heading5")}>{title}</h5>}
+          {title?.length && (
+            <h5 className={cx("heading5 neutral1000")}>{title}</h5>
+          )}
           {date?.length && (
-            <p className={cx("bodyRegularMD marginTop8")}>
+            <p className={cx("bodyRegularMD marginTop8 neutral1000")}>
               {moment(date).format("LL")}
             </p>
           )}

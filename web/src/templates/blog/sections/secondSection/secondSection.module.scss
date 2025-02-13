@@ -40,16 +40,16 @@
   }
 
   & > p {
-    color: $neutral700;
+    color: var(--neutral700);
   }
 
   & > .buttons_container {
-    background-color: $neutral100;
+    background-color: var(--neutral100);
     padding: 20px 20px 4px;
     margin-top: 32px;
     border-radius: 12px;
     min-height: 284;
-    filter: drop-shadow(0px 0px 10px $boxShadowLigh);
+    filter: drop-shadow(0px 0px 10px var(--boxShadowLigh));
     @include flexbox();
     @include flex-direction(column);
     @include justify-content(space-between);
@@ -64,12 +64,12 @@
     }
 
     .form__label {
-      color: $neutral700;
+      color: var(--neutral700);
       margin-bottom: 24px;
     }
 
     .form__input {
-      color: $neutral900;
+      color: var(--neutral900);
       height: 32px;
       width: calc(100% - 24px) ;
       padding: 8px 12px;
@@ -104,11 +104,11 @@
     margin-bottom: 0;
   }
   h6 {
-    color: $neutral1000;
+    color: var(--neutral1000);
     margin-bottom: 4px;
   }
   p {
-    color: $neutral700;
+    color: var(--neutral700);
   }
   & > div {
     @include flexbox();

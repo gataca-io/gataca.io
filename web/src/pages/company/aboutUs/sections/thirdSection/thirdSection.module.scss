@@ -43,7 +43,7 @@
           @include justify-content(space-between);
         }
         .number {
-          color: $primary200;
+          color: var(--primary200);
         }
         .list {
           margin-bottom: 32px;

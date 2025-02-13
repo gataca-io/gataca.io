@@ -124,7 +124,7 @@
   border-radius: 8px;
 }
 .skeleton {
-    background: $skeletonBG;
+    background: var(--skeletonBG);
     overflow: hidden;
 }
 
@@ -133,7 +133,7 @@
     display: block;
     width: 128px;
     height: 500px;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0), $neutral100, rgba(255, 255, 255, 0));
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0), var(--neutral100), rgba(255, 255, 255, 0));
     content: "";
     animation: skeleton-animation 2s infinite;
 }

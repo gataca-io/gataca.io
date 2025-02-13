@@ -239,12 +239,12 @@
   cursor: not-allowed;
 
   & > rect {
-    fill: $neutral100;
-    stroke: $primary700;
+    fill: var(--neutral100);
+    stroke: var(--primary700);
   }
 
   & > path {
-    stroke: $primary700;
+    stroke: var(--primary700);
   }
 }
 
@@ -253,7 +253,7 @@
 
   &:hover {
     & > rect {
-      fill: $primary900;
+      fill: var(--primary900);
     }
   }
 }
