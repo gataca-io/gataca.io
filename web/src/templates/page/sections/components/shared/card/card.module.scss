@@ -67,7 +67,11 @@
       p {
         color: var(--neutral1000);
       }
-    } 
+    }
+    .logoSlot {
+      max-width: 100%;
+      height: auto;
+    }
   }
   
 }

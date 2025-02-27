@@ -387,6 +387,7 @@ export interface CardModel {
   content?: any
   button?: ButtonModel
   backContent?: string
+  logoSlot?: any
 }
 
 export interface ActionCardModel {
