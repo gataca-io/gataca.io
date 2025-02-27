@@ -6,6 +6,7 @@ import ContentHeadingList from "../../generic/contentHeadingContainer/component/
 import SubHeadingContainer from "../subHeadingContainer/SubHeadingContainer"
 import StrapiAuthor from "./elements/strapiAuthor/StrapiAuthor"
 import HighlightCard from "./elements/highlightCard/HighlightCard"
+import { dark__theme } from "../../../../pageTemplate.module.scss"
 
 export type ISectionProps = {
   listContent: {
@@ -70,6 +71,7 @@ export type ISectionProps = {
     }
   }
   avatarSize?: string
+  darkTheme: boolean
 }
 
 const ContentTable: React.FC<ISectionProps> = props => {
@@ -80,6 +82,7 @@ const ContentTable: React.FC<ISectionProps> = props => {
     sub_heading,
     avatarSize,
     highlightCard,
+    darkTheme,
   } = props
 
   const [tableOfContentOpenedID, setTableOfContentOpened] = React.useState("")
@@ -108,6 +111,7 @@ const ContentTable: React.FC<ISectionProps> = props => {
           )}
           {sub_heading?.data?.attributes?.subHeading && (
             <SubHeadingContainer
+              darkTheme={darkTheme}
               idItem={sub_heading?.data?.attributes?.idItem}
               subHeading={sub_heading?.data?.attributes?.subHeading}
               columns={sub_heading?.data?.attributes?.columns}

@@ -18,6 +18,7 @@ const Highlight: React.FC<IHighlightProps> = props => {
   const colorStyles: Record<string, string> = {
     black: styles?.blackBackground,
     grey: styles?.greyBackground,
+    purple: styles?.purpleBackground,
   }
 
   const alignStyles: Record<string, string> = {

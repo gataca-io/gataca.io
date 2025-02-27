@@ -21,6 +21,9 @@
   &.greyBackground {
     background-color: var(--neutral200);
   }
+  &.purpleBackground {
+    background-color: #4745B7;
+  }
   .alignCenter {
     padding: 100px 20px;
     @include min-width($mobileXL) {

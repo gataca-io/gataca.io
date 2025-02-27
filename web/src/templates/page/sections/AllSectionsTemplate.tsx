@@ -28,7 +28,7 @@ import HighlightSubHeadingCard from "./components/shared/HighlightSubHeadingCard
 import FormLayout from "./components/shared/FormLayout/FormLayout"
 
 const AllSectionsTemplate: React.FC<PageModel> = props => {
-  const { sections, location } = props
+  const { sections, location, darkTheme } = props
 
   return sections?.map(item => {
     const {
@@ -176,6 +176,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
             avatarSize={avatarSize}
             sub_heading={sub_heading}
             highlightCard={highlight_card?.data?.attributes}
+            darkTheme={darkTheme}
           />
         )}
         {__component === "shared.button-options" && (
@@ -233,6 +234,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
             blockAlign={blockAlign}
             slotAlign={slotAlign}
             headingSlot={headingSlot?.data?.attributes}
+            darkTheme={darkTheme}
           />
         )}
         {__component === "shared.full-width-card" && (
@@ -243,6 +245,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
             color={color}
             layout={layout}
             sizeSlot={sizeSlot}
+            textAlign={textAlign}
           />
         )}
         {__component === "shared.text-media" && (
@@ -323,6 +326,7 @@ const AllSectionsTemplate: React.FC<PageModel> = props => {
             heading={heading?.data?.attributes}
             subHeadingContainer={sub_heading?.data?.attributes}
             fullWidthCard={fullWidthCard}
+            darkTheme={darkTheme}
           />
         )}
         {__component === "shared.form-layout" && (

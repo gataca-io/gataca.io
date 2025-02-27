@@ -450,6 +450,7 @@ export interface SubHeadingModel {
   icon?: any
   title?: string
   content?: string
+  darkTheme: boolean
 }
 
 export interface HeadingModel {
@@ -497,6 +498,7 @@ export interface SubHeadingContainerModel {
   idItem?: string
   subHeading: SubHeadingModel[]
   columns?: string
+  darkTheme: boolean
 }
 
 export interface MainCardContainerModel {

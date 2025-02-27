@@ -15,6 +15,7 @@ export type ISubHeadingsLayoutProps = {
   headingSlot?: HeadingModel
   blockAlign?: string
   slotAlign?: string
+  darkTheme: boolean
 }
 
 const SubHeadingsLayout: React.FC<ISubHeadingsLayoutProps> = props => {
@@ -26,6 +27,7 @@ const SubHeadingsLayout: React.FC<ISubHeadingsLayoutProps> = props => {
     blockAlign,
     slotAlign,
     headingSlot,
+    darkTheme,
   } = props
 
   const blockAlignStyles: Record<string, string> = {
@@ -80,6 +82,7 @@ const SubHeadingsLayout: React.FC<ISubHeadingsLayoutProps> = props => {
 
         {subHeadingContainer && (
           <SubHeadingContainer
+            darkTheme={darkTheme}
             idItem={subHeadingContainer?.idItem}
             columns={subHeadingContainer?.columns}
             subHeading={subHeadingContainer?.subHeading}

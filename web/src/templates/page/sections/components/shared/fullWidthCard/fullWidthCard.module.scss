@@ -40,6 +40,29 @@
   &.lightPurpleBackground {
     background-color: var(--primary100);
   }
+  &.textAlignLeft {
+    .fullWidthCard__heading {
+      @include order(0);
+      &.fullWidthCardPadding {
+        padding: 60px 40px 60px 60px;
+      }
+    }
+
+    .fullWidthCard__imageContainer {
+      @include order(1);
+    }
+    
+  }
+
+  &.textAlignRight {
+    .fullWidthCard__heading {
+      @include order(1);
+    }
+
+    .fullWidthCard__imageContainer {
+      @include order(0);
+    }
+  }
   
 }
 

@@ -1,7 +1,8 @@
 {
   "collectionName": "components_shared_highlights",
   "info": {
-    "displayName": "Highlight"
+    "displayName": "Highlight",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -12,7 +13,8 @@
       "type": "enumeration",
       "enum": [
         "black",
-        "grey"
+        "grey",
+        "purple"
       ],
       "default": "black"
     },
