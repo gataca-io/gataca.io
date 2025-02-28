@@ -21,6 +21,7 @@ const CardComponent: React.FC<CardModel> = props => {
     content,
     button,
     backContent,
+    logoSlot,
   } = props
 
   const iconSizeStyles: Record<string, string> = {
@@ -91,6 +92,12 @@ const CardComponent: React.FC<CardModel> = props => {
             <h1 className={`${cx("heading1")} ${styles?.numberIconText} `}>
               {numberIconText}
             </h1>
+          ) : null}
+          {logoSlot ? (
+            <StrapiImage
+              image={logoSlot ? logoSlot : null}
+              className={styles?.logoSlot}
+            />
           ) : null}
           {mainIcon ? (
             <StrapiImage

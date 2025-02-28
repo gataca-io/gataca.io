@@ -5,7 +5,7 @@ import * as styles from "./subHeadingContainer.module.scss"
 import SubHeading from "../subHeading/SubHeading"
 
 const SubHeadingContainer: React.FC<SubHeadingContainerModel> = props => {
-  const { className, idItem, columns, subHeading } = props
+  const { className, idItem, columns, subHeading, darkTheme } = props
 
   const columnStyles: Record<string, string> = {
     one: styles?.oneColumn,
@@ -22,7 +22,13 @@ const SubHeadingContainer: React.FC<SubHeadingContainerModel> = props => {
       )} ${className && className}`}
     >
       {subHeading?.map((item: any, index: number) => {
-        return <SubHeading key={`subHeading__` + index} {...item} />
+        return (
+          <SubHeading
+            key={`subHeading__` + index}
+            {...item}
+            darkTheme={darkTheme}
+          />
+        )
       })}
     </div>
   )

@@ -1339,7 +1339,8 @@
           "socialMediaButton.buttons",
           "socialMediaButton.brand_buttons",
           "socialMediaButton.button_icons",
-          "rightsReserved"
+          "rightsReserved",
+          "logoDarkTheme"
         ],
         "locales": [
           "en",
@@ -1399,7 +1400,8 @@
           "socialMediaButton.buttons",
           "socialMediaButton.brand_buttons",
           "socialMediaButton.button_icons",
-          "rightsReserved"
+          "rightsReserved",
+          "logoDarkTheme"
         ],
         "locales": [
           "en",
@@ -1437,7 +1439,8 @@
           "socialMediaButton.buttons",
           "socialMediaButton.brand_buttons",
           "socialMediaButton.button_icons",
-          "rightsReserved"
+          "rightsReserved",
+          "logoDarkTheme"
         ],
         "locales": [
           "en",
@@ -1748,7 +1751,8 @@
           "sections",
           "title",
           "slugURL",
-          "subPath"
+          "subPath",
+          "darkTheme"
         ],
         "locales": [
           "en",
@@ -1793,7 +1797,8 @@
           "sections",
           "title",
           "slugURL",
-          "subPath"
+          "subPath",
+          "darkTheme"
         ],
         "locales": [
           "en",
@@ -1816,7 +1821,8 @@
           "sections",
           "title",
           "slugURL",
-          "subPath"
+          "subPath",
+          "darkTheme"
         ],
         "locales": [
           "en",
@@ -2145,7 +2151,8 @@
           "languageButton.size",
           "languageButton.disabled",
           "languageButton.noPaddingText",
-          "languageButton.fullWidth"
+          "languageButton.fullWidth",
+          "logoDarkTheme"
         ],
         "locales": [
           "en",
@@ -2217,7 +2224,8 @@
           "languageButton.size",
           "languageButton.disabled",
           "languageButton.noPaddingText",
-          "languageButton.fullWidth"
+          "languageButton.fullWidth",
+          "logoDarkTheme"
         ],
         "locales": [
           "en",
@@ -2267,7 +2275,8 @@
           "languageButton.size",
           "languageButton.disabled",
           "languageButton.noPaddingText",
-          "languageButton.fullWidth"
+          "languageButton.fullWidth",
+          "logoDarkTheme"
         ],
         "locales": [
           "en",
@@ -2290,7 +2299,8 @@
           "seo.alternate_urls",
           "title",
           "slugURL",
-          "subPath"
+          "subPath",
+          "darkTheme"
         ],
         "locales": [
           "en",
@@ -2335,7 +2345,8 @@
           "seo.alternate_urls",
           "title",
           "slugURL",
-          "subPath"
+          "subPath",
+          "darkTheme"
         ],
         "locales": [
           "en",
@@ -2358,7 +2369,8 @@
           "seo.alternate_urls",
           "title",
           "slugURL",
-          "subPath"
+          "subPath",
+          "darkTheme"
         ],
         "locales": [
           "en",

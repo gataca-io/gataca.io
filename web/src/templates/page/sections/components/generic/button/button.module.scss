@@ -103,7 +103,7 @@
             border: 1px solid var(--neutral100);
             color: var(--neutral100);
             &:hover {
-                background-color: rgba(255, 255, 255, 0.20);
+                background-color: var(--whiteColorOutlineBtn);
             }
             &.disabled {
                 background-color: transparent;
@@ -169,14 +169,14 @@
             border: 1px solid var(--neutral1000);
             color: var(--neutral1000);
             &:hover {
-                background-color: rgba(0, 0, 0, 0.20);
+                background-color: var(--blackColorOutlineBtn);
             }
             &:focus {
-                background-color: rgba(0, 0, 0, 0.20);
+                background-color: var(--blackColorOutlineBtn);
                 box-shadow: inset 0px 0px 0px 1px var(--neutral600);
             }
             &:focus-visible {
-                background-color: rgba(0, 0, 0, 0.20);
+                background-color: var(--blackColorOutlineBtn);
                 outline: var(--neutral600) auto 1px;
             }
             &.disabled {
@@ -239,14 +239,14 @@
             border: 1px solid var(--neutral500);
             color: var(--neutral1000);
             &:hover {
-                background-color: rgba(169, 169, 172, 0.20);
+                background-color: --greyColorOutlineBtn;
             }
             &:focus {
-                background-color: rgba(169, 169, 172, 0.20);
+                background-color: --greyColorOutlineBtn;
                 box-shadow: inset 0px 0px 0px 1px var(--neutral500);
             }
             &:focus-visible {
-                background-color: rgba(169, 169, 172, 0.20);
+                background-color: --greyColorOutlineBtn;
                 outline: var(--neutral500) auto 1px;
             }
             &.disabled {

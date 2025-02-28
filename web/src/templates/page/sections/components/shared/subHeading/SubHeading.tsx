@@ -5,8 +5,16 @@ import { SubHeadingModel } from "../../../../../../interfaces/interfaces"
 import StrapiImage from "../../../../../../components/atoms/images/StrapiImage"
 
 const SubHeading: React.FC<SubHeadingModel> = props => {
-  const { idSubHeading, size, align, icon, numberIconText, title, content } =
-    props
+  const {
+    idSubHeading,
+    size,
+    align,
+    icon,
+    numberIconText,
+    title,
+    content,
+    darkTheme,
+  } = props
 
   const iconSizeStyles: Record<string, string> = {
     small: "iconSM",
@@ -35,7 +43,11 @@ const SubHeading: React.FC<SubHeadingModel> = props => {
     <div id={idSubHeading} className={`${styles?.subheading__container} `}>
       <div className={`${align ? alignStyles[align] : styles?.alignLeft}`}>
         {numberIconText ? (
-          <h1 className={cx("heading1 primary200")}>{numberIconText}</h1>
+          <h1
+            className={cx("heading1", darkTheme ? "primary700" : "primary200")}
+          >
+            {numberIconText}
+          </h1>
         ) : null}
         {icon?.data?.attributes?.url && (
           <div>

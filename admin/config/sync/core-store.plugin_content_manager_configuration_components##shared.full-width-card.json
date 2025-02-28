@@ -104,13 +104,28 @@
           "searchable": false,
           "sortable": false
         }
+      },
+      "textAlign": {
+        "edit": {
+          "label": "textAlign",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "textAlign",
+          "searchable": true,
+          "sortable": true
+        }
       }
     },
     "layouts": {
       "list": [
         "id",
         "idItem",
-        "color"
+        "color",
+        "textAlign"
       ],
       "edit": [
         [
@@ -127,15 +142,19 @@
           {
             "name": "layout",
             "size": 6
+          },
+          {
+            "name": "sizeSlot",
+            "size": 6
           }
         ],
         [
           {
-            "name": "sizeSlot",
+            "name": "heading",
             "size": 6
           },
           {
-            "name": "heading",
+            "name": "textAlign",
             "size": 6
           }
         ],

@@ -100,6 +100,10 @@
   --tealGradient: linear-gradient(180deg, var(--secondary600) 0%, var(--secondary1000) 100%);
   --tertiaryGradient: linear-gradient(180deg, var(--tertiary600) 0%, var(--tertiary1000) 100%);
 
+  // Buttons rgba Colors
+  --whiteColorOutlineBtn: rgba(255, 255, 255, 0.20);
+  --blackColorOutlineBtn: rgba(0, 0, 0, 0.20);
+  --greyColorOutlineBtn: rgba(169, 169, 172, 0.20);
 }
 
 .dark__theme {
@@ -197,5 +201,10 @@
   --primaryGradient: linear-gradient(180deg, var(--primary700) 0%, var(--primary1000) 100%);
   --tealGradient: linear-gradient(180deg, var(--secondary600) 0%, var(--secondary1000) 100%);
   --tertiaryGradient: linear-gradient(180deg, var(--tertiary600) 0%, var(--tertiary1000) 100%);
+
+  // Buttons rgba Colors
+  --whiteColorOutlineBtn: rgba(30, 30, 32, 0.20);
+  --blackColorOutlineBtn: rgba(255, 255, 255, 0.20);
+  --greyColorOutlineBtn:: rgba(140, 140, 144, 0.20);
 }
 

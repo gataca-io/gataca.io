@@ -70,6 +70,7 @@ const DynamicCard: React.FC<ISectionProps> = props => {
       contentAlign,
       button,
       chip,
+      logoSlot,
     } = item
 
     return (
@@ -125,6 +126,12 @@ const DynamicCard: React.FC<ISectionProps> = props => {
               <h1 className={`${cx("heading1")} ${styles?.numberIconText} `}>
                 {numberIconText}
               </h1>
+            ) : null}
+            {logoSlot ? (
+              <StrapiImage
+                image={logoSlot ? logoSlot : null}
+                className={styles?.logoSlot}
+              />
             ) : null}
             {mainIcon ? (
               <StrapiImage

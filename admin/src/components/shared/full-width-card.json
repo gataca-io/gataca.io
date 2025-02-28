@@ -49,6 +49,14 @@
         "videos",
         "audios"
       ]
+    },
+    "textAlign": {
+      "type": "enumeration",
+      "enum": [
+        "right",
+        "left"
+      ],
+      "default": "right"
     }
   }
 }

@@ -12,10 +12,20 @@ export type ISectionProps = {
   color?: string
   layout?: string
   sizeSlot?: string
+  textAlign?: string
 }
 
 const FullWidthCard: React.FC<ISectionProps> = props => {
-  const { className, idItem, heading, image, color, layout, sizeSlot } = props
+  const {
+    className,
+    idItem,
+    heading,
+    image,
+    color,
+    layout,
+    sizeSlot,
+    textAlign,
+  } = props
 
   const colorStyles: Record<string, string> = {
     white: styles?.whiteBackground,
@@ -32,6 +42,10 @@ const FullWidthCard: React.FC<ISectionProps> = props => {
     padding: styles?.padding,
   }
 
+  const textAlignStyles: Record<string, string> = {
+    right: styles?.textAlignRight,
+    left: styles?.textAlignLeft,
+  }
   const fullWidthCardHeadingData = heading?.data?.attributes
   const fullWidthCardImageData = image?.data?.attributes?.url
 
@@ -45,7 +59,9 @@ const FullWidthCard: React.FC<ISectionProps> = props => {
       <div
         className={`${styles.fullWidthCard__container} ${
           color ? colorStyles[color] : styles?.whiteBackground
-        } ${sizeSlot ? sizeSlotStyles[sizeSlot] : styles?.padding}`}
+        } ${sizeSlot ? sizeSlotStyles[sizeSlot] : styles?.padding} ${
+          textAlign ? textAlignStyles[textAlign] : styles?.textAlignRight
+        }`}
       >
         {image?.data?.attributes?.url && (
           <div

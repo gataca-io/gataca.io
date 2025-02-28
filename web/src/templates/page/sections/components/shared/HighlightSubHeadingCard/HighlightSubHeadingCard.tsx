@@ -11,12 +11,14 @@ export type IHighlightSubHeadingCardProps = {
   heading?: HeadingModel
   subHeadingContainer?: any
   fullWidthCard?: any
+  darkTheme: boolean
 }
 
 const HighlightSubHeadingCard: React.FC<
   IHighlightSubHeadingCardProps
 > = props => {
-  const { idItem, heading, subHeadingContainer, fullWidthCard } = props
+  const { idItem, heading, subHeadingContainer, fullWidthCard, darkTheme } =
+    props
 
   const fullWidthCardHeadingData = fullWidthCard?.heading?.data?.attributes
   const fullWidthCardImageData = fullWidthCard?.image?.data?.attributes?.url
@@ -40,6 +42,7 @@ const HighlightSubHeadingCard: React.FC<
 
         {subHeadingContainer && (
           <SubHeadingContainer
+            darkTheme={darkTheme}
             {...subHeadingContainer}
             className={`${styles?.highlightSubHeadingCard__subHeading} ${
               fullWidthCardHeadingData || fullWidthCardImageData

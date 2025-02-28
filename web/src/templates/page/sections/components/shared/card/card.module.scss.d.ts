@@ -9,3 +9,4 @@ export const contentContainer: string
 export const contentHide: string
 export const contentShow: string
 export const backContentToShow: string
+export const logoSlot: string

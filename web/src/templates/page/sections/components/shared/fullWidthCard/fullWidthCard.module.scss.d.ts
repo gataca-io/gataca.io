@@ -11,3 +11,5 @@ export const twentyFiveSeventyFive: string
 export const padding: string
 export const fullWidthCardPadding: string
 export const imageCentered: string
+export const textAlignRight: string
+export const textAlignLeft: string

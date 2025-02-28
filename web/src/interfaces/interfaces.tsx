@@ -387,6 +387,7 @@ export interface CardModel {
   content?: any
   button?: ButtonModel
   backContent?: string
+  logoSlot?: any
 }
 
 export interface ActionCardModel {
@@ -450,6 +451,7 @@ export interface SubHeadingModel {
   icon?: any
   title?: string
   content?: string
+  darkTheme: boolean
 }
 
 export interface HeadingModel {
@@ -497,6 +499,7 @@ export interface SubHeadingContainerModel {
   idItem?: string
   subHeading: SubHeadingModel[]
   columns?: string
+  darkTheme: boolean
 }
 
 export interface MainCardContainerModel {
